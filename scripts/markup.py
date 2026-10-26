@@ -25,8 +25,10 @@ def emphasis(text: str) -> str:
 
 
 def inline(text: str) -> str:
-    """Escape, then apply links and emphasis. Code spans are protected from both."""
-    out, codes = html.escape(text, quote=False), []
+    """Escape, then apply links and emphasis. Code spans are protected from both,
+    and a link whose address would contain a code span stays plain text: restored
+    code HTML must never land inside an attribute."""
+    out, codes = html.escape(text, quote=True), []
 
     def keep(match):
         codes.append(f"<code>{match.group(1)}</code>")
@@ -35,6 +37,8 @@ def inline(text: str) -> str:
     links = []
 
     def link(match):
+        if "\x00" in match.group(2):
+            return match.group(0)
         label, url = match.group(1), html.escape(html.unescape(match.group(2)), quote=True)
         external = url.startswith("http")
         attrs = ' target="_blank" rel="noopener"' if external else ""
@@ -43,6 +47,8 @@ def inline(text: str) -> str:
     out = LINK.sub(link, out)
 
     def bare(match):
+        if "\x00" in match.group(1):
+            return match.group(0)
         url = html.escape(html.unescape(match.group(1)), quote=True)
         links.append(f'<a href="{url}" target="_blank" rel="noopener">{url}</a>')
         return f"\x01{len(links) - 1}\x01"

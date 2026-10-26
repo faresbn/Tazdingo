@@ -54,15 +54,16 @@ def collect(root: Path = ROOT) -> list[dict]:
         if receipt["environment"] not in ENVIRONMENTS:
             raise InvalidCapture(f"Unknown environment {receipt['environment']!r}")
         datetime.strptime(receipt["received_on"], "%Y-%m-%d")
-        if parsed["source_sha256"] in seen:
-            continue
-        seen.add(parsed["source_sha256"])
+        markets = [m for m in receipt["publish_markets"] if (parsed["source_sha256"], m) not in seen]
+        if not markets:
+            continue  # the same file and market published twice counts once
+        seen.update((parsed["source_sha256"], m) for m in markets)
         times = [t for t in parsed["source_scan_timestamps"].values() if type(t) is int and t > 0]
         if not times:
             raise InvalidCapture(f"{path.name} records no scan time")
         moment = datetime.fromtimestamp(max(times), timezone.utc)
         newest = newest_day({m: parsed["markets"][m] for m in receipt["publish_markets"] if m in parsed["markets"]})
-        captures.append({**receipt, **parsed, "capture_timestamp": max(times),
+        captures.append({**receipt, **parsed, "publish_markets": markets, "capture_timestamp": max(times),
                          "capture_time": moment.isoformat().replace("+00:00", "Z"),
                          "capture_date": day_date(newest) if newest is not None else moment.date().isoformat(),
                          "environment_label": ENVIRONMENTS[receipt["environment"]],
@@ -115,7 +116,10 @@ def build_markets(captures: list[dict], names: dict) -> list[dict]:
             for key, fields in data["items"].items():
                 item = market["items"].setdefault(key, {"key": key, "id": item_id(key),
                                                        "name": item_name(key, names), "days": {}})
-                item["price"], item["price_scan"] = fields["m"], capture["capture_date"]
+                # Another account's newer file can hold an older sighting of this item.
+                seen_here = max((int(d) for d in fields["h"]), default=-1)
+                if seen_here >= item.get("price_day", -1):
+                    item["price"], item["price_scan"], item["price_day"] = fields["m"], capture["capture_date"], seen_here
                 for day, high in fields["h"].items():
                     # Within one account's file a day's values only widen as the day goes on, and two
                     # accounts scanning the same day each hold part of it, so combine rather than overwrite.
@@ -157,6 +161,7 @@ def summarise(item: dict, last_day: int | None) -> None:
     week before's."""
     days = item["days"]
     seen = max(days) if days else None
+    item["seen_day"] = seen
     item["last_seen"] = day_date(seen) if seen is not None else None
     item["listed"] = days[seen]["listed"] if seen is not None else None
     item["current"] = seen is not None and last_day is not None and last_day - seen < CURRENT_DAYS
@@ -178,6 +183,7 @@ def highlights(market: dict) -> dict:
     most_listed = sorted(newest, key=lambda i: (-i["listed"], i["name"]))[:12]
     # Moves only count with three days of records in both weeks, at least 50c, and some volume.
     movers = [i for i in market["current"] if i["change"] is not None and i["recent_days"] >= 3
+              and market["last_day"] - i["seen_day"] <= 2
               and i["before_days"] >= 3 and i["typical"] >= 50 and (i["listed"] or 0) >= 5]
     rising = sorted((i for i in movers if i["change"] > 0), key=lambda i: -i["change"])[:6]
     falling = sorted((i for i in movers if i["change"] < 0), key=lambda i: i["change"])[:6]
@@ -191,6 +197,11 @@ def money(copper: int | None) -> str:
     silver, copper = divmod(rest, 100)
     parts = [f"{gold:,}g" if gold else "", f"{silver}s" if silver or gold else "", f"{copper}c"]
     return " ".join(p for p in parts if p)
+
+
+def sheet_text(value: str) -> str:
+    """Spreadsheets run cells starting with = + - @ as formulas; a leading ' stops that."""
+    return "'" + value if value[:1] in ("=", "+", "-", "@", "\t", "\r") else value
 
 
 def tsv(header: list[str], rows) -> str:
@@ -280,11 +291,11 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
             "prices_tsv": write(folder + "prices.tsv", tsv(
                 ["item_id", "item_key", "name", "typical_copper", "typical", "latest_copper", "latest", "last_seen",
                  "listed_that_day", "change_7d_pct", "latest_from_scan"],
-                [[i["id"], i["key"], i["name"], i["typical"], money(i["typical"]), i["price"], money(i["price"]), i["last_seen"],
+                [[i["id"], i["key"], sheet_text(i["name"]), i["typical"], money(i["typical"]), i["price"], money(i["price"]), i["last_seen"],
                   i["listed"], i["change"], i["price_scan"]] for i in market["items"]])),
             "history_tsv": write(folder + "history.tsv", tsv(
                 ["item_id", "item_key", "name", "date", "low_copper", "high_copper", "listed"],
-                [[i["id"], i["key"], i["name"], day_date(d), v["low"], v["high"], v["listed"]]
+                [[i["id"], i["key"], sheet_text(i["name"]), day_date(d), v["low"], v["high"], v["listed"]]
                  for i in market["items"] for d, v in sorted(i["days"].items())])),
             "prices_json": write(folder + "prices.json", json.dumps({
                 "schema_version": SCHEMA, "revision": revision, "market": market["key"],

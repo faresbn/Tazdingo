@@ -30,7 +30,8 @@ class SafeFormats(unittest.TestCase):
     def test_markdown_escapes_html_and_unsafe_links(self):
         out=render("<script>x</script> [a](javascript:alert(1)) **b**")
         self.assertNotIn("<script>",out); self.assertNotIn('href="javascript',out); self.assertIn("<strong>b</strong>",out)
-        for attack in ('https://x.com/"onmouseover="alert(1)', "https://x.com/'onmouseover='alert(1)", '[a](https://x.com/"onmouseover="alert(1))'):
+        for attack in ('https://x.com/"onmouseover="alert(1)', "https://x.com/'onmouseover='alert(1)", '[a](https://x.com/"onmouseover="alert(1))',
+                       '[x](#`" onmouseover="alert(1)" x="`)', '[x](https://a.b/`"onmouseover="alert(1)`)', 'https://a.b/`"onmouseover=alert(1)`'):
             with self.subTest(attack=attack):
                 self.assertEqual(attributes(render(attack)) - {"href","target","rel"}, set())
     def test_markdown_tables_and_lists(self):
@@ -151,6 +152,10 @@ class CurrentAuctionatorFormat(unittest.TestCase):
         items = parse_capture(path)["markets"]["Realm Horde"]["items"]
         self.assertEqual(sorted(items), ["9807", "gr:9807:of the Boar"])
         self.assertEqual((item_id("gr:9807:of the Boar"), suffix("gr:9807:of the Boar")), (9807, "of the Boar"))
+
+    def test_non_ascii_realm_names(self):
+        path = self.write({"Пламегор Horde": cbor({"version": 2, "gr:9807:of the Boar": self.record})})
+        self.assertEqual(list(parse_capture(path)["markets"]), ["Пламегор Horde"])
 
     def test_unpublished_broken_market_does_not_block_scan(self):
         path = self.write({"Old Realm": b"\x01\x90\x1b", "Realm Horde": cbor({"version": 2, "2589": self.record})})

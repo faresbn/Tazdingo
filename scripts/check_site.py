@@ -16,6 +16,7 @@ class Page(HTMLParser):
     def handle_starttag(self, tag, attrs):
         self.h1 += tag == "h1"
         self._in_title = tag == "title"
+        self.handlers = getattr(self, "handlers", []) + [f"<{tag} {k}>" for k, _ in attrs if k.startswith("on")]
         for key, value in attrs:
             if key in ("href", "src", "srcset", "action") and value:
                 self.links.append(value.split()[0])
@@ -49,6 +50,7 @@ def check(out=None, base="/FvrRepo/"):
         page = Page()
         page.feed(path.read_text())
         assert page.h1 == 1, f"Expected exactly one h1: {path}"
+        assert not getattr(page, "handlers", []), f"Event-handler attribute in {path}: {page.handlers}"
         assert page.title.strip(), f"Missing title: {path}"
         assert "noindex" not in path.read_text(), f"Page hidden from search: {path}"
         for link in page.links:

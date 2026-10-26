@@ -49,7 +49,13 @@ You and Mike ask your shared ChatGPT project about WoW Forever. FvrRepo is what 
 
 - [x] Parser: current key forms; decode only selected markets; tests with real-format fixtures
 - [x] Item names: fetch + verify ForeverDB names; `data/items.json`; credit
-- [x] Ingest command written (`scripts/ingest.py`); end-to-end run still to do
+- [x] Ingest command (`scripts/ingest.py`), run end to end on all three original Beta files at full size; rollback on failure
+- [x] Typical price (median) after real data showed troll listings and one-day spikes
+- [x] Search relevance and phone layout; keyboard access; colour contrast in both themes
+- [x] ChatGPT test: GPT answered from `llms-full.txt` + `prices.tsv` correctly
+- [x] ChatGPT project instructions drafted (`docs/chatgpt-project-instructions.md`)
+- [x] FvrRepo AGENTS.md drafted for approval (`proposed-AGENTS.md`)
+- [ ] Senior outside review of the data pipeline (GPT-6 Astra, high): findings checked and fixed
 - [x] Build rewrite: market pages, data files, `llms.txt` + `llms-full.txt` (replacing the planned `fvrrepo.md`: same idea, the name ChatGPT and other assistants already look for), sitemap, journal
 - [x] Design + Codex hero art (day and night maps); hero reworked so the map dissolves into the page
 - [ ] Checks: tests, build, site check, browser check (desktop + phone), launch-scale dry run on a real current file (not committed)

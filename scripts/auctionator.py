@@ -250,11 +250,15 @@ class CBOR:
 
 
 def text(value):
+    """Game text (realm names, suffixes) is UTF-8: "Пламегор Horde" must work."""
     if isinstance(value, bytes):
-        return value.decode("ascii")
+        try:
+            return value.decode("utf-8")
+        except UnicodeDecodeError:
+            raise InvalidCapture(f"Text that isn't UTF-8: {value[:40]!r}") from None
     if isinstance(value, str):
         return value
-    raise InvalidCapture("Expected an ASCII key")
+    raise InvalidCapture("Expected a text key")
 
 
 def string_keys(mapping):

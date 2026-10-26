@@ -52,6 +52,8 @@ links. So the site is open to search engines, and:
   price and units listed).
 - `llms-full.txt` and `prices.tsv` also work as files uploaded to a ChatGPT
   project, for when search can't find the site.
+- `docs/chatgpt-project-instructions.md` is the text to paste into the shared
+  ChatGPT project, including the format ChatGPT uses to draft journal entries.
 
 ## How prices work
 

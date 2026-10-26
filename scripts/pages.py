@@ -55,6 +55,11 @@ def money(copper: int | None) -> str:
     return '<span class="money">' + " ".join(parts) + "</span>"
 
 
+def md(text) -> str:
+    """Names in the plain-text file can't break its tables, links or headings."""
+    return " ".join(str(text).split()).replace("|", "\\|").replace("[", "(").replace("]", ")")
+
+
 def signed(pct: int | None) -> str:
     """+12%, -40%, or a multiple for big rises: +7,417% reads better as ×75."""
     if pct is None:
@@ -380,10 +385,10 @@ def llms_index(site: Site, markets: list[dict], journal: list[dict]) -> str:
              "> Fares and Mike's shared notebook for World of Warcraft: Forever. Auction House prices from our own Auctionator scans, and the guides, builds and discoveries we chose to keep.",
              "", f"Read everything in one file: {site.url}llms-full.txt", "", "## Prices"]
     for m in markets:
-        lines.append(f"- [{m['name']} ({m['environment_label']}{', Beta sample' if m['sample'] else ''})]({site.url}{m['url'][len(site.base):]}): "
+        lines.append(f"- [{md(m['name'])} ({m['environment_label']}{', Beta sample' if m['sample'] else ''})]({site.url}{m['url'][len(site.base):]}): "
                      f"{len(m['items']):,} items, newest data {m['last_date']}. Full list: {site.url}{m['files']['prices_tsv'][len(site.base):]}")
     lines += ["", "## Journal"]
-    lines += [f"- [{e['title']}]({site.url}{e['url'][len(site.base):]}): {e['type_label']}" + (f", {e['class']}" if e.get("class") else "")
+    lines += [f"- [{md(e['title'])}]({site.url}{e['url'][len(site.base):]}): {e['type_label']}" + (f", {e['class']}" if e.get("class") else "")
               for e in journal] or ["- No entries yet."]
     return "\n".join(lines) + "\n"
 
@@ -403,7 +408,7 @@ def llms_full(site: Site, markets: list[dict], journal: list[dict], names: dict 
            "- Each market is one realm and faction. Do not mix markets.", ""]
     for m in markets:
         h = m["highlights"]
-        out += [f"## Market: {m['name']} ({m['environment_label']})", "",
+        out += [f"## Market: {md(m['name'])} ({m['environment_label']})", "",
                 f"Items: {len(m['items']):,} ({len(m['current']):,} seen in the two weeks up to {m['last_date']}). Newest data: {m['last_date']}.",
                 f"Scans: {', '.join(s['date'] for s in m['scans'])}.",
                 f"Full price list (TSV): {site.url}{m['files']['prices_tsv'][len(site.base):]}",
@@ -413,15 +418,15 @@ def llms_full(site: Site, markets: list[dict], journal: list[dict], names: dict 
         out.append("")
         if h["most_listed"]:
             out += [f"### Most listed on {m['last_date']}", "", "| Item | ID | Typical price | Listed |", "|---|---|---|---|"]
-            out += [f"| {i['name']} | {i['id']} | {plain_money(i['typical'])} | {i['listed']:,} |" for i in h["most_listed"]]
+            out += [f"| {md(i['name'])} | {i['id']} | {plain_money(i['typical'])} | {i['listed']:,} |" for i in h["most_listed"]]
             out.append("")
         for title, key in (("Rising this week", "rising"), ("Falling this week", "falling")):
             if h[key]:
-                out += [f"### {title}", ""] + [f"- {i['name']} ({i['id']}): typical {plain_money(i['typical'])}, {signed(i['change'])} on the week before" for i in h[key]] + [""]
+                out += [f"### {title}", ""] + [f"- {md(i['name'])} ({i['id']}): typical {plain_money(i['typical'])}, {signed(i['change'])} on the week before" for i in h[key]] + [""]
         rows = m["current"] if len(m["current"]) <= 2500 else sorted(m["current"], key=lambda i: -(i["listed"] or 0))[:500]
         label = "All items seen in the last two weeks" if rows is m["current"] else "The 500 most-listed items of the last two weeks (the rest are in the TSV)"
         out += [f"### {label}", "", "| Item | ID | Typical price | Latest | Last seen | Listed | Change |", "|---|---|---|---|---|---|---|"]
-        out += [f"| {i['name']} | {i['id']} | {plain_money(i['typical'])} | {plain_money(i['price'])} | {i['last_seen'] or ''} | {count(i['listed'])} | {signed(i['change'])} |"
+        out += [f"| {md(i['name'])} | {i['id']} | {plain_money(i['typical'])} | {plain_money(i['price'])} | {i['last_seen'] or ''} | {count(i['listed'])} | {signed(i['change'])} |"
                 for i in rows]
         out.append("")
     out += ["## Journal", ""]
@@ -429,7 +434,7 @@ def llms_full(site: Site, markets: list[dict], journal: list[dict], names: dict 
         out += ["No entries yet.", ""]
     for e in journal:
         facts = [e["type_label"]] + [v for v in (e.get("class"), e["status_label"]) if v]
-        out += [f"### {e['title']}", "", f"{', '.join(facts)}. Written {e['date']}" + (f", updated {e['updated']}" if e.get("updated") else "") + ".",
+        out += [f"### {md(e['title'])}", "", f"{', '.join(facts)}. Written {e['date']}" + (f", updated {e['updated']}" if e.get("updated") else "") + ".",
                 f"Page: {site.url}{e['url'][len(site.base):]}"]
         if e.get("sources"):
             out.append(f"Sources: {e['sources']}")

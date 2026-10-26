@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import subprocess
 import sys
 from datetime import date, datetime
@@ -68,13 +69,29 @@ def run(*command: str) -> None:
     subprocess.run(command, cwd=ROOT, check=True)
 
 
+def write_whole(path: Path, text: str) -> None:
+    """Write all of a file or none of it: an interrupted write can't leave half a registry."""
+    partial = path.with_name(path.name + ".partial")
+    partial.write_text(text)
+    os.replace(partial, path)
+
+
+def unfinished_import() -> bool:
+    """Data changes that an earlier import left uncommitted (interrupted, or its push failed first)."""
+    status = subprocess.run(["git", "status", "--porcelain", "--", "data"], cwd=ROOT,
+                            capture_output=True, text=True, check=True)
+    return bool(status.stdout.strip())
+
+
 def ingest(path: Path, environment: str, markets: list[str]) -> dict | None:
     registry_path = ROOT / "data/captures.json"
     registry = json.loads(registry_path.read_text())
     capture = parse_capture(path, markets=markets)
-    if any(r["source_sha256"] == capture["source_sha256"] for r in registry["captures"]):
-        print("This exact file is already in the journal; nothing to add.")
+    published = {m for r in registry["captures"] if r["source_sha256"] == capture["source_sha256"] for m in r["publish_markets"]}
+    markets = [m for m in markets if m not in published]  # a second market from the same file is still new
+    if not markets:
         return None
+    capture["markets"] = {m: capture["markets"][m] for m in markets}
     newest = newest_day(capture["markets"])
     scanned = day_date(newest) if newest is not None else datetime.fromtimestamp(scan_time(capture)).date().isoformat()
     folder = ROOT / "data/captures" / environment
@@ -85,14 +102,14 @@ def ingest(path: Path, environment: str, markets: list[str]) -> dict | None:
         target = folder / f"{scanned}-{number}.market.json"
         number += 1
     body = json.dumps(market_extract(capture), sort_keys=True, separators=(",", ":")) + "\n"
-    target.write_text(body)
+    write_whole(target, body)
     registry["captures"].append({
         "path": str(target.relative_to(ROOT)), "environment": environment,
         "received_on": date.today().isoformat(), "source_sha256": capture["source_sha256"],
         "scope_source": "Fares's Auctionator export", "publish_markets": markets,
         "extraction_sha256": hashlib.sha256(body.encode()).hexdigest()})
     registry.setdefault("default_markets", {})[environment] = markets
-    registry_path.write_text(json.dumps(registry, indent=2) + "\n")
+    write_whole(registry_path, json.dumps(registry, indent=2) + "\n")
     counts = {m: len(capture["markets"][m]["items"]) for m in markets}
     return {"file": str(target.relative_to(ROOT)), "scanned": scanned, "items": counts}
 
@@ -121,9 +138,16 @@ def main() -> None:
     kept = {name: (ROOT / name).read_bytes() for name in ("data/captures.json", "data/items.json") if (ROOT / name).exists()}
     result = ingest(path, args.environment, markets)
     if result is None:
-        return
-    print(f"Added {result['file']}: scanned {result['scanned']}, " +
-          ", ".join(f"{m} {n:,} items" for m, n in result["items"].items()))
+        if not unfinished_import():
+            print("This scan is already in the journal; nothing to add.")
+            if args.push and not args.no_commit:
+                run("git", "push")  # completes a push that failed last time; does nothing when up to date
+            return
+        print("This scan is recorded, but its import didn't finish last time. Finishing it now.")
+        result = {"file": None, "scanned": None, "items": {}}
+    else:
+        print(f"Added {result['file']}: scanned {result['scanned']}, " +
+              ", ".join(f"{m} {n:,} items" for m, n in result["items"].items()))
     try:
         run(sys.executable, "scripts/item_names.py")
     except subprocess.CalledProcessError:
@@ -133,16 +157,23 @@ def main() -> None:
         try:
             run(sys.executable, *command)
         except subprocess.CalledProcessError:
+            if not result["file"]:
+                raise SystemExit(f"Import stopped: the {step} failed (details above). The earlier, unfinished import "
+                                 "is still uncommitted in data/. Fix the problem, or discard it with "
+                                 "`git checkout -- data && git clean -fd data`, then run this again.")
             (ROOT / result["file"]).unlink()
             for name, body in kept.items():
-                (ROOT / name).write_bytes(body)
+                write_whole(ROOT / name, body.decode())
+            subprocess.run([sys.executable, "scripts/build.py"], cwd=ROOT, capture_output=True)  # local site matches again
             raise SystemExit(f"Import stopped: the {step} failed (details above). Nothing was kept; "
                              "the journal is as it was before this import.")
     if args.no_commit:
         return
-    run("git", "add", "data/captures.json", "data/items.json", result["file"])
-    summary = ", ".join(f"{m} {n:,} items" for m, n in result["items"].items())
-    run("git", "commit", "-m", f"Add {args.environment} Auctionator scan of {result['scanned']} ({summary})")
+    run("git", "add", "data")
+    if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode:
+        summary = ", ".join(f"{m} {n:,} items" for m, n in result["items"].items())
+        run("git", "commit", "-m", f"Add {args.environment} Auctionator scan of {result['scanned']} ({summary})"
+            if result["file"] else "Finish an interrupted Auctionator import")
     if args.push:
         run("git", "push")
 
