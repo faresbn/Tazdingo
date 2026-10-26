@@ -154,7 +154,7 @@ def banner(site: Site, section: str, position: str = "70% 50%") -> str:
     name = f"banner-{section}.webp"
     if not site.has(name):
         return ""
-    return (f'<div class="banner" aria-hidden="true"><img src="{site.asset(name)}" alt="" width="1536" height="384" '
+    return (f'<div class="banner" aria-hidden="true"><img src="{site.asset(name)}" alt="" width="1536" height="640" '
             f'loading="lazy" decoding="async" style="object-position:{position}"></div>')
 
 
