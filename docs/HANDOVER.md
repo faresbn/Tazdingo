@@ -2,12 +2,12 @@
 
 The running record of where Forever Ledger stands, kept current at every checkpoint so another thread, model or machine can carry on. Read this first, then AGENTS.md and README.md.
 
-**Last updated:** 27 October 2026, during the v3 rebuild (session folder `docs/sessions/2026-10-27-ledger-v3/`).
+**Last updated:** 27 October 2026, at the end of the v3 rebuild (session folder `docs/sessions/2026-10-27-ledger-v3/`).
 
 ## Where things stand
 
 - **Live site:** https://faresbn.github.io/FvrRepo/ (published from `main` by `.github/workflows/pages.yml`, about a minute after each push, and every two hours to refresh Blizzard's posts).
-- **Current work:** the v3 rebuild on branch `ledger-v3` (see "In flight"). `main` still serves v2 until v3 merges.
+- **Current work:** none in flight. v3 is merged into `main` and live.
 - **Launch:** WoW Forever opens on 4 November 2026; level cap 60 (the Beta's was 30).
 
 ## What v3 is
@@ -19,14 +19,19 @@ The running record of where Forever Ledger stands, kept current at every checkpo
 - **Design:** a quartermaster's field ledger (see docs/DECISIONS.md). Painted art generated through Codex: a hero pair (day and night), five section banners, nine class emblems, twelve profession emblems, paper and canvas textures, and the social card. Originals are in the session folder's `art/`.
 - **Records:** the archive Action keeps a backup of every changed page and a log in `archive/LOG.md`.
 
-## In flight (stopped at the usage limit, 27 Oct ~00:30)
+## v3 status (done, 27 Oct)
 
-- [x] Infrastructure, templates, design, all art, blue tracker, archive, senior-review fixes, `ledger:` links (branch `ledger-v3`, pushed)
-- [x] Professions (12 pages) and Druid (6) written, reviewed and committed; source records in the session's `sources/`
-- [ ] **Uncommitted, written by research agents that may still be finishing:** other class folders under `content/classes/`, `content/world/`, and rewrites of `content/more/` (addons, known-issues, macros, launch). Next session: run `python3 scripts/build.py`. Its checks name any page that's incomplete or malformed; fix or finish those, spot-check a few against their sources, then commit.
-- [ ] Peer code review by GPT-6.1 Sol was running: its reply is in the scratchpad (`review3/reply.md`), if it finished. Otherwise rerun it from REVIEWER.md.
-- [ ] Full browser review at phone and desktop in both themes (desktop light and dark, phone menu, mega-menu, spec, profession and front pages were checked on the preview and work).
-- [ ] Merge `ledger-v3` into `main` once the build and checks pass, push, verify live, delete the branch. **`main` still serves v2 until then.**
+- [x] Infrastructure, templates, design, all art, blue tracker, archive, `ledger:` links
+- [x] All 77 pages written by research agents, checked by the build, spot-checked, committed. Each agent's sources, doubts and source contradictions are in the session's `sources/`.
+- [x] Three outside consultations: design (GPT-6.1 Sol), senior review (GPT-6 Astra), peer code review (GPT-6.1 Sol). Every finding fixed; see the session's `revlog.md`.
+- [x] Browser review: menus (hover, click, keyboard, Escape) at desktop; the phone menu; light and dark; no horizontal overflow on any of the 72 pages at phone width.
+- [x] Merged into `main` and live.
+
+## Known gaps and small follow-ups
+
+- Pages run long in places ("What the guides say" is 850–1,000 words on most spec pages, 1,900 on dungeons and raids). Trim when a page is next edited.
+- The countdown counts calendar days to 4 November in the visitor's time zone, but servers open at 23:00 UTC (02:00 on 5 November in the Gulf), so east of UTC it says "opens today" on the 4th and "Day 2" at the moment servers open. A fix would count to the launch moment; not done, as it wasn't in the plan.
+- Screenshots: none yet. Take them after launch (see "After launch").
 
 ## Open decisions for Fares
 
@@ -61,4 +66,4 @@ The running record of where Forever Ledger stands, kept current at every checkpo
 ## Session history
 
 - **26 Oct:** repo connected to GitHub; parser fixed for current Auctionator files; site rebuilt (v1 → v2 "Forever Ledger"); prices with typical price and steadiness; gold-making tables; ChatGPT instructions. Sessions: `2026-10-26-launch-ready`, `2026-10-26-forever-redesign`.
-- **27 Oct (overnight):** v3 per Fares's brief ("Rebuild, push to main, and leave a running record of everything"). Design consultation (GPT-6.1 Sol) and senior review (GPT-6 Astra): see the session's revlog.md.
+- **27 Oct (overnight):** v3 per Fares's brief ("Rebuild, push to main, and leave a running record of everything"): dashboard front page, mega-menus, a page per spec, profession, world topic and More list (77), painted art, Blizzard's posts, the archive and the Ledger guide flow. Three outside consultations: see the session's revlog.md.

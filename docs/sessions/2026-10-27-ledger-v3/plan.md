@@ -20,12 +20,12 @@
 
 ## Work
 
-- [ ] Research subagents write the content files: classes (5 agents), professions (1), world and More (1)
-- [ ] Senior outside review (GPT-6 Astra) of this plan and the current code; design ideas from GPT-6.1 Sol
-- [ ] Art through Codex: hero (day and night), 5 section banners, 9 class seals, 12 profession seals, 2 textures, social card
-- [ ] Build: spec and profession pages, hover menus (desktop) and nested menu (phone), new front page, blue tracker, launch checklist, archive Action, 404 page, social card
-- [ ] UPDATING.md rewritten for the "Ledger guide" flow; AGENTS.md; HANDOVER.md; DECISIONS.md
-- [ ] Review loop: every page type at phone and desktop, light and dark; peer code review; fixes
+- [x] Research subagents write the content files: classes (5 agents), professions (1), world and More (1)
+- [x] Senior outside review (GPT-6 Astra) of this plan and the current code; design ideas from GPT-6.1 Sol
+- [x] Art through Codex: hero (day and night), 5 section banners, 9 class seals, 12 profession seals, 2 textures, social card
+- [x] Build: spec and profession pages, hover menus (desktop) and nested menu (phone), new front page, blue tracker, launch checklist, archive Action, 404 page, social card
+- [x] UPDATING.md rewritten for the "Ledger guide" flow; AGENTS.md; HANDOVER.md; DECISIONS.md
+- [x] Review loop: every page type at phone and desktop, light and dark; peer code review; fixes
 - [ ] Merge to main, push, verify live; checkpoints every 25–40 minutes
 
 ## Checks for done
