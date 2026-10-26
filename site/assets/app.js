@@ -350,6 +350,36 @@ function siteSearch(form) {
   });
 }
 
+function menus() {
+  // Each menu opens by its button (click, tap, Enter or Space) on every screen. With a mouse on a
+  // wide screen it also opens on hover (CSS); Escape closes whichever is open and returns focus.
+  const header = document.querySelector(".masthead");
+  const items = [...document.querySelectorAll("[data-menu]")];
+  const toggleOf = item => item.querySelector(".menu-toggle");
+  const set = (item, open) => { item.classList.toggle("open", open); toggleOf(item).setAttribute("aria-expanded", String(open)); };
+  const closeAll = except => items.forEach(item => { if (item !== except) set(item, false); });
+  items.forEach(item => {
+    toggleOf(item).addEventListener("click", () => { const open = !item.classList.contains("open"); closeAll(item); set(item, open); });
+    item.addEventListener("mouseleave", () => item.classList.remove("suppressed"));
+  });
+  document.addEventListener("keydown", event => {
+    if (event.key !== "Escape") return;
+    const active = items.find(item => item.classList.contains("open") || item.matches(":hover") || item.contains(document.activeElement));
+    if (!active) return;
+    set(active, false);
+    active.classList.add("suppressed");  // hides a hover-opened panel until the pointer leaves
+    toggleOf(active).focus();
+  });
+  document.addEventListener("click", event => { if (!event.target.closest(".masthead")) closeAll(); });
+  const opener = document.querySelector(".nav-open");
+  if (opener) opener.addEventListener("click", () => {
+    const shown = header.classList.toggle("nav-shown");
+    opener.setAttribute("aria-expanded", String(shown));
+    opener.textContent = shown ? "Close" : "Menu";
+  });
+}
+
+menus();
 document.querySelectorAll("[data-theme-toggle]").forEach(themeToggle);
 document.querySelectorAll("[data-countdown]").forEach(countdown);
 const lookupForm = document.querySelector("form.lookup");

@@ -7,21 +7,39 @@
    "name": "Warrior",
    "colour": "#C69B6D",
    "specs": [
-    [
-     "arms",
-     "Arms",
-     "dps"
-    ],
-    [
-     "fury",
-     "Fury",
-     "dps"
-    ],
-    [
-     "protection",
-     "Protection",
-     "tank"
-    ]
+    {
+     "slug": "arms",
+     "name": "Arms",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/arms-warrior-melee-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/warrior/dps/"
+     ]
+    },
+    {
+     "slug": "fury",
+     "name": "Fury",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/fury-warrior-melee-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/warrior/dps/"
+     ]
+    },
+    {
+     "slug": "protection",
+     "name": "Protection",
+     "roles": [
+      "tank"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/protection-warrior-tank-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/warrior/protection/"
+     ]
+    }
    ]
   },
   {
@@ -29,21 +47,39 @@
    "name": "Paladin",
    "colour": "#F48CBA",
    "specs": [
-    [
-     "holy",
-     "Holy",
-     "healer"
-    ],
-    [
-     "protection",
-     "Protection",
-     "tank"
-    ],
-    [
-     "retribution",
-     "Retribution",
-     "dps"
-    ]
+    {
+     "slug": "holy",
+     "name": "Holy",
+     "roles": [
+      "healer"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/holy-paladin-healer-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/paladin/holy/"
+     ]
+    },
+    {
+     "slug": "protection",
+     "name": "Protection",
+     "roles": [
+      "tank"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/protection-paladin-tank-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/paladin/protection/"
+     ]
+    },
+    {
+     "slug": "retribution",
+     "name": "Retribution",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/paladin/retribution/"
+     ]
+    }
    ]
   },
   {
@@ -51,21 +87,39 @@
    "name": "Hunter",
    "colour": "#AAD372",
    "specs": [
-    [
-     "beast-mastery",
-     "Beast Mastery",
-     "dps"
-    ],
-    [
-     "marksmanship",
-     "Marksmanship",
-     "dps"
-    ],
-    [
-     "survival",
-     "Survival",
-     "dps"
-    ]
+    {
+     "slug": "beast-mastery",
+     "name": "Beast Mastery",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/beast-mastery-hunter-ranged-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/hunter/dps/"
+     ]
+    },
+    {
+     "slug": "marksmanship",
+     "name": "Marksmanship",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/marksmanship-hunter-ranged-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/hunter/dps/"
+     ]
+    },
+    {
+     "slug": "survival",
+     "name": "Survival",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/survival-hunter-melee-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/hunter/dps/"
+     ]
+    }
    ]
   },
   {
@@ -73,21 +127,39 @@
    "name": "Rogue",
    "colour": "#FFF468",
    "specs": [
-    [
-     "assassination",
-     "Assassination",
-     "dps"
-    ],
-    [
-     "combat",
-     "Combat",
-     "dps"
-    ],
-    [
-     "subtlety",
-     "Subtlety",
-     "dps"
-    ]
+    {
+     "slug": "assassination",
+     "name": "Assassination",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/rogue/dps/"
+     ]
+    },
+    {
+     "slug": "combat",
+     "name": "Combat",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/rogue/dps/"
+     ]
+    },
+    {
+     "slug": "subtlety",
+     "name": "Subtlety",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/rogue/dps/"
+     ]
+    }
    ]
   },
   {
@@ -95,21 +167,39 @@
    "name": "Priest",
    "colour": "#E8E8E8",
    "specs": [
-    [
-     "discipline",
-     "Discipline",
-     "healer"
-    ],
-    [
-     "holy",
-     "Holy",
-     "healer"
-    ],
-    [
-     "shadow",
-     "Shadow",
-     "dps"
-    ]
+    {
+     "slug": "discipline",
+     "name": "Discipline",
+     "roles": [
+      "healer"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/discipline-priest-healer-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/priest/healer/"
+     ]
+    },
+    {
+     "slug": "holy",
+     "name": "Holy",
+     "roles": [
+      "healer"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/holy-priest-healer-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/priest/healer/"
+     ]
+    },
+    {
+     "slug": "shadow",
+     "name": "Shadow",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/shadow-priest-ranged-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/priest/dps/"
+     ]
+    }
    ]
   },
   {
@@ -117,21 +207,39 @@
    "name": "Shaman",
    "colour": "#0070DD",
    "specs": [
-    [
-     "elemental",
-     "Elemental",
-     "dps"
-    ],
-    [
-     "enhancement",
-     "Enhancement",
-     "dps"
-    ],
-    [
-     "restoration",
-     "Restoration",
-     "healer"
-    ]
+    {
+     "slug": "elemental",
+     "name": "Elemental",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/elemental-shaman-ranged-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/shaman/elemental/"
+     ]
+    },
+    {
+     "slug": "enhancement",
+     "name": "Enhancement",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/shaman/enhancement/"
+     ]
+    },
+    {
+     "slug": "restoration",
+     "name": "Restoration",
+     "roles": [
+      "healer"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/restoration-shaman-healer-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/shaman/restoration/"
+     ]
+    }
    ]
   },
   {
@@ -139,21 +247,39 @@
    "name": "Mage",
    "colour": "#3FC7EB",
    "specs": [
-    [
-     "arcane",
-     "Arcane",
-     "dps"
-    ],
-    [
-     "fire",
-     "Fire",
-     "dps"
-    ],
-    [
-     "frost",
-     "Frost",
-     "dps"
-    ]
+    {
+     "slug": "arcane",
+     "name": "Arcane",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/arcane-mage-ranged-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/mage/dps/"
+     ]
+    },
+    {
+     "slug": "fire",
+     "name": "Fire",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/fire-mage-ranged-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/mage/dps/"
+     ]
+    },
+    {
+     "slug": "frost",
+     "name": "Frost",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/frost-mage-ranged-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/mage/dps/"
+     ]
+    }
    ]
   },
   {
@@ -161,21 +287,39 @@
    "name": "Warlock",
    "colour": "#8788EE",
    "specs": [
-    [
-     "affliction",
-     "Affliction",
-     "dps"
-    ],
-    [
-     "demonology",
-     "Demonology",
-     "dps"
-    ],
-    [
-     "destruction",
-     "Destruction",
-     "dps"
-    ]
+    {
+     "slug": "affliction",
+     "name": "Affliction",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/warlock/dps/"
+     ]
+    },
+    {
+     "slug": "demonology",
+     "name": "Demonology",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/demonology-warlock-ranged-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/warlock/dps/"
+     ]
+    },
+    {
+     "slug": "destruction",
+     "name": "Destruction",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/destruction-warlock-ranged-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/warlock/dps/"
+     ]
+    }
    ]
   },
   {
@@ -183,21 +327,41 @@
    "name": "Druid",
    "colour": "#FF7C0A",
    "specs": [
-    [
-     "balance",
-     "Balance",
-     "dps"
-    ],
-    [
-     "feral",
-     "Feral",
-     "dps/tank"
-    ],
-    [
-     "restoration",
-     "Restoration",
-     "healer"
-    ]
+    {
+     "slug": "balance",
+     "name": "Balance",
+     "roles": [
+      "dps"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/balance-druid-ranged-dps-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/druid/balance/"
+     ]
+    },
+    {
+     "slug": "feral",
+     "name": "Feral",
+     "roles": [
+      "dps",
+      "tank"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/feral-druid-melee-dps-and-tank-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/druid/feralcat/",
+      "https://www.wowsims.com/forever/druid/feralbear/"
+     ]
+    },
+    {
+     "slug": "restoration",
+     "name": "Restoration",
+     "roles": [
+      "healer"
+     ],
+     "icy_veins": "https://www.icy-veins.com/wow-forever/restoration-druid-healer-pve-guide",
+     "wowsims": [
+      "https://www.wowsims.com/forever/druid/restoration/"
+     ]
+    }
    ]
   }
  ],
@@ -387,6 +551,10 @@
   [
    "Wowhead talent calculator",
    "https://www.wowhead.com/forever/talent-calc"
+  ],
+  [
+   "WoWSims: Forever simulators",
+   "https://www.wowsims.com/forever/"
   ]
  ],
  "price_references": [
@@ -402,5 +570,33 @@
    "auctionhouse.fyi",
    "https://auctionhouse.fyi/"
   ]
- ]
+ ],
+ "more": [
+  {
+   "slug": "launch",
+   "name": "Launch checklist",
+   "summary": "What to do before and on launch day."
+  },
+  {
+   "slug": "blizzard",
+   "name": "Blizzard posts",
+   "summary": "The latest staff posts about WoW Forever from Blizzard's forums."
+  },
+  {
+   "slug": "addons",
+   "name": "Addons",
+   "summary": "Which addons work in Forever, and where to get them."
+  },
+  {
+   "slug": "macros",
+   "name": "Macros",
+   "summary": "How macros work in Forever, and where to find more."
+  },
+  {
+   "slug": "known-issues",
+   "name": "Known issues",
+   "summary": "Problems players have hit, what's known, and workarounds."
+  }
+ ],
+ "screenshots": []
 }

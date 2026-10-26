@@ -36,7 +36,7 @@ class SafeFormats(unittest.TestCase):
                 self.assertEqual(attributes(render(attack)) - {"href","target","rel"}, set())
     def test_markdown_tables_and_lists(self):
         out=render("## Gear\n\n- one\n  - two\n\n| A | B |\n|---|--:|\n| x | 1 |")
-        self.assertIn("<h2>Gear</h2>",out); self.assertIn("<ul><li>one<ul><li>two</li></ul></li></ul>",out)
+        self.assertIn('<h2 id="gear">Gear</h2>',out); self.assertIn("<ul><li>one<ul><li>two</li></ul></li></ul>",out)
         self.assertIn('<td style="text-align:right">1</td>',out)
 
 
@@ -102,8 +102,10 @@ class TypicalPrice(unittest.TestCase):
         self.assertEqual((signed(7417),signed(150),signed(-92),signed(None)),("×75","+150%","-92%",""))
 
 
-GAME={"classes":[{"slug":"mage","name":"Mage","specs":[["frost","Frost","dps"]]}],"professions":[{"slug":"mining","name":"Mining"}],
-      "world":[{"slug":"camping","name":"Camping"}]}
+GAME={"classes":[{"slug":"mage","name":"Mage","specs":[{"slug":"frost","name":"Frost","roles":["dps"]}]}],
+      "professions":[{"slug":"mining","name":"Mining"}],"world":[{"slug":"camping","name":"Camping"}],
+      "more":[{"slug":"addons","name":"Addons"}]}
+SECTIONS="## At a glance\n- x\n\n## What the guides say\n### Talents\nText\n\n## Ledger findings\nNothing recorded yet.\n\n## Read more\n- [a](https://a.b)"
 
 
 class Content(unittest.TestCase):
@@ -116,18 +118,28 @@ class Content(unittest.TestCase):
 
     def test_known_places_and_labels(self):
         from datetime import date
-        note="---\nupdated: 2026-11-05\nconfidence: tested\nsummary: Frost for levelling\n---\n## Talents\nText"
-        pages=load_content(self.root({"classes/mage/frost.md":note,"world/camping.md":note.replace("2026-11-05","2026-10-30")}),GAME,date(2026,11,4))
-        self.assertEqual(pages["classes/mage/frost"]["url"],"classes/mage/#frost")
+        note="---\nupdated: 2026-11-05\nconfidence: tested\nsummary: Frost for levelling\n---\n"+SECTIONS
+        pages=load_content(self.root({"classes/mage/frost.md":note.replace("summary:","status: live\nsummary:"),"world/camping.md":note}),GAME,date(2026,11,4))
+        self.assertEqual(pages["classes/mage/frost"]["url"],"classes/mage/frost/")
+        # Pre-launch until marked Live, whatever the edit date
         self.assertEqual((pages["classes/mage/frost"]["status"],pages["world/camping"]["status"]),("live","pre-launch"))
-        self.assertIn("<h2>Talents</h2>",pages["classes/mage/frost"]["html"])
+        frost=pages["classes/mage/frost"]
+        self.assertEqual([s["kind"] for s in frost["sections"]],["glance","guides","findings","more"])
+        self.assertTrue(frost["sections"][2]["empty"])
+        self.assertEqual(frost["sections"][1]["toc"],[("talents","Talents")])
 
     def test_unknown_place_and_bad_header_are_explained(self):
         from datetime import date
-        for files, problem in (({"classes/mage/fire.md":"---\nupdated: 2026-11-05\n---\nx"},"isn't a page the site knows"),
+        ok="---\nupdated: 2026-11-05\nsummary: x\n---\n"
+        for files, problem in (({"classes/mage/fire.md":ok+SECTIONS},"isn't a page the site knows"),
                                ({"classes/mage/frost.md":"no header"},"header"),
-                               ({"classes/mage/frost.md":"---\nsummary: x\n---\nx"},"updated"),
-                               ({"classes/mage/frost.md":"---\nupdated: 2026-11-05\nconfidence: sure\n---\nx"},"confidence")):
+                               ({"classes/mage/frost.md":"---\nsummary: x\n---\n"+SECTIONS},"updated"),
+                               ({"classes/mage/frost.md":ok.replace("summary","confidence: sure\nsummary")+SECTIONS},"confidence"),
+                               ({"classes/mage/frost.md":ok.replace("summary","title: Hijack\nsummary")+SECTIONS},"unknown header field"),
+                               ({"classes/mage/frost.md":ok+"## Ledger findings\nx\n## At a glance\nx"},"sections"),
+                               ({"classes/mage/frost.md":ok+SECTIONS+"\n## Read more\nagain"},"sections"),
+                               ({"more/addons.md":ok+"## Addons\nx"},"sections"),
+                               ({"classes/mage/notes.txt":"x"},"only Markdown")):
             with self.subTest(problem=problem):
                 with self.assertRaisesRegex(ValueError, problem): load_content(self.root(files),GAME,date(2026,11,4))
 
@@ -157,6 +169,14 @@ class PriceTools(unittest.TestCase):
         self.assertEqual([volatility([100,102,98,101]),volatility([100,150,80,120]),volatility([100,400,30,250]),volatility([100,110])],
                          ["steady","moving","volatile",None])
         self.assertEqual(volatility([100,110,99999999999,105,100,95,100]),"steady")  # a troll listing doesn't count
+
+
+class PublicLog(unittest.TestCase):
+    def test_private_words_are_recognised(self):
+        from build import PRIVATE
+        self.assertTrue(PRIVATE.search("Frost Mage: Fares tested this"))
+        self.assertTrue(PRIVATE.search("notes from chatgpt"))
+        self.assertFalse(PRIVATE.search("Frost Mage: levelling build for 10-24"))
 
 
 class MergingScans(unittest.TestCase):

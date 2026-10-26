@@ -76,6 +76,13 @@ def write_whole(path: Path, text: str) -> None:
     os.replace(partial, path)
 
 
+def push() -> None:
+    """Push, first bringing in commits made elsewhere (notes from ChatGPT, the archive's records).
+    The local scan commit is kept and replayed on top; nothing is force-pushed."""
+    run("git", "pull", "--rebase", "--autostash")
+    run("git", "push")
+
+
 def unfinished_import() -> bool:
     """Data changes that an earlier import left uncommitted (interrupted, or its push failed first)."""
     status = subprocess.run(["git", "status", "--porcelain", "--", "data"], cwd=ROOT,
@@ -148,7 +155,7 @@ def main() -> None:
         if not unfinished_import():
             print("Nothing new to add.")
             if args.push and not args.no_commit:
-                run("git", "push")  # completes a push that failed last time; does nothing when up to date
+                push()  # completes a push that failed last time; does nothing when up to date
             return
         print("This scan is recorded, but its import didn't finish last time. Finishing it now.")
         result = {"file": None, "scanned": None, "items": {}}
@@ -182,7 +189,7 @@ def main() -> None:
         run("git", "commit", "-m", f"Add {args.environment} Auctionator scan of {result['scanned']} ({summary})"
             if result["file"] else "Finish an interrupted Auctionator import")
     if args.push:
-        run("git", "push")
+        push()
 
 
 if __name__ == "__main__":

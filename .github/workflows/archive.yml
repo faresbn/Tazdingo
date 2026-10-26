@@ -1,0 +1,46 @@
+name: Archive page changes
+
+# After any push to main that changes a page in content/, save the previous version of each
+# changed page to archive/ and log the change in archive/LOG.md. The archive is private (it's
+# never part of the published site). This commit is made with the workflow's own token, which
+# doesn't start other workflows, so it can't loop or republish the site.
+
+on:
+  push:
+    branches: [main]
+    paths: ["content/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out history
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+      - name: Record changes and back up previous versions
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: python3 scripts/archive.py --before "$BEFORE" --after "$AFTER"
+      - name: Commit the record
+        run: |
+          git config user.name "ledger-archive[bot]"
+          git config user.email "ledger-archive@users.noreply.github.com"
+          git add archive
+          if git diff --cached --quiet; then echo "Nothing to record."; exit 0; fi
+          git commit -q -m "Archive page changes from ${GITHUB_SHA::7}"
+          for attempt in 1 2 3; do
+            if git push -q origin HEAD:main; then exit 0; fi
+            git pull -q --rebase origin main
+          done
+          echo "Could not push the archive record after three attempts." >&2
+          exit 1
