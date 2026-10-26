@@ -69,6 +69,14 @@ def check(out=None, base="/FvrRepo/"):
         assert len({r["item_key"] for r in rows}) == len(rows), "Duplicate item key"
         history = json.loads((out / market["history_json"].removeprefix(base)).read_text())
         assert set(history["history"]) == {r["item_key"] for r in rows}
+    # The public site never names the people behind it or the assistant they use (the
+    # faresbn.github.io address is the one exception: it's the host's name, not text).
+    import re
+    for path in out.rglob("*"):
+        if path.suffix in (".html", ".txt", ".json", ".tsv", ".xml", ".css", ".js"):
+            text = re.sub(r"faresbn\.github\.io", "", path.read_text())
+            found = re.findall(r"\b(?:ChatGPT|Fares|Mike)\b", text, re.I)
+            assert not found, f"{path.relative_to(out)} mentions {sorted(set(found))}"
     full = (out / "llms-full.txt").read_text()
     for market in manifest["markets"]:
         assert market["name"] in full, f"{market['name']} missing from llms-full.txt"

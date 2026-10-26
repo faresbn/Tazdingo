@@ -120,8 +120,6 @@ button[disabled] { opacity: 0.4; cursor: default; background: var(--ink); }
   display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 2.5rem 3.5rem;
 }
 .panel { border-top: 2px solid var(--ink); padding-top: 1rem; }
-.panel.chatgpt { grid-column: 1 / -1; border-top-width: 1px; }
-.panel.chatgpt p { max-width: var(--measure); }
 .lede { font-size: 1.15rem; line-height: 1.45; max-width: var(--measure); }
 .more { font-weight: 500; }
 .note { font-size: 0.95rem; color: var(--ink-soft); border-left: 3px solid var(--rule); padding: 0.1rem 0 0.1rem 0.8rem; max-width: var(--measure); }

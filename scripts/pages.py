@@ -114,7 +114,7 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
         current = ' aria-current="page"' if active == key else ""
         return f'<a href="{site.base}{href}"{current}>{label}</a>'
     full_title = SITE_NAME if title == SITE_NAME else f"{title} | {SITE_NAME}"
-    description = description or "Auction House prices from our own WoW Forever scans, and the guides, builds and discoveries worth keeping."
+    description = description or "Auction House prices, class builds and discoveries from World of Warcraft: Forever, tracked as the game unfolds."
     return f'''<!doctype html>
 <html lang="en-GB">
 <head>
@@ -123,7 +123,7 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
 <title>{esc(full_title)}</title>
 <meta name="description" content="{esc(description)}">
 <link rel="canonical" href="{esc(site.url + path)}">
-<link rel="alternate" type="text/plain" title="Everything in one file, for ChatGPT" href="{site.base}llms-full.txt">
+<link rel="alternate" type="text/plain" title="The whole journal as plain text" href="{site.base}llms-full.txt">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="{site.asset("icon.svg")}" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -143,9 +143,9 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
 {body}
 </main>
 <footer class="colophon">
-  <p>{SITE_NAME}: an independent fan project by Fares and Mike. World of Warcraft belongs to Blizzard Entertainment.</p>
-  <p>{'Item names and tooltips: <a href="' + FOREVERDB + '">Data from ForeverDB.net</a>. ' if site.credit else ''}Prices from our own Auctionator scans.</p>
-  <p>Built {esc(site.built)}, revision {esc(site.revision)}. <a href="{site.base}llms-full.txt">Everything in one file</a> for ChatGPT.</p>
+  <p>{SITE_NAME} is an independent fan project. World of Warcraft belongs to Blizzard Entertainment.</p>
+  <p>{'Item names and tooltips: <a href="' + FOREVERDB + '">Data from ForeverDB.net</a>. ' if site.credit else ''}Prices from Auctionator scans.</p>
+  <p>Built {esc(site.built)}, revision {esc(site.revision)}. <a href="{site.base}llms-full.txt">Plain-text version</a>.</p>
 </footer>
 </body>
 </html>
@@ -204,23 +204,19 @@ def home(site: Site, markets: list[dict], journal: list[dict]) -> str:
   </picture>
   <div class="hero-text">
     <h1>{SITE_NAME}</h1>
-    <p class="intro">Auction House prices from our own scans, and the guides, builds and discoveries worth keeping while we explore WoW Forever.</p>
+    <p class="intro">Auction House prices, class builds and discoveries from World of Warcraft: Forever, tracked as the game unfolds.</p>
     {search}
   </div>
 </section>
 <div class="home-grid">
 {latest}
 {journal_panel(site, journal)}
-<section class="panel chatgpt" aria-labelledby="chatgpt-title">
-  <h2 id="chatgpt-title">Reading this from ChatGPT</h2>
-  <p>Everything here is also in one plain-text file that ChatGPT can read in a single pass: <a href="{site.base}llms-full.txt">llms-full.txt</a>. Full price lists are in each market's <a href="{site.base}prices/">price files</a>.</p>
-</section>
 </div>''', active="home")
 
 
 def journal_panel(site: Site, journal: list[dict]) -> str:
     if not journal:
-        body = '''<p class="empty">No entries yet. When a build, guide or discovery is worth keeping, write it up (ChatGPT can draft it) and save it as a journal entry.</p>'''
+        body = '''<p class="empty">Nothing recorded yet. Builds, guides and discoveries appear here as the game is explored.</p>'''
     else:
         body = "<ul class='entries'>" + "".join(entry_item(e) for e in journal[:6]) + "</ul>"
     return f'''<section class="panel journal-panel" aria-labelledby="journal-title">
@@ -243,14 +239,14 @@ def markets_index(site: Site, markets: list[dict]) -> str:
 <td class="num">{len(m["items"]):,}</td><td>{when(m["last_date"])}</td><td class="num">{len(m["scans"])}</td></tr>''' for m in markets)
     return layout(site, "Prices", f'''<header class="page-head">
   <h1>Prices</h1>
-  <p class="lede">One Auction House per realm and faction, each built from our Auctionator scans.</p>
+  <p class="lede">One Auction House per realm and faction, each built from Auctionator scans.</p>
 </header>
 <section class="page-body">
   <div class="table-wrap"><table>
   <thead><tr><th scope="col">Market</th><th scope="col">Game</th><th scope="col" class="num">Items</th><th scope="col">Newest data</th><th scope="col" class="num">Scans</th></tr></thead>
   <tbody>{rows}</tbody></table></div>
   <p class="note">Launch prices start with the first scan after {LAUNCH}. Until then, the Beta sample shows how a market page works.</p>
-</section>''', active="prices", path="prices/", description="Auction House price lists from our WoW Forever scans.")
+</section>''', active="prices", path="prices/", description="Auction House price lists from WoW Forever scans.")
 
 
 def market_page(site: Site, market: dict) -> str:
@@ -316,16 +312,15 @@ def journal_index(site: Site, journal: list[dict]) -> str:
         filters = f'<div class="kind-filter" role="group" aria-label="Show">{buttons}</div>'
     body = (f'{filters}<ul class="entries large">{"".join(entry_item(e) for e in journal)}</ul>' if journal else
             '''<div class="empty-state">
-  <h2>Nothing written yet</h2>
-  <p>The journal keeps what we learn as we play: class guides, builds we've tested, and discoveries about the new world.</p>
-  <p>To add an entry, ask ChatGPT to write it up in the journal format, then save it as a new file in the <code>journal</code> folder. Entries are only added when Fares asks.</p>
+  <h2>Nothing recorded yet</h2>
+  <p>Class guides, tested builds and discoveries about the new world appear here as the game is explored.</p>
 </div>''')
     return layout(site, "Journal", f'''<header class="page-head">
   <h1>Journal</h1>
-  <p class="lede">Guides, builds and discoveries from our time in WoW Forever, each dated and marked with how well it's tested.</p>
+  <p class="lede">Guides, builds and discoveries from WoW Forever, each dated and marked with how well it's tested.</p>
 </header>
 <section class="page-body">{body}</section>''', active="journal", path="journal/",
-                  description="Guides, builds and discoveries from our time in WoW Forever.")
+                  description="Guides, builds and discoveries from WoW Forever.")
 
 
 def journal_entry(site: Site, entry: dict) -> str:
@@ -357,18 +352,18 @@ def about(site: Site, markets: list[dict], captures: list[dict], names: dict | N
                  if names else "")
     return layout(site, "About", f'''<header class="page-head">
   <h1>About the journal</h1>
-  <p class="lede">A shared notebook for two players exploring WoW Forever, written so that both of us, and ChatGPT, can look things up.</p>
+  <p class="lede">A running record of World of Warcraft: Forever: what things cost, what works, and what's been found.</p>
 </header>
 <section class="page-body prose">
   <h2>What's here</h2>
-  <p><a href="{site.base}prices/">Prices</a> come from Auctionator scans made in game. After a scan, one command on Fares's Mac picks up the addon's file, keeps only the price records and publishes them here. Settings, posting history, searches and shopping lists never leave the Mac.</p>
-  <p>The <a href="{site.base}journal/">journal</a> holds guides, builds and discoveries. Each entry says what kind it is, which class it's for, how well it's tested and when it was written. Entries are added only when Fares asks.</p>
+  <p><a href="{site.base}prices/">Prices</a> come from Auctionator scans made in game. Only the addon's price records are published.</p>
+  <p>The <a href="{site.base}journal/">journal</a> holds guides, builds and discoveries. Each says what kind it is, which class it's for, how well it's tested and when it was written.</p>
   <h2>How prices are worked out</h2>
   <p>Auctionator records the cheapest listing per item whenever a scan sees it, along with each day's cheapest listing, how high that went during the day, and the most units listed. The <strong>typical price</strong> here is the middle value of each day's cheapest listing over the item's last seven days of records. Using the middle value means one troll listing or a one-day spike doesn't set the price. The <strong>latest</strong> price is shown beside it.</p>
   <p>Both are what someone was asking, not what anything sold for, and an item that hasn't been seen for a while may cost something different now.</p>
   <p>Dates come from Auctionator's day counter, which starts at midnight on 1 January 2020 in the scanning player's time zone.</p>
-  <h2>Reading from ChatGPT</h2>
-  <p>ChatGPT finds pages through web search, so the site is open to search engines. For a complete read, point it at <a href="{site.base}llms-full.txt">llms-full.txt</a>, which holds every journal entry and each market's summary. Full price lists are in each market's TSV file. Both files also work as files uploaded to a ChatGPT project.</p>
+  <h2>Data files</h2>
+  <p>The whole journal is also available as plain text: <a href="{site.base}llms-full.txt">llms-full.txt</a> (with a short index in <a href="{site.base}llms.txt">llms.txt</a>). Each market's full price list and daily history are TSV files linked from its page.</p>
   <h2>Sources and credits</h2>
   <p>{name_note}Tooltips and item links use <a href="{FOREVERDB}/embed">ForeverDB's embed</a>; they show today's item details, not how an item looked on the day of a scan. <a href="{FOREVERDB}">Data from ForeverDB.net</a>.</p>
   <p>The hero map is an original illustration. World of Warcraft and its artwork belong to Blizzard Entertainment.</p>
@@ -378,11 +373,11 @@ def about(site: Site, markets: list[dict], captures: list[dict], names: dict | N
 </section>''', active="about", path="about/", description="What the WoW Forever Journal holds and where its data comes from.")
 
 
-# --- Plain text for ChatGPT ---------------------------------------------------
+# --- Plain text for assistants and scripts --------------------------------------
 
 def llms_index(site: Site, markets: list[dict], journal: list[dict]) -> str:
     lines = [f"# {SITE_NAME}", "",
-             "> Fares and Mike's shared notebook for World of Warcraft: Forever. Auction House prices from our own Auctionator scans, and the guides, builds and discoveries we chose to keep.",
+             "> A running record of World of Warcraft: Forever: Auction House prices from Auctionator scans, and class guides, builds and discoveries.",
              "", f"Read everything in one file: {site.url}llms-full.txt", "", "## Prices"]
     for m in markets:
         lines.append(f"- [{md(m['name'])} ({m['environment_label']}{', Beta sample' if m['sample'] else ''})]({site.url}{m['url'][len(site.base):]}): "
@@ -395,8 +390,8 @@ def llms_index(site: Site, markets: list[dict], journal: list[dict]) -> str:
 
 def llms_full(site: Site, markets: list[dict], journal: list[dict], names: dict | None) -> str:
     out = [f"# {SITE_NAME}", "",
-           f"Fares and Mike's shared notebook for World of Warcraft: Forever (launch: {LAUNCH}). "
-           "Auction House prices come from Fares's Auctionator scans; journal entries are guides, builds and discoveries saved on Fares's request.",
+           f"A running record of World of Warcraft: Forever (launch: {LAUNCH}). "
+           "Auction House prices come from Auctionator scans; the journal holds class guides, builds and discoveries.",
            f"Site: {site.url}  Built: {site.built}  Revision: {site.revision}", "",
            "## How to read prices", "",
            "- Prices are per single item, in gold (g), silver (s) and copper (c): 1g = 100s = 10,000c.",
@@ -440,7 +435,7 @@ def llms_full(site: Site, markets: list[dict], journal: list[dict], names: dict 
             out.append(f"Sources: {e['sources']}")
         out += ["", e["body"], ""]
     out += ["## Sources", "",
-            "- Prices: Fares's Auctionator SavedVariables, market records only.",
+            "- Prices: Auctionator scans (the addon's saved data), market records only.",
             ("- Item names: Data from ForeverDB.net (https://foreverdb.net), client build " + str(names.get("client_build")) + "." if names else "- Item names: unavailable."),
             ""]
     return "\n".join(out)
