@@ -15,10 +15,10 @@ import hashlib
 import json
 import subprocess
 import sys
-from datetime import date, datetime, timezone
+from datetime import date, datetime
 from pathlib import Path
 
-from auctionator import InvalidCapture, market_extract, parse_capture
+from auctionator import InvalidCapture, day_date, market_extract, newest_day, parse_capture
 
 ROOT = Path(__file__).resolve().parents[1]
 WOW = Path("/Applications/World of Warcraft")
@@ -75,7 +75,8 @@ def ingest(path: Path, environment: str, markets: list[str]) -> dict | None:
     if any(r["source_sha256"] == capture["source_sha256"] for r in registry["captures"]):
         print("This exact file is already in the journal; nothing to add.")
         return None
-    scanned = datetime.fromtimestamp(scan_time(capture), timezone.utc).date().isoformat()
+    newest = newest_day(capture["markets"])
+    scanned = day_date(newest) if newest is not None else datetime.fromtimestamp(scan_time(capture)).date().isoformat()
     folder = ROOT / "data/captures" / environment
     folder.mkdir(parents=True, exist_ok=True)
     target = folder / f"{scanned}.market.json"

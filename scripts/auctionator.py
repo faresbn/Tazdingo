@@ -38,6 +38,13 @@ def day_date(code: int | str) -> str:
     return (DAY_ZERO + timedelta(days=int(code))).isoformat()
 
 
+def newest_day(markets: dict) -> int | None:
+    """The newest Auctionator day with any record: the scan's date in the
+    player's own calendar (file timestamps are UTC and can fall a day off)."""
+    days = [int(d) for market in markets.values() for item in market["items"].values() for d in item["h"]]
+    return max(days) if days else None
+
+
 class InvalidCapture(ValueError):
     pass
 

@@ -1,4 +1,3 @@
-import hashlib
 import sys
 import unittest
 from pathlib import Path
@@ -91,9 +90,50 @@ class TypicalPrice(unittest.TestCase):
         self.assertEqual(item["change"],100)
         self.assertIsNone(self.item([100,200])["change"])  # not enough history
 
+    def test_stale_item_shows_no_weekly_change(self):
+        days={2400+i:{"low":100 if i<7 else 200,"high":200,"listed":3} for i in range(14)}
+        item={"days":days,"price":200}
+        summarise(item, 2480)  # last seen 67 days before the market's newest day
+        self.assertIsNone(item["change"])
+
     def test_large_rise_reads_as_multiple(self):
         from pages import signed
         self.assertEqual((signed(7417),signed(150),signed(-92),signed(None)),("×75","+150%","-92%",""))
+
+
+class Journal(unittest.TestCase):
+    def root(self, files):
+        import tempfile
+        root=Path(tempfile.mkdtemp()); (root/"journal").mkdir()
+        self.addCleanup(__import__("shutil").rmtree, root)
+        for name, text in files.items(): (root/"journal"/name).write_text(text)
+        return root
+
+    def test_entry_and_template(self):
+        entry="---\ntitle: Frost test\ntype: build   # guide, build or discovery\nclass: Mage\nstatus: tested\ndate: 2026-11-05\n---\n## Gear\nText"
+        entries=load_journal(self.root({"frost.md":entry,"_template.md":entry}))
+        self.assertEqual([(e["title"],e["type"],e["class"],e["slug"]) for e in entries],[("Frost test","build","Mage","frost")])
+        self.assertIn("<h2>Gear</h2>",entries[0]["html"])
+
+    def test_bad_header_is_explained(self):
+        for text, problem in (("no header","header"),("---\ntitle: X\ntype: build\n---\nx","date"),
+                              ("---\ntitle: X\ntype: recipe\ndate: 2026-11-05\n---\nx","type"),
+                              ("---\ntitle: X\ntype: build\ndate: 5 Nov\n---\nx","")):
+            with self.subTest(text=text):
+                with self.assertRaisesRegex(ValueError, problem): load_journal(self.root({"x.md":text}))
+
+
+class MergingScans(unittest.TestCase):
+    def capture(self, sha, ts, items):
+        return {"environment":"forever","publish_markets":["Realm Horde"],"source_sha256":sha,"received_on":"2026-11-05",
+                "capture_date":"2026-11-05","capture_time":"","capture_timestamp":ts,"sample":{"complete_market":True},
+                "markets":{"Realm Horde":{"payload_sha256":sha,"items":items}}}
+
+    def test_two_accounts_same_day_are_combined(self):
+        a=self.capture("a",1,{"2589":{"m":20,"h":{"2500":25},"l":{"2500":20},"a":{"2500":40}}})
+        b=self.capture("b",2,{"2589":{"m":18,"h":{"2500":22},"l":{"2500":18},"a":{"2500":15}}})
+        day=build_markets([a,b],{})[0]["items"][0]["days"][2500]
+        self.assertEqual(day,{"low":18,"high":25,"listed":40})
 
 
 class CurrentAuctionatorFormat(unittest.TestCase):

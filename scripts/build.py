@@ -18,7 +18,7 @@ from pathlib import Path
 
 import pages
 from auctionator import (InvalidCapture, PARSER_VERSION, day_date, item_id,
-                         load_market_extract, parse_capture, suffix)
+                         load_market_extract, newest_day, parse_capture, suffix)
 from markup import render
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -61,9 +61,12 @@ def collect(root: Path = ROOT) -> list[dict]:
         if not times:
             raise InvalidCapture(f"{path.name} records no scan time")
         moment = datetime.fromtimestamp(max(times), timezone.utc)
+        newest = newest_day({m: parsed["markets"][m] for m in receipt["publish_markets"] if m in parsed["markets"]})
         captures.append({**receipt, **parsed, "capture_timestamp": max(times),
                          "capture_time": moment.isoformat().replace("+00:00", "Z"),
-                         "capture_date": moment.date().isoformat(), "source_file": path.name})
+                         "capture_date": day_date(newest) if newest is not None else moment.date().isoformat(),
+                         "environment_label": ENVIRONMENTS[receipt["environment"]],
+                         "source_file": path.name})
     return sorted(captures, key=lambda c: (c["capture_timestamp"], c["source_sha256"]))
 
 
@@ -114,8 +117,14 @@ def build_markets(captures: list[dict], names: dict) -> list[dict]:
                                                        "name": item_name(key, names), "days": {}})
                 item["price"], item["price_scan"] = fields["m"], capture["capture_date"]
                 for day, high in fields["h"].items():
-                    item["days"][int(day)] = {"low": fields["l"].get(day, high), "high": high,
-                                              "listed": fields["a"].get(day)}
+                    # Within one account's file a day's values only widen as the day goes on, and two
+                    # accounts scanning the same day each hold part of it, so combine rather than overwrite.
+                    new = {"low": fields["l"].get(day, high), "high": high, "listed": fields["a"].get(day)}
+                    old = item["days"].get(int(day))
+                    if old:
+                        new = {"low": min(old["low"], new["low"]), "high": max(old["high"], new["high"]),
+                               "listed": max((v for v in (old["listed"], new["listed"]) if v is not None), default=None)}
+                    item["days"][int(day)] = new
     result = []
     for market in markets.values():
         items = list(market["items"].values())
@@ -157,7 +166,7 @@ def summarise(item: dict, last_day: int | None) -> None:
     item["recent_days"], item["before_days"] = len(recent), len(before)
     earlier = median(before)
     item["change"] = (round((item["typical"] - earlier) / earlier * 100)
-                      if len(recent) >= 2 and len(before) >= 2 and earlier else None)
+                      if item["current"] and len(recent) >= 2 and len(before) >= 2 and earlier else None)
     item["spark"] = ([days[d]["low"] if d in days else None for d in range(last_day - SPARK_DAYS + 1, last_day + 1)]
                      if last_day is not None else [])
 

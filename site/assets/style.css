@@ -231,7 +231,8 @@ tr.detail td { padding: 0.8rem 0 1.2rem; cursor: default; }
 .prose pre { background: var(--paper-deep); padding: 0.8rem 1rem; overflow-x: auto; border-radius: 3px; }
 .prose pre code { background: none; padding: 0; }
 .prose hr { border: 0; border-top: 1px solid var(--rule); margin: 2em 0; }
-.prose table { margin: 0.5em 0; }
+.prose table { margin: 0.5em 0; width: auto; min-width: min(100%, 32rem); }
+table.prices tbody tr:focus-visible { outline-offset: -2px; }
 
 /* Small screens ----------------------------------------------------------------- */
 

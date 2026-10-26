@@ -114,6 +114,7 @@ async function marketBrowser(section) {
     status.textContent = "Showing the list built into this page. Reload to search and sort every item.";
     return;
   }
+  document.getElementById("partial-note")?.remove();  // the full list is loaded now
   const params = new URLSearchParams(location.search);
   filter.value = params.get("q") || "";
   if (filter.value) {
@@ -168,6 +169,8 @@ async function marketBrowser(section) {
     for (const item of view.slice(start, start + PAGE_SIZE)) {
       const row = el("tr");
       row.dataset.key = item.key;
+      row.tabIndex = 0;  // keyboard: Tab to a row, Enter or Space opens its daily prices
+      row.setAttribute("aria-expanded", "false");
       const name = el("th");
       name.scope = "row";
       const link = el("a", item.name);
@@ -208,6 +211,7 @@ async function marketBrowser(section) {
   function closeDetail() {
     if (!open) return null;
     open.previousElementSibling.classList.remove("open");
+    open.previousElementSibling.setAttribute("aria-expanded", "false");
     open.remove();
     const key = open.dataset.for;
     open = null;
@@ -224,6 +228,7 @@ async function marketBrowser(section) {
     detail.append(cell);
     row.after(detail);
     row.classList.add("open");
+    row.setAttribute("aria-expanded", "true");
     open = detail;
     try {
       if (!history) {
@@ -245,6 +250,13 @@ async function marketBrowser(section) {
     }
   }
 
+  tbody.addEventListener("keydown", event => {
+    const row = event.target.closest("tr[data-key]");
+    if (row && event.target === row && (event.key === "Enter" || event.key === " ")) {
+      event.preventDefault();
+      toggle(row);
+    }
+  });
   tbody.addEventListener("click", event => {
     if (event.target.closest("a")) return;
     const row = event.target.closest("tr[data-key]");

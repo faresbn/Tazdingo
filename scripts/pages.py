@@ -264,7 +264,7 @@ def market_page(site: Site, market: dict) -> str:
     scans = "".join(f'<li>{when(s["date"])}: {s["items"]:,} items{" (no change since the previous scan)" if s["unchanged"] else ""}</li>'
                     for s in reversed(market["scans"]))
     shown = market["current"] if market["current"] else market["items"]
-    more = (f'<p class="note">This list shows the first {SERVER_ROWS:,} of {len(shown):,}. Search, or download the full list below.</p>'
+    more = (f'<p class="note" id="partial-note">This list shows the first {SERVER_ROWS:,} of {len(shown):,}. Download the full list below.</p>'
             if len(shown) > SERVER_ROWS else "")
     config = esc(f'{{"prices":"{files["prices_json"]}","history":"{files["history_json"]}"}}')
     return layout(site, f'{market["name"]} prices', f'''<header class="page-head">
@@ -305,8 +305,9 @@ def journal_index(site: Site, journal: list[dict]) -> str:
     kinds = sorted({e["type"] for e in journal})
     filters = ""
     if len(kinds) > 1:
-        buttons = "".join(f'<button type="button" data-filter="{k}">{esc(e)}</button>' for k, e in
-                          (("all", "Everything"),) + tuple((k, next(x["type_label"] for x in journal if x["type"] == k) + "s") for k in kinds))
+        plurals = {"guide": "Guides", "build": "Builds", "discovery": "Discoveries"}
+        buttons = "".join(f'<button type="button" data-filter="{k}">{esc(label)}</button>'
+                          for k, label in [("all", "Everything")] + [(k, plurals[k]) for k in kinds])
         filters = f'<div class="kind-filter" role="group" aria-label="Show">{buttons}</div>'
     body = (f'{filters}<ul class="entries large">{"".join(entry_item(e) for e in journal)}</ul>' if journal else
             '''<div class="empty-state">
@@ -345,7 +346,7 @@ def journal_entry(site: Site, entry: dict) -> str:
 
 
 def about(site: Site, markets: list[dict], captures: list[dict], names: dict | None) -> str:
-    scans = "".join(f'<li>{when(c["capture_date"])}, {esc(c["environment"])}: received {nice_date(c["received_on"])}, '
+    scans = "".join(f'<li>{when(c["capture_date"])}, {esc(c["environment_label"])}: received {nice_date(c["received_on"])}, '
                     f'{c["source_bytes"]:,} bytes, fingerprint <code>{esc(c["source_sha256"][:16])}</code></li>' for c in reversed(captures))
     name_note = (f'Item names come from ForeverDB\'s companion addon data (client build {esc(names.get("client_build"))}, fetched {nice_date(names["fetched_on"])}). '
                  if names else "")
@@ -358,7 +359,8 @@ def about(site: Site, markets: list[dict], captures: list[dict], names: dict | N
   <p><a href="{site.base}prices/">Prices</a> come from Auctionator scans made in game. After a scan, one command on Fares's Mac picks up the addon's file, keeps only the price records and publishes them here. Settings, posting history, searches and shopping lists never leave the Mac.</p>
   <p>The <a href="{site.base}journal/">journal</a> holds guides, builds and discoveries. Each entry says what kind it is, which class it's for, how well it's tested and when it was written. Entries are added only when Fares asks.</p>
   <h2>How prices are worked out</h2>
-  <p>Auctionator records the lowest buyout per item whenever a scan sees it, along with each day's lowest and highest price and the most units listed. A price here is the most recent of those, with the day it was seen. It is what someone was asking, not what anything sold for, and an item that wasn't seen for a while may cost something different now.</p>
+  <p>Auctionator records the cheapest listing per item whenever a scan sees it, along with each day's cheapest listing, how high that went during the day, and the most units listed. The <strong>typical price</strong> here is the middle value of each day's cheapest listing over the item's last seven days of records. Using the middle value means one troll listing or a one-day spike doesn't set the price. The <strong>latest</strong> price is shown beside it.</p>
+  <p>Both are what someone was asking, not what anything sold for, and an item that hasn't been seen for a while may cost something different now.</p>
   <p>Dates come from Auctionator's day counter, which starts at midnight on 1 January 2020 in the scanning player's time zone.</p>
   <h2>Reading from ChatGPT</h2>
   <p>ChatGPT finds pages through web search, so the site is open to search engines. For a complete read, point it at <a href="{site.base}llms-full.txt">llms-full.txt</a>, which holds every journal entry and each market's summary. Full price lists are in each market's TSV file. Both files also work as files uploaded to a ChatGPT project.</p>
