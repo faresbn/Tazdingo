@@ -57,11 +57,11 @@ It adds Sweeping Strikes on two or more targets, Whirlwind from Berserker Stance
 
 ### Levelling
 
-Icy Veins rates Arms weak solo but strong in groups. Wowhead finds it smooth from 20 thanks to Victory Rush, and recommends questing on green-level enemies. Sweeping Strikes at 30 lets you pull two at a time. The Whirlwind Weapon chain from the level 30 Berserker Stance quest ends in the best Warrior two-hander at this level. It needs help against level 38–40 enemies.
+Icy Veins rates Arms weak solo but strong in groups. Wowhead finds it smooth from 20 thanks to Victory Rush, and recommends questing on green-level enemies. Sweeping Strikes at 30 lets you pull two at a time. The Whirlwind Weapon chain (see the overview) gives the best two-hander at this level.
 
 ### Gear and consumables
 
-Weapon first, every guide agrees. Wowhead's level 30 picks include Corpsemaker from Razorfen Kraul, the Whirlwind Axe, and Blacksmithing's Officer's Belt and Veteran's Silvered Chain set. ForeverDB's sim ranks Elixir of Agility (+2.1%) and Bear Brisket (+1.7%) as the best level 30 consumables, and Blessing of Kings as the best party buff. Icy Veins adds Rage Potions, Elixir of Ogre Strength, Scroll of Strength II and sharpening stones. For campfires, Wowhead prefers Mining's Lodestone, but it doesn't stack with Blessing of Might, so use Blacksmithing's Sharpening Wheel instead next to a Paladin.
+Weapon first, every guide agrees. Wowhead's level 30 picks include Corpsemaker from Razorfen Kraul, the Whirlwind Axe, and Blacksmithing's Officer's Belt and Veteran's Silvered Chain set. ForeverDB's sim ranks Elixir of Agility (+2.1%) and Bear Brisket (+1.7%) as the best level 30 consumables, and Blessing of Kings as the best party buff. Icy Veins adds Rage Potions and Elixir of Ogre Strength. For campfires, Wowhead prefers Mining's Lodestone, but it doesn't stack with Blessing of Might, so use Blacksmithing's Sharpening Wheel instead next to a Paladin.
 
 | Source | Stat order |
 |---|---|

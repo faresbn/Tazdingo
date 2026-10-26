@@ -65,11 +65,11 @@ Whirlwind sits above Bloodthirst there. Before 36 Fury has neither, which is why
 
 ### Levelling
 
-Icy Veins and Wowhead both call Fury a slow solo leveller that shines in groups. Icy Veins suggests levelling another spec and respeccing once Flurry and good weapons arrive. You can't dual-wield before 20. Icy Veins switches to two weapons at 20, and Wowhead's level 30 build is built around them. ForeverDB's levelling builds stay on a two-hander and keep dual-wielding for its dungeon build. Wowhead's tips: keep weapons current, never waste an Overpower, and save Rage for the next pack rather than dumping it into Execute. In dungeons, don't be afraid to take a few hits, since damage taken is Rage.
+Icy Veins and Wowhead both call Fury a slow solo leveller that shines in groups. Icy Veins suggests levelling another spec and respeccing once Flurry and good weapons arrive. You can't dual-wield before 20. Icy Veins switches to two weapons at 20, and Wowhead's level 30 build is built around them. ForeverDB's levelling builds stay on a two-hander and keep dual-wielding for its dungeon build. Wowhead's tips: keep weapons current, never waste an Overpower, and don't fear taking a few hits in dungeons, since damage taken is Rage.
 
 ### Gear and consumables
 
-ForeverDB's level 30 list suggests Swinetusk Shank (Razorfen Kraul) and Bloody Brass Knuckles (Scarlet Monastery), drop sources from Classic data. Wowhead lists the Whirlwind Axe, Tusken Helm, Saltscale Girdle (Excavation Site: Wetlands), and Blacksmithing's Veteran's Silvered Chain Helm and Officer's Belt. ForeverDB's sim ranks Bear Brisket (+2.8%) and Scroll of Strength II (+2.6%) as the best level 30 consumables, and Blessing of Might as the best party buff (+5.2%). Wowhead likes Skinning's Camp Chair at campfires, because crit feeds Rage. For professions, Wowhead favours Engineering, with Alchemy as an option; Icy Veins suggests Mining and Blacksmithing while levelling.
+ForeverDB's level 30 list suggests Swinetusk Shank (Razorfen Kraul) and Bloody Brass Knuckles (Scarlet Monastery), drop sources from Classic data. Wowhead lists the Whirlwind Axe, Saltscale Girdle (Excavation Site: Wetlands) and Blacksmithing's Officer's Belt. ForeverDB's sim ranks Bear Brisket (+2.8%) and Scroll of Strength II (+2.6%) as the best level 30 consumables, and Blessing of Might as the best party buff (+5.2%). Wowhead likes Skinning's Camp Chair at campfires, because crit feeds Rage. For professions, Wowhead favours Engineering, with Alchemy as an option; Icy Veins suggests Mining and Blacksmithing while levelling.
 
 | Source | Stat order |
 |---|---|

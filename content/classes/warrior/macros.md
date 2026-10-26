@@ -165,15 +165,6 @@ This is a short list, not a full library: each source's page has more. Level req
 /cast [mod:shift] Cleave; Heroic Strike
 ```
 
-**Death Wish with trinkets** (ForeverDB): lines up Death Wish with both trinkets' on-use effects.
-
-```
-#showtooltip Death Wish
-/cast Death Wish
-/use 13
-/use 14
-```
-
 **Victory Rush** (Kami Labs): starts swinging and uses Victory Rush after a kill, from level 20.
 
 ```

@@ -31,7 +31,7 @@ From Blizzard's [deep dive](https://worldofwarcraft.blizzard.com/en-us/news/2430
 - Iron Will, Improved Bloodrage, Improved Disarm and Improved Shield Bash moved up the tree, so players without a shield can reach Last Stand. Blizzard wants Protection usable as a PvP secondary spec.
 - Blizzard's 24 September notes moved Focused Rage up to tier 5 (30) and Bastion down to tier 6 (35), so tanks get cheaper attacks before Shield Slam ([ForeverDB](https://foreverdb.net/article/outlook-warrior)).
 
-Defensive Stance's tooltip now states its 30% threat bonus. [Shield Block](https://foreverdb.net/spell/2565) blocks two attacks, and [Shield Wall](https://foreverdb.net/spell/871) gives 60% less damage for 12 sec on a 15 min cooldown. Sunder Armor's threat was corrected on 24 September and scales with attack power ([ForeverDB](https://foreverdb.net/class/Warrior/pve)).
+[Shield Block](https://foreverdb.net/spell/2565) blocks two attacks, and [Shield Wall](https://foreverdb.net/spell/871) gives 60% less damage for 12 sec on a 15 min cooldown.
 
 ### Talents by level
 
@@ -52,7 +52,7 @@ With Legacy points, Wowhead adds Improved Sunder Armor 2 and Focused Rage 3. Icy
 
 - **Wowhead (30), one target:** Charge, Bloodrage, Shield Block, Revenge, Thunder Clap, Demoralizing Shout, Sunder Armor (five stacks on bosses), Rend if threat is safe, Heroic Strike with spare Rage. On packs it moves Thunder Clap up, then tabs Rend between enemies and uses Cleave with excess Rage.
 - **Icy Veins:** Shield Block on cooldown (two blocks refund its 10 Rage), Revenge whenever it lights up, Thunder Clap on cooldown on packs, Rend early, one or two Sunders. Tab between enemies every few seconds to spread threat.
-- **ForeverDB's level 30 card:** Charge, Defensive Stance, Shield Block, Revenge, Sunder Armor, Heroic Strike, with Shield Bash for casters, Taunt for loose enemies and Concussion Blow as a stun.
+- **ForeverDB's level 30 card:** Charge, Defensive Stance, Shield Block, Revenge, Sunder Armor, Heroic Strike.
 
 The [WoWSims APL](https://github.com/wowsims/forever/blob/master/ui/specs/warrior/protection/apls/default.apl.json), built for level 60, runs:
 
@@ -74,7 +74,7 @@ At every level the core is Shield Block into Revenge, with Thunder Clap for pack
 
 ### Gear and consumables
 
-Wowhead's level 30 picks include Pronged Reaver (Razorfen Kraul), Jimmied Handcuffs (Stockade), Thermaplugg Medal of Honor (Gnomeregan), Tiger Hunter Gloves and Blacksmithing's Officer's Belt and Veteran's set. At 20 it likes Bandsaw Wristbands, which pair with Shield Block. ForeverDB points to Forever's new Guard's Silvered Chain Leggings and Sentinel's Belt. WoWSims' level 60 kit: Major Frenzy Potion, Elixirs of Greater Defense, the Phalanx and the Mongoose, and Major Healthstone. Icy Veins adds Scroll of Protection III. Wowhead notes that Engineering's grenades solve ranged pulling.
+Wowhead's level 30 picks include Pronged Reaver (Razorfen Kraul), Thermaplugg Medal of Honor (Gnomeregan) and Blacksmithing's Officer's Belt. At 20 it likes Bandsaw Wristbands, which pair with Shield Block. ForeverDB points to Forever's new Guard's Silvered Chain Leggings and Sentinel's Belt. WoWSims' level 60 kit: Major Frenzy Potion, Elixirs of Greater Defense, the Phalanx and the Mongoose, and Major Healthstone. Icy Veins adds Scroll of Protection III. Wowhead notes that Engineering's grenades solve ranged pulling.
 
 | Source | Stat order |
 |---|---|
@@ -87,7 +87,6 @@ Wowhead's level 30 picks include Pronged Reaver (Razorfen Kraul), Jimmied Handcu
 - **Sunder Armor threat:** Wowhead's level 20 page says it has a very low threat value in the beta, so tab-Sundering packs isn't worth it. ForeverDB, citing Blizzard's 24 September fix, recommends tab-Sundering. Both agree that Demoralizing Shout causes no threat right now, a known issue Blizzard has listed.
 - **Defiance at 30:** ForeverDB's dungeon build and Wowhead take all three ranks. Icy Veins' calculator leaves it out, though its text mentions it.
 - **Survival or threat first:** ForeverDB ranks survival stats first; Icy Veins puts weapon damage, hit and Strength first.
-- **Cleave or Rend on packs:** Wowhead says tab-targeted Rend usually beats Cleave unless your weapon is unusually strong.
 
 ## Ledger findings
 
