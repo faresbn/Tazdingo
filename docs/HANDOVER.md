@@ -31,6 +31,7 @@ The running record of where Forever Ledger stands, kept current at every checkpo
 
 - Pages run long in places ("What the guides say" is 850–1,000 words on most spec pages, 1,900 on dungeons and raids). Trim when a page is next edited.
 - The countdown counts calendar days to 4 November in the visitor's time zone, but servers open at 23:00 UTC (02:00 on 5 November in the Gulf), so east of UTC it says "opens today" on the 4th and "Day 2" at the moment servers open. A fix would count to the launch moment; not done, as it wasn't in the plan.
+- **iCloud duplicates:** the repo sits in `~/Documents`, which iCloud Drive syncs. On 27 Oct it created byte-identical "… 2.md" / "… 2.webp" copies of about 240 recently written files (none inside `.git`). The build rejects an unknown page like `content/professions/alchemy 2.md`, so a scan import would stop. If `git status` shows "… 2" files, compare each with its original (`cmp`) and delete the identical ones. Moving the repo out of iCloud (or turning off Desktop & Documents sync) would end it; that's Fares's call.
 - Screenshots: none yet. Take them after launch (see "After launch").
 
 ## Open decisions for Fares
