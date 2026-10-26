@@ -20,6 +20,8 @@ class Page(HTMLParser):
         self.handlers = getattr(self, "handlers", []) + [f"<{tag} {k}>" for k, _ in attrs if k.startswith("on")]
         for key, value in attrs:
             if key == "id" and value:
+                if value in self.ids:
+                    self.duplicate_ids = getattr(self, "duplicate_ids", []) + [value]
                 self.ids.add(value)
             if key in ("href", "src", "action") and value and value.strip().lower().startswith(("javascript:", "data:text", "ledger:")):
                 self.handlers.append(f"<{tag} {key}={value[:30]}>")
@@ -70,6 +72,7 @@ def check(out=None, base="/FvrRepo/"):
         assert page.h1 == 1, f"Expected exactly one h1: {path}"
         assert not getattr(page, "handlers", []), f"Event handler or script link in {path}: {page.handlers}"
         assert page.title.strip(), f"Missing title: {path}"
+        assert not getattr(page, "duplicate_ids", []), f"Duplicate section ids in {path}: {page.duplicate_ids[:5]}"
         assert "noindex" not in text, f"Page hidden from search: {path}"
         assert len(re.findall(r"<script(?![^>]*\bsrc=)", text)) <= 1, f"Unexpected inline script in {path}"  # only the theme snippet
         for link in page.links:

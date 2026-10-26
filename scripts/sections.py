@@ -91,7 +91,7 @@ def class_page(site: Site, ctx: dict, c: dict) -> str:
 
     def sub_page(anchor: str, title: str, note: dict | None, empty: str, after: str = "") -> str:
         """Hybrid builds and macros live on the class page; their own headings drop a level."""
-        body = render_sections(note, empty, only=("glance", "guides", "other", "findings"), sources=False)
+        body = render_sections(note, empty, only=("glance", "guides", "other", "findings", "more"))
         body = body.replace("<h2>", "<h3>").replace("</h2>", "</h3>")
         return f'<section class="sec sub-page" id="{anchor}"><h2>{title}</h2>{status_line(note)}{body}{after}</section>'
 

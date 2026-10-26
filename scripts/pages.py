@@ -198,6 +198,11 @@ def note_block(page: dict | None, empty: str) -> str:
     return status_line(page) + render_sections(page, empty)
 
 
+def plain_text(markup: str) -> str:
+    """Heading HTML as plain text: tags removed, entities decoded (escape once on output)."""
+    return html.unescape(re.sub(r"<[^>]+>", "", markup))
+
+
 def toc(page: dict | None, extra: tuple = ()) -> str:
     if not page:
         return ""
@@ -205,7 +210,7 @@ def toc(page: dict | None, extra: tuple = ()) -> str:
     for sec in page["sections"]:
         if not sec["heading"]:
             continue
-        sub = "".join(f'<li><a href="#{esc(anchor)}">{label}</a></li>' for anchor, label in sec["toc"])
+        sub = "".join(f'<li><a href="#{esc(anchor)}">{esc(plain_text(label))}</a></li>' for anchor, label in sec["toc"])
         items.append(f'<li><a href="#{esc(sec["slug"])}">{esc(sec["heading"])}</a>{f"<ol>{sub}</ol>" if sub else ""}</li>')
     items += [f'<li><a href="#{esc(anchor)}">{esc(label)}</a></li>' for anchor, label in extra]
     return f'<nav class="toc" aria-label="On this page"><h2 class="aside-title">On this page</h2><ol>{"".join(items)}</ol></nav>' if items else ""
@@ -340,7 +345,7 @@ def checklist_items(ctx: dict, limit: int = 6) -> list[tuple[str, str]]:
     for sec in page["sections"]:
         if sec["kind"] in ("findings", "more"):
             continue
-        items += [(anchor, re.sub(r"<[^>]+>", "", label)) for anchor, label in sec["toc"]]
+        items += [(anchor, plain_text(label)) for anchor, label in sec["toc"]]
     return items[:limit]
 
 
@@ -380,7 +385,7 @@ def home(site: Site, ctx: dict) -> str:
     if issues:
         for sec in issues["sections"]:
             if sec["kind"] not in ("findings", "more"):
-                issue_titles += [re.sub(r"<[^>]+>", "", label) for _, label in sec["toc"]]
+                issue_titles += [plain_text(label) for _, label in sec["toc"]]
     issue_line = (f'<p class="dash-note"><a href="{b}more/known-issues/">Known issues</a>: {len(issue_titles)} tracked, '
                   f'including “{esc(issue_titles[0])}”.</p>' if issue_titles else "")
 

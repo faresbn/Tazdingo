@@ -265,7 +265,7 @@ def ledger_links(html_text: str, base: str) -> str:
     return LEDGER_LINK.sub(lambda m: f'href="{base}{m.group(1)}"', html_text)
 
 
-def split_sections(body: str, base: str = "/") -> list[dict]:
+def split_sections(body: str, base: str = "/", prefix: str = "") -> list[dict]:
     """A note's `## ` sections, each rendered on its own, so the page can style them
     (the guides' summary, our findings and the sources look different)."""
     sections, current = [], {"heading": "", "lines": []}
@@ -283,8 +283,10 @@ def split_sections(body: str, base: str = "/") -> list[dict]:
         kind = SECTION_NAMES.get(sec["heading"].lower(), "other")
         empty = kind == "findings" and text.rstrip(".").lower() in ("", "nothing recorded yet")
         html_text = ledger_links(render(text, used), base)
+        if prefix:  # notes embedded in another page (a class's hybrid builds and macros) get their own anchors
+            html_text = re.sub(r'<(h[2-4]) id="', rf'<\1 id="{prefix}', html_text)
         result.append({"heading": sec["heading"], "kind": kind, "html": html_text, "empty": empty,
-                       "slug": kind if kind != "other" else (slugify(sec["heading"]) or "intro"),
+                       "slug": prefix + (kind if kind != "other" else (slugify(sec["heading"]) or "intro")),
                        "toc": re.findall(r'<h3 id="([^"]+)">(.*?)</h3>', html_text)})
     return result
 
@@ -317,6 +319,12 @@ def check_sections(name: str, key: str, body: str) -> None:
                          f" (found: {', '.join(headings) or 'none'})")
 
 
+def embedded_prefix(key: str) -> str:
+    """Hybrid builds and macros appear inside the class page, so their anchors are namespaced."""
+    part = key.rsplit("/", 1)[-1]
+    return f"{part}-" if key.startswith("classes/") and part in ("hybrid", "macros") else ""
+
+
 def load_content(root: Path, game: dict, launch: date, base: str = "/") -> dict:
     places = content_places(game)
     pages_ = {}
@@ -345,7 +353,7 @@ def load_content(root: Path, game: dict, launch: date, base: str = "/") -> dict:
         # an edit after launch doesn't make old Beta advice current.
         status = meta.get("status") or "pre-launch"
         pages_[key] = {**meta, **places[key], "key": key, "file": name, "body": body, "html": ledger_links(render(body), base),
-                       "sections": split_sections(body, base), "status": status, "status_label": STATUS[status],
+                       "sections": split_sections(body, base, embedded_prefix(key)), "status": status, "status_label": STATUS[status],
                        "confidence_label": CONFIDENCE.get(meta.get("confidence", ""), "")}
     return pages_
 
