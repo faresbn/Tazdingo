@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "captures": [
+    {
+      "path": "data/captures/forever-beta/FOREVER_BETA_Auctionator.market.json",
+      "environment": "forever-beta",
+      "received_on": "2026-10-26",
+      "source_sha256": "249ef1a7d3a1bef1af965b32ea8bed90b199c9fc001351df19853aa3be06ae45",
+      "scope_source": "User-supplied historical Forever Beta export",
+      "publish_markets": [
+        "PvP",
+        "ClassicBetaPvP"
+      ],
+      "private_original_path": "data/captures/forever-beta/FOREVER_BETA_Auctionator.lua",
+      "extraction_sha256": "fb9c01cf2891b6a344b2f6d9723fb08a7abde1562e0a456a713cbd46f74f98ba"
+    },
+    {
+      "path": "data/captures/forever-beta/FOREVER_BETA_Auctionator_2026-10-10.market.json",
+      "environment": "forever-beta",
+      "received_on": "2026-10-26",
+      "source_sha256": "ea7c4b2a9cfd82cc7c53fdc7f2062892691e64eb0e1da0cc1ad1c6adbf933b1c",
+      "scope_source": "User-supplied historical Forever Beta export",
+      "publish_markets": [
+        "PvP",
+        "ClassicBetaPvP"
+      ],
+      "private_original_path": "data/captures/forever-beta/FOREVER_BETA_Auctionator_2026-10-10.lua",
+      "extraction_sha256": "9368320151d9cdcf4960760d9d83ffb729abb8e081d7042adfc82a0679f9e701"
+    },
+    {
+      "path": "data/captures/forever-beta/FOREVER_BETA_Auctionator_2026-10-17.market.json",
+      "environment": "forever-beta",
+      "received_on": "2026-10-26",
+      "source_sha256": "2f5fb65c7631270feb6241f5da2d7ba2bfaa0f7535ec03671e52257d0dce2c75",
+      "scope_source": "User-supplied historical Forever Beta export",
+      "publish_markets": [
+        "PvP",
+        "ClassicBetaPvP"
+      ],
+      "private_original_path": "data/captures/forever-beta/FOREVER_BETA_Auctionator_2026-10-17.lua",
+      "extraction_sha256": "a827064350a247d7d677ebf8a8641e2a0b9684a2ebadbb43410834f23977702e"
+    }
+  ]
+}

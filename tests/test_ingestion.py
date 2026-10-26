@@ -1,0 +1,83 @@
+import hashlib
+import sys
+import unittest
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/"scripts"))
+from auctionator import CBOR, InvalidCapture, LuaData, parse_capture, string_keys
+from build import collect, group_markets, partition_records
+
+
+class SafeFormats(unittest.TestCase):
+    def test_lua_binary_escapes(self):
+        self.assertEqual(LuaData(b'A = "a\\000\\255\\n\\\"\\\\"').read()["A"],b'a\x00\xff\n"\\')
+    def test_executable_lua_rejected(self):
+        for value in (b'A = os.execute("whoami")',b'A = {}\nprint("hello")',b'A = (function() return {} end)()',b'A = { ["x"]=1, ["x"]=2 }'):
+            with self.subTest(value=value):
+                with self.assertRaises(InvalidCapture): LuaData(value).read()
+    def test_cbor_rfc_vectors(self):
+        self.assertEqual(CBOR(bytes.fromhex("a14161190100")).complete(),{b"a":256})
+        self.assertEqual(CBOR(bytes.fromhex("83010203")).complete(),[1,2,3])
+    def test_malformed_cbor_rejected(self):
+        for raw in (b'\x19',b'\x01\x01',b'\x9f\xff',b'\xa2Aa\x01Aa\x02',b'\xfb'+b'\x00'*8,b'\xd8\x18\x00',b'\x59\xff\xff'):
+            with self.subTest(raw=raw):
+                with self.assertRaises(InvalidCapture): CBOR(raw).complete()
+    def test_bounded_lua(self):
+        with self.assertRaises(InvalidCapture): LuaData(b'A='+b'{'*40+b'}'*40).read()
+    def test_normalised_key_collision_rejected(self):
+        with self.assertRaises(InvalidCapture): string_keys({b"m":1,"m":2})
+    def test_partition_keeps_variants_together(self):
+        records=[{"item_id":1,"item_key":"1"},{"item_id":2,"item_key":"2:1"},{"item_id":2,"item_key":"2:2"},{"item_id":3,"item_key":"3"}]
+        parts=list(partition_records(records,size=2))
+        self.assertEqual([[r["item_key"] for r in p] for p in parts],[["1"],["2:1","2:2"],["3"]])
+
+
+class OriginalCaptures(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        fingerprints=["249ef1a7d3a1bef1af965b32ea8bed90b199c9fc001351df19853aa3be06ae45","ea7c4b2a9cfd82cc7c53fdc7f2062892691e64eb0e1da0cc1ad1c6adbf933b1c","2f5fb65c7631270feb6241f5da2d7ba2bfaa0f7535ec03671e52257d0dce2c75"]
+        by_hash={c["source_sha256"]:c for c in collect()}
+        cls.captures=[by_hash[k] for k in fingerprints]
+    def test_recorded_source_fingerprints(self):
+        self.assertEqual([c["source_sha256"] for c in self.captures],[
+            "249ef1a7d3a1bef1af965b32ea8bed90b199c9fc001351df19853aa3be06ae45",
+            "ea7c4b2a9cfd82cc7c53fdc7f2062892691e64eb0e1da0cc1ad1c6adbf933b1c",
+            "2f5fb65c7631270feb6241f5da2d7ba2bfaa0f7535ec03671e52257d0dce2c75"])
+    def test_selected_sample_counts(self):
+        self.assertEqual([len(c["markets"]["PvP"]["items"]) for c in self.captures],[24]*3)
+        self.assertEqual([len(c["markets"]["ClassicBetaPvP"]["items"]) for c in self.captures],[6]*3)
+        self.assertTrue(all(c["sample"]["complete_market"] is False for c in self.captures))
+    def test_source_timestamps(self):
+        self.assertEqual([c["capture_time"] for c in self.captures],["2026-10-06T09:31:22Z","2026-10-10T12:46:23Z","2026-10-17T12:36:25Z"])
+    def test_raw_derived_sample_prices(self):
+        # Item 236 is directly traceable in the CBOR market strings (m values).
+        self.assertEqual([c["markets"]["PvP"]["items"]["236"]["m"] for c in self.captures],[6700,900,5000])
+        self.assertTrue(all(c["markets"]["ClassicBetaPvP"]["items"]["15115"]["m"]==1000 for c in self.captures))
+    def test_cached_market_not_counted_as_new(self):
+        groups=group_markets(self.captures)
+        self.assertEqual(len(groups["forever-beta-pvp"]["snapshots"]),3)
+        self.assertEqual(len(groups["forever-beta-classicbetapvp"]["snapshots"]),1)
+        self.assertEqual(len(groups["forever-beta-classicbetapvp"]["seen_in"]),3)
+    def test_identical_file_import_is_no_new_market_snapshot(self):
+        groups=group_markets(self.captures+self.captures)
+        self.assertEqual(len(groups["forever-beta-pvp"]["snapshots"]),3)
+    def test_input_order_does_not_rewrite_chronology(self):
+        # collect() establishes verified file chronology before grouping.
+        self.assertEqual([c["capture_date"] for c in self.captures],["2026-10-06","2026-10-10","2026-10-17"])
+    def test_originals_match_market_projection_when_available(self):
+        import json
+        receipts=json.loads((ROOT/"data/captures.json").read_text())["captures"]
+        paths=[ROOT/r["private_original_path"] for r in receipts if "private_original_path" in r]
+        if not paths or not all(p.is_file() for p in paths):
+            self.skipTest("Original Lua kept outside repository pending explicit upload approval; checked locally")
+        original={parse_capture(p)["source_sha256"]:parse_capture(p) for p in paths}
+        for capture in self.captures:
+            for name,market in capture["markets"].items():
+                full=original[capture["source_sha256"]]["markets"][name]
+                self.assertEqual(len(full["items"]),capture["sample"]["original_market_counts"][name])
+                for key,fields in market["items"].items():
+                    self.assertEqual(fields,full["items"][key])
+
+
+if __name__=="__main__": unittest.main()
