@@ -1,99 +1,98 @@
-# WoW Forever Journal
+# Forever Ledger
 
-Fares and Mike's shared notebook for World of Warcraft: Forever, published at
-https://faresbn.github.io/FvrRepo/. It holds Auction House prices from Fares's
-Auctionator scans, and the guides, builds and discoveries worth keeping. ChatGPT
-reads it too: everything is in one plain-text file, `llms-full.txt`.
+An unofficial journal for World of Warcraft: Forever, published at
+https://faresbn.github.io/FvrRepo/. It holds Auction House prices from our
+Auctionator scans, notes on classes, professions and the game's systems, and
+lists of addons, macros and known issues. The repository is private; only the
+built site is public, and the site never names the people behind it.
 
-This repository is private; only the built site is public. Fares writes to it,
-and Mike reads the site (directly or through ChatGPT).
+## Who writes what
+
+| What | Written by | How |
+|---|---|---|
+| Prices | Fares's Mac | `python3 scripts/ingest.py --push` after an in-game scan |
+| Notes (`content/`) | The shared ChatGPT project | Commits to `main`, following `docs/chatgpt/UPDATING.md` |
+| Game data (`data/foreverdb.json`, `data/items.json`) | Scripts | `scripts/foreverdb_data.py`, `scripts/item_names.py` |
+| Structure, design, checks | Claude or Codex | This README and AGENTS.md |
+
+Every push to `main` runs the tests, builds the site and checks it. Only a
+passing build is published, so a bad change leaves the previous site online.
 
 ## After a scan: add the prices
 
 Scan the Auction House in game, then log out or `/reload` so WoW writes the
-addon's file. Then, in this folder:
+addon's file. Then, in this folder, on `main`:
 
 ```sh
 python3 scripts/ingest.py --push
 ```
 
-That finds Forever's `Auctionator.lua` in `/Applications/World of Warcraft/_forever_`,
-keeps only the market price records, refreshes item names, runs the tests,
-builds and checks the site, commits, and pushes. Run it on `main`: a push to
-`main` is what republishes the site, which takes a minute or two. If anything
-fails, the import undoes itself and says which step stopped it.
+It finds Forever's `Auctionator.lua`, keeps only the market price records,
+refreshes item names, runs the tests, builds, checks, commits and pushes. If
+anything fails it undoes itself and says which step stopped it. The first time,
+it asks which market to publish (`--market "Realm Faction"`), then remembers.
+`--list` shows the file's markets. The original file never leaves the Mac.
 
-- The first time, it asks which market to publish (`--market "Realm Faction"`)
-  if the file holds more than one, then remembers the choice.
-- `--list` shows the markets in the file; `--no-commit` stops before git.
-- The original file never leaves the Mac. Settings, posting history, searches
-  and shopping lists stay in it; the repo keeps only its fingerprint.
+## Keeping ChatGPT in the loop
 
-## Add a journal entry
+- Paste `docs/chatgpt/PROJECT_INSTRUCTIONS.md` into the project's instructions.
+- Upload `docs/chatgpt/UPDATING.md` as a project source file: where each kind of
+  note goes, the file format, the commit-message rule and when to write.
+- ChatGPT reads the site through `llms-full.txt` (everything in one file) and
+  each market's `prices.tsv`.
 
-Copy `journal/_template.md` to a new file in `journal/` (for example
-`frost-mage-levelling.md`), fill in the header and write the entry in Markdown.
-ChatGPT can draft it in this format. Commit and push, or ask Claude or Codex to
-add it. Entries are added only when Fares asks.
+## Refreshing game data
 
-The header's `type` is `guide`, `build` or `discovery`; `status` is `idea`,
-`testing`, `tested` or `outdated`. Links to foreverdb.net items and spells get
-tooltips on the site.
+```sh
+python3 scripts/foreverdb_data.py   # recipes, crates, camp items, other players' and vendor prices (~1 minute)
+python3 scripts/item_names.py       # item names
+```
 
-## How ChatGPT reads it
-
-ChatGPT's web tool opens pages it finds through search; it refuses most pasted
-links. So the site is open to search engines, and:
-
-- `llms.txt` is a short index; `llms-full.txt` holds the reading guide, every
-  journal entry, and each market's summary and price table.
-- Each market has `prices.tsv` (every item: typical and latest price, last seen,
-  units listed, weekly change) and `history.tsv` (daily lowest and highest
-  price and units listed).
-- `llms-full.txt` and `prices.tsv` also work as files uploaded to a ChatGPT
-  project, for when search can't find the site.
-- `docs/chatgpt-project-instructions.md` is the text to paste into the shared
-  ChatGPT project, including the format ChatGPT uses to draft journal entries.
+Both fetch from ForeverDB, politely, with the credit "Data from ForeverDB.net"
+shown on the site. Run them after launch to replace pre-launch data; the
+Pre-launch labels clear once the data is fetched on or after 4 November.
 
 ## How prices work
 
-Auctionator records, per item, the cheapest listing each time a scan sees it,
-plus each day's cheapest and highest-cheapest listing and the most units
-listed. The site's **typical price** is the median of each day's cheapest
-listing over the item's last seven days of records, so one troll listing or
-one-day spike doesn't set the price. **Latest** is the most recent cheapest
-listing. Day numbers count from midnight on 1 January 2020, as in
-Auctionator's `Constants/Main.lua`.
+- **Typical price:** the median of each day's cheapest listing over the item's
+  last seven days of records, so a troll listing or one-day spike doesn't set it.
+- **Latest:** the most recent cheapest listing.
+- **Steadiness:** how far the daily price swings over two weeks, from the
+  cheapest day to the 80th-percentile day, relative to the median (steady below
+  25%, moving below 75%, volatile above).
+- **Gold-making tables** use our price when it's current, traded and seen on at
+  least three days, otherwise ForeverDB players' median when enough players saw
+  it. Vendor-sold reagents use the vendor price.
+- **Days** follow Auctionator's own counter, which starts on 1 January 2020.
 
 ## Working on the site
 
-Standard-library Python 3.10+ and nothing to install.
+Standard-library Python 3.11+, nothing to install.
 
 ```sh
 python3 -m unittest discover -s tests   # tests
 python3 scripts/build.py                # build into dist/
-python3 scripts/check_site.py           # check links, headings and data files
-python3 scripts/item_names.py           # refresh item names from ForeverDB
+python3 scripts/check_site.py           # links, headings, data files, no names
 ```
 
 To preview, serve `dist` under `/FvrRepo/` (see `.claude/launch.json`).
-GitHub Actions runs the same three checks on every push and publishes `main`.
 
 | Path | What it is |
 |---|---|
-| `data/captures.json` | One receipt per scan: fingerprints, environment, markets published |
-| `data/captures/<environment>/` | Market-only extracts of each scan |
-| `data/items.json` | Item names (Data from ForeverDB.net) |
-| `journal/` | Journal entries in Markdown |
-| `scripts/auctionator.py` | Reads SavedVariables and Auctionator's CBOR data without running Lua |
-| `scripts/build.py`, `scripts/pages.py` | Builds the site; page templates |
-| `site/assets/` | Styles, script, hero art |
+| `content/` | Notes, one Markdown file per spec, profession, world topic or list |
+| `data/game.json` | Classes, specs, professions, world topics, source links, launch date |
+| `data/captures.json`, `data/captures/` | Scan receipts and market-only extracts |
+| `data/foreverdb.json`, `data/items.json` | ForeverDB-derived data and item names |
+| `scripts/auctionator.py` | Reads SavedVariables and Auctionator's data without running Lua |
+| `scripts/build.py`, `pages.py`, `sections.py` | Builds the site; page templates |
+| `docs/chatgpt/` | Instructions for the ChatGPT project |
 
-The Forever Beta closed on 23 October 2026. Its three scans stay as a sample of
-30 items; the full Beta catalogue is deliberately not published.
+The Forever Beta closed on 23 October 2026. Its three scans stay as a reference
+sample: the 975 items the gold-making tables need, labelled Beta.
 
 ## Credits
 
-Item names and tooltips: Data from ForeverDB.net (https://foreverdb.net), reused
-under the terms in its addon's NOTICE. The hero map is an original illustration
-generated for this project. World of Warcraft belongs to Blizzard Entertainment.
+Item names, recipes, crates, camp items, tooltips and second-opinion prices:
+Data from ForeverDB.net. The front-page map is an original illustration. World
+of Warcraft belongs to Blizzard Entertainment; this project isn't affiliated
+with or endorsed by Blizzard.

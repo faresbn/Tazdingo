@@ -394,8 +394,8 @@ def craft_page(site: Site, ctx: dict) -> str:
 
     def table(items):
         body = "".join(
-            f'<tr><th scope="row">{item_link(r["item"], r["name"])}{" ×" + str(r["count"]) if r["count"] > 1 else ""} {badge("new", "New in Forever") if r["new"] else ""}</th>'
-            f'<td>{esc(r["profession"])}</td><td class="num">{r["skill"]}</td>'
+            f'<tr><th scope="row">{item_link(r["item"], r["name"])}{" ×" + esc(r["count"]) if r["count"] > 1 else ""} {badge("new", "New in Forever") if r["new"] else ""}</th>'
+            f'<td>{esc(r["profession"])}</td><td class="num">{esc(r["skill"])}</td>'
             f'<td class="num">{money(r["sells"])} {source_tag(r["value_source"])}</td><td class="num">{money(r["cost"])}</td>'
             f'<td class="num margin">{money(r["margin"])}</td></tr>' for r in items)
         return (f'<div class="table-wrap"><table><thead><tr><th scope="col">Recipe</th><th scope="col">Profession</th><th scope="col" class="num">Skill</th>'
@@ -413,7 +413,7 @@ def craft_page(site: Site, ctx: dict) -> str:
   {table(rows[:25]) if rows else '<p class="empty">No recipe can be priced yet.</p>'}
   {groups}
   <section class="reading"><h2>How this is worked out</h2>
-  <p>A recipe is listed only when the product and every reagent have a price. Reagents a vendor sells are costed at the vendor's price; everything else at its typical Auction House price. A product only counts when it actually trades: seen in the last two weeks, at least five listed and not volatile, or sold widely on other realms. Margins are before the Auction House's cut and deposit. Skill is the level at which the recipe becomes available.</p>
+  <p>A recipe is listed only when the product and every reagent have a price. Reagents a vendor sells are costed at the vendor's price; everything else at its typical Auction House price. A product only counts when it actually trades: seen in the last two weeks on at least three days, at least five listed and not volatile, or listed widely on other realms. Margins are before the Auction House's cut and deposit. Skill is the level at which the recipe becomes available.</p>
   <p><a href="{site.base}prices/craft.tsv">Every priced recipe (TSV)</a></p></section>
 </section>''', active="prices", path="prices/craft/", description="World of Warcraft: Forever recipes ranked by crafting margin.")
 
@@ -423,7 +423,7 @@ def crates_page(site: Site, ctx: dict) -> str:
     for c in ctx["crates"]:
         cheap = c["cheapest"]
         others = ", ".join(f'{b["count"]} {esc(b["name"])} ({money(b["cost"]) if b["cost"] is not None else "no price"})' for b in c["bundles"] if b is not cheap)
-        rows.append(f'<tr><th scope="row">{item_link(c["item"], c["name"])}</th><td class="num">{c["level"]}</td>'
+        rows.append(f'<tr><th scope="row">{item_link(c["item"], c["name"])}</th><td class="num">{esc(c["level"])}</td>'
                     + (f'<td>{cheap["count"]} {esc(cheap["name"])} {source_tag(cheap["source"])}</td><td class="num">{money(cheap["cost"])}</td>' if cheap
                        else '<td colspan="2">No bundle priced yet</td>')
                     + f'<td class="others">{others}</td></tr>')
@@ -438,7 +438,7 @@ def crates_page(site: Site, ctx: dict) -> str:
 
 def materials_page(site: Site, ctx: dict) -> str:
     rows = "".join(f'<tr><th scope="row">{item_link(r["item"], r["name"])}</th><td class="num">{money(r["value"])} {source_tag(r["source"])}</td>'
-                   f'<td>{steadiness(r["volatility"]) if r["source"] == "our scan" else ""}</td><td class="num">{count(r["listed"])}</td><td class="num">{r["used_in"]}</td></tr>'
+                   f'<td>{steadiness(r["volatility"]) if r["source"] == "our scan" else ""}</td><td class="num">{count(r["listed"])}</td><td class="num">{esc(r["used_in"])}</td></tr>'
                    for r in ctx["materials"][:80])
     return layout(site, "Materials worth gathering", page_head("Materials worth gathering", "Herbs, ores, leather, cloth and drops that no recipe makes and no vendor sells, by what they fetch.",
                                                                 (("Prices", f"{site.base}prices/"),), data_note(ctx, "Reagents")) + f'''

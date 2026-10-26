@@ -144,7 +144,7 @@ class PriceTools(unittest.TestCase):
 
     def test_volatile_or_thin_products_are_skipped(self):
         fdb={"recipes":{"Alchemy":[{"name":"Elixir","skill":1,"item":10,"count":1,"reagents":[[1,1]],"learned":"a","new":False}]}}
-        for product in (self.item(500,vol="volatile"),self.item(500,listed=1)):
+        for product in (self.item(500,vol="volatile"),self.item(500,listed=1),self.item(500,vol=None)):
             with self.subTest(product=product):
                 self.assertEqual(craft_table(fdb,{10:product,1:self.item(100)},{}),[])
 

@@ -85,8 +85,8 @@ What the research established: ChatGPT's GitHub connector is **read-only**. Chat
 
 ## 6. Build order (9 days to launch)
 
-- [ ] **By 29 Oct:** structure, front-page journey, theme toggle and design; class and spec pages; More lists seeded from sources; Pre-launch labels; volatility; interim name. Checkpoints every 25–40 minutes.
-- [ ] **By 2 Nov:** connector and router (after your test); ChatGPT project instructions and source files; What to craft, Merchant's Favor and Gathering from ForeverDB data.
+- [x] **Done 26 Oct (night):** structure, front-page journey, theme toggle and design; class and spec pages; More lists seeded from sources; Pre-launch labels; steadiness; name Forever Ledger; What to craft, Waylaid Crates and Materials from ForeverDB data (Fares: "we have more than 30 items, and we have ForeverDB AH price data"); ChatGPT instructions (docs/chatgpt/), assuming direct GitHub writes per Fares.
+- [ ] **When Fares tests it:** ChatGPT committing from the shared project. If it can't, build the connector in section 3.
 - [ ] **Launch week:** first live scans; data refreshed to the live build so labels clear; review loop on phone and desktop.
 
 ## Decisions needed

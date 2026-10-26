@@ -1,20 +1,20 @@
 # Status
 
-Updated 26 October 2026.
+Updated 26 October 2026, after the Forever Ledger rebuild.
 
 ## Working
 
-- **Site:** https://faresbn.github.io/FvrRepo/ is built and published by GitHub Actions on every push to `main`.
-- **Scans:** `scripts/ingest.py` imported all three original Beta files end to end as if they were launch scans (4,238 items, about a second each), refused a duplicate, and undid itself cleanly when a check failed.
-- **Parser:** reads every current Auctionator market on this Mac (Anniversary and Classic Era, up to 32,000 items), including random-suffix gear. Old markets that use Auctionator's earlier formats are refused with a reason and don't block the rest of the file.
-- **Prices:** typical price (median of daily lows over the last seven days of records), latest price, last-seen date, units listed and weekly change, checked against real Beta data with troll listings and one-day spikes.
-- **Names:** 4,234 of 4,238 Beta items named from ForeverDB's addon data.
-- **ChatGPT reading the files:** given only `llms-full.txt` and `prices.tsv` from the launch-scale test, GPT answered price, profit, trend and journal questions correctly, flagged stale data, and refused to treat a test entry as a real build (26 October, through Codex on the ChatGPT plan).
-- **Two accounts:** scans from both accounts on the same day combine (lowest low, highest high, most units listed) instead of overwriting each other.
-- **Beta sample:** 30 items from three scans; the extracts match the original files record for record (the test runs whenever the originals are in `data/captures/forever-beta/`, which git ignores).
+- **Site:** https://faresbn.github.io/FvrRepo/, published by GitHub Actions on every push to `main`, only after tests, build and checks pass.
+- **Structure:** front page (countdown, site-wide search, Latest log, five doors), Prices (markets, What to craft, Waylaid Crates, Materials), Classes (9 classes, 27 specs, hybrid builds, macros), Professions (12), World (7 topics), More (addons, macros, known issues, sources).
+- **Prices:** typical price, latest, steadiness, last seen, units listed and weekly change. The Beta reference sample holds 975 items, checked record for record against the original files.
+- **Gold-making:** 382 priced recipes, the cheapest bundle for each of 30 Waylaid Crates, and materials by value. Built from ForeverDB data priced with our scans and ForeverDB players' prices.
+- **Scans:** `scripts/ingest.py` imports, checks, commits and publishes, and undoes itself on failure (tested end to end on the original Beta files).
+- **Notes:** `content/` files at known places; the build rejects anything else. Pre-launch labels are automatic.
+- **Themes:** light and dark follow the device, with a toggle.
 
 ## Still to prove
 
-- **ChatGPT finding the site through search.** The site is now open to search engines, but it isn't indexed yet. Until it is, upload `llms-full.txt` and `prices.tsv` to the ChatGPT project, or paste a link in a chat. Telling Bing about the site (IndexNow) is outward-facing, so it waits for Fares's go-ahead.
-- **The first real Forever scan** after launch on 4 November: the `_forever_` folder has no Auctionator data yet.
-- **The first journal entry**, written in ChatGPT and saved here. `docs/chatgpt-project-instructions.md` is the text to paste into the ChatGPT project so it drafts entries in the right format.
+- **ChatGPT writing to the repository** from the shared project. OpenAI documents the GitHub connector as read-only. If direct commits don't work, the fallback is a custom connector in the Business workspace (see `docs/sessions/2026-10-26-forever-redesign/plan.md`, section 3).
+- **ChatGPT finding the site through search:** not indexed yet. Until it is, upload `llms-full.txt` and `prices.tsv` to the project.
+- **The first live scan** after launch on 4 November, and a ForeverDB data refresh after launch to replace pre-launch data.
+- **ForeverDB API key:** requested by Fares; would add disenchanting and Beta-versus-live changes.

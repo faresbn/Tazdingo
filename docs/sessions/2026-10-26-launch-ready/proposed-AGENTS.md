@@ -2,12 +2,12 @@
 
 This is AGENTS.md; CLAUDE.md is a symlink to it. It holds what's true for every task in this repository.
 
-FvrRepo builds the **WoW Forever Journal** (https://faresbn.github.io/FvrRepo/): Auction House prices from Fares's Auctionator scans, and the guides, builds and discoveries Fares chooses to keep. Fares writes; Mike reads the site, directly or through their shared ChatGPT project. README.md explains how everything works; read it before changing anything.
+FvrRepo builds **Forever Ledger** (https://faresbn.github.io/FvrRepo/), an unofficial journal for World of Warcraft: Forever: Auction House prices from Fares's Auctionator scans, and notes on classes, professions, systems, addons, macros and known issues. The shared ChatGPT project writes the notes (docs/chatgpt/UPDATING.md); Fares imports scans. README.md explains how everything works; read it before changing anything.
 
 ## The two everyday tasks
 
 - **"Add the new scan":** run `python3 scripts/ingest.py --push` on `main`. It finds the file, imports, tests, builds, commits and publishes, and undoes itself if a check fails. If it stops, report its message; don't edit data files by hand to get past it.
-- **"Save this to the journal":** copy `journal/_template.md` to a new file and fill it in from what Fares gave you. Write an entry only when Fares asks, and only with content he or the conversation supplied. Never invent builds, prices, drop rates or discoveries, and keep tested, read and simulated claims distinct in the entry.
+- **Notes:** edit the right file in `content/` as docs/chatgpt/UPDATING.md describes. Never invent builds, prices, drop rates or discoveries, keep tested, read and simulated claims distinct, and never put a name or "ChatGPT" in a file or commit message: the public site is impersonal.
 
 ## Data rules
 

@@ -103,9 +103,9 @@ def professions_index(site: Site, ctx: dict) -> str:
 def profession_page(site: Site, ctx: dict, p: dict) -> str:
     total, new = profession_stats(ctx, p["name"])
     camp = [k for k in ctx["fdb"].get("camp", []) if k["profession"] == p["name"]]
-    camp_rows = "".join(f'<tr><th scope="row">{item_link(k["item"], k["name"])}</th><td class="num">{k["skill"]}</td><td>{esc(k["effect"])}</td></tr>' for k in camp)
+    camp_rows = "".join(f'<tr><th scope="row">{item_link(k["item"], k["name"])}</th><td class="num">{esc(k["skill"])}</td><td>{esc(k["effect"])}</td></tr>' for k in camp)
     crafts = [r for r in ctx["craft"] if r["profession"] == p["name"]][:8]
-    craft_rows = "".join(f'<tr><th scope="row">{item_link(r["item"], r["name"])}</th><td class="num">{r["skill"]}</td><td class="num">{money(r["margin"])} {source_tag(r["value_source"])}</td></tr>' for r in crafts)
+    craft_rows = "".join(f'<tr><th scope="row">{item_link(r["item"], r["name"])}</th><td class="num">{esc(r["skill"])}</td><td class="num">{money(r["margin"])} {source_tag(r["value_source"])}</td></tr>' for r in crafts)
     elsewhere = [(f"ForeverDB: {p['name']}", f"{FOREVERDB}/profession/{p['slug']}")]
     if p.get("wowhead"):
         elsewhere.append((f"Wowhead: {p['name']} levelling guide", f"https://www.wowhead.com/forever/guide/professions/{p['slug']}/overview-leveling"))
@@ -138,7 +138,7 @@ def world_data(site: Site, ctx: dict, slug: str) -> str:
         groups = {}
         for k in fdb["camp"]:
             groups.setdefault(k["profession"], []).append(k)
-        rows = "".join(f'<tr><td>{esc(prof)}</td><th scope="row">{item_link(k["item"], k["name"])}</th><td class="num">{k["skill"]}</td><td>{esc(k["effect"])}</td></tr>'
+        rows = "".join(f'<tr><td>{esc(prof)}</td><th scope="row">{item_link(k["item"], k["name"])}</th><td class="num">{esc(k["skill"])}</td><td>{esc(k["effect"])}</td></tr>'
                        for prof, kits in groups.items() for k in kits)
         return (f'<section class="spec"><h2>Every camp item {label}</h2><div class="table-wrap"><table><thead><tr><th scope="col">Profession</th>'
                 f'<th scope="col">Item</th><th scope="col" class="num">Skill</th><th scope="col">Effect</th></tr></thead><tbody>{rows}</tbody></table></div></section>')

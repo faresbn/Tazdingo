@@ -287,14 +287,17 @@ def load_content(root: Path, game: dict, launch: date) -> dict:
     return pages_
 
 
-def history(root: Path) -> list[dict]:
-    """Every change to the site's content, newest first, from git: the change log writes itself."""
-    try:
-        out = subprocess.run(["git", "log", "--format=%x1e%cs%x1f%s", "--name-only", "--",
-                              "content", "data/captures.json", "data/foreverdb.json"],
-                             cwd=root, capture_output=True, text=True, check=True).stdout
-    except (OSError, subprocess.CalledProcessError):
-        return []
+def history(root: Path, after: str | None = None) -> list[dict]:
+    """Every change to the site's content, newest first, from git: the change log writes itself.
+    `after` is the commit the public log starts from (data/game.json: log_after)."""
+    paths = ["--", "content", "data/captures.json", "data/foreverdb.json"]
+    for revisions in ([f"{after}..HEAD"] if after else [], []):
+        try:
+            out = subprocess.run(["git", "log", "--format=%x1e%cs%x1f%s", "--name-only", *revisions, *paths],
+                                 cwd=root, capture_output=True, text=True, check=True).stdout
+            break
+        except (OSError, subprocess.CalledProcessError):
+            out = ""  # not a git checkout, or the start commit isn't in a shallow clone
     entries = []
     for block in out.split("\x1e")[1:]:
         head, *files = block.strip().split("\n")
@@ -326,12 +329,13 @@ def price_book(market: dict | None, fdb: dict) -> dict:
 
 
 def market_value(entry: dict | None) -> tuple[int, str] | None:
-    """What an item sells for: our typical price when it's current, traded and not volatile;
-    otherwise ForeverDB's median across realms when enough players saw it."""
+    """What an item sells for: our typical price when it's current, traded, and steady or
+    moving over at least three days; otherwise ForeverDB's median across realms when enough
+    players saw it. A price seen on one or two days doesn't feed a gold-making table."""
     if not entry:
         return None
     ours = entry.get("ours")
-    if ours and ours["current"] and (ours["listed"] or 0) >= 5 and ours["volatility"] != "volatile":
+    if ours and ours["current"] and (ours["listed"] or 0) >= 5 and ours["volatility"] in ("steady", "moving"):
         return ours["typical"], "our scan"
     theirs = entry.get("fdb")
     if theirs and theirs.get("listed", 0) >= 20 and theirs.get("realms", 0) >= 2:
@@ -438,7 +442,7 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
     fdb = json.loads(fdb_path.read_text()) if fdb_path.exists() else {}
     markets = build_markets(captures, names["names"])
     content = load_content(root, game, launch)
-    log = history(root)
+    log = history(root, game.get("log_after"))
     built = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     commit = os.environ.get("GITHUB_SHA", "local")
     revision = hashlib.sha256(json.dumps({

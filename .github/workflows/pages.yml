@@ -22,6 +22,7 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
+          fetch-depth: 0  # the site's change log is built from git history
       - name: Test parser and original captures
         run: python3 -m unittest discover -s tests -v
       - name: Check browser script syntax

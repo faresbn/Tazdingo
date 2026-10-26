@@ -65,7 +65,12 @@ def parse_camp(raw: str) -> list[dict]:
     for entry in re.findall(r'\{(prof=.*?)\}(?=,\{prof=|\})', raw, re.S):
         fields = dict(re.findall(r'(\w+)=("(?:[^"\\]|\\.)*"|-?\d+)', entry))
         value = lambda k: lua_text(fields[k]) if fields.get(k, "").startswith('"') else int(fields[k]) if k in fields else None
-        kits.append({"profession": value("prof"), "tier": value("tier"), "skill": value("skill"), "item": value("item"),
+
+        def number(k):
+            if not re.fullmatch(r"-?\d+", fields.get(k, "")):
+                raise InvalidCapture(f"Camp.lua: {k} should be a number")
+            return int(fields[k])
+        kits.append({"profession": value("prof"), "tier": number("tier"), "skill": number("skill"), "item": number("item"),
                      "name": value("name"), "kit": value("kit") == 1,
                      "reagents": [[int(a), int(b)] for a, b in (r.split(":") for r in (value("reagents") or "").split(",") if r)],
                      "effect": value("fx")})
