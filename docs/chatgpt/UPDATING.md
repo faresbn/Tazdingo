@@ -126,7 +126,7 @@ Read on Wowhead's Frost guide; not tested yet.
 
 **Each finding** is a `###` heading with a short claim and, in brackets, its confidence (`idea`, `testing`, `tested` or `outdated`) and date, followed by how it's known.
 
-**Markdown that works:** headings, paragraphs, bullet and numbered lists (indent two spaces to nest), tables, `> quotes`, code blocks (for macros), **bold**, *italics* and links. Link items and spells to ForeverDB (`https://foreverdb.net/item/<id>`, `https://foreverdb.net/spell/<id>`) and the site shows their tooltip and icon. Raw HTML is shown as text, not run.
+**Markdown that works:** headings, paragraphs, bullet and numbered lists (indent two spaces to nest), tables, `> quotes`, code blocks (for macros), **bold**, *italics* and links. Link items and spells to ForeverDB (`https://foreverdb.net/item/<id>`, `https://foreverdb.net/spell/<id>`) and the site shows their tooltip and icon. Link to another ledger page with `ledger:` and its address, for example `[hybrid builds](ledger:classes/druid/#hybrid)` or `[Frost Mage](ledger:classes/mage/frost/)`; the site's check fails a link to a page or section that doesn't exist. Raw HTML is shown as text, not run.
 
 ## Commit messages
 

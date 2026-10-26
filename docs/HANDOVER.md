@@ -19,12 +19,14 @@ The running record of where Forever Ledger stands, kept current at every checkpo
 - **Design:** a quartermaster's field ledger (see docs/DECISIONS.md). Painted art generated through Codex: a hero pair (day and night), five section banners, nine class emblems, twelve profession emblems, paper and canvas textures, and the social card. Originals are in the session folder's `art/`.
 - **Records:** the archive Action keeps a backup of every changed page and a log in `archive/LOG.md`.
 
-## In flight
+## In flight (stopped at the usage limit, 27 Oct ~00:30)
 
-- [x] Infrastructure, templates, design, art, blue tracker, archive, review fixes (branch `ledger-v3`, checkpoint 1)
-- [ ] Research agents writing content: classes (5 agents), world and More (1); professions done
-- [ ] Review content, full build, browser review at phone and desktop in both themes, peer code review
-- [ ] Merge `ledger-v3` into `main`, push, verify live
+- [x] Infrastructure, templates, design, all art, blue tracker, archive, senior-review fixes, `ledger:` links (branch `ledger-v3`, pushed)
+- [x] Professions (12 pages) and Druid (6) written, reviewed and committed; source records in the session's `sources/`
+- [ ] **Uncommitted, written by research agents that may still be finishing:** other class folders under `content/classes/`, `content/world/`, and rewrites of `content/more/` (addons, known-issues, macros, launch). Next session: run `python3 scripts/build.py`. Its checks name any page that's incomplete or malformed; fix or finish those, spot-check a few against their sources, then commit.
+- [ ] Peer code review by GPT-6.1 Sol was running: its reply is in the scratchpad (`review3/reply.md`), if it finished. Otherwise rerun it from REVIEWER.md.
+- [ ] Full browser review at phone and desktop in both themes (desktop light and dark, phone menu, mega-menu, spec, profession and front pages were checked on the preview and work).
+- [ ] Merge `ledger-v3` into `main` once the build and checks pass, push, verify live, delete the branch. **`main` still serves v2 until then.**
 
 ## Open decisions for Fares
 

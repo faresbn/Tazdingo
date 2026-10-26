@@ -257,7 +257,15 @@ def content_places(game: dict) -> dict:
     return places
 
 
-def split_sections(body: str) -> list[dict]:
+LEDGER_LINK = re.compile(r'href="ledger:([a-z0-9/#-]*)"')
+
+
+def ledger_links(html_text: str, base: str) -> str:
+    """`ledger:classes/mage/frost/` in a page's Markdown links to that page on this site, whatever its address."""
+    return LEDGER_LINK.sub(lambda m: f'href="{base}{m.group(1)}"', html_text)
+
+
+def split_sections(body: str, base: str = "/") -> list[dict]:
     """A note's `## ` sections, each rendered on its own, so the page can style them
     (the guides' summary, our findings and the sources look different)."""
     sections, current = [], {"heading": "", "lines": []}
@@ -274,7 +282,7 @@ def split_sections(body: str) -> list[dict]:
         text = "\n".join(sec["lines"]).strip()
         kind = SECTION_NAMES.get(sec["heading"].lower(), "other")
         empty = kind == "findings" and text.rstrip(".").lower() in ("", "nothing recorded yet")
-        html_text = render(text, used)
+        html_text = ledger_links(render(text, used), base)
         result.append({"heading": sec["heading"], "kind": kind, "html": html_text, "empty": empty,
                        "slug": kind if kind != "other" else (slugify(sec["heading"]) or "intro"),
                        "toc": re.findall(r'<h3 id="([^"]+)">(.*?)</h3>', html_text)})
@@ -309,7 +317,7 @@ def check_sections(name: str, key: str, body: str) -> None:
                          f" (found: {', '.join(headings) or 'none'})")
 
 
-def load_content(root: Path, game: dict, launch: date) -> dict:
+def load_content(root: Path, game: dict, launch: date, base: str = "/") -> dict:
     places = content_places(game)
     pages_ = {}
     for path in sorted((root / "content").rglob("*")):
@@ -336,8 +344,8 @@ def load_content(root: Path, game: dict, launch: date) -> dict:
         # A page is Pre-launch until someone marks it Live after checking it in the live game:
         # an edit after launch doesn't make old Beta advice current.
         status = meta.get("status") or "pre-launch"
-        pages_[key] = {**meta, **places[key], "key": key, "file": name, "body": body, "html": render(body),
-                       "sections": split_sections(body), "status": status, "status_label": STATUS[status],
+        pages_[key] = {**meta, **places[key], "key": key, "file": name, "body": body, "html": ledger_links(render(body), base),
+                       "sections": split_sections(body, base), "status": status, "status_label": STATUS[status],
                        "confidence_label": CONFIDENCE.get(meta.get("confidence", ""), "")}
     return pages_
 
@@ -498,7 +506,7 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
     fdb_path = root / "data/foreverdb.json"
     fdb = json.loads(fdb_path.read_text()) if fdb_path.exists() else {}
     markets = build_markets(captures, names["names"])
-    content = load_content(root, game, launch)
+    content = load_content(root, game, launch, base)
     blue_path = root / "data/blue.json"
     blue = json.loads(blue_path.read_text()) if blue_path.exists() else {"posts": []}
     log = history(root, game.get("log_after"))

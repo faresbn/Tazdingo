@@ -21,7 +21,7 @@ class Page(HTMLParser):
         for key, value in attrs:
             if key == "id" and value:
                 self.ids.add(value)
-            if key in ("href", "src", "action") and value and value.strip().lower().startswith(("javascript:", "data:text")):
+            if key in ("href", "src", "action") and value and value.strip().lower().startswith(("javascript:", "data:text", "ledger:")):
                 self.handlers.append(f"<{tag} {key}={value[:30]}>")
             if key in ("href", "src", "srcset", "action") and value:
                 self.links.append(value.split()[0])

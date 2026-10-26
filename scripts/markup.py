@@ -14,7 +14,7 @@ EMPHASIS = [
     (re.compile(r"(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?![\w*])"), lambda m: f"<em>{m.group(1)}</em>"),
     (re.compile(r"(?<![\w_])_(?!\s)(.+?)(?<!\s)_(?![\w_])"), lambda m: f"<em>{m.group(1)}</em>"),
 ]
-LINK = re.compile(r"\[([^\]]+)\]\(((?:https?://|/|#)[^\s)]*)\)")
+LINK = re.compile(r"\[([^\]]+)\]\(((?:https?://|/|#|ledger:)[^\s)]*)\)")  # ledger:classes/mage/frost/ links to another page
 BARE_URL = re.compile(r"(?<![\"'=>])(https?://[^\s<\"']+[^\s<\"'.,;:!?)\]])")
 
 
