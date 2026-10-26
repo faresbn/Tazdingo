@@ -1,64 +1,80 @@
-"""Check the built publication's data and internal links, including item routes."""
+"""Check the built site before it's published: links, headings, data files agree."""
+import csv
 import json
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlsplit, unquote
+from urllib.parse import unquote, urlsplit
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[1]
 
 
-class Links(HTMLParser):
+class Page(HTMLParser):
     def __init__(self):
-        super().__init__(); self.links=[]; self.h1=0
-    def handle_starttag(self,tag,attrs):
-        if tag=="h1": self.h1+=1
-        for key,value in attrs:
-            if key in ("href","src") and value: self.links.append(value)
+        super().__init__()
+        self.links, self.h1, self.title, self._in_title = [], 0, "", False
+
+    def handle_starttag(self, tag, attrs):
+        self.h1 += tag == "h1"
+        self._in_title = tag == "title"
+        for key, value in attrs:
+            if key in ("href", "src", "srcset", "action") and value:
+                self.links.append(value.split()[0])
+
+    def handle_endtag(self, tag):
+        self._in_title = False if tag == "title" else self._in_title
+
+    def handle_data(self, data):
+        if self._in_title:
+            self.title += data
 
 
-def check(out=None,base="/FvrRepo/"):
-    out=Path(out or ROOT/"dist")
-    manifest=json.loads((out/"data/manifest.json").read_text())
-    assert manifest["project"]=="FvrRepo"
-    assert not list(out.rglob("*.lua")),"Private Lua in public output"
-    count=0
+def check(out=None, base="/FvrRepo/"):
+    out = Path(out or ROOT / "dist")
+    manifest = json.loads((out / "data/manifest.json").read_text())
+    assert not list(out.rglob("*.lua")), "Raw Lua in public output"
+    for required in ("index.html", "llms.txt", "llms-full.txt", "sitemap.xml", "prices/index.html", "journal/index.html", "about/index.html"):
+        assert (out / required).is_file(), f"Missing {required}"
+
+    def local(link):
+        parts = urlsplit(link)
+        if parts.scheme or parts.netloc or not parts.path or link.startswith("#"):
+            return None
+        assert parts.path.startswith(base), f"Link outside the site's base path: {link}"
+        target = (out / unquote(parts.path[len(base):])).resolve()
+        assert target.is_relative_to(out.resolve()), f"Link escapes the site: {link}"
+        return target / "index.html" if parts.path.endswith("/") else target
+
+    pages = 0
     for path in out.rglob("*.html"):
-        parser=Links(); parser.feed(path.read_text())
-        assert parser.h1==1,f"Expected one page heading: {path}"
-        for link in parser.links:
-            parts=urlsplit(link)
-            if parts.scheme or parts.netloc or not parts.path: continue
-            assert parts.path.startswith(base),f"Wrong project base path: {link}"
-            relative=unquote(parts.path[len(base):])
-            target=(out/relative).resolve()
-            assert target.is_relative_to(out.resolve()),f"Escaping public path: {link}"
-            if parts.path.endswith("/"): target=target/"index.html"
-            assert target.is_file(),f"Broken link in {path}: {link}"
-        count+=1
-    report=json.loads((out/"data/validation.json").read_text())
-    assert report["revision"]==manifest["revision"]
+        page = Page()
+        page.feed(path.read_text())
+        assert page.h1 == 1, f"Expected exactly one h1: {path}"
+        assert page.title.strip(), f"Missing title: {path}"
+        assert "noindex" not in path.read_text(), f"Page hidden from search: {path}"
+        for link in page.links:
+            target = local(link)
+            assert target is None or target.is_file(), f"Broken link in {path.relative_to(out)}: {link}"
+        pages += 1
+
     for market in manifest["markets"]:
-        latest=json.loads((out/market["latest_json"].removeprefix(base)).read_text())
-        assert len(latest["records"])==market["item_count"]
-        assert latest["revision"]==manifest["revision"]
-        partition_keys=[]
-        for part in market["partitions"]:
-            path=out/part["json"].removeprefix(base)
-            data=json.loads(path.read_text())
-            assert data["revision"]==manifest["revision"]
-            assert len(data["records"])==part["records"]
-            assert path.stat().st_size<65536,"Price partition exceeds the first-release size budget"
-            partition_keys.extend(r["item_key"] for r in data["records"])
-            history=json.loads((out/part["history_json"].removeprefix(base)).read_text())
-            assert set(history["history"])=={r["item_key"] for r in data["records"]}
-            assert history["revision"]==manifest["revision"]
-        assert len(partition_keys)==len(set(partition_keys))
-        assert set(partition_keys)=={r["item_key"] for r in latest["records"]}
-        for record in latest["records"]:
-            assert type(record["unit_price_copper"]) is int
-            assert record["quote_observed_at"] is None
-            assert record["source"] in latest["capture_sources"]
-    print(f"Verified {count:,} HTML pages, all internal links, market counts and publication revision {manifest['revision']}")
+        prices = json.loads((out / market["prices_json"].removeprefix(base)).read_text())
+        assert prices["revision"] == manifest["revision"], "Stale prices.json"
+        assert len(prices["rows"]) == market["items"]
+        with open(out / market["prices_tsv"].removeprefix(base), newline="") as handle:
+            rows = list(csv.DictReader(handle, delimiter="\t"))
+        assert len(rows) == market["items"], "TSV and catalogue disagree"
+        assert all(r["price_copper"].isdigit() for r in rows), "Non-integer price"
+        assert len({r["item_key"] for r in rows}) == len(rows), "Duplicate item key"
+        history = json.loads((out / market["history_json"].removeprefix(base)).read_text())
+        assert set(history["history"]) == {r["item_key"] for r in rows}
+    full = (out / "llms-full.txt").read_text()
+    for market in manifest["markets"]:
+        assert market["name"] in full, f"{market['name']} missing from llms-full.txt"
+    for entry in manifest["journal"]:
+        assert entry["title"] in full, f"Journal entry {entry['title']!r} missing from llms-full.txt"
+    print(f"Checked {pages} pages, {len(manifest['markets'])} markets and {len(manifest['journal'])} journal entries "
+          f"(revision {manifest['revision']}).")
 
 
-if __name__=="__main__": check()
+if __name__ == "__main__":
+    check()

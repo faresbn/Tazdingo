@@ -1,0 +1,38 @@
+{
+ "source": {
+  "credit": "Data from ForeverDB.net (https://foreverdb.net)",
+  "file": "Data/SearchNames.lua",
+  "data_version": "2026-10-25.b79902f8",
+  "client_build": "1.60.1.70532",
+  "sha256": "5384e39b8a8c1d8217cf15814ee95e940834ed8873a607f7c305eea65c0f2a9b",
+  "fetched_on": "2026-10-26"
+ },
+ "names": {
+  "236": "Cured Leather Armor",
+  "765": "Silverleaf",
+  "818": "Tigerseye",
+  "1206": "Moss Agate",
+  "1482": "Shadowfang",
+  "2318": "Light Leather",
+  "2319": "Medium Leather",
+  "2447": "Peacebloom",
+  "2449": "Earthroot",
+  "2450": "Briarthorn",
+  "2459": "Swiftness Potion",
+  "2589": "Linen Cloth",
+  "2592": "Wool Cloth",
+  "2770": "Copper Ore",
+  "2771": "Tin Ore",
+  "2835": "Rough Stone",
+  "2836": "Coarse Stone",
+  "2838": "Heavy Stone",
+  "2840": "Copper Bar",
+  "2996": "Bolt of Linen Cloth",
+  "2997": "Bolt of Woolen Cloth",
+  "3576": "Tin Bar",
+  "4234": "Heavy Leather",
+  "4306": "Silk Cloth",
+  "15115": "Rigid Gloves"
+ },
+ "missing": []
+}

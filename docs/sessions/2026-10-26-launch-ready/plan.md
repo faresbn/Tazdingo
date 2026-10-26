@@ -47,14 +47,23 @@ You and Mike ask your shared ChatGPT project about WoW Forever. FvrRepo is what 
 
 ## Steps
 
-- [ ] Parser: current key forms; decode only selected markets; tests with real-format fixtures
-- [ ] Item names: fetch + verify ForeverDB names; `data/items.json`; credit
-- [ ] Ingest command: find file, extract, receipt, names, test, build, commit/push
-- [ ] Build rewrite: market pages, data files, `fvrrepo.md`, sitemap, journal
-- [ ] Design + Codex hero art
+- [x] Parser: current key forms; decode only selected markets; tests with real-format fixtures
+- [x] Item names: fetch + verify ForeverDB names; `data/items.json`; credit
+- [x] Ingest command written (`scripts/ingest.py`); end-to-end run still to do
+- [x] Build rewrite: market pages, data files, `llms.txt` + `llms-full.txt` (replacing the planned `fvrrepo.md`: same idea, the name ChatGPT and other assistants already look for), sitemap, journal
+- [x] Design + Codex hero art (day and night maps); hero reworked so the map dissolves into the page
 - [ ] Checks: tests, build, site check, browser check (desktop + phone), launch-scale dry run on a real current file (not committed)
 - [ ] Docs: README, STATUS; remove superseded BUILD_PLAN/DATA_CONTRACT
 - [ ] Merge to main, push, verify the live site
+
+## Review loop (added at Fares's request: "Continue going through the website until you're convinced it delivers well")
+
+Each pass goes through every page at phone, tablet and desktop widths in light and dark, as each reader:
+- **Fares after a scan:** can the scan get in with one command, and does the site show it correctly?
+- **Mike via ChatGPT:** can ChatGPT answer "what does Linen Cloth cost?" and "what's our frost mage build?" from `llms-full.txt` alone?
+- **Mike on a phone:** can a price be found in under 10 seconds?
+
+Then fix what's found and go round again. A checkpoint is merged to `main` (and so published) every 25–40 minutes, but only when tests, build and site check pass.
 
 ## Checks for done
 

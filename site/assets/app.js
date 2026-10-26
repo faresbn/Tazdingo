@@ -1,131 +1,247 @@
 "use strict";
-const PAGE_SIZE = 10;
-const browser = document.querySelector("#market-browser");
-if (browser) {
-  const config = JSON.parse(browser.dataset.config);
-  const input = document.querySelector("#item-search");
-  const selection = document.querySelector("#partition-select");
-  const counter = document.querySelector("#search-count");
-  const tableBody = document.querySelector("#market-table tbody");
-  const previous = document.querySelector("#previous-page");
-  const next = document.querySelector("#next-page");
-  const cache = new Map();
-  let records = [];
-  let page = 0;
-  let request = 0;
-  let partIndex = 0;
-  let globalMode = false;
-  let isLookup = false;
-  const dateSelect = document.querySelector("#capture-select");
-  const sortSelect = document.querySelector("#sort-select");
-  const dataset = () => dateSelect.value === "latest" ? config : config.snapshots.find(s=>s.source_sha256.startsWith(dateSelect.value));
-  const element = (tag, text, className) => {
-    const node = document.createElement(tag);
-    if (text !== undefined) node.textContent = text;
-    if (className) node.className = className;
-    return node;
-  };
-  const price = copper => {
-    if (!Number.isSafeInteger(copper) || copper < 0) throw new Error("Unsupported price value.");
-    return `${Math.floor(copper/10000).toLocaleString("en-GB")}g ${Math.floor(copper%10000/100)}s ${copper%100}c`;
-  };
-  async function read(url, expectedRevision = config.revision) {
-    if (!cache.has(url)) {
-      const response = await fetch(url);
-      if (!response.ok) throw new Error("Could not load this data partition.");
-      const data = await response.json();
-      if (data.revision !== expectedRevision) throw new Error("New records have been published. Reload this page to continue.");
-      cache.set(url, data);
-    }
-    return cache.get(url);
-  }
-  function render() {
-    tableBody.replaceChildren();
-    const start = page*PAGE_SIZE;
-    for (const record of records.slice(start,start+PAGE_SIZE)) {
-      const row = element("tr");
-      const first = element("td");
-      const link = element("a",`Item ${record.item_key}`);
-      const itemId=record.item_key.split(":")[0];
-      link.href = `https://foreverdb.net/item/${itemId}`;
-      link.dataset.foreverdb = `item:${itemId}`;
-      link.target = "_blank"; link.rel = "noopener";
-      first.append(link);
-      row.append(first,element("td",price(record.unit_price_copper),"price"),element("td",config.capture_sources[record.source].capture_date));
-      const state = element("td"); state.append(element("span","Cached quote","status"));
-      const last = element("td");
-      const detail = element("a","History ↗");
-      detail.href=`${config.market_html}?item=${encodeURIComponent(record.item_key)}#item-detail`;
-      detail.dataset.itemKey=record.item_key;
-      last.append(detail); row.append(state,last); tableBody.append(row);
-    }
-    previous.disabled = isLookup || (page === 0 && (globalMode || partIndex === 0));
-    next.disabled = isLookup || ((page+1)*PAGE_SIZE >= records.length && (globalMode || partIndex === dataset().partitions.length-1));
-    const offset = globalMode || isLookup ? 0 : dataset().partitions.slice(0,partIndex).reduce((n,p)=>n+p.records,0);
-    const total = isLookup ? records.length : (dataset().item_count ?? dataset().rows);
-    counter.textContent = records.length ? `Showing ${offset+start+1}–${offset+Math.min(start+PAGE_SIZE,records.length)} of ${total.toLocaleString("en-GB")} items.` : "No record for that exact item key.";
-  }
-  async function show(part,key,lastPage=false) {
-    const token = ++request;
-    try {
-      counter.textContent = "Loading a small data partition…";
-      const data = await read(part.json,dataset().revision);
-      if (token !== request) return;
-      records = key ? data.records.filter(r=>r.item_key===key) : data.records;
-      globalMode=false; isLookup=!!key;
-      partIndex=dataset().partitions.findIndex(p=>p.id===part.id);
-      page=lastPage ? Math.floor((records.length-1)/PAGE_SIZE) : 0;
-      selection.value=part.id; render();
-      document.querySelector("#item-detail").hidden = true;
-      if (key && records.length) await historyFor(part,key,token);
-    } catch (error) { if(token===request) counter.textContent=error.message; }
-  }
-  async function historyFor(part,key,token) {
-    const itemId=Number(key.split(":")[0]);
-    const historyPart=config.partitions.find(p=>itemId>=p.first_item_id && itemId<=p.last_item_id);
-    const data=await read(historyPart.history_json);
-    if (token!==request) return;
-    const body=document.querySelector("#history-rows"); body.replaceChildren();
-    for (const record of [...data.history[key]].reverse()) {
-      const source=data.capture_sources[record.source];
-      const row=element("tr");
-      row.append(element("td",source.capture_date),element("td",price(record.unit_price_copper),"price"),element("td",record.latest_daily_source_code ?? "Unknown"),element("td",record.source));
-      body.append(row);
-    }
-    document.querySelector("#detail-title").textContent=`Item ${key} · capture history`;
-    document.querySelector("#detail-download").href=historyPart.history_json;
-    document.querySelector("#item-detail").hidden=false;
-  }
-  function lookup(key) {
-    const linked=key.match(/(?:foreverdb\.net\/item\/|wowhead\.com\/[^\s]*?item(?:=|%3d)|classicdb\.ch\/\?item=)(\d+)/i);
-    if(linked) key=linked[1];
-    if(!key){show(dataset().partitions[0]);return;}
-    if (!/^\d+(?::[\d:-]+)?$/.test(key)) { counter.textContent="Enter an exact numeric item key, for example 2589."; return; }
-    const id=Number(key.split(":")[0]);
-    const part=dataset().partitions.find(p=>id>=p.first_item_id && id<=p.last_item_id);
-    if (!part) { counter.textContent="No record for that item in this market."; return; }
-    input.value=key;
-    window.history.replaceState(null,"",`${config.market_html}?item=${encodeURIComponent(key)}#item-detail`);
-    show(part,key);
-  }
-  document.querySelector("#item-form").addEventListener("submit",event=>{event.preventDefault();lookup(input.value.trim());});
-  input.addEventListener("input",()=>{if(!input.value){sortSelect.value="item";show(dataset().partitions[0]);}});
-  dateSelect.addEventListener("change",()=>{input.value="";sortSelect.value="item";show(dataset().partitions[0]);});
-  sortSelect.addEventListener("change",async()=>{
-    input.value="";
-    if(sortSelect.value==="item"){show(dataset().partitions[0]);return;}
-    const token=++request;
-    try{
-      counter.textContent="Loading the complete quote set for this sort…";
-      const data=await read(dataset().quotes_json || config.latest_json,dataset().revision);
-      if(token!==request)return;
-      records=[...data.records].sort((a,b)=>sortSelect.value==="price-low" ? a.unit_price_copper-b.unit_price_copper : b.unit_price_copper-a.unit_price_copper);
-      page=0;globalMode=true;isLookup=false;render();
-    }catch(error){if(token===request)counter.textContent=error.message;}
-  });
-  previous.addEventListener("click",()=>{if(page>0){page--;render();}else if(!globalMode && partIndex>0){show(dataset().partitions[partIndex-1],null,true);}});
-  next.addEventListener("click",()=>{if((page+1)*PAGE_SIZE<records.length){page++;render();}else if(!globalMode && partIndex+1<dataset().partitions.length){show(dataset().partitions[partIndex+1]);}});
-  tableBody.addEventListener("click",event=>{const link=event.target.closest("a[data-item-key]");if(link){event.preventDefault();lookup(link.dataset.itemKey);}});
-  const initial=new URLSearchParams(location.search).get("item");
-  if (initial) lookup(initial); else show(config.partitions[0]);
+// Market pages: search, order, pages and a daily chart per item. The table is
+// already in the HTML for readers without JavaScript; this replaces it with the
+// full list from prices.json. Journal page: filter entries by kind.
+
+const PAGE_SIZE = 50;
+const SVG = "http://www.w3.org/2000/svg";
+
+function el(tag, text, className) {
+  const node = document.createElement(tag);
+  if (text !== undefined && text !== null) node.textContent = text;
+  if (className) node.className = className;
+  return node;
 }
+
+function svgEl(tag, attrs) {
+  const node = document.createElementNS(SVG, tag);
+  for (const [key, value] of Object.entries(attrs)) node.setAttribute(key, value);
+  return node;
+}
+
+function money(copper) {
+  const span = el("span", null, "money");
+  if (copper === null || copper === undefined) return span;
+  const gold = Math.floor(copper / 10000), silver = Math.floor((copper % 10000) / 100), cop = copper % 100;
+  const parts = [];
+  if (gold) parts.push(el("span", `${gold.toLocaleString("en-GB")}g`, "g"));
+  if (gold || silver) parts.push(el("span", `${silver}s`, "s"));
+  parts.push(el("span", `${cop}c`, "c"));
+  parts.forEach((part, i) => { if (i) span.append(" "); span.append(part); });
+  return span;
+}
+
+function niceDate(iso) {
+  if (!iso) return "not seen";
+  const [y, m, d] = iso.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+}
+
+function change(pct) {
+  if (pct === null || pct === undefined) return null;
+  const word = pct > 0 ? "up" : pct < 0 ? "down" : "flat";
+  return el("span", `${pct > 0 ? "+" : ""}${pct}%`, `change ${word}`);
+}
+
+function spark(values) {
+  const points = values.map((v, i) => [i, v]).filter(([, v]) => v !== null);
+  if (points.length < 2) return points.length ? el("span", "one day", "spark-none") : null;
+  const low = Math.min(...points.map(p => p[1])), high = Math.max(...points.map(p => p[1]));
+  const span = (high - low) || 1, width = 84, height = 22;
+  const coords = points.map(([i, v]) => [+(i * width / (values.length - 1)).toFixed(1), +(height - 2 - (v - low) / span * (height - 4)).toFixed(1)]);
+  const svg = svgEl("svg", { class: "spark", viewBox: `0 0 ${width} ${height}`, width, height, "aria-hidden": "true" });
+  svg.append(svgEl("path", { d: coords.map(([x, y], n) => `${n ? "L" : "M"}${x},${y}`).join(" ") }));
+  const [x, y] = coords[coords.length - 1];
+  svg.append(svgEl("circle", { cx: x, cy: y, r: 2 }));
+  return svg;
+}
+
+function detailChart(days) {
+  // days: [[iso, low, high, listed], ...]
+  const width = 640, height = 170, left = 8, right = 8, top = 22, bottom = 26;
+  const lows = days.map(d => d[1]), highs = days.map(d => d[2]);
+  const min = Math.min(...lows), max = Math.max(...highs), span = (max - min) || 1;
+  const x = i => left + (days.length === 1 ? (width - left - right) / 2 : i * (width - left - right) / (days.length - 1));
+  const y = v => top + (1 - (v - min) / span) * (height - top - bottom);
+  const svg = svgEl("svg", { class: "detail-chart", viewBox: `0 0 ${width} ${height}`, role: "img",
+    "aria-label": `Daily lowest price from ${niceDate(days[0][0])} to ${niceDate(days[days.length - 1][0])}` });
+  if (days.length > 1) {
+    const band = days.map((d, i) => `${x(i)},${y(d[2])}`).concat(days.map((d, i) => `${x(i)},${y(d[1])}`).reverse());
+    svg.append(svgEl("polygon", { class: "band", points: band.join(" ") }));
+    svg.append(svgEl("polyline", { class: "line", points: days.map((d, i) => `${x(i)},${y(d[1])}`).join(" ") }));
+  } else {
+    svg.append(svgEl("circle", { cx: x(0), cy: y(lows[0]), r: 4, fill: "currentColor" }));
+  }
+  svg.append(svgEl("line", { class: "axis", x1: left, x2: width - right, y1: height - bottom + 4, y2: height - bottom + 4 }));
+  const label = (text, attrs) => { const t = svgEl("text", attrs); t.textContent = text; svg.append(t); };
+  label(niceDate(days[0][0]), { x: left, y: height - 6 });
+  if (days.length > 1) label(niceDate(days[days.length - 1][0]), { x: width - right, y: height - 6, "text-anchor": "end" });
+  const coin = c => { const g = Math.floor(c / 10000), s = Math.floor(c % 10000 / 100); return g ? `${g}g ${s}s` : s ? `${s}s ${c % 100}c` : `${c % 100}c`; };
+  label(`high ${coin(max)}`, { x: width - right, y: 14, "text-anchor": "end" });
+  label(`low ${coin(min)}`, { x: left, y: 14 });
+  return svg;
+}
+
+async function marketBrowser(section) {
+  const config = JSON.parse(section.dataset.config);
+  const tbody = document.getElementById("rows");
+  const status = document.getElementById("status");
+  const filter = document.getElementById("filter");
+  const scope = document.getElementById("scope");
+  const order = document.getElementById("order");
+  const pager = document.getElementById("pager");
+  let items = [], view = [], page = 0, history = null, open = null;
+
+  try {
+    const response = await fetch(config.prices);
+    if (!response.ok) throw new Error();
+    const data = await response.json();
+    const cols = data.columns;
+    items = data.rows.map(row => Object.fromEntries(cols.map((c, i) => [c, row[i]])));
+  } catch {
+    status.textContent = "Showing the list built into this page. Reload to search and sort every item.";
+    return;
+  }
+  const params = new URLSearchParams(location.search);
+  filter.value = params.get("q") || "";
+  if (filter.value) scope.value = "all";
+
+  function matches(item, terms, id) {
+    if (id !== null) return item.id === id;
+    const name = item.name.toLowerCase();
+    return terms.every(term => name.includes(term));
+  }
+
+  function update(resetPage = true) {
+    const raw = filter.value.trim();
+    const link = raw.match(/item[=/](\d+)/i);
+    const id = link ? Number(link[1]) : /^\d+$/.test(raw) ? Number(raw) : null;
+    const terms = raw.toLowerCase().split(/\s+/).filter(Boolean);
+    view = items.filter(item => (scope.value === "all" || item.current) && matches(item, terms, id));
+    const sorters = {
+      name: (a, b) => a.name.localeCompare(b.name, "en-GB"),
+      listed: (a, b) => (b.listed ?? -1) - (a.listed ?? -1),
+      "price-high": (a, b) => b.price - a.price,
+      "price-low": (a, b) => a.price - b.price,
+      change: (a, b) => Math.abs(b.change ?? 0) - Math.abs(a.change ?? 0),
+    };
+    view.sort(sorters[order.value]);
+    if (resetPage) page = 0;
+    const query = raw ? `?q=${encodeURIComponent(raw)}` : "";
+    history_replace(query);
+    render();
+  }
+
+  function history_replace(query) {
+    try { window.history.replaceState(null, "", location.pathname + query + location.hash); } catch { /* file:// previews */ }
+  }
+
+  function render() {
+    tbody.replaceChildren();
+    open = null;
+    const start = page * PAGE_SIZE;
+    for (const item of view.slice(start, start + PAGE_SIZE)) {
+      const row = el("tr");
+      row.dataset.key = item.key;
+      const name = el("th");
+      name.scope = "row";
+      const link = el("a", item.name);
+      link.href = `https://foreverdb.net/item/${item.id}`;
+      link.dataset.foreverdb = `item:${item.id}`;
+      link.target = "_blank";
+      link.rel = "noopener";
+      name.append(link, " ", el("span", item.id, "id"));
+      const price = el("td", null, "num"); price.append(money(item.price));
+      const seen = el("td", niceDate(item.last_seen));
+      const listed = el("td", item.listed === null ? "" : item.listed.toLocaleString("en-GB"), "num");
+      const trend = el("td", null, "trend");
+      const line = spark(item.spark), pct = change(item.change);
+      if (line) trend.append(line, " ");
+      if (pct) trend.append(pct);
+      row.append(name, price, seen, listed, trend);
+      tbody.append(row);
+    }
+    const pages = Math.max(1, Math.ceil(view.length / PAGE_SIZE));
+    const shown = view.length ? `${start + 1}–${Math.min(start + PAGE_SIZE, view.length)} of ` : "";
+    status.textContent = view.length
+      ? `${shown}${view.length.toLocaleString("en-GB")} item${view.length === 1 ? "" : "s"}. Select a row for its daily prices.`
+      : (scope.value === "current" ? "Nothing seen in the last two weeks matches. Try “Every item ever seen”." : "No item matches. Try part of the name, or the item ID.");
+    pager.hidden = pages < 2;
+    pager.replaceChildren();
+    if (pages > 1) {
+      const prev = el("button", "Previous"), next = el("button", "Next");
+      prev.type = next.type = "button";
+      prev.disabled = page === 0;
+      next.disabled = page >= pages - 1;
+      prev.addEventListener("click", () => { page--; render(); section.scrollIntoView(); });
+      next.addEventListener("click", () => { page++; render(); section.scrollIntoView(); });
+      pager.append(el("span", `Page ${page + 1} of ${pages}`), prev, next);
+    }
+  }
+
+  function closeDetail() {
+    if (!open) return null;
+    open.previousElementSibling.classList.remove("open");
+    open.remove();
+    const key = open.dataset.for;
+    open = null;
+    return key;
+  }
+
+  async function toggle(row) {
+    if (closeDetail() === row.dataset.key) return;  // selecting the open row closes it
+    const detail = el("tr", null, "detail");
+    detail.dataset.for = row.dataset.key;
+    const cell = el("td");
+    cell.colSpan = 5;
+    cell.append(el("p", "Loading daily prices…", "detail-note"));
+    detail.append(cell);
+    row.after(detail);
+    row.classList.add("open");
+    open = detail;
+    try {
+      if (!history) {
+        const response = await fetch(config.history);
+        if (!response.ok) throw new Error();
+        history = (await response.json()).history;
+      }
+      const days = history[row.dataset.key] || [];
+      cell.replaceChildren();
+      if (!days.length) { cell.append(el("p", "No daily records for this item.", "detail-note")); return; }
+      const busiest = days.reduce((a, b) => ((b[3] ?? 0) > (a[3] ?? 0) ? b : a));
+      cell.append(detailChart(days), el("p",
+        `${days.length} day${days.length === 1 ? "" : "s"} of records. The line is each day's lowest price; the band runs up to that day's highest low.` +
+        (busiest[3] ? ` Most listed: ${busiest[3].toLocaleString("en-GB")} on ${niceDate(busiest[0])}.` : ""), "detail-note"));
+    } catch {
+      cell.replaceChildren(el("p", "The daily history didn't load. Check your connection and select the row again.", "detail-note"));
+    }
+  }
+
+  tbody.addEventListener("click", event => {
+    if (event.target.closest("a")) return;
+    const row = event.target.closest("tr[data-key]");
+    if (row) toggle(row);
+  });
+  let timer;
+  filter.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(update, 120); });
+  section.querySelector("form").addEventListener("submit", event => { event.preventDefault(); update(); });
+  scope.addEventListener("change", () => update());
+  order.addEventListener("change", () => update());
+  update();
+}
+
+function journalFilter(group) {
+  const entries = [...document.querySelectorAll(".entries .entry")];
+  const buttons = [...group.querySelectorAll("button")];
+  const choose = kind => {
+    buttons.forEach(b => b.setAttribute("aria-pressed", String(b.dataset.filter === kind)));
+    entries.forEach(e => { e.hidden = kind !== "all" && e.dataset.type !== kind; });
+  };
+  buttons.forEach(b => b.addEventListener("click", () => choose(b.dataset.filter)));
+  choose("all");
+}
+
+const browserSection = document.getElementById("prices");
+if (browserSection) marketBrowser(browserSection);
+const kindGroup = document.querySelector(".kind-filter");
+if (kindGroup) journalFilter(kindGroup);

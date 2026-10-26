@@ -6,7 +6,8 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"scripts"))
 from auctionator import CBOR, InvalidCapture, LuaData, day_date, item_id, parse_capture, string_keys, suffix
-from build import collect, group_markets, partition_records
+from build import build_markets, collect, load_journal
+from markup import render
 
 
 class SafeFormats(unittest.TestCase):
@@ -27,10 +28,13 @@ class SafeFormats(unittest.TestCase):
         with self.assertRaises(InvalidCapture): LuaData(b'A='+b'{'*40+b'}'*40).read()
     def test_normalised_key_collision_rejected(self):
         with self.assertRaises(InvalidCapture): string_keys({b"m":1,"m":2})
-    def test_partition_keeps_variants_together(self):
-        records=[{"item_id":1,"item_key":"1"},{"item_id":2,"item_key":"2:1"},{"item_id":2,"item_key":"2:2"},{"item_id":3,"item_key":"3"}]
-        parts=list(partition_records(records,size=2))
-        self.assertEqual([[r["item_key"] for r in p] for p in parts],[["1"],["2:1","2:2"],["3"]])
+    def test_markdown_escapes_html_and_unsafe_links(self):
+        out=render("<script>x</script> [a](javascript:alert(1)) **b**")
+        self.assertNotIn("<script>",out); self.assertNotIn('href="javascript',out); self.assertIn("<strong>b</strong>",out)
+    def test_markdown_tables_and_lists(self):
+        out=render("## Gear\n\n- one\n  - two\n\n| A | B |\n|---|--:|\n| x | 1 |")
+        self.assertIn("<h2>Gear</h2>",out); self.assertIn("<ul><li>one<ul><li>two</li></ul></li></ul>",out)
+        self.assertIn('<td style="text-align:right">1</td>',out)
 
 
 def cbor(value):
@@ -105,14 +109,16 @@ class OriginalCaptures(unittest.TestCase):
         # Item 236 is directly traceable in the CBOR market strings (m values).
         self.assertEqual([c["markets"]["PvP"]["items"]["236"]["m"] for c in self.captures],[6700,900,5000])
         self.assertTrue(all(c["markets"]["ClassicBetaPvP"]["items"]["15115"]["m"]==1000 for c in self.captures))
-    def test_cached_market_not_counted_as_new(self):
-        groups=group_markets(self.captures)
-        self.assertEqual(len(groups["forever-beta-pvp"]["snapshots"]),3)
-        self.assertEqual(len(groups["forever-beta-classicbetapvp"]["snapshots"]),1)
-        self.assertEqual(len(groups["forever-beta-classicbetapvp"]["seen_in"]),3)
-    def test_identical_file_import_is_no_new_market_snapshot(self):
-        groups=group_markets(self.captures+self.captures)
-        self.assertEqual(len(groups["forever-beta-pvp"]["snapshots"]),3)
+    def test_unchanged_market_marked_not_new(self):
+        markets={m["slug"]:m for m in build_markets(self.captures,{})}
+        self.assertEqual([s["unchanged"] for s in markets["forever-beta-classicbetapvp"]["scans"]],[False,True,True])
+        self.assertEqual([s["unchanged"] for s in markets["forever-beta-pvp"]["scans"]],[False,False,False])
+    def test_daily_history_merges_across_scans(self):
+        pvp={m["slug"]:m for m in build_markets(self.captures,{"236":"Cured Leather Armor"})}["forever-beta-pvp"]
+        item=next(i for i in pvp["items"] if i["key"]=="236")
+        self.assertEqual((item["name"],item["price"],item["price_scan"]),("Cured Leather Armor",5000,"2026-10-17"))
+        self.assertEqual(item["last_seen"],"2026-10-14")  # newest daily record, not the file date
+        self.assertEqual(item["days"][2462]["high"],2800)  # day kept from the 6 October scan
     def test_input_order_does_not_rewrite_chronology(self):
         # collect() establishes verified file chronology before grouping.
         self.assertEqual([c["capture_date"] for c in self.captures],["2026-10-06","2026-10-10","2026-10-17"])
