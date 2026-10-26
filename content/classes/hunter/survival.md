@@ -73,3 +73,4 @@ Nothing recorded yet.
 - [WoWSims: melee APL](https://github.com/wowsims/forever/blob/master/ui/specs/hunter/dps/apls/melee.apl.json): the level 60 pure melee priority list
 - [WoWSims: default weave APL](https://github.com/wowsims/forever/blob/master/ui/specs/hunter/dps/apls/default.apl.json): when the simulator walks in for a swing
 - [WoWSims: Hunter presets](https://github.com/wowsims/forever/blob/master/ui/specs/hunter/dps/presets.ts): the SV Weave and SV Melee builds
+- [Blizzard: Class Deep Dives, Hunter and Druid](https://worldofwarcraft.blizzard.com/en-us/news/24301515): the official list of talent and pet changes

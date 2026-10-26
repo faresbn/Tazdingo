@@ -68,3 +68,5 @@ Nothing recorded yet.
 - [ForeverDB: Rogue poisons](https://foreverdb.net/class/Rogue/poisons): poison levels, reagents and the level 20 quest
 - [WoWSims: Rogue default APL](https://github.com/wowsims/forever/blob/master/ui/specs/rogue/dps/apls/default.apl.json): the shared level 60 priority list
 - [WoWSims: Rogue presets](https://github.com/wowsims/forever/blob/master/ui/specs/rogue/dps/presets.ts): Mutilate builds and stat weights
+- [Blizzard: Class Deep Dives, Rogue and Warlock](https://worldofwarcraft.blizzard.com/en-us/news/24310968): the official list of talent changes and Blizzard's intent for each tree
+- [ForeverDB: Levelling a Rogue to 30](https://foreverdb.net/guide/leveling-rogue): abilities by level, Energy costs and the two-dagger note for Mutilate

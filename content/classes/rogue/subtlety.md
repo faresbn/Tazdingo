@@ -66,3 +66,4 @@ Nothing recorded yet.
 - [ForeverDB: Rogue changes vs Classic](https://foreverdb.net/class/Rogue/changes): the reworked Subtlety talents and their numbers
 - [WoWSims: Rogue default APL](https://github.com/wowsims/forever/blob/master/ui/specs/rogue/dps/apls/default.apl.json): the level 60 opener, Rupture and Thousand Cuts logic
 - [WoWSims: Rogue presets](https://github.com/wowsims/forever/blob/master/ui/specs/rogue/dps/presets.ts): Subtlety Hemorrhage and Backstab builds
+- [Blizzard: Class Deep Dives, Rogue and Warlock](https://worldofwarcraft.blizzard.com/en-us/news/24310968): the official list of talent changes and Blizzard's intent for each tree

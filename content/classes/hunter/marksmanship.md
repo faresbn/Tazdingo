@@ -73,3 +73,5 @@ Nothing recorded yet.
 - [ForeverDB: Hunter changes vs Classic](https://foreverdb.net/class/Hunter/changes): exact talent and spell numbers from the client
 - [WoWSims: turret APL](https://github.com/wowsims/forever/blob/master/ui/specs/hunter/dps/apls/turret.apl.json): the level 60 ranged priority list
 - [WoWSims: Hunter presets](https://github.com/wowsims/forever/blob/master/ui/specs/hunter/dps/presets.ts): level 60 Marksmanship builds without a pet
+- [Blizzard: Class Deep Dives, Hunter and Druid](https://worldofwarcraft.blizzard.com/en-us/news/24301515): the official list of talent and pet changes
+- [ForeverDB: Hunter PvE guide](https://foreverdb.net/class/Hunter/pve): group duties, crowd control and simulator tips

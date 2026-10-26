@@ -70,3 +70,4 @@ Nothing recorded yet.
 - [Icy Veins: Assassination Rogue levelling](https://www.icy-veins.com/wow-forever/assassination-rogue-leveling): which Combat and Subtlety talents help Mutilate
 - [ForeverDB: Rogue talent builds](https://foreverdb.net/class/Rogue/builds): single-tree builds with the reason for every point
 - [WoWSims: Rogue presets](https://github.com/wowsims/forever/blob/master/ui/specs/rogue/dps/presets.ts): the six level 60 builds
+- [Blizzard: Class Deep Dives, Rogue and Warlock](https://worldofwarcraft.blizzard.com/en-us/news/24310968): the official list of talent changes and Blizzard's intent for each tree

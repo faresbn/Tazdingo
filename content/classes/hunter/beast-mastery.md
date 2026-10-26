@@ -74,3 +74,4 @@ Nothing recorded yet.
 - [ForeverDB: Hunter PvE guide](https://foreverdb.net/class/Hunter/pve): group duties, openers and simulator tips
 - [WoWSims: turret_hawk APL](https://github.com/wowsims/forever/blob/master/ui/specs/hunter/dps/apls/turret_hawk.apl.json): the level 60 priority list with hawks
 - [WoWSims: Hunter presets](https://github.com/wowsims/forever/blob/master/ui/specs/hunter/dps/presets.ts): the level 60 Beast Mastery build and pet
+- [Blizzard: Class Deep Dives, Hunter and Druid](https://worldofwarcraft.blizzard.com/en-us/news/24301515): the official list of talent and pet changes

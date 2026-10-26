@@ -1,7 +1,7 @@
 ---
 updated: 2026-10-27
 summary: How Combat plays in WoW Forever up to the level 30 beta cap, with talents by level, the Sinister Strike and Backstab rotations, Blade Flurry, weapons and where the guides disagree.
-sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APL, Blizzard class deep dive
+sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APL
 ---
 
 ## At a glance

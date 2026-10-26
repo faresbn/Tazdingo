@@ -20,7 +20,7 @@ sources: Icy Veins, Wowhead, ForeverDB, WoWSims presets and APLs, Blizzard class
 
 Blizzard's [deep dive](https://worldofwarcraft.com/en-us/news/24302097) describes Ice Lance as instant with low base damage, raised by 300% against Frozen targets or targets treated as Frozen by Fingers of Frost. The 16 October client lowered that to 200% ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)), though the guides still quote 300%. Fingers of Frost gives Chill effects a 15% chance to treat your next spells as if the target were Frozen, two charges at 2/2 in the current client.
 
-Practical points from [Icy Veins](https://www.icy-veins.com/wow-forever/frost-mage-leveling): any damage can break a freeze, including your own Ice Lance; Ice Lance snapshots the Frozen state if cast before the freeze breaks; and freezes are unreliable on group bosses. Wowhead's [level 30 guide](https://www.wowhead.com/forever/guide/classes/mage/frost/level-30-dps-overview) notes that rank 1 Frostbolt no longer works for fishing Frostbite procs. ForeverDB ties this to Blizzard's 1 October change, which makes low ranks less likely to trigger talents.
+[Icy Veins](https://www.icy-veins.com/wow-forever/frost-mage-leveling) warns that any damage can break a freeze, including your own Ice Lance, though Ice Lance snapshots the Frozen state if cast first. Wowhead's [level 30 guide](https://www.wowhead.com/forever/guide/classes/mage/frost/level-30-dps-overview) notes that rank 1 Frostbolt no longer works for fishing Frostbite procs. ForeverDB ties this to Blizzard's 1 October change, which makes low ranks less likely to trigger talents.
 
 ### Talents by level
 
@@ -67,15 +67,13 @@ Other builds:
 7. Arcane Missiles on Missile Barrage; keep three Arcane Blast stacks.
 8. Ice Barrier when it drops; Frostbolt as filler.
 
-The guides and the simulator agree on Frostbolt into Fingers of Frost Ice Lances. The simulator leans harder on Cone of Cold, which fits the Winter's Chill change, and uses Arcane spells from its Arcane points.
+Both agree on Frostbolt into Fingers of Frost Ice Lances; the simulator leans harder on Cone of Cold, which fits the Winter's Chill change.
 
 ### Gear and consumables
 
 - **Stats:** Icy Veins puts hit first, then spell power and Frost damage, crit, Spirit and Intellect. ForeverDB adds that Elemental Precision covers part of the hit gap in dungeons.
 - **Level 30 gear** (Wowhead): Sorcerer Collar, [Belt of Arugal](https://foreverdb.net/item/6392), [Gaze Dreamer Pants](https://foreverdb.net/item/6903), Glinteye Slippers, [Acidic Walkers](https://foreverdb.net/item/9454), Scorn's Icy Choker and Bloodmage Mantle. Tailoring's Silky pieces boost Frost damage only, and only their crafter can wear them. The Mage wand quest at 30 offers [Icefury Wand](https://www.wowhead.com/forever/guide/classes/mage/frost/level-30-dps-overview).
 - **Consumables:** Icy Veins calls Wizard Oil your biggest damage boost, then Lesser Mageblood Elixir, Lesser Spellblasting Potion and food such as Briny Seafood Stew. Lesser Arcane Elixir tops ForeverDB's simulator at 30 (+4.4%).
-- **Campfires** (Wowhead): Skinning gives 2% crit, Tailoring Spirit, Herbalism Intellect, Alchemy mana regeneration and Leatherworking rested experience.
-
 ### Where the guides disagree or aren't sure
 
 - **Ice Lance's bonus:** 300% in Blizzard's post and every guide; 200% in the current client files.
