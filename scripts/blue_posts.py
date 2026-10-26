@@ -34,6 +34,13 @@ def fetch(url: str) -> dict:
         return json.loads(response.read(2_000_000))
 
 
+BIDI = re.compile("[\u200e\u200f\u202a-\u202e\u2066-\u2069]")  # invisible direction controls can disguise text
+
+
+def clean(text: str) -> str:
+    return BIDI.sub("", text or "")
+
+
 def plain(excerpt: str, limit: int = 260) -> str:
     """Forum excerpts are HTML: strip tags, images and links down to a short sentence or two."""
     text = re.sub(r"<(script|style)\b.*?</\1>", " ", excerpt or "", flags=re.S | re.I)
@@ -55,11 +62,11 @@ def valid(post: dict) -> bool:
 
 
 def record(post: dict) -> dict:
-    return {"id": post["id"], "topic_id": post.get("topic_id"), "title": (post.get("topic_title") or "").strip(),
-            "author": post.get("name") or post.get("username"), "author_title": post.get("user_title") or "",
+    return {"id": post["id"], "topic_id": post.get("topic_id"), "title": clean(post.get("topic_title")).strip(),
+            "author": clean(post.get("name") or post.get("username")), "author_title": post.get("user_title") or "",
             "posted": post["created_at"], "url": FORUM + post["url"],
             "category": FOREVER_CATEGORIES.get(post.get("category_id"), "News"),
-            "reply": (post.get("post_number") or 1) > 1, "excerpt": plain(post.get("excerpt", ""))}
+            "reply": (post.get("post_number") or 1) > 1, "excerpt": clean(plain(post.get("excerpt", "")))}
 
 
 def dedupe(posts) -> list[dict]:
@@ -76,7 +83,7 @@ def dedupe(posts) -> list[dict]:
 
 def refresh(path: Path, pages: int = MAX_PAGES) -> dict:
     saved = json.loads(path.read_text()) if path.exists() else {"posts": []}
-    known = {p["id"]: p for p in saved.get("posts", [])}
+    known = {p["id"]: {**p, "title": clean(p["title"]), "excerpt": clean(p.get("excerpt", ""))} for p in saved.get("posts", [])}
     cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
     url, new, began = FEED, 0, time.monotonic()
     for _ in range(pages):
