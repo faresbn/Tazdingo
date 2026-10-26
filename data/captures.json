@@ -12,7 +12,11 @@
         "ClassicBetaPvP"
       ],
       "private_original_path": "data/captures/forever-beta/FOREVER_BETA_Auctionator.lua",
-      "extraction_sha256": "fb9c01cf2891b6a344b2f6d9723fb08a7abde1562e0a456a713cbd46f74f98ba"
+      "extraction_sha256": "52b7225aeaa5b67e894da65bb6af9f1165f19b2615c64cd344951f6179e871da",
+      "payloads": {
+        "PvP": "db33277ada212d3b5059d7e1f542ec360a8ed0da9a25ca5d85550f7887f1d648",
+        "ClassicBetaPvP": "9ad29aa4c8929d0ee6c9f262bb7a46c4b9f738dafce14c734b6f3f17590d90fd"
+      }
     },
     {
       "path": "data/captures/forever-beta/FOREVER_BETA_Auctionator_2026-10-10.market.json",
@@ -25,7 +29,11 @@
         "ClassicBetaPvP"
       ],
       "private_original_path": "data/captures/forever-beta/FOREVER_BETA_Auctionator_2026-10-10.lua",
-      "extraction_sha256": "9368320151d9cdcf4960760d9d83ffb729abb8e081d7042adfc82a0679f9e701"
+      "extraction_sha256": "e57ff1f86b2b6d61f7b5c92c599d4f28fae5a0a79bbb9ced4c40efa27626f9e5",
+      "payloads": {
+        "PvP": "ee3d497979fec8a11d546c09e8295766edb03035e2beb9d4d1af51fe330e5195",
+        "ClassicBetaPvP": "9ad29aa4c8929d0ee6c9f262bb7a46c4b9f738dafce14c734b6f3f17590d90fd"
+      }
     },
     {
       "path": "data/captures/forever-beta/FOREVER_BETA_Auctionator_2026-10-17.market.json",
@@ -38,7 +46,11 @@
         "ClassicBetaPvP"
       ],
       "private_original_path": "data/captures/forever-beta/FOREVER_BETA_Auctionator_2026-10-17.lua",
-      "extraction_sha256": "a827064350a247d7d677ebf8a8641e2a0b9684a2ebadbb43410834f23977702e"
+      "extraction_sha256": "d1ea223576c8ab7510b224d30f5e37bf22cd57a0a6d6662d06c47981cef58952",
+      "payloads": {
+        "PvP": "7704e450ec07b776ace13bee138b5fc1482a08f3ce8a9cfe5129f3af7c031632",
+        "ClassicBetaPvP": "9ad29aa4c8929d0ee6c9f262bb7a46c4b9f738dafce14c734b6f3f17590d90fd"
+      }
     }
   ]
 }

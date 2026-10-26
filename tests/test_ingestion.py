@@ -185,7 +185,7 @@ class OriginalCaptures(unittest.TestCase):
             "ea7c4b2a9cfd82cc7c53fdc7f2062892691e64eb0e1da0cc1ad1c6adbf933b1c",
             "2f5fb65c7631270feb6241f5da2d7ba2bfaa0f7535ec03671e52257d0dce2c75"])
     def test_selected_sample_counts(self):
-        self.assertEqual([len(c["markets"]["PvP"]["items"]) for c in self.captures],[24]*3)
+        self.assertEqual([len(c["markets"]["PvP"]["items"]) for c in self.captures],[886,937,975])
         self.assertEqual([len(c["markets"]["ClassicBetaPvP"]["items"]) for c in self.captures],[6]*3)
         self.assertTrue(all(c["sample"]["complete_market"] is False for c in self.captures))
     def test_source_timestamps(self):
