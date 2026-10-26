@@ -1,10 +1,12 @@
-name: Validate and publish FvrRepo
+name: Validate and publish Forever Ledger
 
 on:
   push:
     branches: [main]
   pull_request:
   workflow_dispatch:
+  schedule:
+    - cron: "23 */2 * * *"  # about every two hours: refresh Blizzard's posts and the launch countdown
 
 permissions:
   contents: read
@@ -27,6 +29,18 @@ jobs:
         run: python3 -m unittest discover -s tests -v
       - name: Check browser script syntax
         run: node --check site/assets/app.js
+      - name: Restore the last run's Blizzard posts
+        if: github.event_name != 'pull_request'
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .cache/blue.json
+          key: blue-posts-${{ github.run_id }}  # a new key each run, so each run saves its snapshot
+          restore-keys: blue-posts-
+      - name: Refresh Blizzard's Forever posts (keeps the saved ones if the forums can't be read)
+        if: github.event_name != 'pull_request'
+        run: |
+          python3 scripts/blue_posts.py --merge .cache/blue.json
+          mkdir -p .cache && cp data/blue.json .cache/blue.json
       - name: Generate public site and records
         run: python3 scripts/build.py --base-path /FvrRepo/
       - name: Verify public output

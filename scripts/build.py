@@ -232,24 +232,63 @@ def tsv(header: list[str], rows) -> str:
 CONFIDENCE = {"idea": "Idea", "testing": "Testing", "tested": "Tested", "outdated": "Outdated"}
 STATUS = {"pre-launch": "Pre-launch", "live": "Live"}
 CLASS_EXTRAS = {"overview": "Overview", "hybrid": "Hybrid builds", "macros": "Macros"}
-MORE = {"addons": "Addons", "macros": "Macros", "known-issues": "Known issues"}
+SECTION_NAMES = {"at a glance": "glance", "what the guides say": "guides", "ledger findings": "findings", "read more": "more"}
+REQUIRED_SECTIONS = ["At a glance", "What the guides say", "Ledger findings", "Read more"]
+FIELDS = {"updated", "summary", "sources", "confidence", "status", "verified"}
+# Words that must never appear on the public site: the people behind it and the assistant they use.
+PRIVATE = re.compile(r"\b(?:chatgpt|fares|mike)\b", re.I)
 
 
 def content_places(game: dict) -> dict:
     """Every page a content file can fill, keyed by its path under content/ without .md."""
     places = {}
     for c in game["classes"]:
-        for slug, name, _ in c["specs"]:
-            places[f"classes/{c['slug']}/{slug}"] = {"title": f"{name} {c['name']}", "url": f"classes/{c['slug']}/#{slug}"}
+        for spec in c["specs"]:
+            places[f"classes/{c['slug']}/{spec['slug']}"] = {"title": f"{spec['name']} {c['name']}", "url": f"classes/{c['slug']}/{spec['slug']}/"}
         for slug, name in CLASS_EXTRAS.items():
-            places[f"classes/{c['slug']}/{slug}"] = {"title": f"{c['name']}: {name.lower()}", "url": f"classes/{c['slug']}/#{slug}"}
+            anchor = "" if slug == "overview" else f"#{slug}"
+            places[f"classes/{c['slug']}/{slug}"] = {"title": f"{c['name']}: {name.lower()}", "url": f"classes/{c['slug']}/{anchor}"}
     for p in game["professions"]:
         places[f"professions/{p['slug']}"] = {"title": p["name"], "url": f"professions/{p['slug']}/"}
     for t in game["world"]:
         places[f"world/{t['slug']}"] = {"title": t["name"], "url": f"world/{t['slug']}/"}
-    for slug, name in MORE.items():
-        places[f"more/{slug}"] = {"title": name, "url": f"more/{slug}/"}
+    for m in game["more"]:
+        places[f"more/{m['slug']}"] = {"title": m["name"], "url": f"more/{m['slug']}/"}
     return places
+
+
+LEDGER_LINK = re.compile(r'href="ledger:([a-z0-9/#-]*)"')
+
+
+def ledger_links(html_text: str, base: str) -> str:
+    """`ledger:classes/mage/frost/` in a page's Markdown links to that page on this site, whatever its address."""
+    return LEDGER_LINK.sub(lambda m: f'href="{base}{m.group(1)}"', html_text)
+
+
+def split_sections(body: str, base: str = "/", prefix: str = "") -> list[dict]:
+    """A note's `## ` sections, each rendered on its own, so the page can style them
+    (the guides' summary, our findings and the sources look different)."""
+    sections, current = [], {"heading": "", "lines": []}
+    for line in body.splitlines():
+        if line.startswith("## "):
+            if current["heading"] or any(l.strip() for l in current["lines"]):
+                sections.append(current)
+            current = {"heading": line[3:].strip(), "lines": []}
+        else:
+            current["lines"].append(line)
+    sections.append(current)
+    result, used = [], set(SECTION_NAMES.values()) | {"intro", "changes", "guides-and-tools", "on-this-page"}
+    for sec in sections:
+        text = "\n".join(sec["lines"]).strip()
+        kind = SECTION_NAMES.get(sec["heading"].lower(), "other")
+        empty = kind == "findings" and text.rstrip(".").lower() in ("", "nothing recorded yet")
+        html_text = ledger_links(render(text, used), base)
+        if prefix:  # notes embedded in another page (a class's hybrid builds and macros) get their own anchors
+            html_text = re.sub(r'<(h[2-4]) id="', rf'<\1 id="{prefix}', html_text)
+        result.append({"heading": sec["heading"], "kind": kind, "html": html_text, "empty": empty,
+                       "slug": prefix + (kind if kind != "other" else (slugify(sec["heading"]) or "intro")),
+                       "toc": re.findall(r'<h3 id="([^"]+)">(.*?)</h3>', html_text)})
+    return result
 
 
 def front_matter(text: str, name: str) -> tuple[dict, str]:
@@ -260,29 +299,61 @@ def front_matter(text: str, name: str) -> tuple[dict, str]:
     for line in match.group(1).splitlines():
         if line.strip() and not line.lstrip().startswith("#"):
             key, _, value = line.partition(":")
-            meta[key.strip().lower()] = value.split(" #")[0].strip()
+            key = key.strip().lower()
+            if key not in FIELDS:
+                raise ValueError(f"{name}: unknown header field {key!r}; allowed: {', '.join(sorted(FIELDS))}")
+            if key in meta:
+                raise ValueError(f"{name}: header field {key!r} appears twice")
+            meta[key] = value.split(" #")[0].strip()
     return meta, match.group(2).strip()
 
 
-def load_content(root: Path, game: dict, launch: date) -> dict:
+def check_sections(name: str, key: str, body: str) -> None:
+    """Class, spec, profession and world pages carry the four sections, once each, in order.
+    More lists may be shaped freely but must keep Ledger findings and Read more."""
+    headings = [line[3:].strip() for line in body.splitlines() if line.startswith("## ")]
+    required = REQUIRED_SECTIONS if not key.startswith("more/") else REQUIRED_SECTIONS[2:]
+    found = [h for h in headings if h in REQUIRED_SECTIONS]
+    if [h for h in found if h in required] != required or len(found) != len(set(found)):
+        raise ValueError(f"{name}: needs these sections once each, in this order: {', '.join('## ' + h for h in required)}"
+                         f" (found: {', '.join(headings) or 'none'})")
+
+
+def embedded_prefix(key: str) -> str:
+    """Hybrid builds and macros appear inside the class page, so their anchors are namespaced."""
+    part = key.rsplit("/", 1)[-1]
+    return f"{part}-" if key.startswith("classes/") and part in ("hybrid", "macros") else ""
+
+
+def load_content(root: Path, game: dict, launch: date, base: str = "/") -> dict:
     places = content_places(game)
     pages_ = {}
-    for path in sorted((root / "content").rglob("*.md")):
+    for path in sorted((root / "content").rglob("*")):
+        if path.is_dir():
+            continue
+        if path.suffix != ".md":
+            raise ValueError(f"content/{path.relative_to(root / 'content').as_posix()}: only Markdown pages belong in content/")
         key = path.relative_to(root / "content").with_suffix("").as_posix()
         name = f"content/{key}.md"
         if key not in places:
             raise ValueError(f"{name} isn't a page the site knows. See docs/chatgpt/UPDATING.md for the valid places.")
         meta, body = front_matter(path.read_text(encoding="utf-8"), name)
-        if not meta.get("updated"):
-            raise ValueError(f"{name}: missing updated (YYYY-MM-DD)")
-        updated = date.fromisoformat(meta["updated"])
+        for field in ("updated", "summary"):
+            if not meta.get(field):
+                raise ValueError(f"{name}: missing {field}")
+        date.fromisoformat(meta["updated"])
+        if meta.get("verified"):
+            date.fromisoformat(meta["verified"])
         if meta.get("confidence") and meta["confidence"] not in CONFIDENCE:
             raise ValueError(f"{name}: confidence must be one of {', '.join(CONFIDENCE)}")
         if meta.get("status") and meta["status"] not in STATUS:
             raise ValueError(f"{name}: status must be one of {', '.join(STATUS)}")
-        status = meta.get("status") or ("pre-launch" if updated < launch else "live")
-        pages_[key] = {**places[key], **meta, "key": key, "file": name, "body": body, "html": render(body),
-                       "status": status, "status_label": STATUS[status],
+        check_sections(name, key, body)
+        # A page is Pre-launch until someone marks it Live after checking it in the live game:
+        # an edit after launch doesn't make old Beta advice current.
+        status = meta.get("status") or "pre-launch"
+        pages_[key] = {**meta, **places[key], "key": key, "file": name, "body": body, "html": ledger_links(render(body), base),
+                       "sections": split_sections(body, base, embedded_prefix(key)), "status": status, "status_label": STATUS[status],
                        "confidence_label": CONFIDENCE.get(meta.get("confidence", ""), "")}
     return pages_
 
@@ -302,6 +373,8 @@ def history(root: Path, after: str | None = None) -> list[dict]:
     for block in out.split("\x1e")[1:]:
         head, *files = block.strip().split("\n")
         when, subject = head.split("\x1f", 1)
+        if PRIVATE.search(subject):
+            subject = "Page updated"  # commit subjects are public here; one that names someone is replaced, not shown
         entries.append({"date": when, "subject": subject, "files": [f for f in files if f]})
     return entries
 
@@ -410,14 +483,14 @@ def search_index(ctx: dict) -> list[list[str]]:
     entries = []
     for c in game["classes"]:
         entries.append([c["name"], f"{base}classes/{c['slug']}/", "Class"])
-        for slug, name, role in c["specs"]:
-            entries.append([f"{name} {c['name']}", f"{base}classes/{c['slug']}/#{slug}", "Spec"])
+        for spec in c["specs"]:
+            entries.append([f"{spec['name']} {c['name']}", f"{base}classes/{c['slug']}/{spec['slug']}/", "Spec"])
     for p in game["professions"]:
         entries.append([p["name"], f"{base}professions/{p['slug']}/", "Profession"])
     for t in game["world"]:
         entries.append([t["name"], f"{base}world/{t['slug']}/", "World"])
-    for slug, name in MORE.items():
-        entries.append([name, f"{base}more/{slug}/", "More"])
+    for m in game["more"]:
+        entries.append([m["name"], f"{base}more/{m['slug']}/", "More"])
     for slug, name in (("craft", "What to craft"), ("crates", "Waylaid Crates: cheapest fill"), ("materials", "Materials worth gathering")):
         entries.append([name, f"{base}prices/{slug}/", "Prices"])
     market = ctx["primary"]
@@ -441,7 +514,9 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
     fdb_path = root / "data/foreverdb.json"
     fdb = json.loads(fdb_path.read_text()) if fdb_path.exists() else {}
     markets = build_markets(captures, names["names"])
-    content = load_content(root, game, launch)
+    content = load_content(root, game, launch, base)
+    blue_path = root / "data/blue.json"
+    blue = json.loads(blue_path.read_text()) if blue_path.exists() else {"posts": []}
     log = history(root, game.get("log_after"))
     built = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     commit = os.environ.get("GITHUB_SHA", "local")
@@ -450,14 +525,25 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
         "scans": [[c["source_sha256"], c.get("extraction_sha256")] for c in captures],
         "names": names.get("source", {}) and names["source"].get("sha256"),
         "foreverdb": (fdb.get("source") or {}).get("data_version"),
-        "content": {k: v["body"] for k, v in content.items()}, "log": [e["subject"] for e in log]},
+        "content": {k: [v["body"], {f: v.get(f) for f in sorted(FIELDS)}] for k, v in content.items()},
+        "log": [e["subject"] for e in log],
+        "blue": hashlib.sha256(json.dumps(blue.get("posts", []), sort_keys=True).encode()).hexdigest()},
         sort_keys=True).encode()).hexdigest()[:12]
 
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
-    shutil.copytree(root / "site/assets", out / "assets")
-    fingerprints = {f.name: hashlib.sha256(f.read_bytes()).hexdigest()[:10] for f in (root / "site/assets").iterdir() if f.is_file()}
+    # Own assets are published as they are. Screenshots are published only when listed in
+    # data/game.json ("screenshots"), so nothing in that folder goes public by accident.
+    shutil.copytree(root / "site/assets", out / "assets", ignore=shutil.ignore_patterns("screens", ".*", "*.png", "*.psd"))
+    for shot in game.get("screenshots", []):
+        source = root / "site/assets/screens" / shot["file"]
+        if not re.fullmatch(r"[a-z0-9-]+\.(webp|jpg)", shot["file"]) or not source.is_file():
+            raise ValueError(f"Screenshot {shot['file']!r} isn't a .webp or .jpg in site/assets/screens/")
+        (out / "assets/screens").mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, out / "assets/screens" / shot["file"])
+    fingerprints = {f.relative_to(out / "assets").as_posix(): hashlib.sha256(f.read_bytes()).hexdigest()[:10]
+                    for f in (out / "assets").rglob("*") if f.is_file()}
     site = pages.Site(base=base, url=SITE_URL, revision=revision, built=built,
                       credit=bool(names.get("source") or fdb), assets=fingerprints, launch=launch)
 
@@ -509,12 +595,13 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
     for entry in log:
         entry["urls"] = sorted({u for u in (change_url(f, places) for f in entry["files"]) if u})
     fdb_source = fdb.get("source") or {}
-    ctx = {"game": game, "launch": launch, "base": base, "markets": markets, "primary": primary, "content": content,
+    ctx = {"game": game, "launch": launch, "base": base, "markets": markets, "primary": primary, "content": content, "blue": blue,
            "log": log, "fdb": fdb, "fdb_source": fdb_source, "names": names["names"], "captures": captures,
            "names_source": names.get("source"),
            "data_prelaunch": not fdb_source.get("fetched_on") or date.fromisoformat(fdb_source["fetched_on"]) < launch,
            "craft": craft_table(fdb, book, names["names"]), "crates": crate_table(fdb, book, names["names"]),
            "materials": materials_table(fdb, book, names["names"])}
+    site.nav = pages.nav_html(site, ctx)
     for market in markets:
         page(f"prices/{market['slug']}/", pages.market_page(site, market, ctx))
     page("", pages.home(site, ctx))
@@ -528,28 +615,35 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
     page("classes/", sections.classes_index(site, ctx))
     for c in game["classes"]:
         page(f"classes/{c['slug']}/", sections.class_page(site, ctx, c))
+        for spec in c["specs"]:
+            page(f"classes/{c['slug']}/{spec['slug']}/", sections.spec_page(site, ctx, c, spec))
     page("professions/", sections.professions_index(site, ctx))
     for p in game["professions"]:
         page(f"professions/{p['slug']}/", sections.profession_page(site, ctx, p))
     page("world/", sections.world_index(site, ctx))
     for t in game["world"]:
         page(f"world/{t['slug']}/", sections.world_page(site, ctx, t))
-    for slug in MORE:
-        page(f"more/{slug}/", sections.more_page(site, ctx, slug))
+    for m in game["more"]:
+        page(f"more/{m['slug']}/", sections.more_page(site, ctx, m))
     page("more/about/", sections.about_page(site, ctx))
+    write("404.html", pages.not_found(site))
     write("search.json", json.dumps(search_index(ctx), separators=(",", ":"), ensure_ascii=False) + "\n")
 
     write("llms-full.txt", pages.llms_full(site, ctx))
     write("llms.txt", pages.llms_index(site, ctx))
     urls = ["", "prices/", "prices/craft/", "prices/crates/", "prices/materials/", "classes/", "professions/", "world/",
-            "more/about/"] + [f"more/{s}/" for s in MORE] + [f"prices/{m['slug']}/" for m in markets] \
-        + [f"classes/{c['slug']}/" for c in game["classes"]] + [f"professions/{p['slug']}/" for p in game["professions"]] \
+            "more/about/"] + [f"more/{m['slug']}/" for m in game["more"]] + [f"prices/{m['slug']}/" for m in markets] \
+        + [f"classes/{c['slug']}/" for c in game["classes"]] \
+        + [f"classes/{c['slug']}/{spec['slug']}/" for c in game["classes"] for spec in c["specs"]] + [f"professions/{p['slug']}/" for p in game["professions"]] \
         + [f"world/{t['slug']}/" for t in game["world"]]
     write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
           + "".join(f"<url><loc>{SITE_URL}{u}</loc></url>\n" for u in urls) + "</urlset>\n")
     write("data/manifest.json", json.dumps({
         "schema_version": SCHEMA, "site": pages.SITE_NAME, "revision": revision, "built": built,
-        "source_commit": commit, "parser_version": PARSER_VERSION, "read_first": base + "llms-full.txt",
+        "source_commit": commit, "workflow_run": os.environ.get("GITHUB_RUN_ID"), "parser_version": PARSER_VERSION,
+        "read_first": base + "llms-full.txt",
+        "blizzard_posts": {"fetched": blue.get("fetched"), "posts": len(blue.get("posts", [])),
+                           "snapshot_sha256": hashlib.sha256(json.dumps(blue.get("posts", []), sort_keys=True).encode()).hexdigest()},
         "markets": catalogue, "pages_with_notes": sorted(content),
         "item_names": names.get("source"), "foreverdb": fdb_source}, indent=1) + "\n")
 

@@ -350,6 +350,48 @@ function siteSearch(form) {
   });
 }
 
+function menus() {
+  // One state for every way in: each menu opens by its button (click, tap, Enter or Space) and, with
+  // a mouse on a wide screen, by hovering. Leaving closes it after a short delay, so the pointer can
+  // cross the gap to the panel. Escape or a click elsewhere closes it, and the phone menu too.
+  const header = document.querySelector(".masthead");
+  const items = [...document.querySelectorAll("[data-menu]")];
+  const hover = window.matchMedia("(min-width: 861px) and (hover: hover)");
+  const toggleOf = item => item.querySelector(".menu-toggle");
+  const set = (item, open) => { item.classList.toggle("open", open); toggleOf(item).setAttribute("aria-expanded", String(open)); };
+  const closeAll = except => items.forEach(item => { if (item !== except) set(item, false); });
+  const opener = document.querySelector(".nav-open");
+  const showNav = shown => {
+    if (!opener) return;
+    header.classList.toggle("nav-shown", shown);
+    opener.setAttribute("aria-expanded", String(shown));
+    opener.textContent = shown ? "Close" : "Menu";
+  };
+  let timer;
+  items.forEach(item => {
+    toggleOf(item).addEventListener("click", () => { const open = !item.classList.contains("open"); closeAll(item); set(item, open); });
+    item.addEventListener("mouseenter", () => { if (!hover.matches) return; clearTimeout(timer); closeAll(item); set(item, true); });
+    item.addEventListener("mouseleave", () => {
+      if (!hover.matches || item.contains(document.activeElement)) return;  // keep a keyboard user's menu open
+      clearTimeout(timer);
+      timer = setTimeout(() => set(item, false), 250);
+    });
+  });
+  document.addEventListener("keydown", event => {
+    if (event.key !== "Escape") return;
+    const active = items.find(item => item.classList.contains("open"));
+    if (active) { set(active, false); toggleOf(active).focus(); return; }
+    if (header.classList.contains("nav-shown")) { showNav(false); opener.focus(); }
+  });
+  document.addEventListener("click", event => {
+    if (event.target.closest(".masthead")) return;
+    closeAll();
+    showNav(false);
+  });
+  if (opener) opener.addEventListener("click", () => showNav(!header.classList.contains("nav-shown")));
+}
+
+menus();
 document.querySelectorAll("[data-theme-toggle]").forEach(themeToggle);
 document.querySelectorAll("[data-countdown]").forEach(countdown);
 const lookupForm = document.querySelector("form.lookup");

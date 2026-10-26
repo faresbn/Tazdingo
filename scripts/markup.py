@@ -14,7 +14,7 @@ EMPHASIS = [
     (re.compile(r"(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?![\w*])"), lambda m: f"<em>{m.group(1)}</em>"),
     (re.compile(r"(?<![\w_])_(?!\s)(.+?)(?<!\s)_(?![\w_])"), lambda m: f"<em>{m.group(1)}</em>"),
 ]
-LINK = re.compile(r"\[([^\]]+)\]\(((?:https?://|/|#)[^\s)]*)\)")
+LINK = re.compile(r"\[([^\]]+)\]\(((?:https?://|/|#|ledger:)[^\s)]*)\)")  # ledger:classes/mage/frost/ links to another page
 BARE_URL = re.compile(r"(?<![\"'=>])(https?://[^\s<\"']+[^\s<\"'.,;:!?)\]])")
 
 
@@ -99,7 +99,19 @@ def lists(lines: list[str]) -> str:
     return "".join(out)
 
 
-def render(source: str) -> str:
+def heading_id(text: str, used: set) -> str:
+    """A stable, unique anchor for a heading, so pages can link to their own sections."""
+    base = re.sub(r"[^a-z0-9]+", "-", html.unescape(re.sub(r"<[^>]+>", "", text)).lower()).strip("-") or "section"
+    slug, n = base, 2
+    while slug in used:
+        slug, n = f"{base}-{n}", n + 1
+    used.add(slug)
+    return slug
+
+
+def render(source: str, used: set | None = None) -> str:
+    """Markdown to HTML. `used` collects heading anchors across several calls for one page."""
+    used = set() if used is None else used
     lines, out, i = source.replace("\r\n", "\n").split("\n"), [], 0
     while i < len(lines):
         line = lines[i]
@@ -111,7 +123,8 @@ def render(source: str) -> str:
             i = end + 1
         elif match := re.match(r"(#{1,4})\s+(.*?)\s*#*$", line):
             level = max(len(match.group(1)), 2)  # the page title is the only h1
-            out.append(f"<h{level}>{inline(match.group(2))}</h{level}>")
+            text = inline(match.group(2))
+            out.append(f'<h{level} id="{heading_id(text, used)}">{text}</h{level}>')
             i += 1
         elif re.fullmatch(r"\s*([-*_])(\s*\1){2,}\s*", line):
             out.append("<hr>")
@@ -121,7 +134,7 @@ def render(source: str) -> str:
             while i < len(lines) and lines[i].lstrip().startswith(">"):
                 block.append(re.sub(r"^\s*>\s?", "", lines[i]))
                 i += 1
-            out.append(f"<blockquote>{render(chr(10).join(block))}</blockquote>")
+            out.append(f"<blockquote>{render(chr(10).join(block), used)}</blockquote>")
         elif "|" in line and i + 1 < len(lines) and re.fullmatch(r"\s*\|?\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)*\|?\s*", lines[i + 1]):
             rows = []
             while i < len(lines) and "|" in lines[i]:

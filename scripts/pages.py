@@ -1,8 +1,9 @@
-"""Page templates: layout, front page, prices and the plain-text files. Section pages
-(classes, professions, world, more) are in sections.py. Every value from data goes through esc()."""
+"""Page templates: layout, menus, front page, prices and the plain-text files. Section pages
+(classes, specs, professions, world, more) are in sections.py. Every value from data goes through esc()."""
 from __future__ import annotations
 
 import html
+import re
 from dataclasses import dataclass, field
 from datetime import date
 
@@ -13,6 +14,7 @@ FOREVERDB = "https://foreverdb.net"
 SERVER_ROWS = 1000  # price rows rendered into the HTML for readers without JavaScript
 NOTICE = ("World of Warcraft, Warcraft and Blizzard Entertainment are trademarks or registered trademarks of "
           "Blizzard Entertainment, Inc. in the U.S. and/or other countries.")
+ROLES = {"dps": "Damage", "tank": "Tank", "healer": "Healer"}
 
 
 @dataclass
@@ -24,9 +26,13 @@ class Site:
     credit: bool
     assets: dict = field(default_factory=dict)  # file name -> content fingerprint
     launch: date = date(2026, 11, 4)
+    nav: str = ""  # the main menu, built once per site from the game data
 
     def asset(self, name: str) -> str:
         return f"{self.base}assets/{name}?v={self.assets.get(name, self.revision)}"
+
+    def has(self, name: str) -> bool:
+        return name in self.assets
 
 
 # --- Small pieces ---------------------------------------------------------------
@@ -38,7 +44,7 @@ def esc(value) -> str:
 def nice_date(iso: str | None) -> str:
     if not iso:
         return "never"
-    d = date.fromisoformat(iso)
+    d = date.fromisoformat(iso[:10])
     return f"{d.day} {d:%b %Y}"
 
 
@@ -48,7 +54,7 @@ def when(iso: str | None) -> str:
 
 def game_day(site: Site, iso: str) -> str:
     """Journal dating: "Day 3" after launch, "5 days before launch" before it."""
-    days = (date.fromisoformat(iso) - site.launch).days
+    days = (date.fromisoformat(iso[:10]) - site.launch).days
     if days >= 0:
         return f"Day {days + 1}"
     return "Launch eve" if days == -1 else f"{-days} days before launch"
@@ -122,46 +128,150 @@ def spark(values: list) -> str:
 
 
 def item_link(item_id: int, name: str) -> str:
-    return (f'<a href="{FOREVERDB}/item/{item_id}" data-foreverdb="item:{item_id}" target="_blank" rel="noopener">'
+    return (f'<a href="{FOREVERDB}/item/{esc(item_id)}" data-foreverdb="item:{esc(item_id)}" target="_blank" rel="noopener">'
             f'{esc(name)}</a>')
 
 
+def ext(url: str) -> str:
+    return ' target="_blank" rel="noopener"' if url.startswith("http") else ""
+
+
 def links(pairs: list) -> str:
-    out = []
-    for label, url in pairs:
-        external = url.startswith("http")
-        out.append(f'<li><a href="{esc(url)}"{" target=_blank rel=noopener" if external else ""}>{esc(label)}</a></li>')
-    return '<ul class="elsewhere">' + "".join(out) + "</ul>"
+    return '<ul class="elsewhere">' + "".join(f'<li><a href="{esc(url)}"{ext(url)}>{esc(label)}</a></li>' for label, url in pairs) + "</ul>"
 
 
-def changelog(site: Site, entries: list, title: str = "Changes") -> str:
+def emblem(site: Site, kind: str, slug: str, size: int = 40, colour: str | None = None) -> str:
+    """A painted object for a class or profession; a coloured mark until the art exists."""
+    name = f"{kind}-{slug}.webp"
+    style = f' style="--mark:{esc(colour)}"' if colour else ""
+    if site.has(name):
+        return (f'<img class="emblem" src="{site.asset(name)}" alt="" width="{size}" height="{size}" '
+                f'loading="lazy" decoding="async"{style}>')
+    return f'<span class="emblem placeholder" aria-hidden="true"{style}></span>'
+
+
+def banner(site: Site, section: str, position: str = "70% 50%") -> str:
+    name = f"banner-{section}.webp"
+    if not site.has(name):
+        return ""
+    return (f'<div class="banner" aria-hidden="true"><img src="{site.asset(name)}" alt="" width="1536" height="640" '
+            f'loading="lazy" decoding="async" style="object-position:{position}"></div>')
+
+
+def changelog(site: Site, entries: list, title: str = "Changes to this page") -> str:
     if not entries:
         return ""
     rows = "".join(f'<li><span class="when">{when(e["date"])} <span class="day">{game_day(site, e["date"])}</span></span> {esc(e["subject"])}</li>'
                    for e in entries[:12])
-    return f'<section class="changes"><h2>{esc(title)}</h2><ol class="log">{rows}</ol></section>'
+    return f'<section class="changes" id="changes"><h2>{esc(title)}</h2><ol class="log">{rows}</ol></section>'
+
+
+def status_line(page: dict | None) -> str:
+    if not page:
+        return ""
+    facts = [badge("prelaunch") if page["status"] == "pre-launch" else badge("live")]
+    if page.get("confidence_label"):
+        facts.append(badge(page["confidence"], page["confidence_label"]))
+    facts.append(f'<span class="updated">Updated {when(page["updated"])}</span>')
+    return f'<p class="status-line">{" ".join(facts)}</p>'
+
+
+def render_sections(page: dict | None, empty: str, skip: tuple = (), only: tuple | None = None, sources: bool = True) -> str:
+    """A note's sections, each styled for what it is: the guides' summary reads as an article,
+    our findings sit on a ruled ledger sheet, and the sources are a compact list."""
+    if not page:
+        return f'<p class="empty">{esc(empty)}</p>'
+    out = []
+    for sec in page["sections"]:
+        if sec["kind"] in skip or (only is not None and sec["kind"] not in only) or (not sec["heading"] and not sec["html"].strip()):
+            continue
+        heading = f'<h2>{esc(sec["heading"])}</h2>' if sec["heading"] else ""
+        body = ('<p class="empty">Nothing recorded yet. Findings from our own play go here, marked with how well they\'re tested.</p>'
+                if sec["empty"] else sec["html"])
+        out.append(f'<section class="sec sec-{sec["kind"]}" id="{esc(sec["slug"])}">{heading}<div class="prose">{body}</div></section>')
+    if sources and page.get("sources"):
+        out.append(f'<p class="sources">Sources: {esc(page["sources"])}</p>')
+    return "".join(out)
 
 
 def note_block(page: dict | None, empty: str) -> str:
+    return status_line(page) + render_sections(page, empty)
+
+
+def plain_text(markup: str) -> str:
+    """Heading HTML as plain text: tags removed, entities decoded (escape once on output)."""
+    return html.unescape(re.sub(r"<[^>]+>", "", markup))
+
+
+def toc(page: dict | None, extra: tuple = ()) -> str:
     if not page:
-        return f'<p class="empty">{esc(empty)}</p>'
-    facts = [badge("prelaunch") if page["status"] == "pre-launch" else badge("live")]
-    if page["confidence_label"]:
-        facts.append(badge(page["confidence"], page["confidence_label"]))
-    facts.append(f'<span class="updated">Updated {when(page["updated"])}</span>')
-    sources = f'<p class="sources">Sources: {esc(page["sources"])}</p>' if page.get("sources") else ""
-    return f'<div class="note-meta">{" ".join(facts)}</div><div class="prose">{page["html"]}</div>{sources}'
+        return ""
+    items = []
+    for sec in page["sections"]:
+        if not sec["heading"]:
+            continue
+        sub = "".join(f'<li><a href="#{esc(anchor)}">{esc(plain_text(label))}</a></li>' for anchor, label in sec["toc"])
+        items.append(f'<li><a href="#{esc(sec["slug"])}">{esc(sec["heading"])}</a>{f"<ol>{sub}</ol>" if sub else ""}</li>')
+    items += [f'<li><a href="#{esc(anchor)}">{esc(label)}</a></li>' for anchor, label in extra]
+    return f'<nav class="toc" aria-label="On this page"><h2 class="aside-title">On this page</h2><ol>{"".join(items)}</ol></nav>' if items else ""
+
+
+# --- Menus --------------------------------------------------------------------
+
+def nav_html(site: Site, ctx: dict) -> str:
+    """The masthead menu. Each top item is a link to its section plus a button that opens a
+    panel: on hover or keyboard focus with a mouse, on tap or click everywhere, Escape closes it.
+    On phones the panels stack inside the opened menu."""
+    b, game = site.base, ctx["game"]
+
+    def item(key: str, label: str, href: str, panel: str) -> str:
+        return (f'<li class="menu-item" data-menu><a class="menu-link" href="{b}{href}">{label}</a>'
+                f'<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="panel-{key}">'
+                f'<span class="visually-hidden">Show {label} menu</span></button>'
+                f'<div class="panel panel-{key}" id="panel-{key}">{panel}</div></li>')
+
+    markets = "".join(f'<li><a href="{esc(m["url"])}">{esc(m["name"])}</a> <span class="aside">{esc(m["environment_label"])}</span></li>'
+                      for m in ctx["markets"])
+    prices = (f'<div class="panel-cols two"><div><h3 class="panel-title">Making gold</h3><ul class="panel-list">'
+              f'<li><a href="{b}prices/craft/">What to craft</a><span class="aside">Recipes ranked by margin</span></li>'
+              f'<li><a href="{b}prices/crates/">Waylaid Crates</a><span class="aside">Cheapest way to earn Merchant\'s Favor</span></li>'
+              f'<li><a href="{b}prices/materials/">Materials worth gathering</a><span class="aside">Herbs, ores, leather and cloth by value</span></li>'
+              f'</ul></div><div><h3 class="panel-title">Markets</h3><ul class="panel-list">{markets}</ul>'
+              f'<p class="panel-foot"><a href="{b}prices/">All prices</a></p></div></div>')
+    class_cells = []
+    for c in game["classes"]:
+        specs = " ".join(f'<a href="{b}classes/{c["slug"]}/{s["slug"]}/">{esc(s["name"])}</a>' for s in c["specs"])
+        class_cells.append(f'<div class="class-cell" style="--class:{esc(c["colour"])}">{emblem(site, "class", c["slug"], 36, c["colour"])}'
+                           f'<div><a class="class-link" href="{b}classes/{c["slug"]}/">{esc(c["name"])}</a><div class="spec-links">{specs}</div></div></div>')
+    classes = f'<div class="class-grid">{"".join(class_cells)}</div><p class="panel-foot"><a href="{b}classes/">All classes, and choosing one</a></p>'
+    groups = {}
+    for p in game["professions"]:
+        groups.setdefault(p["kind"], []).append(p)
+    profs = "".join(f'<div><h3 class="panel-title">{esc(kind)}</h3><ul class="panel-list icons">'
+                    + "".join(f'<li><a href="{b}professions/{p["slug"]}/">{emblem(site, "prof", p["slug"], 28)}{esc(p["name"])}</a></li>' for p in items)
+                    + "</ul></div>" for kind, items in groups.items())
+    professions = f'<div class="panel-cols three">{profs}</div><p class="panel-foot"><a href="{b}professions/">All professions</a></p>'
+    world = ('<ul class="panel-list two-col">' + "".join(f'<li><a href="{b}world/{t["slug"]}/">{esc(t["name"])}</a><span class="aside">{esc(t["summary"])}</span></li>'
+                                                        for t in game["world"]) + "</ul>")
+    more = ('<ul class="panel-list">' + "".join(f'<li><a href="{b}more/{m["slug"]}/">{esc(m["name"])}</a><span class="aside">{esc(m["summary"])}</span></li>'
+                                                for m in game["more"])
+            + f'<li><a href="{b}more/about/">Sources and credits</a><span class="aside">Where everything comes from</span></li></ul>')
+    return (f'<nav class="mainnav" id="mainnav" aria-label="Main"><ul class="menu">'
+            + item("prices", "Prices", "prices/", prices) + item("classes", "Classes", "classes/", classes)
+            + item("professions", "Professions", "professions/", professions) + item("world", "World", "world/", world)
+            + item("more", "More", "more/launch/", more) + "</ul></nav>")
 
 
 # --- Layout -------------------------------------------------------------------
 
 def layout(site: Site, title: str, body: str, active: str = "", description: str = "", path: str = "") -> str:
-    def nav(label, href, key):
-        current = ' aria-current="page"' if active == key else ""
-        return f'<a href="{site.base}{href}"{current}>{label}</a>'
     full_title = f"{SITE_NAME}: {SUBTITLE}" if title == SITE_NAME else f"{title} | {SITE_NAME}"
-    description = description or "Auction House prices, class notes and discoveries from World of Warcraft: Forever, kept as the game unfolds."
-    more_current = ' class="current"' if active == "more" else ""
+    description = description or "Auction House prices, class guides and discoveries from World of Warcraft: Forever, kept as the game unfolds."
+    card = site.asset("social-card.jpg") if site.has("social-card.jpg") else ""
+    card_meta = (f'<meta property="og:image" content="{esc(site.url + card[len(site.base):])}">'
+                 f'<meta name="twitter:card" content="summary_large_image">') if card else ""
+    nav = site.nav.replace(f'<li class="menu-item" data-menu><a class="menu-link" href="{site.base}{active}/"',
+                           f'<li class="menu-item current" data-menu><a class="menu-link" aria-current="page" href="{site.base}{active}/"') if active else site.nav
     return f'''<!doctype html>
 <html lang="en-GB">
 <head>
@@ -170,13 +280,18 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
 <title>{esc(full_title)}</title>
 <meta name="description" content="{esc(description)}">
 <link rel="canonical" href="{esc(site.url + path)}">
+<meta property="og:title" content="{esc(full_title)}">
+<meta property="og:description" content="{esc(description)}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{esc(site.url + path)}">
+{card_meta}
 <link rel="alternate" type="text/plain" title="The whole ledger as plain text" href="{site.base}llms-full.txt">
 <meta name="color-scheme" content="light dark">
 <script>try{{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}}catch(e){{}}</script>
 <link rel="icon" href="{site.asset("icon.svg")}" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=IM+Fell+English:ital@0;1&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
 <link rel="stylesheet" href="{site.asset("style.css")}">
 <script src="{site.asset("app.js")}" defer></script>
 <script src="{FOREVERDB}/embed/tooltips.js" data-icons="true" data-color-links="true" async></script>
@@ -184,90 +299,183 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
 <body data-base="{site.base}" data-launch="{site.launch.isoformat()}">
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
-  <a class="wordmark" href="{site.base}"><span class="name">{SITE_NAME}</span><span class="sub">{SUBTITLE}</span></a>
-  <nav aria-label="Main">
-    {nav("Prices", "prices/", "prices")}{nav("Classes", "classes/", "classes")}{nav("Professions", "professions/", "professions")}{nav("World", "world/", "world")}
-    <details class="more-menu"><summary{more_current}>More</summary>
-      <ul>
-        <li><a href="{site.base}more/addons/">Addons</a></li>
-        <li><a href="{site.base}more/macros/">Macros</a></li>
-        <li><a href="{site.base}more/known-issues/">Known issues</a></li>
-        <li><a href="{site.base}more/about/">Sources and credits</a></li>
-      </ul>
-    </details>
-  </nav>
-  <button class="theme-toggle" type="button" data-theme-toggle aria-label="Colour theme: follows your device">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3.75a8.25 8.25 0 0 0 0 16.5z" fill="currentColor"/><circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-    <span class="theme-label">Auto</span>
-  </button>
+  <div class="masthead-inner">
+    <a class="wordmark" href="{site.base}"><span class="mark" aria-hidden="true"></span><span class="name">{SITE_NAME}</span><span class="sub">{SUBTITLE}</span></a>
+    <button class="nav-open" type="button" aria-expanded="false" aria-controls="mainnav">Menu</button>
+    {nav}
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Colour theme: follows your device">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3.75a8.25 8.25 0 0 0 0 16.5z" fill="currentColor"/><circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+      <span class="theme-label">Auto</span>
+    </button>
+  </div>
 </header>
 <main id="main">
 {body}
 </main>
 <footer class="colophon">
-  <p><strong>{SITE_NAME}</strong> is an unofficial fan project, not affiliated with or endorsed by Blizzard Entertainment. {NOTICE}</p>
-  <p>{'Item names, recipes, tooltips and second-opinion prices: <a href="' + FOREVERDB + '">Data from ForeverDB.net</a>. ' if site.credit else ''}Our prices come from our own Auctionator scans.</p>
-  <p>Built {esc(site.built)}, revision {esc(site.revision)}. <a href="{site.base}llms-full.txt">Plain-text version</a>. <a href="{site.base}more/about/">Sources and credits</a>.</p>
+  <div class="colophon-inner">
+    <p class="colophon-name"><span class="mark" aria-hidden="true"></span>{SITE_NAME}</p>
+    <p>An unofficial fan project, not affiliated with or endorsed by Blizzard Entertainment. {NOTICE}</p>
+    <p>{'Item names, recipes, tooltips and second-opinion prices: <a href="' + FOREVERDB + '">Data from ForeverDB.net</a>. ' if site.credit else ''}Prices come from our own Auctionator scans. Guides are summarised in our own words and linked; the originals belong to their authors.</p>
+    <p>Built {esc(site.built)}, revision {esc(site.revision)}. <a href="{site.base}llms-full.txt">Plain-text version</a> · <a href="{site.base}more/about/">Sources and credits</a></p>
+  </div>
 </footer>
 </body>
 </html>
 '''
 
 
-def page_head(title: str, lede: str = "", crumbs: tuple = (), extra: str = "") -> str:
+def page_head(title: str, lede: str = "", crumbs: tuple = (), extra: str = "", mark: str = "", colour: str | None = None) -> str:
     crumb = "".join(f'<a href="{esc(url)}">{esc(label)}</a>' for label, url in crumbs)
-    return (f'<header class="page-head">{f"<p class=crumbs>{crumb}</p>" if crumb else ""}<h1>{esc(title)}</h1>'
-            f'{f"<p class=lede>{lede}</p>" if lede else ""}{extra}</header>')
+    style = f' style="--class:{esc(colour)}"' if colour else ""
+    return (f'<header class="page-head{" coloured" if colour else ""}"{style}><div class="page-head-inner">'
+            f'{f"<p class=crumbs>{crumb}</p>" if crumb else ""}'
+            f'<div class="title-row">{mark}<h1>{esc(title)}</h1></div>'
+            f'{f"<p class=lede>{lede}</p>" if lede else ""}{extra}</div></header>')
 
 
 # --- Front page -------------------------------------------------------------------
 
+def checklist_items(ctx: dict, limit: int = 6) -> list[tuple[str, str]]:
+    """The launch checklist's own headings, so the front page always matches the page."""
+    page = ctx["content"].get("more/launch")
+    if not page:
+        return []
+    items = []
+    for sec in page["sections"]:
+        if sec["kind"] in ("findings", "more"):
+            continue
+        items += [(anchor, plain_text(label)) for anchor, label in sec["toc"]]
+    return items[:limit]
+
+
+def blue_list(site: Site, posts: list, limit: int, excerpts: bool = False) -> str:
+    rows = []
+    for p in posts[:limit]:
+        if not str(p.get("url", "")).startswith("https://us.forums.blizzard.com/"):
+            continue  # only ever link to Blizzard's own forums
+        excerpt = (f'<blockquote class="blue-excerpt"><p>{esc(p["excerpt"])}</p></blockquote>' if excerpts and p.get("excerpt") else "")
+        rows.append(f'<li><a class="blue-title" href="{esc(p["url"])}" target="_blank" rel="noopener">{esc(p["title"])}</a>'
+                    f'<span class="blue-meta">{esc(p["author"])}{", " + esc(p["author_title"]) if p.get("author_title") else ""} · '
+                    f'{when(p["posted"])}{" · reply" if p.get("reply") else ""}</span>{excerpt}</li>')
+    return f'<ol class="blue-list">{"".join(rows)}</ol>'
+
+
 def home(site: Site, ctx: dict) -> str:
-    primary, content = ctx["primary"], ctx["content"]
+    primary, game, content, b = ctx["primary"], ctx["game"], ctx["content"], site.base
     days_to_go = (site.launch - date.fromisoformat(site.built[:10])).days
     countdown = (f"Forever opens in {days_to_go} day{'s' if days_to_go != 1 else ''}" if days_to_go > 0
-                 else f"Day {1 - days_to_go} of Forever")
-    search_action = f'{primary["url"]}#prices' if primary else f"{site.base}prices/"
+                 else "Forever opens today" if days_to_go == 0 else f"Day {1 - days_to_go} of Forever")
+    search_action = f'{primary["url"]}#prices' if primary else f"{b}prices/"
+
+    hero_art = ""
+    if site.has("hero-day.webp"):
+        # Both paintings are in the page; the theme decides which shows (CSS), so a manual
+        # light/dark choice swaps them too. Lazy loading keeps the hidden one from downloading.
+        night = (f'<img class="night" src="{site.asset("hero-night.webp")}" alt="" width="1536" height="1024" loading="lazy" decoding="async">'
+                 if site.has("hero-night.webp") else "")
+        hero_art = (f'<div class="hero-art" aria-hidden="true"><img class="day" src="{site.asset("hero-day.webp")}" alt="" width="1536" height="1024" '
+                    f'loading="lazy" decoding="async">{night}</div>')
+
+    checklist = checklist_items(ctx)
+    check_html = ("<ol class=\"checklist\">" + "".join(f'<li><a href="{b}more/launch/#{esc(a)}">{esc(t)}</a></li>' for a, t in checklist) + "</ol>"
+                  if checklist else '<p class="empty">The launch checklist is being written.</p>')
+    issues = content.get("more/known-issues")
+    issue_titles = []
+    if issues:
+        for sec in issues["sections"]:
+            if sec["kind"] not in ("findings", "more"):
+                issue_titles += [plain_text(label) for _, label in sec["toc"]]
+    issue_line = (f'<p class="dash-note"><a href="{b}more/known-issues/">Known issues</a>: {len(issue_titles)} tracked, '
+                  f'including “{esc(issue_titles[0])}”.</p>' if issue_titles else "")
+
+    pulse = ""
+    if primary:
+        current = [i for i in primary["current"] if i["volatility"]]
+        share = {v: sum(1 for i in current if i["volatility"] == v) for v in ("steady", "moving", "volatile")}
+        total = max(len(current), 1)
+        meter = "".join(f'<span class="meter-{v}" style="width:{share[v] * 100 / total:.1f}%" title="{share[v]:,} {v}"></span>' for v in ("steady", "moving", "volatile"))
+        rows = "".join(f'<tr><th scope="row">{item_link(i["id"], i["name"])}</th><td class="num">{money(i["typical"])}</td><td>{steadiness(i["volatility"])}</td></tr>'
+                       for i in primary["highlights"]["most_listed"][:5])
+        crafts = "".join(f'<li>{item_link(r["item"], r["name"])} <span class="aside">{esc(r["profession"])}</span> <span class="value">{money(r["margin"])}</span></li>'
+                         for r in ctx["craft"][:3])
+        beta = badge("beta") if primary["environment"] == "forever-beta" else ""
+        pulse = f'''<section class="dash-card pulse" aria-labelledby="pulse-title">
+  <h2 id="pulse-title"><a href="{b}prices/">Market pulse</a> {beta}</h2>
+  <div class="meter" role="img" aria-label="{share["steady"]:,} steady, {share["moving"]:,} moving and {share["volatile"]:,} volatile prices">{meter}</div>
+  <p class="meter-key"><span class="k-steady">{share["steady"] * 100 // total}% steady</span> <span class="k-moving">{share["moving"] * 100 // total}% moving</span> <span class="k-volatile">{share["volatile"] * 100 // total}% volatile</span></p>
+  <table class="compact"><caption>Most listed on {nice_date(primary["last_date"])}</caption><tbody>{rows}</tbody></table>
+  {f'<h3 class="mini-title"><a href="{b}prices/craft/">Best crafting margins</a></h3><ul class="mini-list">{crafts}</ul>' if crafts else ""}
+</section>'''
+
+    blue = ctx["blue"].get("posts", [])
+    blue_html = (blue_list(site, blue, 5) + f'<p class="dash-note"><a href="{b}more/blizzard/">All Blizzard posts</a>'
+                 f'{" · checked " + nice_date(ctx["blue"].get("fetched")) if ctx["blue"].get("fetched") else ""}</p>') if blue else '<p class="empty">No posts yet.</p>'
+
+    def spec_links(c: dict) -> str:
+        return " · ".join(f'<a href="{b}classes/{c["slug"]}/{spec["slug"]}/">{esc(spec["name"])}</a>' for spec in c["specs"])
+    picker = "".join(f'<li style="--class:{esc(c["colour"])}"><a class="pick" href="{b}classes/{c["slug"]}/">'
+                     f'{emblem(site, "class", c["slug"], 48, c["colour"])}<span>{esc(c["name"])}</span></a>'
+                     f'<span class="pick-specs">{spec_links(c)}</span></li>' for c in game["classes"])
     latest = "".join(
         f'<li><span class="when">{when(e["date"])} <span class="day">{game_day(site, e["date"])}</span></span> '
-        + (f'<a href="{site.base}{esc(e["urls"][0])}">{esc(e["subject"])}</a>' if e["urls"] else esc(e["subject"])) + "</li>"
-        for e in ctx["log"][:8])
-    recipes = ctx["fdb"].get("recipes", {})
-    total = sum(len(r) for r in recipes.values())
-    new = sum(r["new"] for rs in recipes.values() for r in rs)
-    noted = {k.split("/")[1] for k in content if k.startswith("classes/")}
-    beta = badge("beta") if primary and primary["environment"] == "forever-beta" else ""
-    doors = [
-        ("Prices", "prices/", f'{len(primary["items"]):,} items {beta}, with what to craft, crate costs and materials worth gathering.' if primary else "Prices start with the first scan."),
-        ("Classes", "classes/", f"Nine classes and 27 specs, with notes on {len(noted)} so far and the best guides elsewhere."),
-        ("Professions", "professions/", f"Twelve professions. {new:,} of {total:,} recipes are new in Forever." if total else "Twelve professions."),
-        ("World", "world/", "Camping, Legacy, Merchant's Favor, rares, new zones, raids and collections."),
-        ("More", "more/addons/", "Addons that work in Forever, macros, and known issues with workarounds."),
-    ]
-    door_list = "".join(f'<li><a href="{site.base}{href}" class="door-name">{name}</a><p>{text}</p></li>' for name, href, text in doors)
-    return layout(site, SITE_NAME, f'''<section class="hero">
-  <div class="hero-art" aria-hidden="true"></div>
-  <div class="hero-text">
+        + (f'<a href="{b}{esc(e["urls"][0])}">{esc(e["subject"])}</a>' if e["urls"] else esc(e["subject"])) + "</li>"
+        for e in ctx["log"][:6])
+    profs = "".join(f'<li><a href="{b}professions/{p["slug"]}/">{emblem(site, "prof", p["slug"], 32)}<span>{esc(p["name"])}</span></a></li>' for p in game["professions"])
+    world = "".join(f'<li><a href="{b}world/{t["slug"]}/">{esc(t["name"])}</a></li>' for t in game["world"])
+
+    return layout(site, SITE_NAME, f'''<section class="intro">
+  <div class="intro-text">
     <p class="countdown" data-countdown>{countdown}</p>
     <h1>{SITE_NAME}</h1>
-    <p class="intro">Prices, class notes and discoveries from World of Warcraft: Forever, kept as the game unfolds.</p>
+    <p class="lede">Prices from our own Auction House scans, the best class and profession guides summarised in one place, and what we find as we play World of Warcraft: Forever.</p>
     <form class="lookup" action="{esc(search_action)}" method="get" role="search">
-      <label for="lookup">Search the ledger</label>
-      <div class="lookup-row"><input id="lookup" name="q" type="search" placeholder="Linen Cloth, Frost Mage, camping" autocomplete="off" aria-controls="lookup-results"><button type="submit">Search</button></div>
+      <label for="lookup" class="visually-hidden">Search the ledger</label>
+      <div class="lookup-row"><input id="lookup" name="q" type="search" placeholder="Search: Linen Cloth, Frost Mage, camping" autocomplete="off" aria-controls="lookup-results"><button type="submit">Search</button></div>
       <ul id="lookup-results" class="lookup-results" hidden></ul>
     </form>
   </div>
+  {hero_art}
 </section>
-<div class="home-grid">
-  <section class="panel doors" aria-labelledby="doors-title">
-    <h2 id="doors-title">In the ledger</h2>
-    <ul class="door-list">{door_list}</ul>
+<div class="dash">
+  <section class="dash-card checklist-card" aria-labelledby="check-title">
+    <h2 id="check-title"><a href="{b}more/launch/">Before you log in</a></h2>
+    {check_html}
+    {issue_line}
   </section>
-  <section class="panel latest" aria-labelledby="latest-title">
-    <h2 id="latest-title">Latest</h2>
+  {pulse}
+  <section class="dash-card blue-card" aria-labelledby="blue-title">
+    <h2 id="blue-title"><a href="{b}more/blizzard/">Blizzard says</a></h2>
+    {blue_html}
+  </section>
+</div>
+<div class="dash dash-lower">
+  <section class="dash-card picker-card" aria-labelledby="picker-title">
+    <h2 id="picker-title"><a href="{b}classes/">Choose your class</a></h2>
+    <ul class="picker">{picker}</ul>
+  </section>
+  <section class="dash-card latest-card" aria-labelledby="latest-title">
+    <h2 id="latest-title">Latest in the ledger</h2>
     <ol class="log">{latest or "<li>Nothing recorded yet.</li>"}</ol>
   </section>
-</div>''', active="home")
+</div>
+<div class="dash dash-lower">
+  <section class="dash-card prof-card" aria-labelledby="prof-title">
+    <h2 id="prof-title"><a href="{b}professions/">Professions</a></h2>
+    <ul class="prof-strip">{profs}</ul>
+  </section>
+  <section class="dash-card world-card" aria-labelledby="world-title">
+    <h2 id="world-title"><a href="{b}world/">The world</a></h2>
+    <ul class="tag-list">{world}</ul>
+  </section>
+</div>''', active="", path="")
+
+
+def not_found(site: Site) -> str:
+    return layout(site, "Page not found", page_head("This page isn't in the ledger", "It may have moved when the site was reorganised.")
+                  + f'''<section class="page-body prose"><p>Try the <a href="{site.base}">front page</a>, search from there, or start from
+  <a href="{site.base}prices/">Prices</a>, <a href="{site.base}classes/">Classes</a>, <a href="{site.base}professions/">Professions</a> or
+  <a href="{site.base}world/">World</a>.</p></section>''', path="404.html")
 
 
 # --- Prices -----------------------------------------------------------------------
@@ -312,7 +520,7 @@ def prices_index(site: Site, ctx: dict) -> str:
   <li><a href="{site.base}prices/materials/" class="door-name">Materials worth gathering</a><p>Herbs, ores, leather and cloth that no recipe makes and no vendor sells, by value.</p></li>
 </ul>'''
     return layout(site, "Prices", page_head("Prices", "Auction House prices from our own scans: what things cost, how steady that price is, and what to do with it.")
-                  + f'''<section class="page-body">
+                  + banner(site, "prices") + f'''<section class="page-body">
   <h2>Making gold</h2>
   {tools}
   <h2>Markets</h2>
@@ -470,25 +678,31 @@ def llms_index(site: Site, ctx: dict) -> str:
 
 def llms_full(site: Site, ctx: dict) -> str:
     game, content = ctx["game"], ctx["content"]
+
+    def block(key: str, level: str = "###") -> list[str]:
+        """One page: its title, how current and how sure it is, its address, then its text."""
+        page = content[key]
+        facts = [page["status_label"]] + ([page["confidence_label"]] if page.get("confidence_label") else []) + [f"updated {page['updated']}"]
+        return [f"{level} {md(page['title'])}", "", f"Status: {', '.join(facts)}. Page: {site.url}{page['url']}",
+                f"Summary: {md(page.get('summary', ''))}", "", page["body"], ""]
+
     out = [f"# {SITE_NAME}", "", f"{SUBTITLE} (launch: {nice_date(site.launch.isoformat())}). Prices come from our own Auctionator scans; "
-           "game data from ForeverDB; notes are ours. Not affiliated with Blizzard Entertainment.",
+           "game data from ForeverDB; guide summaries are written in our own words and cite their sources. Not affiliated with Blizzard Entertainment.",
            f"Site: {site.url}  Built: {site.built}  Revision: {site.revision}", "",
            "## How to read this file", "",
-           "- \"Pre-launch\" marks anything from before launch (4 November 2026) or not yet confirmed in the live game. \"Beta\" marks prices from Forever Beta scans. Both are tentative.",
+           "- Every page says its status. \"Pre-launch\" means written before launch (4 November 2026) or not yet confirmed in the live game: treat it as tentative. \"Live\" means checked in the live game. \"Beta\" marks prices from Forever Beta scans.",
+           "- \"What the guides say\" sections summarise other sites' guides (linked under \"Read more\"). \"Ledger findings\" are our own discoveries, with a confidence: idea, testing, tested or outdated.",
            "- Prices are per item in gold (g), silver (s) and copper (c): 1g = 100s = 10,000c. All prices are asking prices, not sales.",
-           "- \"Typical\" is the median of each day's cheapest listing over the item's last seven days. Use it for \"what does X cost\". \"Latest\" is the most recent cheapest listing.",
-           "- \"Steadiness\" (steady / moving / volatile) says how far the daily price swung over two weeks. Treat volatile prices with caution.",
-           "- Note confidence: idea (untested), testing, tested (confirmed in play), outdated.", ""]
+           "- \"Typical\" is the median of each day's cheapest listing over the item's last seven days; use it for \"what does X cost\". \"Latest\" is the most recent cheapest listing.",
+           "- \"Steadiness\" (steady / moving / volatile) says how far the daily price swung over two weeks. Treat volatile prices with caution.", ""]
     out += ["## Markets", ""] + [f"- {md(m['name'])} ({m['environment_label']}): {len(m['items']):,} items, newest data {m['last_date']}. "
                                  f"Prices (TSV): {site.url}{m['files']['prices_tsv'][len(site.base):]}" for m in ctx["markets"]] + [""]
     for m in ctx["markets"][:1]:
         h = m["highlights"]
-        out += [f"## Prices: {md(m['name'])} ({m['environment_label']})", "",
-                f"Items: {len(m['items']):,}. Newest data: {m['last_date']}. Full list (TSV): {site.url}{m['files']['prices_tsv'][len(site.base):]}"]
         if h["most_listed"]:
-            out += ["", "| Item | ID | Typical | Steadiness | Listed |", "|---|---|---|---|---|"]
+            out += [f"### Most listed in {md(m['name'])} on {m['last_date']}", "", "| Item | ID | Typical | Steadiness | Listed |", "|---|---|---|---|---|"]
             out += [f"| {md(i['name'])} | {i['id']} | {plain_money(i['typical'])} | {i['volatility'] or 'too new'} | {i['listed']:,} |" for i in h["most_listed"]]
-        out.append("")
+            out.append("")
     if ctx["craft"]:
         out += ["## What to craft (best margins)", "", "| Recipe | Profession | Skill | Sells for | Reagents | Margin |", "|---|---|---|---|---|---|"]
         out += [f"| {md(r['name'])} | {r['profession']} | {r['skill']} | {plain_money(r['sells'])} | {plain_money(r['cost'])} | {plain_money(r['margin'])} |" for r in ctx["craft"][:20]]
@@ -497,37 +711,39 @@ def llms_full(site: Site, ctx: dict) -> str:
         out += ["## Waylaid Crates (cheapest bundle; a crate takes any one bundle)", ""]
         out += [f"- {md(c['name'])} (level {c['level']}): " + (f"{c['cheapest']['count']} {md(c['cheapest']['name'])}, {plain_money(c['cheapest']['cost'])}" if c["cheapest"] else "no bundle priced") for c in ctx["crates"]]
         out.append("")
+    posts = [p for p in ctx["blue"].get("posts", []) if str(p.get("url", "")).startswith("https://us.forums.blizzard.com/")]
+    if posts:
+        out += [f"## Blizzard's latest posts about Forever (checked {ctx['blue'].get('fetched', '')[:16].replace('T', ' ')} UTC)", ""]
+        out += [f"- {p['posted'][:10]}: {md(p['title'])} ({md(p['author'])}). {p['url']}" for p in posts[:15]] + [""]
+    if "more/launch" in content:
+        out += ["## Launch checklist", ""] + block("more/launch", "###")
     out += ["## Classes", ""]
     for c in game["classes"]:
-        notes = [k for k in content if k.startswith(f"classes/{c['slug']}/")]
-        out.append(f"### {c['name']} ({', '.join(name for _, name, _ in c['specs'])})")
-        out.append(f"Page: {site.url}classes/{c['slug']}/")
-        for key in notes:
-            page = content[key]
-            out += ["", f"#### {md(page['title'])} ({page['status_label']}{', ' + page['confidence_label'] if page['confidence_label'] else ''}, updated {page['updated']})", "", page["body"]]
-        if not notes:
-            out.append("No notes yet.")
-        out.append("")
+        out += [f"### {c['name']} (specs: {', '.join(s['name'] for s in c['specs'])})", f"Page: {site.url}classes/{c['slug']}/", ""]
+        keys = [f"classes/{c['slug']}/{part}" for part in ["overview"] + [s["slug"] for s in c["specs"]] + ["hybrid", "macros"]]
+        found = [k for k in keys if k in content]
+        for key in found:
+            out += block(key, "####")
+        if not found:
+            out += ["No notes yet.", ""]
     out += ["## Professions", ""]
     for p in game["professions"]:
         recipes = ctx["fdb"].get("recipes", {}).get(p["name"], [])
         out.append(f"- {p['name']} ({p['kind']}): {len(recipes)} recipes, {sum(r['new'] for r in recipes)} new in Forever. {site.url}professions/{p['slug']}/")
+    out.append("")
+    for p in game["professions"]:
         if f"professions/{p['slug']}" in content:
-            out += ["", content[f"professions/{p['slug']}"]["body"], ""]
-    out += ["", "## World", ""]
+            out += block(f"professions/{p['slug']}")
+    out += ["## World", ""]
     for t in game["world"]:
-        out.append(f"### {t['name']}")
-        out.append(t["summary"])
-        if f"world/{t['slug']}" in content:
-            out += ["", content[f"world/{t['slug']}"]["body"]]
-        out.append("")
-    for slug, title in (("addons", "Addons"), ("macros", "Macros"), ("known-issues", "Known issues")):
-        if f"more/{slug}" in content:
-            page = content[f"more/{slug}"]
-            out += [f"## {title} (updated {page['updated']})", "", page["body"], ""]
+        out += block(f"world/{t['slug']}") if f"world/{t['slug']}" in content else [f"### {t['name']}", "", t["summary"], ""]
+    for m in game["more"]:
+        if m["slug"] != "launch" and f"more/{m['slug']}" in content:
+            out += [f"## {m['name']}", ""] + block(f"more/{m['slug']}", "###")
     if ctx["log"]:
         out += ["## Latest changes", ""] + [f"- {e['date']}: {md(e['subject'])}" for e in ctx["log"][:20]] + [""]
     out += ["## Sources", "", "- Prices: our own Auctionator scans (market records only); ForeverDB players' scans as a second opinion.",
             f"- Game data (names, recipes, crates, camp kits, vendor prices): Data from ForeverDB.net (https://foreverdb.net), client build {ctx['fdb_source'].get('client_build')}.",
-            "- Guides and other references are linked on each page; their text isn't copied here.", ""]
+            "- Blizzard's posts: Blizzard's own forums; titles and links only here.",
+            "- Guides are summarised in our own words and linked on each page; their text isn't copied.", ""]
     return "\n".join(out)
