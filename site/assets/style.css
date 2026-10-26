@@ -92,10 +92,6 @@ img { max-width: 100%; }
 .panel::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: url("texture-paper.webp") 0 0 / 512px; mix-blend-mode: var(--tex-blend); opacity: var(--tex-opacity); }
 .panel > * { position: relative; }
 .menu-item.open > .panel { display: block; }
-@media (min-width: 861px) and (hover: hover) {
-  .menu-item:hover:not(.suppressed) > .panel { display: block; }
-  .menu-item:hover > .menu-toggle::after { transform: translateY(0.1em) rotate(225deg); }
-}
 .panel-title { font: 700 0.8rem/1.2 var(--sans); font-variant-caps: all-small-caps; letter-spacing: 0.06em; color: var(--ink-soft); margin: 0 0 0.6rem; }
 .panel-list { list-style: none; margin: 0; padding: 0; }
 .panel-list li { padding: 0.32rem 0; border-bottom: 1px solid var(--rule); display: flex; flex-direction: column; }

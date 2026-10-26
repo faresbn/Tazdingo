@@ -51,8 +51,14 @@ def commits(before: str, after: str) -> list[str]:
     start = MARK.read_text().strip() if MARK.exists() else ""
     start = start if usable(start, after) else before if usable(before, after) else ""
     if start:
-        return git("rev-list", "--reverse", f"{start}..{after}", "--", "content").split()
-    return [after] if git("diff-tree", "--no-commit-id", "-r", "--name-only", after, "--", "content").strip() else []
+        return git("rev-list", "--reverse", "--first-parent", f"{start}..{after}", "--", "content").split()
+    return [after] if changes(after, "--name-only").strip() else []
+
+
+def changes(sha: str, *options: str) -> str:
+    """Files a commit changed in content/. A merge is compared with its first parent (main as it
+    was), so a merged branch is recorded once; the first commit is compared with nothing."""
+    return git("diff-tree", "--no-commit-id", "-r", "-m", "--first-parent", "--root", *options, sha, "--", "content")
 
 
 def cell(text: str) -> str:
@@ -65,7 +71,7 @@ def record(sha: str) -> list[str]:
     stamp = when.strftime("%Y%m%d-%H%M%S")
     rows = []
     parent = f"{sha}^" if len(git("rev-list", "--parents", "-n", "1", sha).split()) > 1 else None
-    for line in git("diff-tree", "--no-commit-id", "-r", "-M", "--name-status", sha, "--", "content").splitlines():
+    for line in changes(sha, "-M", "--name-status").splitlines():
         status, *paths = line.split("\t")
         kind = KINDS.get(status[0], status)
         old_path = paths[0]

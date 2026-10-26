@@ -5,3 +5,4 @@ __pycache__/
 tmp/
 # Full SavedVariables originals require separate explicit upload authorisation.
 data/captures/**/*.lua
+.cache/

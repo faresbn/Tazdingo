@@ -70,26 +70,32 @@ def record(post: dict) -> dict:
 
 
 def dedupe(posts) -> list[dict]:
-    """Blizzard cross-posts announcements in several categories: keep one per title, author and day,
-    preferring the Forever category's copy and, within that, the opening post."""
+    """Blizzard cross-posts announcements in several categories: keep one opening post per title,
+    author and day, preferring the Forever category's copy. Replies are all kept, each by its id."""
     best = {}
     for post in posts:
-        key = (re.sub(r"\W+", " ", post["title"].lower()).strip(), post["author"], post["posted"][:10], post["reply"])
+        key = post["id"] if post["reply"] else (re.sub(r"\W+", " ", post["title"].lower()).strip(), post["author"], post["posted"][:10])
         rank = (post["category"] == "News", post["posted"])
         if key not in best or rank < best[key][0]:
             best[key] = (rank, post)
     return [post for _, post in best.values()]
 
 
-def refresh(path: Path, pages: int = MAX_PAGES) -> dict:
-    saved = json.loads(path.read_text()) if path.exists() else {"posts": []}
-    known = {p["id"]: {**p, "title": clean(p["title"]), "excerpt": clean(p.get("excerpt", ""))} for p in saved.get("posts", [])}
+def refresh(path: Path, pages: int = MAX_PAGES, merge: Path | None = None) -> dict:
+    """Add new posts to the saved ones. `merge` is the previous run's snapshot (CI keeps it in its
+    cache, since the published site isn't committed back), so posts survive between runs."""
+    saved = [p for source in (path, merge) if source and source.exists() for p in json.loads(source.read_text()).get("posts", [])]
+    known = {p["id"]: {**p, "title": clean(p["title"]), "excerpt": clean(p.get("excerpt", ""))} for p in saved}
     cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
-    url, new, began = FEED, 0, time.monotonic()
+    url, new, began, error = FEED, 0, time.monotonic(), None
     for _ in range(pages):
         if time.monotonic() - began > BUDGET_SECONDS:
             break
-        posts = [p for p in fetch(url).get("posts", []) if valid(p)]
+        try:
+            posts = [p for p in fetch(url).get("posts", []) if valid(p)]
+        except Exception as failure:  # keep what was saved and what was already read
+            error = f"{type(failure).__name__}: {failure}"
+            break
         if not posts:
             break
         for post in posts:
@@ -106,15 +112,16 @@ def refresh(path: Path, pages: int = MAX_PAGES) -> dict:
               "note": "Staff posts from Blizzard's forums about WoW Forever. Excerpts are short; read the full post at its link.",
               "posts": kept}
     path.write_text(json.dumps(result, indent=1, ensure_ascii=False) + "\n")
-    return {"new": new, "kept": len(kept), "newest": kept[0]["posted"] if kept else None}
+    return {"new": new, "kept": len(kept), "newest": kept[0]["posted"] if kept else None, "error": error}
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--out", type=Path, default=ROOT / "data/blue.json")
     parser.add_argument("--pages", type=int, default=MAX_PAGES)
+    parser.add_argument("--merge", type=Path, help="an earlier snapshot to keep posts from")
     args = parser.parse_args()
     try:
-        print(json.dumps(refresh(args.out, args.pages), indent=2))
+        print(json.dumps(refresh(args.out, args.pages, args.merge), indent=2))
     except Exception as error:  # any failure: keep the saved posts, and say so
         print(f"Blizzard's forums couldn't be read ({type(error).__name__}: {error}); keeping the saved posts.")
