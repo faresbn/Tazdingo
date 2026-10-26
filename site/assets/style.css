@@ -8,8 +8,8 @@
   --ink-soft: #4d645c;
   --rule: #c3cdc1;
   --link: #1f5f86;
-  --gold: #8a6510;
-  --silver: #5c6b73;
+  --gold: #7a590c;
+  --silver: #52616a;
   --copper: #9a4f24;
   --up: #9a4f24;
   --down: #1f5f86;
@@ -151,7 +151,7 @@ tbody th { font-weight: 500; }
 .num { text-align: right; white-space: nowrap; }
 td:last-child, th:last-child { padding-right: 0; }
 table.compact td, table.compact th { padding-top: 0.38rem; padding-bottom: 0.38rem; }
-td.latest .money { opacity: 0.75; }
+td.latest .money .g, td.latest .money .s { font-weight: 400; }
 .id { color: var(--ink-soft); font-weight: 400; font-size: 0.85rem; margin-left: 0.2rem; }
 
 .money { white-space: nowrap; font-variant-numeric: tabular-nums; }
