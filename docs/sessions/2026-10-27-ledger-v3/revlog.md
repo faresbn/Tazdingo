@@ -44,7 +44,7 @@
 
 - **Why:** peer review of the completed implementation before merging (REVIEWER.md: milestone).
 - **Route:** ChatGPT plan through Codex, read-only, web search off. Session `01a17a05-be63-71f1-bcd0-a26b92833e89`.
-- **Packet:** reviewer rules, the diff of `ledger-v3` against `main` (scripts, workflows, site assets) and the questions: correctness, security of rendered content, CI behaviour, accessibility of the menus.
+- **Packet:** reviewer rules, the diff of `ledger-v3` against `main` (build, templates, scripts, workflows, site script), and three questions: correctness bugs; injection or private-data leaks; menu behaviour and accessibility for mouse, keyboard, touch and screen readers. Visual taste, copy, price maths and the parser were out of scope.
 - **Usage:** 696,311 input tokens (610,048 cached), 12,526 output. ChatGPT plan.
 
 | # | Finding | Fix |
