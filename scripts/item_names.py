@@ -62,15 +62,29 @@ def download_names() -> tuple[dict[int, str], dict]:
 
 
 def wanted_ids(root: Path = ROOT) -> set[int]:
-    """Every item in our captures, plus ForeverDB item links in the journal."""
+    """Every item in our captures, in the ForeverDB tables (recipes, crates, camp items),
+    and in ForeverDB item links in the notes."""
     ids = set()
     config = json.loads((root / "data/captures.json").read_text())
     for receipt in config["captures"]:
         extract = json.loads((root / receipt["path"]).read_text())
         for market in extract["markets"].values():
             ids.update(item_id(key) for key in market["items"])
-    for entry in (root / "journal").glob("*.md"):
-        ids.update(int(i) for i in re.findall(r"foreverdb\.net/item/(\d+)", entry.read_text()))
+    fdb_path = root / "data/foreverdb.json"
+    if fdb_path.exists():
+        fdb = json.loads(fdb_path.read_text())
+        for recipes in fdb.get("recipes", {}).values():
+            for r in recipes:
+                ids.add(r["item"])
+                ids.update(i for i, _ in r["reagents"])
+        for crate in fdb.get("crates", []):
+            ids.add(crate["item"])
+            ids.update(i for i, _ in crate["bundles"])
+        for kit in fdb.get("camp", []):
+            ids.add(kit["item"])
+            ids.update(i for i, _ in kit["reagents"])
+    for note in (root / "content").rglob("*.md"):
+        ids.update(int(i) for i in re.findall(r"foreverdb\.net/item/(\d+)", note.read_text()))
     return ids
 
 

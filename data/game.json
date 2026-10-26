@@ -1,0 +1,405 @@
+{
+ "launch": "2026-11-04",
+ "classes": [
+  {
+   "slug": "warrior",
+   "name": "Warrior",
+   "colour": "#C69B6D",
+   "specs": [
+    [
+     "arms",
+     "Arms",
+     "dps"
+    ],
+    [
+     "fury",
+     "Fury",
+     "dps"
+    ],
+    [
+     "protection",
+     "Protection",
+     "tank"
+    ]
+   ]
+  },
+  {
+   "slug": "paladin",
+   "name": "Paladin",
+   "colour": "#F48CBA",
+   "specs": [
+    [
+     "holy",
+     "Holy",
+     "healer"
+    ],
+    [
+     "protection",
+     "Protection",
+     "tank"
+    ],
+    [
+     "retribution",
+     "Retribution",
+     "dps"
+    ]
+   ]
+  },
+  {
+   "slug": "hunter",
+   "name": "Hunter",
+   "colour": "#AAD372",
+   "specs": [
+    [
+     "beast-mastery",
+     "Beast Mastery",
+     "dps"
+    ],
+    [
+     "marksmanship",
+     "Marksmanship",
+     "dps"
+    ],
+    [
+     "survival",
+     "Survival",
+     "dps"
+    ]
+   ]
+  },
+  {
+   "slug": "rogue",
+   "name": "Rogue",
+   "colour": "#FFF468",
+   "specs": [
+    [
+     "assassination",
+     "Assassination",
+     "dps"
+    ],
+    [
+     "combat",
+     "Combat",
+     "dps"
+    ],
+    [
+     "subtlety",
+     "Subtlety",
+     "dps"
+    ]
+   ]
+  },
+  {
+   "slug": "priest",
+   "name": "Priest",
+   "colour": "#E8E8E8",
+   "specs": [
+    [
+     "discipline",
+     "Discipline",
+     "healer"
+    ],
+    [
+     "holy",
+     "Holy",
+     "healer"
+    ],
+    [
+     "shadow",
+     "Shadow",
+     "dps"
+    ]
+   ]
+  },
+  {
+   "slug": "shaman",
+   "name": "Shaman",
+   "colour": "#0070DD",
+   "specs": [
+    [
+     "elemental",
+     "Elemental",
+     "dps"
+    ],
+    [
+     "enhancement",
+     "Enhancement",
+     "dps"
+    ],
+    [
+     "restoration",
+     "Restoration",
+     "healer"
+    ]
+   ]
+  },
+  {
+   "slug": "mage",
+   "name": "Mage",
+   "colour": "#3FC7EB",
+   "specs": [
+    [
+     "arcane",
+     "Arcane",
+     "dps"
+    ],
+    [
+     "fire",
+     "Fire",
+     "dps"
+    ],
+    [
+     "frost",
+     "Frost",
+     "dps"
+    ]
+   ]
+  },
+  {
+   "slug": "warlock",
+   "name": "Warlock",
+   "colour": "#8788EE",
+   "specs": [
+    [
+     "affliction",
+     "Affliction",
+     "dps"
+    ],
+    [
+     "demonology",
+     "Demonology",
+     "dps"
+    ],
+    [
+     "destruction",
+     "Destruction",
+     "dps"
+    ]
+   ]
+  },
+  {
+   "slug": "druid",
+   "name": "Druid",
+   "colour": "#FF7C0A",
+   "specs": [
+    [
+     "balance",
+     "Balance",
+     "dps"
+    ],
+    [
+     "feral",
+     "Feral",
+     "dps/tank"
+    ],
+    [
+     "restoration",
+     "Restoration",
+     "healer"
+    ]
+   ]
+  }
+ ],
+ "professions": [
+  {
+   "slug": "herbalism",
+   "name": "Herbalism",
+   "kind": "Gathering",
+   "wowhead": true
+  },
+  {
+   "slug": "mining",
+   "name": "Mining",
+   "kind": "Gathering",
+   "wowhead": true
+  },
+  {
+   "slug": "skinning",
+   "name": "Skinning",
+   "kind": "Gathering",
+   "wowhead": true
+  },
+  {
+   "slug": "alchemy",
+   "name": "Alchemy",
+   "kind": "Crafting"
+  },
+  {
+   "slug": "blacksmithing",
+   "name": "Blacksmithing",
+   "kind": "Crafting"
+  },
+  {
+   "slug": "enchanting",
+   "name": "Enchanting",
+   "kind": "Crafting"
+  },
+  {
+   "slug": "engineering",
+   "name": "Engineering",
+   "kind": "Crafting"
+  },
+  {
+   "slug": "leatherworking",
+   "name": "Leatherworking",
+   "kind": "Crafting"
+  },
+  {
+   "slug": "tailoring",
+   "name": "Tailoring",
+   "kind": "Crafting"
+  },
+  {
+   "slug": "cooking",
+   "name": "Cooking",
+   "kind": "Secondary",
+   "wowhead": true
+  },
+  {
+   "slug": "first-aid",
+   "name": "First Aid",
+   "kind": "Secondary"
+  },
+  {
+   "slug": "fishing",
+   "name": "Fishing",
+   "kind": "Secondary",
+   "wowhead": true
+  }
+ ],
+ "world": [
+  {
+   "slug": "camping",
+   "name": "Camping",
+   "summary": "Forever's campfire system: a Cooking campfire, plus one camp feature per profession that buffs anyone resting nearby.",
+   "links": [
+    [
+     "ForeverDB: camping",
+     "https://foreverdb.net/camping"
+    ],
+    [
+     "Wowhead: camping overview",
+     "https://www.wowhead.com/forever/guide/camping-overview-unlock-rewards"
+    ]
+   ]
+  },
+  {
+   "slug": "legacy",
+   "name": "Legacy",
+   "summary": "Account-wide points earned from challenges, spent per character on perks in three trees.",
+   "links": [
+    [
+     "ForeverDB: Legacy and its calculator",
+     "https://foreverdb.net/legacy"
+    ],
+    [
+     "Wowhead: Legacy system overview",
+     "https://www.wowhead.com/forever/guide/legacy-system-overview-rewards"
+    ]
+   ]
+  },
+  {
+   "slug": "merchants-favor",
+   "name": "Merchant's Favor",
+   "summary": "A currency earned by filling Waylaid Crates with materials for the Azeroth Commerce Authority or Durotar Supply and Logistics.",
+   "links": [
+    [
+     "ForeverDB: Azeroth Commerce Authority",
+     "https://foreverdb.net/reputation/azeroth-commerce-authority"
+    ],
+    [
+     "Cheapest way to fill each crate",
+     "../../prices/crates/"
+    ],
+    [
+     "WoW-Professions: Merchant's Favor",
+     "https://www.wow-professions.com/forever/merchants-favor-durotar-supply-azeroth-commerce"
+    ]
+   ]
+  },
+  {
+   "slug": "rares",
+   "name": "Rare spawns",
+   "summary": "Rare creatures: where they spawn, how often, and what they drop.",
+   "links": [
+    [
+     "ForeverDB: rares, and which are up now",
+     "https://foreverdb.net/rares"
+    ]
+   ]
+  },
+  {
+   "slug": "zones",
+   "name": "New zones",
+   "summary": "Mount Hyjal, Zephras Isle, Darkspear Islands, Riverglades and Shen'dralas, and how familiar zones changed.",
+   "links": [
+    [
+     "ForeverDB: Forever for Classic veterans",
+     "https://foreverdb.net/veterans"
+    ]
+   ]
+  },
+  {
+   "slug": "dungeons-and-raids",
+   "name": "Dungeons and raids",
+   "summary": "Raids open on 9 December: Barrow Deeps (10 players), Hyjal Summit (20) and Onyxia's Lair (40).",
+   "links": [
+    [
+     "ForeverDB: launch details",
+     "https://foreverdb.net/launch"
+    ]
+   ]
+  },
+  {
+   "slug": "collections",
+   "name": "Collections",
+   "summary": "Mounts, companion pets and titles, and where each comes from.",
+   "links": [
+    [
+     "ForeverDB: mounts",
+     "https://foreverdb.net/mounts"
+    ]
+   ]
+  }
+ ],
+ "hubs": [
+  [
+   "ForeverDB",
+   "https://foreverdb.net/"
+  ],
+  [
+   "Wowhead: WoW Forever",
+   "https://www.wowhead.com/forever"
+  ],
+  [
+   "Icy Veins: WoW Forever",
+   "https://www.icy-veins.com/wow-forever/"
+  ],
+  [
+   "Method: WoW Forever",
+   "https://www.method.gg/wow-forever"
+  ],
+  [
+   "Warcraft Tavern: Forever",
+   "https://www.warcrafttavern.com/forever/"
+  ],
+  [
+   "Wowhead talent calculator",
+   "https://www.wowhead.com/forever/talent-calc"
+  ]
+ ],
+ "price_references": [
+  [
+   "ForeverDB",
+   "https://foreverdb.net/item/{id}"
+  ],
+  [
+   "TheWoWDB",
+   "https://thewowdb.com/"
+  ],
+  [
+   "auctionhouse.fyi",
+   "https://auctionhouse.fyi/"
+  ]
+ ]
+}

@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"scripts"))
 from auctionator import CBOR, InvalidCapture, LuaData, day_date, item_id, parse_capture, string_keys, suffix
-from build import build_markets, collect, load_journal, summarise
+from build import build_markets, collect, crate_table, craft_table, load_content, summarise, volatility
 from markup import render
 
 
@@ -102,26 +102,61 @@ class TypicalPrice(unittest.TestCase):
         self.assertEqual((signed(7417),signed(150),signed(-92),signed(None)),("×75","+150%","-92%",""))
 
 
-class Journal(unittest.TestCase):
+GAME={"classes":[{"slug":"mage","name":"Mage","specs":[["frost","Frost","dps"]]}],"professions":[{"slug":"mining","name":"Mining"}],
+      "world":[{"slug":"camping","name":"Camping"}]}
+
+
+class Content(unittest.TestCase):
     def root(self, files):
-        import tempfile
-        root=Path(tempfile.mkdtemp()); (root/"journal").mkdir()
-        self.addCleanup(__import__("shutil").rmtree, root)
-        for name, text in files.items(): (root/"journal"/name).write_text(text)
+        import tempfile, shutil
+        root=Path(tempfile.mkdtemp()); self.addCleanup(shutil.rmtree, root)
+        for name, text in files.items():
+            (root/"content"/name).parent.mkdir(parents=True, exist_ok=True); (root/"content"/name).write_text(text)
         return root
 
-    def test_entry_and_template(self):
-        entry="---\ntitle: Frost test\ntype: build   # guide, build or discovery\nclass: Mage\nstatus: tested\ndate: 2026-11-05\n---\n## Gear\nText"
-        entries=load_journal(self.root({"frost.md":entry,"_template.md":entry}))
-        self.assertEqual([(e["title"],e["type"],e["class"],e["slug"]) for e in entries],[("Frost test","build","Mage","frost")])
-        self.assertIn("<h2>Gear</h2>",entries[0]["html"])
+    def test_known_places_and_labels(self):
+        from datetime import date
+        note="---\nupdated: 2026-11-05\nconfidence: tested\nsummary: Frost for levelling\n---\n## Talents\nText"
+        pages=load_content(self.root({"classes/mage/frost.md":note,"world/camping.md":note.replace("2026-11-05","2026-10-30")}),GAME,date(2026,11,4))
+        self.assertEqual(pages["classes/mage/frost"]["url"],"classes/mage/#frost")
+        self.assertEqual((pages["classes/mage/frost"]["status"],pages["world/camping"]["status"]),("live","pre-launch"))
+        self.assertIn("<h2>Talents</h2>",pages["classes/mage/frost"]["html"])
 
-    def test_bad_header_is_explained(self):
-        for text, problem in (("no header","header"),("---\ntitle: X\ntype: build\n---\nx","date"),
-                              ("---\ntitle: X\ntype: recipe\ndate: 2026-11-05\n---\nx","type"),
-                              ("---\ntitle: X\ntype: build\ndate: 5 Nov\n---\nx","")):
-            with self.subTest(text=text):
-                with self.assertRaisesRegex(ValueError, problem): load_journal(self.root({"x.md":text}))
+    def test_unknown_place_and_bad_header_are_explained(self):
+        from datetime import date
+        for files, problem in (({"classes/mage/fire.md":"---\nupdated: 2026-11-05\n---\nx"},"isn't a page the site knows"),
+                               ({"classes/mage/frost.md":"no header"},"header"),
+                               ({"classes/mage/frost.md":"---\nsummary: x\n---\nx"},"updated"),
+                               ({"classes/mage/frost.md":"---\nupdated: 2026-11-05\nconfidence: sure\n---\nx"},"confidence")):
+            with self.subTest(problem=problem):
+                with self.assertRaisesRegex(ValueError, problem): load_content(self.root(files),GAME,date(2026,11,4))
+
+
+class PriceTools(unittest.TestCase):
+    def item(self, typical, listed=50, vol="steady"):
+        return {"ours":{"typical":typical,"listed":listed,"current":True,"volatility":vol}}
+
+    def test_craft_margin_uses_vendor_and_market_prices(self):
+        fdb={"recipes":{"Alchemy":[{"name":"Elixir","skill":1,"item":10,"count":1,"reagents":[[1,2],[2,1]],"learned":"a","new":True}]}}
+        book={10:self.item(500),1:self.item(100),2:{"vendor":20}}
+        row=craft_table(fdb,book,{})[0]
+        self.assertEqual((row["sells"],row["cost"],row["margin"]),(500,220,280))
+
+    def test_volatile_or_thin_products_are_skipped(self):
+        fdb={"recipes":{"Alchemy":[{"name":"Elixir","skill":1,"item":10,"count":1,"reagents":[[1,1]],"learned":"a","new":False}]}}
+        for product in (self.item(500,vol="volatile"),self.item(500,listed=1)):
+            with self.subTest(product=product):
+                self.assertEqual(craft_table(fdb,{10:product,1:self.item(100)},{}),[])
+
+    def test_crate_takes_cheapest_bundle(self):
+        fdb={"crates":[{"item":99,"level":10,"bundles":[[1,20],[2,10]]}]}
+        crate=crate_table(fdb,{1:self.item(10),2:self.item(15)},{})[0]
+        self.assertEqual((crate["cheapest"]["item"],crate["cheapest"]["cost"]),(2,150))
+
+    def test_volatility_bands(self):
+        self.assertEqual([volatility([100,102,98,101]),volatility([100,150,80,120]),volatility([100,400,30,250]),volatility([100,110])],
+                         ["steady","moving","volatile",None])
+        self.assertEqual(volatility([100,110,99999999999,105,100,95,100]),"steady")  # a troll listing doesn't count
 
 
 class MergingScans(unittest.TestCase):

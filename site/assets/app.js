@@ -1,7 +1,7 @@
 "use strict";
-// Market pages: search, order, pages and a daily chart per item. The table is
-// already in the HTML for readers without JavaScript; this replaces it with the
-// full list from prices.json. Journal page: filter entries by kind.
+// Every page: the theme toggle and the launch countdown. Front page: search across the
+// ledger. Market pages: search, order, pages and a daily chart per item. The pages work
+// without JavaScript; this adds speed and detail.
 
 const PAGE_SIZE = 50;
 const SVG = "http://www.w3.org/2000/svg";
@@ -28,6 +28,14 @@ function money(copper) {
   if (gold || silver) parts.push(el("span", `${silver}s`, "s"));
   parts.push(el("span", `${cop}c`, "c"));
   parts.forEach((part, i) => { if (i) span.append(" "); span.append(part); });
+  return span;
+}
+
+const STEADINESS = { steady: "Steady", moving: "Moving", volatile: "Volatile" };
+
+function steadiness(value) {
+  const span = el("span", value ? STEADINESS[value] : "Too new", `badge ${value || "unknown"}`);
+  if (!value) span.title = "Fewer than three days of prices";
   return span;
 }
 
@@ -140,6 +148,7 @@ async function marketBrowser(section) {
       "price-high": (a, b) => b.typical - a.typical,
       "price-low": (a, b) => a.typical - b.typical,
       change: (a, b) => Math.abs(b.change ?? 0) - Math.abs(a.change ?? 0),
+      steadiest: (a, b) => (["steady", "moving", "volatile"].indexOf(a.volatility) + 1 || 9) - (["steady", "moving", "volatile"].indexOf(b.volatility) + 1 || 9),
     };
     if (terms.length && id === null && order.value === "name") {
       // With a search, the item you most likely mean comes first: "linen" puts Linen Cloth above Barbaric Linen Vest.
@@ -180,6 +189,7 @@ async function marketBrowser(section) {
       link.rel = "noopener";
       name.append(link, " ", el("span", item.id, "id"));
       const typical = el("td", null, "num"); typical.append(money(item.typical));
+      const steady = el("td", null, "vol"); steady.append(steadiness(item.volatility));
       const latest = el("td", null, "num latest"); latest.append(money(item.price));
       const seen = el("td", niceDate(item.last_seen), "date");
       const listed = el("td", item.listed === null ? "" : item.listed.toLocaleString("en-GB"), "num listed");
@@ -187,7 +197,7 @@ async function marketBrowser(section) {
       const line = spark(item.spark), pct = change(item.change);
       if (line) trend.append(line, " ");
       if (pct) trend.append(pct);
-      row.append(name, typical, latest, seen, listed, trend);
+      row.append(name, typical, steady, latest, seen, listed, trend);
       tbody.append(row);
     }
     const pages = Math.max(1, Math.ceil(view.length / PAGE_SIZE));
@@ -223,7 +233,7 @@ async function marketBrowser(section) {
     const detail = el("tr", null, "detail");
     detail.dataset.for = row.dataset.key;
     const cell = el("td");
-    cell.colSpan = 6;
+    cell.colSpan = 7;
     cell.append(el("p", "Loading daily prices…", "detail-note"));
     detail.append(cell);
     row.after(detail);
@@ -245,6 +255,12 @@ async function marketBrowser(section) {
         `${days.length} day${days.length === 1 ? "" : "s"} of records. The line is each day's cheapest listing; the band shows how far that day's cheapest listing rose.` +
         (busiest[3] ? ` Most listed: ${busiest[3].toLocaleString("en-GB")} on ${niceDate(busiest[0])}.` : "") +
         (clipped ? ` ${clipped} day${clipped === 1 ? "" : "s"} with listings far above the usual price are cut off at the top.` : ""), "detail-note"));
+      const id = row.dataset.key.replace(/^gr:/, "").split(":")[0];
+      const compare = el("p", null, "detail-note");
+      const link = el("a", "Compare with other players' scans on ForeverDB");
+      link.href = `https://foreverdb.net/item/${id}`; link.target = "_blank"; link.rel = "noopener";
+      compare.append(link);
+      cell.append(compare);
     } catch {
       cell.replaceChildren(el("p", "The daily history didn't load. Check your connection and select the row again.", "detail-note"));
     }
@@ -270,18 +286,73 @@ async function marketBrowser(section) {
   update();
 }
 
-function journalFilter(group) {
-  const entries = [...document.querySelectorAll(".entries .entry")];
-  const buttons = [...group.querySelectorAll("button")];
-  const choose = kind => {
-    buttons.forEach(b => b.setAttribute("aria-pressed", String(b.dataset.filter === kind)));
-    entries.forEach(e => { e.hidden = kind !== "all" && e.dataset.type !== kind; });
+
+function themeToggle(button) {
+  const order = ["auto", "light", "dark"], labels = { auto: "Auto", light: "Light", dark: "Dark" };
+  const describe = { auto: "follows your device", light: "light", dark: "dark" };
+  let theme = "auto";
+  try { theme = localStorage.getItem("theme") || "auto"; } catch { /* private mode: stay on auto */ }
+  const apply = () => {
+    if (theme === "auto") delete document.documentElement.dataset.theme;
+    else document.documentElement.dataset.theme = theme;
+    button.querySelector(".theme-label").textContent = labels[theme];
+    button.setAttribute("aria-label", `Colour theme: ${describe[theme]}. Select to change.`);
   };
-  buttons.forEach(b => b.addEventListener("click", () => choose(b.dataset.filter)));
-  choose("all");
+  button.addEventListener("click", () => {
+    theme = order[(order.indexOf(theme) + 1) % order.length];
+    try { theme === "auto" ? localStorage.removeItem("theme") : localStorage.setItem("theme", theme); } catch { /* not remembered */ }
+    apply();
+  });
+  apply();
 }
 
+function countdown(node) {
+  // The build writes the count for its own day; this keeps it right on the visitor's day.
+  const [y, m, d] = document.body.dataset.launch.split("-").map(Number);
+  const now = new Date(), today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+  const days = Math.round((Date.UTC(y, m - 1, d) - today) / 86400000);
+  node.textContent = days > 0 ? `Forever opens in ${days} day${days === 1 ? "" : "s"}` : days === 0 ? "Forever opens today" : `Day ${1 - days} of Forever`;
+}
+
+function siteSearch(form) {
+  const input = form.querySelector("input"), list = document.getElementById("lookup-results");
+  let entries = null, matches = [];
+  async function load() {
+    if (entries) return entries;
+    try { entries = await (await fetch(`${document.body.dataset.base}search.json`)).json(); } catch { entries = []; }
+    return entries;
+  }
+  input.addEventListener("focus", load, { once: true });
+  input.addEventListener("input", async () => {
+    const query = input.value.trim().toLowerCase();
+    const all = await load();
+    list.replaceChildren();
+    if (query.length < 2) { list.hidden = true; matches = []; return; }
+    const rank = ([title, , kind]) => {
+      const t = title.toLowerCase();
+      const base = t === query ? 0 : t.startsWith(query) ? 1 : (` ${t}`).includes(` ${query}`) ? 2 : t.includes(query) ? 3 : 9;
+      return base * 2 + (kind === "Item" ? 1 : 0);  // pages before items at the same closeness
+    };
+    matches = all.map(e => [rank(e), e]).filter(([r]) => r < 18).sort((a, b) => a[0] - b[0] || a[1][0].localeCompare(b[1][0])).slice(0, 8).map(([, e]) => e);
+    for (const [title, url, kind] of matches) {
+      const li = el("li"), a = el("a", title);
+      a.href = url;
+      li.append(a, el("span", kind, "kind"));
+      list.append(li);
+    }
+    list.hidden = matches.length === 0;
+  });
+  form.addEventListener("submit", event => {
+    if (matches.length && matches[0][0].toLowerCase() === input.value.trim().toLowerCase()) {
+      event.preventDefault();
+      location.href = matches[0][1];
+    }
+  });
+}
+
+document.querySelectorAll("[data-theme-toggle]").forEach(themeToggle);
+document.querySelectorAll("[data-countdown]").forEach(countdown);
+const lookupForm = document.querySelector("form.lookup");
+if (lookupForm) siteSearch(lookupForm);
 const browserSection = document.getElementById("prices");
 if (browserSection) marketBrowser(browserSection);
-const kindGroup = document.querySelector(".kind-filter");
-if (kindGroup) journalFilter(kindGroup);

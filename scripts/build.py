@@ -1,7 +1,8 @@
-"""Build the WoW Forever Journal site into dist/. Standard-library Python only.
+"""Build the Forever Ledger site into dist/. Standard-library Python only.
 
-Inputs: data/captures.json (scan receipts), data/captures/** (market-only
-extracts), data/items.json (names) and journal/*.md (entries).
+Inputs: data/captures.json (scan receipts), data/captures/** (market-only extracts),
+data/items.json (names), data/foreverdb.json (ForeverDB data), data/game.json (classes,
+professions, world topics, links) and content/**/*.md (notes).
 """
 from __future__ import annotations
 
@@ -13,10 +14,12 @@ import json
 import os
 import re
 import shutil
+import subprocess
 from datetime import date, datetime, timezone
 from pathlib import Path
 
 import pages
+import sections
 from auctionator import (InvalidCapture, PARSER_VERSION, day_date, item_id,
                          load_market_extract, newest_day, parse_capture, suffix)
 from markup import render
@@ -25,8 +28,6 @@ ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = 2
 SITE_URL = "https://faresbn.github.io/FvrRepo/"
 ENVIRONMENTS = {"forever": "Forever", "forever-beta": "Forever Beta", "tbc": "TBC Anniversary", "era": "Classic Era"}
-JOURNAL_TYPES = {"guide": "Guide", "build": "Build", "discovery": "Discovery"}
-JOURNAL_STATUS = {"idea": "Idea", "testing": "Testing", "tested": "Tested", "outdated": "Outdated"}
 CURRENT_DAYS = 14  # items seen within this many days of a market's newest day count as current
 SPARK_DAYS = 14
 
@@ -174,6 +175,20 @@ def summarise(item: dict, last_day: int | None) -> None:
                       if item["current"] and len(recent) >= 2 and len(before) >= 2 and earlier else None)
     item["spark"] = ([days[d]["low"] if d in days else None for d in range(last_day - SPARK_DAYS + 1, last_day + 1)]
                      if last_day is not None else [])
+    item["volatility"] = volatility([v["low"] for d, v in days.items() if seen is not None and seen - 13 <= d <= seen])
+
+
+def volatility(lows: list[int]) -> str | None:
+    """How far an item's daily cheapest listing swings over its last two weeks of records:
+    from its cheapest day to its 80th-percentile day, relative to the median. The top is
+    trimmed because troll listings only ever spike upwards; a cheap day was a real bargain.
+    Early in a game the market is still finding prices, so a price is only as useful as it is steady."""
+    if len(lows) < 3:
+        return None  # not enough days to tell
+    ordered = sorted(lows)
+    low, high = ordered[0], ordered[round(0.8 * (len(ordered) - 1))]
+    spread = (high - low) / max(median(ordered), 1)
+    return "steady" if spread < 0.25 else "moving" if spread < 0.75 else "volatile"
 
 
 def highlights(market: dict) -> dict:
@@ -212,37 +227,200 @@ def tsv(header: list[str], rows) -> str:
     return buffer.getvalue()
 
 
-# --- Journal ------------------------------------------------------------------
+# --- Content ------------------------------------------------------------------
 
-def load_journal(root: Path = ROOT) -> list[dict]:
+CONFIDENCE = {"idea": "Idea", "testing": "Testing", "tested": "Tested", "outdated": "Outdated"}
+STATUS = {"pre-launch": "Pre-launch", "live": "Live"}
+CLASS_EXTRAS = {"overview": "Overview", "hybrid": "Hybrid builds", "macros": "Macros"}
+MORE = {"addons": "Addons", "macros": "Macros", "known-issues": "Known issues"}
+
+
+def content_places(game: dict) -> dict:
+    """Every page a content file can fill, keyed by its path under content/ without .md."""
+    places = {}
+    for c in game["classes"]:
+        for slug, name, _ in c["specs"]:
+            places[f"classes/{c['slug']}/{slug}"] = {"title": f"{name} {c['name']}", "url": f"classes/{c['slug']}/#{slug}"}
+        for slug, name in CLASS_EXTRAS.items():
+            places[f"classes/{c['slug']}/{slug}"] = {"title": f"{c['name']}: {name.lower()}", "url": f"classes/{c['slug']}/#{slug}"}
+    for p in game["professions"]:
+        places[f"professions/{p['slug']}"] = {"title": p["name"], "url": f"professions/{p['slug']}/"}
+    for t in game["world"]:
+        places[f"world/{t['slug']}"] = {"title": t["name"], "url": f"world/{t['slug']}/"}
+    for slug, name in MORE.items():
+        places[f"more/{slug}"] = {"title": name, "url": f"more/{slug}/"}
+    return places
+
+
+def front_matter(text: str, name: str) -> tuple[dict, str]:
+    match = re.match(r"---\n(.*?)\n---\n?(.*)", text, re.S)
+    if not match:
+        raise ValueError(f"{name}: start with a --- header block (see docs/chatgpt/UPDATING.md)")
+    meta = {}
+    for line in match.group(1).splitlines():
+        if line.strip() and not line.lstrip().startswith("#"):
+            key, _, value = line.partition(":")
+            meta[key.strip().lower()] = value.split(" #")[0].strip()
+    return meta, match.group(2).strip()
+
+
+def load_content(root: Path, game: dict, launch: date) -> dict:
+    places = content_places(game)
+    pages_ = {}
+    for path in sorted((root / "content").rglob("*.md")):
+        key = path.relative_to(root / "content").with_suffix("").as_posix()
+        name = f"content/{key}.md"
+        if key not in places:
+            raise ValueError(f"{name} isn't a page the site knows. See docs/chatgpt/UPDATING.md for the valid places.")
+        meta, body = front_matter(path.read_text(encoding="utf-8"), name)
+        if not meta.get("updated"):
+            raise ValueError(f"{name}: missing updated (YYYY-MM-DD)")
+        updated = date.fromisoformat(meta["updated"])
+        if meta.get("confidence") and meta["confidence"] not in CONFIDENCE:
+            raise ValueError(f"{name}: confidence must be one of {', '.join(CONFIDENCE)}")
+        if meta.get("status") and meta["status"] not in STATUS:
+            raise ValueError(f"{name}: status must be one of {', '.join(STATUS)}")
+        status = meta.get("status") or ("pre-launch" if updated < launch else "live")
+        pages_[key] = {**places[key], **meta, "key": key, "file": name, "body": body, "html": render(body),
+                       "status": status, "status_label": STATUS[status],
+                       "confidence_label": CONFIDENCE.get(meta.get("confidence", ""), "")}
+    return pages_
+
+
+def history(root: Path) -> list[dict]:
+    """Every change to the site's content, newest first, from git: the change log writes itself."""
+    try:
+        out = subprocess.run(["git", "log", "--format=%x1e%cs%x1f%s", "--name-only", "--",
+                              "content", "data/captures.json", "data/foreverdb.json"],
+                             cwd=root, capture_output=True, text=True, check=True).stdout
+    except (OSError, subprocess.CalledProcessError):
+        return []
     entries = []
-    for path in sorted((root / "journal").glob("*.md")):
-        if path.name.startswith("_"):
-            continue  # templates and drafts
-        text = path.read_text(encoding="utf-8")
-        match = re.match(r"---\n(.*?)\n---\n(.*)", text, re.S)
-        if not match:
-            raise ValueError(f"{path.name}: start with a --- header block (see journal/_template.md)")
-        meta = {}
-        for line in match.group(1).splitlines():
-            if line.strip() and not line.lstrip().startswith("#"):
-                key, _, value = line.partition(":")
-                meta[key.strip().lower()] = value.split(" #")[0].strip()
-        for field in ("title", "type", "date"):
-            if not meta.get(field):
-                raise ValueError(f"{path.name}: missing {field}")
-        if meta["type"] not in JOURNAL_TYPES:
-            raise ValueError(f"{path.name}: type must be one of {', '.join(JOURNAL_TYPES)}")
-        if meta.get("status") and meta["status"] not in JOURNAL_STATUS:
-            raise ValueError(f"{path.name}: status must be one of {', '.join(JOURNAL_STATUS)}")
-        for field in ("date", "updated"):
-            if meta.get(field):
-                date.fromisoformat(meta[field])
-        entries.append({**meta, "slug": slugify(path.stem), "body": match.group(2).strip(),
-                        "html": render(match.group(2)), "file": f"journal/{path.name}",
-                        "type_label": JOURNAL_TYPES[meta["type"]],
-                        "status_label": JOURNAL_STATUS.get(meta.get("status", ""), "")})
-    return sorted(entries, key=lambda e: (e.get("updated") or e["date"], e["title"]), reverse=True)
+    for block in out.split("\x1e")[1:]:
+        head, *files = block.strip().split("\n")
+        when, subject = head.split("\x1f", 1)
+        entries.append({"date": when, "subject": subject, "files": [f for f in files if f]})
+    return entries
+
+
+def change_url(path: str, places: dict) -> str:
+    if path.startswith("content/"):
+        key = path[len("content/"):].removesuffix(".md")
+        return places.get(key, {}).get("url", "")
+    return {"data/captures.json": "prices/", "data/foreverdb.json": "prices/craft/"}.get(path, "")
+
+
+# --- Price tools ----------------------------------------------------------------
+
+def price_book(market: dict | None, fdb: dict) -> dict:
+    """Per item: our scan, ForeverDB's players' prices, and the cheapest vendor price."""
+    book = {}
+    for item in (market or {}).get("items", []):
+        if not suffix(item["key"]) and item["key"].isdigit():
+            book.setdefault(item["id"], {})["ours"] = item
+    for key, value in fdb.get("prices", {}).items():
+        book.setdefault(int(key), {})["fdb"] = value
+    for key, value in fdb.get("vendor", {}).items():
+        book.setdefault(int(key), {})["vendor"] = value["price"]
+    return book
+
+
+def market_value(entry: dict | None) -> tuple[int, str] | None:
+    """What an item sells for: our typical price when it's current, traded and not volatile;
+    otherwise ForeverDB's median across realms when enough players saw it."""
+    if not entry:
+        return None
+    ours = entry.get("ours")
+    if ours and ours["current"] and (ours["listed"] or 0) >= 5 and ours["volatility"] != "volatile":
+        return ours["typical"], "our scan"
+    theirs = entry.get("fdb")
+    if theirs and theirs.get("listed", 0) >= 20 and theirs.get("realms", 0) >= 2:
+        return theirs["median"], "ForeverDB"
+    return None
+
+
+def buy_cost(entry: dict | None) -> tuple[int, str] | None:
+    if entry and entry.get("vendor"):
+        return entry["vendor"], "vendor"
+    return market_value(entry)
+
+
+def craft_table(fdb: dict, book: dict, names: dict) -> list[dict]:
+    rows = []
+    for profession, recipes in fdb.get("recipes", {}).items():
+        for r in recipes:
+            value = market_value(book.get(r["item"]))
+            costs = [(buy_cost(book.get(i)), n, i) for i, n in r["reagents"]]
+            if not value or any(c is None for c, _, _ in costs) or book.get(r["item"], {}).get("vendor"):
+                continue
+            cost = sum(c[0] * n for c, n, _ in costs)
+            sells = value[0] * r["count"]
+            if sells <= cost:
+                continue
+            rows.append({"profession": profession, "name": r["name"], "skill": r["skill"], "item": r["item"], "count": r["count"],
+                         "new": r["new"], "sells": sells, "cost": cost, "margin": sells - cost,
+                         "value_source": value[1], "reagents": [[i, n, names.get(str(i), f"Item {i}"), c[0], c[1]] for c, n, i in costs]})
+    return sorted(rows, key=lambda r: -r["margin"])
+
+
+def crate_table(fdb: dict, book: dict, names: dict) -> list[dict]:
+    rows = []
+    for crate in fdb.get("crates", []):
+        bundles = []
+        for item, count in crate["bundles"]:
+            price = buy_cost(book.get(item))
+            bundles.append({"item": item, "name": names.get(str(item), f"Item {item}"), "count": count,
+                            "cost": price[0] * count if price else None, "source": price[1] if price else None})
+        priced = [b for b in bundles if b["cost"] is not None]
+        rows.append({"item": crate["item"], "name": names.get(str(crate["item"]), f"Crate {crate['item']}"), "level": crate["level"],
+                     "bundles": sorted(bundles, key=lambda b: (b["cost"] is None, b["cost"] or 0)),
+                     "cheapest": min(priced, key=lambda b: b["cost"]) if priced else None})
+    return sorted(rows, key=lambda r: (r["level"], (r["cheapest"] or {}).get("cost") or 10**12))
+
+
+def materials_table(fdb: dict, book: dict, names: dict) -> list[dict]:
+    """Raw materials: reagents no recipe makes and no vendor sells (gathered, skinned or dropped)."""
+    made = {r["item"] for recipes in fdb.get("recipes", {}).values() for r in recipes}
+    used = {}
+    for recipes in fdb.get("recipes", {}).values():
+        for r in recipes:
+            for i, _ in r["reagents"]:
+                used.setdefault(i, set()).add(r["name"])
+    rows = []
+    for item, recipes in used.items():
+        entry = book.get(item, {})
+        if item in made or entry.get("vendor"):
+            continue
+        value = market_value(entry)
+        if not value:
+            continue
+        ours = entry.get("ours")
+        rows.append({"item": item, "name": names.get(str(item), f"Item {item}"), "value": value[0], "source": value[1],
+                     "volatility": ours["volatility"] if ours else None, "listed": ours["listed"] if ours else None,
+                     "used_in": len(recipes)})
+    return sorted(rows, key=lambda r: -r["value"])
+
+
+def search_index(ctx: dict) -> list[list[str]]:
+    game, base = ctx["game"], ctx["base"]
+    entries = []
+    for c in game["classes"]:
+        entries.append([c["name"], f"{base}classes/{c['slug']}/", "Class"])
+        for slug, name, role in c["specs"]:
+            entries.append([f"{name} {c['name']}", f"{base}classes/{c['slug']}/#{slug}", "Spec"])
+    for p in game["professions"]:
+        entries.append([p["name"], f"{base}professions/{p['slug']}/", "Profession"])
+    for t in game["world"]:
+        entries.append([t["name"], f"{base}world/{t['slug']}/", "World"])
+    for slug, name in MORE.items():
+        entries.append([name, f"{base}more/{slug}/", "More"])
+    for slug, name in (("craft", "What to craft"), ("crates", "Waylaid Crates: cheapest fill"), ("materials", "Materials worth gathering")):
+        entries.append([name, f"{base}prices/{slug}/", "Prices"])
+    market = ctx["primary"]
+    if market:
+        for item in market["items"]:
+            entries.append([item["name"], f"{market['url']}?q={item['name'].replace(' ', '+')}#prices", "Item"])
+    return entries
 
 
 # --- Output -------------------------------------------------------------------
@@ -252,17 +430,24 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
     if out.resolve() in (root.resolve(), (root / "data").resolve()) or not out.resolve().is_relative_to(root.resolve()):
         raise ValueError("Output must be a dedicated directory inside the repository")
     base = "/" + base.strip("/") + "/" if base.strip("/") else "/"
+    game = json.loads((root / "data/game.json").read_text())
+    launch = date.fromisoformat(game["launch"])
     captures = collect(root)
     names = load_names(root)
+    fdb_path = root / "data/foreverdb.json"
+    fdb = json.loads(fdb_path.read_text()) if fdb_path.exists() else {}
     markets = build_markets(captures, names["names"])
-    journal = load_journal(root)
+    content = load_content(root, game, launch)
+    log = history(root)
     built = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     commit = os.environ.get("GITHUB_SHA", "local")
     revision = hashlib.sha256(json.dumps({
         "schema": SCHEMA, "parser": PARSER_VERSION,
         "scans": [[c["source_sha256"], c.get("extraction_sha256")] for c in captures],
         "names": names.get("source", {}) and names["source"].get("sha256"),
-        "journal": [e["body"] for e in journal]}, sort_keys=True).encode()).hexdigest()[:12]
+        "foreverdb": (fdb.get("source") or {}).get("data_version"),
+        "content": {k: v["body"] for k, v in content.items()}, "log": [e["subject"] for e in log]},
+        sort_keys=True).encode()).hexdigest()[:12]
 
     if out.exists():
         shutil.rmtree(out)
@@ -270,12 +455,12 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
     shutil.copytree(root / "site/assets", out / "assets")
     fingerprints = {f.name: hashlib.sha256(f.read_bytes()).hexdigest()[:10] for f in (root / "site/assets").iterdir() if f.is_file()}
     site = pages.Site(base=base, url=SITE_URL, revision=revision, built=built,
-                      credit=bool(names.get("source")), assets=fingerprints)
+                      credit=bool(names.get("source") or fdb), assets=fingerprints, launch=launch)
 
-    def write(path: str, content: str) -> str:
+    def write(path: str, text: str) -> str:
         target = out / path
         target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(content, encoding="utf-8")
+        target.write_text(text, encoding="utf-8")
         return base + path
 
     def page(path: str, html_text: str) -> None:
@@ -290,9 +475,9 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
         market["files"] = {
             "prices_tsv": write(folder + "prices.tsv", tsv(
                 ["item_id", "item_key", "name", "typical_copper", "typical", "latest_copper", "latest", "last_seen",
-                 "listed_that_day", "change_7d_pct", "latest_from_scan"],
+                 "listed_that_day", "change_7d_pct", "volatility", "latest_from_scan"],
                 [[i["id"], i["key"], sheet_text(i["name"]), i["typical"], money(i["typical"]), i["price"], money(i["price"]), i["last_seen"],
-                  i["listed"], i["change"], i["price_scan"]] for i in market["items"]])),
+                  i["listed"], i["change"], i["volatility"], i["price_scan"]] for i in market["items"]])),
             "history_tsv": write(folder + "history.tsv", tsv(
                 ["item_id", "item_key", "name", "date", "low_copper", "high_copper", "listed"],
                 [[i["id"], i["key"], sheet_text(i["name"]), day_date(d), v["low"], v["high"], v["listed"]]
@@ -301,48 +486,76 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
                 "schema_version": SCHEMA, "revision": revision, "market": market["key"],
                 "environment": market["environment"], "last_date": market["last_date"],
                 "last_day": market["last_day"], "spark_days": SPARK_DAYS,
-                "columns": ["key", "id", "name", "typical", "price", "last_seen", "listed", "change", "current", "spark"],
+                "columns": ["key", "id", "name", "typical", "price", "last_seen", "listed", "change", "current", "spark", "volatility"],
                 "rows": [[i["key"], i["id"], i["name"], i["typical"], i["price"], i["last_seen"], i["listed"], i["change"],
-                          i["current"], i["spark"]] for i in market["items"]]}, separators=(",", ":")) + "\n"),
+                          i["current"], i["spark"], i["volatility"]] for i in market["items"]]}, separators=(",", ":")) + "\n"),
             "history_json": write(folder + "history.json", json.dumps({
                 "schema_version": SCHEMA, "revision": revision,
                 "history": {i["key"]: [[day_date(d), v["low"], v["high"], v["listed"]] for d, v in sorted(i["days"].items())]
                             for i in market["items"]}}, separators=(",", ":")) + "\n"),
         }
-        page(folder, pages.market_page(site, market))
         catalogue.append({"name": market["key"], "environment": market["environment"], "sample": market["sample"],
                           "page": market["url"], "last_date": market["last_date"], "items": len(market["items"]),
                           "current_items": len(market["current"]),
                           "scans": [{k: s[k] for k in ("date", "items", "source_sha256", "unchanged")} for s in market["scans"]],
                           **market["files"]})
-    for entry in journal:
-        entry["url"] = base + f"journal/{entry['slug']}/"
-        page(f"journal/{entry['slug']}/", pages.journal_entry(site, entry))
-    page("", pages.home(site, markets, journal))
-    page("prices/", pages.markets_index(site, markets))
-    page("journal/", pages.journal_index(site, journal))
-    page("about/", pages.about(site, markets, captures, names.get("source")))
+    primary = markets[0] if markets else None
+    book = price_book(primary, fdb)
+    places = content_places(game)
+    for entry in log:
+        entry["urls"] = sorted({u for u in (change_url(f, places) for f in entry["files"]) if u})
+    fdb_source = fdb.get("source") or {}
+    ctx = {"game": game, "launch": launch, "base": base, "markets": markets, "primary": primary, "content": content,
+           "log": log, "fdb": fdb, "fdb_source": fdb_source, "names": names["names"], "captures": captures,
+           "names_source": names.get("source"),
+           "data_prelaunch": not fdb_source.get("fetched_on") or date.fromisoformat(fdb_source["fetched_on"]) < launch,
+           "craft": craft_table(fdb, book, names["names"]), "crates": crate_table(fdb, book, names["names"]),
+           "materials": materials_table(fdb, book, names["names"])}
+    for market in markets:
+        page(f"prices/{market['slug']}/", pages.market_page(site, market, ctx))
+    page("", pages.home(site, ctx))
+    page("prices/", pages.prices_index(site, ctx))
+    page("prices/craft/", pages.craft_page(site, ctx))
+    page("prices/crates/", pages.crates_page(site, ctx))
+    page("prices/materials/", pages.materials_page(site, ctx))
+    write("prices/craft.tsv", tsv(["profession", "recipe", "skill", "item_id", "makes", "sells_copper", "cost_copper", "margin_copper", "price_from"],
+                                  [[r["profession"], sheet_text(r["name"]), r["skill"], r["item"], r["count"], r["sells"], r["cost"], r["margin"], r["value_source"]]
+                                   for r in ctx["craft"]]))
+    page("classes/", sections.classes_index(site, ctx))
+    for c in game["classes"]:
+        page(f"classes/{c['slug']}/", sections.class_page(site, ctx, c))
+    page("professions/", sections.professions_index(site, ctx))
+    for p in game["professions"]:
+        page(f"professions/{p['slug']}/", sections.profession_page(site, ctx, p))
+    page("world/", sections.world_index(site, ctx))
+    for t in game["world"]:
+        page(f"world/{t['slug']}/", sections.world_page(site, ctx, t))
+    for slug in MORE:
+        page(f"more/{slug}/", sections.more_page(site, ctx, slug))
+    page("more/about/", sections.about_page(site, ctx))
+    write("search.json", json.dumps(search_index(ctx), separators=(",", ":"), ensure_ascii=False) + "\n")
 
-    full = pages.llms_full(site, markets, journal, names.get("source"))
-    write("llms-full.txt", full)
-    write("llms.txt", pages.llms_index(site, markets, journal))
-    urls = [""] + ["prices/", "journal/", "about/"] + [f"prices/{m['slug']}/" for m in markets] + [f"journal/{e['slug']}/" for e in journal]
+    write("llms-full.txt", pages.llms_full(site, ctx))
+    write("llms.txt", pages.llms_index(site, ctx))
+    urls = ["", "prices/", "prices/craft/", "prices/crates/", "prices/materials/", "classes/", "professions/", "world/",
+            "more/about/"] + [f"more/{s}/" for s in MORE] + [f"prices/{m['slug']}/" for m in markets] \
+        + [f"classes/{c['slug']}/" for c in game["classes"]] + [f"professions/{p['slug']}/" for p in game["professions"]] \
+        + [f"world/{t['slug']}/" for t in game["world"]]
     write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
           + "".join(f"<url><loc>{SITE_URL}{u}</loc></url>\n" for u in urls) + "</urlset>\n")
     write("data/manifest.json", json.dumps({
         "schema_version": SCHEMA, "site": pages.SITE_NAME, "revision": revision, "built": built,
         "source_commit": commit, "parser_version": PARSER_VERSION, "read_first": base + "llms-full.txt",
-        "markets": catalogue,
-        "journal": [{k: e.get(k) for k in ("title", "type", "class", "status", "date", "updated", "summary", "url")} for e in journal],
-        "item_names": names.get("source")}, indent=1) + "\n")
+        "markets": catalogue, "pages_with_notes": sorted(content),
+        "item_names": names.get("source"), "foreverdb": fdb_source}, indent=1) + "\n")
 
     for path in out.rglob("*"):
         if path.is_file() and path.suffix not in (".html", ".css", ".js", ".svg", ".webp", ".jpg", ".png", ".json", ".tsv", ".txt", ".xml", ".woff2", ""):
             raise InvalidCapture(f"Unexpected public file type: {path.name}")
     if any(out.rglob("*.lua")):
         raise InvalidCapture("Raw Lua must not be published")
-    return {"revision": revision, "scans": len(captures), "markets": len(markets),
-            "items": sum(len(m["items"]) for m in markets), "journal": len(journal), "output": str(out)}
+    return {"revision": revision, "scans": len(captures), "markets": len(markets), "items": sum(len(m["items"]) for m in markets),
+            "content_pages": len(content), "log_entries": len(log), "craft_rows": len(ctx["craft"]), "output": str(out)}
 
 
 if __name__ == "__main__":

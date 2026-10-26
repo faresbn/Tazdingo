@@ -33,7 +33,9 @@ def check(out=None, base="/FvrRepo/"):
     out = Path(out or ROOT / "dist")
     manifest = json.loads((out / "data/manifest.json").read_text())
     assert not list(out.rglob("*.lua")), "Raw Lua in public output"
-    for required in ("index.html", "llms.txt", "llms-full.txt", "sitemap.xml", "prices/index.html", "journal/index.html", "about/index.html"):
+    for required in ("index.html", "llms.txt", "llms-full.txt", "sitemap.xml", "search.json", "prices/index.html", "prices/craft/index.html",
+                     "prices/crates/index.html", "prices/materials/index.html", "classes/index.html", "professions/index.html",
+                     "world/index.html", "more/addons/index.html", "more/macros/index.html", "more/known-issues/index.html", "more/about/index.html"):
         assert (out / required).is_file(), f"Missing {required}"
 
     def local(link):
@@ -80,10 +82,12 @@ def check(out=None, base="/FvrRepo/"):
     full = (out / "llms-full.txt").read_text()
     for market in manifest["markets"]:
         assert market["name"] in full, f"{market['name']} missing from llms-full.txt"
-    for entry in manifest["journal"]:
-        assert entry["title"] in full, f"Journal entry {entry['title']!r} missing from llms-full.txt"
-    print(f"Checked {pages} pages, {len(manifest['markets'])} markets and {len(manifest['journal'])} journal entries "
-          f"(revision {manifest['revision']}).")
+    search = json.loads((out / "search.json").read_text())
+    for title, url, _ in search:
+        target = local(url)
+        assert target is None or target.is_file(), f"Search result {title!r} points nowhere: {url}"
+    print(f"Checked {pages} pages, {len(manifest['markets'])} markets, {len(manifest['pages_with_notes'])} pages of notes "
+          f"and {len(search):,} search entries (revision {manifest['revision']}).")
 
 
 if __name__ == "__main__":
