@@ -89,6 +89,12 @@ def ingest(path: Path, environment: str, markets: list[str]) -> dict | None:
     capture = parse_capture(path, markets=markets)
     published = {m for r in registry["captures"] if r["source_sha256"] == capture["source_sha256"] for m in r["publish_markets"]}
     markets = [m for m in markets if m not in published]  # a second market from the same file is still new
+    # A market whose data hasn't changed since it was last imported (no scan in between) adds nothing.
+    known = {(m, sha) for r in registry["captures"] for m, sha in r.get("payloads", {}).items()}
+    unchanged = [m for m in markets if (m, capture["markets"][m]["payload_sha256"]) in known]
+    if unchanged:
+        print(f"No new scan data for {', '.join(unchanged)} since the last import; skipping.")
+    markets = [m for m in markets if m not in unchanged]
     if not markets:
         return None
     capture["markets"] = {m: capture["markets"][m] for m in markets}
@@ -107,6 +113,7 @@ def ingest(path: Path, environment: str, markets: list[str]) -> dict | None:
         "path": str(target.relative_to(ROOT)), "environment": environment,
         "received_on": date.today().isoformat(), "source_sha256": capture["source_sha256"],
         "scope_source": "Fares's Auctionator export", "publish_markets": markets,
+        "payloads": {m: capture["markets"][m]["payload_sha256"] for m in markets},
         "extraction_sha256": hashlib.sha256(body.encode()).hexdigest()})
     registry.setdefault("default_markets", {})[environment] = markets
     write_whole(registry_path, json.dumps(registry, indent=2) + "\n")
@@ -139,7 +146,7 @@ def main() -> None:
     result = ingest(path, args.environment, markets)
     if result is None:
         if not unfinished_import():
-            print("This scan is already in the journal; nothing to add.")
+            print("Nothing new to add.")
             if args.push and not args.no_commit:
                 run("git", "push")  # completes a push that failed last time; does nothing when up to date
             return

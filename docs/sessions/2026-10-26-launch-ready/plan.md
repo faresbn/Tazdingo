@@ -55,7 +55,7 @@ You and Mike ask your shared ChatGPT project about WoW Forever. FvrRepo is what 
 - [x] ChatGPT test: GPT answered from `llms-full.txt` + `prices.tsv` correctly
 - [x] ChatGPT project instructions drafted (`docs/chatgpt-project-instructions.md`)
 - [x] FvrRepo AGENTS.md drafted for approval (`proposed-AGENTS.md`)
-- [ ] Senior outside review of the data pipeline (GPT-6 Astra, high): findings checked and fixed
+- [x] Senior outside review of the data pipeline (GPT-6 Astra, high): 12 findings, all fixed or already fixed (revlog.md)
 - [x] Build rewrite: market pages, data files, `llms.txt` + `llms-full.txt` (replacing the planned `fvrrepo.md`: same idea, the name ChatGPT and other assistants already look for), sitemap, journal
 - [x] Design + Codex hero art (day and night maps); hero reworked so the map dissolves into the page
 - [ ] Checks: tests, build, site check, browser check (desktop + phone), launch-scale dry run on a real current file (not committed)
