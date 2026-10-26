@@ -8,10 +8,34 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+from datetime import date, timedelta
 from pathlib import Path
 
-PARSER_VERSION = "1.0.0"
-MAX_FILE = 16 * 1024 * 1024
+PARSER_VERSION = "1.1.0"
+MAX_FILE = 32 * 1024 * 1024
+
+# Item keys Auctionator writes (Source/Utilities/DBKeyFromLink.lua): a plain item ID,
+# "gr:<id>:<suffix>" for random-suffix gear on the legacy AH, "g:<id>:<item level>" and
+# "p:<species>" on the modern AH. "<id>:<n>..." covers older variant keys.
+ITEM_KEY = re.compile(r"\d+(?::[0-9:-]+)?|gr:\d+:[^\x00-\x1f:]{1,80}|g:\d+:\d+|p:\d+")
+
+# Auctionator's day codes count days since local midnight, 1 January 2020
+# (Source/Constants/Main.lua: SCAN_DAY_0; Source/Database/Mixin.lua: GetScanDay).
+DAY_ZERO = date(2020, 1, 1)
+
+
+def item_id(key: str) -> int:
+    """The game item ID inside any item key (the species ID for battle pets)."""
+    parts = key.split(":")
+    return int(parts[1] if parts[0] in ("gr", "g", "p") else parts[0])
+
+
+def suffix(key: str) -> str | None:
+    return key.split(":", 2)[2] if key.startswith("gr:") else None
+
+
+def day_date(code: int | str) -> str:
+    return (DAY_ZERO + timedelta(days=int(code))).isoformat()
 
 
 class InvalidCapture(ValueError):
@@ -193,7 +217,12 @@ class CBOR:
             raise InvalidCapture("CBOR collection/string limit exceeded")
         if major in (2,3):
             raw = self.take(length)
-            return raw if major == 2 else raw.decode("utf-8")
+            if major == 2:
+                return raw
+            try:
+                return raw.decode("utf-8")
+            except UnicodeDecodeError:
+                raise InvalidCapture(f"Malformed CBOR text at byte {self.pos-length}") from None
         if major == 4:
             return [self.read(depth+1) for _ in range(length)]
         if major == 5:
@@ -257,7 +286,7 @@ def load_market_extract(path: Path) -> dict:
         if set(market)!={"payload_sha256","items"} or not re.fullmatch(r"[a-f0-9]{64}",market["payload_sha256"]):
             raise InvalidCapture("Invalid market extraction")
         for item_key,fields in market["items"].items():
-            if not re.fullmatch(r"[0-9]+(?::[0-9:-]+)?",item_key) or set(fields)!={"m","a","h","l"}:
+            if not ITEM_KEY.fullmatch(item_key) or set(fields)!={"m","a","h","l"}:
                 raise InvalidCapture("Invalid market item")
             if type(fields["m"]) is not int or fields["m"]<0:
                 raise InvalidCapture("Invalid extracted price")
@@ -267,52 +296,85 @@ def load_market_extract(path: Path) -> dict:
     return data
 
 
-def parse_capture(path: Path) -> dict:
+def decode_market(payload: bytes) -> dict:
+    """Decode one market's CBOR string into {item key: {m, a, h, l}}."""
+    if not isinstance(payload, bytes):
+        raise InvalidCapture("Expected a CBOR-encoded market string")
+    if payload[:1] == b"\x01":
+        raise InvalidCapture("Market uses Auctionator's older serialiser; scan it again in game to refresh it")
+    market = CBOR(payload).complete()
+    if not isinstance(market, dict):
+        raise InvalidCapture("Expected a market map")
+    market = string_keys(market)
+    if market.pop("version", None) != 2:
+        raise InvalidCapture("Only market version 2 is supported")
+    items = {}
+    for item_key, fields in market.items():
+        if not ITEM_KEY.fullmatch(item_key):
+            raise InvalidCapture(f"Unsupported item key {item_key!r}")
+        if not isinstance(fields, dict):
+            raise InvalidCapture("Item record must be a map")
+        fields = string_keys(fields)
+        fields.setdefault("a", {})  # databases from before December 2020 have no "a"
+        if set(fields) != {"m","a","h","l"}:
+            raise InvalidCapture("Unknown or missing price-record fields")
+        if type(fields["m"]) is not int or fields["m"] < 0:
+            raise InvalidCapture("Invalid minimum price")
+        for field in ("a","h","l"):
+            days = fields[field]
+            if days == []:
+                days = {}
+            if not isinstance(days,dict):
+                raise InvalidCapture("Daily aggregate must be a map")
+            normal = {}
+            for day,value in days.items():
+                day = text(day) if not isinstance(day, int) else str(day)
+                if not day.isdigit() or type(value) is not int or value < 0:
+                    raise InvalidCapture("Invalid daily aggregate")
+                normal[day] = value
+            fields[field] = normal
+        items[item_key] = fields
+    return {"payload_sha256":hashlib.sha256(payload).hexdigest(),"items":items}
+
+
+def parse_capture(path: Path, markets=None) -> dict:
+    """Read a SavedVariables file. Decodes every market, or only those named in
+    `markets`, so an old market you never publish can't block a new scan."""
     with path.open("rb") as source:
         raw = source.read(MAX_FILE+1)
     globals_ = LuaData(raw).read()
     db = globals_.get("AUCTIONATOR_PRICE_DATABASE")
     if not isinstance(db, dict) or db.get(b"__dbversion") != 8:
         raise InvalidCapture("Only Auctionator price database version 8 is supported")
-    markets = {}
-    for key,payload in db.items():
-        if key == b"__dbversion":
-            continue
-        if not isinstance(payload, bytes):
-            raise InvalidCapture("Expected a CBOR-encoded market string")
-        market = CBOR(payload).complete()
-        if not isinstance(market, dict):
-            raise InvalidCapture("Expected a market map")
-        market = string_keys(market)
-        if market.pop("version",None) != 2:
-            raise InvalidCapture("Only market version 2 is supported")
-        items = {}
-        for item_key, fields in market.items():
-            if not re.fullmatch(r"[0-9]+(?::[0-9:-]+)?",item_key):
-                raise InvalidCapture(f"Unsupported item key {item_key!r}")
-            if not isinstance(fields, dict):
-                raise InvalidCapture("Item record must be a map")
-            fields = string_keys(fields)
-            if set(fields) != {"m","a","h","l"}:
-                raise InvalidCapture("Unknown or missing price-record fields")
-            if type(fields["m"]) is not int or fields["m"] < 0:
-                raise InvalidCapture("Invalid minimum price")
-            for field in ("a","h","l"):
-                days = fields[field]
-                if days == []:
-                    days = {}
-                if not isinstance(days,dict):
-                    raise InvalidCapture("Daily aggregate must be a map")
-                normal = {}
-                for day,value in days.items():
-                    day = text(day)
-                    if not day.isdigit() or type(value) is not int or value < 0:
-                        raise InvalidCapture("Invalid daily aggregate")
-                    normal[day] = value
-                fields[field] = normal
-            items[item_key] = fields
-        markets[text(key)] = {"payload_sha256":hashlib.sha256(payload).hexdigest(),"items":items}
+    available = {text(key): payload for key, payload in db.items() if key != b"__dbversion"}
+    wanted = available if markets is None else markets
+    decoded = {}
+    for name in wanted:
+        if name not in available:
+            raise InvalidCapture(f"Market {name!r} is not in this file; it has: {', '.join(sorted(available))}")
+        decoded[name] = decode_market(available[name])
     saved = globals_.get("AUCTIONATOR_SAVEDVARS",{})
     timestamps = {text(k):v for k,v in saved.items() if text(k).startswith("TimeOfLast") and type(v) is int}
     return {"source_sha256":hashlib.sha256(raw).hexdigest(),"source_bytes":len(raw),
-            "database_version":8,"parser_version":PARSER_VERSION,"source_scan_timestamps":timestamps,"markets":markets}
+            "database_version":8,"parser_version":PARSER_VERSION,"source_scan_timestamps":timestamps,
+            "markets":decoded,"available_markets":sorted(available)}
+
+
+def market_extract(capture: dict, sample_keys=None) -> dict:
+    """The publishable projection of a parsed capture: price records only, no
+    addon settings, posting history, searches or shopping lists."""
+    markets = {}
+    for name, market in capture["markets"].items():
+        keys = sample_keys.get(name) if sample_keys else None
+        items = market["items"] if keys is None else {k: market["items"][k] for k in keys}
+        markets[name] = {"payload_sha256": market["payload_sha256"], "items": dict(sorted(items.items()))}
+    sample = {"complete_market": not sample_keys}
+    if sample_keys:
+        sample["original_market_counts"] = {n: len(m["items"]) for n, m in capture["markets"].items()}
+        sample["sample_keys"] = sample_keys
+    return {"capture_format": "market-only-extract-v1", "database_version": 8,
+            "parser_version": PARSER_VERSION, "sample": sample,
+            "source_bytes": capture["source_bytes"], "source_sha256": capture["source_sha256"],
+            "source_scan_timestamps": capture["source_scan_timestamps"],
+            "validation_scope": "Market records only; original SavedVariables parsed locally and kept private.",
+            "markets": markets}

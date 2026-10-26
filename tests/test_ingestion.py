@@ -5,7 +5,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"scripts"))
-from auctionator import CBOR, InvalidCapture, LuaData, parse_capture, string_keys
+from auctionator import CBOR, InvalidCapture, LuaData, day_date, item_id, parse_capture, string_keys, suffix
 from build import collect, group_markets, partition_records
 
 
@@ -31,6 +31,57 @@ class SafeFormats(unittest.TestCase):
         records=[{"item_id":1,"item_key":"1"},{"item_id":2,"item_key":"2:1"},{"item_id":2,"item_key":"2:2"},{"item_id":3,"item_key":"3"}]
         parts=list(partition_records(records,size=2))
         self.assertEqual([[r["item_key"] for r in p] for p in parts],[["1"],["2:1","2:2"],["3"]])
+
+
+def cbor(value):
+    """Minimal CBOR encoder for building Auctionator-shaped fixtures."""
+    def head(major, n):
+        if n < 24: return bytes([major<<5|n])
+        for extra, size in ((24,1),(25,2),(26,4),(27,8)):
+            if n < 1 << (8*size): return bytes([major<<5|extra]) + n.to_bytes(size,"big")
+    if isinstance(value, int): return head(0, value)
+    if isinstance(value, str): raw=value.encode(); return head(3, len(raw)) + raw
+    if isinstance(value, dict): return head(5, len(value)) + b"".join(cbor(k)+cbor(v) for k,v in value.items())
+    raise TypeError(value)
+
+
+def saved_variables(markets):
+    """A SavedVariables file holding the given {market name: payload bytes}."""
+    def lua_string(raw):
+        return b'"' + b"".join(b"\\%03d" % c if c < 32 or c in (34,92) or c > 126 else bytes([c]) for c in raw) + b'"'
+    rows = b"".join(b'["' + name.encode() + b'"] = ' + lua_string(payload) + b",\n" for name,payload in markets.items())
+    return (b'AUCTIONATOR_PRICE_DATABASE = {\n["__dbversion"] = 8,\n' + rows + b'}\n'
+            b'AUCTIONATOR_SAVEDVARS = {\n["TimeOfLastBrowseScan"] = 1792240585,\n}\n')
+
+
+class CurrentAuctionatorFormat(unittest.TestCase):
+    record = {"m": 5000, "h": {"2481": 5000}, "l": {}, "a": {"2481": 3}}
+
+    def write(self, markets):
+        import tempfile
+        handle = tempfile.NamedTemporaryFile(suffix=".lua", delete=False)
+        handle.write(saved_variables(markets)); handle.close()
+        self.addCleanup(Path(handle.name).unlink)
+        return Path(handle.name)
+
+    def test_random_suffix_keys_accepted(self):
+        path = self.write({"Realm Horde": cbor({"version": 2, "9807": self.record, "gr:9807:of the Boar": self.record})})
+        items = parse_capture(path)["markets"]["Realm Horde"]["items"]
+        self.assertEqual(sorted(items), ["9807", "gr:9807:of the Boar"])
+        self.assertEqual((item_id("gr:9807:of the Boar"), suffix("gr:9807:of the Boar")), (9807, "of the Boar"))
+
+    def test_unpublished_broken_market_does_not_block_scan(self):
+        path = self.write({"Old Realm": b"\x01\x90\x1b", "Realm Horde": cbor({"version": 2, "2589": self.record})})
+        self.assertEqual(list(parse_capture(path, markets=["Realm Horde"])["markets"]), ["Realm Horde"])
+        with self.assertRaises(InvalidCapture): parse_capture(path)
+        with self.assertRaises(InvalidCapture): parse_capture(path, markets=["Missing"])
+
+    def test_malformed_text_is_a_clean_rejection(self):
+        with self.assertRaises(InvalidCapture): CBOR(b"\x61\xa4").complete()
+
+    def test_day_codes_match_auctionator_day_zero(self):
+        # Beta capture of 17 October 2026 has day code 2481 as its newest day.
+        self.assertEqual(day_date(2481), "2026-10-17")
 
 
 class OriginalCaptures(unittest.TestCase):
