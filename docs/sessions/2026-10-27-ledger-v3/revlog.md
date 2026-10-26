@@ -37,3 +37,28 @@
 | — | Scan import would be rejected after archive commits | **Fixed:** ingest.py pulls with rebase before pushing. |
 
 **Conclusion:** keep the static design; the lost-update, archive, status and provenance contracts are now resolved in code and in UPDATING.md.
+
+## 3. Peer code review of the finished build (GPT-6.1 Sol, high effort, 27 Oct 00:05)
+
+**What it changed:** the menus now behave the same however they're opened, Blizzard's posts no longer vanish between site rebuilds, class pages have unique section links, and the archive copes with merges and simultaneous pushes. Eleven findings, all accepted and fixed.
+
+- **Why:** peer review of the completed implementation before merging (REVIEWER.md: milestone).
+- **Route:** ChatGPT plan through Codex, read-only, web search off. Session `01a17a05-be63-71f1-bcd0-a26b92833e89`.
+- **Packet:** reviewer rules, the diff of `ledger-v3` against `main` (scripts, workflows, site assets) and the questions: correctness, security of rendered content, CI behaviour, accessibility of the menus.
+- **Usage:** 696,311 input tokens (610,048 cached), 12,526 output. ChatGPT plan.
+
+| # | Finding | Fix |
+|---|---|---|
+| 1 | Moving the pointer from a menu tab to its panel crossed a gap and closed the panel | Leaving a menu closes it after 250 ms; re-entering (the panel included) cancels that |
+| 2 | Posts fetched in one run were lost by the next, because CI publishes only `dist/` | The Pages job restores the previous snapshot from the Actions cache, merges it, and saves the new one (`blue_posts.py --merge`); a fetch failure still keeps both |
+| 3 | The archive skipped merge commits and the first commit | `diff-tree -m --first-parent --root`, and `rev-list --first-parent` so a merged branch is recorded once (tested on a merge) |
+| 4 | Class pages repeat the anchors of their embedded hybrid and macros notes | Those notes' sections and headings are prefixed `hybrid-` and `macros-`; the site check now fails duplicate ids |
+| 5 | The embedded notes dropped their Read more sources | Rendered |
+| 6 | Hover (CSS) and click (JS) kept separate state: wrong `aria-expanded`, two panels open, a clicked menu that hover kept open | One state in JS: hover opens and closes others; a keyboard user's open menu isn't closed by the pointer leaving |
+| 7 | The archive job ran against the pushed commit, not current main, and pushed a stale record after a lost race | Checks out `main`, and on a rejected push resets to the new main and records again (up to three tries) |
+| 8 | De-duplication merged different replies by the same author on the same day | Replies are kept by id; only opening posts cross-posted under the same title, author and day are merged |
+| 9 | The phone menu ignored Escape and outside clicks | Both close it |
+| 10 | Contents labels with links nested anchors | Labels are plain text |
+| 11 | Checklist and issue labels on the front page were escaped twice | Decoded once after stripping tags, then escaped once |
+
+**Conclusion:** no security issue in rendered content; the fixes are in commits `99b1fac` and `4e7fedd`.
