@@ -40,12 +40,20 @@ function niceDate(iso) {
 function change(pct) {
   if (pct === null || pct === undefined) return null;
   const word = pct > 0 ? "up" : pct < 0 ? "down" : "flat";
-  return el("span", `${pct > 0 ? "+" : ""}${pct}%`, `change ${word}`);
+  const text = pct >= 200 ? `×${Math.round((pct + 100) / 100)}` : `${pct > 0 ? "+" : ""}${pct}%`;
+  return el("span", text, `change ${word}`);
+}
+
+function median(values) {
+  const sorted = [...values].sort((a, b) => a - b), mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 ? sorted[mid] : Math.floor((sorted[mid - 1] + sorted[mid]) / 2);
 }
 
 function spark(values) {
-  const points = values.map((v, i) => [i, v]).filter(([, v]) => v !== null);
+  let points = values.map((v, i) => [i, v]).filter(([, v]) => v !== null);
   if (points.length < 2) return points.length ? el("span", "one day", "spark-none") : null;
+  const ceiling = 4 * [...points.map(p => p[1])].sort((a, b) => a - b)[Math.floor(points.length / 2)];
+  points = points.map(([i, v]) => [i, Math.min(v, ceiling)]);  // clip troll listings
   const low = Math.min(...points.map(p => p[1])), high = Math.max(...points.map(p => p[1]));
   const span = (high - low) || 1, width = 84, height = 22;
   const coords = points.map(([i, v]) => [+(i * width / (values.length - 1)).toFixed(1), +(height - 2 - (v - low) / span * (height - 4)).toFixed(1)]);
@@ -59,6 +67,9 @@ function spark(values) {
 function detailChart(days) {
   // days: [[iso, low, high, listed], ...]
   const width = 640, height = 170, left = 8, right = 8, top = 22, bottom = 26;
+  const ceiling = 4 * median(days.map(d => d[1]));  // listings far above the usual price would flatten the chart
+  const clipped = days.filter(d => d[2] > ceiling).length;
+  days = days.map(d => [d[0], Math.min(d[1], ceiling), Math.min(d[2], ceiling), d[3]]);
   const lows = days.map(d => d[1]), highs = days.map(d => d[2]);
   const min = Math.min(...lows), max = Math.max(...highs), span = (max - min) || 1;
   const x = i => left + (days.length === 1 ? (width - left - right) / 2 : i * (width - left - right) / (days.length - 1));
@@ -79,6 +90,7 @@ function detailChart(days) {
   const coin = c => { const g = Math.floor(c / 10000), s = Math.floor(c % 10000 / 100); return g ? `${g}g ${s}s` : s ? `${s}s ${c % 100}c` : `${c % 100}c`; };
   label(`high ${coin(max)}`, { x: width - right, y: 14, "text-anchor": "end" });
   label(`low ${coin(min)}`, { x: left, y: 14 });
+  svg.dataset.clipped = clipped;
   return svg;
 }
 
@@ -104,7 +116,10 @@ async function marketBrowser(section) {
   }
   const params = new URLSearchParams(location.search);
   filter.value = params.get("q") || "";
-  if (filter.value) scope.value = "all";
+  if (filter.value) {
+    scope.value = "all";
+    section.scrollIntoView();  // a search from the home page lands on the results, not the highlights
+  }
 
   function matches(item, terms, id) {
     if (id !== null) return item.id === id;
@@ -121,11 +136,21 @@ async function marketBrowser(section) {
     const sorters = {
       name: (a, b) => a.name.localeCompare(b.name, "en-GB"),
       listed: (a, b) => (b.listed ?? -1) - (a.listed ?? -1),
-      "price-high": (a, b) => b.price - a.price,
-      "price-low": (a, b) => a.price - b.price,
+      "price-high": (a, b) => b.typical - a.typical,
+      "price-low": (a, b) => a.typical - b.typical,
       change: (a, b) => Math.abs(b.change ?? 0) - Math.abs(a.change ?? 0),
     };
-    view.sort(sorters[order.value]);
+    if (terms.length && id === null && order.value === "name") {
+      // With a search, the item you most likely mean comes first: "linen" puts Linen Cloth above Barbaric Linen Vest.
+      const query = terms.join(" ");
+      const rank = item => {
+        const name = item.name.toLowerCase();
+        return name === query ? 0 : name.startsWith(query) ? 1 : (` ${name}`).includes(` ${query}`) ? 2 : 3;
+      };
+      view.sort((a, b) => rank(a) - rank(b) || (b.listed ?? 0) - (a.listed ?? 0) || sorters.name(a, b));
+    } else {
+      view.sort(sorters[order.value]);
+    }
     if (resetPage) page = 0;
     const query = raw ? `?q=${encodeURIComponent(raw)}` : "";
     history_replace(query);
@@ -151,14 +176,15 @@ async function marketBrowser(section) {
       link.target = "_blank";
       link.rel = "noopener";
       name.append(link, " ", el("span", item.id, "id"));
-      const price = el("td", null, "num"); price.append(money(item.price));
-      const seen = el("td", niceDate(item.last_seen));
-      const listed = el("td", item.listed === null ? "" : item.listed.toLocaleString("en-GB"), "num");
+      const typical = el("td", null, "num"); typical.append(money(item.typical));
+      const latest = el("td", null, "num latest"); latest.append(money(item.price));
+      const seen = el("td", niceDate(item.last_seen), "date");
+      const listed = el("td", item.listed === null ? "" : item.listed.toLocaleString("en-GB"), "num listed");
       const trend = el("td", null, "trend");
       const line = spark(item.spark), pct = change(item.change);
       if (line) trend.append(line, " ");
       if (pct) trend.append(pct);
-      row.append(name, price, seen, listed, trend);
+      row.append(name, typical, latest, seen, listed, trend);
       tbody.append(row);
     }
     const pages = Math.max(1, Math.ceil(view.length / PAGE_SIZE));
@@ -193,7 +219,7 @@ async function marketBrowser(section) {
     const detail = el("tr", null, "detail");
     detail.dataset.for = row.dataset.key;
     const cell = el("td");
-    cell.colSpan = 5;
+    cell.colSpan = 6;
     cell.append(el("p", "Loading daily prices…", "detail-note"));
     detail.append(cell);
     row.after(detail);
@@ -209,9 +235,11 @@ async function marketBrowser(section) {
       cell.replaceChildren();
       if (!days.length) { cell.append(el("p", "No daily records for this item.", "detail-note")); return; }
       const busiest = days.reduce((a, b) => ((b[3] ?? 0) > (a[3] ?? 0) ? b : a));
-      cell.append(detailChart(days), el("p",
-        `${days.length} day${days.length === 1 ? "" : "s"} of records. The line is each day's lowest price; the band runs up to that day's highest low.` +
-        (busiest[3] ? ` Most listed: ${busiest[3].toLocaleString("en-GB")} on ${niceDate(busiest[0])}.` : ""), "detail-note"));
+      const chart = detailChart(days), clipped = Number(chart.dataset.clipped);
+      cell.append(chart, el("p",
+        `${days.length} day${days.length === 1 ? "" : "s"} of records. The line is each day's cheapest listing; the band shows how far that day's cheapest listing rose.` +
+        (busiest[3] ? ` Most listed: ${busiest[3].toLocaleString("en-GB")} on ${niceDate(busiest[0])}.` : "") +
+        (clipped ? ` ${clipped} day${clipped === 1 ? "" : "s"} with listings far above the usual price are cut off at the top.` : ""), "detail-note"));
     } catch {
       cell.replaceChildren(el("p", "The daily history didn't load. Check your connection and select the row again.", "detail-note"));
     }

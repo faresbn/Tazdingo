@@ -132,20 +132,34 @@ def build_markets(captures: list[dict], names: dict) -> list[dict]:
     return sorted(result, key=lambda m: (m["environment"] != "forever", m["sample"], -(m["last_day"] or 0), m["key"]))
 
 
+def median(values: list[int]) -> int | None:
+    ordered = sorted(values)
+    middle = len(ordered) // 2
+    if not ordered:
+        return None
+    return ordered[middle] if len(ordered) % 2 else (ordered[middle - 1] + ordered[middle]) // 2
+
+
 def summarise(item: dict, last_day: int | None) -> None:
+    """Typical price: the median of each day's lowest price over the item's last
+    seven days of records. A median ignores one-day spikes and troll listings
+    (real scans include 99,999,999,999-copper listings), which the latest
+    price alone does not. Weekly change compares this week's median with the
+    week before's."""
     days = item["days"]
     seen = max(days) if days else None
     item["last_seen"] = day_date(seen) if seen is not None else None
     item["listed"] = days[seen]["listed"] if seen is not None else None
     item["current"] = seen is not None and last_day is not None and last_day - seen < CURRENT_DAYS
+    recent = [v["low"] for d, v in days.items() if seen is not None and seen - 6 <= d <= seen]
+    before = [v["low"] for d, v in days.items() if seen is not None and seen - 13 <= d <= seen - 7]
+    item["typical"] = median(recent) if recent else item["price"]
+    item["recent_days"], item["before_days"] = len(recent), len(before)
+    earlier = median(before)
+    item["change"] = (round((item["typical"] - earlier) / earlier * 100)
+                      if len(recent) >= 2 and len(before) >= 2 and earlier else None)
     item["spark"] = ([days[d]["low"] if d in days else None for d in range(last_day - SPARK_DAYS + 1, last_day + 1)]
                      if last_day is not None else [])
-    earlier = [d for d in days if seen is not None and d <= seen - 7]
-    if seen is not None and earlier and days[max(earlier)]["low"]:
-        before, now = days[max(earlier)]["low"], days[seen]["low"]
-        item["change"] = round((now - before) / before * 100)
-    else:
-        item["change"] = None
 
 
 def highlights(market: dict) -> dict:
@@ -153,7 +167,9 @@ def highlights(market: dict) -> dict:
     with real volume, for the page and for ChatGPT."""
     newest = [i for i in market["current"] if i["last_seen"] == market["last_date"] and i["listed"]]
     most_listed = sorted(newest, key=lambda i: (-i["listed"], i["name"]))[:12]
-    movers = [i for i in market["current"] if i["change"] is not None and (i["listed"] or 0) >= 5]
+    # Moves only count with three days of records in both weeks, at least 50c, and some volume.
+    movers = [i for i in market["current"] if i["change"] is not None and i["recent_days"] >= 3
+              and i["before_days"] >= 3 and i["typical"] >= 50 and (i["listed"] or 0) >= 5]
     rising = sorted((i for i in movers if i["change"] > 0), key=lambda i: -i["change"])[:6]
     falling = sorted((i for i in movers if i["change"] < 0), key=lambda i: i["change"])[:6]
     return {"most_listed": most_listed, "rising": rising, "falling": falling}
@@ -223,7 +239,8 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
     built = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     commit = os.environ.get("GITHUB_SHA", "local")
     revision = hashlib.sha256(json.dumps({
-        "schema": SCHEMA, "parser": PARSER_VERSION, "scans": [c["source_sha256"] for c in captures],
+        "schema": SCHEMA, "parser": PARSER_VERSION,
+        "scans": [[c["source_sha256"], c.get("extraction_sha256")] for c in captures],
         "names": names.get("source", {}) and names["source"].get("sha256"),
         "journal": [e["body"] for e in journal]}, sort_keys=True).encode()).hexdigest()[:12]
 
@@ -231,8 +248,9 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
         shutil.rmtree(out)
     out.mkdir(parents=True)
     shutil.copytree(root / "site/assets", out / "assets")
+    fingerprints = {f.name: hashlib.sha256(f.read_bytes()).hexdigest()[:10] for f in (root / "site/assets").iterdir() if f.is_file()}
     site = pages.Site(base=base, url=SITE_URL, revision=revision, built=built,
-                      credit=bool(names.get("source")))
+                      credit=bool(names.get("source")), assets=fingerprints)
 
     def write(path: str, content: str) -> str:
         target = out / path
@@ -251,9 +269,10 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
         market["highlights"] = highlights(market)
         market["files"] = {
             "prices_tsv": write(folder + "prices.tsv", tsv(
-                ["item_id", "item_key", "name", "price_copper", "price", "last_seen", "listed_that_day", "change_7d_pct", "price_from_scan"],
-                [[i["id"], i["key"], i["name"], i["price"], money(i["price"]), i["last_seen"], i["listed"], i["change"], i["price_scan"]]
-                 for i in market["items"]])),
+                ["item_id", "item_key", "name", "typical_copper", "typical", "latest_copper", "latest", "last_seen",
+                 "listed_that_day", "change_7d_pct", "latest_from_scan"],
+                [[i["id"], i["key"], i["name"], i["typical"], money(i["typical"]), i["price"], money(i["price"]), i["last_seen"],
+                  i["listed"], i["change"], i["price_scan"]] for i in market["items"]])),
             "history_tsv": write(folder + "history.tsv", tsv(
                 ["item_id", "item_key", "name", "date", "low_copper", "high_copper", "listed"],
                 [[i["id"], i["key"], i["name"], day_date(d), v["low"], v["high"], v["listed"]]
@@ -262,8 +281,8 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
                 "schema_version": SCHEMA, "revision": revision, "market": market["key"],
                 "environment": market["environment"], "last_date": market["last_date"],
                 "last_day": market["last_day"], "spark_days": SPARK_DAYS,
-                "columns": ["key", "id", "name", "price", "last_seen", "listed", "change", "current", "spark"],
-                "rows": [[i["key"], i["id"], i["name"], i["price"], i["last_seen"], i["listed"], i["change"],
+                "columns": ["key", "id", "name", "typical", "price", "last_seen", "listed", "change", "current", "spark"],
+                "rows": [[i["key"], i["id"], i["name"], i["typical"], i["price"], i["last_seen"], i["listed"], i["change"],
                           i["current"], i["spark"]] for i in market["items"]]}, separators=(",", ":")) + "\n"),
             "history_json": write(folder + "history.json", json.dumps({
                 "schema_version": SCHEMA, "revision": revision,

@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"scripts"))
 from auctionator import CBOR, InvalidCapture, LuaData, day_date, item_id, parse_capture, string_keys, suffix
-from build import build_markets, collect, load_journal
+from build import build_markets, collect, load_journal, summarise
 from markup import render
 
 
@@ -31,10 +31,23 @@ class SafeFormats(unittest.TestCase):
     def test_markdown_escapes_html_and_unsafe_links(self):
         out=render("<script>x</script> [a](javascript:alert(1)) **b**")
         self.assertNotIn("<script>",out); self.assertNotIn('href="javascript',out); self.assertIn("<strong>b</strong>",out)
+        for attack in ('https://x.com/"onmouseover="alert(1)', "https://x.com/'onmouseover='alert(1)", '[a](https://x.com/"onmouseover="alert(1))'):
+            with self.subTest(attack=attack):
+                self.assertEqual(attributes(render(attack)) - {"href","target","rel"}, set())
     def test_markdown_tables_and_lists(self):
         out=render("## Gear\n\n- one\n  - two\n\n| A | B |\n|---|--:|\n| x | 1 |")
         self.assertIn("<h2>Gear</h2>",out); self.assertIn("<ul><li>one<ul><li>two</li></ul></li></ul>",out)
         self.assertIn('<td style="text-align:right">1</td>',out)
+
+
+def attributes(markup):
+    """Every attribute name on every tag in an HTML fragment."""
+    from html.parser import HTMLParser
+    found=set()
+    class Collect(HTMLParser):
+        def handle_starttag(self, tag, attrs): found.update(name for name, _ in attrs)
+    Collect().feed(markup)
+    return found
 
 
 def cbor(value):
@@ -56,6 +69,31 @@ def saved_variables(markets):
     rows = b"".join(b'["' + name.encode() + b'"] = ' + lua_string(payload) + b",\n" for name,payload in markets.items())
     return (b'AUCTIONATOR_PRICE_DATABASE = {\n["__dbversion"] = 8,\n' + rows + b'}\n'
             b'AUCTIONATOR_SAVEDVARS = {\n["TimeOfLastBrowseScan"] = 1792240585,\n}\n')
+
+
+class TypicalPrice(unittest.TestCase):
+    def item(self, lows, price=None):
+        days={2470+i:{"low":v,"high":v,"listed":3} for i,v in enumerate(lows) if v is not None}
+        item={"days":days,"price":price if price is not None else lows[-1]}
+        summarise(item, 2470+len(lows)-1)
+        return item
+
+    def test_troll_listing_does_not_set_the_price(self):
+        item=self.item([100,110,99999999999,105,100,95,100])
+        self.assertEqual(item["typical"],100)
+
+    def test_one_day_spike_does_not_set_the_price(self):
+        item=self.item([30,32,28,31,29,30,11000])
+        self.assertEqual((item["typical"],item["price"]),(30,11000))
+
+    def test_weekly_change_compares_medians(self):
+        item=self.item([100]*7+[200]*7)
+        self.assertEqual(item["change"],100)
+        self.assertIsNone(self.item([100,200])["change"])  # not enough history
+
+    def test_large_rise_reads_as_multiple(self):
+        from pages import signed
+        self.assertEqual((signed(7417),signed(150),signed(-92),signed(None)),("×75","+150%","-92%",""))
 
 
 class CurrentAuctionatorFormat(unittest.TestCase):
@@ -92,7 +130,9 @@ class OriginalCaptures(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         fingerprints=["249ef1a7d3a1bef1af965b32ea8bed90b199c9fc001351df19853aa3be06ae45","ea7c4b2a9cfd82cc7c53fdc7f2062892691e64eb0e1da0cc1ad1c6adbf933b1c","2f5fb65c7631270feb6241f5da2d7ba2bfaa0f7535ec03671e52257d0dce2c75"]
-        by_hash={c["source_sha256"]:c for c in collect()}
+        by_hash={c["source_sha256"]:c for c in collect() if c["environment"]=="forever-beta"}
+        if not all(k in by_hash for k in fingerprints):
+            raise unittest.SkipTest("Forever Beta sample not in the registry")
         cls.captures=[by_hash[k] for k in fingerprints]
     def test_recorded_source_fingerprints(self):
         self.assertEqual([c["source_sha256"] for c in self.captures],[

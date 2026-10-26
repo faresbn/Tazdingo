@@ -63,7 +63,7 @@ def check(out=None, base="/FvrRepo/"):
         with open(out / market["prices_tsv"].removeprefix(base), newline="") as handle:
             rows = list(csv.DictReader(handle, delimiter="\t"))
         assert len(rows) == market["items"], "TSV and catalogue disagree"
-        assert all(r["price_copper"].isdigit() for r in rows), "Non-integer price"
+        assert all(r["typical_copper"].isdigit() and r["latest_copper"].isdigit() for r in rows), "Non-integer price"
         assert len({r["item_key"] for r in rows}) == len(rows), "Duplicate item key"
         history = json.loads((out / market["history_json"].removeprefix(base)).read_text())
         assert set(history["history"]) == {r["item_key"] for r in rows}

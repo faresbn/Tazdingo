@@ -19,6 +19,10 @@ class Site:
     revision: str
     built: str
     credit: bool
+    assets: dict  # file name -> short content fingerprint, so browsers never mix old and new files
+
+    def asset(self, name: str) -> str:
+        return f"{self.base}assets/{name}?v={self.assets.get(name, self.revision)}"
 
 
 def esc(value) -> str:
@@ -52,7 +56,10 @@ def money(copper: int | None) -> str:
 
 
 def signed(pct: int | None) -> str:
-    return "" if pct is None else f"{pct:+d}%"
+    """+12%, -40%, or a multiple for big rises: +7,417% reads better as ×75."""
+    if pct is None:
+        return ""
+    return f"×{round((pct + 100) / 100)}" if pct >= 200 else f"{pct:+d}%"
 
 
 def plain_money(copper: int | None) -> str:
@@ -71,7 +78,7 @@ def change(pct: int | None) -> str:
     if pct is None:
         return ""
     word = "up" if pct > 0 else "down" if pct < 0 else "flat"
-    return f'<span class="change {word}">{"+" if pct > 0 else ""}{pct}%</span>'
+    return f'<span class="change {word}">{signed(pct)}</span>'
 
 
 def spark(values: list) -> str:
@@ -79,6 +86,8 @@ def spark(values: list) -> str:
     points = [(i, v) for i, v in enumerate(values) if v is not None]
     if len(points) < 2:
         return '<span class="spark-none">one day</span>' if points else ""
+    ceiling = 4 * sorted(v for _, v in points)[len(points) // 2]  # clip troll listings so the shape stays readable
+    points = [(i, min(v, ceiling)) for i, v in points]
     low, high = min(v for _, v in points), max(v for _, v in points)
     span, width, height = (high - low) or 1, 84, 22
     coords = [(round(i * width / (len(values) - 1), 1), round(height - 2 - (v - low) / span * (height - 4), 1)) for i, v in points]
@@ -111,12 +120,12 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
 <link rel="canonical" href="{esc(site.url + path)}">
 <link rel="alternate" type="text/plain" title="Everything in one file, for ChatGPT" href="{site.base}llms-full.txt">
 <meta name="color-scheme" content="light dark">
-<link rel="icon" href="{site.base}assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="{site.asset("icon.svg")}" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=IM+Fell+English:ital@0;1&display=swap">
-<link rel="stylesheet" href="{site.base}assets/style.css">
-<script src="{site.base}assets/app.js" defer></script>
+<link rel="stylesheet" href="{site.asset("style.css")}">
+<script src="{site.asset("app.js")}" defer></script>
 <script src="{FOREVERDB}/embed/tooltips.js" data-icons="true" data-color-links="true" async></script>
 </head>
 <body>
@@ -150,8 +159,8 @@ def price_rows(items: list[dict], limit: int) -> str:
     rows = []
     for item in items[:limit]:
         rows.append(f'<tr><th scope="row">{esc(item["name"])} <span class="id">{item["id"]}</span></th>'
-                    f'<td class="num">{money(item["price"])}</td><td>{when(item["last_seen"])}</td>'
-                    f'<td class="num">{count(item["listed"])}</td>'
+                    f'<td class="num">{money(item["typical"])}</td><td class="num latest">{money(item["price"])}</td><td class="date">{when(item["last_seen"])}</td>'
+                    f'<td class="num listed">{count(item["listed"])}</td>'
                     f'<td class="trend">{spark(item["spark"])} {change(item["change"])}</td></tr>')
     return "".join(rows)
 
@@ -162,22 +171,22 @@ def home(site: Site, markets: list[dict], journal: list[dict]) -> str:
     primary = markets[0] if markets else None
     search = ""
     if primary:
-        search = f'''<form class="lookup" action="{esc(primary["url"])}" method="get" role="search">
+        search = f'''<form class="lookup" action="{esc(primary["url"])}#prices" method="get" role="search">
   <label for="lookup">Look up a price</label>
-  <div class="lookup-row"><input id="lookup" name="q" type="search" placeholder="Linen Cloth, Copper Ore or an item ID" autocomplete="off"><button type="submit">Search</button></div>
+  <div class="lookup-row"><input id="lookup" name="q" type="search" placeholder="Linen Cloth, or an item ID" autocomplete="off"><button type="submit">Search</button></div>
   <p>Searches {esc(primary["name"])} ({esc(primary["environment_label"])}), last scanned {nice_date(primary["last_date"])}.</p>
 </form>'''
     latest = ""
     if primary:
         top = primary["highlights"]["most_listed"][:6] or primary["current"][:6]
-        rows = "".join(f'<tr><th scope="row">{item_link(i)}</th><td class="num">{money(i["price"])}</td>'
+        rows = "".join(f'<tr><th scope="row">{item_link(i)}</th><td class="num">{money(i["typical"])}</td>'
                        f'<td class="num">{count(i["listed"])}</td></tr>' for i in top)
         latest = f'''<section class="panel scan" aria-labelledby="scan-title">
   <h2 id="scan-title">Latest scan</h2>
   <p class="lede"><a href="{esc(primary["url"])}">{esc(primary["name"])}</a>, {esc(primary["environment_label"])}: {len(primary["items"]):,} items, newest data from {when(primary["last_date"])}.</p>
   {sample_note(primary)}
   <div class="table-wrap"><table class="compact"><caption>Most listed on {nice_date(primary["last_date"])}</caption>
-  <thead><tr><th scope="col">Item</th><th scope="col" class="num">Price each</th><th scope="col" class="num">Listed</th></tr></thead>
+  <thead><tr><th scope="col">Item</th><th scope="col" class="num">Typical price</th><th scope="col" class="num">Listed</th></tr></thead>
   <tbody>{rows}</tbody></table></div>
   <p><a class="more" href="{esc(primary["url"])}">All {len(primary["items"]):,} prices</a></p>
 </section>'''
@@ -246,7 +255,7 @@ def market_page(site: Site, market: dict) -> str:
     def mini(title, items, extra):
         if not items:
             return ""
-        rows = "".join(f'<li>{item_link(i)} <span class="value">{money(i["price"])}</span> {extra(i)}</li>' for i in items)
+        rows = "".join(f'<li>{item_link(i)} <span class="value">{money(i["typical"])}</span> {extra(i)}</li>' for i in items)
         return f'<section class="highlight"><h3>{title}</h3><ul>{rows}</ul></section>'
     listed = lambda i: f'<span class="aside">{i["listed"]:,} listed</span>'
     highlights = (mini(f"Most listed on {nice_date(market['last_date'])}", h["most_listed"][:8], listed)
@@ -275,14 +284,15 @@ def market_page(site: Site, market: dict) -> str:
     </form>
     <p id="status" class="status" aria-live="polite">{len(shown):,} items.</p>
     <div class="table-wrap"><table class="prices">
-    <thead><tr><th scope="col">Item</th><th scope="col" class="num">Price each</th><th scope="col">Last seen</th><th scope="col" class="num">Listed that day</th><th scope="col">Two weeks</th></tr></thead>
+    <thead><tr><th scope="col">Item</th><th scope="col" class="num">Typical price</th><th scope="col" class="num latest">Latest</th><th scope="col">Last seen</th><th scope="col" class="num listed">Listed that day</th><th scope="col">Trend</th></tr></thead>
     <tbody id="rows">{price_rows(shown, SERVER_ROWS)}</tbody></table></div>
     {more}
     <nav id="pager" class="pager" aria-label="Pages" hidden></nav>
   </section>
   <section class="reading">
     <h2>Reading these prices</h2>
-    <p><strong>Price each</strong> is the lowest buyout per item the last time a scan saw it. <strong>Last seen</strong> is that day; an old date means the price may have moved since. <strong>Listed that day</strong> is the most units on sale at once that day, not how many sold. The two-week line follows each day's lowest price, and the percentage compares it with a week earlier.</p>
+    <p><strong>Typical price</strong> is the middle value of each day's cheapest listing over the item's last seven days of records, so a single odd listing doesn't move it. <strong>Latest</strong> is the cheapest listing the most recent scan saw. When the two differ a lot, someone has just listed unusually high or low.</p>
+    <p><strong>Last seen</strong> is the most recent day a scan saw the item; an old date means the price may have moved since. <strong>Listed that day</strong> is the most units on sale at once that day, not how many sold. The two-week line follows each day's cheapest listing, and the percentage compares this week's typical price with the week before's.</p>
     <p>Downloads: <a href="{files["prices_tsv"]}">all prices (TSV)</a>, <a href="{files["history_tsv"]}">daily history (TSV)</a>, <a href="{files["prices_json"]}">JSON</a>.</p>
     <h3>Scans</h3>
     <ul class="scans">{scans}</ul>
@@ -383,10 +393,11 @@ def llms_full(site: Site, markets: list[dict], journal: list[dict], names: dict 
            f"Site: {site.url}  Built: {site.built}  Revision: {site.revision}", "",
            "## How to read prices", "",
            "- Prices are per single item, in gold (g), silver (s) and copper (c): 1g = 100s = 10,000c.",
-           "- \"Price\" is the lowest buyout the most recent scan saw. It is an asking price, not a sale price.",
+           "- \"Typical price\" is the median of each day's cheapest listing over the item's last seven days of records. Use it for questions about what something costs: it ignores one-off spikes and troll listings.",
+           "- \"Latest\" is the cheapest listing the most recent scan saw. Both are asking prices, not sale prices.",
            "- \"Last seen\" is the day of that observation. Treat prices last seen more than a few days before the newest scan as possibly stale.",
            "- \"Listed\" is the most units on sale at once that day, not units sold.",
-           "- \"Change\" compares the day's lowest price with the lowest price about a week earlier.",
+           "- \"Change\" compares this week's typical price with the week before's.",
            "- Each market is one realm and faction. Do not mix markets.", ""]
     for m in markets:
         h = m["highlights"]
@@ -399,16 +410,16 @@ def llms_full(site: Site, markets: list[dict], journal: list[dict], names: dict 
             out.append(f"This is a Beta sample of {len(m['items'])} items, kept for reference. The Beta closed on 23 October 2026; it is not the live game.")
         out.append("")
         if h["most_listed"]:
-            out += [f"### Most listed on {m['last_date']}", "", "| Item | ID | Price | Listed |", "|---|---|---|---|"]
-            out += [f"| {i['name']} | {i['id']} | {plain_money(i['price'])} | {i['listed']:,} |" for i in h["most_listed"]]
+            out += [f"### Most listed on {m['last_date']}", "", "| Item | ID | Typical price | Listed |", "|---|---|---|---|"]
+            out += [f"| {i['name']} | {i['id']} | {plain_money(i['typical'])} | {i['listed']:,} |" for i in h["most_listed"]]
             out.append("")
         for title, key in (("Rising this week", "rising"), ("Falling this week", "falling")):
             if h[key]:
-                out += [f"### {title}", ""] + [f"- {i['name']} ({i['id']}): {plain_money(i['price'])}, {i['change']:+d}%" for i in h[key]] + [""]
+                out += [f"### {title}", ""] + [f"- {i['name']} ({i['id']}): typical {plain_money(i['typical'])}, {signed(i['change'])} on the week before" for i in h[key]] + [""]
         rows = m["current"] if len(m["current"]) <= 2500 else sorted(m["current"], key=lambda i: -(i["listed"] or 0))[:500]
         label = "All items seen in the last two weeks" if rows is m["current"] else "The 500 most-listed items of the last two weeks (the rest are in the TSV)"
-        out += [f"### {label}", "", "| Item | ID | Price | Last seen | Listed | Change |", "|---|---|---|---|---|---|"]
-        out += [f"| {i['name']} | {i['id']} | {plain_money(i['price'])} | {i['last_seen'] or ''} | {count(i['listed'])} | {signed(i['change'])} |"
+        out += [f"### {label}", "", "| Item | ID | Typical price | Latest | Last seen | Listed | Change |", "|---|---|---|---|---|---|---|"]
+        out += [f"| {i['name']} | {i['id']} | {plain_money(i['typical'])} | {plain_money(i['price'])} | {i['last_seen'] or ''} | {count(i['listed'])} | {signed(i['change'])} |"
                 for i in rows]
         out.append("")
     out += ["## Journal", ""]

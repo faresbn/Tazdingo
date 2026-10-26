@@ -117,6 +117,7 @@ def main() -> None:
         return
     remembered = json.loads((ROOT / "data/captures.json").read_text()).get("default_markets", {}).get(args.environment, [])
     markets = choose_markets(path, args.market, remembered)
+    kept = {name: (ROOT / name).read_bytes() for name in ("data/captures.json", "data/items.json") if (ROOT / name).exists()}
     result = ingest(path, args.environment, markets)
     if result is None:
         return
@@ -126,9 +127,16 @@ def main() -> None:
         run(sys.executable, "scripts/item_names.py")
     except subprocess.CalledProcessError:
         print("Item names could not be refreshed (ForeverDB unreachable?). New items show their ID until the next refresh.")
-    run(sys.executable, "-m", "unittest", "discover", "-s", "tests")
-    run(sys.executable, "scripts/build.py")
-    run(sys.executable, "scripts/check_site.py")
+    for step, command in (("tests", ("-m", "unittest", "discover", "-s", "tests")),
+                          ("build", ("scripts/build.py",)), ("site check", ("scripts/check_site.py",))):
+        try:
+            run(sys.executable, *command)
+        except subprocess.CalledProcessError:
+            (ROOT / result["file"]).unlink()
+            for name, body in kept.items():
+                (ROOT / name).write_bytes(body)
+            raise SystemExit(f"Import stopped: the {step} failed (details above). Nothing was kept; "
+                             "the journal is as it was before this import.")
     if args.no_commit:
         return
     run("git", "add", "data/captures.json", "data/items.json", result["file"])

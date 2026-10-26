@@ -15,7 +15,7 @@ EMPHASIS = [
     (re.compile(r"(?<![\w_])_(?!\s)(.+?)(?<!\s)_(?![\w_])"), lambda m: f"<em>{m.group(1)}</em>"),
 ]
 LINK = re.compile(r"\[([^\]]+)\]\(((?:https?://|/|#)[^\s)]*)\)")
-BARE_URL = re.compile(r"(?<![\"'=>])(https?://[^\s<]+[^\s<.,;:!?)\]])")
+BARE_URL = re.compile(r"(?<![\"'=>])(https?://[^\s<\"']+[^\s<\"'.,;:!?)\]])")
 
 
 def emphasis(text: str) -> str:
@@ -41,8 +41,12 @@ def inline(text: str) -> str:
         links.append(f'<a href="{url}"{attrs}>{emphasis(label)}</a>')
         return f"\x01{len(links) - 1}\x01"
     out = LINK.sub(link, out)
-    out = BARE_URL.sub(lambda m: (links.append(f'<a href="{m.group(1)}" target="_blank" rel="noopener">{m.group(1)}</a>')
-                                  or f"\x01{len(links) - 1}\x01"), out)
+
+    def bare(match):
+        url = html.escape(html.unescape(match.group(1)), quote=True)
+        links.append(f'<a href="{url}" target="_blank" rel="noopener">{url}</a>')
+        return f"\x01{len(links) - 1}\x01"
+    out = BARE_URL.sub(bare, out)
     out = emphasis(out)
     out = re.sub(r"\x01(\d+)\x01", lambda m: links[int(m.group(1))], out)
     return re.sub(r"\x00(\d+)\x00", lambda m: codes[int(m.group(1))], out)

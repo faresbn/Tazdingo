@@ -151,6 +151,7 @@ tbody th { font-weight: 500; }
 .num { text-align: right; white-space: nowrap; }
 td:last-child, th:last-child { padding-right: 0; }
 table.compact td, table.compact th { padding-top: 0.38rem; padding-bottom: 0.38rem; }
+td.latest .money { opacity: 0.75; }
 .id { color: var(--ink-soft); font-weight: 400; font-size: 0.85rem; margin-left: 0.2rem; }
 
 .money { white-space: nowrap; font-variant-numeric: tabular-nums; }
@@ -162,7 +163,7 @@ table.compact td, table.compact th { padding-top: 0.38rem; padding-bottom: 0.38r
 .change.up { color: var(--up); }
 .change.down { color: var(--down); }
 .change.flat { color: var(--ink-soft); }
-.trend { white-space: nowrap; }
+.trend, td.date { white-space: nowrap; }
 .spark { vertical-align: middle; overflow: visible; }
 .spark path { fill: none; stroke: var(--ink-soft); stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
 .spark circle { fill: var(--link); }
@@ -259,8 +260,7 @@ tr.detail td { padding: 0.8rem 0 1.2rem; cursor: default; }
   .filters label { flex: 1 1 100%; }
   .filters select { width: 100%; }
   th, td { padding-right: 0.6rem; }
-  table.prices th:nth-child(4), table.prices td:nth-child(4) { display: none; }
-  .spark { width: 56px; }
+  table.prices .latest, table.prices .listed, table.prices .spark, table.prices .spark-none { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
