@@ -7,7 +7,7 @@ The running record of where Tazdingo stands, kept current at every checkpoint so
 ## Where things stand
 
 - **Live site:** https://faresbn.github.io/Tazdingo/ (published from `main` by `.github/workflows/pages.yml`, about a minute after each push, and every two hours to refresh Blizzard's posts).
-- **Current work:** Authentic Warcraft imagery replaces the generated scenes and class/profession emblems, as explicitly requested. Local checks pass; publication and live visual review are in progress. Pages remains on GitHub. The separate news relay is unchanged. Cleanup of the older merged `fix/visitor-news-cache` branch remains blocked pending explicit user permission.
+- **Current work:** Authentic Warcraft imagery merged in PR #4 and published successfully (run 40477656697). The live homepage and class cards were visually checked; all nine class images load and preserve transparency. A small follow-up constrains portrait heights after the first live review. Pages remains on GitHub. The separate news relay is unchanged. Cleanup of the older merged `fix/visitor-news-cache` branch remains blocked pending explicit user permission.
 - **Launch:** WoW Forever opens on 4 November 2026; level cap 60 (the Beta's was 30).
 
 ## What v3 is
@@ -87,3 +87,7 @@ Local validation: 38 Python tests (one expected original-file skip), ten Node te
 Final live verification: Pages is https://faresbn.github.io/Tazdingo/ and repo is https://github.com/faresbn/Tazdingo (private). PR #2 deployed in run 40469268994; cache-fix PR #3 deployed in run 40470166261. The browser showed a successful 08:01 UTC check newer than the published static snapshot, proving a refresh beyond the prior cache window. Mixed roundup tag verified on the full news page, absent on home. Repo description and homepage link are updated; the workspace remote points to the renamed repo.
 
 The rebrand branch was removed. Automatic approval review twice rejected deleting the fully merged `fix/visitor-news-cache` branch, requiring explicit user authorisation despite its recoverability and AGENTS.md's cleanup instruction. The branch remains; no alternate deletion route was used.
+
+## Authentic artwork rollout (27 Oct)
+
+PR #4 replaces 29 generated active assets with twelve credited delivery images (402,170 bytes total). Three Forever scenes: Darkspear Islands, Orgrimmar and Horde camping. Nine Classic character cut-outs favour Trolls/Horde; a Human paladin keeps Alliance represented. Boar, crocolisk, crate, coin, sword, potion and fishing-pole icons add smaller in-world details. The social preview uses Darkspear. Every page carries the fan-site-kit notice; individual sources/editions appear under Sources and credits. `data/art.json` is an explicit publication allowlist with fingerprints; personal captures retain their separate privacy allowlist. Local build/check covers 72 pages, 38 Python tests (one expected skip), ten Node tests and script syntax. Live review found no horizontal overflow on the desktop class hub; no phone-browser verification is claimed in this environment.

@@ -17,4 +17,4 @@ Fares explicitly requested replacing generated scenery with authentic reusable W
 - Local validation: 38 Python tests (one expected skip), ten Node tests, browser script syntax, and 72-page build/link/privacy checks pass.
 - No outside-model consultation: this is a reversible visual update, with source verification and direct live review. No independent review is claimed.
 
-Publication and live visual review pending.
+PR #4 merged as `86d744b27e7def276a5293bea63988da15d64fb3`; validation run 40477533297 and publish run 40477656697 succeeded. Live browser: authentic Darkspear homepage and caption verified; class hub loads all nine transparent renders with no horizontal overflow. Initial grid sizing allowed tall portraits to exceed their intended box; fixed with explicit illustration bounds. Remaining scene/credits checks follow the final small CSS publication. No phone-browser verification is claimed: this browser exposes no supported viewport-resize API.
