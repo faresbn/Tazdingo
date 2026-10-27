@@ -75,7 +75,7 @@ ForeverDB and Icy Veins both treat Restoration as slow alone. ForeverDB's [build
 - **Endgame:** Improved Regrowth, Wild Growth and Innervate sit at 35 to 40, above the beta cap. Their value in raids, and the Nature's Grace or Wild Growth choice, are untested.
 - **Icy Veins' gear section** was still marked as waiting on more data at the level 30 cap.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

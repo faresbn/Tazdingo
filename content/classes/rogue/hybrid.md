@@ -57,7 +57,7 @@ Every preset takes Malice, Ruthlessness, Improved Slice and Dice and Relentless 
 - **Split early or stay pure:** Wowhead splits at 20 in every spec; ForeverDB and Icy Veins' main guides stay mostly in one tree until 30.
 - **How far to go in Subtlety:** Icy Veins stops after Preparation while levelling, while both WoWSims Subtlety presets go all the way to Thousand Cuts at 60.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

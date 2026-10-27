@@ -71,7 +71,7 @@ The "ffb" list is the same without the Arcane steps, fills with Frostfire Bolt a
 - **Deep Fire or Frostfire:** Wowhead says deep Fire needs more gear but feels more consistent, while the Frostfire hybrid starts stronger but scales less; it is too early to say which is best.
 - **Engineering's Nitro Boosts:** Wowhead's overview calls them a reason Engineering is best, but ForeverDB reports the Nitro Boosts tinker was removed from the 16 October client files.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

@@ -207,7 +207,7 @@ Horde portals on one key, from level 40 (Kami Labs):
 - **Rank spelling:** ForeverDB writes rank macros the way the spellbook pastes them, as `Frostbolt(Rank 1)` with no space. Wowhead's guide shows a space before the bracket. Shift-click the spell into the macro window rather than typing it.
 - **Mana gems:** Kami Labs offers a macro that tries every gem from Mana Ruby down to Mana Agate, flagged "to confirm in-game"; only Mana Agate exists below level 38.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

@@ -6,7 +6,7 @@ from __future__ import annotations
 from datetime import datetime, timezone
 
 from pages import (FOREVERDB, ROLES, Site, badge, banner, blue_list, changelog, emblem, esc, ext, item_link, layout,
-                   links, money, nice_date, page_head, render_sections, source_tag, status_line, toc, when)
+                   links, money, news_widget, nice_date, page_head, render_sections, source_tag, status_line, toc, when)
 
 WOWHEAD = "https://www.wowhead.com/forever"
 
@@ -261,12 +261,13 @@ def blizzard_page(site: Site, ctx: dict, m: dict) -> str:
         age = datetime.now(timezone.utc) - datetime.fromisoformat(fetched.replace("Z", "+00:00"))
         if age.total_seconds() > 12 * 3600:
             stale = f'<p class="note">These were last checked {nice_date(fetched)}; newer posts may be missing.</p>'
-    intro = (f'<p class="note">Staff posts about WoW Forever from Blizzard\'s official forums, newest first. Each shows a short quoted excerpt; '
-             f'select a title to read the whole post on Blizzard\'s site. Checked about every two hours'
-             f'{", most recently " + nice_date(fetched) if fetched else ""}.</p>{stale}')
+    intro = ('<p class="note">Official Blizzard posts checked against the full article text. Dedicated Forever news appears on the homepage; '
+             'mixed-expansion roundups appear here with a tag and a Forever-only excerpt. Unreadable or ambiguous articles are held back. '
+             'Scheduled snapshots update about every two hours. Refresh checks use a shared five-minute cache.</p>')
     return layout(site, m["name"], page_head(m["name"], esc(m["summary"])) + banner(site, "more")
-                  + f'<section class="page-body">{intro}{blue_list(site, posts, 60, excerpts=True) if posts else "<p class=empty>No posts yet.</p>"}</section>',
-                  active="more", path=f"more/{m['slug']}/", description="Blizzard's latest staff posts about World of Warcraft: Forever.")
+                  + f'<section class="page-body">{intro}{news_widget(site, blue, "all", 60, excerpts=True)}</section>',
+                  active="more", path="more/blizzard/", description="Verified Forever news and tagged mixed roundups from Blizzard.")
+
 
 
 def more_page(site: Site, ctx: dict, m: dict) -> str:
@@ -286,10 +287,10 @@ def about_page(site: Site, ctx: dict) -> str:
     scans = "".join(f'<li>{when(c["capture_date"])}, {esc(c["environment_label"])}: {c["source_bytes"]:,} bytes, fingerprint <code>{esc(c["source_sha256"][:16])}</code></li>'
                     for c in reversed(ctx["captures"]))
     src, names = ctx["fdb_source"], ctx["names_source"] or {}
-    return layout(site, "Sources and credits", page_head("Sources and credits", "Where everything in the ledger comes from, and how to read it.")
+    return layout(site, "Sources and credits", page_head("Sources and credits", "Where everything in Tazdingo comes from, and how to read it.")
                   + f'''<section class="page-body prose">
   <h2>What this is</h2>
-  <p>Forever Ledger is a small, unofficial record of World of Warcraft: Forever: what things cost on the Auction House, what the best guides say about each class, spec and profession, how the new systems work, and the addons, macros and known issues worth knowing. It isn't affiliated with or endorsed by Blizzard Entertainment.</p>
+  <p>Tazdingo is a small, unofficial record of World of Warcraft: Forever: what things cost on the Auction House, what the best guides say about each class, spec and profession, how the new systems work, and the addons, macros and known issues worth knowing. The field notes and personally collected market data mainly follow Horde characters; Alliance information remains welcome. Loktar Ogar. It isn't affiliated with or endorsed by Blizzard Entertainment.</p>
   <h2>Labels</h2>
   <p>{badge("prelaunch")} marks anything written before launch on 4 November 2026, or not yet confirmed in the live game: treat it as tentative. A page becomes {badge("live")} only once it has been checked in the live game. {badge("beta")} marks prices from Forever Beta scans. Our own findings say how well they're tested: idea, testing, tested or outdated.</p>
   <h2>Guide summaries</h2>
@@ -306,7 +307,7 @@ def about_page(site: Site, ctx: dict) -> str:
   <p>Wowhead, Icy Veins, ForeverDB, WoWSims, Method, Warcraft Tavern, Kami Labs, CurseForge and Blizzard's forums, among others; each page lists the ones it draws on.</p>
   {links(ctx["game"]["hubs"])}
   <h2>Data files</h2>
-  <p>The whole ledger as plain text: <a href="{site.base}llms-full.txt">llms-full.txt</a> (short index: <a href="{site.base}llms.txt">llms.txt</a>). Every market's prices and daily history as TSV, linked from its page; every priced recipe in <a href="{site.base}prices/craft.tsv">craft.tsv</a>.</p>
+  <p>The whole site as plain text: <a href="{site.base}llms-full.txt">llms-full.txt</a> (short index: <a href="{site.base}llms.txt">llms.txt</a>). Every market's prices and daily history as TSV, linked from its page; every priced recipe in <a href="{site.base}prices/craft.tsv">craft.tsv</a>.</p>
   <h2>Pictures</h2>
   <p>The paintings and emblems are original illustrations made for this site. World of Warcraft, its artwork and its icons belong to Blizzard Entertainment; item icons appear through ForeverDB's tooltips.</p>
-</section>''', active="more", path="more/about/", description="Where Forever Ledger's prices, guide summaries, game data and Blizzard posts come from.")
+</section>''', active="more", path="more/about/", description="Where Tazdingo's prices, guide summaries, game data and Blizzard posts come from.")

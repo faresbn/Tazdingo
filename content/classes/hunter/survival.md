@@ -58,7 +58,7 @@ Wowhead's level 30 picks include Morbid Dawn, Pronged Reaver, Bloody Brass Knuck
 - **Expose Prey's window:** Wowhead says Mongoose Bite stays usable for 5 seconds; the client tooltip says 10.
 - **Aimed Shot:** Icy Veins' Survival author rarely uses it, even on one target, and prefers Multi-Shot. The other specs' guides use Aimed Shot on single targets.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

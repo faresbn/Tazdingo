@@ -180,7 +180,7 @@ sources: ForeverDB macros page, Kami Labs macro tool and guide, Wowhead's macro 
 - Kami Labs' tool can switch between English and French spell names; a macro only works in your game client's language.
 - Wowhead's guide is mainly a lesson in writing macros. It explains `#showtooltip`, conditions in square brackets and `/castsequence`, so you can adapt any of these.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

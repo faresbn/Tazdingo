@@ -48,7 +48,7 @@ Wowhead's [Fire overview](https://www.wowhead.com/forever/guide/classes/mage/fir
 
 On episode 2 of the WoW: Forever Podcast, the developers said they aim for hybrid damage specs to deal about 5% less damage than the pure classes: Hunters, Mages, Rogues and Warlocks ([ForeverDB](https://foreverdb.net/article/blizzard-hybrid-tax-5-percent-warriors-count-as-hybrids)). It is a design target from a video, not a number in the client or the patch notes. It applies to classes that can fill more than one role, such as Warriors, Druids and Shaman. Mages set the bar rather than pay it. None of the sources mention any penalty for spreading a Mage's points across sections.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

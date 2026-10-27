@@ -81,7 +81,7 @@ Both agree on Frostbolt into Fingers of Frost Ice Lances; the simulator leans ha
 - **Fingers of Frost timing:** Icy Veins' text says you get it at 30, but its own order delays it to 31–35 because of the two Missile Barrage points.
 - **Wands:** Icy Veins says spell damage boosts wands; ForeverDB cites Blizzard's notes saying it no longer does.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

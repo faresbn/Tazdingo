@@ -62,7 +62,7 @@ WoWSims Forever's Mage simulator defaults to an Arcane build with Frost points, 
 - **Teleport: Dalaran:** ForeverDB lists it at level 50 and Alliance-only; Icy Veins' Frost levelling table puts it at 40.
 - **Wands and spell damage:** ForeverDB cites Blizzard's 24 September notes saying wands no longer gain from spell damage. Icy Veins' Frost guide says spell damage still raises wand damage.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

@@ -61,7 +61,7 @@ Never run out of ammunition: without it there's no Auto Shot. Buy [Rough Arrow](
 - **Single target:** the simulator spends the shared cooldown on Multi-Shot, while Icy Veins and Wowhead use Aimed Shot.
 - **Pet choice:** bear (Icy Veins' BM page) or fast cat (Wowhead, Icy Veins' Survival page).
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

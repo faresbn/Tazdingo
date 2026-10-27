@@ -1,10 +1,10 @@
 # Status
 
-Updated 26 October 2026, after the Forever Ledger rebuild.
+Updated 26 October 2026, after the Tazdingo rebuild.
 
 ## Working
 
-- **Site:** https://faresbn.github.io/FvrRepo/, published by GitHub Actions on every push to `main`, only after tests, build and checks pass.
+- **Site:** https://faresbn.github.io/Tazdingo/, published by GitHub Actions on every push to `main`, only after tests, build and checks pass.
 - **Structure:** front page (countdown, site-wide search, Latest log, five doors), Prices (markets, What to craft, Waylaid Crates, Materials), Classes (9 classes, 27 specs, hybrid builds, macros), Professions (12), World (7 topics), More (addons, macros, known issues, sources).
 - **Prices:** typical price, latest, steadiness, last seen, units listed and weekly change. The Beta reference sample holds 975 items, checked record for record against the original files.
 - **Gold-making:** 382 priced recipes, the cheapest bundle for each of 30 Waylaid Crates, and materials by value. Built from ForeverDB data priced with our scans and ForeverDB players' prices.

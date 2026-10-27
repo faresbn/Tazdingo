@@ -67,7 +67,7 @@ Blizzard says Dual Specialization opens at level 40. Before then:
 
 Wowhead's Retribution overview is the counterweight. It says tanking or healing well means changing your talents, so a damage build only fills in for short spells.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

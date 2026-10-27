@@ -64,7 +64,7 @@ The simulator's rotations use the old trainer version of Arcane Wrath, which the
 - **Arcane Concentration:** Wowhead saw it proc once per target hit on AoE during the beta, which made Arcane Explosion nearly free, and expects a fix.
 - **Arcane Wrath:** Wowhead gives a 3.5 second cast and 6 second cooldown; ForeverDB's talent tooltip shows only its damage and mana scaling.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

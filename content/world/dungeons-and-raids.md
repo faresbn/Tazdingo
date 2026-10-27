@@ -105,7 +105,7 @@ Every raider needs the Drakefire Amulet in their bags; it doesn't have to be wor
 4. Use the Amulet of Draconic Subversion to find Emberstrife in Dustwallow Marsh, and pass his four *The Test of Skulls* quests (Scryer, Somnus, Chronalis and Axtroz).
 5. Take the Dull Drakefire Amulet (*Ascension...*) back to Rexxar, then bring him the Blood of the Black Dragon Champion from General Drakkisath in Upper Blackrock Spire.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

@@ -7,9 +7,9 @@ import re
 from dataclasses import dataclass, field
 from datetime import date
 
-SITE_NAME = "Forever Ledger"
-SHORT_NAME = "Ledger"
-SUBTITLE = "An unofficial journal for World of Warcraft: Forever"
+SITE_NAME = "Tazdingo"
+SHORT_NAME = "Tazdingo"
+SUBTITLE = "A Horde-side field guide to World of Warcraft: Forever"
 FOREVERDB = "https://foreverdb.net"
 SERVER_ROWS = 1000  # price rows rendered into the HTML for readers without JavaScript
 NOTICE = ("World of Warcraft, Warcraft and Blizzard Entertainment are trademarks or registered trademarks of "
@@ -27,6 +27,7 @@ class Site:
     assets: dict = field(default_factory=dict)  # file name -> content fingerprint
     launch: date = date(2026, 11, 4)
     nav: str = ""  # the main menu, built once per site from the game data
+    news_endpoint: str = ""
 
     def asset(self, name: str) -> str:
         return f"{self.base}assets/{name}?v={self.assets.get(name, self.revision)}"
@@ -313,7 +314,7 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
 <meta property="og:type" content="website">
 <meta property="og:url" content="{esc(site.url + path)}">
 {card_meta}
-<link rel="alternate" type="text/plain" title="The whole ledger as plain text" href="{site.base}llms-full.txt">
+<link rel="alternate" type="text/plain" title="The whole site as plain text" href="{site.base}llms-full.txt">
 <meta name="color-scheme" content="light dark">
 <script>try{{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}}catch(e){{}}</script>
 <link rel="icon" href="{site.asset("icon.svg")}" type="image/svg+xml">
@@ -379,14 +380,31 @@ def checklist_items(ctx: dict, limit: int = 6) -> list[tuple[str, str]]:
 
 def blue_list(site: Site, posts: list, limit: int, excerpts: bool = False) -> str:
     rows = []
-    for p in posts[:limit]:
+    for p in [p for p in posts if p.get("kind") in ("forever", "mixed") and p.get("classifier_version") == 1][:limit]:
         if not str(p.get("url", "")).startswith("https://us.forums.blizzard.com/"):
             continue  # only ever link to Blizzard's own forums
-        excerpt = (f'<blockquote class="blue-excerpt"><p>{esc(p["excerpt"])}</p></blockquote>' if excerpts and p.get("excerpt") else "")
+        excerpt = (f'<p class="blue-excerpt">{esc(p["excerpt"])}</p>' if excerpts and p.get("excerpt") else "")
+        tag = '<span class="badge mixed">Mixed roundup</span>' if p.get("kind") == "mixed" else ""
+        reason = f'<span class="blue-meta">{esc(p.get("section", ""))}</span>' if excerpts and p.get("section") else ""
         rows.append(f'<li><a class="blue-title" href="{esc(p["url"])}" target="_blank" rel="noopener">{esc(p["title"])}</a>'
-                    f'<span class="blue-meta">{esc(p["author"])}{", " + esc(p["author_title"]) if p.get("author_title") else ""} · '
+                    f'{tag}{reason}<span class="blue-meta">{esc(p["author"])}{", " + esc(p["author_title"]) if p.get("author_title") else ""} · '
                     f'{when(p["posted"])}{" · reply" if p.get("reply") else ""}</span>{excerpt}</li>')
     return f'<ol class="blue-list">{"".join(rows)}</ol>'
+
+
+def news_widget(site: Site, snapshot: dict, scope: str, limit: int, excerpts: bool = False) -> str:
+    posts = [p for p in snapshot.get("posts", []) if scope != "forever" or p.get("kind") == "forever"]
+    checked = snapshot.get("last_successful_refresh") or snapshot.get("fetched")
+    label = checked[:16].replace("T", " ") + " UTC" if checked else "No successful check yet"
+    status = " · Refresh unavailable; showing verified saved news." if snapshot.get("status") == "unavailable" else ""
+    empty = '<p class="empty">No verified Forever news available yet.</p>'
+    more = f'<p class="dash-note"><a href="{site.base}more/blizzard/">All Blizzard posts, including mixed roundups</a></p>' if scope == "forever" else ""
+    return (f'<section class="news-widget" data-news-widget data-news-scope="{scope}" data-news-limit="{limit}" '
+            f'data-news-excerpts="{str(excerpts).lower()}" data-news-endpoint="{esc(site.news_endpoint)}">'
+            f'<div data-news-list>{blue_list(site, posts, limit, excerpts) if posts else empty}</div>'
+            f'<div class="news-controls"><button type="button" data-news-refresh>Refresh news</button>'
+            f'<span class="aside" role="status" aria-live="polite" data-news-status>Last verified check: {esc(label)}{status}</span></div>'
+            f'{more}</section>')
 
 
 def home(site: Site, ctx: dict) -> str:
@@ -436,9 +454,8 @@ def home(site: Site, ctx: dict) -> str:
   {f'<h3 class="mini-title"><a href="{b}prices/craft/">Listing margins</a></h3><ul class="mini-list">{crafts}</ul>' if crafts else ""}
 </section>'''
 
-    blue = ctx["blue"].get("posts", [])
-    blue_html = (blue_list(site, blue, 5) + f'<p class="dash-note"><a href="{b}more/blizzard/">All Blizzard posts</a>'
-                 f'{" · checked " + nice_date(ctx["blue"].get("fetched")) if ctx["blue"].get("fetched") else ""}</p>') if blue else '<p class="empty">No posts yet.</p>'
+    blue = [p for p in ctx["blue"].get("posts", []) if p.get("kind") == "forever"]
+    blue_html = news_widget(site, ctx["blue"], "forever", 5, excerpts=False)
 
     def spec_links(c: dict) -> str:
         return " ".join(f'<a href="{b}classes/{c["slug"]}/{spec["slug"]}/">{emblem(site, "spec", c["slug"] + "-" + spec["slug"], 16)}{esc(spec["name"])}</a>' for spec in c["specs"])
@@ -454,11 +471,12 @@ def home(site: Site, ctx: dict) -> str:
 
     return layout(site, SITE_NAME, f'''<section class="intro">
   <div class="intro-text">
+    <p class="brand-greeting">Loktar Ogar · A Horde-side field guide</p>
     <p class="countdown" data-countdown>{countdown}</p>
     <h1>{SITE_NAME}</h1>
-    <p class="lede">Prices from our own Auction House scans, the best class and profession guides summarised in one place, and what we find as we play World of Warcraft: Forever.</p>
+    <p class="lede">Auction House prices, Horde-side class and profession guides, and discoveries from our travels in World of Warcraft: Forever.</p>
     <form class="lookup" action="{esc(search_action)}" method="get" role="search">
-      <label for="lookup" class="visually-hidden">Search the ledger</label>
+      <label for="lookup" class="visually-hidden">Search Tazdingo</label>
       <div class="lookup-row"><input id="lookup" name="q" type="search" placeholder="Search: Linen Cloth, Frost Mage, camping" autocomplete="off" aria-controls="lookup-results"><button type="submit">Search</button></div>
       <ul id="lookup-results" class="lookup-results" hidden></ul>
     </form>
@@ -483,7 +501,7 @@ def home(site: Site, ctx: dict) -> str:
     <ul class="picker">{picker}</ul>
   </section>
   <section class="dash-card latest-card" aria-labelledby="latest-title">
-    <h2 id="latest-title">Latest in the ledger</h2>
+    <h2 id="latest-title">Latest in Tazdingo</h2>
     <ol class="log">{latest or "<li>Nothing recorded yet.</li>"}</ol>
   </section>
 </div>
@@ -500,7 +518,7 @@ def home(site: Site, ctx: dict) -> str:
 
 
 def not_found(site: Site) -> str:
-    return layout(site, "Page not found", page_head("This page isn't in the ledger", "It may have moved when the site was reorganised.")
+    return layout(site, "Page not found", page_head("This page isn't in Tazdingo", "It may have moved when the site was reorganised.")
                   + f'''<section class="page-body prose"><p>Try the <a href="{site.base}">front page</a>, search from there, or start from
   <a href="{site.base}prices/">Prices</a>, <a href="{site.base}classes/">Classes</a>, <a href="{site.base}professions/">Professions</a> or
   <a href="{site.base}world/">World</a>.</p></section>''', path="404.html")
@@ -719,7 +737,7 @@ def llms_full(site: Site, ctx: dict) -> str:
            f"Site: {site.url}  Built: {site.built}  Revision: {site.revision}", "",
            "## How to read this file", "",
            "- Every page says its status. \"Pre-launch\" means written before launch (4 November 2026) or not yet confirmed in the live game: treat it as tentative. \"Live\" means checked in the live game. \"Beta\" marks prices from Forever Beta scans.",
-           "- \"What the guides say\" sections summarise other sites' guides (linked under \"Read more\"). \"Ledger findings\" are our own discoveries, with a confidence: idea, testing, tested or outdated.",
+           "- \"What the guides say\" sections summarise other sites' guides (linked under \"Read more\"). \"Field findings\" are our own discoveries, with a confidence: idea, testing, tested or outdated.",
            "- Prices are per item in gold (g), silver (s) and copper (c): 1g = 100s = 10,000c. All prices are asking prices, not sales.",
            "- \"Typical\" is the median of each day's cheapest listing over the item's last seven days; use it for \"what does X cost\". \"Latest\" is the most recent cheapest listing.",
            "- \"Steadiness\" (steady / moving / volatile) says how far the daily price swung over two weeks. Treat volatile prices with caution.", ""]

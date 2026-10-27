@@ -79,7 +79,7 @@ Blizzard keeps one known-issues thread and edits it in place: [US forums](https:
 - **Status:** listed between 17 September and 1 October in the [beta known issues](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-october-8/2352687); launch status unknown.
 - **Workaround:** Blizzard's only advice is to avoid standing too close to enemies until the parry bug is fixed.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

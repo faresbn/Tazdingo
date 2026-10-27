@@ -55,7 +55,7 @@ Icy Veins' level 30 list starts with the Ruby-Adorned Blade from the Stealth que
 - **Riposte or not:** in the solo builds (ForeverDB, Icy Veins, Wowhead) but dropped from ForeverDB's group build and the WoWSims presets.
 - **Icy Veins' level 30 calculator** puts a point in Improved Sprint where its text says Lightning Reflexes. Its levelling page uses Lightning Reflexes.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

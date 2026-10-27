@@ -68,7 +68,7 @@ Wowhead says to take the healing slot in dungeons. You can wand trash if the gro
 - **Shielding rage tanks:** Wowhead says to skip it on Warriors and Druids. Blizzard's deep dive says absorbs no longer reduce a Warrior's rage gain.
 - **Above 30:** Spiritual Healing (35) and Prayer of Mending (40) are untested. Lightwell is no longer a talent; the client teaches it from the trainer at 40 ([ForeverDB](https://foreverdb.net/article/outlook-priest)).
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

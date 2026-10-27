@@ -72,7 +72,7 @@ At the beta's level cap, wow-professions.com couldn't fully test its routes past
 - Ore and bars also fill Waylaid Crates, which you hand in at your faction's trade camp for Merchant's Favor ([wow-professions.com](https://www.wow-professions.com/forever/merchants-favor-durotar-supply-azeroth-commerce)).
 - Mining has no Legacy challenges, but Bountiful Harvest raises Scarce finds (Wowhead).
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

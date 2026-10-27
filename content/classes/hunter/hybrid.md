@@ -55,7 +55,7 @@ These are simulations with unconfirmed level 60 data, not results anyone has pla
 - **Split or stay pure early:** Wowhead splits at level 20; ForeverDB and Icy Veins' main guides stay in one tree until 30.
 - **Lone Wolf:** the level 20–30 guides mostly keep the pet. Icy Veins takes Lone Wolf only for dungeons and Wowhead only in its Legacy-points variant, while Icy Veins' Survival path and most WoWSims presets take it by 60.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

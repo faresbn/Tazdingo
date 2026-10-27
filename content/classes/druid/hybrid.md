@@ -64,7 +64,7 @@ ForeverDB's [write-up](https://foreverdb.net/article/blizzard-hybrid-tax-5-perce
 
 Blizzard's deep dive frames the same trade in utility terms: Druids can fill any role, but lack snares, silences, interrupts and reliable crowd control. Above the level 30 beta cap, nobody has measured the gap.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

@@ -64,7 +64,7 @@ The 5% is a design target, not a number in the client, and level 60 damage can't
 - **Totems belong to the class:** Wowhead notes the totems are the same in every spec, so a raid can take whichever Shaman spec performs best.
 - **Switching roles:** Wowhead's Restoration guide treats Restoration as a Dual Specialization pick at 40, with Enhancement for levelling.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

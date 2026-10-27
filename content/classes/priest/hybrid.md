@@ -75,7 +75,7 @@ It is a design target, not a number in the client, and nobody can measure level 
 - **Switching roles:** respec at a class trainer in a major city. Dual Specialization at 40 lets you keep a healing build and a damage build.
 - **By design:** the developers said on the podcast that they avoid giving hybrid damage specs strong healing, so groups still need a healer ([ForeverDB](https://foreverdb.net/article/blizzard-hybrid-tax-5-percent-warriors-count-as-hybrids)).
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

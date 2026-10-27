@@ -106,7 +106,7 @@ Trinkets (`/use 13` and `/use 14` for the two slots) and most racials don't trig
 - [Wowhead's beginner's guide](https://www.wowhead.com/forever/guide/beginners-guide-to-writing-macros-in-wow-forever-34950): a gentle introduction to the syntax; it was first written for Classic, so its author warns some details may differ.
 - Addons: [ZMacros](https://www.curseforge.com/wow/addons/zmacros) places ready-made class macros on your keys; [Macro Bench](https://www.curseforge.com/wow/addons/macro-bench) builds and checks macros from blocks; [MacroSearch](https://www.curseforge.com/wow/addons/macrosearch) finds macros you've saved.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

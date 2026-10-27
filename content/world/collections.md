@@ -73,7 +73,7 @@ PvP ranks also count towards Legacy: ranks 3, 7, 10, 13 and 14 each give a point
 
 Tabards come from the Legacy track (Spectral Bear Tabard at 40 points), Exalted with the Azeroth Commerce Authority or Durotar Supply and Logistics, and Exalted with the Darkspear Islands battleground factions after a short quest chain ([Blizzard](https://worldofwarcraft.blizzard.com/en-us/news/24307308)). Toys include the Holstered Replica Ironforge Air Rifle (15 Legacy points) and a Tradeskill Sign from the Merchant's Favor Advertising License quest.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

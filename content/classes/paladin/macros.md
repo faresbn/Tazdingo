@@ -146,7 +146,7 @@ This is a short list, not a full library; each source's page has more. Level req
 - **Lay on Hands:** Kami Labs describes a full heal. ForeverDB's client tooltip heals for your maximum health and drains all your Mana. In practice that is a full heal on most targets, but plan to drink afterwards.
 - **Repentance and Judgement:** Icy Veins' claim that the Judgement doesn't break Repentance comes from beta play and is worth checking at launch.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

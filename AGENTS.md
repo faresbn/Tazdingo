@@ -1,8 +1,8 @@
-# FvrRepo: agent instructions
+# Tazdingo: agent instructions
 
 This is AGENTS.md; CLAUDE.md is a symlink to it, so Claude Code and Codex read the same file. It holds what's true for every task here. **Start every session by reading docs/HANDOVER.md**: the current state, what's in flight and how to continue. README.md explains how the site works.
 
-FvrRepo builds **Forever Ledger** (https://faresbn.github.io/FvrRepo/), an unofficial journal for World of Warcraft: Forever (launch 4 November 2026). It holds Auction House prices from Fares's Auctionator scans; a page per class, spec, profession and world topic that summarises other sites' guides and records our own findings; addons, macros, known issues, a launch checklist and Blizzard's latest posts. Fares directs (see `~/.claude/CLAUDE.md` if you have it); a shared ChatGPT project writes page updates following `docs/chatgpt/UPDATING.md`.
+Tazdingo builds **Tazdingo** (https://faresbn.github.io/Tazdingo/), an unofficial journal for World of Warcraft: Forever (launch 4 November 2026). It holds Auction House prices from Fares's Auctionator scans; a page per class, spec, profession and world topic that summarises other sites' guides and records our own findings; addons, macros, known issues, a launch checklist and Blizzard's latest posts. Fares directs (see `~/.claude/CLAUDE.md` if you have it); a shared ChatGPT project writes page updates following `docs/chatgpt/UPDATING.md`.
 
 ## Settled decisions (flag before reopening)
 
@@ -16,7 +16,7 @@ They're listed with their reasons in docs/DECISIONS.md. The ones most often got 
 ## Everyday tasks
 
 - **"Add the new scan":** `python3 scripts/ingest.py --push` on `main`. It finds the file, imports, tests, builds, commits, pulls and pushes, and undoes itself if a check fails. Report its message if it stops; never edit data files by hand to get past it.
-- **"Update the Ledger guide for X":** edit the page's file in `content/` exactly as docs/chatgpt/UPDATING.md describes. The archive Action backs up the old version automatically.
+- **"Update the Tazdingo guide for X":** edit the page's file in `content/` exactly as docs/chatgpt/UPDATING.md describes. The archive Action backs up the old version automatically.
 - **Refresh game data:** `python3 scripts/foreverdb_data.py` and `python3 scripts/item_names.py` (both fetch from ForeverDB); `python3 scripts/blue_posts.py` (Blizzard's forums; the publish workflow also runs it every two hours).
 
 ## Data rules

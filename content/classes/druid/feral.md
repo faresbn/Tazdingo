@@ -103,7 +103,7 @@ The single-target list has no Swipe: at 60, Lacerate takes over as the filler, a
 - **Shred:** Blizzard says its damage went up "significantly". ForeverDB's client check found rank 5 lower than Classic, while Claw and Rake rose. ForeverDB also lists Shred at 20 in its spell table but at 22 in its text.
 - **Above 30:** Lacerate's numbers differ between ForeverDB's own write-ups (50 and 75 damage over 15 seconds). Berserk, Dire Bear Form, Ravage and the WoWSims results are projections.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

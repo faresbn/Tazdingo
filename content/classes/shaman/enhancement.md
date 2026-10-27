@@ -75,7 +75,7 @@ Wowhead calls Enhancement the default early spec for every Shaman. Auto attacks 
 - **Two-handed axes and maces:** Blizzard says they are baseline. ForeverDB couldn't see in the client how a Shaman learns them.
 - **Above 30:** Windfury Totem (32), Maelstrom Weapon (35) and Rage of the Farseer (40) are untested.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

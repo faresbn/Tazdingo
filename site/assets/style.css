@@ -1,7 +1,7 @@
-/* Forever Ledger: a quartermaster's field ledger kept at a roadside waystation.
+/* Tazdingo: a quartermaster's field ledger kept at a roadside waystation.
    The page is a canvas work surface; content sits on a sheet of ledger paper. Painted art and
    item icons carry the world's flavour; the interface stays a practical tool. Gold, silver and
-   copper only ever mean money; class colours only mean classes; oxblood is the ledger's own ink. */
+   copper only ever mean money; class colours only mean classes; oxblood is Tazdingo's own ink. */
 
 :root {
   --canvas: #dce4e2;
@@ -445,3 +445,15 @@ select { width: auto; max-width: 100%; min-height: 2.65rem; padding-right: 2rem;
   .panel { max-height: none; overflow: visible; }
   .spec-links a { min-height: 2.4rem; }
 }
+
+/* Tazdingo: a tusked spirit mark and restrained Darkspear-inspired violet detail. */
+.wordmark .mark { width: 2.25rem; height: 2.25rem; }
+.wordmark .name { letter-spacing: .01em; }
+.news-controls { display:flex; flex-wrap:wrap; align-items:center; gap:.6rem; margin-top:.8rem; }
+.news-controls button { font-size:.88rem; padding:.4rem .65rem; background:transparent; color:var(--link); border-color:var(--rule-strong); }
+.news-controls button:hover:not(:disabled) { background:var(--surface-2); }
+.news-controls [role="status"] { flex:1 1 12rem; line-height:1.4; }
+.blue-list .mixed { display:inline-block; margin:.25rem 0 .1rem .4rem; color:var(--ink-soft); }
+.wordmark .mark { filter:drop-shadow(0 1px 2px #0003); }
+
+.brand-greeting { font:700 .76rem var(--sans); letter-spacing:.07em; text-transform:uppercase; color:var(--link); margin:0 0 .55rem; }

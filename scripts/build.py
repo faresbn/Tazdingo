@@ -1,4 +1,4 @@
-"""Build the Forever Ledger site into dist/. Standard-library Python only.
+"""Build the Tazdingo site into dist/. Standard-library Python only.
 
 Inputs: data/captures.json (scan receipts), data/captures/** (market-only extracts),
 data/items.json (names), data/foreverdb.json (ForeverDB data), data/game.json (classes,
@@ -26,7 +26,7 @@ from markup import render
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = 2
-SITE_URL = "https://faresbn.github.io/FvrRepo/"
+SITE_URL = "https://faresbn.github.io/Tazdingo/"
 ENVIRONMENTS = {"forever": "Forever", "forever-beta": "Forever Beta", "tbc": "TBC Anniversary", "era": "Classic Era"}
 CURRENT_DAYS = 14  # items seen within this many days of a market's newest day count as current
 SPARK_DAYS = 14
@@ -232,8 +232,8 @@ def tsv(header: list[str], rows) -> str:
 CONFIDENCE = {"idea": "Idea", "testing": "Testing", "tested": "Tested", "outdated": "Outdated"}
 STATUS = {"pre-launch": "Pre-launch", "live": "Live"}
 CLASS_EXTRAS = {"overview": "Overview", "hybrid": "Hybrid builds", "macros": "Macros"}
-SECTION_NAMES = {"at a glance": "glance", "what the guides say": "guides", "ledger findings": "findings", "read more": "more"}
-REQUIRED_SECTIONS = ["At a glance", "What the guides say", "Ledger findings", "Read more"]
+SECTION_NAMES = {"at a glance": "glance", "what the guides say": "guides", "ledger findings": "findings", "field findings": "findings", "read more": "more"}
+REQUIRED_SECTIONS = ["At a glance", "What the guides say", "Field findings", "Read more"]
 FIELDS = {"updated", "summary", "sources", "confidence", "status", "verified"}
 # Words that must never appear on the public site: the people behind it and the assistant they use.
 PRIVATE = re.compile(r"\b(?:chatgpt|fares|mike)\b", re.I)
@@ -310,7 +310,7 @@ def front_matter(text: str, name: str) -> tuple[dict, str]:
 
 def check_sections(name: str, key: str, body: str) -> None:
     """Class, spec, profession and world pages carry the four sections, once each, in order.
-    More lists may be shaped freely but must keep Ledger findings and Read more."""
+    More lists may be shaped freely but must keep Field findings and Read more."""
     headings = [line[3:].strip() for line in body.splitlines() if line.startswith("## ")]
     required = REQUIRED_SECTIONS if not key.startswith("more/") else REQUIRED_SECTIONS[2:]
     found = [h for h in headings if h in REQUIRED_SECTIONS]
@@ -502,7 +502,7 @@ def search_index(ctx: dict) -> list[list[str]]:
 
 # --- Output -------------------------------------------------------------------
 
-def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -> dict:
+def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/") -> dict:
     out = Path(out or root / "dist")
     if out.resolve() in (root.resolve(), (root / "data").resolve()) or not out.resolve().is_relative_to(root.resolve()):
         raise ValueError("Output must be a dedicated directory inside the repository")
@@ -517,6 +517,8 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
     content = load_content(root, game, launch, base)
     blue_path = root / "data/blue.json"
     blue = json.loads(blue_path.read_text()) if blue_path.exists() else {"posts": []}
+    blue["posts"] = [p for p in blue.get("posts", []) if p.get("classifier_version") == 1 and p.get("kind") in ("forever", "mixed")]
+    news_config = json.loads((root / "data/news-config.json").read_text())
     log = history(root, game.get("log_after"))
     built = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     commit = os.environ.get("GITHUB_SHA", "local")
@@ -546,6 +548,7 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
                     for f in (out / "assets").rglob("*") if f.is_file()}
     site = pages.Site(base=base, url=SITE_URL, revision=revision, built=built,
                       credit=bool(names.get("source") or fdb), assets=fingerprints, launch=launch)
+    site.news_endpoint = news_config["endpoint"]
 
     def write(path: str, text: str) -> str:
         target = out / path
@@ -638,6 +641,7 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
         + [f"world/{t['slug']}/" for t in game["world"]]
     write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
           + "".join(f"<url><loc>{SITE_URL}{u}</loc></url>\n" for u in urls) + "</urlset>\n")
+    write("data/news.json", json.dumps(blue, ensure_ascii=False, indent=1) + "\n")
     write("data/manifest.json", json.dumps({
         "schema_version": SCHEMA, "site": pages.SITE_NAME, "revision": revision, "built": built,
         "source_commit": commit, "workflow_run": os.environ.get("GITHUB_RUN_ID"), "parser_version": PARSER_VERSION,
@@ -658,5 +662,5 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/FvrRepo/") -
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Build the site into dist/.")
-    parser.add_argument("--base-path", default="/FvrRepo/")
+    parser.add_argument("--base-path", default="/Tazdingo/")
     print(json.dumps(build(base=parser.parse_args().base_path), indent=2))

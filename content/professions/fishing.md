@@ -60,7 +60,7 @@ Artisan comes from the quest Nat Pagle, Angler Extreme, from Nat Pagle in Dustwa
 - **Rank levels:** Icy Veins and wow-professions.com say Journeyman needs level 10 and the Expert book level 20. ForeverDB found that the Journeyman and Expert rank spells carry level 1 in the beta client.
 - **Late zones:** they suggest different zones for 225–300, though both say skill gains don't depend on the zone.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

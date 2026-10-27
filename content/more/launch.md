@@ -115,7 +115,7 @@ Dungeon quests give half the bonus experience they did early in the beta ([Forev
 
 Blizzard is acting against gold buying in Forever. Accepting gold from unknown sources can put your account at risk, a warning now appears when you trade with strangers, and suspicious accounts can be put under a Temporary Economy Hold ([Blizzard](https://us.forums.blizzard.com/en/wow/t/actions-taken-against-botting-and-rmt/2368705)).
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

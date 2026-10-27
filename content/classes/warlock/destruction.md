@@ -77,7 +77,7 @@ The guides and the simulator agree on Immolate upkeep with both instants used fr
 - **Conflagrate at 30:** the guides use it; ForeverDB's simulator found a small loss on one target.
 - **Early talents:** Icy Veins takes Aftermath and Destructive Reach early; ForeverDB and Wowhead prefer Cataclysm and Molten Skin.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

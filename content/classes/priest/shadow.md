@@ -76,7 +76,7 @@ Wowhead finds Mind Flay rarely worth its mana over the wand before about level 2
 - Wowhead's overview gives one-minute cooldowns for Devouring Plague and Vampiric Embrace and 15 sec for Shadow Word: Death. The final client shows 24, 30 and 18 sec.
 - Shadow Word: Death (32), Early Demise (35) and Shadowform (40) are above the beta cap and untested.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

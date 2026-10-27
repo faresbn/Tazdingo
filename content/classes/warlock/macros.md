@@ -206,7 +206,7 @@ ForeverDB notes that in the client Healthstones share a 2 minute cooldown with M
 - **Shard costs:** Neither macro source confirms which spells consume Soul Shards in Forever; ForeverDB says the client's tooltips don't list reagents.
 - **Rank spelling:** ForeverDB writes `Drain Soul(Rank 1)` with no space, as the spellbook pastes it; Wowhead's guide shows a space. Shift-click the spell into the macro window rather than typing it.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

@@ -406,3 +406,59 @@ const lookupForm = document.querySelector("form.lookup");
 if (lookupForm) siteSearch(lookupForm);
 const browserSection = document.getElementById("prices");
 if (browserSection) marketBrowser(browserSection);
+
+// Both news views share the same verified feed. All remote strings become text nodes.
+function newsReader(widget) {
+  const button = widget.querySelector('[data-news-refresh]');
+  const status = widget.querySelector('[data-news-status]');
+  const holder = widget.querySelector('[data-news-list]');
+  const limit = Number(widget.dataset.newsLimit) || 5;
+  let running = false, newest = 0;
+  const stamp = iso => {
+    const d = new Date(iso);
+    return Number.isFinite(d.getTime()) ? d.toLocaleString('en-GB', {timeZone:'UTC',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})+' UTC' : 'not yet verified';
+  };
+  const valid = p => {
+    try {
+      const u = new URL(p.url);
+      return p.classifier_version === 1 && ['forever','mixed'].includes(p.kind)
+        && u.protocol === 'https:' && u.hostname === 'us.forums.blizzard.com'
+        && u.pathname.startsWith('/en/wow/t/') && !u.username && !u.password
+        && typeof p.title === 'string' && Number.isFinite(Date.parse(p.posted));
+    } catch { return false; }
+  };
+  async function refresh(manual) {
+    if (running) return;
+    running = true; button.disabled = true;
+    if (manual) status.textContent = 'Checking Blizzard articles…';
+    try {
+      const response = await fetch(widget.dataset.newsEndpoint, {cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(90000)});
+      if (response.status === 429) throw new Error('Please wait a minute before checking again. Saved news is still shown.');
+      if (!response.ok) throw new Error('Refresh unavailable. Showing the last verified news.');
+      const data = await response.json();
+      if (data.classifier_version !== 1 || !Array.isArray(data.posts)) throw new Error('The news response could not be verified. Saved news is still shown.');
+      if (data.status === 'unavailable') throw new Error('Blizzard could not be checked. Showing the last verified news.');
+      const verified = Date.parse(data.last_successful_refresh || data.fetched);
+      if (!Number.isFinite(verified) || verified < newest) throw new Error('Keeping the more recent verified news already shown.');
+      newest = verified;
+      const records = data.posts.filter(valid).filter(p=>widget.dataset.newsScope !== 'forever' || p.kind === 'forever').slice(0,limit);
+      const list = el('ol',null,'blue-list');
+      for (const post of records) {
+        const row=el('li'); const link=el('a',post.title,'blue-title');
+        link.href=post.url; link.target='_blank'; link.rel='noopener'; row.append(link);
+        if (post.kind === 'mixed') row.append(el('span','Mixed roundup','badge mixed'));
+        if (widget.dataset.newsExcerpts === 'true' && post.section) row.append(el('span',post.section,'blue-meta'));
+        row.append(el('span',`${post.author || 'Blizzard'} · ${stamp(post.posted)}${post.reply ? ' · reply' : ''}`,'blue-meta'));
+        if (widget.dataset.newsExcerpts === 'true' && post.excerpt) row.append(el('p',post.excerpt,'blue-excerpt'));
+        list.append(row);
+      }
+      holder.replaceChildren(records.length ? list : el('p','No verified Forever news available yet.','empty'));
+      status.textContent = `Last verified check: ${stamp(data.last_successful_refresh || data.fetched)}${data.cached ? ' · shared five-minute cache' : ''}${data.status === 'partial' ? ' · some articles could not be verified' : ''}.`;
+    } catch (error) { if (manual) status.textContent = error.message; }
+    finally { running=false; button.disabled=false; }
+  }
+  button.addEventListener('click',()=>refresh(true));
+  refresh(false);
+  window.setInterval(()=>{if(document.visibilityState==='visible')refresh(false);},300000);
+}
+document.querySelectorAll('[data-news-widget]').forEach(newsReader);

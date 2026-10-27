@@ -75,7 +75,7 @@ The trainers, per wow-professions.com:
 - Whether the Classic specialisations carry over, and what they teach.
 - The real 225–300 route, and where the Sewing Machine blueprint drops.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

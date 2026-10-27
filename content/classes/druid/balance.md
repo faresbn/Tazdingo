@@ -71,7 +71,7 @@ At 60 the simulator treats Wrath as the filler and Starfire as the Eclipse payof
 - **Wowhead's abilities page** still carries Classic values: a 5% Moonkin crit aura, a 20 minute Rebirth and Nature's Grasp as a talent. The client says 3%, 30 minutes, and a trainer spell at 10.
 - **Above 30:** Moonkin Form, Hurricane, Moonfury and the WoWSims numbers are untested projections on assumed level 60 gear.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

@@ -179,7 +179,7 @@ This is a short list, not a full library: each source's page has more. Level req
 - **Berserker Rage:** Kami Labs says it breaks fear. ForeverDB says the tooltip only promises immunity, so use it before the fear.
 - **Raging Blows:** ForeverDB's macro notes say it cuts Cleave by 2 Rage; the current talent tooltip says 3.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

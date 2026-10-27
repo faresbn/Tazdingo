@@ -66,7 +66,7 @@ The trainers are unusual:
 - Where the Arcane Forge blueprint drops. The Arcane Salvager blueprint drops from the Shade of the Archmage in the City of Dalaran ([wow-professions.com](https://www.wow-professions.com/forever/camping-guide)).
 - How much "more efficient" the Salvager makes disenchanting. No source gives a number.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

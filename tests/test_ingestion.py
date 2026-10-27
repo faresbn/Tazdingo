@@ -105,7 +105,7 @@ class TypicalPrice(unittest.TestCase):
 GAME={"classes":[{"slug":"mage","name":"Mage","specs":[{"slug":"frost","name":"Frost","roles":["dps"]}]}],
       "professions":[{"slug":"mining","name":"Mining"}],"world":[{"slug":"camping","name":"Camping"}],
       "more":[{"slug":"addons","name":"Addons"}]}
-SECTIONS="## At a glance\n- x\n\n## What the guides say\n### Talents\nText\n\n## Ledger findings\nNothing recorded yet.\n\n## Read more\n- [a](https://a.b)"
+SECTIONS="## At a glance\n- x\n\n## What the guides say\n### Talents\nText\n\n## Field findings\nNothing recorded yet.\n\n## Read more\n- [a](https://a.b)"
 
 
 class Content(unittest.TestCase):
@@ -136,7 +136,7 @@ class Content(unittest.TestCase):
                                ({"classes/mage/frost.md":"---\nsummary: x\n---\n"+SECTIONS},"updated"),
                                ({"classes/mage/frost.md":ok.replace("summary","confidence: sure\nsummary")+SECTIONS},"confidence"),
                                ({"classes/mage/frost.md":ok.replace("summary","title: Hijack\nsummary")+SECTIONS},"unknown header field"),
-                               ({"classes/mage/frost.md":ok+"## Ledger findings\nx\n## At a glance\nx"},"sections"),
+                               ({"classes/mage/frost.md":ok+"## Field findings\nx\n## At a glance\nx"},"sections"),
                                ({"classes/mage/frost.md":ok+SECTIONS+"\n## Read more\nagain"},"sections"),
                                ({"more/addons.md":ok+"## Addons\nx"},"sections"),
                                ({"classes/mage/notes.txt":"x"},"only Markdown")):
