@@ -65,3 +65,26 @@ Fares asked for the Auction House module to be researched, planned, built and pu
 - **Exchange 4** (2 steps, packet only): the five fixes hold. One remaining finding: Auctionator's full-scan time belongs to the whole file, so a file with two markets would credit both. Accepted: `market_store.full_scan_market` credits a full scan only to the single market whose records reach the file's newest day, and to none when markets share it; unreadable old markets are skipped when reading the whole file. Covered by tests and a final end-to-end run of both routes (Mac and inbox). Not re-reviewed: it is the narrow fix Sol proposed.
 - **Usage (cumulative, final):** 1,446,867 input tokens (1,334,528 cached), 30,160 output (23,444 reasoning). ChatGPT plan.
 - **Conclusion:** Sol's verdict moved from "unsafe to publish as completed" (exchange 1) to "the five fixes otherwise hold" with one attribution point (exchange 4), now fixed. Published.
+
+## Final pass and bug check (27 October 2026, late evening)
+
+Fares asked for a full implementation pass and bug check before the docs were brought up to date. A fresh Claude reviewer (same family, read-only, not anchored on my own reading) hunted defects in `market_store.py`, `market.py`, `ah_pages.py` and the AH parts of `build.py` and `ingest.py`, proving each with a script. I checked the scripts and workflows around them myself.
+
+**What it changed:**
+- **A market that nobody rescanned was filed again on every import, and those records never aged out.** This is the most serious finding: a file holding two published markets, with only one of them scanned, would grow the other's store without limit and inflate its scan counts. Auctionator's scan time is file-wide, so the old duplicate check (which included it) never matched. `add_record` now skips a record whose day and items equal the market's newest kept record. The Beta capture route no longer adds recorded prices for an unchanged market.
+- **Two realms, or two item suffixes, in another alphabet shared a slug.** Their folders and pages overwrote each other. Names with characters outside a–z now get an 8-character fingerprint. English names are unchanged.
+- **An item's latest price could be older than its last day on the market** when the archive (from an upload's history) knew a later day than any kept record. It now follows the archive's low for that day.
+- **Badly typed inbox records raised a traceback** rather than a clear refusal. The type checks now come first.
+- **The investment estimate's "you keep" figure** was one copper off the margin's arithmetic. They now use the same formula.
+- **My own finding: `foreverdb_api.py` would have missed vendor prices for live-scan items at launch.** It read item IDs only from the Beta captures. It also re-used the cached Beta answers after a build change. It now uses the same item list as `item_names.py`, and moves the cache aside when ForeverDB's build changes (tested offline with a simulated build change).
+
+**Not changed, recorded in HANDOVER as watch items:**
+- one bad inbox record blocks later inbox runs until it's removed;
+- early full scans could look partial if the market grows fast after launch;
+- a full scan's time-of-day sample includes items whose price was recorded earlier that day;
+- the Beta capture route credits full scans among published markets only.
+
+None affects the site today.
+
+- **Route:** Claude subagent, read-only, about 196k tokens. Not an outside review under REVIEWER.md; Sol's four exchanges above remain the outside review of this module.
+- **Verification:** 87 tests, build, `check_site.py` and the Node checks pass. The new tests cover an unrescanned market, slugs in other alphabets, badly typed records and the latest price following the archive.
