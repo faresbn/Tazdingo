@@ -30,7 +30,7 @@ RECORD_FORMAT = "scan-record-v1"
 ARCHIVE_FORMAT = "daily-archive-v1"
 WINDOW_DAYS = 30
 WINDOW_SCANS = 30
-INBOX_HISTORY_DAYS = 3  # days of daily history an inbox record carries (ChatGPT route)
+INBOX_HISTORY_DAYS = 21  # an inbox record carries all of Auctionator's daily history (it keeps 21 days)
 STORE = "data/market"
 INBOX = "data/market/inbox"
 MAX_RECORD = 16 * 1024 * 1024
@@ -252,6 +252,7 @@ def to_keep(receipts: list[dict]) -> set[str]:
 def add_record(root: Path, record: dict, rows: dict, receipt_extra: dict) -> dict | None:
     """File one scan record (with its upload's daily rows), update the archive, apply
     retention and the receipts. Returns a summary, or None when nothing is new."""
+    load(root)  # the store must match its fingerprints before anything is added to it
     registry_path = root / "data/captures.json"
     registry = json.loads(registry_path.read_text())
     receipts = registry.setdefault("scans", [])
@@ -259,6 +260,9 @@ def add_record(root: Path, record: dict, rows: dict, receipt_extra: dict) -> dic
     content = fingerprint(dump({k: record[k] for k in ("day", "items", "scan_timestamp")}))
     if any(r["market_slug"] == slug and r["content_sha256"] == content for r in receipts):
         return None  # this exact scan is already recorded
+    if any(r["market_slug"] == slug and r["status"] == "folded" and r["day"] == record["day"] for r in receipts):
+        raise InvalidCapture(f"This scan's day ({day_date(record['day'])}) has already been folded into the archive; "
+                             "an upload that old can't be added any more.")
     folder = root / STORE / slug
     stamp = datetime.fromtimestamp(record["scan_timestamp"], timezone.utc).strftime("%Y-%m-%dT%H-%M-%SZ")
     path = folder / "scans" / f"{stamp}.json"
@@ -284,20 +288,22 @@ def add_record(root: Path, record: dict, rows: dict, receipt_extra: dict) -> dic
     touched |= archive_scan_stats(archive, kept_records, newest_day, complete)
 
     keep = to_keep(mine)
-    folded = 0
+    retired = []
     for receipt in mine:
-        if receipt["status"] == "kept" and receipt["path"] not in keep:
-            if receipt["day"] >= newest_day:
-                continue  # never fold an unfinished day
-            (root / receipt["path"]).unlink()
+        if receipt["status"] == "kept" and receipt["path"] not in keep and receipt["day"] < newest_day:  # never fold an unfinished day
             receipt["status"] = "folded"
-            folded += 1
+            retired.append(root / receipt["path"])
 
+    # The archive (already holding the folded days' figures) and the registry are written
+    # first; the folded records' files are removed only once both are in place.
     written = write_archive(folder, archive, {month_of(d) for d in touched})
     archives = registry.setdefault("archives", {})
     for absolute, sha in written.items():
         archives[Path(absolute).relative_to(root).as_posix()] = sha
     write_whole(registry_path, json.dumps(registry, indent=2) + "\n")
+    for path in retired:
+        path.unlink(missing_ok=True)
+    folded = len(retired)
     return {"file": path.relative_to(root).as_posix(), "market": record["market"], "items": len(record["items"]),
             "scan_time": iso(record["scan_timestamp"]), "folded": folded}
 

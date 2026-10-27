@@ -124,7 +124,7 @@ def build_markets(captures: list[dict], names: dict, store: dict | None = None) 
                 item = market["items"].setdefault(key, {"key": key, "id": item_id(key),
                                                        "name": item_name(key, names), "days": {}, "obs": []})
                 if scan_day is not None and str(scan_day) in fields["h"]:
-                    item["obs"].append((capture["capture_timestamp"], fields["m"]))
+                    item["obs"].append((capture["capture_timestamp"], fields["m"], scan_day))
                 # Another account's newer file can hold an older sighting of this item.
                 seen_here = max((int(d) for d in fields["h"]), default=-1)
                 if seen_here >= item.get("price_day", -1):
@@ -180,17 +180,23 @@ def add_store_market(markets: dict, slug: str, entry: dict, names: dict) -> None
     for day, rows in entry["daily"].items():
         for key, (low, high, listed, _scans, _median) in rows.items():
             merge(item_of(key), day, low, high, listed)
-    previous = None
+    previous, last_seen = None, {}
     for record in entry["records"]:
         moment = datetime.fromtimestamp(record["scan_timestamp"], timezone.utc)
         market["scans"].append({"date": day_date(record["day"]), "time": moment.isoformat().replace("+00:00", "Z"),
                                 "source_sha256": record["source_sha256"], "items": len(record["items"]),
                                 "payload_sha256": None, "unchanged": record["items"] == previous, "received_on": None})
         previous = record["items"]
-        for key, (latest, low, high, listed) in record["items"].items():
+        for key, row in record["items"].items():
+            latest, low, high, listed = row
             item = item_of(key)
             merge(item, record["day"], low, high, listed)
-            item["obs"].append((record["scan_timestamp"], latest))
+            # A sighting only when the item is new to this day or something about it changed: an
+            # upload carries every item seen earlier in the day, unchanged, whether or not the newest
+            # scan saw it again (Auctionator keeps one latest price and day-wide figures).
+            if last_seen.get(key) != (record["day"], row):
+                item["obs"].append((record["scan_timestamp"], latest, record["day"]))
+                last_seen[key] = (record["day"], row)
             if record["day"] >= item.get("price_day", -1):
                 item["price"], item["price_day"], item["price_scan"] = latest, record["day"], day_date(record["day"])
     for item in market["items"].values():
@@ -672,10 +678,11 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/") 
                 "environment": market["environment"], "last_date": market["last_date"],
                 "last_day": market["last_day"], "spark_days": SPARK_DAYS,
                 "columns": ["key", "id", "name", "typical", "price", "last_seen", "listed", "change", "current", "spark", "volatility",
-                            "url", "ref", "deal", "invest", "category"],
+                            "url", "ref", "deal", "deal_confidence", "invest", "category"],
                 "rows": [[i["key"], i["id"], i["name"], i["typical"], i["price"], i["last_seen"], i["listed"], i["change"],
                           i["current"], i["spark"], i["volatility"], i["url"], i["ref"],
                           round(i["deal"]["discount"], 3) if i["deal"] and "discount" in i["deal"] else None,
+                          i["deal"]["confidence"] if i["deal"] and "discount" in i["deal"] else None,
                           i["invest"]["margin"] if i["invest"] else None,
                           i["category"]["class"] if i.get("category") else None] for i in market["items"]]}, separators=(",", ":")) + "\n"),
             "history_json": write(folder + "history.json", json.dumps({

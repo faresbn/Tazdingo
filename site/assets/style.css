@@ -577,3 +577,4 @@ table.ah-list th[scope="row"] a { text-decoration-thickness: 1px; }
   .masthead-search { flex: 0 1 9rem; min-width: 7.5rem; margin-left: 0.3rem; }
   .wordmark .sub { max-width: 17rem; font-size: 0.7rem; }
 }
+.alert.note { color: var(--ink-soft); font-weight: 400; }

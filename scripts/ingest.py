@@ -119,7 +119,7 @@ def ingest(path: Path, environment: str, markets: list[str]) -> dict | None:
 
 def ingest_inbox() -> dict | None:
     """File every scan record waiting in data/market/inbox/ (the ChatGPT route)."""
-    filed = []
+    filed, removed = [], 0
     for path in sorted((ROOT / market_store.INBOX).glob("*.json")):
         record = market_store.validate_record(market_store.read_json(path), inbox=True)
         result = market_store.add_record(ROOT, record, record.get("history", {}),
@@ -127,9 +127,12 @@ def ingest_inbox() -> dict | None:
         path.unlink()
         if result is None:
             print(f"{path.name}: already recorded; removed from the inbox.")
+            removed += 1
         else:
             filed.append(result)
-    return summary(filed) if filed else None
+    if not filed and not removed:
+        return None
+    return summary(filed) if filed else {"files": [], "scanned": None, "items": {}, "folded": 0, "removed": removed}
 
 
 def summary(filed: list[dict]) -> dict:
@@ -167,7 +170,11 @@ def main() -> None:
 
     saved = snapshot()
     if args.inbox:
-        result = ingest_inbox()
+        try:
+            result = ingest_inbox()
+        except BaseException:
+            restore(saved)  # an error while filing leaves the store as it was
+            raise
         if result is None:
             print("Nothing new in the inbox.")
             return
@@ -184,7 +191,11 @@ def main() -> None:
         return
     remembered = json.loads((ROOT / "data/captures.json").read_text()).get("default_markets", {}).get(args.environment, [])
     markets = choose_markets(path, args.market, remembered)
-    result = ingest(path, args.environment, markets)
+    try:
+        result = ingest(path, args.environment, markets)
+    except BaseException:
+        restore(saved)  # an error while filing leaves the store as it was
+        raise
     if result is None:
         if not unfinished_import():
             print("Nothing new to add.")
@@ -211,7 +222,7 @@ def check_and_commit(result: dict, saved: dict, args, source: str) -> None:
         try:
             run(sys.executable, *command)
         except subprocess.CalledProcessError:
-            if not result["files"]:
+            if not result["files"] and not result.get("removed"):
                 raise SystemExit(f"Import stopped: the {step} failed (details above). The earlier, unfinished import "
                                  "is still uncommitted in data/. Fix the problem, or discard it with "
                                  "`git checkout -- data && git clean -fd data`, then run this again.")
@@ -224,8 +235,9 @@ def check_and_commit(result: dict, saved: dict, args, source: str) -> None:
     run("git", "add", "data")
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode:
         summary = ", ".join(f"{m} {n:,} items" for m, n in result["items"].items())
-        run("git", "commit", "-m", f"Add {source} Auctionator scan of {result['scanned']} ({summary})"
-            if result["files"] else "Finish an interrupted Auctionator import")
+        message = (f"Add {source} Auctionator scan of {result['scanned']} ({summary})" if result["files"]
+                   else "Remove duplicate scan records from the inbox" if result.get("removed") else "Finish an interrupted Auctionator import")
+        run("git", "commit", "-m", message)
     if args.push:
         push()
 

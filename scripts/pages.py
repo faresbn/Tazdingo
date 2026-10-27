@@ -284,8 +284,8 @@ def nav_html(site: Site, ctx: dict) -> str:
 
     markets = "".join(f'<li><a href="{esc(m["url"])}">{esc(m["name"])}</a> <span class="aside">{esc(m["environment_label"])}</span></li>'
                       for m in ctx["markets"])
-    prices = (f'<div class="panel-cols three"><div><h3 class="panel-title">Right now</h3><ul class="panel-list">'
-              f'<li><a href="{b}prices/#deals">Unusually low</a><span class="aside">Listed far under the usual price</span></li>'
+    prices = (f'<div class="panel-cols three"><div><h3 class="panel-title">From the latest scans</h3><ul class="panel-list">'
+              f'<li><a href="{b}prices/#deals">Seen unusually low</a><span class="aside">Far under the usual price</span></li>'
               f'<li><a href="{b}prices/#invest">Investment watch</a><span class="aside">Cheap against its own history</span></li>'
               f'<li><a href="{b}prices/#movers">Movers</a><span class="aside">The last day and the week</span></li>'
               f'<li><a href="{b}prices/#patterns">When prices are lowest</a><span class="aside">By weekday and time of day</span></li>'
@@ -577,9 +577,9 @@ def prices_index(site: Site, ctx: dict) -> str:
     primary = ctx["primary"]
     board = ""
     if primary:
-        board = (f'<h2 class="board-title">Right now in {esc(primary["name"])}</h2>' + ah_pages.dashboard(site, primary, primary["ah"], heading="h3", events=ctx["events"])
+        board = (f'<h2 class="board-title">Latest scans in {esc(primary["name"])}</h2>' + ah_pages.dashboard(site, primary, primary["ah"], heading="h3", events=ctx["events"])
                  + f'<p><a class="more-link" href="{esc(primary["url"])}">Every {esc(primary["name"])} price, searchable</a></p>')
-    return layout(site, "Auction House", page_head("Auction House", "From our own Auctionator scans: what's cheap right now, what's worth buying to resell, "
+    return layout(site, "Auction House", page_head("Auction House", "From our own Auctionator scans: what was seen cheap, what's worth buying to resell, "
                                                    "what's moving, and how prices behave through the day and week.")
                   + banner(site, "prices") + f'''<section class="page-body">
   {board}

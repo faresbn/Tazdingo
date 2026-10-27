@@ -108,3 +108,66 @@ class Store(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class StoreSafety(Store):
+    def test_a_day_already_folded_is_refused(self):
+        for n in range(40):
+            self.add(DAY + n, BASE + n * 86400, {"2589": (100 + n, 100 + n, 100 + n, 1)})
+        with self.assertRaises(InvalidCapture):
+            self.add(DAY, BASE + 3600, {"2589": (50, 50, 50, 1)}, sha="c")
+
+    def test_a_changed_store_is_refused_before_anything_is_added(self):
+        self.add(DAY, BASE, {"2589": (100, 90, 120, 4)})
+        path = self.root / self.registry()["scans"][0]["path"]
+        path.write_text(path.read_text().replace("100", "1"))
+        with self.assertRaises(InvalidCapture):
+            self.add(DAY + 1, BASE + 86400, {"2589": (100, 90, 120, 4)})
+        self.assertEqual(len(self.registry()["scans"]), 1)
+
+
+class Sightings(unittest.TestCase):
+    def test_unchanged_items_in_a_later_upload_are_not_new_sightings(self):
+        import build
+        rec = lambda stamp, items: {"scan_timestamp": stamp, "day": DAY, "source_sha256": "a" * 64, "items": items}
+        entry = {"environment": "forever", "market": "Realm Horde", "folded": 0, "daily": {},
+                 "records": [rec(BASE, {"2589": [100, 90, 120, 4], "2592": [5, 5, 5, 1]}),
+                             rec(BASE + 3600, {"2589": [100, 90, 120, 4], "2592": [4, 4, 5, 2]})]}
+        markets = {}
+        build.add_store_market(markets, "forever-realm-horde", entry, {})
+        items = markets["forever-realm-horde"]["items"]
+        self.assertEqual(len(items["2589"]["obs"]), 1)  # carried forward unchanged: one sighting
+        self.assertEqual(len(items["2592"]["obs"]), 2)  # its price changed: seen again
+
+
+class Analytics(unittest.TestCase):
+    def item(self, lows, volatility="steady", listed=5):
+        days = {DAY + n: {"low": v, "high": v, "listed": listed} for n, v in enumerate(lows)}
+        last = DAY + len(lows) - 1
+        return {"id": 2589, "key": "2589", "name": "Thing", "days": days, "volatility": volatility, "typical": lows[-1],
+                "obs": [(BASE + n * 86400, v, DAY + n) for n, v in enumerate(lows)], "price": lows[-1], "price_day": last}
+
+    def market(self, items):
+        import market as m
+        last = max(d for i in items for d in i["days"])
+        scans = [{"time": m.utc(t).isoformat().replace("+00:00", "Z")} for t in sorted({t for i in items for t, _, _ in i["obs"]})]
+        return {"items": items, "current": items, "scans": scans, "last_day": last}
+
+    def test_volatile_items_stay_out_of_the_investment_watch(self):
+        import market as m
+        lows = [1000] * 12 + [500]
+        steady = self.item(lows)
+        volatile = dict(self.item(lows, volatility="volatile"), id=2590, key="2590")
+        result = m.analyse(self.market([steady, volatile]), {}, {})
+        self.assertEqual([i["key"] for i in result["invest"]], ["2589"])
+
+    def test_partial_days_are_found_even_when_most_days_are_partial(self):
+        import market as m
+        items = [{"days": {DAY + d: {} for d in range(9) if n < 10 or d in (3, 7)}} for n in range(100)]
+        self.assertEqual(m.partial_days(items), {DAY + d for d in range(9)} - {DAY + 3, DAY + 7})
+
+    def test_one_busy_afternoon_is_not_a_pattern(self):
+        import market as m
+        items = [{"obs": [(BASE + k * 600, 100 + k, DAY) for k in range(6)], "days": {}} for _ in range(30)]
+        cells = m.patterns(items, BASE - 1)["cells"]
+        self.assertTrue(all(c["index"] is None for c in cells.values()))

@@ -62,7 +62,7 @@ def download_names() -> tuple[dict[int, str], dict]:
 
 
 def wanted_ids(root: Path = ROOT) -> set[int]:
-    """Every item in our captures, in the ForeverDB tables (recipes, crates, camp items),
+    """Every item in our captures and scan records, in the ForeverDB tables (recipes, crates, camp items),
     and in ForeverDB item links in the notes."""
     ids = set()
     config = json.loads((root / "data/captures.json").read_text())
@@ -70,6 +70,11 @@ def wanted_ids(root: Path = ROOT) -> set[int]:
         extract = json.loads((root / receipt["path"]).read_text())
         for market in extract["markets"].values():
             ids.update(item_id(key) for key in market["items"])
+    for record in (root / "data/market").glob("*/scans/*.json"):  # scan records (scripts/market_store.py)
+        ids.update(item_id(key) for key in json.loads(record.read_text())["items"])
+    for month in (root / "data/market").glob("*/daily/*.json"):
+        for items in json.loads(month.read_text())["days"].values():
+            ids.update(item_id(key) for key in items)
     fdb_path = root / "data/foreverdb.json"
     if fdb_path.exists():
         fdb = json.loads(fdb_path.read_text())
