@@ -15,4 +15,15 @@ Requested: remove Latest in Tazdingo from the homepage and tighten useful UI det
 
 Source review of templates, CSS and browser behaviour. No outside-model consultation: changes are bounded and reversible, and direct interaction checks are more useful for these issues. No independent review is claimed. Existing privacy, provenance, market arithmetic and news classifier boundaries are unchanged.
 
-Local validation and GitHub/live interaction results recorded at completion.
+## Completed validation
+
+- 38 Python tests (one expected original-capture skip), ten Node tests, browser script syntax, 72-page build/link/privacy checks and diff whitespace checks pass.
+- Final branch validation run 40480554234 passed. PR #5 merged as `8fa0535b437c6254ac60ae1d4a5fedd1f2ce2354`; publish run 40480651338 succeeded.
+- Live homepage: no latest-card; nine class links; no horizontal overflow. News visibly shows Checking… while loading.
+- Search: frost gives four ranked suggestions; ArrowDown selects Frost Mage; Escape closes and returns focus to input; nonsense query gives an explicit empty state. Submitting partial frost exposes/focuses the suggestion on the homepage; exact Frost Mage navigates to the correct spec page.
+- Guide page: breadcrumb navigation present; desktop tools open and sidebar scroll bounded.
+- Prices: linen + current scope + price-low produces a matching URL and 31 results; reload restores all three settings. Reset clears query/order/scope and focuses search. Empty results hide the pager with computed display:none. Controls measure 44px high with no desktop horizontal overflow.
+- More landing page: correct active marker with aria-current=page.
+- Phone behaviour is implemented through a native disclosure, responsive control stacking and 44px targets, but this browser exposes no viewport-resize API; no actual phone visual verification is claimed.
+- During source review, fixed a sharing edge case: current scope must be written explicitly when a query is present, because an older q-only URL intentionally defaults to all records. Verified the final behaviour live after reload.
+

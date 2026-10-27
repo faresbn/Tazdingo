@@ -6,7 +6,7 @@ The running record of where Tazdingo stands, kept current at every checkpoint so
 
 ## Where things stand
 
-- **Current work:** Remove the homepage repository changelog as requested; reflow the class picker; tighten search, price filters, navigation and mobile guide panels. Local implementation complete; validation/publication and live interaction checks in progress.
+- **Current work:** Focused UX pass complete and live, merged in PR #5 as `8fa0535b437c6254ac60ae1d4a5fedd1f2ce2354`; publish run 40480651338 succeeded. Homepage changelog removed; full-width class picker, keyboard search, reset/shareable price filters, mobile guide disclosure, active More marker and refresh feedback shipped. Live desktop interaction checks passed; phone layout is implemented and code-reviewed, but no phone-browser visual verification is claimed.
 
 - **Live site:** https://faresbn.github.io/Tazdingo/ (published from `main` by `.github/workflows/pages.yml`, about a minute after each push, and every two hours to refresh Blizzard's posts).
 - **Previous work:** Authentic Warcraft imagery merged in PR #4 and published successfully (run 40477656697). The live homepage and class cards were visually checked; all nine class images load and preserve transparency. Live checks in both colour themes verified the final class portrait bounds, all world icons and source credits. The camp scene uses a small complete sidebar image to avoid cropping characters. Pages remains on GitHub. The separate news relay is unchanged. Cleanup of the older merged `fix/visitor-news-cache` branch remains blocked pending explicit user permission.
