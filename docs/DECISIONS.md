@@ -11,6 +11,8 @@ Each line is something Fares decided, or approved, with the reason and the date.
 
 ## Name and brand
 
+- **Authentic imagery first** (27 Oct): Fares authorised official/publicly reusable Warcraft scenes, creatures, weapons and objects, with sources and credits. This supersedes the earlier generated-only/own-screenshots-only restriction. Use documented reuse terms; distinguish Classic art from Forever screenshots; keep original compositions and separate site branding.
+
 - **Tazdingo** (27 Oct): selected by Fares; rename the site and repository, keep GitHub Pages. Horde identity comes through races, landmarks and perspective rather than red faction colour. Alliance content remains welcome. "Loktar Ogar" can be used playfully in wider Horde/Orc contexts.
 - **News classification** (27 Oct): read full Blizzard posts and linked articles, classify dedicated Forever news versus mixed roundups, and hold ambiguous/unreadable articles back. Mixed roundups get a tag on the inner page and never appear on the homepage.
 - **Visitor refresh** (27 Oct): a small read-only relay is authorised, with cache/load controls. It is separate from Pages hosting; GitHub Actions continues to collect directly from Blizzard. No private publishing credentials enter browser code.
@@ -18,8 +20,8 @@ Each line is something Fares decided, or approved, with the reason and the date.
 
 - **Historical name: Forever Ledger, "Ledger" for short** (26 Oct, superseded by Tazdingo on 27 Oct), with the sub-header "An unofficial journal for World of Warcraft: Forever" (game name spelt out, for legal clarity). Trail & Tally ("T&T") is the alternative Fares liked. The name lives in one constant (`SITE_NAME` in scripts/pages.py).
 - **Domain: not yet chosen** (26 Oct). Blizzard's Legal FAQ says no to domains containing "some portion of your product names", so "forever" in a domain carries some risk; Fares decides when he buys one.
-- **Inspired by WoW Forever, never its marks** (26 Oct): no logos, key art, screenshots we didn't take, game typefaces or lookalikes, official frames or copied layouts. Footer: not affiliated, plus Blizzard's trademark notice.
-- **Images must look like they're from inside the game** (27 Oct): in-game scenes and item-like objects, high-definition and hand-painted in feel, never abstract art. Generated through Codex until launch; Fares's own screenshots after.
+- **Earlier generated-only direction, superseded above** (26 Oct): no logos, key art, screenshots we didn't take, game typefaces or lookalikes, official frames or copied layouts. Footer: not affiliated, plus Blizzard's trademark notice.
+- **Images must look like they're from inside the game** (27 Oct): in-game scenes and item-like objects, high-definition and hand-painted in feel, never abstract art. Originally generated through Codex until launch; superseded by authentic sourced imagery above.
 - **The design is a quartermaster's field ledger** (27 Oct, after a design consultation): a canvas work surface, a paper sheet, spruce-ink links, an oxblood accent; gold, silver and copper only for money; class colours only for classes. Literata for headings, Source Sans 3 for text. Light and dark follow the device, with a toggle.
 
 ## Content

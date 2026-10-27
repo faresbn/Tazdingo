@@ -8,7 +8,7 @@ This repository builds **Tazdingo** (https://faresbn.github.io/Tazdingo/), an un
 
 They're listed with their reasons in docs/DECISIONS.md. The ones most often got wrong:
 - **The public site is impersonal.** It never names Fares or Mike and never mentions ChatGPT or AI. `scripts/check_site.py` enforces this; don't weaken it.
-- **Inspired by WoW Forever, never its marks.** No Blizzard logos, key art, screenshots we didn't take, the game's typefaces (Friz Quadrata, Morpheus) or lookalikes, official frames or copied layouts. Images must look like they come from inside the game (in-game scenes and item-like objects), never abstract art.
+- **Authentic Warcraft imagery.** Fares authorised official/publicly reusable Warcraft artwork and screenshots on 27 October, superseding the generated-only direction. Use official sources or a documented reuse licence; credit the owner. Register sourced assets in `data/art.json`, keep receipts, and distinguish Classic artwork from Forever captures. No copied website layouts or implied Blizzard endorsement.
 - **Summaries in our own words, always cited, never copied.** Wowhead and Icy Veins forbid copying and scraping; read their pages to summarise them, and link to them.
 - **Pre-launch is the default.** A page is Live only when someone marks it so after checking it in the live game.
 - **Standard-library Python plus Node 20+, a static Pages website, a private repo.** Only `dist/` is published. The small read-only news relay is separate; it never receives GitHub publishing credentials.
@@ -31,7 +31,7 @@ They're listed with their reasons in docs/DECISIONS.md. The ones most often got 
 - Before every push, run what GitHub Actions runs: `python3 -m unittest discover -s tests`, `python3 scripts/build.py`, `python3 scripts/check_site.py` (plus `node --test relay/news.test.mjs` and `node --check site/assets/app.js`). A push to `main` publishes within about a minute.
 - Work on a branch for anything bigger than a scan or a page edit, push checkpoints as you go, merge into `main` when the checks pass, and delete the branch. Version control is part of the job, not an approval point. Ask before anything that rewrites shared history.
 - Keep docs/HANDOVER.md current at each checkpoint: what changed, what's in flight, what's next. Record outside reviews in the session's `revlog.md`.
-- Graphics: generate them through Codex on the ChatGPT plan (`codex exec`, see docs/HANDOVER.md for the working recipe), keep the originals in the session folder, and convert to WebP for `site/assets/`.
+- Graphics: prefer authentic sourced Warcraft imagery, including small creatures and objects. Keep source/licence records in the session folder, register credited assets in `data/art.json`, and optimise delivery copies in `site/assets/art/`. Generation is a fallback, not the default.
 
 ## Approvals
 

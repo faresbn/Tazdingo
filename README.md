@@ -80,6 +80,7 @@ To preview, serve `dist` under `/Tazdingo/` (see `.claude/launch.json`).
 | Path | What it is |
 |---|---|
 | `content/` | Notes, one Markdown file per spec, profession, world topic or list |
+| `data/art.json`, `site/assets/art/` | Credited Warcraft artwork, publication allowlist and delivery copies |
 | `data/game.json` | Classes, specs, professions, world topics, source links, launch date |
 | `data/captures.json`, `data/captures/` | Scan receipts and market-only extracts |
 | `data/foreverdb.json`, `data/items.json` | ForeverDB-derived data and item names |
@@ -93,8 +94,11 @@ sample: the 975 items the gold-making tables need, labelled Beta.
 ## Credits
 
 Item names, recipes, crates, camp items, tooltips and second-opinion prices:
-Data from ForeverDB.net. The front-page map is an original illustration. World
-of Warcraft belongs to Blizzard Entertainment; this project isn't affiliated
+Data from ForeverDB.net. Scenery comes from Blizzard's Forever reveal press kit;
+character cut-outs from its Classic fan-site kit. Sources, editions, delivery
+changes and file fingerprints are recorded in `data/art.json`; the website
+credits every image under Sources and credits. World of Warcraft belongs to
+Blizzard Entertainment; this project isn't affiliated
 with or endorsed by Blizzard.
 
 ## News and visitor refresh

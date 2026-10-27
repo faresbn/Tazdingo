@@ -535,9 +535,17 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/") 
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
-    # Own assets are published as they are. Screenshots are published only when listed in
-    # data/game.json ("screenshots"), so nothing in that folder goes public by accident.
-    shutil.copytree(root / "site/assets", out / "assets", ignore=shutil.ignore_patterns("screens", ".*", "*.png", "*.psd"))
+    # Personal captures and sourced art each have an explicit publication allowlist.
+    shutil.copytree(root / "site/assets", out / "assets", ignore=shutil.ignore_patterns("screens", "art", ".*", "*.png", "*.psd"))
+    art = json.loads((root / "data/art.json").read_text())["assets"]
+    for image in art.values():
+        if not re.fullmatch(r"[a-z0-9-]+\.(webp|jpg|png)", image["file"]):
+            raise ValueError("Invalid sourced artwork filename")
+        source = root / "site/assets/art" / image["file"]
+        if hashlib.sha256(source.read_bytes()).hexdigest() != image["sha256"]:
+            raise ValueError(f"Artwork fingerprint mismatch: {image['file']}")
+        (out / "assets/art").mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, out / "assets/art" / image["file"])
     for shot in game.get("screenshots", []):
         source = root / "site/assets/screens" / shot["file"]
         if not re.fullmatch(r"[a-z0-9-]+\.(webp|jpg)", shot["file"]) or not source.is_file():
@@ -549,6 +557,7 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/") 
     site = pages.Site(base=base, url=SITE_URL, revision=revision, built=built,
                       credit=bool(names.get("source") or fdb), assets=fingerprints, launch=launch)
     site.news_endpoint = news_config["endpoint"]
+    site.art = art
 
     def write(path: str, text: str) -> str:
         target = out / path
