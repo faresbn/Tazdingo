@@ -2,6 +2,8 @@
 
 27 October 2026, eight days before launch. This feeds `plan.md` in this folder. Everything here was read from the repository, the built site (`dist/`), the live site or the cited sources; one agent explored the ForeverDB API with the key (raw notes in `sources/foreverdb-api.md`), and I re-checked its main claims. Nothing is decided here; the questions at the end are what the plan needs from Fares.
 
+**Update, evening of 27 October.** Fares made the Auction House module the priority ("push the envelope on AH tracking"), asked for per-scan tracking over the last 30 scans or 30 days (whichever reaches further back), alerts for unusually low prices, investment tracking, and the study of price patterns by time of day, weekday and raid season, plus volumes sold. He asked me to plan and build autonomously, consulting Sol as needed. Section 6 covers what that needs; the questions at the end now note which ones the plan answers itself.
+
 ## In short
 
 1. **GitHub Pages only serves files.** Nothing runs when someone opens a page. All "server" work happens in GitHub Actions *before* publishing (on a push, on a timer, or on a button press), in the visitor's browser, or on the separate news relay. That covers everything Tazdingo does now, including a ForeverDB refresh that wouldn't need the Mac.
@@ -9,7 +11,8 @@
 3. **The four-section page template (a settled decision) fits specs and professions, and is forced onto everything else.** The launch checklist's steps sit under "What the guides say"; each class page stitches three files and three spec summaries into one (about 3,700 words, three "At a glance", three empty "Field findings"). Within one page type the sub-headings drift (five wordings of "where the guides disagree").
 4. **Field findings are empty in all 77 content files** (77 empty sections across 59 published pages). The site's own voice is so far only the "Tazdingo recommendation", which reads as a list of cautions (88 "does not / is not / do not / are not" constructions in 77 short sections).
 5. **ForeverDB's API gives us the "where and how" our pages lack:** where to learn and buy every recipe (with Merchant's Favor costs), where to gather, what each class learns at each level, disenchanting, vendor stock. Not prices, talents, Legacy, rares or camping. Everything is still the last Beta build, so it needs a re-fetch at launch.
-6. **Copy:** "Horde-side" appears three times on the homepage's first screen, market names are raw realm strings ("ClassicBetaPvP"), several labels describe the mechanism instead of the benefit, and some fixed text promises findings that don't exist yet.
+6. **The Auction House can do much more with the same uploads.** Each Auctionator upload carries the latest price of every item seen; keeping each upload as a compact scan record (about 27 bytes per item, against 440 today) makes per-scan history, intraday and weekday patterns, deal alerts and investment estimates practical. What it can't give is sales: Auctionator records prices and the most units listed each day, never what sold (section 6).
+7. **Copy:** "Horde-side" appears three times on the homepage's first screen, market names are raw realm strings ("ClassicBetaPvP"), several labels describe the mechanism instead of the benefit, and some fixed text promises findings that don't exist yet.
 
 ---
 
@@ -278,6 +281,58 @@ Where it runs is a choice: on the Mac, like today's ForeverDB scripts, or as a s
 
 ---
 
+## 6. The Auction House module: what the data can support
+
+**What it means:** every upload can become a timestamped price observation for every item it saw, and the site can keep those for the last 30 scans or 30 days, as Fares asked. That's enough for per-item price charts across a day, alerts when something is listed far below its usual price, investment estimates, movers from the first days, and time-of-day and weekday patterns once a few weeks of scans exist. Two things the data can't support directly: **units sold**, and **quantity at each scan**. Both need saying plainly on the site, with the proxies we do have.
+
+### What one upload contains (checked in Auctionator's source)
+
+Auctionator's price database (`Source/Database/Mixin.lua`, read from a public mirror of the addon) stores, per item and per market:
+- `m`: "Last seen minimum price", overwritten every time a scan sees the item.
+- `l` and `h`: the lowest and highest *minimum* price seen on each day. `l` is only written when it differs from `h`.
+- `a`: the "Highest quantity seen on a given day" (`math.max` of the day's scans), not the quantity at each scan.
+- Days are counted from Auctionator's own day zero, in whole 24-hour blocks; history beyond 21 days is pruned by default (`PRICE_HISTORY_DAYS = 21`).
+- Nothing about individual auctions, sellers or sales.
+
+So a single upload is a 21-day daily summary plus one latest price per item. Several uploads in a day add one latest-price observation each, with the upload's scan time (`TimeOfLastBrowseScan` / `TimeOfLastReplicateScan`).
+
+### Where it breaks today
+
+- **Storage.** Each upload is kept whole (`data/captures/…market.json`): every item's full 21-day history again. The Beta sample is 440 bytes per item; a full market of ~4,200 items (the Beta's PvP market size) would be ~1.9 MB per upload, so four a day would add over 200 MB a month to the repository. A compact scan record (the latest price plus that day's low, high and quantity, for the items seen that day) measured 27 bytes per item on the 17 October Beta file: ~115 KB per upload for a full market, ~14 MB for a 120-scan window.
+- **Per-scan detail is thrown away.** The build merges every upload into one record per day (`build_markets`), keeping only the newest `m`.
+- **Retention.** Nothing ages out: old uploads stay forever, and the daily history beyond Auctionator's 21 days survives only inside old uploads.
+
+### Fares's retention rule, made concrete
+
+"The past 30 scans or 30 days, whichever is further back": keep every scan record whose time is within 30 days of the newest scan, and also the 30 most recent scans if those reach further back (a quiet month). Older scan records fold into a permanent daily archive (low, high, most listed, and the day's scan statistics), so long-run history such as raid-season comparisons survives.
+
+### What can be computed, and how honest each is
+
+| Feature | From | Strength |
+|---|---|---|
+| **Per-scan price chart** for each item, with the daily low–high band and event markers (launch, raid openings) | Scan records + daily archive | Direct observation |
+| **Unusually low now** (alert) | Latest scan price against the item's own recent reference (median of its scan prices in the window), with guards for thin history, stale sightings and troll listings | Strong when guarded; a listing may be gone minutes later, so alerts carry their scan time |
+| **Below vendor price** | Latest price below what a vendor pays for the item (ForeverDB API `sellPrice`) | Certain arbitrage, if still listed |
+| **Investment watch** | Buy at today's price, resell near the item's usual level minus the 5% Auction House cut, weighted by how reliably it's listed and how steady it is | Estimate only; resale isn't guaranteed and sales aren't observed |
+| **Movers from day one** | Latest scan against the median of the item's scans over the previous 24 hours (three or more), handing over to the weekly rule once enough days exist | Avoids the single-scan noise and the unfinished-day bias in section 2 |
+| **Time-of-day and weekday patterns** | Each scan price divided by the item's own median, averaged per hour band and weekday, per item and across the market | Needs a few weeks of scans spread across times of day; shown as "collecting" until then |
+| **Event effects** (raid openings, reset day) | Price index before and after dated events, by item category | Needs the event to have happened; categories from the ForeverDB API (`/items` class and subclass) |
+| **How well something sells** | Not in the data. Proxies: how often the item is listed across scans, how quickly its minimum price changes between scans, and the most units listed each day | Weak proxies, labelled as such; never called sales |
+
+Volumes sold would need auction-level scan data (individual auctions disappearing before they expire), which Auctionator doesn't record. A small companion addon could, later; it's outside this plan.
+
+### Ingest routes
+
+- **Mac (today):** `ingest.py --push` reads the WoW folder, imports, tests, builds, commits and pushes. Running it after each scan gives the per-scan record.
+- **ChatGPT upload (what Fares described):** the original file must never be committed (it holds settings, posting history and searches). A route that fits: a single standard-library script that turns the uploaded `Auctionator.lua` into the compact market-only scan record; ChatGPT runs it in its own sandbox and commits only that record; a GitHub Action validates it, folds it in, applies retention, builds and publishes. Fares confirmed ChatGPT commits to the repo; running a repo script in ChatGPT's sandbox and committing a ~100 KB file are untested.
+- **Integrity:** today each upload's fingerprint is checked against its receipt on every build. Compact records keep that (each record has a receipt); records retired by retention are recorded as folded into the archive rather than silently deleted.
+
+### What other Auction House tools do
+
+*Pending: the survey of TradeSkillMaster, Saddlebag Exchange, The Undermine Exchange and Classic-era tools arrives in `sources/ah-tools.md`.*
+
+---
+
 ## Questions for Fares before the plan
 
 **Structure (section 2)**
@@ -286,7 +341,7 @@ Where it runs is a choice: on the Mac, like today's ForeverDB scripts, or as a s
 2. **More.** Give it an overview page like the others, or split it: *Launch* (checklist, known issues, addons, macros) and news under its own name?
 3. **Markets.** Once live markets appear and we know how they're split, how should they be named on the site?
 4. **Homepage after launch.** Is the target "what changed" (news and known issues in launch week, then market movement as it becomes available) with the class picker kept, and the profession and world rows dropped?
-5. **Early price movement.** Is a ranked movers list wanted before about day 10? If so, scan to scan (needs an import after every scan, noisy) or day to day (simpler, but can exaggerate rises early in the day and hides same-day recoveries)?
+5. **Early price movement.** *Answered by Fares on 27 October: track per scan from the first days (section 6).* Is a ranked movers list wanted before about day 10? If so, scan to scan (needs an import after every scan, noisy) or day to day (simpler, but can exaggerate rises early in the day and hides same-day recoveries)?
 6. **Search.** Put the search box on every page (in the masthead), not just the homepage?
 
 **Templates (section 3)**
