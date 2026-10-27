@@ -1,0 +1,91 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/vendors/256729",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": {
+   "id": 256729,
+   "name": "Nina Surefire",
+   "title": "",
+   "side": "Alliance",
+   "zone": "Redridge Mountains",
+   "mapId": 1433,
+   "x": 10.7,
+   "y": 72.6,
+   "seenInForever": true,
+   "source": "Seen in WoW Forever by ForeverDB players",
+   "reputationFaction": null,
+   "sells": [
+    {
+     "itemId": 250364,
+     "name": "Recipe: Elixir of Cunning",
+     "price": 0,
+     "stack": 1,
+     "pricePerItem": 0.0,
+     "limited": false,
+     "costs": [
+      {
+       "type": "currency",
+       "id": 3402,
+       "name": "Merchant's Favor",
+       "amount": 180
+      }
+     ]
+    },
+    {
+     "itemId": 250365,
+     "name": "Recipe: Elixir of the Phalanx",
+     "price": 0,
+     "stack": 1,
+     "pricePerItem": 0.0,
+     "limited": false,
+     "costs": [
+      {
+       "type": "currency",
+       "id": 3402,
+       "name": "Merchant's Favor",
+       "amount": 180
+      }
+     ]
+    },
+    {
+     "itemId": 250367,
+     "name": "Recipe: Lesser Cleric's Elixir",
+     "price": 0,
+     "stack": 1,
+     "pricePerItem": 0.0,
+     "limited": false,
+     "costs": [
+      {
+       "type": "currency",
+       "id": 3402,
+       "name": "Merchant's Favor",
+       "amount": 45
+      }
+     ]
+    },
+    {
+     "itemId": 250369,
+     "name": "Recipe: Greater Cleric's Elixir",
+     "price": 0,
+     "stack": 1,
+     "pricePerItem": 0.0,
+     "limited": false,
+     "costs": [
+      {
+       "type": "currency",
+       "id": 3402,
+       "name": "Merchant's Favor",
+       "amount": 120
+      }
+     ]
+    },
+    "... 25 more trimmed"
+   ]
+  },
+  "meta": {
+   "build": "1.60.1.70532",
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

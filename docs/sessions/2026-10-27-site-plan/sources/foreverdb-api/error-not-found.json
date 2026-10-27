@@ -1,0 +1,11 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/talents",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "error": {
+   "code": "not_found",
+   "message": "No such endpoint. The list: https://foreverdb.net/api/v1"
+  }
+ }
+}

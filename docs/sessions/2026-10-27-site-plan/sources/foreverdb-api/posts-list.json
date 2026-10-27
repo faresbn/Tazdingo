@@ -1,0 +1,40 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/posts?limit=5",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": [
+   {
+    "id": "forums-us-30624529",
+    "source": "Blizzard Forums (US)",
+    "kind": "blue",
+    "author": "Kaivax",
+    "authorTitle": "Community Manager",
+    "date": "2026-10-26T20:35:27.223Z",
+    "title": "WoW Forever Beta Development Notes – Updated October 26",
+    "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7",
+    "page": "https://foreverdb.net/news/post/forums-us-30624529"
+   },
+   {
+    "id": "forums-us-30622338",
+    "source": "Blizzard Forums (US)",
+    "kind": "blue",
+    "author": "Blizzard Entertainment",
+    "authorTitle": "Blizzard News",
+    "date": "2026-10-26T17:01:29.812Z",
+    "title": "Watch the WoW: Forever Short Story, “Unbowed”",
+    "url": "https://us.forums.blizzard.com/en/wow/t/watch-the-wow-forever-short-story-%E2%80%9Cunbowed%E2%80%9D/2392363/1",
+    "page": "https://foreverdb.net/news/post/forums-us-30622338"
+   },
+   "... 3 more trimmed"
+  ],
+  "meta": {
+   "build": "1.60.1.70532",
+   "total": 120,
+   "limit": 5,
+   "offset": 0,
+   "next": "/api/v1/posts?limit=5&offset=5",
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

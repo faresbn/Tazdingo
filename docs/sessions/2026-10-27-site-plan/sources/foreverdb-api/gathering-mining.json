@@ -1,0 +1,174 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/gathering/mining",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": {
+   "profession": "mining",
+   "url": "https://foreverdb.net/profession/mining/nodes",
+   "note": "The skill each node needs comes from the Forever client; where nodes spawn is Classic data (CMaNGOS) until players' addons record them in Forever (spotsSeenInForever).",
+   "nodes": [
+    {
+     "name": "Copper Vein",
+     "skill": 1,
+     "item": {
+      "itemId": 2770,
+      "name": "Copper Ore"
+     },
+     "alsoGives": [
+      {
+       "itemId": 2835,
+       "name": "Rough Stone"
+      },
+      {
+       "itemId": 774,
+       "name": "Malachite"
+      },
+      "... 2 more trimmed"
+     ],
+     "objectIds": [
+      1731,
+      2055,
+      "... 3 more trimmed"
+     ],
+     "spawnPoints": 1549,
+     "spotsSeenInForever": 84,
+     "newInForever": false,
+     "topZones": [
+      {
+       "mapId": 1436,
+       "name": "Westfall",
+       "spawnPoints": 146
+      },
+      {
+       "mapId": 1432,
+       "name": "Loch Modan",
+       "spawnPoints": 119
+      },
+      "... 6 more trimmed"
+     ]
+    },
+    {
+     "name": "Tin Vein",
+     "skill": 65,
+     "item": {
+      "itemId": 2771,
+      "name": "Tin Ore"
+     },
+     "alsoGives": [
+      {
+       "itemId": 2836,
+       "name": "Coarse Stone"
+      },
+      {
+       "itemId": 1206,
+       "name": "Moss Agate"
+      },
+      "... 2 more trimmed"
+     ],
+     "objectIds": [
+      1732,
+      2054,
+      "... 3 more trimmed"
+     ],
+     "spawnPoints": 827,
+     "spotsSeenInForever": 19,
+     "newInForever": false,
+     "topZones": [
+      {
+       "mapId": 1437,
+       "name": "Wetlands",
+       "spawnPoints": 130
+      },
+      {
+       "mapId": 1432,
+       "name": "Loch Modan",
+       "spawnPoints": 110
+      },
+      "... 6 more trimmed"
+     ]
+    },
+    "... 9 more trimmed"
+   ],
+   "zones": [
+    {
+     "mapId": 1416,
+     "name": "Alterac Mountains",
+     "spawnPoints": 745,
+     "spotsSeenInForever": 0,
+     "nodes": [
+      {
+       "name": "Copper Vein",
+       "skill": 1,
+       "spawnPoints": 28
+      },
+      {
+       "name": "Tin Vein",
+       "skill": 65,
+       "spawnPoints": 28
+      },
+      "... 5 more trimmed"
+     ]
+    },
+    {
+     "mapId": 1417,
+     "name": "Arathi Highlands",
+     "spawnPoints": 803,
+     "spotsSeenInForever": 0,
+     "nodes": [
+      {
+       "name": "Copper Vein",
+       "skill": 1,
+       "spawnPoints": 5
+      },
+      {
+       "name": "Tin Vein",
+       "skill": 65,
+       "spawnPoints": 5
+      },
+      "... 5 more trimmed"
+     ]
+    },
+    "... 41 more trimmed"
+   ],
+   "spotsSeenInForever": 109,
+   "bestZones": [
+    {
+     "fromSkill": 1,
+     "toSkill": 66,
+     "zones": [
+      {
+       "mapId": 1436,
+       "name": "Westfall"
+      },
+      {
+       "mapId": 1432,
+       "name": "Loch Modan"
+      },
+      "... 1 more trimmed"
+     ]
+    },
+    {
+     "fromSkill": 66,
+     "toSkill": 126,
+     "zones": [
+      {
+       "mapId": 1437,
+       "name": "Wetlands"
+      },
+      {
+       "mapId": 1432,
+       "name": "Loch Modan"
+      },
+      "... 1 more trimmed"
+     ]
+    },
+    "... 3 more trimmed"
+   ]
+  },
+  "meta": {
+   "build": "1.60.1.70532",
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

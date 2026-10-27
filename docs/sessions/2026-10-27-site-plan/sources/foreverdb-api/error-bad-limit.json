@@ -1,0 +1,11 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/items?limit=101",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "error": {
+   "code": "bad_parameter",
+   "message": "limit must be between 1 and 100."
+  }
+ }
+}

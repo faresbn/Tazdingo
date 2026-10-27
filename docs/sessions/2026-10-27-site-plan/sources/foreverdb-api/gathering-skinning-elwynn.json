@@ -1,0 +1,104 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/gathering/skinning?zone=Elwynn",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": {
+   "profession": "skinning",
+   "url": "https://foreverdb.net/profession/skinning",
+   "note": "Beasts, their levels and where they spawn are Classic data (CMaNGOS); the skill each needs follows Classic's rule (1 up to level 10, then (level - 10) x 10 up to 20, then level x 5). seenInForever: a player's addon saw it in Forever.",
+   "zones": [
+    {
+     "mapId": 1429,
+     "name": "Elwynn Forest",
+     "levels": {
+      "min": 1,
+      "max": 52
+     },
+     "spawns": 709,
+     "beastKinds": 27,
+     "skill": {
+      "min": 1,
+      "max": 120
+     },
+     "beasts": [
+      {
+       "npcId": 7385,
+       "name": "Bombay",
+       "minLevel": 1,
+       "maxLevel": 1,
+       "skill": 1,
+       "elite": false,
+       "spawns": 1,
+       "gives": [
+        {
+         "itemId": 2934,
+         "name": "Ruined Leather Scraps"
+        }
+       ],
+       "seenInForever": null,
+       "skinnedInForever": 0
+      },
+      {
+       "npcId": 7384,
+       "name": "Cornish Rex",
+       "minLevel": 1,
+       "maxLevel": 1,
+       "skill": 1,
+       "elite": false,
+       "spawns": 1,
+       "gives": [
+        {
+         "itemId": 2934,
+         "name": "Ruined Leather Scraps"
+        }
+       ],
+       "seenInForever": null,
+       "skinnedInForever": 0
+      },
+      "... 25 more trimmed"
+     ]
+    }
+   ],
+   "beastsSeenInForever": 148,
+   "beastsSkinnedInForever": 21,
+   "bestZones": [
+    {
+     "fromSkill": 1,
+     "toSkill": 31,
+     "zones": [
+      {
+       "mapId": 1412,
+       "name": "Mulgore"
+      },
+      {
+       "mapId": 1411,
+       "name": "Durotar"
+      },
+      "... 1 more trimmed"
+     ]
+    },
+    {
+     "fromSkill": 31,
+     "toSkill": 61,
+     "zones": [
+      {
+       "mapId": 1411,
+       "name": "Durotar"
+      },
+      {
+       "mapId": 1412,
+       "name": "Mulgore"
+      },
+      "... 1 more trimmed"
+     ]
+    },
+    "... 5 more trimmed"
+   ]
+  },
+  "meta": {
+   "build": "1.60.1.70532",
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}
