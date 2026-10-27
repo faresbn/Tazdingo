@@ -59,7 +59,7 @@ def classes_index(site: Site, ctx: dict) -> str:
     cards = []
     for c in ctx["game"]["classes"]:
         overview = content.get(f"classes/{c['slug']}/overview")
-        specs = "".join(f'<li><a href="{b}classes/{c["slug"]}/{s["slug"]}/">{esc(s["name"])}</a> {roles(s)}</li>' for s in c["specs"])
+        specs = "".join(f'<li><a href="{b}classes/{c["slug"]}/{s["slug"]}/">{emblem(site, "spec", c["slug"] + "-" + s["slug"], 20)}{esc(s["name"])}</a> {roles(s)}</li>' for s in c["specs"])
         cards.append(f'<li class="class-card" style="--class:{esc(c["colour"])}">'
                      f'<a class="class-card-head" href="{b}classes/{c["slug"]}/">{emblem(site, "class", c["slug"], 64, c["colour"])}<span>{esc(c["name"])}</span></a>'
                      f'{"<p>" + esc(overview["summary"]) + "</p>" if overview else ""}'
@@ -83,7 +83,7 @@ def class_page(site: Site, ctx: dict, c: dict) -> str:
     for s in c["specs"]:
         page = content.get(f"classes/{c['slug']}/{s['slug']}")
         summary = f'<p>{esc(page["summary"])}</p>' if page else '<p class="empty">No summary yet: the guides and tools are linked on its page.</p>'
-        spec_cards.append(f'<li class="spec-card" id="{esc(s["slug"])}"><h3><a href="{b}classes/{c["slug"]}/{s["slug"]}/">{esc(s["name"])}</a></h3>'
+        spec_cards.append(f'<li class="spec-card" id="{esc(s["slug"])}"><h3><a href="{b}classes/{c["slug"]}/{s["slug"]}/">{emblem(site, "spec", c["slug"] + "-" + s["slug"], 28)}{esc(s["name"])}</a></h3>'
                           f'<p class="spec-roles">{roles(s)}{" " + badge("prelaunch") if page and page["status"] == "pre-launch" else ""}</p>{summary}'
                           f'<p><a class="more-link" href="{b}classes/{c["slug"]}/{s["slug"]}/">The {esc(s["name"])} {esc(c["name"])} page</a></p></li>')
     hybrid = content.get(f"classes/{c['slug']}/hybrid")
@@ -130,7 +130,7 @@ def spec_page(site: Site, ctx: dict, c: dict, spec: dict) -> str:
     extra = f'<p class="spec-roles">{roles(spec)}</p>{status_line(page)}'
     return layout(site, f"{spec['name']} {c['name']}",
                   page_head(f"{spec['name']} {c['name']}", lede, (("Classes", f"{b}classes/"), (c["name"], f"{b}classes/{c['slug']}/")), extra,
-                            mark=emblem(site, "class", c["slug"], 72, c["colour"]), colour=c["colour"])
+                            mark=emblem(site, "spec", c["slug"] + "-" + spec["slug"], 72, c["colour"]), colour=c["colour"])
                   + f'<section class="page-body">{with_aside(main, aside)}</section>',
                   active="classes", path=f"classes/{c['slug']}/{spec['slug']}/",
                   description=(page or {}).get("summary") or f"{spec['name']} {c['name']} in World of Warcraft: Forever: guide summary and links.")

@@ -2,12 +2,12 @@
 
 The running record of where Forever Ledger stands, kept current at every checkpoint so another thread, model or machine can carry on. Read this first, then AGENTS.md and README.md.
 
-**Last updated:** 27 October 2026, at the end of the v3 rebuild (session folder `docs/sessions/2026-10-27-ledger-v3/`).
+**Last updated:** 27 October 2026, cosmetic refinement after v3 (session folder `docs/sessions/2026-10-27-ui-polish/`).
 
 ## Where things stand
 
 - **Live site:** https://faresbn.github.io/FvrRepo/ (published from `main` by `.github/workflows/pages.yml`, about a minute after each push, and every two hours to refresh Blizzard's posts).
-- **Current work:** none in flight. v3 is merged into `main` and live.
+- **Current work:** cosmetic refinement on `polish/forever-ui`: content-sized dropdowns, hover/click fix, compact filters, teal/blue palette, and Blizzard class/spec/profession icons. Local checks pass; PR validation and live browser checks follow.
 - **Launch:** WoW Forever opens on 4 November 2026; level cap 60 (the Beta's was 30).
 
 ## What v3 is
@@ -26,6 +26,14 @@ The running record of where Forever Ledger stands, kept current at every checkpo
 - [x] Three outside consultations: design (GPT-6.1 Sol), senior review (GPT-6 Astra), peer code review (GPT-6.1 Sol). Every finding fixed; see the session's `revlog.md`.
 - [x] Browser review: menus (hover, click, keyboard, Escape) at desktop; the phone menu; light and dark; no horizontal overflow on any of the 72 pages at phone width.
 - [x] Merged into `main` and live.
+
+## Cosmetic refinement (27 Oct)
+
+- Dropdown widths vary by content; panels scroll within the desktop viewport. Mobile menus remain nested.
+- Class/spec/profession icons use Blizzard's public icon renderer (48 unique URLs checked). Text labels remain present and the footer credits Blizzard. This is an intentional small-icon exception to the generated-art direction, requested by Fares; large scenes are still generated illustrations, not screenshots.
+- Teal links/accent, blue-toned dark surfaces and reduced paper/canvas texture. No content structure, market data or guide advice changed.
+- Home crafting heading says "Listing margins", to distinguish listing arithmetic from realised profit. Beta content is temporary and will be replaced at launch; do not treat its current prominence as a permanent hierarchy problem.
+- All 34 local tests pass (one original-capture test skipped), build/check covers 72 pages, browser script syntax passes. Full screenshot replacement awaits the user's own captures under the existing policy.
 
 ## Known gaps and small follow-ups
 
