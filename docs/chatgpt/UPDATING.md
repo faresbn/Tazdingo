@@ -164,7 +164,7 @@ When an `Auctionator.lua` is uploaded with "add this scan" (or similar), turn it
 4. **Commit only that JSON file** to `data/market/inbox/<the same file name>` on `main`, with the message `Auction House scan of <scan time>`.
 5. **Report:** the scan time and item count, and that it goes live in a few minutes once GitHub's "File Auction House scans from the inbox" run finishes. If that run fails, the record stays in the inbox and nothing on the site changes.
 
-Scans are worth more often: three or four a day give the site its price movement and time-of-day patterns. Each upload is one observation; the site keeps the last 30 scans or 30 days and folds older ones into a daily history.
+More uploads make the site sharper: three or four a day keep alerts current, and uploads that include a **full scan** (Auctionator's full-scan button) at different times of day build its time-of-day patterns. The site keeps the last 30 uploads or 30 days and folds older ones into a daily history.
 
 ## If you can't write to GitHub
 

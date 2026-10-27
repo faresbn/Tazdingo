@@ -30,9 +30,10 @@ python3 scripts/ingest.py --push
 It finds Forever's `Auctionator.lua`, turns it into a scan record (the scan's
 time and every item's latest price, plus that day's low, high and most listed),
 merges its daily history into the archive, refreshes item names, runs the tests,
-builds, checks, commits and pushes. Run it after every scan: each one becomes a
-price observation, kept for the last 30 scans or 30 days (whichever reaches
-further back) and folded into the daily archive after that. If
+builds, checks, commits and pushes. Run it after every scan: each upload is kept
+for the last 30 scans or 30 days (whichever reaches further back), then folded
+into the daily archive. Uploads that include a full scan, at different times of
+day, are what the time-of-day patterns are built from. If
 anything fails it undoes itself and says which step stopped it. The first time,
 it asks which market to publish (`--market "Realm Faction"`), then remembers.
 `--list` shows the file's markets. The original file never leaves the Mac.

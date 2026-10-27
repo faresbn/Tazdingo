@@ -311,15 +311,23 @@ So a single upload is a 21-day daily summary plus one latest price per item. Sev
 | Feature | From | Strength |
 |---|---|---|
 | **Per-scan price chart** for each item, with the daily low–high band and event markers (launch, raid openings) | Scan records + daily archive | Direct observation |
-| **Unusually low now** (alert) | Latest scan price against the item's own recent reference (median of its scan prices in the window), with guards for thin history, stale sightings and troll listings | Strong when guarded; a listing may be gone minutes later, so alerts carry their scan time |
+| **Unusually low** (alert) | Latest recorded price against the item's usual price (median daily low over 14 full days; see "The observation model, as built" below), with guards for thin history, stale prices and mispriced single units | Strong when guarded; a listing may be gone minutes later, so alerts carry their scan time |
 | **Below vendor price** | Latest price below what a vendor pays for the item (ForeverDB API `sellPrice`) | Certain arbitrage, if still listed |
 | **Investment watch** | Buy at today's price, resell near the item's usual level minus the 5% Auction House cut, weighted by how reliably it's listed and how steady it is | Estimate only; resale isn't guaranteed and sales aren't observed |
-| **Movers from day one** | Latest scan against the median of the item's scans over the previous 24 hours (three or more), handing over to the weekly rule once enough days exist | Avoids the single-scan noise and the unfinished-day bias in section 2 |
-| **Time-of-day and weekday patterns** | Each scan price divided by the item's own median, averaged per hour band and weekday, per item and across the market | Needs a few weeks of scans spread across times of day; shown as "collecting" until then |
+| **Movers from day two** | Latest recorded price against the last full day's lowest price, alongside the weekly rule | As built after review: a recorded price isn't a timed sample, so the comparison is with a whole finished day |
+| **Time-of-day and weekday patterns** | Weekday: daily lows against each item's median. Time of day: only uploads with a new full scan, at that scan's time, market-wide | Needs a few weeks of scans spread across times of day; shown as "collecting" until then |
 | **Event effects** (raid openings, reset day) | Price index before and after dated events, by item category | Needs the event to have happened; categories from the ForeverDB API (`/items` class and subclass) |
 | **How well something sells** | Not in the data. Proxies: how often the item is listed across scans, how quickly its minimum price changes between scans, and the most units listed each day | Weak proxies, labelled as such; never called sales |
 
 Volumes sold would need auction-level scan data (individual auctions disappearing before they expire), which Auctionator doesn't record. A small companion addon could, later; it's outside this plan.
+
+### The observation model, as built (after review)
+
+Sol's review established what an upload can and can't prove, and the build follows it:
+- **Recorded prices, not sightings.** An upload's `m` is the last price Auctionator saw, at or before the upload's scan time; the file's scan timestamps are global, not per item. So each upload adds a *recorded price* for an item only when the item is new to that day or changed, timed by the upload and described as "recorded by the upload of …".
+- **Usual prices from daily lows.** Recorded prices are changes, not an unbiased sample (a price that holds steady across a hundred scans appears once), so every usual price, confidence tier and good-buy price rests on the daily lowest prices.
+- **Time of day only from full scans.** When an upload's `TimeOfLastReplicateScan` has advanced, a full scan happened at that moment: every item listed that day is sampled at that time. Only those samples feed the time-of-day grid, market-wide. Weekday patterns come from daily lows.
+- **Partial days** are judged against days known to contain a full scan.
 
 ### Ingest routes
 

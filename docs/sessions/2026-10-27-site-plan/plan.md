@@ -101,6 +101,10 @@ Fares asked me to work autonomously. These are the calls the research left open;
 - Sol reviews the plan before building and the finished work before the final publish.
 - Each phase: branch from main, tests, build, check, local preview, merge, push, live check.
 
+## As built, after three review rounds
+
+The final observation model is in research section 6 ("The observation model, as built"): recorded prices timed by uploads, usual prices from daily lows, time of day only from full scans, weekday from daily lows. The store keeps a journal so an import cut off mid-write is undone on the next run, verifies itself before every change, removes folded records only after the archive and registry are written, and cleans up folders a failed import created. Revlog has the detail.
+
 ## Out of scope
 
 Guide prose (length, PvP sections, templates); a companion addon for sales data; search-engine submission; a custom domain; analytics; moving World topics.
@@ -109,6 +113,8 @@ Guide prose (length, PvP sections, templates); a companion addon for sales data;
 
 - The tool survey (`sources/ah-tools.md`) added confidence tiers, short supply, the good-buy price, the market index and a volatility penalty, and moved the deal test to the published 3.5 threshold.
 - The Beta catalogue stays a 975-item sample (settled): the full Beta files are not put through the new store, which is for live scans.
+- Sol's review (revlog) changed the build in substance: uploads count as **sightings** only when an item is new to that day or changed; "fresh" means seen on the newest Auctionator day, and lists show when each item was seen; the store is verified before every import and folded records are deleted only after the archive and registry are written; uploads for already-folded days are refused; the inbox carries all 21 days of history; the investment watch excludes volatile, too-new and thinly listed items (settled rule); presence is measured against the market's full days (shown as "9 of 13"); the plan's "share of scans listed" is dropped (sightings aren't scans); patterns need ten items on two dates per cell and aggregate per item first.
+- Item pages weigh about 39 KB, half of it the repeated menu; at a full live market (~4,200 items) the site is ~160 MB. Fine for Pages; trim if deploys slow down.
 - Market display names come from `market_names` in `data/game.json`; the Beta markets read "Beta PvP realm" and "Beta Classic PvP realm".
 
 ## Risks

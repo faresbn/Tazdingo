@@ -23,7 +23,7 @@ Where Tazdingo stands, kept current at every checkpoint so another thread, model
 ## Launch checklist for the data (4 November)
 
 1. First live scan: log out or `/reload`, then `python3 scripts/ingest.py --push` (first time: `--market "Realm Faction"`). Add the market's display name to `market_names` in `data/game.json`.
-2. Scan three or four times a day and import after each: that's what fills movers, patterns and confidence.
+2. Scan three or four times a day and import after each; use Auctionator's full scan at different times of day, since only full scans feed the time-of-day patterns. Usual prices and confidence build up from daily lows over the first two weeks.
 3. Re-run `foreverdb_data.py`, `item_names.py`, and `foreverdb_api.py fetch` + `slim` once ForeverDB's build changes; commit. Pre-launch labels on data clear then.
 4. Pages stay Pre-launch until checked in game (`status: live`).
 5. Screenshots: without the interface (Alt+Z), WebP, listed in `data/game.json`.
@@ -33,6 +33,7 @@ Where Tazdingo stands, kept current at every checkpoint so another thread, model
 - **The ChatGPT scan route is untested on ChatGPT's side** (running the repository's scripts in its sandbox and committing a record of up to ~1–2 MB). The Action side is tested here only through `ingest.py --inbox`.
 - **Thresholds in `scripts/market.py` are first guesses**; tune them after a week of live scans.
 - **Actions minutes:** GitHub's docs conflict on whether Pages runs count; only the billing page settles it (Fares). No new scheduled jobs were added.
+- **Site size:** item pages are ~39 KB (half of it the repeated menu); a full live market (~4,200 items) makes the site ~160 MB. Within limits; trim the item-page menu if publishing slows.
 - **Masthead strapline** wraps to three lines between about 860 and 1,240 px wide; worth a polish.
 - **Next content phase** (Fares): guide length, per-type templates, PvP sections per class and spec, the empty Field findings.
 - **Parked:** a route for someone without a GitHub account to send content through ChatGPT.

@@ -45,3 +45,17 @@ Before writing, I checked how scans become price data: a day's scans merge into 
 | Own 1 | Market and PvP bullets, cross-references, numbers | 1 fix (a duplicated "isn't known yet" sentence in the market bullet); the count restarted |
 | Own 2 | Full read | Clean |
 | Own 3 | Re-derived today's figures by script: the build's own `summarise` on synthetic daily records (movers eligible from day 10, steadiness from day 3), quest paging (67), bulk API calls (~56), the two Beta markets | Clean |
+
+## The Auction House build (27 October 2026, evening)
+
+Fares asked for the Auction House module to be researched, planned, built and published autonomously, checking in with Sol as needed. A research agent surveyed other AH tools (`sources/ah-tools.md`); its ideas (confidence tiers, short supply, good-buy price, market index, the published 3.5 robust z-score) went into research section 6 and the plan.
+
+### Consultation: GPT-6.1 Sol, high effort, plan and phases A–C
+
+**What it changed:** three blockers and thirteen should-fix/minor findings, all but one accepted. The storage layer now verifies the whole store before any change, writes the archive and registry before deleting folded records, rejects uploads for already-folded days, and rolls back on any error during an import (verified end to end with a deliberately broken build). Uploads only count as sightings when an item is new to that day or changed, which removes carried-forward prices from references, freshness, movers and patterns. The investment watch excludes volatile, too-new and thinly listed items (the settled gold-making rule). Presence, short supply, partial-day detection, pattern readiness and aggregation, and chart day boundaries were corrected; public wording now says "seen at" with times.
+
+- **Why opened:** the plan for major work and the data-safety of the launch-day import path (a mistake there is expensive to undo).
+- **Route:** Codex CLI on Fares's ChatGPT plan; session `01a17eb0-e2c6-7af2-a706-1d499f47e992`; read-only.
+- **Packet:** reviewer rules, three questions (storage/ingest safety, analytics correctness and honesty, settled decisions), plan.md, research section 6, DECISIONS.md, `market_store.py`, `market.py`, `ingest.py` (import path), `build.py` (market assembly), `scan_record.py`. 89 KB.
+- **Exchange 1** (11 steps): read the parser's timestamp and day handling, ingest/build boundaries, tests, the name refresh, public templates, browser time handling, site checks and workflows. 17 findings. Accepted 16; finding 15 (inbox workflow missing) was a timing artefact: `ingest.yml` was written minutes after the packet was sent. "Context I needed": none.
+- **Usage (exchange 1):** 501,877 input tokens (438,016 cached), 9,089 output (5,733 reasoning). ChatGPT plan.
