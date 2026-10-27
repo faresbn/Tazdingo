@@ -320,8 +320,10 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
     card = site.asset("art/darkspear.webp") if site.has("art/darkspear.webp") else ""
     card_meta = (f'<meta property="og:image" content="{esc(site.url + card[len(site.base):])}">'
                  f'<meta name="twitter:card" content="summary_large_image">') if card else ""
-    nav = site.nav.replace(f'<li class="menu-item" data-menu><a class="menu-link" href="{site.base}{active}/"',
-                           f'<li class="menu-item current" data-menu><a class="menu-link" aria-current="page" href="{site.base}{active}/"') if active else site.nav
+    section_path = "more/launch/" if active == "more" else f"{active}/"
+    current = "page" if path == section_path else "true"
+    nav = site.nav.replace(f'<li class="menu-item" data-menu><a class="menu-link" href="{site.base}{section_path}"',
+                           f'<li class="menu-item current" data-menu><a class="menu-link" aria-current="{current}" href="{site.base}{section_path}"') if active else site.nav
     return f'''<!doctype html>
 <html lang="en-GB">
 <head>
@@ -379,8 +381,8 @@ def page_head(title: str, lede: str = "", crumbs: tuple = (), extra: str = "", m
     crumb = "".join(f'<a href="{esc(url)}">{esc(label)}</a>' for label, url in crumbs)
     style = f' style="--class:{esc(colour)}"' if colour else ""
     return (f'<header class="page-head{" coloured" if colour else ""}"{style}><div class="page-head-inner">'
-            f'{f"<p class=crumbs>{crumb}</p>" if crumb else ""}'
-            f'<div class="title-row">{mark}<h1>{esc(title)}</h1></div>'
+            + (f'<nav class="crumbs" aria-label="Breadcrumb">{crumb}</nav>' if crumb else '')
+            + f'<div class="title-row">{mark}<h1>{esc(title)}</h1></div>'
             f'{f"<p class=lede>{lede}</p>" if lede else ""}{extra}</div></header>')
 
 
@@ -477,10 +479,6 @@ def home(site: Site, ctx: dict) -> str:
     picker = "".join(f'<li style="--class:{esc(c["colour"])}"><a class="pick" href="{b}classes/{c["slug"]}/">'
                      f'{emblem(site, "class", c["slug"], 48, c["colour"])}<span>{esc(c["name"])}</span></a>'
                      f'<span class="pick-specs">{spec_links(c)}</span></li>' for c in game["classes"])
-    latest = "".join(
-        f'<li><span class="when">{when(e["date"])} <span class="day">{game_day(site, e["date"])}</span></span> '
-        + (f'<a href="{b}{esc(e["urls"][0])}">{esc(e["subject"])}</a>' if e["urls"] else esc(e["subject"])) + "</li>"
-        for e in ctx["log"][:6])
     profs = "".join(f'<li><a href="{b}professions/{p["slug"]}/">{emblem(site, "prof", p["slug"], 32)}<span>{esc(p["name"])}</span></a></li>' for p in game["professions"])
     world = "".join(f'<li><a href="{b}world/{t["slug"]}/">{esc(t["name"])}</a></li>' for t in game["world"])
 
@@ -492,7 +490,9 @@ def home(site: Site, ctx: dict) -> str:
     <p class="lede">Auction House prices, Horde-side class and profession guides, and discoveries from our travels in World of Warcraft: Forever.</p>
     <form class="lookup" action="{esc(search_action)}" method="get" role="search">
       <label for="lookup" class="visually-hidden">Search Tazdingo</label>
-      <div class="lookup-row"><input id="lookup" name="q" type="search" placeholder="Search: Linen Cloth, Frost Mage, camping" autocomplete="off" aria-controls="lookup-results"><button type="submit">Search</button></div>
+      <div class="lookup-row"><input id="lookup" name="q" type="search" placeholder="Items, classes, professions…" autocomplete="off" aria-controls="lookup-results" aria-describedby="lookup-hint"><button type="submit">Search</button></div>
+      <span id="lookup-hint" class="visually-hidden">Type two or more characters. Use the down arrow to browse results and Escape to dismiss them.</span>
+      <span id="lookup-status" class="visually-hidden" role="status"></span>
       <ul id="lookup-results" class="lookup-results" hidden></ul>
     </form>
   </div>
@@ -510,14 +510,10 @@ def home(site: Site, ctx: dict) -> str:
     {blue_html}
   </section>
 </div>
-<div class="dash dash-lower">
+<div class="dash dash-classes">
   <section class="dash-card picker-card" aria-labelledby="picker-title">
     <h2 id="picker-title"><a href="{b}classes/">Choose your class</a></h2>
     <ul class="picker">{picker}</ul>
-  </section>
-  <section class="dash-card latest-card" aria-labelledby="latest-title">
-    <h2 id="latest-title">Latest in Tazdingo</h2>
-    <ol class="log">{latest or "<li>Nothing recorded yet.</li>"}</ol>
   </section>
 </div>
 <div class="dash dash-lower">
@@ -620,8 +616,9 @@ def market_page(site: Site, market: dict, ctx: dict) -> str:
     <h2>All prices</h2>
     <form class="filters" role="search">
       <label class="grow">Find an item<input id="filter" name="q" type="search" placeholder="Name or item ID" autocomplete="off"></label>
-      <label>Show<select id="scope"><option value="current">Seen in the last two weeks</option><option value="all">Every item ever seen</option></select></label>
-      <label>Order<select id="order"><option value="name">Name</option><option value="listed">Most listed</option><option value="price-high">Highest price</option><option value="price-low">Lowest price</option><option value="change">Biggest change</option><option value="steadiest">Steadiest first</option></select></label>
+      <label>Show<select id="scope" name="scope"><option value="current">Last two weeks</option><option value="all">All recorded items</option></select></label>
+      <label>Sort by<select id="order" name="order"><option value="name">Name</option><option value="listed">Most listed</option><option value="price-high">Highest price</option><option value="price-low">Lowest price</option><option value="change">Biggest change</option><option value="steadiest">Steadiest first</option></select></label>
+      <button class="filter-reset" type="reset" data-reset-filters hidden>Reset</button>
     </form>
     <p id="status" class="status" aria-live="polite">{len(shown):,} items.</p>
     <div class="table-wrap"><table class="prices">

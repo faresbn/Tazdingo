@@ -125,10 +125,15 @@ async function marketBrowser(section) {
   document.getElementById("partial-note")?.remove();  // the full list is loaded now
   const params = new URLSearchParams(location.search);
   filter.value = params.get("q") || "";
+  const hasOption = (select, value) => [...select.options].some(option => option.value === value);
+  const savedScope = params.get("scope"), savedOrder = params.get("order");
+  scope.value = hasOption(scope, savedScope) ? savedScope : filter.value ? "all" : "current";
+  order.value = hasOption(order, savedOrder) ? savedOrder : "name";
   if (filter.value) {
-    scope.value = "all";
     section.scrollIntoView();  // a search from the home page lands on the results, not the highlights
   }
+  const reset = section.querySelector("[data-reset-filters]");
+  if (reset) reset.hidden = false;
 
   function matches(item, terms, id) {
     if (id !== null) return item.id === id;
@@ -162,8 +167,12 @@ async function marketBrowser(section) {
       view.sort(sorters[order.value]);
     }
     if (resetPage) page = 0;
-    const query = raw ? `?q=${encodeURIComponent(raw)}` : "";
-    history_replace(query);
+    const query = new URLSearchParams();
+    if (raw) query.set("q", raw);
+    if (scope.value !== "current") query.set("scope", scope.value);
+    if (order.value !== "name") query.set("order", order.value);
+    history_replace(query.size ? `?${query}` : "");
+    if (reset) reset.disabled = !raw && scope.value === "current" && order.value === "name";
     render();
   }
 
@@ -204,7 +213,7 @@ async function marketBrowser(section) {
     const shown = view.length ? `${start + 1}–${Math.min(start + PAGE_SIZE, view.length)} of ` : "";
     status.textContent = view.length
       ? `${shown}${view.length.toLocaleString("en-GB")} item${view.length === 1 ? "" : "s"}. Select a row for its daily prices.`
-      : (scope.value === "current" ? "Nothing seen in the last two weeks matches. Try “Every item ever seen”." : "No item matches. Try part of the name, or the item ID.");
+      : (scope.value === "current" ? "No recent items match. Choose “All recorded items” or reset the filters." : "No item matches. Try part of the name, or reset the filters.");
     pager.hidden = pages < 2;
     pager.replaceChildren();
     if (pages > 1) {
@@ -281,6 +290,11 @@ async function marketBrowser(section) {
   let timer;
   filter.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(update, 120); });
   section.querySelector("form").addEventListener("submit", event => { event.preventDefault(); update(); });
+  section.querySelector("form").addEventListener("reset", event => {
+    event.preventDefault(); clearTimeout(timer);
+    filter.value = ""; scope.value = "current"; order.value = "name";
+    update(); filter.focus();
+  });
   scope.addEventListener("change", () => update());
   order.addEventListener("change", () => update());
   update();
@@ -316,18 +330,25 @@ function countdown(node) {
 
 function siteSearch(form) {
   const input = form.querySelector("input"), list = document.getElementById("lookup-results");
-  let entries = null, matches = [];
+  const status = document.getElementById("lookup-status");
+  let entries = null, pending = null, matches = [], request = 0;
   async function load() {
     if (entries) return entries;
-    try { entries = await (await fetch(`${document.body.dataset.base}search.json`)).json(); } catch { entries = []; }
-    return entries;
+    if (!pending) pending = fetch(`${document.body.dataset.base}search.json`).then(response => {
+      if (!response.ok) throw new Error();
+      return response.json();
+    }).then(data => { entries = data; return data; }).catch(() => null).finally(() => { pending = null; });
+    return pending;
   }
-  input.addEventListener("focus", load, { once: true });
-  input.addEventListener("input", async () => {
+  function close() { request++; list.hidden = true; }
+  async function show() {
+    const turn = ++request;
     const query = input.value.trim().toLowerCase();
+    if (query.length < 2) { close(); matches = []; status.textContent = ""; return false; }
     const all = await load();
+    if (turn !== request || query !== input.value.trim().toLowerCase() || !form.contains(document.activeElement)) return false;
+    if (!all) { close(); return null; }
     list.replaceChildren();
-    if (query.length < 2) { list.hidden = true; matches = []; return; }
     const rank = ([title, , kind]) => {
       const t = title.toLowerCase();
       const base = t === query ? 0 : t.startsWith(query) ? 1 : (` ${t}`).includes(` ${query}`) ? 2 : t.includes(query) ? 3 : 9;
@@ -340,14 +361,50 @@ function siteSearch(form) {
       li.append(a, el("span", kind, "kind"));
       list.append(li);
     }
-    list.hidden = matches.length === 0;
-  });
-  form.addEventListener("submit", event => {
-    if (matches.length && matches[0][0].toLowerCase() === input.value.trim().toLowerCase()) {
+    if (!matches.length) list.append(el("li", "No matches. Try part of a class, profession or item name.", "search-empty"));
+    list.hidden = false;
+    status.textContent = matches.length ? `${matches.length} suggestions. Use the down arrow to browse.` : "No matching suggestions.";
+    return true;
+  }
+  input.addEventListener("focus", () => { if (input.value.trim().length >= 2) show(); else load(); });
+  input.addEventListener("input", show);
+  input.addEventListener("keydown", async event => {
+    if (event.key === "ArrowDown") {
       event.preventDefault();
-      location.href = matches[0][1];
+      if (list.hidden) await show();
+      list.querySelector("a")?.focus();
     }
   });
+  list.addEventListener("keydown", event => {
+    const links = [...list.querySelectorAll("a")], index = links.indexOf(document.activeElement);
+    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      event.preventDefault();
+      const next = index + (event.key === "ArrowDown" ? 1 : -1);
+      if (next < 0 || next >= links.length) input.focus(); else links[next].focus();
+    }
+  });
+  form.addEventListener("keydown", event => {
+    if (event.key === "Escape" && !list.hidden) { event.preventDefault(); event.stopPropagation(); input.focus(); close(); }
+  });
+  form.addEventListener("focusout", () => window.setTimeout(() => { if (!form.contains(document.activeElement)) close(); }, 0));
+  document.addEventListener("click", event => { if (!form.contains(event.target)) close(); });
+  form.addEventListener("submit", async event => {
+    if (input.value.trim().length < 2) return;
+    event.preventDefault();
+    const shown = await show();
+    if (shown === null) { form.submit(); return; }  // preserve item-price search if the index is unavailable
+    if (!shown) return;
+    if (matches.length && matches[0][0].toLowerCase() === input.value.trim().toLowerCase()) {
+      location.href = matches[0][1];
+    } else list.querySelector("a")?.focus();
+  });
+}
+
+function readingTools() {
+  const narrow = window.matchMedia("(max-width: 860px)");
+  const panels = [...document.querySelectorAll(".reading-tools")];
+  const apply = () => panels.forEach(panel => { panel.open = !narrow.matches; });
+  apply(); narrow.addEventListener("change", apply);
 }
 
 function menus() {
@@ -384,6 +441,9 @@ function menus() {
       clearTimeout(timer);
       timer = setTimeout(() => set(item, false), 250);
     });
+    item.addEventListener("focusout", () => window.setTimeout(() => {
+      if (!item.contains(document.activeElement) && (!hover.matches || !item.matches(":hover"))) set(item, false);
+    }, 0));
   });
   document.addEventListener("keydown", event => {
     if (event.key !== "Escape") return;
@@ -400,6 +460,7 @@ function menus() {
 }
 
 menus();
+readingTools();
 document.querySelectorAll("[data-theme-toggle]").forEach(themeToggle);
 document.querySelectorAll("[data-countdown]").forEach(countdown);
 const lookupForm = document.querySelector("form.lookup");
@@ -430,6 +491,7 @@ function newsReader(widget) {
   async function refresh(manual) {
     if (running) return;
     running = true; button.disabled = true;
+    button.textContent = 'Checking…'; button.setAttribute('aria-busy', 'true');
     if (manual) status.textContent = 'Checking Blizzard articles…';
     try {
       const response = await fetch(widget.dataset.newsEndpoint, {cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(90000)});
@@ -455,7 +517,7 @@ function newsReader(widget) {
       holder.replaceChildren(records.length ? list : el('p','No verified Forever news available yet.','empty'));
       status.textContent = `Last verified check: ${stamp(data.last_successful_refresh || data.fetched)}${data.cached ? ' · shared five-minute cache' : ''}${data.status === 'partial' ? ' · some articles could not be verified' : ''}.`;
     } catch (error) { if (manual) status.textContent = error.message; }
-    finally { running=false; button.disabled=false; }
+    finally { running=false; button.disabled=false; button.textContent='Refresh news'; button.removeAttribute('aria-busy'); }
   }
   button.addEventListener('click',()=>refresh(true));
   refresh(false);
