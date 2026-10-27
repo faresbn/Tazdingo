@@ -169,7 +169,7 @@ class Analytics(unittest.TestCase):
     def test_one_busy_afternoon_is_not_a_pattern(self):
         import market as m
         items = [{"full_obs": [(BASE + k * 600, 100 + k, DAY) for k in range(6)], "days": {}} for _ in range(30)]
-        cells = m.patterns(items, [DAY])["cells"]
+        cells = m.patterns(items, [DAY], [DAY])["cells"]
         self.assertTrue(all(c["index"] is None for c in cells.values()))
 
 
@@ -195,3 +195,16 @@ class Recovery(Store):
         (self.root / "data/market/forever-other-market/scans").mkdir(parents=True)
         self.assertIsNotNone(self.add(DAY, BASE, {"2589": (100, 90, 120, 4)}))
         self.assertFalse((self.root / "data/market/forever-other-market").exists())
+
+
+class FullScans(unittest.TestCase):
+    def test_only_an_upload_whose_latest_scan_was_full_samples_the_market(self):
+        import build
+        rec = lambda stamp, full, price: {"scan_timestamp": stamp, "full_scan_timestamp": full, "day": DAY,
+                                          "source_sha256": "a" * 64, "items": {"2589": [price, price, price, 1]}}
+        entry = {"environment": "forever", "market": "Realm Horde", "folded": 0, "daily": {}, "full_scan_items": [],
+                 "records": [rec(BASE, BASE - 3600, 100),      # a search after the full scan: not that scan's snapshot
+                             rec(BASE + 7200, BASE + 7200, 90)]}  # the full scan was the latest: a sample at its time
+        markets = {}
+        build.add_store_market(markets, "forever-realm-horde", entry, {})
+        self.assertEqual(markets["forever-realm-horde"]["items"]["2589"]["full_obs"], [(BASE + 7200, 90, DAY)])

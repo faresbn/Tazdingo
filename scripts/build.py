@@ -120,11 +120,14 @@ def build_markets(captures: list[dict], names: dict, store: dict | None = None) 
                                     "payload_sha256": data["payload_sha256"], "unchanged": repeat,
                                     "received_on": capture["received_on"]})
             scan_day = max((int(d) for fields in data["items"].values() for d in fields["h"]), default=None)
-            full = capture.get("source_scan_timestamps", {}).get("TimeOfLastReplicateScan")
-            new_full = type(full) is int and full > market.get("last_full_scan", 0)
+            stamps = capture.get("source_scan_timestamps", {})
+            full = stamps.get("TimeOfLastReplicateScan")
+            # Only a full scan that was the file's latest scan makes the file that scan's snapshot.
+            new_full = (type(full) is int and full == max((t for t in stamps.values() if type(t) is int), default=0)
+                        and full > market.get("last_full_scan", 0))
             if new_full:
                 market["last_full_scan"] = full
-                market.setdefault("full_scan_days", set()).add(scan_day)
+                market.setdefault("full_scan_coverage", []).append(sum(1 for f in data["items"].values() if str(scan_day) in f["h"]))
             for key, fields in data["items"].items():
                 item = market["items"].setdefault(key, {"key": key, "id": item_id(key),
                                                        "name": item_name(key, names), "days": {}, "obs": [], "full_obs": []})
@@ -174,6 +177,7 @@ def add_store_market(markets: dict, slug: str, entry: dict, names: dict) -> None
                                        "environment_label": ENVIRONMENTS[entry["environment"]],
                                        "sample": False, "scans": [], "items": {}})
     market["folded_scans"] = entry["folded"]
+    market.setdefault("full_scan_coverage", []).extend(entry.get("full_scan_items", []))
 
     def item_of(key):
         return market["items"].setdefault(key, {"key": key, "id": item_id(key), "name": item_name(key, names), "days": {}, "obs": [], "full_obs": []})
@@ -191,10 +195,11 @@ def add_store_market(markets: dict, slug: str, entry: dict, names: dict) -> None
     previous, last_seen, last_full = None, {}, 0
     for record in entry["records"]:
         full = record.get("full_scan_timestamp")
-        new_full = full is not None and full > last_full
+        # Only an upload whose latest scan was a full scan is that scan's snapshot (a later
+        # search would otherwise move its prices back to the full scan's time).
+        new_full = full is not None and full == record["scan_timestamp"] and full > last_full
         if new_full:
             last_full = full
-            market.setdefault("full_scan_days", set()).add(record["day"])
         moment = datetime.fromtimestamp(record["scan_timestamp"], timezone.utc)
         market["scans"].append({"date": day_date(record["day"]), "time": moment.isoformat().replace("+00:00", "Z"),
                                 "source_sha256": record["source_sha256"], "items": len(record["items"]),

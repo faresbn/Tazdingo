@@ -321,7 +321,11 @@ def add_record(root: Path, record: dict, rows: dict, receipt_extra: dict) -> dic
     receipts.append({"path": path.relative_to(root).as_posix(), "market_slug": slug, "environment": record["environment"],
                      "market": record["market"], "scan_timestamp": record["scan_timestamp"], "scan_time": iso(record["scan_timestamp"]),
                      "day": record["day"], "source_sha256": record["source_sha256"], "content_sha256": content,
-                     "record_sha256": fingerprint(body), "status": "kept", "received_on": date.today().isoformat(), **receipt_extra})
+                     "record_sha256": fingerprint(body), "status": "kept", "received_on": date.today().isoformat(),
+                     # A full scan that was the file's latest scan: the record is that scan's snapshot, and its item
+                     # count is a full market's size. Kept in the receipt so it outlives the record.
+                     "full_scan_items": len(record["items"]) if record["full_scan_timestamp"] == record["scan_timestamp"] else None,
+                     **receipt_extra})
 
     mine = [r for r in receipts if r["market_slug"] == slug]
     newest_day = max(r["day"] for r in mine if r["status"] == "kept")
@@ -375,8 +379,10 @@ def load(root: Path) -> dict:
         if receipt["status"] not in ("kept", "folded"):
             raise InvalidCapture("Unknown scan record status")
         entry = markets.setdefault(receipt["market_slug"], {"environment": receipt["environment"], "market": receipt["market"],
-                                                            "records": [], "folded": 0, "receipts": 0})
+                                                            "records": [], "folded": 0, "receipts": 0, "full_scan_items": []})
         entry["receipts"] += 1
+        if receipt.get("full_scan_items"):
+            entry["full_scan_items"].append(receipt["full_scan_items"])
         if receipt["status"] == "folded":
             entry["folded"] += 1
             continue

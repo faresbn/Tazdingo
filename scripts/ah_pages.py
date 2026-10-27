@@ -107,20 +107,15 @@ def index_chart(ah: dict, events: list[dict], heading: str = "h2") -> str:
     def y(value):
         return round(height - pad - (value - low) / (high - low) * (height - 2 * pad), 1)
     path = " ".join(("M" if n == 0 else "L") + f"{x(d)},{y(v)}" for n, (d, v, _) in enumerate(series))
-    marks = []
-    for event in events:
-        day = (datetime.fromisoformat(event["at"].replace("Z", "+00:00")).timestamp() - DAY_ZERO_EPOCH) / 86400
-        if first <= day <= last:
-            marks.append(f'<line class="event" x1="{x(day)}" y1="0" x2="{x(day)}" y2="{height - pad}"/><text class="event-label" x="{x(day) + 4}" y="12">{esc(event["label"])}</text>')
     dots = "".join(f'<circle class="scan" cx="{x(d)}" cy="{y(v)}" r="2.5"><title>{day_date(d)}: {v}</title></circle>' for d, v, _ in series)
     svg = (f'<svg viewBox="0 0 {int(width)} {int(height)}" role="img" aria-label="Market price index from {day_date(first)} to {day_date(last)}">'
-           f'<line class="typical" x1="0" y1="{y(100)}" x2="{width}" y2="{y(100)}"/><path class="scan-line" d="{path}"/>{dots}{"".join(marks)}'
+           f'<line class="typical" x1="0" y1="{y(100)}" x2="{width}" y2="{y(100)}"/><path class="scan-line" d="{path}"/>{dots}'
            f'<text class="tick" x="0" y="{height - 6}">{day_date(first)}</text><text class="tick" x="{width}" y="{height - 6}" text-anchor="end">{day_date(last)}</text>'
            f'<text class="tick" x="4" y="{y(high) + 10}">{high:.0f}</text><text class="tick" x="4" y="{y(low) - 3}">{low:.0f}</text></svg>')
     return (f'<section class="ah-block" id="index"><{heading}>Market index</{heading}>'
             '<p class="aside">Each day, the middle of every item\'s lowest price measured against its own usual level: 100 is normal, 105 means '
-            'prices across the market sat 5% higher. Unfinished and partial-scan days are left out. Event lines mark launch and raid openings.</p>'
-            f'<figure class="price-chart">{svg}</figure></section>')
+            'prices across the market sat 5% higher. Unfinished and partial-scan days are left out.</p>'
+            f'<figure class="price-chart">{svg}{event_note(events, first, last)}</figure></section>')
 
 
 def vendor_block(site: Site, market: dict, ah: dict, limit: int = LIST_ROWS, heading: str = "h2") -> str:
@@ -255,6 +250,18 @@ def day_x(day: float, first: int, span: int, width: float) -> float:
     return round((day - first) / span * width, 1)
 
 
+def event_note(events: list[dict], first: int, last: int) -> str:
+    """Dated events in the chart's range, listed by their UTC time. The bands follow the scanner's
+    own calendar days, so events are named under the chart rather than drawn on it."""
+    shown = []
+    for event in events:
+        moment = datetime.fromisoformat(event["at"].replace("Z", "+00:00"))
+        day = (moment.timestamp() - DAY_ZERO_EPOCH) / 86400
+        if first - 1 <= day <= last + 1:
+            shown.append(f'{esc(event["label"])}: {moment:%d %b, %H:%M} UTC')
+    return f'<p class="aside event-note">In this range: {"; ".join(shown)}.</p>' if shown else ""
+
+
 def chart(item: dict, market: dict, events: list[dict]) -> str:
     """Daily low–high bands, every scan price and the typical price over the last 30 days."""
     last = market["last_day"]
@@ -296,11 +303,6 @@ def chart(item: dict, market: dict, events: list[dict]) -> str:
     if len(points) > 1:
         parts.append('<path class="scan-line" d="' + " ".join(("M" if n == 0 else "L") + f"{x},{yy}" for n, (x, yy, _) in enumerate(points)) + '"/>')
     parts += [f'<circle class="scan" cx="{x}" cy="{yy}" r="3"><title>{plain_money(p)}</title></circle>' for x, yy, p in points]
-    for event in events:
-        day = (datetime.fromisoformat(event["at"].replace("Z", "+00:00")).timestamp() - DAY_ZERO_EPOCH) / 86400
-        if first <= day <= last + 1:
-            x = day_x(int(day), first, span, width)  # events mark the start of their day: positions inside a day show order, not time
-            parts.append(f'<line class="event" x1="{x}" y1="0" x2="{x}" y2="{height - pad}"/><text class="event-label" x="{x + 4}" y="12">{esc(event["label"])}</text>')
     parts.append(f'<text class="tick" x="0" y="{height - 8}">{day_date(first)}</text>'
                  f'<text class="tick" x="{width}" y="{height - 8}" text-anchor="end">{day_date(last)}</text>'
                  f'<text class="tick" x="4" y="{y(top) + 12}">{esc(plain_money(top))}</text>')
@@ -309,7 +311,7 @@ def chart(item: dict, market: dict, events: list[dict]) -> str:
     return (f'<figure class="price-chart"><svg viewBox="0 0 {int(width)} {int(height)}" role="img" aria-label="{esc(summary)}">{"".join(parts)}</svg>'
             '<figcaption><span class="key band-key"></span> each day\'s lowest to highest cheapest listing · '
             '<span class="key scan-key"></span> recorded prices, in order within each day · <span class="key typical-key"></span> typical price · '
-            '<span class="key qty-key"></span> most units listed that day</figcaption></figure>')
+            '<span class="key qty-key"></span> most units listed that day</figcaption>' + event_note(events, first, last) + '</figure>')
 
 
 def stat(label: str, value: str, note: str = "") -> str:
@@ -343,8 +345,9 @@ def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
         alerts.append(f'<span class="alert invest">Investment watch: about {plain_money(item["invest"]["margin"])} a unit</span>')
     if item["short"] and item["confidence"] != "low":
         alerts.append(f'<span class="alert move">Short supply: {pct(item["short"]["stock"])} of usual stock, {pct(item["short"]["price"])} over usual price</span>')
-    if item["move"]:
-        alerts.append(f'<span class="alert move">{"Up" if item["move"]["change"] > 0 else "Down"} {abs(item["move"]["change"])}% in the last day</span>')
+    if item["move"] and item["confidence"] != "low":
+        alerts.append(f'<span class="alert move">{"Up" if item["move"]["change"] > 0 else "Down"} {abs(item["move"]["change"])}% '
+                      f'on its lowest of {nice_date(day_date(item["move"]["day"]))}, the last full day of scans</span>')
     stats = "".join([
         stat("Latest recorded", money(item["latest"]), f'by the upload of {scan_time(item["latest_time"])}{"" if item["fresh"] else ", before the newest day of scans"}' if item["latest_time"] else ""),
         stat("Usual price", money(item["ref"]) if item["ref"] else "Too new", f"middle of its daily lowest prices over the last {m.RECENT_DAYS} days" if item["ref"] else "needs three days of prices"),

@@ -85,15 +85,16 @@ def window(market: dict) -> tuple[int | None, int | None]:
     return newest, min(newest - WINDOW_DAYS * 86400, times[-WINDOW_SCANS] if len(times) >= WINDOW_SCANS else times[0])
 
 
-def partial_days(items: list[dict], full_scan_days: set[int] | None = None) -> set[int]:
+def partial_days(items: list[dict], full_scan_coverage: list[int] | None = None) -> set[int]:
     """Days when only some items were scanned (a few searches rather than a full scan). A full
-    scan's size comes from days known to contain one (an upload with a new full-scan time);
-    without any, from the busiest days (90th percentile)."""
+    scan's size comes from uploads known to be a full scan's snapshot (their item counts are
+    kept in the receipts, so they outlive retention); without any, from the busiest days
+    (90th percentile)."""
     coverage = {}
     for item in items:
         for d in item["days"]:
             coverage[d] = coverage.get(d, 0) + 1
-    known = [coverage[d] for d in (full_scan_days or ()) if d in coverage]
+    known = list(full_scan_coverage or ())
     full = median(known) if known else (percentile(list(coverage.values()), 0.9) or 0)
     return {d for d, n in coverage.items() if n < full * PARTIAL_DAY}
 
@@ -164,7 +165,7 @@ def analyse_item(item: dict, frame: dict, vendor: dict) -> None:
                               "score": margin * item["presence"] * RISK[item["volatility"]]}
     base = item["days"].get(last_full, {}).get("low") if last_full is not None else None
     if base and base >= MOVE_MIN_BASE and abs(latest / base - 1) >= MOVE_MIN_CHANGE:
-        item["move"] = {"change": round((latest / base - 1) * 100), "base": base}
+        item["move"] = {"change": round((latest / base - 1) * 100), "base": base, "day": last_full}
 
 
 # --- Patterns -----------------------------------------------------------------------------
@@ -179,14 +180,14 @@ def summary(groups: list[list[tuple]]) -> dict:
     return {"index": round(median(per_item), 4) if ready else None, "items": len(per_item), "dates": len(dates)}
 
 
-def patterns(items: list[dict], recent_days: list[int]) -> dict:
+def patterns(items: list[dict], recent_days: list[int], finished_days: list[int]) -> dict:
     """Weekday: each full day's lowest price against the item's own median low (Auctionator's
     days). Time of day: full-scan samples only (every item listed that day, at a new full scan's
     own time) against the item's median sample, by four-hour band in UTC, market-wide."""
     weekday, band, cells = {}, {}, {}
-    window = set(recent_days)
+    window, finished = set(recent_days), set(finished_days)
     for item in items:
-        lows = {d: v["low"] for d, v in item["days"].items() if d in window and v["low"] > 0}
+        lows = {d: v["low"] for d, v in item["days"].items() if d in finished and v["low"] > 0}
         centre = median(list(lows.values()))
         if centre and len(lows) >= MIN_RECENT_DAYS:
             mine = {}
@@ -246,16 +247,17 @@ def analyse(market: dict, vendor: dict, categories: dict) -> dict:
     """Fills each item's measures and returns the market's lists."""
     newest, start = window(market)
     last_day = market.get("last_day")
-    partial = partial_days(market["items"], market.get("full_scan_days"))
+    partial = partial_days(market["items"], market.get("full_scan_coverage"))
     days = sorted({d for item in market["items"] for d in item["days"]} - partial)
     recent = [d for d in days if last_day is not None and last_day - RECENT_DAYS < d <= last_day]
     frame = {"start": start, "last_day": last_day, "recent": recent,
              "window_days": [d for d in days if last_day is not None and last_day - WINDOW_DAYS < d <= last_day],
              "last_full": max((d for d in days if last_day is not None and d < last_day), default=None)}
+    finished = [d for d in frame["window_days"] if d != last_day]  # weekday patterns use finished days only
     for item in market["items"]:
         analyse_item(item, frame, vendor)
         item["category"] = categories.get(item["id"])
-        item["pattern"] = item_pattern(item, frame["window_days"])
+        item["pattern"] = item_pattern(item, finished)
     fresh = [i for i in market["items"] if i["fresh"]]
     times = scan_times(market)
     deals = [i for i in fresh if i["deal"] and "saving" in i["deal"]]
@@ -273,6 +275,6 @@ def analyse(market: dict, vendor: dict, categories: dict) -> dict:
         "index": market_index(market["items"], last_day, partial),
         "partial_days": sorted(partial),
         "last_full": frame["last_full"],
-        "patterns": patterns(market["items"], frame["window_days"]),
+        "patterns": patterns(market["items"], frame["window_days"], finished),
         "full_scans": len({t for i in market["items"] for t, _, _ in i.get("full_obs", [])}),
     }
