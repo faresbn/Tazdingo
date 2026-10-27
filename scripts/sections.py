@@ -248,8 +248,9 @@ def world_page(site: Site, ctx: dict, t: dict) -> str:
     main += changelog(site, entries_for(ctx, f"content/world/{t['slug']}.md"))
     pairs = [(label, url if url.startswith("http") else f"{b}world/{t['slug']}/{url}", "") for label, url in t["links"]]
     aside = tools_box("Guides and tools", pairs) + toc(page, (("from-the-data", "From the data"),) if data else ())
+    if t["slug"] == "camping":
+        aside = f'<figure class="camp-portrait" aria-hidden="true">{artwork(site, "camping", "camp-art")}</figure>' + aside
     return layout(site, t["name"], page_head(t["name"], esc(page["summary"] if page else t["summary"]), (("World", f"{b}world/"),), status_line(page))
-                  + (f'<div class="banner" aria-hidden="true">{artwork(site, "camping", "scene-art")}</div>' if t["slug"] == "camping" else "")
                   + f'<section class="page-body">{with_aside(main, aside)}</section>',
                   active="world", path=f"world/{t['slug']}/", description=f"{t['name']} in World of Warcraft: Forever.")
 
@@ -292,8 +293,7 @@ def about_page(site: Site, ctx: dict) -> str:
                     for c in reversed(ctx["captures"]))
     src, names = ctx["fdb_source"], ctx["names_source"] or {}
     pictures = ''.join(f'<li><strong>{esc(a["title"])}</strong> — {esc(a["edition"])}. '
-                       f'<a href="{esc(a["source"])}"{ext(a["source"])}>Source</a>; '
-                       f'<span class="aside">{esc(a["source_file"])}</span></li>' for a in site.art.values())
+                       f'<a href="{esc(a["source"])}"{ext(a["source"])}>Source</a>.</li>' for a in site.art.values())
     return layout(site, "Sources and credits", page_head("Sources and credits", "Where everything in Tazdingo comes from, and how to read it.")
                   + f'''<section class="page-body prose">
   <h2>What this is</h2>

@@ -7,7 +7,7 @@ The running record of where Tazdingo stands, kept current at every checkpoint so
 ## Where things stand
 
 - **Live site:** https://faresbn.github.io/Tazdingo/ (published from `main` by `.github/workflows/pages.yml`, about a minute after each push, and every two hours to refresh Blizzard's posts).
-- **Current work:** Authentic Warcraft imagery merged in PR #4 and published successfully (run 40477656697). The live homepage and class cards were visually checked; all nine class images load and preserve transparency. A small follow-up constrains portrait heights after the first live review. Pages remains on GitHub. The separate news relay is unchanged. Cleanup of the older merged `fix/visitor-news-cache` branch remains blocked pending explicit user permission.
+- **Current work:** Authentic Warcraft imagery merged in PR #4 and published successfully (run 40477656697). The live homepage and class cards were visually checked; all nine class images load and preserve transparency. Live checks in both colour themes verified the final class portrait bounds, all world icons and source credits. The camp scene uses a small complete sidebar image to avoid cropping characters. Pages remains on GitHub. The separate news relay is unchanged. Cleanup of the older merged `fix/visitor-news-cache` branch remains blocked pending explicit user permission.
 - **Launch:** WoW Forever opens on 4 November 2026; level cap 60 (the Beta's was 30).
 
 ## What v3 is
