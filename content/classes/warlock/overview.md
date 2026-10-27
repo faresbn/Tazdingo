@@ -67,7 +67,7 @@ WoWSims Forever ships five Warlock builds at 60: two Affliction (Shadow Bolt wit
 - **Racials:** Icy Veins' Warlock pages say Eureka! cuts mana costs by 50%, while Wowhead and ForeverDB say 10%. Icy Veins gives Touch of the Grave a 10% chance; Wowhead gives 30% with a 25 second cooldown. Shatter Curse's magic damage reduction is 15% in Icy Veins and 5% in Wowhead's tooltip.
 - **Pet scaling:** Blizzard and Icy Veins say demons scale with your stats; ForeverDB notes the client doesn't show how much of your gear carries over, and the character sheet shows demon stats wrongly for now.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

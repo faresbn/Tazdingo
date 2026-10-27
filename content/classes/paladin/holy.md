@@ -73,7 +73,7 @@ Wowhead's level 30 picks include Haunting Blade and Worgenbane Talisman (Shadowf
 - **Holy Shock at 30:** Icy Veins' text says you won't have the points for it in the beta, yet its calculator includes it. ForeverDB and Wowhead both take it at 30.
 - **Illumination:** Icy Veins suggests dropping two points into Infusion of Light; ForeverDB leaves the fifth rank for level 31.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

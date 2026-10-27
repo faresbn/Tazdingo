@@ -71,7 +71,7 @@ Wowhead calls Discipline an acceptable levelling spec once Penance arrives. The 
 - **Devouring Plague:** Wowhead's overview still says one minute. Since 16 October it is 24 sec.
 - **Above 30:** Divine Aegis (35) and Power Infusion (40) are untested. Icy expects little Divine Aegis play in the beta.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

@@ -1,7 +1,7 @@
-# Forever Ledger
+# Tazdingo
 
 An unofficial journal for World of Warcraft: Forever, published at
-https://faresbn.github.io/FvrRepo/. It holds Auction House prices from our
+https://faresbn.github.io/Tazdingo/. It holds Auction House prices from our
 Auctionator scans, notes on classes, professions and the game's systems, and
 lists of addons, macros and known issues. The repository is private; only the
 built site is public, and the site never names the people behind it.
@@ -75,7 +75,7 @@ python3 scripts/build.py                # build into dist/
 python3 scripts/check_site.py           # links, headings, data files, no names
 ```
 
-To preview, serve `dist` under `/FvrRepo/` (see `.claude/launch.json`).
+To preview, serve `dist` under `/Tazdingo/` (see `.claude/launch.json`).
 
 | Path | What it is |
 |---|---|

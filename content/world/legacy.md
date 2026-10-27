@@ -93,7 +93,7 @@ Method suggests this as the quickest account-wide route to 16: one character to 
 
 Hardcore arrives after launch with 12 challenges of its own in place of the PvP ones; anything earned there also counts on other rulesets (Blizzard). Blizzard plans new challenges with each content update, more perks, new trees and a higher spending cap over time. Calculators: [ForeverDB](https://foreverdb.net/legacy), [Wowhead](https://www.wowhead.com/forever/guide/legacy-system-overview-rewards) and [Method](https://www.method.gg/wow-forever/legacy-calculator).
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

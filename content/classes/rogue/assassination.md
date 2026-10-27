@@ -55,7 +55,7 @@ Icy Veins' level 30 picks include Torturing Poker (Scarlet Monastery) for the ma
 - **Rupture:** Wowhead uses it on high-armour targets; Blizzard expects Assassination to rank damaging finishers below Venom and Slice and Dice.
 - **Improved Slice and Dice:** Icy Veins skips it before 30; Wowhead and ForeverDB's group build take it.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

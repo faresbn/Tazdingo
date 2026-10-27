@@ -75,7 +75,7 @@ The Shadow Brand list is the same with Shadow Bolt as pre-cast and filler, plus 
 - **Demonic Brand rank 3:** Wowhead says it adds little, because spamming Searing Pain keeps the brand up anyway.
 - **Pet scaling:** ForeverDB says the client doesn't show how much of your gear carries over to the demon.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

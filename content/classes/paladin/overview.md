@@ -59,7 +59,7 @@ Shared advice:
 
 Wowhead finds no Paladin class quest at 30. The Alliance chain that starts with Return to Delgren (from 22) ends in Cloak of the Divine Storm, a strong cloak for the level. Icy Veins points Alliance players to Verigan's Fist and Horde players to Wolfsbane, weapon quest chains that start at 20. Blizzard says Undead Paladins get their own epic mount quest at 60.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

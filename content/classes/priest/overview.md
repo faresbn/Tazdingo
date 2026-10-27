@@ -78,7 +78,7 @@ Tailoring and Enchanting is the profession pair every source suggests, including
 
 Wowhead and Icy Veins describe a "five-second rule": spirit-based mana regeneration pauses for five seconds after a cast. That is server behaviour, which [ForeverDB](https://foreverdb.net/article/yumytv-healer-beginners-guide) says it can't check in the client. Nothing above level 30 has been played yet.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

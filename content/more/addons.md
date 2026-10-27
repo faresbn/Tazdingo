@@ -93,7 +93,7 @@ sources: CurseForge (checked 26 October 2026), ForeverDB, foreverchanges.pro, Ic
 
 ForeverDB keeps a running list of [new addons to watch](https://foreverdb.net/addons/watch), picked from the addon community but untested. Several are small games or social tools rather than gameplay aids.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

@@ -83,7 +83,7 @@ Wowhead's level 30 picks: Painwalker Buckler and Scorn's Icy Choker (Scarlet Mon
 - **Damage or survival in row 3–4:** Wowhead takes One-Handed Weapon Specialization for threat. ForeverDB now prefers Improved Righteous Fury, arguing Righteous Fury already covers threat.
 - **Talent numbers:** Blizzard's deep dive gives Iron Creed up to 15% threat and Shield Specialization 6% Mana per block. The client tooltips on ForeverDB show 25% and 4%.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

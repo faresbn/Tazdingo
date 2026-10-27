@@ -63,7 +63,7 @@ wow-professions.com warns that buying every bar from the Auction House costs a l
 - Whether Armorsmithing and Weaponsmithing work in Forever as they did in Classic.
 - Where the Master Forge blueprint drops, and the real 225–300 route.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

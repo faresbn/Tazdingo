@@ -1,4 +1,4 @@
-"""Record changes to the ledger's pages: a backup of each page's previous version and a log line.
+"""Record changes to Tazdingo's pages: a backup of each page's previous version and a log line.
 
 Run by .github/workflows/archive.yml after every push to main that touches content/. For each
 commit in the push (oldest first) and each content file it changed, the version before the
@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-LOG_HEADER = """# Ledger change log
+LOG_HEADER = """# Tazdingo change log
 
 Every change to a page in `content/`, oldest first. **Backup** is the page as it was before the change
 (empty for new pages). Written automatically by `.github/workflows/archive.yml`; don't edit by hand.

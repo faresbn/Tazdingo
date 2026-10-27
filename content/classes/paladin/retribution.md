@@ -75,7 +75,7 @@ Weapon first. Wowhead and Icy Veins list Corpsemaker (Razorfen Kraul), Manual Cr
 - **Spell power or melee gear:** Wowhead calls the shift to spell power divisive, and says some seal-twisters find Twist of Light a let-down.
 - **Champion of the Light:** the client gives up to 60% of Intellect as spell damage. Blizzard's deep dive lists 30% in one place and describes a cut to 60% in another.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

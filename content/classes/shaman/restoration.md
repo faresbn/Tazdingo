@@ -66,7 +66,7 @@ Wowhead recommends levelling as Enhancement and keeping Restoration for Dual Spe
 - **Racials:** Wowhead's overview (7 October) lists Blood Fury on a 2 min cooldown and Tauren Endurance as 1% hit. Blizzard's 16 October notes changed these to 3 min and 2% critical damage and healing ([ForeverDB](https://foreverdb.net/article/beta-development-notes-october-16)). Both sources pick Orc for the Horde; Dwarf is the only Alliance option.
 - **Above 30:** Chain Heal (trainer, 40), Riptide (40) and Purification (35) are untested. WoWSims doesn't yet model the spec.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

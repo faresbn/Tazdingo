@@ -198,7 +198,7 @@ Some Kami Labs descriptions don't match Forever's versions of these spells:
 
 ForeverDB adds that a cast sequence only moves on when a step succeeds. Without mana or the right totem item, it waits on that step.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

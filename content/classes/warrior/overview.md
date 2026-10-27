@@ -59,7 +59,7 @@ Advice shared across all three guides:
 
 The Berserker Stance quest starts at any capital Warrior trainer at 30 (except Darnassus). It leads to a gauntlet on Fray Island that ends with Big Will, a level 33 enemy. Klannoc Macleod then starts the long Whirlwind Weapon chain, which ends against Cyclonian, a level 40 elite ([Wowhead](https://www.wowhead.com/forever/guide/classes/warrior/arms/level-30-dps-overview)). The Brutal Hauberk chain can start at 20 but runs through Razorfen Kraul, so most players do it later ([Wowhead](https://www.wowhead.com/forever/guide/classes/warrior/protection/level-20-tank-overview)).
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

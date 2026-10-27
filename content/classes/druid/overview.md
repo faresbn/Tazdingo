@@ -52,7 +52,7 @@ Blizzard's deep dive is frank about the trade-off: Druids can fill any role but 
 
 Wowhead's [level 20 tank guide](https://www.wowhead.com/forever/guide/classes/druid/feral/level-20-tank-overview) warns that early form damage is weak. Before 20 most of your damage comes from auto-attacks and Thorns, so caster form with a good weapon can do as well. ForeverDB lists class quests for Bear Form, Cure Poison and Aquatic Form from Classic's data. Wowhead lists Skyborne versions, such as Strength and Mercy for Bear Form. Cat Form comes from The Great Cat Spirit at 20, a stealth quest that Wowhead places in a Moonglade cave and ForeverDB in the Stormrage Barrow Dens. Above level 30 everything is projection from client data: Ferocious Bite and Ravage at 32, Pounce at 36, and Dire Bear Form, Hurricane, Innervate and the 31-point capstones at 40.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

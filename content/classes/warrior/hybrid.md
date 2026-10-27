@@ -62,7 +62,7 @@ Blizzard says Dual Specialization becomes available at level 40, so tank and dam
 
 The forum objection still applies: a Warrior in damage gear and talents tanks poorly, which is the main argument against the hybrid label.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

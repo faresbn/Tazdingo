@@ -76,7 +76,7 @@ Wowhead's trainer table, last updated 12 October, lists Gregorian and Bolero as 
 - Who teaches Artisan.
 - Where the Loom blueprint drops.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

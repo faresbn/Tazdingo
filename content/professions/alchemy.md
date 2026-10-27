@@ -58,7 +58,7 @@ Ranks need skill 50 and level 10 (Journeyman), 125 and level 20 (Expert), and 20
 - The sources of the 300-skill flasks, the Legionite transmute and the Alchemy Laboratory blueprint.
 - Whether the untested 225–300 route holds once players reach level 35.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

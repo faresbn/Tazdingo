@@ -59,7 +59,7 @@ Blizzard's [battleground article](https://worldofwarcraft.blizzard.com/en-us/new
 
 Blizzard's roadmap promises more raids, dungeons, world content and quests, Hardcore, and a revamped iconic raid, with no dates. Blizzard has also said that datamined models are not a guide to what's coming ([forum post](https://us.forums.blizzard.com/en/wow/t/datamined-in-the-latest-beta-build/2385060)).
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

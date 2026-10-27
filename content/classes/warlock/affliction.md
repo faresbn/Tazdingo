@@ -73,7 +73,7 @@ The guides at 30 and the simulators at 60 agree that you keep DoTs rolling and f
 - **Malediction:** Icy Veins' introduction and ForeverDB's group build still describe Malediction's periodic damage bonus. The 16 October client renamed it Grim Reach and made it a range talent ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)).
 - **Suppression:** Icy Veins takes 4 points, ForeverDB's group build and Wowhead take 5.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

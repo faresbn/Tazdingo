@@ -69,7 +69,7 @@ Wowhead expects big demand at every level: the Well Fed buff lasts only 15 minut
 - **Bigger campfires:** Wowhead lists the Journeyman and Expert Campfires at skill 90 and 200, while ForeverDB and Icy Veins give 140 and 220. wow-professions.com explains the gap: you learn each recipe at the lower skill but need the higher one to use the kit, which it suspects is a bug.
 - **Poached Sunscale Salmon:** Icy Veins lists it as an Iron Oven recipe; wow-professions.com's untested Artisan route doesn't mention an oven.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

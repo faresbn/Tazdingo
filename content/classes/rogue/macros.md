@@ -189,7 +189,7 @@ Icy Veins notes that a weapon swap triggers the global cooldown and resets your 
 - Kami Labs' poison macro names Instant Poison VI, a level 60 rank. Use the rank you actually have.
 - Wowhead's guide lists `[stance:1]` as Stealth and `[stance:2]` as Vanish for Rogues, but says the guide was first written for Classic and the syntax may have changed.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

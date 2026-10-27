@@ -48,7 +48,7 @@ From Wowhead's talent builds pages, which assume you are near the 4% PvP hit cap
 
 Blizzard's developers said on the WoW: Forever Podcast that they aim for hybrid damage specs to deal about 5% less damage than the pure classes, and named Hunters, Mages, Rogues and Warlocks as pure ([ForeverDB](https://foreverdb.net/article/blizzard-hybrid-tax-5-percent-warriors-count-as-hybrids)). It is a design target, not a number in the client. It is about classes with more than one role, so Warlocks set the bar rather than pay it. None of the sources mention a penalty for spreading a Warlock's points across sections.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

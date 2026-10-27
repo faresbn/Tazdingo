@@ -70,7 +70,7 @@ ForeverDB's timers range from minutes to days, but they are Classic's, so treat 
 
 For Hunters, ForeverDB lists 63 tameable rares. Forever adds two pet families, Core Hound and Fox ([ForeverDB](https://foreverdb.net/veterans)). On Zephras Isle, Mystmane (a bear) and Fernfeather (a tallstrider) can be tamed (foreverchanges.pro).
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

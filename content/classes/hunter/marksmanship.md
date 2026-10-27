@@ -60,7 +60,7 @@ Carry plenty of ammunition ([Rough Arrow](https://foreverdb.net/item/2512) or [L
 - **Arcane Shot:** on cooldown (Wowhead, ForeverDB's simulator) or only when mana-capped (Icy Veins).
 - **Wowhead's Legacy-points build** includes Lone Wolf, even though the same page advises keeping the pet.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

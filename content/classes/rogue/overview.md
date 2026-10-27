@@ -59,7 +59,7 @@ Wowhead and Icy Veins point to two Stealth quests: The Horn of Xelthos at 20 (re
 
 The [WoWSims presets](https://github.com/wowsims/forever/blob/master/ui/specs/rogue/dps/presets.ts) model level 60 with gear still marked developer-only. They default to a Combat Sinister Strike build (18/33/0) with Instant Poison on the main hand and Deadly Poison on the off hand. Treat this as a projection.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

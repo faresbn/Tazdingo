@@ -63,7 +63,7 @@ The level 30 Call of Air chain rewards a choice of weapon: Lightning's Grasp, Ra
 - **Skyborne haste:** Wowhead's Elemental and Enhancement guides give Wind Blessed as 3% haste. Its Restoration guide and ForeverDB's client data say 1%.
 - **Older racial wording:** Blizzard retuned racials on 16 October, so guides written before then may use old names, such as Axe Specialization for what is now Savage.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

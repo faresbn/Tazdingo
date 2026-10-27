@@ -88,7 +88,7 @@ Wowhead's level 30 picks include Pronged Reaver (Razorfen Kraul), Thermaplugg Me
 - **Defiance at 30:** ForeverDB's dungeon build and Wowhead take all three ranks. Icy Veins' calculator leaves it out, though its text mentions it.
 - **Survival or threat first:** ForeverDB ranks survival stats first; Icy Veins puts weapon damage, hit and Strength first.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

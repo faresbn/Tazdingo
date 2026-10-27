@@ -89,7 +89,7 @@ Where the tier 3 Blueprints and the Expert Campfire drop is unknown: they sit ab
 - **Cozy Sleeping Bag:** a quest chain from level 14 gives a bag that adds 1% experience per minute slept, up to 3%, and stacks with camp buffs and cooked food (Warcraft Tavern).
 - **Addons:** AzerothArchive Campsite Tracker shares the camps you find with your group and guild; ForeverArtisan covers camping alongside all twelve professions ([Addons](ledger:more/addons/)).
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

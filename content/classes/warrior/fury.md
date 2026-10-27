@@ -86,7 +86,7 @@ ForeverDB's level 30 list suggests Swinetusk Shank (Razorfen Kraul) and Bloody B
 - **Off-hand hit:** Icy Veins says dual-wielding adds a 19% miss penalty, for a 27% total off-hand miss chance. No other source confirms the number.
 - **Outdated text:** Wowhead's Fury overview still describes crits as giving no extra Rage, Bloodthirst at 35% attack power and Dual Wield Specialization giving hit. All three changed on 30 September and 1–2 October.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

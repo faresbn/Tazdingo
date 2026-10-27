@@ -65,7 +65,7 @@ Wowhead's route trains Journeyman from Thuwd in Orgrimmar and Expert from Dranh 
 - Where Fel Leather and Fel Hide come from, and how often Pristine materials drop.
 - Whether Forever really changed the skill each beast needs (Icy Veins) or kept Classic's rule (Wowhead, ForeverDB).
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

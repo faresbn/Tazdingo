@@ -78,7 +78,7 @@ Weapon first, every guide agrees. Wowhead's level 30 picks include Corpsemaker f
 - **Spearing Strike:** ForeverDB's builds page says the 1 October tooltip dropped the dismount. The current client tooltip on its talent page includes it again.
 - **Bloodrage:** ForeverDB's guides say it puts you in combat, so Charge first. The current client tooltip on its changes page no longer says so. Charging first is safe either way.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

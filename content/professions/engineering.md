@@ -66,7 +66,7 @@ wow-professions.com says Engineering kept every skill range from Classic. Its ro
 - Which new gadgets need the profession to use and which don't. Stats for several new items were hidden in the beta.
 - Where the Anarchist's Workbench blueprint drops. The Repair Bot blueprint drops from Sneed in the Deadmines ([wow-professions.com](https://www.wow-professions.com/forever/camping-guide)).
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

@@ -23,7 +23,7 @@ SITE = "https://foreverdb.net/"
 MANIFEST = SITE + "downloads/addon-manifest.json"
 NAMES_FILE = "Data/SearchNames.lua"
 CREDIT = "Data from ForeverDB.net (https://foreverdb.net)"
-AGENT = "FvrRepo item-name refresh (private fan project)"
+AGENT = "Tazdingo item-name refresh (private fan project)"
 
 
 def fetch(url: str, limit: int) -> bytes:

@@ -68,7 +68,7 @@ Ranks:
 - **Tailoring demand:** Wowhead's Tailoring guide mentions that some new cloth recipes use health or mana potions, and suggests First Aid as a source.
 - **Your own survival:** bandages remain a free heal between fights.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

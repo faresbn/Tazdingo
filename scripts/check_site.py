@@ -36,7 +36,7 @@ class Page(HTMLParser):
             self.title += data
 
 
-def check(out=None, base="/FvrRepo/"):
+def check(out=None, base="/Tazdingo/"):
     out = Path(out or ROOT / "dist")
     manifest = json.loads((out / "data/manifest.json").read_text())
     assert not list(out.rglob("*.lua")), "Raw Lua in public output"
@@ -100,7 +100,7 @@ def check(out=None, base="/FvrRepo/"):
     # faresbn.github.io address is the one exception: it's the host's name, not text).
     for path in out.rglob("*"):
         if path.suffix in (".html", ".txt", ".json", ".tsv", ".xml", ".css", ".js", ".svg"):
-            text = re.sub(r"faresbn\.github\.io", "", path.read_text())
+            text = re.sub(r"faresbn\.github\.io|tazdingo-news-relay\.fact-special-2007\.chatgpt\.site", "", path.read_text())
             found = re.findall(r"\b(?:ChatGPT|Fares|Mike)\b", text, re.I)
             assert not found, f"{path.relative_to(out)} mentions {sorted(set(found))}"
     full = (out / "llms-full.txt").read_text()

@@ -203,7 +203,7 @@ Scares the beast set as your focus, under your mouse or targeted, so you can fig
 - Kami Labs describes Disengage as a backwards leap. In Forever, Blizzard and the client describe it as a threat reduction that turns off your auto-attack, so restart Auto Shot after using it.
 - Forever's trap tooltips no longer say traps work only out of combat, and Blizzard confirms traps work in combat. That makes the Feign Death trap trick optional.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

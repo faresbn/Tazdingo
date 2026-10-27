@@ -66,7 +66,7 @@ A Certification unlocks a title such as "the Alchemist" for every character on y
 
 Performance Bonus sits in the Professions tree of the [Legacy system](ledger:world/legacy/). Each of its three ranks adds a 5% chance of 100% extra Favor when you hand in a crate, so 15% at full rank. It needs five points in the tree and Bountiful Harvest at 5/5 first ([ForeverDB](https://foreverdb.net/legacy)). Blizzard's [Legacy article](https://worldofwarcraft.blizzard.com/en-us/news/24307383) calls the two factions "a major source of new tradeskill activities". Wowhead lists the perk with five ranks; ForeverDB, Icy Veins and Warcraft Tavern list three.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

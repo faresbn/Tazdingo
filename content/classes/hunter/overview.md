@@ -77,7 +77,7 @@ The guides don't agree on race. Icy Veins rates Tauren best overall for Plainsru
 
 The [WoWSims presets](https://github.com/wowsims/forever/blob/master/ui/specs/hunter/dps/presets.ts) model level 60 with first-phase gear that is still marked developer-only. They offer seven builds across all three trees, and the default is a Survival-Marksmanship build that walks into melee between Auto Shots. Treat it as a projection, not a tested result.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

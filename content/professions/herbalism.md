@@ -63,7 +63,7 @@ Skill boosts stack and let you pick higher herbs early: Herbalist's Gloves, two 
 - The character level for each rank (see above).
 - Icy Veins names the Greenhouse blueprint without a drop source; Wowhead and wow-professions.com give Shadetooth.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

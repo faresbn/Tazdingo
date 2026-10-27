@@ -187,7 +187,7 @@ Gnome: Contingency Plan on your mouseover, else your focus, else your target (Fo
 - ForeverDB notes that a macro can't read health bars. A mouseover heal goes to whoever you point at, not to the most injured player.
 - Inner Focus has a 3 min cooldown and fires on every press of its macro, so don't use it as your everyday Flash Heal key (ForeverDB).
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

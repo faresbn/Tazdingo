@@ -76,7 +76,7 @@ Wowhead calls Elemental a poor choice below level 40. Spells start weaker, quest
 - **Elemental Mastery:** Blizzard's 7 October deep dive said it was removed. The final client and WoWSims both have the redesigned version.
 - **Above 30:** Chain Lightning (32), Elemental Fury (35) and Elemental Mastery (40) are untested.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

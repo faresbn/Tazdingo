@@ -53,7 +53,7 @@ Icy Veins' level 30 list matches its Assassination list: Torturing Poker main ha
 - **Poison duration:** Icy Veins says one hour per coat; ForeverDB reads 30 minutes from the client's item data.
 - **Age:** Icy Veins' Subtlety pages were last updated on 8 October and still mention a level 20 cap in places.
 
-## Ledger findings
+## Field findings
 
 Nothing recorded yet.
 

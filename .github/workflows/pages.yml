@@ -1,4 +1,4 @@
-name: Validate and publish Forever Ledger
+name: Validate and publish Tazdingo
 
 on:
   push:
@@ -12,7 +12,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: fvrrepo-pages-${{ github.ref }}
+  group: tazdingo-pages-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -27,6 +27,8 @@ jobs:
           fetch-depth: 0  # the site's change log is built from git history
       - name: Test parser and original captures
         run: python3 -m unittest discover -s tests -v
+      - name: Test news classification and relay boundaries
+        run: node --test relay/news.test.mjs
       - name: Check browser script syntax
         run: node --check site/assets/app.js
       - name: Restore the last run's Blizzard posts
@@ -42,7 +44,7 @@ jobs:
           python3 scripts/blue_posts.py --merge .cache/blue.json
           mkdir -p .cache && cp data/blue.json .cache/blue.json
       - name: Generate public site and records
-        run: python3 scripts/build.py --base-path /FvrRepo/
+        run: python3 scripts/build.py --base-path /Tazdingo/
       - name: Verify public output
         run: python3 scripts/check_site.py
       - name: Upload public artefact only

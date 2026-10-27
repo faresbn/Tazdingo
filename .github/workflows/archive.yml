@@ -31,8 +31,8 @@ jobs:
         env:
           BEFORE: ${{ github.event.before }}
         run: |
-          git config user.name "ledger-archive[bot]"
-          git config user.email "ledger-archive@users.noreply.github.com"
+          git config user.name "tazdingo-archive[bot]"
+          git config user.email "tazdingo-archive@users.noreply.github.com"
           for attempt in 1 2 3; do
             python3 scripts/archive.py --before "$BEFORE" --after HEAD
             git add archive
