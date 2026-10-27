@@ -23,7 +23,9 @@ def tools_box(title: str, pairs: list, note: str = "") -> str:
 
 
 def with_aside(main: str, aside: str) -> str:
-    return f'<div class="read-grid"><div class="read-main">{main}</div><aside class="read-aside">{aside}</aside></div>'
+    return (f'<div class="read-grid"><div class="read-main">{main}</div><aside class="read-aside">'
+            f'<details class="reading-tools" open><summary>Guides and page sections</summary>'
+            f'<div class="reading-tools-content">{aside}</div></details></aside></div>')
 
 
 def roles(spec: dict) -> str:

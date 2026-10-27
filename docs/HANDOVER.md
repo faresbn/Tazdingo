@@ -2,17 +2,19 @@
 
 The running record of where Tazdingo stands, kept current at every checkpoint so another thread, model or machine can carry on. Read this first, then AGENTS.md and README.md.
 
-**Last updated:** 27 October 2026, authentic Warcraft imagery (session folder `docs/sessions/2026-10-27-authentic-art/`).
+**Last updated:** 27 October 2026, focused UX refinement (session folder `docs/sessions/2026-10-27-ux/`).
 
 ## Where things stand
 
+- **Current work:** Remove the homepage repository changelog as requested; reflow the class picker; tighten search, price filters, navigation and mobile guide panels. Local implementation complete; validation/publication and live interaction checks in progress.
+
 - **Live site:** https://faresbn.github.io/Tazdingo/ (published from `main` by `.github/workflows/pages.yml`, about a minute after each push, and every two hours to refresh Blizzard's posts).
-- **Current work:** Authentic Warcraft imagery merged in PR #4 and published successfully (run 40477656697). The live homepage and class cards were visually checked; all nine class images load and preserve transparency. Live checks in both colour themes verified the final class portrait bounds, all world icons and source credits. The camp scene uses a small complete sidebar image to avoid cropping characters. Pages remains on GitHub. The separate news relay is unchanged. Cleanup of the older merged `fix/visitor-news-cache` branch remains blocked pending explicit user permission.
+- **Previous work:** Authentic Warcraft imagery merged in PR #4 and published successfully (run 40477656697). The live homepage and class cards were visually checked; all nine class images load and preserve transparency. Live checks in both colour themes verified the final class portrait bounds, all world icons and source credits. The camp scene uses a small complete sidebar image to avoid cropping characters. Pages remains on GitHub. The separate news relay is unchanged. Cleanup of the older merged `fix/visitor-news-cache` branch remains blocked pending explicit user permission.
 - **Launch:** WoW Forever opens on 4 November 2026; level cap 60 (the Beta's was 30).
 
 ## What v3 is
 
-- **Front page:** a dashboard with the countdown, the "Before you log in" checklist (from `content/more/launch.md`), the market pulse (steadiness meter, most listed, best crafts), Blizzard's latest posts, the class picker, the latest ledger changes, professions and world.
+- **Front page:** a dashboard with the countdown, the "Before you log in" checklist (from `content/more/launch.md`), the market pulse (steadiness meter, most listed, best crafts), Blizzard's latest posts, the full-width class picker, professions and world. Repository changes are not shown on the homepage; individual guide histories remain.
 - **Menus:** hover mega-menus (Prices, Classes with every spec, Professions, World, More) that also open by click, tap and keyboard; a nested menu on phones.
 - **Pages:** one per spec (27), class hub (9), profession (12), world topic (7), More list (launch, Blizzard posts, addons, macros, known issues). Each has At a glance · What the guides say · Field findings · Read more, plus a "Guides and tools" box with checked links (Wowhead, Icy Veins, ForeverDB, WoWSims).
 - **Prices:** typical price, latest, steadiness, history; What to craft, Waylaid Crates, Materials worth gathering.

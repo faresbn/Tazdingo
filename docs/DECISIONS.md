@@ -4,6 +4,8 @@ Each line is something Fares decided, or approved, with the reason and the date.
 
 ## What the site is
 
+- **No homepage repository changelog** (27 Oct): Fares removed “Latest in Tazdingo” from the front page. The class picker takes the full row. Individual pages retain their source/update history.
+
 - **A nest in the corner, not a competitor** (26 Oct). ForeverDB, Wowhead and others do databases and guides at scale; Tazdingo records our own prices and findings and curates the best of everyone else, credited. ForeverDB's Auction House is a second opinion, not a rival.
 - **Everything is the journal** (26 Oct). There are no "journal entries": the site is made of living pages (one per spec, class, profession, world topic and More list) that grow over time. Updates come from conversations in the shared ChatGPT project.
 - **Who it's for** (26 Oct). It's public and impersonal: it never names Fares or Mike and never mentions ChatGPT. ChatGPT reads the plain-text files; people read the pages.
