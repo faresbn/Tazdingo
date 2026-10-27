@@ -17,3 +17,31 @@ Fares asked for repeated review passes until two consecutive passes needed no ed
 | 9 | Full read | 1 arithmetic fix (ten scheduled runs were due, not eleven) |
 | 10 | Full read | Clean |
 | 11 | Every number re-derived by script and compared with the text | Clean |
+
+## Fares's corrections and the second review loop (27 October 2026)
+
+Fares corrected three points: three or four scans a day are planned in the first days after launch; "ClassicBetaPvP" is a Beta name and its six items an incomplete set; PvP gets a dedicated section per class and spec, with no general PvP section yet. He asked for the review loop again, passing research.md to GPT-6.1 Sol at high effort at least once and at most three times.
+
+Before writing, I checked how scans become price data: a day's scans merge into one daily record (`build_markets`), and each import keeps its own snapshot (`ingest.py`), so extra scans don't speed up the weekly movers rule by themselves.
+
+### Consultation: GPT-6.1 Sol, high effort, three exchanges in one session
+
+**What it changed:** the early-price-movement section was rebuilt and corrected (movers from about day 10, not two weeks; per-item sparklines already work; scans are kept only if each one is imported; the day-to-day bias explained, then corrected in direction), the Actions billing claim became an open question with GitHub's conflicting docs quoted, the Pre-launch badge idea now respects the per-page Live decision, the relay example is flagged as a reconsideration, the API call estimates separate bulk tables from per-item detail, and a question on the API rollout scope was added (16 questions now).
+
+- **Why opened:** Fares asked for it. The new price-movement analysis also rests on code behaviour a second reader could check.
+- **Route:** Codex CLI 0.164.0 on Fares's ChatGPT plan (`env -u CODEX_API_KEY`, "Logged in using ChatGPT"); no fallback. Session `01a17e69-b352-79b3-b16d-a827a47a2adb`; read-only sandbox; web search at the default.
+- **Packet:** the reviewer rules, three questions (accuracy, faithfulness to Fares's directions and settled decisions, whether each question has what it depends on), Fares's directions quoted, DECISIONS.md, `build.py` (price merging and movers), `pages.yml`, `archive.yml`, the menu code, and the ForeverDB API notes. **Packet gap (mine, foreseeable):** research.md itself arrived empty because of a line-count bug in my packet script, so the reviewer opened it. Fixed in the follow-ups.
+- **Exchange 1** (325 s, 12 steps): opened research.md; searched GitHub's Pages limits and billing docs (two web searches, one page fetch); read `ingest.py` 65–135, `auctionator.py` 270–391, `tests/test_ingestion.py` 185–240, `build.py` 42–72, `pages.py` 105–125, grepped `app.js`, `sections.py`, `UPDATING.md` and `relay/README.md`, and read two API samples. Raised 13 findings (no blockers; 10 should-fix, 3 minor). I verified each against the repo or GitHub's docs (both billing pages fetched; the sparkline threshold and the ingest snapshot logic read) and accepted all 13. "Context I needed": the account's actual billed Actions usage.
+- **Exchange 2** (45 s, no file reads): checked the full revised file. Confirmed 12 fixes; found that my fix for the day-to-day bias had the direction backwards (an unfinished day's minimum tends to sit higher, so it exaggerates rises). Accepted and corrected.
+- **Exchange 3** (15 s): confirmed the corrected passage and question 5. No findings.
+- **Usage** (Codex `turn.completed`, cumulative for the session): 571,491 input tokens, of which 501,760 cached; 10,873 output tokens, of which 7,802 reasoning. By exchange: 388,887 / 9,397; then +90,577 / +1,200; then +92,027 / +276. ChatGPT plan, so no per-token charge.
+- **Conclusion:** the reviewer's verdict moved from "useful, but its early-price framing, billing certainty and several decision premises need correction" to "both revised passages are accurate".
+
+### Passes after the consultation
+
+| Pass | Method | Result |
+|---|---|---|
+| Sol 3 | Confirmation of the bias fix | Clean |
+| Own 1 | Market and PvP bullets, cross-references, numbers | 1 fix (a duplicated "isn't known yet" sentence in the market bullet); the count restarted |
+| Own 2 | Full read | Clean |
+| Own 3 | Re-derived today's figures by script: the build's own `summarise` on synthetic daily records (movers eligible from day 10, steadiness from day 3), quest paging (67), bulk API calls (~56), the two Beta markets | Clean |

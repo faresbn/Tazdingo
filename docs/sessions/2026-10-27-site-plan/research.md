@@ -24,25 +24,25 @@
 | Where | When it runs | What it can do | What it can't do |
 |---|---|---|---|
 | **GitHub Actions** (build time) | On a push to `main`; on a timer; on a manual button (github.com or the GitHub phone app); on an external call (`repository_dispatch`, needs a token); after another workflow | Run any script, call APIs with secret keys stored as repository secrets, commit back to the repo, build and publish | React to a visitor; run exactly on time (see timers below) |
-| **The visitor's browser** | Every page view | Search, filters, countdown, theme, fetching public APIs that allow it (the Refresh news button) | Hold secrets (anything in a page is public); write anywhere permanent |
+| **The visitor's browser** | Every page view | Search, filters, countdown, theme, fetching public APIs that allow it (the Refresh news button) | Hold secrets (anything in a page is public); save anything other visitors or the repo can see (it can remember a visitor's own settings, as the theme toggle does) |
 | **The news relay** (a small Worker on chatgpt.site, separate from GitHub) | Every request to `/news` | Read Blizzard's posts live, cache them five minutes | By decision, it never holds GitHub credentials and never publishes |
 
 Fares's Mac is a fourth, manual place: scan files exist only there, so `ingest.py` must run there.
 
 ### Triggers and timing, as observed
 
-- **Push to `main`:** recent publish runs took 31–70 seconds. Then the CDN may serve the previous version for up to **10 minutes** (`cache-control: max-age=600`, checked on the live site). So "live within a minute" holds for a fresh visitor; a returning one may wait up to ten.
+- **Push to `main`:** observed publish runs took 31–70 seconds, and the live site sends `cache-control: max-age=600`, so a returning visitor's browser may keep the previous version for up to **10 minutes**. These are observations, not guarantees: GitHub notes that publishing can take longer, and runs can queue.
 - **Timer (`schedule`):** best-effort. GitHub's docs say scheduled runs can be delayed at busy times and dropped under heavy load. Observed: the two-hourly job was added on the evening of 26 October and, by 17:15 UTC on 27 October, had fired three times (01:32, 08:03 and 14:41 UTC), where ten were due (the job runs at 23 minutes past every second hour). Good for "roughly a few times a day"; wrong for anything that must happen at a given minute. That's why the countdown now runs in the browser.
-- **Manual button (`workflow_dispatch`):** immediate, from github.com or the GitHub phone app. Already enabled on `pages.yml`.
-- **External trigger (`repository_dispatch`):** any service holding a token can ask for a run. This is how a future ChatGPT connector (parked) or the relay could request a rebuild.
+- **Manual button (`workflow_dispatch`):** starts a run on request (subject to queueing) from github.com or the GitHub phone app. Already enabled on `pages.yml`.
+- **External trigger (`repository_dispatch`):** any service holding a token can ask for a run. This is how a future ChatGPT connector (parked) could request a rebuild. The news relay could too, technically, but that would change the settled boundary that it never triggers publishing, so it would be a reconsideration.
 - **A gotcha:** a commit made by a workflow with its default token does not start other workflows (the archive Action relies on this to avoid loops). A future "fetch ForeverDB data and commit it" job must therefore build and publish in the same run, or start the publish workflow explicitly.
 
 ### Limits
 
 - Published site: 1 GB maximum (we're at 6.6 MB). Bandwidth: 100 GB a month, soft. Deploys time out after 10 minutes. The "10 builds an hour" limit doesn't apply to Actions-built sites like ours. ([GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits))
 - The repository is private and the site public. Publishing Pages from a private repository needs a paid plan (Pro, Team or Enterprise), so the account is on one of those.
-- **Actions minutes are metered for private repositories, and shared across all of the account's private repositories** (Brew also publishes through Actions). Pro and Team include 3,000 minutes a month; each job is rounded up to a whole minute ([Actions billing](https://docs.github.com/en/billing/concepts/product-billing/github-actions), [job execution time](https://docs.github.com/en/actions/how-tos/monitor-workflows/view-job-execution-time)). A publish run is two jobs, so at least two minutes. Measured: 38 runs (73 jobs) between the repository's first run on 26 October and 17:15 UTC on 27 October. If every two-hourly run fired, the timer alone would cost about 720 minutes a month, before pushes. GitHub's run-timing API reports zero billable time for every run, so actual usage can only be read on github.com's billing page (the `gh` login lacks the scope). Worth checking before adding more scheduled jobs.
-- **No visitor statistics.** Pages records nothing we can read about traffic. Adding analytics would mean a third-party script, which is a privacy and outward-facing choice. There is a precedent: ForeverDB's tooltip script already loads on every page (section 2).
+- **Whether publishing uses Actions minutes is unclear.** GitHub's docs conflict. The Actions billing page lists standard runners as free "For GitHub Pages" ([Actions billing](https://docs.github.com/en/billing/concepts/product-billing/github-actions)); the Pages setup page says private repositories pay for usage beyond the monthly allowance ([creating a Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)). GitHub's run-timing API reports zero billable time for every one of our runs, which fits the free reading. If minutes do count: Pro and Team include 3,000 a month, shared across the account's private repositories (Brew also publishes through Actions), each job is rounded up to a whole minute ([job execution time](https://docs.github.com/en/actions/how-tos/monitor-workflows/view-job-execution-time)), a publish run is two jobs, and the two-hourly timer alone would come to about 720 minutes a month if every run fired. The archive workflow isn't a Pages workflow, so it would count either way. Measured: 38 runs (73 jobs) between the repository's first run on 26 October and 17:15 UTC on 27 October. Only github.com's billing page settles it (the `gh` login lacks the scope).
+- **No visitor statistics.** Pages records nothing we can read about traffic. Counting visits needs something outside Pages to receive the counts: a third-party analytics service, or a small collector of our own (like the relay) fed by our own script. Either way it's a privacy and outward-facing choice, with separate questions of provider, what's recorded and how long it's kept. A third-party script on every page already has a precedent: ForeverDB's tooltip script (section 2).
 
 ### What this means per kind of update
 
@@ -77,9 +77,9 @@ How a visitor finds out whether a label has an overview: they can't, except by c
 ### What's weak about the names
 
 - **Prices** covers two jobs: *what does X cost* (market pages, the item browser) and *how do I make gold* (craft margins, crates, materials). Until launch, every number in it is Beta data. Names that cover both: *Auction House*, *Market*, *Gold*, *Economy*. "Auction House" is the in-game term players search for; "Gold" names the goal, not the data.
-- **Market names** are raw realm strings: "PvP" (975 items, three scans, newest 17 October) and "ClassicBetaPvP" (6 items, newest 26 September), each tagged "Forever Beta". The second barely counts as a market but has a menu entry. The launch checklist says Forever has "rulesets, not realms", so a market is likely a ruleset plus a faction; that needs a display-name rule rather than a one-off fix. How many markets there will be after launch isn't known yet. Every item search result points to the PvP market, and the homepage's market block stays frozen at "Most listed on 17 Oct" until a live scan arrives.
+- **Market names** are the Beta's raw realm strings: "PvP" (975 items, three scans, newest 17 October) and "ClassicBetaPvP" (6 items, newest 26 September), each tagged "Forever Beta". Fares confirmed (27 October) that "ClassicBetaPvP" is a Beta name that won't be used later, and that its six items are an incomplete set, not a sign of a small market. How many live markets there will be, and how they'll be split and named, isn't known yet: the launch checklist says Forever has "rulesets, not realms", which suggests a ruleset plus a faction, but that's unconfirmed. Either way the names need a display rule rather than a one-off fix. Every item search result points to the PvP market, and the homepage's market block stays frozen at "Most listed on 17 Oct" until a live scan arrives.
 - **World** holds two kinds of thing: *systems* (Camping, Legacy, Merchant's Favor) and *places and content* (New zones, Dungeons and raids, Rare spawns, Collections). Camping is as much a profession topic, and Merchant's Favor is as much gold-making (its crates already have a page under Prices).
-- **No home for PvP.** Battlegrounds (seven in the API, including Darkspear Islands) and world PvP have no page. PvP comes up in passing in 29 content files (22 of them class and spec files, one "PvP hybrids" section), the launch checklist has a "Pick a ruleset" step, and each class page links to ForeverDB's PvP guide.
+- **PvP lives with classes and specs (decided).** Fares decided on 27 October that each class and spec gets a dedicated PvP section, and that a general PvP section isn't needed yet, just as a full dungeon and raid section isn't. Today PvP comes up in passing in 29 content files (22 of them class and spec files), only the Warlock's hybrid page has its own "PvP hybrids" section, the launch checklist has a "Pick a ruleset" step, and each class page links to ForeverDB's PvP guide.
 - **More** mixes three things: *getting set up* (Launch checklist, Addons, Macros, Known issues), *news* (Blizzard posts) and *about the site* (Sources and credits). After launch the checklist matters less and known issues more.
 
 ### Overlaps (the same subject in two places)
@@ -126,10 +126,26 @@ Observations:
 | Search | `search.json` | Always |
 | Class picker | `data/game.json` | Always |
 | Blizzard's posts | Scheduled collector + relay | Always |
-| Steadiness (the pulse bar) | Our scans | Needs three scan days in the last two weeks (`scripts/build.py`): with daily scans, from about day three |
-| Market movers (rising, falling) | Our scans | Needs at least three scan days in each of the last two weeks (`scripts/build.py`): with daily scans, about two weeks after launch, not in launch week |
+| Steadiness (the pulse bar) | Our scans | Needs three days with records in the last two weeks (`scripts/build.py`): from about day three |
+| Market movers list (rising, falling) | Our scans | Under today's rule, from about day 10 at the earliest, depending on coverage: see "Price movement in the first days" below |
 | Crafts worth a look | ForeverDB recipes + our prices | After live prices |
 | Latest findings | Field findings across pages | Once findings exist |
+
+### Price movement in the first days
+
+**What it means:** Fares plans three or four scans a day in the first days after launch, to track prices moving from the start. Each item's own trend line already works from the second day of records. What doesn't exist early is a ranked *movers list* (biggest rises and falls) for the homepage and market pages: under today's rule it appears from about day 10. Showing movers earlier needs a new rule, and how the scans are imported decides which rules are possible. Both are plan decisions.
+
+**How it works.**
+- **One record per item per day.** Auctionator's file keeps that day's lowest price, highest price and quantity listed, plus the item's latest price at the moment the file was written. Several scans on one day all land in the same daily record, and the build combines records for the same day: lowest low, highest high, largest quantity (`scripts/build.py`, `build_markets`).
+- **What already shows movement:** each item's sparkline on the market page (`summarise` builds it from daily lows; `scripts/pages.py` draws it once two days have records).
+- **The movers list:** a weekly move compares the median daily low of the last seven days with the seven days before, and only counts an item with at least three days of records in each of those weeks, at least 50 copper and some volume (`summarise`, `highlights`). With a record every day from launch day, the earlier week reaches three days on about day 10.
+- **Scans are kept only if each one is imported.** `ingest.py` saves one snapshot per import (a second import on the same day gets its own file) and skips a market whose data hasn't changed. Three scans followed by one import keep only the last state. A newer file can also carry an older sighting of an item.
+
+**Two possible early rules, with their catches:**
+- **Scan to scan:** the latest price now against the latest price a few hours ago, from consecutive snapshots. Needs an import after every scan (WoW writes the file on logout or `/reload`), and it's noisy: one cheap listing moves it.
+- **Day to day:** today's low against yesterday's. Simpler, but biased: today's low is the minimum of an unfinished day, compared with yesterday's minimum over a whole day. With fewer listings seen, today's minimum tends to sit higher, so early in the day it can exaggerate a rise (yesterday 100 copper, today's first scan 150: "up 50%" until a cheaper listing turns up). During the day the signal can only move downwards, and a recovery after an early cheap listing doesn't show until the next day.
+
+Either needs thresholds of its own (volume and price, as the weekly rule has) and a hand-over to the weekly rule once enough days exist. Steadiness already works from about day three.
 
 ---
 
@@ -162,8 +178,8 @@ Observations:
 
 | Type | Guide prose | Our data | ForeverDB (addon files, today) | ForeverDB API (new) | Links |
 |---|---|---|---|---|---|
-| Spec | Summary, recommendation, talents, rotation, gear, disagreements | Findings (none yet) | — | Abilities learned by level for its tree | Wowhead, Icy Veins, WoWSims, ForeverDB calculators |
-| Class | Changes, choosing a spec, hybrids, macros | Findings | — | All abilities by level and tree | ForeverDB class pages |
+| Spec | Summary, recommendation, talents, rotation, gear, PvP (decided, not yet written), disagreements | Findings (none yet) | — | Abilities learned by level for its tree | Wowhead, Icy Veins, WoWSims, ForeverDB calculators |
+| Class | Changes, choosing a spec, hybrids, macros, PvP (decided, not yet written) | Findings | — | All abilities by level and tree | ForeverDB class pages |
 | Profession | Changes, levelling, what's worth making | Margins from our prices | Recipes, camp items | Trainers and locations, recipe sources and costs, skill-up colours, Classic changes; gathering zones; disenchanting | ForeverDB, Wowhead levelling |
 | World topic | How the system works | Findings | Camp items, crates, rare and collection counts | Favor vendor stock, dungeon list | Per topic |
 | More list | Lists and steps | Findings | — | Player-seen differences (known issues) | Per list |
@@ -218,7 +234,7 @@ Background: "Horde-side field guide" arrived with the Tazdingo rebrand commit (`
 ### The guide prose (next phase, noted for context)
 
 - The 77 "Tazdingo recommendation" sections average 95 words. They lead with the right idea in bold, then spend most of their length on what the evidence doesn't prove ("A Forever-tagged download is evidence of intended support, not a successful test on this character"). Accurate, but they read as a reviewer's caveats rather than a guide's advice. A shorter "do this, unless…" shape with one caveat would carry the same care.
-- Every guide page carries a Pre-launch badge, correctly, which makes the badge noise. A single site-wide pre-launch notice, plus badges only where data is Beta, would say the same once.
+- Every guide page carries a Pre-launch badge, correctly, which makes the badge noise before launch. While every page is unchecked, one site-wide notice would say the same once. After launch it stops working: pages become Live one at a time when checked in the live game (a settled decision), so each page's status has to show again. Beta data labels are a separate thing (where a number came from), and would stay either way.
 
 ---
 
@@ -234,7 +250,7 @@ Checked by the agent (73 calls, no rate-limit or server errors) and spot-checked
 
 - **Credit:** "a visible link to https://foreverdb.net, wherever you show the data." Today every page's footer carries a linked "Data from ForeverDB.net", and the data tables' notes name ForeverDB without a link. A linked credit beside each table built from API data is the safe reading.
 - **Allowed:** use on our own site. **Not allowed:** reselling, or presenting the data as ours. No formal licence is named; if we ever want certainty about derived tables, ForeverDB has a data contact (messaging them is Fares's call).
-- **Limits:** 60 requests a minute and 10,000 a day. A full refresh of everything below needs a few hundred calls, so a daily or on-launch refresh fits easily.
+- **Limits:** 60 requests a minute and 10,000 a day. The bulk tables below (professions, gathering, disenchant bands, class abilities, poisons, dungeons list, battlegrounds, player-seen differences) take about 60 calls, plus ~340 for the Merchant's Favor vendor sweep. Per-item and per-quest detail is extra and grows with how many items or quests are wanted.
 
 ### What we'd gain, by page type
 
@@ -242,19 +258,19 @@ Checked by the agent (73 calls, no rate-limit or server errors) and spot-checked
 |---|---|---|
 | **Professions (12)** | Where to learn each rank (trainer, zone, coordinates, seen in Forever or Classic data); recipes you buy (vendor, faction, gold or Favor cost, limited stock); skill-up colours for levelling; what Forever changed from Classic, with the old values | ~35 calls; the raw data is ~9 MB, so the script must slim it. The biggest gain |
 | **Gathering (Herbalism, Mining, Skinning, Fishing)** | Best zones per skill range, node tables, beasts per zone, fishing catch rates | 4 calls, plus one per zone for skinning beasts. Spawn data is mostly Classic; only ~190 spots seen in Forever so far, so it needs a "Classic data" label |
-| **Enchanting** | Disenchant results by item-level band; each item's disenchant result and vendor price | 1 call. All Classic data until launch |
+| **Enchanting** | Disenchant results by item-level band; optionally each item's own disenchant result and vendor price | 1 call for the bands (all Classic data until launch); per-item results and vendor prices need one call per item |
 | **Classes and specs (36)** | Every ability with the level each rank is learned, by tree, flagged new in Forever or rune-style | 9 calls for names and levels; tooltips cost one call per rank. Not talent trees |
 | **Merchant's Favor** | The spending side: what Favor buys, from which vendor, at what cost | No "by currency" filter, so ~340 calls to walk the vendors seen in Forever (one day's quota fits) |
 | **Dungeons and raids** | 47 instances with level ranges and new-in-Forever flags; boss lists | 1–47 calls. Onyxia's Lair is listed; Barrow Deeps and Hyjal Summit (also 9 December) aren't yet; loot came back empty |
 | **Rogue** | Every poison, its reagents, trainers and suppliers | 1 call |
-| **Class quests and levelling** | 6,614 quests with givers, turn-ins, locations and chains (class pages already have "Class quests" sections in prose) | Paged; per quest for detail |
-| **PvP** | 7 battlegrounds and arenas with level brackets, team sizes, objectives and where the rules come from | 1 call |
+| **Class quests and levelling** | 6,614 quests with givers, turn-ins, locations and chains (class pages already have "Class quests" sections in prose) | ~67 paged calls for the list; locations and chains need one call per quest |
+| **PvP** | 7 battlegrounds and arenas with level brackets, team sizes, objectives and where the rules come from. Context for the per-class and per-spec PvP sections; no general PvP page is planned | 1 call |
 | **Known issues** | 400 player-seen differences from the game files (189 verified vendor price changes) | Paged, ~4 calls |
 | **Not in the API** | Auction House prices, talents, Legacy, rares, camping, mounts, reputation | Stay on addon data, our scans and links |
 
-### The order that makes sense
+### A possible order (a proposal, for the plan to confirm)
 
-1. **Now:** a fetch script for professions, gathering, disenchanting, class abilities and poisons, with the key kept out of the repo, writing a slim `data/` file; tables on those pages marked Pre-launch like today's data. About 50 calls.
+1. **Now:** a fetch script for professions, gathering, disenchanting, class abilities and poisons, with the key kept out of the repo, writing a slim `data/` file; tables on those pages marked Pre-launch like today's data. About 50 calls, plus one per zone if skinning beasts are included.
 2. **Launch week:** re-run when ForeverDB's build changes and the level cap reads 60; the Beta-versus-live fields should then fill in.
 3. **Later, more work:** the Merchant's Favor vendor sweep, dungeon loot once it exists, spell tooltips.
 
@@ -267,25 +283,27 @@ Where it runs is a choice: on the Mac, like today's ForeverDB scripts, or as a s
 **Structure (section 2)**
 
 1. **Menu names.** Which direction for "Prices": *Auction House*, *Market*, *Gold*? And should Merchant's Favor and Camping stay under World or move to where their money or profession side lives?
-2. **More.** Give it an overview page like the others, or split it: *Launch* (checklist, known issues, addons, macros) and news under its own name? And does PvP get a home?
-3. **Markets.** How should markets be named once live realms or rulesets appear, and should the six-item ClassicBetaPvP market leave the menu now?
-4. **Homepage after launch.** Is the target "what changed" (news and known issues in launch week, market movers from about two weeks in) with the class picker kept, and the profession and world rows dropped?
-5. **Search.** Put the search box on every page (in the masthead), not just the homepage?
+2. **More.** Give it an overview page like the others, or split it: *Launch* (checklist, known issues, addons, macros) and news under its own name?
+3. **Markets.** Once live markets appear and we know how they're split, how should they be named on the site?
+4. **Homepage after launch.** Is the target "what changed" (news and known issues in launch week, then market movement as it becomes available) with the class picker kept, and the profession and world rows dropped?
+5. **Early price movement.** Is a ranked movers list wanted before about day 10? If so, scan to scan (needs an import after every scan, noisy) or day to day (simpler, but can exaggerate rises early in the day and hides same-day recoveries)?
+6. **Search.** Put the search box on every page (in the masthead), not just the homepage?
 
 **Templates (section 3)**
 
-6. **Fixed templates per type.** Adopt fixed glance fields and a fixed list of sub-headings for each page type, with the build warning on drift?
-7. **Class page.** Split hybrid builds and macros into their own pages under each class, so the class page becomes a short "choose a spec" page?
-8. **Reconsideration: the four-section frame.** Give More lists (checklist, addons, macros, known issues) a list frame of their own, and hide Field findings until a page has its first? Both change the 27 October "four sections per page" decision.
-9. **Two link lists.** Keep "Read more" and "Guides and tools" separate (and say why), or merge them?
+7. **Fixed templates per type.** Adopt fixed glance fields and a fixed list of sub-headings for each page type, with the build warning on drift?
+8. **Class page.** Split hybrid builds and macros into their own pages under each class, so the class page becomes a short "choose a spec" page?
+9. **Reconsideration: the four-section frame.** Give More lists (checklist, addons, macros, known issues) a list frame of their own, and hide Field findings until a page has its first? Both change the 27 October "four sections per page" decision.
+10. **Two link lists.** Keep "Read more" and "Guides and tools" separate (and say why), or merge them?
 
 **Copy (section 4)**
 
-10. **Strapline.** Drop "Horde-side" from the title and strapline, and keep the Horde voice in the greeting and imagery? A replacement needs to keep "World of Warcraft: Forever" spelled out.
-11. **Pre-launch labelling.** Replace per-page Pre-launch badges with one site-wide notice, and keep badges only where data is Beta?
+11. **Strapline.** Drop "Horde-side" from the title and strapline, and keep the Horde voice in the greeting and imagery? A replacement needs to keep "World of Warcraft: Forever" spelled out.
+12. **Pre-launch labelling.** Until launch, replace per-page Pre-launch badges with one site-wide notice (Beta data labels unchanged), and bring per-page status back as pages are checked live?
 
 **Data and running costs (sections 1 and 5)**
 
-12. **ForeverDB API fetch.** Run it from the Mac, or as a GitHub Action with the key stored as a repository secret? Adding the secret is a repository settings change, so it's yours to approve. The existing ForeverDB scripts need no key and could move either way.
-13. **Actions minutes.** Could you check the account's Actions usage on github.com's billing page before more scheduled jobs are added? The allowance is shared with Brew and your other private repos.
-14. **Analytics.** Stay without visitor statistics, or consider a privacy-respecting counter? It's an outward-facing choice, and nothing here assumes one.
+13. **ForeverDB API scope.** Which datasets and pages first? Section 5 proposes professions, gathering, disenchanting, class abilities and poisons now; the Favor sweep, dungeon loot and tooltips later.
+14. **ForeverDB API fetch.** Run it from the Mac, or as a GitHub Action with the key stored as a repository secret? Adding the secret is a repository settings change, so it's yours to approve. The existing ForeverDB scripts need no key and could move either way.
+15. **Actions minutes.** Could you check the account's Actions usage on github.com's billing page before more scheduled jobs are added? GitHub's docs conflict on whether Pages runs count; if they do, the allowance is shared with Brew and your other private repos.
+16. **Analytics.** Stay without visitor statistics, or add counting, either through a third-party service or a small collector of our own? It's an outward-facing choice, and nothing here assumes one.
