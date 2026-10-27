@@ -208,3 +208,18 @@ class FullScans(unittest.TestCase):
         markets = {}
         build.add_store_market(markets, "forever-realm-horde", entry, {})
         self.assertEqual(markets["forever-realm-horde"]["items"]["2589"]["full_obs"], [(BASE + 7200, 90, DAY)])
+
+
+class FullScanOwner(unittest.TestCase):
+    def capture(self, days, full=BASE, browse=BASE - 60):
+        markets = {name: {"items": {"2589": {"m": 1, "l": {}, "h": {str(d): 1}, "a": {}}}} for name, d in days.items()}
+        return {"source_scan_timestamps": {"TimeOfLastReplicateScan": full, "TimeOfLastBrowseScan": browse}, "markets": markets}
+
+    def test_the_full_scan_goes_to_the_one_market_with_the_newest_day(self):
+        self.assertEqual(ms.full_scan_market(self.capture({"A": DAY, "B": DAY - 3})), "A")
+
+    def test_two_markets_on_the_same_day_get_neither(self):
+        self.assertIsNone(ms.full_scan_market(self.capture({"A": DAY, "B": DAY})))
+
+    def test_a_later_search_means_no_full_scan_snapshot(self):
+        self.assertIsNone(ms.full_scan_market(self.capture({"A": DAY}, browse=BASE + 60)))

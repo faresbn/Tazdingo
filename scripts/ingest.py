@@ -97,11 +97,16 @@ def unfinished_import() -> bool:
 
 def ingest(path: Path, environment: str, markets: list[str]) -> dict | None:
     """File one upload: a scan record per market, its daily history merged into the archive."""
-    capture = parse_capture(path, markets=markets)
+    everything = market_store.read_all_markets(path)  # every readable market, to tell which one a full scan belongs to
+    full_market = market_store.full_scan_market(everything)
+    missing = [m for m in markets if m not in everything["markets"]]
+    if missing:
+        parse_capture(path, markets=missing)  # raises with the reason that market can't be read
+    capture = {**everything, "markets": {m: everything["markets"][m] for m in markets}}
     scan_time(capture)  # a file with no scan time can't be placed in time
     filed = []
     for market in markets:
-        record = market_store.record_from_capture(capture, market, environment)
+        record = market_store.record_from_capture(capture, market, environment, full_market=full_market)
         rows = market_store.history(capture, market, 0, record["day"])
         result = market_store.add_record(ROOT, record, rows, {"scope_source": "Fares's Auctionator export"})
         if result is None:

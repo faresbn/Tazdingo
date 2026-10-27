@@ -36,10 +36,14 @@ def main() -> None:
         if not args.market:
             print("Choose one with --market.")
         return
-    capture = parse_capture(args.file, markets=args.market)
+    capture = market_store.read_all_markets(args.file)  # every readable market, to tell which one a full scan belongs to
+    full_market = market_store.full_scan_market(capture)
     args.out.mkdir(parents=True, exist_ok=True)
     for market in args.market:
-        record = market_store.record_from_capture(capture, market, args.environment, market_store.INBOX_HISTORY_DAYS)
+        if market not in capture["markets"]:
+            raise SystemExit(f"No market {market!r} in this file. It has: " + ", ".join(repr(n) for n in capture["markets"]))
+        record = market_store.record_from_capture(capture, market, args.environment, market_store.INBOX_HISTORY_DAYS,
+                                                  full_market=full_market)
         market_store.validate_record(record, inbox=True)
         stamp = datetime.fromtimestamp(record["scan_timestamp"], timezone.utc).strftime("%Y-%m-%dT%H-%M-%SZ")
         path = args.out / f"{stamp}-{market_store.market_slug(args.environment, market)}.json"

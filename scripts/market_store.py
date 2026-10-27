@@ -24,7 +24,7 @@ import statistics
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-from auctionator import ITEM_KEY, InvalidCapture, day_date
+from auctionator import ITEM_KEY, InvalidCapture, day_date, parse_capture
 
 RECORD_FORMAT = "scan-record-v1"
 ARCHIVE_FORMAT = "daily-archive-v1"
@@ -66,7 +66,40 @@ def dump(data: dict) -> str:
 
 # --- Records ----------------------------------------------------------------------
 
-def record_from_capture(capture: dict, market: str, environment: str, history_days: int | None = None) -> dict:
+def read_all_markets(path: Path) -> dict:
+    """A parsed file with every market that can be read; an old market Auctionator stored in
+    its earlier format is skipped rather than stopping the import."""
+    names = parse_capture(path, markets=[])["available_markets"]
+    capture = None
+    for name in names:
+        try:
+            one = parse_capture(path, markets=[name])
+        except InvalidCapture:
+            continue
+        if capture is None:
+            capture = one
+        else:
+            capture["markets"].update(one["markets"])
+    return capture or parse_capture(path, markets=[])
+
+
+def full_scan_market(capture: dict) -> str | None:
+    """The market a file's full scan belongs to, when that can be told. Auctionator keeps one
+    full-scan time for the whole file, not per market: it counts only when it is the file's
+    latest scan, and goes to the one market whose records reach the file's newest day. When
+    several markets share that day, no market gets it. `capture` must hold every market."""
+    stamps = capture["source_scan_timestamps"]
+    full = stamps.get("TimeOfLastReplicateScan")
+    if type(full) is not int or full <= 0 or full != max((t for t in stamps.values() if type(t) is int), default=0):
+        return None
+    newest = {name: max((int(d) for f in m["items"].values() for d in f["h"]), default=-1) for name, m in capture["markets"].items()}
+    top = max(newest.values(), default=-1)
+    leaders = [name for name, day in newest.items() if day == top]
+    return leaders[0] if top >= 0 and len(leaders) == 1 else None
+
+
+def record_from_capture(capture: dict, market: str, environment: str, history_days: int | None = None,
+                        full_market: str | None = None) -> dict:
     """One market of a parsed upload as a scan record. With history_days, the record also
     carries that many days of daily history (for the inbox, where the original file isn't)."""
     items = capture["markets"][market]["items"]
@@ -80,7 +113,7 @@ def record_from_capture(capture: dict, market: str, environment: str, history_da
         if high is None:
             continue  # not seen on the scan's day: its latest price is stale
         seen[key] = [fields["m"], fields["l"].get(str(day), high), high, fields["a"].get(str(day))]
-    full = capture["source_scan_timestamps"].get("TimeOfLastReplicateScan")
+    full = capture["source_scan_timestamps"].get("TimeOfLastReplicateScan") if market == full_market else None
     record = {"format": RECORD_FORMAT, "environment": environment, "market": market,
               "source_sha256": capture["source_sha256"], "scan_timestamp": scan_timestamp(capture),
               "full_scan_timestamp": full if type(full) is int and full > 0 else None,

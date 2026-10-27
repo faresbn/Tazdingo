@@ -122,9 +122,10 @@ def build_markets(captures: list[dict], names: dict, store: dict | None = None) 
             scan_day = max((int(d) for fields in data["items"].values() for d in fields["h"]), default=None)
             stamps = capture.get("source_scan_timestamps", {})
             full = stamps.get("TimeOfLastReplicateScan")
-            # Only a full scan that was the file's latest scan makes the file that scan's snapshot.
-            new_full = (type(full) is int and full == max((t for t in stamps.values() if type(t) is int), default=0)
-                        and full > market.get("last_full_scan", 0))
+            # Only a full scan that was the file's latest scan, credited to this market by
+            # market_store.full_scan_market, makes the file that scan's snapshot of this market.
+            owner = market_store.full_scan_market({"source_scan_timestamps": stamps, "markets": capture["markets"]}) if stamps else None
+            new_full = owner == raw_key and full > market.get("last_full_scan", 0)
             if new_full:
                 market["last_full_scan"] = full
                 market.setdefault("full_scan_coverage", []).append(sum(1 for f in data["items"].values() if str(scan_day) in f["h"]))
