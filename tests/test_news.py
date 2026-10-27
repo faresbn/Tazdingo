@@ -41,3 +41,17 @@ class News(unittest.TestCase):
             self.assertEqual(json.loads(path.read_text())['posts'],[])
 
 if __name__=='__main__':unittest.main()
+
+class NewsViews(unittest.TestCase):
+    def test_homepage_excludes_mixed_and_unverified_but_inner_page_tags_mixed(self):
+        import pages
+        site=pages.Site(base='/Tazdingo/',url='https://faresbn.github.io/Tazdingo/',revision='test',built='test',credit=False)
+        base={'classifier_version':1,'url':'https://us.forums.blizzard.com/en/wow/t/news/1','author':'Blizzard','posted':'2026-10-27T00:00:00Z','reply':False}
+        snapshot={'posts':[{**base,'title':'Dedicated story','kind':'forever'},{**base,'title':'Roundup story','kind':'mixed'},{**base,'title':'Ambiguous story','kind':'unverified'}]}
+        home=pages.news_widget(site,snapshot,'forever',5)
+        inner=pages.news_widget(site,snapshot,'all',60)
+        self.assertIn('Dedicated story',home)
+        self.assertNotIn('Roundup story',home)
+        self.assertIn('Roundup story',inner)
+        self.assertIn('Mixed roundup',inner)
+        self.assertNotIn('Ambiguous story',home+inner)

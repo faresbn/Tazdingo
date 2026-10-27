@@ -2,7 +2,7 @@
 
 This is AGENTS.md; CLAUDE.md is a symlink to it, so Claude Code and Codex read the same file. It holds what's true for every task here. **Start every session by reading docs/HANDOVER.md**: the current state, what's in flight and how to continue. README.md explains how the site works.
 
-Tazdingo builds **Tazdingo** (https://faresbn.github.io/Tazdingo/), an unofficial journal for World of Warcraft: Forever (launch 4 November 2026). It holds Auction House prices from Fares's Auctionator scans; a page per class, spec, profession and world topic that summarises other sites' guides and records our own findings; addons, macros, known issues, a launch checklist and Blizzard's latest posts. Fares directs (see `~/.claude/CLAUDE.md` if you have it); a shared ChatGPT project writes page updates following `docs/chatgpt/UPDATING.md`.
+This repository builds **Tazdingo** (https://faresbn.github.io/Tazdingo/), an unofficial journal for World of Warcraft: Forever (launch 4 November 2026). It holds Auction House prices from Fares's Auctionator scans; a page per class, spec, profession and world topic that summarises other sites' guides and records our own findings; addons, macros, known issues, a launch checklist and Blizzard's latest posts. Fares directs (see `~/.claude/CLAUDE.md` if you have it); a shared ChatGPT project writes page updates following `docs/chatgpt/UPDATING.md`.
 
 ## Settled decisions (flag before reopening)
 
@@ -11,7 +11,7 @@ They're listed with their reasons in docs/DECISIONS.md. The ones most often got 
 - **Inspired by WoW Forever, never its marks.** No Blizzard logos, key art, screenshots we didn't take, the game's typefaces (Friz Quadrata, Morpheus) or lookalikes, official frames or copied layouts. Images must look like they come from inside the game (in-game scenes and item-like objects), never abstract art.
 - **Summaries in our own words, always cited, never copied.** Wowhead and Icy Veins forbid copying and scraping; read their pages to summarise them, and link to them.
 - **Pre-launch is the default.** A page is Live only when someone marks it so after checking it in the live game.
-- **Standard-library Python, a static site, a private repo.** Only `dist/` is published.
+- **Standard-library Python plus Node 20+, a static Pages website, a private repo.** Only `dist/` is published. The small read-only news relay is separate; it never receives GitHub publishing credentials.
 
 ## Everyday tasks
 
@@ -28,7 +28,7 @@ They're listed with their reasons in docs/DECISIONS.md. The ones most often got 
 
 ## Changing the site
 
-- Before every push, run what GitHub Actions runs: `python3 -m unittest discover -s tests`, `python3 scripts/build.py`, `python3 scripts/check_site.py` (and `node --check site/assets/app.js`). A push to `main` publishes within about a minute.
+- Before every push, run what GitHub Actions runs: `python3 -m unittest discover -s tests`, `python3 scripts/build.py`, `python3 scripts/check_site.py` (plus `node --test relay/news.test.mjs` and `node --check site/assets/app.js`). A push to `main` publishes within about a minute.
 - Work on a branch for anything bigger than a scan or a page edit, push checkpoints as you go, merge into `main` when the checks pass, and delete the branch. Version control is part of the job, not an approval point. Ask before anything that rewrites shared history.
 - Keep docs/HANDOVER.md current at each checkpoint: what changed, what's in flight, what's next. Record outside reviews in the session's `revlog.md`.
 - Graphics: generate them through Codex on the ChatGPT plan (`codex exec`, see docs/HANDOVER.md for the working recipe), keep the originals in the session folder, and convert to WebP for `site/assets/`.

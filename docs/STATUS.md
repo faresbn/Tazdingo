@@ -1,3 +1,7 @@
+# Tazdingo update — 27 October 2026
+
+Site/repo renamed; GitHub Pages retained. Full-text news classification, tagged inner-page roundups, Forever-only homepage and visitor refresh are live and browser-verified. Scheduled direct-Blizzard collection remains independent of the public relay. Final checks: 38 Python tests (one expected skip), ten Node tests, 72 generated pages. See HANDOVER.md and the 2026-10-27-tazdingo session for deployment evidence and limits.
+
 # Status
 
 Updated 26 October 2026, after the Tazdingo rebuild.

@@ -457,3 +457,5 @@ select { width: auto; max-width: 100%; min-height: 2.65rem; padding-right: 2rem;
 .wordmark .mark { filter:drop-shadow(0 1px 2px #0003); }
 
 .brand-greeting { font:700 .76rem var(--sans); letter-spacing:.07em; text-transform:uppercase; color:var(--link); margin:0 0 .55rem; }
+
+.news-controls { margin: .35rem 0 .9rem; }

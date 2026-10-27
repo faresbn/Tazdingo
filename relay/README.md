@@ -10,3 +10,5 @@ Sites project: appgprj_6ae0525843008191bea52b4b0dc0adeb
 Deployment uses the Sites Worker ESM workflow, separately from GitHub Pages. Preserve the project identity, recover a short-lived source credential, open the relay checkout, copy this Worker into `worker/index.js`, run the tests/build/validation, then save and deploy the pushed commit. Never put source credentials in this repo. The endpoint contains public Blizzard data only.
 
 GitHub Actions intentionally reads Blizzard directly: this environment's automated HTTP client was blocked by the relay host, and scheduled collection must remain independent of visitor hosting. Readable articles are inspected by section; this is a conservative rule-based classifier. A mixed roundup needs substantive identifiable Forever coverage; ambiguous/unreadable pages are not promoted. Both views use the same classified records; only the inner news page includes mixed posts.
+
+CORS permits the GitHub Pages origin. Local previews continue to show their static snapshot. A recent verified static snapshot may seed a cold relay and count as the five-minute shared check; a genuinely expired check reads Blizzard again.

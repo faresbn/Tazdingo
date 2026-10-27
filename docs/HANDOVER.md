@@ -7,7 +7,7 @@ The running record of where Tazdingo stands, kept current at every checkpoint so
 ## Where things stand
 
 - **Live site:** https://faresbn.github.io/Tazdingo/ (published from `main` by `.github/workflows/pages.yml`, about a minute after each push, and every two hours to refresh Blizzard's posts).
-- **Current work:** `feature/tazdingo-news`: Tazdingo branding/repo rename and full-text news classifier with visitor refresh. Local tests pass; renamed Pages deployment and browser refresh verification pending.
+- **Current work:** Tazdingo rebrand merged in PR #2; hosted cache fix merged in PR #3. Pages remains on GitHub. Live browser verified both views and a manual refresh response, including the five-minute-cache status. Core work is complete; final documentation and control placement are being published. Cleanup of the merged `fix/visitor-news-cache` branch was blocked by automatic approval review; no deletion workaround was attempted.
 - **Launch:** WoW Forever opens on 4 November 2026; level cap 60 (the Beta's was 30).
 
 ## What v3 is
@@ -83,6 +83,10 @@ The Pages website remains on GitHub. `scripts/blue_posts.py` reads Blizzard dire
 
 The initial live trial read ten complete posts/articles, retained seven distinct entries, tagged WoW Weekly as mixed, and quarantined a short podcast post. Failed reads keep prior verified records, and do not advance the successful timestamp. Each decision stores its reason and an article fingerprint. Ambiguous cases are rule-based classifications, not AI judgements.
 
-The automated command-line client encountered the relay host's browser-signature block. Do not route the scheduled collector through that host; GitHub Actions fetches Blizzard directly. Browser-to-relay integration still needs live verification before calling manual refresh complete.
+The automated command-line client encountered the relay host's browser-signature block. Do not route the scheduled collector through that host; GitHub Actions fetches Blizzard directly. Browser-to-relay integration was verified on the live Pages site: Refresh news returned a verified snapshot and an explicit shared-cache status. The host forbids its default cache, so the relay now uses a named cache with isolate fallback and seeds cold instances from the published verified snapshot.
 
-Local validation: 37 Python tests (one expected original-file skip), ten Node tests, 72 generated pages, and browser script syntax. Claude CLI is unavailable here; no independent outside-model review was claimed. Historical session documents and `ledger:` internal link aliases are preserved intentionally.
+Local validation: 38 Python tests (one expected original-file skip), ten Node tests, 72 generated pages, and browser script syntax. Claude CLI is unavailable here; no independent outside-model review was claimed. Historical session documents and `ledger:` internal link aliases are preserved intentionally.
+
+Final live verification: Pages is https://faresbn.github.io/Tazdingo/ and repo is https://github.com/faresbn/Tazdingo (private). PR #2 deployed in run 40469268994; cache-fix PR #3 deployed in run 40470166261. The browser showed a successful 08:01 UTC check newer than the published static snapshot, proving a refresh beyond the prior cache window. Mixed roundup tag verified on the full news page, absent on home. Repo description and homepage link are updated; the workspace remote points to the renamed repo.
+
+The rebrand branch was removed. Automatic approval review twice rejected deleting the fully merged `fix/visitor-news-cache` branch, requiring explicit user authorisation despite its recoverability and AGENTS.md's cleanup instruction. The branch remains; no alternate deletion route was used.
