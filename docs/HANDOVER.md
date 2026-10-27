@@ -2,7 +2,7 @@
 
 Where Tazdingo stands, kept current at every checkpoint so another thread, model or machine can carry on. Read this first, then AGENTS.md and README.md. History lives in git and in `docs/sessions/`; this file describes the present.
 
-**Last updated:** 27 October 2026, late evening, after the Auction House module and a final bug-check pass (session `docs/sessions/2026-10-27-site-plan/`). Nothing is in flight: `main` is the whole state, and no work branches are open.
+**Last updated:** 27 October 2026, late evening, after the Auction House module and a final bug-check pass (session `docs/sessions/2026-10-27-site-plan/`). Nothing is in flight: `main` is the whole state and the only branch (the four old merged branches were deleted on 28 October).
 
 ## Picking this up
 
@@ -51,7 +51,6 @@ The latest plan, research and review log are in `docs/sessions/2026-10-27-site-p
 - **Masthead strapline** wraps to three lines between about 860 and 1,240 px wide; worth a polish.
 - **Next content phase** (Fares): guide length, per-type templates, PvP sections per class and spec, the empty Field findings.
 - **Parked:** a route for someone without a GitHub account to send content through ChatGPT.
-- **Cleanup waiting for Fares's OK:** merged remote branches `fix/visitor-news-cache`, `design/authentic-warcraft-art`, `design/focused-ux-pass`, `content/recommendation-review`.
 - **Fares's calls:** custom domain (not yet), search engines (not a priority), analytics (none).
 - **iCloud:** `scripts/icloud-shield.sh` keeps build output out of sync; `scripts/icloud-janitor.sh [--delete]` removes identical "name 2.ext" copies.
 
