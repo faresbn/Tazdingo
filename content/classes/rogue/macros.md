@@ -15,6 +15,10 @@ sources: ForeverDB macros, Kami Labs macros, Wowhead macro guide, Icy Veins Subt
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Keep Kick, crowd control and Vanish predictable. Damage-over-time effects and automatic attacks can break Gouge or Sap, so a combined attack button is not always a safe control button. Weapon-swap examples need the exact item names and enough bag space; test their combat behaviour before relying on them. A cast sequence neither chooses a finisher intelligently nor runs several global-cooldown abilities on one press.
+
 ### Openers and builders
 
 Ambush from Stealth, Garrote with Ctrl, Cheap Shot with Shift; out of Stealth the same key is Sinister Strike (ForeverDB):

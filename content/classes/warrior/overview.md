@@ -16,11 +16,19 @@ sources: Blizzard class deep dive and beta notes, ForeverDB, Wowhead, Icy Veins,
 
 ## What the guides say
 
-The beta stopped at level 30. Everything up to 30 has been played; anything above it comes from the game files and Blizzard's posts, and is untested.
+### Race choice after the 26 October changes
+
+[Blizzard's 26 October notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7) remove Orc Savage, set Human Ruthless to 1% crit and Skyborne Wind-Blessed to 2% haste, replace Dwarf Earth Fury with 1% hit, and leave Tauren Endurance at 5% health only. Do not use older weapon-specialisation or critical-damage bonuses to choose a race. Pet Command does not boost Warrior attacks; tank survival, movement and control can justify a choice beyond modelled damage.
+
+### Tazdingo recommendation
+
+For a first solo Warrior, **Protection is a strong default once Revenge and its shield talents are available**, especially if dungeon tanking is welcome. Arms is the simpler two-handed alternative; Fury asks for two useful weapons and receives key tools later. That explains why guides disagree about levelling speed: safer recovery and fewer deaths can beat faster individual kills ([Protection](https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview), [Arms](https://www.wowhead.com/forever/guide/classes/warrior/arms/level-30-dps-overview)). Keep weapons trained and current, avoid over-levelled enemies and compare whole-route pace. No level-30 result proves the level-60 spec order.
+
+The Beta stopped at level 30. That is the available play bracket, not proof that every setup within it was tested. Above-30 advice comes from files and design notes.
 
 ### How Forever changed the class
 
-**Rage.** Blizzard's [Priest and Warrior deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24301514) changed how Rage is earned. Rage from being hit now ignores your armour (it is worked out as if you always had 50% damage reduction), and absorbs such as Power Word: Shield no longer cut it. Rage from dealing damage is normalised to the speed of the weapon that hit, so bigger hits no longer give more Rage. Critical strikes were set to give 75% more Rage, and Blizzard's [2 October notes](https://us.forums.blizzard.com/en/wow/t/warrior-updates-in-todays-beta-build/2369360) raised that to 100% after a Dual Wield Specialization bug skewed its tests. Wowhead's Fury overview still says crits give no extra Rage; that text predates the change.
+**Rage.** Blizzard's [Priest and Warrior deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24301514) changed how Rage is earned. Rage from being hit ignores your actual armour and absorbs. The original 50% assumed mitigation was superseded by [2 October notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/5), which use level-dependent expected values in the 20–40% range. Those notes explicitly cover both Warriors and Druids. Rage from dealing damage is normalised to the speed of the weapon that hit, so bigger hits no longer give more Rage. Critical strikes were set to give 75% more Rage, and Blizzard's [2 October notes](https://us.forums.blizzard.com/en/wow/t/warrior-updates-in-todays-beta-build/2369360) raised that to 100% after a Dual Wield Specialization bug skewed its tests. Wowhead's Fury overview still says crits give no extra Rage; that text predates the change.
 
 **Stances.** Defensive Stance comes from a level 10 class quest and Berserker Stance from a level 30 one. Tactical Mastery keeps 10 Rage when you switch, and the Arms talent [Improved Tactical Mastery](https://foreverdb.net/spell/12295) keeps up to 15 more ([ForeverDB talents](https://foreverdb.net/class/Warrior/talents)).
 

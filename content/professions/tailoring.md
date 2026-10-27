@@ -14,6 +14,10 @@ sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Warcraft
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+For a cloth caster, **prioritise a few useful self-crafted pieces and bags**, then expand when the gold supports it. Enchanting is a convenient partner, not a requirement to obtain cloth; levelling both can compete for the same budget. School-specific damage is less flexible for a character changing builds, and bind-on-pickup gear cannot be sold. Compare bag proceeds and expected disenchant value against the cloth's sale value. The [levelling route](https://www.wow-professions.com/forever/tailoring-leveling-guide) is price-sensitive: yellow crafts need a buffer, alternatives replace a step rather than adding to it, and Beta Mageweave scarcity does not predict launch prices.
+
 ### What changed in Forever
 
 [Wowhead](https://www.wowhead.com/forever/guide/professions/tailoring-overview-trainer-locations-recipes) puts the main change simply: in Classic you could level without professions, but in Forever you'll want one going early. Tailoring now lets you craft whole sets for yourself while levelling, and they bind on pickup.
@@ -24,7 +28,7 @@ sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Warcraft
 - **Skill 140–235:** a second tier named Black, Fiery, Frothing, Gilded, Golden and Radiant. These need a Spinning Wheel to craft.
 - **Skill 195–205:** Nether-named shoulders and cuffs, with only a couple of pieces found so far.
 
-ForeverDB's list of best-in-slot crafts at level 30 and below is full of these pieces:
+ForeverDB's list of candidate crafts within the level-30 bracket is full of these pieces:
 
 - [Gilded Slippers](https://foreverdb.net/item/254001) (skill 140): most healers.
 - [Shadow Gown](https://foreverdb.net/item/253967) (skill 110): Warlocks and Shadow Priests.
@@ -49,8 +53,8 @@ From [wow-professions.com](https://www.wow-professions.com/forever/tailoring-lev
 | Skill | What the guide makes |
 |---|---|
 | 1–55 | Bolts of Linen Cloth, then Linen Belts |
-| 55–125 | Bolts of Woolen Cloth, Woolen Capes, Double-stitched Woolen Shoulders, Bolts of Silk Cloth, then Gloves of Meditation (needs Elixir of Wisdom from Alchemy) |
-| 125–150 | More Gloves of Meditation, then Bolts of Mageweave or Red Swashbuckler's Shirts |
+| 55–120 | Bolts of Woolen Cloth, Woolen Capes, Double-stitched Woolen Shoulders, then Bolts of Silk Cloth |
+| 120–150 | Gloves of Meditation (needs Elixir of Wisdom), then Bolts of Mageweave or Red Swashbuckler's Shirts |
 | 150–225 | Crimson Silk Vests and Pantaloons, Black Mageweave Gloves, then Mageweave Bags |
 | 225–300 | Not yet tested |
 
@@ -65,8 +69,8 @@ Wowhead's trainer table, last updated 12 October, lists Gregorian and Bolero as 
 
 ### What sells
 
-- **Bags:** Icy Veins calls them very profitable, since every character wants bigger bags early.
-- **Early gold:** Wowhead says Tailoring has always made good gold, especially early. Cloth is cheap because everyone loots it, so you can craft gear simply to disenchant.
+- **Bags:** Bags have broad potential demand, but profit depends on cloth cost, competing supply, sale prices and how quickly stock sells.
+- **Early gold:** Cloth supply and demand both rise early. Compare the complete craft cost with conservative bag proceeds or expected disenchant value; widespread cloth drops do not prove it is cheap.
 - **Bolts:** crafted bolts also fill the Fabrics version of the Waylaid Crates, which you hand in at your faction's trade camp for Merchant's Favor ([wow-professions.com](https://www.wow-professions.com/forever/merchants-favor-durotar-supply-azeroth-commerce)).
 - **Title:** at 300 you can buy a Tailoring Certification and the title "the Tailor" for 1,000 Merchant's Favor (Wowhead).
 

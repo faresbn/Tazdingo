@@ -16,6 +16,10 @@ sources: Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Wowhead
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Choose **Blacksmithing for specific self-crafted equipment or tools**, not a promised general gold income. Check the binding and required station before spending Favor on a plan. Mining reduces purchased inputs but costs time and gives up ore sales; it does not make the armour free. Compare the [alternative levelling recipes](https://www.wow-professions.com/forever/blacksmithing-leveling-guide) at current realm/faction prices, including a yellow recipe's extra attempts. A higher material cost can be worthwhile when the output is a real upgrade. The route above 225 remains untested; do not substitute Classic skill ranges where Forever changed them.
+
 ### What changed in Forever
 
 **Gear for yourself while you level.** [wowtbc.gg](https://wowtbc.gg/warcraftforever/professions/blacksmithing/) sums up the shift: professions now aim to give you crafted upgrades often as you level. Blacksmithing gets new sets for each role:
@@ -26,7 +30,7 @@ sources: Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Wowhead
 
 All of these plans are sold for Merchant's Favor at your faction's trade camp ([Wowhead](https://www.wowhead.com/forever/guide/azeroth-commerce-authority-reputation-professions)).
 
-[ForeverDB's](https://foreverdb.net/profession/blacksmithing) gear data shows which role each name serves. Acolyte's pieces are best in slot for Holy Paladins and Protector's for Protection Paladins. Guard's suit both Protection specs, and Veteran's suit Arms, Fury and Retribution. Its list of best-in-slot crafted items at level 30 and below is long, from [Veteran's Silvered Chain Leggings](https://foreverdb.net/item/250523) (skill 125) to [Officer's Belt](https://foreverdb.net/item/250556) (150). Icy Veins adds that some of this gear binds on pickup, such as Sentinel's Sabatons, so only a Blacksmith can wear it.
+[ForeverDB's](https://foreverdb.net/profession/blacksmithing) gear data shows which role each name serves. It identifies Acolyte's pieces for Holy Paladins and Protector's for Protection Paladins; these are candidate upgrades for the reported bracket, not a verified launch best-in-slot list. Guard's suit both Protection specs, and Veteran's suit Arms, Fury and Retribution. Its list of best-in-slot crafted items at level 30 and below is long, from [Veteran's Silvered Chain Leggings](https://foreverdb.net/item/250523) (skill 125) to [Officer's Belt](https://foreverdb.net/item/250556) (150). Icy Veins adds that some of this gear binds on pickup, such as Sentinel's Sabatons, so only a Blacksmith can wear it.
 
 Other changes:
 

@@ -17,6 +17,10 @@ sources: ForeverDB macros page, Kami Labs macro tool and guide, Wowhead's macro 
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Prefer named-form casts for simple form changes. Numeric stance checks depend on the forms actually learned, so verify them on this character rather than copying another Druid's form numbers. Do not use old energy-banking powershift macros as a damage plan: Furor and Shifting Power changed that gameplay. Test item use in form, target fallbacks and modifiers separately; the community examples have not been checked in the launch client.
+
 ### Forms and movement
 
 **Escape a root in Cat Form** ([ForeverDB](https://foreverdb.net/class/Druid/macros)): leaves your current form and re-enters Cat Form on one press, since shifting clears roots and slows.
@@ -59,14 +63,11 @@ sources: ForeverDB macros page, Kami Labs macro tool and guide, Wowhead's macro 
 /cast Cat Form
 ```
 
-**Dire Bear Form with tank rings** ([Wowhead](https://www.wowhead.com/forever/guide/beginners-guide-to-writing-macros-in-wow-forever-34950)): leaves any other form, shifts into Dire Bear Form and swaps in two rings. Replace the ring names with your own, and use Bear Form before 40.
+**Dire Bear Form** (adapted from the form examples above): enters the form without toggling it off on another press. Use Bear Form before level 40. Equip tank rings **before combat**; ordinary rings cannot be swapped during combat.
 
 ```
 #showtooltip Dire Bear Form
-/cancelform [stance:2][stance:3][stance:4]
-/cast Dire Bear Form
-/equipslot 11 Ring of Protection
-/equipslot 12 Naglering
+/cast !Dire Bear Form
 ```
 
 ### Cat and Bear
@@ -151,12 +152,12 @@ sources: ForeverDB macros page, Kami Labs macro tool and guide, Wowhead's macro 
 
 ### Buffs and crowd control
 
-**Buff in two presses** (Wowhead): leaves your form, then casts Mark of the Wild and Thorns on consecutive presses, or Gift of the Wild (level 50) with Shift. The sequence resets after 10 seconds or on a new target.
+**Buff in two presses** (adapted from Wowhead): leaves your form, then casts Mark of the Wild and Thorns on consecutive presses, or Gift of the Wild (level 50) with Shift. The sequence resets after 10 seconds or on a new target.
 
 ```
 /cancelform
 /cast [mod:shift]Gift of the Wild
-/castsequence reset=10/target Mark of the Wild, Thorns
+/castsequence [nomod:shift] reset=10/target Mark of the Wild, Thorns
 ```
 
 **Entangling Roots on focus or mouseover** (ForeverDB): roots your focus, else the enemy under your cursor, else your target, so you can hold an add while fighting.

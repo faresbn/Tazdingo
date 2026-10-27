@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets, Blizzard class deep div
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Choose **deep Holy when group healing is the priority**; keep wand and Spirit Tap investment when solo time justifies delaying a Holy milestone. Decide which job dominates before comparing the builds ([Wowhead](https://www.wowhead.com/forever/guide/classes/priest/holy/level-30-healer-overview)). Heal the damage actually arriving: Binding Heal gains value when both you and an ally need healing, and Prayer of Healing when several party members need it. Litany rewards changing spells, but a small refund is not a reason to cast an inappropriate or mostly overhealing spell. Favour regeneration when mana limits the run and throughput when it does not; a static crit ranking cannot capture both.
+
 ### Talents
 
 At level 30 you have 21 points. That is exactly enough to reach the tier 5 talents, Spirit of Redemption and Litany of Light, if every point goes into Holy.
@@ -43,7 +47,7 @@ At level 30 you have 21 points. That is exactly enough to reach the tier 5 talen
 
 Wowhead's dungeon list matches it and adds [Prayer of Healing](https://foreverdb.net/spell/596) only when most of the party is low, since it is a 3 sec cast that drains mana. Icy Veins adds a free [Holy Nova](https://foreverdb.net/spell/15237) when [Searing Light](https://foreverdb.net/spell/14909) procs and nobody is in danger. Holy Nova causes no threat. Icy also stresses avoiding overhealing: wand between heals, use lower ranks, and respect the five-second rule.
 
-Litany of Light refunds part of a heal's base cost if it differs from your previous heal, so alternate spells rather than repeating one. The client gives 5% and then 10% over two ranks. [ForeverDB](https://foreverdb.net/article/kargoz-five-talents-wow-forever) notes that one creator's video quoted 20%, which the client doesn't support. Blizzard says Binding Heal is tuned to be as good as Flash Heal even when the Priest needs no healing ([deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24301514)).
+Litany of Light refunds part of a heal's base cost if it differs from your previous heal, so changing between suitable heals can help; do not alternate into unnecessary healing just for the refund. The client gives 5% and then 10% over two ranks. [ForeverDB](https://foreverdb.net/article/kargoz-five-talents-wow-forever) notes that one creator's video quoted 20%, which the client doesn't support. Blizzard says Binding Heal is tuned to be as good as Flash Heal even when the Priest needs no healing ([deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24301514)).
 
 WoWSims' healer Priest has no rotation list, only settings for Prayer of Mending jumps and Holy Nova targets, so there is no simulator order to compare.
 
@@ -65,7 +69,7 @@ Wowhead says to take the healing slot in dungeons. You can wand trash if the gro
 
 - **Level 30 shape:** Wowhead goes all Holy for Spirit of Redemption. Icy Veins spreads points into Wand Specialization and Spirit Tap. ForeverDB levels with a Smite build.
 - **Critical strike:** Icy Veins rates it last. WoWSims values it about the same as Spirit.
-- **Shielding rage tanks:** Wowhead says to skip it on Warriors and Druids. Blizzard's deep dive says absorbs no longer reduce a Warrior's rage gain.
+- **Shielding rage tanks:** Wowhead says to skip it on Warriors and Druids. The [2 October official fix](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/5) confirms that absorbs no longer reduce Warrior or Druid Rage. The old prohibition is superseded.
 - **Above 30:** Spiritual Healing (35) and Prayer of Mending (40) are untested. Lightwell is no longer a talent; the client teaches it from the trainer at 40 ([ForeverDB](https://foreverdb.net/article/outlook-priest)).
 
 ## Field findings

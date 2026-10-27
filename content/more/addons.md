@@ -1,12 +1,12 @@
 ---
 updated: 2026-10-27
 summary: Which popular addons have a Forever version, the addons made just for Forever, and how to install them on the modern client.
-sources: CurseForge (checked 26 October 2026), ForeverDB, foreverchanges.pro, Icy Veins, mmonster.co, Blizzard forums, ElvUI on GitHub and Tukui
+sources: CurseForge (catalogue checked 26 October; TSM, WeakAuras and Musca Auras rechecked 27 October), ForeverDB, foreverchanges.pro, Icy Veins, Blizzard forums, ElvUI on GitHub and Tukui
 ---
 
 ## At a glance
 
-- **Modern client, modern rules:** Forever uses the current game's interface and addon rules, interface number 16001 (game version 1.60.1). Classic Era and Anniversary addons won't load properly.
+- **Modern client, modern rules:** Forever uses the current game's interface and addon rules, interface number 16001 (game version 1.60.1). Do not assume a Classic Era or Anniversary file is compatible; some authors ship a multi-flavour download.
 - **Addons show, they don't act:** in combat, addons see less than they used to and can't play for you.
 - **Find the right file:** on CurseForge, filter by the **Forever** game flavour. Big addons ship one download that covers Forever and other versions, so don't rely on file names.
 - **Already built in:** a damage meter, a Cooldown Manager, Edit Mode, combined bags and quest objectives on the map.
@@ -16,9 +16,13 @@ sources: CurseForge (checked 26 October 2026), ForeverDB, foreverchanges.pro, Ic
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Start with built-in tools and add only a missing function.** One quest helper, one bag replacement and one suitable Auction House tool are easier to troubleshoot than overlapping suites. A Forever-tagged download is evidence of intended support, not a successful test on this character. Check the author's release notes, dependencies and game flavour before installing; a development branch is not a stable release. Keep previous settings before migration. Imported auras can load yet fail in combat, so check the required triggers rather than assuming an import means compatibility ([Musca Auras author notes](https://www.curseforge.com/wow/addons/musca-auras)).
+
 ### Before you install
 
-- **The rules.** A Blizzard representative told addon authors that Forever shares the modern game's interface, including the vast majority of APIs available in patch 12.1.5 ([Icy Veins](https://www.icy-veins.com/wow-forever/news/addons-in-wow-forever-blizzard-devs-just-addressed-the-big-question/)). That brings the same combat restrictions as the modern game. ForeverDB notes that Forever hides cooldowns and damage-over-time effects from addons in combat, and an addon author on [Blizzard's forums](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-addon-feedback/2385926) describes "secret" values that addons can't read. Addons written for the modern game need little work to run on Forever.
+- **The rules.** A Blizzard representative told addon authors that Forever shares the modern game's interface, including the vast majority of APIs available in patch 12.1.5 ([Icy Veins](https://www.icy-veins.com/wow-forever/news/addons-in-wow-forever-blizzard-devs-just-addressed-the-big-question/)). That brings the same combat restrictions as the modern game. ForeverDB notes that Forever hides cooldowns and damage-over-time effects from addons in combat, and an addon author on [Blizzard's forums](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-addon-feedback/2385926) describes "secret" values that addons can't read. The shared engine does not prove compatibility; the author still needs to support this flavour and its restrictions.
 - **Where addons go.** The live game installs into its own `_forever_` folder inside your World of Warcraft folder, so addons go in `World of Warcraft\_forever_\Interface\AddOns`. The beta used `_classic_beta_` ([ForeverDB](https://foreverdb.net/addon)).
 - **Choosing the file.** Use CurseForge's [Forever filter](https://www.curseforge.com/wow/search?class=addons&gameVersionTypeId=88568). Questie, Details!, Deadly Boss Mods and Auctionator each ship a single download tagged for Forever and several other versions, so there's no separate "-forever" file to look for. Other authors publish separate Forever projects with "Forever" in the name, such as Spy (Forever) or ForeverAuras.
 - **Out-of-date addons.** Classic addons show as "Out of date". Ticking "Load out of date AddOns" may work but can throw errors ([foreverchanges.pro](https://foreverchanges.pro/addons)).
@@ -44,7 +48,7 @@ sources: CurseForge (checked 26 October 2026), ForeverDB, foreverchanges.pro, Ic
 | RareScanner, SilverDragon | Rare spawn alerts | Yes | [RareScanner](https://www.curseforge.com/wow/addons/rarescanner), [SilverDragon](https://www.curseforge.com/wow/addons/silver-dragon) |
 | **Auction House and gold** | | | |
 | Auctionator | Scanning, pricing, quick posting | Yes | [CurseForge](https://www.curseforge.com/wow/addons/auctionator) |
-| TradeSkillMaster | Auction and crafting automation | **No Forever version on CurseForge** (Retail and Classic versions only); mmonster.co lists a Forever entry on the developer's site but hasn't checked it | [CurseForge](https://www.curseforge.com/wow/addons/tradeskill-master), [mmonster.co](https://mmonster.co/wow-forever/guides/addons/tradeskillmaster) |
+| TradeSkillMaster | Auction and crafting automation | **No Forever-tagged file found on the linked project, checked 27 October**; do not treat an unverified third-party listing as a supported release | [CurseForge](https://www.curseforge.com/wow/addons/tradeskill-master), [mmonster.co](https://mmonster.co/wow-forever/guides/addons/tradeskillmaster) |
 | Syndicator | Find items across your characters | Yes (foreverchanges.pro) | [foreverchanges.pro](https://foreverchanges.pro/addons) |
 | **Bags** | | | |
 | Bagnon | All bags in one window | Yes | [CurseForge](https://www.curseforge.com/wow/addons/bagnon) |
@@ -67,8 +71,8 @@ sources: CurseForge (checked 26 October 2026), ForeverDB, foreverchanges.pro, Ic
 | Deadly Boss Mods, BigWigs | Boss timers and warnings | Yes | [DBM](https://www.curseforge.com/wow/addons/deadly-boss-mods), [BigWigs](https://www.curseforge.com/wow/addons/bigwigs) |
 | GTFO | Alarm when standing in fire | Yes | [CurseForge](https://www.curseforge.com/wow/addons/gtfo) |
 | ForeverThreat | Omen-style threat meter | Yes, made for Forever | [CurseForge](https://www.curseforge.com/wow/addons/foreverthreat-threat-meter-for-wow-forever) |
-| WeakAuras | Custom alerts | **No Forever version**: it wasn't updated for the modern restrictions Forever uses | [foreverchanges.pro](https://foreverchanges.pro/addons) |
-| ForeverAuras, Musca Auras | WeakAuras forks for Forever | Yes. Musca Auras imports WeakAuras, but triggers that read the combat log never fire ([mmonster.co](https://mmonster.co/wow-forever/guides/addons/weakauras-forever)) | [ForeverAuras](https://www.curseforge.com/wow/addons/foreverauras), [Musca Auras](https://www.curseforge.com/wow/addons/musca-auras) |
+| WeakAuras | Custom alerts | **No Forever-tagged file found on the linked project, checked 27 October**; imports into forks need separate compatibility checks | [WeakAuras project](https://www.curseforge.com/wow/addons/weakauras-2) |
+| ForeverAuras, Musca Auras | WeakAuras forks for Forever | Yes. The [Musca Auras author](https://www.curseforge.com/wow/addons/musca-auras) says combat-log triggers never fire and some imported triggers freeze in combat; importing successfully does not prove an aura works | [ForeverAuras](https://www.curseforge.com/wow/addons/foreverauras), [Musca Auras](https://www.curseforge.com/wow/addons/musca-auras) |
 | **Professions** | | | |
 | SkillUp Forever | Skill-up chances, levelling routes, shopping lists | Yes, made for Forever | [CurseForge](https://www.curseforge.com/wow/addons/skillup-forever) |
 | ForeverArtisan | All twelve professions and camping | Yes, made for Forever | [CurseForge](https://www.curseforge.com/wow/addons/foreverartisan) |
@@ -105,5 +109,4 @@ Nothing recorded yet.
 - [foreverchanges.pro: Addons](https://foreverchanges.pro/addons): 76 addons with Forever versions, built-in replacements and beta fixes
 - [Icy Veins: Addons in WoW Forever](https://www.icy-veins.com/wow-forever/news/addons-in-wow-forever-blizzard-devs-just-addressed-the-big-question/): Blizzard's statement on addon rules
 - [Blizzard forums: Addon compatibility feedback](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-addon-feedback/2385926): an addon author's technical notes on the client
-- [mmonster.co: WeakAuras Forever](https://mmonster.co/wow-forever/guides/addons/weakauras-forever) and [TradeSkillMaster](https://mmonster.co/wow-forever/guides/addons/tradeskillmaster): status checks on two big addons (a boosting site's guide pages)
 - [ElvUI on GitHub](https://github.com/tukui-org/ElvUI): the development version with Forever support

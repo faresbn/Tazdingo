@@ -51,3 +51,8 @@ Each line is something Fares decided, or approved, with the reason and the date.
 - **Checkpoints to GitHub every 25–40 minutes on long runs, with updates in chat** (26 Oct).
 - **Update the packages the repo's work needs** (27 Oct): for this repo, keep tools current (Node, Codex, Python) when they're outdated or vulnerable.
 - **Leave a running record** (27 Oct): docs/HANDOVER.md, kept current, so another thread, LLM or machine can carry on.
+
+
+## Recommendation evidence (27 October 2026)
+
+Each guide now distinguishes a short **Tazdingo recommendation** from attributed source detail and Field findings. It should resolve obsolete factual conflicts against later official changes, and explain real trade-offs by role, level, equipment and encounter rather than vote between websites. Source dates and model snapshots do not establish in-game verification. Market tables describe estimated listing margins and priced fill bundles; they cannot establish sales, demand, total crate cost or guaranteed profit. See `docs/sessions/2026-10-27-content-review/review.md` for the initial sweep's scope and remaining uncertainty.

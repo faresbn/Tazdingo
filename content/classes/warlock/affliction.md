@@ -16,6 +16,12 @@ sources: Icy Veins, Wowhead, ForeverDB, WoWSims builds, Blizzard class deep dive
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Use instant Corruption and a sustain-focused Affliction path for ordinary questing; shorten the setup on fast dungeon trash.** [Wowhead's level-30 guide](https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-30-dps-overview) supports Drain Life when its healing matters. [Icy Veins](https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-guide) explicitly notes that short pulls can die before DoTs repay their setup. In that case, fewer DoTs and more direct casts can be the better use of a global cooldown.
+
+**Keep the damage pet when you can sustain the incoming damage; use the Voidwalker when you cannot.** Imp, Sayaad and Voidwalker recommendations answer different questions about damage, party utility and safety. A simulator choosing one pet does not settle the other questions. Treat Shadow Bolt/Ruin and Wrack as separate level-60 candidates: choose a filler that fits your goal, then compare the same gear, buffs, targets and fight length.
+
 ### Talents by level
 
 | Level | Icy Veins levelling order | ForeverDB levelling build |
@@ -34,7 +40,7 @@ Icy Veins' dungeon build at 30 takes Suppression 4, Improved Corruption 5, Grim 
 
 ### Level 60 builds (projections)
 
-Wowhead's [talent builds page](https://www.wowhead.com/forever/guide/classes/warlock/affliction/talent-builds-pve-dps), updated 26 October, rates **SM Ruin** strongest. Shadow Bolt is the filler, and the core is Bane 5, Improved Shadow Bolt 5, Shadow Mastery 5, Agonizing Flames 3, Ruin 5, Malevolence 5, Pandemic 3 and Improved Corruption 5. Suppression stays until your gear reaches the 17% hit cap against bosses. The **Wrack** build trails it; Wowhead suggests it only if you prefer channelling. For dungeons, it moves the third rank of Cataclysm into Shadowburn for an instant on the move.
+Wowhead's [talent builds page](https://www.wowhead.com/forever/guide/classes/warlock/affliction/talent-builds-pve-dps), updated 26 October, previously rated **SM Ruin** strongest; that build page could not be rechecked in this review. Shadow Bolt is the filler, and the core is Bane 5, Improved Shadow Bolt 5, Shadow Mastery 5, Agonizing Flames 3, Ruin 5, Malevolence 5, Pandemic 3 and Improved Corruption 5. Suppression stays until your gear reaches the 17% hit cap against bosses. The **Wrack** build was another listed option for players who prefer channelling; a current numerical difference is not established here. For dungeons, it moves the third rank of Cataclysm into Shadowburn for an instant on the move.
 
 WoWSims carries the same two: "SM/Ruin" at 31 Affliction and 20 Destruction, and "Aff (Wrack)" at 33 and 18 ([builds](https://github.com/wowsims/forever/tree/master/ui/specs/warlock/dps/builds)). Both keep a Succubus out and use Curse of the Elements.
 
@@ -57,7 +63,7 @@ Don't refresh a DoT before it runs out. Wowhead adds that Soul Siphon boosts you
 1. **SM/Ruin:** keep your Curse up; Bane of Doom on fights longer than a minute, otherwise Amplify Curse into Bane of Agony; Shadow Bolt on Shadow Trance. Spread Agony, Corruption, Siphon Life and Immolate when each is worth more than a Shadow Bolt; Life Tap under 30% mana; Shadow Bolt filler.
 2. **Aff (Wrack):** apply Amplify Curse with Bane of Agony, then Corruption, Siphon Life, your Curse and Immolate. Shadow Bolt to keep Improved Shadow Bolt's debuff up and on Shadow Trance. Channel Wrack when every DoT has at least 4 seconds left; otherwise Shadow Bolt.
 
-The guides at 30 and the simulators at 60 agree that you keep DoTs rolling and fill with Shadow Bolt. The simulators add Bane of Doom, which arrives above level 30.
+These are different contexts: the level-30 drain-tanking guide uses Drain Life for sustain, SM/Ruin uses Shadow Bolt, and Wrack is a separate channelled build. The presence of Bane of Doom in a level-60 list does not make that list applicable while levelling to 30.
 
 ### Gear and consumables
 
@@ -71,7 +77,7 @@ The guides at 30 and the simulators at 60 agree that you keep DoTs rolling and f
 - **Which demon:** Icy Veins and WoWSims keep a Succubus out for damage; ForeverDB's simulator keeps the Imp.
 - **Immolate:** Icy Veins pre-casts it; ForeverDB's simulator did slightly better without it at 30.
 - **Malediction:** Icy Veins' introduction and ForeverDB's group build still describe Malediction's periodic damage bonus. The 16 October client renamed it Grim Reach and made it a range talent ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)).
-- **Suppression:** Icy Veins takes 4 points, ForeverDB's group build and Wowhead take 5.
+- **Suppression:** choose ranks for the target level and the hit already on your gear. Wowhead's level-30 guide and Icy Veins' main build both show four ranks, while older group lists show five. The Icy Veins stat paragraph also says three, conflicting with its own four-rank build; use the actual selected talents rather than that paragraph.
 
 ## Field findings
 

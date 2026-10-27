@@ -1,0 +1,698 @@
+{
+  "reviewed_on": "2026-10-27",
+  "pages": [
+    {
+      "path": "content/classes/druid/balance.md",
+      "before_sha256": "d319b1f52f6e2fd1370e3908d451e22ae1e3489c60d008462c34968dd1d5f958",
+      "words_before": 1490,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "9791477b3c8bdb5a59a7fc29b443548496a00cea19b53f8fd7c78eabeb05c962",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/druid/feral.md",
+      "before_sha256": "e8220da9f17e1c6086548d69b6e0daa07b8c2058b8ad894cbbeba59e1148b818",
+      "words_before": 2066,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "852b5567f7a8af2b60285a9b43bc986f4e5a1b7169c42b9bd6b929c47d2339c4",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/druid/hybrid.md",
+      "before_sha256": "77fdd0ee0f3a2c7e555ed63a42903158416cb46e590cb5184093bc3546d85c0e",
+      "words_before": 1480,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "4c19605de7bb96338078e2a2267784fbd74e0ea3984a3b2bf4f9fe0b76ead00c",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/druid/macros.md",
+      "before_sha256": "4277b7c900f5a3e34f2edc1c9576ae38b3cf2bf0f91e2425238d9080efa408c8",
+      "words_before": 1110,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "0eed9f72d134a651f2482654de05b1d2220f8d85875b483c7689ae452c0db28a",
+      "in_game_verified": false,
+      "scope": "static macro syntax and language"
+    },
+    {
+      "path": "content/classes/druid/overview.md",
+      "before_sha256": "5cb8979279980e2baba39939f8f07f69d6d95d11a104a1a8c4bfbd9ec3bfdc47",
+      "words_before": 1359,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "4028c903238c75966f5de40f16ae0183ac44604cc3faf9bde86f4b9b05344245",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/druid/restoration.md",
+      "before_sha256": "69e1caea5d2b65af11a7dbb20c3cc562887e29c5c7fd9451a9633cc07554963a",
+      "words_before": 1434,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "4f49ba5b5b68dc6fac8c34562f80e8d1c91fa78cbecebe057ba4ab47249479f8",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/hunter/beast-mastery.md",
+      "before_sha256": "af7b61cc3f302f416e7ad986387f3d14be20da88cb79ce2f0376acb276e9ece3",
+      "words_before": 1245,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "1f8a07e8dd93147e5574d7ad8bdc234e97b092f81fa6eb06de62c8d78fb75d51",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/hunter/hybrid.md",
+      "before_sha256": "178446c18b2702d4520b7d9e0e97ddf8785636c829a636b7ce97bf61827b1a47",
+      "words_before": 940,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "86966b2d148e37f1ed1e5b43574920c3ae2af7618e87079b049f9d4025992b28",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/hunter/macros.md",
+      "before_sha256": "3ec3756e3c341f4f630233c38f92df920908ed6ef5b168ec1d2abc7a5f604e9a",
+      "words_before": 994,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "0939578e134c92a8f427606d8f02d0f04eef8248ae2256432b9ae4a091cf8fdc",
+      "in_game_verified": false,
+      "scope": "static macro syntax and language"
+    },
+    {
+      "path": "content/classes/hunter/marksmanship.md",
+      "before_sha256": "96161f486c353bd56d3615bdf412d46d5f0e26bf7ed71b0f41efa2897812672c",
+      "words_before": 1216,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "16f856f7309038819d5ce2922dd9271d88c7bee66a9bf141d42d14c96e5d8627",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/hunter/overview.md",
+      "before_sha256": "e9a119a96b401c0fd99c735d9ed25a669ee15d086bb72971c0ca6e81acdbc5fe",
+      "words_before": 1231,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "a8c1ffa66631fd900423d5336bf4b3b2d1d39d15ab6574f5dcba06a725bedb51",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/hunter/survival.md",
+      "before_sha256": "946711bf51e47d17a6cb91e3766ff6ef15706c0ece2ff5cc1441cbedeca4dc49",
+      "words_before": 1305,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "1c24279576a90fa797562f30bca4ab5c0424d4a592b4616713a8bf779ec3d36d",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/mage/arcane.md",
+      "before_sha256": "fdf303b54804d1b8b0c3476083a08b5e4bd6e0720b98addb040761eecae7f47a",
+      "words_before": 1178,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "34539a62dd4ef9a3fdb2c3409ded8448cfd883479dfe318499da9511318aae1e",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/mage/fire.md",
+      "before_sha256": "bafda9511d1a9aefe78123f56ebe5cffe46fc9aedb8e57e04773e9b02a893f9a",
+      "words_before": 1232,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "87c8263597573d15b0339ba046c7835c1ef906dfb18166502246a2c27e399b9b",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/mage/frost.md",
+      "before_sha256": "941b9f9add7504c43e9c5f9aad1fcb0c8f22000ece24aa4757c4788dec9c2a87",
+      "words_before": 1367,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "17b2413d0c3f64cc40762811c666c80f0b923b080b8e3275e2a9f8d696f3efbd",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/mage/hybrid.md",
+      "before_sha256": "20913eed9e2fe4d42c3726a0f58c94693277ded2f9917e61f3fbcb16280e28ef",
+      "words_before": 1003,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "f21f96f309fe545e4312722fda3edf3805a56096201c16c20c627c323afaedb0",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/mage/macros.md",
+      "before_sha256": "dc5df1eca2251389e953e59603f70678723968f470c1cdbcda07dab14efbfb6a",
+      "words_before": 998,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "e040acd7f3aeaf05416e4fff9d34218dab5705ef5d720958e0d91488a54e69a4",
+      "in_game_verified": false,
+      "scope": "static macro syntax and language"
+    },
+    {
+      "path": "content/classes/mage/overview.md",
+      "before_sha256": "070787c5823869d9fd36cd96f26712dd8e0685bbcb598ffe068739f48cfbee24",
+      "words_before": 1330,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "8606c432bced03296dc15b4ed8bea2b6a5d23466fee298ae5e80f17fbb99d13c",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/paladin/holy.md",
+      "before_sha256": "83694436911ee6709e71d3d32b8496c87fd2e9c6fd0e3f2e1a532f5743a7705b",
+      "words_before": 1283,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "7338afe439993b51d5dc3735d8b0ab51380fde0676b939dc244ed7c097939225",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/paladin/hybrid.md",
+      "before_sha256": "361f8f088faa6a1ecaa0e6b3520dbc7754a594b2994d68bc2e843a5d16bd5e90",
+      "words_before": 1088,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "0746b70869994091760b5b8878a00a420de9d6a6193ac156c6584cd9c59bcc30",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/paladin/macros.md",
+      "before_sha256": "c08ff8084ba679446a0a4fe85842c032946861ef2a8dbfeffa590f51dd3d0a6d",
+      "words_before": 979,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "2466d5811a1e575c7ecc2a1cb0c59b5cd3dc798c881ea9b0242b61020e5892cd",
+      "in_game_verified": false,
+      "scope": "static macro syntax and language"
+    },
+    {
+      "path": "content/classes/paladin/overview.md",
+      "before_sha256": "7dac37f124a443714bba485187e6b9766787d43cae12d1c4efc440b494da5d45",
+      "words_before": 1062,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "9815c9c183be448217856147a07ea38ada0eda3bdec8474d660acb575eb96b6f",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/paladin/protection.md",
+      "before_sha256": "d64c6c4593212d56a2146409011278f815507e7ed495fb0c9456217d52859d30",
+      "words_before": 1294,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "b8b6edff309ae88c35ac827ee8c6c791fb213ffcd58832a7edf012c5606e7289",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/paladin/retribution.md",
+      "before_sha256": "5e8aa39dacc633da43591b0b274f8a183f26decb3277aded682eeac198348949",
+      "words_before": 1324,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "cfea00337a6e2e2aa6154c8718faee9bfeb44c07d8d348dac5f448475b6c30e4",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/priest/discipline.md",
+      "before_sha256": "35290abcdb4e101c9922976ca970e8ab7dc50921a192e66196b4cd09f1c5eb74",
+      "words_before": 1219,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "443b757344f2cf67ee7108ca0b7a85365ef3d88d9fc034ab4a0ac9baef4f4a0d",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/priest/holy.md",
+      "before_sha256": "64f6929c240d8305a772a30683f34ab29495ba0d719f06861edca16b6184b28b",
+      "words_before": 1171,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "053891daa1244bc511d306de228ca7aca5ca50dffedf44662d109fb01fc6b6de",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/priest/hybrid.md",
+      "before_sha256": "6f8de79fd1b5e00cd07f3b8835f9d2dce131c580b9f0f87c9edf5bffb6b8e89d",
+      "words_before": 1140,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "86a18e405d2e45ac48e46ca72697f6145d979f6aca9bc09526cbc0cddcf86f06",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/priest/macros.md",
+      "before_sha256": "e592fa426a2503db514a19c42322b49795d68af7a8d80cf8d3438c0126f0eb4d",
+      "words_before": 928,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "f6cbe4b9c701a1d3f3622f7a8e29e7b1002c66f451f689590ba5ee0cba620473",
+      "in_game_verified": false,
+      "scope": "static macro syntax and language"
+    },
+    {
+      "path": "content/classes/priest/overview.md",
+      "before_sha256": "a2cf809034dd13b25a5d08943d901bd375811af8939ddcaabbf14f204ee6e041",
+      "words_before": 1198,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "be60297ab62e7abbedc8dcb30b53a662eed48ef1e89f337a5886b053f6d0a60b",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/priest/shadow.md",
+      "before_sha256": "ce45bf59c5965c2727e6ce7db8f34069632c6476236cf287f71b9dde9b83cbf8",
+      "words_before": 1249,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "17566f7de0f074d9cf99b5263516f17317aa6bb01b2e22bed5aefd6216c860b0",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/rogue/assassination.md",
+      "before_sha256": "76d44d2782d06deccaac25c85abfce4298f11cbe354ff26031e5da8154007eeb",
+      "words_before": 1241,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "5e2b5c7b5580a52aa83499edf89347865c0e53253ccd1d623ae984c596c1c9ff",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/rogue/combat.md",
+      "before_sha256": "d233d40ac5a8465ff4761c23b8b901933a4a40ebb0efbf79fec21c64359698bb",
+      "words_before": 1264,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "561f1755ae8314e2343e242be18804412d6c5ccd28ceaba05af302519bc16501",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/rogue/hybrid.md",
+      "before_sha256": "9b60b93c3264ddb85ddebba86f61e23cb585a045b9c519fb796f5ebb605f7220",
+      "words_before": 980,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "cf63d3059ab601983c57dbe40f01edbff381c60830ae1faa4c4fc47d8383aa91",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/rogue/macros.md",
+      "before_sha256": "bd908a1132333598abe8a21da22e2d88431ec17769d0b9bd4b657d1cb5defa1f",
+      "words_before": 973,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "a329dbacad3e33f6acf8f9e48447b98a9097625029db8fe5ab6516df29aabe5c",
+      "in_game_verified": false,
+      "scope": "static macro syntax and language"
+    },
+    {
+      "path": "content/classes/rogue/overview.md",
+      "before_sha256": "d5cd8008167328033f51c5581d8e8b718237821a0f747160a328e5f4caa6013c",
+      "words_before": 1138,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "eb244919f11be2ba64e91a8f8d69c668d0405083b9dc4ddf9445b360ed5d496e",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/rogue/subtlety.md",
+      "before_sha256": "2d6216397b1fa8204ff583d2929e7a45cfa51e48ecc5d33f97b52d6e9f313d64",
+      "words_before": 1199,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "929cec41b748ffbdfa662a61e8fe83c329d881a14910309f765a90c86059dc45",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/shaman/elemental.md",
+      "before_sha256": "ff4c101238638ad69cc01a8abb39aceefe2d4ea87f734e56719e6dbe2b3337b4",
+      "words_before": 1279,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "66cf5cea873173c5c00671424dd99373f78d8d72213d5610cd69d5e8ee06a980",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/shaman/enhancement.md",
+      "before_sha256": "b4726e726d191de5cf143f30647f487158ab4be96a3307d1499b1f6bf8a5ce25",
+      "words_before": 1263,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "412e6f2d1fec4a97ac03bbfc3c17878b0f19c07405c0e0d7bca907e085649235",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/shaman/hybrid.md",
+      "before_sha256": "548767c7fa1b5194a637d8b09d13c3bd2b0a66da45323e42ebe77e1c629e2e91",
+      "words_before": 1069,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "958ec1a26e7d8c5e90022d863659a2cacf0d7e1751fa975f1bb5f47155187f31",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/shaman/macros.md",
+      "before_sha256": "702fe7239cf5aab258b30c0ef61f6dfd8a48a652bbc76c0c686bf7f7f5a1ddae",
+      "words_before": 1040,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "5a0bdbc23f1781c1ae676b635319510635097bc0d717bf6b84ba67edb4d87778",
+      "in_game_verified": false,
+      "scope": "static macro syntax and language"
+    },
+    {
+      "path": "content/classes/shaman/overview.md",
+      "before_sha256": "4a6b6a8ac44652e0ea86d8cec91cd7699827e02004f62c89857df871ca049c80",
+      "words_before": 1171,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "58e7ed074c6016e11c30f0c86fb0b1d9668360fbed6b7b5feb22277cddd7d112",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/shaman/restoration.md",
+      "before_sha256": "3552548d342c145115b7848a102de5cb94506cf53ead8b62d0e19433bf6c3d91",
+      "words_before": 1086,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "81c961673fdf06cf9a790e172b020a1e0afdb9d0aa602385871ac5e8a47a5bd2",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/warlock/affliction.md",
+      "before_sha256": "35efa49e97db5b1c143c47a78fe5df4cc92a697075f83976028963296e8fddeb",
+      "words_before": 1306,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "e877ad91d7bf0bafe4c90a258f7cffc868ab2c443d958e3980a30934ff54d121",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/warlock/demonology.md",
+      "before_sha256": "382d5ec3ed22ea498c4807e18ab22b54ac616f15d5d606d3920be12bb08f8508",
+      "words_before": 1264,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "d3d08f495ce161521264c8e19b8f5abf00bba7757b2ee37863861992766b5c20",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/warlock/destruction.md",
+      "before_sha256": "75ea88e406c80e5c2172e0990fc662a0f07a32bc14cf9d3a8e8d67b999168d55",
+      "words_before": 1247,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "03531029a93c82833e744791324323bb2bd8b55a4c2a5b86fbe9e69716c03034",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/warlock/hybrid.md",
+      "before_sha256": "c49582340a0899f49030202f8b542ffb9a5da7422627db654c255d5fcf56c028",
+      "words_before": 872,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "cfbb919eb486f12ce5b23ca8726a6aeddf93a30794ea69dedc2981ab730e951f",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/warlock/macros.md",
+      "before_sha256": "59654418b7cee8744725905fb2628def5154340954906dd3f36fd5de06468cab",
+      "words_before": 980,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "9d4b11837d192be9ff273b4bd28d3330db6b37cb5adc83e244b9823c85876b36",
+      "in_game_verified": false,
+      "scope": "static macro syntax and language"
+    },
+    {
+      "path": "content/classes/warlock/overview.md",
+      "before_sha256": "c153dc1ec5703d96ecb47cc2ce815f42ab9f58bc593174d0871ced0b6d34a22a",
+      "words_before": 1321,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "395ea70a544ec9a54522b6489d43488fd7c7ef71232eae2f4c5427bb80b9bc16",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/warrior/arms.md",
+      "before_sha256": "faf16a5136d436f8b25944ecbb8a35a911a9f4942600d6e677d9679c50dc4468",
+      "words_before": 1254,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "64f5b8a0f7d430da612734db69abbbef2ec8fb9ba4604c07a421513f3d306543",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/warrior/fury.md",
+      "before_sha256": "828a3d10419fd1156f3609b337737f425051f9a8e6a9ed66b127b23c851e7609",
+      "words_before": 1273,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "b06c0f74fa97f08ff92624c091764d6ffc47fa2d592229c7e0d22a577a282bb7",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/warrior/hybrid.md",
+      "before_sha256": "dce30e601e97f0f3654831221f6b8a9bda5c86a4c13210120f5e9bc9181e18b7",
+      "words_before": 1149,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "182bc1ae7cc59f74381b46b5cd9a381f43f8859dd649d2f0686b9f2811859758",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/warrior/macros.md",
+      "before_sha256": "f578bc3aa9f9c40f6b3af3e7b7248ba00557be26e87ba1b1c6499cc1e03941af",
+      "words_before": 1028,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "3af3ea010dc3dbc91ab8af186f12faf41c0755155d4907d8a96b8fc10236eacf",
+      "in_game_verified": false,
+      "scope": "static macro syntax and language"
+    },
+    {
+      "path": "content/classes/warrior/overview.md",
+      "before_sha256": "ee73b455559fc922ebeffc061db3623f7d8e557e3c2207a493a67c1db5b34932",
+      "words_before": 1168,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "812c44b7786299fb4e4f3261771fdc1cabd1ccdbce002ed5f00c4739577066f8",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/classes/warrior/protection.md",
+      "before_sha256": "8f6896761604a28c5964798d70ac07423cd448ddc95b88a5c2cf92c351a18b15",
+      "words_before": 1337,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "ac450cb7dec59b057192aa7caec81e7b524b89f42625e79a2b4996622f7cc370",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/more/addons.md",
+      "before_sha256": "1b02b9be4e454ca2b9a62fc5a2da838f37e7d8d630ba052736627100f5b5bd72",
+      "words_before": 1514,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "fe66ea8388a221d489d472308532bf6e96c75ffb99898f119296b432520617b6",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/more/known-issues.md",
+      "before_sha256": "308c3000c624830e3786e5acbeba94352b2b80d987df122ba8883b7b83c5a805",
+      "words_before": 1190,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "3b1bfb1d5cd5d2fe63e10adba7ea7537af2628846905112bc8080b04a035b6bf",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/more/launch.md",
+      "before_sha256": "c270b283a7f899489535a24af7bfd88dd133392f32116c467d8b2cd70cb2dbc1",
+      "words_before": 1687,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "dc2a364d77e3cddc90b7e8fca3bfa5991c3a2bce229d62749f0bcf3c01d1f836",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/more/macros.md",
+      "before_sha256": "49c9fa0f9686cfae8af7a662111714450ea1950e96da1459e2a3034ca77a97b5",
+      "words_before": 1187,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "88adb4913410e3d0d5d7596f32db93b7b6ba3402279af1d1304013491ac4f6bf",
+      "in_game_verified": false,
+      "scope": "static macro syntax and language"
+    },
+    {
+      "path": "content/professions/alchemy.md",
+      "before_sha256": "ecf378788e316f8ff95767522905e3a50a914dd0473ccce13566ce79723f4a67",
+      "words_before": 974,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "9efd12f1ec8da2329edc0d31cb0ab9b293e267d5eeee9e2624351fcc736e111a",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/professions/blacksmithing.md",
+      "before_sha256": "d25880b03df5fa5d0bb694f141b05b32a577768f017707b2d40d3bbb9c5cb88c",
+      "words_before": 944,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "608f151edca5aacaff4edfa6072acbe0a63ff5263b4340e96377982259c53cd3",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/professions/cooking.md",
+      "before_sha256": "aeb603f8e5fa3a5903c9dafef178acaa71d018fd6c3bf576944b5505848ab791",
+      "words_before": 1044,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "6dd1a89f45f8d0027c274f9cd49aa73e2a12e7d6301d7080933bbc66682c04be",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/professions/enchanting.md",
+      "before_sha256": "9b83c080de43491dcf20b3544625d1e968de1b39a931d6d90c12b5e51acc62af",
+      "words_before": 1021,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "8addc3a1bfe96ce378a97169b982be02ac70c4fa60bde455a5aaf41274bcf78b",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/professions/engineering.md",
+      "before_sha256": "b37e9094144cedc8748cd653ab66010fd90479459cff3f43f23c4f67e33bf6c6",
+      "words_before": 1015,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "4c6ac0c9d30d645bfb4cbe3a6d31caf5ac28a9f0036d4d7619d59a7716ed6bb0",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/professions/first-aid.md",
+      "before_sha256": "c289d5e04bb44881401440af13c7c280c2b5e9d7f6847c6c7e8ba47cd1bd6547",
+      "words_before": 926,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "c8aace92b271ef3e56822bc025ca59b3a1656b578268b8e60afed6502f1d9924",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/professions/fishing.md",
+      "before_sha256": "12e27a91fd922de65c85c2ec57626138f775302bb07186648f88e4437137f8b3",
+      "words_before": 958,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "091473432edc182d57927b3effe31071e7c1531f8348939e6b41e87f21d27f5c",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/professions/herbalism.md",
+      "before_sha256": "eaa5cba4448a887d19849c1b9af0df3515e43cc956b2a8ef8c5f3a5bc061aedc",
+      "words_before": 1006,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "578a8cdd5e2aa17208255191959480fcbdb9084afc3e352d0c0a45b664fd4b81",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/professions/leatherworking.md",
+      "before_sha256": "be7a361e9a75926f7dc730c86b2867a44846fcc82e298757160b523f06ab7c32",
+      "words_before": 933,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "5891830ab0a71faae82ea96006fc7348fa7a5938acb1fb3fb6e519ba2aaf5f24",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/professions/mining.md",
+      "before_sha256": "4f5f9a3fc53de0a07464310cc1895be7e67bfaac993f0e7a17ef0bb944fd824a",
+      "words_before": 1067,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "ee49705a7525052935fca6d779d9af86af952cae5cf88f87bfe889ead244133a",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/professions/skinning.md",
+      "before_sha256": "4aa2beb7df1e996672dc488fc3fca813d92fb615f18234c2c09a5aa5ac8349d2",
+      "words_before": 996,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "55555c469c39027d4290adbbfb9fdaa1abeaea4ecdd8ca1e5c7ca10d7c7d0abc",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/professions/tailoring.md",
+      "before_sha256": "0ff8f9e5be666e68244d05f8ec79254a95ab0878e1968651616e19e5b9c88b6b",
+      "words_before": 1040,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "92e0c8f235a9d5db16237da37d76e68028a7b542add1dd07a7e5c1e7a31dc7ff",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/world/camping.md",
+      "before_sha256": "1840fdceb0f3ae8b3a94228f32806737a7d26c80e8d41977f7968d6dd105056f",
+      "words_before": 1418,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "25f198df1f4dba158d6217aecb229093c8ad03ab2f019cd9818b373eeeed193f",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/world/collections.md",
+      "before_sha256": "7442ccce901e2884c6d049c94f5c58de8f8b82de32c0a4f405a324365c2c08b9",
+      "words_before": 1173,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "a4d26c0076c751935e1770419d4f3852cecb7f795e86b919a55d325b1bfdebbb",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/world/dungeons-and-raids.md",
+      "before_sha256": "62c21db4aa7437ffe631e18fd793754be0f7730b5841942396d6cc4f95a6982e",
+      "words_before": 1906,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "6853ef83aaf413604f80f98a1a351cc063526a1953c01f9325ef743a990f5763",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/world/legacy.md",
+      "before_sha256": "af9ed5bb0aa4c1bca17e3681259e8a4c3d5a25224781a2d9f139a1bfd47a3e82",
+      "words_before": 1513,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "19d8cd3df96f21a37286ba42ab12c3895876696b5ae8f2f4b081087e214d4188",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/world/merchants-favor.md",
+      "before_sha256": "2643fd8c3da5a0460a22942ca2658c402b6bf152e1dbed9168eaedda7c16c952",
+      "words_before": 1145,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "84ef11d252f251494d2866458cc06af09aebeca0d213453e50b2bccf090ab805",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/world/rares.md",
+      "before_sha256": "cbfe143308230405ffaf3abb05b494b272c06bd3ab7dfec61b341d20d79e651f",
+      "words_before": 945,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "9be36c263669946c9fdd94da4a9b2788b029594a1a672c9ab0cd34ee35736102",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    },
+    {
+      "path": "content/world/zones.md",
+      "before_sha256": "2ef21cfdf1b52e6ceebb8d7a0cdd5894ade67d1a0dde7281fbd8feb4f3da3a84",
+      "words_before": 1156,
+      "review": "editorial synthesis; selected consequential claims checked against sources; not a full external fact audit",
+      "after_sha256": "81759705a1f87cbd7fb00821b93f745a6c6baed43bc2c9ef23a1eed1fd7ebbce",
+      "in_game_verified": false,
+      "scope": "recommendation, source context, disagreements and spending/route claims"
+    }
+  ]
+}

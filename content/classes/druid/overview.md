@@ -17,6 +17,14 @@ sources: Blizzard class deep dive, ForeverDB (levelling guide, talents, articles
 
 ## What the guides say
 
+### Race choice after the 26 October changes
+
+[Blizzard's 26 October notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7) leave Tauren Endurance at 5% health only and set Skyborne Wind-Blessed to 2% haste. Read Leyline now gives 50% additional regeneration for 15 seconds, or 100% while Attuned; Innervate replaces it rather than stacking with it. Older claims of Tauren critical-healing bonuses or stacking both mana cooldowns are obsolete. Race utility and preferences remain legitimate reasons to choose beyond a damage model.
+
+### Tazdingo recommendation
+
+**Feral is the practical first-character default** when flexible solo play and occasional tanking matter. Balance offers a ranged playstyle at a mana cost; deep Restoration is most useful with a regular healing group. Keep the gear for the role you intend to perform: sharing a tree does not make Cat damage gear a complete Bear tank set ([Feral](https://www.wowhead.com/forever/guide/classes/druid/feral/level-30-dps-overview), [Restoration](https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview)). Spellbear is an alternative to test for its actual route, not a proven replacement for every Feral or caster build.
+
 ### How Forever changed the class
 
 Blizzard's [class deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24301515) frames the Druid update around making forms less restrictive. Almost all consumables now work in form, including Rage potions and Thistle Tea. Weightstones, Crusader and Windfury apply while shifted, and racials such as Shadowmeld and War Stomp work in form. In Bear, Cat and Dire Bear Form your auto-attack damage per second equals your weapon's, at a fixed 1.0 or 2.5 second swing depending on the form. Most engineering bombs still can't be used in form.

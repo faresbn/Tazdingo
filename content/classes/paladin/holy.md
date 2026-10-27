@@ -9,11 +9,15 @@ sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets, 
 - **Role:** healer, strongest on a single target. Light's Vigil adds party healing at 40.
 - **How it plays:** heal the tank with Holy Light or Flash of Light and save Holy Shock for emergencies. Keep a Blessing on everyone and an aura running. Between pulls, fight in melee with a Seal, Judgement and Holy Strike.
 - **Strengths:** plate, big emergency buttons (Lay on Hands, Divine Protection, Blessing of Protection), strong Blessings, and Purify for poisons and diseases.
-- **Weaknesses:** Mana runs out fast at low levels, there is no group heal before 40, and solo kills are slow.
+- **Weaknesses:** Mana runs out fast at low levels, there is no reliable direct group heal before 40 (Judgement of Light offers incidental healing), and solo kills are slow.
 - **Stats that matter:** healing power, then Intellect and Mana regeneration. Intellect adds Mana and crit, not healing (Wowhead).
 - **New in Forever:** [Holy Shock](https://foreverdb.net/spell/1311606) at 30 with a 10 sec cooldown, [Light's Vigil](https://foreverdb.net/spell/1310911) at 40, and new talents [Reverence](https://foreverdb.net/spell/1310899), [Infusion of Light](https://foreverdb.net/spell/426065), [Voice of Truth](https://foreverdb.net/spell/1310897) and [Divine Precision](https://foreverdb.net/spell/1310904).
 
 ## What the guides say
+
+### Tazdingo recommendation
+
+For regular healing, **choose heals by urgency and effective healing per mana**, not their names alone. Flash of Light lands sooner; Holy Light can be efficient when enough of its larger heal is needed; Holy Shock buys an instant response. Overhealing, learned rank, gear and talents decide the practical result ([Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/holy/level-30-healer-overview)). This reconciles the guides' different efficiency claims without declaring one spell best everywhere. A solo-friendly talent path can trade pushback protection for damage; deep Holy is the better fit when healing dominates. Judgement of Light offers incidental group healing before 40, but does not replace a reliable group heal.
 
 Light's Vigil and Holy Power (35–40) were out of reach in the beta, so everything about them is projection.
 

@@ -15,6 +15,10 @@ sources: Blizzard, ForeverDB, Icy Veins, Wowhead, wow-professions.com, Warcraft 
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Prepare the client, a small set of necessary addons and the intended ruleset first**, then choose a manageable questing and profession plan. Keep gold for training and practical upgrades rather than stocking speculative crafts from Beta prices. Racial changes can affect builds but do not settle level-60 rankings. Treat the checklist as pre-launch preparation, and check [Blizzard's launch announcement](https://news.blizzard.com/en-us/article/24302093/carve-a-new-path-with-world-of-warcraft-forever) for schedule changes. Early login, long grinds and reaching 60 quickly are preferences, not requirements to enjoy the opening weeks.
+
 ### Check the launch time where you live
 
 Blizzard gives one global time: 4 November at 3:00 p.m. PST ([Blizzard](https://worldofwarcraft.blizzard.com/en-us/news/24303862)). One of Blizzard's own articles says "PDT" in its first paragraph, but daylight saving time ends in the US on 1 November, so PST is right. ForeverDB and Icy Veins both give 23:00 UTC. The other rows are conversions of that time.
@@ -75,7 +79,7 @@ Install versions made for Forever (interface 16001). A starting kit drawn from [
 
 Start with the role you want: Warriors, Paladins and Druids can tank; Priests, Paladins, Shaman and Druids can heal ([ForeverDB](https://foreverdb.net/launch/which-class)). The [class pages](ledger:classes/) cover every spec. Six race and class pairs are new: Gnome Priest, Human Hunter, Dwarf Shaman, Orc Mage, Troll Warlock and Undead Paladin ([Blizzard](https://worldofwarcraft.blizzard.com/en-gb/news/24303313)). Skyborne need a pack; Horde Skyborne can be Shaman and Alliance Skyborne Mage.
 
-Two cautions. Blizzard retuned racials again on 26 October: for example, Humans' crit bonus halves to 1%, Orcs lose their crit passive and regain a pet damage bonus, Dwarves get 1% hit, and the Skyborne's Read Leyline and Skysight now get stronger at ley lines and convergences ([development notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696)). Guides written before that are out of date on racials. And beta tier lists and sims stop at level 30, so they can't tell you how a class plays at 60 ([ForeverDB](https://foreverdb.net/article/doubletgaming-7-things-not-to-do-wow-forever-launch)).
+Two cautions. Blizzard retuned racials again on 26 October: for example, Humans' crit bonus halves to 1%, Orcs lose their crit passive and regain a pet damage bonus, Dwarves get 1% hit, and the Skyborne's Read Leyline and Skysight now get stronger at ley lines and convergences ([development notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696)). Guides written before that are out of date on racials. Beta play stopped at level 30; some simulators model level 60, but their unverified assumptions cannot establish live rankings ([ForeverDB](https://foreverdb.net/article/doubletgaming-7-things-not-to-do-wow-forever-launch)).
 
 ### Pick a ruleset
 
@@ -99,11 +103,11 @@ Around level 5, the quest *The Great Outdoors* introduces camping and sends you 
 
 ### Plan your professions and your first gold
 
-You get two primary professions plus Cooking, First Aid and Fishing. Gathering professions are the usual early earner, since you can sell what you gather; ForeverDB notes that's general advice, not Blizzard's. From level 10, Waylaid Crates you find or buy can be filled for [Merchant's Favor](ledger:world/merchants-favor/), and the [prices pages](ledger:prices/) show what materials sell for.
+You get two primary professions plus Cooking, First Aid and Fishing. Gathering professions are the usual early earner, since you can sell what you gather; ForeverDB notes that's general advice, not Blizzard's. From level 10, Waylaid Crates you find or buy can be filled for [Merchant's Favor](ledger:world/merchants-favor/), and the [prices pages](ledger:prices/) show asking prices for their stated market and capture date, not completed sales.
 
-### Use dungeons for gear, not experience
+### Weigh dungeon quests, gear and travel together
 
-Dungeon quests give half the bonus experience they did early in the beta ([ForeverDB](https://foreverdb.net/launch/level-30)). The first dungeons open at level 13: Ragefire Chasm and the Hall of Thanes ([Dungeons and raids](ledger:world/dungeons-and-raids/)).
+Dungeon quests give half the extra bonus experience they did early in the Beta; that reduction alone does not establish whether questing or a dungeon group levels faster ([ForeverDB](https://foreverdb.net/launch/level-30)). The first dungeons open at level 13: Ragefire Chasm and the Hall of Thanes ([Dungeons and raids](ledger:world/dungeons-and-raids/)).
 
 ### Pick up the easy extras
 
@@ -111,9 +115,9 @@ Dungeon quests give half the bonus experience they did early in the beta ([Forev
 - **Cozy Sleeping Bag:** a quest chain from level 14 gives up to 3% extra experience that stacks with camp buffs and cooked food ([Warcraft Tavern](https://www.warcrafttavern.com/forever/guides/cozy-sleeping-bag/)).
 - **Legacy:** your first character to level 25 opens the account-wide [Legacy system](ledger:world/legacy/).
 
-### Never accept gold from strangers
+### Know the trading restrictions
 
-Blizzard is acting against gold buying in Forever. Accepting gold from unknown sources can put your account at risk, a warning now appears when you trade with strangers, and suspicious accounts can be put under a Temporary Economy Hold ([Blizzard](https://us.forums.blizzard.com/en/wow/t/actions-taken-against-botting-and-rmt/2368705)).
+Blizzard is acting against gold buying in Forever. Blizzard warns about accepting gold from unknown sources and shows a warning for trades with strangers. Suspicious accounts can be put under a Temporary Economy Hold; an ordinary trade with an unfamiliar player is not, by itself, proof of gold buying ([Blizzard](https://us.forums.blizzard.com/en/wow/t/actions-taken-against-botting-and-rmt/2368705)).
 
 ## Field findings
 

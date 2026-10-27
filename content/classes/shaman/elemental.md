@@ -15,6 +15,12 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and rotation, Blizzard c
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+For solo levelling, **Enhancement is the safer default for sustained pace**; deep Elemental is a valid preference if caster gear, water and drinking time are acceptable. For group packs, Fire Nova has a stronger case than a single-target Lightning Bolt model suggests. Keep Earth Shock available when an interrupt matters: using it for damage and saving it for control solve different problems. Compare total pull-and-recovery time, not just damage during the pull ([Wowhead's level-30 guide](https://www.wowhead.com/forever/guide/classes/shaman/elemental/level-30-dps-overview)).
+
+The guide's older tree descriptions are superseded by the October reshuffle: **Lava Burst is reachable at 30, Elemental Alacrity is in row 2 and Elemental Mastery returned as the capstone**. Use the [later official development notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/6) for those facts, rather than treating obsolete descriptions as alternative builds.
+
 ### The tree changed late
 
 The 16 October build reshuffled the Elemental tree ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)). Lava Burst moved from tier 7 to tier 5, so it can be taken at level 30. Elemental Mastery returned in tier 7. It now cuts the cast time of Lightning Bolt and Lava Burst by 0.5 sec and removes Chain Lightning's cooldown for 15 sec ([ForeverDB talents](https://foreverdb.net/class/Shaman/talents)). Call of Thunder no longer exists. Guides written before then may still list it, or place Lava Burst at 40.
@@ -52,7 +58,7 @@ The 16 October build reshuffled the Elemental tree ([ForeverDB](https://foreverd
 8. Earth Shock only when a proc called Revelation is active.
 9. A lower rank of Lightning Bolt below 20% mana; otherwise the top rank.
 
-Every source keeps Flame Shock and a Fire totem going and fills with Lightning Bolt. They differ on the rest:
+The caster rotations use Flame Shock, a Fire totem and Lightning Bolt; Wowhead also offers a melee/caster levelling alternative. The remaining differences reflect different levels, targets and mana budgets:
 
 - **Clearcasting:** Wowhead spends it on Fire Nova; ForeverDB's simulator spends it on Lightning Bolt.
 - **Earth Shock:** Wowhead uses it for damage. ForeverDB keeps it for interrupts, and WoWSims casts it only on a proc.
@@ -64,7 +70,7 @@ Wowhead calls Elemental a poor choice below level 40. Spells start weaker, quest
 ### Gear and consumables
 
 - **Stat order:** Icy Veins (levelling) gives spell damage, critical strike, hit, Intellect, mana per 5, Spirit, Stamina. ForeverDB puts hit first because no Elemental talent adds it.
-- **Simulator weights:** WoWSims (level 60) gives spell penetration 1.81, haste 1.23, hit 1.18 (below the 17% cap), spell power 1, crit 0.61 and Intellect 0.19. ForeverDB's level 30 simulator gives haste 0.21, hit 0.17 and crit 0.08 against spell power.
+- **Simulator weights:** the level-30 and level-60 models use different gear, targets and rotations. Their weights are not a shopping priority. In particular, do not buy spell penetration for ordinary quest enemies just because a model values it highly: the target must have relevant resistances. Recalculate for the actual target, hit shortfall and loadout.
 - **Gear:** Icy Veins recommends Lightning's Grasp and Elementalist's Guard from the level 30 Call of Air quest. Wowhead likes the new Leatherworking patterns, and Enchanting for oils and the [Polished Driftwood Icon](https://foreverdb.net/item/249398) relic. Forever also adds the [Totem of Charged Flames](https://foreverdb.net/item/263412) relic, which makes Lightning Bolt cheaper.
 - **Consumables:** ForeverDB's simulator rates Lesser Arcane Elixir (+5.9%) and Briny Seafood Stew (+5.5%) best at 30. Icy Veins adds mana potions, Spellblasting Potion and experience-boosting food. WoWSims' level 60 default uses Flask of Supreme Power, Nightfin Soup, Brilliant Wizard Oil and Major Spellblasting Potion.
 

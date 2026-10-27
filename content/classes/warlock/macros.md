@@ -15,6 +15,12 @@ sources: ForeverDB Warlock macros, Kami Labs macro tool, Wowhead macro guide
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Start with separate keys for pet attack/follow, your main filler and emergency control.** The [source collection](https://foreverdb.net/class/Warlock/macros) labels its macros as untested in game; matching a spell name is not runtime validation. Keep a normal spell button available while checking a macro.
+
+Use mouseover or focus control when it prevents a harmful target swap. Avoid fixed DoT sequences as a default rotation: short-lived targets, an unfinished DoT or movement can change the next useful spell. Use `/stopcasting` only for an ability whose urgency justifies losing the current cast. Ground-target shortcuts and modifier keys should be checked in a safe setting before relying on them in a dungeon.
+
 ForeverDB checked every spell name and command against the beta client but tested none of its macros in the beta. Kami Labs flags some "to confirm in-game".
 
 ### Your demon
@@ -175,15 +181,15 @@ Create a Healthstone, with Soulstone on Shift, Spellstone on Ctrl and Firestone 
 /cast [mod:shift] Create Soulstone; [mod:ctrl] Create Spellstone; [mod:alt] Create Firestone; Create Healthstone
 ```
 
-Use your best Healthstone, or Drain Life with Shift (Kami Labs):
+Use your best Healthstone, or Drain Life with Shift (adapted from Kami Labs). The Healthstone lines are explicitly disabled while Shift is held, so the modifier does not also consume the stone:
 
 ```
 #showtooltip
-/use Major Healthstone
-/use Greater Healthstone
-/use Healthstone
-/use Lesser Healthstone
-/use Minor Healthstone
+/use [nomod:shift] Major Healthstone
+/use [nomod:shift] Greater Healthstone
+/use [nomod:shift] Healthstone
+/use [nomod:shift] Lesser Healthstone
+/use [nomod:shift] Minor Healthstone
 /cast [mod:shift] Drain Life
 ```
 

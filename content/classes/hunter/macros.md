@@ -15,6 +15,10 @@ sources: ForeverDB macros, Kami Labs macros, Wowhead macro guide
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Prioritise separate pet-attack and pet-follow controls, a predictable shot key and a trap key. Keep an opener that sends the pet away from your crowd-control button. Automatic pet attacks can break traps or pull an unintended enemy. Combined cooldown macros may not activate every ability on one press if the client puts one on the global cooldown. Test each action separately before using the combined version; these are unverified community examples.
+
 ### Opening and shooting
 
 Sends the pet and marks the target in one press (ForeverDB; Kami Labs has the same macro):
@@ -71,7 +75,7 @@ Pulls a loose enemy off your healer with Distracting Shot and sends the pet afte
 /cast [@mouseover,harm,nodead][] Distracting Shot
 ```
 
-Fires Rapid Fire, Bestial Wrath (if talented) and both trinkets' use effects together (ForeverDB):
+Attempts Rapid Fire, Bestial Wrath (if talented) and both trinkets' use effects; shared cooldowns can prevent all of them activating together (ForeverDB):
 
 ```
 #showtooltip Rapid Fire
@@ -121,7 +125,7 @@ Sends the pet in and casts Intimidation (the level 30 Beast Mastery talent) so i
 /cast Intimidation
 ```
 
-Feeds the pet only when you're out of combat and it's summoned (Kami Labs):
+Starts Feed Pet only when out of combat with a pet summoned; you must still select compatible food (Kami Labs):
 
 ```
 #showtooltip Feed Pet

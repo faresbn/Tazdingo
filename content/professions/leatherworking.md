@@ -15,6 +15,10 @@ sources: Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Wowhead
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Choose **Leatherworking when its specific self-crafted upgrades justify the investment**, especially for leather/mail characters. Skinning is a convenient supply partner; buying leather can still be the better use of time. A bind-on-pickup item is a personal benefit, not an Auction House product. Price the complete recipe and Favor/station access before comparing it with a dungeon or quest reward. The [levelling guide](https://www.wow-professions.com/forever/leatherworking-leveling-guide) offers alternatives and estimated materials, not a cheapest route for every server. Yellow crafts need a buffer, and the 225–300 route is not established.
+
 ### What changed in Forever
 
 **Role-themed sets.** The trade-camp vendors sell a run of new patterns for Merchant's Favor ([Wowhead](https://www.wowhead.com/forever/guide/azeroth-commerce-authority-reputation-professions)):
@@ -22,7 +26,7 @@ sources: Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Wowhead
 - **Skill 60–110:** belts, boots, tunics, gloves, legs and hoods named Brawler's, Defender's, Stormrider's, Totemic, Trapper's and Wisdom's.
 - **Skill 200–220:** gloves, shoulders and bracers named Mender's, Prowler's, Skulker's, Skycaller's, Stalker's and Warden's, some in leather and some in mail.
 
-[ForeverDB's](https://foreverdb.net/profession/leatherworking) gear data shows which spec each name serves, and its list of best-in-slot crafts at level 30 and below is long:
+[ForeverDB's](https://foreverdb.net/profession/leatherworking) gear data shows which spec each name serves, and its list of candidate crafts within the level-30 bracket is long:
 
 - **Wisdom's:** Restoration Druids and Shamans.
 - **Stormrider's:** Balance Druids and Elemental Shamans.

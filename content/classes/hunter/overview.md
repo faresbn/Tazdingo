@@ -16,6 +16,10 @@ sources: Blizzard class deep dive, ForeverDB, Wowhead, Icy Veins, WoWSims preset
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Beast Mastery with a pet is the default for solo levelling.** Marksmanship suits players who want their own shots to matter more, while Survival is a deliberate melee choice whose key tools arrive later. Do not turn a level-60 petless simulation into a recommendation to dismiss the levelling tank. Weapon upgrades, ammunition and pet care are more useful early priorities than chasing a projected raid ranking ([Beast Mastery](https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-30-dps-overview), [Marksmanship](https://www.wowhead.com/forever/guide/classes/hunter/marksmanship/level-30-dps-overview)).
+
 ### How Forever changed the class
 
 Blizzard's [class deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24301515) keeps the Classic foundation but moves several talents into the baseline kit:
@@ -53,7 +57,7 @@ Pets now inherit part of your stats. Wowhead lists the rules shown in the pet pa
 | Wind Serpent | Lightning Breath | 20-yard ranged attack |
 | Wolf | Furious Howl | Party attack bonus (cut by 40% in September) |
 
-Icy Veins adds that pets are classed as Ferocity, Cunning or Tenacity with no built-in damage difference, and that higher ability ranks still come from taming a beast that knows them. ForeverDB says the client doesn't show how ranks unlock, so treat that as unconfirmed.
+Do not assume Retail's pet specialisations establish equal family damage here. [ForeverDB's pet data](https://foreverdb.net/pets) lists different hidden family passives from the client, but those entries are not a launch damage comparison. Guides also disagree about learning higher ability ranks; check the trainer and Beast Training in the current client before travelling to tame a particular rank.
 
 ### Choosing a spec
 
@@ -71,7 +75,9 @@ Beast Mastery is the consensus pick. The pet holds mobs, Summon Hawk arrives at 
 
 ### Races and professions
 
-The guides don't agree on race. Icy Veins rates Tauren best overall for Plainsrunning's kiting speed, with Human ahead for the Alliance. Wowhead rates Night Elf (Elune's Light) and Orc (Blood Fury) highest, with Skyborne strongest against Elementals. Sources also describe the Human passive differently: Icy Veins says it needs a sword, and Wowhead's Hunter pages say it only helps melee. ForeverDB reports that Blizzard's 16 October build made Ruthless a flat 2% crit on all attacks, so the older descriptions may be out of date. Skinning with Leatherworking is the shared recommendation, since many strong low-level pieces are crafted. Wowhead also suggests Engineering.
+**Race:** Blizzard's [26 October notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7) supersede the guides' older comparisons. Orc Command adds **5% pet damage**, not 5% total Hunter damage; its value depends on pet contribution and it does nothing for a petless Lone Wolf setup. Savage is gone. Human Ruthless is 1% crit, without the old sword-only wording. Tauren Plainsrunning now caps at 60% **unmounted** speed and gives no mounted bonus. These changes give pet-heavy Orc builds a stronger case, but do not establish a universal race winner across levelling, petless damage and PvP.
+
+**Professions:** Skinning and Leatherworking support self-crafted levelling gear; Engineering offers tools at a material cost. Check whether a desired piece is bind-on-pickup before assuming it can be bought. A useful camp buff can be shared by another crafter and is not, by itself, a reason to take that profession.
 
 ### Looking ahead to 60
 

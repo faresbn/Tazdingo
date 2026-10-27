@@ -16,6 +16,10 @@ sources: ForeverDB, Wowhead, Kami Labs, Blizzard forums, Icy Veins, CurseForge
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Use built-in targeting options for simple needs and macros for a specific repeated action.** Test each target and modifier branch separately. A macro that is syntactically valid can still be wrong for the character's level, equipment or situation. Fixed sequences stall when a step cannot succeed and cannot adapt to procs, health or mana. Keep emergency actions predictable and avoid cancelling a useful cast by accident. None of the community examples establishes launch-client behaviour without an in-game check.
+
 ### Making a macro
 
 Type `/macro`, choose the General or Character Specific tab, press **New**, give it a name and pick an icon, then type or paste the text and drag the icon to your bar. The question-mark icon lets `#showtooltip` show the spell the macro will cast ([Kami Labs](https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/)). Some beta players found macros wouldn't save; see [Known issues](ledger:more/known-issues/).
@@ -69,9 +73,9 @@ Put the skull on your mouseover or target. You need to be in a group, and in a r
 
 ### Cast sequences
 
-`/castsequence` casts the first spell in its list, then the next one on the next press, and so on. `reset=` sets when it starts over: a number of seconds, `target`, `combat`, or a modifier such as `shift`. A step only advances when it succeeds, so a step that keeps failing (an item you don't have, for example) blocks the rest until the sequence resets (ForeverDB). Players on Blizzard's forums confirm cast sequences work in Forever and use them for totems and caster rotations.
+`/castsequence` casts the first spell in its list, then the next one on the next press, and so on. `reset=` sets when it starts over: a number of seconds, `target`, `combat`, or a modifier such as `shift`. A timed reset counts inactivity since the last press, not a fixed combat rotation timer. A step only advances when it succeeds, so a step that keeps failing (an item you don't have, for example) blocks the rest until the sequence resets (ForeverDB). Players on Blizzard's forums confirm cast sequences work in Forever and use them for totems and caster rotations.
 
-A healthstone on the first press and a potion on the second, reset when you leave combat:
+An illustrative Healthstone-then-potion sequence, reset on a combat-state change. Use the exact names of items in your bags; a missing first item blocks the potion:
 
 ```
 #showtooltip
@@ -97,7 +101,7 @@ Trinkets (`/use 13` and `/use 14` for the two slots) and most racials don't trig
 - **One global-cooldown ability per press.** Everything else in the macro must be off the global cooldown. A macro can't decide for you based on information you couldn't see yourself.
 - **255 characters.** Players [asked Blizzard](https://us.forums.blizzard.com/en/wow/t/can-we-finally-increase-the-255-character-macro-limit/2351343) to raise it for Forever; it hasn't changed. ForeverDB and Kami Labs show a character count for each macro.
 - **Addons are display-only in combat.** Forever uses the modern game's addon rules ([Icy Veins](https://www.icy-veins.com/wow-forever/news/addons-in-wow-forever-blizzard-devs-just-addressed-the-big-question/)), and ForeverDB notes that addons can't see cooldowns and damage-over-time effects in combat. Addons can build or place macros, but the macro still does the work. See [Addons](ledger:more/addons/).
-- **Language.** A macro written for an English client won't work on a French one, and vice versa (Kami Labs).
+- **Language.** Macros using English spell or item names need those names translated for a French client, and vice versa; command syntax and numeric item IDs are separate (Kami Labs).
 
 ### Collections and tools
 

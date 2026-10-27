@@ -17,6 +17,16 @@ sources: Blizzard class deep dive, Icy Veins, Wowhead, ForeverDB, WoWSims preset
 
 ## What the guides say
 
+### Race choice after the 26 October changes
+
+[Blizzard's 26 October notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7) remove Savage and restore **Command: 5% more Hunter/Warlock pet damage**. This is not 5% more total character damage. It strengthens the case for Orc in pet-heavy builds; it does not by itself prove Orc beats Troll in every encounter. [Wowhead's updated overview](https://www.wowhead.com/forever/guide/classes/warlock/demonology/overview-pve-dps) makes the same pet-versus-cast-time distinction. Troll casting speed is more relevant to repeated direct casts than to DoT ticks, and Beast Slaying is target-specific. Compare the intended build and target before choosing a numerical winner. Older race tables also miss Human Spirit at 10% and Ruthless at 1%; the official notes take precedence.
+
+### Tazdingo recommendation
+
+**Start with Affliction for mixed solo questing; choose Demonology when surviving pulls is the limiting factor.** [Wowhead's level-30 account](https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-30-dps-overview) supports drain-tanking, while [ForeverDB's older levelling guide](https://foreverdb.net/guide/leveling-warlock) favours a Voidwalker. These fit different needs: a damage pet kills faster when your drains can sustain you; a tank pet buys safety when they cannot.
+
+**Destruction is a reasonable dungeon or direct-casting choice, not our default solo-speed recommendation.** A fast kill is not the same as a fast levelling session once recovery and pet management count. These recommendations draw on level-30 guides; level-60 presets below are candidates to compare, not measured launch rankings.
+
 ### How Forever changed the Warlock
 
 From Blizzard's [Rogue and Warlock deep dive](https://worldofwarcraft.com/en-us/news/24310968) and the beta client:

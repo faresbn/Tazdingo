@@ -16,9 +16,13 @@ sources: ForeverDB, foreverchanges.pro, Wowhead, Icy Veins, Blizzard, CurseForge
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Treat rares as worthwhile detours, not dependable timed farms**, until their live spawns and loot are recorded. A Classic respawn timer or loot table is a lead to investigate, not a Forever promise. [ForeverDB's list](https://foreverdb.net/rares) distinguishes player sightings from imported Classic data; even a sighting does not measure the timer or drop rate. For Hunters, use an obtainable family ability and pet appropriate to the job rather than waiting indefinitely for a rare skin or a Beta bug advantage. A Forever-tagged tracking addon can help locate a creature but does not validate the data behind its alert.
+
 ### Forever data versus Classic data
 
-[ForeverDB's rare list](https://foreverdb.net/rares) holds 354 rares and rare elites in 38 zones and 10 dungeons, 149 of them at or below level 30. Only 19 have been seen in Forever, through the game's cache and players' ForeverDB addons. The rest, and every respawn timer, come from Classic's data (the CMaNGOS project) and are labelled that way. Blizzard's [Deep Dive recap](https://worldofwarcraft.blizzard.com/en-gb/news/24303313) promises many new rare drops, so Classic loot tables are a poor guide.
+[ForeverDB's rare list](https://foreverdb.net/rares) holds 354 rares and rare elites in 38 zones and 10 dungeons, 149 of them at or below level 30. As recorded on 24 October, 19 had been seen in Forever through the game's cache and players' ForeverDB addons. The rest, and every respawn timer, come from Classic's data (the CMaNGOS project) and are labelled that way. Blizzard's [Deep Dive recap](https://worldofwarcraft.blizzard.com/en-gb/news/24303313) promises many new rare drops, so Classic loot tables are a poor guide.
 
 The 19 seen in Forever, as of 24 October:
 
@@ -68,7 +72,7 @@ ForeverDB's timers range from minutes to days, but they are Classic's, so treat 
 - [ForeverMapNotes](https://www.curseforge.com/wow/addons/forevermapnotes-bysiberiano12): map notes for rares with drops filtered for your class, plus ore, herbs, chests and flight paths
 - [HandyNotes: WoW Forever](https://www.curseforge.com/wow/addons/handynotes-wow-forever): map notes for things to find in Forever
 
-For Hunters, ForeverDB lists 63 tameable rares. Forever adds two pet families, Core Hound and Fox ([ForeverDB](https://foreverdb.net/veterans)). On Zephras Isle, Mystmane (a bear) and Fernfeather (a tallstrider) can be tamed (foreverchanges.pro).
+For Hunters, ForeverDB lists 63 tameable rares. [ForeverDB](https://foreverdb.net/pets) lists Fox and Core Hound families in the client, but currently lists no tameable Core Hounds. A family entry alone does not establish an obtainable pet. On Zephras Isle, Mystmane (a bear) and Fernfeather (a tallstrider) can be tamed (foreverchanges.pro).
 
 ## Field findings
 

@@ -15,6 +15,10 @@ sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets a
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Choose **survival talents when dangerous pulls are the constraint**, or more threat when the group is safe but enemies escape. Keep Righteous Fury and the appropriate Seal active, use controlled pulls, and conserve mana for the next pack. Saving Judgement for an imminent loose enemy can be worth more than pressing it on cooldown for damage ([Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/protection/level-30-tank-overview)). Templar's Bulwark is a temporary absorb, not immunity; large or badly positioned pulls remain dangerous. The [later official notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/6) settle Righteous Fury at 90% added Holy threat and Shield Specialization at 4% mana per block with a 3-second internal cooldown.
+
 Iron Creed (35), Holy Shield and Hammer of the Righteous (40) were out of reach in the beta; their value is projection.
 
 ### What's different in Forever
@@ -65,7 +69,7 @@ Opening with a Crusader Judgement before switching to Seal of Fury also appears 
 
 ### Levelling
 
-Wowhead says the road to 16 is rough, and a two-hander is better until Righteous Fury and Retribution Aura arrive. After 20, sword and board handles the open world better than Retribution. Templar's Bulwark at 30 makes dungeon pulls close to risk-free. ForeverDB's levelling build (Redoubt, Precision, Benediction, then Shield Specialization and Swift Judgement) rarely needs to drink and can tank as it is. Icy Veins starts in Retribution for Pursuit of Justice and cheaper spells. Wowhead notes a beta bug where Consecration sometimes dealt less than full damage at its edge; moving enemies fixed it.
+Wowhead says the road to 16 is rough, and a two-hander is better until Righteous Fury and Retribution Aura arrive. After 20, sword and board handles the open world better than Retribution. Templar's Bulwark at 30 adds a strong temporary absorb, but its size, duration and cooldown do not make dungeon pulls risk-free. ForeverDB's levelling build (Redoubt, Precision, Benediction, then Shield Specialization and Swift Judgement) rarely needs to drink and can tank as it is. Icy Veins starts in Retribution for Pursuit of Justice and cheaper spells. Wowhead notes a beta bug where Consecration sometimes dealt less than full damage at its edge; moving enemies fixed it.
 
 ### Gear and consumables
 
@@ -81,7 +85,7 @@ Wowhead's level 30 picks: Painwalker Buckler and Scorn's Icy Choker (Scarlet Mon
 - **Righteous Fury's threat:** current client data and Blizzard's 15 October notes give 90%. ForeverDB's PvE, builds and levelling pages, checked against an older build, still say 60%. Wowhead says 90%.
 - **Judgement:** ForeverDB and WoWSims press it on cooldown; Icy Veins suggests saving it for taunts at first.
 - **Damage or survival in row 3–4:** Wowhead takes One-Handed Weapon Specialization for threat. ForeverDB now prefers Improved Righteous Fury, arguing Righteous Fury already covers threat.
-- **Talent numbers:** Blizzard's deep dive gives Iron Creed up to 15% threat and Shield Specialization 6% Mana per block. The client tooltips on ForeverDB show 25% and 4%.
+- **Talent numbers:** the [later official notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/6) confirm Shield Specialization at 4% mana per block with a 3-second internal cooldown, superseding 6%. Iron Creed still needs a current tooltip check before using either the older 15% or client-reported 25% figure in a threat calculation.
 
 ## Field findings
 

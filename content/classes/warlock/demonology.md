@@ -8,13 +8,19 @@ sources: Icy Veins, Wowhead, ForeverDB, WoWSims builds, Blizzard class deep dive
 
 - **Role:** Ranged damage dealt by you and your demon together.
 - **How it plays:** Keep a demon fighting: the Succubus for damage, the Voidwalker for safety, the Imp in groups. [Searing Pain](https://foreverdb.net/spell/5676) brands the target for [Demonic Brand](https://foreverdb.net/spell/1293695), DoTs do the rest, and [Soul Link](https://foreverdb.net/spell/19028) arrives at 30 and [Demonic Pact](https://foreverdb.net/spell/425464) at 40.
-- **Strengths:** Very hard to kill (Wowhead puts Soul Link and Demonic Embrace at about 64% more effective health than other casters), strong single-target and execute damage with Decimation, and less dependent on gear while levelling.
+- **Strengths:** Strong mitigation and a larger health pool through Soul Link and Demonic Embrace, strong single-target and execute damage with Decimation, and less dependent on gear while levelling.
 - **Weaknesses:** Losing the demon costs damage, Soul Link and a long summon; slow until Demonic Brand at 25; the Shadow build's AoE is weaker (Wowhead).
 - **Stats:** Spell power (Icy Veins says demons scale with your gear too), hit, Intellect (Fel Vitality adds 15% mana), crit and Spirit.
 - **New in Forever:** Demonic Pact, [Demonic Energies](https://foreverdb.net/spell/1225214), Demonic Brand, [Decimation](https://foreverdb.net/spell/440870), [Demonic Knowledge](https://foreverdb.net/spell/412732), Demonic Aegis and Improved Felhunter; Soul Link moves to the 21-point slot; Demonic Sacrifice and Master Demonologist were rebuilt.
 - **Levelling:** The safest Warlock option. ForeverDB suggests it if you die a lot, and Icy Veins calls it one of the smoothest levelling builds.
 
 ## What the guides say
+
+### Tazdingo recommendation
+
+**Choose Demonology for a forgiving pet-centred levelling plan, and keep the demon alive before adding rotation complexity.** [Wowhead's current overview](https://www.wowhead.com/forever/guide/classes/warlock/demonology/overview-pve-dps) supports that role and distinguishes its Fire and Shadow fillers. A Voidwalker recommendation is about safety; a Sayaad or Imp recommendation is usually about damage or group support. They are not a single universal pet ranking.
+
+**The cost is dependence on a living, attacking pet.** Pet movement, healing and resummoning can erase a paper damage advantage. Demonic Sacrifice plus another active demon requires Demonic Pact; do not apply that level-40 interaction to an early levelling build. At 60, compare Fire and Shadow using the intended encounter instead of treating the preset's school bonus as a measured gain to total damage.
 
 ### Talents by level
 

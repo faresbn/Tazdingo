@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APLs, Blizzard class
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Keep a pet for solo levelling** unless a comparable test shows Lone Wolf improves the whole route, including incoming damage and recovery. The level-30 guide favours the pet; petless level-60 presets assume a different loadout and role ([Wowhead](https://www.wowhead.com/forever/guide/classes/hunter/marksmanship/level-30-dps-overview)). Use Aimed Shot for a single target and consider Multi-Shot for safe packs: they share a cooldown, so cannot both be unconditional priorities. Spend more on Arcane Shot when mana is plentiful; hold it back when drinking time is the limiting cost. Intellect's high value in one mana-starved model is not a universal reason to replace weapon damage or Agility.
+
 ### Talents by level
 
 | Level | ForeverDB levelling build | Icy Veins | Wowhead |

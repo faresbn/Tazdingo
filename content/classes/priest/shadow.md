@@ -16,6 +16,10 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and rotation, Blizzard c
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Use the wand to conserve mana while levelling**, rather than filling every spare moment with Mind Flay. Cast more when damage, safety or the group's pace warrants it; on short-lived targets, a full set of damage-over-time spells may not repay its mana. A single-target level-30 model dropping Devouring Plague does not prove the spell is bad on a durable target or with Devouring Contagion ([Wowhead](https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview)). At 60, compare damage with equal buffs, target lifetime and mana support. Shadow Word: Death also risks self-damage when the target survives; a damage-maximising preset is not a safety recommendation.
+
 ### Talents
 
 | Level | Build | Points |
@@ -52,7 +56,7 @@ Vampiric Embrace and Starshards are in the list but switched off by default.
 
 **ForeverDB's simulator (level 30, one target, 60 sec):** keep Shadow Word: Pain up about 79% of the time. Use Starshards (Night Elf) and Mind Blast on cooldown, and the wand only when out of mana ([ForeverDB](https://foreverdb.net/class/Priest)). It found 4.9% more damage without Devouring Plague and 3.9% more without Mind Flay. ForeverDB itself flags this as a lead to test, since its own guide disagrees.
 
-All sources agree on Shadow Word: Pain upkeep and Mind Blast on cooldown. They split on two points:
+The damage priorities favour Shadow Word: Pain and Mind Blast when the target lives long enough and mana permits; levelling advice also relies on wanding. They split on two points:
 
 - **Devouring Plague:** the guides use it when mana allows, ForeverDB's level 30 simulator drops it, and WoWSims keeps it running at 60.
 - **Shadow Word: Death:** Wowhead treats it as an execute below 20% health with Early Demise. WoWSims casts it on cooldown and skips Early Demise.

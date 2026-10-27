@@ -16,6 +16,10 @@ sources: Icy Veins, Wowhead, ForeverDB, WoWSims presets and APLs, Blizzard class
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Use **Frost for controlled solo pulls and recovery tools**, then choose talents for the content: a safe questing or PvP build need not match a dungeon damage build. Ice Lance gains value against a genuinely frozen target or through Fingers of Frost; do not spam it as an unconditional filler ([Wowhead](https://www.wowhead.com/forever/guide/classes/mage/frost/level-30-dps-overview)). The [later official notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/6) settle its bonus as a **200% increase**, superseding 300% descriptions. Do not confuse "200% increase" with "200% of normal damage". Begin with manageable pulls before trying area farming; a damage model does not include the cost of a failed pull.
+
 ### Ice Lance and freezes
 
 Blizzard's [deep dive](https://worldofwarcraft.com/en-us/news/24302097) describes Ice Lance as instant with low base damage, raised by 300% against Frozen targets or targets treated as Frozen by Fingers of Frost. The 16 October client lowered that to 200% ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)), though the guides still quote 300%. Fingers of Frost gives Chill effects a 15% chance to treat your next spells as if the target were Frozen, two charges at 2/2 in the current client.
@@ -76,7 +80,7 @@ Both agree on Frostbolt into Fingers of Frost Ice Lances; the simulator leans ha
 - **Consumables:** Icy Veins calls Wizard Oil your biggest damage boost, then Lesser Mageblood Elixir, Lesser Spellblasting Potion and food such as Briny Seafood Stew. Lesser Arcane Elixir tops ForeverDB's simulator at 30 (+4.4%).
 ### Where the guides disagree or aren't sure
 
-- **Ice Lance's bonus:** 300% in Blizzard's post and every guide; 200% in the current client files.
+- **Ice Lance's bonus — resolved:** the [16 October official notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/6) changed the increase against Frozen targets from 300% to 200%. Earlier guide values are obsolete.
 - **Elemental Precision and Piercing Ice:** the client still shows five ranks of Elemental Precision and Piercing Ice. One player reported a hotfix cutting Elemental Precision to three ranks and removing Piercing Ice ([ForeverDB](https://foreverdb.net/article/mage-talent-hotfix-elemental-precision-piercing-ice-player-report)); WoWSims' tree and Icy Veins' calculator both match that report.
 - **Fingers of Frost timing:** Icy Veins' text says you get it at 30, but its own order delays it to 31–35 because of the two Missile Barrage points.
 - **Wands:** Icy Veins says spell damage boosts wands; ForeverDB cites Blizzard's notes saying it no longer does.

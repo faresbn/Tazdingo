@@ -17,6 +17,10 @@ sources: Blizzard class deep dive and race article, ForeverDB, Wowhead, Icy Vein
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+For mostly solo questing, start with **Enhancement**, keep the weapon current and spend mana selectively. Choose **Elemental** for the caster playstyle or a regular group that can support its mana use; choose **Restoration** when healing a regular party is the job. A damage build can carry a healing set, but that is not a promise that every dungeon pull is safe without healing talents. These are level-30 Beta recommendations, not measured level-60 rankings ([Enhancement guide](https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-30-dps-overview), [Restoration guide](https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview)).
+
 The beta stopped at level 30. Chain Lightning (32), Windfury Totem (32), mail (40) and Chain Heal (40) all come later and are untested.
 
 ### Both factions
@@ -43,7 +47,7 @@ The 16 October build then reshuffled the Elemental tree ([ForeverDB](https://for
 
 - **Elemental:** a ranged caster with strong area damage from Fire Nova and Magma Totem. Wowhead finds its single-target damage weak at low levels, and Icy Veins sums up its level 30 damage as weak.
 - **Enhancement:** melee with a slow two-hander, Windfury Weapon and Stormstrike. Wowhead calls it easy to learn, and says every melee group will want a Shaman for Windfury Totem. Icy Veins warns that mana runs out fast.
-- **Restoration:** Healing Wave, then Chain Heal and Riptide at 40. Wowhead expects strong endgame healing but calls it mostly useless solo.
+- **Restoration:** Healing Wave, then Chain Heal and Riptide at 40. Its healing talents suit a regular group, at the cost of slower solo kills.
 
 Blizzard's own summary calls Shamans among the sturdiest classes, but short on reliable crowd control.
 
@@ -55,13 +59,12 @@ The level 30 Call of Air chain rewards a choice of weapon: Lightning's Grasp, Ra
 
 ### Race and profession picks
 
-- **Race:** for the Horde, Icy Veins picks Orc for all three specs, and so do Wowhead's Enhancement and Restoration guides. Wowhead's Elemental guide leans to Skyborne for its haste. The Alliance has only Dwarf.
+- **Race:** older guides favour Orc or Skyborne, but their racial comparisons predate the 26 October changes below. The Alliance has only Dwarf.
 - **Professions:** ForeverDB suggests Leatherworking and Skinning. Wowhead's Elemental and Restoration guides and WoWSims suggest Leatherworking and Enchanting; Enchanting makes the [Polished Driftwood Icon](https://foreverdb.net/item/249398) relic.
 
 ### Where the guides disagree
 
-- **Skyborne haste:** Wowhead's Elemental and Enhancement guides give Wind Blessed as 3% haste. Its Restoration guide and ForeverDB's client data say 1%.
-- **Older racial wording:** Blizzard retuned racials on 16 October, so guides written before then may use old names, such as Axe Specialization for what is now Savage.
+**The old racial disagreement is resolved:** Blizzard's [26 October notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7) set Skyborne Wind-Blessed to **2% haste**. Orc Savage was removed and Command restored; its pet-damage bonus does not benefit a Shaman. Tauren Endurance is now only 5% health. Earlier Orc-for-every-spec rankings and 1%/3% Skyborne figures are not a current comparison. Choose race for its actual toolkit and preferences; there is no launch-tested universal winner here.
 
 ## Field findings
 

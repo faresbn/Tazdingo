@@ -9,11 +9,17 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets, Blizzard class deep div
 - **Role:** group healer who also buffs with totems.
 - **How it plays:** Water Shield up and totems down with Call of the Elements. Use Healing Wave as the main heal, at lower ranks for small damage, and Lesser Healing Wave when the tank drops fast. Chain Heal and Riptide join at 40.
 - **Strengths:** strong single-target healing with Healing Wave and, from 40, area healing with Chain Heal, neither on a cooldown ([Icy Veins](https://www.icy-veins.com/wow-forever/restoration-shaman-healer-pve-guide)). Mana Tide Totem helps the whole group's mana.
-- **Weaknesses:** no group heal before level 40, and Wowhead calls it mostly useless for solo levelling.
+- **Weaknesses:** no direct multi-target heal before level 40; Healing Stream Totem already provides group healing. Solo killing is slower than in a damage-focused build.
 - **Stats:** healing power, then critical strike, Intellect and Spirit. Crits also refill mana through Water Shield.
 - **New in Forever:** [Riptide](https://foreverdb.net/spell/408521) (40), [Water Shield](https://foreverdb.net/spell/408510) as a talent (20) and [Mindfulness](https://foreverdb.net/spell/1223033) (15). [Healing Way](https://foreverdb.net/spell/29206) is now a flat 25% boost to Healing Wave, and [Mana Tide Totem](https://foreverdb.net/spell/16190) moved up to tier 4.
 
 ## What the guides say
+
+### Tazdingo recommendation
+
+Choose **deep Restoration for a regular dungeon party**; choose Enhancement, or the mana-focused caster hybrid, when most time will be spent questing alone. More healing throughput does not compensate for slow solo kills. Keep a healing set and judge a hybrid by whether it can sustain the actual group's pulls, not a blanket claim that it heals as well as any healer ([Wowhead](https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview)).
+
+For gear, address the observed constraint: mana recovery for long fights and repeated pulls, healing power for efficient casts, and enough health to survive. Crit has Water Shield and Ancestral Healing benefits, but a throughput-oriented crit ranking and a regeneration-oriented ranking are not contradictory universal rules. No level-60 Restoration simulation is supplied here.
 
 ### How the spec changed
 
@@ -43,7 +49,7 @@ Icy Veins' 26-point note adds Healing Way, worth 25% more Healing Wave healing.
 5. Cure Poison and Cure Disease as needed.
 6. [Totemic Recall](https://foreverdb.net/spell/36936) after the fight, for 25% of your totems' mana back.
 
-ForeverDB adds that Healing Wave rank 3 casts faster than rank 4 at about half the cost, which suits small steady damage. With no group heal until 40, let [Healing Stream Totem](https://foreverdb.net/spell/5394) tick and heal whoever is lowest. Put Tremor Totem down before fights with fears, not after.
+ForeverDB adds that Healing Wave rank 3 casts faster than rank 4 at about half the cost, which suits small steady damage. With no direct multi-target heal until 40, let [Healing Stream Totem](https://foreverdb.net/spell/5394) tick and heal whoever is lowest. Put Tremor Totem down before fights with fears, not after.
 
 Wowhead and Icy Veins agree on totems first and Healing Wave as the workhorse. Both say that when nobody needs healing you should help kill: Fire Nova from a Fire totem on packs, or Lightning Bolt (Icy). Icy Veins says to keep buff totems such as Strength of Earth up, as your main contribution to group damage.
 
@@ -63,7 +69,7 @@ Wowhead recommends levelling as Enhancement and keeping Restoration for Dual Spe
 
 ### Where guides disagree or are unsure
 
-- **Racials:** Wowhead's overview (7 October) lists Blood Fury on a 2 min cooldown and Tauren Endurance as 1% hit. Blizzard's 16 October notes changed these to 3 min and 2% critical damage and healing ([ForeverDB](https://foreverdb.net/article/beta-development-notes-october-16)). Both sources pick Orc for the Horde; Dwarf is the only Alliance option.
+- **Racials:** the older Orc/Dwarf/Tauren comparisons are stale. [Blizzard’s 26 October notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7) remove Tauren’s critical-healing bonus and give Dwarves hit instead of critical damage/healing. Hit does not improve heals landing on friendly targets. Orc Command is a pet bonus, not a Restoration healing bonus; do not select a healing race from those obsolete rankings.
 - **Above 30:** Chain Heal (trainer, 40), Riptide (40) and Purification (35) are untested. WoWSims doesn't yet model the spec.
 
 ## Field findings

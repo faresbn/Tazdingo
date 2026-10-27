@@ -16,6 +16,10 @@ sources: ForeverDB (builds, hybrid tax article, levelling guide), Wowhead (Balan
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Use a hybrid to cover a real mixture of solo damage and healing or tanking, and name the role whose tools it gives up. Spellbear relies on spell power, Thorns, self-healing and incoming melee attacks; that is a specific setup rather than a generic caster or raid tank recommendation. Cross-tree points also delay capstones. Compare equal level and Legacy budgets, and use separate gear for materially different roles. The hybrid damage target is not a penalty for mixing trees.
+
 ### Why Druids mix trees
 
 Forever's tree puts strong general talents near the top of each section. Blizzard's [deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24301515) moved Heart of the Wild to Feral's first row, Nature's Reach to Balance's second (now with hit for all damaging spells), and Natural Shapeshifter to Restoration. Genesis and Nature's Majesty are new near the top of Balance. Genesis boosts any periodic effect, so it helps a Cat's Rake and Rip and a healer's heals over time alike. ForeverDB's [levelling guide](https://foreverdb.net/guide/leveling-druid) adds two points from Blizzard's deep dive recap: bonus healing now also gives a third as much bonus damage, and caster weapons carry spell damage. Both help a Druid who fights and heals.

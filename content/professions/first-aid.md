@@ -14,6 +14,10 @@ sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Learn First Aid alongside either pair of primary professions**, especially on characters with weak self-healing. For levelling it, compare the total cost of a bandage route with the herb-and-vial potion route; keep useful output for personal use, but value the materials rather than calling the heal free. The [guide](https://www.wow-professions.com/forever/first-aid-leveling-guide) allows either early route and warns that yellow crafts give uncertain skill gains. Bandages require a safe channel and cures have effect-level limits. Do not buy an expensive high-skill manual until its source, required rank and use are confirmed.
+
 ### What changed in Forever
 
 **Healing potions moved here.** Every source agrees that the plain healing potions are now First Aid recipes:
@@ -66,7 +70,7 @@ Ranks:
 
 - **Healing potions:** Icy Veins notes that anyone can drink them, so they suit players buying consumables on the Auction House, especially while levelling.
 - **Tailoring demand:** Wowhead's Tailoring guide mentions that some new cloth recipes use health or mana potions, and suggests First Aid as a source.
-- **Your own survival:** bandages remain a free heal between fights.
+- **Your own survival:** bandages provide healing between fights at the cost of cloth and a safe channel.
 
 ## Field findings
 

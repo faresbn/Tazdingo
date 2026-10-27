@@ -15,6 +15,10 @@ sources: ForeverDB, Wowhead, Icy Veins, WoWSims presets, Blizzard Paladin deep d
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Start from the role and its limiting resource. Retribution points can improve solo mobility and spell costs; Holy points can support a caster damage plan, but do not make it a mana-free replacement for Retribution. State which capstone is delayed, compare equal Legacy budgets, and keep healing gear if healing is expected. Shockadin and seal-twisting presets are alternatives to test under the same conditions. The hybrid damage target concerns class design, not mixing trees.
+
 ### How mixing works
 
 The Paladin talent window is a single tree with Holy, Protection and Retribution sections ([ForeverDB](https://foreverdb.net/guide/leveling-paladin)). Each row opens with 5 more points in that section. Blizzard's [deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24302099) puts one-point milestone talents at 11, 16, 21 and 31 points. Several first-row and second-row talents are strong for any spec, which is why points drift between sections. The Legacy perk Talented adds up to five points early, but both Wowhead and Icy Veins note it needs Well Rested in the Legacy tree first.

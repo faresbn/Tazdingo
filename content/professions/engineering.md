@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Warcraft
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Take **Engineering for tools you actually expect to use**, then check each item's use requirement. A non-engineer may be able to buy a SAF-T/EZ-Thro version, while other gear, ammunition or specialisation crafts can be restricted. That makes "best profession" different from "cheapest access to this tool". Mining is convenient but does not remove material opportunity cost. Keep levelling components used by later recipes rather than pricing each step as an isolated purchase ([route](https://www.wow-professions.com/forever/engineering-leveling-guide)). Confirm a specialisation's desired recipe before committing. The above-225 route and endgame item demand remain projections; removed Nitro Boosts is not a reason to pick the profession.
+
 ### What changed in Forever
 
 **More for non-engineers.** Wowhead sees a shift towards Engineering items that anyone can use, and thinks this could make the profession a gold-maker, though it won't commit yet. [ForeverDB](https://foreverdb.net/guide/professions) gives an example: the new [SAF-T Dynamite](https://foreverdb.net/item/260792) does the same damage as Rough Dynamite, but the client gives it no skill requirement, so you can sell it. The trade-camp vendors sell a run of new schematics for Merchant's Favor (Wowhead):
@@ -31,7 +35,7 @@ sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Warcraft
 
 **Gnome racial.** [wow-professions.com](https://www.wow-professions.com/forever/engineering-leveling-guide) says Engineering Specialization no longer adds +15 skill. It now makes devices fail or backfire 20% less often, so Gnomes level Engineering like everyone else. Icy Veins also says some gadgets scale with your Engineering skill, so the same device does less for an engineer at 250 than at 300.
 
-ForeverDB flags three crafts as best in slot at level 30 and below: [Flying Tiger Goggles](https://foreverdb.net/item/4368) and Shadow Goggles for a wide range of specs, and the Rough Boomstick for Hunters and some melee.
+ForeverDB flags three crafts as notable crafts within the level-30 bracket: [Flying Tiger Goggles](https://foreverdb.net/item/4368) and Shadow Goggles for a wide range of specs, and the Rough Boomstick for Hunters and some melee.
 
 ### Specialisations
 

@@ -15,6 +15,12 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and rotation, Blizzard c
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+For solo questing, **favour a strong weapon and controlled mana spending** over pressing every damaging spell on cooldown. More casts can win a short fight and still lose time to drinking. At 30, use Windfury on a slow two-hander; a fast one-hander and shield with Flametongue trades burst for protection. For dungeons, save Earth Shock when an interrupt is needed and stop adding Fire Nova when threat or healing becomes the constraint ([Wowhead](https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-30-dps-overview)).
+
+A level-60 Rockbiter preset assumes group buffs and is not a universal levelling upgrade. With Spirit Weapons, Rockbiter increases threat; agree the tanking role and imbues with the group before copying that setup. The build's missing Maelstrom ranks also matter: a level-30 rotation cannot be replaced by the level-60 list.
+
 ### How the spec changed
 
 Blizzard's [deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24302097) moved Stormstrike to the 16-point milestone with an 8 sec cooldown. It now boosts your next Lightning Bolt, Chain Lightning or Earth Shock by 20%. [Spirit Weapons](https://foreverdb.net/spell/16268) cuts threat by 30%, or raises it by 30% while Rockbiter Weapon is on. That is what lets Enhancement off-tank. Two-Handed Axes and Maces is now baseline. Wowhead adds that dual wielding has been removed, making Enhancement a two-handed spec.

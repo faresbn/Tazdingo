@@ -15,6 +15,10 @@ sources: Wowhead, ForeverDB, WoWSims presets, Blizzard class deep dive and podca
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Use the mana-focused hybrid when **downtime or occasional healing is costing more than an earlier damage talent would gain**. Use a deep tree when reaching its key talent is the priority. Compare builds at the same level and Legacy-point allowance: 21 ordinary points and 26 points are not equivalent. The [level-30 guides](https://www.wowhead.com/forever/guide/classes/shaman/elemental/level-30-dps-overview) support those different jobs; a level-60 preset is a separate projection. The hybrid damage target applies to class design, not an extra penalty for spending points in a second tree. Emergency Shaman tanking also lacks a taunt and is not a substitute for an agreed dungeon tank.
+
 ### Blizzard built the trees for it
 
 Blizzard's [Mage and Shaman deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24302097) explains several placements in terms of other specs:

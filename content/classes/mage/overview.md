@@ -17,6 +17,10 @@ sources: Blizzard class deep dive, ForeverDB, Icy Veins, Wowhead, WoWSims preset
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Frost is the default for a first solo Mage** because control makes mistakes easier to recover from. Fire suits players who accept less reliable early crits for its burst; Arcane suits managed mana spending and group area damage. Neither damage preference proves a faster levelling route once drinking and deaths are included ([Frost](https://www.wowhead.com/forever/guide/classes/mage/frost/level-30-dps-overview), [Fire](https://www.wowhead.com/forever/guide/classes/mage/fire/level-30-dps-overview)). Use a current wand early, then reassess its damage against learned spell ranks. Do not buy gear or choose a race using superseded Beta mechanics.
+
 ### How Forever changed the Mage
 
 Blizzard's [Mage and Shaman deep dive](https://worldofwarcraft.com/en-us/news/24302097) says the aim is to make each school matter in the moment and to open more builds that cross schools. The main changes, from that post and the beta client:
@@ -57,8 +61,7 @@ WoWSims Forever's Mage simulator defaults to an Arcane build with Frost points, 
 
 ### Where the guides disagree
 
-- **Wind Blessed (Skyborne):** 1% haste according to ForeverDB and Icy Veins, 3% according to Wowhead's Arcane overview.
-- **Ruthless (Human):** Wowhead and ForeverDB's FAQ say it adds 2% crit with any weapon; Icy Veins and ForeverDB's Mage levelling guide say you need a sword.
+- **Racials — resolved:** [26 October official notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7) set Skyborne Wind-Blessed to 2% haste and Human Ruthless to 1% crit. Old 1%/3% haste and weapon-restricted Human comparisons are obsolete. Orc Savage was removed; its restored pet racial does not improve Mage damage.
 - **Teleport: Dalaran:** ForeverDB lists it at level 50 and Alliance-only; Icy Veins' Frost levelling table puts it at 40.
 - **Wands and spell damage:** ForeverDB cites Blizzard's 24 September notes saying wands no longer gain from spell damage. Icy Veins' Frost guide says spell damage still raises wand damage.
 

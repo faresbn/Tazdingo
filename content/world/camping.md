@@ -16,6 +16,10 @@ sources: Blizzard, ForeverDB, Icy Veins, Wowhead, wow-professions.com, Warcraft 
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Use a shared camp to cover buffs the group lacks**, rather than choosing a profession solely to supply its camp bonus. A duplicate or weaker non-stacking benefit adds no extra combat value. Bring a Basic Campfire Kit for convenience, check the feature capacity and coordinate placements before consuming a shared cooldown ([camping guide](https://www.wow-professions.com/forever/camping-guide)). Count the minute spent obtaining the buff against its hour of benefit. For advanced crafts, verify the required station and blueprint before travelling; knowing the recipe does not prove a suitable station is available. Learn-skill and use-skill are separate requirements, which explains several apparently conflicting campfire levels.
+
 ### How a camp works
 
 Blizzard's [camping article](https://worldofwarcraft.blizzard.com/en-us/news/24301516) (21 October) describes the system: Cooking's old Cooking Fire becomes a Basic Campfire, and players nearby each add one crafted object. Everyone who sits or crafts at the camp for a minute gains the benefits of the other objects there. Each benefit replaces a class buff rather than stacking with it.

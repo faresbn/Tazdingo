@@ -15,6 +15,10 @@ sources: ForeverDB, Kami Labs, Wowhead
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Start with separate, predictable keys for interrupts, totem sets and mouseover healing. Modifier keys save space but can conflict with existing bindings; test each branch on a harmless target. A cast sequence advances once per successful press and can stall on an unavailable spell. It does not choose the right totem or healing target for the situation. These community examples have not been validated in the launch client.
+
 ### General tips
 
 - Wowhead's guide uses Lightning Bolt to show the rank trick: write `/cast Lightning Bolt` without a rank and the macro always uses your best rank. Kami Labs gives the same advice.

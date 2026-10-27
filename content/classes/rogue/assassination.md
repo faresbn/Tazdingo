@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APL, Blizzard class 
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+At 30, **use the Mutilate build only with a dagger in each hand**; before then a Combat-style start avoids waiting for the defining spell. Do not let a simulator that omits or changes Mutilate choose the build for you ([Wowhead](https://www.wowhead.com/forever/guide/classes/rogue/assassination/level-30-dps-overview)). Instant Poison suits short fights; Deadly Poison has more time to build value on durable enemies and supports Coup de Grace. Poison immunity changes that calculation. Venom at 40 alters finisher priorities, so its endgame ranking does not invalidate Eviscerate or situational Rupture at 30.
+
 ### Talents by level
 
 | Level | ForeverDB levelling build | Icy Veins | Wowhead |

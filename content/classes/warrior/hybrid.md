@@ -15,6 +15,10 @@ sources: ForeverDB, Wowhead, Icy Veins, WoWSims presets, Blizzard deep dive and 
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Choose cross-tree points for the job being performed: solo recovery and damage taken, dungeon tanking, or damage behind a separate tank. Enrage cannot be judged in a model where the character is never hit, while a raid damage preset need not fund solo defensive tools. State weapon setup, level and Legacy allowance before comparing. The hybrid target concerns Warrior class design, not an additional cost for mixing talent trees.
+
 ### How mixing works
 
 [ForeverDB](https://foreverdb.net/class/Warrior/talents) reads the rules from the client: a point at every level from 10 to 60, and each row of a tree opens once you have 5 more points in the rows above it. Blizzard's [deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24301514) adds one-point milestone talents at 11, 16, 21 and 31 points. That makes deep capstones expensive and shallow dips cheap. The Legacy perk Talented gives the same points up to five levels early, but Wowhead notes it sits behind Well Rested in the Legacy tree, so most players won't have all five. Respeccing cost 1 silver in the beta as a temporary measure; the launch price isn't known.

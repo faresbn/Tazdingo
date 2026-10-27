@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, Warcraft Tavern
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Skin eligible beasts you are already killing**, especially when supplying Leatherworking. A dedicated beast circuit is worthwhile only if leather proceeds and skill gains repay the added kills and travel. [Wowhead's route](https://www.wowhead.com/forever/guide/professions/skinning/overview-leveling) is a starting point, not proof that every listed zone beats the quest route on a crowded realm. Corpses must be looted and each can be skinned once. Check the corpse tooltip rather than relying on an unresolved skill formula. Pristine and endgame leather scarcity may create demand, but neither its drop rate nor a profitable launch price is established.
+
 ### What changed in Forever
 
 Like the other gatherers, Skinning now has a crafting menu, and its only recipes are its three camp items (Wowhead). The Chair comes from the trainer. The Field Guide blueprint drops from Lady Anacondra in Wailing Caverns (Wowhead, [wow-professions.com](https://www.wow-professions.com/forever/camping-guide)).
