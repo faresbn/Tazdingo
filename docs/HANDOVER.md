@@ -7,7 +7,7 @@ The running record of where Forever Ledger stands, kept current at every checkpo
 ## Where things stand
 
 - **Live site:** https://faresbn.github.io/FvrRepo/ (published from `main` by `.github/workflows/pages.yml`, about a minute after each push, and every two hours to refresh Blizzard's posts).
-- **Current work:** cosmetic refinement on `polish/forever-ui`: content-sized dropdowns, hover/click fix, compact filters, teal/blue palette, and Blizzard class/spec/profession icons. Local checks pass; PR validation and live browser checks follow.
+- **Current work:** none in flight. UI polish merged in PR #1; deployment 40461966416 succeeded. Live checks confirm content-sized menus, pointer-click opening, game icons and the new palette.
 - **Launch:** WoW Forever opens on 4 November 2026; level cap 60 (the Beta's was 30).
 
 ## What v3 is
@@ -33,7 +33,7 @@ The running record of where Forever Ledger stands, kept current at every checkpo
 - Class/spec/profession icons use Blizzard's public icon renderer (48 unique URLs checked). Text labels remain present and the footer credits Blizzard. This is an intentional small-icon exception to the generated-art direction, requested by Fares; large scenes are still generated illustrations, not screenshots.
 - Teal links/accent, blue-toned dark surfaces and reduced paper/canvas texture. No content structure, market data or guide advice changed.
 - Home crafting heading says "Listing margins", to distinguish listing arithmetic from realised profit. Beta content is temporary and will be replaced at launch; do not treat its current prominence as a permanent hierarchy problem.
-- All 34 local tests pass (one original-capture test skipped), build/check covers 72 pages, browser script syntax passes. Full screenshot replacement awaits the user's own captures under the existing policy.
+- All 34 local tests pass (one original-capture test skipped), build/check covers 72 pages, browser script syntax and PR validation pass. Deployment 40461966416 succeeded. Live desktop checks: More menu is 336px wide, opens on pointer click, and no broken game icons or horizontal overflow were observed. Full screenshot replacement awaits the user's own captures under the existing policy.
 
 ## Known gaps and small follow-ups
 
