@@ -555,7 +555,8 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/") 
     fingerprints = {f.relative_to(out / "assets").as_posix(): hashlib.sha256(f.read_bytes()).hexdigest()[:10]
                     for f in (out / "assets").rglob("*") if f.is_file()}
     site = pages.Site(base=base, url=SITE_URL, revision=revision, built=built,
-                      credit=bool(names.get("source") or fdb), assets=fingerprints, launch=launch)
+                      credit=bool(names.get("source") or fdb), assets=fingerprints, launch=launch,
+                      opens=datetime.fromisoformat(game["opens"]))
     site.news_endpoint = news_config["endpoint"]
     site.art = art
 

@@ -7,6 +7,7 @@ sys.path.insert(0,str(ROOT/"scripts"))
 from auctionator import CBOR, InvalidCapture, LuaData, day_date, item_id, parse_capture, string_keys, suffix
 from build import build_markets, collect, crate_table, craft_table, load_content, summarise, volatility
 from markup import render
+from pages import countdown_text
 
 
 class SafeFormats(unittest.TestCase):
@@ -177,6 +178,19 @@ class PublicLog(unittest.TestCase):
         self.assertTrue(PRIVATE.search("Frost Mage: Fares tested this"))
         self.assertTrue(PRIVATE.search("notes from chatgpt"))
         self.assertFalse(PRIVATE.search("Frost Mage: levelling build for 10-24"))
+
+
+class Countdown(unittest.TestCase):
+    def test_counts_to_the_moment_servers_open(self):
+        from datetime import datetime,timezone
+        opens=datetime(2026,11,4,23,tzinfo=timezone.utc)
+        at=lambda *a: datetime(*a,tzinfo=timezone.utc)
+        self.assertEqual(countdown_text(opens,at(2026,10,27,13)),"Forever opens in 8 days")
+        self.assertEqual(countdown_text(opens,at(2026,11,3,22)),"Forever opens in 1 day")
+        self.assertEqual(countdown_text(opens,at(2026,11,4,22,59)),"Forever opens within the hour")
+        self.assertEqual(countdown_text(opens,at(2026,11,4,12)),"Forever opens in 11 hours")
+        self.assertEqual(countdown_text(opens,at(2026,11,4,23)),"Day 1 of Forever")
+        self.assertEqual(countdown_text(opens,at(2026,11,5,23)),"Day 2 of Forever")
 
 
 class MergingScans(unittest.TestCase):

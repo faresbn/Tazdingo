@@ -321,11 +321,20 @@ function themeToggle(button) {
 }
 
 function countdown(node) {
-  // The build writes the count for its own day; this keeps it right on the visitor's day.
-  const [y, m, d] = document.body.dataset.launch.split("-").map(Number);
-  const now = new Date(), today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
-  const days = Math.round((Date.UTC(y, m - 1, d) - today) / 86400000);
-  node.textContent = days > 0 ? `Forever opens in ${days} day${days === 1 ? "" : "s"}` : days === 0 ? "Forever opens today" : `Day ${1 - days} of Forever`;
+  // The build writes the count as of its own run; this counts to the moment servers open from
+  // the visitor's clock, with the same rule as countdown_text in scripts/pages.py.
+  const opens = Date.parse(document.body.dataset.launch);
+  if (Number.isNaN(opens)) return;
+  const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
+  function tick() {
+    const seconds = (opens - Date.now()) / 1000;
+    const days = Math.floor(seconds / 86400), hours = Math.floor(seconds / 3600);
+    node.textContent = seconds <= 0 ? `Day ${Math.floor(-seconds / 86400) + 1} of Forever`
+      : days ? `Forever opens in ${plural(days, "day")}`
+      : hours ? `Forever opens in ${plural(hours, "hour")}` : "Forever opens within the hour";
+  }
+  tick();
+  setInterval(tick, 60000);
 }
 
 function siteSearch(form) {
