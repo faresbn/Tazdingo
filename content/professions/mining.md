@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, Warcraft Tavern
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Mine along a safe questing route**, or smelt early points when the ore-to-bar cost is acceptable and saving time matters. Compare realistic bar proceeds after selling costs with ore purchases; do not assume the two prices will cancel. Fast-respawn Beta caves can also refill with enemies, and competition can erase the advantage ([route](https://www.wow-professions.com/forever/mining-leveling-guide)). Prefer a safer outdoor loop if clearing the cave costs more time or deaths. Higher routes use Classic assumptions above the tested bracket. Keep disputed Scarce-material sources as candidates to check, rather than promising a specific drop from every vein.
+
 ### What changed in Forever
 
 [wow-professions.com](https://www.wow-professions.com/forever/mining-changes) lists the quality-of-life changes:

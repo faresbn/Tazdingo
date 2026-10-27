@@ -15,6 +15,10 @@ sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets a
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Choose **Fury when dual-wielding is the goal and both weapons are adequate**; Protection or Arms is a more forgiving early route. Enrage is useful when enemies actually hit you, whereas a boss model that never attacks the character cannot value it. That is a model assumption, not evidence that the talent is bad for solo play. Avoid spending Rage on Heroic Strike or Execute when it only creates overkill and leaves the next pull empty ([Wowhead](https://www.wowhead.com/forever/guide/classes/warrior/fury/level-30-dps-overview)). Do not deliberately take avoidable dungeon damage just to trigger Enrage: the healer pays for it.
+
 The beta stopped at 30, so Flurry, Whirlwind and Bloodthirst haven't been played; everything about them is projection.
 
 ### What's different in Forever
@@ -65,7 +69,7 @@ Whirlwind sits above Bloodthirst there. Before 36 Fury has neither, which is why
 
 ### Levelling
 
-Icy Veins and Wowhead both call Fury a slow solo leveller that shines in groups. Icy Veins suggests levelling another spec and respeccing once Flurry and good weapons arrive. You can't dual-wield before 20. Icy Veins switches to two weapons at 20, and Wowhead's level 30 build is built around them. ForeverDB's levelling builds stay on a two-hander and keep dual-wielding for its dungeon build. Wowhead's tips: keep weapons current, never waste an Overpower, and don't fear taking a few hits in dungeons, since damage taken is Rage.
+Icy Veins and Wowhead both call Fury a slow solo leveller that shines in groups. Icy Veins suggests levelling another spec and respeccing once Flurry and good weapons arrive. You can't dual-wield before 20. Icy Veins switches to two weapons at 20, and Wowhead's level 30 build is built around them. ForeverDB's levelling builds stay on a two-hander and keep dual-wielding for its dungeon build. Wowhead stresses current weapons and Overpower. Its suggestion to take hits for Rage needs restraint: agree any off-tanking with the group and avoid preventable healer pressure.
 
 ### Gear and consumables
 
@@ -83,7 +87,7 @@ ForeverDB's level 30 list suggests Swinetusk Shank (Razorfen Kraul) and Bloody B
 - **Enrage:** levellers rate it highly because you are hit constantly. WoWSims gives it no points, explaining that its simulated boss attacks no one, so Enrage never procs.
 - **Slam:** ForeverDB keeps Slam in Fury's rotation despite the swing delay (Improved Slam is out of Fury's reach). Wowhead and Icy Veins leave it out.
 - **Execute and Heroic Strike:** Icy Veins skips Execute while levelling and treats Heroic Strike as an endgame Rage dump. ForeverDB and WoWSims use both.
-- **Off-hand hit:** Icy Veins says dual-wielding adds a 19% miss penalty, for a 27% total off-hand miss chance. No other source confirms the number.
+- **Off-hand hit:** Icy Veins quotes a 27% off-hand miss chance for a particular target assumption. Do not treat that as the miss rate against every quest enemy or as the hit target for special attacks. Target level and the current off-hand talents matter.
 - **Outdated text:** Wowhead's Fury overview still describes crits as giving no extra Rage, Bloodthirst at 35% attack power and Dual Wield Specialization giving hit. All three changed on 30 September and 1–2 October.
 
 ## Field findings

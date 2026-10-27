@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Take **Alchemy for consumables you will use or can sell repeatedly**, paired with Herbalism if gathering fits the route. Buying herbs can be faster when gold is available; self-gathered herbs still have a sale value. Compare complete recipe costs, including vials, recipe access and cooldown use, with conservative sale proceeds. A transmute is not automatically profitable just because its output is dearer than either input. The [levelling route](https://www.wow-professions.com/forever/alchemy-leveling-guide) is a Beta estimate: yellow crafts can need extra attempts, and 225–300 is not launch-tested. Buy for the next useful bracket rather than the whole projection. Plain healing potions belong to First Aid.
+
 ### What changed in Forever
 
 **Healing potions moved to First Aid.** All the sources agree that the plain line, from Minor to Major Healing Potion, is now a First Aid recipe. Alchemy keeps a "Discolored" line instead. [ForeverDB](https://foreverdb.net/guide/professions) quotes the tooltip of the [Minor Discolored Healing Potion](https://foreverdb.net/item/4596): it heals more, but you then lose 75% of that amount over time as a poison or disease. Wowhead says these are taught by special trainers, Odd Child or Apothecary Renferrel depending on faction. [Icy Veins](https://www.icy-veins.com/wow-forever/alchemy) warns returning players not to look for healing potions in their Alchemy list.
@@ -47,11 +51,11 @@ Ranks need skill 50 and level 10 (Journeyman), 125 and level 20 (Expert), and 20
 
 ### What's worth making
 
-- **Transmutes:** Wowhead calls them an easy profit. Transmute: Arcanite and the like are long-cooldown spells that turn cheap materials into dear ones.
+- **Transmutes:** Transmute: Arcanite and similar cooldowns can add value when output proceeds exceed all input and selling costs. Compare the value of competing uses of the cooldown; profit is not guaranteed.
 - **Consumables:** Wowhead expects steady demand because so many players buy them, though the best sellers will shift with the market.
 - **Elixirs:** Icy Veins notes that elixirs stack with each other, which makes them sought after at endgame.
 - **Reagents:** Icy Veins calls the oils, dyes and other reagents a strong income, because other professions need them for their own gear.
-- **Live prices:** the site's own price tables show today's margins.
+- **Scan prices:** the site's price tables show the selected realm, faction and capture date. Before launch, Beta snapshots are historical examples; displayed margins are estimates from asking prices, not today's launch prices or completed sales.
 
 ### Open questions
 

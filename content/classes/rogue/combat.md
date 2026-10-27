@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APL
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Use **Sinister Strike with a strong slow main hand for straightforward solo play**; a dagger/Backstab build is worthwhile when you can reliably attack from behind. Choose Riposte for enemies attacking you, while a dungeon damage build can spend those points elsewhere. Keep Slice and Dice when enough fighting remains to repay it, including the next mob; finish a nearly dead target directly when that is better. A model's small gain from dropping the buff is a test hypothesis, not enough to overturn the written guides ([Wowhead](https://www.wowhead.com/forever/guide/classes/rogue/combat/level-30-dps-overview)). Blade Flurry is valuable cleave only when the second target is safe to hit.
+
 ### What changed
 
 Hack and Slash's bonus follows your weapon: swords and axes get a 5% chance of an extra attack, daggers and fist weapons 5% crit, and maces ignore 15% of armour. You no longer need to respec when you swap weapon type ([ForeverDB changes](https://foreverdb.net/class/Rogue/changes); Wowhead). Puncturing Wounds (tier 2) gives Backstab 30% more crit and a 45% chance of a second combo point, which makes dagger Combat a real option. Wowhead reckons that brings Backstab's effective cost to about 41 Energy, level with Sinister Strike.

@@ -16,6 +16,10 @@ sources: Blizzard class deep dive, ForeverDB, Wowhead, Icy Veins, WoWSims preset
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Combat is the simplest first levelling choice**, especially with a good non-dagger main hand. Assassination becomes more distinctive with two daggers and Mutilate at 30; Subtlety rewards controlled openers and later Hemorrhage. Choose around the weapons and position you can actually maintain, rather than a level-60 ranking ([Combat](https://www.wowhead.com/forever/guide/classes/rogue/combat/level-30-dps-overview), [Assassination](https://www.wowhead.com/forever/guide/classes/rogue/assassination/level-30-dps-overview)). First Aid is useful alongside either pair of primary professions. Vanish is an escape tool, not a guarantee against every ongoing damage effect or failed reset.
+
 ### How Forever changed the class
 
 Blizzard's [class deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24310968) keeps the Classic kit and changes how it fits together:
@@ -49,7 +53,9 @@ Combat is the safe recommendation: ForeverDB names it the most forgiving, and Ic
 
 ### Races and professions
 
-Advice differs. Icy Veins' Assassination and Combat guides pick Gnome (Eureka! and Escape Artist) and Orc (Blood Fury, Savage and Hardiness). Its Subtlety guide prefers Human or Night Elf, and Orc for PvP or Troll for PvE. Wowhead rates Human, Skyborne and Gnome about equal for the Alliance, Orc or Skyborne for the Horde, and Troll as nearly unmatched for levelling, thanks to its health regeneration. Several racials changed on 16 October: Human Ruthless and Orc Savage became flat crit bonuses, and Wowhead reports Skyborne's Wind Blessed haste rose to 3%. Skinning with Leatherworking is the common pick, with First Aid for bandages, since Rogues can't heal themselves.
+Earlier guide rankings use superseded racials. [Blizzard's 26 October notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7) remove Orc Savage, reduce Human Ruthless to 1% crit and set Skyborne Wind-Blessed to 2% haste. Orc Command is a pet-damage racial and does not improve a Rogue's ordinary attacks. Compare the remaining damage, escape and defensive tools for the content you play; there is no launch-tested race ranking here.
+
+Skinning and Leatherworking support self-crafted levelling gear. First Aid is a separate secondary profession, so it does not consume either primary slot. Check bind-on-pickup requirements before assuming a recommended craft can be bought.
 
 ### Class quests worth doing
 

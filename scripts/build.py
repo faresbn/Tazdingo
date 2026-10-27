@@ -402,7 +402,7 @@ def price_book(market: dict | None, fdb: dict) -> dict:
 
 
 def market_value(entry: dict | None) -> tuple[int, str] | None:
-    """What an item sells for: our typical price when it's current, traded, and steady or
+    """Estimated asking value: our typical price when current, sufficiently listed, and steady or
     moving over at least three days; otherwise ForeverDB's median across realms when enough
     players saw it. A price seen on one or two days doesn't feed a gold-making table."""
     if not entry:

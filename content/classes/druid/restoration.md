@@ -16,6 +16,10 @@ sources: ForeverDB (PvE guide, builds, levelling guide), Wowhead (healer overvie
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Use **deep Restoration for the strongest emergency healing toolkit**, or a Balance/healing build when questing and damage during safe windows occupy much of the session. The latter gives up dedicated healing talents and is not a guarantee for every group ([Wowhead](https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview)). Apply heals over time where ongoing damage will use them, then direct-heal real deficits. Downrank to match the incoming damage, rather than assuming one low rank works everywhere. Entering melee for Omen of Clarity is optional and unsafe around cleaves or mechanics. No healing simulator here establishes a raid ranking or stat optimum.
+
 ### How the spec changed
 
 Blizzard's [deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24301515) reshapes the tree. Nature's Focus moves to the first row, Gift of Nature to the third, and Swiftmend becomes the 16-point talent at 25. Wild Growth is the 31-point capstone: a front-loaded heal over time on every member of the target's party, with a 6 second cooldown and a high mana cost. [Moonglow](https://foreverdb.net/spell/16845) no longer cheapens heals, and [Naturalist](https://foreverdb.net/spell/17069) now adds 5% to all damage. Wowhead's [healer overview](https://www.wowhead.com/forever/guide/classes/druid/restoration/overview-pve-healer) notes that Lifebloom, Nourish, Efflorescence and Tree of Life are absent. Icy Veins' FAQ singles out Tree Form and Lifebloom.
@@ -48,7 +52,7 @@ There is no simulator for this spec, so the guides are the only reference:
 1. Put [Thorns](https://foreverdb.net/spell/467) on the tank before the pull; it now scales with your spell power.
 2. Keep Rejuvenation on the tank, and on anyone else taking steady damage.
 3. Use Regrowth when the tank takes a big hit, then Healing Touch, downranked to fit the damage. Wowhead's level 20 guide passes on player reports that rank 2 Healing Touch with plenty of healing power was enough up to Blackfathom Deeps.
-4. In an emergency, Swiftmend a target with your heal over time on it. Rejuvenation into Swiftmend is about a one-second rescue even with nothing up (Wowhead, Icy Veins). If that's not enough, use Nature's Swiftness into a max-rank Healing Touch.
+4. In an emergency, Swiftmend a target with your heal over time on it. If no eligible heal over time is active, applying one before Swiftmend takes another action and a global cooldown; it is not an immediate one-button rescue. If that's not enough, use Nature's Swiftness into a max-rank Healing Touch.
 5. When the whole party is in trouble, channel Tranquility. ForeverDB gives it a 5 minute cooldown, and Wowhead says Improved Tranquility brings that to 2 minutes with no threat.
 6. Spend [Omen of Clarity](https://foreverdb.net/spell/16864) procs on a max-rank Regrowth or Healing Touch. Wowhead suggests auto-attacking in melee to proc it more often.
 7. Cure poisons and curses on the tank first.

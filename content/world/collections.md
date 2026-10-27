@@ -16,6 +16,10 @@ sources: ForeverDB, Wowhead, Method, wow-professions.com, Blizzard, Icy Veins
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Save for useful riding access before optional colours, pets or titles**, unless collecting itself is the goal. The [mount guide](https://www.method.gg/wow-forever/how-to-get-a-mount-in-wow-forever-cost-requirement-and-mount-options) reports Beta riding costs and class-mount alternatives; confirm the live trainer and quest requirements before spending. Warlocks and Paladins have reported class-mount routes, so a standard racial-mount budget need not apply identically to them. Datamined counts are not a shopping catalogue of obtainable rewards. For Favor and Legacy rewards, check both currency and standing/point prerequisites, and separate a cosmetic preference from an upgrade to travel speed.
+
 ### How collecting works
 
 Blizzard's [ruleset article](https://worldofwarcraft.blizzard.com/en-us/news/24302070) says collections are account-wide across rulesets. Hardcore is the exception: what you earn there becomes available elsewhere, but not the reverse. Forever also has opt-in transmog: appearances are collected as you loot, even with the system switched off. Uncommon and rare dungeon drops grant their look to every eligible group member, while epic raid drops grant it only to the winner ([Blizzard Deep Dive recap](https://worldofwarcraft.blizzard.com/en-gb/news/24303313)). [Icy Veins](https://www.icy-veins.com/wow-forever/collectible-items) groups the collections as mounts, companion pets and transmog.

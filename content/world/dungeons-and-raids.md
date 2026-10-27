@@ -16,6 +16,10 @@ sources: Blizzard, Icy Veins, ForeverDB, Wowhead, Warcraft Tavern, wow-professio
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Choose a dungeon for the group's level, quests, useful loot and travel cost**, not a group-finder range alone. A listed minimum is not a promise that a fresh group at that level can finish every boss. For Horde, nearby early dungeons and their quests may beat a long trip for one uncertain drop. Repeated farming is worthwhile only when the expected upgrade justifies the time; Beta best-in-slot lists do not guarantee launch loot. Blizzard's [new-dungeon overview](https://news.blizzard.com/en-us/article/24301455/explore-the-new-dungeons-of-world-of-warcraft-forever) supplies intended ranges and access quests. Higher dungeons, attunements and raid tactics remain plans to verify in game, not tested walkthroughs.
+
 ### Every dungeon
 
 Level ranges are the game's group-finder ranges as listed by [Icy Veins](https://www.icy-veins.com/wow-forever/dungeons-overview), which match ForeverDB's client data. Blizzard's own ranges for the new dungeons are a little narrower; they are noted where they differ. Icy Veins had guides for the first fourteen at the time of writing; the rest link to its overview until their guides appear.
@@ -73,14 +77,14 @@ All three open on Wednesday 9 December for level 60 characters, and all are plan
 |---|---|---|---|
 | Barrow Deeps | 10 | 8 | Beneath Mount Hyjal, the prison that held Illidan; entrances from Mount Hyjal, Winterspring and Blackmaw Hold |
 | Hyjal Summit | 20 | 13 | The summit near Nordrassil; opens with an ancient guardian, then branches into several paths |
-| Onyxia's Lair | 40 | 1 | Dustwallow Marsh; a three-phase fire fight, so bring fire resistance |
+| Onyxia's Lair | 40 | 1 | Dustwallow Marsh; Classic fire mechanics are a starting reference, not a verified Forever resistance requirement |
 
 Boss lists from the client's Legacy challenges ([ForeverDB](https://foreverdb.net/legacy)):
 
 - **Barrow Deeps:** Chillhowl, Elder Tangleclaw, Khalith the Dreadspinner, Well of Sorrow, Amethrax, Del'lynar Songwood, Ravus and Darlissa, Sonya Darkhallow. [Warcraft Tavern](https://www.warcrafttavern.com/forever/guides/raids/) has a Deepscar Matriarch in place of Chillhowl.
 - **Hyjal Summit:** Bandalar, Ancient of Decay, Time-Lost Battalion, Sylvestris Dusksong, Old Gloomlurker, Gharalis the Abyssal, Kathris the Haunted, Anara Chillwind, Elder Minderel, Tracker Stillwind, Council of Thorns, Nythus the Dreambound and the Wild King.
 
-[Icy Veins' raid overview](https://www.icy-veins.com/wow-forever/raid-overview) adds the design rules: tier pieces drop in all three raid sizes, every boss has rare "chase" items, item stats stay hidden until someone loots them, and power gains between tiers are kept small. There are no heroic or mythic modes and no scaling, so a 20-player raid needs exactly 20. Blizzard has promised a legendary tied to the first raids; Icy Veins says it comes from Hyjal Summit. No attunement has been announced for the Barrow Deeps or Hyjal Summit. The client has a Brooch of the Wardens that grants access to a prison wing inside the Barrow Deeps, but what it's for isn't known ([ForeverDB](https://foreverdb.net/lore/place/mount-hyjal)).
+[Icy Veins' raid overview](https://www.icy-veins.com/wow-forever/raid-overview) adds the design rules: tier pieces drop in all three raid sizes, every boss has rare "chase" items, item stats stay hidden until someone loots them, and power gains between tiers are kept small. There are no heroic or mythic modes and no scaling, so plan around the stated raid size rather than expecting flexible scaling; this does not establish that entering with fewer players is impossible. Blizzard has promised a legendary tied to the first raids; Icy Veins says it comes from Hyjal Summit. No attunement has been announced for the Barrow Deeps or Hyjal Summit. The client has a Brooch of the Wardens that grants access to a prison wing inside the Barrow Deeps, but what it's for isn't known ([ForeverDB](https://foreverdb.net/lore/place/mount-hyjal)).
 
 Molten Core, Blackwing Lair, Zul'Gurub, both Ahn'Qiraj raids and Naxxramas are in the client, but Blizzard hasn't dated them. On its podcast, a developer said older raids like Molten Core will bring mechanics players haven't seen ([ForeverDB](https://foreverdb.net/article/podcast-molten-core-new-mechanics-raid-difficulty)).
 

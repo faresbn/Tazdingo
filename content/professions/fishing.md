@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+For skill alone, **fish where catches are reliable**; a harder zone does not inherently speed skill gains. Move for the fish needed by Cooking, Alchemy or actual buyers, rather than for a higher zone level. Fishing needs little material spending, but time, lures and travel still count ([guide](https://www.wow-professions.com/forever/fishing-leveling-guide)). Before buying fish to cook or planning a sale, compare raw-fish value with cooked proceeds and recipe access. Keep tournament timing and rewards as source-reported plans until the live event is checked; they are not guaranteed launch income.
+
 ### What changed in Forever
 
 Wowhead says Fishing itself barely changed. What changed is around it:
@@ -50,7 +54,7 @@ Artisan comes from the quest Nat Pagle, Angler Extreme, from Nat Pagle in Dustwa
 
 ### Which catches are worth keeping
 
-- **Cost:** Wowhead points out that Fishing costs essentially nothing, so every catch is profit, and the right fish can bring steady gold.
+- **Cost:** Fishing has low material costs, but catching and selling take time. Judge gold per hour after lures, travel and selling costs; not every catch has a buyer.
 - **Oil fish:** Icy Veins lists Oily Blackmouth, Firefin Snapper and Stonescale Eel, which Alchemists turn into Blackmouth, Fire and Stonescale Oil.
 - **Buff-food fish:** Raw Sunscale Salmon and Large Raw Mightfish (Attack Power), Raw Winter Squid and Raw Summer Bass (crit), Raw Whitescale Salmon and Darkclaw Lobster (spell damage), and Raw Plated Armorfish (armour).
 - **Rack and Hut fish:** the uncommon and rare catches these unlock haven't been listed yet.

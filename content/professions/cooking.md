@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Cook the meat or fish your route already provides**, and pair with Fishing only if the time spent fishing is worthwhile. A bought-ingredient route can be quicker than travelling for a nominally cheaper recipe. Compare cost per usable serving, not per craft, and check that the particular food grants the desired buff; the experience bonus is for kills, not quest rewards. The [route](https://www.wow-professions.com/forever/cooking-leveling-guide) is a Beta starting point, especially above 225. Bag a few campfire kits for convenience, but shared camp benefits do not require every player to supply every profession feature. Expected demand is not evidence that a dish will sell profitably.
+
 ### What changed in Forever
 
 **Food that levels you.** [Wowhead](https://www.wowhead.com/forever/guide/professions/cooking/overview-leveling) says every cooked food now gives Well Fed XP Boost: 5% more experience from kills. [Icy Veins](https://www.icy-veins.com/wow-forever/cooking) and Wowhead's own Fishing guide say "most" foods instead. Icy Veins notes that the bonus counts kill experience only, not quest rewards. You get a food buff after eating for 10 seconds, and most last 15 minutes. Even simple food now gives a small buff: [ForeverDB](https://foreverdb.net/guide/professions) notes Roasted Boar Meat grants 1 Strength, although Charred Wolf Meat gives nothing.

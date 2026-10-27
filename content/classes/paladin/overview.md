@@ -16,6 +16,14 @@ sources: Blizzard Paladin deep dive and beta notes, ForeverDB, Wowhead, Icy Vein
 
 ## What the guides say
 
+### Race choice after the 26 October changes
+
+[Blizzard's 26 October notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7) set Human Ruthless to 1% crit and replace Dwarf Earth Fury with 1% hit. Hit helps attacks and harmful spells, not healing spells landing on friendly targets. Older critical-damage/healing or weapon-specialisation comparisons are obsolete. Undead remains the Horde option; a simulated Alliance race is not a requirement for the class to work.
+
+### Tazdingo recommendation
+
+For mainly solo questing, **Retribution is the straightforward two-handed choice**. Protection becomes attractive for pack control and regular dungeon tanking; Holy makes most sense when healing a regular party. Claims that Protection is faster than Retribution describe particular Beta gear, pulls and spell ranks, not every route ([Protection](https://www.wowhead.com/forever/guide/classes/paladin/protection/level-30-tank-overview), [Retribution](https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview)). Carry role-appropriate gear and count drinking, deaths and group availability when comparing. A strong defensive cooldown does not make a pull risk-free.
+
 The beta stopped at level 30. Holy Shock is the deepest talent anyone could reach; Light's Vigil, Twist of Light and Holy Shield (all level 40) are untested.
 
 ### How Forever changed the class

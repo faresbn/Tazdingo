@@ -20,7 +20,8 @@ When asked to update Tazdingo ("update the Tazdingo guide for Frost Mage", "put 
 2. **Read the current file from GitHub**, from the `main` branch of `faresbn/Tazdingo`, at its exact path. Note the file's SHA. Never edit from the published site or `llms-full.txt`: they can lag behind the repository and they drop the header.
 3. **Edit, keeping everything that's still true:**
    - Add new findings under `## Field findings` as dated entries (format below). Never delete a finding: if it's no longer true, change its confidence to `outdated` and say why.
-   - Change `## What the guides say` only to add or correct something a named source says, with a link.
+   - Under `## What the guides say`, keep attributed source summaries distinct from `### Tazdingo recommendation`. The latter is a concise editorial synthesis: a default for a stated job, when an alternative fits better, its costs and what remains uncertain. Cite the evidence and label deductions as recommendations, not source quotations or tests.
+   - Correct a superseded mechanic instead of preserving it as an equally valid alternative. Later official changes take precedence over older guide prose; repeating a claim across sites does not make independent evidence.
    - Set `updated:` in the header to today's date.
 4. **Write the whole file back** to the same path on `main`, with the SHA from step 2. If GitHub rejects the write because the file changed in the meantime, read it again, merge your change into the new version and retry. Don't overwrite.
 5. **Commit** with a one-line message (see "Commit messages").
@@ -35,7 +36,9 @@ When asked to update Tazdingo ("update the Tazdingo guide for Frost Mage", "put 
 3. **Keep kinds of knowledge apart.** Each finding says how it's known: tested in game (with the level and situation), read (with the source) or simulated (with the tool and its version).
 4. **No names, and no mention of ChatGPT,** in any file or commit message. Use a neutral voice ("Frost levels faster with…", not "Fares found…"). The site's check fails a page that names someone, and replaces a commit message that does.
 5. **Cite sources** with links. Summarise in your own words; never copy text from Wowhead, Icy Veins, ForeverDB or any other site.
-6. **One topic per commit.**
+6. **Match the comparison.** State level, Legacy allowance, role, gear, buffs, target and fight length where they change the conclusion. Client data, Beta reports and simulations are separate evidence. A source update is not an in-game verification; do not set `verified` or Live on that basis.
+7. **Be precise about spending.** Asking prices and listing counts do not prove sales, demand or profit. Compare complete input bundles, binding, access and opportunity costs; yellow skill-ups are uncertain. Crate fill cost excludes the empty crate and is not cost per Favor. Camp buffs are shared and do not by themselves establish an exclusive profession advantage.
+8. **One topic per commit.**
 
 ## Where things go
 
@@ -89,6 +92,10 @@ confidence: testing
 - **Stats that matter:** …
 
 ## What the guides say
+
+### Tazdingo recommendation
+
+A practical choice for a stated situation, its trade-offs and cited evidence; not an invented test result.
 
 ### Talents
 

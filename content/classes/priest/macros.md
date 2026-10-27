@@ -15,6 +15,10 @@ sources: ForeverDB, Kami Labs, Wowhead
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Start with mouseover heals, a predictable dispel and a separate emergency key. A macro cannot decide whether to shield, dispel or save mana. Keep stopcasting deliberate: it can save a target, but repeated presses can cancel a useful heal. Test friendly-target, mouseover and modifier fallbacks separately, and never assume a multi-spell sequence bypasses the global cooldown. The examples have not been validated in the launch client.
+
 ### General tips
 
 - Wowhead and Kami Labs both suggest writing `/cast Spell Name` without a rank. The macro then uses the highest rank you know, so it stays current as you level.

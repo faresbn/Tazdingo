@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets, Blizzard class deep div
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+For solo levelling, retain the pet and take a cross-tree dip only when its immediate benefit is worth delaying hawks or a later capstone. Compare equal point budgets, including Legacy points. The petless level-60 weave presets are encounter-specific experiments, not replacements for a level-20 questing build. Hunters do not acquire a hybrid damage penalty by mixing trees; the stated design target distinguishes class roles.
+
 ### The hybrid tax, briefly
 
 On the WoW: Forever podcast, Blizzard said it wants hybrid damage specs to deal about 5% less than Hunters, Mages, Rogues and Warlocks. It defined a hybrid as a class that can fill more than one role, which is why even Warriors count ([ForeverDB](https://foreverdb.net/article/blizzard-hybrid-tax-5-percent-warriors-count-as-hybrids)). The rule is about classes, not about mixing talent trees, so a split Hunter build pays nothing for it. The 5% is a stated design target, not a number in the client.

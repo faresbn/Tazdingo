@@ -15,6 +15,10 @@ sources: Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Wowhead
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Choose **Enchanting for access to its crafts and enchants**, especially early wands, rather than assuming Tailoring will finance it. Compare buying a wand with training and crafting one. For disenchanting, compare expected material sale value with the item's vendor or Auction House value; do not count a crafted green as free material or assume a guaranteed dust yield. The [route](https://www.wow-professions.com/forever/enchanting-leveling-guide) uses cheaper starter recipes but still has training, rod and recipe costs. Selling a rare enchant depends on finding customers and acquiring the formula, not just its material margin. The Arcane Salvager's unquantified benefit is not a guaranteed return.
+
 ### What changed in Forever
 
 **A cheaper start.** [wow-professions.com](https://www.wow-professions.com/forever/enchanting-leveling-guide) says a few new low-level recipes make the first 70 points cheaper than in Classic. They use the [Mote of Magic](https://foreverdb.net/item/247786), which Enchanting Supply vendors sell. The new [Dust to Motes](https://foreverdb.net/spell/1245320) recipe splits one Strange Dust into three Motes (ForeverDB). Starting-zone trainers have no supply vendor beside them, except on Zephras Isle, so you buy Motes and your first rod in a capital. Disenchant now lives in the Professions window rather than your spellbook.
@@ -29,7 +33,7 @@ sources: Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Wowhead
 
 The same vendors sell the Brilliant Wand (skill 275), which [Icy Veins](https://www.icy-veins.com/wow-forever/enchanting) notes binds on pickup.
 
-ForeverDB lists two new Lesser two-hand enchants, Agility and Strength at +15 each, against +5 for the older Lesser ones. It also flags two crafted items as best in slot at level 30 and below: the [Lesser Magic Wand](https://foreverdb.net/item/11287) for most casters, and the Orb of Souls for Holy and Discipline Priests and Restoration Druids.
+ForeverDB lists two new Lesser two-hand enchants, Agility and Strength at +15 each, against +5 for the older Lesser ones. It also flags two crafted items as notable crafts within the level-30 bracket: the [Lesser Magic Wand](https://foreverdb.net/item/11287) for most casters, and the Orb of Souls for Holy and Discipline Priests and Restoration Druids.
 
 Gatherers will want the gathering-glove enchants. Icy Veins lists +2 and +5 versions for Herbalism and Mining, and +5 and +10 for Skinning. The Lotus Claw glove enchant gives a chance at Death Lotus when picking herbs in Hyjal ([Wowhead](https://www.wowhead.com/forever/guide/professions/herbalism/overview-leveling)).
 

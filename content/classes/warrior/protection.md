@@ -9,11 +9,15 @@ sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets a
 - **Role:** tank, with a one-handed weapon and a shield in Defensive Stance.
 - **How it plays:** keep Shield Block rolling so Revenge keeps lighting up, open packs with Thunder Clap, and spend spare Rage on Sunder Armor, Rend or Heroic Strike. Shield Slam arrives at 40.
 - **Strengths:** blocks, dodges and parries all give Rage through talents, it handles several melee enemies well, and Icy Veins calls it the fastest Warrior spec to level.
-- **Weaknesses:** a slow start in the early teens, weaker against casters and elementals, and no ranged way to pull ([Icy Veins](https://www.icy-veins.com/wow-forever/protection-warrior-leveling)). It is the only tank with no thorns-style damage of its own ([Wowhead](https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview)).
+- **Weaknesses:** a slow start in the early teens, weaker against casters and elementals, with no ranged pulling spell (a bow, gun, crossbow or thrown weapon can still pull) ([Icy Veins](https://www.icy-veins.com/wow-forever/protection-warrior-leveling)). It is the only tank with no thorns-style damage of its own ([Wowhead](https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview)).
 - **Stats that matter:** Stamina, armour and Defense to survive, then hit and Strength for threat. Guides weight these differently.
 - **New in Forever:** [Vanguard](https://foreverdb.net/spell/1310317) (Charge in Defensive Stance), [Master of Defense](https://foreverdb.net/spell/1310316), [Focused Rage](https://foreverdb.net/spell/29787), [Bastion](https://foreverdb.net/spell/16538), Thunder Clap in Defensive Stance, and [Shield Specialization](https://foreverdb.net/spell/12298) worth 5 Rage per block.
 
 ## What the guides say
+
+### Tazdingo recommendation
+
+For dungeon tanking, **secure survival and reliable threat on each active enemy**, then spend spare Rage on damage. If deaths are the problem, a threat-first stat list is the wrong fix; if enemies keep leaving the tank while survival is comfortable, more reliable threat matters. Shield Block can fund Revenge when attacks consume its blocks, but is not automatically Rage-neutral against a caster or an idle target ([Wowhead](https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview)). Pull with a trained ranged weapon when appropriate; lack of a ranged class spell does not mean Warriors lack ranged pulls.
 
 Shield Slam (40), Bastion (35) and everything past 30 are untested projections.
 
@@ -80,11 +84,11 @@ Wowhead's level 30 picks include Pronged Reaver (Razorfen Kraul), Thermaplugg Me
 |---|---|
 | ForeverDB | Stamina, armour, Defense, block, block value, dodge, parry, hit, Strength |
 | Icy Veins | weapon damage, hit, Strength, Agility, armour, Stamina, crit |
-| WoWSims, level 60 | blends threat and survival weights: Stamina 1.15, hit 1.13, Agility 0.66, Strength 0.62, block value 0.6; its pre-raid set aims for 140 Defense, which stops a level 63 boss landing crits |
+| WoWSims, level 60 | blends threat and survival weights: Stamina 1.15, hit 1.13, Agility 0.66, Strength 0.62, block value 0.6; its pre-raid Defense target is a model assumption, not verified launch crit immunity. Check whether a figure is rating, bonus skill or total skill before using it |
 
 ### Where guides disagree
 
-- **Sunder Armor threat:** Wowhead's level 20 page says it has a very low threat value in the beta, so tab-Sundering packs isn't worth it. ForeverDB, citing Blizzard's 24 September fix, recommends tab-Sundering. Both agree that Demoralizing Shout causes no threat right now, a known issue Blizzard has listed.
+- **Threat — resolved:** official notes corrected Sunder Armor threat earlier in Beta, and the [2 October notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/5) explicitly fixed Demoralizing Shout generating no threat. Older advice based on those bugs is superseded. Refresh useful debuffs and spread threat as needed; this does not mean endlessly spamming a shout is the best rotation.
 - **Defiance at 30:** ForeverDB's dungeon build and Wowhead take all three ranks. Icy Veins' calculator leaves it out, though its text mentions it.
 - **Survival or threat first:** ForeverDB ranks survival stats first; Icy Veins puts weapon damage, hit and Strength first.
 

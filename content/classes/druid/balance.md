@@ -16,6 +16,10 @@ sources: ForeverDB (PvE guide, builds, simulator tips), Wowhead (overview, level
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Choose **hard casting when you can stand safely and fund the mana**, or the damage-over-time/melee approach when movement and recovery make it more practical. Feral remains the simpler default for a first solo Druid. A level-30 model without Eclipse is not evidence against an Eclipse rotation; it models a different build ([Wowhead](https://www.wowhead.com/forever/guide/classes/druid/balance/level-30-dps-overview)). Let damage-over-time spells repay their cost on durable enemies and use roots for control. The level-60 Hurricane target threshold depends on encounter length, gear and mana, not a universal four-versus-five-enemy rule. General spell power supports both damage schools; a model's school split is not a permanent gear ratio.
+
 ### Levelling from 1 to 30
 
 Wrath carries you until Starfire arrives at 20. Insect Swarm opens at 25, and Eclipse and [Nature's Grace](https://foreverdb.net/spell/16880) at 30. Wowhead's [level 20 guide](https://www.wowhead.com/forever/guide/classes/druid/balance/level-20-dps-overview) says Balance levels more slowly than in Classic and drinks more, so pull one mob at a time. Your weapon is the biggest upgrade, since caster weapons carry spell damage from level 10. High Order Skyborne get an easier ride from Read Leyline. Wowhead suggests other races might skip Improved Wrath, buy a good weapon and level partly in melee. It also rates "Spellbear" (Bear Form with spell power gear and Thorns) as the most comfortable way to level; see the hybrid builds page.

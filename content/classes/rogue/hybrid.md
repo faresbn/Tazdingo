@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets, Blizzard class deep div
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Build around the weapon and job first. A Combat dagger dip can serve early Backstab play, but delays Mutilate or Hemorrhage if retained too long. Reassess at the milestone rather than copying a level-20 split unchanged to 60. Compare equal point budgets and separate solo defensive talents from boss damage talents. Rogues do not incur a hybrid-class damage penalty for mixing trees.
+
 ### The hybrid tax, briefly
 
 Blizzard said on its podcast that hybrid damage specs should deal about 5% less than Hunters, Mages, Rogues and Warlocks. It defined a hybrid as a class that can fill more than one role ([ForeverDB](https://foreverdb.net/article/blizzard-hybrid-tax-5-percent-warriors-count-as-hybrids)). That's about classes, not talent mixes, so a split Rogue build pays nothing. The figure is a design target, not a number in the client.

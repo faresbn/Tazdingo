@@ -15,6 +15,12 @@ sources: Icy Veins, Wowhead, WoWSims builds, Blizzard class deep dive, ForeverDB
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Borrow for a specific problem, and count the milestone you delay.** Early instant Corruption improves mobile tagging; pet talents improve a pet-centred route; Bane/Ruin supports direct casts. The [level-30 Affliction guide](https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-30-dps-overview) and [current Demonology overview](https://www.wowhead.com/forever/guide/classes/warlock/demonology/overview-pve-dps) support different mixes because one prioritises drains and the other the demon.
+
+An 11-point detour is not free: it postpones deeper talents unless you respec. State character level and unlocked Legacy points before copying a split. For level 60, use the linked simulator presets as reproducible starting configurations, not proof of the best launch build. Damage-dealing Warlocks remain a pure class; mixing their talent trees does not create a separate hybrid penalty.
+
 ### Levelling hybrids
 
 - **Affliction with a Demonology dip (40/11/0).** [Icy Veins](https://www.icy-veins.com/wow-forever/affliction-warlock-leveling) spends levels 31–41 in Demonology to reach Demonic Sacrifice and recommends sacrificing a Felhunter for 3% health every 4 seconds, which it says almost removes eating. It then returns to Affliction for Wrack at 51.
@@ -29,10 +35,10 @@ The beta stopped at 30, so these are theory. Splits read Affliction / Demonology
 
 | Build | Split | Where from | The idea |
 |---|---|---|---|
-| SM/Ruin | 31 / 0 / 20 | WoWSims; Wowhead's strongest Affliction build | Shadow Mastery and DoTs, plus Bane, Improved Shadow Bolt, Ruin and Agonizing Flames to strengthen a Shadow Bolt filler |
+| SM/Ruin | 31 / 0 / 20 | WoWSims; earlier Wowhead recommendation | Shadow Mastery and DoTs, plus Bane, Improved Shadow Bolt, Ruin and Agonizing Flames to strengthen a Shadow Bolt filler |
 | Affliction Wrack | 33 / 0 / 18 | WoWSims; Wowhead rates it behind SM Ruin | Wrack as the channelled filler, with Destruction's crit talents |
 | Demonology Fire or Shadow | 2 / 31 / 18 | WoWSims; Wowhead | Demonic Pact with Ruin and Agonizing Flames; sacrifice the Sayaad and keep the Imp for Fire, or the reverse for Shadow |
-| Destruction (Sayaad) | 18 / 0 / 33 | WoWSims; Wowhead's strongest Destruction build | Incinerate and Shadow and Flame, with Affliction points for hit, Corruption, Pandemic and Improved Life Tap |
+| Destruction (Sayaad) | 18 / 0 / 33 | WoWSims; earlier Wowhead recommendation | Incinerate and Shadow and Flame, with Affliction points for hit, Corruption, Pandemic and Improved Life Tap |
 
 Wowhead explains the logic on its [Affliction builds page](https://www.wowhead.com/forever/guide/classes/warlock/affliction/talent-builds-pve-dps): Shadow Bolt beats Wrack and Drain Life as a filler, so many of Affliction's best points are in Destruction. WoWSims' builds are in its [builds folder](https://github.com/wowsims/forever/tree/master/ui/specs/warlock/dps/builds).
 

@@ -16,6 +16,10 @@ sources: ForeverDB Mage macros, Kami Labs macro tool, Wowhead macro guide
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Use clear keys for Counterspell, Polymorph and emergency defences before combining damage spells. Stopcasting can make an interrupt immediate but also discards the spell already in progress. Treat cast sequences as manual button sequences, not adaptive rotations; procs, movement and spell ranks can make a fixed order inappropriate. Check names and every modifier branch in the client before relying on these community examples.
+
 ForeverDB checked every spell name and command in its macros against the beta client, but notes that none was tested in the beta. Kami Labs flags some macros "to confirm in-game". To make one, type /macro, click New, pick the question-mark icon so #showtooltip shows the spell, paste the text and drag the icon to your bar (Kami Labs).
 
 ### Crowd control and interrupts
@@ -61,12 +65,13 @@ Cancel your cast and Blink straight away (ForeverDB and Kami Labs):
 /cast Blink
 ```
 
-Ice Block, and press again to break out of it early (ForeverDB):
+Ice Block; hold Shift to cancel it deliberately (adapted from ForeverDB). Ordinary repeated presses no longer cancel the protection:
 
 ```
 #showtooltip Ice Block
 /stopcasting
-/cancelaura Ice Block
+/cancelaura [mod:shift] Ice Block
+/stopmacro [mod:shift]
 /cast Ice Block
 ```
 

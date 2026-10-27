@@ -15,6 +15,10 @@ sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets a
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Use **a current two-hander and affordable Rend/Overpower damage** as the baseline. Slam before Improved Slam can delay a swing, so place it carefully rather than copying the level-60 priority blindly. Save Rage on a nearly dead enemy when an auto attack will finish it; spend Execute when ending the fight now is worth that cost. Five Sunders are more plausible on a long boss than an ordinary quest mob ([Wowhead](https://www.wowhead.com/forever/guide/classes/warrior/arms/level-30-dps-overview)). The Whirlwind weapon is a substantial reward but its quest includes much higher-level opposition; count the help and travel required before calling it the fastest upgrade.
+
 Everything above level 30 is projection from the game files; nobody could play past 30 in the beta.
 
 ### What's different in Forever

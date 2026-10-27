@@ -573,8 +573,8 @@ def prices_index(site: Site, ctx: dict) -> str:
     rows = "".join(f'''<tr><th scope="row"><a href="{esc(m["url"])}">{esc(m["name"])}</a></th><td>{esc(m["environment_label"])} {badge("beta") if m["environment"] == "forever-beta" else ""}</td>
 <td class="num">{len(m["items"]):,}</td><td>{when(m["last_date"])}</td><td class="num">{len(m["scans"])}</td></tr>''' for m in ctx["markets"])
     tools = f'''<ul class="door-list compact">
-  <li><a href="{site.base}prices/craft/" class="door-name">What to craft</a><p>Recipes ranked by margin: what the product sells for, minus its reagents.</p></li>
-  <li><a href="{site.base}prices/crates/" class="door-name">Waylaid Crates</a><p>The cheapest bundle to fill each crate for Merchant's Favor.</p></li>
+  <li><a href="{site.base}prices/craft/" class="door-name">What to craft</a><p>Recipes ranked by estimated listing margin: output asking value minus reagent cost.</p></li>
+  <li><a href="{site.base}prices/crates/" class="door-name">Waylaid Crates</a><p>The cheapest priced fill bundle for each crate; empty crate cost excluded.</p></li>
   <li><a href="{site.base}prices/materials/" class="door-name">Materials worth gathering</a><p>Herbs, ores, leather and cloth that no recipe makes and no vendor sells, by value.</p></li>
 </ul>'''
     return layout(site, "Prices", page_head("Prices", "Auction House prices from our own scans: what things cost, how steady that price is, and what to do with it.")
@@ -666,21 +666,21 @@ def craft_page(site: Site, ctx: dict) -> str:
             f'<td class="num">{money(r["sells"])} {source_tag(r["value_source"])}</td><td class="num">{money(r["cost"])}</td>'
             f'<td class="num margin">{money(r["margin"])}</td></tr>' for r in items)
         return (f'<div class="table-wrap"><table><thead><tr><th scope="col">Recipe</th><th scope="col">Profession</th><th scope="col" class="num">Skill</th>'
-                f'<th scope="col" class="num">Sells for</th><th scope="col" class="num">Reagents cost</th><th scope="col" class="num">Margin</th></tr></thead><tbody>{body}</tbody></table></div>')
+                f'<th scope="col" class="num">Output asking value</th><th scope="col" class="num">Reagents cost</th><th scope="col" class="num">Estimated margin</th></tr></thead><tbody>{body}</tbody></table></div>')
     by_prof = {}
     for r in rows:
         by_prof.setdefault(r["profession"], []).append(r)
     groups = "".join(f'<section id="{esc(slug_of(p))}"><h2>{esc(p)}</h2>{table(rs[:10])}</section>' for p, rs in sorted(by_prof.items()))
     jump = " ".join(f'<a href="#{esc(slug_of(p))}">{esc(p)}</a>' for p in sorted(by_prof))
-    return layout(site, "What to craft", page_head("What to craft", "Recipes ranked by margin: what the product sells for, minus what its reagents cost.",
+    return layout(site, "What to craft", page_head("What to craft", "Recipes ranked by estimated listing margin: output asking value minus reagent cost.",
                                                     (("Prices", f"{site.base}prices/"),), data_note(ctx, "Recipes")) + f'''
 <section class="page-body">
   {f'<p class="jump">Jump to: {jump}</p>' if jump else ""}
-  <h2>Best margins overall</h2>
+  <h2>Largest estimated listing margins</h2>
   {table(rows[:25]) if rows else '<p class="empty">No recipe can be priced yet.</p>'}
   {groups}
   <section class="reading"><h2>How this is worked out</h2>
-  <p>A recipe is listed only when the product and every reagent have a price. Reagents a vendor sells are costed at the vendor's price; everything else at its typical Auction House price. A product only counts when it actually trades: seen in the last two weeks on at least three days, at least five listed and not volatile, or listed widely on other realms. Margins are before the Auction House's cut and deposit. Skill is the level at which the recipe becomes available.</p>
+  <p>A recipe is listed only when the product and every reagent have a price. Reagents a vendor sells are costed at the vendor's price; everything else at its typical Auction House price. Products qualify through repeated, sufficiently stocked listings in our scans, or listings across several realms in ForeverDB. This is evidence of listings, not sales or demand. Margins exclude the Auction House cut, lost deposits, training, recipe access and time. Check binding, vendor availability, current stock and your own market before crafting. Skill is the level at which the recipe becomes available.</p>
   <p><a href="{site.base}prices/craft.tsv">Every priced recipe (TSV)</a></p></section>
 </section>''', active="prices", path="prices/craft/", description="World of Warcraft: Forever recipes ranked by crafting margin.")
 
@@ -694,12 +694,12 @@ def crates_page(site: Site, ctx: dict) -> str:
                     + (f'<td>{cheap["count"]} {esc(cheap["name"])} {source_tag(cheap["source"])}</td><td class="num">{money(cheap["cost"])}</td>' if cheap
                        else '<td colspan="2">No bundle priced yet</td>')
                     + f'<td class="others">{others}</td></tr>')
-    return layout(site, "Waylaid Crates", page_head("Waylaid Crates", "The cheapest way to fill each crate. A crate takes any one bundle from its list; filled crates earn Merchant's Favor.",
+    return layout(site, "Waylaid Crates", page_head("Waylaid Crates", "The cheapest priced fill bundle for each crate. A crate takes any one bundle; the crate itself costs extra.",
                                                      (("Prices", f"{site.base}prices/"),), data_note(ctx, "Crates and their bundles")) + f'''
 <section class="page-body">
   <div class="table-wrap"><table><thead><tr><th scope="col">Crate</th><th scope="col" class="num">Level</th><th scope="col">Cheapest bundle</th><th scope="col" class="num">Cost</th><th scope="col">Other bundles</th></tr></thead>
   <tbody>{"".join(rows)}</tbody></table></div>
-  <p class="note">How much Favor each crate earns isn't in the data yet, so this compares the cost of filling crates, not the cost per point of Favor. <a href="{site.base}world/merchants-favor/">About Merchant's Favor</a>.</p>
+  <p class="note">This table excludes buying the empty crate. Reward amounts are not mapped in the pricing data yet, so it compares priced fill bundles, not total cost or cost per point of Favor. An unpriced bundle could be cheaper. <a href="{site.base}world/merchants-favor/">About Merchant's Favor</a>.</p>
 </section>''', active="prices", path="prices/crates/", description="The cheapest bundle to fill each Waylaid Crate in World of Warcraft: Forever.")
 
 
@@ -707,7 +707,7 @@ def materials_page(site: Site, ctx: dict) -> str:
     rows = "".join(f'<tr><th scope="row">{item_link(r["item"], r["name"])}</th><td class="num">{money(r["value"])} {source_tag(r["source"])}</td>'
                    f'<td>{steadiness(r["volatility"]) if r["source"] == "our scan" else ""}</td><td class="num">{count(r["listed"])}</td><td class="num">{esc(r["used_in"])}</td></tr>'
                    for r in ctx["materials"][:80])
-    return layout(site, "Materials worth gathering", page_head("Materials worth gathering", "Herbs, ores, leather, cloth and drops that no recipe makes and no vendor sells, by what they fetch.",
+    return layout(site, "Materials worth gathering", page_head("Materials worth gathering", "Herbs, ores, leather, cloth and drops ranked by recorded asking value. This does not measure sales or gold per hour.",
                                                                 (("Prices", f"{site.base}prices/"),), data_note(ctx, "Reagents")) + f'''
 <section class="page-body">
   <div class="table-wrap"><table><thead><tr><th scope="col">Material</th><th scope="col" class="num">Worth</th><th scope="col">Steadiness</th><th scope="col" class="num">Listed</th><th scope="col" class="num">Used in recipes</th></tr></thead>
@@ -751,8 +751,10 @@ def llms_full(site: Site, ctx: dict) -> str:
            "## How to read this file", "",
            "- Every page says its status. \"Pre-launch\" means written before launch (4 November 2026) or not yet confirmed in the live game: treat it as tentative. \"Live\" means checked in the live game. \"Beta\" marks prices from Forever Beta scans.",
            "- \"What the guides say\" sections summarise other sites' guides (linked under \"Read more\"). \"Field findings\" are our own discoveries, with a confidence: idea, testing, tested or outdated.",
+           "- Tazdingo recommendations are editorial conclusions with conditions and alternatives, not in-game tests. Later official mechanic changes supersede older guide text. Simulator presets and weights are model snapshots, not measured launch rankings.",
            "- Prices are per item in gold (g), silver (s) and copper (c): 1g = 100s = 10,000c. All prices are asking prices, not sales.",
            "- \"Typical\" is the median of each day's cheapest listing over the item's last seven days; use it for \"what does X cost\". \"Latest\" is the most recent cheapest listing.",
+           "- Estimated crafting margins use asking values and exclude selling fees, lost deposits, training, recipe access and time; listing counts do not prove sales. Check binding, current stock and realm/faction. Crate tables exclude empty-crate cost and do not calculate cost per Favor.",
            "- \"Steadiness\" (steady / moving / volatile) says how far the daily price swung over two weeks. Treat volatile prices with caution.", ""]
     out += ["## Markets", ""] + [f"- {md(m['name'])} ({m['environment_label']}): {len(m['items']):,} items, newest data {m['last_date']}. "
                                  f"Prices (TSV): {site.url}{m['files']['prices_tsv'][len(site.base):]}" for m in ctx["markets"]] + [""]
@@ -763,11 +765,11 @@ def llms_full(site: Site, ctx: dict) -> str:
             out += [f"| {md(i['name'])} | {i['id']} | {plain_money(i['typical'])} | {i['volatility'] or 'too new'} | {i['listed']:,} |" for i in h["most_listed"]]
             out.append("")
     if ctx["craft"]:
-        out += ["## What to craft (best margins)", "", "| Recipe | Profession | Skill | Sells for | Reagents | Margin |", "|---|---|---|---|---|---|"]
+        out += ["## What to craft (estimated listing margins)", "", "| Recipe | Profession | Skill | Output asking value | Reagents | Estimated margin |", "|---|---|---|---|---|---|"]
         out += [f"| {md(r['name'])} | {r['profession']} | {r['skill']} | {plain_money(r['sells'])} | {plain_money(r['cost'])} | {plain_money(r['margin'])} |" for r in ctx["craft"][:20]]
         out += ["", f"All priced recipes: {site.url}prices/craft.tsv", ""]
     if ctx["crates"]:
-        out += ["## Waylaid Crates (cheapest bundle; a crate takes any one bundle)", ""]
+        out += ["## Waylaid Crates (cheapest priced fill bundle; empty crate cost excluded)", ""]
         out += [f"- {md(c['name'])} (level {c['level']}): " + (f"{c['cheapest']['count']} {md(c['cheapest']['name'])}, {plain_money(c['cheapest']['cost'])}" if c["cheapest"] else "no bundle priced") for c in ctx["crates"]]
         out.append("")
     posts = [p for p in ctx["blue"].get("posts", []) if str(p.get("url", "")).startswith("https://us.forums.blizzard.com/")]

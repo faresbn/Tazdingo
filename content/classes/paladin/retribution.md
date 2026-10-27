@@ -15,6 +15,10 @@ sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets a
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Use **a strong slow two-hander with a sustainable Seal/Judgement/Holy Strike loop** before adding costly area damage. Seal of Command versus Righteousness depends on weapon speed, spell power and current tuning; neither is universally best at every level ([Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview)). Skip a costly finishing spell when the next auto attack is enough. Vengeance favours damage, while Repentance buys control: choose for the encounter. Shockadin and Twist of Light are different builds and mana budgets, not interchangeable rotations. The [later official notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/6) reduce Champion of the Light to **10/20/30% of Intellect as spell damage**, superseding the 60% figure.
+
 Champion of the Light (35) and Twist of Light (40) were out of reach in the beta without Legacy points; their value is projection.
 
 ### What's different in Forever
@@ -73,7 +77,7 @@ Weapon first. Wowhead and Icy Veins list Corpsemaker (Razorfen Kraul), Manual Cr
 - **Row 5 at 30:** Wowhead and ForeverDB take Vengeance; Icy Veins takes Repentance for crowd control.
 - **Shockadin:** Wowhead skips it at 30 because of Mana. Icy Veins offers an all-Holy alternative, and WoWSims has a level 60 Holy Shock preset.
 - **Spell power or melee gear:** Wowhead calls the shift to spell power divisive, and says some seal-twisters find Twist of Light a let-down.
-- **Champion of the Light:** the client gives up to 60% of Intellect as spell damage. Blizzard's deep dive lists 30% in one place and describes a cut to 60% in another.
+- **Champion of the Light — resolved:** [16 October official notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/6) specify 10/20/30% of Intellect as spell damage. Older 20/40/60% client or guide values are superseded.
 
 ## Field findings
 

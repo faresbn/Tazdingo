@@ -16,6 +16,10 @@ sources: Icy Veins, Wowhead, ForeverDB, WoWSims presets and APLs, Blizzard class
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Choose **Fire for the playstyle, not a promised early damage lead**. At level 30, limited crit makes Heating Up less consistent; Frost offers more control and Arcane a different mana toolkit. Build Scorch stacks on a durable target when the later damage repays the setup; do not spend five casts preparing a mob that is nearly dead. Use area damage only when the tank, positioning and mana support it ([Wowhead](https://www.wowhead.com/forever/guide/classes/mage/fire/level-30-dps-overview)). Deep Fire versus Frostfire is an endgame comparison to revisit with equal gear and current models. Nitro Boosts is not a supported reason to choose Engineering: its removed tinker is already flagged below.
+
 ### Heating Up and Pyroblast
 
 Blizzard's [deep dive](https://worldofwarcraft.com/en-us/news/24302097) describes Heating Up as Forever's take on Hot Streak: non-periodic crits with Fireball, Frostfire Bolt, Fire Blast and Scorch each take 25% off your next Pyroblast's cast, up to three times. The client adds that Fire Blast grants an extra stack whenever it deals damage, so Wowhead says each Fire Blast gives one stack, or two on a crit. Blizzard renamed Hot Streak to Heating Up on 1 October ([ForeverDB](https://foreverdb.net/guide/leveling-mage)), and the 16 October build turned Wake of Fire into Improved Fire Blast, dropping its crit proc ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)).

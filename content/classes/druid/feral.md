@@ -16,6 +16,10 @@ sources: ForeverDB (PvE guide, builds, levelling guide), Wowhead (DPS and tank o
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+For questing and occasional tanking, **keep the movement and Bear tools of a flexible Feral build**. A dedicated Cat damage build can give those up, which is a real cost rather than a free optimisation ([Wowhead](https://www.wowhead.com/forever/guide/classes/druid/feral/level-30-dps-overview)). Use Cat for suitable single targets and Bear when tanking is the agreed role. In dungeons, use bleeds only where target lifetime repays them, avoid wasting Energy on Shifting Power, and use Shred only when positioning permits. Bearweaving adds mana and safety costs and remains an optional modelled experiment. Old powershifting and Tiger's Fury advice should not be imported from Classic.
+
 ### Levelling
 
 ForeverDB's [levelling guide](https://foreverdb.net/guide/leveling-druid) has you level in Bear Form from 10 to 20, with Maul on one mob and Swipe on two or three. Cat Form arrives at 20 with only Claw and Rip. Once Shred and Rake arrive (22 to 24), Cat kills single mobs well while Bear handles packs. Wowhead's [level 20 tank guide](https://www.wowhead.com/forever/guide/classes/druid/feral/level-20-tank-overview) warns that before 20 most of your damage comes from auto-attacks and [Thorns](https://foreverdb.net/spell/467). It adds that Thorns snapshots your spell power, so a spell power set is worth carrying. Icy Veins' [levelling guide](https://www.icy-veins.com/wow-forever/feral-druid-leveling) rates Feral among the best levelling specs and looks ahead to 40, when Berserk lets a Dire Bear bite three mobs at once.

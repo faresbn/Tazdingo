@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APLs, Blizzard class
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Pick **Survival for the melee playstyle**, rather than as the fastest default leveller. Before its melee tools arrive, use the ranged kit and pet. At 30, Strider Kick is available; Expose Prey makes sustained melee more consistent later, or earlier with Legacy points. This explains the guides' different "melee starts" dates ([Wowhead](https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview)). Start with a simple ranged or melee plan; add weaving only if travel, missed shots and encounter danger do not erase its gains. A simulator's assumed swing behaviour is not launch verification. Position behind dungeon enemies, but remember that Expose Prey can enable Mongoose Bite without a dodge.
+
 ### What changed
 
 Blizzard's [deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24301515) rebuilds Survival around melee. Savage Strikes, Surefooted and Entrapment now apply more broadly (Entrapment always roots), and the bottom half of the tree adds the new melee talents. Mongoose Bite and Counterattack now scale with weapon damage and need a melee weapon. Mongoose Bite still requires a dodge, unless Expose Prey procs it: attacks on a target with your Hunter's Mark have a 10% chance to enable it ([ForeverDB changes](https://foreverdb.net/class/Hunter/changes)). Deadly Aspects (Beast Mastery tier 1) gives melee haste procs under Aspect of the Beast.
@@ -45,7 +49,7 @@ In dungeons you stand behind the target, so dodges and parries are rare, and For
 
 ### Weapons
 
-Wowhead and WoWSims describe two set-ups: a two-hander to weave between melee and range, or two one-handers to stay in melee, where Predator's Edge's off-hand bonus pays off. Hunters dual-wield from 20, can use polearms from 20 and can't use maces ([ForeverDB](https://foreverdb.net/guide/leveling-hunter)). Wowhead's Hunter pages tie the Orc and Human crit passives to axes and swords, but ForeverDB reports that Blizzard's 16 October build made both flat bonuses on all attacks.
+Wowhead and WoWSims describe two set-ups: a two-hander to weave between melee and range, or two one-handers to stay in melee, where Predator's Edge's off-hand bonus pays off. Hunters dual-wield from 20, can use polearms from 20 and can't use maces ([ForeverDB](https://foreverdb.net/guide/leveling-hunter)). Older weapon-restricted racial advice is obsolete: [26 October notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7) remove Orc Savage and set Human Ruthless to 1% crit. Orc Command instead benefits pet damage.
 
 ### Gear and consumables
 

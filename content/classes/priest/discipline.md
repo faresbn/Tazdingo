@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets, Blizzard class deep div
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+For a **dedicated level-30 Discipline healer, reach Penance**; the 16/0/5 alternative exchanges that spell for solo sustainability. It is a different job, not an equivalent Penance build. Shield to prevent meaningful damage, heal according to urgency and use damage spells only while healing remains secure ([Wowhead](https://www.wowhead.com/forever/guide/classes/priest/discipline/level-30-healer-overview)). Do not withhold a life-saving shield from a Warrior on obsolete rage advice: Blizzard explicitly changed Warrior rage to ignore absorbs. The [2 October official fix](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/5) explicitly confirms the absorb rule for Druids too. Crit-oriented endgame weights assume later talents and cannot rank early healing gear universally.
+
 ### Talents
 
 Penance is the tier 5 Discipline talent. It needs 20 points in the tree above it, so a level 30 character must put every point in Discipline to take it ([ForeverDB](https://foreverdb.net/class/Priest/talents)).
@@ -66,7 +70,7 @@ Wowhead calls Discipline an acceptable levelling spec once Penance arrives. The 
 ### Where guides disagree or are unsure
 
 - **Penance at 30:** Wowhead and ForeverDB build into it; Icy Veins' 21-point build does not.
-- **Shielding Warriors and Druids:** Wowhead (6 October) says to skip the shield on rage tanks, because absorbs might starve their rage. Blizzard's deep dive says Rage gain now ignores absorbs, so shields no longer cost a Warrior rage.
+- **Shielding Warriors and Druids:** Wowhead (6 October) says to skip the shield on rage tanks, because absorbs might starve their rage. The [2 October official fix](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/5) explicitly says absorbs are ignored for Warrior and Druid Rage. The old prohibition is superseded.
 - **Cooldowns:** Blizzard's deep dive gave Divine Grace and Contingency Plan 5 min cooldowns. The client shows 10 min for both ([ForeverDB](https://foreverdb.net/class/Priest/pve)).
 - **Devouring Plague:** Wowhead's overview still says one minute. Since 16 October it is 24 sec.
 - **Above 30:** Divine Aegis (35) and Power Infusion (40) are untested. Icy expects little Divine Aegis play in the beta.

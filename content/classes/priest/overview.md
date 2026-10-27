@@ -17,7 +17,11 @@ sources: Blizzard class deep dive, ForeverDB, Wowhead, Icy Veins, WoWSims preset
 
 ## What the guides say
 
-The beta closed at level 30, so everything below level 30 has been played. Anything above it comes from the game files and Blizzard's posts, and is untested.
+### Tazdingo recommendation
+
+For mostly solo questing, **start with a current wand and a mana-efficient damage build**; Shadow is a straightforward route. For a regular healing party, choose Holy's direct-healing toolkit or Discipline's shields and Penance. A hybrid works when it solves your actual mix of questing and healing, but can delay those defining talents. Early similarity between specs does not establish their level-60 strength ([Shadow](https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview), [Holy](https://www.wowhead.com/forever/guide/classes/priest/holy/level-30-healer-overview), [Discipline](https://www.wowhead.com/forever/guide/classes/priest/discipline/level-30-healer-overview)). Race-spell utility can justify a preference such as Troll; a guide's preferred race is not a requirement to heal successfully.
+
+The Beta cap was level 30. Guides report play within that bracket, but that does not mean every talent combination or claim was tested. Above-30 advice is a projection from game files and design notes.
 
 ### How Forever changed the class
 
@@ -76,7 +80,7 @@ Tailoring and Enchanting is the profession pair every source suggests, including
 
 ### Where the guides are unsure
 
-Wowhead and Icy Veins describe a "five-second rule": spirit-based mana regeneration pauses for five seconds after a cast. That is server behaviour, which [ForeverDB](https://foreverdb.net/article/yumytv-healer-beginners-guide) says it can't check in the client. Nothing above level 30 has been played yet.
+Wowhead and Icy Veins describe a "five-second rule": spirit-based mana regeneration is reduced for five seconds after spending mana; talents such as Meditation allow part of it to continue. That is server behaviour, which [ForeverDB](https://foreverdb.net/article/yumytv-healer-beginners-guide) says it can't check in the client. Nothing above level 30 has been played yet.
 
 ## Field findings
 

@@ -8,13 +8,17 @@ sources: Blizzard, ForeverDB, Icy Veins, Wowhead, Warcraft Tavern, Method
 
 - **What it is:** account-wide progression. Complete Legacy Challenges to earn Legacy Points, then spend them on perks, separately on each character.
 - **Unlocking it:** your first point opens the Legacy window (default key Y). For most players that's the first character to reach level 25.
-- **Points at launch:** 65 challenges, one point each (Blizzard).
+- **Planned challenge catalogue:** 65 challenges, one point each (Blizzard); raid and time-gated challenges cannot all be completed on launch day.
 - **Spending cap:** each character can spend up to 16 points at launch. Earning more still counts towards the reward track.
 - **Three trees:** Professions, Adventure and Resourcefulness.
 - **Reward track:** cosmetics at 15, 25, 40 and 55 total points, ending with an epic Spectral Bear mount.
 - **Hardcore:** progress earned on Hardcore counts everywhere; progress from other rulesets doesn't count on Hardcore.
 
 ## What the guides say
+
+### Tazdingo recommendation
+
+**Earn early points through activities already useful to the character**, then spend for the actual playstyle. A route involving several alts, crafting professions and PvP is not automatically quickest for someone who would otherwise do none of those things. [Blizzard](https://news.blizzard.com/en-us/article/24307383/get-to-know-the-world-of-warcraft-forever-legacy-system) confirms that one character can reach the 16-point spending cap; extra points still matter for cosmetic rewards. Check prerequisites before budgeting a perk, and do not assume Beta's gifted test points carry over. Source calculators disagree on some ranks and gates, so keep a tentative allocation until the live tree can be checked.
 
 ### How it works
 

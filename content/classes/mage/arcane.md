@@ -16,6 +16,10 @@ sources: Icy Veins, Wowhead, ForeverDB, WoWSims presets and APLs, Blizzard class
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Use the redesigned Arcane Blast buff, not the old stack-dumping rotation.** The [16 October official notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/6) make it a 15-second spell-damage buff based on Intellect, stacking to four, while successive Blasts still become more expensive. A non-Arcane spell no longer consumes it. Start conservatively with mana spending and use Missile Barrage procs; sustained high stacks depend on the actual mana budget. Old Beta reports of nearly free area damage depended on an acknowledged Clearcasting bug and cannot establish launch efficiency ([Wowhead](https://www.wowhead.com/forever/guide/classes/mage/arcane/level-30-dps-overview)). The level-60 simulator is a model to compare after confirming it implements the current spells.
+
 ### Arcane Blast changed late in the beta
 
 Blizzard's 7 October [deep dive](https://worldofwarcraft.com/en-us/news/24302097) described a 2.5 second Arcane Blast whose stacks raised your other spells' damage, lasted 8 seconds and ended when you cast anything else. Build 1.60.1.70425 (16 October) changed it in the client: a 1.5 second cast, each stack grants spell damage equal to 15% of your Intellect, stacks last 15 seconds from the first cast, and each one still raises the next Blast's cost by 175% ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)). Wowhead's 21 October [overview](https://www.wowhead.com/forever/guide/classes/mage/arcane/overview-pve-dps) says the buff now runs until the first stack's timer ends.
@@ -35,21 +39,11 @@ Icy Veins takes Wand Specialization while wands carry your damage and suggests r
 
 ### Rotation
 
-**Levelling and dungeons at 30:**
-- [Icy Veins](https://www.icy-veins.com/wow-forever/arcane-mage-ranged-dps-pve-guide): pull with Frostbolt when solo, cast Arcane Blast two or three times, then Fire Blast to dump the stacks; cast Arcane Missiles whenever Missile Barrage procs and wand low targets. Its [levelling page](https://www.icy-veins.com/wow-forever/arcane-mage-leveling) adds: don't spend a Clearcasting proc on Missiles that Missile Barrage already makes free.
-- Wowhead: never go above two stacks except on bosses; Fire Blast if Missile Barrage hasn't procced after two or three Blasts.
-- AoE: Arcane Explosion when a tank holds the pack; solo, gather, Frost Nova, Cone of Cold, then Arcane Explosion (Icy Veins). Wowhead pre-casts Flamestrike first.
-- ForeverDB's own simulator at 30 credits Arcane Missiles with about 60% of damage and Arcane Blast with 40%, and pairs Presence of Mind with Arcane Blast ([ForeverDB PvE](https://foreverdb.net/class/Mage/pve)).
+**Current rules:** [Blizzard's 16 October notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/6) moved Missile Barrage to row 1, redesigned Arcane Blast and introduced Arcane Wrath as the 16-point talent. Arcane Blast's stacking spell-damage buff lasts 15 seconds from its first application; it is not consumed by Fire Blast or Arcane Missiles. Arcane Wrath has a 3.5-second cast and 6-second cooldown in those notes.
 
-**WoWSims at 60** ([APLs](https://github.com/wowsims/forever/tree/master/ui/specs/mage/dps/apls)):
-1. Pre-cast Arcane Wrath.
-2. Evocation below 10% mana, after the Skyborne racial Read Leyline if you have it.
-3. Cooldowns when Missile Barrage is up or Arcane Wrath is ready; Presence of Mind to make Arcane Wrath instant.
-4. Arcane Missiles on Missile Barrage.
-5. Refresh Arcane Blast before it expires; build to four stacks if your mana budget allows, never fewer than two.
-6. Fill with Frostbolt ("Arcane Frost") or Scorch ("Arcane Fire", which also casts Fire Blast and three-stack Heating Up Pyroblasts).
+For a practical starting priority, use Missile Barrage when available, maintain a useful Arcane Blast buff without exhausting mana, and keep control or defensive spells available. Adjust stack spending to fight length and recovery time. This is an interpretation of the changed rules, not a tested launch rotation.
 
-The simulator's rotations use the old trainer version of Arcane Wrath, which the live client no longer teaches, so they may lag the current talent.
+The earlier Wowhead/Icy Veins advice to dump one or two Blast stacks with Fire Blast describes the **old** mechanic. The old level-30 damage split and bug-dependent Clearcasting reports are not reliable forecasts for the redesigned version. WoWSims' level-60 list maintains Blast stacks and uses Arcane Wrath, but must be checked against the current talent implementation before its exact priority can be recommended.
 
 ### Gear and consumables
 
@@ -59,10 +53,10 @@ The simulator's rotations use the old trainer version of Arcane Wrath, which the
 
 ### Where the guides disagree or aren't sure
 
-- **Arcane Blast stacks:** dump or keep, as above.
+- **Arcane Blast stacks — resolved:** dumping stacks belongs to the old spell. Current rules retain the timed buff; only the affordable number of casts remains a build and encounter decision.
 - **Missile Barrage timing:** Icy Veins' milestone table still lists it at 25; the current client places it in the first row from level 10.
 - **Arcane Concentration:** Wowhead saw it proc once per target hit on AoE during the beta, which made Arcane Explosion nearly free, and expects a fix.
-- **Arcane Wrath:** Wowhead gives a 3.5 second cast and 6 second cooldown; ForeverDB's talent tooltip shows only its damage and mana scaling.
+- **Arcane Wrath — resolved:** the later official notes specify a 3.5-second cast and 6-second cooldown. An incomplete client tooltip is not evidence for a different cooldown.
 
 ## Field findings
 

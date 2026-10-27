@@ -185,8 +185,8 @@ def profession_page(site: Site, ctx: dict, p: dict) -> str:
         label = badge("prelaunch") if ctx["data_prelaunch"] else ""
         data = (f'<section class="sec sec-data" id="from-the-data"><h2>From the data {label}</h2>'
                 + (f'<p>{total:,} recipes, {new:,} of them new in Forever (ForeverDB, game build {esc(ctx["fdb_source"].get("client_build"))}).</p>' if total else "")
-                + (f'<h3>Best margins</h3><div class="table-wrap"><table><thead><tr><th scope="col">Recipe</th><th scope="col" class="num">Skill</th><th scope="col" class="num">Margin</th></tr></thead><tbody>{craft_rows}</tbody></table></div>'
-                   f'<p><a href="{b}prices/craft/#{esc(p["name"].lower().replace(" ", "-"))}">All {esc(p["name"])} margins</a></p>' if crafts else "")
+                + (f'<h3>Estimated listing margins</h3><div class="table-wrap"><table><thead><tr><th scope="col">Recipe</th><th scope="col" class="num">Skill</th><th scope="col" class="num">Estimated margin</th></tr></thead><tbody>{craft_rows}</tbody></table></div>'
+                   f'<p><a href="{b}prices/craft/#{esc(p["name"].lower().replace(" ", "-"))}">All {esc(p["name"])} margins and assumptions</a>. These estimates use asking prices, exclude selling and training costs, and do not prove demand. Check binding and current stock before crafting.</p>' if crafts else "")
                 + (f'<h3>Camp items</h3><p>What {esc(p["name"])} adds to a campfire.</p><div class="table-wrap"><table><thead><tr><th scope="col">Item</th><th scope="col" class="num">Skill</th><th scope="col">Effect</th></tr></thead><tbody>{camp_rows}</tbody></table></div>' if camp else "")
                 + "</section>")
     main = (render_sections(page, f"No summary of {p['name']} guides yet.", only=("glance", "guides", "other"), sources=False) + data
@@ -299,19 +299,22 @@ def about_page(site: Site, ctx: dict) -> str:
     return layout(site, "Sources and credits", page_head("Sources and credits", "Where everything in Tazdingo comes from, and how to read it.")
                   + f'''<section class="page-body prose">
   <h2>What this is</h2>
-  <p>Tazdingo is a small, unofficial record of World of Warcraft: Forever: what things cost on the Auction House, what the best guides say about each class, spec and profession, how the new systems work, and the addons, macros and known issues worth knowing. The field notes and personally collected market data mainly follow Horde characters; Alliance information remains welcome. Loktar Ogar. It isn't affiliated with or endorsed by Blizzard Entertainment.</p>
+  <p>Tazdingo is a small, unofficial record of World of Warcraft: Forever: what things cost on the Auction House, what cited guides say about each class, spec and profession, how the new systems work, and the addons, macros and known issues worth knowing. The field notes and personally collected market data mainly follow Horde characters; Alliance information remains welcome. Loktar Ogar. It isn't affiliated with or endorsed by Blizzard Entertainment.</p>
   <h2>Labels</h2>
   <p>{badge("prelaunch")} marks anything written before launch on 4 November 2026, or not yet confirmed in the live game: treat it as tentative. A page becomes {badge("live")} only once it has been checked in the live game. {badge("beta")} marks prices from Forever Beta scans. Our own findings say how well they're tested: idea, testing, tested or outdated.</p>
   <h2>Guide summaries</h2>
-  <p>Each class, spec, profession and world page summarises what other sites' guides say, in our own words, and links to every source under "Read more". The guides belong to their authors: read them for the full detail, the reasoning and their updates. Summaries were written from guides published before launch, most of which only covered levels 1 to 30.</p>
+  <p>Each class, spec, profession and world page summarises what other sites' guides say, in our own words, and links to sources inline and under "Read more". The guides belong to their authors: read them for the full detail, the reasoning and their updates. Summaries were written from guides published before launch, most of which only covered levels 1 to 30.</p>
+  <h2 id="recommendations">How recommendations are weighed</h2>
+  <p>A Tazdingo recommendation is an editorial conclusion: a practical default, when an alternative fits better and what it costs. Later official changes settle mechanics; an older guide does not remain an equally valid alternative after its rule changes. Several sites repeating the same claim do not make independent evidence.</p>
+  <p>Beta play reports, client data and simulator presets answer different questions. Level, Legacy points, gear, buffs, targets and fight length must match before comparing builds. Model weights and gains are source snapshots, not locally reproduced tests or universal shopping priorities. Unresolved details remain labelled, and Field findings stay separate. A page's update date records an edit, not an in-game verification.</p>
   <h2>Prices</h2>
   <p>Prices come from our own Auctionator scans. Only the addon's price records are published. The typical price is the middle value of each day's cheapest listing over the item's last seven days, so one odd listing doesn't set it. Steadiness compares the spread of those daily prices over two weeks with the typical price. Dates follow Auctionator's own day counter, which starts on 1 January 2020.</p>
-  <p>Where our scans don't hold an item, the gold-making tables use prices from ForeverDB's players' scans, labelled as such, and vendor prices recorded by ForeverDB's players.</p>
+  <p>Where our scans don't hold an item, the market tables use prices from ForeverDB's players' scans, labelled as such, and vendor prices recorded by ForeverDB's players. These are asking prices, not completed sales. Crafting margins omit selling fees and other costs; stock, binding and actual demand still need checking.</p>
   <h3>Our scans</h3><ul class="scans">{scans}</ul>
   <h2>Game data</h2>
-  <p>Item names, recipes, camp items, Waylaid Crates, rare and collection counts, other players' prices and vendor prices: <a href="{FOREVERDB}">Data from ForeverDB.net</a> (game build {esc(src.get("client_build"))}, fetched {esc(src.get("fetched_on"))}; names fetched {esc(names.get("fetched_on"))}). Item tooltips use <a href="{FOREVERDB}/embed">ForeverDB's embed</a> and show today's details, not how an item looked on the day of a scan.</p>
+  <p>Item names, recipes, camp items, Waylaid Crates, rare and collection counts, other players' prices and vendor prices: <a href="{FOREVERDB}">Data from ForeverDB.net</a> (game build {esc(src.get("client_build"))}, fetched {esc(src.get("fetched_on"))}; names fetched {esc(names.get("fetched_on"))}). Item tooltips use <a href="{FOREVERDB}/embed">ForeverDB's embed</a> and show the provider's current details rather than an archived tooltip from the scan date.</p>
   <h2>Blizzard's posts</h2>
-  <p>The <a href="{site.base}more/blizzard/">Blizzard posts</a> page lists staff posts about Forever from Blizzard's official forums, each with a short quoted excerpt and a link to the original.</p>
+  <p>The <a href="{site.base}more/blizzard/">Blizzard posts</a> page lists Forever-specific official articles and staff posts, plus clearly tagged mixed roundups on the inner page. Classification uses article text and section context; it can still miss or misclassify an article. Follow the original for current details.</p>
   <h2>Guides, tools and data elsewhere</h2>
   <p>Wowhead, Icy Veins, ForeverDB, WoWSims, Method, Warcraft Tavern, Kami Labs, CurseForge and Blizzard's forums, among others; each page lists the ones it draws on.</p>
   {links(ctx["game"]["hubs"])}

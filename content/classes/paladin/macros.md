@@ -14,6 +14,10 @@ sources: ForeverDB Paladin macros, Kami Labs, Icy Veins levelling guide, Wowhead
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Keep emergency protection, taunt/Judgement and ordinary damage keys distinct enough to use deliberately. A damage sequence cannot decide whether Judgement must be saved for a loose enemy. Multi-spell macros still obey global and shared cooldowns; item, target and modifier branches need separate testing. Confirm spell names and equipped shield requirements in the current client before relying on these community examples.
+
 This is a short list, not a full library; each source's page has more. Level requirements come from ForeverDB. Anything above level 30 couldn't be used in the beta.
 
 ### Healing and cleansing
@@ -125,7 +129,7 @@ This is a short list, not a full library; each source's page has more. Level req
 
 ### Stuns and cooldowns
 
-**Hammer of Justice on focus, mouseover or target** (ForeverDB): stops your own cast, then stuns your focus, mouseover or target. It is your only way to stop an enemy cast.
+**Hammer of Justice on focus, mouseover or target** (ForeverDB): stops your own cast, then stuns your focus, mouseover or target. The stun stops a cast only when the enemy is susceptible; it is not a conventional interrupt against stun-immune bosses.
 
 ```
 #showtooltip Hammer of Justice

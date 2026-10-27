@@ -14,6 +14,10 @@ sources: Blizzard's forums (known-issues threads, staff posts and player threads
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Match the symptom and report date before applying a workaround.** An old Beta report does not prove a launch bug, and a later fix for a similar symptom does not prove every case is resolved. Prefer specific [official fixes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696) over an older issue list. Change one setting at a time and retain a copy of working settings before replacing or resetting files. Player workarounds remain unconfirmed unless the same case has been reproduced; no launch-client testing is recorded here.
+
 Blizzard keeps one known-issues thread and edits it in place: [US forums](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-october-8/2352687), [EU forums](https://eu.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-8-october/629369). Staff posts also collect on [Wowhead's blue tracker](https://www.wowhead.com/forever/blue-tracker). Blizzard said that after the beta it would spend a few days on priority issues and the game service before launch ([forum post](https://us.forums.blizzard.com/en/wow/t/thank-you-for-testing-the-wow-forever-beta/2390465)).
 
 ### macOS: the game freezes the Mac on entering the world
@@ -42,7 +46,7 @@ Blizzard keeps one known-issues thread and edits it in place: [US forums](https:
 - **Who:** some players in the beta, including several using the gamepad interface.
 - **What:** macros, their names or icons don't save, or no button appears to drag to a bar.
 - **Status:** player reports from 21 September to 5 October ([thread](https://us.forums.blizzard.com/en/wow/t/when-will-the-macro-panel-work/2372745)); not acknowledged by Blizzard.
-- **Workaround players report:** press New first, then choose the name and icon, then type the macro. Character-specific macros worked for one player when general ones didn't. Log out to make sure macros save. As a last resort, close the game and delete the macro cache files in your `WTF\Account\<account>` folder so the game makes fresh ones.
+- **Workaround players report:** press New first, then choose the name and icon, then type the macro. Character-specific macros worked for one player when general ones didn't. Log out to make sure macros save. As a last resort, close the game, back up the macro cache files, then move the originals out of your `WTF\Account\<account>` folder so the game makes fresh ones.
 
 ### The game crashes after closing the Options menu (gamepad interface)
 
@@ -72,12 +76,16 @@ Blizzard keeps one known-issues thread and edits it in place: [US forums](https:
 - **Status:** usually on Blizzard's side ([ForeverDB](https://foreverdb.net/launch/beta-errors)).
 - **Workaround:** check the server status and Blizzard's posts. Your `_forever_\Logs\Connection.log` shows where the login stopped.
 
-### Smaller items still on Blizzard's beta list
+### Older items on Blizzard's beta list
 
 - **Who:** varies.
-- **What:** items Blizzard listed and hasn't marked fixed: enemies can parry and block from behind if you stand very close; the full install is larger than intended; queuing Heroic Strike, Cleave or Raptor Strike disables the spell queue window; Faerie Fire, Demoralizing Shout and similar debuffs cause no threat; the character pane doesn't show level, class or titles.
+- **What:** items Blizzard listed and hasn't marked fixed: enemies can parry and block from behind if you stand very close; the full install is larger than intended; queuing Heroic Strike, Cleave or Raptor Strike disables the spell queue window; Faerie Fire and similar debuffs were reported to cause no threat; the character pane doesn't show level, class or titles.
 - **Status:** listed between 17 September and 1 October in the [beta known issues](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-october-8/2352687); launch status unknown.
 - **Workaround:** Blizzard's only advice is to avoid standing too close to enemies until the parry bug is fixed.
+
+### Resolved in later notes: Demoralizing Shout threat
+
+The older list says this shout generated no threat. The [2 October development notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/5) explicitly fix it. Do not treat the older list as the current rule. The same notes confirm that absorbs are ignored when calculating Warrior and Druid Rage.
 
 ## Field findings
 

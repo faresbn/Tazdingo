@@ -16,6 +16,10 @@ sources: Blizzard, ForeverDB, Icy Veins, Wowhead, Method
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Build a quest route around character level, faction access and connected travel**, with a fallback if the next area is crowded. Blizzard's [zone overview](https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap) gives the intended brackets; it does not prove an optimal quest sequence. The new mid-level zones were above the Beta cap, so do not plan an exact levelling pace or mandatory detour from their datamined quest counts. Check the actual entry route before travelling. Unannounced portals, scenery and client map entries are not evidence of accessible content.
+
 ### The new zones
 
 | Zone | Levels | Where | Getting there |

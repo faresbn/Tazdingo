@@ -9,12 +9,18 @@ sources: Icy Veins, Wowhead, ForeverDB, WoWSims builds, Blizzard class deep dive
 - **Role:** Ranged direct damage in Fire and Shadow.
 - **How it plays:** Keep Immolate on the target, cast [Conflagrate](https://foreverdb.net/spell/1293817) and [Shadowburn](https://foreverdb.net/spell/17877) as instants, and fill with Shadow Bolt until [Incinerate](https://foreverdb.net/spell/412758) at 40. [Bane of Havoc](https://foreverdb.net/spell/1225228) copies 15% of your damage onto a second target.
 - **Strengths:** Burst from two instants on short cooldowns, strong AoE because Rain of Fire and Hellfire are Destruction spells, and fast casts with Bane (Wowhead, Icy Veins).
-- **Weaknesses:** The slowest Warlock to level solo (Wowhead); no threat reduction in the tree (ForeverDB); Conflagrate eats your Immolate until Shadow and Flame is maxed; Hellfire needs you in melee range.
-- **Stats:** Spell power (watch the school), hit (no hit talent in the usual build), haste, crit (boosted by [Ruin](https://foreverdb.net/spell/17959)), Spirit and Intellect.
+- **Weaknesses:** The slowest Warlock to level solo (Wowhead); threat management needs care, with Suppression available only through an Affliction dip; Conflagrate eats your Immolate until Shadow and Flame is maxed; Hellfire needs you in melee range.
+- **Stats:** Spell power (watch the school), hit to suit the target and any Suppression points, haste, crit (boosted by [Ruin](https://foreverdb.net/spell/17959)), Spirit and Intellect.
 - **New in Forever:** Bane of Havoc, Incinerate, [Shadow and Flame](https://foreverdb.net/spell/426316), Fire and Brimstone and Molten Skin; Agonizing Flames now boosts every Destruction spell; Ruin is a 5-point row 3 talent; Conflagrate opens at 25; Aftermath reworked.
 - **Two playstyles while levelling:** a solo build that borrows Affliction's drains, or a deep build for dungeons that reaches Incinerate at 40 (Wowhead).
 
 ## What the guides say
+
+### Tazdingo recommendation
+
+**Choose Destruction when you want direct casts, burst and dungeon AoE; keep Affliction as the default comparison for solo sustain.** [Icy Veins' level-30 guide](https://www.icy-veins.com/wow-forever/destruction-warlock-ranged-dps-pve-guide) supports delaying Conflagrate until late in Immolate at that level. [Wowhead's current overview](https://www.wowhead.com/forever/guide/classes/warlock/destruction/overview-pve-dps) describes a different loop once Shadow and Flame prevents Immolate consumption. The talent breakpoint explains the apparent disagreement.
+
+**On packs, let the tank establish threat before Rain of Fire or Hellfire; Hellfire also spends your health.** A one-target model finding a small loss from Conflagrate does not show that it is bad for finishing, movement or multi-target play. School-specific damage gear should follow the spells you actually cast: Shadow damage does not improve Fire AoE, and Fire damage does not improve a Shadow Bolt filler.
 
 ### Talents by level
 
@@ -34,10 +40,10 @@ Icy Veins' dungeon build at 30 takes Destructive Reach 2, Bane 5, Cataclysm 3, R
 
 ### Level 60 builds (projections)
 
-Wowhead's [talent builds page](https://www.wowhead.com/forever/guide/classes/warlock/destruction/talent-builds-pve-dps) makes Incinerate the filler in all three of its raid builds, which share Shadow and Flame, Conflagrate and Shadowburn:
-- **Sayaad build (strongest):** keep the Succubus or Incubus out and spend the spare points in Affliction for hit, a faster Corruption, Pandemic and Improved Life Tap, plus 4 points of Unholy Power.
-- **Imp build (slightly behind):** the Imp keeps casting from range and adds Blood Pact.
-- **Demonic Sacrifice build (behind):** for players who don't want to manage a demon.
+The earlier summary of Wowhead's [talent builds page](https://www.wowhead.com/forever/guide/classes/warlock/destruction/talent-builds-pve-dps) listed three raid candidates with Incinerate, Shadow and Flame, Conflagrate and Shadowburn. That page could not be reopened during this review, so their current ordering is not established:
+- **Sayaad build (candidate):** keep the Succubus or Incubus out and spend the spare points in Affliction for hit, a faster Corruption, Pandemic and Improved Life Tap, plus 4 points of Unholy Power.
+- **Imp build (candidate):** the Imp keeps casting from range and adds Blood Pact.
+- **Demonic Sacrifice build (candidate):** for players who don't want to manage a demon.
 
 For dungeons, Wowhead moves two points of Suppression into Improved Corruption for an instant Corruption. WoWSims' "Destro" build matches the Sayaad version at 18 Affliction and 33 Destruction, with a Succubus out ([builds](https://github.com/wowsims/forever/tree/master/ui/specs/warlock/dps/builds)).
 
@@ -65,7 +71,7 @@ The guides and the simulator agree on Immolate upkeep with both instants used fr
 
 ### Gear and consumables
 
-- **Stats** (Icy Veins): spell power first, but Fire damage won't help Shadow Bolt and Shadow damage won't help your Fire spells. Hit matters because the build has no hit talent. Haste speeds your casts but not DoTs, and crit gains a lot from Ruin.
+- **Stats** (Icy Veins): spell power first, but Fire damage won't help Shadow Bolt and Shadow damage won't help your Fire spells. Deep Destruction gets no hit from its own tree, but an Affliction dip can add Suppression. Check the selected build before valuing more hit. Haste speeds your casts but not DoTs, and crit gains a lot from Ruin.
 - **Key items at 30:** Icy Veins' Warlock list (Shadow Circlet, Belt of Arugal, Gaze Dreamer Pants, Dark Horde Band, Hydrocane) and [Staff of Soran'ruk](https://foreverdb.net/item/15109), which tops ForeverDB's Destruction list at 30.
 - **Weapon stones:** Firestone from 28 adds 1% spell crit and Fire damage (Icy Veins); at 60 Wowhead lists a Major Firestone with 2% crit.
 - **Races:** Icy Veins notes that Troll Berserking suits Destruction best, because haste doesn't affect DoTs or channels.

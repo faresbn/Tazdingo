@@ -2,11 +2,13 @@
 
 The running record of where Tazdingo stands, kept current at every checkpoint so another thread, model or machine can carry on. Read this first, then AGENTS.md and README.md.
 
-**Last updated:** 27 October 2026, focused UX refinement (session folder `docs/sessions/2026-10-27-ux/`).
+**Last updated:** 27 October 2026, content reliability sweep (session folder `docs/sessions/2026-10-27-content-review/`).
 
 ## Where things stand
 
-- **Current work:** Focused UX pass complete and live, merged in PR #5 as `8fa0535b437c6254ac60ae1d4a5fedd1f2ce2354`; publish run 40480651338 succeeded. Homepage changelog removed; full-width class picker, keyboard search, reset/shareable price filters, mobile guide disclosure, active More marker and refresh feedback shipped. Live desktop interaction checks passed; phone layout is implemented and code-reviewed, but no phone-browser visual verification is claimed.
+- **Current content work:** All 77 guides now include a scoped Tazdingo recommendation with alternatives and costs. Corrected superseded racials, Arcane mechanics, Paladin scaling, Warrior threat/Rage and unsafe macro examples; tightened profession economics, Favor comparisons and market/export language. All findings are preserved and pages remain Pre-launch. Local tests and site checks pass; branch/PR publication is in progress. See the session review for checked evidence and explicit uncertainty; this is not a full external verification of every claim.
+
+- **Previous UX work:** Focused UX pass complete and live, merged in PR #5 as `8fa0535b437c6254ac60ae1d4a5fedd1f2ce2354`; publish run 40480651338 succeeded. Homepage changelog removed; full-width class picker, keyboard search, reset/shareable price filters, mobile guide disclosure, active More marker and refresh feedback shipped. Live desktop interaction checks passed; phone layout is implemented and code-reviewed, but no phone-browser visual verification is claimed.
 
 - **Live site:** https://faresbn.github.io/Tazdingo/ (published from `main` by `.github/workflows/pages.yml`, about a minute after each push, and every two hours to refresh Blizzard's posts).
 - **Previous work:** Authentic Warcraft imagery merged in PR #4 and published successfully (run 40477656697). The live homepage and class cards were visually checked; all nine class images load and preserve transparency. Live checks in both colour themes verified the final class portrait bounds, all world icons and source credits. The camp scene uses a small complete sidebar image to avoid cropping characters. Pages remains on GitHub. The separate news relay is unchanged. Cleanup of the older merged `fix/visitor-news-cache` branch remains blocked pending explicit user permission.

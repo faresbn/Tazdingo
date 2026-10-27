@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, Warcraft Tavern, wow-professions.com
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Gather along a safe questing route first**, then farm a particular herb only when demand and travel justify it. Pair with Alchemy for personal supply or another gatherer for sales, accepting that only one tracking mode is active at a time. [Wowhead's overview](https://www.wowhead.com/forever/guide/professions/herbalism/overview-leveling) identifies several consumers of herbs; that supports possible demand, not a guaranteed sale price. Cultivation is a cooldown-limited extra harvest, not an unconditional doubling of total hourly yield. Higher-zone routes and disputed trainer levels need a live check before a long detour.
+
 ### What changed in Forever
 
 Gathering professions now have recipes. Herbalism's are its three camp items, and [Wowhead](https://www.wowhead.com/forever/guide/professions/herbalism/overview-leveling) says they are the only things a herbalist crafts. The Candle is taught by the trainer; Wowhead and [wow-professions.com](https://www.wow-professions.com/forever/camping-guide) say the Greenhouse blueprint drops from Shadetooth in the new Excavation Site: Wetlands dungeon. Where the Seed Hybridizer blueprint drops isn't known yet.
@@ -28,7 +32,7 @@ New materials:
 Other changes:
 
 - You can learn Apprentice Herbalism in your starting zone, from a trainer or by picking Wild Harvest as the reward from an early quest. Starting areas even have small low-skill nodes (Wilted Peacebloom, Stunted Silverleaf), per Wowhead.
-- Tauren [Cultivation](https://foreverdb.net/spell/20552) now grows a harvestable copy of a nearby herb, and you don't need Herbalism to pick it. [ForeverDB](https://foreverdb.net/guide/professions) adds that the 24 September beta notes gave it a level requirement: the herb's skill divided by 5. [Warcraft Tavern](https://www.warcrafttavern.com/forever/guides/professions/) points out that this doubles a Tauren herbalist's yield.
+- Tauren [Cultivation](https://foreverdb.net/spell/20552) now grows a harvestable copy of a nearby herb, and you don't need Herbalism to pick it. [ForeverDB](https://foreverdb.net/guide/professions) adds that the 24 September beta notes gave it a level requirement: the herb's skill divided by 5. Cultivation can add an extra harvest when available, but does not double every harvest or the character's total hourly yield.
 - Gathering earns no Legacy Points. Wowhead lists no Herbalism challenges, and ForeverDB says the tradeskill challenges (150, 225, 300) count only crafting professions.
 
 ### Ranks

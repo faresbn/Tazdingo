@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APL, Blizzard class 
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Choose the opener for the fight: **Ambush for immediate dagger burst, Garrote for a target that will live through its bleed, Cheap Shot when control is worth more than damage**. Those are genuine alternatives, not a factual disagreement. At 30, Hemorrhage makes front-facing solo play easier; use Rupture only where it can tick and the enemy is susceptible ([Wowhead](https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-30-dps-overview)). Weapon swapping adds complexity and can affect swing timing; learn a consistent basic setup first. Keep Vanish available for survival when spending it on another opener would be unsafe.
+
 ### Talents by level
 
 ForeverDB's levelling build and Icy Veins' level 30 build are point-for-point the same. Wowhead takes a different route.

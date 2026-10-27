@@ -16,6 +16,10 @@ sources: Icy Veins, Wowhead, WoWSims presets, Blizzard class deep dive, ForeverD
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Take an early wand or Missile Barrage dip when it improves the spells you actually use, and account for the later Frost or Fire milestone it delays. Frostfire Bolt is a level-40 option, not a level-30 levelling spell. Compare deep Fire and Frostfire at equal gear, level and target conditions; their level-60 presets cannot settle an early questing choice. Mixing Mage trees does not incur the hybrid damage target.
+
 ### Levelling hybrids
 
 - **Frost with Missile Barrage.** The [Icy Veins Frost levelling build](https://www.icy-veins.com/wow-forever/frost-mage-leveling) puts levels 21 and 22 into Missile Barrage, so Frostbolt can proc free, fast Arcane Missiles that cut drinking. Later it adds Incineration from Fire (around 46–50), and Arcane Focus and Arcane Subtlety near 60. Icy Veins also suggests an alternative: play Arcane with Missile Barrage and Wand Specialization early, then respec into Frost from level 22.

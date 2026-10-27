@@ -16,6 +16,14 @@ sources: wow-professions.com, Wowhead, ForeverDB, Blizzard
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+**Buy only enough Favor for a chosen recipe, and check its reputation requirement first.** Crates fund Favor; writs fund reputation, so they solve different bottlenecks ([source guide](https://www.wow-professions.com/forever/merchants-favor-durotar-supply-azeroth-commerce)).
+
+Compare **(crate cost + one complete fill bundle − confirmed hand-in silver) ÷ Favor reward**, using the same realm, faction and capture date. Value an owned crate or gathered materials at what selling them would return. Higher-reward crafted crates are not automatically cheaper per Favor. The price table compares fill bundles only: it excludes buying the crate and does not yet calculate cost per Favor.
+
+Performance Bonus changes the expected reward over many hand-ins: a 15% chance to double means **1.15 × the base reward on average**, not double every crate. Use the base reward when budgeting a guaranteed outcome. Unknown reward tiers cannot be ranked reliably, and Beta prices cannot establish the cheapest launch path.
+
 ### The crate loop
 
 [wow-professions.com](https://www.wow-professions.com/forever/merchants-favor-durotar-supply-azeroth-commerce) lays out the loop. You right-click a Waylaid Crate and fill it with one of the bundles it lists, for example 40 Linen Cloth or 20 Light Leather. It becomes a Sealed crate that binds to you. You hand that to Marcy Baker at the Alliance camp or Dokimi at the Horde camp for Favor and some silver. Textiles, Ore, Herbs and Curiosities crates take raw materials; Fabrics, Ingots and Parts crates take crafted ones and pay double.
@@ -33,7 +41,7 @@ Crate drop rates aren't published. Beta testers on Blizzard's forums [complained
 
 ### Reputation
 
-Handing in crates gives no reputation. That comes from Craftsman's Writs: sealed envelopes that drop in the world or sell on the Auction House, each holding a crafting order. You make or buy the item (you don't need the profession), deliver it to the customer marked on your map, and get reputation and a pouch of silver, but no Favor. A Journeyman writ gives 75 reputation, an Expert one 125 and an Artisan one 200. Each writ can be done once a day (wow-professions.com).
+Handing in crates gives no reputation. That comes from Craftsman's Writs: sealed envelopes that drop in the world or sell on the Auction House, each holding a crafting order. You make or buy the item (you don't need the profession), deliver it to the customer marked on your map, and get reputation and a pouch of silver, but no Favor. A Journeyman writ gives 75 reputation, an Expert one 125 and an Artisan one 200. Each distinct writ can be done once a day; different writs can be completed the same day (wow-professions.com).
 
 At Friendly, an Uncertified Scribe opens in your camp. Their Forged Delivery Receipt (15 Favor) turns an empty Waylaid Crate into 50 reputation; the Forger's Quill (15 Favor, Honored) swaps a writ for another of the same rank. Each faction starts at Neutral for its own side and Hated for the other ([ForeverDB](https://foreverdb.net/reputation/azeroth-commerce-authority)). The Legacy perk Diplomat raises all reputation gains by up to 10%.
 

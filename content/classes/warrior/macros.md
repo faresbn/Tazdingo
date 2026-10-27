@@ -15,6 +15,10 @@ sources: ForeverDB Warrior macros, Kami Labs, Wowhead macro guide, Icy Veins lev
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Use stance and weapon-swap macros to make a deliberate action predictable. Tactical Mastery does not preserve unlimited Rage, a shield skill still needs a shield, and changing gear can affect swing timing. Keep a separate interrupt and taunt rather than assuming a damage sequence will select them at the right time. Test each stance, equipment and target branch before using these unverified examples in a dungeon.
+
 This is a short list, not a full library: each source's page has more. Level requirements come from ForeverDB. Anything above level 30 couldn't be used in the beta.
 
 ### Stances and openers

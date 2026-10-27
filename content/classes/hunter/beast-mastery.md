@@ -15,6 +15,10 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APLs, Blizzard class
 
 ## What the guides say
 
+### Tazdingo recommendation
+
+Use **a living, well-trained pet and reliable ranged damage** as the levelling baseline. A bear's multi-target control can make awkward pulls safer; a cat is a damage choice, but the guide's fast-cat advantage explicitly depended on Beta bugs. Do not pay a launch premium on that assumption. In groups, disable Growl and protect crowd control from pet cleaves. Keep hawks active when available, but reduce optional shots if mana recovery is slowing the route ([Wowhead](https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-30-dps-overview)). A fixed hawk cycle is a learning aid, not a command to delay an interrupt, break a trap or spend mana on an almost-dead target.
+
 ### Talents by level
 
 The sources agree on the core (Deadly Aspects, Unleashed Fury, Summon Hawk) and differ on where the spare points go.
@@ -35,7 +39,7 @@ The [WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/hunter/dps
 
 - **Icy Veins:** Hunter's Mark, pet in first, Serpent Sting once the pet has threat, Summon Hawk whenever it keeps two hawks out, and Aimed Shot on cooldown, with Auto Shot throughout. Arcane Shot only when you're capped on mana and both hawks will last more than 6 seconds. Swap Aimed Shot for Multi-Shot on packs.
 - **Wowhead ([level 30](https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-30-dps-overview)):** a fixed cycle of Summon Hawk, Aimed or Multi, Summon Hawk, Aimed or Multi, Arcane Shot, Aimed or Multi.
-- **ForeverDB's simulator, level 30:** keep Serpent Sting up, use Multi-Shot whenever it's ready (worth about 7% of your damage even on one target), and fill with Arcane Shot. Use Rapid Fire once mana drops below 95%. The sim spends about 23 seconds of a 60-second fight unable to cast, so start every pull with full mana.
+- **ForeverDB's simulator, level 30:** keep Serpent Sting up, use Multi-Shot whenever it's ready (worth about 7% of your damage even on one target), and fill with Arcane Shot. Use Rapid Fire once mana drops below 95%. The sim spends about 23 seconds of a 60-second fight unable to cast, so its damage breakdown is not a sustainable questing rotation or evidence that every pull needs full mana.
 - **WoWSims, level 60 ([turret_hawk](https://github.com/wowsims/forever/blob/master/ui/specs/hunter/dps/apls/turret_hawk.apl.json)):** Hunter's Mark if missing, then a repeating hawk, hawk, Arcane Shot sequence, then Serpent Sting, then Aimed Shot. Multi-Shot is off by default. Cooldowns fire from 5 seconds in. A "Melee Weave (Hawks)" preset adds walking into melee between Auto Shots.
 
 Save Rapid Fire (level 26, 5-minute cooldown) for elites while levelling. Intimidation at 30 is a stun that also builds threat for the pet (Icy Veins).
