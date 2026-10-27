@@ -1,8 +1,11 @@
-dist/
-__pycache__/
+# Regenerable output. scripts/icloud-shield.sh turns these into symlinks to *.nosync
+# folders iCloud won't sync; a symlink is a file to git, so no trailing slashes.
+dist
+__pycache__
 *.pyc
 .DS_Store
-tmp/
+tmp
 # Full SavedVariables originals require separate explicit upload authorisation.
 data/captures/**/*.lua
-.cache/
+.cache
+*.nosync

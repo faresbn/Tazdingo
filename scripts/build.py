@@ -503,7 +503,7 @@ def search_index(ctx: dict) -> list[list[str]]:
 # --- Output -------------------------------------------------------------------
 
 def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/") -> dict:
-    out = Path(out or root / "dist")
+    out = Path(out or root / "dist").resolve()  # follows the iCloud shield's dist -> dist.nosync link
     if out.resolve() in (root.resolve(), (root / "data").resolve()) or not out.resolve().is_relative_to(root.resolve()):
         raise ValueError("Output must be a dedicated directory inside the repository")
     base = "/" + base.strip("/") + "/" if base.strip("/") else "/"
