@@ -67,7 +67,7 @@ Pre-launch labels clear once the data is fetched on or after 4 November.
 
 ## Working on the site
 
-Standard-library Python 3.11+, nothing to install.
+Python 3.11+ and Node.js 20+; no package installation. Node runs the shared news classifier and its tests.
 
 ```sh
 python3 -m unittest discover -s tests   # tests
@@ -96,3 +96,11 @@ Item names, recipes, crates, camp items, tooltips and second-opinion prices:
 Data from ForeverDB.net. The front-page map is an original illustration. World
 of Warcraft belongs to Blizzard Entertainment; this project isn't affiliated
 with or endorsed by Blizzard.
+
+## News and visitor refresh
+
+GitHub Actions reads Blizzard every two hours and classifies complete posts/articles using the same classifier as the read-only browser relay. Dedicated Forever news appears on the homepage. Mixed roundups appear only on the news page with a tag and a Forever-only excerpt. Ambiguous or unreadable articles are held back. `data/blue.json` records classifications, reasons, source hashes and the last successful check; `data/news.json` is its published snapshot.
+
+The Refresh news button checks the separate public relay, sharing a five-minute cache. It does not grant visitors GitHub publishing access or rebuild Pages. The website remains on GitHub Pages; the relay source and deployment notes are in `relay/`. Existing browser views can show a newer relay result before the next static snapshot is published.
+
+After pulling the rename into an existing local checkout: `git remote set-url origin https://github.com/faresbn/Tazdingo.git`.
