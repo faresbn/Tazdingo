@@ -169,7 +169,7 @@ async function marketBrowser(section) {
     if (resetPage) page = 0;
     const query = new URLSearchParams();
     if (raw) query.set("q", raw);
-    if (scope.value !== "current") query.set("scope", scope.value);
+    if (raw || scope.value !== "current") query.set("scope", scope.value);
     if (order.value !== "name") query.set("order", order.value);
     history_replace(query.size ? `?${query}` : "");
     if (reset) reset.disabled = !raw && scope.value === "current" && order.value === "name";
