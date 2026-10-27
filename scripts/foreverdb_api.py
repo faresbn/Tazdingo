@@ -8,7 +8,9 @@ is never written anywhere. Raw answers are cached in tmp/foreverdb-api/ (not com
 so a rerun only fetches what's missing. ForeverDB asks for a visible link to
 https://foreverdb.net wherever its data is shown, at most 60 requests a minute and
 10,000 a day; this script stays near one request a second. Run on demand, never during
-the build, so publishing never depends on ForeverDB being reachable.
+the build, so publishing never depends on ForeverDB being reachable. When ForeverDB's build
+changes (at launch, say), the old cache is moved aside to tmp/foreverdb-api-<old build>/ and
+everything is fetched again.
 """
 from __future__ import annotations
 
@@ -35,11 +37,11 @@ GATHERING = ["herbalism", "mining", "skinning", "fishing"]
 CLASSES = ["Warrior", "Paladin", "Hunter", "Rogue", "Priest", "Shaman", "Mage", "Warlock", "Druid"]
 
 
-def get(path: str, key: str) -> dict:
-    """One API answer, from the cache when we already have it."""
+def get(path: str, key: str, fresh: bool = False) -> dict:
+    """One API answer, from the cache when we already have it (unless `fresh`)."""
     name = path.strip("/").replace("/", "_").replace("?", "_").replace("&", "_").replace("=", "-") + ".json"
     cached = CACHE / name
-    if cached.exists():
+    if cached.exists() and not fresh:
         return json.loads(cached.read_text())
     for attempt in range(5):
         request = urllib.request.Request(API + path, headers={"User-Agent": AGENT, "X-API-Key": key,
@@ -82,18 +84,22 @@ def pages(path: str, key: str) -> list:
 
 
 def market_items() -> set[int]:
-    """Item IDs in our scans, recipes and crates: the ones whose vendor price we need."""
+    """Item IDs in our captures, scan records, recipes, crates and notes: the ones whose vendor price we need."""
     sys.path.insert(0, str(ROOT / "scripts"))
-    from auctionator import item_id
-    ids = set()
-    for path in (ROOT / "data/captures").rglob("*.json"):
-        for market in json.loads(path.read_text()).get("markets", {}).values():
-            ids.update(item_id(k) for k in market.get("items", {}))
-    return ids
+    from item_names import wanted_ids
+    return wanted_ids(ROOT)
 
 
 def fetch(key: str) -> None:
-    meta = get("/meta", key)
+    old = (CACHE / "meta.json").read_text() if (CACHE / "meta.json").exists() else None
+    old_build = (json.loads(old).get("data") or {}).get("build") if old else None
+    meta = get("/meta", key, fresh=True)
+    if old_build and old_build != meta["data"]["build"]:
+        aside = CACHE.with_name(f"foreverdb-api-{old_build}")
+        CACHE.rename(aside)
+        (aside / "meta.json").write_text(old)  # the folder keeps the answers of the build it's named for
+        print(f"ForeverDB's build changed from {old_build}; the old answers are in {aside.relative_to(ROOT)}.")
+        meta = get("/meta", key, fresh=True)
     print(f"ForeverDB build {meta['data']['build']}, level cap {meta['data']['levelCap']}")
     for slug in PROFESSIONS:
         pages(f"/professions/{slug}", key)

@@ -6,6 +6,7 @@ listings, never sales.
 """
 from __future__ import annotations
 
+import hashlib
 import re
 from datetime import datetime, timezone
 
@@ -19,7 +20,12 @@ LIST_ROWS = 12
 
 
 def item_slug(key: str) -> str:
-    return key if key.isdigit() else re.sub(r"[^a-z0-9]+", "-", key.lower()).strip("-")
+    if key.isdigit():
+        return key
+    slug = re.sub(r"[^a-z0-9]+", "-", key.lower()).strip("-")
+    if re.search(r"[^\x00-\x7f]", key):  # a suffix name in another alphabet: keep two such variants apart
+        slug += "-" + hashlib.sha256(key.encode()).hexdigest()[:8]
+    return slug
 
 
 def item_url(site: Site, market: dict, item: dict) -> str:
@@ -365,7 +371,7 @@ def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
     if item["invest"] and item["confidence"] != "low":
         i = item["invest"]
         invest = (f'<section class="ah-block" id="estimate"><h2>Investment estimate</h2><p>Buy at {money(item["latest"])}; if it sells again at its usual '
-                  f'{money(item["ref"])}, the Auction House keeps {round(m.AH_CUT * 100)}% and you keep about {money(item["ref"] - round(item["ref"] * m.AH_CUT))}: '
+                  f'{money(item["ref"])}, the Auction House keeps {round(m.AH_CUT * 100)}% and you keep about {money(int(item["ref"] * (1 - m.AH_CUT)))}: '
                   f'a margin of {money(i["margin"])} a unit ({pct(i["roi"])} on what you paid). It\'s listed on {pct(item["presence"])} of recent days. '
                   'An estimate from prices and listings; the data holds no sales.</p></section>')
     last = market["last_day"]

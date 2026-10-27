@@ -104,7 +104,7 @@ def build_markets(captures: list[dict], names: dict, store: dict | None = None) 
         for raw_key in capture["publish_markets"]:
             if raw_key not in capture["markets"]:
                 raise InvalidCapture(f"Requested market {raw_key!r} is absent")
-            slug = slugify(capture["environment"] + "-" + raw_key)
+            slug = market_store.market_slug(capture["environment"], raw_key)
             market = markets.setdefault(slug, {
                 "slug": slug, "key": raw_key, "environment": capture["environment"],
                 "environment_label": ENVIRONMENTS[capture["environment"]],
@@ -132,7 +132,7 @@ def build_markets(captures: list[dict], names: dict, store: dict | None = None) 
             for key, fields in data["items"].items():
                 item = market["items"].setdefault(key, {"key": key, "id": item_id(key),
                                                        "name": item_name(key, names), "days": {}, "obs": [], "full_obs": []})
-                if scan_day is not None and str(scan_day) in fields["h"]:
+                if scan_day is not None and str(scan_day) in fields["h"] and not repeat:  # an unchanged market wasn't rescanned
                     item["obs"].append((capture["capture_timestamp"], fields["m"], scan_day))
                     if new_full:
                         item["full_obs"].append((full, fields["m"], scan_day))
@@ -224,7 +224,9 @@ def add_store_market(markets: dict, slug: str, entry: dict, names: dict) -> None
             if record["day"] >= item.get("price_day", -1):
                 item["price"], item["price_day"], item["price_scan"] = latest, record["day"], day_date(record["day"])
     for item in market["items"].values():
-        if "price" not in item and item["days"]:  # only in the archive: its scan records have aged out
+        # Only in the archive (its scan records have aged out), or the archive knows a later day
+        # than any kept record that saw it: that day's low is the latest price known.
+        if item["days"] and max(item["days"]) > item.get("price_day", -1):
             day = max(item["days"])
             item["price"], item["price_day"], item["price_scan"] = item["days"][day]["low"], day, day_date(day)
 

@@ -106,10 +106,6 @@ class Store(unittest.TestCase):
             ms.validate_record(bad, inbox=True)
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class StoreSafety(Store):
     def test_a_day_already_folded_is_refused(self):
         for n in range(40):
@@ -223,3 +219,42 @@ class FullScanOwner(unittest.TestCase):
 
     def test_a_later_search_means_no_full_scan_snapshot(self):
         self.assertIsNone(ms.full_scan_market(self.capture({"A": DAY}, browse=BASE + 60)))
+
+
+class ReviewFixes(Store):
+    def test_a_market_not_scanned_again_is_not_filed_again(self):
+        # Two markets in one file, only the other one scanned: the file's scan time moves on,
+        # this market's items and day don't, so there's nothing new to file.
+        prices = {"2589": (100, 90, 120, 4)}
+        self.assertIsNotNone(self.add(DAY, BASE, prices))
+        self.assertIsNone(self.add(DAY, BASE + 3600, prices, sha="b"))
+        self.assertEqual(len(self.registry()["scans"]), 1)
+        self.assertIsNotNone(self.add(DAY, BASE + 7200, {"2589": (95, 90, 120, 4)}, sha="c"))
+
+    def test_names_in_other_alphabets_get_distinct_slugs(self):
+        import ah_pages
+        self.assertNotEqual(ms.market_slug("forever", "Пламегор Horde"), ms.market_slug("forever", "Гордунни Horde"))
+        self.assertEqual(ms.market_slug("forever", "Realm Horde"), "forever-realm-horde")
+        self.assertNotEqual(ah_pages.item_slug("gr:123:медведя"), ah_pages.item_slug("gr:123:обезьяны"))
+        self.assertEqual(ah_pages.item_slug("gr:123:of the Bear"), "gr-123-of-the-bear")
+
+    def test_badly_typed_records_are_refused_cleanly(self):
+        record = ms.record_from_capture(capture(DAY, BASE, {"2589": (100, 90, 120, 4)}), "Realm Horde", "forever")
+        for change in ({"scan_timestamp": "x", "full_scan_timestamp": BASE}, {"environment": 5}):
+            with self.assertRaises(InvalidCapture):
+                ms.validate_record(dict(record, **change))
+
+    def test_latest_price_follows_a_later_archive_day(self):
+        import build
+        entry = {"environment": "forever", "market": "Realm Horde", "folded": 0, "full_scan_items": [],
+                 "daily": {DAY - 1: {"2589": [500, 600, 2, 0, None]}},
+                 "records": [{"scan_timestamp": BASE, "full_scan_timestamp": None, "day": DAY - 3,
+                              "source_sha256": "a" * 64, "items": {"2589": [900, 900, 900, 1]}}]}
+        markets = {}
+        build.add_store_market(markets, "forever-realm-horde", entry, {})
+        item = markets["forever-realm-horde"]["items"]["2589"]
+        self.assertEqual((item["price"], item["price_day"]), (500, DAY - 1))
+
+
+if __name__ == "__main__":
+    unittest.main()

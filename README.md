@@ -10,9 +10,9 @@ built site is public, and the site never names the people behind it.
 
 | What | Written by | How |
 |---|---|---|
-| Prices | Fares's Mac | `python3 scripts/ingest.py --push` after an in-game scan |
+| Prices | Fares's Mac, or ChatGPT from an uploaded file | `python3 scripts/ingest.py --push` after an in-game scan; or a scan record committed to `data/market/inbox/` (`scripts/scan_record.py`), filed by the `ingest.yml` Action |
 | Notes (`content/`) | The shared ChatGPT project | Commits to `main`, following `docs/chatgpt/UPDATING.md` |
-| Game data (`data/foreverdb.json`, `data/items.json`) | Scripts | `scripts/foreverdb_data.py`, `scripts/item_names.py` |
+| Game data (`data/foreverdb.json`, `data/items.json`, `data/foreverdb-api.json`) | Scripts | `scripts/foreverdb_data.py`, `scripts/item_names.py`, `scripts/foreverdb_api.py` |
 | Structure, design, checks | Claude or Codex | This README and AGENTS.md |
 
 Every push to `main` runs the tests, builds the site and checks it. Only a
@@ -54,14 +54,17 @@ python3 scripts/item_names.py       # item names
 FOREVERDB_API_KEY=… python3 scripts/foreverdb_api.py fetch && python3 scripts/foreverdb_api.py slim
 ```
 
-Both fetch from ForeverDB, politely, with the credit "Data from ForeverDB.net"
+All three fetch from ForeverDB, politely, with the credit "Data from ForeverDB.net"
 shown on the site. Run them after launch to replace pre-launch data; the
-Pre-launch labels clear once the data is fetched on or after 4 November.
+Pre-launch labels clear once the data is fetched on or after 4 November. The
+API script needs `FOREVERDB_API_KEY` (never written anywhere) and caches its
+answers in `tmp/foreverdb-api/`; when ForeverDB's build changes it moves that
+cache aside and fetches everything again.
 
 ## How prices work
 
-The Auction House overview and each market page list what was seen unusually
-low, items seen below what a vendor pays, an investment watch, short supply,
+The Auction House overview and each market page list what was recorded unusually
+low, items recorded below what a vendor pays, an investment watch, short supply,
 movers over a day and a week, items always on the market, a market index and a
 weekday × time-of-day grid; every item has its own page with a 30-day chart.
 The methods and thresholds are in `scripts/market.py`. Auctionator records
@@ -71,6 +74,10 @@ what sold.
 - **Typical price:** the median of each day's cheapest listing over the item's
   last seven days of records, so a troll listing or one-day spike doesn't set it.
 - **Latest:** the most recent cheapest listing.
+- **Usual price** (item pages and alerts): the median of the item's daily lows
+  over its last 14 finished days. An item is flagged unusually low when its latest
+  price is at least 30% under that and far outside its normal spread; the
+  confidence tier says how much history stands behind the flag.
 - **Steadiness:** how far the daily price swings over two weeks, from the
   cheapest day to the 80th-percentile day, relative to the median (steady below
   25%, moving below 75%, volatile above).
