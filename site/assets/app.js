@@ -413,7 +413,7 @@ function newsReader(widget) {
   const status = widget.querySelector('[data-news-status]');
   const holder = widget.querySelector('[data-news-list]');
   const limit = Number(widget.dataset.newsLimit) || 5;
-  let running = false, newest = 0;
+  let running = false, newest = Date.parse(widget.dataset.newsVerifiedAt) || 0;
   const stamp = iso => {
     const d = new Date(iso);
     return Number.isFinite(d.getTime()) ? d.toLocaleString('en-GB', {timeZone:'UTC',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})+' UTC' : 'not yet verified';

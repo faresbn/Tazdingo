@@ -25,10 +25,10 @@ test('public endpoint cannot mutate or proxy arbitrary URLs',async()=>{
  assert.equal((await worker.fetch(new Request('https://relay.example/news',{method:'POST'}))).status,405);
  assert.equal((await worker.fetch(new Request('https://relay.example/news',{headers:{Origin:'https://evil.example'}}))).status,403);
 });
-test('failed refresh preserves verified cache and its successful timestamp',async()=>{
+test('named cache works when default cache is forbidden, and failure preserves the success timestamp',async()=>{
  const originalFetch=globalThis.fetch, originalCaches=globalThis.caches;
  const saved={classifier_version:1,fetched:'2026-10-25T12:00:00Z',posts:[{id:4,kind:'forever'}]};let written;
- globalThis.caches={default:{match:async()=>Response.json(saved),put:async(_,response)=>{written=await response.json();}}};
+ globalThis.caches={get default(){throw Error('Default cache is forbidden by the host');},open:async name=>{assert.equal(name,'tazdingo-verified-news-v1');return {match:async()=>Response.json(saved),put:async(_,response)=>{written=await response.json();}};}};
  globalThis.fetch=async()=>{throw Error('upstream unavailable');};
  try {const r=await worker.fetch(new Request('https://relay.example/news'));const d=await r.json();assert.equal(d.fetched,saved.fetched);assert.equal(d.status,'unavailable');assert.deepEqual(d.posts,saved.posts);assert.equal(written.fetched,saved.fetched);}
  finally {globalThis.fetch=originalFetch;globalThis.caches=originalCaches;}

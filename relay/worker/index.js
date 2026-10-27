@@ -9,6 +9,20 @@ const OTHER = /\b(?:midnight|the war within|dragonflight|the last titan|mists of
 const ROUNDUP = /\b(?:wow weekly|this week in wow|weekly roundup|weekly news|warcraft direct)\b/i;
 const ALLOWED_HOSTS = new Set(['us.forums.blizzard.com', 'worldofwarcraft.blizzard.com', 'worldofwarcraft.com', 'news.blizzard.com']);
 let inFlight;
+let fallbackSnapshot;
+async function newsCache() {
+  let store; try { store = await caches.open('tazdingo-verified-news-v1'); } catch { /* Host can restrict the cache API. */ }
+  return {
+    async match(key) {
+      try { const hit=await store?.match(key); if(hit)return hit; } catch { /* Fall back to the published seed and isolate cache. */ }
+      return fallbackSnapshot ? new Response(fallbackSnapshot) : undefined;
+    },
+    async put(key,response) {
+      fallbackSnapshot=await response.clone().text();
+      try { await store?.put(key,response); } catch { /* Correctness does not depend on host cache permissions. */ }
+    }
+  };
+}
 const requests = new Map();
 
 export function text(html = '') {
@@ -153,16 +167,24 @@ export default {
     const origin=request.headers.get('Origin'); if(origin && origin!==ORIGIN) return answer({error:'Origin not allowed'},403);
     const ip=request.headers.get('CF-Connecting-IP') || 'anonymous'; const bucket=Math.floor(Date.now()/60000);
     const entry=requests.get(ip); const hits=entry?.bucket===bucket ? entry.count+1 : 1;
-    requests.set(ip,{bucket,count:hits}); if(requests.size>2000) for(const [key,value] of requests) if(value.bucket<bucket) requests.delete(key);
+    if(requests.size>=2000) { for(const [key,value] of requests) if(value.bucket<bucket) requests.delete(key); if(requests.size>=2000 && !requests.has(ip)) return answer({error:'Please try again shortly'},429,{'Retry-After':'60'}); }
+    requests.set(ip,{bucket,count:hits});
     if(hits>15) return answer({error:'Please wait before checking again'},429,{'Retry-After':'60'});
     const key = new Request(`${u.origin}/_verified-news-v${VERSION}`);
-    const cached = await caches.default.match(key); const previous = cached ? await cached.json() : {posts:[]};
+    const cache = await newsCache();
+    const cached = await cache.match(key); let previous = cached ? await cached.json() : {posts:[]};
+    if (!cached) {
+      try {
+        const seed = await fetch('https://faresbn.github.io/Tazdingo/data/news.json', {redirect:'error',signal:AbortSignal.timeout(8000)});
+        if (seed.ok) { const data = await seed.json(); if (data.classifier_version === VERSION && Array.isArray(data.posts)) previous = data; }
+      } catch { /* A cold relay can still collect directly if the static seed is unavailable. */ }
+    }
     if (previous.attempted_at && Date.now()-Date.parse(previous.attempted_at)<FRESH_MS) return answer({...previous,cached:true,next_check_at:new Date(Date.parse(previous.attempted_at)+FRESH_MS).toISOString()});
     if (!inFlight) inFlight=(async()=>{
       let data;
       try { data=await collect(previous); }
-      catch { data={...previous,status:'unavailable',attempted_at:new Date().toISOString(),error:'Blizzard could not be reached; showing the last verified news.'}; }
-      await caches.default.put(key,new Response(JSON.stringify(data),{headers:{'Content-Type':'application/json','Cache-Control':'public, max-age=86400'}}));
+      catch { data={...previous,classifier_version:VERSION,schema_version:1,status:'unavailable',attempted_at:new Date().toISOString(),error:'Blizzard could not be reached; showing the last verified news.'}; }
+      await cache.put(key,new Response(JSON.stringify(data),{headers:{'Content-Type':'application/json','Cache-Control':'public, max-age=86400'}}));
       return data;
     })().finally(()=>{inFlight=undefined;});
     const data=await inFlight;

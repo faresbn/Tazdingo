@@ -1,6 +1,6 @@
 # Tazdingo news relay
 
-The website stays on GitHub Pages. This read-only Worker serves `/news` for browser refreshes, with a five-minute edge cache, coalesced refreshes and per-isolate request throttling. The cache/throttle is per edge location/isolate, not a guaranteed global quota. It never triggers GitHub publishing or accepts user-supplied upstream URLs.
+The website stays on GitHub Pages. This read-only Worker serves `/news` for browser refreshes, with a five-minute named cache, coalesced refreshes and per-isolate request throttling. If the host restricts cache access, an isolate cache and the published verified snapshot preserve the fallback. The cache/throttle is per edge location/isolate, not a guaranteed global quota. It never triggers GitHub publishing or accepts user-supplied upstream URLs.
 
 Canonical classifier source: `worker/index.js`. Its classification function is shared by the Python scheduled collector through `scripts/classify_news.mjs`. Run `node --test relay/news.test.mjs` from the repo root. Deploy changes to the relay as well as the Pages site; changing the mirror alone does not update the service.
 

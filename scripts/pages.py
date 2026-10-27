@@ -400,7 +400,7 @@ def news_widget(site: Site, snapshot: dict, scope: str, limit: int, excerpts: bo
     empty = '<p class="empty">No verified Forever news available yet.</p>'
     more = f'<p class="dash-note"><a href="{site.base}more/blizzard/">All Blizzard posts, including mixed roundups</a></p>' if scope == "forever" else ""
     return (f'<section class="news-widget" data-news-widget data-news-scope="{scope}" data-news-limit="{limit}" '
-            f'data-news-excerpts="{str(excerpts).lower()}" data-news-endpoint="{esc(site.news_endpoint)}">'
+            f'data-news-excerpts="{str(excerpts).lower()}" data-news-verified-at="{esc(checked)}" data-news-endpoint="{esc(site.news_endpoint)}">'
             f'<div data-news-list>{blue_list(site, posts, limit, excerpts) if posts else empty}</div>'
             f'<div class="news-controls"><button type="button" data-news-refresh>Refresh news</button>'
             f'<span class="aside" role="status" aria-live="polite" data-news-status>Last verified check: {esc(label)}{status}</span></div>'
