@@ -56,7 +56,7 @@ def check(out=None, base="/Tazdingo/"):
 
     # Every page the game data promises must exist.
     game = json.loads((ROOT / "data/game.json").read_text())
-    expected = ["classes/", "professions/", "world/", "prices/", "more/about/"]
+    expected = ["classes/", "professions/", "world/", "prices/", "more/", "more/about/"]
     expected += [f"classes/{c['slug']}/" for c in game["classes"]] + [f"classes/{c['slug']}/{s['slug']}/" for c in game["classes"] for s in c["specs"]]
     expected += [f"professions/{p['slug']}/" for p in game["professions"]] + [f"world/{t['slug']}/" for t in game["world"]]
     expected += [f"more/{m['slug']}/" for m in game["more"]]

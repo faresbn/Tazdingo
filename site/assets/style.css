@@ -565,3 +565,15 @@ table.ah-list th[scope="row"] a { text-decoration-thickness: 1px; }
 .badge.conf-high { color: var(--down); }
 .badge.conf-medium { color: var(--ink-soft); }
 .badge.conf-low { color: var(--up); }
+.masthead-search { flex: 0 1 13rem; min-width: 9rem; margin-left: 0.6rem; }
+.masthead-search input { font-size: 0.92rem; padding: 0.4rem 0.6rem; min-height: 36px; }
+.masthead-search .lookup-results { left: auto; width: min(24rem, 90vw); }
+@media (max-width: 860px) {
+  .masthead-search { order: 5; flex: 1 1 100%; margin: 0.5rem 0 0; max-width: none; }
+  .masthead-search .lookup-results { left: 0; width: auto; }
+}
+.menu-link { white-space: nowrap; }
+@media (min-width: 861px) and (max-width: 1240px) {
+  .masthead-search { flex: 0 1 9rem; min-width: 7.5rem; margin-left: 0.3rem; }
+  .wordmark .sub { max-width: 17rem; font-size: 0.7rem; }
+}

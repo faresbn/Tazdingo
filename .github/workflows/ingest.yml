@@ -1,0 +1,53 @@
+name: File Auction House scans from the inbox
+
+# A scan record committed to data/market/inbox/ (made by scripts/scan_record.py from an
+# uploaded Auctionator.lua; never the file itself) is filed here exactly as the Mac's
+# ingest.py files one: validated, added to the market's records and daily archive, older
+# records folded by the 30-scans-or-30-days rule, then tested, built and checked. If any
+# step fails, nothing is committed and the record stays in the inbox. A commit made with
+# this workflow's token doesn't start other workflows, so it starts the publish itself.
+
+on:
+  push:
+    branches: [main]
+    paths: ["data/market/inbox/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out history
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: File the waiting scan records, test, build and check
+        run: python3 scripts/ingest.py --inbox --no-commit
+      - name: Commit, push and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "tazdingo-ingest[bot]"
+          git config user.email "tazdingo-ingest@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "Nothing to file."; exit 0; fi
+          git commit -q -m "File Auction House scan records from the inbox"
+          for attempt in 1 2 3; do
+            if git push -q origin HEAD:main; then
+              gh workflow run pages.yml --ref main
+              exit 0
+            fi
+            git pull -q --rebase origin main
+          done
+          echo "Could not push the filed scans after three attempts." >&2
+          exit 1

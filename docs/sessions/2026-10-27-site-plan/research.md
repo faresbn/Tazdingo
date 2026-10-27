@@ -329,7 +329,20 @@ Volumes sold would need auction-level scan data (individual auctions disappearin
 
 ### What other Auction House tools do
 
-*Pending: the survey of TradeSkillMaster, Saddlebag Exchange, The Undermine Exchange and Classic-era tools arrives in `sources/ah-tools.md`.*
+**What it means:** the serious tools agree on most of what we can build, and they confirm the limits: nobody computes sales or sale rates without sales records, and TradeSkillMaster itself declined to publish a realm-level sale rate "for lack of data". Our differences: one scanner, one realm and faction, uploads hours apart (so alerts read "seen cheap at 14:05", never "buy now"), and no view of the full order book. Full survey with sources: `sources/ah-tools.md`.
+
+What we adopt, and from where:
+- **Usual price from daily lows**, as the Classic addon aux does (median of daily lowest buyouts), with our scan prices on top when there are enough.
+- **Deal flags with guards**: a discount threshold (tools use 30–60% of value), a robust z-score from the median absolute deviation (3.5, the published convention), minimum history, and a cap so one mispriced unit can't pose as a huge deal.
+- **Confidence tiers** (goldcap.gg's High, Medium and Low, with Low hidden) and "not enough data yet" gates (The Undermine Journal needs more than 8 entries for a median and 14 for a heat map).
+- **A market index** (auctionhouse.fyi's 100-based index; Saddlebag's price-group deltas) for showing what a raid opening did to prices.
+- **Supply signals from the daily quantity**: Saddlebag's shortage rule (price at least 120% of usual, quantity at most 50% of usual).
+- **A good-buy price**: The Undermine Journal's mean minus half a standard deviation, in a robust form.
+- **Weekday × time-of-day grids** normalised per item (The Undermine Journal, Undermine Exchange), with a caveat the survey stresses: our time-of-day reading is shaped by when scans happen.
+
+What's out: TradeSkillMaster's market value (it trims individual auctions we can't see), sale rate and sold per day, volume from vanished listings, real-time sniping, cross-realm comparison. Two peers already track Forever prices from player scans (auctionhouse.fyi and ForeverDB's Auction House); our edge is per-scan depth on one market and the analysis on top. The evidence on weekday, reset-day and raid-release price patterns is anecdotal and contradictory, which is a reason to measure it rather than repeat it.
+
+Found while building: Auctionator's daily quantity only reflects what was scanned, so a day of a few item searches looks like a market-wide shortage. The analytics leave out partial-scan days (under half the usual item count) and the unfinished newest day from stock and index comparisons.
 
 ---
 

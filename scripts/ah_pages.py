@@ -344,7 +344,7 @@ def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
         stat("Usually listed", num(item["listed_median"]) + " at once" if item["listed_median"] is not None else "unknown", "the most seen on sale in a day, middle value"),
         stat("Price changes between scans", pct(item["churn"]) or "too few scans", "how often the cheapest listing changed from one scan to the next"),
         stat("Vendor pays", money(item["vendor_sell"]) if item["vendor_sell"] else "unknown", "from ForeverDB" if item["vendor_sell"] else ""),
-        stat("Other players' scans", money(fdb_price["median"]) if fdb_price else "none", f"ForeverDB players' median, {fdb_price['latest']}" if fdb_price else ""),
+        stat("Other players' scans", money(fdb_price["median"]) if fdb_price else "none", f"ForeverDB players' median, {esc(fdb_price['latest'])}" if fdb_price else ""),
     ])
     invest = ""
     if item["invest"]:

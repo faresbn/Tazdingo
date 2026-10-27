@@ -354,8 +354,8 @@ function localTimes() {
 }
 
 function siteSearch(form) {
-  const input = form.querySelector("input"), list = document.getElementById("lookup-results");
-  const status = document.getElementById("lookup-status");
+  const input = form.querySelector("input"), list = form.querySelector(".lookup-results");
+  const status = form.querySelector("[data-search-status]");
   let entries = null, pending = null, matches = [], request = 0;
   async function load() {
     if (entries) return entries;
@@ -489,8 +489,7 @@ readingTools();
 document.querySelectorAll("[data-theme-toggle]").forEach(themeToggle);
 document.querySelectorAll("[data-countdown]").forEach(countdown);
 localTimes();
-const lookupForm = document.querySelector("form.lookup");
-if (lookupForm) siteSearch(lookupForm);
+document.querySelectorAll("form.lookup").forEach(siteSearch);
 const browserSection = document.getElementById("prices");
 if (browserSection) marketBrowser(browserSection);
 

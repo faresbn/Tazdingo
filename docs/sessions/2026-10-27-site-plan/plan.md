@@ -51,12 +51,16 @@ Fares asked me to work autonomously. These are the calls the research left open;
 
 **How it works** (new `scripts/market.py`, pure functions over one market's observations):
 - **Reference price** per item: median of its scan prices in the window when it has six or more on at least two days; otherwise the median daily low over 14 days (today's typical price).
-- **Unusually low now:** seen in the newest scan; latest price at most 70% of the reference; a robust spread test (the drop is at least 2.5 times the item's usual deviation, measured as median absolute deviation) when the item has enough history; reference at least 1 silver. Sorted by the gold saved per unit.
+- **Unusually low now:** seen in the newest scan; latest price at most 70% of the reference; a robust z-score of 3.5 or more (median absolute deviation) when the item's price varies; reference at least 1 silver; a confidence tier (high, medium, low) from the history behind the reference and how reliably the item is listed, with low hidden and counted; 90% or more under usual is treated as low confidence (probably one mispriced unit). Sorted by the gold saved per unit.
 - **Below vendor price:** latest price below the vendor sell price (ForeverDB API). Certain profit if the listing is still there.
-- **Investment watch:** buy at the latest price, resell at the reference less the 5% Auction House cut; positive expected margin only; listed on at least 60% of the window's days; shown with margin per unit, return on cost, steadiness and how often it's listed. Ranked by expected margin per unit, weighted by listing reliability. Called an estimate everywhere.
+- **Investment watch:** buy at the latest price, resell at the reference less the 5% Auction House cut; positive expected margin only; listed on at least 60% of the window's days; shown with margin per unit, return on cost, steadiness and how often it's listed. Ranked by expected margin per unit, weighted by listing reliability and by steadiness (volatile items rank lower). Called "an estimate from the price spread, not proven demand".
 - **Movers:** "last 24 hours" (latest against the median of the item's earlier scans in the previous 24 hours, three or more, baseline at least 50 copper, move at least 15%) alongside today's weekly rule.
 - **Listing reliability** (the stand-in for "how well it sells"): share of window days and scans the item was listed, median most-listed per day, and how often its minimum price changes between consecutive scans. Labelled as listing activity, never sales.
 - **Patterns:** each scan price divided by the item's window median; averaged per weekday and per four-hour band (UTC, shown in the visitor's time by the browser), for the market (median across items) and for an item with enough scans. Cells with too few observations show as "collecting".
+- **Short supply:** priced at least 20% over usual while the last full day's most-listed fell to half its usual level or less (Saddlebag's shortage rule).
+- **Good-buy price** per item: the usual price less half its usual swing, once it has eight or more prices.
+- **Market index:** each finished full day, the median across items of their lowest price against their own usual level, times 100; for reading what an event did to the market.
+- **Partial days:** days covering under half the usual number of items (a few searches, not a full scan) and the unfinished newest day are left out of stock and index comparisons.
 - **Categories:** class and subclass from the ForeverDB item list (Consumable, Trade Goods, Recipe, Projectile…), for filtering and grouping.
 - **Events:** a `market_events` list in `data/game.json` (launch 4 November 23:00 UTC; raids open 9 December), drawn on charts.
 
@@ -100,6 +104,12 @@ Fares asked me to work autonomously. These are the calls the research left open;
 ## Out of scope
 
 Guide prose (length, PvP sections, templates); a companion addon for sales data; search-engine submission; a custom domain; analytics; moving World topics.
+
+## Changes during the build
+
+- The tool survey (`sources/ah-tools.md`) added confidence tiers, short supply, the good-buy price, the market index and a volatility penalty, and moved the deal test to the published 3.5 threshold.
+- The Beta catalogue stays a 975-item sample (settled): the full Beta files are not put through the new store, which is for live scans.
+- Market display names come from `market_names` in `data/game.json`; the Beta markets read "Beta PvP realm" and "Beta Classic PvP realm".
 
 ## Risks
 

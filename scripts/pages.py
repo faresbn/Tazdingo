@@ -32,6 +32,7 @@ class Site:
     nav: str = ""  # the main menu, built once per site from the game data
     news_endpoint: str = ""
     art: dict = field(default_factory=dict)  # allowlisted, credited Warcraft artwork
+    search_action: str = ""  # where a search goes when the page's script can't run: the main market's price list
 
     def asset(self, name: str) -> str:
         return f"{self.base}assets/{name}?v={self.assets.get(name, self.revision)}"
@@ -315,10 +316,19 @@ def nav_html(site: Site, ctx: dict) -> str:
     return (f'<nav class="mainnav" id="mainnav" aria-label="Main"><ul class="menu">'
             + item("prices", "Auction House", "prices/", prices) + item("classes", "Classes", "classes/", classes)
             + item("professions", "Professions", "professions/", professions) + item("world", "World", "world/", world)
-            + item("more", "More", "more/launch/", more) + "</ul></nav>")
+            + item("more", "More", "more/", more) + "</ul></nav>")
 
 
 # --- Layout -------------------------------------------------------------------
+
+def masthead_search(site: Site) -> str:
+    """The search box on every page but the homepage, which has its own larger one."""
+    return (f'<form class="lookup masthead-search" action="{esc(site.search_action or site.base + "prices/")}" method="get" role="search">'
+            '<label for="site-search" class="visually-hidden">Search Tazdingo</label>'
+            '<input id="site-search" name="q" type="search" placeholder="Search items and guides" autocomplete="off" aria-controls="site-search-results">'
+            '<span class="visually-hidden" role="status" data-search-status></span>'
+            '<ul id="site-search-results" class="lookup-results" hidden></ul></form>')
+
 
 def layout(site: Site, title: str, body: str, active: str = "", description: str = "", path: str = "") -> str:
     full_title = f"{SITE_NAME} · {SUBTITLE}" if title == SITE_NAME else f"{title} | {SITE_NAME}"
@@ -326,7 +336,7 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
     card = site.asset("art/darkspear.webp") if site.has("art/darkspear.webp") else ""
     card_meta = (f'<meta property="og:image" content="{esc(site.url + card[len(site.base):])}">'
                  f'<meta name="twitter:card" content="summary_large_image">') if card else ""
-    section_path = "more/launch/" if active == "more" else f"{active}/"
+    section_path = f"{active}/"
     current = "page" if path == section_path else "true"
     nav = site.nav.replace(f'<li class="menu-item" data-menu><a class="menu-link" href="{site.base}{section_path}"',
                            f'<li class="menu-item current" data-menu><a class="menu-link" aria-current="{current}" href="{site.base}{section_path}"') if active else site.nav
@@ -361,6 +371,7 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
     <a class="wordmark" href="{site.base}"><span class="mark" aria-hidden="true"></span><span class="name">{SITE_NAME}</span><span class="sub">{SUBTITLE}</span></a>
     <button class="nav-open" type="button" aria-expanded="false" aria-controls="mainnav">Menu</button>
     {nav}
+    {masthead_search(site) if path else ""}
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Colour theme: follows your device">
       <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3.75a8.25 8.25 0 0 0 0 16.5z" fill="currentColor"/><circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
       <span class="theme-label">Auto</span>
@@ -375,7 +386,7 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
     <p class="colophon-name"><span class="mark" aria-hidden="true"></span>{SITE_NAME}</p>
     <p>{NOTICE}</p>
     <p>{'Item names, recipes, tooltips and second-opinion prices: <a href="' + FOREVERDB + '">Data from ForeverDB.net</a>. ' if site.credit else ''}Warcraft artwork, screenshots and game icons © Blizzard Entertainment. <a href="{site.base}more/about/#pictures">Image sources and credits</a>. Prices come from our own Auctionator scans. Guides are summarised in our own words and linked; the originals belong to their authors.</p>
-    <p>Built {esc(site.built)}, revision {esc(site.revision)}. <a href="{site.base}llms-full.txt">Plain-text version</a> · <a href="{site.base}more/about/">Sources and credits</a></p>
+    <p>Updated {esc(site.built)}. <a href="{site.base}llms-full.txt">Plain-text version</a> · <a href="{site.base}more/about/">Sources and credits</a></p>
   </div>
 </footer>
 </body>
@@ -481,7 +492,7 @@ def home(site: Site, ctx: dict) -> str:
       <label for="lookup" class="visually-hidden">Search Tazdingo</label>
       <div class="lookup-row"><input id="lookup" name="q" type="search" placeholder="Items, classes, professions…" autocomplete="off" aria-controls="lookup-results" aria-describedby="lookup-hint"><button type="submit">Search</button></div>
       <span id="lookup-hint" class="visually-hidden">Type two or more characters. Use the down arrow to browse results and Escape to dismiss them.</span>
-      <span id="lookup-status" class="visually-hidden" role="status"></span>
+      <span id="lookup-status" class="visually-hidden" role="status" data-search-status></span>
       <ul id="lookup-results" class="lookup-results" hidden></ul>
     </form>
   </div>
@@ -490,7 +501,7 @@ def home(site: Site, ctx: dict) -> str:
 <div class="dash">
   {pulse}
   <section class="dash-card blue-card" aria-labelledby="blue-title">
-    <h2 id="blue-title"><a href="{b}more/blizzard/">Blizzard says</a></h2>
+    <h2 id="blue-title"><a href="{b}more/blizzard/">Blizzard's posts</a></h2>
     {blue_html}
   </section>
 </div>
@@ -514,7 +525,7 @@ def home(site: Site, ctx: dict) -> str:
 
 
 def not_found(site: Site) -> str:
-    return layout(site, "Page not found", page_head("This page isn't in Tazdingo", "It may have moved when the site was reorganised.")
+    return layout(site, "Page not found", page_head("This page isn't in Tazdingo", "Search from the box above, or start from one of the sections below.")
                   + f'''<section class="page-body prose"><p>Try the <a href="{site.base}">front page</a>, search from there, or start from
   <a href="{site.base}prices/">Prices</a>, <a href="{site.base}classes/">Classes</a>, <a href="{site.base}professions/">Professions</a> or
   <a href="{site.base}world/">World</a>.</p></section>''', path="404.html")
@@ -666,7 +677,7 @@ def craft_page(site: Site, ctx: dict) -> str:
     groups = "".join(f'<section id="{esc(slug_of(p))}"><h2>{esc(p)}</h2>{table(rs[:10])}</section>' for p, rs in sorted(by_prof.items()))
     jump = " ".join(f'<a href="#{esc(slug_of(p))}">{esc(p)}</a>' for p in sorted(by_prof))
     return layout(site, "What to craft", page_head("What to craft", "Recipes ranked by estimated listing margin: output asking value minus reagent cost.",
-                                                    (("Prices", f"{site.base}prices/"),), data_note(ctx, "Recipes")) + f'''
+                                                    (("Auction House", f"{site.base}prices/"),), data_note(ctx, "Recipes")) + f'''
 <section class="page-body">
   {f'<p class="jump">Jump to: {jump}</p>' if jump else ""}
   <h2>Largest estimated listing margins</h2>
@@ -687,8 +698,8 @@ def crates_page(site: Site, ctx: dict) -> str:
                     + (f'<td>{cheap["count"]} {esc(cheap["name"])} {source_tag(cheap["source"])}</td><td class="num">{money(cheap["cost"])}</td>' if cheap
                        else '<td colspan="2">No bundle priced yet</td>')
                     + f'<td class="others">{others}</td></tr>')
-    return layout(site, "Waylaid Crates", page_head("Waylaid Crates", "The cheapest priced fill bundle for each crate. A crate takes any one bundle; the crate itself costs extra.",
-                                                     (("Prices", f"{site.base}prices/"),), data_note(ctx, "Crates and their bundles")) + f'''
+    return layout(site, "Waylaid Crates", page_head("Waylaid Crates", "The cheapest way to fill each crate from the Auction House. Each crate takes any one of its bundles; the empty crate is bought separately.",
+                                                     (("Auction House", f"{site.base}prices/"),), data_note(ctx, "Crates and their bundles")) + f'''
 <section class="page-body">
   <div class="table-wrap"><table><thead><tr><th scope="col">Crate</th><th scope="col" class="num">Level</th><th scope="col">Cheapest bundle</th><th scope="col" class="num">Cost</th><th scope="col">Other bundles</th></tr></thead>
   <tbody>{"".join(rows)}</tbody></table></div>
@@ -700,8 +711,8 @@ def materials_page(site: Site, ctx: dict) -> str:
     rows = "".join(f'<tr><th scope="row">{item_link(r["item"], r["name"])}</th><td class="num">{money(r["value"])} {source_tag(r["source"])}</td>'
                    f'<td>{steadiness(r["volatility"]) if r["source"] == "our scan" else ""}</td><td class="num">{count(r["listed"])}</td><td class="num">{esc(r["used_in"])}</td></tr>'
                    for r in ctx["materials"][:80])
-    return layout(site, "Materials worth gathering", page_head("Materials worth gathering", "Herbs, ores, leather, cloth and drops ranked by recorded asking value. This does not measure sales or gold per hour.",
-                                                                (("Prices", f"{site.base}prices/"),), data_note(ctx, "Reagents")) + f'''
+    return layout(site, "Materials worth gathering", page_head("Materials worth gathering", "Herbs, ores, leather, cloth and drops that no recipe makes and no vendor sells, ranked by what they're listed for.",
+                                                                (("Auction House", f"{site.base}prices/"),), data_note(ctx, "Reagents")) + f'''
 <section class="page-body">
   <div class="table-wrap"><table><thead><tr><th scope="col">Material</th><th scope="col" class="num">Worth</th><th scope="col">Steadiness</th><th scope="col" class="num">Listed</th><th scope="col" class="num">Used in recipes</th></tr></thead>
   <tbody>{rows}</tbody></table></div>

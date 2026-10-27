@@ -544,8 +544,9 @@ def search_index(ctx: dict) -> list[list[str]]:
         entries.append([t["name"], f"{base}world/{t['slug']}/", "World"])
     for m in game["more"]:
         entries.append([m["name"], f"{base}more/{m['slug']}/", "More"])
+    entries.append(["Auction House: deals, investments and movers", f"{base}prices/", "Auction House"])
     for slug, name in (("craft", "What to craft"), ("crates", "Waylaid Crates: cheapest fill"), ("materials", "Materials worth gathering")):
-        entries.append([name, f"{base}prices/{slug}/", "Prices"])
+        entries.append([name, f"{base}prices/{slug}/", "Auction House"])
     market = ctx["primary"]
     if market:
         for item in market["items"]:
@@ -700,7 +701,9 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/") 
            "craft": craft_table(fdb, book, names["names"]), "crates": crate_table(fdb, book, names["names"]),
            "materials": materials_table(fdb, book, names["names"])}
     ctx["events"] = game.get("market_events", [])
+    ctx["api"] = api
     ctx["recipes_by_item"] = recipes_by_item(fdb)
+    site.search_action = f'{primary["url"]}#prices' if primary else f"{base}prices/"
     site.nav = pages.nav_html(site, ctx)
     for market in markets:
         page(f"prices/{market['slug']}/", pages.market_page(site, market, ctx))
@@ -708,6 +711,7 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/") 
             page(item["url"][len(base):], ah_pages.item_page(site, market, item, ctx))
     page("", pages.home(site, ctx))
     page("prices/", pages.prices_index(site, ctx))
+    page("more/", sections.more_index(site, ctx))
     page("prices/craft/", pages.craft_page(site, ctx))
     page("prices/crates/", pages.crates_page(site, ctx))
     page("prices/materials/", pages.materials_page(site, ctx))

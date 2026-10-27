@@ -67,7 +67,7 @@ def classes_index(site: Site, ctx: dict) -> str:
                      f'<a class="class-card-head" href="{b}classes/{c["slug"]}/">{emblem(site, "class", c["slug"], 64, c["colour"])}<span>{esc(c["name"])}</span></a>'
                      f'{"<p>" + esc(overview["summary"]) + "</p>" if overview else ""}'
                      f'<ul class="spec-list">{specs}</ul></li>')
-    return layout(site, "Classes", page_head("Classes", "Nine classes and three talent trees each. For every spec: what the best guides say, the links to read them, and what we've found ourselves.")
+    return layout(site, "Classes", page_head("Classes", "Nine classes and three talent trees each. For every spec: what the best guides say and where to read them, with our own findings added as we play.")
                   + banner(site, "classes") + f'''<section class="page-body">
   <ul class="class-cards">{"".join(cards)}</ul>
   <section class="reading">
@@ -104,11 +104,14 @@ def class_page(site: Site, ctx: dict, c: dict) -> str:
     main += sub_page("hybrid", "Hybrid builds", hybrid, "No hybrid builds recorded yet.")
     main += sub_page("macros", "Macros", macros, "No macros recorded yet.",
                      f'<p><a href="{b}more/macros/">How macros work in Forever, and more collections</a></p>')
+    abilities = class_api(ctx, c["name"])
+    main += abilities
     if overview:
         main += render_sections(overview, "", only=("findings", "more"))
     main += changelog(site, entries_for(ctx, f"content/classes/{c['slug']}/"))
     aside = (f'<div class="class-portrait" aria-hidden="true">{artwork(site, c["slug"], "character-art")}</div>'
-             + tools_box("Guides and tools", class_tools(c)) + toc(overview, (("specs", "Specs"), ("hybrid", "Hybrid builds"), ("macros", "Macros"))))
+             + tools_box("Guides and tools", class_tools(c)) + toc(overview, (("specs", "Specs"), ("hybrid", "Hybrid builds"), ("macros", "Macros"))
+                                                                    + ((("abilities", "Abilities by level"),) if abilities else ())))
     lede = esc(overview["summary"]) if overview else f'{" · ".join(esc(s["name"]) for s in c["specs"])}.'
     return layout(site, c["name"], page_head(c["name"], lede, (("Classes", f"{b}classes/"),),
                                               mark=emblem(site, "class", c["slug"], 72, c["colour"]), colour=c["colour"])
@@ -138,6 +141,108 @@ def spec_page(site: Site, ctx: dict, c: dict, spec: dict) -> str:
                   + f'<section class="page-body">{with_aside(main, aside)}</section>',
                   active="classes", path=f"classes/{c['slug']}/{spec['slug']}/",
                   description=(page or {}).get("summary") or f"{spec['name']} {c['name']} in World of Warcraft: Forever: guide summary and links.")
+
+
+# --- ForeverDB API tables ----------------------------------------------------------
+
+def api_credit(ctx: dict) -> str:
+    src = ctx["api"].get("source", {})
+    label = badge("prelaunch") if src.get("level_cap") != 60 else ""
+    return (f'<p class="aside">{label} <a href="https://foreverdb.net">Data from ForeverDB.net</a>, game build {esc(src.get("build"))}. '
+            'Places marked "Classic data" come from Classic and haven\'t been confirmed in Forever yet.</p>')
+
+
+def coords(x, y) -> str:
+    return f" ({x:.0f}, {y:.0f})" if isinstance(x, (int, float)) and isinstance(y, (int, float)) else ""
+
+
+def where(entry: dict) -> str:
+    seen = '<span class="badge live">Seen in Forever</span>' if entry.get("seen") else '<span class="badge unknown">Classic data</span>'
+    return f'{esc(entry.get("zone") or "")}{coords(entry.get("x"), entry.get("y"))} {seen}'
+
+
+def cost(v: dict) -> str:
+    parts = [money(v["price"])] if v.get("price") else []
+    parts += [f'{esc(amount)} {esc(name)}' for name, amount in v.get("costs", [])]
+    return " + ".join(parts) or "free"
+
+
+def profession_api(ctx: dict, slug: str) -> str:
+    data = ctx["api"].get("professions", {}).get(slug)
+    if not data:
+        return ""
+    ranks = " · ".join(f"{esc(r)} to {esc(s)}" for r, s in data["ranks"])
+    trainers = sorted(data["trainers"], key=lambda t: (not t["seen"], t["side"] not in ("horde", "both"), t["up_to"] or 0))
+    trainer_rows = "".join(f'<tr><th scope="row">{esc(t["name"])}{f" <span class=aside>{esc(t["title"])}</span>" if t.get("title") else ""}</th>'
+                           f'<td>{esc((t["side"] or "").capitalize())}</td><td>{where(t)}</td><td class="num">{esc(t["up_to"] or "")}</td></tr>'
+                           for t in trainers[:14])
+    bought_rows = []
+    for b in data["bought"][:40]:
+        vendors = "; ".join(f'{esc(v["name"])}, {where(v)} {cost(v)}{" (limited)" if v["limited"] else ""}' for v in b["vendors"][:3])
+        bought_rows.append(f'<tr><th scope="row">{esc(b["recipe"])}{" " + badge("new", "New in Forever") if b.get("new") else ""}</th>'
+                           f'<td class="num">{esc(b["skill"] or "")}</td><td>{vendors}</td></tr>')
+    more = len(data["bought"]) - 40
+    return (f'<section class="sec sec-data" id="where-to-learn"><h2>Where to learn and buy</h2>'
+            f'<p>Ranks: {ranks}.</p>'
+            f'<h3>Trainers</h3><div class="table-wrap"><table><thead><tr><th scope="col">Trainer</th><th scope="col">Faction</th><th scope="col">Where</th>'
+            f'<th scope="col" class="num">Trains to</th></tr></thead><tbody>{trainer_rows}</tbody></table></div>'
+            + (f'<h3>Recipes you buy</h3><div class="table-wrap"><table><thead><tr><th scope="col">Recipe</th><th scope="col" class="num">Skill</th>'
+               f'<th scope="col">Sold by</th></tr></thead><tbody>{"".join(bought_rows)}</tbody></table></div>'
+               + (f'<p class="aside">And {more} more on ForeverDB.</p>' if more > 0 else "") if bought_rows else "")
+            + api_credit(ctx) + '</section>')
+
+
+def gathering_api(ctx: dict, slug: str) -> str:
+    data = ctx["api"].get("gathering", {}).get(slug)
+    if not data:
+        return ""
+    best = "".join(f'<tr><th scope="row">{esc(b["from"])}–{esc(b["to"])}</th><td>{esc(", ".join(b["zones"]))}</td></tr>' for b in data["best"])
+    extra = ""
+    if data.get("nodes"):
+        rows = "".join(f'<tr><th scope="row">{esc(n["name"])}</th><td class="num">{esc(n["skill"])}</td><td>{esc(", ".join(n["zones"]))}</td>'
+                       f'<td class="num">{esc(n["seen"])}</td></tr>' for n in sorted(data["nodes"], key=lambda n: (n["skill"] or 0, n["name"])))
+        extra = (f'<h3>Nodes</h3><div class="table-wrap"><table><thead><tr><th scope="col">Node</th><th scope="col" class="num">Skill</th>'
+                 f'<th scope="col">Busiest zones</th><th scope="col" class="num">Spots seen in Forever</th></tr></thead><tbody>{rows}</tbody></table></div>')
+    if data.get("zones"):
+        rows = "".join(f'<tr><th scope="row">{esc(z["name"])}</th><td class="num">{esc(z["skill"])}</td>'
+                       f'<td>{esc(", ".join(f"{name} {chance:g}%" for name, chance in z["catch"]))}</td></tr>' for z in data["zones"])
+        extra += (f'<h3>Fishing by zone</h3><div class="table-wrap"><table><thead><tr><th scope="col">Zone</th><th scope="col" class="num">Skill</th>'
+                  f'<th scope="col">Most caught</th></tr></thead><tbody>{rows}</tbody></table></div>')
+    return (f'<section class="sec sec-data" id="best-zones"><h2>Best zones by skill</h2>'
+            f'<div class="table-wrap"><table><thead><tr><th scope="col">Skill</th><th scope="col">Zones</th></tr></thead><tbody>{best}</tbody></table></div>'
+            f'{extra}<p class="aside">{esc(data.get("note") or "")}</p>' + api_credit(ctx) + '</section>')
+
+
+def disenchant_api(ctx: dict) -> str:
+    bands = ctx["api"].get("disenchant", [])
+    if not bands:
+        return ""
+    rows = "".join(f'<tr><th scope="row">{esc(b["quality"])} {esc(b["kind"])}</th><td class="num">{esc(b["from"])}–{esc(b["to"])}</td>'
+                   f'<td>{esc("; ".join(f"{name} {chance:g}% ({low}–{high})" for name, chance, low, high in b["results"]))}</td></tr>' for b in bands)
+    return (f'<section class="sec sec-data" id="disenchanting"><h2>Disenchanting</h2>'
+            f'<div class="table-wrap"><table><thead><tr><th scope="col">Item</th><th scope="col" class="num">Item level</th><th scope="col">Gives</th></tr></thead>'
+            f'<tbody>{rows}</tbody></table></div>' + api_credit(ctx) + '</section>')
+
+
+def class_api(ctx: dict, name: str) -> str:
+    abilities = ctx["api"].get("classes", {}).get(name)
+    if not abilities:
+        return ""
+    lines = {}
+    for a in abilities:
+        lines.setdefault(a["line"] or "General", []).append(a)
+    learned = {"trainer": "Trainer", "sod": "Rune-style", "quest": "Quest"}
+    blocks = []
+    for line, items in lines.items():
+        rows = "".join(f'<tr><th scope="row">{esc(a["name"])}{" " + badge("new", "New in Forever") if a["new"] else ""}</th>'
+                       f'<td>{esc(learned.get(a["learned"], (a["learned"] or "").capitalize()))}</td>'
+                       f'<td>{esc(", ".join(str(l) for l in a["levels"]))}</td></tr>'
+                       for a in sorted(items, key=lambda a: (min(a["levels"] or [99]), a["name"])))
+        blocks.append(f'<h3>{esc(line)}</h3><div class="table-wrap"><table><thead><tr><th scope="col">Ability</th><th scope="col">Learned</th>'
+                      f'<th scope="col">Ranks at level</th></tr></thead><tbody>{rows}</tbody></table></div>')
+    return (f'<section class="sec sec-data" id="abilities"><h2>Abilities by level</h2>'
+            '<p>Every ability and the level each rank is learned, by tree. Talents are on the talent calculators linked alongside.</p>'
+            + "".join(blocks) + api_credit(ctx) + '</section>')
 
 
 # --- Professions ----------------------------------------------------------------
@@ -183,12 +288,17 @@ def profession_page(site: Site, ctx: dict, p: dict) -> str:
     data = ""
     if total or crafts or camp:
         label = badge("prelaunch") if ctx["data_prelaunch"] else ""
-        data = (f'<section class="sec sec-data" id="from-the-data"><h2>From the data {label}</h2>'
+        data = (f'<section class="sec sec-data" id="from-the-data"><h2>In the game data {label}</h2>'
                 + (f'<p>{total:,} recipes, {new:,} of them new in Forever (ForeverDB, game build {esc(ctx["fdb_source"].get("client_build"))}).</p>' if total else "")
                 + (f'<h3>Estimated listing margins</h3><div class="table-wrap"><table><thead><tr><th scope="col">Recipe</th><th scope="col" class="num">Skill</th><th scope="col" class="num">Estimated margin</th></tr></thead><tbody>{craft_rows}</tbody></table></div>'
                    f'<p><a href="{b}prices/craft/#{esc(p["name"].lower().replace(" ", "-"))}">All {esc(p["name"])} margins and assumptions</a>. These estimates use asking prices, exclude selling and training costs, and do not prove demand. Check binding and current stock before crafting.</p>' if crafts else "")
                 + (f'<h3>Camp items</h3><p>What {esc(p["name"])} adds to a campfire.</p><div class="table-wrap"><table><thead><tr><th scope="col">Item</th><th scope="col" class="num">Skill</th><th scope="col">Effect</th></tr></thead><tbody>{camp_rows}</tbody></table></div>' if camp else "")
                 + "</section>")
+    data += profession_api(ctx, p["slug"])
+    if p["slug"] in ("herbalism", "mining", "skinning", "fishing"):
+        data += gathering_api(ctx, p["slug"])
+    if p["slug"] == "enchanting":
+        data += disenchant_api(ctx)
     main = (render_sections(page, f"No summary of {p['name']} guides yet.", only=("glance", "guides", "other"), sources=False) + data
             + render_sections(page, "", only=("findings", "more")) if page else
             f'<p class="empty">No summary of {esc(p["name"])} guides yet.</p>' + data)
@@ -198,7 +308,11 @@ def profession_page(site: Site, ctx: dict, p: dict) -> str:
         tools.append((f"Wowhead: {p['name']} levelling guide", f"{WOWHEAD}/guide/professions/{p['slug']}/overview-leveling", ""))
     tools += [("Icy Veins: professions overview", "https://www.icy-veins.com/wow-forever/professions-overview", ""),
               ("ForeverDB: best profession pairs", f"{FOREVERDB}/professions/best", "")]
-    aside = tools_box("Guides and tools", tools) + toc(page, (("from-the-data", "From the data"),) if data else ())
+    extra_toc = ((("from-the-data", "In the game data"),) if "id=\"from-the-data\"" in data else ()) + \
+        ((("where-to-learn", "Where to learn and buy"),) if "id=\"where-to-learn\"" in data else ()) + \
+        ((("best-zones", "Best zones by skill"),) if "id=\"best-zones\"" in data else ()) + \
+        ((("disenchanting", "Disenchanting"),) if "id=\"disenchanting\"" in data else ())
+    aside = tools_box("Guides and tools", tools) + toc(page, extra_toc)
     return layout(site, p["name"], page_head(p["name"], esc(page["summary"]) if page else f"{p['kind']} profession.", (("Professions", f"{b}professions/"),),
                                               status_line(page), mark=emblem(site, "prof", p["slug"], 72))
                   + f'<section class="page-body">{with_aside(main, aside)}</section>',
@@ -233,11 +347,11 @@ def world_data(site: Site, ctx: dict, slug: str) -> str:
                 f'<a href="{site.base}prices/crates/">The cheapest way to fill each one</a>.</p></section>')
     if slug == "rares" and fdb.get("rares"):
         r = fdb["rares"]
-        return (f'<section class="sec sec-data" id="from-the-data"><h2>In the data {label}</h2><p>{esc(r.get("n", 0))} rare creatures are known; {esc(r.get("seen", 0))} have been seen in Forever so far. '
+        return (f'<section class="sec sec-data" id="from-the-data"><h2>In the game data {label}</h2><p>{esc(r.get("n", 0))} rare creatures are known; {esc(r.get("seen", 0))} have been seen in Forever so far. '
                 'The rest come from Classic data and may differ.</p></section>')
     if slug == "collections" and fdb.get("collections"):
         c = fdb["collections"]
-        return (f'<section class="sec sec-data" id="from-the-data"><h2>In the data {label}</h2><p>{esc(c.get("mounts", 0))} mounts, {esc(c.get("pets", 0))} companion pets and {esc(c.get("titles", 0))} titles.</p></section>')
+        return (f'<section class="sec sec-data" id="from-the-data"><h2>In the game data {label}</h2><p>{esc(c.get("mounts", 0))} mounts, {esc(c.get("pets", 0))} companion pets and {esc(c.get("titles", 0))} titles.</p></section>')
     return ""
 
 
@@ -249,7 +363,7 @@ def world_page(site: Site, ctx: dict, t: dict) -> str:
             if page else f'<p class="empty">No notes on {esc(t["name"].lower())} yet.</p>' + data)
     main += changelog(site, entries_for(ctx, f"content/world/{t['slug']}.md"))
     pairs = [(label, url if url.startswith("http") else f"{b}world/{t['slug']}/{url}", "") for label, url in t["links"]]
-    aside = tools_box("Guides and tools", pairs) + toc(page, (("from-the-data", "From the data"),) if data else ())
+    aside = tools_box("Guides and tools", pairs) + toc(page, (("from-the-data", "In the game data"),) if data else ())
     if t["slug"] == "camping":
         aside = f'<figure class="camp-portrait" aria-hidden="true">{artwork(site, "camping", "camp-art")}</figure>' + aside
     return layout(site, t["name"], page_head(t["name"], esc(page["summary"] if page else t["summary"]), (("World", f"{b}world/"),), status_line(page))
@@ -275,6 +389,15 @@ def blizzard_page(site: Site, ctx: dict, m: dict) -> str:
                   + f'<section class="page-body">{intro}{news_widget(site, blue, "all", 60, excerpts=True)}</section>',
                   active="more", path="more/blizzard/", description="Verified Forever news and tagged mixed roundups from Blizzard.")
 
+
+
+def more_index(site: Site, ctx: dict) -> str:
+    rows = [(x["name"], f"{site.base}more/{x['slug']}/", x["summary"]) for x in ctx["game"]["more"]]
+    rows.append(("Sources and credits", f"{site.base}more/about/", "Where everything on Tazdingo comes from, and how to read it."))
+    items = "".join(f'<li><a href="{esc(url)}" class="door-name">{esc(name)}</a><p>{esc(summary)}</p></li>' for name, url, summary in rows)
+    return layout(site, "More", page_head("More", "Getting ready to play, Blizzard's latest posts, addons, macros, known issues, and where everything here comes from.")
+                  + banner(site, "more") + f'<section class="page-body"><ul class="door-list">{items}</ul></section>',
+                  active="more", path="more/", description="World of Warcraft: Forever launch checklist, Blizzard's posts, addons, macros, known issues and sources.")
 
 
 def more_page(site: Site, ctx: dict, m: dict) -> str:
