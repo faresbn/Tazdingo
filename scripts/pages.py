@@ -5,7 +5,7 @@ from __future__ import annotations
 import html
 import re
 from dataclasses import dataclass, field
-from datetime import date
+from datetime import date, datetime, timezone
 
 SITE_NAME = "Tazdingo"
 SHORT_NAME = "Tazdingo"
@@ -28,6 +28,7 @@ class Site:
     credit: bool
     assets: dict = field(default_factory=dict)  # file name -> content fingerprint
     launch: date = date(2026, 11, 4)
+    opens: datetime = datetime(2026, 11, 4, 23, tzinfo=timezone.utc)  # the moment servers open
     nav: str = ""  # the main menu, built once per site from the game data
     news_endpoint: str = ""
     art: dict = field(default_factory=dict)  # allowlisted, credited Warcraft artwork
@@ -348,7 +349,7 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
 <script src="{site.asset("app.js")}" defer></script>
 <script src="{FOREVERDB}/embed/tooltips.js" data-icons="true" data-color-links="true" async></script>
 </head>
-<body data-base="{site.base}" data-launch="{site.launch.isoformat()}">
+<body data-base="{site.base}" data-launch="{site.opens.isoformat()}">
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
   <div class="masthead-inner">
@@ -388,17 +389,15 @@ def page_head(title: str, lede: str = "", crumbs: tuple = (), extra: str = "", m
 
 # --- Front page -------------------------------------------------------------------
 
-def checklist_items(ctx: dict, limit: int = 6) -> list[tuple[str, str]]:
-    """The launch checklist's own headings, so the front page always matches the page."""
-    page = ctx["content"].get("more/launch")
-    if not page:
-        return []
-    items = []
-    for sec in page["sections"]:
-        if sec["kind"] in ("findings", "more"):
-            continue
-        items += [(anchor, plain_text(label)) for anchor, label in sec["toc"]]
-    return items[:limit]
+def countdown_text(opens: datetime, now: datetime) -> str:
+    """Counts to the moment servers open; site/assets/app.js repeats this rule in the visitor's browser."""
+    seconds = (opens - now).total_seconds()
+    if seconds <= 0:
+        return f"Day {int(-seconds // 86400) + 1} of Forever"
+    days, hours = int(seconds // 86400), int(seconds // 3600)
+    if days:
+        return f"Forever opens in {days} day{'s' if days != 1 else ''}"
+    return f"Forever opens in {hours} hour{'s' if hours != 1 else ''}" if hours else "Forever opens within the hour"
 
 
 def blue_list(site: Site, posts: list, limit: int, excerpts: bool = False) -> str:
@@ -432,25 +431,11 @@ def news_widget(site: Site, snapshot: dict, scope: str, limit: int, excerpts: bo
 
 def home(site: Site, ctx: dict) -> str:
     primary, game, content, b = ctx["primary"], ctx["game"], ctx["content"], site.base
-    days_to_go = (site.launch - date.fromisoformat(site.built[:10])).days
-    countdown = (f"Forever opens in {days_to_go} day{'s' if days_to_go != 1 else ''}" if days_to_go > 0
-                 else "Forever opens today" if days_to_go == 0 else f"Day {1 - days_to_go} of Forever")
+    countdown = countdown_text(site.opens, datetime.strptime(site.built, "%Y-%m-%d %H:%M UTC").replace(tzinfo=timezone.utc))
     search_action = f'{primary["url"]}#prices' if primary else f"{b}prices/"
 
     hero_art = (f'<figure class="hero-art">{artwork(site, "darkspear", "hero-scene", eager=True)}'
                 f'<figcaption><a href="{b}more/about/#pictures">Darkspear Islands · Blizzard Entertainment</a></figcaption></figure>') if site.art.get("darkspear") else ""
-
-    checklist = checklist_items(ctx)
-    check_html = ("<ol class=\"checklist\">" + "".join(f'<li><a href="{b}more/launch/#{esc(a)}">{esc(t)}</a></li>' for a, t in checklist) + "</ol>"
-                  if checklist else '<p class="empty">The launch checklist is being written.</p>')
-    issues = content.get("more/known-issues")
-    issue_titles = []
-    if issues:
-        for sec in issues["sections"]:
-            if sec["kind"] not in ("findings", "more"):
-                issue_titles += [plain_text(label) for _, label in sec["toc"]]
-    issue_line = (f'<p class="dash-note"><a href="{b}more/known-issues/">Known issues</a>: {len(issue_titles)} tracked, '
-                  f'including “{esc(issue_titles[0])}”.</p>' if issue_titles else "")
 
     pulse = ""
     if primary:
@@ -485,7 +470,7 @@ def home(site: Site, ctx: dict) -> str:
     return layout(site, SITE_NAME, f'''<section class="intro">
   <div class="intro-text">
     <p class="brand-greeting">Loktar Ogar · A Horde-side field guide</p>
-    <p class="countdown" data-countdown>{countdown}</p>
+    <p class="hero-meta"><span class="countdown" data-countdown>{countdown}</span> <a class="hero-tag" href="{b}more/launch/">Pre-launch checklist</a></p>
     <h1>{SITE_NAME}</h1>
     <p class="lede">Auction House prices, Horde-side class and profession guides, and discoveries from our travels in World of Warcraft: Forever.</p>
     <form class="lookup" action="{esc(search_action)}" method="get" role="search">
@@ -499,11 +484,6 @@ def home(site: Site, ctx: dict) -> str:
   {hero_art}
 </section>
 <div class="dash">
-  <section class="dash-card checklist-card" aria-labelledby="check-title">
-    <h2 id="check-title"><a href="{b}more/launch/">Before you log in</a></h2>
-    {check_html}
-    {issue_line}
-  </section>
   {pulse}
   <section class="dash-card blue-card" aria-labelledby="blue-title">
     <h2 id="blue-title"><a href="{b}more/blizzard/">Blizzard says</a></h2>
