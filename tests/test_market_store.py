@@ -168,6 +168,30 @@ class Analytics(unittest.TestCase):
 
     def test_one_busy_afternoon_is_not_a_pattern(self):
         import market as m
-        items = [{"obs": [(BASE + k * 600, 100 + k, DAY) for k in range(6)], "days": {}} for _ in range(30)]
-        cells = m.patterns(items, BASE - 1)["cells"]
+        items = [{"full_obs": [(BASE + k * 600, 100 + k, DAY) for k in range(6)], "days": {}} for _ in range(30)]
+        cells = m.patterns(items, [DAY])["cells"]
         self.assertTrue(all(c["index"] is None for c in cells.values()))
+
+
+class Recovery(Store):
+    def test_an_import_cut_off_before_the_registry_is_undone_next_time(self):
+        from unittest import mock
+        self.add(DAY, BASE, {"2589": (100, 90, 120, 4)})
+        real = ms.write_whole
+
+        def crash_on_registry(path, text):
+            if path.name == "captures.json":
+                raise KeyboardInterrupt  # the process stops after the record and archive were written
+            real(path, text)
+        with mock.patch.object(ms, "write_whole", side_effect=crash_on_registry):
+            with self.assertRaises(KeyboardInterrupt):
+                self.add(DAY + 1, BASE + 86400, {"2589": (80, 80, 80, 2)})
+        with self.assertRaises(InvalidCapture):
+            ms.load(self.root)  # the build refuses a half-finished import
+        self.assertIsNotNone(self.add(DAY + 1, BASE + 86400, {"2589": (80, 80, 80, 2)}))  # undone, then filed
+        self.assertEqual(len(ms.load(self.root)["forever-realm-horde"]["records"]), 2)
+
+    def test_empty_folders_left_by_a_rollback_do_not_block_the_next_import(self):
+        (self.root / "data/market/forever-other-market/scans").mkdir(parents=True)
+        self.assertIsNotNone(self.add(DAY, BASE, {"2589": (100, 90, 120, 4)}))
+        self.assertFalse((self.root / "data/market/forever-other-market").exists())

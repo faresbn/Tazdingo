@@ -148,9 +148,14 @@ def snapshot() -> dict[Path, bytes]:
 
 
 def restore(saved: dict[Path, bytes]) -> None:
+    """Put every saved file back and remove files and folders the import created."""
     for path in [p for p in (ROOT / market_store.STORE).rglob("*") if p.is_file()]:
         if path not in saved:
             path.unlink()
+    folders = {p.parent for p in saved}
+    for folder in sorted((ROOT / market_store.STORE).glob("**/"), key=lambda p: -len(p.parts)):
+        if folder != ROOT / market_store.STORE and folder not in folders and folder.is_dir() and not any(folder.iterdir()):
+            folder.rmdir()
     for path, body in saved.items():
         path.parent.mkdir(parents=True, exist_ok=True)
         if not path.exists() or path.read_bytes() != body:

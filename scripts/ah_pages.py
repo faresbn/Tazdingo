@@ -48,7 +48,7 @@ def pct(value: float | None) -> str:
 
 def scan_note(market: dict, ah: dict) -> str:
     beta = " " + badge("beta") if market["environment"] == "forever-beta" else ""
-    return (f'<p class="scan-note">{beta} Newest upload: {scan_time(ah["newest"])}. Lists show what that scan and the ones before it recorded, with each sighting\'s time. '
+    return (f'<p class="scan-note">{beta} Newest upload: {scan_time(ah["newest"])}. Prices are the cheapest listing each upload recorded, with the upload\'s time (Auctionator may have seen it earlier that day). '
             f'{ah["scans_in_window"]:,} scan{"s" if ah["scans_in_window"] != 1 else ""} in the current window.</p>')
 
 
@@ -64,14 +64,14 @@ def deals_block(site: Site, market: dict, ah: dict, limit: int = LIST_ROWS, head
     rows = [f'<tr><th scope="row">{item_anchor(site, market, i)}</th><td class="num">{money(i["latest"])}</td>'
             f'<td class="num">{money(i["ref"])}</td><td class="num"><span class="change down">−{pct(i["deal"]["discount"])}</span></td>'
             f'<td class="num">{money(i["deal"]["saving"])}</td><td>{confidence(i["deal"]["confidence"])}</td><td>{scan_time(i["latest_time"])}</td></tr>' for i in ah["deals"][:limit]]
-    body = (table(["Item", "#Seen at", "#Usual", "#Below usual", "#Saving a unit", "Confidence", "Seen"], rows) if rows
+    body = (table(["Item", "#Price", "#Usual", "#Below usual", "#Saving a unit", "Confidence", "Recorded"], rows) if rows
             else '<p class="empty">Nothing is listed unusually low in the newest scan.</p>')
     if ah["deals_hidden"]:
         body += (f'<p class="aside">{ah["deals_hidden"]} more listed far below usual but with too little history to trust, '
                  'or so far below (90%+) that it\'s probably one mispriced unit.</p>')
-    return (f'<section class="ah-block" id="deals"><{heading}>Seen unusually low</{heading}>'
-            f'<p class="aside">Seen at least {round(m.DEAL_DISCOUNT * 100)}% under the item\'s usual price on the newest day of scans, '
-            'and further under it than the item normally swings. Each row shows when it was seen; a cheap listing may be gone within minutes.</p>'
+    return (f'<section class="ah-block" id="deals"><{heading}>Unusually low</{heading}>'
+            f'<p class="aside">Recorded at least {round(m.DEAL_DISCOUNT * 100)}% under the item\'s usual price on the newest day of scans, '
+            'and further under it than the item normally swings. Each row shows the upload that recorded it; a cheap listing may be gone within minutes.</p>'
             f'{body}</section>')
 
 
@@ -88,7 +88,7 @@ def short_block(site: Site, market: dict, ah: dict, limit: int = LIST_ROWS, head
     return (f'<section class="ah-block" id="short"><{heading}>Short supply</{heading}>'
             f'<p class="aside">Priced at least {round((m.SHORT_PRICE - 1) * 100)}% over usual while the most units listed on the last full day '
             f'fell to half its usual level or less: a sign of a shortage, and of a chance to sell.</p>'
-            f'{table(["Item", "#Seen at", "#Over usual", "#Stock against usual"], rows)}</section>')
+            f'{table(["Item", "#Price", "#Over usual", "#Stock against usual"], rows)}</section>')
 
 
 def index_chart(ah: dict, events: list[dict], heading: str = "h2") -> str:
@@ -130,9 +130,9 @@ def vendor_block(site: Site, market: dict, ah: dict, limit: int = LIST_ROWS, hea
     if not rows:
         return ""
     return (f'<section class="ah-block" id="vendor"><{heading}>Below vendor price</{heading}>'
-            '<p class="aside">Seen for less than a vendor pays for it: if it\'s still there, buy it and sell it to any vendor. '
+            '<p class="aside">Recorded for less than a vendor pays for it: if it\'s still there, buy it and sell it to any vendor. '
             'Vendor prices: <a href="https://foreverdb.net">Data from ForeverDB.net</a>.</p>'
-            f'{table(["Item", "#Seen at", "#Vendor pays", "#Profit a unit", "Seen"], rows)}</section>')
+            f'{table(["Item", "#Price", "#Vendor pays", "#Profit a unit", "Recorded"], rows)}</section>')
 
 
 def invest_block(site: Site, market: dict, ah: dict, limit: int = LIST_ROWS, heading: str = "h2") -> str:
@@ -140,10 +140,10 @@ def invest_block(site: Site, market: dict, ah: dict, limit: int = LIST_ROWS, hea
             f'<td class="num">{money(i["ref"])}</td><td class="num">{money(i["invest"]["margin"])}</td>'
             f'<td class="num">{pct(i["invest"]["roi"])}</td><td>{steadiness(i["volatility"])}</td>'
             f'<td class="num">{pct(i["presence"])}</td></tr>' for i in ah["invest"][:limit]]
-    body = (table(["Item", "#Seen at", "#Usual", "#Margin a unit", "#Return", "Steadiness", "#Days listed"], rows) if rows
+    body = (table(["Item", "#Price", "#Usual", "#Margin a unit", "#Return", "Steadiness", "#Days listed"], rows) if rows
             else '<p class="empty">No item is cheap enough against its own history right now.</p>')
     return (f'<section class="ah-block" id="invest"><{heading}>Investment watch</{heading}>'
-            f'<p class="aside">Seen in the cheapest quarter of its last {m.WINDOW_DAYS} days, listed on most of them, usually several at once, and not volatile. '
+            f'<p class="aside">Recorded in the cheapest quarter of its last {m.WINDOW_DAYS} days, listed on most of them, usually several at once, and not volatile. '
             f'The margin assumes it sells again at its usual price, less the {round(m.AH_CUT * 100)}% Auction House cut. '
             'An estimate from the price spread, not proven demand: the data shows prices and listings, not sales.</p>'
             f'{body}</section>')
@@ -162,18 +162,18 @@ def movers_block(site: Site, market: dict, ah: dict, limit: int = 8, heading: st
     parts = []
     if ah["rising"] or ah["falling"]:
         parts.append('<div class="ah-cols">'
-                     + (f'<div><h3>Rising in the last day</h3>{table(["Item", "#Now", "#Day before", "#Change"], rows(ah["rising"]))}</div>' if ah["rising"] else "")
-                     + (f'<div><h3>Falling in the last day</h3>{table(["Item", "#Now", "#Day before", "#Change"], rows(ah["falling"]))}</div>' if ah["falling"] else "")
+                     + (f'<div><h3>Up on the last full day</h3>{table(["Item", "#Latest", "#Last full day", "#Change"], rows(ah["rising"]))}</div>' if ah["rising"] else "")
+                     + (f'<div><h3>Down on the last full day</h3>{table(["Item", "#Latest", "#Last full day", "#Change"], rows(ah["falling"]))}</div>' if ah["falling"] else "")
                      + '</div>')
     if weekly_up or weekly_down:
         parts.append('<div class="ah-cols">'
                      + (f'<div><h3>Rising this week</h3>{table(["Item", "#Typical", "#Week on week"], weekly(weekly_up))}</div>' if weekly_up else "")
                      + (f'<div><h3>Falling this week</h3>{table(["Item", "#Typical", "#Week on week"], weekly(weekly_down))}</div>' if weekly_down else "")
                      + '</div>')
-    body = "".join(parts) or ('<p class="empty">Not enough scans yet. The last day\'s movers need three scans in the day before the newest; '
-                              'the weekly ones need three days of prices in each of the last two weeks.</p>')
+    body = "".join(parts) or ('<p class="empty">Nothing has moved far enough yet. '
+                              'Weekly movers need three days of prices in each of the last two weeks.</p>')
     return (f'<section class="ah-block" id="movers"><{heading}>Movers</{heading}>'
-            f'<p class="aside">The last day compares the newest scan with the middle of the item\'s scans over the {m.MOVE_HOURS} hours before it. '
+            f'<p class="aside">The first pair compares each item\'s latest recorded price with its lowest price on the last full day of scans (a move of {round(m.MOVE_MIN_CHANGE * 100)}% or more). '
             'The week compares the middle of the last seven days\' lowest prices with the seven before.</p>'
             f'{body}</section>')
 
@@ -186,8 +186,8 @@ def reliable_block(site: Site, market: dict, ah: dict, limit: int = LIST_ROWS, h
         return ""
     return (f'<section class="ah-block" id="reliable"><{heading}>Always on the market</{heading}>'
             '<p class="aside">The data holds no sales, so this is the closest honest measure of what\'s always available: items listed on nearly every day, '
-            'how many are usually up at once, and how often the cheapest listing changed between sightings (from sales, new listings, cancellations or expiries alike).</p>'
-            f'{table(["Item", "#Typical", "#Days listed", "#Usually listed", "#Cheapest changed"], rows)}</section>')
+            'how many are usually up at once, and how often the day\'s lowest price changed from one day to the next (sales, new listings, cancellations and expiries all change it).</p>'
+            f'{table(["Item", "#Typical", "#Days listed", "#Usually listed", "#Daily low changed"], rows)}</section>')
 
 
 def heat(index: float | None) -> str:
@@ -204,20 +204,27 @@ def signed_pct(index: float | None) -> str:
 
 def patterns_block(ah: dict, heading: str = "h2") -> str:
     p = ah["patterns"]
-    head = "".join(f'<th scope="col">{label}</th>' for label in m.BAND_LABELS)
-    rows = []
-    for d, name in enumerate(m.WEEKDAYS):
-        cells = "".join(f'<td class="{heat(p["cells"].get(f"{d}-{b}", {}).get("index"))}">{signed_pct(p["cells"].get(f"{d}-{b}", {}).get("index"))}</td>'
-                        for b in range(6))
-        rows.append(f'<tr><th scope="row">{name}</th>{cells}</tr>')
-    ready = any(c["index"] is not None for c in p["cells"].values())
-    note = ("" if ready else f'<p class="empty">Collecting: a weekday and time band shows once {m.PATTERN_MIN_ITEMS} items have prices in it '
-                             f'on at least {m.PATTERN_MIN_DATES} different dates. Scans spread across the day and the week fill this in.</p>')
+
+    def cell(entry):
+        index = (entry or {}).get("index")
+        return f'<td class="{heat(index)}">{signed_pct(index)}</td>'
+    days = "".join(f'<th scope="col">{d}</th>' for d in m.WEEKDAYS)
+    weekday = "".join(cell(p["weekday"].get(d)) for d in range(7))
+    bands = "".join(f'<th scope="col">{label}</th>' for label in m.BAND_LABELS)
+    grid = "".join(f'<tr><th scope="row">{name}</th>' + "".join(cell(p["cells"].get(f"{d}-{b}")) for b in range(6)) + '</tr>'
+                   for d, name in enumerate(m.WEEKDAYS))
+    weekday_ready = any(c["index"] is not None for c in p["weekday"].values())
+    time_ready = any(c["index"] is not None for c in p["cells"].values())
     return (f'<section class="ah-block" id="patterns"><{heading}>When prices are lowest</{heading}>'
-            '<p class="aside">How far prices sit above or below each item\'s own middle price, by weekday and four-hour band '
-            '(hours in UTC<span data-utc-offset></span>). Green cells are cheaper times to buy, warmer cells better times to sell. '
-            'It can only reflect the times scans were taken, so a band nobody scans in stays empty.</p>'
-            f'{note}<div class="table-wrap"><table class="heatmap"><thead><tr><td></td>{head}</tr></thead><tbody>{"".join(rows)}</tbody></table></div></section>')
+            '<p class="aside">How far prices sit above or below each item\'s own middle price. Green cells are cheaper times to buy, warmer cells better times to sell. '
+            f'A cell shows once {m.PATTERN_MIN_ITEMS} items have prices in it on at least {m.PATTERN_MIN_DATES} different dates.</p>'
+            '<h3>By weekday</h3><p class="aside">From each full day\'s lowest price.</p>'
+            + ("" if weekday_ready else '<p class="empty">Collecting: needs at least two of each weekday.</p>')
+            + f'<div class="table-wrap"><table class="heatmap"><thead><tr>{days}</tr></thead><tbody><tr>{weekday}</tr></tbody></table></div>'
+            f'<h3>By time of day</h3><p class="aside">From uploads that include a new full scan, at that scan\'s own time ({ah["full_scans"]} so far; '
+            'hours in UTC<span data-utc-offset></span>). It can only reflect the times full scans were taken, so a band nobody scans in stays empty.</p>'
+            + ("" if time_ready else '<p class="empty">Collecting: full scans spread across the day and the week fill this in.</p>')
+            + f'<div class="table-wrap"><table class="heatmap"><thead><tr><td></td>{bands}</tr></thead><tbody>{grid}</tbody></table></div></section>')
 
 
 def dashboard(site: Site, market: dict, ah: dict, heading: str = "h2", events: list | None = None) -> str:
@@ -236,9 +243,9 @@ def home_block(site: Site, market: dict, ah: dict) -> str:
         rows = "".join(f'<li>{item_anchor(site, market, i)} <span class="value">{value(i)}</span></li>' for i in items[:4])
         return f'<h3 class="mini-title">{title}</h3><ul class="mini-list">{rows}</ul>'
     alerts = mini("Below vendor price", ah["vendor"], lambda i: money(i["latest"]) + f' <span class="aside">vendor pays {plain_money(i["vendor_sell"])}</span>')
-    alerts += mini("Seen unusually low", ah["deals"], lambda i: money(i["latest"]) + f' <span class="change down">−{pct(i["deal"]["discount"])}</span>')
+    alerts += mini("Unusually low", ah["deals"], lambda i: money(i["latest"]) + f' <span class="change down">−{pct(i["deal"]["discount"])}</span>')
     invest = mini("Investment watch", ah["invest"], lambda i: f'+{plain_money(i["invest"]["margin"])} a unit')
-    moving = mini("Moving over a day", (ah["rising"] + ah["falling"]), lambda i: change(i["move"]["change"]))
+    moving = mini("Moved since the last full day", (ah["rising"] + ah["falling"]), lambda i: change(i["move"]["change"]))
     return (alerts or '<p class="empty">No price alerts from the newest day of scans.</p>') + invest + moving + scan_note(market, ah)
 
 
@@ -259,7 +266,7 @@ def chart(item: dict, market: dict, events: list[dict]) -> str:
     for t, p, d in item["obs"]:
         if d >= first:
             by_day.setdefault(d, []).append(p)
-    # Each sighting sits inside its own Auctionator day's band, spread in the order it was seen.
+    # Each recorded price sits inside its own Auctionator day's band, spread in the order it was recorded.
     obs = [(d + (n + 1) / (len(prices) + 1), p) for d, prices in sorted(by_day.items()) for n, p in enumerate(prices)]
     values = [v["low"] for v in days.values()] + [p for _, p in obs]
     if not values:
@@ -292,16 +299,16 @@ def chart(item: dict, market: dict, events: list[dict]) -> str:
     for event in events:
         day = (datetime.fromisoformat(event["at"].replace("Z", "+00:00")).timestamp() - DAY_ZERO_EPOCH) / 86400
         if first <= day <= last + 1:
-            x = day_x(day, first, span, width)
+            x = day_x(int(day), first, span, width)  # events mark the start of their day: positions inside a day show order, not time
             parts.append(f'<line class="event" x1="{x}" y1="0" x2="{x}" y2="{height - pad}"/><text class="event-label" x="{x + 4}" y="12">{esc(event["label"])}</text>')
     parts.append(f'<text class="tick" x="0" y="{height - 8}">{day_date(first)}</text>'
                  f'<text class="tick" x="{width}" y="{height - 8}" text-anchor="end">{day_date(last)}</text>'
                  f'<text class="tick" x="4" y="{y(top) + 12}">{esc(plain_money(top))}</text>')
-    summary = (f"Daily price range over the last {CHART_DAYS} days, with {len(obs)} sightings"
+    summary = (f"Daily price range over the last {CHART_DAYS} days, with {len(obs)} recorded prices"
                + (f" and the typical price of {plain_money(item['typical'])}" if item.get("typical") else "") + ".")
     return (f'<figure class="price-chart"><svg viewBox="0 0 {int(width)} {int(height)}" role="img" aria-label="{esc(summary)}">{"".join(parts)}</svg>'
             '<figcaption><span class="key band-key"></span> each day\'s lowest to highest cheapest listing · '
-            '<span class="key scan-key"></span> the cheapest listing at each sighting · <span class="key typical-key"></span> typical price · '
+            '<span class="key scan-key"></span> recorded prices, in order within each day · <span class="key typical-key"></span> typical price · '
             '<span class="key qty-key"></span> most units listed that day</figcaption></figure>')
 
 
@@ -312,15 +319,12 @@ def stat(label: str, value: str, note: str = "") -> str:
 def item_pattern_block(item: dict) -> str:
     p = item["pattern"]
     if not p:
-        return (f'<p class="empty">Collecting: this item has {len(item["obs"])} sighting{"s" if len(item["obs"]) != 1 else ""}; '
-                f'its own time-of-day and weekday pattern appears at {m.ITEM_PATTERN_MIN_OBS} across at least {m.ITEM_PATTERN_MIN_DAYS} days.</p>')
+        return (f'<p class="empty">Collecting: this item\'s own weekday pattern appears once it has {m.ITEM_PATTERN_MIN_DAYS} days of prices. '
+                'Time-of-day patterns are measured across the whole market, on the Auction House overview.</p>')
     days = "".join(f'<td class="{heat(p["weekday"].get(d))}">{signed_pct(p["weekday"].get(d))}</td>' for d in range(7))
-    bands = "".join(f'<td class="{heat(p["band"].get(b))}">{signed_pct(p["band"].get(b))}</td>' for b in range(6))
     return ('<div class="table-wrap"><table class="heatmap"><thead><tr>' + "".join(f'<th scope="col">{d}</th>' for d in m.WEEKDAYS)
             + f'</tr></thead><tbody><tr>{days}</tr></tbody></table></div>'
-            '<div class="table-wrap"><table class="heatmap"><thead><tr>' + "".join(f'<th scope="col">{b}</th>' for b in m.BAND_LABELS)
-            + f'</tr></thead><tbody><tr>{bands}</tr></tbody></table></div>'
-            f'<p class="aside">From {p["n"]:,} sightings over {p["days"]} days; hours in UTC. A weekday or band shows once it has prices on two dates.</p>')
+            f'<p class="aside">Each day\'s lowest price against its middle, over {p["days"]} days; a weekday shows once it has two dates.</p>')
 
 
 def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
@@ -329,10 +333,10 @@ def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
     alerts = []
     if item["deal"] and "saving" in item["deal"]:
         if item["deal"]["confidence"] == "low":
-            alerts.append(f'<span class="alert note">Seen {pct(item["deal"]["discount"])} under its usual price, but with too little history '
+            alerts.append(f'<span class="alert note">Recorded {pct(item["deal"]["discount"])} under its usual price, but with too little history '
                           'to trust (or so far under that it\'s probably one mispriced unit)</span>')
         else:
-            alerts.append(f'<span class="alert low">Seen unusually low: {pct(item["deal"]["discount"])} under its usual price, {scan_time(item["latest_time"])}</span>')
+            alerts.append(f'<span class="alert low">Unusually low: {pct(item["deal"]["discount"])} under its usual price, recorded {scan_time(item["latest_time"])}</span>')
     if item["deal"] and item["deal"].get("vendor_profit"):
         alerts.append(f'<span class="alert vendor">Below vendor price: {plain_money(item["deal"]["vendor_profit"])} profit a unit</span>')
     if item["invest"] and item["confidence"] != "low":
@@ -341,23 +345,21 @@ def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
         alerts.append(f'<span class="alert move">Short supply: {pct(item["short"]["stock"])} of usual stock, {pct(item["short"]["price"])} over usual price</span>')
     if item["move"]:
         alerts.append(f'<span class="alert move">{"Up" if item["move"]["change"] > 0 else "Down"} {abs(item["move"]["change"])}% in the last day</span>')
-    basis = {"scans": f"middle of its scan prices over the last {m.WINDOW_DAYS} days",
-             "days": f"middle of its daily lowest prices over the last {m.RECENT_DAYS} days"}.get(item["ref_basis"], "not enough history yet")
     stats = "".join([
-        stat("Latest sighting", money(item["latest"]), f'{scan_time(item["latest_time"])}{"" if item["fresh"] else ", before the newest day of scans"}' if item["latest_time"] else ""),
-        stat("Usual price", money(item["ref"]) if item["ref"] else "Too new", basis),
+        stat("Latest recorded", money(item["latest"]), f'by the upload of {scan_time(item["latest_time"])}{"" if item["fresh"] else ", before the newest day of scans"}' if item["latest_time"] else ""),
+        stat("Usual price", money(item["ref"]) if item["ref"] else "Too new", f"middle of its daily lowest prices over the last {m.RECENT_DAYS} days" if item["ref"] else "needs three days of prices"),
         stat("Typical price", money(item["typical"]), "middle of the last seven days' lowest prices"),
         stat("Good price to buy", money(item["good_buy"]) if item["good_buy"] else "needs more history",
              "the usual price less half its usual swing" if item["good_buy"] else f"appears with {m.GOOD_BUY_MIN} or more prices"),
         stat("Steadiness", steadiness(item["volatility"]), "how far the daily price swings over two weeks"),
         stat("Days listed", f'{item["presence_days"]} of {item["presence_of"]}' if item["presence_of"] else "unknown", f"full days of scans in the last {m.RECENT_DAYS}"),
         stat("Usually listed", num(item["listed_median"]) + " at once" if item["listed_median"] is not None else "unknown", "the most seen on sale in a day, middle value"),
-        stat("Cheapest listing changed", pct(item["churn"]) or "too few sightings", "between one sighting and the next: sales, new listings, cancellations and expiries all change it"),
+        stat("Daily low changed", pct(item["churn"]) or "too few days", "how often its lowest price differed from one day to the next"),
         stat("Vendor pays", money(item["vendor_sell"]) if item["vendor_sell"] else "unknown", "from ForeverDB" if item["vendor_sell"] else ""),
         stat("Other players' scans", money(fdb_price["median"]) if fdb_price else "none", f"ForeverDB players' median, {esc(fdb_price['latest'])}" if fdb_price else ""),
     ])
     invest = ""
-    if item["invest"]:
+    if item["invest"] and item["confidence"] != "low":
         i = item["invest"]
         invest = (f'<section class="ah-block" id="estimate"><h2>Investment estimate</h2><p>Buy at {money(item["latest"])}; if it sells again at its usual '
                   f'{money(item["ref"])}, the Auction House keeps {round(m.AH_CUT * 100)}% and you keep about {money(item["ref"] - round(item["ref"] * m.AH_CUT))}: '
@@ -377,7 +379,7 @@ def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
             + f'<dl class="stats">{stats}</dl>'
             + f'<section class="ah-block" id="chart"><h2>Price over the last {CHART_DAYS} days</h2>{chart(item, market, ctx["events"])}</section>'
             + invest
-            + f'<section class="ah-block" id="pattern"><h2>Time of day and weekday</h2>{item_pattern_block(item)}</section>'
+            + f'<section class="ah-block" id="pattern"><h2>By weekday</h2>{item_pattern_block(item)}</section>'
             + (f'<section class="ah-block" id="recipes"><h2>Recipes</h2>'
                + (f'<h3>Made by</h3><ul>{made}</ul>' if made else "") + (f'<h3>Used in</h3><ul>{used}</ul>' if used else "")
                + '<p class="aside">Recipes: <a href="https://foreverdb.net">Data from ForeverDB.net</a>.</p></section>' if made or used else "")
@@ -385,7 +387,7 @@ def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
             + (f'<div class="table-wrap"><table class="ah-list"><thead><tr><th scope="col">Day</th><th scope="col" class="num">Lowest</th>'
                f'<th scope="col" class="num">Highest</th><th scope="col" class="num">Most listed</th></tr></thead><tbody>{daily}</tbody></table></div>' if daily else '<p class="empty">No recent days.</p>')
             + '</section>'
-            + (f'<section class="ah-block" id="scans"><h2>Sightings</h2><p class="aside">Each upload where this item was new to the day or changed.</p><div class="table-wrap"><table class="ah-list"><thead><tr><th scope="col">Scan</th>'
+            + (f'<section class="ah-block" id="scans"><h2>Recorded prices</h2><p class="aside">Each upload in which this item was new to the day or changed, with the upload\'s time.</p><div class="table-wrap"><table class="ah-list"><thead><tr><th scope="col">Scan</th>'
                f'<th scope="col" class="num">Cheapest listing</th></tr></thead><tbody>{scans}</tbody></table></div></section>' if scans else "")
             + f'<p class="elsewhere-line"><a href="{FOREVERDB}/item/{esc(item["id"])}" target="_blank" rel="noopener">{esc(item["name"])} on ForeverDB</a> · '
               f'<a href="{site.base}prices/{market["slug"]}/">All {esc(market["name"])} prices</a></p>'

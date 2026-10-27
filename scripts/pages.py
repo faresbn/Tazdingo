@@ -285,7 +285,7 @@ def nav_html(site: Site, ctx: dict) -> str:
     markets = "".join(f'<li><a href="{esc(m["url"])}">{esc(m["name"])}</a> <span class="aside">{esc(m["environment_label"])}</span></li>'
                       for m in ctx["markets"])
     prices = (f'<div class="panel-cols three"><div><h3 class="panel-title">From the latest scans</h3><ul class="panel-list">'
-              f'<li><a href="{b}prices/#deals">Seen unusually low</a><span class="aside">Far under the usual price</span></li>'
+              f'<li><a href="{b}prices/#deals">Unusually low</a><span class="aside">Far under the usual price</span></li>'
               f'<li><a href="{b}prices/#invest">Investment watch</a><span class="aside">Cheap against its own history</span></li>'
               f'<li><a href="{b}prices/#movers">Movers</a><span class="aside">The last day and the week</span></li>'
               f'<li><a href="{b}prices/#patterns">When prices are lowest</a><span class="aside">By weekday and time of day</span></li>'

@@ -80,8 +80,10 @@ def record_from_capture(capture: dict, market: str, environment: str, history_da
         if high is None:
             continue  # not seen on the scan's day: its latest price is stale
         seen[key] = [fields["m"], fields["l"].get(str(day), high), high, fields["a"].get(str(day))]
+    full = capture["source_scan_timestamps"].get("TimeOfLastReplicateScan")
     record = {"format": RECORD_FORMAT, "environment": environment, "market": market,
               "source_sha256": capture["source_sha256"], "scan_timestamp": scan_timestamp(capture),
+              "full_scan_timestamp": full if type(full) is int and full > 0 else None,
               "day": day, "items": dict(sorted(seen.items()))}
     if history_days is not None:
         record["history"] = history(capture, market, day - history_days + 1, day)
@@ -102,11 +104,14 @@ def history(capture: dict, market: str, first: int, last: int) -> dict:
 
 
 def validate_record(data: dict, inbox: bool = False) -> dict:
-    allowed = {"format", "environment", "market", "source_sha256", "scan_timestamp", "day", "items"}
+    allowed = {"format", "environment", "market", "source_sha256", "scan_timestamp", "full_scan_timestamp", "day", "items"}
     if inbox:
         allowed |= {"history"}
     if not isinstance(data, dict) or not set(data) <= allowed or not set(data) >= allowed - {"history"}:
         raise InvalidCapture("Not a scan record")
+    full = data["full_scan_timestamp"]
+    if full is not None and (type(full) is not int or not 1_500_000_000 < full <= data.get("scan_timestamp", 0)):
+        raise InvalidCapture("Invalid full-scan time")
     if data["format"] != RECORD_FORMAT:
         raise InvalidCapture("Unsupported scan record format")
     if not re.fullmatch(r"[a-z-]{2,40}", data["environment"]) or not isinstance(data["market"], str) \
@@ -249,11 +254,47 @@ def to_keep(receipts: list[dict]) -> set[str]:
 
 # --- Adding an upload ------------------------------------------------------------------
 
+JOURNAL = "data/market/.journal.json"
+
+
+def recover(root: Path) -> bool:
+    """Undo an import that was cut off part-way (the process killed between writing the
+    archive and the registry): put back every file the journal saved and remove the files
+    it was adding. Returns True when there was something to undo."""
+    path = root / JOURNAL
+    if not path.exists():
+        return False
+    journal = json.loads(path.read_text())
+    for relative in journal["created"]:
+        (root / relative).unlink(missing_ok=True)
+    for relative, body in journal["saved"].items():
+        target = root / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        write_whole(target, body)
+    path.unlink()
+    return True
+
+
+def tidy(root: Path, registry: dict) -> None:
+    """Remove record files and empty folders that no receipt keeps (left behind when an
+    import stopped after its registry was written but before folded files were removed)."""
+    kept = {(root / r["path"]).resolve() for r in registry.get("scans", []) if r["status"] == "kept"}
+    for path in (root / STORE).glob("*/scans/*.json"):
+        if path.resolve() not in kept:
+            path.unlink()
+    for folder in sorted((root / STORE).glob("**/"), key=lambda p: -len(p.parts)):
+        if folder != root / STORE and folder.is_dir() and not any(folder.iterdir()):
+            folder.rmdir()
+
+
 def add_record(root: Path, record: dict, rows: dict, receipt_extra: dict) -> dict | None:
     """File one scan record (with its upload's daily rows), update the archive, apply
     retention and the receipts. Returns a summary, or None when nothing is new."""
-    load(root)  # the store must match its fingerprints before anything is added to it
+    if recover(root):
+        print("An earlier import was cut off part-way; it has been undone.")
     registry_path = root / "data/captures.json"
+    tidy(root, json.loads(registry_path.read_text()))
+    load(root)  # the store must match its fingerprints before anything is added to it
     registry = json.loads(registry_path.read_text())
     receipts = registry.setdefault("scans", [])
     slug = market_slug(record["environment"], record["market"])
@@ -270,9 +311,12 @@ def add_record(root: Path, record: dict, rows: dict, receipt_extra: dict) -> dic
     while path.exists():
         path = folder / "scans" / f"{stamp}-{number}.json"
         number += 1
+    journal = {"created": [], "saved": {"data/captures.json": registry_path.read_text()}}
     path.parent.mkdir(parents=True, exist_ok=True)
-    stored = {k: record[k] for k in ("format", "environment", "market", "source_sha256", "scan_timestamp", "day", "items")}
+    stored = {k: record[k] for k in ("format", "environment", "market", "source_sha256", "scan_timestamp", "full_scan_timestamp", "day", "items")}
     body = dump(validate_record(stored))
+    journal["created"].append(path.relative_to(root).as_posix())
+    write_whole(root / JOURNAL, json.dumps(journal))
     write_whole(path, body)
     receipts.append({"path": path.relative_to(root).as_posix(), "market_slug": slug, "environment": record["environment"],
                      "market": record["market"], "scan_timestamp": record["scan_timestamp"], "scan_time": iso(record["scan_timestamp"]),
@@ -296,13 +340,23 @@ def add_record(root: Path, record: dict, rows: dict, receipt_extra: dict) -> dic
 
     # The archive (already holding the folded days' figures) and the registry are written
     # first; the folded records' files are removed only once both are in place.
-    written = write_archive(folder, archive, {month_of(d) for d in touched})
+    months = {month_of(d) for d in touched}
+    for month in months:
+        existing = folder / "daily" / f"{month}.json"
+        relative = existing.relative_to(root).as_posix()
+        if existing.exists():
+            journal["saved"][relative] = existing.read_text()
+        else:
+            journal["created"].append(relative)
+    write_whole(root / JOURNAL, json.dumps(journal))
+    written = write_archive(folder, archive, months)
     archives = registry.setdefault("archives", {})
     for absolute, sha in written.items():
         archives[Path(absolute).relative_to(root).as_posix()] = sha
     write_whole(registry_path, json.dumps(registry, indent=2) + "\n")
-    for path in retired:
-        path.unlink(missing_ok=True)
+    (root / JOURNAL).unlink()  # committed: from here on the new state stands
+    for retired_path in retired:
+        retired_path.unlink(missing_ok=True)
     folded = len(retired)
     return {"file": path.relative_to(root).as_posix(), "market": record["market"], "items": len(record["items"]),
             "scan_time": iso(record["scan_timestamp"]), "folded": folded}
@@ -312,6 +366,8 @@ def add_record(root: Path, record: dict, rows: dict, receipt_extra: dict) -> dic
 
 def load(root: Path) -> dict:
     """Every market's kept scan records and daily archive, verified against their receipts."""
+    if (root / JOURNAL).exists():
+        raise InvalidCapture("An import was cut off part-way; run scripts/ingest.py again to undo it before building.")
     registry = json.loads((root / "data/captures.json").read_text())
     markets = {}
     store = (root / STORE).resolve()
@@ -346,6 +402,6 @@ def load(root: Path) -> dict:
                 raise InvalidCapture(f"{path.name} has no archive fingerprint")
         entry["daily"] = load_archive(root / STORE / slug)
     for folder in sorted(p for p in (root / STORE).glob("*") if p.is_dir() and p.name != "inbox"):
-        if folder.name not in markets:
+        if folder.name not in markets and any(f.is_file() for f in folder.rglob("*")):
             raise InvalidCapture(f"{folder.name} has no receipts")
     return markets

@@ -2,10 +2,12 @@
 how reliably things are listed, and how prices move through the day and week.
 
 Everything works from one market's items as build.py assembles them: per item the daily
-low/high/most-listed history (`days`, keyed by Auctionator's day), its confirmed sightings
-(`obs`: scan time, price, Auctionator day; an upload only counts as a sighting when the
-item is new to that day or something about it changed), and the typical price and
-steadiness from build.summarise. The data has no sales: Auctionator records prices and
+low/high/most-listed history (`days`, keyed by Auctionator's day); its recorded prices
+(`obs`: upload time, price, Auctionator day; added when the item is new to that day or
+changed, timed by the upload, though Auctionator may have seen it earlier); its full-scan
+samples (`full_obs`: every item listed that day, at the time of a new full scan, the only
+basis for time-of-day patterns); and the typical price and steadiness from build.summarise.
+Recorded prices are changes, not an unbiased sample, so usual prices come from daily lows. The data has no sales: Auctionator records prices and
 the most units listed each day, never what sold, so "how well it sells" is measured as
 listing activity and labelled that way.
 
@@ -18,10 +20,8 @@ from datetime import datetime, timezone
 
 WINDOW_DAYS = 30            # the scan window (and the 30-scan rule in market_store)
 WINDOW_SCANS = 30
-MIN_OBS = 6                 # sightings needed for a scan-based usual price...
-MIN_OBS_DAYS = 2            # ...on at least this many Auctionator days
-RECENT_DAYS = 14            # otherwise: median daily low over the last 14 days...
-MIN_RECENT_DAYS = 3         # ...needing at least this many full days with records
+RECENT_DAYS = 14            # the usual price: median daily low over the last 14 full days...
+MIN_RECENT_DAYS = 3         # ...needing at least this many days with records
 DEAL_DISCOUNT = 0.30        # unusually low: at least 30% under the usual price
 DEAL_SPREAD = 3.5           # and a robust (median-absolute-deviation) z-score of 3.5 or more, when it varies
 DEAL_CAP = 0.9              # 90%+ under usual is usually one mispriced unit: low confidence
@@ -35,14 +35,11 @@ RISK = {"steady": 1.0, "moving": 0.7}  # volatile and too-new items are skipped 
 SHORT_PRICE = 1.2           # short supply: at least 20% over usual...
 SHORT_STOCK = 0.5           # ...with at most half the units usually listed, on the last full day
 GOOD_BUY_MIN = 8            # a suggested good-buy price needs this many values (The Undermine Journal's rule)
-MOVE_HOURS = 24             # movers: a sighting against the item's sightings in the 24 hours before it...
-MOVE_MIN_SCANS = 3          # ...at least three of them
-MOVE_MIN_BASE = 50
+MOVE_MIN_BASE = 50          # movers: the latest recorded price against the last full day's lowest
 MOVE_MIN_CHANGE = 0.15
 PATTERN_MIN_ITEMS = 10      # a market pattern cell shows once this many items have prices in it...
 PATTERN_MIN_DATES = 2       # ...on at least two separate dates (one busy afternoon isn't a pattern)
-ITEM_PATTERN_MIN_OBS = 24   # an item's own pattern needs this many sightings...
-ITEM_PATTERN_MIN_DAYS = 7   # ...across at least a week of days
+ITEM_PATTERN_MIN_DAYS = 14  # an item's own weekday pattern needs two weeks of days
 INDEX_MIN_ITEMS = 20        # a market-index day needs this many items
 PARTIAL_DAY = 0.5           # a day covering under half of a full scan's items was a partial scan
 BAND_LABELS = ("00–04", "04–08", "08–12", "12–16", "16–20", "20–24")  # UTC hours
@@ -88,50 +85,44 @@ def window(market: dict) -> tuple[int | None, int | None]:
     return newest, min(newest - WINDOW_DAYS * 86400, times[-WINDOW_SCANS] if len(times) >= WINDOW_SCANS else times[0])
 
 
-def partial_days(items: list[dict]) -> set[int]:
+def partial_days(items: list[dict], full_scan_days: set[int] | None = None) -> set[int]:
     """Days when only some items were scanned (a few searches rather than a full scan). A full
-    scan's size is taken from the busiest days (90th percentile), so it holds even when most
-    days are partial."""
+    scan's size comes from days known to contain one (an upload with a new full-scan time);
+    without any, from the busiest days (90th percentile)."""
     coverage = {}
     for item in items:
         for d in item["days"]:
             coverage[d] = coverage.get(d, 0) + 1
-    full = percentile(list(coverage.values()), 0.9) or 0
+    known = [coverage[d] for d in (full_scan_days or ()) if d in coverage]
+    full = median(known) if known else (percentile(list(coverage.values()), 0.9) or 0)
     return {d for d, n in coverage.items() if n < full * PARTIAL_DAY}
 
 
 # --- Per item ------------------------------------------------------------------------------
 
-def reference(item: dict, start: int | None, recent: list[int]) -> tuple[int | None, str | None, list]:
-    """The item's usual price: the median of its sightings in the window when it has enough on
-    enough days, otherwise the median daily low over the last 14 full days."""
-    sightings = [(p, d) for t, p, d in item["obs"] if start is not None and t >= start]
-    if len(sightings) >= MIN_OBS and len({d for _, d in sightings}) >= MIN_OBS_DAYS:
-        prices = [p for p, _ in sightings]
-        return int(median(prices)), "scans", prices
+def reference(item: dict, recent: list[int]) -> tuple[int | None, list]:
+    """The item's usual price: the median of its daily lows over the last 14 full days."""
     lows = [item["days"][d]["low"] for d in recent if d in item["days"]]
-    if len(lows) >= MIN_RECENT_DAYS:
-        return int(median(lows)), "days", lows
-    return None, None, []
+    return (int(median(lows)), lows) if len(lows) >= MIN_RECENT_DAYS else (None, lows)
 
 
-def confidence(item: dict, basis: str | None, values: list) -> str:
-    """High, medium or low, from how much history the usual price rests on and how reliably
-    the item is listed (after goldcap.gg's tiers). Low is hidden from lists."""
+def confidence(item: dict, values: list) -> str:
+    """High, medium or low, from how many days the usual price rests on and how reliably the
+    item is listed (after goldcap.gg's tiers). Low is hidden from lists."""
     listed = item["listed_median"] or 0
-    if basis == "scans" and len(values) >= 10 and (item["presence"] or 0) >= 0.6 and listed >= 3:
+    if len(values) >= 10 and (item["presence"] or 0) >= 0.6 and listed >= 3:
         return "high"
     if len(values) >= 5 and (item["presence"] or 0) >= 0.4:
         return "medium"
     return "low"
 
 
-def price_churn(item: dict, start: int | None) -> float | None:
-    """How often the cheapest listing changed between one sighting and the next."""
-    prices = [p for t, p, _ in item["obs"] if start is not None and t >= start]
-    if len(prices) < 3:
+def daily_change(item: dict, recent: list[int]) -> float | None:
+    """How often the item's lowest price differed from one full day to the next it was listed."""
+    lows = [item["days"][d]["low"] for d in recent if d in item["days"]]
+    if len(lows) < 3:
         return None
-    return sum(1 for a, b in zip(prices, prices[1:]) if a != b) / (len(prices) - 1)
+    return sum(1 for a, b in zip(lows, lows[1:]) if a != b) / (len(lows) - 1)
 
 
 def analyse_item(item: dict, frame: dict, vendor: dict) -> None:
@@ -141,10 +132,10 @@ def analyse_item(item: dict, frame: dict, vendor: dict) -> None:
     listed = [item["days"][d]["listed"] for d in present if item["days"][d]["listed"] is not None]
     item.update(latest=latest, latest_time=latest_time, fresh=latest_day is not None and latest_day == newest_day,
                 presence=len(present) / len(recent) if recent else None, presence_days=len(present), presence_of=len(recent),
-                listed_median=median(listed), churn=price_churn(item, start), vendor_sell=vendor.get(item["id"]),
+                listed_median=median(listed), churn=daily_change(item, recent), vendor_sell=vendor.get(item["id"]),
                 deal=None, invest=None, move=None, short=None, good_buy=None)
-    ref, basis, values = reference(item, start, recent)
-    item.update(ref=ref, ref_basis=basis, confidence=confidence(item, basis, values))
+    ref, values = reference(item, recent)
+    item.update(ref=ref, confidence=confidence(item, values))
     if ref and len(values) >= GOOD_BUY_MIN:
         item["good_buy"] = int(ref - 0.5 * 1.4826 * mad(values, ref))
     if not item["fresh"] or latest is None or latest_time is None:
@@ -171,63 +162,65 @@ def analyse_item(item: dict, frame: dict, vendor: dict) -> None:
         if margin >= INVEST_MIN_MARGIN:
             item["invest"] = {"margin": margin, "roi": margin / latest if latest else None,
                               "score": margin * item["presence"] * RISK[item["volatility"]]}
-    earlier = [p for t, p, _ in item["obs"] if latest_time - MOVE_HOURS * 3600 <= t < latest_time]
-    if len(earlier) >= MOVE_MIN_SCANS:
-        base = median(earlier)
-        if base >= MOVE_MIN_BASE and abs(latest / base - 1) >= MOVE_MIN_CHANGE:
-            item["move"] = {"change": round((latest / base - 1) * 100), "base": int(base)}
+    base = item["days"].get(last_full, {}).get("low") if last_full is not None else None
+    if base and base >= MOVE_MIN_BASE and abs(latest / base - 1) >= MOVE_MIN_CHANGE:
+        item["move"] = {"change": round((latest / base - 1) * 100), "base": base}
 
 
 # --- Patterns -----------------------------------------------------------------------------
 
-def item_indices(item: dict, start: int | None) -> list[tuple[int, float]]:
-    """(scan time, sighting price ÷ the item's middle price in the window)."""
-    sightings = [(t, p) for t, p, _ in item["obs"] if start is not None and t >= start and p > 0]
-    centre = median([p for _, p in sightings])
-    if not centre or len(sightings) < 3:
-        return []
-    return [(t, p / centre) for t, p in sightings]
+def summary(groups: list[list[tuple]]) -> dict:
+    """groups: one list of (date, index) per item. The median within each item first, then
+    across items, so busy items don't outweigh the rest; ready once enough items have values
+    on more than one date."""
+    per_item = [median([v for _, v in values]) for values in groups]
+    dates = {d for values in groups for d, _ in values}
+    ready = len(per_item) >= PATTERN_MIN_ITEMS and len(dates) >= PATTERN_MIN_DATES
+    return {"index": round(median(per_item), 4) if ready else None, "items": len(per_item), "dates": len(dates)}
 
 
-def patterns(items: list[dict], start: int | None) -> dict:
-    """Weekday × four-hour band (UTC). Each item's index is summarised within a cell first, then
-    the cell takes the median across items, so busy items don't outweigh the rest. A cell shows
-    once enough items have prices in it on more than one date."""
-    cells, weekday, band = {}, {}, {}
+def patterns(items: list[dict], recent_days: list[int]) -> dict:
+    """Weekday: each full day's lowest price against the item's own median low (Auctionator's
+    days). Time of day: full-scan samples only (every item listed that day, at a new full scan's
+    own time) against the item's median sample, by four-hour band in UTC, market-wide."""
+    weekday, band, cells = {}, {}, {}
+    window = set(recent_days)
     for item in items:
-        mine = {"cell": {}, "day": {}, "band": {}}
-        for t, index in item_indices(item, start):
-            moment = utc(t)
-            for kind, key in (("cell", (moment.weekday(), band_of(moment.hour))), ("day", moment.weekday()), ("band", band_of(moment.hour))):
-                mine[kind].setdefault(key, []).append((moment.date(), index))
-        for kind, store in (("cell", cells), ("day", weekday), ("band", band)):
-            for key, values in mine[kind].items():
-                store.setdefault(key, []).append(values)
+        lows = {d: v["low"] for d, v in item["days"].items() if d in window and v["low"] > 0}
+        centre = median(list(lows.values()))
+        if centre and len(lows) >= MIN_RECENT_DAYS:
+            mine = {}
+            for d, low in lows.items():
+                mine.setdefault((d + 2) % 7, []).append((d, low / centre))  # day 0, 1 January 2020, was a Wednesday (2)
+            for key, values in mine.items():
+                weekday.setdefault(key, []).append(values)
+        samples = [(t, p, d) for t, p, d in item.get("full_obs", []) if d in window and p > 0]
+        centre = median([p for _, p, _ in samples])
+        if centre and len(samples) >= 3:
+            mine_band, mine_cell = {}, {}
+            for t, p, d in samples:
+                moment = utc(t)
+                mine_band.setdefault(band_of(moment.hour), []).append((moment.date(), p / centre))
+                mine_cell.setdefault((moment.weekday(), band_of(moment.hour)), []).append((moment.date(), p / centre))
+            for key, values in mine_band.items():
+                band.setdefault(key, []).append(values)
+            for key, values in mine_cell.items():
+                cells.setdefault(key, []).append(values)
+    return {"weekday": {d: summary(g) for d, g in weekday.items()}, "band": {b: summary(g) for b, g in band.items()},
+            "cells": {f"{d}-{b}": summary(g) for (d, b), g in cells.items()}}
 
-    def summary(groups):
-        per_item = [median([v for _, v in values]) for values in groups]
-        dates = {d for values in groups for d, _ in values}
-        ready = len(per_item) >= PATTERN_MIN_ITEMS and len(dates) >= PATTERN_MIN_DATES
-        return {"index": round(median(per_item), 4) if ready else None, "items": len(per_item), "dates": len(dates)}
-    return {"cells": {f"{d}-{b}": summary(g) for (d, b), g in cells.items()},
-            "weekday": {d: summary(g) for d, g in weekday.items()},
-            "band": {b: summary(g) for b, g in band.items()}}
 
-
-def item_pattern(item: dict, start: int | None) -> dict | None:
-    values = item_indices(item, start)
-    days = {d for t, _, d in item["obs"] if start is not None and t >= start}
-    if len(values) < ITEM_PATTERN_MIN_OBS or len(days) < ITEM_PATTERN_MIN_DAYS:
+def item_pattern(item: dict, recent_days: list[int]) -> dict | None:
+    """An item's own weekday pattern from its daily lows, once it has two weeks of days."""
+    lows = {d: item["days"][d]["low"] for d in recent_days if d in item["days"] and item["days"][d]["low"] > 0}
+    if len(lows) < ITEM_PATTERN_MIN_DAYS:
         return None
-    weekday, band = {}, {}
-    for t, index in values:
-        moment = utc(t)
-        weekday.setdefault(moment.weekday(), []).append((moment.date(), index))
-        band.setdefault(band_of(moment.hour), []).append((moment.date(), index))
-
-    def keep(groups):
-        return {k: round(median([v for _, v in g]), 4) for k, g in groups.items() if len({d for d, _ in g}) >= PATTERN_MIN_DATES}
-    return {"weekday": keep(weekday), "band": keep(band), "n": len(values), "days": len(days)}
+    centre = median(list(lows.values()))
+    weekday = {}
+    for d, low in lows.items():
+        weekday.setdefault((d + 2) % 7, []).append((d, low / centre))
+    return {"weekday": {k: round(median([v for _, v in g]), 4) for k, g in weekday.items() if len(g) >= PATTERN_MIN_DATES},
+            "days": len(lows)}
 
 
 def market_index(items: list[dict], last_day: int | None, partial: set[int], days: int = 60) -> list[tuple[int, float, int]]:
@@ -253,7 +246,7 @@ def analyse(market: dict, vendor: dict, categories: dict) -> dict:
     """Fills each item's measures and returns the market's lists."""
     newest, start = window(market)
     last_day = market.get("last_day")
-    partial = partial_days(market["items"])
+    partial = partial_days(market["items"], market.get("full_scan_days"))
     days = sorted({d for item in market["items"] for d in item["days"]} - partial)
     recent = [d for d in days if last_day is not None and last_day - RECENT_DAYS < d <= last_day]
     frame = {"start": start, "last_day": last_day, "recent": recent,
@@ -262,7 +255,7 @@ def analyse(market: dict, vendor: dict, categories: dict) -> dict:
     for item in market["items"]:
         analyse_item(item, frame, vendor)
         item["category"] = categories.get(item["id"])
-        item["pattern"] = item_pattern(item, start)
+        item["pattern"] = item_pattern(item, frame["window_days"])
     fresh = [i for i in market["items"] if i["fresh"]]
     times = scan_times(market)
     deals = [i for i in fresh if i["deal"] and "saving" in i["deal"]]
@@ -280,5 +273,6 @@ def analyse(market: dict, vendor: dict, categories: dict) -> dict:
         "index": market_index(market["items"], last_day, partial),
         "partial_days": sorted(partial),
         "last_full": frame["last_full"],
-        "patterns": patterns(market["items"], start),
+        "patterns": patterns(market["items"], frame["window_days"]),
+        "full_scans": len({t for i in market["items"] for t, _, _ in i.get("full_obs", [])}),
     }
