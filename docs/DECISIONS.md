@@ -2,6 +2,15 @@
 
 Each line is something Fares decided, or approved, with the reason and the date. Flag it before proposing to change one. Newest first within each group.
 
+## The Auction House (27 October, evening)
+
+- **The Auction House is the priority** (Fares): "push the envelope on AH tracking" while still improving the rest.
+- **Every scan is kept** (Fares): per-scan tracking "up to and including the past 30 scans or 30 days (whichever is further back in time)"; older scans fold into a permanent daily archive. Three or four scans a day are planned after launch.
+- **Alerts and investments** (Fares): unusually low prices on the homepage; track what's worth investing in; study patterns by time of day, weekday and raid season, and how well things sell. The data holds no sales, so "how well it sells" is shown as listing activity and every alert says when it was seen (`scripts/market.py`).
+- **The investment watch skips volatile, too-new and thinly listed items**, following the gold-making rule below.
+- **PvP lives with classes and specs** (Fares): a dedicated PvP section per class and spec; no general PvP section yet, as no full dungeon and raid section is needed yet. Writing it belongs to the next content phase.
+- **Taken autonomously on Fares's instruction, reversible:** the menu says "Auction House" (addresses stay `prices/`); the strapline is "An unofficial field guide and market tracker for World of Warcraft: Forever" (Fares disliked "A Horde-side field guide"; the game name stays spelled out); More has an overview page; search sits on every page; ForeverDB API data is fetched from the Mac (an Actions secret would be a repository settings change). See `docs/sessions/2026-10-27-site-plan/plan.md`.
+
 ## What the site is
 
 - **No homepage repository changelog** (27 Oct): Fares removed “Latest in Tazdingo” from the front page. The class picker takes the full row. Individual pages retain their source/update history.
@@ -9,7 +18,7 @@ Each line is something Fares decided, or approved, with the reason and the date.
 - **A nest in the corner, not a competitor** (26 Oct). ForeverDB, Wowhead and others do databases and guides at scale; Tazdingo records our own prices and findings and curates the best of everyone else, credited. ForeverDB's Auction House is a second opinion, not a rival.
 - **Everything is the journal** (26 Oct). There are no "journal entries": the site is made of living pages (one per spec, class, profession, world topic and More list) that grow over time. Updates come from conversations in the shared ChatGPT project.
 - **Who it's for** (26 Oct). It's public and impersonal: it never names Fares or Mike and never mentions ChatGPT. ChatGPT reads the plain-text files; people read the pages.
-- **The front page is a dashboard** (27 Oct): countdown, launch checklist, market pulse, Blizzard's latest posts, class picker, latest changes. Fares found the earlier front page "a bit meaningless" and asked for a blue tracker.
+- **The front page is a dashboard** (27 Oct): countdown with a Pre-launch checklist tag, the Auction House card, Blizzard's latest posts, class picker (the changelog was removed, below). Fares found the earlier front page "a bit meaningless" and asked for a blue tracker.
 
 ## Name and brand
 
@@ -42,7 +51,7 @@ Each line is something Fares decided, or approved, with the reason and the date.
 
 ## How updates arrive
 
-- **ChatGPT commits directly; the site is built assuming it can** (26 Oct). OpenAI documents the GitHub connector as read-only, so this is untested. The fallbacks: a custom MCP connector in the Business workspace (plan v2, section 3), or pasting the file ChatGPT writes into GitHub's web editor.
+- **ChatGPT commits directly** (26 Oct; confirmed working by Fares on 27 Oct: every content edit since the FvrRepo days came from ChatGPT, under Fares's GitHub identity). A route for someone without a GitHub account was parked on 27 Oct. The fallbacks: a custom MCP connector in the Business workspace (plan v2, section 3), or pasting the file ChatGPT writes into GitHub's web editor.
 - **When to write is ChatGPT's call** (26 Oct), guided by UPDATING.md.
 - **A record and a backup of every change** (27 Oct): kept automatically by the archive Action in `archive/`, so the record doesn't depend on ChatGPT.
 

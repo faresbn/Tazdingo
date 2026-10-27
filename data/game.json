@@ -1,6 +1,8 @@
 {
  "launch": "2026-11-04",
  "opens": "2026-11-04T23:00:00Z",
+ "market_names": {"PvP": "Beta PvP realm", "ClassicBetaPvP": "Beta Classic PvP realm"},
+ "market_events": [{"at": "2026-11-04T23:00:00Z", "label": "Launch"}, {"at": "2026-12-09T00:00:00Z", "label": "Raids open"}],
  "log_after": "32e8704cb420b6838e20b2f12e9fed5916bae166",
  "classes": [
   {
@@ -485,7 +487,7 @@
   },
   {
    "slug": "rares",
-   "name": "Rare spawns",
+   "name": "Rares",
    "summary": "Rare creatures: where they spawn, how often, and what they drop.",
    "links": [
     [
@@ -496,7 +498,7 @@
   },
   {
    "slug": "zones",
-   "name": "New zones",
+   "name": "Zones",
    "summary": "Mount Hyjal, Zephras Isle, Darkspear Islands, Riverglades and Shen'dralas, and how familiar zones changed.",
    "links": [
     [
@@ -580,7 +582,7 @@
   },
   {
    "slug": "blizzard",
-   "name": "Blizzard posts",
+   "name": "Blizzard's posts",
    "summary": "The latest staff posts about WoW Forever from Blizzard's forums."
   },
   {

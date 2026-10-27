@@ -15,14 +15,15 @@ They're listed with their reasons in docs/DECISIONS.md. The ones most often got 
 
 ## Everyday tasks
 
-- **"Add the new scan":** `python3 scripts/ingest.py --push` on `main`. It finds the file, imports, tests, builds, commits, pulls and pushes, and undoes itself if a check fails. Report its message if it stops; never edit data files by hand to get past it.
+- **"Add the new scan":** `python3 scripts/ingest.py --push` on `main`, after every scan (three or four a day after launch). It finds the file, files a scan record, tests, builds, commits, pulls and pushes, and undoes itself if anything fails. Report its message if it stops; never edit data files by hand to get past it. Scans uploaded to ChatGPT arrive as records in `data/market/inbox/`, filed by the `ingest.yml` Action (UPDATING.md, "Add this scan").
 - **"Update the Tazdingo guide for X":** edit the page's file in `content/` exactly as docs/chatgpt/UPDATING.md describes. The archive Action backs up the old version automatically.
-- **Refresh game data:** `python3 scripts/foreverdb_data.py` and `python3 scripts/item_names.py` (both fetch from ForeverDB); `python3 scripts/blue_posts.py` (Blizzard's forums; the publish workflow also runs it every two hours).
+- **Refresh game data:** `python3 scripts/foreverdb_data.py` and `python3 scripts/item_names.py` (both fetch from ForeverDB, no key); `python3 scripts/foreverdb_api.py fetch` then `slim` (the ForeverDB API: trainers, recipe vendors, gathering, abilities, disenchanting, vendor prices and item categories; needs `FOREVERDB_API_KEY`, caches in `tmp/`, about 20 minutes the first time); `python3 scripts/blue_posts.py` (Blizzard's forums; the publish workflow also runs it every two hours). Re-run the API fetch at launch, once ForeverDB's build changes and its level cap reads 60.
 
 ## Data rules
 
 - Never commit an original SavedVariables file (`*.lua`): it holds settings, posting history and searches. `.gitignore` blocks `data/captures/**/*.lua`. The originals live outside the repo (Fares's Downloads folder); the test that compares them skips when they're absent.
-- Never edit an extract or its receipt in `data/captures.json` by hand: their fingerprints are checked on every build.
+- Never edit an extract, a scan record (`data/market/*/scans/`), a daily archive (`data/market/*/daily/`) or their receipts in `data/captures.json` by hand: their fingerprints are checked on every build and before every import. Scan records are kept for the last 30 scans or 30 days, whichever reaches further back, then folded into the daily archive (`scripts/market_store.py`).
+- The Auction House measures (`scripts/market.py`) have no sales data behind them: say "seen at" with a time, call estimates estimates, and keep volatile items out of gold-making tables (settled).
 - ForeverDB data needs the visible credit "Data from ForeverDB.net"; keep it wherever its data appears.
 - Screenshots publish only when listed in `data/game.json` (`screenshots`), after checking they show no names or chat.
 

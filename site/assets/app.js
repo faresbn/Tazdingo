@@ -192,10 +192,14 @@ async function marketBrowser(section) {
       const name = el("th");
       name.scope = "row";
       const link = el("a", item.name);
-      link.href = `https://foreverdb.net/item/${item.id}`;
       link.dataset.foreverdb = `item:${item.id}`;
-      link.target = "_blank";
-      link.rel = "noopener";
+      if (item.url) {
+        link.href = item.url;  // the item's own page: every scan price, chart and patterns
+      } else {
+        link.href = `https://foreverdb.net/item/${item.id}`;
+        link.target = "_blank";
+        link.rel = "noopener";
+      }
       name.append(link, " ", el("span", item.id, "id"));
       const typical = el("td", null, "num"); typical.append(money(item.typical));
       const steady = el("td", null, "vol"); steady.append(steadiness(item.volatility));
@@ -337,9 +341,21 @@ function countdown(node) {
   setInterval(tick, 60000);
 }
 
+function localTimes() {
+  // Scan times are written in UTC; show them in the visitor's own time as well.
+  const format = new Intl.DateTimeFormat(undefined, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+  document.querySelectorAll("time[data-local-time]").forEach(node => {
+    const moment = new Date(node.getAttribute("datetime"));
+    if (!Number.isNaN(moment.getTime())) node.title = `${format.format(moment)} your time`;
+  });
+  const offset = -new Date().getTimezoneOffset() / 60;
+  const label = offset === 0 ? "; your time is UTC" : `; your time is UTC${offset > 0 ? "+" : "−"}${Math.abs(offset)}`;
+  document.querySelectorAll("[data-utc-offset]").forEach(node => { node.textContent = label; });
+}
+
 function siteSearch(form) {
-  const input = form.querySelector("input"), list = document.getElementById("lookup-results");
-  const status = document.getElementById("lookup-status");
+  const input = form.querySelector("input"), list = form.querySelector(".lookup-results");
+  const status = form.querySelector("[data-search-status]");
   let entries = null, pending = null, matches = [], request = 0;
   async function load() {
     if (entries) return entries;
@@ -472,8 +488,8 @@ menus();
 readingTools();
 document.querySelectorAll("[data-theme-toggle]").forEach(themeToggle);
 document.querySelectorAll("[data-countdown]").forEach(countdown);
-const lookupForm = document.querySelector("form.lookup");
-if (lookupForm) siteSearch(lookupForm);
+localTimes();
+document.querySelectorAll("form.lookup").forEach(siteSearch);
 const browserSection = document.getElementById("prices");
 if (browserSection) marketBrowser(browserSection);
 

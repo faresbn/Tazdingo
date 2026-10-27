@@ -1,0 +1,170 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/professions",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": [
+   {
+    "slug": "alchemy",
+    "name": "Alchemy",
+    "kind": "primary",
+    "icon": "https://foreverdb.net/icons/136240.webp",
+    "recipeCount": 195,
+    "newInForever": 71,
+    "changedFromClassic": 11,
+    "trainerCount": 27,
+    "trainersSeenInForever": 5,
+    "description": "Higher alchemy skill allows you to learn higher level alchemy recipes. Alchemy recipes can be found on trainers around the world as well as from quests and monsters.",
+    "url": "https://foreverdb.net/profession/alchemy"
+   },
+   {
+    "slug": "blacksmithing",
+    "name": "Blacksmithing",
+    "kind": "primary",
+    "icon": "https://foreverdb.net/icons/136241.webp",
+    "recipeCount": 506,
+    "newInForever": 197,
+    "changedFromClassic": 186,
+    "trainerCount": 27,
+    "trainersSeenInForever": 9,
+    "description": "Higher smithing skill allows you to learn higher level smithing plans. Blacksmithing plans can be found on trainers around the world as well as from quests and monsters.",
+    "url": "https://foreverdb.net/profession/blacksmithing"
+   },
+   {
+    "slug": "enchanting",
+    "name": "Enchanting",
+    "kind": "primary",
+    "icon": "https://foreverdb.net/icons/136244.webp",
+    "recipeCount": 261,
+    "newInForever": 63,
+    "changedFromClassic": 96,
+    "trainerCount": 18,
+    "trainersSeenInForever": 6,
+    "description": "Higher enchanting skill allows you to learn more powerful formulae. Formulae can be found on trainers around the world as well as from quests and monsters.",
+    "url": "https://foreverdb.net/profession/enchanting"
+   },
+   {
+    "slug": "engineering",
+    "name": "Engineering",
+    "kind": "primary",
+    "icon": "https://foreverdb.net/icons/136243.webp",
+    "recipeCount": 275,
+    "newInForever": 77,
+    "changedFromClassic": 30,
+    "trainerCount": 22,
+    "trainersSeenInForever": 8,
+    "description": "Higher engineering skill allows you to learn higher level engineering schematics. Schematics can be found on trainers around the world as well as from quests and monsters.",
+    "url": "https://foreverdb.net/profession/engineering"
+   },
+   {
+    "slug": "leatherworking",
+    "name": "Leatherworking",
+    "kind": "primary",
+    "icon": "https://foreverdb.net/icons/136247.webp",
+    "recipeCount": 592,
+    "newInForever": 277,
+    "changedFromClassic": 198,
+    "trainerCount": 31,
+    "trainersSeenInForever": 12,
+    "description": "Higher leatherworking skill allows you to learn higher level leatherworking patterns. Leatherworking patterns can be found on trainers around the world as well as from quests and monsters.",
+    "url": "https://foreverdb.net/profession/leatherworking"
+   },
+   {
+    "slug": "tailoring",
+    "name": "Tailoring",
+    "kind": "primary",
+    "icon": "https://foreverdb.net/icons/136249.webp",
+    "recipeCount": 471,
+    "newInForever": 180,
+    "changedFromClassic": 209,
+    "trainerCount": 26,
+    "trainersSeenInForever": 8,
+    "description": "Higher tailoring skill allows you to learn higher level tailoring patterns. Tailoring patterns can be found on trainers around the world as well as from quests and monsters.",
+    "url": "https://foreverdb.net/profession/tailoring"
+   },
+   {
+    "slug": "herbalism",
+    "name": "Herbalism",
+    "kind": "gathering",
+    "icon": "https://foreverdb.net/icons/136246.webp",
+    "recipeCount": 3,
+    "newInForever": 3,
+    "changedFromClassic": 0,
+    "trainerCount": 21,
+    "trainersSeenInForever": 6,
+    "description": "Higher herbalism skill allows you to harvest more difficult herbs around the world. If you cannot harvest a specific herb, then increase your skill by harvesting easier to gather herbs in lower level areas.",
+    "url": "https://foreverdb.net/profession/herbalism"
+   },
+   {
+    "slug": "mining",
+    "name": "Mining",
+    "kind": "gathering",
+    "icon": "https://foreverdb.net/icons/136248.webp",
+    "recipeCount": 18,
+    "newInForever": 5,
+    "changedFromClassic": 0,
+    "trainerCount": 13,
+    "trainersSeenInForever": 5,
+    "description": "Higher mining skill allows you to harvest more difficult minerals nodes around the world. If you cannot harvest a specific mineral, then increase your skill by mining easier to mine minerals in lower level areas.",
+    "url": "https://foreverdb.net/profession/mining"
+   },
+   {
+    "slug": "skinning",
+    "name": "Skinning",
+    "kind": "gathering",
+    "icon": "https://foreverdb.net/icons/134366.webp",
+    "recipeCount": 3,
+    "newInForever": 3,
+    "changedFromClassic": 0,
+    "trainerCount": 15,
+    "trainersSeenInForever": 5,
+    "description": "Higher skinning skill allows you to skin hides from higher level monsters around the world. Once your skill is above 100, you can divide your skill by 5 to determine the highest level of monster you can skin.",
+    "url": "https://foreverdb.net/profession/skinning"
+   },
+   {
+    "slug": "cooking",
+    "name": "Cooking",
+    "kind": "secondary",
+    "icon": "https://foreverdb.net/icons/133971.webp",
+    "recipeCount": 132,
+    "newInForever": 44,
+    "changedFromClassic": 1,
+    "trainerCount": 16,
+    "trainersSeenInForever": 10,
+    "description": "Higher cooking skill allows you to learn higher level cooking recipes. Recipes can be found on trainers around the world as well as from quests and as drops from monsters.",
+    "url": "https://foreverdb.net/profession/cooking"
+   },
+   {
+    "slug": "first-aid",
+    "name": "First Aid",
+    "kind": "secondary",
+    "icon": "https://foreverdb.net/icons/135966.webp",
+    "recipeCount": 32,
+    "newInForever": 17,
+    "changedFromClassic": 1,
+    "trainerCount": 15,
+    "trainersSeenInForever": 8,
+    "description": "Higher first aid skill allows you to learn higher level first aid abilities. First aid abilities can be found on trainers around the world as well as from quests and as drops from monsters.",
+    "url": "https://foreverdb.net/profession/first-aid"
+   },
+   {
+    "slug": "fishing",
+    "name": "Fishing",
+    "kind": "secondary",
+    "icon": "https://foreverdb.net/icons/136245.webp",
+    "recipeCount": 3,
+    "newInForever": 3,
+    "changedFromClassic": 0,
+    "trainerCount": 21,
+    "trainersSeenInForever": 4,
+    "description": "Higher fishing skill increases your chance of catching fish in bodies of water around the world. If you are having trouble catching fish in a given area, move to a lower level area or purchase a fishing lure and try again.",
+    "url": "https://foreverdb.net/profession/fishing"
+   }
+  ],
+  "meta": {
+   "build": "1.60.1.70532",
+   "total": 12,
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/items?limit=3",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": [
+   {
+    "id": 25,
+    "name": "Worn Shortsword",
+    "quality": "Common",
+    "qualityId": 1,
+    "itemLevel": 2,
+    "requiredLevel": 1,
+    "classId": 2,
+    "class": "Weapon",
+    "subclassId": 7,
+    "subclass": "Sword",
+    "inventoryTypeId": 21,
+    "inventoryType": "Main Hand",
+    "icon": "https://foreverdb.net/icons/135274.webp",
+    "url": "https://foreverdb.net/item/25"
+   },
+   {
+    "id": 35,
+    "name": "Bent Staff",
+    "quality": "Common",
+    "qualityId": 1,
+    "itemLevel": 2,
+    "requiredLevel": 1,
+    "classId": 2,
+    "class": "Weapon",
+    "subclassId": 10,
+    "subclass": "Staff",
+    "inventoryTypeId": 17,
+    "inventoryType": "Two-Hand",
+    "icon": "https://foreverdb.net/icons/135145.webp",
+    "url": "https://foreverdb.net/item/35"
+   },
+   "... 1 more trimmed"
+  ],
+  "meta": {
+   "build": "1.60.1.70532",
+   "total": 22459,
+   "limit": 3,
+   "offset": 0,
+   "next": "/api/v1/items?limit=3&offset=3",
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

@@ -18,6 +18,9 @@ import subprocess
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+import ah_pages
+import market
+import market_store
 import pages
 import sections
 from auctionator import (InvalidCapture, PARSER_VERSION, day_date, item_id,
@@ -90,10 +93,12 @@ def slugify(text: str) -> str:
 
 # --- Markets ------------------------------------------------------------------
 
-def build_markets(captures: list[dict], names: dict) -> list[dict]:
+def build_markets(captures: list[dict], names: dict, store: dict | None = None) -> list[dict]:
     """One record per market: its scans, and per item the latest price, the day it
-    was last seen, how many were listed that day, and the daily low/high history.
-    Later scans overwrite the same day from earlier scans."""
+    was last seen, how many were listed that day, the daily low/high history, and every
+    timestamped price observation (one per scan that saw the item on its day).
+    `captures` are the original whole-database extracts (the Beta sample); `store` holds
+    scan records and the daily archive (scripts/market_store.py)."""
     markets = {}
     for capture in captures:
         for raw_key in capture["publish_markets"]:
@@ -114,9 +119,23 @@ def build_markets(captures: list[dict], names: dict) -> list[dict]:
                                     "source_sha256": capture["source_sha256"], "items": len(data["items"]),
                                     "payload_sha256": data["payload_sha256"], "unchanged": repeat,
                                     "received_on": capture["received_on"]})
+            scan_day = max((int(d) for fields in data["items"].values() for d in fields["h"]), default=None)
+            stamps = capture.get("source_scan_timestamps", {})
+            full = stamps.get("TimeOfLastReplicateScan")
+            # Only a full scan that was the file's latest scan, credited to this market by
+            # market_store.full_scan_market, makes the file that scan's snapshot of this market.
+            owner = market_store.full_scan_market({"source_scan_timestamps": stamps, "markets": capture["markets"]}) if stamps else None
+            new_full = owner == raw_key and full > market.get("last_full_scan", 0)
+            if new_full:
+                market["last_full_scan"] = full
+                market.setdefault("full_scan_coverage", []).append(sum(1 for f in data["items"].values() if str(scan_day) in f["h"]))
             for key, fields in data["items"].items():
                 item = market["items"].setdefault(key, {"key": key, "id": item_id(key),
-                                                       "name": item_name(key, names), "days": {}})
+                                                       "name": item_name(key, names), "days": {}, "obs": [], "full_obs": []})
+                if scan_day is not None and str(scan_day) in fields["h"]:
+                    item["obs"].append((capture["capture_timestamp"], fields["m"], scan_day))
+                    if new_full:
+                        item["full_obs"].append((full, fields["m"], scan_day))
                 # Another account's newer file can hold an older sighting of this item.
                 seen_here = max((int(d) for d in fields["h"]), default=-1)
                 if seen_here >= item.get("price_day", -1):
@@ -130,11 +149,15 @@ def build_markets(captures: list[dict], names: dict) -> list[dict]:
                         new = {"low": min(old["low"], new["low"]), "high": max(old["high"], new["high"]),
                                "listed": max((v for v in (old["listed"], new["listed"]) if v is not None), default=None)}
                     item["days"][int(day)] = new
+    for slug, entry in (store or {}).items():
+        add_store_market(markets, slug, entry, names)
     result = []
     for market in markets.values():
         items = list(market["items"].values())
         last_day = max((max(i["days"]) for i in items if i["days"]), default=None)
         for item in items:
+            item["obs"].sort()
+            item["full_obs"].sort()
             summarise(item, last_day)
         items.sort(key=lambda i: (i["name"].lower(), i["key"]))
         market["items"] = items
@@ -144,6 +167,66 @@ def build_markets(captures: list[dict], names: dict) -> list[dict]:
         market["name"] = market["key"]
         result.append(market)
     return sorted(result, key=lambda m: (m["environment"] != "forever", m["sample"], -(m["last_day"] or 0), m["key"]))
+
+
+def add_store_market(markets: dict, slug: str, entry: dict, names: dict) -> None:
+    """A market kept as scan records and a daily archive: days from the archive and the
+    records, the latest price from the newest record that saw the item."""
+    if entry["environment"] not in ENVIRONMENTS:
+        raise InvalidCapture(f"Unknown environment {entry['environment']!r}")
+    market = markets.setdefault(slug, {"slug": slug, "key": entry["market"], "environment": entry["environment"],
+                                       "environment_label": ENVIRONMENTS[entry["environment"]],
+                                       "sample": False, "scans": [], "items": {}})
+    market["folded_scans"] = entry["folded"]
+    market.setdefault("full_scan_coverage", []).extend(entry.get("full_scan_items", []))
+
+    def item_of(key):
+        return market["items"].setdefault(key, {"key": key, "id": item_id(key), "name": item_name(key, names), "days": {}, "obs": [], "full_obs": []})
+
+    def merge(item, day, low, high, listed):
+        old = item["days"].get(day)
+        if old:
+            low, high = min(old["low"], low), max(old["high"], high)
+            listed = max((v for v in (old["listed"], listed) if v is not None), default=None)
+        item["days"][day] = {"low": low, "high": high, "listed": listed}
+
+    for day, rows in entry["daily"].items():
+        for key, (low, high, listed, _scans, _median) in rows.items():
+            merge(item_of(key), day, low, high, listed)
+    previous, last_seen, last_full = None, {}, 0
+    for record in entry["records"]:
+        full = record.get("full_scan_timestamp")
+        # Only an upload whose latest scan was a full scan is that scan's snapshot (a later
+        # search would otherwise move its prices back to the full scan's time).
+        new_full = full is not None and full == record["scan_timestamp"] and full > last_full
+        if new_full:
+            last_full = full
+        moment = datetime.fromtimestamp(record["scan_timestamp"], timezone.utc)
+        market["scans"].append({"date": day_date(record["day"]), "time": moment.isoformat().replace("+00:00", "Z"),
+                                "source_sha256": record["source_sha256"], "items": len(record["items"]),
+                                "payload_sha256": None, "unchanged": record["items"] == previous, "received_on": None})
+        previous = record["items"]
+        for key, row in record["items"].items():
+            latest, low, high, listed = row
+            item = item_of(key)
+            merge(item, record["day"], low, high, listed)
+            # A recorded price when the item is new to this day or something about it changed: an
+            # upload carries every item seen earlier in the day, unchanged, whether or not a later
+            # scan saw it again (Auctionator keeps one latest price and day-wide figures). Its time
+            # is the upload's; Auctionator may have seen it earlier.
+            if last_seen.get(key) != (record["day"], row):
+                item["obs"].append((record["scan_timestamp"], latest, record["day"]))
+                last_seen[key] = (record["day"], row)
+            # An upload containing a new full scan is also a sample of every item listed that day,
+            # changed or not, at the full scan's own time: the basis for time-of-day patterns.
+            if new_full:
+                item["full_obs"].append((full, latest, record["day"]))
+            if record["day"] >= item.get("price_day", -1):
+                item["price"], item["price_day"], item["price_scan"] = latest, record["day"], day_date(record["day"])
+    for item in market["items"].values():
+        if "price" not in item and item["days"]:  # only in the archive: its scan records have aged out
+            day = max(item["days"])
+            item["price"], item["price_day"], item["price_scan"] = item["days"][day]["low"], day, day_date(day)
 
 
 def median(values: list[int]) -> int | None:
@@ -491,13 +574,35 @@ def search_index(ctx: dict) -> list[list[str]]:
         entries.append([t["name"], f"{base}world/{t['slug']}/", "World"])
     for m in game["more"]:
         entries.append([m["name"], f"{base}more/{m['slug']}/", "More"])
+    entries.append(["Auction House: deals, investments and movers", f"{base}prices/", "Auction House"])
     for slug, name in (("craft", "What to craft"), ("crates", "Waylaid Crates: cheapest fill"), ("materials", "Materials worth gathering")):
-        entries.append([name, f"{base}prices/{slug}/", "Prices"])
+        entries.append([name, f"{base}prices/{slug}/", "Auction House"])
     market = ctx["primary"]
     if market:
         for item in market["items"]:
-            entries.append([item["name"], f"{market['url']}?q={item['name'].replace(' ', '+')}#prices", "Item"])
+            entries.append([item["name"], item["url"], "Item"])
     return entries
+
+
+def load_api(root: Path) -> dict:
+    """The slim ForeverDB API data (scripts/foreverdb_api.py), when it has been fetched."""
+    path = root / "data/foreverdb-api.json"
+    return json.loads(path.read_text()) if path.exists() else {}
+
+
+def market_module_analyse(market_record: dict, vendor: dict, categories: dict) -> dict:
+    return market.analyse(market_record, vendor, categories)
+
+
+def recipes_by_item(fdb: dict) -> dict:
+    """Which recipes make each item, and which use it as a reagent."""
+    makes, uses = {}, {}
+    for profession, recipes in fdb.get("recipes", {}).items():
+        for recipe in recipes:
+            makes.setdefault(recipe["item"], []).append((profession, recipe))
+            for reagent, _count in recipe["reagents"]:
+                uses.setdefault(reagent, []).append((profession, recipe))
+    return {"makes": makes, "uses": uses}
 
 
 # --- Output -------------------------------------------------------------------
@@ -513,7 +618,7 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/") 
     names = load_names(root)
     fdb_path = root / "data/foreverdb.json"
     fdb = json.loads(fdb_path.read_text()) if fdb_path.exists() else {}
-    markets = build_markets(captures, names["names"])
+    markets = build_markets(captures, names["names"], market_store.load(root))
     content = load_content(root, game, launch, base)
     blue_path = root / "data/blue.json"
     blue = json.loads(blue_path.read_text()) if blue_path.exists() else {"posts": []}
@@ -570,11 +675,18 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/") 
         write(path + "index.html" if path.endswith("/") or not path else path, html_text)
 
     write(".nojekyll", "")
+    api = load_api(root)
+    vendor = {int(k): v["sell"] for k, v in api.get("items", {}).items() if v.get("sell")}
+    categories = {int(k): {"class": v["class"], "subclass": v.get("subclass")} for k, v in api.get("items", {}).items() if v.get("class")}
     catalogue = []
     for market in markets:
         folder = f"prices/{market['slug']}/"
         market["url"] = base + folder
+        market["name"] = game.get("market_names", {}).get(market["key"], market["key"])
         market["highlights"] = highlights(market)
+        market["ah"] = market_module_analyse(market, vendor, categories)
+        for item in market["items"]:
+            item["url"] = f"{base}{folder}item/{ah_pages.item_slug(item['key'])}/"
         market["files"] = {
             "prices_tsv": write(folder + "prices.tsv", tsv(
                 ["item_id", "item_key", "name", "typical_copper", "typical", "latest_copper", "latest", "last_seen",
@@ -589,15 +701,20 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/") 
                 "schema_version": SCHEMA, "revision": revision, "market": market["key"],
                 "environment": market["environment"], "last_date": market["last_date"],
                 "last_day": market["last_day"], "spark_days": SPARK_DAYS,
-                "columns": ["key", "id", "name", "typical", "price", "last_seen", "listed", "change", "current", "spark", "volatility"],
+                "columns": ["key", "id", "name", "typical", "price", "last_seen", "listed", "change", "current", "spark", "volatility",
+                            "url", "ref", "deal", "deal_confidence", "invest", "category", "confidence"],
                 "rows": [[i["key"], i["id"], i["name"], i["typical"], i["price"], i["last_seen"], i["listed"], i["change"],
-                          i["current"], i["spark"], i["volatility"]] for i in market["items"]]}, separators=(",", ":")) + "\n"),
+                          i["current"], i["spark"], i["volatility"], i["url"], i["ref"],
+                          round(i["deal"]["discount"], 3) if i["deal"] and "discount" in i["deal"] else None,
+                          i["deal"]["confidence"] if i["deal"] and "discount" in i["deal"] else None,
+                          i["invest"]["margin"] if i["invest"] and i["confidence"] != "low" else None,
+                          i["category"]["class"] if i.get("category") else None, i["confidence"]] for i in market["items"]]}, separators=(",", ":")) + "\n"),
             "history_json": write(folder + "history.json", json.dumps({
                 "schema_version": SCHEMA, "revision": revision,
                 "history": {i["key"]: [[day_date(d), v["low"], v["high"], v["listed"]] for d, v in sorted(i["days"].items())]
                             for i in market["items"]}}, separators=(",", ":")) + "\n"),
         }
-        catalogue.append({"name": market["key"], "environment": market["environment"], "sample": market["sample"],
+        catalogue.append({"name": market["name"], "key": market["key"], "environment": market["environment"], "sample": market["sample"],
                           "page": market["url"], "last_date": market["last_date"], "items": len(market["items"]),
                           "current_items": len(market["current"]),
                           "scans": [{k: s[k] for k in ("date", "items", "source_sha256", "unchanged")} for s in market["scans"]],
@@ -614,11 +731,18 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/") 
            "data_prelaunch": not fdb_source.get("fetched_on") or date.fromisoformat(fdb_source["fetched_on"]) < launch,
            "craft": craft_table(fdb, book, names["names"]), "crates": crate_table(fdb, book, names["names"]),
            "materials": materials_table(fdb, book, names["names"])}
+    ctx["events"] = game.get("market_events", [])
+    ctx["api"] = api
+    ctx["recipes_by_item"] = recipes_by_item(fdb)
+    site.search_action = f'{primary["url"]}#prices' if primary else f"{base}prices/"
     site.nav = pages.nav_html(site, ctx)
     for market in markets:
         page(f"prices/{market['slug']}/", pages.market_page(site, market, ctx))
+        for item in market["items"]:
+            page(item["url"][len(base):], ah_pages.item_page(site, market, item, ctx))
     page("", pages.home(site, ctx))
     page("prices/", pages.prices_index(site, ctx))
+    page("more/", sections.more_index(site, ctx))
     page("prices/craft/", pages.craft_page(site, ctx))
     page("prices/crates/", pages.crates_page(site, ctx))
     page("prices/materials/", pages.materials_page(site, ctx))

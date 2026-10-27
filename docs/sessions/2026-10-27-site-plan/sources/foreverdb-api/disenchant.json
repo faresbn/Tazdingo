@@ -1,0 +1,104 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/disenchant",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": [
+   {
+    "id": "q2-armor-1",
+    "quality": "Uncommon",
+    "qualityId": 2,
+    "kind": "armor",
+    "itemLevelMin": 1,
+    "itemLevelMax": 15,
+    "skill": null,
+    "seenInForever": null,
+    "classic": {
+     "source": "Classic data (CMaNGOS), not confirmed in Forever",
+     "results": [
+      {
+       "itemId": 10940,
+       "name": "Strange Dust",
+       "chancePercent": 80,
+       "min": 1,
+       "max": 2
+      },
+      {
+       "itemId": 10938,
+       "name": "Lesser Magic Essence",
+       "chancePercent": 20.0,
+       "min": 1,
+       "max": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "q2-armor-16",
+    "quality": "Uncommon",
+    "qualityId": 2,
+    "kind": "armor",
+    "itemLevelMin": 16,
+    "itemLevelMax": 20,
+    "skill": null,
+    "seenInForever": null,
+    "classic": {
+     "source": "Classic data (CMaNGOS), not confirmed in Forever",
+     "results": [
+      {
+       "itemId": 10940,
+       "name": "Strange Dust",
+       "chancePercent": 75,
+       "min": 2,
+       "max": 3
+      },
+      {
+       "itemId": 10939,
+       "name": "Greater Magic Essence",
+       "chancePercent": 20,
+       "min": 1,
+       "max": 2
+      },
+      "... 1 more trimmed"
+     ]
+    }
+   },
+   {
+    "id": "q2-armor-21",
+    "quality": "Uncommon",
+    "qualityId": 2,
+    "kind": "armor",
+    "itemLevelMin": 21,
+    "itemLevelMax": 25,
+    "skill": null,
+    "seenInForever": null,
+    "classic": {
+     "source": "Classic data (CMaNGOS), not confirmed in Forever",
+     "results": [
+      {
+       "itemId": 10940,
+       "name": "Strange Dust",
+       "chancePercent": 75,
+       "min": 4,
+       "max": 6
+      },
+      {
+       "itemId": 10998,
+       "name": "Lesser Astral Essence",
+       "chancePercent": 15,
+       "min": 1,
+       "max": 2
+      },
+      "... 1 more trimmed"
+     ]
+    }
+   },
+   "... 49 more trimmed"
+  ],
+  "meta": {
+   "build": "1.60.1.70532",
+   "total": 52,
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

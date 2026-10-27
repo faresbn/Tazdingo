@@ -1,0 +1,115 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/battlegrounds",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": [
+   {
+    "id": 2,
+    "slug": "warsong-gulch",
+    "name": "Warsong Gulch",
+    "arena": false,
+    "minLevel": 10,
+    "maxLevel": 60,
+    "teamSize": 10,
+    "kind": "Capture the flag",
+    "winCondition": "Capture the enemy flag 3 times",
+    "captureSeconds": null,
+    "rulesSource": "classic",
+    "rulesNote": "Rules are Classic's: Speculation until Forever's are known.",
+    "blizzardPost": null,
+    "description": "A valley bordering Ashenvale Forest and the Barrens, Warsong Gulch hosts a constant battle between the Horde and the Alliance. Orcs use their Warsong Mill to cut lumber reaped from Ashenvale, provoking the night elves of Silverwing Hold. Eager to aid their allies, members of every race in Azeroth rush to the Gulch to lend sword, or spell, to the conflict.",
+    "howToPlay": [
+     "Take the enemy flag from their base and bring it to your own flag room while your flag is home.",
+     "Your flag must be at your base to score: kill their carrier to return it.",
+     "... 1 more trimmed"
+    ],
+    "objectives": [],
+    "mapId": 489,
+    "uiMapId": 1460,
+    "newInForever": false,
+    "callToArms": {
+     "slug": "call-to-arms-warsong-gulch",
+     "name": "Call to Arms: Warsong Gulch",
+     "url": "https://foreverdb.net/events/call-to-arms-warsong-gulch"
+    },
+    "factions": [
+     {
+      "id": 889,
+      "name": "Warsong Outriders",
+      "rewards": 0
+     },
+     {
+      "id": 890,
+      "name": "Silverwing Sentinels",
+      "rewards": 0
+     }
+    ],
+    "url": "https://foreverdb.net/pvp/battleground/warsong-gulch"
+   },
+   {
+    "id": 3,
+    "slug": "arathi-basin",
+    "name": "Arathi Basin",
+    "arena": false,
+    "minLevel": 20,
+    "maxLevel": 60,
+    "teamSize": 15,
+    "kind": "Capture points",
+    "winCondition": "First team to 2000 resources",
+    "captureSeconds": 60,
+    "rulesSource": "classic",
+    "rulesNote": "Rules are Classic's: Speculation until Forever's are known.",
+    "blizzardPost": null,
+    "description": "The Arathi Basin is one of the main staging points of war between the Humans and the Forsaken in Azeroth. The League of Arathor seek to reclaim lost lands for their benefactors in Stormwind, while the Defilers – elite troopers under the watchful eye of Varimathras – seek to sever the vital connection between the Humans and their Dwarven allies to the south.",
+    "howToPlay": [
+     "Five bases (Stables, Blacksmith, Lumber Mill, Gold Mine, Farm) give resources while your team holds them: the more you hold, the faster you gain.",
+     "Click a base's flag to assault it; it becomes yours about a minute later unless the other team clicks it back.",
+     "... 1 more trimmed"
+    ],
+    "objectives": [
+     {
+      "name": "Stables",
+      "kind": "base",
+      "x": 38.3,
+      "y": 28.0
+     },
+     {
+      "name": "Blacksmith",
+      "kind": "base",
+      "x": 48.2,
+      "y": 44.4
+     },
+     "... 3 more trimmed"
+    ],
+    "mapId": 529,
+    "uiMapId": 1461,
+    "newInForever": false,
+    "callToArms": {
+     "slug": "call-to-arms-arathi-basin",
+     "name": "Call to Arms: Arathi Basin",
+     "url": "https://foreverdb.net/events/call-to-arms-arathi-basin"
+    },
+    "factions": [
+     {
+      "id": 510,
+      "name": "The Defilers",
+      "rewards": 32
+     },
+     {
+      "id": 509,
+      "name": "The League of Arathor",
+      "rewards": 33
+     }
+    ],
+    "url": "https://foreverdb.net/pvp/battleground/arathi-basin"
+   },
+   "... 5 more trimmed"
+  ],
+  "meta": {
+   "build": "1.60.1.70532",
+   "total": 7,
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

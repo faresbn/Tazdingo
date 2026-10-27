@@ -1,0 +1,299 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": {
+   "name": "ForeverDB API",
+   "version": "1",
+   "docs": "https://foreverdb.net/developers",
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data.",
+   "attributionHtml": "<a href=\"https://foreverdb.net\">Data from ForeverDB.net</a>",
+   "auth": "Send your key in the X-API-Key header (or Authorization: Bearer <key>).",
+   "limits": {
+    "perMinute": 60,
+    "perDay": 10000
+   },
+   "languages": {
+    "param": "lang",
+    "values": [
+     "en",
+     "es",
+     "... 3 more trimmed"
+    ],
+    "about": "Add lang=es (Spain), lang=es-MX (Latin America), lang=de (German) or lang=fr (French) to any request for the game's own names in that language: items, spells and recipes, item sets and their bonuses, classes, factions, zones, and spell and item-effect text where the client has it (the English stays as nameEn, zoneEn, descriptionEn, textEn). q= then also finds names in that language. Creature and NPC names, quest titles and ForeverDB's own words stay English."
+   },
+   "endpoints": [
+    {
+     "path": "/api/v1/meta",
+     "title": "About the data",
+     "about": "The client build the data comes from, the level cap and how many of each thing there are.",
+     "params": []
+    },
+    {
+     "path": "/api/v1/items",
+     "title": "Items",
+     "about": "Items from the WoW Forever client, sorted by ID (lowest first).",
+     "params": [
+      {
+       "name": "q",
+       "about": "Name contains"
+      },
+      {
+       "name": "quality",
+       "about": "0 Poor to 5 Legendary"
+      },
+      "... 6 more trimmed"
+     ]
+    },
+    {
+     "path": "/api/v1/items/{id}",
+     "title": "One item",
+     "about": "Stats, damage, speed, binding, sell price, effects and, for weapons and armor that disenchant, what disenchanting gives (disenchant). liveClient: what the live client changed since the last beta build (each field's beta and live value); dataFromBuild: details kept from an earlier build for an item the client still hides.",
+     "params": []
+    },
+    {
+     "path": "/api/v1/spells",
+     "title": "Spells",
+     "about": "Spells and abilities from the client, sorted by ID.",
+     "params": [
+      {
+       "name": "q",
+       "about": "Name contains"
+      },
+      {
+       "name": "limit",
+       "about": "How many (1 to 100, default 25)"
+      },
+      "... 1 more trimmed"
+     ]
+    },
+    {
+     "path": "/api/v1/spells/{id}",
+     "title": "One spell",
+     "about": "Name, rank, description and icon. liveClient: what the live client changed since the last beta build (added, removed or changed, with each field's beta and live value), for the spell, its class ability or its talent.",
+     "params": []
+    },
+    {
+     "path": "/api/v1/quests",
+     "title": "Quests",
+     "about": "Quests with ForeverDB's guide, and whether they're known in Forever, with who starts and ends each one and where (starts, ends: as on the quest's page). Sorted by ID.",
+     "params": [
+      {
+       "name": "q",
+       "about": "Name contains"
+      },
+      {
+       "name": "zone",
+       "about": "Zone name contains"
+      },
+      "... 5 more trimmed"
+     ]
+    },
+    {
+     "path": "/api/v1/quests/{id}",
+     "title": "One quest",
+     "about": "The quest's level, side, zone, where the data comes from and its guide link; chain: the earlier (previous) and following (next) quests as on the quest page, each with questId, name, relation (Complete first, Chain link, Must be active, Next quest, Quest line, Offered after) and source (a list can hold alternatives: not every quest in it is needed), and questLine (name, part, of) when the Forever client has one; and starts and ends: the NPC, object or item that gives it and the one you hand it in to (type npc, object or item; id; name), where it stands (location: uiMapId, zone, x and y in percent of the zone map, or null; instance when it's inside a dungeon), and the source: seen in WoW Forever (players' ForeverDB addon, with how many players), or Classic data (CMaNGOS), not confirmed in Forever. Where no NPC is known, the Forever client's own quest map marker (type, id and name null) or, for the hand-in, where players' game map showed it. others: more NPCs that give or take the same quest.",
+     "params": []
+    },
+    {
+     "path": "/api/v1/vendors",
+     "title": "Vendors",
+     "about": "Vendors with where they stand and reputationFaction (the faction whose reputation discounts their prices: 5% at Friendly up to 20% at Exalted); seen in Forever or Classic data, labelled.",
+     "params": [
+      {
+       "name": "q",
+       "about": "Name or title contains"
+      },
+      {
+       "name": "zone",
+       "about": "Zone name contains"
+      },
+      "... 3 more trimmed"
+     ]
+    },
+    {
+     "path": "/api/v1/vendors/{id}",
+     "title": "One vendor",
+     "about": "Where the vendor stands and everything they sell, with prices in copper, and costs besides gold where players' addons saw them (costs: Merchant's Favor and other currencies, or items).",
+     "params": []
+    },
+    {
+     "path": "/api/v1/poisons",
+     "title": "Rogue poisons",
+     "about": "How Rogues learn Poisons (the level 20 quests), and every poison in the Forever client: what it makes, reagents, learnAtLevel, skill colours, learnedWithSkill (Instant Poison), the rogue trainers players saw teach it and the full price they saw (trainerCost, copper), seasonOfDiscoveryLeftover and aboveLevelCap. Also every rogue trainer and poison supplier (seen in Forever, or Classic data, labelled) with what the suppliers sell, and unusedReagents: what they sell that nothing in the Forever client uses (Lethargy Root).",
+     "params": []
+    },
+    {
+     "path": "/api/v1/disenchant",
+     "title": "Disenchanting",
+     "about": "What uncommon, rare and epic weapons and armor disenchant into, by item level: WoW Forever's results where players' addons saw them (with how many disenchants and players), and Classic's table, labelled.",
+     "params": []
+    },
+    {
+     "path": "/api/v1/dungeons",
+     "title": "Dungeons and raids",
+     "about": "Every instance with its level range, lowest level first.",
+     "params": [
+      {
+       "name": "limit",
+       "about": "How many (1 to 100, default 25)"
+      },
+      {
+       "name": "offset",
+       "about": "Skip this many (for the next page)"
+      }
+     ]
+    },
+    {
+     "path": "/api/v1/dungeons/{id}",
+     "title": "One dungeon",
+     "about": "Bosses and notable loot.",
+     "params": []
+    },
+    {
+     "path": "/api/v1/zones",
+     "title": "Zones",
+     "about": "The world map's zones and continents. The id is the map ID (UiMap) the other answers use.",
+     "params": [
+      {
+       "name": "limit",
+       "about": "How many (1 to 100, default 25)"
+      },
+      {
+       "name": "offset",
+       "about": "Skip this many (for the next page)"
+      }
+     ]
+    },
+    {
+     "path": "/api/v1/classes",
+     "title": "Classes",
+     "about": "The nine classes.",
+     "params": []
+    },
+    {
+     "path": "/api/v1/classes/{name}",
+     "title": "One class",
+     "about": "Every ability with its ranks and the level each is learned.",
+     "params": []
+    },
+    {
+     "path": "/api/v1/itemsets",
+     "title": "Item sets",
+     "about": "Item sets with their pieces.",
+     "params": [
+      {
+       "name": "q",
+       "about": "Name contains"
+      },
+      {
+       "name": "limit",
+       "about": "How many (1 to 100, default 25)"
+      },
+      "... 1 more trimmed"
+     ]
+    },
+    {
+     "path": "/api/v1/itemsets/{id}",
+     "title": "One item set",
+     "about": "Pieces and set bonuses.",
+     "params": []
+    },
+    {
+     "path": "/api/v1/professions",
+     "title": "Professions",
+     "about": "All twelve professions: primary, gathering and secondary. Each has its recipe count, how many recipes are new in Forever or changed from Classic, and how many trainers teach it.",
+     "params": []
+    },
+    {
+     "path": "/api/v1/professions/{slug}",
+     "title": "One profession",
+     "about": "The ranks with their skill caps, the trainers, and the recipes (a page at a time, by skill). Each recipe has its skill colours (orange, yellow, green, grey), reagents, what it makes, how you learn it, and what Forever changed. learnedFrom.sources says where: every trainer and vendor for each faction (with where they stand; the vendor's price in copper for one purchase, stack, pricePerItem, costs besides gold such as Merchant's Favor, limited stock, and reputationFaction: the faction whose reputation discounts the price), the quests and drops that give the recipe, and whether players saw each one in Forever. category: the recipe's trade-skill category in the Forever client (Elixirs, Smelted Bars...) with its parent. Recipes come from the Forever client; trainers and vendors are Classic data unless seenInForever. Trainers players saw teach a recipe in Forever are listed with their place even when Classic has none (Forever's new recipes and NPCs), and trainerCostSource says whether the price is the full price players saw or Classic's. recipeItemsHidden: items the Forever client lists as teaching the recipe whose name and details stay on Blizzard's servers until the game sends them (recipeItemsNotInClient is the old name, kept). Slugs: alchemy, blacksmithing, enchanting, engineering, leatherworking, tailoring, herbalism, mining, skinning, cooking, first-aid, fishing.",
+     "params": [
+      {
+       "name": "q",
+       "about": "Recipe name contains"
+      },
+      {
+       "name": "new",
+       "about": "true: only recipes new in Forever"
+      },
+      "... 3 more trimmed"
+     ]
+    },
+    {
+     "path": "/api/v1/gathering/{slug}",
+     "title": "Gathering",
+     "about": "Where to gather, for herbalism, mining, skinning or fishing. Herbalism and mining: each herb or vein with the skill it needs, and each zone with how many of each. Skinning: each zone's levels and the skill its beasts need; ask for one zone to get its beasts, with their levels, the skill each needs and what it gives. Fishing: each zone's skill, what you catch there and the fishing pools. All four have the best zones for each skill range. Spawn counts are Classic data until players' addons see them in Forever (labelled).",
+     "params": [
+      {
+       "name": "zone",
+       "about": "Only this zone: its map ID, or part of its name (for skinning, this also lists the zone's beasts)"
+      }
+     ]
+    },
+    {
+     "path": "/api/v1/battlegrounds",
+     "title": "Battlegrounds and arenas",
+     "about": "Every battleground and arena in the client: levels, team size, how you win, the objectives with their place on the map (x and y in percent), and where the rules come from: blizzard (Blizzard's posts), classic (Classic's rules, Speculation) or client (only the client's data so far).",
+     "params": []
+    },
+    {
+     "path": "/api/v1/changes-seen",
+     "title": "Changes seen in game",
+     "about": "What players' ForeverDB addons saw in the game that differs from the game files: prices, quest rewards and XP, item stats, creature levels. Each is Verified (two or more players, or checked against the client) or Not confirmed. Newest first. Counts only: never who saw it.",
+     "params": [
+      {
+       "name": "kind",
+       "about": "item, npc, vendor, trainer or quest"
+      },
+      {
+       "name": "verified",
+       "about": "1: only Verified; 0: only Not confirmed"
+      },
+      "... 2 more trimmed"
+     ]
+    },
+    {
+     "path": "/api/v1/articles",
+     "title": "Articles",
+     "about": "ForeverDB's news and articles, newest first.",
+     "params": [
+      {
+       "name": "type",
+       "about": "news, guide..."
+      },
+      {
+       "name": "limit",
+       "about": "How many (1 to 100, default 25)"
+      },
+      "... 1 more trimmed"
+     ]
+    },
+    {
+     "path": "/api/v1/articles/{slug}",
+     "title": "One article",
+     "about": "The article's blocks and sources.",
+     "params": []
+    },
+    {
+     "path": "/api/v1/posts",
+     "title": "Blizzard posts",
+     "about": "Blue posts and official news about WoW Forever, newest first.",
+     "params": [
+      {
+       "name": "limit",
+       "about": "How many (1 to 100, default 25)"
+      },
+      {
+       "name": "offset",
+       "about": "Skip this many (for the next page)"
+      }
+     ]
+    }
+   ]
+  },
+  "meta": {}
+ }
+}

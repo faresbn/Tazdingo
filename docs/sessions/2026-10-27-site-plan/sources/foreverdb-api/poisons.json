@@ -1,0 +1,231 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/poisons",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": {
+   "skill": {
+    "spellId": 2842,
+    "name": "Poisons",
+    "learnAtLevel": 20,
+    "quests": [
+     {
+      "questId": 2359,
+      "name": "Klaven's Tower",
+      "faction": "Alliance",
+      "minLevel": 20,
+      "url": "https://foreverdb.net/quest/2359"
+     },
+     {
+      "questId": 2480,
+      "name": "Hinott's Assistance",
+      "faction": "Horde",
+      "minLevel": 20,
+      "url": "https://foreverdb.net/quest/2480"
+     }
+    ]
+   },
+   "poisons": [
+    {
+     "spellId": 3420,
+     "name": "Crippling Poison",
+     "makes": {
+      "itemId": 3775,
+      "name": "Crippling Poison",
+      "count": 1
+     },
+     "learnAtLevel": 20,
+     "skillYellow": 125,
+     "skillGrey": 175,
+     "reagents": [
+      {
+       "itemId": 2930,
+       "name": "Essence of Pain",
+       "count": 1
+      },
+      {
+       "itemId": 3371,
+       "name": "Empty Vial",
+       "count": 1
+      }
+     ],
+     "learnedWithSkill": false,
+     "trainers": [
+      {
+       "npcId": 917,
+       "name": "Keryn Sylvius",
+       "title": "Rogue Trainer",
+       "faction": "Alliance",
+       "mapId": 1429,
+       "zone": "Elwynn Forest",
+       "x": 43.8,
+       "y": 65.9,
+       "seenInForever": true,
+       "source": "seen in Forever by players' ForeverDB addon"
+      },
+      {
+       "npcId": 1234,
+       "name": "Hogral Bakkan",
+       "title": "Rogue Trainer",
+       "faction": "Alliance",
+       "mapId": 1426,
+       "zone": "Dun Morogh",
+       "x": 47.6,
+       "y": 52.6,
+       "seenInForever": true,
+       "source": "seen in Forever by players' ForeverDB addon"
+      },
+      "... 2 more trimmed"
+     ],
+     "trainerCost": 3000,
+     "trainerCostSource": "seen in Forever by players' ForeverDB addon: the full price, with the reputation discount the game showed taken off",
+     "seasonOfDiscoveryLeftover": false,
+     "aboveLevelCap": false,
+     "url": "https://foreverdb.net/spell/3420"
+    },
+    {
+     "spellId": 8681,
+     "name": "Instant Poison",
+     "makes": {
+      "itemId": 6947,
+      "name": "Instant Poison",
+      "count": 1
+     },
+     "learnAtLevel": 20,
+     "skillYellow": 125,
+     "skillGrey": 175,
+     "reagents": [
+      {
+       "itemId": 2928,
+       "name": "Dust of Decay",
+       "count": 1
+      },
+      {
+       "itemId": 3371,
+       "name": "Empty Vial",
+       "count": 1
+      }
+     ],
+     "learnedWithSkill": true,
+     "trainers": [],
+     "trainerCost": null,
+     "trainerCostSource": null,
+     "seasonOfDiscoveryLeftover": false,
+     "aboveLevelCap": false,
+     "url": "https://foreverdb.net/spell/8681"
+    },
+    "... 24 more trimmed"
+   ],
+   "rogueTrainers": [
+    {
+     "npcId": 254087,
+     "name": "Miriaan Mistblade",
+     "title": "Rogue Trainer",
+     "faction": "Both",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "x": 43.2,
+     "y": 43.3,
+     "seenInForever": true,
+     "source": "seen in Forever by players' ForeverDB addon"
+    },
+    {
+     "npcId": 1234,
+     "name": "Hogral Bakkan",
+     "title": "Rogue Trainer",
+     "faction": "Alliance",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "x": 47.6,
+     "y": 52.6,
+     "seenInForever": true,
+     "source": "seen in Forever by players' ForeverDB addon"
+    },
+    "... 25 more trimmed"
+   ],
+   "suppliers": [
+    {
+     "npcId": 4585,
+     "name": "Ezekiel Graves",
+     "title": "Poison Vendor",
+     "faction": "Horde",
+     "mapId": 1458,
+     "zone": "Undercity",
+     "x": 75.5,
+     "y": 51.6,
+     "seenInForever": true,
+     "source": "seen in Forever by players' ForeverDB addon",
+     "reputationFaction": {
+      "id": 68,
+      "name": "Undercity"
+     },
+     "sells": [
+      {
+       "itemId": 2928,
+       "name": "Dust of Decay",
+       "price": 20,
+       "stack": 1,
+       "limited": false
+      },
+      {
+       "itemId": 2930,
+       "name": "Essence of Pain",
+       "price": 50,
+       "stack": 1,
+       "limited": false
+      },
+      "... 8 more trimmed"
+     ]
+    },
+    {
+     "npcId": 6779,
+     "name": "Smudge Thunderwood",
+     "title": "Poison Vendor",
+     "faction": "Both",
+     "mapId": 1416,
+     "zone": "Alterac Mountains",
+     "x": 86.1,
+     "y": 79.6,
+     "seenInForever": false,
+     "source": "Classic data (CMaNGOS), not confirmed in Forever",
+     "reputationFaction": {
+      "id": 349,
+      "name": "Ravenholdt"
+     },
+     "sells": [
+      {
+       "itemId": 2928,
+       "name": "Dust of Decay",
+       "price": 20,
+       "stack": 1,
+       "limited": false
+      },
+      {
+       "itemId": 2930,
+       "name": "Essence of Pain",
+       "price": 50,
+       "stack": 1,
+       "limited": false
+      },
+      "... 10 more trimmed"
+     ]
+    },
+    "... 9 more trimmed"
+   ],
+   "unusedReagents": [
+    {
+     "itemId": 3777,
+     "name": "Lethargy Root",
+     "onSuppliersSeenInForever": 0,
+     "suppliersSeenInForever": 1,
+     "note": "sold by Classic's poison suppliers, but no poison or other spell in the Forever client uses it"
+    }
+   ],
+   "url": "https://foreverdb.net/class/Rogue/poisons"
+  },
+  "meta": {
+   "build": "1.60.1.70532",
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

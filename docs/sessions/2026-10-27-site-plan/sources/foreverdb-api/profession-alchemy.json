@@ -1,0 +1,216 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/professions/alchemy?limit=5",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": {
+   "slug": "alchemy",
+   "name": "Alchemy",
+   "kind": "primary",
+   "icon": "https://foreverdb.net/icons/136240.webp",
+   "recipeCount": 195,
+   "newInForever": 71,
+   "changedFromClassic": 11,
+   "trainerCount": 27,
+   "trainersSeenInForever": 5,
+   "description": "Higher alchemy skill allows you to learn higher level alchemy recipes. Alchemy recipes can be found on trainers around the world as well as from quests and monsters.",
+   "url": "https://foreverdb.net/profession/alchemy",
+   "ranks": [
+    {
+     "rank": "Apprentice",
+     "maxSkill": 75,
+     "spellId": 1240943
+    },
+    {
+     "rank": "Journeyman",
+     "maxSkill": 150,
+     "spellId": 1240954
+    },
+    "... 2 more trimmed"
+   ],
+   "trainers": [
+    {
+     "npcId": 2837,
+     "name": "Jaxin Chong",
+     "title": "Expert Alchemist",
+     "side": "both",
+     "zone": "Stranglethorn Vale",
+     "mapId": 1434,
+     "x": 28.0,
+     "y": 78.0,
+     "trainsUpToSkill": 140,
+     "seenInForever": false,
+     "placeSeenInForever": false,
+     "source": "Classic data (CMaNGOS), not confirmed in Forever"
+    },
+    {
+     "npcId": 257019,
+     "name": "Nyassa Swiftdraught",
+     "title": "Alchemist",
+     "side": "both",
+     "zone": "Zephras Isle",
+     "mapId": 2521,
+     "x": 43.7,
+     "y": 43.5,
+     "trainsUpToSkill": 0,
+     "seenInForever": true,
+     "placeSeenInForever": true,
+     "source": "Seen in WoW Forever by ForeverDB players"
+    },
+    "... 25 more trimmed"
+   ],
+   "trainersNote": "Where trainers stand and what they teach is Classic data (CMaNGOS) unless seenInForever.",
+   "recipes": [
+    {
+     "spellId": 1245250,
+     "name": "Elixir of Minor Force",
+     "icon": "https://foreverdb.net/icons/134857.webp",
+     "category": {
+      "id": 2450,
+      "name": "Elixirs",
+      "order": 30,
+      "parent": {
+       "id": 2424,
+       "name": "Alchemy"
+      }
+     },
+     "skill": {
+      "orange": 1,
+      "yellow": 10,
+      "green": 12,
+      "grey": 15
+     },
+     "requiredLevel": null,
+     "makes": {
+      "itemId": 247755,
+      "name": "Elixir of Minor Force",
+      "count": 1,
+      "quality": "Common",
+      "url": "https://foreverdb.net/item/247755"
+     },
+     "effect": null,
+     "reagents": [
+      {
+       "itemId": 765,
+       "name": "Silverleaf",
+       "count": 1
+      },
+      {
+       "itemId": 3371,
+       "name": "Empty Vial",
+       "count": 1
+      }
+     ],
+     "tools": [],
+     "needsNearby": null,
+     "learnedFrom": {
+      "automatic": true,
+      "trainer": null,
+      "recipeItems": [],
+      "recipeItemsHidden": [],
+      "recipeItemsNotInClient": [],
+      "classicVendors": 0,
+      "seenAtForeverTrainers": [],
+      "sources": {
+       "ways": [
+        "auto"
+       ],
+       "learnAtSkill": 1,
+       "recipeItem": null,
+       "note": "Prices are in copper: price buys one purchase of stack items (pricePerItem: one item's share); costs are what the vendor asks besides gold (Merchant's Favor and other currencies, or items), as players' addons saw them. Vendors and trainers are Classic data (CMaNGOS) unless seenInForever; notOnListPlayersSaw: Classic's limited-supply line that wasn't on the list players saw at that vendor (the game... (trimmed)"
+      },
+      "known": true
+     },
+     "newInForever": true,
+     "changedFromClassic": [],
+     "sameNameRecipes": [],
+     "leftoverOf": null,
+     "classic": null,
+     "campTier": null,
+     "speculation": false,
+     "speculationReasons": [],
+     "url": "https://foreverdb.net/spell/1245250"
+    },
+    {
+     "spellId": 1245246,
+     "name": "Minor Arcane Elixir",
+     "icon": "https://foreverdb.net/icons/134728.webp",
+     "category": {
+      "id": 2450,
+      "name": "Elixirs",
+      "order": 30,
+      "parent": {
+       "id": 2424,
+       "name": "Alchemy"
+      }
+     },
+     "skill": {
+      "orange": 1,
+      "yellow": 10,
+      "green": 12,
+      "grey": 15
+     },
+     "requiredLevel": null,
+     "makes": {
+      "itemId": 247754,
+      "name": "Minor Arcane Elixir",
+      "count": 1,
+      "quality": "Common",
+      "url": "https://foreverdb.net/item/247754"
+     },
+     "effect": null,
+     "reagents": [
+      {
+       "itemId": 2447,
+       "name": "Peacebloom",
+       "count": 1
+      },
+      {
+       "itemId": 3371,
+       "name": "Empty Vial",
+       "count": 1
+      }
+     ],
+     "tools": [],
+     "needsNearby": null,
+     "learnedFrom": {
+      "automatic": true,
+      "trainer": null,
+      "recipeItems": [],
+      "recipeItemsHidden": [],
+      "recipeItemsNotInClient": [],
+      "classicVendors": 0,
+      "seenAtForeverTrainers": [],
+      "sources": {
+       "ways": [
+        "auto"
+       ],
+       "learnAtSkill": 1,
+       "recipeItem": null,
+       "note": "Prices are in copper: price buys one purchase of stack items (pricePerItem: one item's share); costs are what the vendor asks besides gold (Merchant's Favor and other currencies, or items), as players' addons saw them. Vendors and trainers are Classic data (CMaNGOS) unless seenInForever; notOnListPlayersSaw: Classic's limited-supply line that wasn't on the list players saw at that vendor (the game... (trimmed)"
+      },
+      "known": true
+     },
+     "newInForever": true,
+     "changedFromClassic": [],
+     "sameNameRecipes": [],
+     "leftoverOf": null,
+     "classic": null,
+     "campTier": null,
+     "speculation": false,
+     "speculationReasons": [],
+     "url": "https://foreverdb.net/spell/1245246"
+    },
+    "... 3 more trimmed"
+   ]
+  },
+  "meta": {
+   "build": "1.60.1.70532",
+   "total": 195,
+   "limit": 5,
+   "offset": 0,
+   "next": "/api/v1/professions/alchemy?limit=5&offset=5",
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

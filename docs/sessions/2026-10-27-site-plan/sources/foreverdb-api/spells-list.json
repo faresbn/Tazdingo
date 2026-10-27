@@ -1,0 +1,34 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/spells?limit=3",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": [
+   {
+    "id": 1,
+    "name": "Word of Recall (OLD)",
+    "rank": "",
+    "description": "",
+    "icon": "https://foreverdb.net/icons/136235.webp",
+    "url": "https://foreverdb.net/spell/1"
+   },
+   {
+    "id": 3,
+    "name": "Word of Mass Recall (OLD)",
+    "rank": "",
+    "description": "",
+    "icon": "https://foreverdb.net/icons/136235.webp",
+    "url": "https://foreverdb.net/spell/3"
+   },
+   "... 1 more trimmed"
+  ],
+  "meta": {
+   "build": "1.60.1.70532",
+   "total": 31930,
+   "limit": 3,
+   "offset": 0,
+   "next": "/api/v1/spells?limit=3&offset=3",
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

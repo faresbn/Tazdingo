@@ -3,8 +3,12 @@
     python3 scripts/ingest.py            find Forever's Auctionator file, import, test, build, commit
     python3 scripts/ingest.py --push     ... and publish
     python3 scripts/ingest.py --list     show the markets in the file and stop
+    python3 scripts/ingest.py --inbox    file scan records committed to data/market/inbox/
+                                         (the ChatGPT route; GitHub Actions runs this)
 
-Only market price records leave your Mac. The original SavedVariables file
+Each upload becomes a scan record (scripts/market_store.py): the scan's time and every
+item's latest price, kept for the last 30 scans or 30 days. Run it after every scan to
+keep each one. Only market price records leave your Mac. The original SavedVariables file
 (settings, posting history, searches, shopping lists) is fingerprinted and left
 where it is.
 """
@@ -19,7 +23,8 @@ import sys
 from datetime import date, datetime
 from pathlib import Path
 
-from auctionator import InvalidCapture, day_date, market_extract, newest_day, parse_capture
+import market_store
+from auctionator import InvalidCapture, parse_capture
 
 ROOT = Path(__file__).resolve().parents[1]
 WOW = Path("/Applications/World of Warcraft")
@@ -91,41 +96,75 @@ def unfinished_import() -> bool:
 
 
 def ingest(path: Path, environment: str, markets: list[str]) -> dict | None:
+    """File one upload: a scan record per market, its daily history merged into the archive."""
+    everything = market_store.read_all_markets(path)  # every readable market, to tell which one a full scan belongs to
+    full_market = market_store.full_scan_market(everything)
+    missing = [m for m in markets if m not in everything["markets"]]
+    if missing:
+        parse_capture(path, markets=missing)  # raises with the reason that market can't be read
+    capture = {**everything, "markets": {m: everything["markets"][m] for m in markets}}
+    scan_time(capture)  # a file with no scan time can't be placed in time
+    filed = []
+    for market in markets:
+        record = market_store.record_from_capture(capture, market, environment, full_market=full_market)
+        rows = market_store.history(capture, market, 0, record["day"])
+        result = market_store.add_record(ROOT, record, rows, {"scope_source": "Fares's Auctionator export"})
+        if result is None:
+            print(f"No new scan data for {market} since the last import; skipping.")
+        else:
+            filed.append(result)
+    if not filed:
+        return None
     registry_path = ROOT / "data/captures.json"
     registry = json.loads(registry_path.read_text())
-    capture = parse_capture(path, markets=markets)
-    published = {m for r in registry["captures"] if r["source_sha256"] == capture["source_sha256"] for m in r["publish_markets"]}
-    markets = [m for m in markets if m not in published]  # a second market from the same file is still new
-    # A market whose data hasn't changed since it was last imported (no scan in between) adds nothing.
-    known = {(m, sha) for r in registry["captures"] for m, sha in r.get("payloads", {}).items()}
-    unchanged = [m for m in markets if (m, capture["markets"][m]["payload_sha256"]) in known]
-    if unchanged:
-        print(f"No new scan data for {', '.join(unchanged)} since the last import; skipping.")
-    markets = [m for m in markets if m not in unchanged]
-    if not markets:
-        return None
-    capture["markets"] = {m: capture["markets"][m] for m in markets}
-    newest = newest_day(capture["markets"])
-    scanned = day_date(newest) if newest is not None else datetime.fromtimestamp(scan_time(capture)).date().isoformat()
-    folder = ROOT / "data/captures" / environment
-    folder.mkdir(parents=True, exist_ok=True)
-    target = folder / f"{scanned}.market.json"
-    number = 2
-    while target.exists():
-        target = folder / f"{scanned}-{number}.market.json"
-        number += 1
-    body = json.dumps(market_extract(capture), sort_keys=True, separators=(",", ":")) + "\n"
-    write_whole(target, body)
-    registry["captures"].append({
-        "path": str(target.relative_to(ROOT)), "environment": environment,
-        "received_on": date.today().isoformat(), "source_sha256": capture["source_sha256"],
-        "scope_source": "Fares's Auctionator export", "publish_markets": markets,
-        "payloads": {m: capture["markets"][m]["payload_sha256"] for m in markets},
-        "extraction_sha256": hashlib.sha256(body.encode()).hexdigest()})
     registry.setdefault("default_markets", {})[environment] = markets
     write_whole(registry_path, json.dumps(registry, indent=2) + "\n")
-    counts = {m: len(capture["markets"][m]["items"]) for m in markets}
-    return {"file": str(target.relative_to(ROOT)), "scanned": scanned, "items": counts}
+    return summary(filed)
+
+
+def ingest_inbox() -> dict | None:
+    """File every scan record waiting in data/market/inbox/ (the ChatGPT route)."""
+    filed, removed = [], 0
+    for path in sorted((ROOT / market_store.INBOX).glob("*.json")):
+        record = market_store.validate_record(market_store.read_json(path), inbox=True)
+        result = market_store.add_record(ROOT, record, record.get("history", {}),
+                                         {"scope_source": "Auctionator export uploaded through ChatGPT"})
+        path.unlink()
+        if result is None:
+            print(f"{path.name}: already recorded; removed from the inbox.")
+            removed += 1
+        else:
+            filed.append(result)
+    if not filed and not removed:
+        return None
+    return summary(filed) if filed else {"files": [], "scanned": None, "items": {}, "folded": 0, "removed": removed}
+
+
+def summary(filed: list[dict]) -> dict:
+    return {"files": [r["file"] for r in filed], "scanned": max(r["scan_time"] for r in filed),
+            "items": {r["market"]: r["items"] for r in filed}, "folded": sum(r["folded"] for r in filed)}
+
+
+def snapshot() -> dict[Path, bytes]:
+    """Every file an import can change, so a failed check can put them all back."""
+    files = [ROOT / "data/captures.json", ROOT / "data/items.json"]
+    files += [p for p in (ROOT / market_store.STORE).rglob("*") if p.is_file()]
+    return {p: p.read_bytes() for p in files if p.exists()}
+
+
+def restore(saved: dict[Path, bytes]) -> None:
+    """Put every saved file back and remove files and folders the import created."""
+    for path in [p for p in (ROOT / market_store.STORE).rglob("*") if p.is_file()]:
+        if path not in saved:
+            path.unlink()
+    folders = {p.parent for p in saved}
+    for folder in sorted((ROOT / market_store.STORE).glob("**/"), key=lambda p: -len(p.parts)):
+        if folder != ROOT / market_store.STORE and folder not in folders and folder.is_dir() and not any(folder.iterdir()):
+            folder.rmdir()
+    for path, body in saved.items():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        if not path.exists() or path.read_bytes() != body:
+            path.write_bytes(body)
 
 
 def main() -> None:
@@ -136,8 +175,21 @@ def main() -> None:
     parser.add_argument("--list", action="store_true", help="list the file's markets and stop")
     parser.add_argument("--no-commit", action="store_true", help="import and build, but leave git alone")
     parser.add_argument("--push", action="store_true", help="push the commit so the site republishes")
+    parser.add_argument("--inbox", action="store_true", help="file the scan records waiting in data/market/inbox/")
     args = parser.parse_args()
 
+    saved = snapshot()
+    if args.inbox:
+        try:
+            result = ingest_inbox()
+        except BaseException:
+            restore(saved)  # an error while filing leaves the store as it was
+            raise
+        if result is None:
+            print("Nothing new in the inbox.")
+            return
+        check_and_commit(result, saved, args, "inbox")
+        return
     path = args.file or find_file(args.environment)
     print(f"Reading {path}")
     if args.list:
@@ -149,8 +201,11 @@ def main() -> None:
         return
     remembered = json.loads((ROOT / "data/captures.json").read_text()).get("default_markets", {}).get(args.environment, [])
     markets = choose_markets(path, args.market, remembered)
-    kept = {name: (ROOT / name).read_bytes() for name in ("data/captures.json", "data/items.json") if (ROOT / name).exists()}
-    result = ingest(path, args.environment, markets)
+    try:
+        result = ingest(path, args.environment, markets)
+    except BaseException:
+        restore(saved)  # an error while filing leaves the store as it was
+        raise
     if result is None:
         if not unfinished_import():
             print("Nothing new to add.")
@@ -158,10 +213,16 @@ def main() -> None:
                 push()  # completes a push that failed last time; does nothing when up to date
             return
         print("This scan is recorded, but its import didn't finish last time. Finishing it now.")
-        result = {"file": None, "scanned": None, "items": {}}
-    else:
-        print(f"Added {result['file']}: scanned {result['scanned']}, " +
-              ", ".join(f"{m} {n:,} items" for m, n in result["items"].items()))
+        result = {"files": [], "scanned": None, "items": {}, "folded": 0}
+    check_and_commit(result, saved, args, args.environment)
+
+
+def check_and_commit(result: dict, saved: dict, args, source: str) -> None:
+    """Refresh names, test, build and check; undo the import if any step fails; then commit."""
+    if result["files"]:
+        print(f"Added {', '.join(result['files'])}: scanned {result['scanned']}, "
+              + ", ".join(f"{m} {n:,} items" for m, n in result["items"].items())
+              + (f"; {result['folded']} older scan record(s) folded into the daily archive" if result["folded"] else ""))
     try:
         run(sys.executable, "scripts/item_names.py")
     except subprocess.CalledProcessError:
@@ -171,13 +232,11 @@ def main() -> None:
         try:
             run(sys.executable, *command)
         except subprocess.CalledProcessError:
-            if not result["file"]:
+            if not result["files"] and not result.get("removed"):
                 raise SystemExit(f"Import stopped: the {step} failed (details above). The earlier, unfinished import "
                                  "is still uncommitted in data/. Fix the problem, or discard it with "
                                  "`git checkout -- data && git clean -fd data`, then run this again.")
-            (ROOT / result["file"]).unlink()
-            for name, body in kept.items():
-                write_whole(ROOT / name, body.decode())
+            restore(saved)
             subprocess.run([sys.executable, "scripts/build.py"], cwd=ROOT, capture_output=True)  # local site matches again
             raise SystemExit(f"Import stopped: the {step} failed (details above). Nothing was kept; "
                              "the journal is as it was before this import.")
@@ -186,8 +245,9 @@ def main() -> None:
     run("git", "add", "data")
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode:
         summary = ", ".join(f"{m} {n:,} items" for m, n in result["items"].items())
-        run("git", "commit", "-m", f"Add {args.environment} Auctionator scan of {result['scanned']} ({summary})"
-            if result["file"] else "Finish an interrupted Auctionator import")
+        message = (f"Add {source} Auctionator scan of {result['scanned']} ({summary})" if result["files"]
+                   else "Remove duplicate scan records from the inbox" if result.get("removed") else "Finish an interrupted Auctionator import")
+        run("git", "commit", "-m", message)
     if args.push:
         push()
 

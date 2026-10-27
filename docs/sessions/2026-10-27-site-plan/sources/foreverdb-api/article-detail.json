@@ -1,0 +1,44 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/articles/final-racial-changes-october-26",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": {
+   "slug": "final-racial-changes-october-26",
+   "title": "Final racial changes: Dwarf hit, Orc Command, faster Tauren",
+   "type": "news",
+   "date": "2026-10-26",
+   "summary": "Blizzard's last pass on racials before WoW Forever launches: Humans trade a point of crit for 10% Spirit, Dwarves swap Earth Fury for 1% hit, Orcs lose Savage and get Command back, Tauren run up to 60% faster on foot, and Skyborne's Leyline and Skysight become short effects that a ley line or convergence doubles for an hour. We quote Blizzard's notes word for word.",
+   "url": "https://foreverdb.net/article/final-racial-changes-october-26",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Blizzard has taken a last pass over the racials before WoW Forever launches on 4 November. The notes, posted by Kaivax (Community Manager) as an update to the beta development notes thread on 26 October, change Humans, Dwarves, Tauren, Orcs and both Skyborne orders. Some generic bonuses go, Orcs get Command back, and Tauren and Skyborne gain bigger but more situational effects."
+    },
+    {
+     "t": "note",
+     "text": "These changes aren't in the client we datamined yet (build 1.60.1.70532). Until a new build arrives, our race pages and the class quiz show them marked Announced, with the client's text when you hover them."
+    },
+    {
+     "t": "h",
+     "text": "Why Blizzard is changing them"
+    },
+    "... 21 more trimmed"
+   ],
+   "sources": [
+    {
+     "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7",
+     "title": "WoW Forever Beta Development Notes – Updated October 26 (posted by Kaivax)"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=ez9RcGL9lVU",
+     "title": "Venruki: Blizzard Just Dropped Huge Racial Changes For WoW Forever"
+    }
+   ]
+  },
+  "meta": {
+   "build": "1.60.1.70532",
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

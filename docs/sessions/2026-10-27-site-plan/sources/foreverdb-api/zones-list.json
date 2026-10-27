@@ -1,0 +1,50 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/zones?limit=100",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": [
+   {
+    "id": 947,
+    "name": "Azeroth",
+    "type": 1,
+    "parentId": 0,
+    "newInForever": false,
+    "url": "https://foreverdb.net/maps/947"
+   },
+   {
+    "id": 1411,
+    "name": "Durotar",
+    "type": 3,
+    "parentId": 1414,
+    "newInForever": false,
+    "url": "https://foreverdb.net/maps/1411"
+   },
+   {
+    "id": 1412,
+    "name": "Mulgore",
+    "type": 3,
+    "parentId": 1414,
+    "newInForever": false,
+    "url": "https://foreverdb.net/maps/1412"
+   },
+   {
+    "id": 1413,
+    "name": "The Barrens",
+    "type": 3,
+    "parentId": 1414,
+    "newInForever": false,
+    "url": "https://foreverdb.net/maps/1413"
+   },
+   "... 56 more trimmed"
+  ],
+  "meta": {
+   "build": "1.60.1.70532",
+   "total": 60,
+   "limit": 100,
+   "offset": 0,
+   "next": null,
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/items/19019?lang=de",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": {
+   "id": 19019,
+   "name": "Donnerzorn, Gesegnete Klinge des Windsuchers",
+   "quality": "Legendary",
+   "qualityId": 5,
+   "itemLevel": 80,
+   "requiredLevel": 60,
+   "classId": 2,
+   "class": "Weapon",
+   "subclassId": 7,
+   "subclass": "Sword",
+   "inventoryTypeId": 13,
+   "inventoryType": "One-Hand",
+   "icon": "https://foreverdb.net/icons/135349.webp",
+   "url": "https://foreverdb.net/item/19019",
+   "stats": [
+    {
+     "statId": 3,
+     "stat": "Agility",
+     "value": 5
+    },
+    {
+     "statId": 7,
+     "stat": "Stamina",
+     "value": 8
+    },
+    "... 2 more trimmed"
+   ],
+   "damage": {
+    "min": 82,
+    "max": 153,
+    "school": "Physical"
+   },
+   "speed": 1.9,
+   "bonding": "Binds when picked up",
+   "sellPrice": 255355,
+   "unique": true,
+   "effects": [
+    {
+     "trigger": "chance on hit",
+     "spellId": 21992,
+     "text": "Deckt euren Gegner mit Blitzschlägen ein, die 300 Naturschaden verursachen und zu in der Nähe befindlichen Feinden weiterspringen. Jeder Sprung verringert den Naturwiderstand des Ziels um 25. Wirkt auf insgesamt 5 Ziele. Euer Hauptziel wird außerdem von einem Wirbelsturm umgeben, welcher dessen Angriffstempo für 12 Sek. um 20% verringert.",
+     "textEn": "Blasts your enemy with lightning, dealing 300 Nature damage and then jumping to additional nearby enemies.  Each jump reduces that victim's Nature resistance by 25. Affects 5 targets. Your primary target is also consumed by a cyclone, slowing its attack speed by 20% for 12 sec."
+    }
+   ],
+   "disenchantable": false,
+   "disenchant": null,
+   "nameEn": "Thunderfury, Blessed Blade of the Windseeker"
+  },
+  "meta": {
+   "build": "1.60.1.70532",
+   "lang": "de",
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}
