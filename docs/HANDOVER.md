@@ -6,6 +6,8 @@ Where Tazdingo stands, kept current at every checkpoint so another thread, model
 
 ## The site now
 
+- **Published and checked live on 27 October, late evening** (publish run 40569733334): homepage Auction House card, the overview's eight blocks (unusually low, below vendor price, investment watch, short supply, movers, always on the market, market index, patterns), item pages, ForeverDB tables on profession and class pages, the More overview and masthead search all load on https://faresbn.github.io/Tazdingo/ with no console errors or sideways scrolling at desktop width; phone width was checked in local preview.
+
 - **Live:** https://faresbn.github.io/Tazdingo/, published from `main` by `.github/workflows/pages.yml` about a minute after each push (returning visitors may see the old version for up to 10 minutes: the host caches pages). A failed test or check publishes nothing.
 - **Auction House** (menu: "Auction House", addresses `prices/`): the overview and each market page show what was seen unusually low (with confidence tiers), items seen below what a vendor pays, an investment watch (steady and moving items only), short supply, movers over a day and a week, items always on the market, a market index and a weekday × time-of-day grid. Every item has its own page: latest sighting, usual price, good-buy price, days listed, a 30-day chart (daily bands, sightings, typical price, quantity), patterns, recipes that make or use it, vendor price, other players' median. The homepage card shows the top alerts and investments. Until live scans arrive it runs on the three Beta sample uploads, so patterns and day movers read "collecting".
 - **Classes, professions, world:** 77 guide pages (four sections each), plus ForeverDB API tables: trainers and bought recipes (with Merchant's Favor costs) on profession pages, best zones by skill on gathering pages, disenchanting on Enchanting, abilities by level on class pages. All still Beta-build data (1.60.1.70532, level cap 30), labelled Pre-launch.
@@ -37,7 +39,7 @@ Where Tazdingo stands, kept current at every checkpoint so another thread, model
 - **Masthead strapline** wraps to three lines between about 860 and 1,240 px wide; worth a polish.
 - **Next content phase** (Fares): guide length, per-type templates, PvP sections per class and spec, the empty Field findings.
 - **Parked:** a route for someone without a GitHub account to send content through ChatGPT.
-- **Cleanup waiting for Fares's OK:** merged remote branches `fix/visitor-news-cache`, `design/authentic-warcraft-art`, `design/focused-ux-pass`, `content/recommendation-review`, `research/site-plan`.
+- **Cleanup waiting for Fares's OK:** merged remote branches `fix/visitor-news-cache`, `design/authentic-warcraft-art`, `design/focused-ux-pass`, `content/recommendation-review`.
 - **Fares's calls:** custom domain (not yet), search engines (not a priority), analytics (none).
 - **iCloud:** `scripts/icloud-shield.sh` keeps build output out of sync; `scripts/icloud-janitor.sh [--delete]` removes identical "name 2.ext" copies.
 
