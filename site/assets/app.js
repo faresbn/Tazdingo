@@ -368,10 +368,18 @@ function menus() {
     opener.textContent = shown ? "Close" : "Menu";
   };
   let timer;
+  const hoverOpened = new WeakSet();
   items.forEach(item => {
-    toggleOf(item).addEventListener("click", () => { const open = !item.classList.contains("open"); closeAll(item); set(item, open); });
-    item.addEventListener("mouseenter", () => { if (!hover.matches) return; clearTimeout(timer); closeAll(item); set(item, true); });
+    toggleOf(item).addEventListener("click", event => {
+      clearTimeout(timer);
+      const keepHovered = event.detail > 0 && hoverOpened.has(item);
+      const open = keepHovered || !item.classList.contains("open");
+      hoverOpened.delete(item);
+      closeAll(item); set(item, open);
+    });
+    item.addEventListener("mouseenter", () => { if (!hover.matches) return; clearTimeout(timer); if (!item.classList.contains("open")) hoverOpened.add(item); closeAll(item); set(item, true); });
     item.addEventListener("mouseleave", () => {
+      hoverOpened.delete(item);
       if (!hover.matches || item.contains(document.activeElement)) return;  // keep a keyboard user's menu open
       clearTimeout(timer);
       timer = setTimeout(() => set(item, false), 250);

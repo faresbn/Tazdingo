@@ -4,13 +4,13 @@
    copper only ever mean money; class colours only mean classes; oxblood is the ledger's own ink. */
 
 :root {
-  --canvas: #e4e2da;
+  --canvas: #dce4e2;
   --surface: #f4f0e7;
   --surface-2: #ece6d8;
   --ink: #26312c;
   --ink-soft: #56615a;
-  --link: #255c4e;
-  --accent: #7d3945;
+  --link: #205e64;
+  --accent: #28696e;
   --rule: #c9c8bd;
   --rule-strong: #8e968b;
   --blue: #1f5f9e;
@@ -21,7 +21,7 @@
   --down: #255c4e;
   --shadow: 0 1px 2px rgb(38 49 44 / 8%), 0 6px 18px rgb(38 49 44 / 8%);
   --tex-blend: multiply;
-  --tex-opacity: 0.32;
+  --tex-opacity: 0.13;
   --serif: "Literata", "Iowan Old Style", Georgia, serif;
   --sans: "Source Sans 3", "Source Sans Pro", "Segoe UI", system-ui, sans-serif;
   --measure: 68ch;
@@ -31,20 +31,20 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --canvas: #1b1f1c; --surface: #262a27; --surface-2: #2e332f; --ink: #e6e5dd; --ink-soft: #b7bdb4;
-    --link: #aed2bb; --accent: #e8a5af; --rule: #3e4740; --rule-strong: #5f6b61; --blue: #8cc4ff;
+    --canvas: #101e28; --surface: #1a2d36; --surface-2: #233b43; --ink: #eee8db; --ink-soft: #b7c8c9;
+    --link: #a0d8d1; --accent: #8cc7c3; --rule: #38505a; --rule-strong: #617c83; --blue: #8cc4ff;
     --gold: #e2b740; --silver: #c3ccd1; --copper: #d8915a; --up: #d8915a; --down: #aed2bb;
     --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 8px 24px rgb(0 0 0 / 28%);
-    --tex-blend: soft-light; --tex-opacity: 0.22;
+    --tex-blend: soft-light; --tex-opacity: 0.1;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --canvas: #1b1f1c; --surface: #262a27; --surface-2: #2e332f; --ink: #e6e5dd; --ink-soft: #b7bdb4;
-  --link: #aed2bb; --accent: #e8a5af; --rule: #3e4740; --rule-strong: #5f6b61; --blue: #8cc4ff;
+  --canvas: #101e28; --surface: #1a2d36; --surface-2: #233b43; --ink: #eee8db; --ink-soft: #b7c8c9;
+  --link: #a0d8d1; --accent: #8cc7c3; --rule: #38505a; --rule-strong: #617c83; --blue: #8cc4ff;
   --gold: #e2b740; --silver: #c3ccd1; --copper: #d8915a; --up: #d8915a; --down: #aed2bb;
   --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 8px 24px rgb(0 0 0 / 28%);
-  --tex-blend: soft-light; --tex-opacity: 0.22;
+  --tex-blend: soft-light; --tex-opacity: 0.1;
   color-scheme: dark;
 }
 
@@ -413,3 +413,35 @@ tr.detail td { padding: 0.8rem 0 1.2rem; cursor: default; }
 }
 @media (max-width: 420px) { .picker { grid-template-columns: minmax(0, 1fr); } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* Compact, content-sized navigation and familiar in-game visual anchors. */
+.game-icon { object-fit: cover; border-radius: 4px; border: 1px solid var(--rule-strong); box-shadow: 0 1px 3px #0004; filter: none; }
+.spec-links a, .pick-specs a { display: inline-flex; align-items: center; gap: .3rem; }
+.pick-specs { display: flex; flex-wrap: wrap; gap: .3rem .65rem; margin-top: .4rem; }
+.spec-card h3 a, .spec-list a { display: inline-flex; align-items: center; gap: .45rem; }
+.spec-links .game-icon, .pick-specs .game-icon { border-radius: 2px; }
+.panel-foot { font-size: .9rem; }
+.menu-link, .menu-toggle, .theme-toggle { transition: color .15s, background-color .15s; }
+select { width: auto; max-width: 100%; min-height: 2.65rem; padding-right: 2rem; }
+.filters label { flex: 0 1 auto; }
+.filters label:not(.grow) { min-width: 10rem; max-width: 21rem; }
+.filters select { width: 100%; }
+@media (min-width: 861px) {
+  .panel { left: auto; right: 1.25rem; width: min(36rem, calc(100vw - 4rem)); padding: .9rem 1rem; max-height: calc(100dvh - 6rem); overflow-y: auto; overscroll-behavior: contain; }
+  .panel-classes { width: min(65rem, calc(100vw - 4rem)); }
+  .panel-professions { width: min(37rem, calc(100vw - 4rem)); }
+  .panel-world { width: min(39rem, calc(100vw - 4rem)); }
+  .panel-more { width: 21rem; }
+  .class-cell { gap: .55rem; padding: .65rem .55rem; }
+  .class-cell > .emblem { width: 28px; height: 28px; }
+  .class-link { font-size: 1rem; }
+  .spec-links { font-size: .85rem; gap: .35rem .65rem; margin-top: .35rem; }
+  .panel-list li { padding: .45rem 0; }
+  .panel-list .aside { font-size: .82rem; line-height: 1.35; }
+  .panel-cols { gap: 1.2rem; }
+}
+@media (max-width: 860px) {
+  .filters label:not(.grow) { flex: 1 1 10rem; min-width: 0; max-width: none; }
+  .panel { max-height: none; overflow: visible; }
+  .spec-links a { min-height: 2.4rem; }
+}

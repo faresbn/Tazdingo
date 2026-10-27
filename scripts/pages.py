@@ -140,8 +140,36 @@ def links(pairs: list) -> str:
     return '<ul class="elsewhere">' + "".join(f'<li><a href="{esc(url)}"{ext(url)}>{esc(label)}</a></li>' for label, url in pairs) + "</ul>"
 
 
+
+# Decorative game icons from Blizzard's public icon renderer. Text labels carry meaning;
+# generated scene artwork remains separate and must never be described as screenshots.
+GAME_ICON_BASE = "https://render.worldofwarcraft.com/us/icons/56/"
+PROF_ICONS = {
+    "alchemy": "trade_alchemy", "blacksmithing": "trade_blacksmithing",
+    "cooking": "inv_misc_food_15", "enchanting": "trade_engraving",
+    "engineering": "trade_engineering", "first-aid": "spell_holy_sealofsacrifice",
+    "fishing": "trade_fishing", "herbalism": "trade_herbalism",
+    "leatherworking": "trade_leatherworking", "mining": "trade_mining",
+    "skinning": "inv_misc_pelt_wolf_01", "tailoring": "trade_tailoring",
+}
+SPEC_ICONS = {
+    "warrior-arms": "ability_warrior_savageblow", "warrior-fury": "ability_warrior_innerrage", "warrior-protection": "ability_warrior_defensivestance",
+    "paladin-holy": "spell_holy_holybolt", "paladin-protection": "spell_holy_devotionaura", "paladin-retribution": "spell_holy_auraoflight",
+    "hunter-beast-mastery": "ability_hunter_beasttaming", "hunter-marksmanship": "ability_marksmanship", "hunter-survival": "ability_hunter_swiftstrike",
+    "rogue-assassination": "ability_rogue_eviscerate", "rogue-combat": "ability_backstab", "rogue-subtlety": "ability_stealth",
+    "priest-discipline": "spell_holy_powerwordshield", "priest-holy": "spell_holy_guardianspirit", "priest-shadow": "spell_shadow_shadowwordpain",
+    "shaman-elemental": "spell_nature_lightning", "shaman-enhancement": "spell_nature_lightningshield", "shaman-restoration": "spell_nature_magicimmunity",
+    "mage-arcane": "spell_holy_magicalsentry", "mage-fire": "spell_fire_firebolt02", "mage-frost": "spell_frost_frostbolt02",
+    "warlock-affliction": "spell_shadow_deathcoil", "warlock-demonology": "spell_shadow_metamorphosis", "warlock-destruction": "spell_shadow_rainoffire",
+    "druid-balance": "spell_nature_starfall", "druid-feral": "ability_druid_catform", "druid-restoration": "spell_nature_healingtouch",
+}
+
 def emblem(site: Site, kind: str, slug: str, size: int = 40, colour: str | None = None) -> str:
-    """A painted object for a class or profession; a coloured mark until the art exists."""
+    """Recognisable game icon, with existing local artwork as a fallback for unknown kinds."""
+    icon = f"classicon_{slug}" if kind == "class" else (PROF_ICONS.get(slug) if kind == "prof" else SPEC_ICONS.get(slug))
+    if icon:
+        return (f'<img class="emblem game-icon" src="{GAME_ICON_BASE}{esc(icon)}.jpg" alt="" width="{size}" height="{size}" '
+                f'loading="lazy" decoding="async" referrerpolicy="no-referrer">')
     name = f"{kind}-{slug}.webp"
     style = f' style="--mark:{esc(colour)}"' if colour else ""
     if site.has(name):
@@ -240,7 +268,7 @@ def nav_html(site: Site, ctx: dict) -> str:
               f'<p class="panel-foot"><a href="{b}prices/">All prices</a></p></div></div>')
     class_cells = []
     for c in game["classes"]:
-        specs = " ".join(f'<a href="{b}classes/{c["slug"]}/{s["slug"]}/">{esc(s["name"])}</a>' for s in c["specs"])
+        specs = " ".join(f'<a href="{b}classes/{c["slug"]}/{s["slug"]}/">{emblem(site, "spec", c["slug"] + "-" + s["slug"], 16)}{esc(s["name"])}</a>' for s in c["specs"])
         class_cells.append(f'<div class="class-cell" style="--class:{esc(c["colour"])}">{emblem(site, "class", c["slug"], 36, c["colour"])}'
                            f'<div><a class="class-link" href="{b}classes/{c["slug"]}/">{esc(c["name"])}</a><div class="spec-links">{specs}</div></div></div>')
     classes = f'<div class="class-grid">{"".join(class_cells)}</div><p class="panel-foot"><a href="{b}classes/">All classes, and choosing one</a></p>'
@@ -316,7 +344,7 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
   <div class="colophon-inner">
     <p class="colophon-name"><span class="mark" aria-hidden="true"></span>{SITE_NAME}</p>
     <p>An unofficial fan project, not affiliated with or endorsed by Blizzard Entertainment. {NOTICE}</p>
-    <p>{'Item names, recipes, tooltips and second-opinion prices: <a href="' + FOREVERDB + '">Data from ForeverDB.net</a>. ' if site.credit else ''}Prices come from our own Auctionator scans. Guides are summarised in our own words and linked; the originals belong to their authors.</p>
+    <p>{'Item names, recipes, tooltips and second-opinion prices: <a href="' + FOREVERDB + '">Data from ForeverDB.net</a>. ' if site.credit else ''}Game icons © Blizzard Entertainment. Prices come from our own Auctionator scans. Guides are summarised in our own words and linked; the originals belong to their authors.</p>
     <p>Built {esc(site.built)}, revision {esc(site.revision)}. <a href="{site.base}llms-full.txt">Plain-text version</a> · <a href="{site.base}more/about/">Sources and credits</a></p>
   </div>
 </footer>
@@ -405,7 +433,7 @@ def home(site: Site, ctx: dict) -> str:
   <div class="meter" role="img" aria-label="{share["steady"]:,} steady, {share["moving"]:,} moving and {share["volatile"]:,} volatile prices">{meter}</div>
   <p class="meter-key"><span class="k-steady">{share["steady"] * 100 // total}% steady</span> <span class="k-moving">{share["moving"] * 100 // total}% moving</span> <span class="k-volatile">{share["volatile"] * 100 // total}% volatile</span></p>
   <table class="compact"><caption>Most listed on {nice_date(primary["last_date"])}</caption><tbody>{rows}</tbody></table>
-  {f'<h3 class="mini-title"><a href="{b}prices/craft/">Best crafting margins</a></h3><ul class="mini-list">{crafts}</ul>' if crafts else ""}
+  {f'<h3 class="mini-title"><a href="{b}prices/craft/">Listing margins</a></h3><ul class="mini-list">{crafts}</ul>' if crafts else ""}
 </section>'''
 
     blue = ctx["blue"].get("posts", [])
@@ -413,7 +441,7 @@ def home(site: Site, ctx: dict) -> str:
                  f'{" · checked " + nice_date(ctx["blue"].get("fetched")) if ctx["blue"].get("fetched") else ""}</p>') if blue else '<p class="empty">No posts yet.</p>'
 
     def spec_links(c: dict) -> str:
-        return " · ".join(f'<a href="{b}classes/{c["slug"]}/{spec["slug"]}/">{esc(spec["name"])}</a>' for spec in c["specs"])
+        return " ".join(f'<a href="{b}classes/{c["slug"]}/{spec["slug"]}/">{emblem(site, "spec", c["slug"] + "-" + spec["slug"], 16)}{esc(spec["name"])}</a>' for spec in c["specs"])
     picker = "".join(f'<li style="--class:{esc(c["colour"])}"><a class="pick" href="{b}classes/{c["slug"]}/">'
                      f'{emblem(site, "class", c["slug"], 48, c["colour"])}<span>{esc(c["name"])}</span></a>'
                      f'<span class="pick-specs">{spec_links(c)}</span></li>' for c in game["classes"])
