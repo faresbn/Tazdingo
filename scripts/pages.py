@@ -12,8 +12,10 @@ SHORT_NAME = "Tazdingo"
 SUBTITLE = "A Horde-side field guide to World of Warcraft: Forever"
 FOREVERDB = "https://foreverdb.net"
 SERVER_ROWS = 1000  # price rows rendered into the HTML for readers without JavaScript
-NOTICE = ("World of Warcraft, Warcraft and Blizzard Entertainment are trademarks or registered trademarks of "
-          "Blizzard Entertainment, Inc. in the U.S. and/or other countries.")
+NOTICE = ("World of Warcraft® and Blizzard Entertainment® are all trademarks or registered trademarks of "
+          "Blizzard Entertainment in the United States and/or other countries. These terms and all related "
+          "materials, logos, and images are copyright © Blizzard Entertainment. This site is in no way "
+          "associated with or endorsed by Blizzard Entertainment®.")
 ROLES = {"dps": "Damage", "tank": "Tank", "healer": "Healer"}
 
 
@@ -28,6 +30,7 @@ class Site:
     launch: date = date(2026, 11, 4)
     nav: str = ""  # the main menu, built once per site from the game data
     news_endpoint: str = ""
+    art: dict = field(default_factory=dict)  # allowlisted, credited Warcraft artwork
 
     def asset(self, name: str) -> str:
         return f"{self.base}assets/{name}?v={self.assets.get(name, self.revision)}"
@@ -143,7 +146,7 @@ def links(pairs: list) -> str:
 
 
 # Decorative game icons from Blizzard's public icon renderer. Text labels carry meaning;
-# generated scene artwork remains separate and must never be described as screenshots.
+# Larger sourced artwork is registered separately in data/art.json.
 GAME_ICON_BASE = "https://render.worldofwarcraft.com/us/icons/56/"
 PROF_ICONS = {
     "alchemy": "trade_alchemy", "blacksmithing": "trade_blacksmithing",
@@ -179,12 +182,30 @@ def emblem(site: Site, kind: str, slug: str, size: int = 40, colour: str | None 
     return f'<span class="emblem placeholder" aria-hidden="true"{style}></span>'
 
 
-def banner(site: Site, section: str, position: str = "70% 50%") -> str:
-    name = f"banner-{section}.webp"
-    if not site.has(name):
+def artwork(site: Site, key: str, css: str, eager: bool = False) -> str:
+    art = site.art.get(key)
+    if not art:
         return ""
-    return (f'<div class="banner" aria-hidden="true"><img src="{site.asset(name)}" alt="" width="1536" height="640" '
-            f'loading="lazy" decoding="async" style="object-position:{position}"></div>')
+    return (f'<img class="{esc(css)}" src="{site.asset("art/" + art["file"])}" alt="" '
+            f'width="{art["width"]}" height="{art["height"]}" '
+            f'loading="{"eager" if eager else "lazy"}" decoding="async"'
+            + (' fetchpriority="high"' if eager else '') + '>')
+
+
+def object_icon(icon: str, size: int = 40) -> str:
+    return (f'<img class="world-object" src="{GAME_ICON_BASE}{esc(icon)}.jpg" alt="" '
+            f'width="{size}" height="{size}" loading="lazy" decoding="async" referrerpolicy="no-referrer">')
+
+
+def banner(site: Site, section: str, position: str = "50% 50%") -> str:
+    scene = {"world": "darkspear", "more": "orgrimmar"}.get(section)
+    if scene:
+        return (f'<div class="banner" aria-hidden="true">{artwork(site, scene, "scene-art")}</div>')
+    objects = {
+        "prices": ("inv_misc_coin_01", "inv_crate_01", "inv_sword_04"),
+        "professions": ("inv_potion_54", "trade_blacksmithing", "inv_fishingpole_02"),
+    }.get(section, ())
+    return ('<div class="object-banner" aria-hidden="true">' + ''.join(object_icon(i, 48) for i in objects) + '</div>') if objects else ""
 
 
 def changelog(site: Site, entries: list, title: str = "Changes to this page") -> str:
@@ -296,7 +317,7 @@ def nav_html(site: Site, ctx: dict) -> str:
 def layout(site: Site, title: str, body: str, active: str = "", description: str = "", path: str = "") -> str:
     full_title = f"{SITE_NAME}: {SUBTITLE}" if title == SITE_NAME else f"{title} | {SITE_NAME}"
     description = description or "Auction House prices, class guides and discoveries from World of Warcraft: Forever, kept as the game unfolds."
-    card = site.asset("social-card.jpg") if site.has("social-card.jpg") else ""
+    card = site.asset("art/darkspear.webp") if site.has("art/darkspear.webp") else ""
     card_meta = (f'<meta property="og:image" content="{esc(site.url + card[len(site.base):])}">'
                  f'<meta name="twitter:card" content="summary_large_image">') if card else ""
     nav = site.nav.replace(f'<li class="menu-item" data-menu><a class="menu-link" href="{site.base}{active}/"',
@@ -344,8 +365,8 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
 <footer class="colophon">
   <div class="colophon-inner">
     <p class="colophon-name"><span class="mark" aria-hidden="true"></span>{SITE_NAME}</p>
-    <p>An unofficial fan project, not affiliated with or endorsed by Blizzard Entertainment. {NOTICE}</p>
-    <p>{'Item names, recipes, tooltips and second-opinion prices: <a href="' + FOREVERDB + '">Data from ForeverDB.net</a>. ' if site.credit else ''}Game icons © Blizzard Entertainment. Prices come from our own Auctionator scans. Guides are summarised in our own words and linked; the originals belong to their authors.</p>
+    <p>{NOTICE}</p>
+    <p>{'Item names, recipes, tooltips and second-opinion prices: <a href="' + FOREVERDB + '">Data from ForeverDB.net</a>. ' if site.credit else ''}Warcraft artwork, screenshots and game icons © Blizzard Entertainment. <a href="{site.base}more/about/#pictures">Image sources and credits</a>. Prices come from our own Auctionator scans. Guides are summarised in our own words and linked; the originals belong to their authors.</p>
     <p>Built {esc(site.built)}, revision {esc(site.revision)}. <a href="{site.base}llms-full.txt">Plain-text version</a> · <a href="{site.base}more/about/">Sources and credits</a></p>
   </div>
 </footer>
@@ -414,14 +435,8 @@ def home(site: Site, ctx: dict) -> str:
                  else "Forever opens today" if days_to_go == 0 else f"Day {1 - days_to_go} of Forever")
     search_action = f'{primary["url"]}#prices' if primary else f"{b}prices/"
 
-    hero_art = ""
-    if site.has("hero-day.webp"):
-        # Both paintings are in the page; the theme decides which shows (CSS), so a manual
-        # light/dark choice swaps them too. Lazy loading keeps the hidden one from downloading.
-        night = (f'<img class="night" src="{site.asset("hero-night.webp")}" alt="" width="1536" height="1024" loading="lazy" decoding="async">'
-                 if site.has("hero-night.webp") else "")
-        hero_art = (f'<div class="hero-art" aria-hidden="true"><img class="day" src="{site.asset("hero-day.webp")}" alt="" width="1536" height="1024" '
-                    f'loading="lazy" decoding="async">{night}</div>')
+    hero_art = (f'<figure class="hero-art">{artwork(site, "darkspear", "hero-scene", eager=True)}'
+                f'<figcaption><a href="{b}more/about/#pictures">Darkspear Islands · Blizzard Entertainment</a></figcaption></figure>') if site.art.get("darkspear") else ""
 
     checklist = checklist_items(ctx)
     check_html = ("<ol class=\"checklist\">" + "".join(f'<li><a href="{b}more/launch/#{esc(a)}">{esc(t)}</a></li>' for a, t in checklist) + "</ol>"
@@ -511,6 +526,7 @@ def home(site: Site, ctx: dict) -> str:
     <ul class="prof-strip">{profs}</ul>
   </section>
   <section class="dash-card world-card" aria-labelledby="world-title">
+    <div class="home-scout" aria-hidden="true">{artwork(site, "hunter", "scout-art")}</div>
     <h2 id="world-title"><a href="{b}world/">The world</a></h2>
     <ul class="tag-list">{world}</ul>
   </section>

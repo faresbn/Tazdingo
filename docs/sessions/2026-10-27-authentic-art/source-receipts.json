@@ -1,0 +1,11 @@
+{
+  "retrieved_on": "2026-10-27",
+  "fansite_archive_url": "https://archive.org/download/wow_fansite_kits/fansite_kit.zip",
+  "fansite_archive_sha256": "654029c70ceec5495021add88325f3915c2f560c4d96b970577e161debb9a8b0",
+  "press_kit_url": "https://blizzard.gamespress.com/wowforeverreveal",
+  "original_scene_hashes": {
+    "WoW_Forever_Announce_BG_DarkspearIslands_090.jpg": "da2bc0df8a4ec3ab6c3905aed7e1ae19dd23c9b52d7be94cb8bb6bc6241ddef4",
+    "WoW_Forever_SCENIC_Announce_NewLighting_Orgrimmar_053.png": "e6570010ed59e33656cb2f5d76b256a89ea5c52fe0be4904cba6a11a4773c57a",
+    "WoW_Forever_SCENIC_Announce_Camping_Players_064.jpg": "7fbb4959a74b8d5c043d560d1e402049bb157bddcb838721fc8a2dc2069d85a3"
+  }
+}

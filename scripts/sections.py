@@ -5,7 +5,7 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 
-from pages import (FOREVERDB, ROLES, Site, badge, banner, blue_list, changelog, emblem, esc, ext, item_link, layout,
+from pages import (FOREVERDB, ROLES, Site, artwork, badge, banner, blue_list, changelog, emblem, esc, ext, item_link, layout, object_icon,
                    links, money, news_widget, nice_date, page_head, render_sections, source_tag, status_line, toc, when)
 
 WOWHEAD = "https://www.wowhead.com/forever"
@@ -61,6 +61,7 @@ def classes_index(site: Site, ctx: dict) -> str:
         overview = content.get(f"classes/{c['slug']}/overview")
         specs = "".join(f'<li><a href="{b}classes/{c["slug"]}/{s["slug"]}/">{emblem(site, "spec", c["slug"] + "-" + s["slug"], 20)}{esc(s["name"])}</a> {roles(s)}</li>' for s in c["specs"])
         cards.append(f'<li class="class-card" style="--class:{esc(c["colour"])}">'
+                     f'<div class="class-figure" aria-hidden="true">{artwork(site, c["slug"], "character-art")}</div>'
                      f'<a class="class-card-head" href="{b}classes/{c["slug"]}/">{emblem(site, "class", c["slug"], 64, c["colour"])}<span>{esc(c["name"])}</span></a>'
                      f'{"<p>" + esc(overview["summary"]) + "</p>" if overview else ""}'
                      f'<ul class="spec-list">{specs}</ul></li>')
@@ -104,7 +105,8 @@ def class_page(site: Site, ctx: dict, c: dict) -> str:
     if overview:
         main += render_sections(overview, "", only=("findings", "more"))
     main += changelog(site, entries_for(ctx, f"content/classes/{c['slug']}/"))
-    aside = tools_box("Guides and tools", class_tools(c)) + toc(overview, (("specs", "Specs"), ("hybrid", "Hybrid builds"), ("macros", "Macros")))
+    aside = (f'<div class="class-portrait" aria-hidden="true">{artwork(site, c["slug"], "character-art")}</div>'
+             + tools_box("Guides and tools", class_tools(c)) + toc(overview, (("specs", "Specs"), ("hybrid", "Hybrid builds"), ("macros", "Macros"))))
     lede = esc(overview["summary"]) if overview else f'{" · ".join(esc(s["name"]) for s in c["specs"])}.'
     return layout(site, c["name"], page_head(c["name"], lede, (("Classes", f"{b}classes/"),),
                                               mark=emblem(site, "class", c["slug"], 72, c["colour"]), colour=c["colour"])
@@ -209,7 +211,8 @@ def world_index(site: Site, ctx: dict) -> str:
     rows = []
     for t in ctx["game"]["world"]:
         page = ctx["content"].get(f"world/{t['slug']}")
-        rows.append(f'<li><a href="{b}world/{t["slug"]}/" class="door-name">{esc(t["name"])}</a><p>{esc(page["summary"] if page else t["summary"])}</p></li>')
+        icon = {"camping": "spell_fire_fire", "legacy": "inv_misc_book_09", "merchants-favor": "inv_crate_01", "rares": "ability_hunter_pet_boar", "zones": "inv_misc_map_01", "dungeons-and-raids": "inv_misc_key_14", "collections": "ability_hunter_pet_crocolisk"}.get(t["slug"], "inv_misc_bag_10")
+        rows.append(f'<li>{object_icon(icon)}<a href="{b}world/{t["slug"]}/" class="door-name">{esc(t["name"])}</a><p>{esc(page["summary"] if page else t["summary"])}</p></li>')
     return layout(site, "World", page_head("World", "How Forever's systems work, and what's out there.") + banner(site, "world", "65% 60%")
                   + f'<section class="page-body"><ul class="door-list">{"".join(rows)}</ul></section>',
                   active="world", path="world/", description="World of Warcraft: Forever systems: camping, Legacy, Merchant's Favor, rares, zones, dungeons, raids and collections.")
@@ -246,6 +249,7 @@ def world_page(site: Site, ctx: dict, t: dict) -> str:
     pairs = [(label, url if url.startswith("http") else f"{b}world/{t['slug']}/{url}", "") for label, url in t["links"]]
     aside = tools_box("Guides and tools", pairs) + toc(page, (("from-the-data", "From the data"),) if data else ())
     return layout(site, t["name"], page_head(t["name"], esc(page["summary"] if page else t["summary"]), (("World", f"{b}world/"),), status_line(page))
+                  + (f'<div class="banner" aria-hidden="true">{artwork(site, "camping", "scene-art")}</div>' if t["slug"] == "camping" else "")
                   + f'<section class="page-body">{with_aside(main, aside)}</section>',
                   active="world", path=f"world/{t['slug']}/", description=f"{t['name']} in World of Warcraft: Forever.")
 
@@ -287,6 +291,9 @@ def about_page(site: Site, ctx: dict) -> str:
     scans = "".join(f'<li>{when(c["capture_date"])}, {esc(c["environment_label"])}: {c["source_bytes"]:,} bytes, fingerprint <code>{esc(c["source_sha256"][:16])}</code></li>'
                     for c in reversed(ctx["captures"]))
     src, names = ctx["fdb_source"], ctx["names_source"] or {}
+    pictures = ''.join(f'<li><strong>{esc(a["title"])}</strong> — {esc(a["edition"])}. '
+                       f'<a href="{esc(a["source"])}"{ext(a["source"])}>Source</a>; '
+                       f'<span class="aside">{esc(a["source_file"])}</span></li>' for a in site.art.values())
     return layout(site, "Sources and credits", page_head("Sources and credits", "Where everything in Tazdingo comes from, and how to read it.")
                   + f'''<section class="page-body prose">
   <h2>What this is</h2>
@@ -308,6 +315,8 @@ def about_page(site: Site, ctx: dict) -> str:
   {links(ctx["game"]["hubs"])}
   <h2>Data files</h2>
   <p>The whole site as plain text: <a href="{site.base}llms-full.txt">llms-full.txt</a> (short index: <a href="{site.base}llms.txt">llms.txt</a>). Every market's prices and daily history as TSV, linked from its page; every priced recipe in <a href="{site.base}prices/craft.tsv">craft.tsv</a>.</p>
-  <h2>Pictures</h2>
-  <p>The paintings and emblems are original illustrations made for this site. World of Warcraft, its artwork and its icons belong to Blizzard Entertainment; item icons appear through ForeverDB's tooltips.</p>
+  <h2 id="pictures">Pictures</h2>
+  <p>Artwork and screenshots © Blizzard Entertainment. The scenery comes from the official Forever reveal press kit. Character cut-outs come from Blizzard's original World of Warcraft Fan Site Kit, preserved by the Internet Archive: these are Classic illustrations, not Forever screenshots or examples of recommended equipment. Images retain their original composition, with smaller WebP copies for delivery; page layouts may show part of a scene.</p>
+  <ul class="image-credits">{pictures}</ul>
+  <p>Class, spec, profession, creature and item icons are served by <a href="https://render.worldofwarcraft.com/">Blizzard's icon renderer</a>. Item icons inside tooltips come through ForeverDB. Decorative paper textures and the Tazdingo mark were made for this site.</p>
 </section>''', active="more", path="more/about/", description="Where Tazdingo's prices, guide summaries, game data and Blizzard posts come from.")

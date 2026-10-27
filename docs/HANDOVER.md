@@ -2,12 +2,12 @@
 
 The running record of where Tazdingo stands, kept current at every checkpoint so another thread, model or machine can carry on. Read this first, then AGENTS.md and README.md.
 
-**Last updated:** 27 October 2026, Tazdingo rebrand and news refresh (session folder `docs/sessions/2026-10-27-tazdingo/`).
+**Last updated:** 27 October 2026, authentic Warcraft imagery (session folder `docs/sessions/2026-10-27-authentic-art/`).
 
 ## Where things stand
 
 - **Live site:** https://faresbn.github.io/Tazdingo/ (published from `main` by `.github/workflows/pages.yml`, about a minute after each push, and every two hours to refresh Blizzard's posts).
-- **Current work:** Tazdingo rebrand merged in PR #2; hosted cache fix merged in PR #3. Pages remains on GitHub. Live browser verified both views and a manual refresh response, including the five-minute-cache status. Core work is complete; final documentation and control placement are being published. Cleanup of the merged `fix/visitor-news-cache` branch was blocked by automatic approval review; no deletion workaround was attempted.
+- **Current work:** Authentic Warcraft imagery replaces the generated scenes and class/profession emblems, as explicitly requested. Local checks pass; publication and live visual review are in progress. Pages remains on GitHub. The separate news relay is unchanged. Cleanup of the older merged `fix/visitor-news-cache` branch remains blocked pending explicit user permission.
 - **Launch:** WoW Forever opens on 4 November 2026; level cap 60 (the Beta's was 30).
 
 ## What v3 is
@@ -16,7 +16,7 @@ The running record of where Tazdingo stands, kept current at every checkpoint so
 - **Menus:** hover mega-menus (Prices, Classes with every spec, Professions, World, More) that also open by click, tap and keyboard; a nested menu on phones.
 - **Pages:** one per spec (27), class hub (9), profession (12), world topic (7), More list (launch, Blizzard posts, addons, macros, known issues). Each has At a glance · What the guides say · Field findings · Read more, plus a "Guides and tools" box with checked links (Wowhead, Icy Veins, ForeverDB, WoWSims).
 - **Prices:** typical price, latest, steadiness, history; What to craft, Waylaid Crates, Materials worth gathering.
-- **Design:** a quartermaster's field ledger (see docs/DECISIONS.md). Painted art generated through Codex: a hero pair (day and night), five section banners, nine class emblems, twelve profession emblems, paper and canvas textures, and the social card. Originals are in the session folder's `art/`.
+- **Design:** teal/blue field guide, authentic Forever Darkspear/Orgrimmar/camp scenery, Classic fan-site-kit character cut-outs, Blizzard game icons and small objects. Generated scenes, class/profession emblems and social-card artwork have been removed from active assets. The paper/canvas textures and original Tazdingo mark remain.
 - **Records:** the archive Action keeps a backup of every changed page and a log in `archive/LOG.md`.
 
 ## v3 status (done, 27 Oct)
@@ -33,7 +33,7 @@ The running record of where Tazdingo stands, kept current at every checkpoint so
 - Class/spec/profession icons use Blizzard's public icon renderer (48 unique URLs checked). Text labels remain present and the footer credits Blizzard. This is an intentional small-icon exception to the generated-art direction, requested by Fares; large scenes are still generated illustrations, not screenshots.
 - Teal links/accent, blue-toned dark surfaces and reduced paper/canvas texture. No content structure, market data or guide advice changed.
 - Home crafting heading says "Listing margins", to distinguish listing arithmetic from realised profit. Beta content is temporary and will be replaced at launch; do not treat its current prominence as a permanent hierarchy problem.
-- All 34 local tests pass (one original-capture test skipped), build/check covers 72 pages, browser script syntax and PR validation pass. Deployment 40461966416 succeeded. Live desktop checks: More menu is 336px wide, opens on pointer click, and no broken game icons or horizontal overflow were observed. Full screenshot replacement awaits the user's own captures under the existing policy.
+- All 34 local tests pass (one original-capture test skipped), build/check covers 72 pages, browser script syntax and PR validation pass. Deployment 40461966416 succeeded. Live desktop checks: More menu is 336px wide, opens on pointer click, and no broken game icons or horizontal overflow were observed. This earlier own-captures-only policy was superseded by Fares's explicit authorisation to use sourced authentic imagery on 27 October.
 
 ## Known gaps and small follow-ups
 
@@ -46,7 +46,7 @@ The running record of where Tazdingo stands, kept current at every checkpoint so
 
 1. **Can ChatGPT commit from the shared project?** OpenAI documents its GitHub connector as read-only. Test it with docs/chatgpt/UPDATING.md. If it can't, the fallbacks are a custom MCP connector in the Business workspace (docs/sessions/2026-10-26-forever-redesign/plan.md, section 3) or pasting ChatGPT's file into GitHub's web editor.
 2. **Name:** Tazdingo was selected on 27 Oct. Custom domain remains undecided.
-3. **The art:** generated for v3 and live with it. Swap any image by replacing its file in `site/assets/` (see "Making art").
+3. **The art:** authentic sourced imagery is now the default. Register files and attribution in `data/art.json`; keep receipts in the session folder.
 4. **Search engines:** the site isn't submitted to Bing or Google yet. That's outward-facing, so it waits for Fares.
 5. **ForeverDB API key:** requested by Fares; it would add disenchanting and Beta-versus-live changes.
 
@@ -65,12 +65,9 @@ The running record of where Tazdingo stands, kept current at every checkpoint so
 - **Original scans:** the three Beta `.lua` files are not in git. They were in `~/Downloads/FOREVER_BETA_AH_PROJECT_FILES_2026-10-17/`; copy them into `data/captures/forever-beta/` to run the comparison test (it skips without them).
 - **Phone checks:** headless Chrome can't go narrower than about 500px, so check phones in a real browser's device emulation.
 
-## Making art (the recipe that works)
+## Artwork workflow
 
-1. Write a brief: one subject per numbered item; in-game scene or item-icon style; "Horde races and landmarks are welcome; no copied logos, key art, frames or text"; transparent background for emblems.
-2. Run it on the ChatGPT plan: `env -u CODEX_API_KEY codex exec --skip-git-repo-check -C <folder> -m gpt-6.1-sol -c model_reasoning_effort=low --disable memories -s read-only - < prompt.md`. Tell it to make **one separate image call per item** and to leave files where the tool saves them. Asking it to save files, or giving several items without that rule, produces contact sheets or nothing.
-3. Images land in `~/.codex/generated_images/<thread id>/` in generation order. Check them on a contact sheet, then convert with `cwebp` (emblems `-resize 192 192 -q 82 -alpha_q 90`; scenes `-q 72`) into `site/assets/`.
-4. Every image must look like it's from inside the game. Reject abstract or obviously off-world results.
+Prefer authentic official/publicly reusable Warcraft imagery, as Fares authorised. Larger assets live in `site/assets/art/` and publish only when listed in `data/art.json`; the build checks their fingerprints. Record the source URL, original filename, edition, credit, terms, delivery treatment and dimensions. The public Sources and credits page reads this registry. Original transparent character renders come from Blizzard's Classic fan-site kit; identify them as Classic artwork, never Forever equipment or gameplay evidence. Official Forever scenes retain their compositions, resized/encoded for delivery; CSS handles framing. The source kit's licence and required notices are kept in `docs/sessions/2026-10-27-authentic-art/`. Icons continue to use Blizzard's public renderer. Personal screenshots still require the separate `data/game.json` allowlist and privacy check.
 
 ## Session history
 
