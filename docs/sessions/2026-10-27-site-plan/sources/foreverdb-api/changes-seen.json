@@ -1,0 +1,79 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/changes-seen?limit=10",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": [
+   {
+    "kind": "item",
+    "id": 288854,
+    "name": "Nightslayer Belt",
+    "what": "Strength",
+    "before": "4",
+    "seen": "5",
+    "comparedWith": "client",
+    "players": 1,
+    "firstSeen": "2026-10-23",
+    "lastSeen": "2026-10-23",
+    "verified": true,
+    "status": "Verified",
+    "url": "https://foreverdb.net/item/288854"
+   },
+   {
+    "kind": "item",
+    "id": 288906,
+    "name": "Staff of Dominance",
+    "what": "Damage",
+    "before": "72 - 109",
+    "seen": "54 - 81",
+    "comparedWith": "client",
+    "players": 1,
+    "firstSeen": "2026-10-23",
+    "lastSeen": "2026-10-23",
+    "verified": true,
+    "status": "Verified",
+    "url": "https://foreverdb.net/item/288906"
+   },
+   {
+    "kind": "item",
+    "id": 288908,
+    "name": "Aurastone Hammer",
+    "what": "Damage",
+    "before": "45 - 85",
+    "seen": "30 - 56",
+    "comparedWith": "client",
+    "players": 1,
+    "firstSeen": "2026-10-23",
+    "lastSeen": "2026-10-23",
+    "verified": true,
+    "status": "Verified",
+    "url": "https://foreverdb.net/item/288908"
+   },
+   {
+    "kind": "item",
+    "id": 288910,
+    "name": "Sorcerous Dagger",
+    "what": "Damage",
+    "before": "23 - 44",
+    "seen": "15 - 29",
+    "comparedWith": "client",
+    "players": 1,
+    "firstSeen": "2026-10-23",
+    "lastSeen": "2026-10-23",
+    "verified": true,
+    "status": "Verified",
+    "url": "https://foreverdb.net/item/288910"
+   },
+   "... 6 more trimmed"
+  ],
+  "meta": {
+   "build": "1.60.1.70532",
+   "total": 400,
+   "limit": 10,
+   "offset": 0,
+   "next": "/api/v1/changes-seen?limit=10&offset=10",
+   "updated": "2026-10-23",
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

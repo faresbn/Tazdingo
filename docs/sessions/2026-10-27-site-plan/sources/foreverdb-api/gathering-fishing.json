@@ -1,0 +1,74 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/gathering/fishing",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": {
+   "profession": "fishing",
+   "url": "https://foreverdb.net/profession/fishing",
+   "note": "Each zone's fishing skill and what its water gives are Classic data (CMaNGOS): from the zone's skill + 95 nothing gets away (a skill below 0 is Classic's way of saying any skill will do). caughtInForever is what ForeverDB players' addons caught there.",
+   "zones": [
+    {
+     "mapId": 1416,
+     "name": "Alterac Mountains",
+     "skill": 130,
+     "noEscapeSkill": 225,
+     "loot": [
+      {
+       "itemId": 8365,
+       "name": "Raw Mithril Head Trout",
+       "chance": 58.4
+      },
+      {
+       "itemId": 6308,
+       "name": "Raw Bristle Whisker Catfish",
+       "chance": 40.0
+      },
+      "... 6 more trimmed"
+     ],
+     "pools": [
+      "Sagefish School"
+     ],
+     "spotsSeenInForever": 0,
+     "caughtInForever": [],
+     "castsInForever": 0,
+     "playersInForever": 0
+    },
+    {
+     "mapId": 1417,
+     "name": "Arathi Highlands",
+     "skill": 130,
+     "noEscapeSkill": 225,
+     "loot": [
+      {
+       "itemId": 8365,
+       "name": "Raw Mithril Head Trout",
+       "chance": 58.4
+      },
+      {
+       "itemId": 6308,
+       "name": "Raw Bristle Whisker Catfish",
+       "chance": 40.0
+      },
+      "... 6 more trimmed"
+     ],
+     "pools": [],
+     "spotsSeenInForever": 0,
+     "caughtInForever": [],
+     "castsInForever": 0,
+     "playersInForever": 0
+    },
+    "... 41 more trimmed"
+   ],
+   "pools": [
+    "Bluefish School",
+    "Brackish Mixed School",
+    "... 20 more trimmed"
+   ]
+  },
+  "meta": {
+   "build": "1.60.1.70532",
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/changes-seen?kind=vendor&verified=1&limit=5",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": [
+   {
+    "kind": "vendor",
+    "id": 9551,
+    "name": "Starn",
+    "what": "Price: Small Shot Pouch",
+    "before": "1s",
+    "seen": "10s",
+    "comparedWith": "client",
+    "players": 1,
+    "firstSeen": "2026-10-15",
+    "lastSeen": "2026-10-15",
+    "verified": true,
+    "status": "Verified",
+    "url": "https://foreverdb.net/item/5441"
+   },
+   {
+    "kind": "vendor",
+    "id": 3158,
+    "name": "Duokna",
+    "what": "Price: Small Throwing Knife",
+    "before": "42c",
+    "seen": "15c",
+    "comparedWith": "client",
+    "players": 1,
+    "firstSeen": "2026-10-15",
+    "lastSeen": "2026-10-15",
+    "verified": true,
+    "status": "Verified",
+    "url": "https://foreverdb.net/item/2947"
+   },
+   {
+    "kind": "vendor",
+    "id": 3158,
+    "name": "Duokna",
+    "what": "Price: Crude Throwing Axe",
+    "before": "42c",
+    "seen": "15c",
+    "comparedWith": "client",
+    "players": 1,
+    "firstSeen": "2026-10-15",
+    "lastSeen": "2026-10-15",
+    "verified": true,
+    "status": "Verified",
+    "url": "https://foreverdb.net/item/3111"
+   },
+   "... 2 more trimmed"
+  ],
+  "meta": {
+   "build": "1.60.1.70532",
+   "total": 189,
+   "limit": 5,
+   "offset": 0,
+   "next": "/api/v1/changes-seen?kind=vendor&verified=1&limit=5&offset=5",
+   "updated": "2026-10-23",
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

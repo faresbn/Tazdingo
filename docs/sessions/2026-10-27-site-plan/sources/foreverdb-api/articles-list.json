@@ -1,0 +1,34 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/articles?limit=5",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": [
+   {
+    "slug": "final-racial-changes-october-26",
+    "title": "Final racial changes: Dwarf hit, Orc Command, faster Tauren",
+    "type": "news",
+    "date": "2026-10-26",
+    "summary": "Blizzard's last pass on racials before WoW Forever launches: Humans trade a point of crit for 10% Spirit, Dwarves swap Earth Fury for 1% hit, Orcs lose Savage and get Command back, Tauren run up to 60% faster on foot, and Skyborne's Leyline and Skysight become short effects that a ley line or convergence doubles for an hour. We quote Blizzard's notes word for word.",
+    "url": "https://foreverdb.net/article/final-racial-changes-october-26"
+   },
+   {
+    "slug": "samiccus-reacts-forever-bigger-than-predicted",
+    "title": "Samiccus on WoW Forever's hype: what checks out",
+    "type": "news",
+    "date": "2026-10-25",
+    "summary": "Samiccus reacts to yumytv's think-piece on WoW Forever and adds his own claims: no WoW Token, no gold buying, a level cap that stays at 60, nothing sold for launch and paid races later. We checked each against Blizzard's posts and interviews: the gold rules and the bot crackdown hold, the Token is \"no plans\" rather than a promise, a cap that stays at 60 is widely reported but not in Blizzard's posts, Blizzard does sell launch editions, and paid races are his guess, with the Skyborne as the one real precedent.",
+    "url": "https://foreverdb.net/article/samiccus-reacts-forever-bigger-than-predicted"
+   },
+   "... 3 more trimmed"
+  ],
+  "meta": {
+   "build": "1.60.1.70532",
+   "total": 139,
+   "limit": 5,
+   "offset": 0,
+   "next": "/api/v1/articles?limit=5&offset=5",
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}

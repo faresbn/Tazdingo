@@ -1,0 +1,645 @@
+{
+ "_request": "GET https://foreverdb.net/api/v1/dungeons?limit=100",
+ "_fetched": "2026-10-27",
+ "_note": "Trimmed sample; lists cut to a few records.",
+ "response": {
+  "data": [
+   {
+    "id": 169,
+    "name": "Emerald Dream",
+    "kind": "raid",
+    "players": 40,
+    "level": null,
+    "levelRange": null,
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/169-emerald-dream"
+   },
+   {
+    "id": 269,
+    "name": "Caverns of Time",
+    "kind": "dungeon",
+    "players": 10,
+    "level": null,
+    "levelRange": null,
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/269-caverns-of-time"
+   },
+   {
+    "id": 509,
+    "name": "Ruins of Ahn'Qiraj",
+    "kind": "raid",
+    "players": 20,
+    "level": null,
+    "levelRange": [
+     60,
+     60
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/509-ruins-of-ahnqiraj"
+   },
+   {
+    "id": 531,
+    "name": "Ahn'Qiraj Temple",
+    "kind": "raid",
+    "players": 40,
+    "level": null,
+    "levelRange": [
+     60,
+     60
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/531-ahnqiraj-temple"
+   },
+   {
+    "id": 533,
+    "name": "Naxxramas",
+    "kind": "raid",
+    "players": 40,
+    "level": null,
+    "levelRange": [
+     60,
+     60
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/533-naxxramas"
+   },
+   {
+    "id": 2720,
+    "name": "The Searing Basin",
+    "kind": "dungeon",
+    "players": 20,
+    "level": null,
+    "levelRange": null,
+    "newInForever": false,
+    "status": "other",
+    "url": "https://foreverdb.net/dungeon/2720-the-searing-basin"
+   },
+   {
+    "id": 2784,
+    "name": "Demon Fall Canyon",
+    "kind": "dungeon",
+    "players": 5,
+    "level": null,
+    "levelRange": [
+     60,
+     60
+    ],
+    "newInForever": false,
+    "status": "other",
+    "url": "https://foreverdb.net/dungeon/2784-demon-fall-canyon"
+   },
+   {
+    "id": 2789,
+    "name": "The Tainted Scar",
+    "kind": "raid",
+    "players": 40,
+    "level": null,
+    "levelRange": [
+     60,
+     60
+    ],
+    "newInForever": false,
+    "status": "other",
+    "url": "https://foreverdb.net/dungeon/2789-the-tainted-scar"
+   },
+   {
+    "id": 2791,
+    "name": "Storm Cliffs",
+    "kind": "raid",
+    "players": 40,
+    "level": null,
+    "levelRange": [
+     60,
+     60
+    ],
+    "newInForever": false,
+    "status": "other",
+    "url": "https://foreverdb.net/dungeon/2791-storm-cliffs"
+   },
+   {
+    "id": 2804,
+    "name": "The Crystal Vale",
+    "kind": "raid",
+    "players": 40,
+    "level": null,
+    "levelRange": [
+     60,
+     60
+    ],
+    "newInForever": false,
+    "status": "other",
+    "url": "https://foreverdb.net/dungeon/2804-the-crystal-vale"
+   },
+   {
+    "id": 2806,
+    "name": "Shadow Hold",
+    "kind": "dungeon",
+    "players": 1,
+    "level": null,
+    "levelRange": null,
+    "newInForever": false,
+    "status": "other",
+    "url": "https://foreverdb.net/dungeon/2806-shadow-hold"
+   },
+   {
+    "id": 2807,
+    "name": "Burning of Andorhal",
+    "kind": "dungeon",
+    "players": 1,
+    "level": null,
+    "levelRange": null,
+    "newInForever": false,
+    "status": "other",
+    "url": "https://foreverdb.net/dungeon/2807-burning-of-andorhal"
+   },
+   {
+    "id": 2817,
+    "name": "Starfall Barrow Den",
+    "kind": "dungeon",
+    "players": 1,
+    "level": null,
+    "levelRange": null,
+    "newInForever": false,
+    "status": "other",
+    "url": "https://foreverdb.net/dungeon/2817-starfall-barrow-den"
+   },
+   {
+    "id": 2832,
+    "name": "Nightmare Grove",
+    "kind": "raid",
+    "players": 40,
+    "level": null,
+    "levelRange": [
+     60,
+     60
+    ],
+    "newInForever": false,
+    "status": "other",
+    "url": "https://foreverdb.net/dungeon/2832-nightmare-grove"
+   },
+   {
+    "id": 2853,
+    "name": "Deadwind Pass",
+    "kind": "dungeon",
+    "players": 1,
+    "level": null,
+    "levelRange": null,
+    "newInForever": false,
+    "status": "other",
+    "url": "https://foreverdb.net/dungeon/2853-deadwind-pass"
+   },
+   {
+    "id": 2856,
+    "name": "Scarlet Enclave",
+    "kind": "raid",
+    "players": 40,
+    "level": null,
+    "levelRange": [
+     60,
+     60
+    ],
+    "newInForever": false,
+    "status": "other",
+    "url": "https://foreverdb.net/dungeon/2856-scarlet-enclave"
+   },
+   {
+    "id": 2875,
+    "name": "Karazhan Crypts",
+    "kind": "dungeon",
+    "players": 5,
+    "level": null,
+    "levelRange": [
+     60,
+     60
+    ],
+    "newInForever": false,
+    "status": "other",
+    "url": "https://foreverdb.net/dungeon/2875-karazhan-crypts"
+   },
+   {
+    "id": 2902,
+    "name": "The Scarab Dais",
+    "kind": "dungeon",
+    "players": 1,
+    "level": null,
+    "levelRange": null,
+    "newInForever": false,
+    "status": "other",
+    "url": "https://foreverdb.net/dungeon/2902-the-scarab-dais"
+   },
+   {
+    "id": 2921,
+    "name": "Naxxramas",
+    "kind": "dungeon",
+    "players": 1,
+    "level": null,
+    "levelRange": null,
+    "newInForever": false,
+    "status": "other",
+    "url": "https://foreverdb.net/dungeon/2921-naxxramas"
+   },
+   {
+    "id": 3109,
+    "name": "Manor Mistmantle",
+    "kind": "dungeon",
+    "players": 5,
+    "level": null,
+    "levelRange": null,
+    "newInForever": true,
+    "status": "forever",
+    "url": "https://foreverdb.net/dungeon/3109-manor-mistmantle"
+   },
+   {
+    "id": 389,
+    "name": "Ragefire Chasm",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 13,
+    "levelRange": [
+     13,
+     18
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/389-ragefire-chasm"
+   },
+   {
+    "id": 3065,
+    "name": "The Hall of Thanes",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 13,
+    "levelRange": [
+     13,
+     20
+    ],
+    "newInForever": true,
+    "status": "forever",
+    "url": "https://foreverdb.net/dungeon/3065-the-hall-of-thanes"
+   },
+   {
+    "id": 2999,
+    "name": "Ruins of Lordaeron",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 15,
+    "levelRange": [
+     15,
+     22
+    ],
+    "newInForever": true,
+    "status": "forever",
+    "url": "https://foreverdb.net/dungeon/2999-ruins-of-lordaeron"
+   },
+   {
+    "id": 36,
+    "name": "Deadmines",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 16,
+    "levelRange": [
+     17,
+     26
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/36-deadmines"
+   },
+   {
+    "id": 43,
+    "name": "Wailing Caverns",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 17,
+    "levelRange": [
+     15,
+     24
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/43-wailing-caverns"
+   },
+   {
+    "id": 33,
+    "name": "Shadowfang Keep",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 18,
+    "levelRange": [
+     20,
+     30
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/33-shadowfang-keep"
+   },
+   {
+    "id": 48,
+    "name": "Blackfathom Deeps",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 22,
+    "levelRange": [
+     24,
+     32
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/48-blackfathom-deeps"
+   },
+   {
+    "id": 34,
+    "name": "Stormwind Stockade",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 23,
+    "levelRange": [
+     24,
+     32
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/34-stormwind-stockade"
+   },
+   {
+    "id": 47,
+    "name": "Razorfen Kraul",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 24,
+    "levelRange": [
+     29,
+     38
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/47-razorfen-kraul"
+   },
+   {
+    "id": 90,
+    "name": "Gnomeregan",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 25,
+    "levelRange": [
+     29,
+     38
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/90-gnomeregan"
+   },
+   {
+    "id": 2998,
+    "name": "Excavation Site: Wetlands",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 26,
+    "levelRange": [
+     26,
+     33
+    ],
+    "newInForever": true,
+    "status": "forever",
+    "url": "https://foreverdb.net/dungeon/2998-excavation-site-wetlands"
+   },
+   {
+    "id": 2959,
+    "name": "City of Dalaran",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 28,
+    "levelRange": [
+     28,
+     35
+    ],
+    "newInForever": true,
+    "status": "forever",
+    "url": "https://foreverdb.net/dungeon/2959-city-of-dalaran"
+   },
+   {
+    "id": 189,
+    "name": "Scarlet Monastery",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 30,
+    "levelRange": [
+     30,
+     38
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/189-scarlet-monastery"
+   },
+   {
+    "id": 129,
+    "name": "Razorfen Downs",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 34,
+    "levelRange": [
+     37,
+     46
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/129-razorfen-downs"
+   },
+   {
+    "id": 70,
+    "name": "Uldaman",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 35,
+    "levelRange": [
+     41,
+     51
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/70-uldaman"
+   },
+   {
+    "id": 209,
+    "name": "Zul'Farrak",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 42,
+    "levelRange": [
+     44,
+     54
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/209-zulfarrak"
+   },
+   {
+    "id": 349,
+    "name": "Maraudon",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 42,
+    "levelRange": [
+     46,
+     55
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/349-maraudon"
+   },
+   {
+    "id": 109,
+    "name": "Sunken Temple",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 45,
+    "levelRange": [
+     50,
+     60
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/109-sunken-temple"
+   },
+   {
+    "id": 230,
+    "name": "Blackrock Depths",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 48,
+    "levelRange": [
+     52,
+     60
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/230-blackrock-depths"
+   },
+   {
+    "id": 229,
+    "name": "Blackrock Spire",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 53,
+    "levelRange": [
+     55,
+     60
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/229-blackrock-spire"
+   },
+   {
+    "id": 429,
+    "name": "Dire Maul",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 54,
+    "levelRange": [
+     54,
+     60
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/429-dire-maul"
+   },
+   {
+    "id": 329,
+    "name": "Stratholme",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 55,
+    "levelRange": [
+     58,
+     60
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/329-stratholme"
+   },
+   {
+    "id": 289,
+    "name": "Scholomance",
+    "kind": "dungeon",
+    "players": 5,
+    "level": 57,
+    "levelRange": [
+     58,
+     60
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/289-scholomance"
+   },
+   {
+    "id": 249,
+    "name": "Onyxia's Lair",
+    "kind": "raid",
+    "players": 40,
+    "level": 60,
+    "levelRange": [
+     60,
+     60
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/249-onyxias-lair"
+   },
+   {
+    "id": 309,
+    "name": "Zul'Gurub",
+    "kind": "raid",
+    "players": 20,
+    "level": 60,
+    "levelRange": [
+     60,
+     60
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/309-zulgurub"
+   },
+   {
+    "id": 409,
+    "name": "Molten Core",
+    "kind": "raid",
+    "players": 40,
+    "level": 60,
+    "levelRange": [
+     60,
+     60
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/409-molten-core"
+   },
+   {
+    "id": 469,
+    "name": "Blackwing Lair",
+    "kind": "raid",
+    "players": 40,
+    "level": 60,
+    "levelRange": [
+     60,
+     60
+    ],
+    "newInForever": false,
+    "status": "classic",
+    "url": "https://foreverdb.net/dungeon/469-blackwing-lair"
+   }
+  ],
+  "meta": {
+   "build": "1.60.1.70532",
+   "total": 47,
+   "limit": 100,
+   "offset": 0,
+   "next": null,
+   "attribution": "Data from ForeverDB.net (https://foreverdb.net). You must credit ForeverDB.net, with a visible link to https://foreverdb.net, wherever you show this data."
+  }
+ }
+}
