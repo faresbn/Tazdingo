@@ -1,6 +1,6 @@
 # Tazdingo
 
-An unofficial journal for World of Warcraft: Forever, published at
+An unofficial field guide and market tracker for World of Warcraft: Forever, published at
 https://faresbn.github.io/Tazdingo/. It holds Auction House prices from our
 Auctionator scans, notes on classes, professions and the game's systems, and
 lists of addons, macros and known issues. The repository is private; only the
@@ -27,8 +27,12 @@ addon's file. Then, in this folder, on `main`:
 python3 scripts/ingest.py --push
 ```
 
-It finds Forever's `Auctionator.lua`, keeps only the market price records,
-refreshes item names, runs the tests, builds, checks, commits and pushes. If
+It finds Forever's `Auctionator.lua`, turns it into a scan record (the scan's
+time and every item's latest price, plus that day's low, high and most listed),
+merges its daily history into the archive, refreshes item names, runs the tests,
+builds, checks, commits and pushes. Run it after every scan: each one becomes a
+price observation, kept for the last 30 scans or 30 days (whichever reaches
+further back) and folded into the daily archive after that. If
 anything fails it undoes itself and says which step stopped it. The first time,
 it asks which market to publish (`--market "Realm Faction"`), then remembers.
 `--list` shows the file's markets. The original file never leaves the Mac.
@@ -46,6 +50,7 @@ it asks which market to publish (`--market "Realm Faction"`), then remembers.
 ```sh
 python3 scripts/foreverdb_data.py   # recipes, crates, camp items, other players' and vendor prices (~1 minute)
 python3 scripts/item_names.py       # item names
+FOREVERDB_API_KEY=… python3 scripts/foreverdb_api.py fetch && python3 scripts/foreverdb_api.py slim
 ```
 
 Both fetch from ForeverDB, politely, with the credit "Data from ForeverDB.net"
@@ -53,6 +58,14 @@ shown on the site. Run them after launch to replace pre-launch data; the
 Pre-launch labels clear once the data is fetched on or after 4 November.
 
 ## How prices work
+
+The Auction House overview and each market page list what was seen unusually
+low, items seen below what a vendor pays, an investment watch, short supply,
+movers over a day and a week, items always on the market, a market index and a
+weekday × time-of-day grid; every item has its own page with a 30-day chart.
+The methods and thresholds are in `scripts/market.py`. Auctionator records
+prices and the most units listed each day, never sales, so none of this claims
+what sold.
 
 - **Typical price:** the median of each day's cheapest listing over the item's
   last seven days of records, so a troll listing or one-day spike doesn't set it.
@@ -85,6 +98,9 @@ To preview, serve `dist` under `/Tazdingo/` (see `.claude/launch.json`).
 | `data/captures.json`, `data/captures/` | Scan receipts and market-only extracts |
 | `data/foreverdb.json`, `data/items.json` | ForeverDB-derived data and item names |
 | `scripts/auctionator.py` | Reads SavedVariables and Auctionator's data without running Lua |
+| `data/market/` | Scan records and the daily archive per market (`scripts/market_store.py`); `inbox/` takes records committed from ChatGPT |
+| `scripts/market.py`, `scripts/ah_pages.py` | Auction House measures; the dashboard and item pages |
+| `data/foreverdb-api.json` | Slimmed ForeverDB API data (`scripts/foreverdb_api.py`) |
 | `scripts/build.py`, `pages.py`, `sections.py` | Builds the site; page templates |
 | `docs/chatgpt/` | Instructions for the ChatGPT project |
 

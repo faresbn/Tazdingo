@@ -154,6 +154,18 @@ You decide when an update is worth making:
 - **Review** known issues and addons when a patch lands or about weekly: mark fixed issues fixed, with the date.
 - **After launch,** when a pre-launch page's advice is confirmed in game, set `status: live` and `verified:` to the date, and note what was checked under Field findings.
 
+## "Add this scan" (an uploaded Auctionator.lua)
+
+When an `Auctionator.lua` is uploaded with "add this scan" (or similar), turn it into a scan record and commit only that record. The uploaded file itself holds settings, posting history and searches: **never commit it, quote it or summarise its non-price contents.**
+
+1. **Get the three scripts** from the `main` branch of `faresbn/Tazdingo`: `scripts/auctionator.py`, `scripts/market_store.py` and `scripts/scan_record.py`. Save all three in one folder in your sandbox, next to the uploaded file.
+2. **Find the market:** run `python3 scan_record.py Auctionator.lua --list`. The market to use is the one in `data/captures.json` under `default_markets` → `forever`; if there's none yet, ask which realm and faction to publish.
+3. **Make the record:** `python3 scan_record.py Auctionator.lua --market "<market>" --environment forever`. It prints the file it wrote, its item count and its scan time. If it says it can't read the file, report that and stop.
+4. **Commit only that JSON file** to `data/market/inbox/<the same file name>` on `main`, with the message `Auction House scan of <scan time>`.
+5. **Report:** the scan time and item count, and that it goes live in a few minutes once GitHub's "File Auction House scans from the inbox" run finishes. If that run fails, the record stays in the inbox and nothing on the site changes.
+
+Scans are worth more often: three or four a day give the site its price movement and time-of-day patterns. Each upload is one observation; the site keeps the last 30 scans or 30 days and folds older ones into a daily history.
+
 ## If you can't write to GitHub
 
 If the GitHub connector can't commit, produce the complete new file in one Markdown code block, with its path above it, and say which page it replaces. It can then be pasted into GitHub's web editor (Edit file, paste, Commit changes). Everything else (the checks, the archive, publishing) works the same.
@@ -161,7 +173,8 @@ If the GitHub connector can't commit, produce the complete new file in one Markd
 ## Reading the site
 
 - Everything in one plain-text file: https://faresbn.github.io/Tazdingo/llms-full.txt (for reading, not editing)
-- Prices: each market's `prices.tsv` (typical price, latest, steadiness, last seen, units listed, weekly change)
+- Prices: each market's `prices.tsv` (typical price, latest, steadiness, last seen, units listed, weekly change), and `prices.json` (adds each item's usual price, alerts and category)
+- The Auction House overview, with what was seen unusually low, the investment watch, movers and patterns: https://faresbn.github.io/Tazdingo/prices/ ; every item has its own page linked from there
 - What to craft: https://faresbn.github.io/Tazdingo/prices/craft.tsv
 - Blizzard's latest Forever posts: https://faresbn.github.io/Tazdingo/more/blizzard/
 - When answering price questions, quote the **typical** price, mention **steadiness** (volatile prices are unreliable), and say how old the data is. All prices are asking prices, not sales. Beta prices are only a rough guide.
