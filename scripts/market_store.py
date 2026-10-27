@@ -41,8 +41,12 @@ def slugify(text: str) -> str:
 
 
 def market_slug(environment: str, market: str) -> str:
-    """The same slug the build uses for a market's pages."""
-    return slugify(environment + "-" + market)
+    """The slug of a market's folder and pages. A name with letters outside a-z (a Russian
+    realm, say) also gets a short fingerprint, so two such realms can't share a folder."""
+    slug = slugify(environment + "-" + market)
+    if re.search(r"[^\x00-\x7f]", market):
+        slug += "-" + hashlib.sha256(market.encode()).hexdigest()[:8]
+    return slug
 
 
 def scan_timestamp(capture: dict) -> int:
@@ -142,18 +146,19 @@ def validate_record(data: dict, inbox: bool = False) -> dict:
         allowed |= {"history"}
     if not isinstance(data, dict) or not set(data) <= allowed or not set(data) >= allowed - {"history"}:
         raise InvalidCapture("Not a scan record")
-    full = data["full_scan_timestamp"]
-    if full is not None and (type(full) is not int or not 1_500_000_000 < full <= data.get("scan_timestamp", 0)):
-        raise InvalidCapture("Invalid full-scan time")
     if data["format"] != RECORD_FORMAT:
         raise InvalidCapture("Unsupported scan record format")
-    if not re.fullmatch(r"[a-z-]{2,40}", data["environment"]) or not isinstance(data["market"], str) \
+    if not isinstance(data["environment"], str) or not re.fullmatch(r"[a-z-]{2,40}", data["environment"]) \
+            or not isinstance(data["market"], str) \
             or not 0 < len(data["market"]) <= 80 or re.search(r"[\x00-\x1f]", data["market"]):
         raise InvalidCapture("Invalid market in scan record")
     if not re.fullmatch(r"[a-f0-9]{64}", data["source_sha256"]):
         raise InvalidCapture("Invalid source fingerprint in scan record")
     if type(data["scan_timestamp"]) is not int or not 1_500_000_000 < data["scan_timestamp"] < 4_000_000_000:
         raise InvalidCapture("Invalid scan time")
+    full = data["full_scan_timestamp"]
+    if full is not None and (type(full) is not int or not 1_500_000_000 < full <= data["scan_timestamp"]):
+        raise InvalidCapture("Invalid full-scan time")
     if type(data["day"]) is not int or not 0 <= data["day"] < 100_000:
         raise InvalidCapture("Invalid scan day")
     if not isinstance(data["items"], dict) or not data["items"]:
@@ -327,13 +332,16 @@ def add_record(root: Path, record: dict, rows: dict, receipt_extra: dict) -> dic
         print("An earlier import was cut off part-way; it has been undone.")
     registry_path = root / "data/captures.json"
     tidy(root, json.loads(registry_path.read_text()))
-    load(root)  # the store must match its fingerprints before anything is added to it
+    store = load(root)  # the store must match its fingerprints before anything is added to it
     registry = json.loads(registry_path.read_text())
     receipts = registry.setdefault("scans", [])
     slug = market_slug(record["environment"], record["market"])
     content = fingerprint(dump({k: record[k] for k in ("day", "items", "scan_timestamp")}))
     if any(r["market_slug"] == slug and r["content_sha256"] == content for r in receipts):
         return None  # this exact scan is already recorded
+    newest = max(store.get(slug, {}).get("records", []), key=lambda r: r["scan_timestamp"], default=None)
+    if newest and newest["day"] == record["day"] and newest["items"] == record["items"]:
+        return None  # the file's scan time moved on, but this market wasn't scanned again
     if any(r["market_slug"] == slug and r["status"] == "folded" and r["day"] == record["day"] for r in receipts):
         raise InvalidCapture(f"This scan's day ({day_date(record['day'])}) has already been folded into the archive; "
                              "an upload that old can't be added any more.")

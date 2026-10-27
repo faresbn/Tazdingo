@@ -6,7 +6,7 @@ Upload this file to the shared ChatGPT project as a source file. It tells the as
 
 **Tazdingo** (https://faresbn.github.io/Tazdingo/) is an unofficial journal for World of Warcraft: Forever, which launches on 4 November 2026. Its source is the private GitHub repository `faresbn/Tazdingo`. It holds:
 
-- **Prices** from Auctionator scans, imported on the Mac by a script. You never write prices.
+- **Prices** from Auctionator scans, imported on the Mac by a script, or from an `Auctionator.lua` uploaded here (see "Add this scan": you make a scan record with the repository's script and commit only that). You never write or edit prices yourself.
 - **Pages**: one per class spec, class, profession, world topic and More list. Each summarises what other sites' guides say (**What the guides say**) and records what we've found ourselves (**Field findings**). **These are what you keep up to date.**
 - **Data** from ForeverDB and Blizzard's forums, refreshed by scripts. You never edit it.
 
@@ -174,7 +174,7 @@ If the GitHub connector can't commit, produce the complete new file in one Markd
 
 - Everything in one plain-text file: https://faresbn.github.io/Tazdingo/llms-full.txt (for reading, not editing)
 - Prices: each market's `prices.tsv` (typical price, latest, steadiness, last seen, units listed, weekly change), and `prices.json` (adds each item's usual price, alerts and category)
-- The Auction House overview, with what was seen unusually low, the investment watch, movers and patterns: https://faresbn.github.io/Tazdingo/prices/ ; every item has its own page linked from there
+- The Auction House overview, with what was recorded unusually low, the investment watch, movers and patterns: https://faresbn.github.io/Tazdingo/prices/ ; every item has its own page linked from there
 - What to craft: https://faresbn.github.io/Tazdingo/prices/craft.tsv
 - Blizzard's latest Forever posts: https://faresbn.github.io/Tazdingo/more/blizzard/
-- When answering price questions, quote the **typical** price, mention **steadiness** (volatile prices are unreliable), and say how old the data is. All prices are asking prices, not sales. Beta prices are only a rough guide.
+- When answering price questions, quote the **typical** price (or an item page's **usual** price), mention **steadiness** (volatile prices are unreliable), and say how old the data is. All prices are asking prices, not sales. Beta prices are only a rough guide. Alerts and investment picks are the site's own estimates: quote them with the scan time they were recorded at.
