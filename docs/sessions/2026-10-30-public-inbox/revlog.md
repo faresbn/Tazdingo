@@ -31,7 +31,7 @@ It also confirmed that pushes made with a personal token do trigger workflows, a
 
 - **Lua from any addon** (AllTheThings and future ones): the inbox identifies the addon from file name and contents, always stores the file, and runs a processor only where one exists (Auctionator today).
 - **"How can we enforce truth, not just format?"** Answered in the plan's new section: code can't verify the game, so it enforces provenance and change rules, uses personal keys for attribution, and routes judgement calls to Fares as one-tap pull requests. A free GitHub Models comment is noted as optional.
-- **Commit email switched** to the GitHub private address in this repository's config; **"Mike" becomes "co-player"** in current docs, for inclusivity.
+- **Commit email switched** to the GitHub private address in this repository's config; **a co-player's first name becomes "co-player"** in current docs, for inclusivity.
 - **Receiver reconsidered:** the plan now compares a ChatGPT Site with a free Cloudflare Worker and recommends the Worker (deployable and testable from here). Calling the inbox as a tool from chats is phase 9, via an MCP tool on either host.
 - Not re-reviewed yet: the truth-check layers and generic Lua add rules to `inbox.py` without changing the transaction the review checked. The receiver choice isn't a security change, since the code and token are the same on either host.
 

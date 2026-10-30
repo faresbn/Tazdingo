@@ -3,8 +3,14 @@
 An unofficial field guide and market tracker for World of Warcraft: Forever, published at
 https://faresbn.github.io/Tazdingo/. It holds Auction House prices from our
 Auctionator scans, notes on classes, professions and the game's systems, and
-lists of addons, macros and known issues. The repository is private; only the
-built site is public, and the site never names the people behind it.
+lists of addons, macros and known issues. Not affiliated with or endorsed by
+Blizzard Entertainment; World of Warcraft and Warcraft are trademarks of Blizzard
+Entertainment, Inc.
+
+This repository is public. The website is the place for people; this repository holds
+what builds it, the original addon files our prices come from (`data/captures/`), and
+`feed/`, the plain markdown map ChatGPT reads (start at `feed/index.md`). Data from
+ForeverDB.net is used with credit (`data/README.md`).
 
 ## Who writes what
 

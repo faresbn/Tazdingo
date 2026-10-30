@@ -51,7 +51,7 @@ These change settled lines in AGENTS.md and DECISIONS.md. Each one gets the date
 ## Settled on 30 October
 
 - **A. Commit email:** history stays as it is; this repository's commits now use the GitHub private address (`195290664+faresbn@users.noreply.github.com`, set in the repository's own git config on 30 October). The inbox's commits use it too. Old commits keep `faresb@fact.qa`.
-- **B. "Mike" becomes "co-player"** in the current docs (AGENTS.md, DECISIONS.md, the session documents), for inclusivity rather than anonymity: the role can be anyone. The site's no-names guard in `build.py` and `check_site.py` keeps the specific names it blocks, because that's what makes it work.
+- **B. A co-player's first name becomes "co-player"** in the current docs (AGENTS.md, DECISIONS.md, the session documents), for inclusivity rather than anonymity: the role can be anyone. The site's no-names guard in `build.py` and `check_site.py` keeps the specific names it blocks, because that's what makes it work.
 
 ## Which receiver: a ChatGPT Site (no new service)
 
@@ -136,7 +136,7 @@ Each phase is one branch checkpoint with the full check run (`unittest`, `build.
 
 ### Phase 3: prepare and flip to public (about 45 minutes, then your go)
 
-- **"Mike" becomes "co-player"** in AGENTS.md, DECISIONS.md and the session documents (B above). The commit email is already switched (A).
+- **A co-player's first name becomes "co-player"** in AGENTS.md, DECISIONS.md and the session documents (B above). The commit email is already switched (A).
 - **`data/README.md`:** credits ForeverDB.net, says the data is used with credit and not ours to relicense, and which files hold it.
 - **`README.md`:** an opening paragraph for public readers (what this is, unofficial, not affiliated with Blizzard); the rest stays.
 - **Re-runs the secret scan on the final history.**
