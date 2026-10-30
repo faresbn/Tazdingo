@@ -2,6 +2,18 @@
 
 Each line is something Fares decided, or approved, with the reason and the date. Flag it before proposing to change one. Newest first within each group.
 
+## A public repository, a feed and an inbox (30 October)
+
+Decided by Fares on 30 October; the plan, research and review are in `docs/sessions/2026-10-30-public-inbox/`.
+- **The repository is public** (was: private, only `dist/` published): "there's no actual added value in keeping the repo private". The site stays impersonal; the repository isn't. Commits from 30 October use the GitHub private address (`195290664+faresbn@users.noreply.github.com`); older commits keep the work address.
+- **Original Lua files are committed** (was: never commit SavedVariables): "lua files are not secrets ... They're just game data". Any addon's file, kept unchanged at `data/captures/<environment>/<addon>/`.
+- **ChatGPT reads the repository, visitors read the website.** `feed/index.md` is a map only ("a guide that sends ChatGPT into each file as needed"); prices are small committed markdown files in `feed/`; guide pages are read straight from `content/`. "I still want the website to be the main place that faresbn.github.io/Tazdingo/ takes visitors."
+- **ChatGPT writes through the inbox** (was: ChatGPT commits directly). Codex and Claude still commit to `main`; Fares can override either on request.
+- **A route for anyone without GitHub exists** (was: parked), for Fares and any co-player: a hidden form at `inbox/` on the site, a personal key each, and the instructions in `docs/chatgpt/TAZDINGO_INBOX.md`.
+- **The receiver is a second ChatGPT Site** (`inbox-site/`), so the system gains no new service: "the more third-party services we throw in, the harder it is to keep track of an otherwise very simple system". A Cloudflare Worker is the fallback; Vercel and Google Apps Script were rejected. The news relay keeps its rule of never holding GitHub credentials; the inbox Site holds a token limited to this repository.
+- **Truth is checked by provenance, attribution and review, not by code.** Enforced rules: findings need a confidence, a date and how they're known, and are never deleted; source summaries link their sources; costs name their source; links are plain and real. Personal keys make every submission attributable. Fares approves, as pull requests: a page set Live, a changed recommendation, a finding marked outdated, a site no page has cited before. A free GitHub Models comment was left out for now.
+- **"Co-player", not a name,** in the docs: "not for anonymity but for inclusivity (it can be anyone)".
+
 ## The Auction House (27 October, evening)
 
 - **The Auction House is the priority** (Fares): "push the envelope on AH tracking" while still improving the rest.
@@ -51,7 +63,7 @@ Each line is something Fares decided, or approved, with the reason and the date.
 
 ## How updates arrive
 
-- **ChatGPT commits directly** (26 Oct; confirmed working by Fares on 27 Oct: every content edit since the FvrRepo days came from ChatGPT, under Fares's GitHub identity). A route for someone without a GitHub account was parked on 27 Oct. The fallbacks: a custom MCP connector in the Business workspace (plan v2, section 3), or pasting the file ChatGPT writes into GitHub's web editor.
+- **ChatGPT commits directly** (26 Oct; superseded on 30 Oct by the inbox, above). A route for someone without a GitHub account was parked on 27 Oct and built on 30 Oct.
 - **When to write is ChatGPT's call** (26 Oct), guided by UPDATING.md.
 - **A record and a backup of every change** (27 Oct): kept automatically by the archive Action in `archive/`, so the record doesn't depend on ChatGPT.
 
