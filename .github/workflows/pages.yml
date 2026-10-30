@@ -3,6 +3,7 @@ name: Validate and publish Tazdingo
 on:
   push:
     branches: [main]
+    paths-ignore: ["inbox/**"]  # arriving submissions publish nothing; inbox.yml publishes what it applies
   pull_request:
   workflow_dispatch:
   schedule:

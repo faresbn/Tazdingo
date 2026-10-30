@@ -95,7 +95,7 @@ def unfinished_import() -> bool:
     return bool(status.stdout.strip())
 
 
-def ingest(path: Path, environment: str, markets: list[str]) -> dict | None:
+def ingest(path: Path, environment: str, markets: list[str], root: Path = ROOT) -> dict | None:
     """File one upload: a scan record per market, its daily history merged into the archive."""
     everything = market_store.read_all_markets(path)  # every readable market, to tell which one a full scan belongs to
     full_market = market_store.full_scan_market(everything)
@@ -108,14 +108,14 @@ def ingest(path: Path, environment: str, markets: list[str]) -> dict | None:
     for market in markets:
         record = market_store.record_from_capture(capture, market, environment, full_market=full_market)
         rows = market_store.history(capture, market, 0, record["day"])
-        result = market_store.add_record(ROOT, record, rows, {"scope_source": "Fares's Auctionator export"})
+        result = market_store.add_record(root, record, rows, {"scope_source": "Auctionator export"})
         if result is None:
             print(f"No new scan data for {market} since the last import; skipping.")
         else:
             filed.append(result)
     if not filed:
         return None
-    registry_path = ROOT / "data/captures.json"
+    registry_path = root / "data/captures.json"
     registry = json.loads(registry_path.read_text())
     registry.setdefault("default_markets", {})[environment] = markets
     write_whole(registry_path, json.dumps(registry, indent=2) + "\n")

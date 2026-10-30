@@ -1,0 +1,53 @@
+name: File what arrives in the inbox
+
+# The inbox Site commits each submission (a guide page or an addon's .lua, the key already
+# removed) to inbox/<id>/. scripts/inbox.py checks each one and applies it, sends it for review
+# as a pull request, or holds it in inbox/held/<id>/ with the reason; it runs the full tests,
+# build and site check before committing, and pushes. Commits made with this workflow's token
+# don't start other workflows, so it archives the page itself and starts the publish itself.
+# A run with anything held fails at the end, after everything is pushed, so GitHub emails the
+# owner.
+
+on:
+  push:
+    branches: [main]
+    paths: ["inbox/**", "!inbox/held/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+concurrency:
+  group: inbox
+  cancel-in-progress: false
+
+jobs:
+  inbox:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out history
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Check, apply or hold each submission, then push
+        id: inbox
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "tazdingo-inbox[bot]"
+          git config user.email "tazdingo-inbox@users.noreply.github.com"
+          python3 scripts/inbox.py --push
+      - name: Publish
+        if: steps.inbox.outputs.applied != '' && steps.inbox.outputs.applied != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
+      - name: Flag held submissions
+        if: steps.inbox.outputs.held != '' && steps.inbox.outputs.held != '0'
+        run: |
+          echo "::error::Held submissions: each reason is in this run's summary and in inbox/held/<id>/reason.txt."
+          exit 1
