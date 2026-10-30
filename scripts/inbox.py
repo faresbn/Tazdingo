@@ -256,6 +256,8 @@ def apply_lua(root: Path, sub: dict, folder: Path) -> dict:
     source = folder / sub["file"]
     if addon == "auctionator":
         registry = json.loads((root / "data/captures.json").read_text())
+        if sub.get("market") is not None and (not isinstance(sub["market"], str) or not 0 < len(sub["market"]) <= 80):
+            raise Held("market must be a realm and faction, e.g. 'Realm Horde'")
         markets = [sub["market"]] if sub.get("market") else registry.get("default_markets", {}).get(ENVIRONMENT, [])
         if not markets:
             raise Held("say which market this scan is for (its realm and faction, e.g. 'Realm Horde') in the market field")
@@ -292,6 +294,11 @@ def process_all(root: Path, push: bool) -> list[dict]:
             rollback(root, base)
             hold(root, root / INBOX / sub_id, sub_id, str(reason))
             outcome = {"outcome": "held", "detail": str(reason)}
+        except Exception as error:  # anything unforeseen holds this one and the rest still run
+            rollback(root, base)
+            reason = f"the inbox couldn't process this ({type(error).__name__}: {error}); it needs a look"
+            hold(root, root / INBOX / sub_id, sub_id, reason)
+            outcome = {"outcome": "held", "detail": reason}
         outcomes.append({"id": sub_id, **outcome})
     return outcomes
 

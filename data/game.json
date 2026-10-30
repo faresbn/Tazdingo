@@ -601,5 +601,6 @@
    "summary": "Problems players have hit, what's known, and workarounds."
   }
  ],
- "screenshots": []
+ "screenshots": [],
+  "inbox": {"endpoint": "https://tazdingo-inbox.fact-special-2007.chatgpt.site/submit", "open": false}
 }

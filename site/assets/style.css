@@ -157,7 +157,7 @@ main::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-e
 .lookup-results .search-empty { padding: 0.7rem 0.8rem; color: var(--ink-soft); }
 .lookup-results li:hover { background: var(--surface-2); }
 .lookup-results .kind { flex: none; color: var(--ink-soft); font-size: 0.8rem; }
-input[type="search"], select { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--rule-strong); border-radius: 3px; padding: 0.55rem 0.7rem; min-width: 0; width: 100%; min-height: 44px; }
+input[type="search"], input[type="text"], input[type="password"], textarea, select { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--rule-strong); border-radius: 3px; padding: 0.55rem 0.7rem; min-width: 0; width: 100%; min-height: 44px; }
 button { font: 600 1rem var(--sans); color: var(--surface); background: var(--ink); border: 1px solid var(--ink); border-radius: 3px; padding: 0.55rem 1.1rem; cursor: pointer; }
 button:hover { background: var(--link); border-color: var(--link); }
 button[disabled] { opacity: 0.4; cursor: default; background: var(--ink); }
@@ -578,3 +578,13 @@ table.ah-list th[scope="row"] a { text-decoration-thickness: 1px; }
   .wordmark .sub { max-width: 17rem; font-size: 0.7rem; }
 }
 .alert.note { color: var(--ink-soft); font-weight: 400; }
+
+/* The hidden inbox form */
+.inbox-form { display: grid; gap: 0.9rem; max-width: 46rem; }
+.inbox-form label { display: grid; gap: 0.3rem; font-weight: 600; }
+.inbox-form label.choice { display: flex; gap: 0.5rem; align-items: center; font-weight: 400; }
+.inbox-form fieldset { border: 1px solid var(--rule); border-radius: 3px; padding: 0.6rem 0.9rem; }
+.inbox-form textarea { font: 0.9rem/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; min-height: 16rem; resize: vertical; }
+.inbox-form input[type="file"] { font: inherit; }
+.inbox-form h2 { margin: 0.6rem 0 0; font-size: 1.1rem; }
+.inbox-closed { border-left: 3px solid var(--accent, var(--link)); padding: 0.5rem 0.8rem; background: var(--surface-2); }
