@@ -24,7 +24,7 @@ Pre-launch means the page's advice isn't checked in the live game yet. To edit a
 - `content/classes/mage/hybrid.md`: Mage: hybrid builds, updated 2026-10-27, Pre-launch, version `9ebc5789ef91`
 - `content/classes/mage/macros.md`: Mage: macros, updated 2026-10-27, Pre-launch, version `8ab0d5d5e726`
 - `content/classes/mage/overview.md`: Mage: overview, updated 2026-10-30, Pre-launch, version `555d249c8c9d`
-- `content/classes/paladin/holy.md`: Holy Paladin, updated 2026-10-30, Pre-launch, version `4f728adffe45`
+- `content/classes/paladin/holy.md`: Holy Paladin, updated 2026-10-30, Pre-launch, version `14fcb5326c28`
 - `content/classes/paladin/hybrid.md`: Paladin: hybrid builds, updated 2026-10-27, Pre-launch, version `f38101a97efd`
 - `content/classes/paladin/macros.md`: Paladin: macros, updated 2026-10-27, Pre-launch, version `0b6b4b1adb1f`
 - `content/classes/paladin/overview.md`: Paladin: overview, updated 2026-10-30, Pre-launch, version `0e240a48b1d5`
