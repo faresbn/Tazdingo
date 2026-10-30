@@ -1,0 +1,46 @@
+name: Refresh the feed
+
+# feed/ is the plain markdown ChatGPT reads from the repository (scripts/feed.py). The build
+# writes it, and scan imports and the inbox commit it with their change. This catches every
+# other push that could change it (a page edited by Codex without a build, a data refresh): it
+# rebuilds and commits feed/ only if something changed. A commit made with this workflow's token
+# doesn't start other workflows, so it can't loop. On a push conflict it starts again from the
+# new main: the feed is generated, so redoing it is always safe.
+
+on:
+  push:
+    branches: [main]
+    paths: ["content/**", "data/**", "scripts/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repository-writers
+  cancel-in-progress: false
+
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out history
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Rebuild the feed and commit it if it changed
+        run: |
+          git config user.name "tazdingo-feed[bot]"
+          git config user.email "tazdingo-feed@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            python3 scripts/build.py --base-path /Tazdingo/ > /dev/null
+            git add feed
+            if git diff --cached --quiet; then echo "The feed is current."; exit 0; fi
+            git commit -q -m "Refresh the feed"
+            if git push -q origin HEAD:main; then exit 0; fi
+            git fetch -q origin main && git reset -q --hard origin/main
+          done
+          echo "Could not push the refreshed feed after three attempts." >&2
+          exit 1
