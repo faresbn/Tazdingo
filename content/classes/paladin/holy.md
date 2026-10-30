@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: Holy Paladin in WoW Forever: the healer's talents by level, how the guides use Holy Light, Flash of Light and Holy Shock, levelling, gear and where guides disagree.
 sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets, Blizzard Paladin deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** healer, strongest on a single target. Light's Vigil adds party healing at 40.
-- **How it plays:** heal the tank with Holy Light or Flash of Light and save Holy Shock for emergencies. Keep a Blessing on everyone and an aura running. Between pulls, fight in melee with a Seal, Judgement and Holy Strike.
-- **Strengths:** plate, big emergency buttons (Lay on Hands, Divine Protection, Blessing of Protection), strong Blessings, and Purify for poisons and diseases.
-- **Weaknesses:** Mana runs out fast at low levels, there is no reliable direct group heal before 40 (Judgement of Light offers incidental healing), and solo kills are slow.
-- **Stats that matter:** healing power, then Intellect and Mana regeneration. Intellect adds Mana and crit, not healing (Wowhead).
-- **New in Forever:** [Holy Shock](https://foreverdb.net/spell/1311606) at 30 with a 10 sec cooldown, [Light's Vigil](https://foreverdb.net/spell/1310911) at 40, and new talents [Reverence](https://foreverdb.net/spell/1310899), [Infusion of Light](https://foreverdb.net/spell/426065), [Voice of Truth](https://foreverdb.net/spell/1310897) and [Divine Precision](https://foreverdb.net/spell/1310904).
+- **Pick it for:** healing a regular party, strongest on one target; solo kills are slow, and real group healing waits for Light's Vigil at 40 (projected).
+- **Levelling build:** at 30, Wowhead takes Divine Intellect 5, Healing Light 3, Improved Seals 3, Voice of Truth, Reverence 3, Illumination 5 and Holy Shock ([Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/holy/level-30-healer-overview)); ForeverDB's dungeon build takes Spiritual Focus over Improved Seals and adds Divine Favor. Icy Veins levels in Retribution until 21.
+- **Build at 60:** not established yet: WoWSims has no Holy talents because it doesn't simulate healing. Icy Veins projects 32 Holy and 19 Retribution, with Light's Vigil ([Icy Veins](https://www.icy-veins.com/wow-forever/holy-paladin-leveling)).
+- **Priority:** at 30, heal by urgency: Flash of Light when it must land fast, Holy Light when the bigger heal is needed and Mana allows, [Holy Shock](https://foreverdb.net/spell/1311606) for emergencies or moving ([Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/holy/level-30-healer-overview)). If talented (ForeverDB's dungeon build), Divine Favor before a big Holy Light. Between heals, Seal, Judgement and Holy Strike.
+- **Stats:** ForeverDB and Icy Veins agree on healing power, then Intellect, then Mana per 5; they split on Spirit and crit after that ([ForeverDB](https://foreverdb.net/class/Paladin/pve)). Intellect adds Mana and crit, not healing (Wowhead).
+- **Key levels:** 25 Divine Favor · 30 Holy Shock (10 sec cooldown) · 35–40 Holy Power · 40 [Light's Vigil](https://foreverdb.net/spell/1310911), Icy Veins' only group heal (above 30 is projection).
+- **Gear and consumables:** at 30 Wowhead picks Haunting Blade and Worgenbane Talisman (Shadowfang Keep) and Death Speaker Robes (Razorfen Kraul); ForeverDB's top weapon is Death Speaker Scepter. Icy Veins: Lesser Arcane Elixir, mana potions and water; health and mana potions share a cooldown.
+- **Watch out:** the guides split on efficiency: ForeverDB's numbers favour Holy Light, while Wowhead and Icy Veins make Flash of Light the everyday heal. Holy Shock reaches only 20 yards. Judgement of Light gives incidental group healing, not a reliable group heal.
 
 ## What the guides say
 

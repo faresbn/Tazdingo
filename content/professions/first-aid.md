@@ -1,16 +1,18 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How First Aid grew in Forever (healing potions, poultices and tourniquets), how guides level it, where they disagree, and what its items are worth.
 sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Makes:** bandages, and in Forever also the healing potions that used to be Alchemy's, plus anti-venoms, poultices (which cure diseases) and tourniquets (which stop bleeds).
-- **Suits:** every character, and most of all those who can't heal themselves ([Wowhead](https://www.wowhead.com/forever/guide/professions/first-aid/overview)). It's a secondary profession, so it costs no profession slot.
-- **Pairs with:** nothing it strictly needs. Cloth drops for everyone. The potions use herbs, so Herbalism, or a friend who has it, helps.
-- **New in Forever:** the whole healing potion line from Minor to Major, poultices, tourniquets, and camp items.
-- **Camp feature:** the [First Aid Kit](https://foreverdb.net/item/279968) (skill 20) gives a Stamina buff that scales with level and doesn't stack with Power Word: Fortitude. The [Toxin Study](https://foreverdb.net/item/279940) (140) also stocks healing potions and anti-venom. The [Plague Doctor's Laboratory](https://foreverdb.net/item/279951) (300) stocks healing potions and poultices.
+- **Pick it for:** every character, most of all those who can't heal themselves ([Wowhead](https://www.wowhead.com/forever/guide/professions/first-aid/overview)); it's secondary, and in Forever it makes the healing potions.
+- **Pairs with:** nothing it strictly needs; cloth drops for everyone. The potions use herbs, so Herbalism, or a friend who has it, helps.
+- **Levelling route:** guides split: 1–75 Linen Bandages (Wowhead) or Minor Healing Potions ([Icy Veins](https://www.icy-veins.com/wow-forever/first-aid)) · 75–150 Wool Bandages or Lesser and Healing Potions · 150–225 Silk to Mageweave Bandages · 225–300 Mageweave to Heavy Runecloth (Icy Veins; untested in the beta). Wowhead finds bandages usually cheapest.
+- **Money makers:** anyone can drink the healing potions, so they suit Auction House buyers while levelling (Icy Veins); some new Tailoring recipes use potions (Wowhead). Anti-venoms are the only in-combat poison cure. No prices are established; value the materials, the heal isn't free.
+- **Camp items:** [First Aid Kit](https://foreverdb.net/item/279968) (20; Stamina, doesn't stack with Power Word: Fortitude) · [Toxin Study](https://foreverdb.net/item/279940) (140; also stocks healing potions and anti-venom) · [Plague Doctor's Laboratory](https://foreverdb.net/item/279951) (300; healing potions and poultices).
+- **Trainers and ranks:** Expert from the tradeable book Under Wraps (Deneb Walker, Stromgarde; Balai Lok'Wein, Brackenwall) · Artisan from the quest Triage (level 35, skill 225; Theramore or Hammerfall). Major Healing Potion manual: Pexmit in Hyjal (Icy Veins); [wow-professions.com](https://www.wow-professions.com/forever/first-aid-leveling-guide) says no vendor does.
+- **Watch out:** hand in Triage the moment you finish, before patients die. Poultices and tourniquets work out of combat only, up to a set effect level. Mageweave was scarce in the beta. Don't buy a costly manual until its source and use are confirmed.
 
 ## What the guides say
 

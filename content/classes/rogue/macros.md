@@ -4,7 +4,7 @@ summary: Rogue macros for WoW Forever collected from community guides, covering 
 sources: ForeverDB macros, Kami Labs macros, Wowhead macro guide, Icy Veins Subtlety guide
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Where these come from:** ForeverDB's Rogue macro page, Kami Labs' macro tool, Wowhead's beginner macro guide and the weapon-swap macros in Icy Veins' Subtlety guide. Each macro is credited to its source.
 - **Not tested in the live game:** None of these has been tried in Forever's live game. ForeverDB checked spell names against the beta client but says it hasn't tested them in game.

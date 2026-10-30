@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Beast Mastery plays in WoW Forever up to the level 30 beta cap, with talents by level, the hawk rotation, pets, gear and where the guides disagree.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APLs, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** Ranged damage. Your pet tanks while you level and does a large share of your damage in groups.
-- **How it plays:** Send the pet in, mark the target, keep Serpent Sting up and Auto Shot running. From level 25, [Summon Hawk](https://foreverdb.net/spell/1293241) keeps up to two hawks attacking your target; it shares a cooldown with Arcane Shot.
-- **Strengths:** The guides' pick for the easiest and fastest levelling spec. Strong kiting, and pet families that add utility such as armour reduction or a disarm.
-- **Weaknesses:** Little area damage, the 8-yard dead zone, pets that struggle to hold several mobs, and (per Wowhead) no group buff to offer.
-- **Stats that matter:** Ranged weapon damage first, then Agility, hit and crit. Intellect is worth more than it looks, because mana runs out.
-- **New in Forever:** Summon Hawk (tier 4), [Focused Fire](https://foreverdb.net/spell/1223755) (2% more damage for you and the pet), pets that scale with your gear, a melee half for Deadly Aspects, and Intimidation now sitting behind Bestial Swiftness.
+- **Pick it for:** the easiest and fastest Hunter levelling spec, with the pet tanking; light on area damage, and Wowhead says it brings no group buff.
+- **Levelling build:** at 30 all three guides take Deadly Aspects 5, Unleashed Fury 5, Ferocity and Summon Hawk; Wowhead and Icy Veins add Intimidation, Bestial Swiftness and Improved Revive Pet, ForeverDB Endurance Training 5 ([Icy Veins](https://www.icy-veins.com/wow-forever/beast-mastery-hunter-leveling)). Wowhead's level 20 build borrows four points of Lethal Attacks.
+- **Build at 60:** projection only: WoWSims' preset is 31/16/4, with Bestial Wrath, Frenzy, Ferocity and Bestial Discipline plus Lethal Attacks, Careful Aim and Trueshot Aura, on a raptor ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/hunter/dps/presets.ts)). Icy Veins projects 39/12/0.
+- **Priority:** at 30 (Icy Veins): Hunter's Mark, pet in, Serpent Sting, [Summon Hawk](https://foreverdb.net/spell/1293241) to keep two hawks out, Aimed Shot on cooldown (Multi-Shot on packs), Arcane Shot only at full Mana. Wowhead runs a fixed hawk cycle instead. At 60 WoWSims repeats hawk, hawk, Arcane Shot.
+- **Stats:** Icy Veins: ranged weapon damage, hit, Agility, crit, Intellect. ForeverDB's level-30 sim values Intellect (2.69) above Agility (2.33) because Mana runs out.
+- **Key levels:** 25 Summon Hawk (20 with Legacy points) · 26 Rapid Fire · 30 Intimidation and Feign Death · 40 Bestial Wrath (projection).
+- **Gear and consumables:** never run out of ammo ([Rough Arrow](https://foreverdb.net/item/2512) or [Light Shot](https://foreverdb.net/item/2516)); carry a quiver or pouch. Venomstrike and the Fang set (Wailing Caverns) at 20, Truthseeker's Bow at 30 (Icy Veins). ForeverDB's sim ranks Elixir of Agility and Tender Wolf Steak best.
+- **Watch out:** Wowhead's fast-cat pick rests on beta bugs; Icy Veins prefers a bear for levelling. In groups, turn off Growl and keep a bear's Swipe off Freezing Trap targets. ForeverDB's sim spends the shared cooldown on Multi-Shot even on one target; both guides use Aimed Shot.
 
 ## What the guides say
 

@@ -1,18 +1,17 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: What the Warrior is in WoW Forever, how Forever changed Rage, stances and talents, and how the guides suggest picking and levelling a spec.
 sources: Blizzard class deep dive and beta notes, ForeverDB, Wowhead, Icy Veins, WoWSims presets
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Armour and weapons:** cloth, leather and mail from level 1, plate from 40, and shields. Almost every melee weapon, with polearms and dual-wielding from level 20. Bows, guns, crossbows and thrown weapons go in the ranged slot for pulling ([ForeverDB](https://foreverdb.net/guide/leveling-warrior)).
-- **Roles:** tank as Protection, melee damage as Arms (two-hander) or Fury (two weapons).
-- **Resource:** Rage. It fills as you hit and get hit, and drains away out of combat.
-- **Races:** every race can be a Warrior, including both Skyborne races.
-- **What's new:** [Tactical Mastery](https://foreverdb.net/spell/1310185) is baseline at 14, [Victory Rush](https://foreverdb.net/spell/402927) arrives at 20, and [Slam](https://foreverdb.net/spell/1240193) is a level 20 strike with an 18 sec cooldown. Rage generation was rebuilt.
-- **Talents:** one point per level from 10, so 21 at the beta cap of 30 and 51 at 60. The capstones [Mortal Strike](https://foreverdb.net/spell/12294), [Bloodthirst](https://foreverdb.net/spell/23881) and [Shield Slam](https://foreverdb.net/spell/23922) need level 40.
-- **Hybrid status:** Blizzard counts Warriors as hybrids because they can tank, so Arms and Fury are aimed at about 5% less damage than pure classes (see the hybrid page).
+- **Pick a spec:** Protection for tanking, and for a first solo Warrior once Revenge (14) and its shield talents arrive; Icy Veins calls it the fastest leveller ([Icy Veins](https://www.icy-veins.com/wow-forever/protection-warrior-leveling)). Arms is the simpler two-hander; Fury needs two good weapons and comes together at 35–40.
+- **Key levels:** 10 first talent point and Defensive Stance quest · 14 Tactical Mastery and Revenge · 20 dual-wield, polearms, [Victory Rush](https://foreverdb.net/spell/402927) and Slam · 30 Berserker Stance quest · 40 plate, Dual Specialization, [Mortal Strike](https://foreverdb.net/spell/12294), [Bloodthirst](https://foreverdb.net/spell/23881) and [Shield Slam](https://foreverdb.net/spell/23922).
+- **New in Forever:** Rage from damage is normalised to weapon speed, and crits give 100% more Rage since 2 October ([Blizzard](https://us.forums.blizzard.com/en/wow/t/warrior-updates-in-todays-beta-build/2369360)). Victory Rush, baseline Tactical Mastery and an 18 sec Slam are new; weapon specialisations merged into [Weaponmaster](https://foreverdb.net/spell/1290261). Arms and Fury carry a hybrid tax of about 5%.
+- **Professions:** Mining and Blacksmithing while levelling, since crafted mail rates highly at 20 and 30; Engineering is the usual endgame pick ([ForeverDB](https://foreverdb.net/guide/leveling-warrior)).
+- **Race:** after the 26 October notes, Orc Savage is gone, Human gives 1% crit, Dwarf 1% hit, Skyborne 2% haste and Tauren 5% health ([Blizzard](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7)). Ignore older weapon or crit-damage bonuses; tank survival, movement and control can justify a choice.
+- **Watch out:** Wowhead's Fury overview still says crits give no extra Rage; that changed on 2 October. Rage from being hit now assumes 20–40% mitigation by level, not the original 50%. Talents are changed at a capital-city trainer. No level-30 result proves the level-60 spec order.
 
 ## What the guides say
 

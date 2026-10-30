@@ -1,18 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Fire Mage plays in WoW Forever, built around Heating Up and Ignite, with talents by level, the guides' and simulators' rotations, gear and the deep Fire or Frostfire question.
 sources: Icy Veins, Wowhead, ForeverDB, WoWSims presets and APLs, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** Ranged damage, with strong burst and burst AoE.
-- **How it plays:** Fireball (Frostfire Bolt from 40) is the filler and Fire Blast goes on cooldown. Crits build [Heating Up](https://foreverdb.net/spell/400624), and three stacks make [Pyroblast](https://foreverdb.net/spell/11366) a 1.5 second cast. [Ignite](https://foreverdb.net/spell/11119) adds a burn to every Fire crit.
-- **Strengths:** The highest damage ceiling once geared, strong burst AoE with Flamestrike and Blast Wave, and modest mana use for deep Fire builds (Wowhead).
-- **Weaknesses:** Relies on crit and gear, so it is weak at low levels; feast-or-famine; few defences; and early dungeon builds have little threat reduction (ForeverDB).
-- **Stats:** Hit, spell power and Fire damage, then crit, Intellect and Spirit.
-- **New in Forever:** Heating Up; [Improved Fire Blast](https://foreverdb.net/spell/11078) (2 seconds off the cooldown, 15 yards more range); Incineration in the first row also boosts Ice Lance and Arcane Blast; Ignite and Improved Scorch now affect only your own damage; Critical Mass has 5 ranks; Frostfire Bolt at 40.
-- **Two endgame shapes:** Deep Fire with Combustion, or a Fire and Frost hybrid built around Frostfire Bolt. Nobody yet knows which wins (Wowhead).
+- **Pick it for:** the crit-and-burst playstyle and burst AoE, accepting a weak, crit-starved start; not for a promised early damage lead.
+- **Levelling build:** at 30, Icy Veins' calculator takes Improved Fireball 5, Flame Throwing 2, Ignite 5, Pyroblast, Improved Fire Blast 2, Heating Up, Burning Soul 3, Master of Elements 1 and Blast Wave ([Icy Veins](https://www.icy-veins.com/wow-forever/fire-mage-leveling)). ForeverDB's build predates the 16 October rework.
+- **Build at 60:** projection only: WoWSims carries "Fire" (32 Fire to Combustion, 16 Arcane, 3 Frost) and "FFB" (29 Fire, 22 Frost) ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/mage/dps/presets.ts)). Wowhead says it's too early to call deep Fire against the Frostfire hybrid.
+- **Priority:** at 30 ([Icy Veins](https://www.icy-veins.com/wow-forever/fire-mage-ranged-dps-pve-guide)), open with Pyroblast, fill with Fireball, finish with Fire Blast, and Scorch or wand low mobs; Wowhead stacks five Scorches first on high-health targets. At 60 WoWSims keeps five Fire Vulnerability stacks, Pyroblast at three Heating Up, Fire Blast on cooldown, Fireball filler.
+- **Stats:** Icy Veins: hit until capped, then spell power and crit, with Spirit underrated for levelling. Fire has no hit talent, so ForeverDB points to Elemental Precision in Frost; its simulator at 30 values crit, hit and haste about equally ([ForeverDB](https://foreverdb.net/class/Mage/pve)).
+- **Key levels:** 10 Improved Fireball · 20 [Pyroblast](https://foreverdb.net/spell/11366) · 21–25 [Heating Up](https://foreverdb.net/spell/400624) (Icy Veins order) · 30 Blast Wave and the Mage wand quest · 40 Combustion and Frostfire Bolt.
+- **Gear and consumables:** at 30, Icy Veins lists Spellpower Goggles Xtreme (Engineering), Tailoring's Flame Gown, Flame Leggings and Fiery Slippers, Belt of Arugal and the quest's Ragefire Wand; its main guide rates Engineering, then Tailoring. Lesser Arcane Elixir tops ForeverDB's simulator at 30 (+4.8%) ([ForeverDB](https://foreverdb.net/class/Mage/pve)).
+- **Watch out:** Icy Veins' Fire pages (16 October) still describe Hot Streak and Wake of Fire's crit proc, now Heating Up and Improved Fire Blast ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)). Wowhead's case for Engineering cites Nitro Boosts, which ForeverDB reports removed. Don't stack Scorch on a nearly dead mob.
 
 ## What the guides say
 

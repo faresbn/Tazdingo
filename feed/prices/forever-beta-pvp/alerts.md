@@ -6,22 +6,50 @@
 
 Everything below is an estimate from listings, recorded at the time shown; none of it says what sold.
 
-## Recorded unusually low
+## Deals: recorded under the usual price
 
-At least 30% under the usual price and far outside its normal spread. Confidence says how much history stands behind it; low-confidence ones are left out.
+At least 20% under the usual price. Exceptional ones are at least 30% under and far outside the item's normal spread; they come first. Confidence says how much history stands behind it; low-confidence ones are left out.
 
-| Item | ID | Latest | Usual | Under usual | Confidence | Recorded at |
-|---|---|---|---|---|---|---|
-| Rough Bronze Leggings | 2865 | 6s 0c | 10s 0c | 40% | high | 2026-10-17 12:36 UTC |
-| Patterned Bronze Bracers | 2868 | 6s 0c | 9s 0c | 33% | high | 2026-10-17 12:36 UTC |
+The strongest 30 of 123.
+
+| Item | ID | Latest | Usual | Under usual | Exceptional | Confidence | Recorded at |
+|---|---|---|---|---|---|---|---|
+| Rough Bronze Leggings | 2865 | 6s 0c | 10s 0c | 40% | yes | high | 2026-10-17 12:36 UTC |
+| Patterned Bronze Bracers | 2868 | 6s 0c | 9s 0c | 33% | yes | high | 2026-10-17 12:36 UTC |
+| Large Brilliant Shard | 14344 | 18g 1s 0c | 40g 1s 0c | 55% |  | medium | 2026-10-17 12:36 UTC |
+| Azerothian Diamond | 12800 | 2g 51s 0c | 13g 1s 0c | 81% |  | medium | 2026-10-17 12:36 UTC |
+| Greater Eternal Essence | 16203 | 4g 0s 0c | 10g 1s 0c | 60% |  | medium | 2026-10-17 12:36 UTC |
+| Cured Thick Hide | 8172 | 3g 50s 0c | 8g 55s 0c | 59% |  | high | 2026-10-17 12:36 UTC |
+| Catseye Ultra Goggles | 10501 | 13g 99s 0c | 18g 98s 0c | 26% |  | high | 2026-10-17 12:36 UTC |
+| Hard Gold Cuirass | 250533 | 1g 59s 0c | 5g 50s 0c | 71% |  | high | 2026-10-17 12:36 UTC |
+| Spider Belt | 4328 | 1g 50s 0c | 5g 0s 0c | 70% |  | medium | 2026-10-17 12:36 UTC |
+| Goblin Rocket Fuel | 9061 | 5g 50s 96c | 8g 84s 45c | 38% |  | high | 2026-10-17 12:36 UTC |
+| Gnomish Harm Prevention Belt | 10721 | 11g 97s 0c | 15g 20s 0c | 21% |  | high | 2026-10-17 12:36 UTC |
+| Enchanted Mageweave Pouch | 22246 | 7g 0s 0c | 9g 99s 0c | 30% |  | high | 2026-10-17 12:36 UTC |
+| Inlaid Mithril Cylinder | 9060 | 36s 99c | 3g 16s 0c | 88% |  | high | 2026-10-17 12:36 UTC |
+| Sterling Silver Breastplate | 250487 | 4g 8s 0c | 6g 77s 0c | 40% |  | high | 2026-10-17 12:36 UTC |
+| Tuxedo Pants | 10035 | 2g 50s 0c | 5g 0s 0c | 50% |  | medium | 2026-10-17 12:36 UTC |
+| Black Pearl | 7971 | 5g 99s 89c | 8g 49s 49c | 29% |  | high | 2026-10-17 12:36 UTC |
+| Green Whelp Armor | 7375 | 6g 45s 0c | 8g 94s 50c | 28% |  | high | 2026-10-17 12:36 UTC |
+| Hard Gold Boots | 250534 | 2g 85s 0c | 5g 25s 0c | 46% |  | medium | 2026-10-17 12:36 UTC |
+| Arcane Salvager | 279985 | 1g 77s 99c | 3g 90s 24c | 54% |  | high | 2026-10-17 12:36 UTC |
+| Small Brilliant Shard | 14343 | 2g 1s 0c | 3g 76s 50c | 47% |  | high | 2026-10-17 12:36 UTC |
+| Aquamarine | 7909 | 1g 75s 0c | 3g 50s 34c | 50% |  | high | 2026-10-17 12:36 UTC |
+| Flask of Big Mojo | 8152 | 3g 0s 0c | 4g 50s 0c | 33% |  | medium | 2026-10-17 12:36 UTC |
+| Steel Weapon Chain | 6041 | 1g 99s 89c | 3g 19s 0c | 37% |  | high | 2026-10-17 12:36 UTC |
+| Thick Wolfhide | 8368 | 1g 0s 0c | 2g 16s 0c | 54% |  | medium | 2026-10-17 12:36 UTC |
+| Mithril Shield Spike | 7967 | 2g 24s 99c | 3g 34s 45c | 33% |  | high | 2026-10-17 12:36 UTC |
+| Thick Hide | 8169 | 1g 99s 0c | 3g 8s 0c | 35% |  | high | 2026-10-17 12:36 UTC |
+| Hoof-Shaped Foot Pedal | 269902 | 3g 0s 0c | 4g 2s 0c | 25% |  | high | 2026-10-17 12:36 UTC |
+| Sterling Silver Shoulders | 250486 | 3g 24s 0c | 4g 24s 0c | 24% |  | medium | 2026-10-17 12:36 UTC |
+| Green Leather Armor | 4255 | 1g 50s 0c | 2g 49s 50c | 40% |  | medium | 2026-10-17 12:36 UTC |
+| Rich Purple Silk Shirt | 4335 | 2g 3s 0c | 2g 99s 50c | 32% |  | high | 2026-10-17 12:36 UTC |
 
 ## Recorded below what a vendor pays
 
-Buying these and selling to a vendor returns more than the listing costs.
+Rare or better items and recipes only, at least 1 silver a unit: buying these and selling to a vendor returns more than the listing costs, if the listing is still there.
 
-| Item | ID | Latest | Vendor pays | Recorded at |
-|---|---|---|---|---|
-| Long Tail Feather | 5116 | 3s 0c | 3s 3c | 2026-10-17 12:36 UTC |
+None at the latest scan.
 
 ## Investment watch
 

@@ -4,7 +4,7 @@ summary: How macros work in Forever's modern client (conditionals, mouseover and
 sources: ForeverDB, Wowhead, Kami Labs, Blizzard forums, Icy Veins, CurseForge
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Modern client:** Forever runs on the current game client, so it has a focus target, mouseover and focus casting options, and modern macro conditionals ([ForeverDB](https://foreverdb.net/macros)).
 - **No rank, best rank:** `/cast` without a rank uses the highest rank you know. Spells dragged from the spellbook don't upgrade on your bar when you train a new rank.

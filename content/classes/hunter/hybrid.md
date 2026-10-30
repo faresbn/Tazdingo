@@ -4,7 +4,7 @@ summary: The Hunter talent builds that mix trees in WoW Forever, from Wowhead's 
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Why mixing is common:** One talent point per level from 10 to 60 (51 in all), and each row of a tree needs 5 more points spent in that tree. With 21 points at the level 30 beta cap, the cheap top-row talents of a second tree are tempting.
 - **Milestones:** Blizzard's trees have one-point milestone talents at 11, 16 (new in Forever), 21 and 31 points.

@@ -1,18 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Balance Druid plays in WoW Forever: talents at 20, 30 and 60, the rotation in guides and in WoWSims, stats, gear and where sources disagree.
 sources: ForeverDB (PvE guide, builds, simulator tips), Wowhead (overview, level 20 and 30 guides), Icy Veins, WoWSims presets and default APL, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** ranged caster. [Starfire](https://foreverdb.net/spell/2912) and [Moonfire](https://foreverdb.net/spell/8921) deal Arcane damage; [Wrath](https://foreverdb.net/spell/5176) and [Insect Swarm](https://foreverdb.net/spell/5570) deal Nature damage.
-- **How it plays:** keep Moonfire and Insect Swarm on the target and fill with Wrath and Starfire. From 30, [Eclipse](https://foreverdb.net/spell/408248) makes each Wrath speed up your next two Starfires. [Moonkin Form](https://foreverdb.net/spell/24858) arrives at 40.
-- **Strengths:** group buffs, spot heals and crowd control. Moonkin Aura gives 3% crit to all spells and attacks for your party or raid within 45 yards, but doesn't stack with Leader of the Pack. Mark of the Wild, Faerie Fire and Rebirth come too.
-- **Weaknesses:** mana limits you more than talents do. You have no interrupt and no area spell before [Hurricane](https://foreverdb.net/spell/17402) at 40, and levelling is slow.
-- **Stats that matter:** hit, spell power, crit, then Intellect and Spirit at 20 to 30 ([ForeverDB](https://foreverdb.net/class/Druid/pve)). WoWSims' level 60 weights put hit first, with haste close behind spell power.
-- **New in Forever:** Insect Swarm is now a Balance talent at 25, and Eclipse, [Nature's Splendor](https://foreverdb.net/spell/1223083), [Genesis](https://foreverdb.net/spell/1223081) and Nature's Majesty are new. [Improved Wrath](https://foreverdb.net/spell/16814) now halves Wrath's mana cost, and Hurricane has no cooldown.
-- **Simulator:** WoWSims has a full Balance simulation with default talents and a priority list, tuned for level 60.
+- **Pick it for:** ranged casting with group buffs such as Moonkin Aura, when you can stand still and fund the mana; Feral is the simpler first solo Druid.
+- **Levelling build:** at 30, Wowhead's hard-casting build takes Improved Wrath 5, Moonglow 3, Nature's Majesty 2, Nature's Reach 2, Improved Entangling Roots 3, Improved Starfire 5 and Eclipse 1 ([Wowhead](https://www.wowhead.com/forever/guide/classes/druid/balance/level-30-dps-overview)); its other build spreads DoTs around Genesis 5. ForeverDB's root-and-nuke build takes Nature's Grace over Eclipse.
+- **Build at 60:** simulator default only: WoWSims' "Moonkin" is 38 Balance to [Moonkin Form](https://foreverdb.net/spell/24858) (Eclipse 3, Vengeance 5, Improved Starfire 5, Moonfury 5, Nature's Grace) plus 13 Restoration (Nature's Focus, Naturalist, Reflection) ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/druid/balance/presets.ts)).
+- **Priority:** at 20–30, keep Moonfire and Insect Swarm up on targets that live; Wowhead fills with Wrath into Starfire under Eclipse, while ForeverDB's non-Eclipse simulation fills with Starfire. At 60 WoWSims: DoTs, Hurricane on four or more targets (Wowhead says five), Starfire on Eclipse charges, else Wrath ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/druid/balance/apls/default.apl.json)).
+- **Stats:** ForeverDB at 20–30: hit, spell power, crit, then Intellect and Spirit ([ForeverDB](https://foreverdb.net/class/Druid/pve)). WoWSims at 60 puts hit first, with haste close behind spell power and Spirit worth nothing.
+- **Key levels:** 20 Starfire · 25 Insect Swarm · 30 [Eclipse](https://foreverdb.net/spell/408248) and Nature's Grace · 40 Moonkin Form and [Hurricane](https://foreverdb.net/spell/17402).
+- **Gear and consumables:** a caster weapon first. Leatherworking makes Stormrider's Leather Armor and Pants (15–20) and the Skycaller's Leather Belt (30) ([ForeverDB](https://foreverdb.net/guide/leveling-druid)). ForeverDB's simulator ranks Lesser Arcane Elixir first at 30 (+6.5%), then Briny Seafood Stew.
+- **Watch out:** at 30 nothing protects Wrath or Starfire from pushback, so root first; Eclipse is muted without Legacy points ([Wowhead](https://www.wowhead.com/forever/guide/classes/druid/balance/level-30-dps-overview)). Wowhead's abilities page still shows Classic values: a 5% Moonkin aura, a 20-minute Rebirth and Nature's Grasp as a talent.
 
 ## What the guides say
 

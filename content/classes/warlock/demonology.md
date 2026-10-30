@@ -1,18 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Demonology Warlock plays in WoW Forever: demon-first levelling talents, Demonic Brand and Soul Link, the Fire or Shadow Demonic Pact builds at 60, rotations, gear and open questions.
 sources: Icy Veins, Wowhead, ForeverDB, WoWSims builds, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** Ranged damage dealt by you and your demon together.
-- **How it plays:** Keep a demon fighting: the Succubus for damage, the Voidwalker for safety, the Imp in groups. [Searing Pain](https://foreverdb.net/spell/5676) brands the target for [Demonic Brand](https://foreverdb.net/spell/1293695), DoTs do the rest, and [Soul Link](https://foreverdb.net/spell/19028) arrives at 30 and [Demonic Pact](https://foreverdb.net/spell/425464) at 40.
-- **Strengths:** Strong mitigation and a larger health pool through Soul Link and Demonic Embrace, strong single-target and execute damage with Decimation, and less dependent on gear while levelling.
-- **Weaknesses:** Losing the demon costs damage, Soul Link and a long summon; slow until Demonic Brand at 25; the Shadow build's AoE is weaker (Wowhead).
-- **Stats:** Spell power (Icy Veins says demons scale with your gear too), hit, Intellect (Fel Vitality adds 15% mana), crit and Spirit.
-- **New in Forever:** Demonic Pact, [Demonic Energies](https://foreverdb.net/spell/1225214), Demonic Brand, [Decimation](https://foreverdb.net/spell/440870), [Demonic Knowledge](https://foreverdb.net/spell/412732), Demonic Aegis and Improved Felhunter; Soul Link moves to the 21-point slot; Demonic Sacrifice and Master Demonologist were rebuilt.
-- **Levelling:** The safest Warlock option. ForeverDB suggests it if you die a lot, and Icy Veins calls it one of the smoothest levelling builds.
+- **Pick it for:** forgiving, pet-centred levelling with Soul Link's extra safety, especially if you die a lot; it suffers whenever the demon dies.
+- **Levelling build:** at 30, Icy Veins' calculator takes Unholy Power 5, Demonic Energies 2, Fel Vitality 3, Improved Voidwalker 3, Master Summoner 2, Demonic Brand 3, Demonic Sacrifice, Fel Domination and Soul Link ([Icy Veins](https://www.icy-veins.com/wow-forever/demonology-warlock-leveling)). ForeverDB's Voidwalker build predates 16 October; Wowhead puts every early point into the demon.
+- **Build at 60:** projection only: Wowhead and WoWSims run 2/31/18 with Demonic Pact and Ruin, as Fire (Imp out, Searing Pain filler) or Shadow (Sayaad out, Shadow Bolt filler). Wowhead: Shadow for fights under a minute, Fire for long fights, adds and dungeons ([Wowhead](https://www.wowhead.com/forever/guide/classes/warlock/demonology/talent-builds-pve-dps)).
+- **Priority:** at 30 ([Icy Veins](https://www.icy-veins.com/wow-forever/demonology-warlock-ranged-dps-pve-guide)): demon in with Soul Link, Curse, Immolate, Bane of Agony on mobs that will live, Corruption; Drain Life or a Healthstone for health, Life Tap when safe. From 25, Searing Pain keeps [Demonic Brand](https://foreverdb.net/spell/1293695) on the demon's target.
+- **Stats:** Icy Veins: spell power (it also heals the demon through Demonic Energies), hit (its build has no Suppression), Intellect, crit and Spirit. ForeverDB says the client doesn't show how much of your gear the demon inherits ([ForeverDB](https://foreverdb.net/class/Warlock/pve)).
+- **Key levels:** 25 Demonic Brand · 28 Firestone · 30 [Soul Link](https://foreverdb.net/spell/19028) · 40 [Demonic Pact](https://foreverdb.net/spell/425464) (sacrifice one demon, keep another out).
+- **Gear and consumables:** [Staff of Soran'ruk](https://foreverdb.net/item/15109) tops ForeverDB's Demonology list at 30; Icy Veins shares the Affliction list (Shadow Circlet, Belt of Arugal, Gaze Dreamer Pants). ForeverDB's simulator rates Lesser Arcane Elixir best at 30 (+4.6%) and loses 17.5% without the Imp.
+- **Watch out:** Demonic Sacrifice with another demon out needs Demonic Pact at 40; don't plan it earlier. The guides split on the demon: Icy Veins uses the Succubus, ForeverDB the Voidwalker solo and the Imp in groups. Wowhead says Demonic Brand rank 3 adds little.
 
 ## What the guides say
 

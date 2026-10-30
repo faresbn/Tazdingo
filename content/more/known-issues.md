@@ -4,7 +4,7 @@ summary: Problems players have hit, what Blizzard has said about each, and any w
 sources: Blizzard's forums (known-issues threads, staff posts and player threads), ForeverDB and foreverchanges.pro, checked 27 October 2026
 ---
 
-## At a glance
+## Cheatsheet
 
 - **No launch thread yet:** Blizzard's known-issues list is the beta's, last updated on 8 October. The beta closed on 23 October.
 - **Biggest player report:** some Macs freeze or restart when a character enters the world. Players' fix: set Secondary Lighting to Fair.

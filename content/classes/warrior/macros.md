@@ -4,7 +4,7 @@ summary: Community Warrior macros for WoW Forever from ForeverDB, Kami Labs, Wow
 sources: ForeverDB Warrior macros, Kami Labs, Wowhead macro guide, Icy Veins levelling guides
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Where these come from:** a selection of the most useful macros from four community guides (ForeverDB, Kami Labs, Wowhead and Icy Veins), credited to each. None has been tested in the live game. ForeverDB checked its spell names against the beta client, but says it hasn't tried them in play.
 - **Stance numbers:** `[stance:1]` is Battle Stance, `[stance:2]` Defensive Stance and `[stance:3]` Berserker Stance ([Wowhead](https://www.wowhead.com/forever/guide/beginners-guide-to-writing-macros-in-wow-forever-34950)).

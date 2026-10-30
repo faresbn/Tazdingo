@@ -4,7 +4,7 @@ summary: How Merchant's Favor works: filling Waylaid Crates for the Azeroth Comm
 sources: wow-professions.com, Wowhead, ForeverDB, Blizzard
 ---
 
-## At a glance
+## Cheatsheet
 
 - **What it is:** a currency for crafting recipes, a mount, a pet, a tabard, a toy and profession titles. It's earned per character, not per account.
 - **Two factions, one shop:** the Azeroth Commerce Authority (Alliance, Three Corners in Redridge) and Durotar Supply and Logistics (Horde, just outside the Crossroads). Both sell the same recipes.

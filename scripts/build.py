@@ -318,8 +318,13 @@ def tsv(header: list[str], rows) -> str:
 CONFIDENCE = {"idea": "Idea", "testing": "Testing", "tested": "Tested", "outdated": "Outdated"}
 STATUS = {"pre-launch": "Pre-launch", "live": "Live"}
 CLASS_EXTRAS = {"overview": "Overview", "hybrid": "Hybrid builds", "macros": "Macros"}
-SECTION_NAMES = {"at a glance": "glance", "what the guides say": "guides", "ledger findings": "findings", "field findings": "findings", "read more": "more"}
-REQUIRED_SECTIONS = ["At a glance", "What the guides say", "Field findings", "Read more"]
+SECTION_NAMES = {"cheatsheet": "glance", "at a glance": "glance", "what the guides say": "guides", "ledger findings": "findings",
+                 "field findings": "findings", "read more": "more"}
+REQUIRED_SECTIONS = ["Cheatsheet", "What the guides say", "Field findings", "Read more"]
+SECTION_ALIASES = {"At a glance": "Cheatsheet"}  # the cheatsheet's name before 30 October 2026, still accepted
+# Tab and panel anchors the page templates use; a heading inside a note never takes one of these.
+RESERVED_IDS = {"cheatsheet", "overview", "in-depth", "findings", "sources", "hybrid", "macros", "abilities", "specs",
+                "trainers", "zones", "disenchanting", "data", "changes", "intro"}
 FIELDS = {"updated", "summary", "sources", "confidence", "status", "verified"}
 # Words that must never appear on the public site: the people behind it and the assistant they use.
 PRIVATE = re.compile(r"\b(?:chatgpt|fares|mike)\b", re.I)
@@ -363,7 +368,7 @@ def split_sections(body: str, base: str = "/", prefix: str = "") -> list[dict]:
         else:
             current["lines"].append(line)
     sections.append(current)
-    result, used = [], set(SECTION_NAMES.values()) | {"intro", "changes", "guides-and-tools", "on-this-page"}
+    result, used = [], set(SECTION_NAMES.values()) | RESERVED_IDS
     for sec in sections:
         text = "\n".join(sec["lines"]).strip()
         kind = SECTION_NAMES.get(sec["heading"].lower(), "other")
@@ -397,7 +402,12 @@ def front_matter(text: str, name: str) -> tuple[dict, str]:
 def check_sections(name: str, key: str, body: str) -> None:
     """Class, spec, profession and world pages carry the four sections, once each, in order.
     More lists may be shaped freely but must keep Field findings and Read more."""
-    headings = [line[3:].strip() for line in body.splitlines() if line.startswith("## ")]
+    headings = [SECTION_ALIASES.get(line[3:].strip(), line[3:].strip()) for line in body.splitlines() if line.startswith("## ")]
+    # The page is read by these names whatever their case, so only the exact spelling counts: a second
+    # "## CHEATSHEET" can't sit beside the reviewed one, and each kind of section appears once.
+    for heading in headings:
+        if heading.lower() in SECTION_NAMES and heading not in REQUIRED_SECTIONS:
+            raise ValueError(f"{name}: write the heading '## {heading}' exactly as one of {', '.join('## ' + h for h in REQUIRED_SECTIONS)}")
     required = REQUIRED_SECTIONS if not key.startswith("more/") else REQUIRED_SECTIONS[2:]
     found = [h for h in headings if h in REQUIRED_SECTIONS]
     if [h for h in found if h in required] != required or len(found) != len(set(found)):
@@ -681,7 +691,8 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/", 
     write(".nojekyll", "")
     api = load_api(root)
     vendor = {int(k): v["sell"] for k, v in api.get("items", {}).items() if v.get("sell")}
-    categories = {int(k): {"class": v["class"], "subclass": v.get("subclass")} for k, v in api.get("items", {}).items() if v.get("class")}
+    categories = {int(k): {"class": v["class"], "subclass": v.get("subclass"), "quality": v.get("quality")}
+                  for k, v in api.get("items", {}).items() if v.get("class")}
     catalogue = []
     for market in markets:
         folder = f"prices/{market['slug']}/"

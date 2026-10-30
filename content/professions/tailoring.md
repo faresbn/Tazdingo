@@ -1,16 +1,18 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Tailoring changed in Forever (spell-school cloth sets, reagent bags, camp spinning wheels and looms, shifted skill ranges), how guides level it and what sells.
 sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Warcraft Tavern
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Makes:** cloth armour and cloaks, bags (now including reagent bags), shirts and cosmetic clothing.
-- **Suits:** Mages, Priests and Warlocks, who can fill weak slots with their own crafts as they level ([Icy Veins](https://www.icy-veins.com/wow-forever/tailoring)). Bags help everyone.
-- **Pairs with:** Enchanting. You disenchant the green items you make, and cloth drops from humanoids, so neither profession needs a gatherer.
-- **New in Forever:** cloth sets themed by spell school and role from early levels, more reagent bags for a new bag slot, Skyborne reputation patterns, and new endgame sets.
-- **Camp feature:** the [Faction Banner](https://foreverdb.net/item/279973) (skill 20) gives Spirit to members of your faction sitting nearby, and doesn't stack with Divine Spirit. Alliance and Horde each have their own banner. The [Spinning Wheel](https://foreverdb.net/item/279943) (140) makes certain reagents, and the [Loom](https://foreverdb.net/item/279959) (300) is the station some recipes require. Both keep the Banner's buff.
+- **Pick it for:** cloth casters (Mages, Priests, Warlocks) filling weak slots with their own crafts while levelling, plus bags; start with a few useful pieces.
+- **Pairs with:** Enchanting, to disenchant your greens; cloth drops from humanoids, so neither needs a gatherer. A convenient partner, not a requirement, and both compete for the same budget.
+- **Levelling route:** wow-professions.com, tested to 225: 1–55 Linen bolts, Linen Belts · 55–120 Woolen bolts, Woolen Capes, Double-stitched Woolen Shoulders, Silk bolts · 120–150 Gloves of Meditation, then Mageweave bolts or Red Swashbuckler's Shirts · 150–225 Crimson Silk, Black Mageweave Gloves, Mageweave Bags · 225–300 untested ([wow-professions.com](https://www.wow-professions.com/forever/tailoring-leveling-guide)).
+- **Money makers:** bags have broad potential demand, but profit depends on cloth cost, competition and how fast stock sells. Bolts also fill Fabrics Waylaid Crates for Merchant's Favor ([wow-professions.com](https://www.wow-professions.com/forever/merchants-favor-durotar-supply-azeroth-commerce)). Beta Mageweave scarcity doesn't predict launch prices.
+- **Camp items:** [Faction Banner](https://foreverdb.net/item/279973) (20), Spirit to your faction nearby, doesn't stack with Divine Spirit · [Spinning Wheel](https://foreverdb.net/item/279943) (140), needed for the skill 140–235 sets, blueprint from the Unstable Sentinel in the City of Dalaran · [Loom](https://foreverdb.net/item/279959) (300), source unknown.
+- **Trainers and ranks:** Expert from Josef Gregorian (Undercity) or Georgio Bolero (Stormwind) · Artisan at skill 200 and level 35: wow-professions.com says Daryl Stack (Tarren Mill) or Timothy Worthington (Theramore); Wowhead (12 October) lists Gregorian and Bolero ([Wowhead](https://www.wowhead.com/forever/guide/professions/tailoring-overview-trainer-locations-recipes)). Check in game.
+- **Watch out:** past 225 many recipes turn grey 25 to 45 points earlier than in Classic. The self-crafted sets bind on pickup, and school-specific gear suits a fixed build. The level-10 sashes need skill 35 or 50; sources differ.
 
 ## What the guides say
 

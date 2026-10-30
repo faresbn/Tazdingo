@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Discipline Priest heals in WoW Forever, the talent builds the guides give at 20, 30 and 60, and where they disagree.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** healer who prevents damage with shields, and a safe solo spec that deals Holy damage.
-- **How it plays:** shield the tank, keep Renew rolling, use Heal as the main heal and Flash Heal for spikes. From 30, [Penance](https://foreverdb.net/spell/402174) goes out on cooldown.
-- **Strengths:** Wowhead calls its absorbs the best in the game. It is very hard to kill solo, and Wowhead rates Prayer of Fortitude, Prayer of Spirit and Fear Ward as essential utility.
-- **Weaknesses:** weaker group healing, and a Holy Priest can borrow the shield talents ([Wowhead](https://www.wowhead.com/forever/guide/classes/priest/discipline/overview-pve-healer)). Penance takes all 21 points at level 30.
-- **Stats:** healing power first. Critical strike matters more than for Holy because of Renewed Hope and Divine Aegis; Spirit gains from Meditation.
-- **New in Forever:** Penance, [Divine Aegis](https://foreverdb.net/spell/431622), [Renewed Hope](https://foreverdb.net/spell/425280), [Soul Warding](https://foreverdb.net/spell/402000), [Power in Light](https://foreverdb.net/spell/1309969), [Twin Disciplines](https://foreverdb.net/spell/1225132) and [Holy Precision](https://foreverdb.net/spell/1309957). [Meditation](https://foreverdb.net/spell/14521) now keeps 50% of mana regeneration going while casting.
+- **Pick it for:** shield-based healing and very safe solo play, with Penance at 30 (Wowhead); weaker group healing and close competition from Holy.
+- **Levelling build:** at 30, ForeverDB's "Holy Fire and Penance": Wand Specialization 2, Twin Disciplines 3, Power in Light 5, Improved Power Word: Shield 3, Holy Precision 2, Meditation 3, Mental Agility 2, Penance ([ForeverDB](https://foreverdb.net/guide/leveling-priest)). Wowhead also reaches Penance; Icy Veins' 16/0/5 takes Spirit Tap instead, for solo sustain.
+- **Build at 60:** projection only: WoWSims' "Disc" preset (32/19/0) takes Penance, Renewed Hope 5, Divine Aegis 3, Soul Warding, Power Infusion, Meditation 3 and Mental Strength 5, plus Holy's Holy Specialization 5, Improved Healing 3, Inspiration 3 and Binding Heal ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/priest/healer/presets.ts)).
+- **Priority:** at 30 (ForeverDB): [Power Word: Shield](https://foreverdb.net/spell/17) on the tank, [Penance](https://foreverdb.net/spell/402174) on cooldown on the most injured, Renew on the tank, Heal as the main heal, Flash Heal for spikes; Inner Focus every second or third pull ([ForeverDB](https://foreverdb.net/class/Priest/pve)). Wowhead and Icy Veins agree, keeping Flash Heal for emergencies.
+- **Stats:** healing power first; Icy Veins then mana per 5, Spirit, Intellect and crit, valued for Renewed Hope ([Icy Veins](https://www.icy-veins.com/wow-forever/discipline-priest-healer-pve-guide)). ForeverDB rates Spirit higher than for Holy, for Meditation. WoWSims at 60: healing power 1, crit 0.7, mana per 5 0.4. Holy Precision removes the need for hit.
+- **Key levels:** 20 Holy Fire replaces Smite as the solo opener · 30 Penance (all 21 points), Prayer of Healing · 35 Divine Aegis · 40 Power Infusion (both untested).
+- **Gear and consumables:** Icy Veins to 30: Tailoring's Pristine pieces, Enchanting's [Orb of Souls](https://foreverdb.net/item/249395), Death Speaker gear (Razorfen Kraul), Arugal's robes and belt (Shadowfang Keep); Wowhead adds Glinteye Slippers. Consumables: water, Briny Seafood Stew, Lesser Cleric's Elixir, Minor Mana Oil, mana potions (Icy Veins).
+- **Watch out:** Wowhead's advice to skip shields on Warrior and Druid tanks is outdated: Blizzard's [2 October fix](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/5) says absorbs no longer reduce their Rage. Wowhead also lists Mental Strength in row 4 (row 2 since 16 October) and a one-minute Devouring Plague (now 24 sec).
 
 ## What the guides say
 

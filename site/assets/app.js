@@ -110,6 +110,8 @@ async function marketBrowser(section) {
   const scope = document.getElementById("scope");
   const order = document.getElementById("order");
   const pager = document.getElementById("pager");
+  const views = section.querySelector("[data-views]");
+  const viewOf = () => views?.querySelector("input:checked")?.value || "all";
   let items = [], view = [], page = 0, history = null, open = null;
 
   try {
@@ -134,6 +136,20 @@ async function marketBrowser(section) {
   }
   const reset = section.querySelector("[data-reset-filters]");
   if (reset) reset.hidden = false;
+  if (views) {
+    views.hidden = false;
+    const saved = views.querySelector(`input[value="${CSS.escape(params.get("view") || "all")}"]`);
+    if (saved) saved.checked = true;
+  }
+  const deal = item => item.deal !== null && item.deal_confidence !== "low";
+  const inView = {
+    all: () => true, under: deal, invest: item => item.invest !== null,
+    rising: item => (item.change ?? 0) > 0, falling: item => (item.change ?? 0) < 0,
+  };
+  const viewOrder = {
+    under: (a, b) => b.deal - a.deal, invest: (a, b) => b.invest - a.invest,
+    rising: (a, b) => b.change - a.change, falling: (a, b) => a.change - b.change,
+  };
 
   function matches(item, terms, id) {
     if (id !== null) return item.id === id;
@@ -146,7 +162,8 @@ async function marketBrowser(section) {
     const link = raw.match(/item[=/](\d+)/i);
     const id = link ? Number(link[1]) : /^\d+$/.test(raw) ? Number(raw) : null;
     const terms = raw.toLowerCase().split(/\s+/).filter(Boolean);
-    view = items.filter(item => (scope.value === "all" || item.current) && matches(item, terms, id));
+    const chosen = viewOf();
+    view = items.filter(item => (scope.value === "all" || item.current) && inView[chosen](item) && matches(item, terms, id));
     const sorters = {
       name: (a, b) => a.name.localeCompare(b.name, "en-GB"),
       listed: (a, b) => (b.listed ?? -1) - (a.listed ?? -1),
@@ -163,6 +180,8 @@ async function marketBrowser(section) {
         return name === query ? 0 : name.startsWith(query) ? 1 : (` ${name}`).includes(` ${query}`) ? 2 : 3;
       };
       view.sort((a, b) => rank(a) - rank(b) || (b.listed ?? 0) - (a.listed ?? 0) || sorters.name(a, b));
+    } else if (chosen !== "all" && order.value === "name") {
+      view.sort(viewOrder[chosen]);  // a view's own ranking until another order is chosen
     } else {
       view.sort(sorters[order.value]);
     }
@@ -171,8 +190,9 @@ async function marketBrowser(section) {
     if (raw) query.set("q", raw);
     if (raw || scope.value !== "current") query.set("scope", scope.value);
     if (order.value !== "name") query.set("order", order.value);
+    if (chosen !== "all") query.set("view", chosen);
     history_replace(query.size ? `?${query}` : "");
-    if (reset) reset.disabled = !raw && scope.value === "current" && order.value === "name";
+    if (reset) reset.disabled = !raw && scope.value === "current" && order.value === "name" && chosen === "all";
     render();
   }
 
@@ -201,6 +221,7 @@ async function marketBrowser(section) {
         link.rel = "noopener";
       }
       name.append(link, " ", el("span", item.id, "id"));
+      if (deal(item)) name.append(" ", el("span", `${Math.round(item.deal * 100)}% under usual`, "badge deal"));
       const typical = el("td", null, "num"); typical.append(money(item.typical));
       const steady = el("td", null, "vol"); steady.append(steadiness(item.volatility));
       const latest = el("td", null, "num latest"); latest.append(money(item.price));
@@ -297,9 +318,11 @@ async function marketBrowser(section) {
   section.querySelector("form").addEventListener("reset", event => {
     event.preventDefault(); clearTimeout(timer);
     filter.value = ""; scope.value = "current"; order.value = "name";
+    if (views) views.querySelector('input[value="all"]').checked = true;
     update(); filter.focus();
   });
   scope.addEventListener("change", () => update());
+  views?.addEventListener("change", () => update());
   order.addEventListener("change", () => update());
   update();
 }
@@ -425,11 +448,79 @@ function siteSearch(form) {
   });
 }
 
-function readingTools() {
-  const narrow = window.matchMedia("(max-width: 860px)");
-  const panels = [...document.querySelectorAll(".reading-tools")];
-  const apply = () => panels.forEach(panel => { panel.open = !narrow.matches; });
-  apply(); narrow.addEventListener("change", apply);
+function tabs(root) {
+  // The page's sections become tabs. The bar's links already jump to each section, so without this
+  // script the page reads top to bottom. Any #anchor in the address opens the tab that holds it.
+  const bar = root.querySelector(".tab-list");
+  const links = [...bar.querySelectorAll("a.tab")];
+  const panels = links.map(link => document.getElementById(decodeURIComponent(link.hash.slice(1))));
+  if (!links.length || panels.some(panel => !panel)) return;
+  const all = root.querySelector("[data-tabs-all]");
+  bar.setAttribute("role", "tablist");
+  links.forEach((link, i) => {
+    link.setAttribute("role", "tab");
+    link.id = `tab-${panels[i].id}`;
+    link.setAttribute("aria-controls", panels[i].id);
+    panels[i].setAttribute("role", "tabpanel");
+    panels[i].setAttribute("aria-labelledby", link.id);
+  });
+  let current = 0, expanded = false;
+  function show(index) {
+    current = index;
+    links.forEach((link, i) => {
+      const on = i === index;
+      link.setAttribute("aria-selected", String(on && !expanded));
+      link.tabIndex = on ? 0 : -1;
+      panels[i].hidden = !expanded && !on;
+    });
+  }
+  function expand(on) {
+    expanded = on;
+    root.classList.toggle("expanded", on);
+    all.setAttribute("aria-pressed", String(on));
+    all.textContent = on ? "Show as tabs" : "Show all";
+    show(current);
+  }
+  function fromHash(scroll) {
+    let target = null;
+    try { target = location.hash.length > 1 ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null; } catch { /* a malformed hash */ }
+    const index = target ? panels.findIndex(panel => panel === target || panel.contains(target)) : -1;
+    if (index < 0) return false;
+    show(index);
+    if (scroll) (target === panels[index] && !expanded ? root : target).scrollIntoView();
+    return true;
+  }
+  root.classList.add("tabbed");
+  if (all) { all.hidden = false; all.addEventListener("click", () => expand(!expanded)); }
+  if (!fromHash(true)) show(0);
+  links.forEach((link, i) => link.addEventListener("click", event => {
+    event.preventDefault();
+    show(i);
+    try { history.pushState(null, "", i === 0 && !expanded ? location.pathname + location.search : link.hash); } catch { /* file:// previews */ }
+    if (expanded) panels[i].scrollIntoView();
+    else if (root.getBoundingClientRect().top < 0) root.scrollIntoView();
+  }));
+  bar.addEventListener("keydown", event => {
+    const keys = { ArrowRight: current + 1, ArrowLeft: current - 1, Home: 0, End: links.length - 1 };
+    if (!(event.key in keys)) return;
+    event.preventDefault();
+    const next = (keys[event.key] + links.length) % links.length;
+    links[next].focus();
+    links[next].click();
+  });
+  window.addEventListener("hashchange", () => fromHash(true));
+  window.addEventListener("popstate", () => { if (!fromHash(false)) show(0); });
+}
+
+function foldables() {
+  // Long lists show their first rows; the rest are in the page, behind one button.
+  document.querySelectorAll("[data-foldable]").forEach(wrap => {
+    const button = wrap.querySelector("[data-show-more]");
+    if (!button) return;
+    wrap.classList.add("folded");
+    button.hidden = false;
+    button.addEventListener("click", () => { wrap.classList.remove("folded"); button.remove(); });
+  });
 }
 
 function menus() {
@@ -440,7 +531,17 @@ function menus() {
   const items = [...document.querySelectorAll("[data-menu]")];
   const hover = window.matchMedia("(min-width: 861px) and (hover: hover)");
   const toggleOf = item => item.querySelector(".menu-toggle");
-  const set = (item, open) => { item.classList.toggle("open", open); toggleOf(item).setAttribute("aria-expanded", String(open)); };
+  const set = (item, open) => {
+    item.classList.toggle("open", open);
+    toggleOf(item).setAttribute("aria-expanded", String(open));
+    const panel = item.querySelector(".panel");
+    panel.style.removeProperty("--shift");
+    if (open && window.matchMedia("(min-width: 861px)").matches) {  // keep a panel that opens under its word inside the window
+      const box = panel.getBoundingClientRect(), gap = 16;
+      const shift = Math.max(Math.min(0, window.innerWidth - gap - box.right), gap - box.left);
+      if (shift) panel.style.setProperty("--shift", `${Math.round(shift)}px`);
+    }
+  };
   const closeAll = except => items.forEach(item => { if (item !== except) set(item, false); });
   const opener = document.querySelector(".nav-open");
   const showNav = shown => {
@@ -485,7 +586,8 @@ function menus() {
 }
 
 menus();
-readingTools();
+document.querySelectorAll("[data-tabs]").forEach(tabs);
+foldables();
 document.querySelectorAll("[data-theme-toggle]").forEach(themeToggle);
 document.querySelectorAll("[data-countdown]").forEach(countdown);
 localTimes();

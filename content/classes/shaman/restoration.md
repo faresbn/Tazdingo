@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Restoration Shaman heals in WoW Forever, the talent builds the guides give at 20, 30 and 26 points, and what changes when Chain Heal and Riptide arrive at 40.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** group healer who also buffs with totems.
-- **How it plays:** Water Shield up and totems down with Call of the Elements. Use Healing Wave as the main heal, at lower ranks for small damage, and Lesser Healing Wave when the tank drops fast. Chain Heal and Riptide join at 40.
-- **Strengths:** strong single-target healing with Healing Wave and, from 40, area healing with Chain Heal, neither on a cooldown ([Icy Veins](https://www.icy-veins.com/wow-forever/restoration-shaman-healer-pve-guide)). Mana Tide Totem helps the whole group's mana.
-- **Weaknesses:** no direct multi-target heal before level 40; Healing Stream Totem already provides group healing. Solo killing is slower than in a damage-focused build.
-- **Stats:** healing power, then critical strike, Intellect and Spirit. Crits also refill mana through Water Shield.
-- **New in Forever:** [Riptide](https://foreverdb.net/spell/408521) (40), [Water Shield](https://foreverdb.net/spell/408510) as a talent (20) and [Mindfulness](https://foreverdb.net/spell/1223033) (15). [Healing Way](https://foreverdb.net/spell/29206) is now a flat 25% boost to Healing Wave, and [Mana Tide Totem](https://foreverdb.net/spell/16190) moved up to tier 4.
+- **Pick it for:** healing a regular dungeon party with Healing Wave and totems; Chain Heal and Riptide wait until 40, and solo kills are slow.
+- **Levelling build:** at 30, Wowhead's "Group Levelling" and Icy Veins are identical: Improved Healing Wave 5, Mindfulness 3, Natural Grace 2, Ancestral Healing 3, Healing Focus 1, Water Shield, Tidal Mastery 4, Mana Tide Totem, Nature's Swiftness ([Wowhead](https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview)). For solo time, Wowhead's 10/0/11 "Solo Levelling" mixes in Elemental.
+- **Build at 60:** not established yet: WoWSims has no default Restoration talents or rotation.
+- **Priority:** at 30 (ForeverDB): totems pre-pull, Water Shield up, [Healing Wave](https://foreverdb.net/spell/331) on the tank (rank 3 for small damage), Lesser Healing Wave when the tank drops fast, Totemic Recall afterwards ([ForeverDB](https://foreverdb.net/class/Shaman)). From 40, Riptide on the tank, Chain Heal starting on them, Healing Wave filler.
+- **Stats:** healing power first; Icy Veins then crit (Water Shield mana, Ancestral Healing), Intellect, Spirit ([Icy Veins](https://www.icy-veins.com/wow-forever/restoration-shaman-healer-pve-guide)); ForeverDB mana per 5, Intellect, Spirit, and says crit matters little before Tidal Mastery at 25. No level-60 simulator weights.
+- **Key levels:** 15 [Mindfulness](https://foreverdb.net/spell/1223033) · 20 [Water Shield](https://foreverdb.net/spell/408510) · 25 Tidal Mastery · 30 Call of Air quest · 35 Purification · 40 Chain Heal, [Riptide](https://foreverdb.net/spell/408521), Dual Specialization.
+- **Gear and consumables:** Tidebringer's Claw and Elementalist's Guard from the level-30 Call of Air quest (Icy Veins); Leatherworking's Mender's Leather Belt at 30 (ForeverDB); Enchanting's [Polished Driftwood Icon](https://foreverdb.net/item/249398). Consumables: water, mana potions, Lesser Cleric's Elixir, Mender's Potion (Icy Veins).
+- **Watch out:** older Orc, Dwarf and Tauren racial rankings are stale: Blizzard's [26 October notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7) remove Tauren's crit-healing bonus and give Dwarves hit, which doesn't help heals. No direct multi-target heal before 40; let Healing Stream Totem tick. Drop Tremor Totem before fear fights.
 
 ## What the guides say
 

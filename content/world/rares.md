@@ -4,7 +4,7 @@ summary: What's known about rare spawns in Forever: which rares players have con
 sources: ForeverDB, foreverchanges.pro, Wowhead, Icy Veins, Blizzard, CurseForge
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Rares, not campfires:** this page covers rare spawns. In Forever, "camping" is the campfire system; see [Camping](ledger:world/camping/).
 - **Mostly unconfirmed:** ForeverDB lists 354 rares, but only 19 had been seen in Forever by 24 October. The rest come from Classic data.

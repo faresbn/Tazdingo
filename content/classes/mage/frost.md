@@ -1,18 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Frost Mage plays in WoW Forever with Ice Lance and Fingers of Frost, its levelling talent order, single-target and AoE rotations from the guides and simulators, gear and open questions.
 sources: Icy Veins, Wowhead, ForeverDB, WoWSims presets and APLs, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** Ranged damage with the most control of any Mage spec.
-- **How it plays:** Frostbolt is the filler and slows the target. Freezes from Frost Nova and Frostbite, and [Fingers of Frost](https://foreverdb.net/spell/400647) procs, let you fire instant [Ice Lances](https://foreverdb.net/spell/1312002) for big hits. From 35, Winter's Chill stacks power up Cone of Cold.
-- **Strengths:** The safest levelling and kiting spec, strong control, consistent damage, good in PvP and solid AoE.
-- **Weaknesses:** Lower damage ceiling and no Frost burst cooldown; mana-hungry; needs talents to come online (Ice Lance at 20, Shatter from 25, Fingers of Frost at 30); relies on procs; frost-immune enemies blunt it (Wowhead).
-- **Stats:** Hit, spell power and Frost damage, then crit ([Ice Shards](https://foreverdb.net/spell/11207) adds 100% Frost crit damage), Spirit and Intellect.
-- **New in Forever:** Ice Lance (11-point talent), Fingers of Frost (row 5), [Frost Blast](https://foreverdb.net/spell/1326053) (trainer spell at 24, a quick slowing bolt), Winter's Chill now boosts Cone of Cold, Ice Block moved to row 4 and Cold Snap to row 5 with a 10 minute cooldown.
-- **Levelling:** ForeverDB's first pick for a new Mage; Icy Veins calls it smooth and safe.
+- **Pick it for:** the safest levelling and kiting spec: slows, freezes and recovery tools for solo pulls and PvP, with steady rather than top damage.
+- **Levelling build:** at 30, Icy Veins' calculator takes Improved Frostbolt 5, Frostbite 3, Ice Shards 5, Ice Lance, Missile Barrage 2, Frost Channeling 1, Shatter 3 and Ice Block ([Icy Veins](https://www.icy-veins.com/wow-forever/frost-mage-leveling)). Wowhead trades Improved Frostbolt ranks for Elemental Precision in dungeons; ForeverDB's build predates the 16 October rework.
+- **Build at 60:** projection only: WoWSims' "Frost" is 32 Frost (Ice Shards 5, Shatter 3, Fingers of Frost 2, Winter's Chill 5, Cold Snap, Ice Barrier) plus 19 Arcane ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/mage/dps/presets.ts)).
+- **Priority:** levelling ([Icy Veins](https://www.icy-veins.com/wow-forever/frost-mage-leveling)): Frostbolt from maximum range, Frost Nova on arrival, Ice Lance while Frozen or on [Fingers of Frost](https://foreverdb.net/spell/400647) procs, Cone of Cold at five Winter's Chill stacks, finish with Fire Blast or wand. At 60 WoWSims also casts Cone of Cold on cooldown.
+- **Stats:** Icy Veins: hit, then spell power and Frost damage, crit, Spirit and Intellect. ForeverDB adds that Elemental Precision covers part of the dungeon hit gap ([ForeverDB](https://foreverdb.net/class/Mage/pve)).
+- **Key levels:** 20 [Ice Lance](https://foreverdb.net/spell/1312002) · 24 Frost Blast (trainer) · 25 Shatter · 30 Ice Block and the Mage wand quest · 30–35 Fingers of Frost · 35 Winter's Chill boosts Cone of Cold.
+- **Gear and consumables:** Wowhead's level 30 list includes Sorcerer Collar, Belt of Arugal, Glinteye Slippers and the quest's Icefury Wand; Tailoring's Silky pieces only fit their crafter ([Wowhead](https://www.wowhead.com/forever/guide/classes/mage/frost/level-30-dps-overview)). Icy Veins calls Wizard Oil the biggest boost; Lesser Arcane Elixir tops ForeverDB's simulator at 30 (+4.4%).
+- **Watch out:** Ice Lance now gets a 200% increase against Frozen targets (not 200% damage); guides quoting 300% are out of date ([Blizzard](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/6)). Any damage, your Ice Lance included, can break a freeze. Rank 1 Frostbolt no longer fishes Frostbite procs. Don't spam Ice Lance as a filler.
 
 ## What the guides say
 

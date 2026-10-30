@@ -1,18 +1,17 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: What the Hunter is in WoW Forever, what changed from Classic, and which of the three specs the guides suggest for levelling and groups.
 sources: Blizzard class deep dive, ForeverDB, Wowhead, Icy Veins, WoWSims presets
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Armour and weapons:** Cloth and leather from level 1, mail from 40 (above the beta cap). Bows, guns, crossbows and thrown weapons in the ranged slot; axes, swords, daggers, fist weapons, staves and (from 20) polearms in melee. No maces. Dual-wield from 20 ([ForeverDB](https://foreverdb.net/guide/leveling-hunter)).
-- **Roles:** Damage only. Blizzard describes the pet as a tank for solo and small-group play.
-- **Resource:** Mana for shots, stings, traps and melee abilities. Auto Shot costs nothing. The pet spends its own Focus.
-- **Pets:** Tamed at level 10 through the class quest. Every family now has a unique ability, Foxes are a new family, and pets scale with your gear instead of taking other players' buffs.
-- **Specs:** Beast Mastery (pet and hawks), Marksmanship (your own shots, with an optional petless build) and Survival, which is now a melee spec from level 30.
-- **Pure class:** Blizzard counts Hunters among the four pure damage classes that set the bar for its roughly 5% "hybrid tax", so no tax applies to them ([ForeverDB](https://foreverdb.net/article/blizzard-hybrid-tax-5-percent-warriors-count-as-hybrids)).
-- **Races:** Human, Dwarf, Night Elf and High Order Skyborne (Alliance); Orc, Tauren, Troll and Windshaper Skyborne (Horde). Human and Skyborne Hunters are new.
+- **Pick a spec:** Beast Mastery for solo levelling, the consensus pick: the pet holds mobs and hawks arrive at 25 ([Icy Veins](https://www.icy-veins.com/wow-forever/beast-mastery-hunter-leveling)). Marksmanship if your own shots should matter more. Survival only as a deliberate melee choice: the weakest leveller, with key tools from 30.
+- **Key levels:** 10 first pet (class quest) · 20 [Aimed Shot](https://foreverdb.net/spell/19434), dual-wield and polearms · 25 Summon Hawk (Beast Mastery) · 30 Survival's melee kit · 40 mail, Dual Specialization and Bestial Wrath.
+- **New in Forever:** Aimed Shot is baseline and shares a 6 sec cooldown with Multi-Shot; traps work in combat on a 30 sec cooldown; each pet family has a unique ability and pets scale with your gear; hit is one stat; Survival is melee ([Blizzard](https://worldofwarcraft.blizzard.com/en-us/news/24301515)).
+- **Professions:** Skinning and Leatherworking for self-crafted levelling gear; Engineering for tools, at a material cost. Check whether a piece is bind-on-pickup before planning to buy it.
+- **Race:** after the 26 October notes, Orc Command is 5% pet damage only (nothing for Lone Wolf), Savage is gone, Human is 1% crit and Tauren Plainsrunning is unmounted only ([Blizzard](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7)). Pet-heavy Orc builds gain; there is no universal winner.
+- **Watch out:** keep the pet out while levelling; ForeverDB's sim puts losing it at 20–27% of your damage at 20–30. Don't read WoWSims' petless level-60 default as levelling advice. Auto Shot's 0.5 sec wind-up is back, so stand still briefly for each shot.
 
 ## What the guides say
 

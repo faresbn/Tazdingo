@@ -4,7 +4,7 @@ summary: Which popular addons have a Forever version, the addons made just for F
 sources: CurseForge (catalogue checked 26 October; TSM, WeakAuras and Musca Auras rechecked 27 October), ForeverDB, foreverchanges.pro, Icy Veins, Blizzard forums, ElvUI on GitHub and Tukui
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Modern client, modern rules:** Forever uses the current game's interface and addon rules, interface number 16001 (game version 1.60.1). Do not assume a Classic Era or Anniversary file is compatible; some authors ship a multi-flavour download.
 - **Addons show, they don't act:** in combat, addons see less than they used to and can't play for you.

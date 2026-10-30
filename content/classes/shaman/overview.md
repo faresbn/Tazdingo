@@ -1,19 +1,17 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: What the Shaman is in WoW Forever, now open to both factions, what Forever changed, and how the guides suggest picking a spec and levelling one.
 sources: Blizzard class deep dive and race article, ForeverDB, Wowhead, Icy Veins, WoWSims presets
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Armour and weapons:** cloth, leather and shields, with mail from level 40. Weapons: one-handed maces and axes, daggers, fist weapons and staves. Blizzard says two-handed axes and maces are now baseline. Shamans can't dual wield in Forever.
-- **Roles:** ranged damage (Elemental), melee damage (Enhancement) or healer (Restoration). Blizzard says Enhancement can briefly tank in small groups.
-- **Resource:** Mana, for spells, shocks and totems.
-- **Both factions:** Shamans are open to the Alliance for the first time, but only as Dwarves. The Horde has Orc, Tauren, Troll and Windshaper Skyborne.
-- **Totems:** one per element at a time. Most buff totems now last 5 min and reach 30 yards.
-- **What's new:** [Call of the Elements](https://foreverdb.net/spell/66842) drops four totems in one cast, [Totemic Recall](https://foreverdb.net/spell/36936) refunds mana and [Fire Nova](https://foreverdb.net/spell/408341) is now a spell. [Lava Burst](https://foreverdb.net/spell/408490), [Riptide](https://foreverdb.net/spell/408521), [Water Shield](https://foreverdb.net/spell/408510) and [Maelstrom Weapon](https://foreverdb.net/spell/408498) are talents.
-- **Levelling:** Enhancement is the usual recommendation.
-- **Hybrid status:** Elemental and Enhancement fall under Blizzard's target of about 5% less damage than pure classes (see the hybrid page).
+- **Pick a spec:** Enhancement for levelling ([ForeverDB](https://foreverdb.net/guide/leveling-shaman), Wowhead): big weapon, heals between pulls, instant indoor Ghost Wolf from 20. Elemental for caster play or a supported group, though Icy Veins rates its level-30 damage weak; Restoration for a regular party, levelled as Enhancement until Dual Specialization at 40 (Wowhead).
+- **Key levels:** 4 Earth totem quest · 10 Fire quest · 20 Water quest, Improved Ghost Wolf · 22 Totemic Projection · 30 Air quest, Call of the Ancestors, Lava Burst reachable · 32 Chain Lightning, Windfury Totem · 40 mail, Chain Heal, Riptide, Dual Specialization.
+- **New in Forever:** Alliance Dwarves can play it; no dual wielding; two-handed axes and maces are baseline. [Call of the Elements](https://foreverdb.net/spell/66842) drops four totems, Totemic Recall refunds 25% of their mana, buff totems last 5 min and Fire Nova is a spell ([Blizzard](https://worldofwarcraft.blizzard.com/en-us/news/24302097)).
+- **Professions:** ForeverDB: Leatherworking and Skinning. Wowhead's Elemental and Restoration guides and WoWSims: Leatherworking and Enchanting, which makes the [Polished Driftwood Icon](https://foreverdb.net/item/249398) relic.
+- **Race:** the Alliance has only Dwarf; the Horde has Orc, Tauren, Troll and Windshaper Skyborne. After 26 October, Skyborne Wind-Blessed is 2% haste, Orc Savage is gone (Command only helps pets) and Tauren Endurance is 5% health ([Blizzard](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7)). Older Orc-first rankings are stale; no launch-tested winner.
+- **Watch out:** Blizzard's deep dive said Elemental Mastery was removed and Call of the Spirits came at 30; the client has a redesigned Elemental Mastery and teaches Call of the Ancestors at 30, Call of the Spirits at 40 ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)). Everything above 30 is untested.
 
 ## What the guides say
 

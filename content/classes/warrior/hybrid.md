@@ -4,7 +4,7 @@ summary: Warrior builds that mix talent trees in WoW Forever, the levelling hybr
 sources: ForeverDB, Wowhead, Icy Veins, WoWSims presets, Blizzard deep dive and WoW: Forever Podcast
 ---
 
-## At a glance
+## Cheatsheet
 
 - **How mixing works:** one talent point per level from 10, 51 by 60. Each row of a tree needs 5 more points in that tree, so 21 points at 30 can just reach row 5 of one tree.
 - **Common dip:** Fury's [Cruelty](https://foreverdb.net/spell/12320) (5% melee crit) is the talent other specs borrow most, since crits also give double Rage.

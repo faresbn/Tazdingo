@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Enhancement Shaman plays in WoW Forever as a two-handed melee spec, the guides' talent builds at 20, 30 and 60, and how their rotations compare with the simulators.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and rotation, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** melee damage with group totems. Blizzard designed it to act as a temporary tank in small groups when needed.
-- **How it plays:** a slow two-handed weapon with [Windfury Weapon](https://foreverdb.net/spell/8232) from 30. Use [Stormstrike](https://foreverdb.net/spell/17364) (from 25) then Earth Shock, keep Flame Shock and a Fire totem up, and let auto attacks do most of the work.
-- **Strengths:** instant Ghost Wolf that works indoors, strong area damage with Fire Nova and Totemic Projection, and totem utility ([Wowhead](https://www.wowhead.com/forever/guide/classes/shaman/enhancement/overview-pve-dps)). Wowhead calls it easy for new players.
-- **Weaknesses:** mana runs out fast at low levels ([Icy Veins](https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide)). Wowhead warns a raid could bring any Shaman spec for the same totems. Dual wielding is gone.
-- **Stats:** weapon damage first, then hit, critical strike and Strength. Intellect also turns into attack power through Mental Dexterity.
-- **New in Forever:** [Mental Dexterity](https://foreverdb.net/spell/415140), [Shamanistic Focus](https://foreverdb.net/spell/1223030), [Improved Stormstrike](https://foreverdb.net/spell/1223031), [Mental Quickness](https://foreverdb.net/spell/30812), [Maelstrom Weapon](https://foreverdb.net/spell/408498) and [Rage of the Farseer](https://foreverdb.net/spell/425336). Stormstrike is now a tier 4 talent on an 8 sec cooldown.
+- **Pick it for:** Wowhead's default early Shaman spec: a slow two-hander, auto attacks doing most of the work, instant indoor Ghost Wolf and Fire Nova on packs.
+- **Levelling build:** at 30, ForeverDB and Icy Veins: Thundering Strikes 5, Mental Dexterity 3, Improved Ghost Wolf 2, Shamanistic Focus 1, Elemental Weapons 3, Ancestral Knowledge 1, Stormstrike, Flurry 4, Improved Stormstrike 1 ([ForeverDB](https://foreverdb.net/guide/leveling-shaman)). Wowhead takes Anticipation 1 instead of Ancestral Knowledge.
+- **Build at 60:** projection only: WoWSims' "Standard" (19/32/0) adds Maelstrom Weapon 5, Rage of the Farseer, Improved Stormstrike 2, Mental Quickness 2, Spirit Weapons and Flurry 5, with Elemental's Concussion 5, Elemental Devastation 3 and Reverberation 5 ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/shaman/enhancement/presets.ts)). It assumes Rockbiter Weapon with a group Windfury Totem.
+- **Priority:** at 30 (ForeverDB): Windfury Weapon and Lightning Shield up, Searing Totem on long fights, Flame Shock as the mob closes, [Stormstrike](https://foreverdb.net/spell/17364) into Earth Shock unless you need the interrupt. Wowhead uses Stormstrike sparingly to save mana. WoWSims at 60 adds Lightning Bolt at five Maelstrom stacks.
+- **Stats:** weapon DPS first; Icy Veins then hit, crit, Strength, ForeverDB hit, Strength, crit ([Icy Veins](https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide)). Intellect also gives attack power through Mental Dexterity. WoWSims at 60: main-hand DPS 14.18, hit 5.2, expertise 3.5, attack power 1.
+- **Key levels:** 20 [Improved Ghost Wolf](https://foreverdb.net/spell/16262) · 25 Stormstrike · 30 [Windfury Weapon](https://foreverdb.net/spell/8232), Air totem chain · 32 Windfury Totem · 35 Maelstrom Weapon · 40 Rage of the Farseer.
+- **Gear and consumables:** a slow two-hander, upgraded often; Rage of the Storm from The Tempest's Weapons after the level-30 Air chain ([Wowhead](https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-30-dps-overview)). Leatherworking (Wowhead, Icy Veins), Blacksmithing for early weapons (Wowhead). ForeverDB's sim rates Bear Brisket and Scroll of Strength II best at 30.
+- **Watch out:** mana runs out fast at low levels (Icy Veins). Imbue: Windfury always (Icy Veins), or Windfury on slow two-handers and Flametongue with a fast one-hander and shield (Wowhead). Rockbiter with Spirit Weapons raises threat; the level-60 Rockbiter preset isn't a levelling upgrade.
 
 ## What the guides say
 

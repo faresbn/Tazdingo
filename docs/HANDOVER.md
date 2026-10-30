@@ -2,14 +2,14 @@
 
 Where Tazdingo stands, kept current at every checkpoint so another thread, model or machine can carry on. Read this first, then AGENTS.md and README.md. History lives in git and in `docs/sessions/`; this file describes the present.
 
-**Last updated:** 30 October 2026, after building the public repository, the ChatGPT feed and the inbox (session `docs/sessions/2026-10-30-public-inbox/`). `main` is the whole state and the only branch.
+**Last updated:** 30 October 2026, after the site design overhaul (session `docs/sessions/2026-10-30-design-overhaul/`), which followed the public repository, feed and inbox (`docs/sessions/2026-10-30-public-inbox/`). `main` is the whole state and the only branch.
 
 ## In flight (30 October)
 
 **The inbox is built and tested; three owner steps remain before it opens.** Phases 1–8 of `docs/sessions/2026-10-30-public-inbox/plan.md` are merged. On GitHub, a deliberately stale test submission was held with its reason, pushed, and failed the run as designed (run 41026422969).
 1. **Fares:** create the fine-grained token (only `faresbn/Tazdingo`, Contents read and write, one-year expiry). Then run `docs/sessions/2026-10-30-public-inbox/codex-deploy-brief.md` in Codex to deploy the `tazdingo-inbox` Site, pasting the token and the personal keys from `tmp/inbox-keys.json` (this Mac only, never committed) into its secrets.
 2. **Then (Claude or Codex):** put the Site's address in `data/game.json` (`inbox.endpoint`, ending `/submit`), set `inbox.open` to `true`, and test end to end through the form in a browser: a page edit, a stale edit, a wrong key, an addon file.
-3. **Fares:** paste the new `docs/chatgpt/PROJECT_INSTRUCTIONS.md`, and upload `UPDATING.md` and `TAZDINGO_INBOX.md` (each person with their own key) to the ChatGPT project. Then test from the app: read prices and a page through the map, send an edit and an addon file in agent mode.
+3. **Fares:** paste the new `docs/chatgpt/PROJECT_INSTRUCTIONS.md`, and upload `UPDATING.md` and `TAZDINGO_INBOX.md` (both changed again on 30 October for the cheatsheet) (each person with their own key) to the ChatGPT project. Then test from the app: read prices and a page through the map, send an edit and an addon file in agent mode.
 
 Later: phase 9 (the inbox as a tool callable from chats, published to the workspace as a plugin), once the form works. Also a processor for AllTheThings files, if wanted.
 
@@ -24,6 +24,8 @@ Later: phase 9 (the inbox as a tool callable from chats, published to the worksp
 The latest plan, research and review log are in `docs/sessions/2026-10-30-public-inbox/` (`plan.md`, `research.md`, `revlog.md`, `codex-deploy-brief.md`).
 
 ## The site now
+
+- **Design overhaul (30 October, afternoon):** guide pages are tabbed and open on a **Cheatsheet** (renamed from At a glance; standard labels in `docs/chatgpt/UPDATING.md`) and "Our take" (the Tazdingo recommendation, lifted from What the guides say). `app.js` makes the tabs; without it the page reads in order, and any `#anchor` opens its tab. Menus open under their word with one link per page; "Sources and credits" is in the footer. The Auction House overview is a tabbed board; Deals are now 20% under usual (exceptional = the old 30% + spread test); below-vendor only for Rare+ items and recipes worth 1s+. Market pages are the searchable list with views. Professions overview leads with the gold-making pages. `style.css` was rewritten as one system. 48 cheatsheets were rewritten from each page's own cited content; cheatsheet edits from the inbox go to review. Plan, brief and reviews: `docs/sessions/2026-10-30-design-overhaul/`.
 
 - **Public repository, feed and inbox (30 October):**
   - **The repository is public.** Original Lua files are committed under `data/captures/`.
@@ -66,7 +68,6 @@ The latest plan, research and review log are in `docs/sessions/2026-10-30-public
 - **Watch items from the final bug check** (none affects the site today): in the older `data/market/inbox/` route, one bad record blocks later runs until someone removes it (the new inbox holds bad submissions instead); if the market grows fast after launch, early full scans can count as partial days (the baseline is the median full-scan size); a full scan's time-of-day sample includes items whose price was recorded earlier that day; the Beta capture route credits full scans among published markets only.
 - **Actions minutes:** settled. Standard runners are free for public repositories.
 - **Site size:** item pages are ~39 KB (half of it the repeated menu); a full live market (~4,200 items) makes the site ~160 MB. Within limits; trim the item-page menu if publishing slows.
-- **Masthead strapline** wraps to three lines between about 860 and 1,240 px wide; worth a polish.
 - **Next content phase** (Fares): guide length, per-type templates, PvP sections per class and spec, the empty Field findings.
 - **Fares's calls:** custom domain (not yet), search engines (not a priority), analytics (none).
 - **iCloud:** `scripts/icloud-shield.sh` keeps build output out of sync; `scripts/icloud-janitor.sh [--delete]` removes identical "name 2.ext" copies.

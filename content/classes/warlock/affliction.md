@@ -1,18 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Affliction Warlock plays in WoW Forever: levelling talents by level, the DoT rotation from the guides and simulators, the Shadow Bolt or Wrack question at 60, gear and open questions.
 sources: Icy Veins, Wowhead, ForeverDB, WoWSims builds, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** Ranged damage over time, best on long fights and on several targets at once.
-- **How it plays:** Put [Bane of Agony](https://foreverdb.net/spell/980), [Corruption](https://foreverdb.net/spell/172), [Siphon Life](https://foreverdb.net/spell/18265) and a Curse on the target, then fill with Shadow Bolt ([Nightfall](https://foreverdb.net/spell/18094) makes some instant) or a drain. Life Tap keeps your mana up.
-- **Strengths:** Very little downtime thanks to Life Tap and Drain Life, cleave from DoTs on every target, damage that keeps ticking while you move, and instant mob tagging.
-- **Weaknesses:** Slow on short fights, little burst, and haste doesn't speed up DoTs or drains (Wowhead, Icy Veins).
-- **Stats:** Spell power and Shadow damage, hit ([Suppression](https://foreverdb.net/spell/18174) gives up to 5%), crit (DoTs can crit, boosted by Pandemic and Malevolence), Spirit for Life Tap, then Intellect and Stamina.
-- **New in Forever:** [Wrack](https://foreverdb.net/spell/1316697), the channelled capstone; [Pandemic](https://foreverdb.net/spell/427712), [Malevolence](https://foreverdb.net/spell/1310949), Improved Drains and Soul Harvest; Soul Siphon reworked; Suppression now gives hit and lower threat.
-- **Levelling:** ForeverDB's first pick for a new Warlock. Instant Corruption is the first big step.
+- **Pick it for:** low-downtime solo questing with DoTs, drains and Life Tap, and cleave on several targets; slow on short fights.
+- **Levelling build:** at 30, Icy Veins' calculator takes Suppression 4, Improved Corruption 5, Grim Reach 2, Improved Bane of Agony 2, Improved Life Tap 2, Nightfall 2, Pandemic 3 and Siphon Life ([Icy Veins](https://www.icy-veins.com/wow-forever/affliction-warlock-leveling)). Wowhead takes Improved Corruption first and drain talents late for drain-tanking.
+- **Build at 60:** projection only: "SM/Ruin" (31 Affliction, 20 Destruction, Shadow Bolt filler) or "Wrack" (33/18, channelled), in both Wowhead and WoWSims ([WoWSims](https://github.com/wowsims/forever/tree/master/ui/specs/warlock/dps/builds)). Wowhead previously rated SM/Ruin strongest; a current gap isn't established.
+- **Priority:** at 30 ([Icy Veins](https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-guide)): demon in, Curse, Bane of Agony and Siphon Life only on mobs that will live, instant Corruption, then Drain Life for health or Shadow Bolt on Shadow Trance; stop once DoTs will finish the job. Wowhead keeps three Affliction effects up before draining.
+- **Stats:** spell power and Shadow damage, hit ([Suppression](https://foreverdb.net/spell/18174) ranks to suit target level and gear), crit (DoTs can crit), Spirit for Life Tap, then Intellect and Stamina. Wowhead and Icy Veins: haste doesn't speed DoTs or drains.
+- **Key levels:** 14–18 instant Corruption (Icy Veins order) · 28 Firestone · 30 Siphon Life · 36 Spellstone (Icy Veins) · 41 Demonic Sacrifice of the Felhunter (Icy Veins) · 51 [Wrack](https://foreverdb.net/spell/1316697).
+- **Gear and consumables:** ForeverDB's lists put [Staff of the Shade](https://foreverdb.net/item/2549) (Razorfen Kraul) top at 30; Icy Veins adds Shadow Circlet (Tailoring) and Staff of Soran'ruk from the level 20 Warlock quest. Firestone's crit helps DoTs. Lesser Arcane Elixir tops ForeverDB's simulator at 30 (+5.2%).
+- **Watch out:** Malediction is now Grim Reach, a range talent, though Icy Veins' introduction and ForeverDB's group build still describe the old bonus ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)). Don't refresh a DoT before it runs out. Bane of Doom belongs to level-60 lists, not levelling.
 
 ## What the guides say
 

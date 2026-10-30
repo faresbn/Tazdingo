@@ -218,16 +218,6 @@ def changelog(site: Site, entries: list, title: str = "Changes to this page") ->
     return f'<section class="changes" id="changes"><h2>{esc(title)}</h2><ol class="log">{rows}</ol></section>'
 
 
-def status_line(page: dict | None) -> str:
-    if not page:
-        return ""
-    facts = [badge("prelaunch") if page["status"] == "pre-launch" else badge("live")]
-    if page.get("confidence_label"):
-        facts.append(badge(page["confidence"], page["confidence_label"]))
-    facts.append(f'<span class="updated">Updated {when(page["updated"])}</span>')
-    return f'<p class="status-line">{" ".join(facts)}</p>'
-
-
 def render_sections(page: dict | None, empty: str, skip: tuple = (), only: tuple | None = None, sources: bool = True) -> str:
     """A note's sections, each styled for what it is: the guides' summary reads as an article,
     our findings sit on a ruled ledger sheet, and the sources are a compact list."""
@@ -246,34 +236,35 @@ def render_sections(page: dict | None, empty: str, skip: tuple = (), only: tuple
     return "".join(out)
 
 
-def note_block(page: dict | None, empty: str) -> str:
-    return status_line(page) + render_sections(page, empty)
-
-
 def plain_text(markup: str) -> str:
     """Heading HTML as plain text: tags removed, entities decoded (escape once on output)."""
     return html.unescape(re.sub(r"<[^>]+>", "", markup))
 
 
-def toc(page: dict | None, extra: tuple = ()) -> str:
-    if not page:
-        return ""
-    items = []
-    for sec in page["sections"]:
-        if not sec["heading"]:
-            continue
-        sub = "".join(f'<li><a href="#{esc(anchor)}">{esc(plain_text(label))}</a></li>' for anchor, label in sec["toc"])
-        items.append(f'<li><a href="#{esc(sec["slug"])}">{esc(sec["heading"])}</a>{f"<ol>{sub}</ol>" if sub else ""}</li>')
-    items += [f'<li><a href="#{esc(anchor)}">{esc(label)}</a></li>' for anchor, label in extra]
-    return f'<nav class="toc" aria-label="On this page"><h2 class="aside-title">On this page</h2><ol>{"".join(items)}</ol></nav>' if items else ""
+def alias(*anchors: str) -> str:
+    """Anchors the page used before it was tabbed, kept so old links still open the right tab."""
+    return "".join(f'<span id="{esc(a)}" class="anchor"></span>' for a in anchors)
+
+
+def tabs(panels: list[tuple[str, str, str]], count: dict | None = None) -> str:
+    """(anchor, label, html) panels under a bar of jump links. app.js turns them into tabs and opens
+    the one holding the address's #anchor; without it the panels read in order."""
+    panels = [p for p in panels if p[2]]
+    count = count or {}
+    bar = "".join(f'<a class="tab" href="#{a}">{esc(label)}{f" <span class=count>{count[a]}</span>" if count.get(a) else ""}</a>'
+                  for a, label, _ in panels)
+    return ('<div class="tabs" data-tabs><nav class="tab-bar" aria-label="Sections of this page"><div class="tab-list">' + bar + '</div>'
+            '<button class="tab-all" type="button" data-tabs-all aria-pressed="false" hidden>Show all</button></nav>'
+            + "".join(f'<section class="tab-panel" id="{a}" data-panel><h2 class="tab-title">{esc(label)}</h2>{body}</section>'
+                      for a, label, body in panels) + '</div>')
 
 
 # --- Menus --------------------------------------------------------------------
 
 def nav_html(site: Site, ctx: dict) -> str:
     """The masthead menu. Each top item is a link to its section plus a button that opens a
-    panel: on hover or keyboard focus with a mouse, on tap or click everywhere, Escape closes it.
-    On phones the panels stack inside the opened menu."""
+    panel under it: on hover or keyboard focus with a mouse, on tap or click everywhere, Escape closes it.
+    On phones the panels stack inside the opened menu. Panels carry one link per page."""
     b, game = site.base, ctx["game"]
 
     def item(key: str, label: str, href: str, panel: str) -> str:
@@ -282,37 +273,28 @@ def nav_html(site: Site, ctx: dict) -> str:
                 f'<span class="visually-hidden">Show {label} menu</span></button>'
                 f'<div class="panel panel-{key}" id="panel-{key}">{panel}</div></li>')
 
-    markets = "".join(f'<li><a href="{esc(m["url"])}">{esc(m["name"])}</a> <span class="aside">{esc(m["environment_label"])}</span></li>'
-                      for m in ctx["markets"])
-    prices = (f'<div class="panel-cols three"><div><h3 class="panel-title">From the latest scans</h3><ul class="panel-list">'
-              f'<li><a href="{b}prices/#deals">Unusually low</a><span class="aside">Far under the usual price</span></li>'
-              f'<li><a href="{b}prices/#invest">Investment watch</a><span class="aside">Cheap against its own history</span></li>'
-              f'<li><a href="{b}prices/#movers">Movers</a><span class="aside">The last day and the week</span></li>'
-              f'<li><a href="{b}prices/#patterns">When prices are lowest</a><span class="aside">By weekday and time of day</span></li>'
-              f'</ul></div><div><h3 class="panel-title">Making gold</h3><ul class="panel-list">'
-              f'<li><a href="{b}prices/craft/">What to craft</a><span class="aside">Recipes ranked by margin</span></li>'
-              f'<li><a href="{b}prices/crates/">Waylaid Crates</a><span class="aside">Cheapest way to earn Merchant\'s Favor</span></li>'
-              f'<li><a href="{b}prices/materials/">Materials worth gathering</a><span class="aside">Herbs, ores, leather and cloth by value</span></li>'
-              f'</ul></div><div><h3 class="panel-title">Markets</h3><ul class="panel-list">{markets}</ul>'
-              f'<p class="panel-foot"><a href="{b}prices/">The Auction House overview</a></p></div></div>')
+    def plain(pairs) -> str:
+        return '<ul class="panel-list">' + "".join(f'<li><a href="{b}{url}">{esc(name)}</a></li>' for url, name in pairs) + "</ul>"
+    primary = ctx["primary"]
+    market = [("prices/", "Deals and investments")] + ([(primary["url"][len(b):], "All prices")] if primary else [])
+    prices = (f'<div class="panel-cols"><div><h3 class="panel-title">Market</h3>{plain(market)}</div>'
+              f'<div><h3 class="panel-title">Making gold</h3>{plain([("prices/craft/", "What to craft"), ("prices/materials/", "Materials worth gathering"), ("prices/crates/", "Waylaid Crates")])}</div></div>')
     class_cells = []
     for c in game["classes"]:
-        specs = " ".join(f'<a href="{b}classes/{c["slug"]}/{s["slug"]}/">{emblem(site, "spec", c["slug"] + "-" + s["slug"], 16)}{esc(s["name"])}</a>' for s in c["specs"])
-        class_cells.append(f'<div class="class-cell" style="--class:{esc(c["colour"])}">{emblem(site, "class", c["slug"], 36, c["colour"])}'
-                           f'<div><a class="class-link" href="{b}classes/{c["slug"]}/">{esc(c["name"])}</a><div class="spec-links">{specs}</div></div></div>')
-    classes = f'<div class="class-grid">{"".join(class_cells)}</div><p class="panel-foot"><a href="{b}classes/">All classes, and choosing one</a></p>'
+        specs = "".join(f'<a href="{b}classes/{c["slug"]}/{s["slug"]}/">{emblem(site, "spec", c["slug"] + "-" + s["slug"], 16)}{esc(s["name"])}</a>' for s in c["specs"])
+        class_cells.append(f'<div class="class-cell" style="--class:{esc(c["colour"])}"><a class="class-link" href="{b}classes/{c["slug"]}/">'
+                           f'{emblem(site, "class", c["slug"], 20, c["colour"])}{esc(c["name"])}</a><div class="spec-links">{specs}</div></div>')
+    classes = f'<div class="class-grid">{"".join(class_cells)}</div>'
     groups = {}
     for p in game["professions"]:
         groups.setdefault(p["kind"], []).append(p)
     profs = "".join(f'<div><h3 class="panel-title">{esc(kind)}</h3><ul class="panel-list icons">'
-                    + "".join(f'<li><a href="{b}professions/{p["slug"]}/">{emblem(site, "prof", p["slug"], 28)}{esc(p["name"])}</a></li>' for p in items)
+                    + "".join(f'<li><a href="{b}professions/{p["slug"]}/">{emblem(site, "prof", p["slug"], 18)}{esc(p["name"])}</a></li>' for p in items)
                     + "</ul></div>" for kind, items in groups.items())
-    professions = f'<div class="panel-cols three">{profs}</div><p class="panel-foot"><a href="{b}professions/">All professions</a></p>'
-    world = ('<ul class="panel-list two-col">' + "".join(f'<li><a href="{b}world/{t["slug"]}/">{esc(t["name"])}</a><span class="aside">{esc(t["summary"])}</span></li>'
-                                                        for t in game["world"]) + "</ul>")
-    more = ('<ul class="panel-list">' + "".join(f'<li><a href="{b}more/{m["slug"]}/">{esc(m["name"])}</a><span class="aside">{esc(m["summary"])}</span></li>'
-                                                for m in game["more"])
-            + f'<li><a href="{b}more/about/">Sources and credits</a><span class="aside">Where everything comes from</span></li></ul>')
+    professions = (f'<div class="panel-cols">{profs}</div><p class="panel-foot"><a href="{b}prices/craft/">What to craft</a>'
+                   f'<a href="{b}prices/materials/">Materials worth gathering</a><a href="{b}world/camping/">Camping</a></p>')
+    world = plain([(f"world/{t['slug']}/", t["name"]) for t in game["world"]]).replace('class="panel-list"', 'class="panel-list two-col"', 1)
+    more = plain([(f"more/{m['slug']}/", m["name"]) for m in game["more"]])
     return (f'<nav class="mainnav" id="mainnav" aria-label="Main"><ul class="menu">'
             + item("prices", "Auction House", "prices/", prices) + item("classes", "Classes", "classes/", classes)
             + item("professions", "Professions", "professions/", professions) + item("world", "World", "world/", world)
@@ -325,7 +307,7 @@ def masthead_search(site: Site) -> str:
     """The search box on every page but the homepage, which has its own larger one."""
     return (f'<form class="lookup masthead-search" action="{esc(site.search_action or site.base + "prices/")}" method="get" role="search">'
             '<label for="site-search" class="visually-hidden">Search Tazdingo</label>'
-            '<input id="site-search" name="q" type="search" placeholder="Search items and guides" autocomplete="off" aria-controls="site-search-results">'
+            '<input id="site-search" name="q" type="search" placeholder="Search items, classes…" autocomplete="off" aria-controls="site-search-results">'
             '<span class="visually-hidden" role="status" data-search-status></span>'
             '<ul id="site-search-results" class="lookup-results" hidden></ul></form>')
 
@@ -383,10 +365,12 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
 </main>
 <footer class="colophon">
   <div class="colophon-inner">
-    <p class="colophon-name"><span class="mark" aria-hidden="true"></span>{SITE_NAME}</p>
-    <p>{NOTICE}</p>
-    <p>{'Item names, recipes, tooltips and second-opinion prices: <a href="' + FOREVERDB + '">Data from ForeverDB.net</a>. ' if site.credit else ''}Warcraft artwork, screenshots and game icons © Blizzard Entertainment. <a href="{site.base}more/about/#pictures">Image sources and credits</a>. Prices come from our own Auctionator scans. Guides are summarised in our own words and linked; the originals belong to their authors.</p>
-    <p>Updated {esc(site.built)}. <a href="{site.base}llms-full.txt">Plain-text version</a> · <a href="{site.base}more/about/">Sources and credits</a></p>
+    <div class="colophon-top">
+      <p class="colophon-name"><span class="mark" aria-hidden="true"></span>{SITE_NAME}</p>
+      <nav class="colophon-links" aria-label="About this site"><a href="{site.base}more/about/">Sources and credits</a><a href="{site.base}more/about/#pictures">Image credits</a><a href="{site.base}llms-full.txt">Plain-text version</a></nav>
+    </div>
+    <p>{'Item names, recipes, tooltips and second-opinion prices: <a href="' + FOREVERDB + '">Data from ForeverDB.net</a>. ' if site.credit else ''}Prices come from our own Auctionator scans. Guides are summarised in our own words and linked; the originals belong to their authors. Warcraft artwork, screenshots and game icons © Blizzard Entertainment.</p>
+    <p class="legal">{NOTICE} Updated {esc(site.built)}.</p>
   </div>
 </footer>
 </body>
@@ -394,13 +378,13 @@ def layout(site: Site, title: str, body: str, active: str = "", description: str
 '''
 
 
-def page_head(title: str, lede: str = "", crumbs: tuple = (), extra: str = "", mark: str = "", colour: str | None = None) -> str:
+def page_head(title: str, lede: str = "", crumbs: tuple = (), extra: str = "", mark: str = "", colour: str | None = None, art: str = "") -> str:
     crumb = "".join(f'<a href="{esc(url)}">{esc(label)}</a>' for label, url in crumbs)
     style = f' style="--class:{esc(colour)}"' if colour else ""
-    return (f'<header class="page-head{" coloured" if colour else ""}"{style}><div class="page-head-inner">'
+    return (f'<header class="page-head{" coloured" if colour else ""}{" has-art" if art else ""}"{style}><div class="page-head-inner">'
             + (f'<nav class="crumbs" aria-label="Breadcrumb">{crumb}</nav>' if crumb else '')
             + f'<div class="title-row">{mark}<h1>{esc(title)}</h1></div>'
-            f'{f"<p class=lede>{lede}</p>" if lede else ""}{extra}</div></header>')
+            f'{f"<p class=lede>{lede}</p>" if lede else ""}{extra}</div>{art}</header>')
 
 
 # --- Front page -------------------------------------------------------------------
@@ -565,37 +549,40 @@ def summary_volatility(market: dict | None) -> str:
             'Steady items swing by less than a quarter of their price over two weeks; volatile ones by more than three quarters.</p>')
 
 
+GOLD_TOOLS = (("prices/craft/", "What to craft", "Recipes ranked by estimated listing margin, for every profession", "inv_misc_coin_02"),
+              ("prices/materials/", "Materials worth gathering", "Herbs, ores, leather and cloth by what they're listed for", "inv_ore_mithril_02"),
+              ("world/camping/", "Camping", "Every camp item, what it does and the skill it needs", "spell_fire_fire"),
+              ("prices/crates/", "Waylaid Crates", "The cheapest bundle to fill each crate for Merchant's Favor", "inv_crate_01"))
+
+
+def gold_cards(site: Site, keys: tuple = ("prices/craft/", "prices/materials/", "world/camping/", "prices/crates/")) -> str:
+    return ('<ul class="tool-cards lead">' + "".join(f'<li><a href="{site.base}{url}">{object_icon(icon, 40)}<span class="tool-name">{esc(name)}</span>'
+                                                f'<span class="aside">{esc(hint)}</span></a></li>' for url, name, hint, icon in GOLD_TOOLS if url in keys) + '</ul>')
+
+
 def prices_index(site: Site, ctx: dict) -> str:
+    import ah_pages
     rows = "".join(f'''<tr><th scope="row"><a href="{esc(m["url"])}">{esc(m["name"])}</a></th><td>{esc(m["environment_label"])} {badge("beta") if m["environment"] == "forever-beta" else ""}</td>
 <td class="num">{len(m["items"]):,}</td><td>{when(m["last_date"])}</td><td class="num">{len(m["scans"])}</td></tr>''' for m in ctx["markets"])
-    tools = f'''<ul class="door-list compact">
-  <li><a href="{site.base}prices/craft/" class="door-name">What to craft</a><p>Recipes ranked by estimated listing margin: output asking value minus reagent cost.</p></li>
-  <li><a href="{site.base}prices/crates/" class="door-name">Waylaid Crates</a><p>The cheapest priced fill bundle for each crate; empty crate cost excluded.</p></li>
-  <li><a href="{site.base}prices/materials/" class="door-name">Materials worth gathering</a><p>Herbs, ores, leather and cloth that no recipe makes and no vendor sells, by value.</p></li>
-</ul>'''
-    import ah_pages
     primary = ctx["primary"]
-    board = ""
-    if primary:
-        board = (f'<h2 class="board-title">Latest scans in {esc(primary["name"])}</h2>' + ah_pages.dashboard(site, primary, primary["ah"], heading="h3", events=ctx["events"])
-                 + f'<p><a class="more-link" href="{esc(primary["url"])}">Every {esc(primary["name"])} price, searchable</a></p>')
-    return layout(site, "Auction House", page_head("Auction House", "From our own Auctionator scans: what was seen cheap, what's worth buying to resell, "
-                                                   "what's moving, and how prices behave through the day and week.")
-                  + banner(site, "prices") + f'''<section class="page-body">
+    search = (f'<p class="head-actions"><a class="button" href="{esc(primary["url"])}">Search all {len(primary["items"]):,} prices</a></p>' if primary else "")
+    board = ah_pages.board(site, primary, primary["ah"], events=ctx["events"]) if primary else '<p class="empty">No scans yet.</p>'
+    return layout(site, "Auction House", page_head("Auction House", "What's cheap right now, what's worth buying to resell, and how prices move, from our own Auctionator scans.",
+                                                   extra=search)
+                  + f'''<section class="page-body">
   {board}
-  <h2>Making gold</h2>
-  {tools}
-  <h2>Markets</h2>
-  <div class="table-wrap"><table><thead><tr><th scope="col">Market</th><th scope="col">Game</th><th scope="col" class="num">Items</th><th scope="col">Newest data</th><th scope="col" class="num">Scans</th></tr></thead>
-  <tbody>{rows}</tbody></table></div>
-  {summary_volatility(ctx["primary"])}
-  <p class="note">Launch prices start with the first scan after launch on {nice_date(site.launch.isoformat())}. Until then, the Beta reference prices stand in, labelled as such.</p>
-  <section class="reading">
-    <h2>What these measures can and can't tell you</h2>
-    <p>Everything here comes from Auctionator scans: at each scan, the cheapest listing of every item on sale, and for each day the lowest and highest of those and the most units seen listed at once. It never records sales. So "unusually low" and the investment watch compare a price with the item's own history; "always on the market" measures how reliably an item is listed and relisted, the nearest honest stand-in for how well it sells.</p>
+  <h2 class="group-title">Making gold</h2>
+  {gold_cards(site, ("prices/craft/", "prices/materials/", "prices/crates/"))}
+  <details class="reading">
+    <summary>Markets, and what these measures can and can't tell you</summary>
+    <div class="table-wrap"><table><thead><tr><th scope="col">Market</th><th scope="col">Game</th><th scope="col" class="num">Items</th><th scope="col">Newest data</th><th scope="col" class="num">Scans</th></tr></thead>
+    <tbody>{rows}</tbody></table></div>
+    {summary_volatility(primary)}
+    <p>Launch prices start with the first scan after launch on {nice_date(site.launch.isoformat())}. Until then, the Beta reference prices stand in, labelled as such.</p>
+    <p>Everything here comes from Auctionator scans: at each scan, the cheapest listing of every item on sale, and for each day the lowest and highest of those and the most units seen listed at once. It never records sales. So deals and investments compare a price with the item's own history; "always listed" measures how reliably an item is listed and relisted, the nearest honest stand-in for how well it sells.</p>
     <p>Each scan is kept for the last {ah_window()} and folded into a daily record after that, so long-run history stays.</p>
-  </section>
-</section>''', active="prices", path="prices/", description="World of Warcraft: Forever Auction House: price alerts, investment watch, movers and patterns from our own scans.")
+  </details>
+</section>''', active="prices", path="prices/", description="World of Warcraft: Forever Auction House: deals, investments, movers and patterns from our own scans.")
 
 
 def ah_window() -> str:
@@ -604,7 +591,6 @@ def ah_window() -> str:
 
 
 def market_page(site: Site, market: dict, ctx: dict) -> str:
-    import ah_pages
     files = market["files"]
     scans = "".join(f'<li>{when(s["date"])}: {s["items"]:,} items{" (no change since the previous scan)" if s["unchanged"] else ""}</li>'
                     for s in reversed(market["scans"]))
@@ -612,17 +598,21 @@ def market_page(site: Site, market: dict, ctx: dict) -> str:
     more = (f'<p class="note" id="partial-note">This list shows the first {SERVER_ROWS:,} of {len(shown):,}. Download the full list below.</p>'
             if len(shown) > SERVER_ROWS else "")
     config = esc(f'{{"prices":"{files["prices_json"]}","history":"{files["history_json"]}"}}')
+    views = "".join(f'<label><input type="radio" name="view" value="{v}"{" checked" if v == "all" else ""}><span>{label}</span></label>'
+                    for v, label in (("all", "Everything"), ("under", "Under usual price"), ("invest", "Investment picks"),
+                                     ("rising", "Rising this week"), ("falling", "Falling this week")))
+    board = (f'<p class="head-actions"><a class="button quiet" href="{site.base}prices/">Deals, investments and movers</a></p>'
+             if ctx["primary"] is market else "")
     return layout(site, f'{market["name"]} prices', page_head(market["name"], f'{esc(market["environment_label"])} Auction House: {len(market["items"]):,} items, newest data from {when(market["last_date"])}.',
-                                                             (("Auction House", f"{site.base}prices/"),), sample_note(market)) + f'''
+                                                             (("Auction House", f"{site.base}prices/"),), sample_note(market) + board) + f'''
 <section class="page-body">
-  {ah_pages.dashboard(site, market, market["ah"], events=ctx["events"])}
   <section id="prices" class="browser" data-config="{config}">
-    <h2>All prices</h2>
     <form class="filters" role="search">
       <label class="grow">Find an item<input id="filter" name="q" type="search" placeholder="Name or item ID" autocomplete="off"></label>
       <label>Show<select id="scope" name="scope"><option value="current">Last two weeks</option><option value="all">All recorded items</option></select></label>
       <label>Sort by<select id="order" name="order"><option value="name">Name</option><option value="listed">Most listed</option><option value="price-high">Highest price</option><option value="price-low">Lowest price</option><option value="change">Biggest change</option><option value="steadiest">Steadiest first</option></select></label>
       <button class="filter-reset" type="reset" data-reset-filters hidden>Reset</button>
+      <fieldset class="chips" data-views hidden><legend class="visually-hidden">View</legend>{views}</fieldset>
     </form>
     <p id="status" class="status" aria-live="polite">{len(shown):,} items.</p>
     <div class="table-wrap"><table class="prices">
@@ -631,14 +621,14 @@ def market_page(site: Site, market: dict, ctx: dict) -> str:
     {more}
     <nav id="pager" class="pager" aria-label="Pages" hidden></nav>
   </section>
-  <section class="reading">
-    <h2>Reading these prices</h2>
+  <details class="reading">
+    <summary>Reading these prices, downloads and scans</summary>
     <p><strong>Typical price</strong> is the middle value of each day's cheapest listing over the item's last seven days of records, so a single odd listing doesn't move it. <strong>Latest</strong> is the cheapest listing the most recent scan saw. <strong>Steadiness</strong> says how far the daily price swung over two weeks: early in a new game, prices swing a lot while players find their level.</p>
     <p><strong>Last seen</strong> is the most recent day a scan saw the item. <strong>Listed that day</strong> is the most units on sale at once, not how many sold. Select a row for its daily prices, or the item's name for its own page: every scan price, a 30-day chart, its patterns and the recipes that make or use it.</p>
     <p>Downloads: <a href="{files["prices_tsv"]}">all prices (TSV)</a>, <a href="{files["history_tsv"]}">daily history (TSV)</a>, <a href="{files["prices_json"]}">JSON</a>.</p>
     <h3>Scans</h3>
     <ul class="scans">{scans}</ul>
-  </section>
+  </details>
 </section>''', active="prices", path=f'prices/{market["slug"]}/',
                   description=f'{market["name"]} Auction House prices in {market["environment_label"]}: {len(market["items"]):,} items with daily history.')
 

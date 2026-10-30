@@ -4,7 +4,7 @@ summary: Useful Priest macros for WoW Forever collected from community guides, e
 sources: ForeverDB, Kami Labs, Wowhead
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Where these come from:** community guides ([ForeverDB](https://foreverdb.net/class/Priest/macros), [Kami Labs](https://kami-labs.fr/en/macros-wow-forever/) and [Wowhead](https://www.wowhead.com/forever/guide/beginners-guide-to-writing-macros-in-wow-forever-34950)). None has been tested in the live game; ForeverDB says it checked spell names against the beta client only.
 - **Mouseover healing:** most healing macros heal the friend under your mouse, then your friendly target, then you, so you never drop your enemy target.

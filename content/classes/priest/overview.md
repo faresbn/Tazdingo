@@ -1,19 +1,17 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: What the Priest is in WoW Forever, what Forever changed, and how the guides suggest picking a spec and levelling one.
 sources: Blizzard class deep dive, ForeverDB, Wowhead, Icy Veins, WoWSims presets
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Armour and weapons:** cloth only. Staves, one-handed maces, daggers and wands; no shields ([ForeverDB](https://foreverdb.net/class/Priest)).
-- **Roles:** healer as Discipline or Holy, ranged damage as Shadow. Smite builds also deal Holy damage.
-- **Resource:** Mana. Managing it is the core levelling skill.
-- **Races:** Human, Dwarf, Night Elf and Gnome (Alliance); Undead and Troll (Horde). Gnome Priests are new in Forever.
-- **Race spells:** every race learns two Priest spells of its own, one at level 10 and one at 20.
-- **What's new:** [Penance](https://foreverdb.net/spell/402174), [Binding Heal](https://foreverdb.net/spell/401937), [Prayer of Mending](https://foreverdb.net/spell/401859) and [Litany of Light](https://foreverdb.net/spell/1317006) as talents; [Shadow Word: Death](https://foreverdb.net/spell/1309595) for every Priest at 32; Fear Ward, Devouring Plague and Divine Spirit for every race.
-- **Levelling:** every guide starts with a wand and [Wand Specialization](https://foreverdb.net/spell/14524). Shadow is the most common levelling pick.
-- **Hybrid status:** Blizzard counts Priests as a hybrid class, so Shadow is aimed at about 5% less damage than pure casters (see the hybrid page).
+- **Pick a spec:** Shadow is the simplest solo leveller ([ForeverDB](https://foreverdb.net/guide/leveling-priest)), finishing kills with a wand to save mana; Holy for a broad healing kit in a regular party; Discipline for shields and Penance from 30, also acceptable for levelling then (Wowhead). Favour healing in dungeons as you near 30.
+- **Key levels:** 10 first race spell and talent points · 20 [Fear Ward](https://foreverdb.net/spell/6346), Devouring Plague, second race spell, Mind Flay · 25 Binding Heal · 30 Penance, Divine Spirit · 32 [Shadow Word: Death](https://foreverdb.net/spell/1309595) · 40 Prayer of Mending, Shadowform.
+- **New in Forever:** Penance, Binding Heal and Prayer of Mending are talents; every Priest gets Fear Ward and Devouring Plague at 20, Divine Spirit at 30 and Shadow Word: Death at 32 ([Blizzard](https://worldofwarcraft.blizzard.com/en-us/news/24301514)). Spells start weaker but scale more with spell power; wands no longer gain from it.
+- **Professions:** Tailoring and Enchanting in every source, WoWSims' default included; Enchanting's Lesser Magic Wand (5) and [Greater Magic Wand](https://foreverdb.net/item/11288) (13) carry early levelling (Wowhead, Icy Veins).
+- **Race:** each race learns its own Priest spells at 10 and 20. Wowhead and Icy Veins' Discipline guide favour Gnome (Alliance) and Undead (Horde); Icy Veins' Shadow guide picks Night Elf; WoWSims defaults to Undead. A preference, not a requirement.
+- **Watch out:** guides mentioning Shadow Affinity or a one-minute Devouring Plague predate the final client: it's now Improved Mind Blast and 24 sec ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)). The five-second rule is server behaviour ForeverDB can't check, and nothing above 30 has been played.
 
 ## What the guides say
 

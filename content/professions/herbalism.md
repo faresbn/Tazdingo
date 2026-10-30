@@ -1,17 +1,18 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: What Herbalism gathers in Forever, the camp items it now crafts, how guides level it and where they say the money is.
 sources: Wowhead, Icy Veins, ForeverDB, Warcraft Tavern, wow-professions.com
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Gathers:** herbs, plus herb seeds and three new "Scarce" materials that sometimes drop alongside the herb.
-- **Suits:** anyone who wants gold early. [Wowhead](https://www.wowhead.com/forever/guide/professions/herbalism/overview-leveling) singles out Druids (Travel Form, Prowl) and pet classes, whose pets can hold a mob while they pick.
-- **Pairs with:** Alchemy, which uses herbs in most recipes, or Mining for a two-gatherer character. In Forever, First Aid also uses herbs for its healing potions.
-- **New in Forever:** a crafting menu of its own (camp items only), three new endgame herbs, seeds, Scarce materials for dyes, and a reworked Tauren Cultivation.
-- **Camp feature:** the [Incense Candle](https://foreverdb.net/item/279962) (skill 20) gives an Intellect buff that doesn't stack with Arcane Intellect. It upgrades to the [Greenhouse](https://foreverdb.net/item/279964) (140), which grows herbs from planted seeds, and the [Seed Hybridizer](https://foreverdb.net/item/279947) (300), which multiplies seeds or combines them into rarer ones.
-- **Tools:** none. Turn on Find Herbs; only one kind of tracking works at a time.
+- **Pick it for:** early gold while levelling. [Wowhead](https://www.wowhead.com/forever/guide/professions/herbalism/overview-leveling) singles out Druids (Travel Form, Prowl) and pet classes, whose pets hold a mob while they pick.
+- **Pairs with:** Alchemy, to gather nearly everything it needs yourself, or another gatherer such as Mining for sales; only one tracking mode works at a time. First Aid's healing potions now use herbs too.
+- **Levelling route:** pick anything not grey along your questing route (Wowhead): 1–70 any starting zone · 70–115 Darkshore, Loch Modan, Silverpine · 115–170 Hillsbrad, Wetlands, Stonetalon · 170–225 Stranglethorn, Arathi, then Alterac, Tanaris, Searing Gorge · 225–300 Felwood to Winterspring, ForeverDB's Classic-data route, untested.
+- **Money makers:** Wowhead calls it a strong gold-maker while levelling; [Icy Veins](https://www.icy-veins.com/wow-forever/herbalism) says rare herbs fetch high prices. That's possible demand, not a guaranteed price. Vendors pay almost nothing, so sell on the Auction House or fill Waylaid Crates for Merchant's Favor.
+- **Camp items:** [Incense Candle](https://foreverdb.net/item/279962) (20; Intellect, doesn't stack with Arcane Intellect) · [Greenhouse](https://foreverdb.net/item/279964) (140; grows herbs from seeds; blueprint from Shadetooth, per Wowhead and wow-professions.com) · [Seed Hybridizer](https://foreverdb.net/item/279947) (300; multiplies or combines seeds; blueprint source unknown).
+- **Trainers and ranks:** caps 75 · 150 · 225 · 300; train the next rank at 50 · 125 · 200 ([Icy Veins](https://www.icy-veins.com/wow-forever/professions-overview)). Character level unconfirmed: 10 · 20 · 35 (Icy Veins' Herbalism page, ForeverDB) or none · 10 · 25 (Icy Veins' overview). Apprentice trains in starting zones.
+- **Watch out:** Tauren [Cultivation](https://foreverdb.net/spell/20552) is a cooldown-limited extra harvest, not a doubling, and now needs level equal to herb skill ÷ 5 ([ForeverDB](https://foreverdb.net/guide/professions)). Gathering earns no Legacy Points. Where the new herbs grow and which herbs drop seeds is unknown; check high-zone routes live.
 
 ## What the guides say
 

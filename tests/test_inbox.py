@@ -172,7 +172,7 @@ class Pages(InboxCase):
         git(Path(self.dir.name), "clone", "-q", str(self.remote), str(other))
         git(other, "config", "user.name", "test")
         git(other, "config", "user.email", "test@example.com")
-        (other / PAGE).write_text((other / PAGE).read_text().replace("## At a glance", "## At a glance\n\nEdited elsewhere.", 1))
+        (other / PAGE).write_text((other / PAGE).read_text().replace("## Cheatsheet", "## Cheatsheet\n\nEdited elsewhere.", 1))
         git(other, "commit", "-qam", "Addons: edited elsewhere")
         git(other, "push", "-q", "origin", "HEAD:main")
         [outcome] = inbox.run(self.root, push=True)
@@ -293,6 +293,13 @@ class Provenance(unittest.TestCase):
         _, review = self.check(self.page("### Talents\n\nx ([Wowhead](https://www.wowhead.com/x))"),
                                self.page("### Talents\n\nx ([Wowhead](https://www.wowhead.com/x))\n\n###\tTazdingo recommendation\n\nGo Fire."))
         self.assertIn("the Tazdingo recommendation changed", review)
+
+    def test_cheatsheet_changes_go_to_review_under_either_name(self):
+        old = self.page()
+        _, review = self.check(old, old.replace("## At a glance\n\nx", "## Cheatsheet\n\nx"))
+        self.assertNotIn("the cheatsheet changed", review, "renaming the section alone isn't an editorial change")
+        _, review = self.check(old, old.replace("## At a glance\n\nx", "## Cheatsheet\n\n- **Stats:** hit first"))
+        self.assertIn("the cheatsheet changed", review)
 
     def test_unknown_items_and_messages(self):
         problems, _ = self.check(self.page(), self.page("### Gear\n\n[Linen](https://foreverdb.net/item/999999) ([Wowhead](https://www.wowhead.com/x))."))

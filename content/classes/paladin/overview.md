@@ -1,18 +1,17 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: What the Paladin is in WoW Forever, how Forever changed Seals, Judgement and the talent tree, and how the guides suggest picking and levelling a spec.
 sources: Blizzard Paladin deep dive and beta notes, ForeverDB, Wowhead, Icy Veins, WoWSims presets
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Armour and weapons:** cloth, leather and mail from level 1, plate from 40, and shields. One- and two-handed axes, maces and swords, plus polearms from 20. A libram goes in the ranged slot; no bows, guns or thrown weapons ([ForeverDB](https://foreverdb.net/guide/leveling-paladin)).
-- **Roles:** healer as Holy, tank as Protection, melee damage as Retribution.
-- **Resource:** Mana. Most early downtime is drinking, not eating.
-- **Races:** Human and Dwarf (Alliance), Undead (Horde). Undead Paladins are new in Forever and have their own storyline.
-- **What's new:** [Holy Strike](https://foreverdb.net/spell/679) at 6, a tanking seal, [Seal of Fury](https://foreverdb.net/spell/1311649), at 10, and [Judgement](https://foreverdb.net/spell/20271) no longer uses up your Seal. [Consecration](https://foreverdb.net/spell/26573) and [Blessing of Kings](https://foreverdb.net/spell/20217) are trainer spells at 20.
-- **Limits:** Blizzard says Paladins still have no interrupt, no way to slow enemies and little range. They are strong against Undead and Demons.
-- **Hybrid status:** Retribution is a hybrid damage spec, aimed at about 5% less damage than pure classes (see the hybrid page).
+- **Pick a spec:** Retribution for solo questing, the straightforward two-hander ForeverDB calls the fastest-killing leveller ([Icy Veins](https://www.icy-veins.com/wow-forever/retribution-paladin-leveling)); Protection for pack control, dungeon tanking and safe levelling; Holy for healing a regular party, though it levels slowest.
+- **Key levels:** 6 [Holy Strike](https://foreverdb.net/spell/679) · 10 [Seal of Fury](https://foreverdb.net/spell/1311649) · 16 Righteous Fury and Retribution Aura · 20 Consecration, Blessing of Kings and polearms · 30 Holy Shock · 40 plate, Dual Specialization, Light's Vigil, Twist of Light and Holy Shield.
+- **New in Forever:** [Judgement](https://foreverdb.net/spell/20271) leaves your Seal up and is off the global cooldown, so you Judge on cooldown. Holy Strike and the Seal of Fury tanking seal are new, most damage scales with spell power, and seal twisting returns as a capstone ([Blizzard](https://worldofwarcraft.blizzard.com/en-us/news/24302099)).
+- **Professions:** Mining with Blacksmithing; Blacksmithing's crafted mail sets rank well at 20 and 30.
+- **Race:** after the 26 October notes, Human gives 1% crit and Dwarf 1% hit, which doesn't help heals; older crit or weapon-specialisation comparisons are obsolete. Undead remains the Horde option ([Blizzard](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7)).
+- **Watch out:** some ForeverDB guide pages still give Righteous Fury 60% Holy threat; it went back to 90% on 15 October ([ForeverDB](https://foreverdb.net/article/paladin-deep-dive-seals-judgements-holy-strike-protection-retribution)). Still no interrupt, no slow and little range. Wowhead says spell power gear competes with Strength even on Retribution.
 
 ## What the guides say
 

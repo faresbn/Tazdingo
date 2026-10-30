@@ -1,19 +1,17 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: The Warlock in WoW Forever: gear, demons, Soul Shards, the split between Curses and Banes, what else Forever changed, and which spec the guides suggest for levelling.
 sources: Blizzard class deep dive, Icy Veins, Wowhead, ForeverDB, WoWSims presets
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Armour and weapons:** Cloth. Staves, daggers, one-handed swords and wands, according to the Forever client ([ForeverDB](https://foreverdb.net/guide/leveling-warlock)).
-- **Role:** Ranged damage only. Blizzard counts the Warlock as a pure damage class.
-- **Resources:** Mana, which [Life Tap](https://foreverdb.net/spell/1454) tops up from your health (it now scales with Spirit), and [Soul Shards](https://foreverdb.net/item/6265) from [Drain Soul](https://foreverdb.net/spell/1120).
-- **Races:** Human and Gnome for the Alliance; Orc, Undead and Troll for the Horde. Troll Warlocks are new.
-- **Demons:** Imp from level 1, Voidwalker at 10, Succubus or Incubus at 20, Felhunter at 30. Blizzard says pets now scale with your stats.
-- **New in Forever:** Curse of Agony and Curse of Doom are now Banes, so a Bane and a Curse can share a target. New capstones are [Wrack](https://foreverdb.net/spell/1316697), [Demonic Pact](https://foreverdb.net/spell/425464) and [Incinerate](https://foreverdb.net/spell/412758), and [Bane of Havoc](https://foreverdb.net/spell/1225228) arrives at 30. Firestones and Spellstones are now weapon imbues.
-- **Levelling pick:** ForeverDB and Icy Veins favour Affliction, with Demonology as the tough option. Wowhead calls Destruction the slowest solo.
-- **Utility:** Soulstone, Healthstone, Ritual of Summoning, Curse of the Elements and Curse of Recklessness, Banish and Fear.
+- **Pick a spec:** Affliction for mixed solo questing (ForeverDB's and Icy Veins' levelling pick); Demonology when surviving pulls is the problem; Destruction for direct casts and dungeons, though Wowhead calls it the slowest solo ([ForeverDB](https://foreverdb.net/guide/leveling-warlock)).
+- **Key levels:** 1 Imp · 10 Voidwalker · 20 Succubus or Incubus · 30 Felhunter, Soul Link and [Bane of Havoc](https://foreverdb.net/spell/1225228) · 36 Spell Lock · 40 Felsteed and Incinerate.
+- **New in Forever:** Agony and Doom are now Banes, so a Bane and a Curse share a target, and Curse of the Elements covers every school. DoTs can crit, Life Tap scales with Spirit, demons scale with your stats, and Firestone and Spellstone are weapon imbues ([Blizzard](https://worldofwarcraft.com/en-us/news/24310968)).
+- **Professions:** Tailoring and Enchanting are the usual pair, with First Aid for bandages after a Life Tap (Icy Veins, [ForeverDB](https://foreverdb.net/guide/leveling-warlock)).
+- **Race:** since [26 October](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7), Orc Command gives 5% more pet damage, not 5% total damage: it helps pet-heavy builds without making Orc the automatic winner. Troll casting speed suits direct casts more than DoTs. Human Spirit is now 10% and Ruthless 1%.
+- **Watch out:** guides disagree on racials (Eureka! 50% or 10%, Touch of the Grave 10% or 30%). Malediction is now Grim Reach, a range talent ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)). The client doesn't confirm which spells cost shards, so keep a few spare; the character sheet shows demon stats wrongly.
 
 ## What the guides say
 

@@ -1,18 +1,17 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: What the Rogue is in WoW Forever, what changed from Classic, and which of the three specs the guides suggest for levelling and groups.
 sources: Blizzard class deep dive, ForeverDB, Wowhead, Icy Veins, WoWSims presets
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Armour and weapons:** Leather and cloth. Daggers, one-handed swords, maces, fist weapons and, new in Forever, one-handed axes. An off-hand weapon from level 10, and a bow, crossbow, gun or thrown weapon for pulling ([ForeverDB](https://foreverdb.net/guide/leveling-rogue)).
-- **Roles:** Melee damage only. Blizzard calls the Rogue the class with the highest potential single-target melee damage in the game.
-- **Resource:** Energy and combo points. Wowhead and Icy Veins say Energy now refills smoothly, at about 10 per second, instead of in 2-second ticks, and that combo points stay on a target when you switch away.
-- **Signature tools:** Stealth, poisons (from a level 20 class quest), Sap, which no longer breaks Stealth, Kick, Gouge, Vanish and, from 26 and 30, Cheap Shot and Kidney Shot.
-- **Specs:** Assassination (daggers and poisons, Mutilate at 30), Combat (any weapon, sustained damage and Blade Flurry) and Subtlety (openers, bleeds and burst, Hemorrhage at 30).
-- **Pure class:** Rogues are one of the four pure damage classes Blizzard uses as the bar for its roughly 5% "hybrid tax", so the tax doesn't apply to them ([ForeverDB](https://foreverdb.net/article/blizzard-hybrid-tax-5-percent-warriors-count-as-hybrids)).
-- **Races:** Human, Dwarf, Night Elf, Gnome and High Order Skyborne (Alliance); Orc, Undead, Troll and Windshaper Skyborne (Horde). Tauren can't be Rogues. Skyborne Rogues are new.
+- **Pick a spec:** Combat for a first leveller: the most forgiving, any one-handed weapon, no reliance on poisons or bleeds ([ForeverDB](https://foreverdb.net/guide/leveling-rogue), Wowhead). Assassination once you have two daggers and Mutilate at 30; Subtlety for controlled openers and Hemorrhage at 30. WoWSims' level-60 default is Combat, a projection.
+- **Key levels:** 10 off-hand weapon · 20 Poisons class quest, Riposte, The Horn of Xelthos · 26 Cheap Shot · 30 Kidney Shot, Deadly Poison, Coup de Grace, Mutilate, Hemorrhage, Blade Flurry, The Eye of Bhossca · 40 Venom ([ForeverDB](https://foreverdb.net/class/Rogue/poisons)).
+- **New in Forever:** [Sap](https://foreverdb.net/spell/6770) no longer breaks Stealth; poisons have more charges and stack with stones; one-handed axes and Hack and Slash ([Blizzard](https://worldofwarcraft.blizzard.com/en-us/news/24310968)). Rupture, Backstab's flat bonus and Dual Wield Specialization are weaker ([ForeverDB](https://foreverdb.net/class/Rogue/changes)); Wowhead and Icy Veins report smooth Energy regeneration and combo points that stay on a target.
+- **Professions:** Skinning and Leatherworking for self-made levelling gear, with First Aid on top as a secondary profession. Check bind-on-pickup before planning to buy a recommended craft.
+- **Race:** older rankings use superseded racials: Blizzard's 26 October notes remove Orc Savage, cut Human Ruthless to 1% crit and set Skyborne Wind-Blessed to 2% haste; Orc Command only helps pets ([Blizzard](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7)). No launch-tested race ranking yet.
+- **Watch out:** a weak main hand: ForeverDB's simulator puts auto attacks at 43–50% of damage at 20–30 in every spec. Some enemies are immune to poisons or bleeds (Wowhead). Vanish isn't guaranteed against every ongoing damage effect. ForeverDB can't confirm poison attack-power scaling from the client.
 
 ## What the guides say
 

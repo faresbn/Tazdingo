@@ -4,7 +4,7 @@ summary: Paladin builds that mix the Holy, Protection and Retribution sections i
 sources: ForeverDB, Wowhead, Icy Veins, WoWSims presets, Blizzard Paladin deep dive and WoW: Forever Podcast
 ---
 
-## At a glance
+## Cheatsheet
 
 - **How mixing works:** one tree with three sections and one point per level from 10. Each row needs 5 more points in its own section, so 21 points at 30 reach row 5 of one section.
 - **Most borrowed talents:** Retribution's [Benediction](https://foreverdb.net/spell/20101), [Holy Conduit](https://foreverdb.net/spell/1237268) and [Pursuit of Justice](https://foreverdb.net/spell/26022), for cheaper spells and faster movement, and Holy's [Improved Seals](https://foreverdb.net/spell/20224) and [Divine Intellect](https://foreverdb.net/spell/20257).

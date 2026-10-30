@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Holy Priest heals in WoW Forever, the talent builds the guides give at 20, 30 and 60, and where they disagree.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** throughput healer with direct heals, a heal over time, shields and group heals.
-- **How it plays:** Renew on the tank, Heal as the main heal, Flash Heal for emergencies. [Binding Heal](https://foreverdb.net/spell/401937) arrives at 25 for when you and the tank are both hurt, and Prayer of Healing at 30.
-- **Strengths:** a flexible kit, strong group buffs, dispels and [Spirit of Redemption](https://foreverdb.net/spell/20711), now 15 sec. Icy Veins calls it beginner-friendly.
-- **Weaknesses:** cloth armour, little mobility and heavy mana use ([Wowhead](https://www.wowhead.com/forever/guide/classes/priest/holy/overview-pve-healer)). Icy Veins says it is a little weaker than specialist healers and slow to level solo.
-- **Stats:** healing power, then mana per 5, Spirit and Intellect. Icy Veins ranks critical strike last.
-- **New in Forever:** Binding Heal (25), [Litany of Light](https://foreverdb.net/spell/1317006) (30) and [Prayer of Mending](https://foreverdb.net/spell/401859) (40) as talents. Holy Nova, Searing Light, Inspiration and Blessed Recovery have all been reworked.
+- **Pick it for:** regular group healing with a flexible kit; beginner-friendly (Icy Veins), but mana-hungry and slow to level solo.
+- **Levelling build:** at 30, Wowhead goes all Holy: Improved Renew 3, Holy Specialization 5, Divine Fury 5, Holy Nova 1, Inspiration 3, Holy Reach 2, Binding Heal, Spirit of Redemption ([Wowhead](https://www.wowhead.com/forever/guide/classes/priest/holy/level-30-healer-overview)). ForeverDB levels a Smite build with Searing Light; Icy Veins' 2/14/5 adds Wand Specialization and Spirit Tap.
+- **Build at 60:** projection only: WoWSims' "Holy" preset (16/35/0) takes Prayer of Mending, Spiritual Guidance 5, Spiritual Healing 3, Litany of Light 2, Binding Heal and Improved Healing 3, plus Discipline's Meditation 3, Improved Power Word: Shield 3, Inner Focus and Twin Disciplines 5 ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/priest/healer/presets.ts)).
+- **Priority:** at 30 (ForeverDB): Renew on the tank, Heal as the main heal, [Binding Heal](https://foreverdb.net/spell/401937) when you're hurt too, Flash Heal for spikes, a shield in emergencies ([ForeverDB](https://foreverdb.net/class/Priest/pve)). Wowhead adds Prayer of Healing only when most of the party is low.
+- **Stats:** healing power first; Icy Veins then mana per 5, Spirit, Intellect and crit last, because crits overheal; ForeverDB Intellect, mana per 5, Spirit. WoWSims at 60 values crit about as much as Spirit (0.3) ([Icy Veins](https://www.icy-veins.com/wow-forever/holy-priest-healer-pve-guide)).
+- **Key levels:** 20 Holy Fire for solo openers (Wowhead) · 25 Binding Heal · 30 [Litany of Light](https://foreverdb.net/spell/1317006), Spirit of Redemption, Prayer of Healing · 35 Spiritual Healing · 40 Prayer of Mending, and Lightwell from the trainer.
+- **Gear and consumables:** Tailoring's Pristine pieces and the bind-on-pickup Novice Arcanist's Sash, plus Enchanting wands (Wowhead, Icy Veins); Death Speaker gear from Razorfen Kraul (Icy Veins). Consumables: water, Briny Seafood Stew, Lesser Cleric's Elixir, Minor Mana Oil, mana potions.
+- **Watch out:** Wowhead's advice to skip shields on Warrior and Druid tanks is outdated: Blizzard's [2 October fix](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/5) says absorbs no longer reduce their Rage. Litany of Light gives 5% then 10%, not 20% ([ForeverDB](https://foreverdb.net/article/kargoz-five-talents-wow-forever)). Two Wand Specialization points leave you one short of Spirit of Redemption.
 
 ## What the guides say
 

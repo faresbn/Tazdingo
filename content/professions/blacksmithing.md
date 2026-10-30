@@ -1,18 +1,18 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Blacksmithing changed in Forever (role-themed armour sets, camp anvils and forges, shifted skill ranges), how guides level it and what it's worth.
 sources: Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Wowhead
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Makes:** mail and plate armour, weapons and shields, sharpening stones and weightstones, shield spikes and weapon chains, skeleton keys, and the rods Enchanters need.
-- **Suits:** Warriors and Paladins. [ForeverDB](https://foreverdb.net/guide/professions) notes that they can wear mail from level 1, while Hunters and Shamans wait until 40. Its weapon stones help every melee class.
-- **Pairs with:** Mining, for ore, bars and stone.
-- **New in Forever:** role-themed mail and plate sets that you make for yourself while levelling, new blue boots, Skyforged mail for the Skyborne starting levels, and anvils and forges you can place at a camp.
-- **Camp feature:** the [Sharpening Wheel](https://foreverdb.net/item/279944) (skill 20) gives a Strength buff that doesn't stack with Strength of Earth Totem. The [Anvil](https://foreverdb.net/item/279988) (140) puts an anvil at the camp. The [Master Forge](https://foreverdb.net/item/279955) (300) is the forge some recipes require. Both keep the Wheel's buff.
-- **Specialisations:** [Icy Veins](https://www.icy-veins.com/wow-forever/blacksmithing) says high-level smiths choose Armorsmithing or Weaponsmithing. ForeverDB lists an Armorsmith and a Weaponsmith trainer in Orgrimmar from Classic's data. Nothing above level 30 is confirmed.
-- **Tools:** a Blacksmith Hammer and an anvil.
+- **Pick it for:** specific self-crafted mail and plate, mainly for Warriors and Paladins, rather than a promised gold income ([ForeverDB](https://foreverdb.net/professions/best)).
+- **Pairs with:** Mining, for ore, bars and stone. wow-professions.com warns that buying every bar costs a lot; mining still costs time and gives up ore sales.
+- **Levelling route:** the routes differ; compare before buying. wow-professions.com: 1–75 stones, Runed Copper Gauntlets · 75–150 Rough Bronze Leggings, Patterned Bronze Bracers · 150–225 Green Iron Bracers, Golden Scale Bracers, Mithril Plate Pants · 225–300 untested ([wow-professions.com](https://www.wow-professions.com/forever/blacksmithing-leveling-guide)). wowtbc.gg runs Copper Chain Belts and Runed Copper pieces.
+- **Money makers:** guides say little. Icy Veins mentions Auction House sales and the rods every Enchanter needs ([Icy Veins](https://www.icy-veins.com/wow-forever/blacksmithing)); ForeverDB notes weapon stones help any melee class. The role-themed gear is mainly for yourself.
+- **Camp items:** [Sharpening Wheel](https://foreverdb.net/item/279944) (20), a Strength buff that doesn't stack with Strength of Earth Totem · [Anvil](https://foreverdb.net/item/279988) (140), blueprint from Gilnid in the Deadmines · [Master Forge](https://foreverdb.net/item/279955) (300), needed for many recipes, blueprint source unknown.
+- **Trainers and ranks:** Expert from Saru Steelfury (Orgrimmar) or Bengus Deepforge (Ironforge) · Artisan at skill 200 and level 35 from Brikk Keencraft in Booty Bay, both factions ([wow-professions.com](https://www.wow-professions.com/forever/blacksmithing-leveling-guide)). Role-themed plans sell for Merchant's Favor at your trade camp.
+- **Watch out:** past 225 many recipes turn grey about 25 points earlier than in Classic, so don't follow a Classic guide. Check binding and station before spending Favor: Sentinel's Sabatons bind on pickup. Armorsmithing and Weaponsmithing are unconfirmed in Forever.
 
 ## What the guides say
 

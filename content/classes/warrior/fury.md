@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: Fury Warrior in WoW Forever: the dual-wield damage spec's talents by level, rotation compared across guides and the WoWSims priority list, levelling, gear and where guides disagree.
 sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets and APL, Blizzard deep dive and beta notes
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** melee damage, usually with a weapon in each hand from level 20. Until then, a two-hander.
-- **How it plays:** crits and Rage-generating talents do most of the work early. Death Wish arrives at 30, Flurry at 35, Whirlwind at 36 and Bloodthirst at 40, which is when the rotation fills out.
-- **Strengths:** strong cleave on two to four enemies and burst from Death Wish ([Icy Veins](https://www.icy-veins.com/wow-forever/fury-warrior-leveling)).
-- **Weaknesses:** two weapons to keep upgraded, off-hand misses that starve Rage, and its core attacks arrive late. Wowhead says it is not a strong solo leveller.
-- **Stats that matter:** hit (especially for the off-hand), weapon damage, Strength and crit.
-- **New in Forever:** [Furious Precision](https://foreverdb.net/spell/1323963), [Lingering Rage](https://foreverdb.net/spell/1323964), [Raging Blows](https://foreverdb.net/spell/1310315) and [Gore Drinker](https://foreverdb.net/spell/1323967). Whirlwind always hits with both weapons, and [Bloodthirst](https://foreverdb.net/spell/23881) no longer heals.
+- **Pick it for:** dual-wield melee damage in groups once you have two good weapons; a slow solo leveller until Flurry (35) and Bloodthirst (40).
+- **Levelling build:** at 30, Wowhead and Icy Veins take Cruelty 5, Unbridled Wrath 5, Furious Precision 3, Dual Wield Specialization 5, Lingering Rage and Death Wish ([Wowhead](https://www.wowhead.com/forever/guide/classes/warrior/fury/level-30-dps-overview)); ForeverDB's levelling build stays on a two-hander. Icy Veins suggests levelling another spec and switching at 35–40.
+- **Build at 60:** projection only: WoWSims' default is 32 Fury (Flurry, Bloodthirst, Raging Blows) and 19 Arms (Anger Management, Deep Wounds, Impale), with no Enrage ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/warrior/dps/presets.ts)).
+- **Priority:** at 30 (Wowhead), Overpower, Sunder above 70% health, Execute, then Heroic Strike or Cleave only with spare Rage. At 60 the WoWSims list runs Death Wish, Whirlwind on packs, Execute, Whirlwind, Bloodthirst.
+- **Stats:** ForeverDB puts hit first, then Strength and crit; Icy Veins puts weapon damage first. Off-hand misses starve Rage.
+- **Key levels:** 20 dual-wield · 30 Death Wish · 35 Flurry · 36 Whirlwind · 40 Bloodthirst.
+- **Gear and consumables:** two current one-handers first. ForeverDB's sim ranks Bear Brisket and Scroll of Strength II as the best level-30 consumables. Wowhead favours Engineering.
+- **Watch out:** Wowhead's Fury overview still says crits give no extra Rage and Dual Wield Specialization gives hit; both changed on 1–2 October. Bloodthirst no longer heals.
 
 ## What the guides say
 

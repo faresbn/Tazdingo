@@ -4,7 +4,7 @@ summary: Priest builds that mix talent trees in WoW Forever, the Smite damage bu
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and rotation, Blizzard class deep dive and podcast
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Why mixing is common:** one talent point per level from 10, and each row needs five more points in its own tree. Small dips into a second tree are cheap.
 - **The usual dips:** two points in [Wand Specialization](https://foreverdb.net/spell/14524) (Discipline), five in [Spirit Tap](https://foreverdb.net/spell/15270) (Shadow), or a rush to [Meditation](https://foreverdb.net/spell/14521) (Discipline).

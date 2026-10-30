@@ -8,7 +8,7 @@ Open only the file for the item's category. Each lists every item recorded in it
 
 Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/main/<path>
 
-- `feed/prices/forever-beta-pvp/alerts.md`: recorded unusually low, below vendor price, investment watch, short supply and movers.
+- `feed/prices/forever-beta-pvp/alerts.md`: deals under the usual price, below vendor price, investment watch, short supply and movers.
 - `feed/prices/forever-beta-pvp/armor-cloth.md`: Armor: Cloth, 112 items.
 - `feed/prices/forever-beta-pvp/armor-leather.md`: Armor: Leather, 96 items.
 - `feed/prices/forever-beta-pvp/armor-mail.md`: Armor: Mail, 55 items.

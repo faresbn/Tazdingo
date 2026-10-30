@@ -7,3 +7,4 @@ __pycache__
 tmp
 .cache
 *.nosync
+.playwright-mcp

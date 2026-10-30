@@ -1,19 +1,16 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: The Druid in WoW Forever as a whole: forms, resources, roles, what Forever changed and which spec the guides suggest for levelling.
 sources: Blizzard class deep dive, ForeverDB (levelling guide, talents, articles), Wowhead (Balance and Feral guides), Icy Veins (class overview, Feral levelling)
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Armour and weapons:** leather (cloth also works). The beta client lets Druids use staves, daggers, maces, fist weapons and, from level 20, polearms, plus an idol in the relic slot from level 1 ([ForeverDB levelling guide](https://foreverdb.net/guide/leveling-druid)).
-- **Roles:** all four. Bear tank and Cat damage share the Feral Combat tree, Balance is the ranged caster and Restoration the healer.
-- **Resources:** mana in caster form and Moonkin Form, Rage in Bear Form, Energy and combo points in Cat Form. Shifting into Bear or Cat Form costs 55% of your base mana, so you pick a form before the pull and stay in it.
-- **Forms:** [Bear Form](https://foreverdb.net/spell/5487) at 10 and [Aquatic Form](https://foreverdb.net/spell/1066) at 16 from class quests, [Cat Form](https://foreverdb.net/spell/768) at 20 from a new quest, [Travel Form](https://foreverdb.net/spell/783) at 30 from the trainer, Dire Bear Form at 40 and [Moonkin Form](https://foreverdb.net/spell/24858) as the level 40 Balance capstone.
-- **Races:** Night Elf and High Order Skyborne (Alliance), Tauren and Windshaper Skyborne (Horde). Wowhead notes the Skyborne are a paid upgrade.
-- **Biggest Forever change:** shapeshifting stops getting in the way. Potions, weapon enchants, procs and racials now work in form, and Bear and Cat attacks use your weapon's damage.
-- **New tools:** [Revive](https://foreverdb.net/spell/1237951) (out-of-combat resurrection at 12), [Primal Bite](https://foreverdb.net/spell/407995), [Berserk](https://foreverdb.net/spell/417141) and Lacerate for bears, [Wild Growth](https://foreverdb.net/spell/408120) for healers, [Eclipse](https://foreverdb.net/spell/408248) for Balance.
-- **Levelling pick:** most guides point a first Druid to Feral. Restoration levels slowly, so ForeverDB suggests levelling as Feral or Balance and respeccing to heal.
+- **Pick a spec:** Feral for a first Druid: a sturdy Bear from 10, a fast Cat from 20 and an easy way into dungeons as a tank ([ForeverDB](https://foreverdb.net/guide/leveling-druid)). Balance is ranged but slow and mana-hungry (Wowhead). Restoration levels slowly: level as Feral or Balance and respec to heal.
+- **Key levels:** 10 Bear Form · 12 Revive · 16 Aquatic Form · 20 Cat Form quest, [Omen of Clarity](https://foreverdb.net/spell/16864) and polearms · 30 Travel Form · 32 Ferocious Bite and Ravage · 36 Pounce · 40 Dire Bear, Moonkin Form, Hurricane, Innervate and dual specialisation.
+- **New in Forever:** forms stop getting in the way: potions, weapon enchants, procs and racials work in form, and Bear and Cat attacks use your weapon's damage. Tiger's Fury is gone, replaced by the Shifting Power talent; heals over time can crit ([Blizzard](https://worldofwarcraft.blizzard.com/en-us/news/24301515)).
+- **Race:** the [26 October notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7) leave Tauren Endurance at 5% health only, set Skyborne Wind-Blessed to 2% haste, and make Innervate replace Read Leyline rather than stack. Older Tauren crit-healing and stacking claims are obsolete. Skyborne are a paid upgrade (Wowhead).
+- **Watch out:** shifting costs 55% of base mana, so pick a form before the pull. Furor now returns the Energy you had, not a free 40, to stop bear-weaving. Before 20, caster form with a good weapon can match form damage ([Wowhead](https://www.wowhead.com/forever/guide/classes/druid/feral/level-20-tank-overview)).
 
 ## What the guides say
 

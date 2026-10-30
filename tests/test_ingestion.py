@@ -128,6 +128,18 @@ class Content(unittest.TestCase):
         self.assertEqual([s["kind"] for s in frost["sections"]],["glance","guides","findings","more"])
         self.assertTrue(frost["sections"][2]["empty"])
         self.assertEqual(frost["sections"][1]["toc"],[("talents","Talents")])
+        renamed=load_content(self.root({"classes/mage/frost.md":note.replace("## At a glance","## Cheatsheet")}),GAME,date(2026,11,4))
+        self.assertEqual(renamed["classes/mage/frost"]["sections"][0]["slug"],"glance")
+
+    def test_a_cheatsheet_with_more_than_a_list_is_shown_whole(self):
+        from datetime import date
+        import sections
+        note="---\nupdated: 2026-11-05\nsummary: x\n---\n"
+        grid=load_content(self.root({"classes/mage/frost.md":note+SECTIONS.replace("- x","- **Pick it for:** kiting")}),GAME,date(2026,11,4))["classes/mage/frost"]
+        self.assertIn('<dl class="cheatsheet">', sections.cheatsheet(grid))
+        self.assertEqual(sections.pick_line(grid), "kiting")
+        mixed=load_content(self.root({"classes/mage/frost.md":note+SECTIONS.replace("- x","Read this first.\n\n- **Stats:** hit")}),GAME,date(2026,11,4))["classes/mage/frost"]
+        self.assertIn("Read this first.", sections.cheatsheet(mixed))
 
     def test_unknown_place_and_bad_header_are_explained(self):
         from datetime import date
@@ -139,6 +151,8 @@ class Content(unittest.TestCase):
                                ({"classes/mage/frost.md":ok.replace("summary","title: Hijack\nsummary")+SECTIONS},"unknown header field"),
                                ({"classes/mage/frost.md":ok+"## Field findings\nx\n## At a glance\nx"},"sections"),
                                ({"classes/mage/frost.md":ok+SECTIONS+"\n## Read more\nagain"},"sections"),
+                               ({"classes/mage/frost.md":ok+"## Cheatsheet\n- y\n\n"+SECTIONS},"sections"),  # both names: one section twice
+                               ({"classes/mage/frost.md":ok+SECTIONS+"\n## CHEATSHEET\n- y"},"exactly"),
                                ({"more/addons.md":ok+"## Addons\nx"},"sections"),
                                ({"classes/mage/notes.txt":"x"},"only Markdown")):
             with self.subTest(problem=problem):

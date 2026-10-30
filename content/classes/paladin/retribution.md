@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: Retribution Paladin in WoW Forever: the two-handed damage spec's talents by level, rotation compared across guides and the WoWSims priority lists, levelling, gear and where guides disagree.
 sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets and APLs, Blizzard Paladin deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** melee damage with a slow two-handed weapon, plus group utility.
-- **How it plays:** keep a damage Seal up (Seal of Command or Seal of Righteousness), and press Judgement and Holy Strike on cooldown. Add Consecration on packs and Exorcism on Undead and Demons. Twist of Light at 40 brings back seal twisting.
-- **Strengths:** good single-target damage, self-healing, Blessings and auras, and several immunities. Icy Veins calls it very efficient for levelling.
-- **Weaknesses:** no interrupt, no slow, little range, a small Mana pool and no major damage cooldown ([Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/retribution/overview-pve-dps)).
-- **Stats that matter:** weapon damage first, then Strength, hit and crit. Spell power matters more than in Classic, because Seals, Judgement and Holy Strike scale with it.
-- **New in Forever:** [Holy Strike](https://foreverdb.net/spell/679), [Sacred Arbiter](https://foreverdb.net/spell/1311087), [Sanctified Judgement](https://foreverdb.net/spell/1311074), [Holy Conduit](https://foreverdb.net/spell/1237268), [Champion of the Light](https://foreverdb.net/spell/1311084), [Instrument of Law](https://foreverdb.net/spell/1311085) and [Twist of Light](https://foreverdb.net/spell/1310735).
+- **Pick it for:** solo questing with a slow two-hander; ForeverDB and Icy Veins rate it the quickest Paladin to level.
+- **Levelling build:** at 30, ForeverDB and Wowhead take Benediction 5, Improved Judgement 2, Conviction 5, Seal of Command, Sanctified Judgement 3, Pursuit of Justice 2, Sacred Arbiter and Vengeance, plus Vindication (ForeverDB) or Holy Conduit (Wowhead) ([Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview)). Icy Veins takes Repentance over Vengeance.
+- **Build at 60:** projection only: WoWSims' default is Twist of Light: 16 Holy (Divine Strength, Divine Intellect, Improved Seals, Reverence) and 35 Retribution with Champion of the Light 3 and Instrument of Law 2, as Icy Veins projects. A 23/28 Holy Shock build is the alternative ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/paladin/retribution/presets.ts)).
+- **Priority:** at 30: Seal of Command or Righteousness up, Judgement and Holy Strike on cooldown, Consecration on packs, Exorcism on Undead and Demons, Crusader Judgement on long fights ([Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview)). At 60 WoWSims swaps Seals to keep Echoes up and follows each Judgement with Holy Strike.
+- **Stats:** ForeverDB: weapon DPS, Strength, hit, crit; Icy Veins puts hit, crit and spell power above Strength ([ForeverDB](https://foreverdb.net/class/Paladin/pve)). Spell power matters more than in Classic. WoWSims' level-60 Twist of Light build values haste far above all else.
+- **Key levels:** 20 [Seal of Command](https://foreverdb.net/spell/20375) · 25 [Sacred Arbiter](https://foreverdb.net/spell/1311087) (16 points) · 35 Champion of the Light · 40 [Twist of Light](https://foreverdb.net/spell/1310735) (above 30 is projection).
+- **Gear and consumables:** weapon first: Corpsemaker (Razorfen Kraul), Manual Crowd Pummeler (Gnomeregan), Strike of the Hydra (Blackfathom Deeps). Wowhead: Seal of Command on weapons of about 3.0 speed or slower, Righteousness otherwise. ForeverDB's sim ranks Bear Brisket and Scroll of Strength II best at 30.
+- **Watch out:** Champion of the Light is 10/20/30% of Intellect as spell damage since 16 October, not 20/40/60% ([Blizzard](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/6)). ForeverDB's sim uses Classic's Seal of Command proc rate. Skip Judgement or Holy Strike when an auto attack will finish the enemy.
 
 ## What the guides say
 

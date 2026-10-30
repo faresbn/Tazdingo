@@ -85,10 +85,11 @@ status: pre-launch
 confidence: testing
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** …
-- **Stats that matter:** …
+- **Pick it for:** …
+- **Levelling build:** …
+- **Stats:** …
 
 ## What the guides say
 
@@ -128,7 +129,14 @@ Read on Wowhead's Frost guide; not tested yet.
 - `confidence`: optional, for the page as a whole: `idea`, `testing`, `tested` or `outdated`.
 - `verified`: optional, YYYY-MM-DD: when the main advice was last checked in game.
 
-**Sections:** `## At a glance`, `## What the guides say`, `## Field findings`, `## Read more`, once each and in that order. More lists (addons, macros, known issues, launch) may arrange their content freely, but must still end with `## Field findings` and `## Read more`. Use `###` and `####` inside sections, never `#`. An empty Field findings section says exactly "Nothing recorded yet."
+**Sections:** `## Cheatsheet`, `## What the guides say`, `## Field findings`, `## Read more`, once each and in that order (`## At a glance`, the cheatsheet's old name, is still accepted). More lists (addons, macros, known issues, launch) may arrange their content freely, but must still end with `## Field findings` and `## Read more`. Use `###` and `####` inside sections, never `#`. An empty Field findings section says exactly "Nothing recorded yet."
+
+**The cheatsheet** is what a player who already knows the basics looks up: one `- **Label:** text` line per label, in this order, leaving out a label the page has nothing for (or writing "not established yet" when that's useful). The site shows it first on the page and lifts "Pick it for" onto cards, so keep that line under 25 words.
+- **Spec pages:** Pick it for · Levelling build · Build at 60 · Priority · Stats · Key levels · Gear and consumables · Watch out
+- **Class overviews:** Pick a spec · Key levels · New in Forever · Professions · Race · Watch out
+- **Professions:** Pick it for · Pairs with · Levelling route · Money makers · Camp items · Trainers and ranks · Watch out
+
+Each line keeps its qualifiers: the level, the situation (levelling, dungeons), whether it's a projection or a simulator default, and whose advice it is; where guides disagree, say so. Only what the page itself says, with its links. Like the Tazdingo recommendation, a changed cheatsheet goes to the owner for approval.
 
 **Each finding** is a `###` heading with a short claim and, in brackets, its confidence (`idea`, `testing`, `tested` or `outdated`) and date, followed by how it's known.
 
@@ -175,7 +183,7 @@ They paste it in and send it. Everything else (the checks, the archive, publishi
 - **Start at the map:** https://raw.githubusercontent.com/faresbn/Tazdingo/main/feed/index.md. It sends you to the one price, crafting or guide file a question needs.
 - Everything in one plain-text file: https://faresbn.github.io/Tazdingo/llms-full.txt (for reading, not editing)
 - Prices: each market's `prices.tsv` (typical price, latest, steadiness, last seen, units listed, weekly change), and `prices.json` (adds each item's usual price, alerts and category)
-- The Auction House overview, with what was recorded unusually low, the investment watch, movers and patterns: https://faresbn.github.io/Tazdingo/prices/ ; every item has its own page linked from there
+- The Auction House overview, with deals recorded under the usual price, the investment watch, movers and patterns: https://faresbn.github.io/Tazdingo/prices/ ; every item has its own page linked from there
 - What to craft: https://faresbn.github.io/Tazdingo/prices/craft.tsv
 - Blizzard's latest Forever posts: https://faresbn.github.io/Tazdingo/more/blizzard/
 - When answering price questions, quote the **typical** price (or an item page's **usual** price), mention **steadiness** (volatile prices are unreliable), and say how old the data is. All prices are asking prices, not sales. Beta prices are only a rough guide. Alerts and investment picks are the site's own estimates: quote them with the scan time they were recorded at.

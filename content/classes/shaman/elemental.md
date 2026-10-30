@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Elemental Shaman plays in WoW Forever, the guides' talent builds after the October reshuffle, and how their rotations compare with the simulators.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and rotation, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** ranged caster damage and the group's usual interrupt.
-- **How it plays:** totems down, Flame Shock on the target, [Lava Burst](https://foreverdb.net/spell/408490) on cooldown from 30, and Lightning Bolt to fill. Fire Nova hits packs from your Fire totem.
-- **Strengths:** strong area damage from Fire Nova and Magma Totem, group totems, and an interrupt in Earth Shock.
-- **Weaknesses:** weak single-target damage while levelling, mana pressure, and no wand to finish kills ([Wowhead](https://www.wowhead.com/forever/guide/classes/shaman/elemental/level-30-dps-overview)).
-- **Stats:** spell power, hit for endgame bosses, critical strike, then Intellect. WoWSims also rates haste highly at 60.
-- **New in Forever:** Lava Burst (20% more damage with your Flame Shock up), [Lightning Overload](https://foreverdb.net/spell/408438), [Earthbound](https://foreverdb.net/spell/1222988), a pushback-proof [Eye of the Storm](https://foreverdb.net/spell/29062), [Elemental Alacrity](https://foreverdb.net/spell/16578) early in the tree, and a redesigned [Elemental Mastery](https://foreverdb.net/spell/16166) as the capstone.
+- **Pick it for:** ranged caster with pack damage from Fire Nova and Magma Totem in groups that carry its mana; Wowhead calls it a poor leveller below 40.
+- **Levelling build:** at 30, Wowhead's "Deep Elemental" (24 October): Convection 4, Concussion 5, Elemental Alacrity 3, Call of Flame 3, Elemental Focus 1, Eye of the Storm 3, Earthbound 1, Lava Burst ([Wowhead](https://www.wowhead.com/forever/guide/classes/shaman/elemental/level-30-dps-overview)). Icy Veins' build (18 October) ends on Trial by Fire, without Lava Burst.
+- **Build at 60:** projection only: WoWSims' "Standard" (32/11/8) takes Lava Burst, Lightning Overload 3, Elemental Fury 5 and Elemental Mastery, with Enhancement's Thundering Strikes 5, Ancestral Knowledge 3 and Shamanistic Focus, and Restoration's Tidal Focus 5 and Mindfulness 3 ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/shaman/elemental/builds/testing.build.json)).
+- **Priority:** Icy Veins: totems, Lightning Bolt pull, Fire Nova on three or more, Flame Shock, [Lava Burst](https://foreverdb.net/spell/408490) on cooldown (from 30), Lightning Bolt filler. Wowhead (level 30) spends Clearcasting on Fire Nova, ForeverDB's level-30 sim on Lightning Bolt. WoWSims at 60 adds Chain Lightning and Elemental Mastery.
+- **Stats:** Icy Veins (levelling): spell damage, crit, hit, Intellect, mana per 5; ForeverDB puts hit first, as no Elemental talent adds it. The level-30 and level-60 simulator weights aren't a shopping list; don't buy spell penetration for ordinary quest enemies ([Icy Veins](https://www.icy-veins.com/wow-forever/elemental-shaman-ranged-dps-pve-guide)).
+- **Key levels:** 15 Elemental Alacrity (tier 2) · 30 Lava Burst, Call of Air quest · 32 Chain Lightning · 35 Elemental Fury · 40 [Elemental Mastery](https://foreverdb.net/spell/16166).
+- **Gear and consumables:** Lightning's Grasp and Elementalist's Guard from the level-30 Call of Air quest (Icy Veins); Leatherworking patterns and Enchanting's oils and [Polished Driftwood Icon](https://foreverdb.net/item/249398) (Wowhead); the [Totem of Charged Flames](https://foreverdb.net/item/263412) cheapens Lightning Bolt. ForeverDB's sim rates Lesser Arcane Elixir and Briny Seafood Stew best at 30.
+- **Watch out:** guides from before 16 October may list Call of Thunder or put Lava Burst at 40, and Icy Veins' introduction calls it out of reach at 30 ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)). Keep Earth Shock for interrupts when they matter. Lightning Overload is 3/7/10% in the client.
 
 ## What the guides say
 

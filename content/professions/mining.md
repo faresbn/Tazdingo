@@ -1,17 +1,18 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: What Mining gathers and smelts in Forever, its new ores, bars and camp items, how guides level it and where they say the money is.
 sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, Warcraft Tavern
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Gathers:** ore, stone and gems, plus new "Scarce" materials. Mining also teaches Smelting, which turns ore into bars at a forge.
-- **Suits:** anyone. No racial affects Mining in Forever. [Wowhead](https://www.wowhead.com/forever/guide/professions/mining/overview-leveling) notes that Druids, Hunters and Warlocks find it easiest to get away from mobs.
-- **Pairs with:** Blacksmithing or Engineering, which both use bars and stone. Herbalism is the usual partner for a two-gatherer character.
-- **New in Forever:** Heavy Thorium Ore, three Scarce materials, two new bars, ores stacking to 20, and starter trainers and nodes in every starting zone.
-- **Camp feature:** the [Lodestone](https://foreverdb.net/item/279960) (skill 20) gives melee Attack Power that doesn't stack with Blessing of Might. The [Rock Garden](https://foreverdb.net/item/279948) (140) spawns a common mining node over time. The [Molten Foundry](https://foreverdb.net/item/279952) (300) is the station for smelting Heavy Thorium. Blizzard's camping post left Mining out of its table, but the beta client still has the Lodestone ([ForeverDB](https://foreverdb.net/article/blizzard-explains-camping-system-campsites-profession-buffs)).
-- **Tools:** a [Mining Pick](https://foreverdb.net/item/2901) in your bags, Find Minerals for tracking and a forge for smelting.
+- **Pick it for:** gold with no money needed to start ([Wowhead](https://www.wowhead.com/forever/guide/professions/mining/overview-leveling)); no racial affects it, and Druids, Hunters and Warlocks escape mobs most easily.
+- **Pairs with:** Blacksmithing or Engineering, which use bars and stone; Herbalism for a two-gatherer character.
+- **Levelling route:** by vein: 1–65 Copper · 65–125 Tin, Silver · 125–175 Iron, Gold · 175–245 Mithril, Truesilver · 245–300 Thorium; [wow-professions.com](https://www.wow-professions.com/forever/mining-leveling-guide) couldn't test past 125. Smelting bought ore reaches about 140, then gold to 185 (Wowhead); wow-professions.com calls iron and gold optional.
+- **Money makers:** Wowhead: sell whatever you don't craft with. [Icy Veins](https://www.icy-veins.com/wow-forever/mining): gems and Scarce reagents only miners gather. A vendor pays 5 copper for Copper Ore ([ForeverDB](https://foreverdb.net/guide/making-money)). Compare bar proceeds after selling costs with ore prices before smelting to sell.
+- **Camp items:** [Lodestone](https://foreverdb.net/item/279960) (20; melee Attack Power, doesn't stack with Blessing of Might) · [Rock Garden](https://foreverdb.net/item/279948) (140; spawns a common node over time) · [Molten Foundry](https://foreverdb.net/item/279952) (300; the only known station for Heavy Thorium Bars).
+- **Trainers and ranks:** train at 50 · 125 · 200 skill (Icy Veins). Character level disputed: none · 10 · 25 (Icy Veins' overview) or 10 · 20 · 35 (ForeverDB, from Classic). Starting-zone Junior Mining Trainers teach only to 75, without smelting.
+- **Watch out:** guides disagree on which veins give Pyrite, Bauxite and Pitchblende. Fast-respawn caves refill with mobs too. One skill point per node, however many swings. Starter nodes give points only to 20. Blizzard's camping post omits the Lodestone, but the client has it.
 
 ## What the guides say
 

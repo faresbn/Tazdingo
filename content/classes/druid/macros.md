@@ -4,7 +4,7 @@ summary: Druid macros for WoW Forever gathered from community guides, from form-
 sources: ForeverDB macros page, Kami Labs macro tool and guide, Wowhead's macro guide
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Status:** every macro here comes from a community guide and none has been tested in the live game. ForeverDB checked its spell names against the beta client but says none was tried in the beta.
 - **Highest rank by default:** `/cast` with no rank always uses the best rank you know. A spell dragged to your bar doesn't update when you train a new rank (Kami Labs, Wowhead).

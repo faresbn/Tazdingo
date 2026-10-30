@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Combat plays in WoW Forever up to the level 30 beta cap, with talents by level, the Sinister Strike and Backstab rotations, Blade Flurry, weapons and where the guides disagree.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APL
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** Melee damage built on auto attacks, steady builders and finishers, with some cleave from Blade Flurry.
-- **How it plays:** Build combo points with Sinister Strike, or Backstab with a main-hand dagger. Keep Slice and Dice up and spend the rest on Eviscerate. Press Riposte after a parry and Blade Flurry (level 30) on two targets or a boss. Adrenaline Rush arrives at 40.
-- **Strengths:** The most forgiving levelling spec (ForeverDB). It works with any one-handed weapon, doesn't depend on poisons or bleeds, has the only real Rogue cleave and survives well thanks to Endurance's shorter Evasion and Sprint.
-- **Weaknesses:** No raid buff (Wowhead), little area damage outside Blade Flurry, and Energy as the constant limit.
-- **Stats that matter:** Main-hand weapon damage (a slow weapon for Sinister Strike), hit and expertise, Agility, crit, Strength. WoWSims' level 60 "Combat Sinister" weights rate expertise 2.55, hit 2.42, Agility 1.96, haste 1.72 and crit 1.70 per point, with attack power as 1.
-- **New in Forever:** [Hack and Slash](https://foreverdb.net/spell/13960) replaces the old weapon specialisations and adds axes, plus [Puncturing Wounds](https://foreverdb.net/spell/1224716), [Flawless Execution](https://foreverdb.net/spell/1310711) (10 Energy off Eviscerate), a 3-point Precision, Endurance as a percentage, a halved Dual Wield Specialization, Aggression covering Backstab and a reworked Weapon Expertise.
+- **Pick it for:** the most forgiving Rogue leveller (ForeverDB): any one-handed weapon, no reliance on poisons or bleeds, and the only real Rogue cleave in Blade Flurry.
+- **Levelling build:** at 30, Wowhead: Improved Eviscerate 3, Improved Sinister Strike 2, Precision 3, Deflection 3, Endurance 2, Riposte, Improved Sprint 1, Flawless Execution, Dual Wield Specialization 4, Blade Flurry ([Wowhead](https://www.wowhead.com/forever/guide/classes/rogue/combat/level-30-dps-overview)). ForeverDB and Icy Veins also reach Blade Flurry with Riposte; ForeverDB's group build swaps Riposte for Puncturing Wounds.
+- **Build at 60:** projection only: WoWSims' default "Combat SS" is 18/33/0, down to Adrenaline Rush with Hack and Slash, Weapon Expertise and Aggression, plus Malice, Ruthlessness, Murder, Relentless Strikes and Cold Blood ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/rogue/dps/presets.ts)). "Combat BS" (16/33/2) is the dagger version; Icy Veins' route also ends 18/33/0.
+- **Priority:** at 30 (Wowhead), Sinister Strike or Backstab, keep Slice and Dice up and refresh it late, Riposte when lit (Icy Veins), Blade Flurry on packs or bosses, then Eviscerate (low armour) or Rupture (high armour). At 60 WoWSims adds Adrenaline Rush, Thistle Tea and Blade Flurry recasts.
+- **Stats:** main-hand weapon damage first (a slow weapon for Sinister Strike), then hit and expertise, Agility, crit, Strength. WoWSims' level-60 "Combat Sinister" weights: expertise 2.55, hit 2.42, Agility 1.96, haste 1.72, crit 1.70, attack power 1 ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/rogue/dps/presets.ts)).
+- **Key levels:** 20 Riposte (Icy Veins) · 30 Blade Flurry and the Ruby-Adorned Blade from The Eye of Bhossca · 40 Adrenaline Rush.
+- **Gear and consumables:** a slow axe, mace, sword or fist main hand early; a main-hand dagger only for the Backstab build. Wowhead rates the Ruby-Adorned Blade best at 30 ([Wowhead](https://www.wowhead.com/forever/guide/classes/rogue/combat/level-30-dps-overview)). Instant Poison plus a Rough Sharpening Stone; ForeverDB's sim rates Elixir of Agility and Tender Wolf Steak highest.
+- **Watch out:** never press Blade Flurry next to a Sapped or Gouged mob ([ForeverDB](https://foreverdb.net/class/Rogue/pve)). ForeverDB's sim did 2.7% more on one target without Slice and Dice at 30, but flags it for testing and every written guide keeps it. Puncturing Wounds needs a main-hand dagger.
 
 ## What the guides say
 

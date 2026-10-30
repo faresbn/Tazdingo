@@ -4,7 +4,7 @@ summary: Every dungeon in Forever with its level range, a line on what's notable
 sources: Blizzard, Icy Veins, ForeverDB, Wowhead, Warcraft Tavern, wow-professions.com
 ---
 
-## At a glance
+## Cheatsheet
 
 - **35 dungeons in 28 instances,** from level 13 to 60 (Icy Veins).
 - **Nine are new:** Hall of Thanes, Ruins of Lordaeron, Excavation Site, City of Dalaran, the Drowned City, Krol'dok Stronghold, Alcaz Prison, Blackmaw Hold and the Shaper's Terrace.

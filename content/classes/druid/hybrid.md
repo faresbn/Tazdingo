@@ -4,7 +4,7 @@ summary: Druid builds that mix talent trees in WoW Forever, from Spellbear and c
 sources: ForeverDB (builds, hybrid tax article, levelling guide), Wowhead (Balance and Restoration level 20 and 30 guides, healer overview), Icy Veins, WoWSims presets, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Why it's common:** you get one talent point per level from 10, and each row of a tree needs only five points above it. The first two rows of any tree are cheap to reach.
 - **The usual borrowings:** from Balance, [Genesis](https://foreverdb.net/spell/1223081) (+5% to periodic damage and healing, bleeds included), [Nature's Majesty](https://foreverdb.net/spell/1223082) (+4% crit to spells and melee), [Nature's Reach](https://foreverdb.net/spell/16819) (+4% hit) and [Improved Wrath](https://foreverdb.net/spell/16814). From Restoration, [Nature's Focus](https://foreverdb.net/spell/17063), [Furor](https://foreverdb.net/spell/17056) and [Naturalist](https://foreverdb.net/spell/17069) (+5% to all damage).

@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: Protection Warrior in WoW Forever: the shield tank's talents by level, threat priorities compared across guides and the WoWSims list, why guides rate it for levelling, gear and where guides disagree.
 sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets and APL, Blizzard deep dive and beta notes
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** tank, with a one-handed weapon and a shield in Defensive Stance.
-- **How it plays:** keep Shield Block rolling so Revenge keeps lighting up, open packs with Thunder Clap, and spend spare Rage on Sunder Armor, Rend or Heroic Strike. Shield Slam arrives at 40.
-- **Strengths:** blocks, dodges and parries all give Rage through talents, it handles several melee enemies well, and Icy Veins calls it the fastest Warrior spec to level.
-- **Weaknesses:** a slow start in the early teens, weaker against casters and elementals, with no ranged pulling spell (a bow, gun, crossbow or thrown weapon can still pull) ([Icy Veins](https://www.icy-veins.com/wow-forever/protection-warrior-leveling)). It is the only tank with no thorns-style damage of its own ([Wowhead](https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview)).
-- **Stats that matter:** Stamina, armour and Defense to survive, then hit and Strength for threat. Guides weight these differently.
-- **New in Forever:** [Vanguard](https://foreverdb.net/spell/1310317) (Charge in Defensive Stance), [Master of Defense](https://foreverdb.net/spell/1310316), [Focused Rage](https://foreverdb.net/spell/29787), [Bastion](https://foreverdb.net/spell/16538), Thunder Clap in Defensive Stance, and [Shield Specialization](https://foreverdb.net/spell/12298) worth 5 Rage per block.
+- **Pick it for:** tanking dungeons, and solo levelling once Revenge arrives at 14; Icy Veins calls it the fastest Warrior spec to level.
+- **Levelling build:** at 30, Wowhead takes Improved Rend 3, Shield Specialization 5, Improved Revenge 3, Improved Thunder Clap 3, Last Stand, Master of Defense 2, Defiance 3 and Vanguard ([Wowhead](https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview)); Icy Veins swaps Last Stand and Defiance for Cruelty 2 and Improved Bloodrage 2.
+- **Build at 60:** projection only: WoWSims' default is 31 Protection (Shield Slam, Bastion, Focused Rage, Defiance, Vanguard, Concussion Blow, Anticipation), 17 Arms (Improved Heroic Strike, Deflection, Improved Rend, Deep Wounds, Impale) and 3 Cruelty ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/warrior/protection/presets.ts)).
+- **Priority:** survival and threat on each enemy before damage. At 30 (Wowhead): [Shield Block](https://foreverdb.net/spell/2565), Revenge, Thunder Clap, Demoralizing Shout, Sunders, Rend if threat is safe, Heroic Strike with spare Rage; Thunder Clap first on packs. At 60 WoWSims adds Shield Slam before Revenge.
+- **Stats:** ForeverDB puts survival first (Stamina, armour, Defense, block); Icy Veins puts threat first (weapon damage, hit, Strength). WoWSims' level-60 weights blend both, with Stamina and hit highest. Fix deaths with survival, lost enemies with threat.
+- **Key levels:** 14 Revenge (switch to sword and board) · 25 Vanguard · 30 Focused Rage · 35 [Bastion](https://foreverdb.net/spell/16538) · 40 Shield Slam (above 30 is projection).
+- **Gear and consumables:** at 30 Wowhead picks Pronged Reaver (Razorfen Kraul), Thermaplugg Medal of Honor (Gnomeregan) and Blacksmithing's Officer's Belt; Bandsaw Wristbands at 20. Pull with a trained ranged weapon; Wowhead notes Engineering's grenades also solve ranged pulling.
+- **Watch out:** older threat advice built on the Sunder Armor and Demoralizing Shout bugs is superseded. [Defiance](https://foreverdb.net/spell/12792) now needs a shield. Shield Block funds Revenge only when attacks use its blocks, not against casters or idle targets. Thorns from a Paladin or Druid helps.
 
 ## What the guides say
 

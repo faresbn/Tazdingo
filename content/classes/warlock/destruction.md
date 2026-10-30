@@ -1,18 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Destruction Warlock plays in WoW Forever: Immolate, Conflagrate and Shadowburn, Bane of Havoc and Incinerate, with talents by level, rotations from the guides and simulators, gear and open questions.
 sources: Icy Veins, Wowhead, ForeverDB, WoWSims builds, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** Ranged direct damage in Fire and Shadow.
-- **How it plays:** Keep Immolate on the target, cast [Conflagrate](https://foreverdb.net/spell/1293817) and [Shadowburn](https://foreverdb.net/spell/17877) as instants, and fill with Shadow Bolt until [Incinerate](https://foreverdb.net/spell/412758) at 40. [Bane of Havoc](https://foreverdb.net/spell/1225228) copies 15% of your damage onto a second target.
-- **Strengths:** Burst from two instants on short cooldowns, strong AoE because Rain of Fire and Hellfire are Destruction spells, and fast casts with Bane (Wowhead, Icy Veins).
-- **Weaknesses:** The slowest Warlock to level solo (Wowhead); threat management needs care, with Suppression available only through an Affliction dip; Conflagrate eats your Immolate until Shadow and Flame is maxed; Hellfire needs you in melee range.
-- **Stats:** Spell power (watch the school), hit to suit the target and any Suppression points, haste, crit (boosted by [Ruin](https://foreverdb.net/spell/17959)), Spirit and Intellect.
-- **New in Forever:** Bane of Havoc, Incinerate, [Shadow and Flame](https://foreverdb.net/spell/426316), Fire and Brimstone and Molten Skin; Agonizing Flames now boosts every Destruction spell; Ruin is a 5-point row 3 talent; Conflagrate opens at 25; Aftermath reworked.
-- **Two playstyles while levelling:** a solo build that borrows Affliction's drains, or a deep build for dungeons that reaches Incinerate at 40 (Wowhead).
+- **Pick it for:** direct casts, burst from two instants and dungeon AoE; Affliction stays the solo-sustain default, as Wowhead finds Destruction slowest solo.
+- **Levelling build:** solo, Wowhead spends 16 points in Destruction (Bane, Cataclysm, Aftermath, Shadowburn, Molten Skin, Conflagrate), then Unholy Power, Demonic Energies and Affliction's drains ([Wowhead](https://www.wowhead.com/forever/guide/classes/warlock/destruction/dps-leveling-tips)). Icy Veins' calculator takes Aftermath and Destructive Reach early; its level 30 dungeon build adds Ruin 5 and Bane of Havoc.
+- **Build at 60:** projection only: WoWSims' "Destro" is 18 Affliction and 33 Destruction with a Succubus out ([WoWSims](https://github.com/wowsims/forever/tree/master/ui/specs/warlock/dps/builds)). Wowhead's Sayaad, Imp and Demonic Sacrifice builds are candidates; their current order isn't established.
+- **Priority:** at 30 ([Icy Veins](https://www.icy-veins.com/wow-forever/destruction-warlock-ranged-dps-pve-guide)): Curse, Shadow Bolt then Immolate so both land together, Shadow Bolt or wand filler, Conflagrate near Immolate's end, Shadowburn to finish. From 39 (Shadow and Flame 5/5), Conflagrate and Shadowburn go on cooldown; Incinerate fills from 40. Bane of Havoc on a second target.
+- **Stats:** Icy Veins: spell power for the school you cast (Fire damage won't help Shadow Bolt), hit to suit the target and any Suppression, haste (not for DoTs), crit boosted by Ruin, then Spirit and Intellect ([Icy Veins](https://www.icy-veins.com/wow-forever/destruction-warlock-ranged-dps-pve-guide)).
+- **Key levels:** 20 Shadowburn · 25 [Conflagrate](https://foreverdb.net/spell/1293817) · 28 Firestone · 30 [Bane of Havoc](https://foreverdb.net/spell/1225228) in dungeon builds (about 34 in Icy Veins' levelling order) · 39 Shadow and Flame 5/5 · 40 [Incinerate](https://foreverdb.net/spell/412758).
+- **Gear and consumables:** [Staff of Soran'ruk](https://foreverdb.net/item/15109) tops ForeverDB's Destruction list at 30; Firestone from 28 adds spell crit and Fire damage (Wowhead lists a Major Firestone at 60). Lesser Arcane Elixir tops ForeverDB's simulator at 30 (+5.2%).
+- **Watch out:** until Shadow and Flame is maxed, Conflagrate eats your Immolate. Let the tank establish threat before Rain of Fire or Hellfire, which also costs health; Searing Pain draws high threat. ForeverDB's one-target simulation found Conflagrate a small loss at 30; that doesn't make it bad ([ForeverDB](https://foreverdb.net/class/Warlock/pve)).
 
 ## What the guides say
 
