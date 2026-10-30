@@ -22,10 +22,13 @@ WINDOW_DAYS = 30            # the scan window (and the 30-scan rule in market_st
 WINDOW_SCANS = 30
 RECENT_DAYS = 14            # the usual price: median daily low over the last 14 full days...
 MIN_RECENT_DAYS = 3         # ...needing at least this many days with records
-DEAL_DISCOUNT = 0.30        # unusually low: at least 30% under the usual price
-DEAL_SPREAD = 3.5           # and a robust (median-absolute-deviation) z-score of 3.5 or more, when it varies
+DEAL_DISCOUNT = 0.20        # a deal: recorded at least 20% under the usual price
+EXCEPTIONAL_DISCOUNT = 0.30 # exceptional: at least 30% under...
+DEAL_SPREAD = 3.5           # ...and a robust (median-absolute-deviation) z-score of 3.5 or more, when it varies
 DEAL_CAP = 0.9              # 90%+ under usual is usually one mispriced unit: low confidence
 DEAL_MIN_REF = 100          # ignore items usually worth under 1 silver
+VENDOR_MIN_PROFIT = 100     # below vendor price: worth flagging at 1 silver a unit or more...
+VENDOR_QUALITIES = {"Rare", "Epic", "Legendary"}  # ...and only for rare items or recipes
 AH_CUT = 0.05               # the Auction House keeps 5% of a sale
 INVEST_PERCENTILE = 0.25    # investment: seen at or under the item's 25th-percentile day
 INVEST_MIN_MARGIN = 100     # at least 1 silver a unit after the cut
@@ -143,11 +146,13 @@ def analyse_item(item: dict, frame: dict, vendor: dict) -> None:
         return
     if ref and ref >= DEAL_MIN_REF and latest <= ref * (1 - DEAL_DISCOUNT):
         spread = 1.4826 * mad(values, ref)
-        if spread == 0 or (ref - latest) / spread >= DEAL_SPREAD:
-            discount = 1 - latest / ref
-            item["deal"] = {"saving": ref - latest, "discount": discount,
-                            "confidence": "low" if discount >= DEAL_CAP else item["confidence"]}
-    if item["vendor_sell"] and latest < item["vendor_sell"]:
+        discount = 1 - latest / ref
+        item["deal"] = {"saving": ref - latest, "discount": discount,
+                        "exceptional": discount >= EXCEPTIONAL_DISCOUNT and (spread == 0 or (ref - latest) / spread >= DEAL_SPREAD),
+                        "confidence": "low" if discount >= DEAL_CAP else item["confidence"]}
+    category = item.get("category") or {}
+    if (item["vendor_sell"] and item["vendor_sell"] - latest >= VENDOR_MIN_PROFIT
+            and (category.get("quality") in VENDOR_QUALITIES or category.get("class") == "Recipe")):
         item["deal"] = dict(item["deal"] or {}, vendor_profit=item["vendor_sell"] - latest)
     last_full = frame["last_full"]
     if ref and last_full is not None and item["days"].get(last_full, {}).get("listed") is not None:
@@ -255,15 +260,15 @@ def analyse(market: dict, vendor: dict, categories: dict) -> dict:
              "last_full": max((d for d in days if last_day is not None and d < last_day), default=None)}
     finished = [d for d in frame["window_days"] if d != last_day]  # weekday patterns use finished days only
     for item in market["items"]:
-        analyse_item(item, frame, vendor)
         item["category"] = categories.get(item["id"])
+        analyse_item(item, frame, vendor)
         item["pattern"] = item_pattern(item, finished)
     fresh = [i for i in market["items"] if i["fresh"]]
     times = scan_times(market)
     deals = [i for i in fresh if i["deal"] and "saving" in i["deal"]]
     return {
         "newest": newest, "window_start": start, "scans_in_window": sum(1 for t in times if start is not None and t >= start),
-        "deals": sorted((i for i in deals if i["deal"]["confidence"] != "low"), key=lambda i: -i["deal"]["saving"]),
+        "deals": sorted((i for i in deals if i["deal"]["confidence"] != "low"), key=lambda i: (not i["deal"]["exceptional"], -i["deal"]["saving"])),
         "deals_hidden": sum(1 for i in deals if i["deal"]["confidence"] == "low"),
         "vendor": sorted((i for i in fresh if i["deal"] and i["deal"].get("vendor_profit")), key=lambda i: -i["deal"]["vendor_profit"]),
         "invest": sorted((i for i in fresh if i["invest"] and i["confidence"] != "low"), key=lambda i: -i["invest"]["score"]),

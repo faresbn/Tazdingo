@@ -157,6 +157,32 @@ class Analytics(unittest.TestCase):
         result = m.analyse(self.market([steady, volatile]), {}, {})
         self.assertEqual([i["key"] for i in result["invest"]], ["2589"])
 
+    def test_deals_reach_twenty_percent_with_exceptional_ones_first(self):
+        import market as m
+        lows = [1000, 1010, 990, 1000, 1005, 995, 1000, 1000, 1002, 998]
+        mild = dict(self.item(lows + [780]), id=2590, key="2590")           # 22% under: a deal, but under 30%
+        noisy = dict(self.item([1000, 700, 1300, 900, 1100, 800, 1200, 1000, 950, 1050, 780]), id=2591, key="2591")  # 22% under a wide swing
+        deep = self.item(lows + [600])                                          # 40% under, far outside its swing
+        result = m.analyse(self.market([mild, noisy, deep]), {}, {})
+        self.assertEqual([i["key"] for i in result["deals"]][0], "2589")
+        self.assertEqual({i["key"] for i in result["deals"]}, {"2589", "2590", "2591"})
+        self.assertTrue(deep["deal"]["exceptional"])
+        self.assertFalse(noisy["deal"]["exceptional"])
+        self.assertFalse(mild["deal"]["exceptional"])
+
+    def test_below_vendor_price_only_for_rare_items_and_recipes_worth_a_silver(self):
+        import market as m
+        lows = [1000] * 12
+        cheap = self.item(lows)
+        rare = dict(self.item(lows), id=2590, key="2590")
+        recipe = dict(self.item(lows), id=2591, key="2591")
+        pennies = dict(self.item(lows), id=2592, key="2592")
+        vendor = {2589: 1500, 2590: 1500, 2591: 1500, 2592: 1050}
+        categories = {2589: {"class": "Trade Goods", "quality": "Common"}, 2590: {"class": "Armor", "quality": "Rare"},
+                      2591: {"class": "Recipe", "quality": "Uncommon"}, 2592: {"class": "Recipe", "quality": "Rare"}}
+        result = m.analyse(self.market([cheap, rare, recipe, pennies]), vendor, categories)
+        self.assertEqual({i["key"] for i in result["vendor"]}, {"2590", "2591"})
+
     def test_partial_days_are_found_even_when_most_days_are_partial(self):
         import market as m
         items = [{"days": {DAY + d: {} for d in range(9) if n < 10 or d in (3, 7)}} for n in range(100)]

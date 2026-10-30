@@ -198,6 +198,12 @@ def check(old: str | None, new: str, meta: dict, old_meta: dict, known_domains: 
         return [f"{h}\n{c}" for h, c in guides.items() if h.lower().startswith("### tazdingo recommendation")]
     if recommendation(old_guides) != recommendation(new_guides):
         review.append("the Tazdingo recommendation changed")
+    # The cheatsheet condenses that advice into the page's first screen, so it's the owner's call too.
+    def cheatsheet(text: str) -> str:
+        parts = sections(text)
+        return parts.get("Cheatsheet", parts.get("At a glance", "")).strip()
+    if cheatsheet(old) != cheatsheet(new):
+        review.append("the cheatsheet changed")
     for heading, content in new_guides.items():
         if heading.lower().startswith("### tazdingo recommendation"):
             continue

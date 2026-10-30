@@ -108,11 +108,11 @@ def alerts(market: dict, money) -> str:
             parts.extend([f"The strongest {ALERT_ROWS} of {len(rows)}.", ""])
         parts.extend([table(header, rows[:ALERT_ROWS]), ""] if rows else ["None at the latest scan.", ""])
 
-    section("Recorded unusually low", "At least 30% under the usual price and far outside its normal spread. Confidence says how much history stands behind it; low-confidence ones are left out.",
-            ["Item", "ID", "Latest", "Usual", "Under usual", "Confidence", "Recorded at"],
-            [[i["name"], i["id"], money(i["latest"]), money(i["ref"]), f"{i['deal']['discount']:.0%}", i["deal"]["confidence"], when(i["latest_time"])]
-             for i in ah.get("deals", [])])
-    section("Recorded below what a vendor pays", "Buying these and selling to a vendor returns more than the listing costs.",
+    section("Deals: recorded under the usual price", "At least 20% under the usual price. Exceptional ones are at least 30% under and far outside the item's normal spread; they come first. Confidence says how much history stands behind it; low-confidence ones are left out.",
+            ["Item", "ID", "Latest", "Usual", "Under usual", "Exceptional", "Confidence", "Recorded at"],
+            [[i["name"], i["id"], money(i["latest"]), money(i["ref"]), f"{i['deal']['discount']:.0%}", "yes" if i["deal"]["exceptional"] else "",
+              i["deal"]["confidence"], when(i["latest_time"])] for i in ah.get("deals", [])])
+    section("Recorded below what a vendor pays", "Rare or better items and recipes only, at least 1 silver a unit: buying these and selling to a vendor returns more than the listing costs, if the listing is still there.",
             ["Item", "ID", "Latest", "Vendor pays", "Recorded at"],
             [[i["name"], i["id"], money(i["latest"]), money(i["vendor_sell"]), when(i["latest_time"])] for i in ah.get("vendor", [])])
     section("Investment watch", "Steady or moving items, listed most days, recorded at or under their cheaper days. The margin is an estimate after the 5% Auction House cut.",

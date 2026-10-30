@@ -41,7 +41,7 @@ The form is at **https://faresbn.github.io/Tazdingo/inbox/**. Fill it in and pre
    - **Current version:** the version must be the page's current one. If someone changed the page since you read it, it's held: read it again and redo the change.
 5. **These go to the owner for approval instead of straight live:**
    - setting a page `live` or changing `verified`;
-   - changing a "Tazdingo recommendation";
+   - changing a "Tazdingo recommendation" or a page's cheatsheet;
    - marking a finding outdated;
    - linking a site no page has cited before.
    

@@ -294,6 +294,13 @@ class Provenance(unittest.TestCase):
                                self.page("### Talents\n\nx ([Wowhead](https://www.wowhead.com/x))\n\n###\tTazdingo recommendation\n\nGo Fire."))
         self.assertIn("the Tazdingo recommendation changed", review)
 
+    def test_cheatsheet_changes_go_to_review_under_either_name(self):
+        old = self.page()
+        _, review = self.check(old, old.replace("## At a glance\n\nx", "## Cheatsheet\n\nx"))
+        self.assertNotIn("the cheatsheet changed", review, "renaming the section alone isn't an editorial change")
+        _, review = self.check(old, old.replace("## At a glance\n\nx", "## Cheatsheet\n\n- **Stats:** hit first"))
+        self.assertIn("the cheatsheet changed", review)
+
     def test_unknown_items_and_messages(self):
         problems, _ = self.check(self.page(), self.page("### Gear\n\n[Linen](https://foreverdb.net/item/999999) ([Wowhead](https://www.wowhead.com/x))."))
         self.assertTrue(any("isn't an item" in p for p in problems))

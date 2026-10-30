@@ -6,15 +6,15 @@
 
 Everything below is an estimate from listings, recorded at the time shown; none of it says what sold.
 
-## Recorded unusually low
+## Deals: recorded under the usual price
 
-At least 30% under the usual price and far outside its normal spread. Confidence says how much history stands behind it; low-confidence ones are left out.
+At least 20% under the usual price. Exceptional ones are at least 30% under and far outside the item's normal spread; they come first. Confidence says how much history stands behind it; low-confidence ones are left out.
 
 None at the latest scan.
 
 ## Recorded below what a vendor pays
 
-Buying these and selling to a vendor returns more than the listing costs.
+Rare or better items and recipes only, at least 1 silver a unit: buying these and selling to a vendor returns more than the listing costs, if the listing is still there.
 
 None at the latest scan.
 
