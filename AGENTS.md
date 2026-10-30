@@ -7,7 +7,7 @@ This repository builds **Tazdingo** (https://faresbn.github.io/Tazdingo/), an un
 ## Settled decisions (flag before reopening)
 
 They're listed with their reasons in docs/DECISIONS.md. The ones most often got wrong:
-- **The public site is impersonal.** It never names Fares or Mike and never mentions ChatGPT or AI. `scripts/check_site.py` enforces this; don't weaken it.
+- **The public site is impersonal.** It never names Fares or any co-player and never mentions ChatGPT or AI. `scripts/check_site.py` enforces this; don't weaken it.
 - **Authentic Warcraft imagery.** Fares authorised official/publicly reusable Warcraft artwork and screenshots on 27 October, superseding the generated-only direction. Use official sources or a documented reuse licence; credit the owner. Register sourced assets in `data/art.json`, keep receipts, and distinguish Classic artwork from Forever captures. No copied website layouts or implied Blizzard endorsement.
 - **Summaries in our own words, always cited, never copied.** Wowhead and Icy Veins forbid copying and scraping; read their pages to summarise them, and link to them.
 - **Pre-launch is the default.** A page is Live only when someone marks it so after checking it in the live game.

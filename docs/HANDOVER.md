@@ -6,7 +6,7 @@ Where Tazdingo stands, kept current at every checkpoint so another thread, model
 
 ## In flight (30 October)
 
-**A public repository, a ChatGPT feed and an inbox** (branch `plan/public-inbox`, session `docs/sessions/2026-10-30-public-inbox/`): research, plan and a senior Codex review are done. **Waiting for Fares's approval of `plan.md`** and two calls in it (his work email on old commits; Mike's name in the docs). Nothing is built yet; `main` is unchanged apart from this note once merged.
+**A public repository, a ChatGPT feed and an inbox** (branch `plan/public-inbox`, session `docs/sessions/2026-10-30-public-inbox/`): research, plan and a senior Codex review are done. **Waiting for Fares's approval of `plan.md`** and two calls in it (his work email on old commits; a co-player's name in the docs). Nothing is built yet; `main` is unchanged apart from this note once merged.
 
 ## Picking this up
 

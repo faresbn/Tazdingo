@@ -46,7 +46,7 @@ Wowhead's Forever hub leads with an icon bar (Classes, Class Changes, Talent Cal
 
 ## ChatGPT and GitHub
 
-- **ChatGPT's GitHub connector is read-only** ✔: "only lets you read from your repositories". It's per person, so Mike would need his own GitHub account.
+- **ChatGPT's GitHub connector is read-only** ✔: "only lets you read from your repositories". It's per person, so each co-player would need their own GitHub account.
 - **ChatGPT Business allows custom MCP servers with write actions** ✔. Only admins and owners create and publish them for the workspace. Web only (not mobile). ChatGPT asks for confirmation on writes depending on the app's permissions. **Not documented: whether they work inside shared projects.**
 - GitHub Models was retired on 30 July 2026. GitHub Pro includes no Copilot; Copilot's coding agent needs Copilot Pro or higher.
 - A push made with the workflow's own token doesn't start other workflows, so a router Action must trigger the publish workflow explicitly.

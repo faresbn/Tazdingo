@@ -4,7 +4,7 @@
 
 ## What FvrRepo is for
 
-You and Mike ask your shared ChatGPT project about WoW Forever. FvrRepo is what that project reads: Auction House prices from your Auctionator scans, plus the guides, builds and discoveries you choose to keep. You write; Mike reads through ChatGPT and the public site, because Mike has no GitHub account. Beta data stays as a small sample; full data starts with the first launch scan.
+You and your co-players ask your shared ChatGPT project about WoW Forever. FvrRepo is what that project reads: Auction House prices from your Auctionator scans, plus the guides, builds and discoveries you choose to keep. You write; a co-player reads through ChatGPT and the public site, because they have no GitHub account. Beta data stays as a small sample; full data starts with the first launch scan.
 
 ## What was wrong, and what changes
 
@@ -66,8 +66,8 @@ You and Mike ask your shared ChatGPT project about WoW Forever. FvrRepo is what 
 
 Each pass goes through every page at phone, tablet and desktop widths in light and dark, as each reader:
 - **Fares after a scan:** can the scan get in with one command, and does the site show it correctly?
-- **Mike via ChatGPT:** can ChatGPT answer "what does Linen Cloth cost?" and "what's our frost mage build?" from `llms-full.txt` alone?
-- **Mike on a phone:** can a price be found in under 10 seconds?
+- **A co-player via ChatGPT:** can ChatGPT answer "what does Linen Cloth cost?" and "what's our frost mage build?" from `llms-full.txt` alone?
+- **A co-player on a phone:** can a price be found in under 10 seconds?
 
 Then fix what's found and go round again. A checkpoint is merged to `main` (and so published) every 25–40 minutes, but only when tests, build and site check pass.
 
