@@ -2,6 +2,16 @@
 
 Each line is something Fares decided, or approved, with the reason and the date. Flag it before proposing to change one. Newest first within each group.
 
+## Site design overhaul (30 October)
+
+Asked for by Fares on 30 October ("I want to very quickly notice there's nothing there I want to skim through") and built while he was away; plan, brief and reviews in `docs/sessions/2026-10-30-design-overhaul/`.
+- **Guide pages are tabbed** (was: one long scroll with an aside). Classes, specs, professions and world pages open on a cheatsheet and our take; the rest sits in tabs (In depth, Hybrid builds, Macros, Abilities, Trainers and recipes, Where to gather, Field findings, Sources). Every section is still in the page and reads in order without JavaScript; any `#anchor` opens its tab. More lists stay single pages.
+- **"At a glance" became "Cheatsheet"** (supersedes the first of the four sections below). It assumes the basics are known and gives the build, priority, stats, key levels and traps, with standard labels per page type (docs/chatgpt/UPDATING.md). "Pick it for" is lifted onto cards in place of the meta summaries. The old heading is still accepted. A changed cheatsheet goes to review, like the recommendation.
+- **Menus carry one link per page**, open under their own word, and leave out summaries. "Sources and credits" lives in the footer only.
+- **Auction House:** the overview is a tabbed board (Deals, Investments, Short supply, Movers, Always listed, Patterns) under a strip of headline figures; market pages are the searchable list with views. Deals are items at least 20% under their usual price (was: 30% and outside the normal spread, which left 2 of 89); exceptional ones keep the old test and come first. "Below vendor price" is flagged only for Rare or better items and recipes worth at least 1 silver a unit.
+- **Professions overview leads with the gold-making pages** (What to craft, Materials, Camping, Waylaid Crates); the professions follow as a compact grid.
+- **Oxblood is used** as the design decision below always said: for the open tab, the menu rule and the cheatsheet's margin line only.
+
 ## A public repository, a feed and an inbox (30 October)
 
 Decided by Fares on 30 October; the plan, research and review are in `docs/sessions/2026-10-30-public-inbox/`.
@@ -51,7 +61,7 @@ Decided by Fares on 30 October; the plan, research and review are in `docs/sessi
 
 - **Summaries, never copies** (26 Oct): every page summarises guides in our own words, cites them, and links them. Diversify: Wowhead, Icy Veins, ForeverDB, WoWSims, Method, Warcraft Tavern and others, not ForeverDB alone.
 - **Pre-launch data is labelled and replaceable** (26 Oct). Pages are Pre-launch by default and become Live only when checked in the live game (27 Oct, after the senior review).
-- **Four sections per page** (27 Oct): At a glance, What the guides say, Field findings, Read more. Findings are dated entries with a confidence (idea, testing, tested, outdated), never deleted, only marked outdated.
+- **Four sections per page** (27 Oct): At a glance (a Cheatsheet since 30 Oct), What the guides say, Field findings, Read more. Findings are dated entries with a confidence (idea, testing, tested, outdated), never deleted, only marked outdated.
 - **Per-spec pages with hover menus** (27 Oct). Specs include hybrid builds; placeholder pages are acceptable but link to the best guides.
 - **Scope of tracking** (26 Oct): prices and volatility, classes and specs, professions, camping, Legacy, Merchant's Favor, rares, zones, dungeons and raids, collections, addons, macros, known issues (including macOS).
 

@@ -99,9 +99,11 @@ what sold.
   last seven days of records, so a troll listing or one-day spike doesn't set it.
 - **Latest:** the most recent cheapest listing.
 - **Usual price** (item pages and alerts): the median of the item's daily lows
-  over its last 14 finished days. An item is flagged unusually low when its latest
-  price is at least 30% under that and far outside its normal spread; the
-  confidence tier says how much history stands behind the flag.
+  over its last 14 finished days. An item is a deal when its latest price is at
+  least 20% under that, and exceptional when it's at least 30% under and far
+  outside its normal spread; the confidence tier says how much history stands
+  behind the flag. "Below vendor price" is flagged only for Rare or better items
+  and recipes, at 1 silver a unit or more.
 - **Steadiness:** how far the daily price swings over two weeks, from the
   cheapest day to the 80th-percentile day, relative to the median (steady below
   25%, moving below 75%, volatile above).
@@ -131,7 +133,7 @@ To preview, serve `dist` under `/Tazdingo/` (see `.claude/launch.json`).
 | `data/foreverdb.json`, `data/items.json` | ForeverDB-derived data and item names |
 | `scripts/auctionator.py` | Reads SavedVariables and Auctionator's data without running Lua |
 | `data/market/` | Scan records and the daily archive per market (`scripts/market_store.py`); `inbox/` takes records committed from ChatGPT |
-| `scripts/market.py`, `scripts/ah_pages.py` | Auction House measures; the dashboard and item pages |
+| `scripts/market.py`, `scripts/ah_pages.py` | Auction House measures; the tabbed board and item pages |
 | `data/foreverdb-api.json` | Slimmed ForeverDB API data (`scripts/foreverdb_api.py`) |
 | `scripts/build.py`, `pages.py`, `sections.py` | Builds the site; page templates |
 | `docs/chatgpt/` | Instructions for the ChatGPT project |
@@ -145,7 +147,7 @@ Item names, recipes, crates, camp items, tooltips and second-opinion prices:
 Data from ForeverDB.net. Scenery comes from Blizzard's Forever reveal press kit;
 character cut-outs from its Classic fan-site kit. Sources, editions, delivery
 changes and file fingerprints are recorded in `data/art.json`; the website
-credits every image under Sources and credits. World of Warcraft belongs to
+credits every image under Sources and credits (linked from every page's footer). World of Warcraft belongs to
 Blizzard Entertainment; this project isn't affiliated
 with or endorsed by Blizzard.
 

@@ -142,6 +142,7 @@ class Content(unittest.TestCase):
                                ({"classes/mage/frost.md":ok+"## Field findings\nx\n## At a glance\nx"},"sections"),
                                ({"classes/mage/frost.md":ok+SECTIONS+"\n## Read more\nagain"},"sections"),
                                ({"classes/mage/frost.md":ok+"## Cheatsheet\n- y\n\n"+SECTIONS},"sections"),  # both names: one section twice
+                               ({"classes/mage/frost.md":ok+SECTIONS+"\n## CHEATSHEET\n- y"},"exactly"),
                                ({"more/addons.md":ok+"## Addons\nx"},"sections"),
                                ({"classes/mage/notes.txt":"x"},"only Markdown")):
             with self.subTest(problem=problem):

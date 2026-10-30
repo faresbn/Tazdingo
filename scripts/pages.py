@@ -218,16 +218,6 @@ def changelog(site: Site, entries: list, title: str = "Changes to this page") ->
     return f'<section class="changes" id="changes"><h2>{esc(title)}</h2><ol class="log">{rows}</ol></section>'
 
 
-def status_line(page: dict | None) -> str:
-    if not page:
-        return ""
-    facts = [badge("prelaunch") if page["status"] == "pre-launch" else badge("live")]
-    if page.get("confidence_label"):
-        facts.append(badge(page["confidence"], page["confidence_label"]))
-    facts.append(f'<span class="updated">Updated {when(page["updated"])}</span>')
-    return f'<p class="status-line">{" ".join(facts)}</p>'
-
-
 def render_sections(page: dict | None, empty: str, skip: tuple = (), only: tuple | None = None, sources: bool = True) -> str:
     """A note's sections, each styled for what it is: the guides' summary reads as an article,
     our findings sit on a ruled ledger sheet, and the sources are a compact list."""
@@ -246,26 +236,9 @@ def render_sections(page: dict | None, empty: str, skip: tuple = (), only: tuple
     return "".join(out)
 
 
-def note_block(page: dict | None, empty: str) -> str:
-    return status_line(page) + render_sections(page, empty)
-
-
 def plain_text(markup: str) -> str:
     """Heading HTML as plain text: tags removed, entities decoded (escape once on output)."""
     return html.unescape(re.sub(r"<[^>]+>", "", markup))
-
-
-def toc(page: dict | None, extra: tuple = ()) -> str:
-    if not page:
-        return ""
-    items = []
-    for sec in page["sections"]:
-        if not sec["heading"]:
-            continue
-        sub = "".join(f'<li><a href="#{esc(anchor)}">{esc(plain_text(label))}</a></li>' for anchor, label in sec["toc"])
-        items.append(f'<li><a href="#{esc(sec["slug"])}">{esc(sec["heading"])}</a>{f"<ol>{sub}</ol>" if sub else ""}</li>')
-    items += [f'<li><a href="#{esc(anchor)}">{esc(label)}</a></li>' for anchor, label in extra]
-    return f'<nav class="toc" aria-label="On this page"><h2 class="aside-title">On this page</h2><ol>{"".join(items)}</ol></nav>' if items else ""
 
 
 def tabs(panels: list[tuple[str, str, str]], count: dict | None = None) -> str:
@@ -329,7 +302,7 @@ def masthead_search(site: Site) -> str:
     """The search box on every page but the homepage, which has its own larger one."""
     return (f'<form class="lookup masthead-search" action="{esc(site.search_action or site.base + "prices/")}" method="get" role="search">'
             '<label for="site-search" class="visually-hidden">Search Tazdingo</label>'
-            '<input id="site-search" name="q" type="search" placeholder="Search items and guides" autocomplete="off" aria-controls="site-search-results">'
+            '<input id="site-search" name="q" type="search" placeholder="Search items, classes…" autocomplete="off" aria-controls="site-search-results">'
             '<span class="visually-hidden" role="status" data-search-status></span>'
             '<ul id="site-search-results" class="lookup-results" hidden></ul></form>')
 

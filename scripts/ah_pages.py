@@ -261,17 +261,17 @@ def board(site: Site, market: dict, ah: dict, events: list | None = None) -> str
 
 def home_block(site: Site, market: dict, ah: dict) -> str:
     """The homepage's Auction House card: deals first, then investments and movers."""
-    def mini(title, href, items, value, limit=5):
+    def mini(title, href, items, value, limit=5, counted=True):
         if not items:
             return ""
         rows = "".join(f'<li>{item_anchor(site, market, i)} <span class="value">{value(i)}</span></li>' for i in items[:limit])
-        more = f' <a class="aside" href="{href}">all {len(items)}</a>' if len(items) > limit else ""
+        more = f' <a class="aside" href="{href}">{f"all {len(items)}" if counted else "more"}</a>' if len(items) > limit else ""
         return f'<h3 class="mini-title">{title}{more}</h3><ul class="mini-list">{rows}</ul>'
     b = site.base
     deals = mini("Under the usual price", f"{b}prices/#deals", ah["deals"],
                  lambda i: money(i["latest"]) + f' <span class="change down">−{pct(i["deal"]["discount"])}</span>')
     invest = mini("Investment picks", f"{b}prices/#invest", ah["invest"], lambda i: f'+{plain_money(i["invest"]["margin"])} a unit', 3)
-    moving = mini("Moved since the last full day", f"{b}prices/#movers", ah["rising"] + ah["falling"], lambda i: change(i["move"]["change"]), 3)
+    moving = mini("Moved since the last full day", f"{b}prices/#movers", ah["rising"] + ah["falling"], lambda i: change(i["move"]["change"]), 3, counted=False)
     return (deals or '<p class="empty">Nothing recorded under its usual price in the newest scan.</p>') + invest + moving + scan_note(market, ah)
 
 

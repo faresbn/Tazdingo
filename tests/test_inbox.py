@@ -172,7 +172,7 @@ class Pages(InboxCase):
         git(Path(self.dir.name), "clone", "-q", str(self.remote), str(other))
         git(other, "config", "user.name", "test")
         git(other, "config", "user.email", "test@example.com")
-        (other / PAGE).write_text((other / PAGE).read_text().replace("## At a glance", "## At a glance\n\nEdited elsewhere.", 1))
+        (other / PAGE).write_text((other / PAGE).read_text().replace("## Cheatsheet", "## Cheatsheet\n\nEdited elsewhere.", 1))
         git(other, "commit", "-qam", "Addons: edited elsewhere")
         git(other, "push", "-q", "origin", "HEAD:main")
         [outcome] = inbox.run(self.root, push=True)

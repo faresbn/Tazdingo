@@ -403,6 +403,11 @@ def check_sections(name: str, key: str, body: str) -> None:
     """Class, spec, profession and world pages carry the four sections, once each, in order.
     More lists may be shaped freely but must keep Field findings and Read more."""
     headings = [SECTION_ALIASES.get(line[3:].strip(), line[3:].strip()) for line in body.splitlines() if line.startswith("## ")]
+    # The page is read by these names whatever their case, so only the exact spelling counts: a second
+    # "## CHEATSHEET" can't sit beside the reviewed one, and each kind of section appears once.
+    for heading in headings:
+        if heading.lower() in SECTION_NAMES and heading not in REQUIRED_SECTIONS:
+            raise ValueError(f"{name}: write the heading '## {heading}' exactly as one of {', '.join('## ' + h for h in REQUIRED_SECTIONS)}")
     required = REQUIRED_SECTIONS if not key.startswith("more/") else REQUIRED_SECTIONS[2:]
     found = [h for h in headings if h in REQUIRED_SECTIONS]
     if [h for h in found if h in required] != required or len(found) != len(set(found)):
