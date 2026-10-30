@@ -1,12 +1,12 @@
 # Updating Tazdingo
 
-Upload this file to the shared ChatGPT project as a source file. It tells the assistant how to keep the site current from what comes up in conversation. PROJECT_INSTRUCTIONS.md (the project's instructions) points here.
+Upload this file to the shared ChatGPT project as a source file. It tells the assistant how to keep the site current from what comes up in conversation. PROJECT_INSTRUCTIONS.md (the project's instructions) points here. **TAZDINGO_INBOX.md** (the other source file) says how to read Tazdingo through its map and how to send updates through the inbox.
 
 ## What the site is
 
-**Tazdingo** (https://faresbn.github.io/Tazdingo/) is an unofficial journal for World of Warcraft: Forever, which launches on 4 November 2026. Its source is the private GitHub repository `faresbn/Tazdingo`. It holds:
+**Tazdingo** (https://faresbn.github.io/Tazdingo/) is an unofficial journal for World of Warcraft: Forever, which launches on 4 November 2026. Its source is the public GitHub repository `faresbn/Tazdingo`. It holds:
 
-- **Prices** from Auctionator scans, imported on the Mac by a script, or from an `Auctionator.lua` uploaded here (see "Add this scan": you make a scan record with the repository's script and commit only that). You never write or edit prices yourself.
+- **Prices** from Auctionator scans, imported on the Mac by a script, or from an `Auctionator.lua` uploaded here and sent through the inbox (see "Add an addon file"). You never write or edit prices yourself.
 - **Pages**: one per class spec, class, profession, world topic and More list. Each summarises what other sites' guides say (**What the guides say**) and records what we've found ourselves (**Field findings**). **These are what you keep up to date.**
 - **Data** from ForeverDB and Blizzard's forums, refreshed by scripts. You never edit it.
 
@@ -16,29 +16,28 @@ The site is public and impersonal: it never names the people behind it and never
 
 When asked to update Tazdingo ("update the Tazdingo guide for Frost Mage", "put that in Tazdingo", "save this"), or when something settled is worth recording (see "When to write"):
 
-1. **Find the page** in "Where things go". If it isn't listed, stop and say so: the site rejects unknown files.
-2. **Read the current file from GitHub**, from the `main` branch of `faresbn/Tazdingo`, at its exact path. Note the file's SHA. Never edit from the published site or `llms-full.txt`: they can lag behind the repository and they drop the header.
+1. **Find the page** in "Where things go", and its path and **version** in the guide map (`feed/guides.md`, linked from the map). If it isn't listed, stop and say so: the site rejects unknown files.
+2. **Read the current file** at its path in the repository (`https://raw.githubusercontent.com/faresbn/Tazdingo/main/<path>`). Never edit from the published site or `llms-full.txt`: they drop the header.
 3. **Edit, keeping everything that's still true:**
    - Add new findings under `## Field findings` as dated entries (format below). Never delete a finding: if it's no longer true, change its confidence to `outdated` and say why.
    - Under `## What the guides say`, keep attributed source summaries distinct from `### Tazdingo recommendation`. The latter is a concise editorial synthesis: a default for a stated job, when an alternative fits better, its costs and what remains uncertain. Cite the evidence and label deductions as recommendations, not source quotations or tests.
    - Correct a superseded mechanic instead of preserving it as an equally valid alternative. Later official changes take precedence over older guide prose; repeating a claim across sites does not make independent evidence.
    - Set `updated:` in the header to today's date.
-4. **Write the whole file back** to the same path on `main`, with the SHA from step 2. If GitHub rejects the write because the file changed in the meantime, read it again, merge your change into the new version and retry. Don't overwrite.
-5. **Commit** with a one-line message (see "Commit messages").
-6. **Report in chat:** what changed, the page's address (for example https://faresbn.github.io/Tazdingo/classes/mage/frost/), and that it goes live when the site's check passes, usually within two minutes. If the check fails, the previous version stays online and the error says what to fix.
+4. **Send the whole file through the inbox** (TAZDINGO_INBOX.md) with the version from step 1 and a one-line change note (see "Change notes"). If the inbox holds it because the page changed in the meantime, read it again, make your change on the new version and send that. Don't overwrite.
+5. **Report in chat:** what changed, the page's address (for example https://faresbn.github.io/Tazdingo/classes/mage/frost/), and that it goes live once its checks pass, usually within two minutes. If it's held, or sent to the owner for approval, say so; the previous version stays online meanwhile.
 
-**The record keeps itself.** After every change, an automatic job saves the page's previous version in `archive/` and logs the change in `archive/LOG.md` (in the private repository, never published). Don't make backups yourself. To see a page's history, read `archive/LOG.md`. To restore an old version, copy its backup back to the page's path and commit, with a message saying so.
+**The record keeps itself.** After every change, an automatic job saves the page's previous version in `archive/` and logs the change in `archive/LOG.md` (in the repository, not on the website). Don't make backups yourself. To see a page's history, read `archive/LOG.md`. To restore an old version, send its backup through the inbox as the page, with a change note saying so.
 
 ## The rules
 
-1. **Write only inside `content/`**, at the places listed below. Never touch `data/`, `scripts/`, `site/`, `.github/`, `archive/`, `docs/` or anything else.
+1. **Change only pages in `content/`**, at the places listed below, through the inbox. Everything else in the repository is built by scripts.
 2. **Never invent anything:** prices, drop rates, talent builds, test results, patch details. Write only what the conversation established, or what a source you can name says.
 3. **Keep kinds of knowledge apart.** Each finding says how it's known: tested in game (with the level and situation), read (with the source) or simulated (with the tool and its version).
-4. **No names, and no mention of ChatGPT,** in any file or commit message. Use a neutral voice ("Frost levels faster with…", not "Fares found…"). The site's check fails a page that names someone, and replaces a commit message that does.
-5. **Cite sources** with links. Summarise in your own words; never copy text from Wowhead, Icy Veins, ForeverDB or any other site.
+4. **No names, and no mention of ChatGPT,** in any file or commit message. Use a neutral voice ("Frost levels faster with…", not "Fares found…"). The inbox holds a page or change note that names someone.
+5. **Cite sources** with links, written in full (`https://…`). Summarise in your own words; never copy text from Wowhead, Icy Veins, ForeverDB or any other site. A cost in gold, silver or copper names or links its source. The inbox checks this, and the other rules TAZDINGO_INBOX.md lists.
 6. **Match the comparison.** State level, Legacy allowance, role, gear, buffs, target and fight length where they change the conclusion. Client data, Beta reports and simulations are separate evidence. A source update is not an in-game verification; do not set `verified` or Live on that basis.
 7. **Be precise about spending.** Asking prices and listing counts do not prove sales, demand or profit. Compare complete input bundles, binding, access and opportunity costs; yellow skill-ups are uncertain. Crate fill cost excludes the empty crate and is not cost per Favor. Camp buffs are shared and do not by themselves establish an exclusive profession advantage.
-8. **One topic per commit.**
+8. **One topic per change.**
 
 ## Where things go
 
@@ -135,9 +134,9 @@ Read on Wowhead's Frost guide; not tested yet.
 
 **Markdown that works:** headings, paragraphs, bullet and numbered lists (indent two spaces to nest), tables, `> quotes`, code blocks (for macros), **bold**, *italics* and links. Link items and spells to ForeverDB (`https://foreverdb.net/item/<id>`, `https://foreverdb.net/spell/<id>`) and the site shows their tooltip and icon. Link to another ledger page with `ledger:` and its address, for example `[hybrid builds](ledger:classes/druid/#hybrid)` or `[Frost Mage](ledger:classes/mage/frost/)`; the site's check fails a link to a page or section that doesn't exist. Raw HTML is shown as text, not run.
 
-## Commit messages
+## Change notes
 
-The message is a public log line on the site, so write it for a reader:
+The change note becomes the commit message, a public log line on the site, so write it for a reader:
 
 - **Format:** `<Page>: <what changed>`, plain English, no full stop.
 - **Good:** `Frost Mage: Blizzard-kiting from 22, tested` · `Known issues: macOS freeze fixed in the 6 November patch` · `Addons: WeakAuras still has no Forever version`
@@ -150,28 +149,30 @@ You decide when an update is worth making:
 - **Write** when something is *settled*: tested in play, confirmed by a reliable source, or decided in conversation as how we'll do it, and the page doesn't already say it.
 - **Write** when asked ("update the Tazdingo guide", "save this", "put that in Tazdingo").
 - **Suggest, don't write,** when it's speculation, a single report or a passing remark. Offer to record it once it firms up, or record it as an `idea` finding if asked.
-- **Batch** related small facts into one commit per page; don't commit after every message.
+- **Batch** related small facts into one change per page; don't send after every message.
 - **Review** known issues and addons when a patch lands or about weekly: mark fixed issues fixed, with the date.
 - **After launch,** when a pre-launch page's advice is confirmed in game, set `status: live` and `verified:` to the date, and note what was checked under Field findings.
 
-## "Add this scan" (an uploaded Auctionator.lua)
+## "Add an addon file" (an uploaded Auctionator.lua, AllTheThings.lua, …)
 
-When an `Auctionator.lua` is uploaded with "add this scan" (or similar), turn it into a scan record and commit only that record. The uploaded file itself holds settings, posting history and searches: **never commit it, quote it or summarise its non-price contents.**
+When an addon's saved-variables file is uploaded with "add this scan", "add this file" or similar, send it through the inbox as it is (TAZDINGO_INBOX.md, "An addon's file"). Never quote or summarise its non-game contents.
+- **Auctionator.lua:** becomes the latest Auction House prices. If the inbox asks for the market, give the realm and faction.
+- **Any other addon's file:** kept as uploaded until a processor is written for it.
 
-1. **Get the three scripts** from the `main` branch of `faresbn/Tazdingo`: `scripts/auctionator.py`, `scripts/market_store.py` and `scripts/scan_record.py`. Save all three in one folder in your sandbox, next to the uploaded file.
-2. **Find the market:** run `python3 scan_record.py Auctionator.lua --list`. The market to use is the one in `data/captures.json` under `default_markets` → `forever`; if there's none yet, ask which realm and faction to publish.
-3. **Make the record:** `python3 scan_record.py Auctionator.lua --market "<market>" --environment forever`. It prints the file it wrote, its item count and its scan time. If it says it can't read the file, report that and stop.
-4. **Commit only that JSON file** to `data/market/inbox/<the same file name>` on `main`, with the message `Auction House scan of <scan time>`.
-5. **Report:** the scan time and item count, and that it goes live in a few minutes once GitHub's "File Auction House scans from the inbox" run finishes. If that run fails, the record stays in the inbox and nothing on the site changes.
+More Auctionator uploads make the site sharper. Three or four a day keep alerts current. Uploads that include a **full scan** (Auctionator's full-scan button) at different times of day build its time-of-day patterns. The site keeps the last 30 uploads or 30 days and folds older ones into a daily history.
 
-More uploads make the site sharper: three or four a day keep alerts current, and uploads that include a **full scan** (Auctionator's full-scan button) at different times of day build its time-of-day patterns. The site keeps the last 30 uploads or 30 days and folds older ones into a daily history.
+## If you can't send it yourself
 
-## If you can't write to GitHub
+If you can't fill in the inbox form, give the user everything it needs:
+- the page's path and version, and the one-line change note;
+- the complete new file in one Markdown code block;
+- the form's address: https://faresbn.github.io/Tazdingo/inbox/
 
-If the GitHub connector can't commit, produce the complete new file in one Markdown code block, with its path above it, and say which page it replaces. It can then be pasted into GitHub's web editor (Edit file, paste, Commit changes). Everything else (the checks, the archive, publishing) works the same.
+They paste it in and send it. Everything else (the checks, the archive, publishing) works the same.
 
 ## Reading the site
 
+- **Start at the map:** https://raw.githubusercontent.com/faresbn/Tazdingo/main/feed/index.md. It sends you to the one price, crafting or guide file a question needs.
 - Everything in one plain-text file: https://faresbn.github.io/Tazdingo/llms-full.txt (for reading, not editing)
 - Prices: each market's `prices.tsv` (typical price, latest, steadiness, last seen, units listed, weekly change), and `prices.json` (adds each item's usual price, alerts and category)
 - The Auction House overview, with what was recorded unusually low, the investment watch, movers and patterns: https://faresbn.github.io/Tazdingo/prices/ ; every item has its own page linked from there
