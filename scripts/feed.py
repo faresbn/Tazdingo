@@ -151,7 +151,7 @@ def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list
             f"# {market['name']}: map", "", *market_header(market), "",
             "Open only the file for the item's category. Each lists every item recorded in it with its latest, typical and usual price.", "",
             f"Paths are in the repository: {RAW}<path>", "",
-            f"- {link(folder + 'alerts.md')}: recorded unusually low, below vendor price, investment watch, short supply and movers.",
+            f"- {link(folder + 'alerts.md')}: deals under the usual price, below vendor price, investment watch, short supply and movers.",
             *[f"- {link(f'{folder}{name}.md')}: {title}, {len(members)} items." for name, (title, members) in cats.items()],
             "", f"For people, the same market on the website: {SITE}prices/{market['slug']}/", "", CREDIT]) + "\n"
         ah = market.get("ah") or {}

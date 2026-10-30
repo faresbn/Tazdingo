@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 
 import market as m
 from auctionator import DAY_ZERO, day_date
-from pages import (FOREVERDB, Site, badge, change, esc, layout, money, nice_date, page_head, plain_money, steadiness, tabs)
+from pages import (FOREVERDB, Site, badge, change, esc, layout, money, nice_date, page_head, plain_money, steadiness, tabs, alias)
 
 DAY_ZERO_EPOCH = datetime(DAY_ZERO.year, DAY_ZERO.month, DAY_ZERO.day, tzinfo=timezone.utc).timestamp()
 CHART_DAYS = 30
@@ -84,11 +84,11 @@ def deals_block(site: Site, market: dict, ah: dict, limit: int | None = None) ->
             f'<td class="num">{money(i["deal"]["saving"])}</td><td>{confidence(i["deal"]["confidence"])}</td><td class="date">{scan_time(i["latest_time"])}</td></tr>'
             for n, i in enumerate(deals)]
     body = (table(["Item", "#Price", "#Usual", "#Under usual", "#Saving a unit", "Confidence", "Recorded"], rows, show_more=len(rows) > DEALS_SHOWN) if rows
-            else '<p class="empty">Nothing was recorded under its usual price in the newest scan.</p>')
+            else f'<p class="empty">No item in the newest scan was recorded at least {round(m.DEAL_DISCOUNT * 100)}% under its usual price with enough history to trust.</p>')
     if ah["deals_hidden"]:
         body += (f'<p class="aside">{ah["deals_hidden"]} more recorded far under usual but with too little history to trust, '
                  'or so far under (90%+) that it\'s probably one mispriced unit.</p>')
-    vendor_only = [i for i in ah["vendor"] if not (i["deal"] or {}).get("saving")]
+    vendor_only = [i for i in ah["vendor"] if i not in deals]  # rare items the deals table doesn't already show
     if vendor_only:
         rows = [f'<tr><th scope="row">{item_anchor(site, market, i)}</th><td class="num">{money(i["latest"])}</td>'
                 f'<td class="num">{money(i["vendor_sell"])}</td><td class="num">{money(i["deal"]["vendor_profit"])}</td><td class="date">{scan_time(i["latest_time"])}</td></tr>'
@@ -144,7 +144,7 @@ def index_chart(ah: dict, events: list[dict]) -> str:
 
 
 def invest_block(site: Site, market: dict, ah: dict, limit: int = 60) -> str:
-    rows = [f'<tr><th scope="row">{item_anchor(site, market, i)}</th><td class="num">{money(i["latest"])}</td>'
+    rows = [f'<tr{" class=extra" if n >= DEALS_SHOWN else ""}><th scope="row">{item_anchor(site, market, i)}</th><td class="num">{money(i["latest"])}</td>'
             f'<td class="num">{money(i["ref"])}</td><td class="num">{money(i["invest"]["margin"])}</td>'
             f'<td class="num">{pct(i["invest"]["roi"])}</td><td>{steadiness(i["volatility"])}</td>'
             f'<td class="num">{pct(i["presence"])}</td></tr>' for n, i in enumerate(ah["invest"][:limit])]
@@ -252,10 +252,10 @@ def board(site: Site, market: dict, ah: dict, events: list | None = None) -> str
     """The Auction House board: one tab per question a buyer or seller asks."""
     events = events or []
     exceptional = sum(1 for i in ah["deals"] if i["deal"]["exceptional"])
-    panels = [("deals", "Deals", deals_block(site, market, ah)), ("invest", "Investments", invest_block(site, market, ah)),
+    panels = [("deals", "Deals", alias("vendor") + deals_block(site, market, ah)), ("invest", "Investments", invest_block(site, market, ah)),
               ("short", "Short supply", short_block(site, market, ah)), ("movers", "Movers", movers_block(site, market, ah)),
               ("reliable", "Always listed", reliable_block(site, market, ah)),
-              ("patterns", "Patterns", index_chart(ah, events) + patterns_block(ah))]
+              ("patterns", "Patterns", alias("index") + index_chart(ah, events) + patterns_block(ah))]
     return figures(market, ah) + tabs(panels, {"deals": len(ah["deals"]) or None, "invest": len(ah["invest"]) or None})
 
 
@@ -272,7 +272,7 @@ def home_block(site: Site, market: dict, ah: dict) -> str:
                  lambda i: money(i["latest"]) + f' <span class="change down">−{pct(i["deal"]["discount"])}</span>')
     invest = mini("Investment picks", f"{b}prices/#invest", ah["invest"], lambda i: f'+{plain_money(i["invest"]["margin"])} a unit', 3)
     moving = mini("Moved since the last full day", f"{b}prices/#movers", ah["rising"] + ah["falling"], lambda i: change(i["move"]["change"]), 3, counted=False)
-    return (deals or '<p class="empty">Nothing recorded under its usual price in the newest scan.</p>') + invest + moving + scan_note(market, ah)
+    return (deals or f'<p class="empty">No deals at least {round(m.DEAL_DISCOUNT * 100)}% under the usual price in the newest scan.</p>') + invest + moving + scan_note(market, ah)
 
 
 # --- Item pages ----------------------------------------------------------------------------

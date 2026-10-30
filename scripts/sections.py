@@ -7,7 +7,7 @@ import re
 from datetime import datetime, timezone
 
 from pages import (FOREVERDB, ROLES, Site, artwork, badge, banner, changelog, emblem, esc, ext, item_link, layout, object_icon,
-                   gold_cards, links, money, news_widget, nice_date, page_head, plain_text, render_sections, source_tag, tabs, when)
+                   alias, gold_cards, links, money, news_widget, nice_date, page_head, plain_text, render_sections, source_tag, tabs, when)
 
 WOWHEAD = "https://www.wowhead.com/forever"
 
@@ -79,7 +79,9 @@ def cheat_rows(page: dict | None) -> list[tuple[str, str]]:
 
 
 def cheatsheet(page: dict | None, empty: str = "") -> str:
-    rows = cheat_rows(page)
+    """The cheatsheet as a ledger grid when it's one list, as written; anything else is shown as written."""
+    glance = section(page, "glance")
+    rows = cheat_rows(page) if glance and re.fullmatch(r"\s*<ul>.*</ul>\s*", glance["html"], re.S) and glance["html"].count("<ul>") == 1 else []
     if not rows:
         glance = section(page, "glance")
         return f'<div class="prose">{glance["html"]}</div>' if glance else (f'<p class="empty">{esc(empty)}</p>' if empty else "")
@@ -105,6 +107,11 @@ def sources_tab(site: Site, page: dict | None, tools: list, log: list, note: str
             + (f'<h3 class="part-title">Guides and tools</h3>{tools_list(tools)}' if tools else "")
             + (f'<p class="sources">Sources: {esc(page["sources"])}</p>' if page and page.get("sources") else "")
             + note + findings_note + changelog(site, log))
+
+
+def old_findings(page: dict | None) -> tuple:
+    """With no findings tab, an old #findings link opens Sources, which says none are recorded yet."""
+    return () if findings(page) else ("findings",)
 
 
 def finding_count(page: dict | None) -> int:
@@ -199,13 +206,13 @@ def class_page(site: Site, ctx: dict, c: dict) -> str:
     macros = content.get(f"classes/{c['slug']}/macros")
     first = (f'<ul class="spec-cards">{"".join(spec_cards)}</ul>'
              + cheatsheet(overview, f"No overview of the {c['name']} yet.") + take(overview))
-    panels = [("overview", "Overview", first), ("in-depth", "In depth", in_depth(overview)),
-              ("hybrid", "Hybrid builds", note_tab(site, hybrid, "No hybrid builds recorded yet.")),
-              ("macros", "Macros", note_tab(site, macros, "No macros recorded yet.")
+    panels = [("overview", "Overview", alias("glance", "specs") + first), ("in-depth", "In depth", alias("guides") + in_depth(overview)),
+              ("hybrid", "Hybrid builds", alias("hybrid-glance", "hybrid-guides", "hybrid-findings", "hybrid-more") + note_tab(site, hybrid, "No hybrid builds recorded yet.")),
+              ("macros", "Macros", alias("macros-glance", "macros-guides", "macros-findings", "macros-more") + note_tab(site, macros, "No macros recorded yet.")
                + f'<p class="more-link"><a href="{b}more/macros/">How macros work in Forever, and more collections</a></p>'),
               ("abilities", "Abilities", class_api(ctx, c["name"])),
               ("findings", "Field findings", findings(overview)),
-              ("sources", "Sources", sources_tab(site, overview, class_tools(c), entries_for(ctx, f"content/classes/{c['slug']}/")))]
+              ("sources", "Sources", alias("more", *old_findings(overview)) + sources_tab(site, overview, class_tools(c), entries_for(ctx, f"content/classes/{c['slug']}/")))]
     art = f'<div class="head-art" aria-hidden="true">{artwork(site, c["slug"], "character-art")}</div>' if site.art.get(c["slug"]) else ""
     return layout(site, c["name"], page_head(c["name"], "", (("Classes", f"{b}classes/"),), head_facts(overview) + spec_switch(site, c),
                                               mark=emblem(site, "class", c["slug"], 64, c["colour"]), colour=c["colour"], art=art)
@@ -217,9 +224,9 @@ def spec_page(site: Site, ctx: dict, c: dict, spec: dict) -> str:
     b = site.base
     page = ctx["content"].get(f"classes/{c['slug']}/{spec['slug']}")
     empty = (f"No summary of the {spec['name']} {c['name']} guides yet. The guides and tools under Sources are the best place to start.")
-    panels = [("cheatsheet", "Cheatsheet", cheatsheet(page, empty) + take(page)), ("in-depth", "In depth", in_depth(page)),
+    panels = [("cheatsheet", "Cheatsheet", alias("glance") + cheatsheet(page, empty) + take(page)), ("in-depth", "In depth", alias("guides") + in_depth(page)),
               ("findings", "Field findings", findings(page)),
-              ("sources", "Sources", sources_tab(site, page, spec_tools(c, spec), entries_for(ctx, f"content/classes/{c['slug']}/{spec['slug']}.md")))]
+              ("sources", "Sources", alias("more", *old_findings(page)) + sources_tab(site, page, spec_tools(c, spec), entries_for(ctx, f"content/classes/{c['slug']}/{spec['slug']}.md")))]
     return layout(site, f"{spec['name']} {c['name']}",
                   page_head(f"{spec['name']} {c['name']}", "", (("Classes", f"{b}classes/"), (c["name"], f"{b}classes/{c['slug']}/")),
                             head_facts(page, roles(spec)) + spec_switch(site, c, spec["slug"]),
@@ -382,11 +389,12 @@ def profession_page(site: Site, ctx: dict, p: dict) -> str:
     tools += [("Icy Veins: professions overview", "https://www.icy-veins.com/wow-forever/professions-overview", ""),
               ("ForeverDB: best profession pairs", f"{FOREVERDB}/professions/best", "")]
     count = (f'{total:,} recipes, {new:,} new in Forever (ForeverDB, game build {esc(ctx["fdb_source"].get("client_build"))})' if total > 5 else "")
-    panels = [("cheatsheet", "Cheatsheet", first), ("in-depth", "In depth", in_depth(page)),
-              ("trainers", "Trainers and recipes", learn), ("zones", "Where to gather", zones),
+    panels = [("cheatsheet", "Cheatsheet", alias("glance", "from-the-data") + first), ("in-depth", "In depth", alias("guides") + in_depth(page)),
+              ("trainers", "Trainers and recipes", alias("where-to-learn") + learn if learn else ""),
+              ("zones", "Where to gather", alias("best-zones") + zones if zones else ""),
               ("disenchanting", "Disenchanting", disenchant_api(ctx) if p["slug"] == "enchanting" else ""),
               ("findings", "Field findings", findings(page)),
-              ("sources", "Sources", sources_tab(site, page, tools, entries_for(ctx, f"content/professions/{p['slug']}.md")))]
+              ("sources", "Sources", alias("more", *old_findings(page)) + sources_tab(site, page, tools, entries_for(ctx, f"content/professions/{p['slug']}.md")))]
     return layout(site, p["name"], page_head(p["name"], "", (("Professions", f"{b}professions/"),),
                                               head_facts(page, badge("role", p["kind"])) + (f'<p class="aside head-count">{count}</p>' if count else ""),
                                               mark=emblem(site, "prof", p["slug"], 64))
@@ -440,9 +448,10 @@ def world_page(site: Site, ctx: dict, t: dict) -> str:
     data = world_data(site, ctx, t["slug"])
     pairs = [(label, url if url.startswith("http") else f"{b}world/{t['slug']}/{url}", "") for label, url in t["links"]]
     art = (f'<div class="head-art camp" aria-hidden="true">{artwork(site, "camping", "camp-art")}</div>' if t["slug"] == "camping" and site.art.get("camping") else "")
-    panels = [("overview", "Overview", cheatsheet(page, f"No notes on {t['name'].lower()} yet.") + take(page)),
-              ("in-depth", "In depth", in_depth(page)), ("data", "Game data", data), ("findings", "Field findings", findings(page)),
-              ("sources", "Sources", sources_tab(site, page, pairs, entries_for(ctx, f"content/world/{t['slug']}.md")))]
+    panels = [("overview", "Overview", alias("glance") + cheatsheet(page, f"No notes on {t['name'].lower()} yet.") + take(page)),
+              ("in-depth", "In depth", alias("guides") + in_depth(page)), ("data", "Game data", alias("from-the-data") + data if data else ""),
+              ("findings", "Field findings", findings(page)),
+              ("sources", "Sources", alias("more", *old_findings(page)) + sources_tab(site, page, pairs, entries_for(ctx, f"content/world/{t['slug']}.md")))]
     return layout(site, t["name"], page_head(t["name"], esc(page["summary"] if page else t["summary"]), (("World", f"{b}world/"),), head_facts(page),
                                               mark=object_icon(WORLD_ICONS.get(t["slug"], "inv_misc_bag_10"), 64), art=art)
                   + f'<section class="page-body">{tabs(panels, {"findings": finding_count(page)})}</section>',

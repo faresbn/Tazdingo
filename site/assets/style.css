@@ -532,7 +532,7 @@ tr.detail td { padding: 0.8rem 0 1.2rem; cursor: default; }
 @media print {
   .masthead, .colophon, .tab-bar, .switcher, .show-more { display: none !important; }
   .tab-panel[hidden] { display: block !important; }
-  .tabbed .tab-title { position: static !important; width: auto; height: auto; clip: auto; }
+  .tabbed:not(.expanded) .tab-title, .tabbed .tab-title { position: static !important; width: auto; height: auto; overflow: visible; clip: auto; white-space: normal; }
   .folded tr.extra { display: table-row; }
   main { box-shadow: none; border: 0; }
 }

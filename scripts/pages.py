@@ -241,6 +241,11 @@ def plain_text(markup: str) -> str:
     return html.unescape(re.sub(r"<[^>]+>", "", markup))
 
 
+def alias(*anchors: str) -> str:
+    """Anchors the page used before it was tabbed, kept so old links still open the right tab."""
+    return "".join(f'<span id="{esc(a)}" class="anchor"></span>' for a in anchors)
+
+
 def tabs(panels: list[tuple[str, str, str]], count: dict | None = None) -> str:
     """(anchor, label, html) panels under a bar of jump links. app.js turns them into tabs and opens
     the one holding the address's #anchor; without it the panels read in order."""

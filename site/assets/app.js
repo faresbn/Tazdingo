@@ -487,7 +487,7 @@ function tabs(root) {
     const index = target ? panels.findIndex(panel => panel === target || panel.contains(target)) : -1;
     if (index < 0) return false;
     show(index);
-    if (scroll) (target === panels[index] ? root : target).scrollIntoView();
+    if (scroll) (target === panels[index] && !expanded ? root : target).scrollIntoView();
     return true;
   }
   root.classList.add("tabbed");
@@ -495,10 +495,10 @@ function tabs(root) {
   if (!fromHash(true)) show(0);
   links.forEach((link, i) => link.addEventListener("click", event => {
     event.preventDefault();
-    if (expanded) { panels[i].scrollIntoView(); return; }
     show(i);
-    try { history.pushState(null, "", i === 0 ? location.pathname + location.search : link.hash); } catch { /* file:// previews */ }
-    if (root.getBoundingClientRect().top < 0) root.scrollIntoView();
+    try { history.pushState(null, "", i === 0 && !expanded ? location.pathname + location.search : link.hash); } catch { /* file:// previews */ }
+    if (expanded) panels[i].scrollIntoView();
+    else if (root.getBoundingClientRect().top < 0) root.scrollIntoView();
   }));
   bar.addEventListener("keydown", event => {
     const keys = { ArrowRight: current + 1, ArrowLeft: current - 1, Home: 0, End: links.length - 1 };
