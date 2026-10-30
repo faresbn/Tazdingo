@@ -22,6 +22,7 @@ SITE = "https://faresbn.github.io/Tazdingo/"
 SPLIT_AT = 150  # a category with more items than this is split by subcategory, to keep each file small
 ALERT_ROWS = 30  # each alert list keeps its strongest rows; the full lists are on the website
 CREDIT = "Item names, categories, vendor prices and recipes: Data from ForeverDB.net."
+PROCESSED = {"auctionator": "processed into the prices above"}  # addons with a processor (scripts/inbox.py)
 SECTIONS = (("classes/", "Classes and specs"), ("professions/", "Professions"), ("world/", "World topics"), ("more/", "More"))
 
 
@@ -189,6 +190,13 @@ def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list
         f"Every guide page, with its version. Paths are in the repository: {RAW}<path>", "",
         "Pre-launch means the page's advice isn't checked in the live game yet. To edit a page, read it at its path, "
         "then submit the whole file through the inbox with the version shown here.", *page_lines, ""]) + "\n"
+    addon_lines = []
+    for environment in sorted(p for p in (root / "data/captures").iterdir() if p.is_dir()) if (root / "data/captures").is_dir() else []:
+        for addon in sorted(p for p in environment.iterdir() if p.is_dir()):
+            kept = sorted(addon.glob("*.lua"))
+            if kept:
+                addon_lines.append(f"- `{kept[-1].relative_to(root).as_posix()}`: the latest of {len(kept)} {addon.name} file(s) "
+                                   f"({environment.name}), {PROCESSED.get(addon.name, 'stored, not processed yet')}.")
     files["feed/index.md"] = "\n".join([
         "# Tazdingo feed: start here", "",
         "This is a map. It holds no prices or guide text; it tells you which file to open. Open only the files the question needs.", "",
@@ -196,7 +204,8 @@ def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list
         "## Where to go", "",
         *market_lines,
         f"- {link('feed/craft/index.md')}: what to craft, by profession, with estimated margins.",
-        f"- {link('feed/guides.md')}: every class, spec, profession, world and More page, with its path and version.", "",
+        f"- {link('feed/guides.md')}: every class, spec, profession, world and More page, with its path and version.",
+        *(["", "Original addon files, as uploaded (large; open only when asked about that addon):", *addon_lines] if addon_lines else []), "",
         "## How to answer", "",
         "- **Prices:** open the market's map, then only the category file the item belongs to, or `alerts.md` for bargains, "
         "investments and movers. Quote the latest, typical or usual price with its scan time and steadiness. They're asking prices, "

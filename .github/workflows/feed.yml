@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: repository-writers
+  group: feed
   cancel-in-progress: false
 
 jobs:
