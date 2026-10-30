@@ -39,3 +39,42 @@ It also confirmed that pushes made with a personal token do trigger workflows, a
 
 - **"For you and any co-player"** is the wording for who holds keys, replacing named people throughout.
 - **Receiver: fewest services wins.** Fares questioned the Worker and asked about Vercel and Google Apps Script, noting that more third-party services make a simple system harder to track. The plan now recommends a second ChatGPT Site: Sites already runs the news relay, so it adds no service. A Worker, Apps Script or a move to Vercel would each add or swap one. The Worker stays as the fallback if Sites gets in the way. My earlier Worker recommendation weighted my ability to deploy and test above system simplicity; Fares's principle reverses that.
+
+## Build notes (30 October 2026)
+
+Fares approved the plan ("Approve, build"). Phases 1–8 were built, each checked and merged to `main` in turn. Where the build departed from the plan, and why:
+- **The feed is written by every build** (`build.py` calls `scripts/feed.py`), not by a separate run. Anything that builds (the Mac import, the inbox, Codex) refreshes it in the same commit; `feed.yml` catches pushes that didn't build.
+- **The map has two levels.** `feed/index.md` came out at 16 KB with every guide page in it, so the pages moved to `feed/guides.md` and crafting to `feed/craft/`. The start file is now about 1.5 KB.
+- **Workflows keep separate concurrency groups,** not one shared group. GitHub cancels pending runs in a shared group, which could silently drop a feed refresh. Each workflow already handles push conflicts by starting again from the new `main`.
+- **The "links must answer" check was dropped.** Large sites (Wowhead, Icy Veins) refuse automated requests, so it would hold good edits. A link to a site no page has cited before goes to review instead.
+- **"No money amounts" became "a cost needs its source".** Pages rightly cite trainer and mount costs (e.g. riding at 100 gold, with Method named). A cost with a link or a named source passes; one without is held.
+- **Non-Auctionator Lua gets a structural check, not a full parse.** The existing reader only accepts upper-case global names (AllTheThings uses mixed case) and walks the file in ways too slow for large ones. Files are stored, never run, so the check confirms the file looks like saved variables and that a known addon's tables match its name.
+- **The repository setting "Allow GitHub Actions to create and approve pull requests" was switched on** (needed for review pull requests). It was listed in the approved plan.
+- **Automated security review, four rounds, all applied:**
+  - any unexpected error holds only that submission;
+  - links are read with the renderer's own patterns, and protocol-relative links are refused;
+  - repeated headings are refused, so one copy can't hide a change;
+  - link addresses must be plain (no backslashes, `@` or unusual characters, which browsers and Python read as different hosts);
+  - the Site refuses a key in any field, not only in the file.
+- **End-to-end on GitHub:** a deliberately stale test page was held with its reason, pushed and failed the run as designed (run 41026422969). The publish workflow didn't start for the submission (`paths-ignore`). The test folder was then removed.
+
+## End-of-build review: inbox code, GPT-6 Astra (30 October 2026)
+
+**What it changed:** the security boundary held. The reviewer found no way to write to GitHub without a valid key, and no request-controlled write outside `inbox/<id>/`. It found nine weaknesses in validation, limits and recovery, all real when checked against the code. Eight are fixed; the remaining risk of the ninth is noted below.
+1. **Links are read from the rendered page** (`markup.render`'s anchors), not by imitating its patterns. A second link in a table cell is now seen; a link inside code no longer counts as a citation.
+2. **Headings are read as the renderer reads them** (`###<tab>Title` is a heading). Text under Field findings that isn't under a finding heading is held.
+3. **The Site refuses a body without a declared size,** before reading it. Refusal logging is bounded: kept 30 days, at most 200 an hour.
+4. **The hourly limit reserves a place before writing,** so a burst can't pass it together, and a failed write still uses its place. The queue check stays approximate; acceptable for a handful of trusted key holders.
+5. **When the inbox starts again after a push conflict, review pull requests it opened are closed** (with a comment) before the redo decides afresh. Not covered by a test, since it needs `gh`.
+6. **A submission that reached GitHub is always reported as received,** even if the Site's log write fails. *Remaining risk:* a lost reply to the final ref update could still report "not sent" for a submission that landed. A retry would then create a duplicate, which the inbox's version check holds.
+7. **A push whose acknowledgement was lost** is detected (the commit is already on `main`), so outcomes, publishing and the held-run failure aren't skipped.
+8. **The inbox refuses to run on a checkout with uncommitted changes,** so a local run can't reset away someone's work.
+9. **JSON uploads allow for base64's overhead** up to the decoded 25 MB limit.
+
+- **Why opened:** the end of a major phase, with a security boundary (a token on a public repository) and automatic publication; a senior-tier case.
+- **Model, effort, billing:** `gpt-6-astra`, high effort, web search disabled, ChatGPT plan. Session `01a18beb-83e0-79c1-8bd7-c97bd2bfafe0`, one exchange.
+- **Steps:** 14 items, reading targeted parts of `build.py`, `feed.py`, the renderer, the tests, the plan, `originals.py`, `ingest.py` and `check_site.py`; four in-memory probes confirmed findings 1–2. "Context I needed but didn't have: none."
+- **Usage:** 345,571 input tokens (296,448 cached), 10,194 output (7,037 reasoning), on the ChatGPT plan.
+- **Also this round:**
+  - Semgrep flagged the SHA-1 used for page versions. Versions must be git's own blob IDs, so `feed.py` now asks git (`git hash-object`) instead of hashing in Python.
+  - The packet took the reviewer rules by line range this time (the first packet's lesson); the block arrived whole.

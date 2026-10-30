@@ -182,6 +182,29 @@ class Pages(InboxCase):
         self.assertEqual(git(self.root, "rev-parse", "HEAD"), git(self.remote, "rev-parse", "main"))
 
 
+class Safety(InboxCase):
+    def test_refuses_to_run_over_uncommitted_work(self):
+        (self.root / PAGE).write_text("work in progress")
+        with self.assertRaises(SystemExit):
+            inbox.run(self.root)
+        self.assertEqual((self.root / PAGE).read_text(), "work in progress")
+
+    def test_a_push_whose_acknowledgement_was_lost_still_reports_its_outcomes(self):
+        self.submit_page(self.edited_page(), version="0123456789ab")
+        real = subprocess.run
+        def flaky(args, *a, **k):
+            if args[:3] == ["git", "push", "-q"]:
+                real(args, *a, **k)  # the push lands...
+                return subprocess.CompletedProcess(args, 1)  # ...but reports failure
+            return real(args, *a, **k)
+        inbox.subprocess.run = flaky
+        try:
+            [outcome] = inbox.run(self.root, push=True)
+        finally:
+            inbox.subprocess.run = real
+        self.assertEqual(outcome["outcome"], "held")
+
+
 class AddonFiles(InboxCase):
     def test_unknown_addon_is_stored(self):
         self.submit("lua", "AllTheThings.lua", b"AllTheThingsAD = {\n\t[\"Version\"] = 1,\n}\n")
@@ -257,6 +280,19 @@ class Provenance(unittest.TestCase):
         for trick in ("https://evil.org\\@wowhead.com/x", "https://user@evil.org/x", "https://wowhead.com.evil.org@x.org/"):
             problems, _ = self.check(self.page(), self.page(f"### Talents\n\nSee [this]({trick})."))
             self.assertTrue(any("plainly" in p for p in problems), trick)
+
+    def test_links_and_headings_are_read_as_the_page_renders(self):
+        _, review = self.check(self.page(), self.page("### Gear\n\n| a | b |\n|---|---|\n| https://wowhead.com/x|https://unreviewed.example/x |"))
+        self.assertIn("a link to unreviewed.example, a site no page has cited before", review)
+        problems, _ = self.check(self.page(), self.page("### Talents\n\nSee `[Wowhead](https://www.wowhead.com/x)`."))
+        self.assertTrue(any("without linking" in p for p in problems), "a link inside code isn't a citation")
+        problems, _ = self.check(self.page(), self.page(findings="###\tAn unsupported finding\n\nIt's true."))
+        self.assertTrue(any("confidence and date" in p for p in problems))
+        problems, _ = self.check(self.page(), self.page(findings="Frost is best."))
+        self.assertTrue(any("must sit under a finding's heading" in p for p in problems))
+        _, review = self.check(self.page("### Talents\n\nx ([Wowhead](https://www.wowhead.com/x))"),
+                               self.page("### Talents\n\nx ([Wowhead](https://www.wowhead.com/x))\n\n###\tTazdingo recommendation\n\nGo Fire."))
+        self.assertIn("the Tazdingo recommendation changed", review)
 
     def test_unknown_items_and_messages(self):
         problems, _ = self.check(self.page(), self.page("### Gear\n\n[Linen](https://foreverdb.net/item/999999) ([Wowhead](https://www.wowhead.com/x))."))

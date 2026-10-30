@@ -49,8 +49,9 @@ const text = (value, limit) => {
 
 // The submission's fields and its one file, from a form or JSON; throws Refused.
 export async function readSubmission(request) {
-  const length = Number(request.headers.get('content-length') || 0);
-  if (length > MAX_BYTES + 1_000_000) throw new Refused('Too large: the limit is 25 MB.', 413);
+  const length = Number(request.headers.get('content-length'));
+  if (!request.headers.get('content-length') || !Number.isFinite(length)) throw new Refused('Send the form as it is (its size must be declared).', 411);
+  if (length > MAX_BYTES * 1.4 + 1_000_000) throw new Refused('Too large: the limit is 25 MB.', 413);  // room for base64 in JSON
   const type = request.headers.get('content-type') || '';
   let fields, file;
   if (type.startsWith('application/json')) {
@@ -140,14 +141,26 @@ export async function commitSubmission(env, id, record, file, fetcher = fetch) {
 async function log(env, table, row) {
   if (!env.DB) return;
   await env.DB.prepare(`CREATE TABLE IF NOT EXISTS ${table} (time TEXT, kind TEXT, size INTEGER, reason TEXT)`).run();
+  if (table === 'refusals') {  // bounded: kept 30 days, at most 200 an hour
+    const now = Date.parse(row.time);
+    await env.DB.prepare('DELETE FROM refusals WHERE time < ?').bind(new Date(now - 30 * 86400_000).toISOString()).run();
+    const recent = await env.DB.prepare('SELECT COUNT(*) AS n FROM refusals WHERE time > ?').bind(new Date(now - 3600_000).toISOString()).first();
+    if (Number(recent?.n || 0) >= 200) return;
+  }
   await env.DB.prepare(`INSERT INTO ${table} (time, kind, size, reason) VALUES (?, ?, ?, ?)`).bind(row.time, row.kind || '', row.size || 0, row.reason || '').run();
 }
 
-async function acceptedLastHour(env, now) {
-  if (!env.DB) return 0;
+// Reserve one of the hour's places before writing to GitHub; concurrent requests each see the
+// others' reservations, and a failed write still uses its place. Returns the reservation, or null.
+async function reserve(env, now, kind, size) {
+  if (!env.DB) return {release: async () => {}};
   await env.DB.prepare('CREATE TABLE IF NOT EXISTS accepted (time TEXT, kind TEXT, size INTEGER, reason TEXT)').run();
+  const token = crypto.randomUUID();
+  await env.DB.prepare('INSERT INTO accepted (time, kind, size, reason) VALUES (?, ?, ?, ?)').bind(new Date(now).toISOString(), kind, size, `reserved ${token}`).run();
   const row = await env.DB.prepare('SELECT COUNT(*) AS n FROM accepted WHERE time > ?').bind(new Date(now - 3600_000).toISOString()).first();
-  return Number(row?.n || 0);
+  const release = async () => env.DB.prepare('DELETE FROM accepted WHERE reason = ?').bind(`reserved ${token}`).run();
+  if (Number(row?.n || 0) > HOURLY_LIMIT) { await release(); return null; }
+  return {release, token};
 }
 
 const escape = s => String(s).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
@@ -180,14 +193,17 @@ export async function handle(request, env, {fetcher = fetch, now = Date.now()} =
     if (containsKey(sub.file.data, keys) || containsKey(bytes(fields), keys)) {
       throw new Refused('The page, file or a field contains a key. Remove it and send again: everything sent here is published.');
     }
-    if (await acceptedLastHour(env, now) >= HOURLY_LIMIT) throw new Refused('The inbox has had a lot this hour. Try again later.', 429);
     if (await waitingCount(env, fetcher) >= QUEUE_LIMIT) throw new Refused('The inbox is full while earlier submissions are processed. Try again in a few minutes.', 429);
+    const place = await reserve(env, now, sub.kind, sub.file.data.length);
+    if (!place) throw new Refused('The inbox has had a lot this hour. Try again later.', 429);
     const id = submissionId(new Date(now));
     const record = {format: 1, id, received: time.replace(/\.\d+Z$/, 'Z'), key_label: label, kind: sub.kind, file: sub.file.name,
                     ...(sub.kind === 'page' ? {path: sub.path, version: sub.version, message: sub.message} : {}),
                     ...(sub.kind === 'lua' ? {...(sub.market ? {market: sub.market} : {}), ...(sub.message ? {message: sub.message} : {})} : {})};
     await commitSubmission(env, id, record, sub.file, fetcher);
-    await log(env, 'accepted', {time, kind: sub.kind, size: sub.file.data.length, reason: `${label} ${id}`});
+    try {
+      await env.DB?.prepare('UPDATE accepted SET reason = ? WHERE reason = ?').bind(`${label} ${id}`, `reserved ${place.token}`).run();
+    } catch { /* the submission is in; the log line is only a record */ }
     return reply(request, 202, 'Received', `Submission ${id} is in. If it passes its checks it's live in about two minutes (feed/ in the repository and the website). If it's held, the owner hears why.`);
   } catch (error) {
     if (error instanceof Refused) {
