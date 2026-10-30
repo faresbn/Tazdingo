@@ -254,6 +254,9 @@ class Provenance(unittest.TestCase):
         problems, review = self.check(self.page(), self.page("### Talents\n\nSee [this](//example.org/x)."))
         self.assertIn("write links in full, starting https://", problems)
         self.assertIn("a link to example.org, a site no page has cited before", review)
+        for trick in ("https://evil.org\\@wowhead.com/x", "https://user@evil.org/x", "https://wowhead.com.evil.org@x.org/"):
+            problems, _ = self.check(self.page(), self.page(f"### Talents\n\nSee [this]({trick})."))
+            self.assertTrue(any("plainly" in p for p in problems), trick)
 
     def test_unknown_items_and_messages(self):
         problems, _ = self.check(self.page(), self.page("### Gear\n\n[Linen](https://foreverdb.net/item/999999) ([Wowhead](https://www.wowhead.com/x))."))
