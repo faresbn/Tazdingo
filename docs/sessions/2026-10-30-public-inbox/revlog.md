@@ -20,3 +20,9 @@ It also confirmed that pushes made with a personal token do trigger workflows, a
 - **Rejected:** none.
 - **Packet note:** the extraction of the reviewer rules dropped their last line ("Context I needed but didn't have"); the reviewer answered it anyway. Next time, take the block by line range.
 - **Usage:** 249,684 input tokens (194,432 cached), 3,560 output (1,069 reasoning), on the ChatGPT plan; no per-token charge.
+
+## Fares's annotations after the review (30 October 2026)
+
+- **The feed's `index.md` is a map, not content:** it sends ChatGPT to each file as needed. The plan now gives it a "how to use this" and one line per file (address, what it answers, version for pages), and holds no prices or page text.
+- **The feed lives in the repository; the website stays the only place visitors go.** Chosen by Fares from two options. Guide pages are read straight from `content/`, prices become small committed markdown files in `feed/`, refreshed by `ingest.yml`, `inbox.yml` and a new `feed.yml`. The website publishes no markdown. Review finding 6 (the `/feed/` folder address on Pages) no longer applies.
+- Not re-reviewed: the change moves generated files into git and adds one regenerate-and-commit workflow on the same pattern the review already checked (reset and redo on conflict, a shared concurrency group).

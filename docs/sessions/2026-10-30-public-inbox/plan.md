@@ -4,7 +4,7 @@
 
 ## What changes for you
 
-- **ChatGPT reads one plain folder.** `https://faresbn.github.io/Tazdingo/feed/index.md` lists every market's prices and every guide page as markdown files. It isn't linked anywhere on the site. The address names `index.md` itself: this site is published without Jekyll, so a folder address only works when there's an HTML page in it.
+- **ChatGPT reads markdown from the repository; visitors get the website.** `faresbn.github.io/Tazdingo/` stays the visual site and serves no markdown. ChatGPT starts at `feed/index.md` in the public repository (`https://raw.githubusercontent.com/faresbn/Tazdingo/main/feed/index.md`). That file is a map, not content: it says which file answers which kind of question, so ChatGPT opens only the one or two files a request needs. Prices are small markdown files in `feed/`; guide pages are read straight from `content/`, so nothing is copied.
 - **ChatGPT (or any of you) updates the site without GitHub.** A hidden form at `https://faresbn.github.io/Tazdingo/inbox/` takes a finished guide page or an `Auctionator.lua`, plus the key from `TAZDINGO_INBOX.md`. A good submission is live within minutes. A keyed submission that fails a check is held, and GitHub emails you why. A submission with the wrong key is refused and logged, and never touches the repository.
 - **The repository is public, Lua files included.** Every scan's original file is kept in its history. GitHub Actions becomes free.
 - **Unchanged:** Codex commits to `main`; `ingest.py --push` on the Mac; the site's look and pages; the archive of every page change; Pages hosting. No Vercel, no Copilot, no LLM on GitHub's side.
@@ -26,7 +26,7 @@ GitHub Action "inbox.yml" (free, deterministic, no LLM)
         │  passes → page replaced in content/ (and archived) or scan filed; tested, built, checked
         │  results pushed and the site published; then, if anything was held, the run fails so GitHub emails Fares
         ▼
-Published site + feed, about two minutes later
+Published site, about two minutes later; feed/ in the repository updated in the same commit
 ```
 
 Why it's built this way, briefly (research.md sections 3–5):
@@ -45,6 +45,7 @@ These change settled lines in AGENTS.md and DECISIONS.md. Each one gets the date
 3. **ChatGPT writes through the inbox** (was: ChatGPT commits directly). Codex still commits to `main`; Fares can override either on request.
 4. **A route for people without GitHub exists** (was: parked).
 5. **The inbox Site holds a GitHub token limited to this repository.** The news relay keeps its rule of never holding GitHub credentials; the inbox is a separate Site so that rule stands.
+6. **ChatGPT reads the repository, visitors read the website** (new). ChatGPT's markdown lives in the repository's `feed/` and `content/`, mapped by `feed/index.md`. The website stays the only destination for visitors and carries no markdown.
 
 ## Two calls I need from you before the flip
 
@@ -59,17 +60,31 @@ These change settled lines in AGENTS.md and DECISIONS.md. Each one gets the date
 
 Each phase is one branch checkpoint with the full check run (`unittest`, `build.py`, `check_site.py`, both `node` checks), merged to `main` when it passes. Phases 1, 2 and 3 can ship before the inbox exists. Rough times are for my work, not waiting on you.
 
-### Phase 1: the feed (about 1 hour)
+### Phase 1: the feed, in the repository (about 1.5 hours)
 
-- **New `scripts/feed.py`, called from `build.py`,** writes into `dist/feed/`:
-  - `index.md`: what's here, when it was built, the scan time per market, and the Pre-launch or Live status. This is the address ChatGPT is given; `feed/` has no HTML page.
-  - `prices/<market>/index.md` plus one file per item category (latest recorded price, typical, usual, steadiness, days listed, units, weekly change). Then alerts, investment watch and movers with their scan times, worded as `market.py`'s rules require: "recorded", estimates called estimates.
-  - `craft.md` (the gold-making table).
-  - `pages/<section>/<page>.md`: a copy of each `content/` file with two lines added at the top, its public address and its `version` (the file's git blob ID), which the inbox checks against.
-- **`build.py`:** allow `.md` inside `feed/` only; keep refusing `.lua` on the site. The feed stays out of `sitemap.xml` and `search.json`, and the ForeverDB credit goes wherever its data appears.
-- **`check_site.py`:** the no-names check covers the feed. It already reads every text file it lists; `.md` gets added.
-- **Kept as they are:** `llms-full.txt` and the `.tsv`/`.json` files (nothing removed; ChatGPT's docs point to the feed first).
-- **Tests:** a new `tests/test_feed.py` (versions match `git hash-object`, every market and page present, no `.md` outside `feed/`).
+- **New `scripts/feed.py`** writes the repository's `feed/` folder from the data already in it:
+  - **`feed/index.md`: the map, and only the map.** No prices, no page text. It has:
+    - a short "how to use this" (open only what the question needs; prices are asking prices with a scan time; Pre-launch means unverified);
+    - one line per file: its address, what it answers and when to open it. For example: "`feed/prices/<market>/herbs.md`: herb prices on <market>, last scan <time>". For each guide page: "`content/classes/mage/frost.md`: Frost Mage, updated <date>, Pre-launch, version <id>";
+    - the inbox's address and where its instructions are.
+    
+    The versions are what a page edit quotes back. Guide pages are listed, not copied: ChatGPT reads them from `content/`.
+  - **`feed/prices/<market>/index.md`: a map of that market.** Its last scan time, and the category files with what each holds.
+  - **`feed/prices/<market>/<category>.md`:** one small table per item category (latest recorded price, typical, usual, steadiness, days listed, units, weekly change, scan time).
+  - **`feed/prices/<market>/alerts.md`:** unusually low, investment watch and movers, with the scan time each was recorded at, worded as `market.py`'s rules require ("recorded", estimates called estimates).
+  - **`feed/craft.md`:** the gold-making table.
+  - **The ForeverDB credit goes wherever its data appears.**
+- **Who refreshes it:** the feed is generated, never edited by hand, and committed together with what changed it.
+  - `ingest.yml` and the new `inbox.yml` run `feed.py` before their own commit. Workflow commits don't trigger other workflows, so they have to.
+  - A small new `feed.yml` runs on any other push to `main` that touches `content/`, `data/` or `scripts/feed.py`: the Mac's `ingest.py --push` or Codex. It regenerates the feed and commits only if something changed, in the same concurrency group as `ingest.yml` and `inbox.yml` so the three never race. On a push conflict it resets to the new `main` and regenerates; generated output is always safe to redo.
+- **The website is unchanged:** `build.py` keeps refusing to publish any `.md` or `.lua`. `llms-full.txt` and the `.tsv`/`.json` price files stay as they are (nothing removed); ChatGPT's instructions point to the map first.
+- **Tests:** a new `tests/test_feed.py` checks:
+  - the map lists every market, category file and `content/` page;
+  - every address in the map exists;
+  - the versions match `git hash-object`;
+  - the map holds no prices or page text;
+  - no names (the site's no-names rule applied to `feed/`);
+  - `feed/` matches a fresh run of `feed.py`.
 
 ### Phase 2: Lua files in the repository (about 30 minutes)
 
@@ -78,7 +93,7 @@ Each phase is one branch checkpoint with the full check run (`unittest`, `build.
 - **`ingest.py` (Mac):** copy the original into that path as part of the import commit; same undo-on-failure.
 - **Commit the three Beta originals,** so the comparison test in `tests/test_ingestion.py` runs in CI instead of skipping.
 - **AGENTS.md data rules:** the rule becomes "commit originals, never edit them by hand"; fingerprints are kept as for extracts.
-- **Handover gets a size line** (`git count-objects -vH`). A retention decision is due before the repository reaches 500 MB.
+- **Handover gets a size line** (`git count-objects -vH`). A retention decision is due before the repository reaches 500 MB. The committed price files add to that alongside the Lua files; small per-category files keep each scan's change compact.
 
 ### Phase 3: prepare and flip to public (about 45 minutes, then your go)
 
@@ -93,17 +108,17 @@ Each phase is one branch checkpoint with the full check run (`unittest`, `build.
 - **Submission layout,** written by the Site: `inbox/<id>/submission.json` plus one of `page.md` or `Auctionator.lua`. The JSON has:
   - `id` and `received` (UTC)
   - `kind` (`page` or `scan`)
-  - for a page: `path` (e.g. `content/classes/mage/frost.md`) and `version` (from the feed)
+  - for a page: `path` (e.g. `content/classes/mage/frost.md`) and `version` (from the map in `feed/index.md`)
   - `message` (the one-line public commit message, UPDATING.md's rules)
   - for a scan: optional `market`
 - **New `scripts/inbox.py`** owns the whole transaction. It works through every waiting submission, oldest first, each with its own rollback, so a bad one never blocks the good ones behind it:
-  - **Page:** the path must be a known page (`build.py`'s list); the version must match the current file, otherwise held as "the page changed since you read it, read it again"; the file must pass `load_content`'s header and section rules; the message must pass the no-names rule.
+  - **Page:** the path must be a known page (`build.py`'s list); the version must match the current file, otherwise held as "the page changed since you read it, read it again". GitHub's raw file addresses can be cached for a few minutes, so a read just after a change can be stale; this check turns that into a hold, never an overwrite; the file must pass `load_content`'s header and section rules; the message must pass the no-names rule.
   - **Scan:** the Lua is stored under `data/captures/forever/` and filed through the same `ingest()` the Mac uses; the market is `market` or the remembered default.
-  - **Apply, in order:** write the file; run the full test, build and check (if any fails, undo and hold with the failing step's message); commit the content change; then run `scripts/archive.py --before <base> --after <that commit>` and commit its record. `archive.py` reads committed history, so it has to run after the content commit. Workflow commits don't start `archive.yml`, so this is the only archiving the change gets.
+  - **Apply, in order:** write the file; regenerate `feed/`; run the full test, build and check (if any fails, undo and hold with the failing step's message); commit the content change; then run `scripts/archive.py --before <base> --after <that commit>` and commit its record. `archive.py` reads committed history, so it has to run after the content commit. Workflow commits don't start `archive.yml`, so this is the only archiving the change gets.
   - **Held:** moved to `inbox/held/<id>/` with `reason.txt`, and committed.
   - **Push:** if `main` moved meanwhile (Codex, the Mac, another submission), it never rebases on top. It resets to the new `main` and redoes the whole run from there, version checks included. That way a stale page can't slip through, and the combined result is always the one that was tested. Three attempts, then the run fails and the submissions stay waiting.
   - **Report:** writes each submission's id, outcome and reason to the run's summary page.
-- **New `.github/workflows/inbox.yml`:** triggered by a push to `main` under `inbox/` (not `inbox/held/`), with a concurrency group shared with `ingest.yml`. Steps: run `inbox.py` (which pushes), start `pages.yml` if anything was applied, and only then a final step that fails if anything was held. That failure is what makes GitHub email you.
+- **New `.github/workflows/inbox.yml`:** triggered by a push to `main` under `inbox/` (not `inbox/held/`), with a concurrency group shared with `ingest.yml` and `feed.yml`. Steps: run `inbox.py` (which pushes), start `pages.yml` if anything was applied, and only then a final step that fails if anything was held. That failure is what makes GitHub email you.
 - **`pages.yml`:** `paths-ignore: inbox/**`, so arriving submissions don't trigger a publish.
 - **`ingest.yml` and the scan-record route stay working but undocumented for ChatGPT.** Retiring them is a later tidy-up.
 - **Tests:** a new `tests/test_inbox.py` covers good page, stale version, unknown path, bad header, name in message, good Lua, unreadable Lua, held move, a bad submission followed by a good one (both handled), and `main` moving mid-run with an edit to the same page (redone, then held as stale).
@@ -136,18 +151,18 @@ Each phase is one branch checkpoint with the full check run (`unittest`, `build.
 
 - **New `docs/chatgpt/TAZDINGO_INBOX.md`,** the project file:
   - the form's address and every field;
-  - how to read a page and its version from the feed;
+  - start at the map (`feed/index.md`), open only the files the request needs, and take a page's version from the map;
   - "submit the whole file";
   - message rules;
   - what each reply means;
   - "if you can't submit, give the user the finished file and the form's address".
   
   **The committed copy holds `<KEY>` as a placeholder.** You paste the real key into the copy you upload to ChatGPT, because the repository is public.
-- **`PROJECT_INSTRUCTIONS.md` and `UPDATING.md`:** read from the feed; write through the inbox; scans are submitted as the Lua itself (no sandbox scripts any more). Everything else in UPDATING.md (page format, findings, sources, no names) stays.
+- **`PROJECT_INSTRUCTIONS.md` and `UPDATING.md`:** read through the map in the repository (the website is for people); write through the inbox; scans are submitted as the Lua itself (no sandbox scripts any more). Everything else in UPDATING.md (page format, findings, sources, no names) stays.
 
 ### Phase 8: records and an end-to-end check (about 30 minutes)
 
-- **Docs:** AGENTS.md (settled decisions, data rules, everyday tasks), DECISIONS.md (the five decisions above), README.md, HANDOVER.md.
+- **Docs:** AGENTS.md (settled decisions, data rules, everyday tasks), DECISIONS.md (the six decisions above), README.md, HANDOVER.md.
 - **Review log:** the Codex review of this plan, in `revlog.md`.
 - **End-to-end check** after the Site is deployed: a page edit through the form, a stale-version edit (held, email arrives), a wrong key (refused, logged), a Beta Lua (filed). I can drive the form in the built-in browser for the person route.
 
@@ -160,7 +175,7 @@ Each phase is one branch checkpoint with the full check run (`unittest`, `build.
 | Before phase 5 deploys | Create the GitHub token: Settings → Developer settings → Fine-grained tokens → only `faresbn/Tazdingo`, Contents read and write, one-year expiry. Give it to Codex for the Site's secrets, never to chat or a file. I'll generate the inbox key into `tmp/` (ignored by git) | 3 minutes |
 | Phase 5 | Run the Codex brief to deploy `tazdingo-inbox` | 10 minutes |
 | Phase 7 | Paste the new project instructions; upload `TAZDINGO_INBOX.md` with the real key in place | 5 minutes |
-| After | Test from the ChatGPT app: read prices from the feed; edit a page via agent mode; submit a Lua via agent mode; the person route | 15 minutes |
+| After | Test from the ChatGPT app: start at the map and read a price and a page from the repository; edit a page via agent mode; submit a Lua via agent mode; the person route | 15 minutes |
 
 ## Risks and how they're handled
 
@@ -171,8 +186,8 @@ Each phase is one branch checkpoint with the full check run (`unittest`, `build.
   - revoking it disables the inbox in seconds.
 - **The key leaks** (it sits in a ChatGPT project file). Whoever has it can publish well-formed but wrong pages or unwanted links: the checks enforce format, not truth. The rate and queue limits bound the volume. The fix is to change `INBOX_KEY` in the Site and in TAZDINGO_INBOX.md, then put any affected page back from `archive/`. Check once that rotation takes effect (research.md section 3 notes a beta bug report).
 - **Keyed submissions are public on arrival,** held ones included. Accepted, because only the three of you hold the key. The Site refuses content containing the key itself, so a pasted key can't be published by accident.
-- **Repository growth from Lua files.** Watched in the handover; retention decided before 500 MB.
-- **ChatGPT can't do part of this in practice** (reading long feed files, agent-mode file upload). The person route always works. Feed files are split by category, so each stays small.
+- **Repository growth from Lua files and the committed price files.** Watched in the handover; retention decided before 500 MB.
+- **ChatGPT can't do part of this in practice** (opening raw GitHub addresses, agent-mode file upload). The person route always works for writing. For reading, the GitHub connector can open the same public files. Feed files are split by category and the map holds no content, so each read stays small.
 - **Going public is effectively one-way.** Everything is checked before the flip; nothing secret is in the history.
 
 ## Not in this plan
@@ -182,4 +197,4 @@ Each phase is one branch checkpoint with the full check run (`unittest`, `build.
 
 ## Order and checkpoints
 
-The phases run in order 1 → 2 → 3 → 4 → 6 → 5 → 7 → 8, each merged to `main` on passing checks. The form (6) lands before the Site (5) is deployed, but points at the Site's address. Until the Site exists, it shows "inbox not open yet". Estimated total of my time: about 6 hours, plus Codex's deploy and your four short steps.
+The phases run in order 1 → 2 → 3 → 4 → 6 → 5 → 7 → 8, each merged to `main` on passing checks. The form (6) lands before the Site (5) is deployed, but points at the Site's address. Until the Site exists, it shows "inbox not open yet". Estimated total of my time: about 6.5 hours, plus Codex's deploy and your four short steps.

@@ -4,7 +4,7 @@
 
 Fares's brief, in short:
 - **Inbox:** a form on the website, not linked anywhere, known only through a `TAZDINGO_INBOX.md` file in the ChatGPT project that holds a key and the rules a submission must follow. A GitHub Action processes what arrives. Three outcomes: right key and right structure → applied; right key, wrong structure → held and flagged to Fares by email; wrong key → a failed folder, reviewed now and then.
-- **Feed:** a folder inside the published site, in markdown, holding what ChatGPT needs (above all, the market data processed from the Lua scans). Not linked for visitors, who get the Auction House pages.
+- **Feed:** a folder inside the published site, in markdown, holding what ChatGPT needs (above all, the market data processed from the Lua scans). Not linked for visitors, who get the Auction House pages. *Updated by Fares later the same day:* the feed lives in the repository, not the website; its `index.md` is a map that sends ChatGPT to each file as needed; the website stays the only place visitors are taken.
 - **Lua files:** game data, fine to publish. The repository keeps their history and turns them into the feed.
 - **Who writes how:** ChatGPT (Fares, Mike, possibly Fares's brother, all on one ChatGPT Business plan) goes through the inbox. Codex keeps committing to `main`. Fares can override either on request.
 - **Public repository:** no value in staying private; restructure for whatever is more efficient in public.
@@ -67,19 +67,21 @@ Failing the run on purpose is simpler than opening an issue or sending mail: it 
 - **`archive.yml`** backs up changed `content/` pages on a push to `main`. Because of the loop guard, **a page applied by an inbox Action wouldn't be archived** unless the inbox Action runs `scripts/archive.py` itself. It must.
 - **`pages.yml`** publishes on every push to `main`, every two hours and on request. Submissions arriving in `inbox/` shouldn't trigger a publish (`paths-ignore`).
 - **One bad inbox record blocks later inbox runs** (HANDOVER watch item). The new design moves a bad submission to `held/` instead of leaving it in place, which removes that problem.
-- **Two people editing the same page:** today ChatGPT writes back against the file's SHA, so GitHub refuses a stale write. Through the inbox the Action has to do that check itself: the feed shows each page's version, the submission quotes it, and the Action holds the submission if the page has changed since.
+- **Two people editing the same page:** today ChatGPT writes back against the file's SHA, so GitHub refuses a stale write. Through the inbox the Action has to do that check itself: the map in `feed/index.md` lists each page's version, the submission quotes it, and the Action holds the submission if the page has changed since.
 
-## 7. The feed folder
+## 7. The feed: a map in the repository, the website for people
 
-**What it means:** ChatGPT reads plain markdown at a stable address, e.g. `https://faresbn.github.io/Tazdingo/feed/`, with prices and pages and nothing else.
+**What it means:** ChatGPT starts at one small map file in the public repository and opens only what a request needs. The website stays the place visitors go and carries no markdown (Fares, 30 October: "index.md should contain a guide that sends ChatGPT into each file as needed"; "I still want the website to be the main place that faresbn.github.io/Tazdingo/ takes visitors"; feed home chosen: in the repository).
 
 **How it stands:**
-- ChatGPT reads `llms-full.txt` (every page in one file), each market's `prices.tsv` and `prices.json`, and `prices/craft.tsv`, all built by `scripts/build.py`. There's no markdown output.
-- `build.py` refuses to publish any `.md` file (an allow-list of public file types) and any `.lua`. The feed needs `.md` added for `feed/` only; the Lua block stays, because Lua belongs in the repository, not the website.
-- **Size:** a live market of ~4,200 items at roughly 80–100 characters a row is about 350–400 KB of markdown. Chat tools may truncate long pages. Splitting by item category keeps each file small, and an index lists them.
-- **No folder page:** `pages.yml` publishes `dist/` as it is, without Jekyll, so `feed/index.md` doesn't become a `/feed/` page. ChatGPT is given the `index.md` address itself ([GitHub Pages 404 troubleshooting](https://docs.github.com/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites)).
-- **Hiding it from the world:** GitHub Pages can't send "don't index" headers, and a `robots.txt` only counts at the host's root (`faresbn.github.io/robots.txt`), which this repository doesn't control. In practice: not linked, not in `sitemap.xml`, not in `search.json`. Search engines rarely find unlinked files, but it isn't guaranteed.
-- **Versions for the stale-edit check:** each page's copy in the feed carries its git blob ID (what `git hash-object` gives), which is also what the inbox Action compares.
+- ChatGPT reads `llms-full.txt` (every page in one file), each market's `prices.tsv` and `prices.json`, and `prices/craft.tsv`, all built into the website by `scripts/build.py`. Nothing is in markdown, and nothing is a map: each read loads everything.
+- `build.py` refuses to publish any `.md` or `.lua` file (an allow-list of public file types). That stays as it is: the feed never enters the website.
+- **Guide pages already exist as markdown** in `content/`. Once the repository is public they can be read directly at `https://raw.githubusercontent.com/faresbn/Tazdingo/main/content/…`, so the map points to them instead of copying them.
+- **Prices exist only as JSON** scan records and archives (`data/market/…`). The feed needs them turned into markdown, one small file per market and item category. A live market of ~4,200 items at roughly 80–100 characters a row is about 350–400 KB in total; split by category, each file is a small fraction of that.
+- **Generated files in git need a refresher.** The website's build runs on every publish, but the repository only changes when someone commits. So whatever changes prices or pages has to regenerate the feed in the same commit, or a small workflow does it right after. Workflow commits don't start other workflows, so `ingest.yml` and the inbox workflow must regenerate inline.
+- **Raw addresses are cached.** `raw.githubusercontent.com` can serve a file a few minutes old just after a change. Harmless for reading; for edits, the version check in the inbox turns a stale read into a hold.
+- **Versions for the stale-edit check:** the map lists each page's git blob ID (what `git hash-object` gives), which is what the inbox compares.
+- **Cost:** the committed price files add to repository growth alongside the Lua files (section 8). Small per-category files keep each scan's change compact.
 
 ## 8. Lua files in the repository
 
@@ -106,9 +108,9 @@ Failing the run on purpose is simpler than opening an issue or sending mail: it 
 
 ## 10. What ChatGPT is asked to do, and what Fares tests
 
-From TAZDINGO_INBOX.md, ChatGPT needs to: read a page from the feed (with its version), write the complete new markdown, and submit it with the key, the kind, the page path and that version, or submit a Lua file with the key. Route B (agent mode filling the form) and route A (the person filling it) use the same form.
+From TAZDINGO_INBOX.md, ChatGPT needs to: start at the map, read the page from `content/` (taking its version from the map), write the complete new markdown, and submit it with the key, the kind, the page path and that version, or submit a Lua file with the key. Route B (agent mode filling the form) and route A (the person filling it) use the same form.
 
-To test in the ChatGPT app once built: reading `feed/` pages and prices (size, truncation), submitting a page edit in agent mode, uploading a Lua file in agent mode, and whether the Sites host lets ChatGPT's browser through. The form must work without JavaScript and give a plain reply page, so a person or an agent can read the result.
+To test in the ChatGPT app once built: reading the map, a price file and a page from the repository (raw GitHub addresses or the GitHub connector), submitting a page edit in agent mode, uploading a Lua file in agent mode, and whether the Sites host lets ChatGPT's browser through. The form must work without JavaScript and give a plain reply page, so a person or an agent can read the result.
 
 ## Sources
 
