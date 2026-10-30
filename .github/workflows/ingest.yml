@@ -18,7 +18,7 @@ permissions:
   actions: write
 
 concurrency:
-  group: ingest
+  group: repository-writers
   cancel-in-progress: false
 
 jobs:
@@ -39,7 +39,7 @@ jobs:
         run: |
           git config user.name "tazdingo-ingest[bot]"
           git config user.email "tazdingo-ingest@users.noreply.github.com"
-          git add data
+          git add data feed
           if git diff --cached --quiet; then echo "Nothing to file."; exit 0; fi
           git commit -q -m "File Auction House scan records from the inbox"
           for attempt in 1 2 3; do

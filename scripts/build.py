@@ -19,6 +19,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 
 import ah_pages
+import feed as feed_md
 import market
 import market_store
 import pages
@@ -609,7 +610,8 @@ def recipes_by_item(fdb: dict) -> dict:
 
 # --- Output -------------------------------------------------------------------
 
-def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/") -> dict:
+def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/", feed: Path | None = None) -> dict:
+    """Build the site into `out` (dist/), and the markdown feed into `feed` (the repository's feed/) when given."""
     out = Path(out or root / "dist").resolve()  # follows the iCloud shield's dist -> dist.nosync link
     if out.resolve() in (root.resolve(), (root / "data").resolve()) or not out.resolve().is_relative_to(root.resolve()):
         raise ValueError("Output must be a dedicated directory inside the repository")
@@ -787,16 +789,21 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/") 
         "markets": catalogue, "pages_with_notes": sorted(content),
         "item_names": names.get("source"), "foreverdb": fdb_source}, indent=1) + "\n")
 
+    feed_files = feed_md.write(feed, root, markets, ctx, money) if feed else []
+
     for path in out.rglob("*"):
         if path.is_file() and path.suffix not in (".html", ".css", ".js", ".svg", ".webp", ".jpg", ".png", ".json", ".tsv", ".txt", ".xml", ".woff2", ""):
             raise InvalidCapture(f"Unexpected public file type: {path.name}")
     if any(out.rglob("*.lua")):
         raise InvalidCapture("Raw Lua must not be published")
     return {"revision": revision, "scans": len(captures), "markets": len(markets), "items": sum(len(m["items"]) for m in markets),
-            "content_pages": len(content), "log_entries": len(log), "craft_rows": len(ctx["craft"]), "output": str(out)}
+            "content_pages": len(content), "log_entries": len(log), "craft_rows": len(ctx["craft"]), "output": str(out),
+            "feed_files": len(feed_files)}
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Build the site into dist/.")
     parser.add_argument("--base-path", default="/Tazdingo/")
-    print(json.dumps(build(base=parser.parse_args().base_path), indent=2))
+    parser.add_argument("--no-feed", action="store_true", help="leave the repository's feed/ folder alone")
+    args = parser.parse_args()
+    print(json.dumps(build(base=args.base_path, feed=None if args.no_feed else ROOT / "feed"), indent=2))

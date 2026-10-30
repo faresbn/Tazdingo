@@ -4,6 +4,10 @@ Where Tazdingo stands, kept current at every checkpoint so another thread, model
 
 **Last updated:** 27 October 2026, late evening, after the Auction House module and a final bug-check pass (session `docs/sessions/2026-10-27-site-plan/`). Nothing is in flight: `main` is the whole state and the only branch (the four old merged branches were deleted on 28 October).
 
+## In flight (30 October)
+
+**A public repository, a ChatGPT feed and an inbox** (branch `plan/public-inbox`, session `docs/sessions/2026-10-30-public-inbox/`): research, plan and a senior Codex review are done. **Waiting for Fares's approval of `plan.md`** and two calls in it (his work email on old commits; Mike's name in the docs). Nothing is built yet; `main` is unchanged apart from this note once merged.
+
 ## Picking this up
 
 | You are | Read | Then |

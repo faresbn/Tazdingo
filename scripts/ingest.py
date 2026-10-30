@@ -242,7 +242,7 @@ def check_and_commit(result: dict, saved: dict, args, source: str) -> None:
                              "the journal is as it was before this import.")
     if args.no_commit:
         return
-    run("git", "add", "data")
+    run("git", "add", "data", "feed")
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode:
         summary = ", ".join(f"{m} {n:,} items" for m, n in result["items"].items())
         message = (f"Add {source} Auctionator scan of {result['scanned']} ({summary})" if result["files"]
