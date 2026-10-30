@@ -5,7 +5,7 @@
 ## What changes for you
 
 - **ChatGPT reads markdown from the repository; visitors get the website.** `faresbn.github.io/Tazdingo/` stays the visual site and serves no markdown. ChatGPT starts at `feed/index.md` in the public repository (`https://raw.githubusercontent.com/faresbn/Tazdingo/main/feed/index.md`). That file is a map, not content: it says which file answers which kind of question, so ChatGPT opens only the one or two files a request needs. Prices are small markdown files in `feed/`; guide pages are read straight from `content/`, so nothing is copied.
-- **ChatGPT (or any of you) updates the site without GitHub.** A hidden form at `https://faresbn.github.io/Tazdingo/inbox/` takes a finished guide page or an `Auctionator.lua`, plus the key from `TAZDINGO_INBOX.md`. A good submission is live within minutes. A keyed submission that fails a check is held, and GitHub emails you why. A submission with the wrong key is refused and logged, and never touches the repository.
+- **ChatGPT (or any of you) updates the site without GitHub.** A hidden form at `https://faresbn.github.io/Tazdingo/inbox/` takes a finished guide page or any addon's saved-variables `.lua` (Auctionator, AllTheThings, whatever you add later), plus your personal key from `TAZDINGO_INBOX.md`. A good submission is live within minutes. A keyed submission that fails a check is held, and GitHub emails you why. A submission with the wrong key is refused and logged, and never touches the repository.
 - **The repository is public, Lua files included.** Every scan's original file is kept in its history. GitHub Actions becomes free.
 - **Unchanged:** Codex commits to `main`; `ingest.py --push` on the Mac; the site's look and pages; the archive of every page change; Pages hosting. No Vercel, no Copilot, no LLM on GitHub's side.
 
@@ -13,25 +13,26 @@
 
 ```
 ChatGPT (agent mode) or a person
-        │  fills in the hidden form on the website: key, kind, page + version, text or Lua file
+        │  fills in the hidden form on the website: key, kind, page + version, text or any addon's Lua file
         ▼
-Inbox Site (a new ChatGPT Site, separate from the news relay)
-        │  wrong key → refused, logged in the Site's own database (private): the "failed folder"
+Inbox receiver (a Cloudflare Worker or a ChatGPT Site; separate from the news relay)
+        │  wrong key → refused, logged in the receiver's own database (private): the "failed folder"
         │  over the rate or queue limit, or the key pasted into the content → refused, logged
         │  right key → key removed, submission committed to inbox/<id>/ on main (public from here on)
         ▼
 GitHub Action "inbox.yml" (free, deterministic, no LLM)
-        │  each submission in turn: known page? version current? header, sections, links, no names? Lua readable?
+        │  each submission in turn: known page? version current? format, provenance and change rules? Lua readable, which addon?
         │  fails → moved to inbox/held/<id>/ with the reason
-        │  passes → page replaced in content/ (and archived) or scan filed; tested, built, checked
+        │  needs your eye (see "Checking truth") → opened as a pull request you approve with one tap
+        │  passes → page replaced in content/ (and archived), or Lua stored and processed if a processor exists; tested, built, checked
         │  results pushed and the site published; then, if anything was held, the run fails so GitHub emails Fares
         ▼
 Published site, about two minutes later; feed/ in the repository updated in the same commit
 ```
 
 Why it's built this way, briefly (research.md sections 3–5):
-- **GitHub Pages can't receive a form,** so the form posts to a small ChatGPT Site, the same hosting the news relay already uses on the Business plan.
-- **The Site holds the GitHub token,** because GitHub can't fetch from the Sites host: it blocked automated clients on 27 October.
+- **GitHub Pages can't receive a form,** so the form posts to a small receiver: a free Cloudflare Worker, or a ChatGPT Site like the news relay (choice below).
+- **The receiver holds the GitHub token and pushes to GitHub.** GitHub can't collect from a Sites host, which blocked automated clients on 27 October. Pushing works the same on either host.
 - **The key never enters the public repository.**
 - **Two consequences of a public repository, stated plainly:**
   - **A keyed submission is public the moment it arrives,** held ones included. Moving it to `held/` doesn't unpublish it, and it stays in history.
@@ -44,17 +45,51 @@ These change settled lines in AGENTS.md and DECISIONS.md. Each one gets the date
 2. **Original Lua files are committed** (was: never commit SavedVariables). They're game data. The website still never serves a `.lua`; they live in the repository.
 3. **ChatGPT writes through the inbox** (was: ChatGPT commits directly). Codex still commits to `main`; Fares can override either on request.
 4. **A route for people without GitHub exists** (was: parked).
-5. **The inbox Site holds a GitHub token limited to this repository.** The news relay keeps its rule of never holding GitHub credentials; the inbox is a separate Site so that rule stands.
+5. **The inbox receiver holds a GitHub token limited to this repository.** The news relay keeps its rule of never holding GitHub credentials; the receiver is separate from it so that rule stands.
 6. **ChatGPT reads the repository, visitors read the website** (new). ChatGPT's markdown lives in the repository's `feed/` and `content/`, mapped by `feed/index.md`. The website stays the only destination for visitors and carries no markdown.
 
-## Two calls I need from you before the flip
+## Settled on 30 October
 
-**A. Your work email on every commit.** 77 commits carry `faresb@fact.qa`; a public repository shows it. Options:
-- **(Recommended) Keep history; switch future commits to your GitHub private address** (`<id>+faresbn@users.noreply.github.com`). Simple, nothing rewritten. The old address stays visible in old commits.
-- Rewrite history before the flip. Removes the address everywhere, but changes every commit ID (breaking those quoted in `archive/LOG.md` and the session logs) and needs a force-push. You'd approve that explicitly.
-- Accept it as is.
+- **A. Commit email:** history stays as it is; this repository's commits now use the GitHub private address (`195290664+faresbn@users.noreply.github.com`, set in the repository's own git config on 30 October). The inbox's commits use it too. Old commits keep `faresb@fact.qa`.
+- **B. "Mike" becomes "co-player"** in the current docs (AGENTS.md, DECISIONS.md, the session documents), for inclusivity rather than anonymity: the role can be anyone. The site's no-names guard in `build.py` and `check_site.py` keeps the specific names it blocks, because that's what makes it work.
 
-**B. Mike's name in the docs.** He's named in AGENTS.md, DECISIONS.md and three session documents. Keep it (my default, if he's fine with it), or I neutralise the current files ("a co-player"). Old commits would still have it either way, short of a rewrite.
+## Which receiver: a ChatGPT Site or a Cloudflare Worker
+
+Something has to receive the form (research.md section 3). There are two credible free options, and both run the same code, since ChatGPT Sites are built on Cloudflare's Workers runtime.
+
+| | ChatGPT Site | Cloudflare Worker (free plan) |
+|---|---|---|
+| Account | Already in use (the news relay), on the Business plan | A new free Cloudflare account; `wrangler login` once on this Mac |
+| Who deploys and tests | Codex only, through the Sites workflow. Its host also blocked automated clients on 27 October, so I can't test it from here except through a browser | Me, from here: deploy, test end to end, fix |
+| Maturity | Public beta (one unconfirmed report of a removed secret still working) | Generally available; the free plan allows 100,000 requests a day |
+| Callable as a tool from a chat | Yes, in principle: a Site can host a plugin (an MCP tool) that workspace members install and ChatGPT calls from chats, under the workspace's app controls ([Sites plugins](https://aipass.one/blog/chatgpt-sites-plugins-explained)) | Also possible, as a custom connector the Business workspace's admin adds. To verify for your workspace |
+
+**Recommendation: a Cloudflare Worker.** It's the same design and the same cost (none). The difference is ownership of the loop: I can deploy, test and fix the inbox myself, instead of every change going through Codex to a beta host I can't test. Choose the Site if you'd rather keep everything inside OpenAI and avoid a new account.
+
+**"Can it be called from inside a shared project?"** Not as a plain web address: ChatGPT reaches a web form through agent mode, which is route B, and that works from any chat, project or not. Being *called as a tool* needs the receiver to also offer an MCP tool, installed for the workspace as a plugin or connector. Either receiver can do that. It goes in as phase 9, after the form works, because the form remains the fallback, and whether workspace plugins are usable inside a shared project is something to test in the app.
+
+## Checking truth, not just format
+
+**Code can't know whether a claim about the game is true.** Only play, a source or a person can. What the inbox can do is make every claim traceable, catch the mistakes that machines can catch, and send the changes that matter to you. Five layers, cheapest first; I recommend the first four:
+
+1. **Provenance rules, enforced** (UPDATING.md's rules turned into checks).
+   - Every new or changed Field finding needs a confidence, a date and how it's known: tested (level and situation), read (with a link) or simulated (tool and version).
+   - Every source claim in "What the guides say" needs a link.
+   - No money amounts in guide pages, because prices come only from scans.
+2. **Change rules, checked against the previous version.**
+   - Findings can't be deleted, only marked `outdated` with a reason.
+   - A submission changes one page.
+   - Item and spell links must point to IDs that exist in our ForeverDB data.
+   - Cited links must answer, and come from a list of known sources (Wowhead, Icy Veins, ForeverDB, Blizzard and the rest UPDATING.md names), so an unknown site goes to review rather than straight onto the page.
+3. **A personal key per person** (you, a co-player, your brother), each with a neutral label such as `key-2`. Every submission is attributable inside the repository without a name on the site, and one key can be revoked without touching the others.
+4. **Your one-tap review for the changes that matter.** These become a pull request instead of being applied, and you approve or close it from the GitHub app. The inbox runs every check before opening it (GitHub doesn't re-run checks on a pull request an Action opened); merging publishes as usual:
+   - setting a page `live`;
+   - changing a "Tazdingo recommendation";
+   - marking findings outdated;
+   - links to unknown sites.
+   
+   Additive changes (a new finding, a new source) apply straight away.
+5. **Optional, later: a free LLM second opinion.** GitHub Models is free inside Actions with the built-in token (`models: read`), with tight daily limits and a small input ceiling, and it's still a preview ([setup](https://agentpatterns.ai/tools/copilot/github-models-in-actions/); [limits, vendor-reported](https://fast.io/resources/github-models-rate-limit/)). It could comment on a pull request ("this contradicts the existing finding from 6 November"). It can't verify the game, and it shouldn't decide anything. Not in this plan unless you want it.
 
 ## Steps
 
@@ -89,7 +124,7 @@ Each phase is one branch checkpoint with the full check run (`unittest`, `build.
 ### Phase 2: Lua files in the repository (about 30 minutes)
 
 - **`.gitignore`:** remove the `data/captures/**/*.lua` block.
-- **Originals live at `data/captures/forever/<scan time UTC>.lua`.** One file can hold several markets, so it's named by scan time.
+- **Originals live at `data/captures/forever/<addon>/<time UTC>.lua`** (e.g. `auctionator/2026-11-05T1830.lua`, `allthethings/…`). One Auctionator file can hold several markets, so it's named by time, not market.
 - **`ingest.py` (Mac):** copy the original into that path as part of the import commit; same undo-on-failure.
 - **Commit the three Beta originals,** so the comparison test in `tests/test_ingestion.py` runs in CI instead of skipping.
 - **AGENTS.md data rules:** the rule becomes "commit originals, never edit them by hand"; fingerprints are kept as for extracts.
@@ -97,55 +132,60 @@ Each phase is one branch checkpoint with the full check run (`unittest`, `build.
 
 ### Phase 3: prepare and flip to public (about 45 minutes, then your go)
 
-- **Applies your calls A and B,** then sets this repository's commit email to the noreply address if you choose that.
+- **"Mike" becomes "co-player"** in AGENTS.md, DECISIONS.md and the session documents (B above). The commit email is already switched (A).
 - **`data/README.md`:** credits ForeverDB.net, says the data is used with credit and not ours to relicense, and which files hold it.
 - **`README.md`:** an opening paragraph for public readers (what this is, unofficial, not affiliated with Blizzard); the rest stays.
 - **Re-runs the secret scan on the final history.**
 - **Flip:** `gh repo edit faresbn/Tazdingo --visibility public --accept-visibility-change-consequences`. Then I check the site still publishes and Actions run. **This step is outward-facing and effectively one-way** (anyone can copy a public repo the moment it's public), so I do it only after you approve this plan.
 
-### Phase 4: the inbox on GitHub's side (about 1.5 hours)
+### Phase 4: the inbox on GitHub's side (about 3 hours)
 
-- **Submission layout,** written by the Site: `inbox/<id>/submission.json` plus one of `page.md` or `Auctionator.lua`. The JSON has:
-  - `id` and `received` (UTC)
-  - `kind` (`page` or `scan`)
+- **Submission layout,** written by the receiver: `inbox/<id>/submission.json` plus one of `page.md` or the submitted `.lua` under its own file name. The JSON has:
+  - `id`, `received` (UTC) and `key_label` (which personal key, never the key)
+  - `kind` (`page` or `lua`)
   - for a page: `path` (e.g. `content/classes/mage/frost.md`) and `version` (from the map in `feed/index.md`)
   - `message` (the one-line public commit message, UPDATING.md's rules)
-  - for a scan: optional `market`
+  - for Auctionator: optional `market`
 - **New `scripts/inbox.py`** owns the whole transaction. It works through every waiting submission, oldest first, each with its own rollback, so a bad one never blocks the good ones behind it:
   - **Page:** the path must be a known page (`build.py`'s list); the version must match the current file, otherwise held as "the page changed since you read it, read it again". GitHub's raw file addresses can be cached for a few minutes, so a read just after a change can be stale; this check turns that into a hold, never an overwrite; the file must pass `load_content`'s header and section rules; the message must pass the no-names rule.
-  - **Scan:** the Lua is stored under `data/captures/forever/` and filed through the same `ingest()` the Mac uses; the market is `market` or the remembered default.
+  - **Lua, any addon:**
+    - The addon is identified from the file name (saved-variables files are named after their addon, e.g. `AllTheThings.lua`) and confirmed by the file's top-level tables (`AUCTIONATOR_…` and so on). A name that doesn't match its contents is held.
+    - The file must parse as saved variables; one that doesn't is held.
+    - Then it's always stored under `data/captures/forever/<addon>/`.
+    - **If a processor exists** for that addon (`scripts/addons/<addon>.py`), it runs. Auctionator's is the current import code, filed through the same `ingest()` the Mac uses (market: `market` or the remembered default).
+    - **If not,** the file is stored, not held: the map lists it as "stored, not processed yet", and the run summary says so. Writing a processor for a new addon (AllTheThings first, if you want it) is a later piece of work, chosen per addon. Processors keep character names out of the feed and the site, as the screenshot rule already does.
   - **Apply, in order:** write the file; regenerate `feed/`; run the full test, build and check (if any fails, undo and hold with the failing step's message); commit the content change; then run `scripts/archive.py --before <base> --after <that commit>` and commit its record. `archive.py` reads committed history, so it has to run after the content commit. Workflow commits don't start `archive.yml`, so this is the only archiving the change gets.
   - **Held:** moved to `inbox/held/<id>/` with `reason.txt`, and committed.
   - **Push:** if `main` moved meanwhile (Codex, the Mac, another submission), it never rebases on top. It resets to the new `main` and redoes the whole run from there, version checks included. That way a stale page can't slip through, and the combined result is always the one that was tested. Three attempts, then the run fails and the submissions stay waiting.
   - **Report:** writes each submission's id, outcome and reason to the run's summary page.
-- **New `.github/workflows/inbox.yml`:** triggered by a push to `main` under `inbox/` (not `inbox/held/`), with a concurrency group shared with `ingest.yml` and `feed.yml`. Steps: run `inbox.py` (which pushes), start `pages.yml` if anything was applied, and only then a final step that fails if anything was held. That failure is what makes GitHub email you.
+- **New `.github/workflows/inbox.yml`:** permissions `contents: write`, `pull-requests: write`, `actions: write`; triggered by a push to `main` under `inbox/` (not `inbox/held/`), with a concurrency group shared with `ingest.yml` and `feed.yml`. Steps: run `inbox.py` (which pushes), start `pages.yml` if anything was applied, and only then a final step that fails if anything was held. That failure is what makes GitHub email you.
 - **`pages.yml`:** `paths-ignore: inbox/**`, so arriving submissions don't trigger a publish.
 - **`ingest.yml` and the scan-record route stay working but undocumented for ChatGPT.** Retiring them is a later tidy-up.
-- **Tests:** a new `tests/test_inbox.py` covers good page, stale version, unknown path, bad header, name in message, good Lua, unreadable Lua, held move, a bad submission followed by a good one (both handled), and `main` moving mid-run with an edit to the same page (redone, then held as stale).
+- **Tests:** a new `tests/test_inbox.py` covers good page, stale version, unknown path, bad header, name in message, each provenance and change rule, a review-worthy change becoming a pull request, good Auctionator Lua, an unknown addon's Lua (stored, not held), a file name that doesn't match its contents, unreadable Lua, held move, a bad submission followed by a good one (both handled), and `main` moving mid-run with an edit to the same page (redone, then held as stale).
 
-### Phase 5: the inbox Site (about 1 hour here, plus a Codex deploy)
+### Phase 5: the receiver (about 1 hour; a Cloudflare Worker unless you choose the Site)
 
-- **Code in this repository at `inbox-site/worker/index.js`, tests in `inbox-site/inbox.test.mjs`,** the same layout as `relay/`. No dependencies.
+- **Code in this repository at `receiver/worker/index.js`, tests in `receiver/inbox.test.mjs` (not under `inbox/`, which holds submissions and triggers the inbox workflow),** the same layout as `relay/`. No dependencies. Written once, runs on either host.
 - **`POST /submit`** accepts a plain HTML form (multipart) and the same fields as JSON, for a GPT or agent later:
   - **Checks only what must be checked before anything is public:**
-    - the key (constant-time compare against the `INBOX_KEY` secret)
-    - a 5 MB size limit
-    - `kind` is `page` or `scan`
+    - the key, matched against the personal keys in the `INBOX_KEYS` secret (constant-time), which gives the key's label
+    - a 25 MB size limit (saved-variables files from collection addons can be large; GitHub's limit is 100 MB per file)
+    - `kind` is `page` or `lua`, and a `.lua` file name looks like an addon's
     - the key doesn't appear anywhere in the content
     - limits of 30 accepted submissions an hour and 20 waiting in `inbox/`
     
     Every other rule lives in one place, `inbox.py`, so a keyed but malformed submission still reaches `held/`, where you see it.
-  - **Refused** (wrong key or a limit): a row in the Site's database (time, size, kind, reason, no content) and a plain "Refused" reply.
+  - **Refused** (wrong key or a limit): a row in the receiver's database (time, size, kind, reason, no content) and a plain "Refused" reply.
   - **Right key:** removes the key and commits `inbox/<id>/…` in one commit through GitHub's API (`GITHUB_TOKEN` secret). The commit is built on the latest `main`; if `main` moves before it lands, the commit is rebuilt on the new tip, so nothing pushed in between is lost. Then it replies with the id and where to watch.
 - **The reply is a plain page,** readable by a person or an agent: "Received. If it passes its checks it's live at <address> in about two minutes."
 - **The news relay is untouched.**
-- **Deploy:** Codex, as a new Site named `tazdingo-inbox`, with two secrets and a database binding. I write a ready-to-paste Codex brief in this folder.
+- **Deploy:** on Cloudflare, by me with `wrangler` (two secrets, a D1 database binding, free plan). On ChatGPT Sites instead: Codex deploys it as a new Site named `tazdingo-inbox`, from a ready-to-paste brief I write in this folder.
 
 ### Phase 6: the hidden form (about 30 minutes)
 
 - **`inbox/index.html`, built by `build.py` in the site's design:** `noindex` meta tag, not in the menu, sitemap or search.
-- **Fields:** key, kind (page or scan), page path, version, message, a large text box for the page and a file picker for the Lua. A plain HTML form posting to the Site, so it works with no JavaScript.
-- **`check_site.py`:** whitelist the inbox Site's address next to the relay's, and allow `noindex` on `inbox/index.html` only. Today the check fails any page carrying `noindex` (line 76), and it keeps doing that for every other page.
+- **Fields:** key, kind (page or Lua), page path, version, message, a large text box for the page and a file picker for any addon's `.lua`. A plain HTML form posting to the receiver, so it works with no JavaScript.
+- **`check_site.py`:** whitelist the receiver's address next to the relay's, and allow `noindex` on `inbox/index.html` only. Today the check fails any page carrying `noindex` (line 76), and it keeps doing that for every other page.
 
 ### Phase 7: ChatGPT's instructions (about 45 minutes)
 
@@ -158,43 +198,51 @@ Each phase is one branch checkpoint with the full check run (`unittest`, `build.
   - "if you can't submit, give the user the finished file and the form's address".
   
   **The committed copy holds `<KEY>` as a placeholder.** You paste the real key into the copy you upload to ChatGPT, because the repository is public.
-- **`PROJECT_INSTRUCTIONS.md` and `UPDATING.md`:** read through the map in the repository (the website is for people); write through the inbox; scans are submitted as the Lua itself (no sandbox scripts any more). Everything else in UPDATING.md (page format, findings, sources, no names) stays.
+- **`PROJECT_INSTRUCTIONS.md` and `UPDATING.md`:** read through the map in the repository (the website is for people); write through the inbox; any addon's saved-variables file is submitted as the `.lua` itself (no sandbox scripts any more); the provenance rules from "Checking truth" are spelled out so ChatGPT writes pages that pass them first time. Everything else in UPDATING.md (page format, findings, sources, no names) stays.
 
 ### Phase 8: records and an end-to-end check (about 30 minutes)
 
-- **Docs:** AGENTS.md (settled decisions, data rules, everyday tasks), DECISIONS.md (the six decisions above), README.md, HANDOVER.md.
+- **Docs:** AGENTS.md (settled decisions, data rules, everyday tasks), DECISIONS.md (the six decisions above, plus the receiver and the truth-check layers), README.md, HANDOVER.md.
 - **Review log:** the Codex review of this plan, in `revlog.md`.
-- **End-to-end check** after the Site is deployed: a page edit through the form, a stale-version edit (held, email arrives), a wrong key (refused, logged), a Beta Lua (filed). I can drive the form in the built-in browser for the person route.
+- **End-to-end check** after the receiver is deployed: a page edit through the form, a stale-version edit (held, email arrives), a wrong key (refused, logged), a Beta Lua (filed). I can drive the form in the built-in browser for the person route.
+
+### Phase 9: call the inbox as a tool from chats (after the form works; about 1 hour)
+
+- The receiver also offers one MCP tool, `submit_to_tazdingo`, with the same fields and the same checks as the form.
+- You add it to the Business workspace as a plugin (Site) or a custom connector (Worker), and test whether it can be called from inside the shared project.
+- If it can, TAZDINGO_INBOX.md says to call the tool first, then agent mode on the form, then hand the file to the person.
 
 ## What I need from you, and when
 
 | When | What | Time for you |
 |---|---|---|
-| Now | Approve or annotate this plan; calls A and B | — |
+| Now | Approve or annotate this plan; choose the receiver (Worker or Site); confirm truth-check layers 1–4 | — |
 | Before phase 4 | Check GitHub → Settings → Notifications → Actions is set to email you, at least for failed runs. That email is how held submissions reach you | 1 minute |
-| Before phase 5 deploys | Create the GitHub token: Settings → Developer settings → Fine-grained tokens → only `faresbn/Tazdingo`, Contents read and write, one-year expiry. Give it to Codex for the Site's secrets, never to chat or a file. I'll generate the inbox key into `tmp/` (ignored by git) | 3 minutes |
-| Phase 5 | Run the Codex brief to deploy `tazdingo-inbox` | 10 minutes |
-| Phase 7 | Paste the new project instructions; upload `TAZDINGO_INBOX.md` with the real key in place | 5 minutes |
+| Before phase 4 | Allow the inbox workflow to open review pull requests: repository Settings → Actions → General → Workflow permissions → "Allow GitHub Actions to create and approve pull requests". A repository setting, so it's yours to switch on (or I do it with your go) | 1 minute |
+| Before phase 5 deploys | Create the GitHub token: Settings → Developer settings → Fine-grained tokens → only `faresbn/Tazdingo`, Contents read and write only, one-year expiry. Paste it straight into the receiver's secret prompt (`wrangler secret put`, or the Site's settings), never into chat or a file. I'll generate the personal keys into `tmp/` (ignored by git) | 3 minutes |
+| Phase 5, Worker | Create a free Cloudflare account and run `wrangler login` once on this Mac | 5 minutes |
+| Phase 5, Site | Run the Codex brief to deploy `tazdingo-inbox` | 10 minutes |
+| Phase 7 | Paste the new project instructions; upload `TAZDINGO_INBOX.md`; each person puts their own key in their copy, or keeps it in their ChatGPT memory or instructions | 5 minutes |
 | After | Test from the ChatGPT app: start at the map and read a price and a page from the repository; edit a page via agent mode; submit a Lua via agent mode; the person route | 15 minutes |
 
 ## Risks and how they're handled
 
-- **The token is full write access to this repository.** It isn't limited to the inbox. Whoever got hold of it could change the scripts that workflows then run, and history can't undo what compromised code has already done. Mitigations:
-  - the Site's code is small, has no dependencies and writes only under `inbox/`;
+- **The token is full write access to this repository's contents.** It isn't limited to the inbox. Whoever got hold of it could change the scripts that workflows then run, and history can't undo what compromised code has already done. Mitigations:
+  - the receiver's code is small, has no dependencies and writes only under `inbox/`;
   - the token covers one repository and expires after a year;
-  - it lives only in the Site's secrets;
+  - it lives only in the receiver's secrets;
   - revoking it disables the inbox in seconds.
-- **The key leaks** (it sits in a ChatGPT project file). Whoever has it can publish well-formed but wrong pages or unwanted links: the checks enforce format, not truth. The rate and queue limits bound the volume. The fix is to change `INBOX_KEY` in the Site and in TAZDINGO_INBOX.md, then put any affected page back from `archive/`. Check once that rotation takes effect (research.md section 3 notes a beta bug report).
-- **Keyed submissions are public on arrival,** held ones included. Accepted, because only the three of you hold the key. The Site refuses content containing the key itself, so a pasted key can't be published by accident.
-- **Repository growth from Lua files and the committed price files.** Watched in the handover; retention decided before 500 MB.
+- **The key leaks** (it sits in a ChatGPT project file). Whoever has it can publish well-formed but wrong pages or unwanted links: the checks enforce format, not truth. The rate and queue limits bound the volume. With personal keys only the leaked one is revoked, in `INBOX_KEYS` and in that person's copy, then put any affected page back from `archive/`. Check once that rotation takes effect (research.md section 3 notes a beta bug report).
+- **Keyed submissions are public on arrival,** held ones included. Accepted, because only the three of you hold the key. The receiver refuses content containing the key itself, so a pasted key can't be published by accident.
+- **Repository growth from Lua files and the committed price files.** Collection addons can write large files that change at every login. Watched in the handover; retention decided before 500 MB, possibly per addon (e.g. keep only the latest few files of a non-price addon).
 - **ChatGPT can't do part of this in practice** (opening raw GitHub addresses, agent-mode file upload). The person route always works for writing. For reading, the GitHub connector can open the same public files. Feed files are split by category and the map holds no content, so each read stays small.
 - **Going public is effectively one-way.** Everything is checked before the flip; nothing secret is in the history.
 
 ## Not in this plan
 
 - No change to the site's design, pages or Auction House logic. Retiring `ingest.yml`'s scan-record route comes later.
-- Not done in this plan: a GPT with an action, email from the Site, Vercel, a custom domain, search-engine submission. Removing `llms-full.txt` isn't in it either.
+- Not done in this plan: a GPT with an action, email from the receiver, Vercel, a custom domain, search-engine submission. Removing `llms-full.txt` isn't in it either.
 
 ## Order and checkpoints
 
-The phases run in order 1 → 2 → 3 → 4 → 6 → 5 → 7 → 8, each merged to `main` on passing checks. The form (6) lands before the Site (5) is deployed, but points at the Site's address. Until the Site exists, it shows "inbox not open yet". Estimated total of my time: about 6.5 hours, plus Codex's deploy and your four short steps.
+The phases run in order 1 → 2 → 3 → 4 → 6 → 5 → 7 → 8, then 9, each merged to `main` on passing checks. The form (6) lands before the receiver (5) is deployed, but points at the receiver's address. Until the receiver exists, it shows "inbox not open yet". Estimated total of my time: about 9 hours (phase 4 grows to about 3 hours with the truth checks and generic Lua; phase 9 adds 1), plus Codex's deploy and your four short steps.

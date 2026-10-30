@@ -26,3 +26,11 @@ It also confirmed that pushes made with a personal token do trigger workflows, a
 - **The feed's `index.md` is a map, not content:** it sends ChatGPT to each file as needed. The plan now gives it a "how to use this" and one line per file (address, what it answers, version for pages), and holds no prices or page text.
 - **The feed lives in the repository; the website stays the only place visitors go.** Chosen by Fares from two options. Guide pages are read straight from `content/`, prices become small committed markdown files in `feed/`, refreshed by `ingest.yml`, `inbox.yml` and a new `feed.yml`. The website publishes no markdown. Review finding 6 (the `/feed/` folder address on Pages) no longer applies.
 - Not re-reviewed: the change moves generated files into git and adds one regenerate-and-commit workflow on the same pattern the review already checked (reset and redo on conflict, a shared concurrency group).
+
+## Fares's second round (30 October 2026)
+
+- **Lua from any addon** (AllTheThings and future ones): the inbox identifies the addon from file name and contents, always stores the file, and runs a processor only where one exists (Auctionator today).
+- **"How can we enforce truth, not just format?"** Answered in the plan's new section: code can't verify the game, so it enforces provenance and change rules, uses personal keys for attribution, and routes judgement calls to Fares as one-tap pull requests. A free GitHub Models comment is noted as optional.
+- **Commit email switched** to the GitHub private address in this repository's config; **"Mike" becomes "co-player"** in current docs, for inclusivity.
+- **Receiver reconsidered:** the plan now compares a ChatGPT Site with a free Cloudflare Worker and recommends the Worker (deployable and testable from here). Calling the inbox as a tool from chats is phase 9, via an MCP tool on either host.
+- Not re-reviewed yet: the truth-check layers and generic Lua add rules to `inbox.py` without changing the transaction the review checked. The receiver choice isn't a security change, since the code and token are the same on either host.
