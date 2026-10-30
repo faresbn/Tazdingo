@@ -176,7 +176,10 @@ export async function handle(request, env, {fetcher = fetch, now = Date.now()} =
     sub = await readSubmission(request);
     const label = await keyLabel(sub.key, keys);
     if (!label) throw new Refused("The key isn't right.", 403);
-    if (containsKey(sub.file.data, keys)) throw new Refused('The page or file contains a key. Remove it and send again: everything sent here is published.');
+    const fields = [sub.path, sub.version, sub.message, sub.market, sub.file.name].filter(Boolean).join('\n');
+    if (containsKey(sub.file.data, keys) || containsKey(bytes(fields), keys)) {
+      throw new Refused('The page, file or a field contains a key. Remove it and send again: everything sent here is published.');
+    }
     if (await acceptedLastHour(env, now) >= HOURLY_LIMIT) throw new Refused('The inbox has had a lot this hour. Try again later.', 429);
     if (await waitingCount(env, fetcher) >= QUEUE_LIMIT) throw new Refused('The inbox is full while earlier submissions are processed. Try again in a few minutes.', 429);
     const id = submissionId(new Date(now));

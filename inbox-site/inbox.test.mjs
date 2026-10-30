@@ -90,6 +90,9 @@ test('content containing a key is refused before anything is public', async () =
   assert.equal(response.status, 400);
   assert.equal(gh.calls.length, 0);
   assert.ok(containsKey(new Uint8Array([0xe2, ...new TextEncoder().encode('xcorrect-horse-battery-2')]), JSON.parse(KEYS)));
+  const inNote = await handle(form({...page, message: 'Addons: correct-horse-battery-2'}), {INBOX_KEYS: KEYS, GITHUB_TOKEN: 't'}, {fetcher: gh.fetcher, now: NOW});
+  assert.equal(inNote.status, 400);
+  assert.equal(gh.calls.length, 0);
 });
 
 test('any addon file is accepted with its own name; a bad name is refused', async () => {

@@ -16,8 +16,9 @@ ForeverDB.net is used with credit (`data/README.md`).
 
 | What | Written by | How |
 |---|---|---|
-| Prices | Fares's Mac, or ChatGPT from an uploaded file | `python3 scripts/ingest.py --push` after an in-game scan; or a scan record committed to `data/market/inbox/` (`scripts/scan_record.py`), filed by the `ingest.yml` Action |
-| Notes (`content/`) | The shared ChatGPT project | Commits to `main`, following `docs/chatgpt/UPDATING.md` |
+| Prices | The Mac, or anyone through the inbox | `python3 scripts/ingest.py --push` after an in-game scan; or an `Auctionator.lua` sent through the inbox, filed by `inbox.yml` |
+| Notes (`content/`) | The shared ChatGPT project, or Codex and Claude | Through the inbox, following `docs/chatgpt/UPDATING.md` (checked by `scripts/inbox.py` and `scripts/provenance.py`); Codex and Claude commit to `main` |
+| Other addons' files | Anyone through the inbox | Kept as uploaded in `data/captures/<environment>/<addon>/` until a processor exists |
 | Game data (`data/foreverdb.json`, `data/items.json`, `data/foreverdb-api.json`) | Scripts | `scripts/foreverdb_data.py`, `scripts/item_names.py`, `scripts/foreverdb_api.py` |
 | Structure, design, checks | Claude or Codex | This README and AGENTS.md |
 
@@ -47,10 +48,27 @@ it asks which market to publish (`--market "Realm Faction"`), then remembers.
 ## Keeping ChatGPT in the loop
 
 - Paste `docs/chatgpt/PROJECT_INSTRUCTIONS.md` into the project's instructions.
-- Upload `docs/chatgpt/UPDATING.md` as a project source file: where each kind of
-  note goes, the file format, the commit-message rule and when to write.
-- ChatGPT reads the site through `llms-full.txt` (everything in one file) and
-  each market's `prices.tsv`.
+- Upload `docs/chatgpt/UPDATING.md` (where each kind of note goes, the file format,
+  the change-note rule and when to write) and `docs/chatgpt/TAZDINGO_INBOX.md` (how
+  to read the map and use the inbox; each person adds their own key to their copy).
+- ChatGPT reads the repository, starting at `feed/index.md`: a map to one small
+  markdown file per market category, profession and guide page. The build writes
+  `feed/`; nothing in it is edited by hand.
+
+## The inbox
+
+A hidden form at https://faresbn.github.io/Tazdingo/inbox/ (not in the menu, sitemap
+or search) posts to a small ChatGPT Site (`inbox-site/`). The Site checks the personal
+key, then commits the submission, key removed, to `inbox/<id>/`. `inbox.yml` runs
+`scripts/inbox.py`:
+- **Pages** must be a known page at its current version, in the page format, and pass
+  the provenance rules (`scripts/provenance.py`). They're applied, archived and
+  published, or sent to the owner as a pull request when they need judgement.
+- **Addon files** are kept; Auctionator's is filed as a scan.
+- **Failures** are held in `inbox/held/<id>/` with the reason, and the run fails so
+  GitHub emails the owner.
+
+Everything sent is public on arrival.
 
 ## Refreshing game data
 
