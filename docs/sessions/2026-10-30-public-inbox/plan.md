@@ -15,8 +15,8 @@
 ChatGPT (agent mode) or a person
         │  fills in the hidden form on the website: key, kind, page + version, text or any addon's Lua file
         ▼
-Inbox receiver (a Cloudflare Worker or a ChatGPT Site; separate from the news relay)
-        │  wrong key → refused, logged in the receiver's own database (private): the "failed folder"
+Inbox Site (a second ChatGPT Site, separate from the news relay)
+        │  wrong key → refused, logged in the Site's own database (private): the "failed folder"
         │  over the rate or queue limit, or the key pasted into the content → refused, logged
         │  right key → key removed, submission committed to inbox/<id>/ on main (public from here on)
         ▼
@@ -31,12 +31,12 @@ Published site, about two minutes later; feed/ in the repository updated in the 
 ```
 
 Why it's built this way, briefly (research.md sections 3–5):
-- **GitHub Pages can't receive a form,** so the form posts to a small receiver: a free Cloudflare Worker, or a ChatGPT Site like the news relay (choice below).
-- **The receiver holds the GitHub token and pushes to GitHub.** GitHub can't collect from a Sites host, which blocked automated clients on 27 October. Pushing works the same on either host.
+- **GitHub Pages can't receive a form,** so the form posts to a small ChatGPT Site, the same service the news relay already runs on (why, below).
+- **The Site holds the GitHub token and pushes to GitHub.** GitHub can't collect from a Sites host, which blocked automated clients on 27 October.
 - **The key never enters the public repository.**
 - **Two consequences of a public repository, stated plainly:**
   - **A keyed submission is public the moment it arrives,** held ones included. Moving it to `held/` doesn't unpublish it, and it stays in history.
-  - **The key is permission to publish guide content automatically.** The checks enforce format, not truth: a well-formed page from a key holder goes live without review. That's fine for the three of you. Hand the key out only on that understanding.
+  - **The key is permission to publish guide content automatically.** The checks enforce format, not truth: a well-formed page from a key holder goes live without review. Hand a key only to a co-player you trust on that understanding.
 
 ## Decisions this records (reconsiderations, decided by Fares on 30 October)
 
@@ -45,7 +45,7 @@ These change settled lines in AGENTS.md and DECISIONS.md. Each one gets the date
 2. **Original Lua files are committed** (was: never commit SavedVariables). They're game data. The website still never serves a `.lua`; they live in the repository.
 3. **ChatGPT writes through the inbox** (was: ChatGPT commits directly). Codex still commits to `main`; Fares can override either on request.
 4. **A route for people without GitHub exists** (was: parked).
-5. **The inbox receiver holds a GitHub token limited to this repository.** The news relay keeps its rule of never holding GitHub credentials; the receiver is separate from it so that rule stands.
+5. **The inbox Site holds a GitHub token limited to this repository.** The news relay keeps its rule of never holding GitHub credentials; the Site is separate from it so that rule stands.
 6. **ChatGPT reads the repository, visitors read the website** (new). ChatGPT's markdown lives in the repository's `feed/` and `content/`, mapped by `feed/index.md`. The website stays the only destination for visitors and carries no markdown.
 
 ## Settled on 30 October
@@ -53,20 +53,24 @@ These change settled lines in AGENTS.md and DECISIONS.md. Each one gets the date
 - **A. Commit email:** history stays as it is; this repository's commits now use the GitHub private address (`195290664+faresbn@users.noreply.github.com`, set in the repository's own git config on 30 October). The inbox's commits use it too. Old commits keep `faresb@fact.qa`.
 - **B. "Mike" becomes "co-player"** in the current docs (AGENTS.md, DECISIONS.md, the session documents), for inclusivity rather than anonymity: the role can be anyone. The site's no-names guard in `build.py` and `check_site.py` keeps the specific names it blocks, because that's what makes it work.
 
-## Which receiver: a ChatGPT Site or a Cloudflare Worker
+## Which receiver: a ChatGPT Site (no new service)
 
-Something has to receive the form (research.md section 3). There are two credible free options, and both run the same code, since ChatGPT Sites are built on Cloudflare's Workers runtime.
+**Recommendation: a second ChatGPT Site, next to the news relay.** Your rule decides it: every extra service is one more account, bill, dashboard and failure to keep track of. The system today is GitHub (repository, Actions, Pages) plus one ChatGPT Site (the news relay), on the Business plan you already pay for. A Site for the inbox adds nothing to that list.
 
-| | ChatGPT Site | Cloudflare Worker (free plan) |
-|---|---|---|
-| Account | Already in use (the news relay), on the Business plan | A new free Cloudflare account; `wrangler login` once on this Mac |
-| Who deploys and tests | Codex only, through the Sites workflow. Its host also blocked automated clients on 27 October, so I can't test it from here except through a browser | Me, from here: deploy, test end to end, fix |
-| Maturity | Public beta (one unconfirmed report of a removed secret still working) | Generally available; the free plan allows 100,000 requests a day |
-| Callable as a tool from a chat | Yes, in principle: a Site can host a plugin (an MCP tool) that workspace members install and ChatGPT calls from chats, under the workspace's app controls ([Sites plugins](https://aipass.one/blog/chatgpt-sites-plugins-explained)) | Also possible, as a custom connector the Business workspace's admin adds. To verify for your workspace |
+| Option | New service to keep track of? | What it costs | Verdict |
+|---|---|---|---|
+| **ChatGPT Site** | No: Sites already runs the news relay | Codex deploys it (I write and test the code here and hand Codex a brief). Public beta | **Use this** |
+| Cloudflare Worker | Yes, a new account | Free; I could deploy it myself | Only worth it if Sites gets in the way |
+| Google Apps Script | Yes, Google | Free, but awkward: plain HTML forms can't send files to it without extra code, and POST replies come back as redirects | No |
+| Move the site to Vercel | Swaps GitHub Pages for Vercel, while GitHub stays for the repository and Actions, and the relay stays on Sites | A full re-host, a new address (`*.vercel.app`) unless you buy a domain, and it reopens "stay on GitHub Pages". The free Hobby plan would cover it, so no payment | No: the most work for the same result |
 
-**Recommendation: a Cloudflare Worker.** It's the same design and the same cost (none). The difference is ownership of the loop: I can deploy, test and fix the inbox myself, instead of every change going through Codex to a beta host I can't test. Choose the Site if you'd rather keep everything inside OpenAI and avoid a new account.
+**What choosing the Site gives up,** and how the plan handles it:
+- **Codex deploys every change.** The Site's code is a single small file with its own tests. I run them here, and Codex deploys from a ready-to-paste brief, as the relay is deployed today.
+- **I can't test it from the command line,** because the host blocked automated clients. The end-to-end check goes through the built-in browser instead, which is a real browser, the same way a person or agent mode reaches it.
 
-**"Can it be called from inside a shared project?"** Not as a plain web address: ChatGPT reaches a web form through agent mode, which is route B, and that works from any chat, project or not. Being *called as a tool* needs the receiver to also offer an MCP tool, installed for the workspace as a plugin or connector. Either receiver can do that. It goes in as phase 9, after the form works, because the form remains the fallback, and whether workspace plugins are usable inside a shared project is something to test in the app.
+It stays a separate Site from the relay, so the relay keeps its rule of never holding GitHub credentials. Both sit in the same Sites account; that's still one service.
+
+**"Can it be called from inside a shared project?"** Not as a plain web address. ChatGPT reaches a web form through agent mode, which is route B, and that works from any chat, project or not. To be *called as a tool*, the Site also has to offer an MCP tool, published to your Business workspace as a plugin, which Sites supports. That's phase 9, after the form works, because the form remains the fallback. Whether a workspace plugin can be used inside a shared project is one to test in the app.
 
 ## Checking truth, not just format
 
@@ -81,7 +85,7 @@ Something has to receive the form (research.md section 3). There are two credibl
    - A submission changes one page.
    - Item and spell links must point to IDs that exist in our ForeverDB data.
    - Cited links must answer, and come from a list of known sources (Wowhead, Icy Veins, ForeverDB, Blizzard and the rest UPDATING.md names), so an unknown site goes to review rather than straight onto the page.
-3. **A personal key per person** (you, a co-player, your brother), each with a neutral label such as `key-2`. Every submission is attributable inside the repository without a name on the site, and one key can be revoked without touching the others.
+3. **A personal key for you and any co-player,** each with a neutral label such as `key-2`. Every submission is attributable inside the repository without a name on the site, and one key can be revoked without touching the others.
 4. **Your one-tap review for the changes that matter.** These become a pull request instead of being applied, and you approve or close it from the GitHub app. The inbox runs every check before opening it (GitHub doesn't re-run checks on a pull request an Action opened); merging publishes as usual:
    - setting a page `live`;
    - changing a "Tazdingo recommendation";
@@ -140,7 +144,7 @@ Each phase is one branch checkpoint with the full check run (`unittest`, `build.
 
 ### Phase 4: the inbox on GitHub's side (about 3 hours)
 
-- **Submission layout,** written by the receiver: `inbox/<id>/submission.json` plus one of `page.md` or the submitted `.lua` under its own file name. The JSON has:
+- **Submission layout,** written by the Site: `inbox/<id>/submission.json` plus one of `page.md` or the submitted `.lua` under its own file name. The JSON has:
   - `id`, `received` (UTC) and `key_label` (which personal key, never the key)
   - `kind` (`page` or `lua`)
   - for a page: `path` (e.g. `content/classes/mage/frost.md`) and `version` (from the map in `feed/index.md`)
@@ -163,9 +167,9 @@ Each phase is one branch checkpoint with the full check run (`unittest`, `build.
 - **`ingest.yml` and the scan-record route stay working but undocumented for ChatGPT.** Retiring them is a later tidy-up.
 - **Tests:** a new `tests/test_inbox.py` covers good page, stale version, unknown path, bad header, name in message, each provenance and change rule, a review-worthy change becoming a pull request, good Auctionator Lua, an unknown addon's Lua (stored, not held), a file name that doesn't match its contents, unreadable Lua, held move, a bad submission followed by a good one (both handled), and `main` moving mid-run with an edit to the same page (redone, then held as stale).
 
-### Phase 5: the receiver (about 1 hour; a Cloudflare Worker unless you choose the Site)
+### Phase 5: the inbox Site (about 1 hour here, plus a Codex deploy)
 
-- **Code in this repository at `receiver/worker/index.js`, tests in `receiver/inbox.test.mjs` (not under `inbox/`, which holds submissions and triggers the inbox workflow),** the same layout as `relay/`. No dependencies. Written once, runs on either host.
+- **Code in this repository at `inbox-site/worker/index.js`, tests in `inbox-site/inbox.test.mjs` (not under `inbox/`, which holds submissions and triggers the inbox workflow),** the same layout as `relay/`. No dependencies. Its tests run here with `node --test`, like the relay's.
 - **`POST /submit`** accepts a plain HTML form (multipart) and the same fields as JSON, for a GPT or agent later:
   - **Checks only what must be checked before anything is public:**
     - the key, matched against the personal keys in the `INBOX_KEYS` secret (constant-time), which gives the key's label
@@ -175,17 +179,17 @@ Each phase is one branch checkpoint with the full check run (`unittest`, `build.
     - limits of 30 accepted submissions an hour and 20 waiting in `inbox/`
     
     Every other rule lives in one place, `inbox.py`, so a keyed but malformed submission still reaches `held/`, where you see it.
-  - **Refused** (wrong key or a limit): a row in the receiver's database (time, size, kind, reason, no content) and a plain "Refused" reply.
+  - **Refused** (wrong key or a limit): a row in the Site's database (time, size, kind, reason, no content) and a plain "Refused" reply.
   - **Right key:** removes the key and commits `inbox/<id>/…` in one commit through GitHub's API (`GITHUB_TOKEN` secret). The commit is built on the latest `main`; if `main` moves before it lands, the commit is rebuilt on the new tip, so nothing pushed in between is lost. Then it replies with the id and where to watch.
 - **The reply is a plain page,** readable by a person or an agent: "Received. If it passes its checks it's live at <address> in about two minutes."
 - **The news relay is untouched.**
-- **Deploy:** on Cloudflare, by me with `wrangler` (two secrets, a D1 database binding, free plan). On ChatGPT Sites instead: Codex deploys it as a new Site named `tazdingo-inbox`, from a ready-to-paste brief I write in this folder.
+- **Deploy:** Codex deploys it as a new Site named `tazdingo-inbox` (two secrets, a database binding), from a ready-to-paste brief I write in this folder.
 
 ### Phase 6: the hidden form (about 30 minutes)
 
 - **`inbox/index.html`, built by `build.py` in the site's design:** `noindex` meta tag, not in the menu, sitemap or search.
-- **Fields:** key, kind (page or Lua), page path, version, message, a large text box for the page and a file picker for any addon's `.lua`. A plain HTML form posting to the receiver, so it works with no JavaScript.
-- **`check_site.py`:** whitelist the receiver's address next to the relay's, and allow `noindex` on `inbox/index.html` only. Today the check fails any page carrying `noindex` (line 76), and it keeps doing that for every other page.
+- **Fields:** key, kind (page or Lua), page path, version, message, a large text box for the page and a file picker for any addon's `.lua`. A plain HTML form posting to the Site, so it works with no JavaScript.
+- **`check_site.py`:** whitelist the Site's address next to the relay's, and allow `noindex` on `inbox/index.html` only. Today the check fails any page carrying `noindex` (line 76), and it keeps doing that for every other page.
 
 ### Phase 7: ChatGPT's instructions (about 45 minutes)
 
@@ -202,38 +206,37 @@ Each phase is one branch checkpoint with the full check run (`unittest`, `build.
 
 ### Phase 8: records and an end-to-end check (about 30 minutes)
 
-- **Docs:** AGENTS.md (settled decisions, data rules, everyday tasks), DECISIONS.md (the six decisions above, plus the receiver and the truth-check layers), README.md, HANDOVER.md.
+- **Docs:** AGENTS.md (settled decisions, data rules, everyday tasks), DECISIONS.md (the six decisions above, plus the Site and the truth-check layers), README.md, HANDOVER.md.
 - **Review log:** the Codex review of this plan, in `revlog.md`.
-- **End-to-end check** after the receiver is deployed: a page edit through the form, a stale-version edit (held, email arrives), a wrong key (refused, logged), a Beta Lua (filed). I can drive the form in the built-in browser for the person route.
+- **End-to-end check** after the Site is deployed: a page edit through the form, a stale-version edit (held, email arrives), a wrong key (refused, logged), a Beta Lua (filed). I can drive the form in the built-in browser for the person route.
 
 ### Phase 9: call the inbox as a tool from chats (after the form works; about 1 hour)
 
-- The receiver also offers one MCP tool, `submit_to_tazdingo`, with the same fields and the same checks as the form.
-- You add it to the Business workspace as a plugin (Site) or a custom connector (Worker), and test whether it can be called from inside the shared project.
+- The Site also offers one MCP tool, `submit_to_tazdingo`, with the same fields and the same checks as the form.
+- You publish it to the Business workspace as a plugin, and test whether it can be called from inside the shared project.
 - If it can, TAZDINGO_INBOX.md says to call the tool first, then agent mode on the form, then hand the file to the person.
 
 ## What I need from you, and when
 
 | When | What | Time for you |
 |---|---|---|
-| Now | Approve or annotate this plan; choose the receiver (Worker or Site); confirm truth-check layers 1–4 | — |
+| Now | Approve or annotate this plan; confirm the ChatGPT Site and truth-check layers 1–4 | — |
 | Before phase 4 | Check GitHub → Settings → Notifications → Actions is set to email you, at least for failed runs. That email is how held submissions reach you | 1 minute |
 | Before phase 4 | Allow the inbox workflow to open review pull requests: repository Settings → Actions → General → Workflow permissions → "Allow GitHub Actions to create and approve pull requests". A repository setting, so it's yours to switch on (or I do it with your go) | 1 minute |
-| Before phase 5 deploys | Create the GitHub token: Settings → Developer settings → Fine-grained tokens → only `faresbn/Tazdingo`, Contents read and write only, one-year expiry. Paste it straight into the receiver's secret prompt (`wrangler secret put`, or the Site's settings), never into chat or a file. I'll generate the personal keys into `tmp/` (ignored by git) | 3 minutes |
-| Phase 5, Worker | Create a free Cloudflare account and run `wrangler login` once on this Mac | 5 minutes |
-| Phase 5, Site | Run the Codex brief to deploy `tazdingo-inbox` | 10 minutes |
+| Before phase 5 deploys | Create the GitHub token: Settings → Developer settings → Fine-grained tokens → only `faresbn/Tazdingo`, Contents read and write only, one-year expiry. Paste it straight into the Site's secret prompt (the Site's settings, during Codex's deploy), never into chat or a file. I'll generate the personal keys into `tmp/` (ignored by git) | 3 minutes |
+| Phase 5 | Run the Codex brief to deploy `tazdingo-inbox` | 10 minutes |
 | Phase 7 | Paste the new project instructions; upload `TAZDINGO_INBOX.md`; each person puts their own key in their copy, or keeps it in their ChatGPT memory or instructions | 5 minutes |
 | After | Test from the ChatGPT app: start at the map and read a price and a page from the repository; edit a page via agent mode; submit a Lua via agent mode; the person route | 15 minutes |
 
 ## Risks and how they're handled
 
 - **The token is full write access to this repository's contents.** It isn't limited to the inbox. Whoever got hold of it could change the scripts that workflows then run, and history can't undo what compromised code has already done. Mitigations:
-  - the receiver's code is small, has no dependencies and writes only under `inbox/`;
+  - the Site's code is small, has no dependencies and writes only under `inbox/`;
   - the token covers one repository and expires after a year;
-  - it lives only in the receiver's secrets;
+  - it lives only in the Site's secrets;
   - revoking it disables the inbox in seconds.
 - **The key leaks** (it sits in a ChatGPT project file). Whoever has it can publish well-formed but wrong pages or unwanted links: the checks enforce format, not truth. The rate and queue limits bound the volume. With personal keys only the leaked one is revoked, in `INBOX_KEYS` and in that person's copy, then put any affected page back from `archive/`. Check once that rotation takes effect (research.md section 3 notes a beta bug report).
-- **Keyed submissions are public on arrival,** held ones included. Accepted, because only the three of you hold the key. The receiver refuses content containing the key itself, so a pasted key can't be published by accident.
+- **Keyed submissions are public on arrival,** held ones included. Accepted, because only you and the co-players you give keys to can submit. The Site refuses content containing the key itself, so a pasted key can't be published by accident.
 - **Repository growth from Lua files and the committed price files.** Collection addons can write large files that change at every login. Watched in the handover; retention decided before 500 MB, possibly per addon (e.g. keep only the latest few files of a non-price addon).
 - **ChatGPT can't do part of this in practice** (opening raw GitHub addresses, agent-mode file upload). The person route always works for writing. For reading, the GitHub connector can open the same public files. Feed files are split by category and the map holds no content, so each read stays small.
 - **Going public is effectively one-way.** Everything is checked before the flip; nothing secret is in the history.
@@ -241,8 +244,8 @@ Each phase is one branch checkpoint with the full check run (`unittest`, `build.
 ## Not in this plan
 
 - No change to the site's design, pages or Auction House logic. Retiring `ingest.yml`'s scan-record route comes later.
-- Not done in this plan: a GPT with an action, email from the receiver, Vercel, a custom domain, search-engine submission. Removing `llms-full.txt` isn't in it either.
+- Not done in this plan: a GPT with an action, email from the Site, a Cloudflare Worker, Google Apps Script, Vercel, a custom domain, search-engine submission. Removing `llms-full.txt` isn't in it either.
 
 ## Order and checkpoints
 
-The phases run in order 1 → 2 → 3 → 4 → 6 → 5 → 7 → 8, then 9, each merged to `main` on passing checks. The form (6) lands before the receiver (5) is deployed, but points at the receiver's address. Until the receiver exists, it shows "inbox not open yet". Estimated total of my time: about 9 hours (phase 4 grows to about 3 hours with the truth checks and generic Lua; phase 9 adds 1), plus Codex's deploy and your four short steps.
+The phases run in order 1 → 2 → 3 → 4 → 6 → 5 → 7 → 8, then 9, each merged to `main` on passing checks. The form (6) lands before the Site (5) is deployed, but points at the Site's address. Until the Site exists, it shows "inbox not open yet". Estimated total of my time: about 9 hours (phase 4 grows to about 3 hours with the truth checks and generic Lua; phase 9 adds 1), plus Codex's deploy and your four short steps.

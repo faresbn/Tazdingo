@@ -34,3 +34,8 @@ It also confirmed that pushes made with a personal token do trigger workflows, a
 - **Commit email switched** to the GitHub private address in this repository's config; **"Mike" becomes "co-player"** in current docs, for inclusivity.
 - **Receiver reconsidered:** the plan now compares a ChatGPT Site with a free Cloudflare Worker and recommends the Worker (deployable and testable from here). Calling the inbox as a tool from chats is phase 9, via an MCP tool on either host.
 - Not re-reviewed yet: the truth-check layers and generic Lua add rules to `inbox.py` without changing the transaction the review checked. The receiver choice isn't a security change, since the code and token are the same on either host.
+
+## Fares's third round (30 October 2026)
+
+- **"For you and any co-player"** is the wording for who holds keys, replacing named people throughout.
+- **Receiver: fewest services wins.** Fares questioned the Worker and asked about Vercel and Google Apps Script, noting that more third-party services make a simple system harder to track. The plan now recommends a second ChatGPT Site: Sites already runs the news relay, so it adds no service. A Worker, Apps Script or a move to Vercel would each add or swap one. The Worker stays as the fallback if Sites gets in the way. My earlier Worker recommendation weighted my ability to deploy and test above system simplicity; Fares's principle reverses that.
