@@ -144,6 +144,19 @@ class Pages(InboxCase):
         self.assertIn("build failed", self.held_reason(sub))
         self.assertNotIn("WeakAuras still has no", (self.root / PAGE).read_text())
 
+    def test_an_unexpected_error_holds_only_that_submission(self):
+        def broken(root, sub, folder, base, push):
+            raise KeyError("surprise")
+        original = inbox.apply_page
+        inbox.apply_page = broken
+        try:
+            sub = self.submit_page(self.edited_page())
+            [outcome] = inbox.run(self.root)
+        finally:
+            inbox.apply_page = original
+        self.assertEqual(outcome["outcome"], "held")
+        self.assertIn("couldn't process this", self.held_reason(sub))
+
     def test_bad_submission_does_not_block_a_good_one(self):
         bad = self.submit_page(self.edited_page(), version="0123456789ab")
         good = self.submit_page(self.edited_page())
@@ -233,6 +246,14 @@ class Provenance(unittest.TestCase):
         new = old.replace("(idea,", "(outdated,")
         _, review = self.check(old, new)
         self.assertIn("finding 'Frost is best' marked outdated", review)
+
+    def test_repeated_headings_and_protocol_relative_links_are_refused(self):
+        guides = "### Tazdingo recommendation\n\nKeep Frost.\n\n### Tazdingo recommendation\n\nSwitch to Fire."
+        problems, _ = self.check(self.page(), self.page(guides))
+        self.assertTrue(any("appears twice" in p for p in problems))
+        problems, review = self.check(self.page(), self.page("### Talents\n\nSee [this](//example.org/x)."))
+        self.assertIn("write links in full, starting https://", problems)
+        self.assertIn("a link to example.org, a site no page has cited before", review)
 
     def test_unknown_items_and_messages(self):
         problems, _ = self.check(self.page(), self.page("### Gear\n\n[Linen](https://foreverdb.net/item/999999) ([Wowhead](https://www.wowhead.com/x))."))

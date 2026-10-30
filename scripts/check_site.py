@@ -73,7 +73,7 @@ def check(out=None, base="/Tazdingo/"):
         assert not getattr(page, "handlers", []), f"Event handler or script link in {path}: {page.handlers}"
         assert page.title.strip(), f"Missing title: {path}"
         assert not getattr(page, "duplicate_ids", []), f"Duplicate section ids in {path}: {page.duplicate_ids[:5]}"
-        assert "noindex" not in text, f"Page hidden from search: {path}"
+        assert "noindex" not in text or path == out / "inbox/index.html", f"Page hidden from search: {path}"  # only the inbox form is hidden
         assert len(re.findall(r"<script(?![^>]*\bsrc=)", text)) <= 1, f"Unexpected inline script in {path}"  # only the theme snippet
         for link in page.links:
             target = local(link)
@@ -97,10 +97,10 @@ def check(out=None, base="/Tazdingo/"):
         history = json.loads((out / market["history_json"].removeprefix(base)).read_text())
         assert set(history["history"]) == {r["item_key"] for r in rows}
     # The public site never names the people behind it or the assistant they use (the
-    # faresbn.github.io address is the one exception: it's the host's name, not text).
+    # faresbn.github.io address and our ChatGPT Sites hosts are the exceptions: hosts' names, not text).
     for path in out.rglob("*"):
         if path.suffix in (".html", ".txt", ".json", ".tsv", ".xml", ".css", ".js", ".svg"):
-            text = re.sub(r"faresbn\.github\.io|tazdingo-news-relay\.fact-special-2007\.chatgpt\.site", "", path.read_text())
+            text = re.sub(r"faresbn\.github\.io|[a-z0-9-]+\.fact-special-2007\.chatgpt\.site", "", path.read_text())
             found = re.findall(r"\b(?:ChatGPT|Fares|Mike)\b", text, re.I)
             assert not found, f"{path.relative_to(out)} mentions {sorted(set(found))}"
     full = (out / "llms-full.txt").read_text()

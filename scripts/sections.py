@@ -413,6 +413,36 @@ def more_page(site: Site, ctx: dict, m: dict) -> str:
                   active="more", path=f"more/{m['slug']}/", description=f"World of Warcraft: Forever {m['name'].lower()}: {m['summary']}")
 
 
+def inbox_page(site: Site, ctx: dict) -> str:
+    """The hidden form: not in the menu, sitemap or search, and marked noindex. A plain HTML form
+    posting to the inbox Site, so it works without JavaScript for a person or an agent."""
+    inbox = ctx["game"].get("inbox") or {}
+    shut = "" if inbox.get("open") else " disabled"
+    notice = "" if inbox.get("open") else ('<p class="inbox-closed"><strong>The inbox is not open yet.</strong> '
+                                                      'This form starts working once its receiver is running.</p>')
+    body = page_head("Inbox", "Send a finished guide page or an addon's saved-variables file. You need a key and the instructions that come with it.") + f'''<section class="page-body prose">
+  {notice}
+  <form class="inbox-form" method="post" action="{esc(inbox.get("endpoint", ""))}" enctype="multipart/form-data">
+    <label>Key <input type="password" name="key" required autocomplete="off" spellcheck="false"></label>
+    <fieldset><legend>What you're sending</legend>
+      <label class="choice"><input type="radio" name="kind" value="page" checked> A guide page</label>
+      <label class="choice"><input type="radio" name="kind" value="lua"> An addon's file (.lua)</label>
+    </fieldset>
+    <h2>A guide page</h2>
+    <label>Page path <input type="text" name="path" placeholder="content/classes/mage/frost.md" spellcheck="false"></label>
+    <label>Version you edited <input type="text" name="version" placeholder="the 12 characters shown in feed/guides.md" spellcheck="false"></label>
+    <label>One-line change note <input type="text" name="message" placeholder="Frost Mage: Blizzard-kiting from 22, tested"></label>
+    <label>The whole page <textarea name="page" rows="16" spellcheck="false"></textarea></label>
+    <h2>An addon's file</h2>
+    <label>File <input type="file" name="file" accept=".lua"></label>
+    <label>Market, for Auctionator only <input type="text" name="market" placeholder="Realm Horde"></label>
+    <p><button type="submit"{shut}>Send</button></p>
+  </form>
+</section>'''
+    html_text = layout(site, "Inbox", body, path="inbox/", description="Send a page or an addon file.")
+    return html_text.replace('<meta name="viewport"', '<meta name="robots" content="noindex, nofollow">\n<meta name="viewport"', 1)
+
+
 def about_page(site: Site, ctx: dict) -> str:
     scans = "".join(f'<li>{when(c["capture_date"])}, {esc(c["environment_label"])}: {c["source_bytes"]:,} bytes, fingerprint <code>{esc(c["source_sha256"][:16])}</code></li>'
                     for c in reversed(ctx["captures"]))

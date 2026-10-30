@@ -767,6 +767,7 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/", 
     for m in game["more"]:
         page(f"more/{m['slug']}/", sections.more_page(site, ctx, m))
     page("more/about/", sections.about_page(site, ctx))
+    page("inbox/", sections.inbox_page(site, ctx))  # hidden: not in the menu, sitemap or search
     write("404.html", pages.not_found(site))
     write("search.json", json.dumps(search_index(ctx), separators=(",", ":"), ensure_ascii=False) + "\n")
 

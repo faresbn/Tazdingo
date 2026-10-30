@@ -16,25 +16,37 @@ from __future__ import annotations
 import difflib
 import re
 from datetime import date, datetime
+from urllib.parse import urlsplit
+
+from markup import BARE_URL, LINK as RENDERED_LINK
 
 FINDING = re.compile(r"^### (?P<claim>.+?) \((?P<confidence>idea|testing|tested|outdated), (?P<date>\d{1,2} [A-Z][a-z]{2} \d{4})\)\s*$")
 HOW_KNOWN = re.compile(r"\b(?:in game|in-game|tested|level \d+|simulat\w*|read (?:on|in)|according to)\b|https?://", re.I)
 MONEY = re.compile(r"\b\d[\d,]*\s?(?:gold|silver|copper)\b|\b\d[\d,]*g\b", re.I)  # "100 gold", "10g"; not "30s" (seconds)
 SOURCE_NAMES = ("Wowhead", "Icy Veins", "ForeverDB", "Blizzard", "Method", "Warcraft Tavern", "WoWSims", "wow-professions",
                 "CurseForge", "WoW TBC", "wowtbc.gg", "Kami", "Forever Changes")
-LINK = re.compile(r"\]\((https?://[^)\s]+)\)")
 ITEM_LINK = re.compile(r"foreverdb\.net/item/(\d+)")
 EMPTY_FINDINGS = "nothing recorded yet"
 BAD_MESSAGE_WORDS = re.compile(r"\b(?:update|updated|misc|chatgpt|fares|mike)\b", re.I)
 
 
+def urls_in(text: str) -> list[str]:
+    """Every address the site would turn into a link, found with the renderer's own patterns."""
+    return [m.group(2) for m in RENDERED_LINK.finditer(text)] + BARE_URL.findall(text)
+
+
 def domain(url: str) -> str:
-    host = re.sub(r"^https?://", "", url).split("/")[0].lower()
+    host = (urlsplit(url).hostname or "").lower()
     return host[4:] if host.startswith("www.") else host
 
 
 def domains_in(text: str) -> set[str]:
-    return {domain(u) for u in re.findall(r"https?://[^)\s>\]]+", text)}
+    """The sites a page links to, protocol-relative links (//host) included."""
+    return {domain(u) for u in urls_in(text) if u.startswith(("http://", "https://", "//"))} - {""}
+
+
+def has_source_link(text: str) -> bool:
+    return any(u.startswith(("http://", "https://")) for u in urls_in(text))
 
 
 def sections(body: str) -> dict[str, str]:
@@ -50,17 +62,25 @@ def sections(body: str) -> dict[str, str]:
     return result
 
 
-def subsections(text: str) -> dict[str, str]:
-    """`### ` subsections by heading, in order; text before the first goes under ''."""
-    result, heading, lines = {}, "", []
+def subsection_list(text: str) -> list[tuple[str, str]]:
+    """`### ` subsections as (heading, text), in order; text before the first has heading ''."""
+    result, heading, lines = [], "", []
     for line in text.splitlines():
         if line.startswith("### "):
-            result[heading] = "\n".join(lines).strip()
-            heading, lines = line, []
+            result.append((heading, "\n".join(lines).strip()))
+            heading, lines = line.rstrip(), []
         else:
             lines.append(line)
-    result[heading] = "\n".join(lines).strip()
+    result.append((heading, "\n".join(lines).strip()))
     return result
+
+
+def subsections(text: str) -> dict[str, str]:
+    return dict(subsection_list(text))
+
+
+def repeated(items: list[str]) -> set[str]:
+    return {i for i in items if i and items.count(i) > 1}
 
 
 def findings(body: str) -> dict[str, tuple[str, str]]:
@@ -104,6 +124,16 @@ def check(old: str | None, new: str, meta: dict, old_meta: dict, known_domains: 
     """(problems, review reasons) for a submitted page body `new` replacing `old`."""
     problems, review = [], []
     old = old or ""
+    # Repeated headings would let one copy hide behind another in the comparisons below.
+    for name in ("What the guides say", "Field findings"):
+        heads = [h for h, _ in subsection_list(sections(new).get(name, ""))]
+        claims = [m["claim"] if (m := FINDING.match(h)) else h for h in heads]
+        for head in sorted(repeated(claims)):
+            problems.append(f"'{head.lstrip('# ')}' appears twice under {name}; each heading must be unique")
+    if len([line for line in new.splitlines() if line.startswith("## ")]) != len({line for line in new.splitlines() if line.startswith("## ")}):
+        problems.append("a section heading appears twice")
+    if any(u.startswith("//") for u in urls_in(new)):
+        problems.append("write links in full, starting https://")
     try:
         updated = date.fromisoformat(meta.get("updated", ""))
         if abs((updated - today).days) > 2:
@@ -133,16 +163,19 @@ def check(old: str | None, new: str, meta: dict, old_meta: dict, known_domains: 
 
     # Source summaries carry links; the recommendation is the owner's call.
     old_guides, new_guides = subsections(sections(old).get("What the guides say", "")), subsections(sections(new).get("What the guides say", ""))
+    def recommendation(guides: dict) -> list[str]:
+        return [f"{h}\n{c}" for h, c in guides.items() if h.lower().startswith("### tazdingo recommendation")]
+    if recommendation(old_guides) != recommendation(new_guides):
+        review.append("the Tazdingo recommendation changed")
     for heading, content in new_guides.items():
         if heading.lower().startswith("### tazdingo recommendation"):
-            if old_guides.get(heading) != content:
-                review.append("the Tazdingo recommendation changed")
-        elif content and old_guides.get(heading) != content and not LINK.search(content):
+            continue
+        if content and old_guides.get(heading) != content and not has_source_link(content):
             problems.append(f"'{heading.lstrip('# ') or 'What the guides say'}' summarises sources without linking them")
 
     # Costs need their source; item links must be real items; new sites get a look.
     for paragraph in added_paragraphs(old, new):
-        if MONEY.search(paragraph) and not LINK.search(paragraph) and not any(n.lower() in paragraph.lower() for n in SOURCE_NAMES):
+        if MONEY.search(paragraph) and not has_source_link(paragraph) and not any(n.lower() in paragraph.lower() for n in SOURCE_NAMES):
             problems.append(f"a cost needs its source (a link or the site's name): {paragraph[:80]!r}")
         for item in ITEM_LINK.findall(paragraph):
             if int(item) not in item_ids:
