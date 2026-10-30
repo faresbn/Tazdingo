@@ -4,7 +4,7 @@ summary: How Forever's account-wide Legacy system works: the challenges that ear
 sources: Blizzard, ForeverDB, Icy Veins, Wowhead, Warcraft Tavern, Method
 ---
 
-## At a glance
+## Cheatsheet
 
 - **What it is:** account-wide progression. Complete Legacy Challenges to earn Legacy Points, then spend them on perks, separately on each character.
 - **Unlocking it:** your first point opens the Legacy window (default key Y). For most players that's the first character to reach level 25.

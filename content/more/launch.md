@@ -4,7 +4,7 @@ summary: Before you log in: a practical checklist for WoW Forever's launch on 4 
 sources: Blizzard, ForeverDB, Icy Veins, Wowhead, wow-professions.com, Warcraft Tavern, Blizzard forums
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Launch:** Wednesday 4 November 2026 at 3:00 p.m. PST, which is 23:00 UTC, worldwide at the same moment.
 - **What you need:** a World of Warcraft subscription or Game Time. The Skyborne packs are optional.

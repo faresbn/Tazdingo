@@ -4,7 +4,7 @@ summary: Warlock builds that mix Affliction, Demonology and Destruction in WoW F
 sources: Icy Veins, Wowhead, WoWSims builds, Blizzard class deep dive, ForeverDB
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Why mixing is easy:** One talent point per level from 10, and each row needs only 5 points in the rows above it in the same section ([ForeverDB](https://foreverdb.net/class/Warlock/talents)).
 - **Designed for it:** Blizzard moved [Ruin](https://foreverdb.net/spell/17959) to row 3 as a 5-point talent so that Demonology and hybrid builds can reach it ([Blizzard](https://worldofwarcraft.com/en-us/news/24310968)).

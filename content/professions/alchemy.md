@@ -1,17 +1,18 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Alchemy changed in Forever (healing potions gone, new elixirs, boost potions, dyes and flasks), how guides level it and what they say sells.
 sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Makes:** elixirs, potions, flasks, oils, dyes and transmutes. It no longer makes the plain healing potions.
-- **Suits:** every class. Its consumables help everyone, while levelling and at 60 ([Wowhead](https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes)).
-- **Pairs with:** Herbalism. Nearly every recipe uses herbs.
-- **New in Forever:** dozens of new recipes, many of them low-level, which makes Alchemy worth taking while you level. They include new elixir lines, short boost potions, dyes, new flasks and a new transmute. Many are sold for Merchant's Favor at your faction's trade camp.
-- **Camp feature:** the [Mana Well](https://foreverdb.net/item/279956) (skill 20) restores mana to everyone sitting nearby and doesn't stack with Blessing of Wisdom. The [Fermenter](https://foreverdb.net/item/279970) (140) makes certain reagents. The [Alchemy Laboratory](https://foreverdb.net/item/279990) (300) is the station some recipes require. Both keep the Mana Well's buff.
-- **Tools:** vials in four tiers, and a Philosopher's Stone for transmutes.
+- **Pick it for:** consumables you will use or sell repeatedly, for any class; dozens of new low-level recipes make it worth taking while levelling ([Wowhead](https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes)).
+- **Pairs with:** Herbalism, since nearly every recipe uses herbs. Buying herbs can be faster when you have the gold; gathered herbs still have a sale value.
+- **Levelling route:** wow-professions.com, a Beta estimate: 1–55 Elixir of Minor Defense · 55–150 Minor Mana Potions, Elixir of Wisdom, Fire Oil · 150–225 Elixir of Fire Power, Mana Potions, Nature Protection Potions · 225–300 untested ([wow-professions.com](https://www.wow-professions.com/forever/alchemy-leveling-guide)). wowtbc.gg uses oils and Free Action Potions instead.
+- **Money makers:** Wowhead expects steady consumable demand; Icy Veins rates elixirs (they stack) and reagents such as oils and dyes ([Icy Veins](https://www.icy-veins.com/wow-forever/alchemy)). Transmutes such as Arcanite pay only when output beats every input and selling cost. Scan margins are estimates from asking prices.
+- **Camp items:** [Mana Well](https://foreverdb.net/item/279956) (20), mana for everyone sitting nearby, doesn't stack with Blessing of Wisdom · [Fermenter](https://foreverdb.net/item/279970) (140), makes certain reagents · [Alchemy Laboratory](https://foreverdb.net/item/279990) (300), a station some recipes need.
+- **Trainers and ranks:** Journeyman 50 and level 10 · Expert 125 and level 20 · Artisan 200 and level 35, from Rogvar in Stonard (Horde) or Kylanna Windwhisper in Feathermoon Stronghold (Alliance) ([wow-professions.com](https://www.wow-professions.com/forever/alchemy-leveling-guide)). New recipes: Nina Surefire (Redridge) or Apothecary Durelle (Crossroads), for Merchant's Favor.
+- **Watch out:** plain healing potions are First Aid now; Alchemy's Discolored ones heal more but you then lose 75% of it over time ([ForeverDB](https://foreverdb.net/guide/professions)). Sources of the 300 flasks, Legionite transmute and Laboratory blueprint are unknown.
 
 ## What the guides say
 

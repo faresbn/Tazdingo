@@ -1,17 +1,18 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Leatherworking changed in Forever (role-themed leather and mail sets, reagent bags, camp tanning racks, shifted skill ranges), how guides level it and what it's worth.
 sources: Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Wowhead
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Makes:** leather and mail armour, armour kits, cloaks, bags, and quivers and ammo pouches for Hunters.
-- **Suits:** Druids, Hunters, Rogues and Shamans, who can wear most of what it makes and keep their own gear current while levelling ([Icy Veins](https://www.icy-veins.com/wow-forever/leatherworking)).
-- **Pairs with:** Skinning, which supplies the leather, hides and scales.
-- **New in Forever:** more new recipes than any other profession, including role-themed sets for every leather and mail spec, new blue boots, a reagent bag, and recipes built on Skinning's new Pristine and Fel materials.
-- **Camp feature:** the [Camp Tent](https://foreverdb.net/item/279978) (skill 20) tops up everyone's rested experience to 5% of a level. The [Tanning Rack](https://foreverdb.net/item/279941) (140) and [Sewing Machine](https://foreverdb.net/item/279945) (300) are crafting stations many recipes need. Both keep the Tent's effect.
-- **Specialisations:** Icy Veins says high-level leatherworkers choose Dragonscale, Elemental or Tribal. ForeverDB lists a Tribal Leatherworking trainer from Classic's data. Nothing above level 30 is confirmed.
+- **Pick it for:** self-crafted upgrades while levelling for Druids, Hunters, Rogues and Shamans, when the specific pieces justify the cost ([Icy Veins](https://www.icy-veins.com/wow-forever/leatherworking)).
+- **Pairs with:** Skinning, for leather, hides, scales and the new Pristine and Fel materials; buying leather can still be the better use of time.
+- **Levelling route:** wow-professions.com, tested to 225: 1–55 Light Leather, Cured Light Hide · 55–130 Embossed Leather Gloves, Fine and Dark Leather Belts, Heavy Leather · 130–210 Cured Heavy Hide, Hillman's and Guardian Gloves, Nightscape Headbands · 210–225 Nightscape Pants (Artisan trainers only) · 225–300 untested ([wow-professions.com](https://www.wow-professions.com/forever/leatherworking-leveling-guide)).
+- **Money makers:** guides value it mostly for your own gear. Icy Veins rates armour kits for levelling and mentions rare creations without naming any; every Hunter wants a quiver or pouch ([ForeverDB](https://foreverdb.net/guide/professions)). Bind-on-pickup pieces can't be sold.
+- **Camp items:** [Camp Tent](https://foreverdb.net/item/279978) (20), tops rested experience up to 5% of a level · [Tanning Rack](https://foreverdb.net/item/279941) (140), blueprint from Razorclaw the Butcher in Shadowfang Keep · [Sewing Machine](https://foreverdb.net/item/279945) (300), source unknown. Many recipes need the two stations.
+- **Trainers and ranks:** Expert from Una (Thunder Bluff) or Telonis (Darnassus) · Artisan at skill 200 and level 35 from Hahrana Ironhide in Feralas (Horde) or Drakk Stonehand in Aerie Peak (Alliance) (wow-professions.com). Role-themed patterns sell for Merchant's Favor at your trade camp.
+- **Watch out:** past 225 many recipes turn grey about 25 points earlier than in Classic. Dragonscale, Elemental and Tribal are unconfirmed in Forever. Price Favor and station access before comparing a craft with a dungeon reward.
 
 ## What the guides say
 

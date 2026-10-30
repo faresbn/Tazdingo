@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: Arms Warrior in WoW Forever: the two-handed damage spec's talents by level, rotation compared across guides and the WoWSims priority list, levelling, gear and where guides disagree.
 sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets and APL, Blizzard deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** melee damage with a two-handed weapon.
-- **How it plays:** keep Rend up, press Overpower whenever it lights up, Slam on cooldown, and spend spare Rage on Heroic Strike or Cleave. Mortal Strike joins at 40.
-- **Strengths:** strong burst on two enemies with Sweeping Strikes, cheap Overpower crits, and one talent that rewards any weapon type.
-- **Weaknesses:** little self-healing, slow swings make misses costly, and bleed-immune enemies blunt Rend and Bloodthrill ([Icy Veins](https://www.icy-veins.com/wow-forever/arms-warrior-leveling)).
-- **Stats that matter:** weapon damage first, then Strength, hit and crit. Agility and Stamina come last.
-- **New in Forever:** [Weaponmaster](https://foreverdb.net/spell/1290261), [Bloodthrill](https://foreverdb.net/spell/1289682), [Spearing Strike](https://foreverdb.net/spell/1310222), [Improved Slam](https://foreverdb.net/spell/12862) as an Arms talent, and a level 20 [Slam](https://foreverdb.net/spell/1240193) with an 18 sec cooldown.
+- **Pick it for:** simple two-handed melee damage; Icy Veins rates it weak solo but strong in groups, and Wowhead suits it to new players.
+- **Levelling build:** at 30, Wowhead and Icy Veins take Improved Rend 3, Improved Tactical Mastery 5, Improved Overpower 2, Anger Management, Deep Wounds 3, Spearing Strike and Sweeping Strikes ([Wowhead](https://www.wowhead.com/forever/guide/classes/warrior/arms/level-30-dps-overview)); ForeverDB skips Improved Rend, Deep Wounds and Spearing Strike for Deflection and Improved Charge.
+- **Build at 60:** projection only: WoWSims' default is 39 Arms (Mortal Strike, Bloodthrill 5, Weaponmaster 5, Improved Slam 2, full Rend, Overpower, Deep Wounds and Impale), 10 Fury (Cruelty, Unbridled Wrath) and 2 Improved Bloodrage ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/warrior/dps/presets.ts)).
+- **Priority:** at 30 (Wowhead), Battle Shout, Rend, Overpower, Thunder Clap, Sunders (five on long bosses), Spearing Strike, Slam just after a swing, Victory Rush, then Heroic Strike; Sweeping Strikes on packs. At 60 WoWSims runs Overpower, Mortal Strike, Slam, Rend, Spearing Strike, Execute ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/warrior/dps/apls/arms.apl.json)).
+- **Stats:** ForeverDB: weapon DPS, Strength, hit, crit; Icy Veins: weapon damage, hit, crit, then Strength ([ForeverDB](https://foreverdb.net/class/Warrior/pve)). WoWSims' level-60 weights put hit (below the 8% cap) first, then crit.
+- **Key levels:** 20 [Slam](https://foreverdb.net/spell/1240193) and Victory Rush · 30 Sweeping Strikes · 31–35 Bloodthrill · 35–36 [Improved Slam](https://foreverdb.net/spell/12862) · 37 Weaponmaster · 40 Mortal Strike (above 30, Icy Veins' projection).
+- **Gear and consumables:** weapon first: Corpsemaker (Razorfen Kraul) or the Whirlwind Axe at 30 ([Wowhead](https://www.wowhead.com/forever/guide/classes/warrior/arms/level-30-dps-overview)). ForeverDB's sim ranks Elixir of Agility and Bear Brisket best at 30. At camps, Mining's Lodestone, or Blacksmithing's Sharpening Wheel alongside Blessing of Might.
+- **Watch out:** Wowhead's overview gives Slam a 15 sec cooldown; it is 18 since 24 September, and Slam delays your swing until Improved Slam. Icy Veins skips Execute while levelling; ForeverDB and WoWSims use it. Bleed-immune enemies blunt Rend and Bloodthrill.
 
 ## What the guides say
 

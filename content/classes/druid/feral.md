@@ -1,18 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: Feral Druid in WoW Forever as Cat damage dealer and Bear tank: talents by level, both rotations next to the WoWSims priority lists, stats, gear and open questions.
 sources: ForeverDB (PvE guide, builds, levelling guide), Wowhead (DPS and tank overviews, level 20 and 30 guides), Icy Veins (spec and levelling guides), WoWSims Cat and Bear presets and APLs, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** melee damage in Cat Form and tanking in Bear Form, both from the Feral Combat tree.
-- **How it plays:** a Cat spends Energy to build combo points with Shred or Claw, keeps the [Rake](https://foreverdb.net/spell/1822) and [Rip](https://foreverdb.net/spell/1079) bleeds up and tops up Energy with [Shifting Power](https://foreverdb.net/spell/1322605). A Bear spends Rage on [Primal Bite](https://foreverdb.net/spell/407995), [Maul](https://foreverdb.net/spell/6807) and [Swipe](https://foreverdb.net/spell/779), and gains Lacerate at 42.
-- **Strengths:** one tree covers two roles, so you can tank or deal damage as the group needs. It moves well ([Feral Swiftness](https://foreverdb.net/spell/17002), [Dash](https://foreverdb.net/spell/1850), [Feral Charge](https://foreverdb.net/spell/1238122)), heals itself out of form and carries Rebirth and [Leader of the Pack](https://foreverdb.net/spell/17007).
-- **Weaknesses:** a Cat has no area damage beyond Rake on several targets, and a lot of waiting on Energy. Both kits are thin before Shred, Rake and Primal Bite (22 to 25). Gear tuned for one role compromises the other (Wowhead).
-- **Stats that matter:** weapon damage first, because both forms now use your weapon's damage per second. Then Strength, Agility, hit, expertise and crit; bears add Stamina, armour and defense.
-- **New in Forever:** form attacks scale with your weapon, and potions and weapon enchants work in form. Primal Bite (Blizzard's take on Mangle), [Berserk](https://foreverdb.net/spell/417141), Lacerate and Shifting Power are new; Tiger's Fury is gone and [Furor](https://foreverdb.net/spell/17056) was reworked.
-- **Simulators:** WoWSims has separate Cat and Bear simulations for level 60, with seven Cat priority lists.
+- **Pick it for:** a flexible Druid who deals Cat damage or tanks as Bear from one tree, with strong mobility; Icy Veins rates it among the best levellers.
+- **Levelling build:** at 30, Icy Veins' both-roles build takes Ferocity 5, Feral Instinct 3, Feral Swiftness 2, Savage Fury 2, Shredding Attacks 3, Sharpened Claws 2, Shifting Power, Primal Bite, Blood Frenzy 1 and Leader of the Pack ([Icy Veins](https://www.icy-veins.com/wow-forever/feral-druid-melee-dps-and-tank-pve-guide)). Wowhead and ForeverDB split Cat and Bear builds.
+- **Build at 60:** simulator defaults only: WoWSims' "Cat" is 9/35/7 to [Berserk](https://foreverdb.net/spell/417141) with Furor 5, and "Bear" 9/38/4 with Thick Hide and Feral Instinct ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/druid/feralcat/presets.ts)).
+- **Priority:** Cat at 30 ([Wowhead](https://www.wowhead.com/forever/guide/classes/druid/feral/level-30-dps-overview)): Shifting Power below 50 Energy, Rip at 4–5 points on targets living 6+ seconds, Rake, then Shred from behind or Claw. Bear: Faerie Fire pull, Demoralizing Roar, Primal Bite when ready, Swipe for packs, Maul to dump Rage. At 60 Lacerate replaces Swipe (WoWSims).
+- **Stats:** weapon damage first, as both forms use your weapon's damage per second; then Strength, Agility, hit, expertise and crit, with Stamina, armour and defense for Bear. ForeverDB's Cat simulation at 30 values Strength above Agility; WoWSims at 60 has them level ([ForeverDB](https://foreverdb.net/class/Druid/pve)).
+- **Key levels:** 10 Bear Form · 20 Cat Form (Claw and Rip only) · 22–24 Shred and [Rake](https://foreverdb.net/spell/1822) · 25 [Primal Bite](https://foreverdb.net/spell/407995) · 40 Berserk, Dire Bear Form and Wolfshead Helm · 42 Lacerate.
+- **Gear and consumables:** Wowhead and Icy Veins name the Manual Crowd Pummeler (Gnomeregan) at 30. Leatherworking makes Brawler's pieces for Cat and Defender's for Bear; weightstones now work in form ([Icy Veins](https://www.icy-veins.com/wow-forever/feral-druid-melee-dps-and-tank-pve-guide)). ForeverDB says the level 40 Wolfshead Helm adds 20 Energy to Shifting Power.
+- **Watch out:** Wowhead's Feral DPS overview and level 30 tank page still mention Tiger's Fury, which is gone, and King of the Jungle ([Wowhead](https://www.wowhead.com/forever/guide/classes/druid/feral/overview-pve-dps)). Icy Veins' "Predatory Instincts" and "Primal Fury" are the client's Natural Instinct and Blood Frenzy. Don't import Classic powershifting advice.
 
 ## What the guides say
 

@@ -1,19 +1,17 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: The Mage in WoW Forever: what it wears and does, what Forever changed, how the three specs differ and which one the guides suggest for levelling.
 sources: Blizzard class deep dive, ForeverDB, Icy Veins, Wowhead, WoWSims presets
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Armour and weapons:** Cloth. Staves, daggers, one-handed swords and wands, according to the Forever client ([ForeverDB](https://foreverdb.net/guide/leveling-mage)).
-- **Role:** Ranged damage only. Blizzard counts the Mage as a pure damage class, with the Hunter, Rogue and Warlock.
-- **Resource:** Mana. You conjure water from level 4 and food from 6, learn [Evocation](https://foreverdb.net/spell/12051) at 20 and conjure a mana gem from 28.
-- **Races:** Human, Gnome and High Order Skyborne for the Alliance; Orc, Undead and Troll for the Horde. Orc and Skyborne Mages are new.
-- **New in Forever:** [Ice Lance](https://foreverdb.net/spell/1312002) returns as a Frost talent, [Arcane Blast](https://foreverdb.net/spell/400574) is a new Arcane talent and [Frostfire Bolt](https://foreverdb.net/spell/401502) is a trainer spell at 40. Missile Barrage, Heating Up and Fingers of Frost join the talents.
-- **Talents:** One point per level from 10 to 60, 51 in all, in one tree with Arcane, Fire and Frost sections. Respec at a trainer in a capital city; dual specialisation opens at 40.
-- **Levelling pick:** Every guide read calls Frost the safe choice. Fire and Arcane level well too, but forgive fewer mistakes.
-- **Utility:** Arcane Intellect, Polymorph, Remove Lesser Curse (which now also clears Banes), conjured food and water, city teleports from 20 and portals from 40.
+- **Pick a spec:** Frost for a first solo Mage, because control makes mistakes recoverable (ForeverDB's pick; Icy Veins calls it safe). Fire for crit and burst, though Wowhead found it weak at 30; Arcane for mana management and dungeon AoE ([ForeverDB](https://foreverdb.net/guide/leveling-mage)).
+- **Key levels:** 4 conjured water · 6 conjured food · 20 [Evocation](https://foreverdb.net/spell/12051) and city teleports · 28 mana gem · 30 class wand quest · 40 Frostfire Bolt, portals and dual specialisation.
+- **New in Forever:** [Ice Lance](https://foreverdb.net/spell/1312002) and Fingers of Frost (Frost), Arcane Blast and Missile Barrage (Arcane), Heating Up (Fire), Frostfire Bolt at 40. Cone of Cold is shorter, Improved Blizzard's slow caps at 40%, and free-effect talents proc less from low-rank spells ([Blizzard](https://worldofwarcraft.com/en-us/news/24302097)).
+- **Professions:** Tailoring and Enchanting are the usual pair (ForeverDB, Icy Veins); Wowhead and Icy Veins' Fire and Arcane pages also rate Engineering for its gadgets ([ForeverDB](https://foreverdb.net/guide/leveling-mage)).
+- **Race:** the [26 October notes](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7) make Skyborne Wind-Blessed 2% haste and Human Ruthless 1% crit, so older 1%/3% haste and weapon-restricted Human comparisons are obsolete. Orc Savage is gone; the restored pet racial doesn't help a Mage.
+- **Watch out:** talents moved late (the 16 October build; Arcane Wrath became a talent in the 24 October live client), so check a guide's date ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)). Sources split on whether spell damage boosts wands (ForeverDB no, Icy Veins yes) and on Teleport: Dalaran's level (50 or 40).
 
 ## What the guides say
 

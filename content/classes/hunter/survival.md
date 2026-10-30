@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Survival works as a melee spec in WoW Forever, from the ranged levels before 30 to the Strider Kick rotation, with talents by level, weaving, weapons and the guides' disagreements.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APLs, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** Melee damage with traps, after a ranged start. Its melee kit arrives at level 30: Aspect of the Beast and [Lacerate](https://foreverdb.net/spell/24118) from the trainer, and [Strider Kick](https://foreverdb.net/spell/1317257) as a tier 5 talent.
-- **How it plays:** Queue Raptor Strike (a next-swing attack on a 6-second cooldown), press Strider Kick (8 seconds) and Mongoose Bite whenever it lights up, keep Serpent Sting and Lacerate ticking, and drop traps in combat.
-- **Strengths:** Steady damage with almost always a button to press (Wowhead), kiting and trap control, and a parry-based Counterattack for PvP.
-- **Weaknesses:** The weakest Hunter spec to level, especially before 40 (Icy Veins). It needs deep talents, melee abilities drain mana, and you compete with Warriors and Rogues for weapons.
-- **Stats that matter:** Weapon damage, Agility, hit and crit, with Strength and attack power for melee. ForeverDB's simulator values Agility at 1.33 and haste rating at 0.62 per point of attack power at 30.
-- **New in Forever:** Strider Kick, [Predator's Edge](https://foreverdb.net/spell/1310627) (melee crit damage and 50% more off-hand damage), [Expose Prey](https://foreverdb.net/spell/1310532), [Resourcefulness](https://foreverdb.net/spell/440529), Survivalist's Discipline, [Lacerating Strikes](https://foreverdb.net/spell/1310533) at 40, Improved Tracking, and weapon-based Mongoose Bite and Counterattack.
+- **Pick it for:** a deliberate melee playstyle with traps, not the fastest leveller; it plays at range until its melee kit arrives at 30.
+- **Levelling build:** at 30, ForeverDB takes Improved Tracking 5, Savage Strikes 2, Survivalist 5, Deterrence, Surefooted 3, Predator's Edge 4 and Strider Kick ([ForeverDB](https://foreverdb.net/class/Hunter/builds)); Wowhead swaps Survivalist for Deflection 4 and Counterattack. Wowhead and Icy Veins put Legacy points into Resourcefulness 2 and Expose Prey 2.
+- **Build at 60:** projection only: WoWSims' default is "SV Weave" (0/20/31, no pet, with Lone Wolf and Lacerating Strikes); its "SV Melee" (18/8/25) dual-wields with a raptor and hawks ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/hunter/dps/presets.ts)). Icy Veins projects 0/17/34.
+- **Priority:** ranged before 30. At 30 (Wowhead): queue Raptor Strike, then Mongoose Bite, [Strider Kick](https://foreverdb.net/spell/1317257) and Counterattack; step out for Arcane Shot or Serpent Sting while they recover ([Wowhead](https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview)). Icy Veins' main guide stays in melee instead. Weave only if it pays.
+- **Stats:** weapon damage, Agility, hit and crit, plus Strength and attack power for melee. ForeverDB's level-30 sim values Agility at 1.33 and haste rating at 0.62 per point of attack power.
+- **Key levels:** 20 dual-wield and polearms · 30 Aspect of the Beast, [Lacerate](https://foreverdb.net/spell/24118) and Strider Kick · about 32 [Expose Prey](https://foreverdb.net/spell/1310532) (Wowhead) · 34 Explosive Trap · 40 [Lacerating Strikes](https://foreverdb.net/spell/1310533) (Icy Veins' path: 45; projection).
+- **Gear and consumables:** two one-handers to stay in melee (Predator's Edge's off-hand bonus) or a two-hander to weave. Wowhead's 30 picks: Morbid Dawn, Pronged Reaver, Bloody Brass Knuckles, any "of the Tiger" item. Keep ammo stocked; Lodestone at camps.
+- **Watch out:** behind dungeon enemies dodges and parries are rare, so don't plan around Mongoose Bite or Counterattack without Expose Prey. Its window is 5 sec per Wowhead, 10 per the client. A shared melee and ranged swing timer is unconfirmed ([ForeverDB](https://foreverdb.net/article/wille-hunter-everything-you-need-to-know)).
 
 ## What the guides say
 

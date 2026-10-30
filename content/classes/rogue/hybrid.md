@@ -4,7 +4,7 @@ summary: The Rogue talent builds that mix trees in WoW Forever, from Wowhead's d
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Why mixing is common:** One talent point per level from 10 to 60 (51 in all), and each row needs 5 more points in that tree. At the level 30 cap you have 21 points, and every Rogue tree has cheap, strong talents near the top.
 - **The usual borrowed talents:** Combat's Improved Eviscerate, Improved Sinister Strike, Puncturing Wounds and Precision; Assassination's Malice, Ruthlessness, Relentless Strikes and Improved Slice and Dice; Subtlety's Opportunity.

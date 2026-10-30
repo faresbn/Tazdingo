@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Subtlety plays in WoW Forever up to the level 30 beta cap, with talents by level, openers, the Hemorrhage and Rupture rotation, gear and where the guides disagree.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APL, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** Melee damage built on Stealth openers, burst and bleeds. It's strong in PvP, and Forever's new talents aim to make it work in PvE too.
-- **How it plays:** Open from Stealth with Ambush or Garrote, often after Premeditation. From level 30, build with [Hemorrhage](https://foreverdb.net/spell/16511), which works from any side with any weapon and makes your Rupture hit 15% harder. Finish with Rupture on long fights and Eviscerate on short ones, and use Vanish and Preparation to open again.
-- **Strengths:** High burst and single-target damage, lots of defensive tools, and cheap combo points from Premeditation, Initiative and Setup. Sap is cheap with Dirty Tricks.
-- **Weaknesses:** Underwhelming at 20, when it has neither Hemorrhage nor its Rupture talents (Wowhead). No area damage at all, bleed-immune enemies, and key talents (Quietus, Cutthroat, Thousand Cuts) at 35–40, above the cap.
-- **Stats that matter:** Main-hand dagger damage for Ambush and Backstab, then hit and expertise, Agility and crit. WoWSims' level 60 Subtlety weights rate expertise 2.42, hit 2.12, Agility 1.93 and crit 1.63 per point, with attack power as 1.
-- **New in Forever:** Hemorrhage reworked, Premeditation moved up to the 16-point slot and usable outside Stealth, Setup and Initiative at 100%, Dirty Tricks, Improved Distract, Dirty Deeds freeing Garrote's positioning, [Quietus](https://foreverdb.net/spell/1310728), [Cutthroat](https://foreverdb.net/spell/462708) and the [Thousand Cuts](https://foreverdb.net/spell/1310721) capstone.
+- **Pick it for:** Stealth openers, burst and bleeds, playable from any side with Hemorrhage at 30; strong in PvP, underwhelming at 20 (Wowhead).
+- **Levelling build:** at 30, ForeverDB and Icy Veins: Opportunity 2, Camouflage 4, Improved Ambush 3, Setup 3, Ghostly Strike, Initiative 3, Premeditation, Serrated Blades 3, [Hemorrhage](https://foreverdb.net/spell/16511). Wowhead swaps Ghostly Strike and Improved Ambush for Master of Deception, Elusiveness and Dirty Tricks ([Wowhead](https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-30-dps-overview)).
+- **Build at 60:** projection only: WoWSims' "Subtlety Hemo" (20/0/31) takes Quietus and Thousand Cuts plus Assassination's Malice, Ruthlessness, Relentless Strikes, Lethality and Cold Blood; "Subtlety BS" (12/8/31) is the dagger version, with Cutthroat, Thousand Cuts and Combat's Puncturing Wounds ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/rogue/dps/presets.ts)).
+- **Priority:** at 30, open from Stealth with Garrote (Wowhead) or Ambush (Icy Veins, ForeverDB), build with Hemorrhage, and finish with Rupture on long fights, Eviscerate on short ones; Vanish and Preparation reopen ([Wowhead](https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-30-dps-overview)). At 60 (WoWSims), Garrote opener, Ambush on Cutthroat procs, Rupture at 3+ points.
+- **Stats:** main-hand dagger damage for Ambush and Backstab, then hit and expertise, Agility and crit. WoWSims' level-60 weights: expertise 2.42, hit 2.12, Agility 1.93, crit 1.63, attack power 1 ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/rogue/dps/presets.ts)).
+- **Key levels:** 18 Ambush · 20 Poisons class quest · 30 Hemorrhage · 35–40 [Quietus](https://foreverdb.net/spell/1310728), [Cutthroat](https://foreverdb.net/spell/462708) and [Thousand Cuts](https://foreverdb.net/spell/1310721).
+- **Gear and consumables:** Icy Veins at 30: Torturing Poker main hand, Serrated Raptor Claw or Subdued Dragon's Fang off hand; Wowhead prefers the Ruby-Adorned Blade from The Eye of Bhossca. Instant Poison on both weapons while levelling. ForeverDB's sim: Elixir of Agility and Tender Wolf Steak, about 3.3% each.
+- **Watch out:** Icy Veins' Subtlety pages date from 8 October and still mention a level 20 cap in places; it says poisons last an hour, where ForeverDB reads 30 minutes from the client ([Icy Veins](https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling)). Backstab is hard to land solo before Hemorrhage; bleed-immune enemies blunt the spec.
 
 ## What the guides say
 

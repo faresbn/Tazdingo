@@ -1,17 +1,18 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: What Skinning gathers in Forever, its new materials and camp items, how guides level it and why they rate it for easy gold.
 sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, Warcraft Tavern
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Gathers:** leather, hides and scales from looted beasts, plus new Pristine materials.
-- **Suits:** leather and mail wearers (Druids, Hunters, Rogues, Shamans), who often pair it with Leatherworking to make their own gear. [Wowhead](https://www.wowhead.com/forever/guide/professions/skinning/overview-leveling) adds that Dwarves and Trolls do 5% more damage to Beasts, and Hunters can track them.
-- **Pairs with:** Leatherworking, or Mining or Herbalism for a two-gatherer character.
-- **New in Forever:** Pristine Leather, Hide and Scale as extra drops, Fel Leather and Fel Hide for endgame recipes, its own camp items, and beasts to skin from the starting areas on.
-- **Camp feature:** the [Camp Chair](https://foreverdb.net/item/279979) (skill 20) gives 2% critical strike chance, which doesn't stack with Moonkin Aura. The [Field Guide](https://foreverdb.net/item/279969) (140) teaches Track Beasts to anyone who reads it. The [Trapper's Workbench](https://foreverdb.net/item/279938) (300) holds one trap; [Icy Veins](https://www.icy-veins.com/wow-forever/skinning) says the trap holds a skinnable beast.
-- **Tools:** a [Skinning Knife](https://foreverdb.net/item/7005) in your bags. You don't need to equip it.
+- **Pick it for:** semi-passive gold from beasts you're killing anyway ([Wowhead](https://www.wowhead.com/forever/guide/professions/skinning/overview-leveling)), especially leather and mail wearers supplying Leatherworking.
+- **Pairs with:** Leatherworking to make your own gear, or Mining or Herbalism for a two-gatherer character.
+- **Levelling route:** skinning while questing mostly keeps pace; for a dedicated session (Wowhead): 1–75 any starting zone · 75–125 The Barrens, Loch Modan, Darkshore · 125–175 Ashenvale, Duskwood, Hillsbrad, Wetlands · 175–225 Arathi, Stranglethorn, Thousand Needles · 225–300 Tanaris, Dustwallow, Feralas, ForeverDB's Classic-data route, untested.
+- **Money makers:** Wowhead rates it one of the easiest gold-makers; [Icy Veins](https://www.icy-veins.com/wow-forever/skinning) says exotic leathers fetch high prices and Pristine materials feed several crafts, though their drop rate and launch price aren't known. Vendors pay little (Light Hide 50 copper, [ForeverDB](https://foreverdb.net/guide/making-money)).
+- **Camp items:** [Camp Chair](https://foreverdb.net/item/279979) (20; 2% crit, doesn't stack with Moonkin Aura) · [Field Guide](https://foreverdb.net/item/279969) (140; teaches Track Beasts to any reader; blueprint from Lady Anacondra, Wailing Caverns) · [Trapper's Workbench](https://foreverdb.net/item/279938) (300; one trap that holds a skinnable beast, per Icy Veins).
+- **Trainers and ranks:** train at 50 · 125 · 200 skill (Icy Veins). Wowhead's route uses Thuwd in Orgrimmar (Journeyman) and Dranh in Camp Taurajo (Expert). Character level disputed: none · 10 · 25 (Icy Veins' overview) or 10 · 20 · 35 (ForeverDB, from Classic).
+- **Watch out:** each corpse can be skinned once, even in a group, after it's looted (restored 1 October). Wowhead and ForeverDB use Classic's skill-per-beast formula; Icy Veins says Forever eased it, without numbers, so check the tooltip. Some endgame beasts need over 300.
 
 ## What the guides say
 

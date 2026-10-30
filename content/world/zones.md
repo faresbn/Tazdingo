@@ -4,7 +4,7 @@ summary: Forever's new zones (Zephras Isle, the Riverglades, Shen'dralas, Mount 
 sources: Blizzard, ForeverDB, Icy Veins, Wowhead, Method
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Zephras Isle:** the Skyborne starting zone, levels 1–12.
 - **The Riverglades:** a new frontier zone in the Eastern Kingdoms for the mid-30s to mid-40s, with more than 150 quests.

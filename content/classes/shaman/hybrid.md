@@ -4,7 +4,7 @@ summary: Shaman builds that mix talent trees in WoW Forever, Blizzard's "hybrid 
 sources: Wowhead, ForeverDB, WoWSims presets, Blizzard class deep dive and podcast
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Why mixing is common:** one talent point per level from 10, and each row needs five more points in its own tree. Blizzard also moved some talents up on purpose so other specs can reach them.
 - **Designed dips:** Blizzard placed Elemental Devastation to tempt Enhancement into Elemental. It placed Mindfulness and Natural Grace so Elemental can reach them in Restoration.

@@ -4,7 +4,7 @@ summary: How Forever's campfires work, what each profession adds to a camp, and 
 sources: Blizzard, ForeverDB, Icy Veins, Wowhead, wow-professions.com, Warcraft Tavern
 ---
 
-## At a glance
+## Cheatsheet
 
 - **What "camping" means here:** Forever's campfire system, a shared campsite that gives buffs and services. Waiting at a rare's spawn point is covered on [Rare spawns](ledger:world/rares/).
 - **How a camp starts:** a cook places a campfire, and anyone nearby can add one profession-made camp feature to it.

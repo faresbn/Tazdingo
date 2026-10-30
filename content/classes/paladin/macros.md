@@ -4,7 +4,7 @@ summary: A selection of community Paladin macros for WoW Forever from ForeverDB,
 sources: ForeverDB Paladin macros, Kami Labs, Icy Veins levelling guide, Wowhead
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Where these come from:** a selection of useful macros from four community guides (ForeverDB, Kami Labs, Icy Veins and Wowhead), credited to each. None has been tested in the live game. ForeverDB checked its spell names against the beta client, but hasn't tried them in play.
 - **Heal without losing your target:** most healing macros here use the "mouseover, then friendly target, then yourself" pattern, so you can heal between swings ([ForeverDB](https://foreverdb.net/class/Paladin/macros)).

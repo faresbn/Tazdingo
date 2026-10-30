@@ -1,17 +1,18 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: What Fishing offers in Forever (camp items, skill-boosting food, a bigger tournament), how guides level it and which catches are worth keeping.
 sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Gathers:** fish for Cooking and for Alchemy's oils, plus junk, trunks and other loot from pools and floating wreckage.
-- **Suits:** anyone; it's a secondary profession and needs no materials. [Wowhead](https://www.wowhead.com/forever/guide/professions/fishing/overview-leveling) picks out Shamans (Far Sight and Water Walking help reach schools) and Hunters (raw fish feeds pets).
-- **Pairs with:** Cooking, so you level both from the same catch. Alchemists also want a few fish.
-- **New in Forever:** camp items, older fish dishes reworked to raise Fishing skill, more winners at the Stranglethorn tournament, a new fish (Whimsyfin) and a Find Fish tracking ability.
-- **Camp feature:** the [Fish Bowl](https://foreverdb.net/item/279967) (skill 20) gives 8% to all stats and doesn't stack with Blessing of Kings. Blizzard's post calls it a "Fishing Bowl". The [Fishing Rack](https://foreverdb.net/item/279965) (140) lets you catch uncommon fish for an hour and hands out lures. The [Fishing Hut](https://foreverdb.net/item/279966) (300) does the same for rare fish. Both keep the Bowl's buff.
-- **Tools:** a fishing pole, and lures when fish keep getting away.
+- **Pick it for:** anyone; it's secondary and needs no materials. [Wowhead](https://www.wowhead.com/forever/guide/professions/fishing/overview-leveling) picks out Shamans (Far Sight, Water Walking) and Hunters (raw fish feeds pets).
+- **Pairs with:** Cooking, so one catch levels both; Alchemists also want oil fish.
+- **Levelling route:** skill comes per catch, not faster in harder zones (Wowhead, Icy Veins): 1–75 any starting zone, Shiny Bauble to about 25 · 75–150 a capital city, no lure · 150–225 Dustwallow or Stranglethorn, with lures · 225–300 Tanaris (Wowhead) or Feralas, Felwood and others ([wow-professions.com](https://www.wow-professions.com/forever/fishing-leveling-guide)).
+- **Money makers:** [Icy Veins](https://www.icy-veins.com/wow-forever/fishing) names oil fish (Oily Blackmouth, Firefin Snapper, Stonescale Eel) and buff-food fish (Sunscale Salmon, Mightfish, Winter Squid). Judge gold per hour after lures, travel and selling costs; not every catch has a buyer.
+- **Camp items:** [Fish Bowl](https://foreverdb.net/item/279967) (20; 8% all stats, doesn't stack with Blessing of Kings) · [Fishing Rack](https://foreverdb.net/item/279965) (140; uncommon fish for an hour, plus lures; blueprint from Gelihast, Blackfathom Deeps) · [Fishing Hut](https://foreverdb.net/item/279966) (300; rare fish; blueprint source unknown).
+- **Trainers and ranks:** Expert from a book sold by Old Man Heming in Booty Bay · Artisan from the quest Nat Pagle, Angler Extreme (level 35, Fishing 225). Journeyman and Expert need level 10 and 20 (Icy Veins, wow-professions.com) or 1 ([ForeverDB](https://foreverdb.net/guide/professions), beta client).
+- **Watch out:** Fishing itself barely changed. The Stranglethorn tournament now has 50 winners (Sundays 2–4 p.m. server time, per Icy Veins), but treat its timing and rewards as unconfirmed until checked live. Which fish the Rack and Hut unlock isn't listed yet.
 
 ## What the guides say
 

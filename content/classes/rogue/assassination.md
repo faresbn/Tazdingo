@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Assassination plays in WoW Forever up to the level 30 beta cap, with talents by level, the Mutilate rotation, poisons, gear and where the guides disagree.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APL, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** Melee damage built on daggers and poisons.
-- **How it plays:** Before 30 it plays like Combat (Wowhead). At 30, build with [Mutilate](https://foreverdb.net/spell/1310707): 60 Energy, both weapons, 2 combo points, 20% more damage on poisoned targets. Spend points on Slice and Dice and Eviscerate. From 40, Blizzard expects your finishers to keep Venom and Slice and Dice running.
-- **Strengths:** A big power spike at 30, poison damage that ignores armour (Wowhead), sure crits from Cold Blood, and Seal Fate's extra combo points from 35.
-- **Weaknesses:** Mutilate needs a dagger in each hand, enemies immune to poison or Nature blunt it, it's weak at 20, it brings no raid buff and, like every Rogue spec, it's limited by Energy.
-- **Stats that matter:** Dagger damage (a high top end helps Mutilate), then hit and expertise, Agility, crit and Strength (Icy Veins). WoWSims' level 60 weights rate hit (2.80) and expertise (2.77) above Agility (2.06), with attack power as 1.
-- **New in Forever:** Mutilate (tier 5, level 30), [Venom](https://foreverdb.net/spell/1310703) (level 40 capstone), [Coup de Grace](https://foreverdb.net/spell/1310709) (a level 30 trainer passive), Improved Poisons' charge saving, Malice covering poisons, Murder for Humanoids and Giants only, Improved Expose Armor reworked, and Cold Blood and Vigor moved up the tree.
+- **Pick it for:** dagger-and-poison melee once you have two daggers and Mutilate at 30; before then it plays like Combat (Wowhead).
+- **Levelling build:** at 30, Wowhead: Malice 5, Ruthlessness 3, Murder 2, Improved Slice and Dice 3, Relentless Strikes, Lethality 1, Cold Blood, Improved Poisons 4, Mutilate ([Wowhead](https://www.wowhead.com/forever/guide/classes/rogue/assassination/level-30-dps-overview)). ForeverDB and Icy Veins build Assassination from 10 and also end on Mutilate; Icy Veins skips Improved Slice and Dice.
+- **Build at 60:** projection only: WoWSims' "Asn Muti" preset is 31/20/0, down to Venom with Vile Poisons 5, Improved Poisons 5 and Seal Fate 3, plus Combat's Improved Eviscerate, Lightning Reflexes, Precision and Dual Wield Specialization ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/rogue/dps/presets.ts)). Icy Veins' route to 60 ends at 38/11/2.
+- **Priority:** at 30 (Wowhead), keep Slice and Dice up and refresh it late, Mutilate only at 3 combo points or fewer, and spend spare points on Eviscerate (low armour) or Rupture (high armour). At 60 (WoWSims), Garrote opener, Venom at 3+ points, Cold Blood then a 5-point Eviscerate.
+- **Stats:** Icy Veins: dagger damage (a high top end helps Mutilate), then hit and expertise, Agility, crit, Strength. WoWSims' level-60 weights rate hit (2.80) and expertise (2.77) above Agility (2.06), with attack power as 1 ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/rogue/dps/presets.ts)).
+- **Key levels:** 20 Poisons class quest · 25 Cold Blood (Icy Veins) · 30 [Mutilate](https://foreverdb.net/spell/1310707), Deadly Poison, [Coup de Grace](https://foreverdb.net/spell/1310709) · 35 Seal Fate · 40 [Venom](https://foreverdb.net/spell/1310703).
+- **Gear and consumables:** two daggers, second-best in the off hand; Icy Veins' level-30 picks start with Torturing Poker. Instant Poison on both weapons while levelling (Icy Veins), or Deadly on one in groups for Coup de Grace ([ForeverDB](https://foreverdb.net/class/Rogue/builds)). ForeverDB's sim: Elixir of Agility, Tender Wolf Steak.
+- **Watch out:** ForeverDB's level-30 simulator card builds with Backstab, not Mutilate, and that pick flipped between rebuilds; WoWSims doesn't yet use Mutilate automatically, so treat its Mutilate results with care ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/rogue/dps/apls/default.apl.json)). Poison- or Nature-immune enemies blunt the spec.
 
 ## What the guides say
 

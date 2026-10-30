@@ -4,7 +4,7 @@ summary: Mage builds that mix Arcane, Fire and Frost talents in WoW Forever: the
 sources: Icy Veins, Wowhead, WoWSims presets, Blizzard class deep dive, ForeverDB
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Why mixing is easy:** You get one point per level from 10, and a row opens once you have 5 points in the rows above it in the same section, so a few points elsewhere cost little ([ForeverDB](https://foreverdb.net/class/Mage/talents)).
 - **The common levelling dip:** Two points in [Missile Barrage](https://foreverdb.net/spell/400588), now in Arcane's first row. Icy Veins takes it in its Frost and Fire builds.

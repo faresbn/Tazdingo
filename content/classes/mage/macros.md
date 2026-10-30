@@ -4,7 +4,7 @@ summary: Useful Mage macros for WoW Forever collected from ForeverDB, Kami Labs 
 sources: ForeverDB Mage macros, Kami Labs macro tool, Wowhead macro guide
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Where these come from:** Community guides, namely [ForeverDB](https://foreverdb.net/class/Mage/macros), [Kami Labs](https://kami-labs.fr/en/macros-wow-forever/) and [Wowhead](https://www.wowhead.com/forever/guide/beginners-guide-to-writing-macros-in-wow-forever-34950). They have not been tested in the live game, which opens on 4 November.
 - **Rank trick:** A `/cast` line without a rank always casts the highest rank you know, so you never keep an old rank on your bar (Wowhead, Kami Labs).

@@ -1,18 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Arcane Mage plays in WoW Forever, the talents and rotation the guides and simulators use, and where advice changed after the late Arcane Blast rework.
 sources: Icy Veins, Wowhead, ForeverDB, WoWSims presets and APLs, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** Ranged damage, with burst from Arcane Power and very strong Arcane Explosion AoE in dungeons.
-- **How it plays:** Build [Arcane Blast](https://foreverdb.net/spell/400574) stacks, cast [Arcane Missiles](https://foreverdb.net/spell/5143) when [Missile Barrage](https://foreverdb.net/spell/400588) makes them free and fast, and manage your mana.
-- **Key talents:** Arcane Blast (11-point talent, level 20), Missile Barrage (first row, from 10), [Arcane Wrath](https://foreverdb.net/spell/1326079) (row 4, new in the live client), [Presence of Mind](https://foreverdb.net/spell/12043) (21 points) and [Arcane Power](https://foreverdb.net/spell/12042) (31 points).
-- **Strengths:** Burst, dungeon AoE with low threat thanks to Arcane Subtlety, and good mana talents (Arcane Concentration, Arcane Meditation).
-- **Weaknesses:** Burns mana fast, leans on procs, has little control or survivability, and the rotation is not intuitive (Wowhead).
-- **Stats:** Hit (Arcane Focus gives 5%), spell power, Intellect and Spirit; crit grows in value with Arcane Impact and Arcane Mind.
-- **New in Forever:** Arcane Blast, Missile Barrage, Arcane Wrath and Arcane Geometry; Arcane Mind now adds 100% Arcane crit damage, and Arcane Meditation keeps 50% of regeneration while casting.
+- **Pick it for:** burst and strong, low-threat dungeon AoE, if you like managing mana; it has little control or survivability.
+- **Levelling build:** at 30, Icy Veins' guide calculator takes Wand Specialization 2, Improved Channeling 5, Missile Barrage 2, Arcane Subtlety 2, Arcane Concentration 5, Arcane Geometry 2, Arcane Blast, Arcane Wrath and Presence of Mind. Icy Veins and [Wowhead](https://www.wowhead.com/forever/guide/classes/mage/arcane/level-30-dps-overview) drop Wand Specialization at 30. ForeverDB's build is pre-rework.
+- **Build at 60:** projection only: WoWSims' default "Arcane Frost" runs to Arcane Power with Arcane Focus 5, Arcane Mind 5, Arcane Instability 3 and Arcane Wrath, plus 3 Fire and 11 Frost ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/mage/dps/presets.ts)).
+- **Priority:** a starting priority under the [16 October rules](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/6), not a tested rotation: Arcane Missiles on Missile Barrage, keep a useful Arcane Blast buff (15 seconds, four stacks, rising cost) without draining mana, and hold control spells. WoWSims at 60 keeps stacks up and uses Arcane Wrath.
+- **Stats:** ForeverDB puts hit first, as dungeon bosses are often above your level; Wowhead and WoWSims cap it at 17%. Then spell power, Intellect and Spirit; Icy Veins says talent hit covers levelling. Crit gains with Arcane Impact and Arcane Mind ([ForeverDB](https://foreverdb.net/class/Mage/pve)).
+- **Key levels:** 10 [Missile Barrage](https://foreverdb.net/spell/400588) (first row) · 20 [Arcane Blast](https://foreverdb.net/spell/400574) · 25 Arcane Wrath (16-point talent) · 28 mana gems · 30 Presence of Mind and the Mage wand quest · 40 Arcane Power.
+- **Gear and consumables:** at 30, Icy Veins names Tailoring's Pearly pieces (Arcane damage only), [Belt of Arugal](https://foreverdb.net/item/6392), Gaze Dreamer Pants and the quest's Nether Force Wand. ForeverDB's simulator ranks Lesser Arcane Elixir first at 30 (+5.1%), with Briny Seafood Stew close behind.
+- **Watch out:** older guides say to dump Blast stacks with Fire Blast; that was the old spell, and a non-Arcane cast no longer ends the buff ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)). Icy Veins still lists Missile Barrage at 25. Beta reports of near-free Arcane Explosion relied on a Clearcasting bug.
 
 ## What the guides say
 

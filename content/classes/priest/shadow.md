@@ -1,18 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Shadow Priest plays in WoW Forever, the guides' talent builds at 20, 30 and 60, and how their rotations compare with the simulators.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and rotation, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** ranged damage over time. [Vampiric Embrace](https://foreverdb.net/spell/15286) heals the party for 20% of your Shadow damage.
-- **How it plays:** keep Shadow Word: Pain up, Mind Blast on cooldown, Devouring Plague on long fights and Mind Flay as filler. While levelling, finish with the wand.
-- **Strengths:** strong one-on-one PvP, new mana tools and an execute in [Shadow Word: Death](https://foreverdb.net/spell/1309595) ([Wowhead](https://www.wowhead.com/forever/guide/classes/priest/shadow/overview-pve-dps)).
-- **Weaknesses:** the identity arrives late (Mind Flay at 20, [Shadowform](https://foreverdb.net/spell/15473) at 40), no healing in Shadowform, and an unclear raid role.
-- **Stats:** spell power, then hit for endgame bosses, then critical strike. Intellect matters mostly for mana.
-- **New in Forever:** Devouring Plague for every race (24 sec cooldown), Shadow Word: Death at 32 and a redesigned Shadowform. Shadow Weaving now boosts only your own damage. New talents: [Improved Mind Flay](https://foreverdb.net/spell/1225139), [Dark Inspiration](https://foreverdb.net/spell/1326159), [Devouring Contagion](https://foreverdb.net/spell/1309950) and [Early Demise](https://foreverdb.net/spell/1310076).
-- **Hybrid tax:** Blizzard aims hybrid damage specs about 5% below pure classes, and counts Shadow's party healing as part of its output.
+- **Pick it for:** ranged damage over time with party healing from Vampiric Embrace; strong one-on-one PvP, but the identity arrives late (Mind Flay 20, Shadowform 40).
+- **Levelling build:** at 30, Wowhead (2/0/19): Wand Specialization 2, Spirit Tap 5, Improved Shadow Word: Pain 2, Shadow Focus 5, Mind Flay, Improved Mind Flay 2, Vampiric Embrace, Shadow Weaving 3 ([Wowhead](https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview)). ForeverDB goes all Shadow; Icy Veins also has a 13/0/8 Meditation build.
+- **Build at 60:** projection only: WoWSims' "Standard" (17/0/34) takes Shadowform, Darkness 5, Dark Inspiration 5, Devouring Contagion 2, Shadow Weaving 3, Vampiric Embrace and Improved Mind Blast 5, plus Discipline's Meditation 3, Inner Focus and Twin Disciplines 5; no Spirit Tap or Early Demise ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/priest/dps/presets.ts)).
+- **Priority:** at 30 (Wowhead), Mind Blast to open, Shadow Word: Pain, Devouring Plague if available, Mind Flay only if mana allows, then the wand. At 60 (WoWSims), Shadowform, Shadow Word: Pain up, Devouring Plague whenever it isn't ticking, Mind Blast, [Shadow Word: Death](https://foreverdb.net/spell/1309595) on cooldown, Mind Flay filler.
+- **Stats:** spell power first; ForeverDB then hit, Intellect, crit, while Icy Veins (levelling) puts crit before hit. WoWSims at 60: hit 1.14, spell power 1, crit 0.84, haste 0.73. ForeverDB's level-30 sim values Intellect far higher; treat both as bracket-specific ([ForeverDB](https://foreverdb.net/class/Priest/pve)).
+- **Key levels:** 20 [Mind Flay](https://foreverdb.net/spell/15407) · about 24 Mind Flay starts to earn its mana over the wand (Wowhead) · 32 Shadow Word: Death · 35 Early Demise · 40 [Shadowform](https://foreverdb.net/spell/15473).
+- **Gear and consumables:** Tailoring and Enchanting in every source. ForeverDB's sim rates Scroll of Intellect II (+6.3%) and Elixir of Wisdom (+5.7%) best at 30 ([ForeverDB](https://foreverdb.net/class/Priest/pve)); Icy Veins lists Lesser Wizard Oil, Spellblasting Potion and mana potions.
+- **Watch out:** Wowhead still offers Shadow Affinity (now Improved Mind Blast) and gives one-minute Devouring Plague and Vampiric Embrace cooldowns; the final client shows 24 and 30 sec ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)). Shadow Word: Death hurts you if the target survives. ForeverDB's sim dropping Devouring Plague is a lead to test.
 
 ## What the guides say
 

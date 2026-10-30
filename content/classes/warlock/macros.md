@@ -4,7 +4,7 @@ summary: Useful Warlock macros for WoW Forever collected from ForeverDB and Kami
 sources: ForeverDB Warlock macros, Kami Labs macro tool, Wowhead macro guide
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Where these come from:** Community guides, namely [ForeverDB](https://foreverdb.net/class/Warlock/macros), [Kami Labs](https://kami-labs.fr/en/macros-wow-forever/) and [Wowhead](https://www.wowhead.com/forever/guide/beginners-guide-to-writing-macros-in-wow-forever-34950). They have not been tested in the live game, which opens on 4 November.
 - **Demon spells:** Your demon casts them, so they don't use your global cooldown (ForeverDB).

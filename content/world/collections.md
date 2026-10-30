@@ -4,7 +4,7 @@ summary: The mounts, companion pets and titles in Forever, and how each is earne
 sources: ForeverDB, Wowhead, Method, wow-professions.com, Blizzard, Icy Veins
 ---
 
-## At a glance
+## Cheatsheet
 
 - **Shared across your account:** collections and Legacy Points carry across rulesets; Hardcore progress flows out but nothing flows in (Blizzard).
 - **First mount at 40:** Apprentice Riding costs 100 gold and includes a mount of your race. Journeyman Riding at 60 costs 1,000 gold, and epic mounts 200 gold each (Method).

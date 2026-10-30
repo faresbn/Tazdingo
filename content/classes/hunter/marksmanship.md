@@ -1,17 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Marksmanship plays in WoW Forever up to the level 30 beta cap, with talents by level, the shot priority, the pet versus Lone Wolf question, gear and the guides' disagreements.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APLs, Blizzard class deep dive
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** Ranged damage built on your own shots rather than the pet's.
-- **How it plays:** Auto Shot, Serpent Sting, then Aimed Shot and Arcane Shot on cooldown. Rapid Killing rewards the first shot after a kill, Trueshot Aura buffs the group, and Sniper Shot (level 40) is a long-range capstone.
-- **Strengths:** Burst, the longest range in the game, strong kiting, and a Trueshot Aura that reaches the whole raid since the 16 October build.
-- **Weaknesses:** Mana-hungry, punished hardest by the dead zone, and per Wowhead the hardest Hunter spec to play well. Wowhead also argues it adds little to a group beyond damage, since Trueshot Aura no longer helps melee.
-- **Stats that matter:** Ranged weapon damage, Agility, hit and crit. With Careful Aim, Intellect also adds attack power, and ForeverDB's simulator rates it above Agility at 30.
-- **New in Forever:** [Careful Aim](https://foreverdb.net/spell/1223984), [Rapid Killing](https://foreverdb.net/spell/415405), [Rapid Recuperation](https://foreverdb.net/spell/1223987), [Lone Wolf](https://foreverdb.net/spell/415370), Improved Stings and [Sniper Shot](https://foreverdb.net/spell/1310687). Lethal Attacks now covers all attacks, Aimed Shot is baseline, and Trueshot Aura moved up to tier 4 (level 25).
+- **Pick it for:** players who want their own shots, burst and range to matter more than the pet's; levels well, but behind Beast Mastery.
+- **Levelling build:** at 30, ForeverDB takes Lethal Attacks 5, Efficiency 5, Careful Aim 5, Rapid Killing 2, Trueshot Aura, Mortal Shots 2 and Rapid Recuperation ([ForeverDB](https://foreverdb.net/class/Hunter/builds)); Icy Veins swaps Efficiency for Hawk Eye 3 and more Mortal Shots; Wowhead takes Improved Arcane Shot 5 and Scatter Shot instead.
+- **Build at 60:** projection only: WoWSims' preset is 5/41/5 with no pet, taking Lone Wolf and Ranged Weapon Specialization but skipping Sniper Shot ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/hunter/dps/presets.ts)). Icy Veins projects 19/32/0, with Sniper Shot at 40.
+- **Priority:** at 30: Hunter's Mark, Serpent Sting, Aimed Shot on cooldown (Multi-Shot on safe packs; they share a cooldown), Auto Shot throughout. Arcane Shot on cooldown (Wowhead) or only at full Mana (Icy Veins) ([Wowhead](https://www.wowhead.com/forever/guide/classes/hunter/marksmanship/level-30-dps-overview)). At 60 WoWSims runs Aimed Shot, Serpent Sting, Arcane Shot.
+- **Stats:** Icy Veins: weapon damage, hit, Agility, crit, then Intellect through [Careful Aim](https://foreverdb.net/spell/1223984). ForeverDB's level-30 sim rates Intellect (3.38) above Agility (2.4), but that is a Mana-starved model, not a reason to drop weapon damage.
+- **Key levels:** 25 Trueshot Aura · 30 [Rapid Recuperation](https://foreverdb.net/spell/1223987) (Icy Veins) · 40 [Sniper Shot](https://foreverdb.net/spell/1310687) (projection).
+- **Gear and consumables:** ammo ([Rough Arrow](https://foreverdb.net/item/2512) or [Light Shot](https://foreverdb.net/item/2516)) in a quiver or pouch. Venomstrike and the Fang set at 20; Truthseeker's Bow and Dusky Leather Armor at 30. ForeverDB's sim ranks [Elixir of Agility](https://foreverdb.net/item/8949) and [Tender Wolf Steak](https://foreverdb.net/item/18045) best.
+- **Watch out:** keep the pet while levelling: ForeverDB's sim shows about 20% less damage without one at 30; [Lone Wolf](https://foreverdb.net/spell/415370) is for dungeon packs or 60. Multi-Shot breaks Freezing Trap. Per the client, Wowhead's Trueshot Aura (50) and Icy Veins' 4 sec Sniper Shot cooldown are wrong.
 
 ## What the guides say
 

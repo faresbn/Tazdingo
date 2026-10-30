@@ -1,17 +1,18 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Engineering changed in Forever (SAF-T gadgets anyone can use, new belts and goggles, Gnomish and Goblin specialisations), how guides level it and its money outlook.
 sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Warcraft Tavern
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Makes:** explosives, guns and scopes, ammunition, goggles, gadgets and trinkets.
-- **Suits:** anyone who wants utility in fights. Guns suit Warriors, Hunters and Rogues, the classes that can use them ([ForeverDB](https://foreverdb.net/guide/professions)). Gnomes keep an Engineering racial, though it now works differently (below).
-- **Pairs with:** Mining, for bars and stone. [Wowhead](https://www.wowhead.com/forever/guide/professions/engineering-overview-trainer-locations-recipes) suggests Blacksmithing for plate and mail wearers who want to share materials.
-- **New in Forever:** SAF-T and EZ-Thro gadgets, several usable without the profession, new belts and goggles, new top-end guns and scopes, and repair and reagent bots at camp.
-- **Camp feature:** the [Reagent Bot](https://foreverdb.net/item/279950) (skill 20) sells reagents to everyone at the camp. The [Repair Bot](https://foreverdb.net/item/279949) (140) also repairs gear. The [Anarchist's Workbench](https://foreverdb.net/item/279989) (300) is the station some recipes require. Engineering's camp items give no stat buff.
-- **Specialisations:** Gnomish or Goblin, through a quest chain from level 30 and skill 200 (Wowhead, wow-professions.com).
+- **Pick it for:** gadgets and tools you expect to use, and guns for Warriors, Hunters and Rogues; check each item's use requirement first.
+- **Pairs with:** Mining, for bars and stone. Wowhead suggests Blacksmithing for plate and mail wearers who want to share materials ([Wowhead](https://www.wowhead.com/forever/guide/professions/engineering-overview-trainer-locations-recipes)).
+- **Levelling route:** wow-professions.com (ranges unchanged from Classic): 1–50 Rough Blasting Powder, Copper Bolts (keep both) · 50–150 Copper Bombs, Dynamite, Bronze Tubes, Whirring Bronze Gizmos · 150–200 Bronze Frameworks, Explosive Sheep, Mithril Tubes · 200–300 Unstable Triggers to Thorium Tubes, untested past 225 ([wow-professions.com](https://www.wow-professions.com/forever/engineering-leveling-guide)).
+- **Money makers:** Wowhead thinks items non-engineers can use may make it a gold-maker, but won't commit. [SAF-T Dynamite](https://foreverdb.net/item/260792) has no skill requirement, so it can sell (ForeverDB). The best epic ammo binds on pickup, so it isn't a trade good.
+- **Camp items:** [Reagent Bot](https://foreverdb.net/item/279950) (20), sells reagents to the camp · [Repair Bot](https://foreverdb.net/item/279949) (140), also repairs, blueprint from Sneed in the Deadmines · [Anarchist's Workbench](https://foreverdb.net/item/279989) (300), a station, source unknown. No stat buff.
+- **Trainers and ranks:** Artisan at skill 200 and level 35 from Buzzek Bracketswing in Gadgetzan (wow-professions.com) · Gnomish or Goblin specialisation by quest chain from level 30 and skill 200; its membership card lasts 14 days and is renewed by quest ([Wowhead](https://www.wowhead.com/forever/guide/professions/engineering-overview-trainer-locations-recipes)).
+- **Watch out:** the Gnome racial no longer adds +15 skill; devices fail or backfire 20% less often. Some gadgets scale with skill (Icy Veins). No passive perks. Keep Explosive Sheep and Mithril Tubes for the specialisation quests.
 
 ## What the guides say
 

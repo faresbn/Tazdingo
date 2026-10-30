@@ -1,18 +1,19 @@
 ---
-updated: 2026-10-27
+updated: 2026-10-30
 summary: How Restoration Druid heals in WoW Forever: the new heal-over-time toolkit, talent builds at 20 and 30, healing priorities, levelling, gear and open questions.
 sources: ForeverDB (PvE guide, builds, levelling guide), Wowhead (healer overview, level 20 and 30 guides), Icy Veins (spec guide and FAQ), Blizzard class deep dive, WoWSims presets
 ---
 
-## At a glance
+## Cheatsheet
 
-- **Role:** healer, built around heals over time.
-- **How it plays:** keep [Rejuvenation](https://foreverdb.net/spell/774) on the tank, add [Regrowth](https://foreverdb.net/spell/8936) for spikes and [Healing Touch](https://foreverdb.net/spell/5185) for steady damage. Save [Swiftmend](https://foreverdb.net/spell/18562) and [Nature's Swiftness](https://foreverdb.net/spell/17116) for emergencies. [Tranquility](https://foreverdb.net/spell/740) arrives at 30 and [Wild Growth](https://foreverdb.net/spell/408120) at 40.
-- **Strengths:** heals over time can now crit, and Swiftmend no longer eats the heal it uses. In-combat mana regeneration is strong, and you bring Rebirth plus the new out-of-combat [Revive](https://foreverdb.net/spell/1237951). Remove Curse (which also clears Banes) and [Abolish Poison](https://foreverdb.net/spell/2893) round out the kit.
-- **Weaknesses:** no magic or disease dispel, little offensive utility, and a playstyle that needs foresight. Levelling alone is slow, and your heals draw threat.
-- **Stats that matter:** healing power, then Spirit, Intellect and mana per 5 seconds, then crit ([ForeverDB](https://foreverdb.net/class/Druid/pve)). Icy Veins notes haste doesn't speed up heals over time.
-- **New in Forever:** Wild Growth, Revive, [Gift of the Earthmother](https://foreverdb.net/spell/414673) and Living Spirit are new. [Reflection](https://foreverdb.net/spell/17106) keeps 50% of mana regeneration while casting, Improved Tranquility cuts its cooldown by 60%, and Regrowth costs much less.
-- **Simulator:** WoWSims treats Restoration as a gear planner only, with no healing simulation, default talents or priority list.
+- **Pick it for:** healing dungeons for a regular group, with heals over time and the strongest emergency toolkit; slow to level alone.
+- **Levelling build:** at 30, Wowhead's Deep Resto takes Nature's Focus 5, Naturalist 5, Reflection 3, Gift of Nature 5, Gift of the Earthmother, Swiftmend and Nature's Swiftness ([Wowhead](https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview)); ForeverDB splits Gift of Nature and Improved Rejuvenation 3 and 3. To quest faster, ForeverDB suggests levelling Feral or Balance, then respeccing.
+- **Build at 60:** not established yet: WoWSims is a gear planner only, and Wild Growth, Improved Regrowth and Innervate sit above the beta cap, untested.
+- **Priority:** at 20–30 ([Wowhead](https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview); no simulator): Thorns and Rejuvenation on the tank, Regrowth for big hits, Healing Touch downranked for steady damage. Emergencies: [Swiftmend](https://foreverdb.net/spell/18562) a target that already has your heal over time, then Nature's Swiftness into max-rank Healing Touch; Tranquility when the party is in trouble.
+- **Stats:** ForeverDB: healing power, then Spirit, Intellect and mana per 5 seconds, then crit ([ForeverDB](https://foreverdb.net/class/Druid/pve)). Icy Veins notes haste doesn't speed up heals over time.
+- **Key levels:** 20 Reflection or Gift of the Earthmother · 25 Swiftmend · 30 Tranquility · 35–40 Improved Regrowth and Innervate · 40 [Wild Growth](https://foreverdb.net/spell/408120).
+- **Gear and consumables:** Leatherworking makes Wisdom's Leather pieces (15–25) and the Mender's Leather Belt at 30 ([ForeverDB](https://foreverdb.net/guide/leveling-druid)); Wowhead adds Tailoring's Pristine pieces and the Mystic Mushroom idol. Bring water and mana potions (Icy Veins). Skip Enchanting's Enchanted Lute campsite, which clashes with Mark of the Wild.
+- **Watch out:** your heals draw threat, so let the tank hit first or take Subtlety (ForeverDB). Swiftmend on a target without your heal over time needs an extra cast first. Meleeing for Omen of Clarity is optional and unsafe around cleaves. Wild Growth heals only the target's party.
 
 ## What the guides say
 
