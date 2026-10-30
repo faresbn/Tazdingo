@@ -35,6 +35,19 @@ def urls_in(text: str) -> list[str]:
     return [m.group(2) for m in RENDERED_LINK.finditer(text)] + BARE_URL.findall(text)
 
 
+PLAIN_HOST = re.compile(r"[A-Za-z0-9.-]+(?::\d{1,5})?")
+
+
+def plain(url: str) -> bool:
+    """A link whose host every reader agrees on: no backslashes, user@ parts or unusual characters,
+    which browsers and Python's URL parser can read as different hosts."""
+    if "\\" in url or not url.isascii():
+        return False
+    rest = url.split("//", 1)[1] if url.startswith(("http://", "https://", "//")) else ""
+    authority = re.split(r"[/?#]", rest, 1)[0]
+    return not rest or bool(PLAIN_HOST.fullmatch(authority))
+
+
 def domain(url: str) -> str:
     host = (urlsplit(url).hostname or "").lower()
     return host[4:] if host.startswith("www.") else host
@@ -134,6 +147,8 @@ def check(old: str | None, new: str, meta: dict, old_meta: dict, known_domains: 
         problems.append("a section heading appears twice")
     if any(u.startswith("//") for u in urls_in(new)):
         problems.append("write links in full, starting https://")
+    if not all(plain(u) for u in urls_in(new)):
+        problems.append("write each link's address plainly: no backslashes, '@' or unusual characters in it")
     try:
         updated = date.fromisoformat(meta.get("updated", ""))
         if abs((updated - today).days) > 2:

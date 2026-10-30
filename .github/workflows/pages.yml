@@ -30,6 +30,8 @@ jobs:
         run: python3 -m unittest discover -s tests -v
       - name: Test news classification and relay boundaries
         run: node --test relay/news.test.mjs
+      - name: Test the inbox Site
+        run: node --test inbox-site/inbox.test.mjs
       - name: Check browser script syntax
         run: node --check site/assets/app.js
       - name: Restore the last run's Blizzard posts
