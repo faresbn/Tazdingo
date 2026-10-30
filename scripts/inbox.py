@@ -243,7 +243,7 @@ def send_for_review(root: Path, sub: dict, folder: Path, target: Path, text: str
         git(root, "switch", "-q", "-f", here)
     shutil.rmtree(folder)
     commit(root, f"Inbox: {sub['id']} sent for review", str(INBOX))
-    return {"outcome": "review", "detail": f"{sub['path']}: pull request from {branch} ({'; '.join(review)})"}
+    return {"outcome": "review", "branch": branch, "detail": f"{sub['path']}: pull request from {branch} ({'; '.join(review)})"}
 
 
 def refresh_names(root: Path) -> None:
@@ -305,6 +305,8 @@ def process_all(root: Path, push: bool) -> list[dict]:
 
 def run(root: Path = ROOT, push: bool = False) -> list[dict]:
     """Process everything waiting; with push, push and, if main moved meanwhile, start again from it."""
+    if git(root, "status", "--porcelain", "--untracked-files=no"):
+        raise SystemExit("The checkout has uncommitted changes; the inbox resets and commits, so it only runs on a clean one.")
     for _attempt in range(3):
         outcomes = process_all(root, push)
         if not push or not outcomes:
@@ -312,8 +314,19 @@ def run(root: Path = ROOT, push: bool = False) -> list[dict]:
         if subprocess.run(["git", "push", "-q", "origin", "HEAD:main"], cwd=root).returncode == 0:
             return outcomes
         git(root, "fetch", "-q", "origin", "main")
+        if subprocess.run(["git", "merge-base", "--is-ancestor", "HEAD", "origin/main"], cwd=root).returncode == 0:
+            return outcomes  # the push landed, only its acknowledgement was lost
+        withdraw_reviews(root, outcomes)  # the redo decides afresh; a stale pull request mustn't stay open
         git(root, "reset", "-q", "--hard", "origin/main")
     raise SystemExit("Couldn't push the inbox's results after three attempts; the submissions are still waiting.")
+
+
+def withdraw_reviews(root: Path, outcomes: list[dict]) -> None:
+    for outcome in outcomes:
+        if outcome["outcome"] == "review" and outcome.get("branch"):
+            subprocess.run(["gh", "pr", "close", outcome["branch"], "--delete-branch", "--comment",
+                            "Withdrawn: main moved while this was being filed; the inbox is checking it again."],
+                           cwd=root, capture_output=True)
 
 
 def report(outcomes: list[dict]) -> None:

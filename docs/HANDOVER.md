@@ -2,23 +2,35 @@
 
 Where Tazdingo stands, kept current at every checkpoint so another thread, model or machine can carry on. Read this first, then AGENTS.md and README.md. History lives in git and in `docs/sessions/`; this file describes the present.
 
-**Last updated:** 27 October 2026, late evening, after the Auction House module and a final bug-check pass (session `docs/sessions/2026-10-27-site-plan/`). Nothing is in flight: `main` is the whole state and the only branch (the four old merged branches were deleted on 28 October).
+**Last updated:** 30 October 2026, after building the public repository, the ChatGPT feed and the inbox (session `docs/sessions/2026-10-30-public-inbox/`). `main` is the whole state and the only branch.
 
 ## In flight (30 October)
 
-**A public repository, a ChatGPT feed and an inbox** (branch `plan/public-inbox`, session `docs/sessions/2026-10-30-public-inbox/`): research, plan and a senior Codex review are done. **Waiting for Fares's approval of `plan.md`** and two calls in it (his work email on old commits; a co-player's name in the docs). Nothing is built yet; `main` is unchanged apart from this note once merged.
+**The inbox is built and tested; three owner steps remain before it opens.** Phases 1–8 of `docs/sessions/2026-10-30-public-inbox/plan.md` are merged. On GitHub, a deliberately stale test submission was held with its reason, pushed, and failed the run as designed (run 41026422969).
+1. **Fares:** create the fine-grained token (only `faresbn/Tazdingo`, Contents read and write, one-year expiry). Then run `docs/sessions/2026-10-30-public-inbox/codex-deploy-brief.md` in Codex to deploy the `tazdingo-inbox` Site, pasting the token and the personal keys from `tmp/inbox-keys.json` (this Mac only, never committed) into its secrets.
+2. **Then (Claude or Codex):** put the Site's address in `data/game.json` (`inbox.endpoint`, ending `/submit`), set `inbox.open` to `true`, and test end to end through the form in a browser: a page edit, a stale edit, a wrong key, an addon file.
+3. **Fares:** paste the new `docs/chatgpt/PROJECT_INSTRUCTIONS.md`, and upload `UPDATING.md` and `TAZDINGO_INBOX.md` (each person with their own key) to the ChatGPT project. Then test from the app: read prices and a page through the map, send an edit and an addon file in agent mode.
+
+Later: phase 9 (the inbox as a tool callable from chats, published to the workspace as a plugin), once the form works. Also a processor for AllTheThings files, if wanted.
 
 ## Picking this up
 
 | You are | Read | Then |
 |---|---|---|
 | Claude Code or Codex in this repo | This file, AGENTS.md (= CLAUDE.md), README.md; docs/DECISIONS.md before changing anything settled | Branch from `main`, run the checks in "How to work on it", merge and delete the branch |
-| The shared ChatGPT project | docs/chatgpt/PROJECT_INSTRUCTIONS.md (its instructions) and UPDATING.md (a source file) | Guide edits go to `content/`; an uploaded `Auctionator.lua` becomes a scan record in `data/market/inbox/` (UPDATING.md, "Add this scan") |
+| The shared ChatGPT project | docs/chatgpt/PROJECT_INSTRUCTIONS.md (its instructions), UPDATING.md and TAZDINGO_INBOX.md (source files) | Read through `feed/index.md` in the repository; send page edits and addon files through the inbox |
 | Reviewing as the other model family | REVIEWER.md | Log the consultation in the session's `revlog.md` |
 
-The latest plan, research and review log are in `docs/sessions/2026-10-27-site-plan/` (`plan.md`, `research.md`, `revlog.md`).
+The latest plan, research and review log are in `docs/sessions/2026-10-30-public-inbox/` (`plan.md`, `research.md`, `revlog.md`, `codex-deploy-brief.md`).
 
 ## The site now
+
+- **Public repository, feed and inbox (30 October):**
+  - **The repository is public.** Original Lua files are committed under `data/captures/`.
+  - **`feed/` is ChatGPT's markdown,** read from the repository: a map (`feed/index.md`) to price files per market category, crafting per profession and the guide map with each page's version. Every build rewrites it; `feed.yml` refreshes it after other pushes.
+  - **The hidden form** at `inbox/` (closed until the Site is deployed) posts to `inbox-site/`.
+  - **`scripts/inbox.py` and `inbox.yml`** check, apply, review or hold each submission; `scripts/provenance.py` holds the truth rules.
+  - **Commits** use the GitHub private address.
 
 - **Final pass (27 October, late evening):** a fresh bug check of the Auction House code found and fixed five defects (a market nobody rescanned being filed again on every import, slug clashes for names in other alphabets, a latest price older than the item's last day, unclear refusals of badly typed inbox records, a one-copper wording slip) and one in the ForeverDB refresh (it would have missed live-scan items and re-used Beta answers at launch). Details in the session's revlog.md.
 - **Published and checked live on 27 October, late evening** (publish run 40569733334): homepage Auction House card, the overview's eight blocks (unusually low, below vendor price, investment watch, short supply, movers, always on the market, market index, patterns), item pages, ForeverDB tables on profession and class pages, the More overview and masthead search all load on https://faresbn.github.io/Tazdingo/ with no console errors or sideways scrolling at desktop width; phone width was checked in local preview.
@@ -32,8 +44,9 @@ The latest plan, research and review log are in `docs/sessions/2026-10-27-site-p
 
 | What | How | Notes |
 |---|---|---|
-| Prices | `python3 scripts/ingest.py --push` on the Mac after every scan; or an `Auctionator.lua` uploaded to ChatGPT, which commits a scan record to `data/market/inbox/` for the `ingest.yml` Action to file | Each upload is a scan record; kept 30 scans or 30 days (whichever reaches further back), then folded into `data/market/<market>/daily/`. Store and receipts are fingerprinted |
-| Guide pages | ChatGPT commits to `content/` (confirmed working); the archive Action backs up every change | UPDATING.md is ChatGPT's procedure |
+| Prices | `python3 scripts/ingest.py --push` on the Mac after every scan (it also commits the original file); or an `Auctionator.lua` sent through the inbox, filed by `inbox.yml` | Each upload is a scan record; kept 30 scans or 30 days (whichever reaches further back), then folded into `data/market/<market>/daily/`. Store and receipts are fingerprinted. The inbox asks for the market until the first live import remembers it |
+| Guide pages | Through the inbox (ChatGPT, anyone with a key), or Codex and Claude committing to `content/`; archived on every change | UPDATING.md and TAZDINGO_INBOX.md are ChatGPT's procedure; judgement calls arrive as pull requests for Fares |
+| Other addons' files | Through the inbox, kept in `data/captures/forever/<addon>/` | No processor yet; listed in the feed map |
 | ForeverDB data | `foreverdb_data.py`, `item_names.py` (no key); `foreverdb_api.py fetch` + `slim` (key in `FOREVERDB_API_KEY`) | Run on the Mac. Re-run the API fetch at launch |
 | Blizzard posts | Scheduled Action + the read-only relay | |
 
@@ -47,26 +60,27 @@ The latest plan, research and review log are in `docs/sessions/2026-10-27-site-p
 
 ## Open items
 
-- **The ChatGPT scan route is untested on ChatGPT's side** (running the repository's scripts in its sandbox and committing a record of up to ~1–2 MB). The Action side is tested here only through `ingest.py --inbox`.
+- **ChatGPT's side of the inbox is untested** until the Site is deployed and Fares tries it in the app (agent mode filling the form, attaching a file; reading raw GitHub addresses). The form is the fallback: a person can always paste and send.
+- **Repository size:** about 23 MB of git data on 30 October (`du -sh .git`; mostly loose objects before packing). Lua files and committed price files grow it with every scan. Decide a retention rule before 500 MB (perhaps keep only recent files of non-price addons). Check with `git count-objects -vH`.
 - **Thresholds in `scripts/market.py` are first guesses**; tune them after a week of live scans.
-- **Watch items from the final bug check** (none affects the site today): one bad inbox record blocks later inbox runs until someone removes it (the Action fails visibly); if the market grows fast after launch, early full scans can count as partial days (the baseline is the median full-scan size); a full scan's time-of-day sample includes items whose price was recorded earlier that day; the Beta capture route credits full scans among published markets only.
-- **Actions minutes:** GitHub's docs conflict on whether Pages runs count; only the billing page settles it (Fares). No new scheduled jobs were added.
+- **Watch items from the final bug check** (none affects the site today): in the older `data/market/inbox/` route, one bad record blocks later runs until someone removes it (the new inbox holds bad submissions instead); if the market grows fast after launch, early full scans can count as partial days (the baseline is the median full-scan size); a full scan's time-of-day sample includes items whose price was recorded earlier that day; the Beta capture route credits full scans among published markets only.
+- **Actions minutes:** settled. Standard runners are free for public repositories.
 - **Site size:** item pages are ~39 KB (half of it the repeated menu); a full live market (~4,200 items) makes the site ~160 MB. Within limits; trim the item-page menu if publishing slows.
 - **Masthead strapline** wraps to three lines between about 860 and 1,240 px wide; worth a polish.
 - **Next content phase** (Fares): guide length, per-type templates, PvP sections per class and spec, the empty Field findings.
-- **Parked:** a route for someone without a GitHub account to send content through ChatGPT.
 - **Fares's calls:** custom domain (not yet), search engines (not a priority), analytics (none).
 - **iCloud:** `scripts/icloud-shield.sh` keeps build output out of sync; `scripts/icloud-janitor.sh [--delete]` removes identical "name 2.ext" copies.
 
 ## How to work on it
 
 - **Machine:** Python 3.11+, Node 20+, `git`, `gh` (logged in as faresbn), Codex CLI on the ChatGPT plan (for GPT-6.1 Sol reviews, see REVIEWER.md), `cwebp`.
-- **Before any push:** `python3 -m unittest discover -s tests && python3 scripts/build.py && python3 scripts/check_site.py && node --test relay/news.test.mjs && node --check site/assets/app.js`.
+- **Before any push:** `python3 -m unittest discover -s tests && python3 scripts/build.py && python3 scripts/check_site.py && node --test relay/news.test.mjs && node --test inbox-site/inbox.test.mjs && node --check site/assets/app.js`. Commit the `feed/` changes the build makes.
 - **Preview:** `mkdir -p tmp/serve && ln -sfn ../../dist tmp/serve/Tazdingo && python3 -m http.server 8765 --directory tmp/serve` (or the `site` entry in `.claude/launch.json`), then http://localhost:8765/Tazdingo/.
-- **Beta originals** (not in git) sit in `data/captures/forever-beta/*.lua` on this Mac; the comparison test skips without them. The Beta stays a 975-item sample (settled): don't put the full Beta files through the new store.
+- **Beta originals** are committed in `data/captures/forever-beta/*.lua`, so the comparison test always runs. The Beta stays a 975-item sample (settled): don't put the full Beta files through the new store.
 - **Phone checks:** use a browser's device emulation (the built-in browser's mobile preset works).
 
 ## Session record
 
 - 26 Oct: repository connected; parser fixed; site v1 → v2; prices with typical price and steadiness; ChatGPT instructions. (`2026-10-26-*`)
 - 27 Oct: v3 rebuild (77 pages, menus, dashboard, archive); Tazdingo rebrand and news classification; authentic artwork; UX pass; guide recommendation review; hero checklist tag and browser countdown; iCloud shield; research and the Auction House module with ForeverDB API tables (`2026-10-27-*`). Outside reviews are logged in each session's `revlog.md`.
+- 30 Oct: public repository; Lua originals committed; the `feed/` map for ChatGPT; the inbox (hidden form, Site code, `inbox.py` with provenance checks and review pull requests); ChatGPT instructions rewritten (`2026-10-30-public-inbox`).

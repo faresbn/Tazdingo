@@ -14,11 +14,14 @@ it replaces (docs/chatgpt/UPDATING.md's rules, enforced):
 from __future__ import annotations
 
 import difflib
+import html
 import re
 from datetime import date, datetime
 from urllib.parse import urlsplit
 
-from markup import BARE_URL, LINK as RENDERED_LINK
+from markup import render
+
+HEADING = re.compile(r"(#{1,4})\s+(.*?)\s*#*$")  # markup.render's own heading rule
 
 FINDING = re.compile(r"^### (?P<claim>.+?) \((?P<confidence>idea|testing|tested|outdated), (?P<date>\d{1,2} [A-Z][a-z]{2} \d{4})\)\s*$")
 HOW_KNOWN = re.compile(r"\b(?:in game|in-game|tested|level \d+|simulat\w*|read (?:on|in)|according to)\b|https?://", re.I)
@@ -31,8 +34,19 @@ BAD_MESSAGE_WORDS = re.compile(r"\b(?:update|updated|misc|chatgpt|fares|mike)\b"
 
 
 def urls_in(text: str) -> list[str]:
-    """Every address the site would turn into a link, found with the renderer's own patterns."""
-    return [m.group(2) for m in RENDERED_LINK.finditer(text)] + BARE_URL.findall(text)
+    """Every address the site actually links to: the hrefs of the rendered page, so a link the
+    renderer makes (in a table, say) is seen and one it doesn't (inside code) isn't."""
+    return [html.unescape(u) for u in re.findall(r'<a href="([^"]*)"', render(text))]
+
+
+def normalise(body: str) -> str:
+    """Headings as the renderer reads them ('###<tab>Title  ###' is '### Title'), so the
+    comparisons below see the same structure the page will show."""
+    lines = []
+    for line in body.splitlines():
+        match = HEADING.match(line)
+        lines.append(f"{match[1]} {match[2]}" if match else line)
+    return "\n".join(lines)
 
 
 PLAIN_HOST = re.compile(r"[A-Za-z0-9.-]+(?::\d{1,5})?")
@@ -136,7 +150,7 @@ def check(old: str | None, new: str, meta: dict, old_meta: dict, known_domains: 
           today: date) -> tuple[list[str], list[str]]:
     """(problems, review reasons) for a submitted page body `new` replacing `old`."""
     problems, review = [], []
-    old = old or ""
+    old, new = normalise(old or ""), normalise(new)
     # Repeated headings would let one copy hide behind another in the comparisons below.
     for name in ("What the guides say", "Field findings"):
         heads = [h for h, _ in subsection_list(sections(new).get(name, ""))]
@@ -160,6 +174,8 @@ def check(old: str | None, new: str, meta: dict, old_meta: dict, known_domains: 
     new_findings, old_findings = findings(new), findings(old)
     findings_text = sections(new).get("Field findings", "")
     if findings_text.strip().rstrip(".").lower() != EMPTY_FINDINGS:
+        if subsections(findings_text).get(""):
+            problems.append("text under Field findings must sit under a finding's heading, or the section must say 'Nothing recorded yet.'")
         for claim, (confidence, content, when) in new_findings.items():
             if confidence is None:
                 problems.append(f"finding {claim!r} needs its confidence and date in brackets, e.g. '### Claim (tested, 6 Nov 2026)'")

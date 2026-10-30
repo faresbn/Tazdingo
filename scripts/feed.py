@@ -11,9 +11,9 @@ identical files and nothing is committed.
 """
 from __future__ import annotations
 
-import hashlib
 import re
 import shutil
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -30,10 +30,10 @@ VERSION_CHARS = 12  # a page's version: the start of its git blob ID, as `git re
 
 
 def blob_id(path: Path) -> str:
-    """The file's git blob ID (what `git hash-object` prints); its first 12 characters are the
-    page's version, which an edit through the inbox quotes back."""
-    body = path.read_bytes()
-    return hashlib.sha1(b"blob %d\0" % len(body) + body).hexdigest()
+    """The file's git blob ID, as git itself computes it (`git hash-object`); its first 12
+    characters are the page's version, which an edit through the inbox quotes back."""
+    return subprocess.run(["git", "hash-object", str(path)], cwd=path.parent, capture_output=True, text=True,
+                          check=True).stdout.strip()
 
 
 def slug(text: str) -> str:
