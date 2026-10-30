@@ -8,9 +8,8 @@
 
 Each upload becomes a scan record (scripts/market_store.py): the scan's time and every
 item's latest price, kept for the last 30 scans or 30 days. Run it after every scan to
-keep each one. Only market price records leave your Mac. The original SavedVariables file
-(settings, posting history, searches, shopping lists) is fingerprinted and left
-where it is.
+keep each one. The original file is also committed, unchanged, under
+data/captures/<environment>/auctionator/ (scripts/originals.py).
 """
 from __future__ import annotations
 
@@ -24,6 +23,7 @@ from datetime import date, datetime
 from pathlib import Path
 
 import market_store
+import originals
 from auctionator import InvalidCapture, parse_capture
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -119,7 +119,7 @@ def ingest(path: Path, environment: str, markets: list[str]) -> dict | None:
     registry = json.loads(registry_path.read_text())
     registry.setdefault("default_markets", {})[environment] = markets
     write_whole(registry_path, json.dumps(registry, indent=2) + "\n")
-    return summary(filed)
+    return {**summary(filed), "original": (path, environment, scan_time(capture))}
 
 
 def ingest_inbox() -> dict | None:
@@ -240,6 +240,9 @@ def check_and_commit(result: dict, saved: dict, args, source: str) -> None:
             subprocess.run([sys.executable, "scripts/build.py"], cwd=ROOT, capture_output=True)  # local site matches again
             raise SystemExit(f"Import stopped: the {step} failed (details above). Nothing was kept; "
                              "the journal is as it was before this import.")
+    if result.get("original"):
+        source, environment, stamp = result["original"]
+        print(f"Keeping the original as {originals.keep(ROOT, source, environment, 'Auctionator', stamp).relative_to(ROOT)}")
     if args.no_commit:
         return
     run("git", "add", "data", "feed")

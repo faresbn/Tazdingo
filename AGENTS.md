@@ -21,7 +21,7 @@ They're listed with their reasons in docs/DECISIONS.md. The ones most often got 
 
 ## Data rules
 
-- Never commit an original SavedVariables file (`*.lua`): it holds settings, posting history and searches. `.gitignore` blocks `data/captures/**/*.lua`. The originals live outside the repo (Fares's Downloads folder); the test that compares them skips when they're absent.
+- Original saved-variables files (`*.lua`, any addon) are committed, unchanged, at `data/captures/<environment>/<addon>/<time UTC>.lua` (`scripts/originals.py`; decided 30 October 2026: they're game data). Never edit one by hand. The website never serves a `.lua`.
 - Never edit an extract, a scan record (`data/market/*/scans/`), a daily archive (`data/market/*/daily/`) or their receipts in `data/captures.json` by hand: their fingerprints are checked on every build and before every import. Scan records are kept for the last 30 scans or 30 days, whichever reaches further back, then folded into the daily archive (`scripts/market_store.py`).
 - The Auction House measures (`scripts/market.py`) have no sales data behind them: say "recorded" with the scan time (never "seen at" an exact moment: Auctionator keeps one latest price per item per file), call estimates estimates, and keep volatile items out of gold-making tables (settled).
 - ForeverDB data needs the visible credit "Data from ForeverDB.net"; keep it wherever its data appears.
