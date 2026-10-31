@@ -315,3 +315,4 @@ To restore a page, copy its backup back to `content/` and commit.
 | 2026-10-30 13:19 | `content/world/rares.md` | edited | `cf579b9` | Merge the site design overhaul | [world/rares/20261030-131922-cf579b9.md](world/rares/20261030-131922-cf579b9.md) |
 | 2026-10-30 13:19 | `content/world/zones.md` | edited | `cf579b9` | Merge the site design overhaul | [world/zones/20261030-131922-cf579b9.md](world/zones/20261030-131922-cf579b9.md) |
 | 2026-10-31 06:56 | `content/more/addons.md` | edited | `e7e8af4` | Addons: clarify source links | [more/addons/20261031-065602-e7e8af4.md](more/addons/20261031-065602-e7e8af4.md) |
+| 2026-10-31 08:55 | `content/more/addons.md` | edited | `a697b7c` | Addons: tighten source-summary wording | [more/addons/20261031-085528-a697b7c.md](more/addons/20261031-085528-a697b7c.md) |
