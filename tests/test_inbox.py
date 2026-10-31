@@ -85,9 +85,10 @@ class Pages(InboxCase):
         sub = self.submit_page(text)
         [outcome] = inbox.run(self.root)
         self.assertEqual(outcome["outcome"], "applied", outcome)
+        self.assertEqual(json.loads((self.root / "inbox/results" / f"{sub}.json").read_text())["outcome"], "applied")
         self.assertEqual((self.root / PAGE).read_text(), text)
         self.assertFalse((self.root / "inbox" / sub).exists())
-        self.assertIn("WeakAuras still has no Forever version", git(self.root, "log", "-2", "--format=%s"))
+        self.assertIn("WeakAuras still has no Forever version", git(self.root, "log", "-3", "--format=%s"))
         self.assertIn("more/addons", (self.root / "archive/LOG.md").read_text())
 
     def test_stale_version_is_held(self):
@@ -244,7 +245,7 @@ class AddonFiles(InboxCase):
         self.assertEqual(outcome["outcome"], "applied", outcome)
         self.assertTrue(list((self.root / "data/market").rglob("*.json")))
         self.assertEqual(len(list((self.root / "data/captures/forever/auctionator").glob("*.lua"))), 1)
-        self.assertTrue(git(self.root, "log", "-1", "--format=%s").startswith("Auction House scan of"))
+        self.assertTrue(any(line.startswith("Auction House scan of") for line in git(self.root, "log", "-2", "--format=%s").splitlines()))
 
 
 class Provenance(unittest.TestCase):
