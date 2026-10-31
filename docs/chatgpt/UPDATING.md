@@ -2,6 +2,8 @@
 
 Upload this file to the shared ChatGPT project as a source file. It tells the assistant how to keep the site current from what comes up in conversation. PROJECT_INSTRUCTIONS.md (the project's instructions) points here. **TAZDINGO_INBOX.md** (the other source file) says how to read Tazdingo through its map and how to send updates through the inbox.
 
+The direct chat tools and the authenticated GitHub inbox-packet transport are documented in TAZDINGO_CONNECTION.md. Both send through the same processor. Direct edits to content/ remain outside the ordinary project update route.
+
 ## What the site is
 
 **Tazdingo** (https://faresbn.github.io/Tazdingo/) is an unofficial journal for World of Warcraft: Forever, which launches on 4 November 2026. Its source is the public GitHub repository `faresbn/Tazdingo`. It holds:

@@ -61,7 +61,7 @@ def git(root: Path, *args: str, check: bool = True) -> str:
 
 
 def waiting(root: Path) -> list[Path]:
-    folders = [p for p in (root / INBOX).iterdir() if p.is_dir() and p.name != "held"] if (root / INBOX).is_dir() else []
+    folders = [p for p in (root / INBOX).iterdir() if p.is_dir() and p.name not in ("held", "results")] if (root / INBOX).is_dir() else []
 
     def order(folder: Path):
         try:
@@ -299,7 +299,12 @@ def process_all(root: Path, push: bool) -> list[dict]:
             reason = f"the inbox couldn't process this ({type(error).__name__}: {error}); it needs a look"
             hold(root, root / INBOX / sub_id, sub_id, reason)
             outcome = {"outcome": "held", "detail": reason}
-        outcomes.append({"id": sub_id, **outcome})
+        receipt = {"id": sub_id, **outcome}
+        destination = root / INBOX / "results" / f"{sub_id}.json"
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
+        commit(root, f"Inbox: receipt {sub_id}", str(INBOX / "results"))
+        outcomes.append(receipt)
     return outcomes
 
 

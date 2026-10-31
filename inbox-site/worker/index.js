@@ -125,7 +125,7 @@ export async function waitingCount(env, fetcher = fetch) {
   const response = await github(env, '/contents/inbox?ref=main', {}, fetcher);
   if (response.status === 404) return 0;
   const entries = await json(response, 'the inbox listing');
-  return entries.filter(e => e.type === 'dir' && e.name !== 'held').length;
+  return entries.filter(e => e.type === 'dir' && !['held','results'].includes(e.name)).length;
 }
 
 // One commit adding inbox/<id>/submission.json and the file, built on the latest main; if main
@@ -190,6 +190,7 @@ function reply(request, status, title, message) {
 
 export async function handle(request, env, {fetcher = fetch, now = Date.now()} = {}) {
   const url = new URL(request.url);
+  if (url.pathname === '/mcp') return mcp(request, env);
   if (url.pathname === '/') return reply(request, 200, 'Tazdingo inbox', 'Send pages and addon files through the form on the website.');
   const config = configuration(env);
   if (url.pathname === '/health' && request.method === 'GET') {
@@ -235,3 +236,73 @@ export async function handle(request, env, {fetcher = fetch, now = Date.now()} =
 export default {
   async fetch(request, env) { return handle(request, env); }
 };
+
+// Chat tools use Sites' verified identity; personal keys stay on the server.
+const CHAT_TOOLS = [
+  {name:'read_tazdingo', description:'Read the Tazdingo map, a price/category feed, guide or project procedure. Start with feed/index.md. Returns current GitHub blob version for safe edits.', inputSchema:{type:'object',properties:{path:{type:'string',default:'feed/index.md'}},additionalProperties:false},annotations:{readOnlyHint:true}},
+  {name:'submit_tazdingo_page', description:'Submit a complete existing guide and the blob version read. Queued means received, not applied. Cheatsheet/recommendation changes require owner review. Content and the public change note become public.',inputSchema:{type:'object',properties:{path:{type:'string'},version:{type:'string'},page:{type:'string'},message:{type:'string'}},required:['path','version','page','message'],additionalProperties:false},annotations:{readOnlyHint:false,destructiveHint:false}},
+  {name:'submit_tazdingo_addon',description:'Submit exact original addon bytes as base64, never a reconstruction or summary. For large files use the inbox form with the original attachment. Auctionator needs a realm and faction.',inputSchema:{type:'object',properties:{file_name:{type:'string'},file_base64:{type:'string'},market:{type:'string'}},required:['file_name','file_base64'],additionalProperties:false},annotations:{readOnlyHint:false,destructiveHint:false}},
+  {name:'tazdingo_submission_status',description:'Check a submission receipt: applied, held, review, or waiting. Never assume HTTP 202 means publication.',inputSchema:{type:'object',properties:{id:{type:'string'}},required:['id'],additionalProperties:false},annotations:{readOnlyHint:true}}
+];
+
+async function repoFile(env,path,fetcher=fetch) {
+  const r=await github(env,`/contents/${path.split('/').map(encodeURIComponent).join('/')}?ref=main`,{},fetcher);
+  if(r.status===404)return null;
+  const data=await json(r,'a repository file');
+  if(data.type!=='file'||data.size>350000||data.encoding!=='base64')throw new Error('Use a smaller text file from the map.');
+  const content=new TextDecoder().decode(Uint8Array.from(atob(data.content.replace(/\s/g,'')),c=>c.charCodeAt(0)));
+  return {path,version:data.sha.slice(0,12),sha:data.sha,content,url:data.html_url};
+}
+
+export async function chatTool(name,args,request,env,fetcher=fetch) {
+  const user=request.headers.get('oai-authenticated-user-id');
+  const email=(request.headers.get('oai-authenticated-user-email')||'').toLowerCase();
+  if(!user)throw new Error('Connect the Tazdingo plugin with your ChatGPT account.');
+  if(name==='read_tazdingo') {
+    const path=args.path||'feed/index.md';
+    if(typeof path!=='string'||path.includes('..')||! /^(feed\/|content\/|archive\/|docs\/chatgpt\/)/.test(path)||!path.endsWith('.md'))throw new Error('Read only Markdown under feed/, content/, archive/ or docs/chatgpt/.');
+    const file=await repoFile(env,path,fetcher);if(!file)throw new Error('That file is not present. Start at feed/index.md.');return file;
+  }
+  if(name==='tazdingo_submission_status') {
+    if(!/^[0-9]{8}T[0-9]{6}Z-[a-z0-9]{6,12}$/.test(args.id||''))throw new Error('Supply the received submission id.');
+    const result=await repoFile(env,`inbox/results/${args.id}.json`,fetcher);
+    if(result)return JSON.parse(result.content);
+    const held=await repoFile(env,`inbox/held/${args.id}/reason.txt`,fetcher);
+    if(held)return {id:args.id,outcome:'held',detail:held.content};
+    const pending=await repoFile(env,`inbox/${args.id}/submission.json`,fetcher);
+    return {id:args.id,outcome:pending?'waiting':'unknown',detail:pending?'Received; processing has not completed.':'No receipt found. Older submissions may predate receipts; inspect GitHub history.'};
+  }
+  let writers;try{writers=JSON.parse(env.MCP_WRITERS||'{}');}catch{writers={};}
+  const label=writers[email];const config=configuration(env);
+  if(!label||!config.keys[label])throw new Error('Your verified account has no Tazdingo writer grant. The owner must map your email to your personal key label.');
+  let payload;
+  if(name==='submit_tazdingo_page') {
+    for(const field of ['path','version','page','message'])if(typeof args[field]!=='string'||!args[field])throw new Error(`Missing ${field}.`);
+    payload={kind:'page',path:args.path,version:args.version,page:args.page,message:args.message};
+  }else if(name==='submit_tazdingo_addon') {
+    if(typeof args.file_name!=='string'||typeof args.file_base64!=='string'||!args.file_base64)throw new Error('Supply the original filename and exact base64 bytes.');
+    payload={kind:'lua',file_name:args.file_name,file_base64:args.file_base64,...(args.market?{market:args.market}:{})};
+  }else throw new Error('Unknown tool.');
+  const body=JSON.stringify({...payload,key:config.keys[label]});
+  const result=await handle(new Request('https://tazdingo-inbox.internal/submit',{method:'POST',body,headers:{accept:'application/json','content-type':'application/json','content-length':String(bytes(body).length)}}),env,{fetcher});
+  const answer=await result.json();if(result.status!==202)throw new Error(answer.message);
+  const id=answer.message.match(/Submission ([0-9TZ-]+[a-f0-9]{8}) is in/)?.[1];
+  return {outcome:'received',id,message:answer.message};
+}
+
+export async function mcp(request,env) {
+  if(request.method!=='POST')return new Response('Use POST',{status:405});
+  let rpc;try{rpc=await request.json();}catch{return Response.json({jsonrpc:'2.0',id:null,error:{code:-32700,message:'Invalid JSON'}},{status:400});}
+  const reply=result=>Response.json({jsonrpc:'2.0',id:rpc.id??null,result});
+  if(rpc.method==='notifications/initialized')return new Response(null,{status:202});
+  if(rpc.method==='server/discover')return reply({supportedVersions:['2026-07-28'],capabilities:{tools:{}}});
+  if(rpc.method==='initialize')return reply({protocolVersion:rpc.params?.protocolVersion||'2026-07-28',serverInfo:{name:'Tazdingo',version:'1.0.0'},capabilities:{tools:{}}});
+  if(rpc.method==='tools/list')return reply({tools:CHAT_TOOLS});
+  if(rpc.method==='tools/call') {
+    try {
+      const result=await chatTool(rpc.params?.name,rpc.params?.arguments||{},request,env);
+      return reply({content:[{type:'text',text:JSON.stringify(result)}]});
+    }catch(error){return reply({isError:true,content:[{type:'text',text:error.message}]});}
+  }
+  return Response.json({jsonrpc:'2.0',id:rpc.id??null,error:{code:-32601,message:'Unknown method'}});
+}

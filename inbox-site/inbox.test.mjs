@@ -140,3 +140,34 @@ test('health reports configuration without exposing secrets or claiming GitHub a
   assert.ok(!payload.includes('private-token') && !payload.includes('correct-horse-battery'));
   assert.equal(JSON.parse(await missing.text()).ready, false);
 });
+
+test('chat reads return the real GitHub blob version and forbid arbitrary paths', async () => {
+  const {chatTool} = await import('./worker/index.js');
+  const request=new Request('https://example/mcp',{headers:{'oai-authenticated-user-id':'u','oai-authenticated-user-email':'owner@example.com'}});
+  const fetcher=async()=>Response.json({type:'file',size:8,encoding:'base64',sha:'a'.repeat(40),content:btoa('# Map\n'),html_url:'https://github.com/faresbn/Tazdingo/blob/main/feed/index.md'});
+  const result=await chatTool('read_tazdingo',{},request,{GITHUB_TOKEN:'t'},fetcher);
+  assert.equal(result.version,'a'.repeat(12));assert.equal(result.content,'# Map\n');
+  await assert.rejects(()=>chatTool('read_tazdingo',{path:'scripts/inbox.py'},request,{},fetcher));
+});
+
+test('chat writes require a verified identity and an explicit writer grant', async () => {
+  const {chatTool}=await import('./worker/index.js');const gh=fakeGitHub();
+  const env={INBOX_KEYS:KEYS,GITHUB_TOKEN:'t',DB:fakeDB(),MCP_WRITERS:JSON.stringify({'owner@example.com':'key-1'})};
+  const args={path:page.path,version:page.version,page:page.page,message:page.message};
+  await assert.rejects(()=>chatTool('submit_tazdingo_page',args,new Request('https://example/mcp'),env,gh.fetcher));
+  const stranger=new Request('https://example/mcp',{headers:{'oai-authenticated-user-id':'other','oai-authenticated-user-email':'other@example.com'}});
+  await assert.rejects(()=>chatTool('submit_tazdingo_page',args,stranger,env,gh.fetcher));
+  assert.equal(gh.calls.length,0);
+  const owner=new Request('https://example/mcp',{headers:{'oai-authenticated-user-id':'owner','oai-authenticated-user-email':'owner@example.com'}});
+  const received=await chatTool('submit_tazdingo_page',args,owner,env,gh.fetcher);
+  assert.equal(received.outcome,'received');assert.match(received.id,/^\d{8}T\d{6}Z-[a-f0-9]{8}$/);
+  assert.ok(!JSON.stringify(gh.calls.map(c=>c.body)).includes('correct-horse-battery'));
+});
+
+test('MCP discovery and tool listing work, and errors are tool errors', async () => {
+  const {mcp}=await import('./worker/index.js');
+  const invoke=async(method,params)=> (await mcp(new Request('https://example/mcp',{method:'POST',body:JSON.stringify({jsonrpc:'2.0',id:1,method,params}),headers:{'content-type':'application/json'}}),{})).json();
+  assert.deepEqual((await invoke('server/discover')).result.supportedVersions,['2026-07-28']);
+  assert.equal((await invoke('tools/list')).result.tools.length,4);
+  assert.equal((await invoke('tools/call',{name:'submit_tazdingo_page',arguments:{}})).result.isError,true);
+});
