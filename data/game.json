@@ -602,5 +602,5 @@
   }
  ],
  "screenshots": [],
-  "inbox": {"endpoint": "https://tazdingo-inbox.fact-special-2007.chatgpt.site/submit", "open": false}
+  "inbox": {"endpoint": "https://tazdingo-inbox.fact-special-2007.chatgpt.site/submit", "open": true}
 }

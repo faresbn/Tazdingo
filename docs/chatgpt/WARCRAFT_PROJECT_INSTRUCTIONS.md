@@ -1,6 +1,6 @@
 # Shared Warcraft: project instructions
 
-Paste the text below into the shared Warcraft project's instructions. Add TAZDINGO_CONNECTION.md and UPDATING.md as project sources. Enable the Tazdingo plugin; each participant connects their own account. No key belongs in these instructions.
+Paste the text below into the shared Warcraft project's instructions. Add TAZDINGO_CONNECTION.md and UPDATING.md as project sources. Enable the connected GitHub app with access to faresbn/Tazdingo; each participant connects their own account. The Tazdingo plugin is optional. No key belongs in these instructions.
 
 ---
 

@@ -2,7 +2,9 @@
 
 Both projects use the same Tazdingo running record. Their conversations remain separate.
 
-## Primary route: Tazdingo chat tools
+For testing today, use the already-connected GitHub route below. It has been exercised from this chat through the actual connector. The optional direct tools are deployed, but their per-account plugin connection still needs a native smoke test; publication alone does not install them.
+
+## Optional direct Tazdingo chat tools
 
 Install/connect the canonical plugin created by the existing Tazdingo inbox Site. It supplies:
 
@@ -46,3 +48,5 @@ An authenticated GitHub account with write access can send an inbox packet direc
 5. Read `inbox/results/<id>.json` for applied, held or review; while the packet is still in inbox/<id>/ it is waiting. For review, find the owner PR from branch `review/<id>`. Only report what the receipt and PR establish.
 
 Do not send keys or credentials in a packet. Do not modify content/, feed/, data/ or archive/ directly to make an update go through. If the connected GitHub tools cannot publish an atomic commit, use the Tazdingo tools or form instead; never pretend the write happened.
+
+For an original addon, use the same atomic packet with kind: "lua", file: the original safe addon filename (for example Auctionator.lua), and the unchanged file bytes as the second blob. Omit page path/version. Add market with the actual realm and faction for Auctionator. Create the file blob from exact original bytes (base64 encoding if needed); never from a conversation summary. If the tools cannot access the exact original or handle its size, use the original-file form upload. The transport does not bypass the 25 MB or provenance limits.

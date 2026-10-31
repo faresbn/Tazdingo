@@ -13,9 +13,9 @@ It's a separate Site from the news relay (`relay/`), so the relay keeps its rule
 
 ## Current deployment checkpoint (31 October)
 
-The receiver is deployed at https://tazdingo-inbox.fact-special-2007.chatgpt.site, project **appgprj_6ae4fe3d837481918b7ef17082430eae**. Reuse it. Both secrets and DB are configured (environment revision 2); the manifest declares `"d1": "DB"`.
+The receiver is deployed at https://tazdingo-inbox.fact-special-2007.chatgpt.site, project **appgprj_6ae4fe3d837481918b7ef17082430eae**. Reuse it. Both secrets and DB are configured (environment revision 3); the manifest declares `"d1": "DB"`.
 
-Authenticated hosted tests proved multipart delivery, application, archiving, original-file storage, stale-version handling and publication. The public form remains closed pending explicit approval for browser/public-endpoint tests. See `docs/sessions/2026-10-31-inbox-live/proof.md` for evidence and the automatic-review rejections.
+Authenticated hosted tests proved multipart delivery, application, archiving, original-file storage, stale-version handling and publication. The owner authorised the remaining public tests: protected changes created an actual review PR. The form is enabled for testing, although its browser interaction remains unverified because a saved browser policy denies the Pages domain. The connected GitHub atomic-inbox route is available without a new plugin connection. See `docs/chatgpt/TAZDINGO_CONNECTION.md` and the afternoon session proof.
 
 `GET /health` returns 200 only when the GitHub token, a valid personal-key map and the database binding are configured; otherwise 503. It exposes booleans only and disables caching. **This is a configuration check, not evidence that the token works or that a submission has been processed.** Unconfigured POSTs return 503 before contacting GitHub.
 
@@ -41,3 +41,9 @@ The ready-to-paste brief is `docs/sessions/2026-10-30-public-inbox/codex-deploy-
 Run the tests from the repository root: `node --test inbox-site/inbox.test.mjs`.
 
 **To revoke:** delete the token on GitHub (the inbox stops at once), or remove one person's key from `INBOX_KEYS`.
+
+## Direct chat tools and receipts
+
+The published Site declares MCP capability and exposes read_tazdingo, submit_tazdingo_page, submit_tazdingo_addon and tazdingo_submission_status. Sites supplies verified identity; reads require a signed-in caller, writes require a verified email mapped through the secret MCP_WRITERS to a configured INBOX_KEYS label. Tools never accept a key from chat. Publication provisions a canonical plugin; it does not install it into a conversation. Native sign-in/invocation still needs client testing.
+
+The processor stores public outcomes in inbox/results/<id>.json. Waiting payloads and held reasons remain inspectable. Applied means committed; Pages publication is separate. Both chat tools and authenticated GitHub atomic packets use this same processing pipeline. Never bypass protected-edit review by writing a guide directly.

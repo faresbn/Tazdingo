@@ -1,6 +1,6 @@
 # Warcraft Deep: project instructions
 
-Paste the text below into Warcraft Deep's project instructions. Add TAZDINGO_CONNECTION.md and UPDATING.md as project sources. Enable the Tazdingo plugin in the project; each person connects their own account. No key belongs in these instructions.
+Paste the text below into Warcraft Deep's project instructions. Add TAZDINGO_CONNECTION.md and UPDATING.md as project sources. Enable the connected GitHub app with access to faresbn/Tazdingo. The optional Tazdingo plugin can provide simpler tools once connected. No key belongs in these instructions.
 
 ---
 

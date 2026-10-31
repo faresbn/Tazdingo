@@ -6,23 +6,23 @@ Where Tazdingo stands, kept current at every checkpoint so another thread, model
 
 ## In flight (31 October)
 
-**The receiver is deployed and authenticated service delivery is proved. The public form remains closed pending explicit approval for the remaining tests.** See `docs/sessions/2026-10-31-inbox-live/proof.md` for receipts, scope and exact blocked actions.
+**The inbox is operational. GitHub connector writes and hosted receiver writes both use the normal validation/review pipeline.** The owner explicitly authorised remaining public tests and normal-browser testing on 31 October. This supersedes the former pending-approval checkpoint.
 
-- Site appgprj_6ae4fe3d837481918b7ef17082430eae, https://tazdingo-inbox.fact-special-2007.chatgpt.site, version 1; environment revision 2. Both secrets and DB are configured. Its public receiver audience is set; submissions still require a personal key.
-- PR #7 merged. Normal checks and the isolated integration proof passed on GitHub.
-- Authenticated multipart submissions proved application, archive, feed versioning, unchanged addon storage, stale-version holding and Pages publication (41178621202). Wrong and leaked keys were refused.
-- An anonymous automated receiver request encountered Cloudflare 1010. Automatic review rejected browser testing as a potential workaround, then rejected a public-endpoint personal-key test and a direct-main protected-test record without specific approval. Neither protected test was published. A saved browser policy also blocks faresbn.github.io. Do not work around these rejections.
-- Obtain explicit approval for the public receiver key/test payload, normal-browser testing after the Cloudflare block, and temporary public test records/review PRs. Browser permission for faresbn.github.io must be allowed. Keep inbox.open false until remaining checks pass.
-- No Beta Auctionator data was published as live data; a real scan remains a launch task.
-
-Later: phase 9 (the inbox as a tool callable from chats, published to the workspace as a plugin), once the form works. Also a processor for AllTheThings files, if wanted.
+- Receiver: existing Site appgprj_6ae4fe3d837481918b7ef17082430eae, https://tazdingo-inbox.fact-special-2007.chatgpt.site, version 2, environment revision 3. GitHub token, personal keys, DB and owner-only MCP writer mapping are configured server-side.
+- PRs #7–9 merged. 126 Python tests, 27 Node tests, 1,055 generated pages checked; the seven-case isolated proof passed. Hosted tests proved apply/archive/feed/publish, byte-preserving addon storage, stale holding and key refusals.
+- Public receiver protected edit 20261031T084844Z-07d59f5f created actual review PR #10; closed and branch removed after proof. No gameplay recommendation changed. Its bot-authored PR workflow required owner approval; inbox processing had already run its checks.
+- GitHub connected-app transport sends two-file atomic inbox packets without keys. Processing now records durable outcomes in inbox/results/. See the afternoon proof record for its live receipt and publish run.
+- Four direct MCP tools are deployed and the canonical plugin is provisioned. It is not installed in this chat; native account/tool invocation remains unverified. Do not claim publication connected the plugin. The already-connected GitHub route avoids that setup dependency.
+- The fallback form is enabled for owner testing. The receiver root loaded in a normal browser, but a saved browser policy still denies faresbn.github.io, so form interaction/file attachment has not been visually verified here. Do not work around that denial.
+- New instructions for Warcraft Deep and shared Warcraft plus connection guide are in docs/chatgpt/. They are ready to paste; no available tool changes ChatGPT project settings. Each participant must connect their own authorised app account.
+- No Beta Auctionator data was published as Live. First real scan remains a launch task.
 
 ## Picking this up
 
 | You are | Read | Then |
 |---|---|---|
 | Claude Code or Codex in this repo | This file, AGENTS.md (= CLAUDE.md), README.md; docs/DECISIONS.md before changing anything settled | Branch from `main`, run the checks in "How to work on it", merge and delete the branch |
-| The shared ChatGPT project | docs/chatgpt/PROJECT_INSTRUCTIONS.md (its instructions), UPDATING.md and TAZDINGO_INBOX.md (source files) | Read through `feed/index.md` in the repository; send page edits and addon files through the inbox |
+| The shared ChatGPT project | the appropriate WARCRAFT_DEEP_PROJECT_INSTRUCTIONS.md or WARCRAFT_PROJECT_INSTRUCTIONS.md, TAZDINGO_CONNECTION.md and UPDATING.md | Read through `feed/index.md` in the repository; send page edits and addon files through the inbox |
 | Reviewing as the other model family | REVIEWER.md | Log the consultation in the session's `revlog.md` |
 
 The latest plan, research and review log are in `docs/sessions/2026-10-30-public-inbox/` (`plan.md`, `research.md`, `revlog.md`, `codex-deploy-brief.md`).
@@ -34,7 +34,7 @@ The latest plan, research and review log are in `docs/sessions/2026-10-30-public
 - **Public repository, feed and inbox (30 October):**
   - **The repository is public.** Original Lua files are committed under `data/captures/`.
   - **`feed/` is ChatGPT's markdown,** read from the repository: a map (`feed/index.md`) to price files per market category, crafting per profession and the guide map with each page's version. Every build rewrites it; `feed.yml` refreshes it after other pushes.
-  - **The hidden form** at `inbox/` (closed until the Site is deployed) posts to `inbox-site/`.
+  - **The hidden form** at `inbox/` (enabled for testing) posts to `inbox-site/`.
   - **`scripts/inbox.py` and `inbox.yml`** check, apply, review or hold each submission; `scripts/provenance.py` holds the truth rules.
   - **Commits** use the GitHub private address.
 
@@ -66,7 +66,7 @@ The latest plan, research and review log are in `docs/sessions/2026-10-30-public
 
 ## Open items
 
-- **Hosted inbox and ChatGPT form/file operation are untested** until the Site is deployed and Fares tries it in the app (agent mode filling the form, attaching a file; reading raw GitHub addresses). The form is the fallback: a person can always paste and send.
+- **Remaining client checks:** paste the prepared instructions into each ChatGPT project and test its own connected GitHub account. Optional MCP plugin sign-in and browser form/file attachment need client testing; the inbox backend and GitHub connector write path have live proof.
 - **Repository size:** about 23 MB of git data on 30 October (`du -sh .git`; mostly loose objects before packing). Lua files and committed price files grow it with every scan. Decide a retention rule before 500 MB (perhaps keep only recent files of non-price addons). Check with `git count-objects -vH`.
 - **Thresholds in `scripts/market.py` are first guesses**; tune them after a week of live scans.
 - **Watch items from the final bug check** (none affects the site today): in the older `data/market/inbox/` route, one bad record blocks later runs until someone removes it (the new inbox holds bad submissions instead); if the market grows fast after launch, early full scans can count as partial days (the baseline is the median full-scan size); a full scan's time-of-day sample includes items whose price was recorded earlier that day; the Beta capture route credits full scans among published markets only.
