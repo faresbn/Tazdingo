@@ -88,7 +88,7 @@ Pre-launch means the page's advice isn't checked in the live game yet. To edit a
 
 ### More
 
-- `content/more/addons.md`: Addons, updated 2026-10-27, Pre-launch, version `83042cb487cb`
+- `content/more/addons.md`: Addons, updated 2026-10-31, Pre-launch, version `6860891d39ce`
 - `content/more/known-issues.md`: Known issues, updated 2026-10-27, Pre-launch, version `e6f3a352e0cf`
 - `content/more/launch.md`: Launch checklist, updated 2026-10-27, Pre-launch, version `0de91eda32c9`
 - `content/more/macros.md`: Macros, updated 2026-10-27, Pre-launch, version `e194d06e845d`

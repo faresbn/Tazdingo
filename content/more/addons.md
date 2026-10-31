@@ -1,6 +1,6 @@
 ---
-updated: 2026-10-27
-summary: Which popular addons have a Forever version, the addons made just for Forever, and how to install them on the modern client.
+updated: 2026-10-31
+summary: Source-linked notes on which popular addons have a Forever version, the addons made just for Forever, and how to install them on the modern client.
 sources: CurseForge (catalogue checked 26 October; TSM, WeakAuras and Musca Auras rechecked 27 October), ForeverDB, foreverchanges.pro, Icy Veins, Blizzard forums, ElvUI on GitHub and Tukui
 ---
 
