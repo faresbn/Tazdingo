@@ -1,10 +1,8 @@
 # TAZDINGO_INBOX: reading Tazdingo and sending it updates
 
-Upload this file to the shared ChatGPT project as a source file, **with your own key in place of `<KEY>` below**. Each person has their own key; never share it, and never put it anywhere but the form's key field.
+This is the optional person-operated form procedure. For the connected GitHub route or direct chat tools, read TAZDINGO_CONNECTION.md first; those routes do not require a key in project sources.
 
-**My inbox key:** `<KEY>`
-
-This repository copy is public, so it holds the placeholder only.
+Keep your personal inbox key privately and enter it only in the form's key field. Never upload a populated key file to a shared project or place a key in project instructions. Each participant uses their own credentials.
 
 ## Reading Tazdingo
 
@@ -24,12 +22,12 @@ The form is at **https://faresbn.github.io/Tazdingo/inbox/**. Fill it in and pre
 ### A guide page
 
 1. Find the page's **path** and **version** in `feed/guides.md` (e.g. `content/classes/mage/frost.md`, version `be1c49bbba5c`).
-2. Read the page at its path. Make the change following UPDATING.md: keep everything still true, add dated findings, set `updated:` to today.
+2. Read the complete page at its path. Prefer its actual Git blob SHA (first 12 characters) over a possibly stale map version. Make the change following UPDATING.md: keep everything still true, add dated findings, set `updated:` to today.
 3. Fill in the form:
    - **Key:** your key
    - **What you're sending:** A guide page
    - **Page path:** the path
-   - **Version you edited:** the version from step 1
+   - **Version you edited:** the actual page version from step 2
    - **One-line change note:** `<Page>: <what changed>`, no full stop, no names
    - **The whole page:** the complete file, header included
 4. **The page must pass these checks, or it's held:**
@@ -61,7 +59,7 @@ If you can't attach the file yourself, tell the user to open the form and attach
 
 ## What the replies mean
 
-- **Received, with an id:** it's in. If it passes its checks, it's live in about two minutes; tell the user the page's address. If it's held or sent for approval, the owner hears why.
+- **Received, with an id:** queued, not yet applied. Read inbox/results/<id>.json through GitHub or call tazdingo_submission_status. Report waiting, held, review or applied exactly. Applied means committed; confirm the Pages publish run separately before saying the website is published.
 - **Refused:**
   - the key is wrong;
   - something's missing;
