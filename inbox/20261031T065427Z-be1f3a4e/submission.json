@@ -1,0 +1,8 @@
+{
+ "format": 1,
+ "id": "20261031T065427Z-be1f3a4e",
+ "received": "2026-10-31T06:54:27Z",
+ "key_label": "key-1",
+ "kind": "lua",
+ "file": "InboxProof.lua"
+}
