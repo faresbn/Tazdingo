@@ -1,0 +1,1 @@
+content/more/addons.md changed since it was read (or no version was given): read it again from the repository, make the change on the current version and submit that, quoting its version from feed/guides.md
