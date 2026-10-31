@@ -2,23 +2,18 @@
 
 Where Tazdingo stands, kept current at every checkpoint so another thread, model or machine can carry on. Read this first, then AGENTS.md and README.md. History lives in git and in `docs/sessions/`; this file describes the present.
 
-**Last updated:** 30 October 2026, during inbox deployment and proof, after the site design overhaul (session `docs/sessions/2026-10-30-design-overhaul/`), which followed the public repository, feed and inbox (`docs/sessions/2026-10-30-public-inbox/`). `main` is the whole state and the only branch.
+**Last updated:** 31 October 2026, after hosted service verification, after the site design overhaul (session `docs/sessions/2026-10-30-design-overhaul/`), which followed the public repository, feed and inbox (`docs/sessions/2026-10-30-public-inbox/`). `main` is the whole state and the only branch.
 
-## In flight (30 October)
+## In flight (31 October)
 
-**The inbox implementation has an isolated integration proof; hosted activation is blocked.** Follow `docs/sessions/2026-10-30-inbox-proof/` and `inbox-site/README.md`. The public form remains closed.
+**The receiver is deployed and authenticated service delivery is proved. The public form remains closed pending explicit approval for the remaining tests.** See `docs/sessions/2026-10-31-inbox-live/proof.md` for receipts, scope and exact blocked actions.
 
-- The separate receiver Site now exists: `appgprj_6ae4fe3d837481918b7ef17082430eae`, slug `tazdingo-inbox`. Reuse it. It is an unpublished owner-private draft.
-- Its `INBOX_KEYS` secret contains the three prepared personal keys (environment revision 1); the repository-scoped `GITHUB_TOKEN` is missing.
-- This session could not resolve the Sites source host (`git.chatgpt-team.site`), so it could not push receiver source or publish a version. The Worker bundle passes local validation. GitHub writes were separately rejected with `MCP tool call requires approval, but approval policy is never`; fixes are committed locally on `inbox/deploy-and-prove` and have not been pushed.
-- The receiver fails closed when either secret or the DB binding is absent. `/health` reports configuration only, never token validity or processing success.
-- The full local proof exposed and fixed a test-fixture defect: unit-test clones inherited real arriving submissions and failed valid imports. Each test clone now starts with its own inbox. Production validation stays enabled.
-
-Remaining hosted steps:
-1. Set a fine-grained `GITHUB_TOKEN` for `faresbn/Tazdingo` only, Contents read/write. Do not paste it into the public repository or chat instructions.
-2. Resume source synchronization for the existing Site from a session with Sites source-host access; deploy the current Worker with DB bound as `DB`. Preserve the existing news relay.
-3. Establish the intended form access, then prove the deployed receiver: a wrong key, a valid page edit, a stale version, a protected edit requiring a real review PR, and an original addon upload. Use an actual live scan for a public Auctionator test; never publish the Beta fixture as live data. Confirm applied content, feed versions, archive, Action outcomes and Pages publication.
-4. Open `data/game.json`'s inbox only after those hosted checks pass. Refresh the shared project's instructions and personal-key copies, then verify its actual form/file workflow.
+- Site appgprj_6ae4fe3d837481918b7ef17082430eae, https://tazdingo-inbox.fact-special-2007.chatgpt.site, version 1; environment revision 2. Both secrets and DB are configured. Its public receiver audience is set; submissions still require a personal key.
+- PR #7 merged. Normal checks and the isolated integration proof passed on GitHub.
+- Authenticated multipart submissions proved application, archive, feed versioning, unchanged addon storage, stale-version holding and Pages publication (41178621202). Wrong and leaked keys were refused.
+- An anonymous automated receiver request encountered Cloudflare 1010. Automatic review rejected browser testing as a potential workaround, then rejected a public-endpoint personal-key test and a direct-main protected-test record without specific approval. Neither protected test was published. A saved browser policy also blocks faresbn.github.io. Do not work around these rejections.
+- Obtain explicit approval for the public receiver key/test payload, normal-browser testing after the Cloudflare block, and temporary public test records/review PRs. Browser permission for faresbn.github.io must be allowed. Keep inbox.open false until remaining checks pass.
+- No Beta Auctionator data was published as live data; a real scan remains a launch task.
 
 Later: phase 9 (the inbox as a tool callable from chats, published to the workspace as a plugin), once the form works. Also a processor for AllTheThings files, if wanted.
 
