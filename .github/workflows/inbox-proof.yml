@@ -1,0 +1,22 @@
+name: Prove the inbox in isolation
+
+on:
+  push:
+    branches: [main, 'inbox/**']
+    paths: ['inbox-site/**', 'scripts/inbox.py', 'scripts/provenance.py', 'scripts/prove_inbox.py', '.github/workflows/inbox-proof.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Run receiver-to-processor proof in a disposable local repository
+        run: python3 scripts/prove_inbox.py
