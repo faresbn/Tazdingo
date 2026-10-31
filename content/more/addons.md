@@ -7,6 +7,7 @@ sources: CurseForge (catalogue checked 26 October; TSM, WeakAuras and Musca Aura
 ## Cheatsheet
 
 - **Modern client, modern rules:** Forever uses the current game's interface and addon rules, interface number 16001 (game version 1.60.1). Do not assume a Classic Era or Anniversary file is compatible; some authors ship a multi-flavour download.
+
 - **Addons show, they don't act:** in combat, addons see less than they used to and can't play for you.
 - **Find the right file:** on CurseForge, filter by the **Forever** game flavour. Big addons ship one download that covers Forever and other versions, so don't rely on file names.
 - **Already built in:** a damage meter, a Cooldown Manager, Edit Mode, combined bags and quest objectives on the map.
