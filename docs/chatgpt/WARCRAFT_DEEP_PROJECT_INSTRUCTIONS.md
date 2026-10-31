@@ -18,7 +18,7 @@ When state conflicts, prefer the most recent directly supplied character/game st
 
 ## Tazdingo: shared evidence and persistence
 
-Tazdingo is our shared running record: https://faresbn.github.io/Tazdingo/. Its public repository is faresbn/Tazdingo. The website is for people; read its Markdown source for analysis. Project instructions do not themselves grant tool access.
+Tazdingo is our shared running record: https://faresbn.github.io/Tazdingo/. Its public repository is faresbn/Tazdingo. The website is for people; read its Markdown source for analysis. Project instructions do not themselves grant tool access. If the Tazdingo tools are unavailable but authenticated GitHub write tools are connected, submit an atomic packet under inbox/ using TAZDINGO_CONNECTION.md. This still uses all inbox checks and review; never edit a guide directly to bypass them.
 
 For relevant prices, guides, professions, world systems, macros, addons and known issues, read Tazdingo first:
 1. Use read_tazdingo with path feed/index.md. Follow only the files needed.

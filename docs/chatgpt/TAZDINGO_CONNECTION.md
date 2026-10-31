@@ -34,3 +34,15 @@ For large addon files, attach the original file through the form. Do not encode 
 5. Upload an exact small original addon file: confirm stored bytes and receipt. Use the first real live Auctionator scan for the launch test.
 
 For read-only prices, reports should never invent a new scan or imply listed quantities are sales. For writes, never call received/queued applied. Preserve the receipt id if processing is still running.
+
+## Already-connected GitHub route (works without a new plugin connection)
+
+An authenticated GitHub account with write access can send an inbox packet directly through the connected GitHub tools. This is an alternate inbox transport, not a direct edit to a guide. All existing validation, review and receipt handling still runs. Use this route when the Tazdingo chat tools are unavailable; it requires no inbox key.
+
+1. Read the current complete content/ file and its actual Git blob SHA. Prepare the whole edited page under UPDATING.md.
+2. Generate a fresh id in `YYYYMMDDTHHMMSSZ-<8 lowercase hexadecimal characters>` form and a UTC ISO timestamp.
+3. Prepare `inbox/<id>/submission.json` with `format: 1`, `id`, `received`, `key_label: "github-connector"`, `kind: "page"`, `file: "page.md"`, `path`, `version` (at least the first 12 characters of the blob SHA), and `message`. Put the complete edited page in `inbox/<id>/page.md`.
+4. Publish BOTH files atomically in ONE Git commit based on current main: create their blobs, create a tree using main's tree as base, create a commit with main as parent, then update main without force and with its expected head SHA. If main moved, reread it and retry the commit/ref update. Never create the two files with separate commits: the processor could see an incomplete packet.
+5. Read `inbox/results/<id>.json` for applied, held or review; while the packet is still in inbox/<id>/ it is waiting. For review, find the owner PR from branch `review/<id>`. Only report what the receipt and PR establish.
+
+Do not send keys or credentials in a packet. Do not modify content/, feed/, data/ or archive/ directly to make an update go through. If the connected GitHub tools cannot publish an atomic commit, use the Tazdingo tools or form instead; never pretend the write happened.

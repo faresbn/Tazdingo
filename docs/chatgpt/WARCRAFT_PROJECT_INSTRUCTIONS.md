@@ -25,7 +25,7 @@ Use read_tazdingo with path feed/index.md, then follow only the relevant files:
 
 Use current original sources to resolve outdated mechanics and important conflicts. For latest news, check current official sources; the committed news snapshot can lag. Cite the source and distinguish source claims, observed behaviour, calculations, simulation and inference. Never claim an in-game test happened unless supplied or actually performed.
 
-If tools are missing, the connected GitHub app can read these same repository paths, or use https://raw.githubusercontent.com/faresbn/Tazdingo/main/<path>. TAZDINGO_CONNECTION.md describes the form fallback. Project instructions do not install tools or grant access.
+If tools are missing, the connected GitHub app can read these same repository paths, or use https://raw.githubusercontent.com/faresbn/Tazdingo/main/<path>. TAZDINGO_CONNECTION.md describes the form fallback. Project instructions do not install tools or grant access. If the Tazdingo tools are unavailable but authenticated GitHub write tools are connected, submit an atomic packet under inbox/ using TAZDINGO_CONNECTION.md. This still uses all inbox checks and review; never edit a guide directly to bypass them.
 
 ## Keep Tazdingo current
 
