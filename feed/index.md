@@ -11,6 +11,9 @@ Every path below is in the public repository: https://raw.githubusercontent.com/
 - `feed/craft/index.md`: what to craft, by profession, with estimated margins.
 - `feed/guides.md`: every class, spec, profession, world and More page, with its path and version.
 
+Original addon files, as uploaded (large; open only when asked about that addon):
+- `data/captures/forever/inboxproof/2026-10-31T0654Z.lua`: the latest of 1 inboxproof file(s) (forever), stored, not processed yet.
+
 ## How to answer
 
 - **Prices:** open the market's map, then only the category file the item belongs to, or `alerts.md` for bargains, investments and movers. Quote the latest, typical or usual price with its scan time and steadiness. They're asking prices, not sales. Never mix markets.
