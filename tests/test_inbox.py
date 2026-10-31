@@ -38,6 +38,12 @@ class InboxCase(unittest.TestCase):
         git(base, "clone", "-q", str(self.remote), str(self.root))
         git(self.root, "config", "user.name", "test")
         git(self.root, "config", "user.email", "test@example.com")
+        # The real processor runs this suite while HEAD still contains the arriving submission.
+        # Each unit-test clone must start with its own inbox, or it processes that submission too.
+        if (self.root / "inbox").exists():
+            shutil.rmtree(self.root / "inbox")
+            git(self.root, "add", "-A", "--", "inbox")
+            git(self.root, "commit", "-q", "-m", "Isolate the test inbox")
         self.checks, self.names = inbox.run_checks, inbox.refresh_names
         inbox.run_checks = lambda root: None
         inbox.refresh_names = lambda root: None

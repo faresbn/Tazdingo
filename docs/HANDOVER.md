@@ -2,14 +2,23 @@
 
 Where Tazdingo stands, kept current at every checkpoint so another thread, model or machine can carry on. Read this first, then AGENTS.md and README.md. History lives in git and in `docs/sessions/`; this file describes the present.
 
-**Last updated:** 30 October 2026, after the site design overhaul (session `docs/sessions/2026-10-30-design-overhaul/`), which followed the public repository, feed and inbox (`docs/sessions/2026-10-30-public-inbox/`). `main` is the whole state and the only branch.
+**Last updated:** 30 October 2026, during inbox deployment and proof, after the site design overhaul (session `docs/sessions/2026-10-30-design-overhaul/`), which followed the public repository, feed and inbox (`docs/sessions/2026-10-30-public-inbox/`). `main` is the whole state and the only branch.
 
 ## In flight (30 October)
 
-**The inbox is built and tested; three owner steps remain before it opens.** Phases 1–8 of `docs/sessions/2026-10-30-public-inbox/plan.md` are merged. On GitHub, a deliberately stale test submission was held with its reason, pushed, and failed the run as designed (run 41026422969).
-1. **Fares:** create the fine-grained token (only `faresbn/Tazdingo`, Contents read and write, one-year expiry). Then run `docs/sessions/2026-10-30-public-inbox/codex-deploy-brief.md` in Codex to deploy the `tazdingo-inbox` Site, pasting the token and the personal keys from `tmp/inbox-keys.json` (this Mac only, never committed) into its secrets.
-2. **Then (Claude or Codex):** put the Site's address in `data/game.json` (`inbox.endpoint`, ending `/submit`), set `inbox.open` to `true`, and test end to end through the form in a browser: a page edit, a stale edit, a wrong key, an addon file.
-3. **Fares:** paste the new `docs/chatgpt/PROJECT_INSTRUCTIONS.md`, and upload `UPDATING.md` and `TAZDINGO_INBOX.md` (both changed again on 30 October for the cheatsheet) (each person with their own key) to the ChatGPT project. Then test from the app: read prices and a page through the map, send an edit and an addon file in agent mode.
+**The inbox implementation has an isolated integration proof; hosted activation is blocked.** Follow `docs/sessions/2026-10-30-inbox-proof/` and `inbox-site/README.md`. The public form remains closed.
+
+- The separate receiver Site now exists: `appgprj_6ae4fe3d837481918b7ef17082430eae`, slug `tazdingo-inbox`. Reuse it. It is an unpublished owner-private draft.
+- Its `INBOX_KEYS` secret contains the three prepared personal keys (environment revision 1); the repository-scoped `GITHUB_TOKEN` is missing.
+- This session could not resolve the Sites source host (`git.chatgpt-team.site`), so it could not push receiver source or publish a version. The Worker bundle passes local validation. GitHub writes were separately rejected with `MCP tool call requires approval, but approval policy is never`; fixes are committed locally on `inbox/deploy-and-prove` and have not been pushed.
+- The receiver fails closed when either secret or the DB binding is absent. `/health` reports configuration only, never token validity or processing success.
+- The full local proof exposed and fixed a test-fixture defect: unit-test clones inherited real arriving submissions and failed valid imports. Each test clone now starts with its own inbox. Production validation stays enabled.
+
+Remaining hosted steps:
+1. Set a fine-grained `GITHUB_TOKEN` for `faresbn/Tazdingo` only, Contents read/write. Do not paste it into the public repository or chat instructions.
+2. Resume source synchronization for the existing Site from a session with Sites source-host access; deploy the current Worker with DB bound as `DB`. Preserve the existing news relay.
+3. Establish the intended form access, then prove the deployed receiver: a wrong key, a valid page edit, a stale version, a protected edit requiring a real review PR, and an original addon upload. Use an actual live scan for a public Auctionator test; never publish the Beta fixture as live data. Confirm applied content, feed versions, archive, Action outcomes and Pages publication.
+4. Open `data/game.json`'s inbox only after those hosted checks pass. Refresh the shared project's instructions and personal-key copies, then verify its actual form/file workflow.
 
 Later: phase 9 (the inbox as a tool callable from chats, published to the workspace as a plugin), once the form works. Also a processor for AllTheThings files, if wanted.
 
@@ -62,7 +71,7 @@ The latest plan, research and review log are in `docs/sessions/2026-10-30-public
 
 ## Open items
 
-- **ChatGPT's side of the inbox is untested** until the Site is deployed and Fares tries it in the app (agent mode filling the form, attaching a file; reading raw GitHub addresses). The form is the fallback: a person can always paste and send.
+- **Hosted inbox and ChatGPT form/file operation are untested** until the Site is deployed and Fares tries it in the app (agent mode filling the form, attaching a file; reading raw GitHub addresses). The form is the fallback: a person can always paste and send.
 - **Repository size:** about 23 MB of git data on 30 October (`du -sh .git`; mostly loose objects before packing). Lua files and committed price files grow it with every scan. Decide a retention rule before 500 MB (perhaps keep only recent files of non-price addons). Check with `git count-objects -vH`.
 - **Thresholds in `scripts/market.py` are first guesses**; tune them after a week of live scans.
 - **Watch items from the final bug check** (none affects the site today): in the older `data/market/inbox/` route, one bad record blocks later runs until someone removes it (the new inbox holds bad submissions instead); if the market grows fast after launch, early full scans can count as partial days (the baseline is the median full-scan size); a full scan's time-of-day sample includes items whose price was recorded earlier that day; the Beta capture route credits full scans among published markets only.

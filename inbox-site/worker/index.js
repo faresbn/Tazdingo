@@ -2,7 +2,7 @@
 // commits the submission, key removed, to inbox/<id>/ in the repository. Every other rule lives in
 // scripts/inbox.py, which a GitHub Action runs on what arrives. Refusals are logged in this Site's
 // own database (the private "failed folder") and never reach the public repository.
-export const VERSION = 1;
+export const VERSION = 2;
 const REPO = 'faresbn/Tazdingo';
 const SITE = 'https://faresbn.github.io/Tazdingo/';
 const API = 'https://api.github.com';
@@ -18,6 +18,18 @@ export class Refused extends Error {
 }
 
 const bytes = text => new TextEncoder().encode(text);
+
+// A receiver with missing secrets or storage must never accept a submission without its limits.
+export function configuration(env) {
+  let keys;
+  try { keys = JSON.parse(env.INBOX_KEYS || '{}'); } catch { keys = null; }
+  const validKeys = keys && typeof keys === 'object' && !Array.isArray(keys)
+    && Object.keys(keys).length > 0
+    && Object.entries(keys).every(([label, key]) => label && typeof key === 'string' && key.length >= 16);
+  const checks = {keys: Boolean(validKeys), github: typeof env.GITHUB_TOKEN === 'string' && Boolean(env.GITHUB_TOKEN.trim()),
+                  database: typeof env.DB?.prepare === 'function'};
+  return {keys: validKeys ? keys : {}, checks, ready: Object.values(checks).every(Boolean)};
+}
 
 async function digest(text) {
   return new Uint8Array(await crypto.subtle.digest('SHA-256', bytes(text)));
@@ -179,11 +191,16 @@ function reply(request, status, title, message) {
 export async function handle(request, env, {fetcher = fetch, now = Date.now()} = {}) {
   const url = new URL(request.url);
   if (url.pathname === '/') return reply(request, 200, 'Tazdingo inbox', 'Send pages and addon files through the form on the website.');
+  const config = configuration(env);
+  if (url.pathname === '/health' && request.method === 'GET') {
+    return new Response(JSON.stringify({ready: config.ready, version: VERSION, configured: config.checks}),
+      {status: config.ready ? 200 : 503, headers: {'content-type': 'application/json', 'cache-control': 'no-store'}});
+  }
   if (url.pathname !== '/submit') return reply(request, 404, 'Not here', 'This address only receives the inbox form.');
   if (request.method !== 'POST') return reply(request, 405, 'Send the form', 'This address only receives the inbox form.');
+  if (!config.ready) return reply(request, 503, 'Inbox not ready', 'The inbox is not configured yet. Nothing was sent.');
   const time = new Date(now).toISOString();
-  let keys;
-  try { keys = JSON.parse(env.INBOX_KEYS || '{}'); } catch { keys = {}; }
+  const keys = config.keys;
   let sub;
   try {
     sub = await readSubmission(request);
