@@ -1,0 +1,191 @@
+# Updating Tazdingo
+
+Upload this file to the shared ChatGPT project as a source file. It tells the assistant how to keep the site current from what comes up in conversation. PROJECT_INSTRUCTIONS.md (the project's instructions) points here. **TAZDINGO_INBOX.md** (the other source file) says how to read Tazdingo through its map and how to send updates through the inbox.
+
+The direct chat tools and the authenticated GitHub inbox-packet transport are documented in TAZDINGO_CONNECTION.md. Both send through the same processor. Direct edits to content/ remain outside the ordinary project update route.
+
+## What the site is
+
+**Tazdingo** (https://faresbn.github.io/Tazdingo/) is an unofficial journal for World of Warcraft: Forever, which launches on 4 November 2026. Its source is the public GitHub repository `faresbn/Tazdingo`. It holds:
+
+- **Prices** from Auctionator scans, imported on the Mac by a script, or from an `Auctionator.lua` uploaded here and sent through the inbox (see "Add an addon file"). You never write or edit prices yourself.
+- **Pages**: one per class spec, class, profession, world topic and More list. Each summarises what other sites' guides say (**What the guides say**) and records what we've found ourselves (**Field findings**). **These are what you keep up to date.**
+- **Data** from ForeverDB and Blizzard's forums, refreshed by scripts. You never edit it.
+
+The site is public and impersonal: it never names the people behind it and never mentions ChatGPT.
+
+## "Update the Tazdingo guide"
+
+When asked to update Tazdingo ("update the Tazdingo guide for Frost Mage", "put that in Tazdingo", "save this"), or when something settled is worth recording (see "When to write"):
+
+1. **Find the page** in "Where things go", and its path and **version** in the guide map (`feed/guides.md`, linked from the map). If it isn't listed, stop and say so: the site rejects unknown files.
+2. **Read the current file** at its path in the repository (`https://raw.githubusercontent.com/faresbn/Tazdingo/main/<path>`). Never edit from the published site or `llms-full.txt`: they drop the header.
+3. **Edit, keeping everything that's still true:**
+   - Add new findings under `## Field findings` as dated entries (format below). Never delete a finding: if it's no longer true, change its confidence to `outdated` and say why.
+   - Under `## What the guides say`, keep attributed source summaries distinct from `### Tazdingo recommendation`. The latter is a concise editorial synthesis: a default for a stated job, when an alternative fits better, its costs and what remains uncertain. Cite the evidence and label deductions as recommendations, not source quotations or tests.
+   - Correct a superseded mechanic instead of preserving it as an equally valid alternative. Later official changes take precedence over older guide prose; repeating a claim across sites does not make independent evidence.
+   - Set `updated:` in the header to today's date.
+4. **Send the whole file through the inbox** (TAZDINGO_INBOX.md) with the version from step 1 and a one-line change note (see "Change notes"). If the inbox holds it because the page changed in the meantime, read it again, make your change on the new version and send that. Don't overwrite.
+5. **Report in chat:** what changed, the page's address (for example https://faresbn.github.io/Tazdingo/classes/mage/frost/), and that it goes live once its checks pass, usually within two minutes. If it's held, or sent to the owner for approval, say so; the previous version stays online meanwhile.
+
+**The record keeps itself.** After every change, an automatic job saves the page's previous version in `archive/` and logs the change in `archive/LOG.md` (in the repository, not on the website). Don't make backups yourself. To see a page's history, read `archive/LOG.md`. To restore an old version, send its backup through the inbox as the page, with a change note saying so.
+
+## The rules
+
+1. **Change only pages in `content/`**, at the places listed below, through the inbox. Everything else in the repository is built by scripts.
+2. **Never invent anything:** prices, drop rates, talent builds, test results, patch details. Write only what the conversation established, or what a source you can name says.
+3. **Keep kinds of knowledge apart.** Each finding says how it's known: tested in game (with the level and situation), read (with the source) or simulated (with the tool and its version).
+4. **No names, and no mention of ChatGPT,** in any file or commit message. Use a neutral voice ("Frost levels faster with…", not "Fares found…"). The inbox holds a page or change note that names someone.
+5. **Cite sources** with links, written in full (`https://…`). Summarise in your own words; never copy text from Wowhead, Icy Veins, ForeverDB or any other site. A cost in gold, silver or copper names or links its source. The inbox checks this, and the other rules TAZDINGO_INBOX.md lists.
+6. **Match the comparison.** State level, Legacy allowance, role, gear, buffs, target and fight length where they change the conclusion. Client data, Beta reports and simulations are separate evidence. A source update is not an in-game verification; do not set `verified` or Live on that basis.
+7. **Be precise about spending.** Asking prices and listing counts do not prove sales, demand or profit. Compare complete input bundles, binding, access and opportunity costs; yellow skill-ups are uncertain. Crate fill cost excludes the empty crate and is not cost per Favor. Camp buffs are shared and do not by themselves establish an exclusive profession advantage.
+8. **One topic per change.**
+
+## Where things go
+
+| What | File |
+|---|---|
+| A spec: what the guides say, and our findings | `content/classes/<class>/<spec>.md` |
+| A class as a whole: changes in Forever, choosing a spec | `content/classes/<class>/overview.md` |
+| Builds mixing two talent trees | `content/classes/<class>/hybrid.md` |
+| A class's macros | `content/classes/<class>/macros.md` |
+| A profession | `content/professions/<profession>.md` |
+| A world system or topic | `content/world/<topic>.md` |
+| Launch checklist ("before you log in") | `content/more/launch.md` |
+| Addons that work in Forever | `content/more/addons.md` |
+| How macros work, and collections | `content/more/macros.md` |
+| Known issues and workarounds | `content/more/known-issues.md` |
+
+**Classes and specs** (use these exact names):
+
+- warrior: arms, fury, protection
+- paladin: holy, protection, retribution
+- hunter: beast-mastery, marksmanship, survival
+- rogue: assassination, combat, subtlety
+- priest: discipline, holy, shadow
+- shaman: elemental, enhancement, restoration
+- mage: arcane, fire, frost
+- warlock: affliction, demonology, destruction
+- druid: balance, feral, restoration
+
+**Professions:** herbalism, mining, skinning, alchemy, blacksmithing, enchanting, engineering, leatherworking, tailoring, cooking, first-aid, fishing.
+
+**World topics:** camping, legacy, merchants-favor, rares, zones, dungeons-and-raids, collections.
+
+A new place (a new world topic, say) needs a change to `data/game.json`, which you don't edit. Suggest it in chat instead.
+
+## Page format
+
+Every file starts with a header between `---` lines, then four sections in this order:
+
+```
+---
+updated: 2026-11-06
+summary: One sentence saying what this page gives the reader.
+sources: Icy Veins, Wowhead, ForeverDB, WoWSims presets, own testing
+status: pre-launch
+confidence: testing
+---
+
+## Cheatsheet
+
+- **Pick it for:** …
+- **Levelling build:** …
+- **Stats:** …
+
+## What the guides say
+
+### Tazdingo recommendation
+
+A practical choice for a stated situation, its trade-offs and cited evidence; not an invented test result.
+
+### Talents
+
+What the guides recommend, in our own words, with links.
+
+### Rotation
+
+…
+
+## Field findings
+
+### Frost levels fastest with Blizzard pulls from 22 (tested, 6 Nov 2026)
+
+Tested in game from level 22 to 26 in Hillsbrad: pulling 4–5 mobs and Blizzard-kiting was about twice as fast as single targets. Mana ran out every second pull without Evocation.
+
+### Ice Lance shatter needs Frostbite procs (idea, 6 Nov 2026)
+
+Read on Wowhead's Frost guide; not tested yet.
+
+## Read more
+
+- [Icy Veins: Frost Mage guide](https://…): talents and stat priorities
+- …
+```
+
+**Header fields** (no others are accepted):
+- `updated` (required): today's date, YYYY-MM-DD. Change it on every edit.
+- `summary` (required): one sentence.
+- `sources`: where the page's content came from, in plain words.
+- `status`: `pre-launch` or `live`. A page is **pre-launch** unless this says `live`. Set `live` only after the page's main advice has been checked in the live game, not because it was edited after launch.
+- `confidence`: optional, for the page as a whole: `idea`, `testing`, `tested` or `outdated`.
+- `verified`: optional, YYYY-MM-DD: when the main advice was last checked in game.
+
+**Sections:** `## Cheatsheet`, `## What the guides say`, `## Field findings`, `## Read more`, once each and in that order (`## At a glance`, the cheatsheet's old name, is still accepted). More lists (addons, macros, known issues, launch) may arrange their content freely, but must still end with `## Field findings` and `## Read more`. Use `###` and `####` inside sections, never `#`. An empty Field findings section says exactly "Nothing recorded yet."
+
+**The cheatsheet** is what a player who already knows the basics looks up: one `- **Label:** text` line per label, in this order, leaving out a label the page has nothing for (or writing "not established yet" when that's useful). The site shows it first on the page and lifts "Pick it for" onto cards, so keep that line under 25 words.
+- **Spec pages:** Pick it for · Levelling build · Build at 60 · Priority · Stats · Key levels · Gear and consumables · Watch out
+- **Class overviews:** Pick a spec · Key levels · New in Forever · Professions · Race · Watch out
+- **Professions:** Pick it for · Pairs with · Levelling route · Money makers · Camp items · Trainers and ranks · Watch out
+
+Each line keeps its qualifiers: the level, the situation (levelling, dungeons), whether it's a projection or a simulator default, and whose advice it is; where guides disagree, say so. Only what the page itself says, with its links. Like the Tazdingo recommendation, a changed cheatsheet goes to the owner for approval.
+
+**Each finding** is a `###` heading with a short claim and, in brackets, its confidence (`idea`, `testing`, `tested` or `outdated`) and date, followed by how it's known.
+
+**Markdown that works:** headings, paragraphs, bullet and numbered lists (indent two spaces to nest), tables, `> quotes`, code blocks (for macros), **bold**, *italics* and links. Link items and spells to ForeverDB (`https://foreverdb.net/item/<id>`, `https://foreverdb.net/spell/<id>`) and the site shows their tooltip and icon. Link to another ledger page with `ledger:` and its address, for example `[hybrid builds](ledger:classes/druid/#hybrid)` or `[Frost Mage](ledger:classes/mage/frost/)`; the site's check fails a link to a page or section that doesn't exist. Raw HTML is shown as text, not run.
+
+## Change notes
+
+The change note becomes the commit message, a public log line on the site, so write it for a reader:
+
+- **Format:** `<Page>: <what changed>`, plain English, no full stop.
+- **Good:** `Frost Mage: Blizzard-kiting from 22, tested` · `Known issues: macOS freeze fixed in the 6 November patch` · `Addons: WeakAuras still has no Forever version`
+- **Never:** names, "ChatGPT", "update", "misc", or several topics in one.
+
+## When to write
+
+You decide when an update is worth making:
+
+- **Write** when something is *settled*: tested in play, confirmed by a reliable source, or decided in conversation as how we'll do it, and the page doesn't already say it.
+- **Write** when asked ("update the Tazdingo guide", "save this", "put that in Tazdingo").
+- **Suggest, don't write,** when it's speculation, a single report or a passing remark. Offer to record it once it firms up, or record it as an `idea` finding if asked.
+- **Batch** related small facts into one change per page; don't send after every message.
+- **Review** known issues and addons when a patch lands or about weekly: mark fixed issues fixed, with the date.
+- **After launch,** when a pre-launch page's advice is confirmed in game, set `status: live` and `verified:` to the date, and note what was checked under Field findings.
+
+## "Add an addon file" (an uploaded Auctionator.lua, AllTheThings.lua, …)
+
+When an addon's saved-variables file is uploaded with "add this scan", "add this file" or similar, send it through the inbox as it is (TAZDINGO_INBOX.md, "An addon's file"). Never quote or summarise its non-game contents.
+- **Auctionator.lua:** becomes the latest Auction House prices. If the inbox asks for the market, give the realm and faction.
+- **Any other addon's file:** kept as uploaded until a processor is written for it.
+
+More Auctionator uploads make the site sharper. Three or four a day keep alerts current. Uploads that include a **full scan** (Auctionator's full-scan button) at different times of day build its time-of-day patterns. The site keeps the last 30 uploads or 30 days and folds older ones into a daily history.
+
+## If you can't send it yourself
+
+If you can't fill in the inbox form, give the user everything it needs:
+- the page's path and version, and the one-line change note;
+- the complete new file in one Markdown code block;
+- the form's address: https://faresbn.github.io/Tazdingo/inbox/
+
+They paste it in and send it. Everything else (the checks, the archive, publishing) works the same.
+
+## Reading the site
+
+- **Start at the map:** https://raw.githubusercontent.com/faresbn/Tazdingo/main/feed/index.md. It sends you to the one price, crafting or guide file a question needs.
+- Everything in one plain-text file: https://faresbn.github.io/Tazdingo/llms-full.txt (for reading, not editing)
+- Prices: each market's `prices.tsv` (typical price, latest, steadiness, last seen, units listed, weekly change), and `prices.json` (adds each item's usual price, alerts and category)
+- The Auction House overview, with deals recorded under the usual price, the investment watch, movers and patterns: https://faresbn.github.io/Tazdingo/prices/ ; every item has its own page linked from there
+- What to craft: https://faresbn.github.io/Tazdingo/prices/craft.tsv
+- Blizzard's latest Forever posts: https://faresbn.github.io/Tazdingo/more/blizzard/
+- When answering price questions, quote the **typical** price (or an item page's **usual** price), mention **steadiness** (volatile prices are unreliable), and say how old the data is. All prices are asking prices, not sales. Beta prices are only a rough guide. Alerts and investment picks are the site's own estimates: quote them with the scan time they were recorded at.
