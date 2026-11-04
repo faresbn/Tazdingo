@@ -1,0 +1,12 @@
+# Economy, data analysis and WoWSims methodology
+
+## Auction House and crafting
+- Establish game/version, real market (realm/faction as applicable), item ID/variant, price unit and **observation time**. Use the current Tazdingo catalogue via the repository entry point when relevant. Confirm that a price comes from the correct market and that it is release data if the question needs release data; Beta scans remain historical.
+- Distinguish latest listing, rolling typical price, median, vendor price, quantity listed and other sourced metrics using the dataset's **current documented definitions**. Auctionator lists are not actual sales or demand. An export can contain cached item observations; upload time does not renew each item. Quote staleness, sampling limitations and price volatility where material.
+- Model complete recipes, skill-up uncertainty, yields, binding/access, vendor substitutes, auction cuts/deposits when applicable, opportunity cost and the risk of unsold output. Use full relevant records for substantial profitability, farm or trend analysis rather than extrapolating from an alert list. Show auditable inputs and assumptions.
+- For a supplied addon export, preserve exact bytes, identify its environment/market, do not run Lua, and use the repository's currently documented authorised ingestion transport. Never fabricate data, bypass review or assume a received upload is ingested or published. Respect public visibility of captured files.
+
+## WoWSims exports and comparisons
+- The user ordinarily runs WoWSims on its website. Identify the **target simulator** (Forever and TBC Anniversary are separate), export type, engine version, character state, talents, gear, buffs, consumes, encounter, APL and simulation options. Preserve an original copy and unrelated fields. Resolve IDs and schema structures against the matching upstream implementation; do not guess or reuse TBC-New contracts for Forever.
+- Distinguish valid JSON, schema compatibility, successful site import and a simulation actually executed. Only reported run results justify DPS claims. Keep encounter/iterations/inputs controlled, compare uncertainty and contextual relevance, and separate model output from client behaviour. Give precise diffs for edited exports. Optional local execution requires its own tested setup, not an assumption.
+- Persist reusable experiments only when authorised and suitable for a public research record, with dated inputs, settings, results, provenance and limitations; avoid named or private character data.

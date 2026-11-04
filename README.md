@@ -47,13 +47,11 @@ it asks which market to publish (`--market "Realm Faction"`), then remembers.
 
 ## Keeping ChatGPT in the loop
 
-- Paste `docs/chatgpt/PROJECT_INSTRUCTIONS.md` into the project's instructions.
-- Upload `docs/chatgpt/UPDATING.md` (where each kind of note goes, the file format,
-  the change-note rule and when to write) and `docs/chatgpt/TAZDINGO_INBOX.md` (how
-  to read the map and use the inbox; each person adds their own key to their copy).
-- ChatGPT reads the repository, starting at `feed/index.md`: a map to one small
-  markdown file per market category, profession and guide page. The build writes
-  `feed/`; nothing in it is edited by hand.
+- Start at `docs/chatgpt/START_HERE.md`, the stable repository router for current read, update and submission procedures.
+- Paste `docs/chatgpt/PROJECT_INSTRUCTIONS.md` into the shared project's instructions and install `GAMEPLAY.md`, `CLIENT.md` and `ANALYSIS.md` as its **only permanent methodological Project Sources**. Reviewable copies are stored here; dated backups are in `docs/chatgpt/project-snapshots/`.
+- Do **not** upload `UPDATING.md`, `TAZDINGO_CONNECTION.md`, `TAZDINGO_INBOX.md` or generated feed files as permanent Project Sources. The assistant consults their current repository versions as required.
+- The repository's `feed/index.md` is the generated map to relevant prices, crafting and guide pages. Nothing in `feed/` is edited by hand.
+- Other shared-project members can read the public repository without inheriting another person's authenticated GitHub connection. Writing still requires the current authorised submission route.
 
 ## The inbox
 

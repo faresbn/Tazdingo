@@ -1,6 +1,6 @@
 # Updating Tazdingo
 
-Upload this file to the shared ChatGPT project as a source file. It tells the assistant how to keep the site current from what comes up in conversation. PROJECT_INSTRUCTIONS.md (the project's instructions) points here. **TAZDINGO_INBOX.md** (the other source file) says how to read Tazdingo through its map and how to send updates through the inbox.
+This is the live repository procedure for publishing reusable Warcraft findings. It changes as Tazdingo evolves; do **not** add this document as a permanent ChatGPT Project Source. The shared project's stable rules route here through [START_HERE.md](START_HERE.md). [TAZDINGO_CONNECTION.md](TAZDINGO_CONNECTION.md) explains available read and write transports, and [TAZDINGO_INBOX.md](TAZDINGO_INBOX.md) describes the form fallback.
 
 The direct chat tools and the authenticated GitHub inbox-packet transport are documented in TAZDINGO_CONNECTION.md. Both send through the same processor. Direct edits to content/ remain outside the ordinary project update route.
 
