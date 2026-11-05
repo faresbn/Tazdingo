@@ -1,13 +1,13 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Trade Goods
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-05 06:58 UTC. Uploads in the 30-day window: 2.
+- **Latest scan:** 2026-11-05 10:32 UTC. Uploads in the 30-day window: 3.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | Bear Meat | 3173 | 60c | 2026-11-05 06:58 UTC | 60c |  | too new | 1 of 1 | 574 |  |
-| Bolt of Linen Cloth | 2996 | 82c | 2026-11-05 06:58 UTC | 82c |  | too new | 1 of 1 | 2050 |  |
+| Bolt of Linen Cloth | 2996 | 70c | 2026-11-05 10:32 UTC | 58c |  | too new | 1 of 1 | 2586 |  |
 | Bolt of Silk Cloth | 4305 | 10s 0c | 2026-11-05 06:58 UTC | 10s 0c |  | too new | 1 of 1 | 5 |  |
 | Bolt of Woolen Cloth | 2997 | 11s 99c | 2026-11-05 06:58 UTC | 11s 99c |  | too new | 1 of 1 | 23 |  |
 | Briarthorn | 2450 | 3s 80c | 2026-11-05 06:58 UTC | 3s 80c |  | too new | 1 of 1 | 127 |  |
@@ -46,8 +46,8 @@
 | Lesser Magic Essence | 10938 | 3s 88c | 2026-11-05 06:58 UTC | 3s 88c |  | too new | 1 of 1 | 707 |  |
 | Lesser Moonstone | 1705 | 10s 0c | 2026-11-05 06:58 UTC | 10s 0c |  | too new | 1 of 1 | 5 |  |
 | Light Hide | 783 | 9s 0c | 2026-11-05 06:58 UTC | 9s 0c |  | too new | 1 of 1 | 415 |  |
-| Light Leather | 2318 | 24c | 2026-11-05 06:58 UTC | 20c |  | too new | 1 of 1 | 3493 |  |
-| Linen Cloth | 2589 | 22c | 2026-11-05 06:58 UTC | 21c |  | too new | 1 of 1 | 5547 |  |
+| Light Leather | 2318 | 18c | 2026-11-05 10:32 UTC | 18c |  | too new | 1 of 1 | 5112 |  |
+| Linen Cloth | 2589 | 25c | 2026-11-05 10:32 UTC | 21c |  | too new | 1 of 1 | 8736 |  |
 | Mageroyal | 785 | 2s 25c | 2026-11-05 06:58 UTC | 2s 25c |  | too new | 1 of 1 | 512 |  |
 | Malachite | 774 | 16c | 2026-11-05 06:58 UTC | 15c |  | too new | 1 of 1 | 1324 |  |
 | Meaty Bat Wing | 12223 | 13c | 2026-11-05 06:58 UTC | 10c |  | too new | 1 of 1 | 1952 |  |
@@ -87,10 +87,10 @@
 | Small Spider Leg | 5465 | 6c | 2026-11-05 06:58 UTC | 6c |  | too new | 1 of 1 | 2153 |  |
 | Small Venom Sac | 1475 | 1s 20c | 2026-11-05 06:58 UTC | 1s 20c |  | too new | 1 of 1 | 332 |  |
 | Spider Ichor | 3174 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 407 |  |
-| Strange Dust | 10940 | 39c | 2026-11-05 06:58 UTC | 39c |  | too new | 1 of 1 | 1817 |  |
+| Strange Dust | 10940 | 45c | 2026-11-05 10:32 UTC | 39c |  | too new | 1 of 1 | 1817 |  |
 | Stranglekelp | 3820 | 4s 0c | 2026-11-05 06:58 UTC | 4s 0c |  | too new | 1 of 1 | 93 |  |
 | Strider Meat | 5469 | 80c | 2026-11-05 06:58 UTC | 80c |  | too new | 1 of 1 | 697 |  |
-| Stringy Wolf Meat | 2672 | 25c | 2026-11-05 06:58 UTC | 14c |  | too new | 1 of 1 | 2925 |  |
+| Stringy Wolf Meat | 2672 | 31c | 2026-11-05 10:32 UTC | 14c |  | too new | 1 of 1 | 2925 |  |
 | Sulfuric Acid | 249410 | 6s 0c | 2026-11-05 06:58 UTC | 6s 0c |  | too new | 1 of 1 | 34 |  |
 | Swiftthistle | 2452 | 6s 62c | 2026-11-05 06:58 UTC | 6s 62c |  | too new | 1 of 1 | 181 |  |
 | Thick Leather | 4304 | 25s 0c | 2026-11-05 06:58 UTC | 25s 0c |  | too new | 1 of 1 | 1 |  |

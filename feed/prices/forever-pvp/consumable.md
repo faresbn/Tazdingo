@@ -1,7 +1,7 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Consumable
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-05 06:58 UTC. Uploads in the 30-day window: 2.
+- **Latest scan:** 2026-11-05 10:32 UTC. Uploads in the 30-day window: 3.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
@@ -45,17 +45,17 @@
 | Minor Discolored Healing Potion | 4596 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 19 |  |
 | Minor Healing Potion | 118 | 26c | 2026-11-05 06:58 UTC | 20c |  | too new | 1 of 1 | 1431 |  |
 | Minor Mageblood Elixir | 250339 | 1s 0c | 2026-11-05 06:58 UTC | 99c |  | too new | 1 of 1 | 92 |  |
-| Minor Mana Potion | 2455 | 5s 45c | 2026-11-05 06:58 UTC | 3s 0c |  | too new | 1 of 1 | 283 |  |
+| Minor Mana Potion | 2455 | 4s 20c | 2026-11-05 10:32 UTC | 3s 0c |  | too new | 1 of 1 | 370 |  |
 | Minor Rejuvenation Potion | 2456 | 8s 99c | 2026-11-05 06:58 UTC | 8s 99c |  | too new | 1 of 1 | 11 |  |
 | Minor Spellblasting Potion | 250932 | 9s 99c | 2026-11-05 06:58 UTC | 9s 99c |  | too new | 1 of 1 | 33 |  |
 | Minor Troll's Blood Elixir | 3382 | 29c | 2026-11-05 06:58 UTC | 28c |  | too new | 1 of 1 | 514 |  |
-| Minor Wizard Oil | 20744 | 4s 0c | 2026-11-05 06:58 UTC | 4s 0c |  | too new | 1 of 1 | 141 |  |
+| Minor Wizard Oil | 20744 | 3s 99c | 2026-11-05 10:32 UTC | 3s 99c |  | too new | 1 of 1 | 141 |  |
 | Peace Tea | 249865 | 5s 0c | 2026-11-05 06:58 UTC | 5s 0c |  | too new | 1 of 1 | 10 |  |
 | Pincer Bites | 263512 | 3s 90c | 2026-11-05 06:58 UTC | 3s 90c |  | too new | 1 of 1 | 121 |  |
 | Rainbow Fin Albacore | 5095 | 20s 0c | 2026-11-05 06:58 UTC | 20s 0c |  | too new | 1 of 1 | 1 |  |
 | Reagent Bot | 279950 | 14s 0c | 2026-11-05 06:58 UTC | 14s 0c |  | too new | 1 of 1 | 15 |  |
 | Refreshing Spring Water | 159 | 5c | 2026-11-05 06:58 UTC | 5c |  | too new | 1 of 1 | 527 |  |
-| Roasted Boar Meat | 2681 | 64c | 2026-11-05 06:58 UTC | 50c |  | too new | 1 of 1 | 408 |  |
+| Roasted Boar Meat | 2681 | 69c | 2026-11-05 10:32 UTC | 50c |  | too new | 1 of 1 | 408 |  |
 | Rough Copper Bomb | 4360 | 2s 4c | 2026-11-05 06:58 UTC | 2s 4c |  | too new | 1 of 1 | 90 |  |
 | Rough Dynamite | 4358 | 95c | 2026-11-05 06:58 UTC | 95c |  | too new | 1 of 1 | 442 |  |
 | Rough Sharpening Stone | 2862 | 12c | 2026-11-05 06:58 UTC | 11c |  | too new | 1 of 1 | 1504 |  |

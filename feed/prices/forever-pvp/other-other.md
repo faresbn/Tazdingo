@@ -1,7 +1,7 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Other: Other
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-05 06:58 UTC. Uploads in the 30-day window: 2.
+- **Latest scan:** 2026-11-05 10:32 UTC. Uploads in the 30-day window: 3.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
@@ -9,17 +9,19 @@
 | 10 Pound Mud Snapper | 6292 | 16s 0c | 2026-11-05 06:58 UTC | 16s 0c |  | too new | 1 of 1 | 31 |  |
 | 12 Pound Mud Snapper | 6294 | 31s 0c | 2026-11-05 06:58 UTC | 31s 0c |  | too new | 1 of 1 | 10 |  |
 | 17 Pound Catfish | 6309 | 26s 0c | 2026-11-05 06:58 UTC | 26s 0c |  | too new | 1 of 1 | 1 |  |
-| Aboriginal Footwraps | 14114 | 20s 0c | 2026-11-05 06:58 UTC | 20s 0c |  | too new | 1 of 1 | 5 |  |
-| Aboriginal Gloves | 14117 | 33s 0c | 2026-11-05 06:58 UTC | 33s 0c |  | too new | 1 of 1 | 1 |  |
+| Aboriginal Footwraps | 14114 | 10s 0c | 2026-11-05 10:32 UTC | 10s 0c |  | too new | 1 of 1 | 6 |  |
+| Aboriginal Gloves | 14117 | 14s 0c | 2026-11-05 10:32 UTC | 14s 0c |  | too new | 1 of 1 | 5 |  |
+| Aboriginal Loincloth | 14119 | 10s 0c | 2026-11-05 10:32 UTC | 10s 0c |  | too new | 1 of 1 | 2 |  |
 | Aboriginal Sash | 14113 | 15s 0c | 2026-11-05 06:58 UTC | 15s 0c |  | too new | 1 of 1 | 5 |  |
 | Agile Boots | 4788 | 35s 0c | 2026-11-05 06:58 UTC | 35s 0c |  | too new | 1 of 1 | 5 |  |
 | Al'Aketh Chain | 277059 | 7s 0c | 2026-11-05 06:58 UTC | 7s 0c |  | too new | 1 of 1 | 1 |  |
+| Al'Aketh Handwraps | 277076 | 4s 0c | 2026-11-05 10:32 UTC | 4s 0c |  | too new | 1 of 1 | 1 |  |
 | Al'Aketh Vestments | 277074 | 8s 0c | 2026-11-05 06:58 UTC | 8s 0c |  | too new | 1 of 1 | 1 |  |
 | Ancestral Cloak | 4671 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 4 |  |
-| Ancestral Orb | 15944 | 6s 0c | 2026-11-05 06:58 UTC | 5s 0c |  | too new | 1 of 1 | 63 |  |
-| Ancestral Robe | 6527 | 6s 0c | 2026-11-05 06:58 UTC | 6s 0c |  | too new | 1 of 1 | 28 |  |
-| Ancestral Tunic | 3292 | 10s 0c | 2026-11-05 06:58 UTC | 10s 0c |  | too new | 1 of 1 | 24 |  |
-| Ancestral Woollies | 3291 | 4s 0c | 2026-11-05 06:58 UTC | 4s 0c |  | too new | 1 of 1 | 42 |  |
+| Ancestral Orb | 15944 | 6s 0c | 2026-11-05 10:32 UTC | 5s 0c |  | too new | 1 of 1 | 82 |  |
+| Ancestral Robe | 6527 | 6s 0c | 2026-11-05 10:32 UTC | 6s 0c |  | too new | 1 of 1 | 35 |  |
+| Ancestral Tunic | 3292 | 10s 0c | 2026-11-05 10:32 UTC | 10s 0c |  | too new | 1 of 1 | 32 |  |
+| Ancestral Woollies | 3291 | 3s 0c | 2026-11-05 10:32 UTC | 3s 0c |  | too new | 1 of 1 | 56 |  |
 | Balanced Throwing Dagger | 2946 | 18s 0c | 2026-11-05 06:58 UTC | 18s 0c |  | too new | 1 of 1 | 2 |  |
 | Banded Bracers | 9837 | 30s 0c | 2026-11-05 06:58 UTC | 30s 0c |  | too new | 1 of 1 | 1 |  |
 | Bandit Bracers | 9777 | 23s 0c | 2026-11-05 06:58 UTC | 23s 0c |  | too new | 1 of 1 | 1 |  |
@@ -27,8 +29,9 @@
 | Bandit Gloves | 9780 | 39s 0c | 2026-11-05 06:58 UTC | 39s 0c |  | too new | 1 of 1 | 1 |  |
 | Barbaric Battle Axe | 3195 | 50s 0c | 2026-11-05 06:58 UTC | 50s 0c |  | too new | 1 of 1 | 3 |  |
 | Barbaric Cloth Boots | 3307 | 15s 0c | 2026-11-05 06:58 UTC | 15s 0c |  | too new | 1 of 1 | 3 |  |
-| Barbaric Cloth Gloves | 3308 | 6s 0c | 2026-11-05 06:58 UTC | 6s 0c |  | too new | 1 of 1 | 2 |  |
-| Barbaric Loincloth | 3309 | 15s 0c | 2026-11-05 06:58 UTC | 15s 0c |  | too new | 1 of 1 | 2 |  |
+| Barbaric Cloth Gloves | 3308 | 6s 0c | 2026-11-05 10:32 UTC | 6s 0c |  | too new | 1 of 1 | 4 |  |
+| Barbaric Cloth Vest | 3310 | 30s 0c | 2026-11-05 10:32 UTC | 30s 0c |  | too new | 1 of 1 | 1 |  |
+| Barbaric Loincloth | 3309 | 8s 0c | 2026-11-05 10:32 UTC | 8s 0c |  | too new | 1 of 1 | 9 |  |
 | Bard's Belt | 6558 | 9s 0c | 2026-11-05 06:58 UTC | 9s 0c |  | too new | 1 of 1 | 5 |  |
 | Bard's Boots | 6557 | 15s 0c | 2026-11-05 06:58 UTC | 15s 0c |  | too new | 1 of 1 | 2 |  |
 | Bard's Bracers | 6556 | 15s 0c | 2026-11-05 06:58 UTC | 15s 0c |  | too new | 1 of 1 | 1 |  |
@@ -38,12 +41,12 @@
 | Battle Chain Tunic | 3283 | 7s 0c | 2026-11-05 06:58 UTC | 7s 0c |  | too new | 1 of 1 | 31 |  |
 | Batwing Bindings | 283473 | 16s 0c | 2026-11-05 06:58 UTC | 16s 0c |  | too new | 1 of 1 | 11 |  |
 | Bayne's Bite | 283462 | 10s 0c | 2026-11-05 06:58 UTC | 10s 0c |  | too new | 1 of 1 | 36 |  |
-| Beaded Britches | 14090 | 3s 0c | 2026-11-05 06:58 UTC | 3s 0c |  | too new | 1 of 1 | 70 |  |
+| Beaded Britches | 14090 | 3s 0c | 2026-11-05 10:32 UTC | 3s 0c |  | too new | 1 of 1 | 86 |  |
 | Beaded Cloak | 14088 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 1 |  |
 | Beaded Cord | 14093 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 2 |  |
-| Beaded Orb | 15969 | 5s 0c | 2026-11-05 06:58 UTC | 4s 0c |  | too new | 1 of 1 | 46 |  |
-| Beaded Robe | 14091 | 3s 0c | 2026-11-05 06:58 UTC | 3s 0c |  | too new | 1 of 1 | 41 |  |
-| Beaded Wraps | 14094 | 4s 0c | 2026-11-05 06:58 UTC | 4s 0c |  | too new | 1 of 1 | 30 |  |
+| Beaded Orb | 15969 | 5s 0c | 2026-11-05 10:32 UTC | 4s 0c |  | too new | 1 of 1 | 57 |  |
+| Beaded Robe | 14091 | 3s 0c | 2026-11-05 10:32 UTC | 3s 0c |  | too new | 1 of 1 | 45 |  |
+| Beaded Wraps | 14094 | 3s 0c | 2026-11-05 10:32 UTC | 3s 0c |  | too new | 1 of 1 | 33 |  |
 | Beaten Battle Axe | 1417 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 16 |  |
 | Beatstick | 3190 | 4s 0c | 2026-11-05 06:58 UTC | 4s 0c |  | too new | 1 of 1 | 40 |  |
 | Benedict's Key | 4882 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 10 |  |
@@ -71,7 +74,7 @@
 | Broken Fang | 7073 | 80c | 2026-11-05 06:58 UTC | 80c |  | too new | 1 of 1 | 16 |  |
 | Broken Scorpid Leg | 4867 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 1 |  |
 | Buccaneer's Robes | 14172 | 16s 0c | 2026-11-05 06:58 UTC | 16s 0c |  | too new | 1 of 1 | 1 |  |
-| Buckskin Cape | 1355 | 40s 0c | 2026-11-05 06:58 UTC | 40s 0c |  | too new | 1 of 1 | 1 |  |
+| Buckskin Cape | 1355 | 40s 0c | 2026-11-05 10:32 UTC | 40s 0c |  | too new | 1 of 1 | 2 |  |
 | Burnt Cloak | 4665 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 1 |  |
 | Burnt Leather Bracers | 3200 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 2 |  |
 | Burnt Leather Breeches | 2962 | 4s 0c | 2026-11-05 06:58 UTC | 4s 0c |  | too new | 1 of 1 | 110 |  |
@@ -116,11 +119,11 @@
 | Dargol's Hauberk | 3330 | 17s 0c | 2026-11-05 06:58 UTC | 17s 0c |  | too new | 1 of 1 | 1 |  |
 | Darnassian Bleu | 2070 | 65c | 2026-11-05 06:58 UTC | 65c |  | too new | 1 of 1 | 283 |  |
 | Decaying Flesh Belt | 283460 | 4s 0c | 2026-11-05 06:58 UTC | 4s 0c |  | too new | 1 of 1 | 70 |  |
-| Disciple's Pants | 6267 | 3s 0c | 2026-11-05 06:58 UTC | 3s 0c |  | too new | 1 of 1 | 64 |  |
-| Disciple's Robe | 6512 | 9s 0c | 2026-11-05 06:58 UTC | 9s 0c |  | too new | 1 of 1 | 24 |  |
+| Disciple's Pants | 6267 | 3s 0c | 2026-11-05 10:32 UTC | 3s 0c |  | too new | 1 of 1 | 81 |  |
+| Disciple's Robe | 6512 | 8s 0c | 2026-11-05 10:32 UTC | 8s 0c |  | too new | 1 of 1 | 33 |  |
 | Disciple's Sash | 6513 | 3s 0c | 2026-11-05 06:58 UTC | 3s 0c |  | too new | 1 of 1 | 4 |  |
-| Disciple's Stein | 15932 | 6s 0c | 2026-11-05 06:58 UTC | 6s 0c |  | too new | 1 of 1 | 47 |  |
-| Disciple's Vest | 6266 | 5s 0c | 2026-11-05 06:58 UTC | 5s 0c |  | too new | 1 of 1 | 23 |  |
+| Disciple's Stein | 15932 | 6s 0c | 2026-11-05 10:32 UTC | 6s 0c |  | too new | 1 of 1 | 62 |  |
+| Disciple's Vest | 6266 | 5s 0c | 2026-11-05 10:32 UTC | 5s 0c |  | too new | 1 of 1 | 26 |  |
 | Discolored Fang | 4814 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 19 |  |
 | Dried Bat Blood | 6293 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 5 |  |
 | Dry Hardened Barnacle | 4873 | 2s 0c | 2026-11-05 06:58 UTC | 2s 0c |  | too new | 1 of 1 | 26 |  |
@@ -130,9 +133,9 @@
 | Exploding Shot | 3465 | 77s 77c | 2026-11-05 06:58 UTC | 77s 77c |  | too new | 1 of 1 | 200 |  |
 | Farmer's Broom | 3335 | 2s 0c | 2026-11-05 06:58 UTC | 2s 0c |  | too new | 1 of 1 | 1 |  |
 | Feathered Arrow | 3464 | 77s 77c | 2026-11-05 06:58 UTC | 77s 77c |  | too new | 1 of 1 | 1 |  |
-| Fellicent's Bindings | 283471 | 10s 0c | 2026-11-05 06:58 UTC | 10s 0c |  | too new | 1 of 1 | 19 |  |
+| Fellicent's Bindings | 283471 | 8s 0c | 2026-11-05 10:32 UTC | 8s 0c |  | too new | 1 of 1 | 25 |  |
 | Feral Bindings | 15306 | 24s 0c | 2026-11-05 06:58 UTC | 24s 0c |  | too new | 1 of 1 | 3 |  |
-| Feral Cloak | 15309 | 19s 0c | 2026-11-05 06:58 UTC | 19s 0c |  | too new | 1 of 1 | 4 |  |
+| Feral Cloak | 15309 | 14s 0c | 2026-11-05 10:32 UTC | 14s 0c |  | too new | 1 of 1 | 11 |  |
 | Feral Gloves | 15310 | 20s 0c | 2026-11-05 06:58 UTC | 20s 0c |  | too new | 1 of 1 | 1 |  |
 | Feral Shoes | 15305 | 99s 0c | 2026-11-05 06:58 UTC | 99s 0c |  | too new | 1 of 1 | 1 |  |
 | Fine Scimitar | 4560 | 4s 0c | 2026-11-05 06:58 UTC | 4s 0c |  | too new | 1 of 1 | 21 |  |
@@ -161,11 +164,11 @@
 | Frayed Shoes | 1374 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 1 |  |
 | Fresh Gustberry Bread | 252028 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 46 |  |
 | Freshly Baked Bread | 4541 | 2s 0c | 2026-11-05 06:58 UTC | 2s 0c |  | too new | 1 of 1 | 2 |  |
-| Furlfeather Ring | 286745 | 9s 0c | 2026-11-05 06:58 UTC | 8s 0c |  | too new | 1 of 1 | 11 |  |
+| Furlfeather Ring | 286745 | 20s 0c | 2026-11-05 10:32 UTC | 8s 0c |  | too new | 1 of 1 | 11 |  |
 | Galestrider Jerky | 252022 | 75c | 2026-11-05 06:58 UTC | 75c |  | too new | 1 of 1 | 97 |  |
 | Galeswept Forestshroom | 267474 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 37 |  |
-| Geolord's Mitts | 284323 | 7s 0c | 2026-11-05 06:58 UTC | 7s 0c |  | too new | 1 of 1 | 17 |  |
-| Ghostly Bracers | 3323 | 10s 0c | 2026-11-05 06:58 UTC | 5s 0c |  | too new | 1 of 1 | 18 |  |
+| Geolord's Mitts | 284323 | 9s 0c | 2026-11-05 10:32 UTC | 7s 0c |  | too new | 1 of 1 | 17 |  |
+| Ghostly Bracers | 3323 | 9s 0c | 2026-11-05 10:32 UTC | 5s 0c |  | too new | 1 of 1 | 23 |  |
 | Glyphed Leggings | 4060 | 10g 0s 0c | 2026-11-05 06:58 UTC | 10g 0s 0c |  | too new | 1 of 1 | 1 |  |
 | Gnoll Hide Sack | 3233 | 30s 0c | 2026-11-05 06:58 UTC | 30s 0c |  | too new | 1 of 1 | 1 |  |
 | Gorefang's Runners | 283361 | 12s 0c | 2026-11-05 06:58 UTC | 12s 0c |  | too new | 1 of 1 | 1 |  |
@@ -202,16 +205,17 @@
 | Infantry Shield | 7108 | 7s 0c | 2026-11-05 06:58 UTC | 6s 0c |  | too new | 1 of 1 | 44 |  |
 | Infantry Tunic | 6336 | 8s 0c | 2026-11-05 06:58 UTC | 8s 0c |  | too new | 1 of 1 | 18 |  |
 | Inscribed Buckler | 6380 | 12s 0c | 2026-11-05 06:58 UTC | 12s 0c |  | too new | 1 of 1 | 1 |  |
+| Inscribed Cloak | 4701 | 19s 0c | 2026-11-05 10:32 UTC | 19s 0c |  | too new | 1 of 1 | 1 |  |
 | Invading Marine's Shield | 284322 | 1g 4s 0c | 2026-11-05 06:58 UTC | 1g 4s 0c |  | too new | 1 of 1 | 2 |  |
 | Item 1513 | 1513 | 5s 0c | 2026-11-05 06:58 UTC | 5s 0c |  | too new | 1 of 1 | 4 |  |
 | Item 287063 | 287063 | 66s 0c | 2026-11-05 06:58 UTC | 66s 0c |  | too new | 1 of 1 | 3 |  |
 | Item 6297 | 6297 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 7 |  |
 | Ivycloth Gloves | 9795 | 10s 0c | 2026-11-05 06:58 UTC | 10s 0c |  | too new | 1 of 1 | 1 |  |
 | Journeyman's Gloves | 2960 | 10s 0c | 2026-11-05 06:58 UTC | 10s 0c |  | too new | 1 of 1 | 1 |  |
-| Journeyman's Pants | 2958 | 2s 0c | 2026-11-05 06:58 UTC | 2s 0c |  | too new | 1 of 1 | 110 |  |
-| Journeyman's Robe | 6511 | 4s 0c | 2026-11-05 06:58 UTC | 4s 0c |  | too new | 1 of 1 | 29 |  |
-| Journeyman's Stave | 15925 | 5s 0c | 2026-11-05 06:58 UTC | 5s 0c |  | too new | 1 of 1 | 64 |  |
-| Journeyman's Vest | 2957 | 4s 0c | 2026-11-05 06:58 UTC | 4s 0c |  | too new | 1 of 1 | 62 |  |
+| Journeyman's Pants | 2958 | 2s 0c | 2026-11-05 10:32 UTC | 2s 0c |  | too new | 1 of 1 | 125 |  |
+| Journeyman's Robe | 6511 | 3s 0c | 2026-11-05 10:32 UTC | 3s 0c |  | too new | 1 of 1 | 39 |  |
+| Journeyman's Stave | 15925 | 5s 0c | 2026-11-05 10:32 UTC | 5s 0c |  | too new | 1 of 1 | 74 |  |
+| Journeyman's Vest | 2957 | 3s 0c | 2026-11-05 10:32 UTC | 3s 0c |  | too new | 1 of 1 | 68 |  |
 | Kolkar Booty Key | 5020 | 3s 0c | 2026-11-05 06:58 UTC | 3s 0c |  | too new | 1 of 1 | 9 |  |
 | Laced Mail Shoulderpads | 1744 | 1g 50s 0c | 2026-11-05 06:58 UTC | 1g 50s 0c |  | too new | 1 of 1 | 1 |  |
 | Large Axe | 2491 | 2s 0c | 2026-11-05 06:58 UTC | 2s 0c |  | too new | 1 of 1 | 1 |  |
@@ -237,11 +241,13 @@
 | Merc Sword | 4567 | 15s 0c | 2026-11-05 06:58 UTC | 15s 0c |  | too new | 1 of 1 | 15 |  |
 | Mining Pick | 2901 | 3s 0c | 2026-11-05 06:58 UTC | 3s 0c |  | too new | 1 of 1 | 20 |  |
 | Musical Gustjumper | 268109 | 1g 0s 0c | 2026-11-05 06:58 UTC | 1g 0s 0c |  | too new | 1 of 1 | 6 |  |
-| Mystic's Bracelets | 14366 | 5s 0c | 2026-11-05 06:58 UTC | 5s 0c |  | too new | 1 of 1 | 1 |  |
-| Mystic's Cape | 14365 | 20s 0c | 2026-11-05 06:58 UTC | 20s 0c |  | too new | 1 of 1 | 1 |  |
-| Native Branch | 15970 | 7s 0c | 2026-11-05 06:58 UTC | 7s 0c |  | too new | 1 of 1 | 9 |  |
+| Mystic's Belt | 14025 | 10s 0c | 2026-11-05 10:32 UTC | 10s 0c |  | too new | 1 of 1 | 1 |  |
+| Mystic's Bracelets | 14366 | 20s 0c | 2026-11-05 10:32 UTC | 5s 0c |  | too new | 1 of 1 | 2 |  |
+| Mystic's Cape | 14365 | 7s 0c | 2026-11-05 10:32 UTC | 7s 0c |  | too new | 1 of 1 | 7 |  |
+| Native Branch | 15970 | 7s 0c | 2026-11-05 10:32 UTC | 7s 0c |  | too new | 1 of 1 | 18 |  |
 | Native Cloak | 14098 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 1 |  |
-| Native Pants | 14097 | 4s 0c | 2026-11-05 06:58 UTC | 4s 0c |  | too new | 1 of 1 | 11 |  |
+| Native Pants | 14097 | 4s 0c | 2026-11-05 10:32 UTC | 4s 0c |  | too new | 1 of 1 | 30 |  |
+| Native Robe | 14109 | 15s 0c | 2026-11-05 10:32 UTC | 15s 0c |  | too new | 1 of 1 | 5 |  |
 | Native Vest | 14096 | 10s 0c | 2026-11-05 06:58 UTC | 10s 0c |  | too new | 1 of 1 | 2 |  |
 | Nomad Buckler | 9753 | 6s 0c | 2026-11-05 06:58 UTC | 6s 0c |  | too new | 1 of 1 | 41 |  |
 | Nomad Sandals | 9751 | 10s 0c | 2026-11-05 06:58 UTC | 10s 0c |  | too new | 1 of 1 | 3 |  |
@@ -250,7 +256,9 @@
 | Nutritious Slime Sludge | 278265 | 1s 99c | 2026-11-05 06:58 UTC | 1s 99c |  | too new | 1 of 1 | 4 |  |
 | Okra | 732 | 60c | 2026-11-05 06:58 UTC | 60c |  | too new | 1 of 1 | 28 |  |
 | Opaque Wand | 5207 | 35s 0c | 2026-11-05 06:58 UTC | 35s 0c |  | too new | 1 of 1 | 1 |  |
+| Outrunner's Cloak | 15501 | 20s 0c | 2026-11-05 10:32 UTC | 20s 0c |  | too new | 1 of 1 | 1 |  |
 | Pagan Bands | 14160 | 24s 0c | 2026-11-05 06:58 UTC | 24s 0c |  | too new | 1 of 1 | 1 |  |
+| Pagan Cape | 14161 | 25s 0c | 2026-11-05 10:32 UTC | 25s 0c |  | too new | 1 of 1 | 1 |  |
 | Patch of Bat Hair | 6296 | 90c | 2026-11-05 06:58 UTC | 90c |  | too new | 1 of 1 | 14 |  |
 | Patched Leather Shoulderpads | 1793 | 88s 0c | 2026-11-05 06:58 UTC | 88s 0c |  | too new | 1 of 1 | 1 |  |
 | Patchwork Armor | 1433 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 2 |  |
@@ -314,6 +322,7 @@
 | Primal Buckler | 15006 | 9s 0c | 2026-11-05 06:58 UTC | 9s 0c |  | too new | 1 of 1 | 1 |  |
 | Primal Leggings | 15009 | 4s 0c | 2026-11-05 06:58 UTC | 3s 0c |  | too new | 1 of 1 | 39 |  |
 | Primal Wraps | 15010 | 3s 0c | 2026-11-05 06:58 UTC | 3s 0c |  | too new | 1 of 1 | 40 |  |
+| Prospector's Cloak | 14563 | 15s 0c | 2026-11-05 10:32 UTC | 15s 0c |  | too new | 1 of 1 | 3 |  |
 | Prospector's Cuffs | 14561 | 69s 0c | 2026-11-05 06:58 UTC | 69s 0c |  | too new | 1 of 1 | 1 |  |
 | Pungent Skycheddar | 252030 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 113 |  |
 | Putrid Wooden Hammer | 3262 | 12s 0c | 2026-11-05 06:58 UTC | 12s 0c |  | too new | 1 of 1 | 1 |  |
@@ -323,7 +332,7 @@
 | Raider Shortsword | 15210 | 25s 0c | 2026-11-05 06:58 UTC | 25s 0c |  | too new | 1 of 1 | 7 |  |
 | Raider's Bracers | 9785 | 15s 0c | 2026-11-05 06:58 UTC | 15s 0c |  | too new | 1 of 1 | 1 |  |
 | Raider's Chestpiece | 9783 | 35s 0c | 2026-11-05 06:58 UTC | 35s 0c |  | too new | 1 of 1 | 1 |  |
-| Raider's Cloak | 9786 | 50s 0c | 2026-11-05 06:58 UTC | 50s 0c |  | too new | 1 of 1 | 1 |  |
+| Raider's Cloak | 9786 | 20s 0c | 2026-11-05 10:32 UTC | 20s 0c |  | too new | 1 of 1 | 4 |  |
 | Raider's Legguards | 9789 | 11s 0c | 2026-11-05 06:58 UTC | 11s 0c |  | too new | 1 of 1 | 3 |  |
 | Recipe: Brilliant Smallfish | 6325 | 3s 0c | 2026-11-05 06:58 UTC | 3s 0c |  | too new | 1 of 1 | 60 |  |
 | Recipe: Crispy Bat Wing | 12226 | 5s 0c | 2026-11-05 06:58 UTC | 5s 0c |  | too new | 1 of 1 | 13 |  |
@@ -353,7 +362,7 @@
 | Ruffled Feather | 4776 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 10 |  |
 | Rumsey Rum Black Label | 21151 | 65s 0c | 2026-11-05 06:58 UTC | 65s 0c |  | too new | 1 of 1 | 1 |  |
 | Rumsey Rum Light | 20709 | 7s 0c | 2026-11-05 06:58 UTC | 7s 0c |  | too new | 1 of 1 | 31 |  |
-| Runic Stave | 15945 | 20s 0c | 2026-11-05 06:58 UTC | 20s 0c |  | too new | 1 of 1 | 2 |  |
+| Runic Stave | 15945 | 14s 0c | 2026-11-05 10:32 UTC | 14s 0c |  | too new | 1 of 1 | 6 |  |
 | Rust-covered Blunderbuss | 2774 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 11 |  |
 | Rusty Hatchet | 1416 | 2s 0c | 2026-11-05 06:58 UTC | 2s 0c |  | too new | 1 of 1 | 18 |  |
 | Rusty Warhammer | 1514 | 5s 0c | 2026-11-05 06:58 UTC | 5s 0c |  | too new | 1 of 1 | 2 |  |
@@ -379,11 +388,13 @@
 | Scroll: OMIT KESA | 211854 | 60s 0c | 2026-11-05 06:58 UTC | 60s 0c |  | too new | 1 of 1 | 2 |  |
 | Scroll: STHENIC LUNATE | 211855 | 40s 0c | 2026-11-05 06:58 UTC | 40s 0c |  | too new | 1 of 1 | 1 |  |
 | Scroll: WUBBA WUBBA | 211784 | 20s 0c | 2026-11-05 06:58 UTC | 20s 0c |  | too new | 1 of 1 | 1 |  |
+| Seer's Boots | 2983 | 15s 0c | 2026-11-05 10:32 UTC | 15s 0c |  | too new | 1 of 1 | 1 |  |
+| Seer's Cape | 6378 | 30s 0c | 2026-11-05 10:32 UTC | 30s 0c |  | too new | 1 of 1 | 1 |  |
 | Seer's Pants | 2982 | 10s 0c | 2026-11-05 06:58 UTC | 10s 0c |  | too new | 1 of 1 | 1 |  |
 | Senggin Root | 3448 | 69c | 2026-11-05 06:58 UTC | 69c |  | too new | 1 of 1 | 320 |  |
 | Sergeant's Warhammer | 2079 | 25s 0c | 2026-11-05 06:58 UTC | 25s 0c |  | too new | 1 of 1 | 1 |  |
 | Shadow Wand | 5071 | 7s 0c | 2026-11-05 06:58 UTC | 7s 0c |  | too new | 1 of 1 | 82 |  |
-| Shal'ma's Shawl | 286746 | 8s 0c | 2026-11-05 06:58 UTC | 8s 0c |  | too new | 1 of 1 | 9 |  |
+| Shal'ma's Shawl | 286746 | 6s 0c | 2026-11-05 10:32 UTC | 6s 0c |  | too new | 1 of 1 | 13 |  |
 | Sharp Arrow | 2515 | 1c | 2026-11-05 06:58 UTC | 1c |  | too new | 1 of 1 | 10751 |  |
 | Sharpened Letter Opener | 2138 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 3 |  |
 | Shiny Bauble | 6529 | 95c | 2026-11-05 06:58 UTC | 95c |  | too new | 1 of 1 | 14 |  |
@@ -392,8 +403,8 @@
 | Short Sabre | 3319 | 5s 0c | 2026-11-05 06:58 UTC | 5s 0c |  | too new | 1 of 1 | 35 |  |
 | Sickly Looking Fish | 6299 | 37c | 2026-11-05 06:58 UTC | 37c |  | too new | 1 of 1 | 334 |  |
 | Simple Blouse | 9749 | 6s 0c | 2026-11-05 06:58 UTC | 6s 0c |  | too new | 1 of 1 | 4 |  |
-| Simple Branch | 15933 | 7s 0c | 2026-11-05 06:58 UTC | 7s 0c |  | too new | 1 of 1 | 15 |  |
-| Simple Britches | 9747 | 8s 0c | 2026-11-05 06:58 UTC | 8s 0c |  | too new | 1 of 1 | 30 |  |
+| Simple Branch | 15933 | 7s 0c | 2026-11-05 10:32 UTC | 7s 0c |  | too new | 1 of 1 | 18 |  |
+| Simple Britches | 9747 | 6s 0c | 2026-11-05 10:32 UTC | 6s 0c |  | too new | 1 of 1 | 44 |  |
 | Simple Dagger | 4565 | 50s 0c | 2026-11-05 06:58 UTC | 50s 0c |  | too new | 1 of 1 | 1 |  |
 | Simple Robe | 9748 | 10s 0c | 2026-11-05 06:58 UTC | 10s 0c |  | too new | 1 of 1 | 11 |  |
 | Simple Shoes | 9743 | 2s 0c | 2026-11-05 06:58 UTC | 2s 0c |  | too new | 1 of 1 | 1 |  |
@@ -417,8 +428,8 @@
 | Soldier's Leggings | 6546 | 20s 0c | 2026-11-05 06:58 UTC | 20s 0c |  | too new | 1 of 1 | 2 |  |
 | Soldier's Shield | 6560 | 49s 0c | 2026-11-05 06:58 UTC | 49s 0c |  | too new | 1 of 1 | 1 |  |
 | Soldier's Wristguards | 6550 | 25s 0c | 2026-11-05 06:58 UTC | 25s 0c |  | too new | 1 of 1 | 6 |  |
-| Spellbinder Orb | 15926 | 13s 0c | 2026-11-05 06:58 UTC | 13s 0c |  | too new | 1 of 1 | 1 |  |
-| Spellbinder Pants | 2970 | 10s 0c | 2026-11-05 06:58 UTC | 10s 0c |  | too new | 1 of 1 | 8 |  |
+| Spellbinder Orb | 15926 | 25s 0c | 2026-11-05 10:32 UTC | 13s 0c |  | too new | 1 of 1 | 2 |  |
+| Spellbinder Pants | 2970 | 9s 0c | 2026-11-05 10:32 UTC | 9s 0c |  | too new | 1 of 1 | 8 |  |
 | Spellbinder Vest | 2969 | 15s 0c | 2026-11-05 06:58 UTC | 15s 0c |  | too new | 1 of 1 | 1 |  |
 | Spider Web Robe | 3328 | 5s 0c | 2026-11-05 06:58 UTC | 5s 0c |  | too new | 1 of 1 | 11 |  |
 | Spiked Club | 4564 | 7s 0c | 2026-11-05 06:58 UTC | 7s 0c |  | too new | 1 of 1 | 55 |  |
@@ -453,9 +464,9 @@
 | Veteran Leggings | 2978 | 10s 0c | 2026-11-05 06:58 UTC | 10s 0c |  | too new | 1 of 1 | 2 |  |
 | Vile Fin Battle Axe | 3325 | 2s 0c | 2026-11-05 06:58 UTC | 2s 0c |  | too new | 1 of 1 | 17 |  |
 | Vile Fin Oracle Staff | 3327 | 3s 0c | 2026-11-05 06:58 UTC | 3s 0c |  | too new | 1 of 1 | 4 |  |
-| War Knife | 4571 | 30s 0c | 2026-11-05 06:58 UTC | 30s 0c |  | too new | 1 of 1 | 5 |  |
+| War Knife | 4571 | 29s 99c | 2026-11-05 10:32 UTC | 29s 99c |  | too new | 1 of 1 | 5 |  |
 | War Paint Anklewraps | 14722 | 20s 0c | 2026-11-05 06:58 UTC | 20s 0c |  | too new | 1 of 1 | 1 |  |
-| War Paint Cloak | 14724 | 24s 0c | 2026-11-05 06:58 UTC | 24s 0c |  | too new | 1 of 1 | 1 |  |
+| War Paint Cloak | 14724 | 14s 0c | 2026-11-05 10:32 UTC | 14s 0c |  | too new | 1 of 1 | 3 |  |
 | War Paint Gloves | 14726 | 50s 0c | 2026-11-05 06:58 UTC | 50s 0c |  | too new | 1 of 1 | 1 |  |
 | War Paint Waistband | 14725 | 8s 0c | 2026-11-05 06:58 UTC | 8s 0c |  | too new | 1 of 1 | 4 |  |
 | War Torn Girdle | 15480 | 2s 0c | 2026-11-05 06:58 UTC | 2s 0c |  | too new | 1 of 1 | 1 |  |
@@ -472,15 +483,16 @@
 | Warrior's Girdle | 4659 | 2s 0c | 2026-11-05 06:58 UTC | 2s 0c |  | too new | 1 of 1 | 3 |  |
 | Warrior's Gloves | 2968 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 1 | 3 |  |
 | Warrior's Tunic | 2965 | 4s 0c | 2026-11-05 06:58 UTC | 4s 0c |  | too new | 1 of 1 | 41 |  |
-| Willow Belt | 6539 | 5g 0s 0c | 2026-11-05 06:58 UTC | 5g 0s 0c |  | too new | 1 of 1 | 1 |  |
-| Willow Boots | 6537 | 5s 0c | 2026-11-05 06:58 UTC | 5s 0c |  | too new | 1 of 1 | 2 |  |
-| Willow Bracers | 6543 | 5s 0c | 2026-11-05 06:58 UTC | 5s 0c |  | too new | 1 of 1 | 5 |  |
-| Willow Cape | 6542 | 2g 0s 0c | 2026-11-05 06:58 UTC | 2g 0s 0c |  | too new | 1 of 1 | 1 |  |
-| Willow Gloves | 6541 | 50s 0c | 2026-11-05 06:58 UTC | 50s 0c |  | too new | 1 of 1 | 2 |  |
+| Willow Belt | 6539 | 49s 0c | 2026-11-05 10:32 UTC | 49s 0c |  | too new | 1 of 1 | 4 |  |
+| Willow Boots | 6537 | 22s 0c | 2026-11-05 10:32 UTC | 5s 0c |  | too new | 1 of 1 | 4 |  |
+| Willow Bracers | 6543 | 10s 0c | 2026-11-05 10:32 UTC | 5s 0c |  | too new | 1 of 1 | 5 |  |
+| Willow Cape | 6542 | 15s 0c | 2026-11-05 10:32 UTC | 15s 0c |  | too new | 1 of 1 | 4 |  |
+| Willow Gloves | 6541 | 10s 0c | 2026-11-05 10:32 UTC | 10s 0c |  | too new | 1 of 1 | 5 |  |
+| Willow Pants | 6540 | 15s 0c | 2026-11-05 10:32 UTC | 15s 0c |  | too new | 1 of 1 | 2 |  |
 | Willow Vest | 6536 | 10s 0c | 2026-11-05 06:58 UTC | 10s 0c |  | too new | 1 of 1 | 1 |  |
 | Windstone | 255663 | 25c | 2026-11-05 06:58 UTC | 25c |  | too new | 1 of 1 | 323 |  |
 | Wise Man's Belt | 4786 | 30s 0c | 2026-11-05 06:58 UTC | 30s 0c |  | too new | 1 of 1 | 1 |  |
-| Wispy Cloak | 3322 | 2s 0c | 2026-11-05 06:58 UTC | 2s 0c |  | too new | 1 of 1 | 24 |  |
+| Wispy Cloak | 3322 | 2s 0c | 2026-11-05 10:32 UTC | 2s 0c |  | too new | 1 of 1 | 31 |  |
 | Withered Staff | 1411 | 2s 0c | 2026-11-05 06:58 UTC | 2s 0c |  | too new | 1 of 1 | 31 |  |
 | Wood Chopper | 3189 | 2s 0c | 2026-11-05 06:58 UTC | 2s 0c |  | too new | 1 of 1 | 39 |  |
 | Wooden Mallet | 2493 | 4s 0c | 2026-11-05 06:58 UTC | 4s 0c |  | too new | 1 of 1 | 3 |  |
