@@ -697,7 +697,8 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/", 
     for market in markets:
         folder = f"prices/{market['slug']}/"
         market["url"] = base + folder
-        market["name"] = game.get("market_names", {}).get(market["key"], market["key"])
+        market_names = game.get("market_names", {})  # keyed by market slug: Beta and Live can share an Auctionator key
+        market["name"] = market_names.get(market["slug"]) or market_names.get(market["key"], market["key"])
         market["highlights"] = highlights(market)
         market["ah"] = market_module_analyse(market, vendor, categories)
         for item in market["items"]:
