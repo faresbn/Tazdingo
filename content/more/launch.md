@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-27
+updated: 2026-11-05
 summary: Before you log in: a practical checklist for WoW Forever's launch on 4 November, from launch times and name reservations to settings and your first day.
 sources: Blizzard, ForeverDB, Icy Veins, Wowhead, wow-professions.com, Warcraft Tavern, Blizzard forums
 ---
@@ -121,7 +121,9 @@ Blizzard is acting against gold buying in Forever. Blizzard warns about acceptin
 
 ## Field findings
 
-Nothing recorded yet.
+### ForeverDB auction overview has not established release market prices (testing, 5 Nov 2026)
+
+Read in the [ForeverDB Auction House overview](https://foreverdb.net/auction-house) on 5 November 2026, shortly after the 4 November release. It listed 4,434 items with some recorded price, 116 confirmed by at least two players, six auction houses and 41 scans across 30 days. The selected market showed a last scan on 18 October and no scan in the preceding seven days. No post-release market observation could be verified from the accessible overview; other markets may differ. These are historical asking-price and listing records, not completed sales or confirmed current release prices. Tazdingo's Beta market records remain historical until genuine release scans are ingested with their realm, faction and observation times.
 
 ## Read more
 

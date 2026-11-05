@@ -90,6 +90,6 @@ Pre-launch means the page's advice isn't checked in the live game yet. To edit a
 
 - `content/more/addons.md`: Addons, updated 2026-10-31, Pre-launch, version `f9078ba81aa7`
 - `content/more/known-issues.md`: Known issues, updated 2026-10-27, Pre-launch, version `e6f3a352e0cf`
-- `content/more/launch.md`: Launch checklist, updated 2026-10-27, Pre-launch, version `0de91eda32c9`
+- `content/more/launch.md`: Launch checklist, updated 2026-11-05, Pre-launch, version `75d04e91d745`
 - `content/more/macros.md`: Macros, updated 2026-10-27, Pre-launch, version `e194d06e845d`
 
