@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-30
+updated: 2026-11-05
 summary: What the Rogue is in WoW Forever, what changed from Classic, and which of the three specs the guides suggest for levelling and groups.
 sources: Blizzard class deep dive, ForeverDB, Wowhead, Icy Veins, WoWSims presets
 ---
@@ -66,7 +66,9 @@ The [WoWSims presets](https://github.com/wowsims/forever/blob/master/ui/specs/ro
 
 ## Field findings
 
-Nothing recorded yet.
+### Rogue client build 1.60.1.70790 reshuffled talents (testing, 5 Nov 2026)
+
+Read in [ForeverDB's 4 November build comparison](https://foreverdb.net/changelog/1.60.1.70790) and its [client-data explanation](https://foreverdb.net/article/build-1-60-1-70790-game-files). Compared with 1.60.1.70755, the client files contain extensive Rogue talent movement and renaming, including Mutilate moving to tier 7 (level 40), new Relentless Strikes, and the new Shank ability at level 24. The earlier level-30 builds and key-level recommendations on this page need rechecking against the changed talent layout. This is a source-derived client comparison, not a verified in-game damage test or evidence about server-only behaviour.
 
 ## Read more
 

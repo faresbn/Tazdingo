@@ -40,7 +40,7 @@ Pre-launch means the page's advice isn't checked in the live game yet. To edit a
 - `content/classes/rogue/combat.md`: Combat Rogue, updated 2026-10-30, Pre-launch, version `fb0581dfba27`
 - `content/classes/rogue/hybrid.md`: Rogue: hybrid builds, updated 2026-10-27, Pre-launch, version `cbf0b09ccf54`
 - `content/classes/rogue/macros.md`: Rogue: macros, updated 2026-10-27, Pre-launch, version `c71ac3b7a10d`
-- `content/classes/rogue/overview.md`: Rogue: overview, updated 2026-10-30, Pre-launch, version `75ff5808622d`
+- `content/classes/rogue/overview.md`: Rogue: overview, updated 2026-11-05, Pre-launch, version `351f76be914b`
 - `content/classes/rogue/subtlety.md`: Subtlety Rogue, updated 2026-10-30, Pre-launch, version `0ef9c32248cb`
 - `content/classes/shaman/elemental.md`: Elemental Shaman, updated 2026-10-30, Pre-launch, version `e4c0322c1f6e`
 - `content/classes/shaman/enhancement.md`: Enhancement Shaman, updated 2026-10-30, Pre-launch, version `0397f4c06372`
