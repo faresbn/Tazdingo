@@ -1,0 +1,43 @@
+# CAMWOW EU5 Realm 2 PvP (Horde): alerts and estimates
+
+- **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
+- **Latest scan:** 2026-11-05 01:09 UTC. Uploads in the 30-day window: 1.
+- **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
+
+Everything below is an estimate from listings, recorded at the time shown; none of it says what sold.
+
+## Deals: recorded under the usual price
+
+At least 20% under the usual price. Exceptional ones are at least 30% under and far outside the item's normal spread; they come first. Confidence says how much history stands behind it; low-confidence ones are left out.
+
+None at the latest scan.
+
+## Recorded below what a vendor pays
+
+Rare or better items and recipes only, at least 1 silver a unit: buying these and selling to a vendor returns more than the listing costs, if the listing is still there.
+
+None at the latest scan.
+
+## Investment watch
+
+Steady or moving items, listed most days, recorded at or under their cheaper days. The margin is an estimate after the 5% Auction House cut.
+
+None at the latest scan.
+
+## Short supply
+
+At least 20% over usual with at most half the units usually listed, on the last full day.
+
+None at the latest scan.
+
+## Rising since the last full day
+
+The latest recorded price against the last full day's lowest.
+
+None at the latest scan.
+
+## Falling since the last full day
+
+The latest recorded price against the last full day's lowest.
+
+None at the latest scan.
