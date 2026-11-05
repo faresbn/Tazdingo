@@ -46,7 +46,7 @@ Pre-launch means the page's advice isn't checked in the live game yet. To edit a
 - `content/classes/shaman/enhancement.md`: Enhancement Shaman, updated 2026-10-30, Pre-launch, version `0397f4c06372`
 - `content/classes/shaman/hybrid.md`: Shaman: hybrid builds, updated 2026-10-27, Pre-launch, version `2eecbbdbdc8c`
 - `content/classes/shaman/macros.md`: Shaman: macros, updated 2026-10-27, Pre-launch, version `f9977510ed7f`
-- `content/classes/shaman/overview.md`: Shaman: overview, updated 2026-10-30, Pre-launch, version `5f266da80cc7`
+- `content/classes/shaman/overview.md`: Shaman: overview, updated 2026-11-05, Pre-launch, version `e517ccd3dd33`
 - `content/classes/shaman/restoration.md`: Restoration Shaman, updated 2026-10-30, Pre-launch, version `42e452c9c960`
 - `content/classes/warlock/affliction.md`: Affliction Warlock, updated 2026-10-30, Pre-launch, version `d43e20977275`
 - `content/classes/warlock/demonology.md`: Demonology Warlock, updated 2026-10-30, Pre-launch, version `58949d8c1e64`

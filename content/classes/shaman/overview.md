@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-30
+updated: 2026-11-05
 summary: What the Shaman is in WoW Forever, now open to both factions, what Forever changed, and how the guides suggest picking a spec and levelling one.
 sources: Blizzard class deep dive and race article, ForeverDB, Wowhead, Icy Veins, WoWSims presets
 ---
@@ -66,7 +66,9 @@ The level 30 Call of Air chain rewards a choice of weapon: Lightning's Grasp, Ra
 
 ## Field findings
 
-Nothing recorded yet.
+### Shaman client build 1.60.1.70790 revised spells and totems (testing, 5 Nov 2026)
+
+Read in [ForeverDB's 4 November client comparison](https://foreverdb.net/changelog/1.60.1.70790) and its [source-based explanation](https://foreverdb.net/article/build-1-60-1-70790-game-files). Lightning Bolt, shocks and Chain Lightning list increased damage, while Chain Lightning lists a 2.5-second cast instead of 2 seconds; Stormstrike is listed at 150% weapon damage with a 6-second cooldown, and Flurry reaches 30%. The old Totemic Projection was removed and Totemic Call is listed at level 22. Earlier talent and key-level advice on this page should be checked before use. These are changes in client-file values, not measured release-server performance.
 
 ## Read more
 
