@@ -6,7 +6,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 |---|---|---|---|---|---|---|---|
 | Barbaric Bracers | 130 | 18948 | 1 | 17g 0s 0c | 3g 23s 99c | 13g 76s 1c | ForeverDB |
 | Red Whelp Gloves | 95 | 7284 | 1 | 8g 44s 0c | 2g 94s 0c | 5g 50s 0c | ForeverDB |
-| Green Whelp Armor | 150 | 7375 | 1 | 15g 20s 0c | 10g 2s 0c | 5g 18s 0c | ForeverDB |
+| Green Whelp Armor | 150 | 7375 | 1 | 15g 40s 0c | 10g 2s 0c | 5g 38s 0c | ForeverDB |
 | Dusky Belt | 195 | 7387 | 1 | 4g 55s 0c | 1g 27s 65c | 3g 27s 35c | ForeverDB |
 | Thick Armor Kit | 200 | 8173 | 1 | 3g 66s 49c | 65s 0c | 3g 1s 49c | ForeverDB |
 | Cured Thick Hide | 200 | 8172 | 1 | 3g 6s 50c | 10s 50c | 2g 96s 0c | ForeverDB |
@@ -50,9 +50,9 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Cloudy Gustwoven Belt | 50 | 277001 | 1 | 31s 0c | 4s 30c | 26s 70c | ForeverDB |
 | Dark Leather Shoulders | 115 | 4252 | 1 | 92s 0c | 66s 44c | 25s 56c | ForeverDB |
 | Forceful Heavy Armor Kit | 135 | 252453 | 1 | 1g 24s 91c | 99s 82c | 25s 9c | ForeverDB |
-| Guardian Gloves | 190 | 5966 | 1 | 80s 0c | 55s 35c | 24s 65c | ForeverDB |
 | Deviate Scale Belt | 90 | 6468 | 1 | 5g 32s 75c | 5g 10s 20c | 22s 55c | ForeverDB |
 | Toughened Leather Gloves | 135 | 4253 | 1 | 1g 66s 75c | 1g 44s 62c | 22s 13c | ForeverDB |
+| Guardian Gloves | 190 | 5966 | 1 | 75s 0c | 55s 35c | 19s 65c | ForeverDB |
 | Fine Leather Tunic | 85 | 4243 | 1 | 28s 50c | 9s 85c | 18s 65c | ForeverDB |
 | Heavy Armor Kit | 150 | 4265 | 1 | 49s 10c | 31s 0c | 18s 10c | ForeverDB |
 | Fine Leather Pants | 80 | 5958 | 1 | 39s 50c | 23s 17c | 16s 33c | ForeverDB |

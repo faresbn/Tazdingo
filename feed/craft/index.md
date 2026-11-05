@@ -6,7 +6,7 @@ Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/
 
 - `feed/craft/alchemy.md`: Alchemy, 54 recipes with a margin.
 - `feed/craft/blacksmithing.md`: Blacksmithing, 52 recipes with a margin.
-- `feed/craft/cooking.md`: Cooking, 39 recipes with a margin.
+- `feed/craft/cooking.md`: Cooking, 38 recipes with a margin.
 - `feed/craft/enchanting.md`: Enchanting, 7 recipes with a margin.
 - `feed/craft/engineering.md`: Engineering, 44 recipes with a margin.
 - `feed/craft/first-aid.md`: First Aid, 8 recipes with a margin.
