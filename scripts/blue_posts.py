@@ -7,6 +7,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import subprocess
 import time
 import urllib.request
@@ -21,6 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 FORUM='https://us.forums.blizzard.com/en/wow'
 VERSION=1
 CATEGORIES={346,347,348,349}
+BIDI=re.compile('[\u200e\u200f\u202a-\u202e\u2066-\u2069]')  # invisible direction controls can disguise text
 HOSTS={'us.forums.blizzard.com','worldofwarcraft.blizzard.com','worldofwarcraft.com','news.blizzard.com'}
 
 
@@ -97,6 +99,8 @@ def refresh(path: Path,pages=3,merge: Path|None=None):
             posts=json.loads(read(url)).get('posts',[]);feed_ok=True
             posts=[p for p in posts if type(p.get('id')) is int and p.get('topic_id') and isinstance(p.get('url'),str) and p['url'].startswith('/t/') and p.get('created_at') and p.get('topic_title')]
             for p in posts:
+                for field in ('topic_title','name','username'):
+                    if isinstance(p.get(field),str):p[field]=BIDI.sub('',p[field])
                 title=p['topic_title'].lower()
                 if p.get('category_id') in CATEGORIES or 'forever' in title or 'wow weekly' in title or 'this week in wow' in title:candidates[p['id']]=p
             if not posts:break

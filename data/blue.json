@@ -2,11 +2,30 @@
  "schema_version": 1,
  "classifier_version": 1,
  "source": "https://us.forums.blizzard.com/en/wow",
- "attempted_at": "2026-11-05T01:35:46Z",
- "fetched": "2026-11-05T01:35:46Z",
- "last_successful_refresh": "2026-11-05T01:35:46Z",
+ "attempted_at": "2026-11-05T02:45:52Z",
+ "fetched": "2026-11-05T02:45:52Z",
+ "last_successful_refresh": "2026-11-05T02:45:52Z",
  "status": "partial",
  "posts": [
+  {
+   "id": 30762649,
+   "topic_id": 2401646,
+   "title": "Issues Resolved for Invite-a-Friend Players",
+   "author": "Kaivax",
+   "author_title": "Community Manager",
+   "posted": "2026-11-05T02:43:58.499Z",
+   "url": "https://us.forums.blizzard.com/en/wow/t/issues-resolved-for-invite-a-friend-players/2401646/1",
+   "article_url": "https://us.forums.blizzard.com/en/wow/t/issues-resolved-for-invite-a-friend-players/2401646/1",
+   "category_id": 347,
+   "category": "WoW: Forever",
+   "reply": false,
+   "article_sha256": "8a9b60995c64c73fa69f722f310c5bbc3d57beccc90c3195bce22ea98a6c0d28",
+   "kind": "forever",
+   "reason": "Full staff post from a Forever forum category.",
+   "excerpt": "With a hotfix that is now live, we’ve fixed an issue where players who joined WoW Forever by using an Invite-a-Friend Code were unexpectedly…",
+   "classifier_version": 1,
+   "checked_at": "2026-11-05T02:45:52Z"
+  },
   {
    "id": 30761638,
    "topic_id": 2401461,
@@ -43,7 +62,7 @@
    "reason": "Dedicated Forever article; full text retrieved.",
    "excerpt": "We’ve added this section to the previous post. User Interface and Accessibility Swing Timer bar will no longer fade out due to distance until…",
    "classifier_version": 1,
-   "checked_at": "2026-11-05T01:35:46Z"
+   "checked_at": "2026-11-05T02:45:52Z"
   },
   {
    "id": 30755588,
@@ -62,7 +81,7 @@
    "reason": "Dedicated Forever article; full text retrieved.",
    "excerpt": "WoW Forever launches simultaneously in all regions today at 3:00 p.m. PST. That’s: Time Zone Location Time Date HST Honolulu 1:00 p.m. Nov. 4…",
    "classifier_version": 1,
-   "checked_at": "2026-11-05T01:35:46Z"
+   "checked_at": "2026-11-05T02:45:52Z"
   },
   {
    "id": 30743268,
@@ -119,7 +138,7 @@
    "reason": "Dedicated Forever article; full text retrieved.",
    "excerpt": "Since the last full update to the Beta on October 15, we’ve continued to work to solve issues, refine classes, improve gameplay in all…",
    "classifier_version": 1,
-   "checked_at": "2026-11-05T01:35:46Z"
+   "checked_at": "2026-11-05T02:45:52Z"
   },
   {
    "id": 30675695,
@@ -317,6 +336,41 @@
   {
    "id": 30761638,
    "title": "Set Your Campfire Ablaze with the Pouch of Violet Dust!",
+   "failed": true,
+   "kind": "unverified",
+   "reason": "Full article unavailable; prior verified record retained if present."
+  },
+  {
+   "id": 30743268,
+   "title": "Explore WoW: Forever with a Gamepad",
+   "failed": true,
+   "kind": "unverified",
+   "reason": "Full article unavailable; prior verified record retained if present."
+  },
+  {
+   "id": 30741364,
+   "title": "WoW: Forever—What’s New and What Feels Familiar",
+   "failed": true,
+   "kind": "unverified",
+   "reason": "Full article unavailable; prior verified record retained if present."
+  },
+  {
+   "id": 30675695,
+   "title": "World of Warcraft: Forever Now Live!",
+   "failed": true,
+   "kind": "unverified",
+   "reason": "Full article unavailable; prior verified record retained if present."
+  },
+  {
+   "id": 30673599,
+   "title": "Return to Azeroth in World of Warcraft: Forever",
+   "failed": true,
+   "kind": "unverified",
+   "reason": "Full article unavailable; prior verified record retained if present."
+  },
+  {
+   "id": 30762649,
+   "title": "Issues Resolved for Invite-a-Friend Players",
    "kind": "forever",
    "reason": "Full staff post from a Forever forum category."
   },
@@ -333,46 +387,16 @@
    "reason": "Dedicated Forever article; full text retrieved."
   },
   {
-   "id": 30743268,
-   "title": "Explore WoW: Forever with a Gamepad",
-   "kind": "forever",
-   "reason": "Dedicated Forever article; full text retrieved."
-  },
-  {
-   "id": 30741364,
-   "title": "WoW: Forever—What’s New and What Feels Familiar",
-   "kind": "forever",
-   "reason": "Dedicated Forever article; full text retrieved."
-  },
-  {
    "id": 30732723,
    "title": "WoW Forever Beta Development Notes – Updated November 2",
    "kind": "forever",
    "reason": "Dedicated Forever article; full text retrieved."
   },
   {
-   "id": 30675695,
-   "title": "World of Warcraft: Forever Now Live!",
-   "kind": "forever",
-   "reason": "Dedicated Forever article; full text retrieved."
-  },
-  {
-   "id": 30673599,
-   "title": "Return to Azeroth in World of Warcraft: Forever",
-   "kind": "forever",
-   "reason": "Dedicated Forever article; full text retrieved."
-  },
-  {
    "id": 30671248,
-   "title": "The WoW: Forever Podcast: Episode 6 - All About Tech ft. ‪@Shobek",
+   "title": "The WoW: Forever Podcast: Episode 6 - All About Tech ft. @Shobek",
    "kind": "unverified",
    "reason": "Full article text is too short to verify relevance."
-  },
-  {
-   "id": 30658235,
-   "title": "New Player’s Starter Guide: Welcome to World of Warcraft: Forever",
-   "kind": "forever",
-   "reason": "Dedicated Forever article; full text retrieved."
   }
  ],
  "note": "Full-text checked Blizzard news; mixed roundups appear only on the news page."
