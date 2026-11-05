@@ -241,8 +241,8 @@ def check_and_commit(result: dict, saved: dict, args, source: str) -> None:
             raise SystemExit(f"Import stopped: the {step} failed (details above). Nothing was kept; "
                              "the journal is as it was before this import.")
     if result.get("original"):
-        source, environment, stamp = result["original"]
-        print(f"Keeping the original as {originals.keep(ROOT, source, environment, 'Auctionator', stamp).relative_to(ROOT)}")
+        original_path, environment, stamp = result["original"]
+        print(f"Keeping the original as {originals.keep(ROOT, original_path, environment, 'Auctionator', stamp).relative_to(ROOT)}")
     if args.no_commit:
         return
     run("git", "add", "data", "feed")
