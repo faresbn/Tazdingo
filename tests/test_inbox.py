@@ -234,17 +234,28 @@ class AddonFiles(InboxCase):
         inbox.run(self.root)
         self.assertIn("isn't a saved-variables file", self.held_reason(sub))
 
+    def forget_default_market(self):
+        """Live scans make the repository remember a market; these tests start from none."""
+        registry_path = self.root / "data/captures.json"
+        registry = json.loads(registry_path.read_text())
+        if registry.pop("default_markets", None) is not None:
+            registry_path.write_text(json.dumps(registry, indent=2) + "\n")
+            git(self.root, "commit", "-q", "-am", "Forget the remembered market")
+
     def test_auctionator_needs_a_market(self):
+        self.forget_default_market()
         sub = self.submit("lua", "Auctionator.lua", BETA_LUA.read_bytes())
         inbox.run(self.root)
         self.assertIn("which market", self.held_reason(sub))
 
     def test_auctionator_scan_is_filed_and_kept(self):
+        kept = self.root / "data/captures/forever/auctionator"
+        before = set(kept.glob("*.lua"))  # live scans already committed to the repository
         self.submit("lua", "Auctionator.lua", BETA_LUA.read_bytes(), market="PvP")
         [outcome] = inbox.run(self.root)
         self.assertEqual(outcome["outcome"], "applied", outcome)
         self.assertTrue(list((self.root / "data/market").rglob("*.json")))
-        self.assertEqual(len(list((self.root / "data/captures/forever/auctionator").glob("*.lua"))), 1)
+        self.assertEqual(len(set(kept.glob("*.lua")) - before), 1)
         self.assertTrue(any(line.startswith("Auction House scan of") for line in git(self.root, "log", "-2", "--format=%s").splitlines()))
 
 
