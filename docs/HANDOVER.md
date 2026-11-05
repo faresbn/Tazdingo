@@ -2,20 +2,16 @@
 
 Where Tazdingo stands, kept current at every checkpoint so another thread, model or machine can carry on. Read this first, then AGENTS.md and README.md. History lives in git and in `docs/sessions/`; this file describes the present.
 
-**Last updated:** 31 October 2026, after hosted service verification, after the site design overhaul (session `docs/sessions/2026-10-30-design-overhaul/`), which followed the public repository, feed and inbox (`docs/sessions/2026-10-30-public-inbox/`). `main` is the whole state and the only branch.
+**Last updated:** 5 November 2026, launch day (session `docs/sessions/2026-11-05-launch-data/`). The inbox went live on 31 October (`docs/sessions/2026-10-31-inbox-live/`); the ChatGPT projects now enter through `docs/chatgpt/START_HERE.md`. `main` is the whole state.
 
-## In flight (31 October)
+## In flight (5 November)
 
-**The inbox is operational. GitHub connector writes and hosted receiver writes both use the normal validation/review pipeline.** The owner explicitly authorised remaining public tests and normal-browser testing on 31 October. This supersedes the former pending-approval checkpoint.
+**Live data has started.** The first Live Auctionator scan is published: 78 items on CAMWOW EU5 Realm 2 PvP (Horde), market slug `forever-pvp`, scanned 01:09 UTC, two hours after launch. ForeverDB data is refreshed at the release build 1.60.1.70790 (level cap 60): recipes, trainers, abilities, 2,778 items with categories and vendor prices. Notes, including what ForeverDB.lua and OneForAll.lua hold: `docs/sessions/2026-11-05-launch-data/notes.md`.
 
-- Receiver: existing Site appgprj_6ae4fe3d837481918b7ef17082430eae, https://tazdingo-inbox.fact-special-2007.chatgpt.site, version 2, environment revision 3. GitHub token, personal keys, DB and owner-only MCP writer mapping are configured server-side.
-- PRs #7–9 merged. 126 Python tests, 27 Node tests, 1,055 generated pages checked; the seven-case isolated proof passed. Hosted tests proved apply/archive/feed/publish, byte-preserving addon storage, stale holding and key refusals.
-- Public receiver protected edit 20261031T084844Z-07d59f5f created actual review PR #10; closed and branch removed after proof. No gameplay recommendation changed. Its bot-authored PR workflow required owner approval; inbox processing had already run its checks.
-- GitHub connected-app transport sends two-file atomic inbox packets without keys. Processing now records durable outcomes in inbox/results/. See the afternoon proof record for its live receipt and publish run.
-- Four direct MCP tools are deployed and the canonical plugin is provisioned. It is not installed in this chat; native account/tool invocation remains unverified. Do not claim publication connected the plugin. The already-connected GitHub route avoids that setup dependency.
-- The fallback form is enabled for owner testing. The receiver root loaded in a normal browser, but a saved browser policy still denies faresbn.github.io, so form interaction/file attachment has not been visually verified here. Do not work around that denial.
-- New instructions for Warcraft Deep and shared Warcraft plus connection guide are in docs/chatgpt/. They are ready to paste; no available tool changes ChatGPT project settings. Each participant must connect their own authorised app account.
-- No Beta Auctionator data was published as Live. First real scan remains a launch task.
+- **Auctionator keys this realm `PvP`, like the Beta market,** so `market_names` in `data/game.json` is keyed by market slug now. `ingest.py` remembers `PvP` as the default Live market; later scans need no `--market`.
+- **Keep scanning** three or four times a day and run `python3 scripts/ingest.py --push` after each. The market is tiny on day one; deals, usual prices and patterns need about two weeks of daily lows.
+- **Next:** the design discussion Fares asked for after this update.
+- **Fares's call:** commit `adbb82f` (the first scan) has the local file path, including the WoW account folder number, in its message. Changing it means rewriting pushed history.
 
 ## Picking this up
 
@@ -42,8 +38,8 @@ The latest plan, research and review log are in `docs/sessions/2026-10-30-public
 - **Published and checked live on 27 October, late evening** (publish run 40569733334): homepage Auction House card, the overview's eight blocks (unusually low, below vendor price, investment watch, short supply, movers, always on the market, market index, patterns), item pages, ForeverDB tables on profession and class pages, the More overview and masthead search all load on https://faresbn.github.io/Tazdingo/ with no console errors or sideways scrolling at desktop width; phone width was checked in local preview.
 
 - **Live:** https://faresbn.github.io/Tazdingo/, published from `main` by `.github/workflows/pages.yml` about a minute after each push (returning visitors may see the old version for up to 10 minutes: the host caches pages). A failed test or check publishes nothing.
-- **Auction House** (menu: "Auction House", addresses `prices/`): the overview and each market page show what was recorded unusually low (with confidence tiers), items recorded below what a vendor pays, an investment watch (steady and moving items only), short supply, movers over a day and a week, items always on the market, a market index and a weekday × time-of-day grid. Every item has its own page: latest recorded price, usual price, good-buy price, days listed, a 30-day chart (daily bands, recorded prices, typical price, quantity), patterns, recipes that make or use it, vendor price, other players' median. The homepage card shows the top alerts and investments. Until live scans arrive it runs on the three Beta sample uploads, so patterns and day movers read "collecting".
-- **Classes, professions, world:** 77 guide pages (four sections each), plus ForeverDB API tables: trainers and bought recipes (with Merchant's Favor costs) on profession pages, best zones by skill on gathering pages, disenchanting on Enchanting, abilities by level on class pages. All still Beta-build data (1.60.1.70532, level cap 30), labelled Pre-launch.
+- **Auction House** (menu: "Auction House", addresses `prices/`): the overview and each market page show what was recorded unusually low (with confidence tiers), items recorded below what a vendor pays, an investment watch (steady and moving items only), short supply, movers over a day and a week, items always on the market, a market index and a weekday × time-of-day grid. Every item has its own page: latest recorded price, usual price, good-buy price, days listed, a 30-day chart (daily bands, recorded prices, typical price, quantity), patterns, recipes that make or use it, vendor price, other players' median. The homepage card shows the top alerts and investments. It now runs on the Live market (`forever-pvp`); the three Beta sample uploads stay as a historical market. Patterns and movers read "collecting" until enough scans build up.
+- **Classes, professions, world:** 77 guide pages (four sections each), plus ForeverDB API tables: trainers and bought recipes (with Merchant's Favor costs) on profession pages, best zones by skill on gathering pages, disenchanting on Enchanting, abilities by level on class pages. Release-build data since 5 November (1.60.1.70790, level cap 60); guide pages stay Pre-launch until checked in game.
 - **Other:** countdown counted in the browser to 23:00 UTC on 4 November, with a Pre-launch checklist tag; search box on every page; More has an overview page; Blizzard's posts collected every two hours (best-effort timer) and refreshable through the relay.
 
 ## How data arrives
@@ -88,4 +84,6 @@ The latest plan, research and review log are in `docs/sessions/2026-10-30-public
 
 - 26 Oct: repository connected; parser fixed; site v1 → v2; prices with typical price and steadiness; ChatGPT instructions. (`2026-10-26-*`)
 - 27 Oct: v3 rebuild (77 pages, menus, dashboard, archive); Tazdingo rebrand and news classification; authentic artwork; UX pass; guide recommendation review; hero checklist tag and browser countdown; iCloud shield; research and the Auction House module with ForeverDB API tables (`2026-10-27-*`). Outside reviews are logged in each session's `revlog.md`.
+- 5 Nov: launch day: first Live scan, ForeverDB release-build refresh (`2026-11-05-launch-data`).
+- 31 Oct: inbox deployed and proved; ChatGPT entry point and connected-GitHub route (`2026-10-31-inbox-live`).
 - 30 Oct: public repository; Lua originals committed; the `feed/` map for ChatGPT; the inbox (hidden form, Site code, `inbox.py` with provenance checks and review pull requests); ChatGPT instructions rewritten (`2026-10-30-public-inbox`).

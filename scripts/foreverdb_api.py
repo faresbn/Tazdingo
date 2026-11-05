@@ -57,6 +57,9 @@ def get(path: str, key: str, fresh: bool = False) -> dict:
             if error.code == 404:
                 body = {"data": None, "error": 404}
                 break
+            if error.code in (500, 502, 503, 504):  # a busy server (launch day): wait and try again
+                time.sleep(15 * (attempt + 1))
+                continue
             raise
         except urllib.error.URLError:
             time.sleep(10 * (attempt + 1))

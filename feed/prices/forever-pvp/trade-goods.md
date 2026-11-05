@@ -8,6 +8,7 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Chunk of Boar Meat | 769 | 1s 0c | 2026-11-05 01:09 UTC | 1s 0c |  | too new | 1 of 1 | 4 |  |
 | Coarse Thread | 2320 | 1s 0c | 2026-11-05 01:09 UTC | 1s 0c |  | too new | 1 of 1 | 10 |  |
+| Commonplace Herb Seeds | 268415 | 49s 0c | 2026-11-05 01:09 UTC | 49s 0c |  | too new | 1 of 1 | 2 |  |
 | Copper Bar | 2840 | 1s 49c | 2026-11-05 01:09 UTC | 1s 49c |  | too new | 1 of 1 | 368 |  |
 | Copper Ore | 2770 | 70c | 2026-11-05 01:09 UTC | 70c |  | too new | 1 of 1 | 529 |  |
 | Copper Rod | 6217 | 1s 0c | 2026-11-05 01:09 UTC | 1s 0c |  | too new | 1 of 1 | 65 |  |

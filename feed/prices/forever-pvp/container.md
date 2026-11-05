@@ -7,5 +7,6 @@
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | Linen Bag | 4238 | 4s 0c | 2026-11-05 01:09 UTC | 4s 0c |  | too new | 1 of 1 | 10 |  |
+| Small Blue Pouch | 828 | 20s 0c | 2026-11-05 01:09 UTC | 20s 0c |  | too new | 1 of 1 | 1 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

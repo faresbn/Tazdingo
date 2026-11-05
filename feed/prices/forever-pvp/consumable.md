@@ -6,6 +6,7 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
+| Cactus Apple Surprise | 11584 | 1s 0c | 2026-11-05 01:09 UTC | 1s 0c |  | too new | 1 of 1 | 9 |  |
 | Elixir of Minor Defense | 5997 | 2s 0c | 2026-11-05 01:09 UTC | 2s 0c |  | too new | 1 of 1 | 6 |  |
 | Light Armor Kit | 2304 | 1s 88c | 2026-11-05 01:09 UTC | 1s 88c |  | too new | 1 of 1 | 20 |  |
 | Minor Arcane Elixir | 247754 | 2s 0c | 2026-11-05 01:09 UTC | 2s 0c |  | too new | 1 of 1 | 9 |  |
@@ -16,6 +17,13 @@
 | Rough Sharpening Stone | 2862 | 80c | 2026-11-05 01:09 UTC | 80c |  | too new | 1 of 1 | 94 |  |
 | Rough Weightstone | 3239 | 1s 0c | 2026-11-05 01:09 UTC | 1s 0c |  | too new | 1 of 1 | 11 |  |
 | Scroll of Protection | 3013 | 5g 0s 0c | 2026-11-05 01:09 UTC | 5g 0s 0c |  | too new | 1 of 1 | 1 |  |
+| Scroll of Spirit | 1181 | 5s 0c | 2026-11-05 01:09 UTC | 5s 0c |  | too new | 1 of 1 | 3 |  |
+| Scroll: CHAP BALK WELLES | 211786 | 2s 0c | 2026-11-05 01:09 UTC | 2s 0c |  | too new | 1 of 1 | 2 |  |
+| Scroll: CWAL | 211785 | 1s 0c | 2026-11-05 01:09 UTC | 1s 0c |  | too new | 1 of 1 | 2 |  |
+| Scroll: KWYJIBO | 211780 | 18s 0c | 2026-11-05 01:09 UTC | 18s 0c |  | too new | 1 of 1 | 2 |  |
+| Scroll: LOWER PING WHOMEVER | 211787 | 5s 0c | 2026-11-05 01:09 UTC | 5s 0c |  | too new | 1 of 1 | 3 |  |
 | Slitherskin Mackerel | 787 | 49c | 2026-11-05 01:09 UTC | 49c |  | too new | 1 of 1 | 41 |  |
+| Tough Hunk of Bread | 4540 | 43c | 2026-11-05 01:09 UTC | 43c |  | too new | 1 of 1 | 5 |  |
+| Tough Jerky | 117 | 1s 0c | 2026-11-05 01:09 UTC | 1s 0c |  | too new | 1 of 1 | 22 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

@@ -9,13 +9,14 @@ Open only the file for the item's category. Each lists every item recorded in it
 Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/main/<path>
 
 - `feed/prices/forever-pvp/alerts.md`: deals under the usual price, below vendor price, investment watch, short supply and movers.
-- `feed/prices/forever-pvp/armor.md`: Armor, 4 items.
-- `feed/prices/forever-pvp/consumable.md`: Consumable, 11 items.
-- `feed/prices/forever-pvp/container.md`: Container, 1 items.
-- `feed/prices/forever-pvp/other.md`: Other, 33 items.
+- `feed/prices/forever-pvp/armor.md`: Armor, 8 items.
+- `feed/prices/forever-pvp/consumable.md`: Consumable, 19 items.
+- `feed/prices/forever-pvp/container.md`: Container, 2 items.
+- `feed/prices/forever-pvp/miscellaneous.md`: Miscellaneous, 1 items.
 - `feed/prices/forever-pvp/quiver.md`: Quiver, 1 items.
-- `feed/prices/forever-pvp/trade-goods.md`: Trade Goods, 25 items.
-- `feed/prices/forever-pvp/weapon.md`: Weapon, 3 items.
+- `feed/prices/forever-pvp/recipe.md`: Recipe, 10 items.
+- `feed/prices/forever-pvp/trade-goods.md`: Trade Goods, 26 items.
+- `feed/prices/forever-pvp/weapon.md`: Weapon, 11 items.
 
 For people, the same market on the website: https://faresbn.github.io/Tazdingo/prices/forever-pvp/
 
