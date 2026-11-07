@@ -44,8 +44,8 @@
 | Strong Anti-Venom | 6453 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c |  | too new | 1 of 3 | 97 |  |
 | Tanning Rack | 279941 | 37s 19c | 2026-11-07 05:23 UTC | 37s 84c |  | too new | 2 of 3 | 206 |  |
 | Waylaid Crate: Apprentice Curiosities | 248685 | 5s 49c | 2026-11-07 05:23 UTC | 4s 86c | 4s 86c | moving | 3 of 3 | 241 |  |
-| Waylaid Crate: Apprentice Fabrics | 248702 | 15s 98c | 2026-11-07 04:40 UTC | 17s 0c | 17s 0c | steady | 3 of 3 | 66 |  |
-| Waylaid Crate: Apprentice Herbs | 248682 | 16s 0c | 2026-11-07 05:23 UTC | 6s 94c | 6s 94c | volatile | 3 of 3 | 120 |  |
+| Waylaid Crate: Apprentice Fabrics | 248702 | 15s 99c | 2026-11-07 05:23 UTC | 17s 0c | 17s 0c | steady | 3 of 3 | 66 |  |
+| Waylaid Crate: Apprentice Herbs | 248682 | 16s 0c | 2026-11-07 05:23 UTC | 6s 94c | 6s 94c | volatile | 3 of 3 | 121 |  |
 | Waylaid Crate: Apprentice Ingots | 248703 | 17s 66c | 2026-11-07 05:23 UTC | 14s 50c | 14s 50c | steady | 3 of 3 | 94 |  |
 | Waylaid Crate: Apprentice Ore | 248683 | 7s 19c | 2026-11-07 05:23 UTC | 7s 0c | 7s 0c | moving | 3 of 3 | 172 |  |
 | Waylaid Crate: Apprentice Parts | 248704 | 8s 88c | 2026-11-07 05:23 UTC | 9s 79c | 9s 79c | moving | 3 of 3 | 99 |  |
