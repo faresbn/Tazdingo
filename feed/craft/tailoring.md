@@ -6,10 +6,10 @@ Estimated listing margins: what the item lists for against what its reagents cos
 |---|---|---|---|---|---|---|---|
 | Mageweave Reagent Bag | 190 | 254035 | 1 | 20g 99s 0c | 7g 5s 39c | 13g 93s 61c | ForeverDB |
 | Black Mageweave Boots | 205 | 10026 | 1 | 11g 99s 0c | 1g 59s 7c | 10g 39s 93c | ForeverDB |
-| Runecloth Cloak | 220 | 13860 | 1 | 9g 99s 0c | 2g 55s 20c | 7g 43s 80c | ForeverDB |
-| Runecloth Belt | 225 | 13856 | 1 | 7g 77s 0c | 1g 84s 40c | 5g 92s 60c | ForeverDB |
+| Runecloth Cloak | 220 | 13860 | 1 | 9g 99s 0c | 2g 32s 0c | 7g 67s 0c | ForeverDB |
+| Runecloth Belt | 225 | 13856 | 1 | 7g 77s 0c | 1g 67s 0c | 6g 10s 0c | ForeverDB |
 | Enchanter's Cowl | 130 | 4322 | 1 | 7g 49s 50c | 1g 78s 97c | 5g 70s 53c | ForeverDB |
-| Enchanted Mageweave Pouch | 190 | 22246 | 1 | 7g 22s 75c | 2g 68s 68c | 4g 54s 7c | ForeverDB |
+| Enchanted Mageweave Pouch | 190 | 22246 | 1 | 7g 22s 75c | 2g 62s 20c | 4g 60s 55c | ForeverDB |
 | Mageweave Bag | 205 | 10050 | 1 | 5g 59s 75c | 1g 36s 76c | 4g 22s 99c | ForeverDB |
 | Rich Purple Silk Shirt | 150 | 4335 | 1 | 3g 79s 50c | 81s 96c | 2g 97s 54c | ForeverDB |
 | Shadow Hood | 135 | 4323 | 1 | 3g 56s 50c | 2g 6s 95c | 1g 49s 55c | ForeverDB |
@@ -50,17 +50,17 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Orange Mageweave Shirt | 185 | 10056 | 1 | 75s 0c | 61s 69c | 13s 31c | ForeverDB |
 | Blue Linen Robe | 45 | 6242 | 1 | 13s 0c | 3s 24c | 9s 76c | ForeverDB |
 | Woolen Boots | 95 | 2583 | 1 | 29s 50c | 20s 26c | 9s 24c | ForeverDB |
-| Blue Overalls | 75 | 6263 | 1 | 30s 0c | 20s 84c | 9s 16c | our scan |
+| Blue Overalls | 75 | 6263 | 1 | 29s 0c | 20s 84c | 8s 16c | our scan |
 | Heavy Woolen Gloves | 85 | 4310 | 1 | 22s 0c | 14s 38c | 7s 62c | ForeverDB |
 | Soft-soled Linen Boots | 80 | 4312 | 1 | 11s 0c | 3s 97c | 7s 3c | ForeverDB |
 | Green Woolen Vest | 85 | 2582 | 1 | 17s 0c | 11s 92c | 5s 8c | ForeverDB |
 | Azure Silk Hood | 130 | 7048 | 1 | 32s 25c | 27s 98c | 4s 27c | ForeverDB |
-| Red Linen Bag | 50 | 5762 | 1 | 6s 50c | 3s 54c | 2s 96c | ForeverDB |
 | Blue Linen Shirt | 40 | 2577 | 1 | 4s 0c | 1s 62c | 2s 38c | ForeverDB |
 | Red Linen Shirt | 40 | 2575 | 1 | 4s 0c | 1s 62c | 2s 38c | our scan |
 | Green Linen Bracers | 60 | 4308 | 1 | 5s 0c | 2s 73c | 2s 27c | ForeverDB |
 | Heavy Linen Gloves | 35 | 4307 | 1 | 3s 0c | 1s 12c | 1s 88c | ForeverDB |
 | Simple Linen Boots | 20 | 10046 | 1 | 3s 0c | 1s 33c | 1s 67c | ForeverDB |
+| Red Linen Bag | 50 | 5762 | 1 | 5s 0c | 3s 54c | 1s 46c | our scan |
 | Linen Bag | 1 | 4238 | 1 | 3s 0c | 1s 83c | 1s 17c | ForeverDB |
 | White Linen Shirt | 1 | 2576 | 1 | 2s 0c | 86c | 1s 14c | ForeverDB |
 | Bolt of Silk Cloth | 110 | 4305 | 1 | 12s 99c | 12s 0c | 99c | our scan |

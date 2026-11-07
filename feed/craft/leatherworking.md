@@ -29,7 +29,6 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Cloudy Windraveled Jerkin | 60 | 277004 | 1 | 55s 0c | 3s 78c | 51s 22c | ForeverDB |
 | Cloudy Gustwoven Harness | 60 | 276998 | 1 | 53s 50c | 3s 78c | 49s 72c | ForeverDB |
 | Azure Windraveled Pants | 60 | 277032 | 1 | 49s 0c | 1s 67c | 47s 33c | ForeverDB |
-| Deviate Scale Belt | 90 | 6468 | 1 | 1g 70s 0c | 1g 22s 70c | 47s 30c | our scan |
 | Heavy Leather Ammo Pouch | 145 | 7372 | 1 | 95s 50c | 50s 0c | 45s 50c | ForeverDB |
 | Toughened Leather Gloves | 135 | 4253 | 1 | 1g 66s 75c | 1g 22s 24c | 44s 51c | ForeverDB |
 | Azure Gustwoven Bracers | 50 | 277023 | 1 | 44s 0c | 1s 14c | 42s 86c | ForeverDB |
@@ -45,6 +44,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Cloudy Gustwoven Trousers | 60 | 277002 | 1 | 35s 0c | 1s 67c | 33s 33c | ForeverDB |
 | Barbaric Shoulders | 170 | 5964 | 1 | 1g 10s 0c | 76s 90c | 33s 10c | ForeverDB |
 | Azure Gustwoven Gloves | 55 | 277024 | 1 | 34s 0c | 1s 66c | 32s 34c | ForeverDB |
+| Deviate Scale Belt | 90 | 6468 | 1 | 1g 55s 0c | 1g 22s 70c | 32s 30c | our scan |
 | Azure Gustwoven Belt | 50 | 277025 | 1 | 33s 0c | 1s 35c | 31s 65c | ForeverDB |
 | Barbaric Harness | 185 | 5739 | 1 | 1g 21s 0c | 89s 71c | 31s 29c | ForeverDB |
 | Mystic Heavy Armor Kit | 135 | 252452 | 1 | 99s 49c | 69s 46c | 30s 3c | ForeverDB |
@@ -66,14 +66,14 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Embossed Leather Pants | 75 | 4242 | 1 | 9s 0c | 3s 57c | 5s 43c | ForeverDB |
 | Hillman's Leather Vest | 75 | 4244 | 1 | 39s 50c | 34s 42c | 5s 8c | ForeverDB |
 | Light Leather Reagent Bag | 30 | 277715 | 1 | 7s 0c | 4s 9c | 2s 91c | our scan |
-| Fine Leather Boots | 65 | 2307 | 1 | 4s 0c | 1s 67c | 2s 33c | our scan |
-| Cured Medium Hide | 90 | 4233 | 1 | 9s 21c | 6s 89c | 2s 32c | ForeverDB |
+| Cured Medium Hide | 90 | 4233 | 1 | 9s 21c | 6s 32c | 2s 89c | ForeverDB |
 | Medium Armor Kit | 90 | 2313 | 1 | 10s 40c | 8s 10c | 2s 30c | ForeverDB |
 | Handstitched Leather Pants | 15 | 2303 | 1 | 3s 0c | 94c | 2s 6c | ForeverDB |
 | White Leather Jerkin | 40 | 2311 | 1 | 4s 0c | 2s 13c | 1s 87c | our scan |
-| Light Leather Pants | 95 | 7282 | 1 | 7s 0c | 5s 21c | 1s 79c | our scan |
+| Fine Leather Boots | 65 | 2307 | 1 | 3s 0c | 1s 67c | 1s 33c | our scan |
 | Deviate Scale Gloves | 80 | 6467 | 1 | 35s 0c | 33s 82c | 1s 18c | our scan |
 | Embossed Leather Boots | 55 | 2309 | 1 | 3s 0c | 2s 18c | 82c | our scan |
+| Light Leather Pants | 95 | 7282 | 1 | 6s 0c | 5s 21c | 79c | our scan |
 | Embossed Leather Cloak | 60 | 2310 | 1 | 2s 0c | 1s 25c | 75c | our scan |
 | Fine Leather Belt | 80 | 4246 | 1 | 2s 0c | 1s 46c | 54c | our scan |
 | Handstitched Leather Boots | 1 | 2302 | 1 | 1s 0c | 52c | 48c | our scan |

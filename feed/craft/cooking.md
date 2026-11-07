@@ -12,7 +12,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Hot Wolf Ribs | 175 | 13851 | 1 | 84s 99c | 45s 85c | 39s 14c | ForeverDB |
 | Jungle Stew | 175 | 12212 | 2 | 30s 0c | 7s 45c | 22s 55c | ForeverDB |
 | Root Tea | 125 | 249867 | 1 | 32s 50c | 11s 0c | 21s 50c | ForeverDB |
-| Tasty Lion Steak | 150 | 3728 | 1 | 21s 50c | 3s 38c | 18s 12c | ForeverDB |
+| Tasty Lion Steak | 150 | 3728 | 1 | 21s 50c | 3s 34c | 18s 16c | ForeverDB |
 | Mystery Stew | 175 | 12214 | 1 | 20s 0c | 4s 25c | 15s 75c | ForeverDB |
 | Roast Raptor | 175 | 12210 | 1 | 12s 93c | 3s 71c | 9s 22c | ForeverDB |
 | Lean Venison | 110 | 5480 | 2 | 9s 76c | 1s 27c | 8s 49c | ForeverDB |
@@ -28,25 +28,26 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Succulent Pork Ribs | 110 | 2685 | 1 | 13s 75c | 11s 62c | 2s 13c | ForeverDB |
 | Crocolisk Steak | 80 | 3662 | 1 | 3s 0c | 1s 0c | 2s 0c | ForeverDB |
 | Scorpid Surprise | 20 | 5473 | 1 | 2s 47c | 53c | 1s 94c | ForeverDB |
-| Hot Lion Chops | 125 | 3727 | 1 | 2s 99c | 1s 29c | 1s 70c | ForeverDB |
+| Thistle Tea | 60 | 7676 | 1 | 3s 94c | 2s 3c | 1s 91c | our scan |
+| Mithril Headed Trout | 175 | 8364 | 1 | 3s 34c | 1s 48c | 1s 86c | ForeverDB |
+| Hot Lion Chops | 125 | 3727 | 1 | 2s 99c | 1s 27c | 1s 72c | ForeverDB |
 | Roasted Kodo Meat | 35 | 5474 | 2 | 2s 0c | 35c | 1s 65c | ForeverDB |
-| Crispy Lizard Tail | 100 | 5479 | 2 | 3s 58c | 2s 34c | 1s 24c | ForeverDB |
-| Mithril Headed Trout | 175 | 8364 | 1 | 3s 34c | 2s 21c | 1s 13c | ForeverDB |
+| Crispy Lizard Tail | 100 | 5479 | 2 | 3s 58c | 2s 40c | 1s 18c | ForeverDB |
 | Smoked Sagefish | 80 | 21072 | 1 | 2s 50c | 1s 41c | 1s 9c | ForeverDB |
 | Dig Rat Stew | 90 | 5478 | 2 | 3s 94c | 2s 92c | 1s 2c | ForeverDB |
 | Crab Cake | 75 | 2683 | 1 | 9s 0c | 8s 33c | 67c | ForeverDB |
-| Cooked Crab Claw | 85 | 2682 | 1 | 98c | 36c | 62c | ForeverDB |
+| Cooked Crab Claw | 85 | 2682 | 1 | 98c | 35c | 63c | ForeverDB |
 | Gooey Spider Cake | 110 | 3666 | 1 | 2s 74c | 2s 14c | 60c | ForeverDB |
-| Thistle Tea | 60 | 7676 | 1 | 3s 94c | 3s 35c | 59c | our scan |
+| Sagefish Delight | 175 | 21217 | 1 | 4s 12c | 3s 53c | 59c | ForeverDB |
 | Goblin Deviled Clams | 125 | 5527 | 1 | 1s 79c | 1s 30c | 49c | ForeverDB |
 | Blood Sausage | 60 | 3220 | 2 | 1s 8c | 61c | 47c | ForeverDB |
 | Basic Campfire | 1 | 279981 | 1 | 65c | 38c | 27c | our scan |
 | Murloc Fin Soup | 90 | 3663 | 1 | 1s 80c | 1s 56c | 24c | ForeverDB |
 | Strider Stew | 50 | 5477 | 2 | 1s 12c | 90c | 22c | ForeverDB |
 | Loch Frenzy Delight | 50 | 6316 | 1 | 59c | 42c | 17c | ForeverDB |
-| Smoked Bear Meat | 40 | 6890 | 1 | 41c | 25c | 16c | our scan |
 | Kaldorei Spider Kabob | 10 | 5472 | 1 | 17c | 3c | 14c | ForeverDB |
 | Breakfast Omelette | 75 | 250080 | 1 | 2s 0c | 1s 89c | 11c | ForeverDB |
+| Smoked Bear Meat | 40 | 6890 | 1 | 35c | 25c | 10c | our scan |
 | Mrrggl Smrrthle | 125 | 249873 | 1 | 6s 44c | 6s 38c | 6c | ForeverDB |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
