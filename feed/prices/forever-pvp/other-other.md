@@ -128,7 +128,7 @@
 | Bloody Tuft of Fur | 269739 | 89c | 2026-11-07 12:51 UTC | 95c | 95c | steady | 3 of 3 | 42 |  |
 | Blueprint: Anvil | 273086 | 3g 83s 0c | 2026-11-07 12:51 UTC | 2g 37s 0c | 2g 37s 0c | volatile | 3 of 3 | 7 |  |
 | Blueprint: Arcane Salvager | 273103 | 1g 49s 0c | 2026-11-07 12:51 UTC | 1g 74s 50c |  | too new | 2 of 3 | 18 |  |
-| Blueprint: Cookie's Feast | 273102 | 1g 44s 0c | 2026-11-07 12:51 UTC | 1g 52s 50c |  | too new | 2 of 3 | 6 |  |
+| Blueprint: Cookie's Feast | 273102 | 1g 44s 0c | 2026-11-07 12:51 UTC | 1g 52s 50c |  | too new | 2 of 3 | 8 |  |
 | Blueprint: Fermenter | 273085 | 19s 0c | 2026-11-07 12:51 UTC | 8s 0c | 8s 0c | moving | 3 of 3 | 48 |  |
 | Blueprint: Field Guide | 273098 | 7s 0c | 2026-11-07 12:51 UTC | 24s 0c | 24s 0c | volatile | 3 of 3 | 74 |  |
 | Blueprint: Fishing Rack | 273141 | 4g 49s 0c | 2026-11-07 12:51 UTC | 4g 23s 0c |  | too new | 2 of 3 | 15 |  |
@@ -412,7 +412,7 @@
 | Essence of Agony | 8923 | 2s 70c | 2026-11-07 12:51 UTC | 5s 0c | 5s 0c | moving | 3 of 3 | 56 |  |
 | Excavated Dagger | 287068 | 2g 99s 0c | 2026-11-07 12:51 UTC | 3g 0s 0c | 3g 0s 0c | volatile | 3 of 3 | 1 |  |
 | Excitable Slime | 275682 | 13s 0c | 2026-11-07 12:51 UTC | 13s 0c | 13s 0c | volatile | 3 of 3 | 19 |  |
-| Expert Cookbook | 16072 | 1g 27s 0c | 2026-11-07 12:51 UTC | 1g 23s 50c |  | too new | 2 of 3 | 70 |  |
+| Expert Cookbook | 16072 | 1g 27s 0c | 2026-11-07 12:51 UTC | 1g 19s 50c |  | too new | 2 of 3 | 70 |  |
 | Expert First Aid - Under Wraps | 16084 | 1g 19s 0c | 2026-11-07 12:51 UTC | 1g 19s 0c | 1g 19s 0c | volatile | 3 of 3 | 60 |  |
 | Expert Fishing - The Bass and You | 16083 | 1g 29s 0c | 2026-11-07 12:51 UTC | 1g 43s 0c | 1g 43s 0c | steady | 3 of 3 | 42 |  |
 | Explosive Shotgun | 8188 | 1g 11s 0c | 2026-11-07 12:51 UTC | 3g 4s 0c |  | too new | 2 of 3 | 4 |  |
@@ -981,8 +981,10 @@
 | Ravager's Armguards | 14770 | 77s 0c | 2026-11-07 10:45 UTC | 77s 0c |  | too new | 1 of 3 | 1 |  |
 | Ravasaur Scale Boots | 13124 | 1g 99s 0c | 2026-11-07 12:51 UTC | 1g 77s 0c |  | too new | 2 of 3 | 4 |  |
 | Razor's Edge | 12990 | 80s 0c | 2026-11-07 12:51 UTC | 65s 0c | 65s 0c | volatile | 3 of 3 | 18 |  |
+| Recipe: Beer Basted Boar Ribs | 2889 | 1g 0s 0c | 2026-11-07 12:51 UTC | 1g 0s 0c |  | too new | 1 of 3 | 2 |  |
 | Recipe: Cleric's Elixir | 250368 | 1g 0s 0c | 2026-11-07 12:51 UTC | 5g 25s 0c |  | too new | 2 of 3 | 26 |  |
 | Recipe: Crispy Bat Wing | 12226 | 6s 0c | 2026-11-07 12:51 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 88 |  |
+| Recipe: Crocolisk Steak | 3678 | 1g 0s 0c | 2026-11-07 12:51 UTC | 1g 0s 0c |  | too new | 1 of 3 | 2 |  |
 | Recipe: Dragonbreath Chili | 12239 | 15g 27s 0c | 2026-11-07 04:40 UTC | 15g 27s 0c |  | too new | 1 of 3 | 1 |  |
 | Recipe: Elixir of Fortitude | 250370 | 1g 0s 0c | 2026-11-07 12:51 UTC | 1g 0s 0c |  | too new | 1 of 3 | 3 |  |
 | Recipe: Elixir of Giants | 9298 | 55g 0s 0c | 2026-11-07 10:45 UTC | 15g 0s 0c |  | too new | 1 of 3 | 1 |  |
@@ -994,7 +996,7 @@
 | Recipe: Elixir of Superior Defense | 13478 | 1g 0s 0c | 2026-11-07 12:51 UTC | 1g 0s 0c |  | too new | 1 of 3 | 1 |  |
 | Recipe: Filet of Redgill | 13941 | 1g 70s 0c | 2026-11-07 12:51 UTC | 1g 50s 0c |  | too new | 1 of 3 | 1 |  |
 | Recipe: Heavy Crocolisk Stew | 20075 | 92s 0c | 2026-11-07 10:45 UTC | 80s 50c |  | too new | 2 of 3 | 14 |  |
-| Recipe: Kaldorei Spider Kabob | 5482 | 2g 0s 0c | 2026-11-07 12:51 UTC | 2g 0s 0c |  | too new | 1 of 3 | 1 |  |
+| Recipe: Kaldorei Spider Kabob | 5482 | 2g 0s 0c | 2026-11-07 12:51 UTC | 99s 0c |  | too new | 1 of 3 | 3 |  |
 | Recipe: Lesser Frenzy Potion | 250983 | 8s 0c | 2026-11-07 10:45 UTC | 7s 0c | 7s 0c | volatile | 3 of 3 | 27 |  |
 | Recipe: Lesser Mender's Potion | 250989 | 9s 0c | 2026-11-07 12:51 UTC | 6s 0c | 6s 0c | volatile | 3 of 3 | 34 |  |
 | Recipe: Lesser Spellblasting Potion | 250977 | 10s 0c | 2026-11-07 12:51 UTC | 2s 0c | 2s 0c | volatile | 3 of 3 | 71 |  |
@@ -1002,15 +1004,15 @@
 | Recipe: Minor Cleric's Elixir | 250366 | 8s 0c | 2026-11-07 12:51 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 129 |  |
 | Recipe: Minor Mageblood Elixir | 250375 | 48s 0c | 2026-11-07 12:51 UTC | 20s 0c | 20s 0c | volatile | 3 of 3 | 20 |  |
 | Recipe: Minor Spellblasting Potion | 250976 | 11s 0c | 2026-11-07 12:51 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 65 |  |
-| Recipe: Mithril Head Trout | 17062 | 28s 0c | 2026-11-07 04:40 UTC | 29s 0c | 29s 0c | volatile | 3 of 3 | 8 |  |
+| Recipe: Mithril Head Trout | 17062 | 1g 0s 0c | 2026-11-07 12:51 UTC | 29s 0c | 29s 0c | volatile | 3 of 3 | 8 |  |
 | Recipe: Philosopher's Stone | 9303 | 5g 0s 0c | 2026-11-07 04:40 UTC | 5g 0s 0c |  | too new | 1 of 3 | 3 |  |
-| Recipe: Pincer Bites | 263513 | 5s 0c | 2026-11-07 12:51 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 70 |  |
+| Recipe: Pincer Bites | 263513 | 6s 0c | 2026-11-07 12:51 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 70 |  |
 | Recipe: Redridge Goulash | 2699 | 1g 0s 0c | 2026-11-07 10:45 UTC | 1g 0s 0c |  | too new | 1 of 3 | 1 |  |
 | Recipe: Sagefish Delight | 21219 | 35s 0c | 2026-11-07 12:51 UTC | 40s 0c | 40s 0c | volatile | 3 of 3 | 11 |  |
-| Recipe: Savory Whimsyfin Delight | 251526 | 4g 0s 0c | 2026-11-07 12:51 UTC | 4g 0s 0c |  | too new | 1 of 3 | 3 |  |
+| Recipe: Savory Whimsyfin Delight | 251526 | 4g 0s 0c | 2026-11-07 12:51 UTC | 3g 88s 0c |  | too new | 1 of 3 | 3 |  |
 | Recipe: Skywall Souffle | 263511 | 8s 0c | 2026-11-07 12:51 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 81 |  |
 | Recipe: Smoked Sagefish | 21099 | 6s 0c | 2026-11-07 12:51 UTC | 6s 0c | 6s 0c | moving | 3 of 3 | 35 |  |
-| Recipe: Spiced Chili Crab | 16111 | 6g 20s 0c | 2026-11-07 12:51 UTC | 5g 46s 0c |  | too new | 2 of 3 | 3 |  |
+| Recipe: Spiced Chili Crab | 16111 | 6g 20s 0c | 2026-11-07 12:51 UTC | 5g 46s 0c |  | too new | 2 of 3 | 4 |  |
 | Recipe: Superior Mana Potion | 13477 | 2g 0s 0c | 2026-11-07 12:51 UTC | 2g 0s 0c |  | too new | 1 of 3 | 3 |  |
 | Recipe: Tender Wolf Steak | 18046 | 3g 46s 0c | 2026-11-07 10:45 UTC | 3g 46s 0c |  | too new | 1 of 3 | 1 |  |
 | Recipe: Wildvine Potion | 9294 | 55s 0c | 2026-11-07 12:51 UTC | 55s 0c |  | too new | 1 of 3 | 13 |  |

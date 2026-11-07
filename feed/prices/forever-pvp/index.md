@@ -26,7 +26,7 @@ Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/
 - `feed/prices/forever-pvp/container.md`: Container, 34 items.
 - `feed/prices/forever-pvp/key.md`: Key, 2 items.
 - `feed/prices/forever-pvp/miscellaneous.md`: Miscellaneous, 113 items.
-- `feed/prices/forever-pvp/other-other.md`: Other: Other, 1465 items.
+- `feed/prices/forever-pvp/other-other.md`: Other: Other, 1467 items.
 - `feed/prices/forever-pvp/projectile.md`: Projectile, 13 items.
 - `feed/prices/forever-pvp/quest.md`: Quest, 33 items.
 - `feed/prices/forever-pvp/quiver.md`: Quiver, 10 items.

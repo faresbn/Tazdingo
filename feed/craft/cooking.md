@@ -33,11 +33,11 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Hot Lion Chops | 125 | 3727 | 1 | 2s 99c | 1s 27c | 1s 72c | ForeverDB |
 | Roasted Kodo Meat | 35 | 5474 | 2 | 2s 0c | 35c | 1s 65c | ForeverDB |
 | Crispy Lizard Tail | 100 | 5479 | 2 | 3s 58c | 2s 40c | 1s 18c | ForeverDB |
-| Smoked Sagefish | 80 | 21072 | 1 | 2s 50c | 1s 41c | 1s 9c | ForeverDB |
+| Smoked Sagefish | 80 | 21072 | 1 | 2s 50c | 1s 35c | 1s 15c | ForeverDB |
 | Dig Rat Stew | 90 | 5478 | 2 | 3s 94c | 2s 92c | 1s 2c | ForeverDB |
+| Sagefish Delight | 175 | 21217 | 1 | 4s 12c | 3s 40c | 72c | ForeverDB |
 | Crab Cake | 75 | 2683 | 1 | 9s 0c | 8s 33c | 67c | ForeverDB |
 | Cooked Crab Claw | 85 | 2682 | 1 | 98c | 35c | 63c | ForeverDB |
-| Sagefish Delight | 175 | 21217 | 1 | 4s 12c | 3s 50c | 62c | ForeverDB |
 | Gooey Spider Cake | 110 | 3666 | 1 | 2s 74c | 2s 14c | 60c | ForeverDB |
 | Blood Sausage | 60 | 3220 | 2 | 1s 8c | 58c | 50c | ForeverDB |
 | Goblin Deviled Clams | 125 | 5527 | 1 | 1s 79c | 1s 30c | 49c | ForeverDB |

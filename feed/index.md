@@ -6,7 +6,7 @@ Every path below is in the public repository: https://raw.githubusercontent.com/
 
 ## Where to go
 
-- `feed/prices/forever-pvp/index.md`: CAMWOW EU5 Realm 2 PvP (Horde) (Forever), 3442 items, latest scan 2026-11-07 12:51 UTC.
+- `feed/prices/forever-pvp/index.md`: CAMWOW EU5 Realm 2 PvP (Horde) (Forever), 3444 items, latest scan 2026-11-07 12:51 UTC.
 - `feed/prices/forever-beta-pvp/index.md`: Beta PvP realm (Forever Beta), 975 items, latest scan 2026-10-17 12:36 UTC, a Beta sample.
 - `feed/prices/forever-beta-classicbetapvp/index.md`: Beta Classic PvP realm (Forever Beta), 6 items, latest scan 2026-10-17 12:36 UTC, a Beta sample.
 - `feed/craft/index.md`: what to craft, by profession, with estimated margins.

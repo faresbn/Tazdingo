@@ -36,7 +36,7 @@
 | Raw Brilliant Smallfish | 6291 | 93c | 2026-11-07 12:51 UTC | 58c | 58c | volatile | 3 of 3 | 2291 |  |
 | Raw Bristle Whisker Catfish | 6308 | 45c | 2026-11-07 12:51 UTC | 28c | 28c | volatile | 3 of 3 | 2348 |  |
 | Raw Glossy Mightfish | 13754 | 14s 85c | 2026-11-07 06:29 UTC | 22s 42c |  | too new | 2 of 3 | 77 |  |
-| Raw Greater Sagefish | 21153 | 3s 10c | 2026-11-07 12:51 UTC | 3s 10c | 3s 10c | moving | 3 of 3 | 534 |  |
+| Raw Greater Sagefish | 21153 | 3s 10c | 2026-11-07 12:51 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 534 |  |
 | Raw Loch Frenzy | 6317 | 2s 0c | 2026-11-06 | 2s 0c |  | too new | 1 of 3 | 1 |  |
 | Raw Longjaw Mud Snapper | 6289 | 10c | 2026-11-07 12:51 UTC | 10c | 10c | moving | 3 of 3 | 5682 |  |
 | Raw Mithril Head Trout | 8365 | 1s 94c | 2026-11-07 12:51 UTC | 1s 94c | 1s 94c | volatile | 3 of 3 | 1404 |  |
@@ -44,7 +44,7 @@
 | Raw Rainbow Fin Albacore | 6361 | 83c | 2026-11-07 12:51 UTC | 49c | 49c | moving | 3 of 3 | 1465 |  |
 | Raw Redgill | 13758 | 5s 98c | 2026-11-07 12:51 UTC | 7s 49c |  | too new | 2 of 3 | 220 |  |
 | Raw Rockscale Cod | 6362 | 13c | 2026-11-07 12:51 UTC | 43c | 43c | volatile | 3 of 3 | 2041 |  |
-| Raw Sagefish | 21071 | 1s 69c | 2026-11-07 12:51 UTC | 1s 31c | 1s 31c | moving | 3 of 3 | 1868 |  |
+| Raw Sagefish | 21071 | 1s 69c | 2026-11-07 12:51 UTC | 1s 25c | 1s 25c | steady | 3 of 3 | 1868 |  |
 | Raw Slitherskin Mackerel | 6303 | 72c | 2026-11-07 12:51 UTC | 22c | 22c | volatile | 3 of 3 | 2781 |  |
 | Raw Spinefin Halibut | 8959 | 3s 0c | 2026-11-07 10:45 UTC | 3s 0c |  | too new | 1 of 3 | 6 |  |
 | Raw Spotted Yellowtail | 4603 | 40c | 2026-11-07 12:51 UTC | 44c | 44c | volatile | 3 of 3 | 1024 |  |

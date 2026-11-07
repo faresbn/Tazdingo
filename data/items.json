@@ -2,9 +2,9 @@
  "source": {
   "credit": "Data from ForeverDB.net (https://foreverdb.net)",
   "file": "Data/SearchNames.lua",
-  "data_version": "2026-11-07.15e0b725",
+  "data_version": "2026-11-07.354cb532",
   "client_build": "1.60.1.70862",
-  "sha256": "6d1d806e8e85c69d50bf6270bdffecc6c13ee9b8d956d2eeee8d401933f6c948",
+  "sha256": "099fa90ad14dc0bb30c04ce59d5499b7362b5e2ae091ecf8fc3a4ffd6c259452",
   "fetched_on": "2026-11-07"
  },
  "names": {
@@ -598,6 +598,7 @@
   "2883": "Plans: Deadly Bronze Poniard",
   "2886": "Crag Boar Rib",
   "2888": "Beer Basted Boar Ribs",
+  "2889": "Recipe: Beer Basted Boar Ribs",
   "2894": "Rhapsody Malt",
   "2901": "Mining Pick",
   "2911": "Keller's Girdle",
@@ -887,6 +888,7 @@
   "3671": "Lifeless Skull",
   "3674": "Decomposed Boot",
   "3676": "Slimy Ichor",
+  "3678": "Recipe: Crocolisk Steak",
   "3680": "Recipe: Murloc Fin Soup",
   "3682": "Recipe: Curiously Tasty Omelet",
   "3685": "Raptor Egg",

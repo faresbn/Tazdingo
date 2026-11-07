@@ -66,7 +66,7 @@
 | Rockscale Cod | 4594 | 1s 67c | 2026-11-07 12:51 UTC | 3s 28c |  | too new | 2 of 3 | 991 |  |
 | Root Tea | 249867 | 20s 0c | 2026-11-07 12:51 UTC | 20s 0c |  | too new | 1 of 3 | 5 |  |
 | Royal Tea | 249866 | 9s 0c | 2026-11-07 12:51 UTC | 5s 50c |  | too new | 2 of 3 | 34 |  |
-| Sagefish Delight | 21217 | 5s 55c | 2026-11-07 12:51 UTC | 5s 27c |  | too new | 2 of 3 | 304 |  |
+| Sagefish Delight | 21217 | 5s 55c | 2026-11-07 12:51 UTC | 5s 27c |  | too new | 2 of 3 | 546 |  |
 | Savory Deviate Delight | 6657 | 1s 50c | 2026-11-07 12:51 UTC | 1s 50c | 1s 50c | volatile | 3 of 3 | 3776 |  |
 | Scorpid Surprise | 5473 | 21c | 2026-11-07 12:51 UTC | 35c |  | too new | 2 of 3 | 577 |  |
 | Senggin Root | 3448 | 6c | 2026-11-07 12:51 UTC | 6c | 6c | steady | 3 of 3 | 2883 |  |
@@ -75,7 +75,7 @@
 | Skywall Souffle | 263509 | 1s 99c | 2026-11-07 12:51 UTC | 1s 82c | 1s 82c | moving | 3 of 3 | 129 |  |
 | Slitherskin Mackerel | 787 | 16c | 2026-11-07 12:51 UTC | 16c | 16c | moving | 3 of 3 | 3025 |  |
 | Smoked Bear Meat | 6890 | 32c | 2026-11-07 12:51 UTC | 35c | 35c | moving | 3 of 3 | 907 |  |
-| Smoked Sagefish | 21072 | 85c | 2026-11-07 12:51 UTC | 1s 12c | 1s 12c | volatile | 3 of 3 | 1719 |  |
+| Smoked Sagefish | 21072 | 86c | 2026-11-07 12:51 UTC | 1s 12c | 1s 12c | volatile | 3 of 3 | 1719 |  |
 | Snapvine Watermelon | 4538 | 36c | 2026-11-07 12:51 UTC | 48c | 48c | volatile | 3 of 3 | 294 |  |
 | Soothing Turtle Bisque | 3729 | 9s 0c | 2026-11-07 12:51 UTC | 9s 50c |  | too new | 2 of 3 | 42 |  |
 | Southshore Stout | 3703 | 6s 0c | 2026-11-07 12:51 UTC | 13s 0c |  | too new | 2 of 3 | 6 |  |

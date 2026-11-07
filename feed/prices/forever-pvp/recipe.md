@@ -86,12 +86,12 @@
 | Plans: Silvered Bronze Breastplate | 5578 | 4s 0c | 2026-11-07 12:51 UTC | 3s 0c | 3s 0c | steady | 3 of 3 | 53 |  |
 | Plans: Silvered Bronze Shoulders | 2882 | 5s 0c | 2026-11-07 12:51 UTC | 3s 0c | 3s 0c | volatile | 3 of 3 | 63 |  |
 | Plans: Steel Weapon Chain | 6046 | 115g 0s 0c | 2026-11-07 12:51 UTC | 3g 0s 0c |  | too new | 2 of 3 | 2 |  |
-| Recipe: Brilliant Smallfish | 6325 | 2s 0c | 2026-11-07 12:51 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 205 |  |
-| Recipe: Bristle Whisker Catfish | 6330 | 49s 0c | 2026-11-07 12:51 UTC | 14s 0c | 14s 0c | moving | 3 of 3 | 51 |  |
+| Recipe: Brilliant Smallfish | 6325 | 2s 0c | 2026-11-07 12:51 UTC | 1s 0c | 1s 0c | volatile | 3 of 3 | 205 |  |
+| Recipe: Bristle Whisker Catfish | 6330 | 49s 0c | 2026-11-07 12:51 UTC | 14s 0c | 14s 0c | moving | 3 of 3 | 64 |  |
 | Recipe: Cooked Crab Claw | 2698 | 10s 0c | 2026-11-05 18:58 UTC | 10s 0c |  | too new | 1 of 3 | 1 |  |
 | Recipe: Crispy Lizard Tail | 5488 | 8s 0c | 2026-11-07 10:45 UTC | 10s 0c | 10s 0c | moving | 3 of 3 | 30 |  |
-| Recipe: Curiously Tasty Omelet | 3682 | 59s 0c | 2026-11-07 12:51 UTC | 79s 0c |  | too new | 2 of 3 | 14 |  |
-| Recipe: Dig Rat Stew | 5487 | 17s 0c | 2026-11-07 12:51 UTC | 18s 0c |  | too new | 2 of 3 | 12 |  |
+| Recipe: Curiously Tasty Omelet | 3682 | 59s 0c | 2026-11-07 12:51 UTC | 79s 0c |  | too new | 2 of 3 | 22 |  |
+| Recipe: Dig Rat Stew | 5487 | 17s 0c | 2026-11-07 12:51 UTC | 17s 50c |  | too new | 2 of 3 | 22 |  |
 | Recipe: Elixir of Detect Lesser Invisibility | 3832 | 35s 0c | 2026-11-07 10:45 UTC | 37s 50c |  | too new | 2 of 3 | 11 |  |
 | Recipe: Elixir of Giant Growth | 6663 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 230 |  |
 | Recipe: Elixir of Lesser Agility | 3396 | 9s 0c | 2026-11-07 12:51 UTC | 9s 0c | 9s 0c | volatile | 3 of 3 | 40 |  |
@@ -103,21 +103,21 @@
 | Recipe: Goretusk Liver Pie | 2697 | 1g 0s 0c | 2026-11-07 04:40 UTC | 1g 0s 0c |  | too new | 1 of 3 | 1 |  |
 | Recipe: Great Rage Potion | 5643 | 33s 0c | 2026-11-07 12:51 UTC | 33s 0c | 33s 0c | moving | 3 of 3 | 6 |  |
 | Recipe: Limited Invulnerability Potion | 3395 | 44g 0s 0c | 2026-11-07 12:51 UTC | 44g 0s 0c |  | too new | 1 of 3 | 3 |  |
-| Recipe: Longjaw Mud Snapper | 6328 | 6s 0c | 2026-11-07 12:51 UTC | 6s 0c | 6s 0c | moving | 3 of 3 | 113 |  |
+| Recipe: Longjaw Mud Snapper | 6328 | 7s 0c | 2026-11-07 12:51 UTC | 6s 0c | 6s 0c | moving | 3 of 3 | 113 |  |
 | Recipe: Minor Frenzy Potion | 250982 | 9s 0c | 2026-11-07 10:45 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 73 |  |
 | Recipe: Minor Magic Resistance Potion | 3393 | 4s 0c | 2026-11-07 12:51 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 87 |  |
 | Recipe: Minor Mender's Potion | 250988 | 80s 0c | 2026-11-07 12:51 UTC | 7s 0c | 7s 0c | volatile | 3 of 3 | 37 |  |
 | Recipe: Murloc Fin Soup | 3680 | 99s 0c | 2026-11-07 12:51 UTC | 99s 0c |  | too new | 1 of 3 | 1 |  |
 | Recipe: Rage Potion | 5640 | 20s 0c | 2026-11-07 12:51 UTC | 5s 0c | 5s 0c | moving | 3 of 3 | 31 |  |
-| Recipe: Rainbow Fin Albacore | 6368 | 7s 0c | 2026-11-07 12:51 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 34 |  |
+| Recipe: Rainbow Fin Albacore | 6368 | 8s 0c | 2026-11-07 12:51 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 34 |  |
 | Recipe: Roasted Kodo Meat | 5484 | 17s 0c | 2026-11-07 12:51 UTC | 15s 0c | 15s 0c | volatile | 3 of 3 | 31 |  |
-| Recipe: Rockscale Cod | 6369 | 20s 0c | 2026-11-07 12:51 UTC | 50s 0c | 50s 0c | volatile | 3 of 3 | 23 |  |
+| Recipe: Rockscale Cod | 6369 | 37s 0c | 2026-11-07 12:51 UTC | 50s 0c | 50s 0c | volatile | 3 of 3 | 23 |  |
 | Recipe: Savory Deviate Delight | 6661 | 78s 0c | 2026-11-07 12:51 UTC | 13s 0c | 13s 0c | volatile | 3 of 3 | 75 |  |
-| Recipe: Scorpid Surprise | 5483 | 8s 0c | 2026-11-07 10:45 UTC | 8s 0c | 8s 0c | volatile | 3 of 3 | 35 |  |
+| Recipe: Scorpid Surprise | 5483 | 20s 0c | 2026-11-07 12:51 UTC | 8s 0c | 8s 0c | volatile | 3 of 3 | 35 |  |
 | Recipe: Slitherskin Mackerel | 6326 | 5s 0c | 2026-11-07 12:51 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 147 |  |
 | Recipe: Smoked Bear Meat | 6892 | 8s 0c | 2026-11-07 12:51 UTC | 10s 0c | 10s 0c | volatile | 3 of 3 | 106 |  |
-| Recipe: Soothing Turtle Bisque | 3737 | 11s 0c | 2026-11-07 12:51 UTC | 19s 50c |  | too new | 2 of 3 | 57 |  |
-| Recipe: Strider Stew | 5486 | 8s 0c | 2026-11-07 10:45 UTC | 9s 0c | 9s 0c | moving | 3 of 3 | 68 |  |
+| Recipe: Soothing Turtle Bisque | 3737 | 11s 0c | 2026-11-07 12:51 UTC | 17s 50c |  | too new | 2 of 3 | 66 |  |
+| Recipe: Strider Stew | 5486 | 13s 0c | 2026-11-07 12:51 UTC | 9s 0c | 9s 0c | moving | 3 of 3 | 68 |  |
 | Recipe: Swiftness Potion | 2555 | 5s 0c | 2026-11-07 12:51 UTC | 2s 0c | 2s 0c | volatile | 3 of 3 | 169 |  |
 | Recipe: Troll's Blood Elixir | 3831 | 1g 0s 0c | 2026-11-07 12:51 UTC | 1g 71s 0c |  | too new | 2 of 3 | 14 |  |
 | Recipe: Westfall Stew | 728 | 99s 0c | 2026-11-07 12:51 UTC | 99s 0c |  | too new | 1 of 3 | 4 |  |
