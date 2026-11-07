@@ -19,8 +19,8 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Azure Silk Cloak | 140 | 7053 | 1 | 1g 36s 50c | 42s 0c | 94s 50c | ForeverDB |
 | Silk Headband | 135 | 7050 | 1 | 1g 27s 0c | 41s 0c | 86s 0c | ForeverDB |
 | Invoker's Cord | 150 | 215366 | 1 | 1g 28s 0c | 45s 95c | 82s 5c | ForeverDB |
+| Colorful Kilt | 70 | 10048 | 1 | 86s 0c | 24s 80c | 61s 20c | ForeverDB |
 | Black Silk Pack | 150 | 5765 | 1 | 1g 40s 0c | 79s 0c | 61s 0c | ForeverDB |
-| Colorful Kilt | 70 | 10048 | 1 | 86s 0c | 25s 25c | 60s 75c | ForeverDB |
 | Truefaith Gloves | 125 | 7049 | 1 | 1g 22s 0c | 64s 0c | 58s 0c | ForeverDB |
 | Crimson Silk Pantaloons | 180 | 7062 | 1 | 1g 20s 0c | 63s 0c | 57s 0c | ForeverDB |
 | White Swashbuckler's Shirt | 135 | 6795 | 1 | 99s 50c | 44s 50c | 55s 0c | ForeverDB |
@@ -32,28 +32,28 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Spinning Wheel | 140 | 279943 | 1 | 1g 9s 69c | 68s 76c | 40s 93c | ForeverDB |
 | Green Silk Pack | 140 | 5764 | 1 | 1g 10s 0c | 74s 0c | 36s 0c | ForeverDB |
 | Crimson Silk Vest | 170 | 7058 | 1 | 89s 50c | 55s 0c | 34s 50c | ForeverDB |
-| Heavy Woolen Cloak | 80 | 4311 | 1 | 69s 0c | 35s 63c | 33s 37c | ForeverDB |
+| Heavy Woolen Cloak | 80 | 4311 | 1 | 69s 0c | 35s 36c | 33s 64c | ForeverDB |
 | Azure Stormsewn Cord | 50 | 277037 | 1 | 35s 0c | 1s 83c | 33s 17c | ForeverDB |
 | Azure Stormsewn Cuffs | 50 | 277035 | 1 | 35s 0c | 1s 83c | 33s 17c | ForeverDB |
 | Cloudy Stormsewn Cuffs | 50 | 277011 | 1 | 35s 0c | 1s 83c | 33s 17c | ForeverDB |
 | Cloudy Stormsewn Shoes | 55 | 277015 | 1 | 35s 0c | 2s 34c | 32s 66c | ForeverDB |
 | Azure Stormsewn Leggings | 60 | 277038 | 1 | 35s 0c | 2s 75c | 32s 25c | ForeverDB |
-| Phoenix Pants | 100 | 4317 | 1 | 2g 88s 0c | 2g 57s 30c | 30s 70c | ForeverDB |
-| Gray Woolen Robe | 80 | 2585 | 1 | 55s 0c | 24s 70c | 30s 30c | ForeverDB |
+| Phoenix Pants | 100 | 4317 | 1 | 2g 88s 0c | 2g 56s 76c | 31s 24c | ForeverDB |
+| Gray Woolen Robe | 80 | 2585 | 1 | 55s 0c | 24s 34c | 30s 66c | ForeverDB |
 | Spider Silk Slippers | 115 | 4321 | 1 | 1g 0s 0c | 73s 61c | 26s 39c | ForeverDB |
 | Azure Silk Belt | 160 | 7052 | 1 | 98s 0c | 72s 20c | 25s 80c | ForeverDB |
 | Green Silken Shoulders | 165 | 7057 | 1 | 1g 0s 0c | 75s 0c | 25s 0c | ForeverDB |
-| Reinforced Woolen Shoulders | 95 | 4315 | 1 | 55s 0c | 33s 30c | 21s 70c | ForeverDB |
-| Red Woolen Boots | 75 | 4313 | 1 | 42s 0c | 20s 62c | 21s 38c | ForeverDB |
-| Greater Adept's Robe | 90 | 6264 | 1 | 48s 50c | 27s 25c | 21s 25c | ForeverDB |
-| Stylish Blue Shirt | 95 | 6384 | 1 | 40s 0c | 23s 70c | 16s 30c | ForeverDB |
+| Reinforced Woolen Shoulders | 95 | 4315 | 1 | 55s 0c | 32s 76c | 22s 24c | ForeverDB |
+| Red Woolen Boots | 75 | 4313 | 1 | 42s 0c | 20s 26c | 21s 74c | ForeverDB |
+| Greater Adept's Robe | 90 | 6264 | 1 | 48s 50c | 26s 80c | 21s 70c | ForeverDB |
+| Stylish Blue Shirt | 95 | 6384 | 1 | 40s 0c | 23s 34c | 16s 66c | ForeverDB |
 | Orange Mageweave Shirt | 185 | 10056 | 1 | 75s 0c | 61s 69c | 13s 31c | ForeverDB |
 | Blue Linen Robe | 45 | 6242 | 1 | 13s 0c | 3s 24c | 9s 76c | ForeverDB |
-| Woolen Boots | 95 | 2583 | 1 | 29s 50c | 20s 62c | 8s 88c | ForeverDB |
-| Blue Overalls | 75 | 6263 | 1 | 30s 0c | 21s 20c | 8s 80c | our scan |
-| Heavy Woolen Gloves | 85 | 4310 | 1 | 22s 0c | 14s 65c | 7s 35c | ForeverDB |
+| Woolen Boots | 95 | 2583 | 1 | 29s 50c | 20s 26c | 9s 24c | ForeverDB |
+| Blue Overalls | 75 | 6263 | 1 | 30s 0c | 20s 84c | 9s 16c | our scan |
+| Heavy Woolen Gloves | 85 | 4310 | 1 | 22s 0c | 14s 38c | 7s 62c | ForeverDB |
 | Soft-soled Linen Boots | 80 | 4312 | 1 | 11s 0c | 3s 97c | 7s 3c | ForeverDB |
-| Green Woolen Vest | 85 | 2582 | 1 | 17s 0c | 12s 10c | 4s 90c | ForeverDB |
+| Green Woolen Vest | 85 | 2582 | 1 | 17s 0c | 11s 92c | 5s 8c | ForeverDB |
 | Azure Silk Hood | 130 | 7048 | 1 | 32s 25c | 28s 0c | 4s 25c | ForeverDB |
 | Red Linen Bag | 50 | 5762 | 1 | 6s 50c | 3s 54c | 2s 96c | ForeverDB |
 | Blue Linen Shirt | 40 | 2577 | 1 | 4s 0c | 1s 62c | 2s 38c | ForeverDB |
@@ -66,7 +66,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Bolt of Silk Cloth | 110 | 4305 | 1 | 13s 0c | 12s 0c | 1s 0c | our scan |
 | Brown Linen Pants | 30 | 4343 | 1 | 2s 0c | 1s 12c | 88c | our scan |
 | Red Linen Vest | 35 | 6239 | 1 | 3s 0c | 2s 13c | 87c | our scan |
-| Bolt of Woolen Cloth | 70 | 2997 | 1 | 4s 55c | 3s 90c | 65c | our scan |
+| Bolt of Woolen Cloth | 70 | 2997 | 1 | 4s 46c | 3s 90c | 56c | our scan |
 | Brown Linen Shirt | 1 | 4344 | 1 | 1s 0c | 61c | 39c | our scan |
 | Linen Cloak | 1 | 2570 | 1 | 1s 0c | 61c | 39c | our scan |
 | Simple Linen Pants | 1 | 10045 | 1 | 1s 0c | 61c | 39c | our scan |

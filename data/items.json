@@ -2,9 +2,9 @@
  "source": {
   "credit": "Data from ForeverDB.net (https://foreverdb.net)",
   "file": "Data/SearchNames.lua",
-  "data_version": "2026-11-07.71e93765",
-  "client_build": "1.60.1.70790",
-  "sha256": "08c3719d37f5b84b8a6f7fb1bbaedf926995f25cbd6256eac24a71684f988939",
+  "data_version": "2026-11-07.d3cab7fc",
+  "client_build": "1.60.1.70862",
+  "sha256": "6d1d806e8e85c69d50bf6270bdffecc6c13ee9b8d956d2eeee8d401933f6c948",
   "fetched_on": "2026-11-07"
  },
  "names": {
@@ -4982,6 +4982,8 @@
   "286992": "Construct's Grips",
   "286993": "Suffused Bindings",
   "286995": "Guardian's Emblem",
+  "287002": "Risen Sentry's Links",
+  "287004": "Touch of the Depths",
   "287063": "Serrated Knife",
   "287068": "Excavated Dagger"
  },
@@ -5259,8 +5261,6 @@
   250326,
   252683,
   263507,
-  280309,
-  287002,
-  287004
+  280309
  ]
 }

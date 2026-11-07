@@ -546,8 +546,6 @@
 | Ironpatch Blade | 12976 | 93s 0c | 2026-11-07 05:23 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 3 | 31 |  |
 | Ironweaver | 13137 | 4g 75s 0c | 2026-11-07 05:23 UTC | 8g 62s 50c |  | too new | 2 of 3 | 4 |  |
 | Item 1513 | 1513 | 3s 0c | 2026-11-07 04:40 UTC | 3s 0c | 3s 0c | steady | 3 of 3 | 43 |  |
-| Item 287002 | 287002 | 10g 0s 0c | 2026-11-07 04:40 UTC | 10g 0s 0c |  | too new | 1 of 3 | 1 |  |
-| Item 287004 | 287004 | 6g 50s 0c | 2026-11-07 04:40 UTC | 6g 50s 0c |  | too new | 1 of 3 | 1 |  |
 | Item 6297 | 6297 | 14c | 2026-11-07 04:40 UTC | 18c | 18c | volatile | 3 of 3 | 89 |  |
 | Item 6301 | 6301 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 7 |  |
 | Ivory Band | 11995 | 35s 0c | 2026-11-07 06:29 UTC | 58s 0c | 58s 0c | volatile | 3 of 3 | 19 |  |
@@ -924,6 +922,7 @@
 | Ring of Defense | 12985 | 29s 0c | 2026-11-07 06:29 UTC | 40s 0c | 40s 0c | volatile | 3 of 3 | 21 |  |
 | Ring of the Moon | 12052 | 38s 0c | 2026-11-07 06:29 UTC | 35s 0c | 35s 0c | volatile | 3 of 3 | 30 |  |
 | Ringed Buckler | 17188 | 7s 0c | 2026-11-06 14:50 UTC | 7s 0c |  | too new | 1 of 3 | 1 |  |
+| Risen Sentry's Links | 287002 | 10g 0s 0c | 2026-11-07 04:40 UTC | 10g 0s 0c |  | too new | 1 of 3 | 1 |  |
 | Ritual Amice | 14126 | 5s 0c | 2026-11-07 04:40 UTC | 5s 0c |  | too new | 2 of 3 | 26 |  |
 | Ritual Bands | 14122 | 3s 0c | 2026-11-07 04:40 UTC | 3s 0c | 3s 0c | volatile | 3 of 3 | 39 |  |
 | Ritual Belt | 14131 | 3s 0c | 2026-11-07 04:40 UTC | 3s 0c | 3s 0c | volatile | 3 of 3 | 50 |  |
@@ -1201,6 +1200,7 @@
 | Tigerstrike Mantle | 13108 | 15g 50s 0c | 2026-11-07 06:29 UTC | 13g 75s 0c |  | too new | 2 of 3 | 4 |  |
 | Tiny Crimson Whelpling | 8499 | 150g 0s 0c | 2026-11-06 | 150g 0s 0c |  | too new | 1 of 3 | 1 |  |
 | Torn Bear Pelt | 11407 | 1s 80c | 2026-11-07 06:29 UTC | 1s 8c | 1s 8c | volatile | 3 of 3 | 387 |  |
+| Touch of the Depths | 287004 | 6g 50s 0c | 2026-11-07 04:40 UTC | 6g 50s 0c |  | too new | 1 of 3 | 1 |  |
 | Trickster's Cloak | 15364 | 1g 21s 0c | 2026-11-07 04:40 UTC | 1g 6s 50c |  | too new | 2 of 3 | 2 |  |
 | Troll's Bane Leggings | 13114 | 4g 35s 0c | 2026-11-07 04:40 UTC | 5g 87s 0c |  | too new | 2 of 3 | 13 |  |
 | Tundra Necklace | 12039 | 4g 0s 0c | 2026-11-07 04:40 UTC | 3g 32s 0c |  | too new | 2 of 3 | 2 |  |

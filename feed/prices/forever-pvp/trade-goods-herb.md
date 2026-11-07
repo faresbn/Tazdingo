@@ -13,7 +13,7 @@
 | Earthroot | 2449 | 90c | 2026-11-07 06:29 UTC | 26c | 26c | volatile | 3 of 3 | 2860 |  |
 | Fadeleaf | 3818 | 24s 77c | 2026-11-07 06:29 UTC | 26s 88c |  | too new | 2 of 3 | 246 |  |
 | Firebloom | 4625 | 49s 99c | 2026-11-07 05:23 UTC | 49s 99c | 49s 99c | moving | 3 of 3 | 1 |  |
-| Frilled Lichen | 249399 | 15s 90c | 2026-11-07 06:29 UTC | 5s 0c | 5s 0c | volatile | 3 of 3 | 708 |  |
+| Frilled Lichen | 249399 | 15s 98c | 2026-11-07 06:29 UTC | 5s 0c | 5s 0c | volatile | 3 of 3 | 708 |  |
 | Goldthorn | 3821 | 38s 80c | 2026-11-07 05:23 UTC | 44s 40c |  | too new | 2 of 3 | 226 |  |
 | Grave Moss | 3369 | 10s 45c | 2026-11-07 06:29 UTC | 15s 22c |  | too new | 2 of 3 | 374 |  |
 | Khadgar's Whisker | 3358 | 13s 99c | 2026-11-07 06:29 UTC | 21s 49c |  | too new | 2 of 3 | 196 |  |

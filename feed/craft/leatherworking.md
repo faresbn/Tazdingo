@@ -57,7 +57,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Heavy Armor Kit | 145 | 4265 | 1 | 49s 10c | 31s 0c | 18s 10c | ForeverDB |
 | Fine Leather Gloves | 50 | 2312 | 1 | 20s 50c | 3s 15c | 17s 35c | ForeverDB |
 | Dark Leather Tunic | 75 | 2317 | 1 | 31s 0c | 16s 50c | 14s 50c | ForeverDB |
-| Fine Leather Pants | 80 | 5958 | 1 | 35s 0c | 21s 55c | 13s 45c | ForeverDB |
+| Fine Leather Pants | 80 | 5958 | 1 | 35s 0c | 21s 46c | 13s 54c | ForeverDB |
 | Tanning Rack | 140 | 279941 | 1 | 25s 32c | 13s 76c | 11s 56c | ForeverDB |
 | Cured Heavy Hide | 135 | 4236 | 1 | 26s 90c | 16s 61c | 10s 29c | ForeverDB |
 | Green Leather Bracers | 175 | 4259 | 1 | 99s 50c | 91s 80c | 7s 70c | ForeverDB |
