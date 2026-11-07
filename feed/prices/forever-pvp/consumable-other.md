@@ -10,10 +10,16 @@
 | Anti-Venom | 6452 | 31c | 2026-11-07 04:40 UTC | 34c | 34c | volatile | 3 of 3 | 352 |  |
 | Anvil | 279988 | 50s 0c | 2026-11-07 04:40 UTC | 50s 0c |  | too new | 2 of 3 | 2 |  |
 | Basic Campfire Kit | 279981 | 70c | 2026-11-07 05:23 UTC | 65c | 65c | moving | 3 of 3 | 419 |  |
+| Blue Ribboned Wrapping Paper | 5048 | 1s 0c | 2026-11-06 | 1s 0c |  | too new | 1 of 3 | 2 |  |
+| Bright Baubles | 6532 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c |  | too new | 2 of 3 | 21 |  |
+| Burning Charm | 4479 | 99s 0c | 2026-11-07 04:40 UTC | 1g 49s 50c |  | too new | 2 of 3 | 16 |  |
 | Camp Chair | 279979 | 2s 20c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 265 |  |
 | Camp Tent | 279978 | 2s 49c | 2026-11-07 05:23 UTC | 1s 0c | 1s 0c | volatile | 3 of 3 | 214 |  |
 | Coarse Sharpening Stone | 2863 | 1s 81c | 2026-11-07 04:40 UTC | 1s 87c | 1s 87c | moving | 3 of 3 | 707 |  |
 | Coarse Weightstone | 3240 | 1s 65c | 2026-11-07 04:40 UTC | 1s 65c | 1s 65c | volatile | 3 of 3 | 237 |  |
+| Cresting Charm | 4481 | 79s 0c | 2026-11-07 04:40 UTC | 79s 50c |  | too new | 2 of 3 | 12 |  |
+| Crippling Poison | 3775 | 1s 50c | 2026-11-07 04:40 UTC | 1s 75c |  | too new | 2 of 3 | 176 |  |
+| Crystal Basilisk Spine | 1703 | 85s 0c | 2026-11-07 04:40 UTC | 43s 50c |  | too new | 2 of 3 | 26 |  |
 | Enchanted Lute | 279976 | 1s 14c | 2026-11-07 04:40 UTC | 1s 14c | 1s 14c | volatile | 3 of 3 | 151 |  |
 | Faction Banner | 279972 | 65c | 2026-11-07 05:23 UTC | 65c | 65c | moving | 3 of 3 | 251 |  |
 | Fermenter | 279970 | 12s 0c | 2026-11-07 04:40 UTC | 12s 50c |  | too new | 2 of 3 | 23 |  |
@@ -26,23 +32,30 @@
 | Heavy Sharpening Stone | 2871 | 6s 69c | 2026-11-07 04:40 UTC | 8s 98c | 8s 98c | volatile | 3 of 3 | 217 |  |
 | Heavy Weightstone | 3241 | 9s 89c | 2026-11-07 05:23 UTC | 9s 93c |  | too new | 2 of 3 | 232 |  |
 | Incense Candle | 279962 | 4c | 2026-11-07 04:40 UTC | 4c | 4c | volatile | 3 of 3 | 453 |  |
+| Instant Poison | 6947 | 11c | 2026-11-07 04:40 UTC | 89c | 89c | volatile | 3 of 3 | 792 |  |
+| Instant Poison II | 6949 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c |  | too new | 1 of 3 | 1 |  |
 | Journeyman Campfire Kit | 279961 | 45s 98c | 2026-11-07 05:23 UTC | 47s 98c |  | too new | 2 of 3 | 23 |  |
 | Lodestone | 279960 | 2s 89c | 2026-11-07 05:23 UTC | 7c | 7c | moving | 3 of 3 | 412 |  |
+| Magic Dust | 2091 | 1g 55s 97c | 2026-11-07 05:23 UTC | 1g 55s 97c |  | too new | 2 of 3 | 8 |  |
 | Mana Well | 279956 | 12c | 2026-11-07 05:23 UTC | 14c | 14c | volatile | 3 of 3 | 279 |  |
 | Minor Mana Oil | 20745 | 13s 0c | 2026-11-07 04:40 UTC | 15s 0c |  | too new | 2 of 3 | 222 |  |
 | Minor Wizard Oil | 20744 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 544 |  |
 | Nightcrawlers | 6530 | 1s 35c | 2026-11-07 05:23 UTC | 1s 10c | 1s 10c | volatile | 3 of 3 | 156 |  |
+| Oil Covered Fish | 6458 | 10s 0c | 2026-11-07 04:40 UTC | 17s 0c |  | too new | 2 of 3 | 118 |  |
 | Reagent Bot | 279950 | 2s 80c | 2026-11-07 05:23 UTC | 3s 4c | 3s 4c | volatile | 3 of 3 | 198 |  |
+| Red Ribboned Wrapping Paper | 5042 | 99c | 2026-11-07 04:40 UTC | 99c |  | too new | 2 of 3 | 8 |  |
 | Rough Sharpening Stone | 2862 | 20c | 2026-11-07 05:23 UTC | 9c | 9c | steady | 3 of 3 | 883 |  |
 | Rough Weightstone | 3239 | 6c | 2026-11-07 04:40 UTC | 5c | 5c | steady | 3 of 3 | 761 |  |
 | Savory Whimsyfin Delight | 251525 | 50s 0c | 2026-11-07 04:40 UTC | 50s 0c |  | too new | 1 of 3 | 31 |  |
 | Shadow Oil | 3824 | 2g 0s 0c | 2026-11-07 04:40 UTC | 1g 70s 0c |  | too new | 2 of 3 | 10 |  |
 | Sharpening Wheel | 279944 | 99c | 2026-11-07 04:40 UTC | 99c | 99c | moving | 3 of 3 | 225 |  |
+| Shiny Bauble | 6529 | 79c | 2026-11-07 04:40 UTC | 55c | 55c | volatile | 3 of 3 | 116 |  |
 | Silver Skeleton Key | 15869 | 80c | 2026-11-07 04:40 UTC | 85c | 85c | volatile | 3 of 3 | 404 |  |
 | Solid Sharpening Stone | 7964 | 28s 0c | 2026-11-07 04:40 UTC | 28s 0c |  | too new | 1 of 3 | 15 |  |
 | Solid Weightstone | 7965 | 14s 0c | 2026-11-07 04:40 UTC | 14s 0c |  | too new | 1 of 3 | 8 |  |
 | Strong Anti-Venom | 6453 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c |  | too new | 1 of 3 | 97 |  |
 | Tanning Rack | 279941 | 37s 19c | 2026-11-07 05:23 UTC | 37s 84c |  | too new | 2 of 3 | 206 |  |
+| Thundering Charm | 4480 | 1g 80s 0c | 2026-11-07 05:23 UTC | 2g 40s 0c |  | too new | 2 of 3 | 30 |  |
 | Waylaid Crate: Apprentice Curiosities | 248685 | 5s 49c | 2026-11-07 05:23 UTC | 4s 86c | 4s 86c | moving | 3 of 3 | 241 |  |
 | Waylaid Crate: Apprentice Fabrics | 248702 | 15s 99c | 2026-11-07 05:23 UTC | 17s 0c | 17s 0c | steady | 3 of 3 | 66 |  |
 | Waylaid Crate: Apprentice Herbs | 248682 | 16s 0c | 2026-11-07 05:23 UTC | 6s 94c | 6s 94c | volatile | 3 of 3 | 121 |  |

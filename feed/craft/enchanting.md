@@ -8,7 +8,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Arcane Salvager | 140 | 279985 | 1 | 3g 77s 99c | 3g 48s 24c | 29s 75c | ForeverDB |
 | Lesser Wizard Oil | 200 | 20746 | 1 | 52s 0c | 44s 0c | 8s 0c | ForeverDB |
 | Greater Mystic Wand | 175 | 217287 | 1 | 1g 7s 50c | 1g 1s 24c | 6s 26c | ForeverDB |
-| Minor Mana Oil | 150 | 20745 | 1 | 16s 0c | 12s 71c | 3s 29c | ForeverDB |
+| Minor Mana Oil | 150 | 20745 | 1 | 16s 0c | 14s 98c | 1s 2c | ForeverDB |
 | Novice's Practice Wand | 1 | 247789 | 1 | 1s 0c | 48c | 52c | our scan |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

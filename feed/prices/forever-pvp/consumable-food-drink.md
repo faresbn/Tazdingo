@@ -20,23 +20,37 @@
 | Crispy Bat Wing | 12224 | 1s 40c | 2026-11-07 04:40 UTC | 60c | 60c | volatile | 3 of 3 | 650 |  |
 | Crispy Lizard Tail | 5479 | 2s 0c | 2026-11-07 04:40 UTC | 2s 19c |  | too new | 2 of 3 | 504 |  |
 | Curiously Tasty Omelet | 3665 | 5s 0c | 2026-11-07 04:40 UTC | 5s 0c |  | too new | 1 of 3 | 48 |  |
+| Dalaran Sharp | 414 | 8c | 2026-11-07 04:40 UTC | 11c | 11c | volatile | 3 of 3 | 154 |  |
+| Darnassian Bleu | 2070 | 1c | 2026-11-07 04:40 UTC | 1c | 1c | volatile | 3 of 3 | 293 |  |
+| Delicious Cave Mold | 4607 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c |  | too new | 2 of 3 | 2 |  |
 | Deviate Fish | 6522 | 1s 96c | 2026-11-07 05:23 UTC | 1s 30c | 1s 30c | volatile | 3 of 3 | 1815 |  |
 | Dig Rat Stew | 5478 | 3s 0c | 2026-11-07 04:40 UTC | 3s 0c |  | too new | 2 of 3 | 38 |  |
 | Dry Pork Ribs | 2687 | 10s 59c | 2026-11-07 04:40 UTC | 5s 79c |  | too new | 2 of 3 | 53 |  |
+| Dwarven Mild | 422 | 38c | 2026-11-07 05:23 UTC | 37c |  | too new | 2 of 3 | 96 |  |
+| Fissure Plant | 5066 | 39c | 2026-11-07 05:23 UTC | 44c | 44c | volatile | 3 of 3 | 228 |  |
+| Forest Mushroom Cap | 4604 | 1c | 2026-11-07 04:40 UTC | 2c | 2c | moving | 3 of 3 | 502 |  |
+| Freshly Baked Bread | 4541 | 80c | 2026-11-07 04:40 UTC | 98c | 98c | moving | 3 of 3 | 102 |  |
 | Goblin Deviled Clams | 5527 | 1s 97c | 2026-11-07 04:40 UTC | 2s 95c | 2s 95c | moving | 3 of 3 | 511 |  |
+| Goldenbark Apple | 4539 | 3s 0c | 2026-11-07 04:40 UTC | 6s 0c |  | too new | 2 of 3 | 6 |  |
+| Green Tea Leaf | 1401 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c |  | too new | 2 of 3 | 4 |  |
+| Haunch of Meat | 2287 | 9c | 2026-11-07 04:40 UTC | 9c | 9c | volatile | 3 of 3 | 258 |  |
 | Heavy Crocolisk Stew | 20074 | 34s 0c | 2026-11-07 04:40 UTC | 34s 50c |  | too new | 2 of 3 | 62 |  |
 | Herb Baked Egg | 6888 | 2s 54c | 2026-11-07 04:40 UTC | 1s 49c | 1s 49c | volatile | 3 of 3 | 279 |  |
 | Hot Lion Chops | 3727 | 2s 0c | 2026-11-07 04:40 UTC | 2s 49c |  | too new | 2 of 3 | 1056 |  |
 | Ice Cold Milk | 1179 | 39c | 2026-11-07 05:23 UTC | 29c | 29c | moving | 3 of 3 | 846 |  |
 | Jungle Stew | 12212 | 90s 0c | 2026-11-07 04:40 UTC | 90s 0c |  | too new | 1 of 3 | 5 |  |
 | Lean Venison | 5480 | 4s 20c | 2026-11-07 04:40 UTC | 4s 22c |  | too new | 2 of 3 | 102 |  |
+| Leg Meat | 7097 | 7c | 2026-11-07 05:23 UTC | 8c | 8c | steady | 3 of 3 | 41 |  |
 | Longjaw Mud Snapper | 4592 | 20c | 2026-11-07 05:23 UTC | 12c | 12c | moving | 3 of 3 | 4477 |  |
 | Melon Juice | 1205 | 99c | 2026-11-07 05:23 UTC | 1s 50c | 1s 50c | moving | 3 of 3 | 186 |  |
 | Mithril Head Trout | 8364 | 4s 20c | 2026-11-07 04:40 UTC | 4s 5c |  | too new | 2 of 3 | 1343 |  |
+| Moist Cornbread | 4542 | 90c | 2026-11-07 05:23 UTC | 94c |  | too new | 2 of 3 | 44 |  |
 | Mrrggl Smrrthle | 249873 | 10s 0c | 2026-11-07 04:40 UTC | 10s 0c |  | too new | 1 of 3 | 10 |  |
+| Mutton Chop | 3770 | 50c | 2026-11-07 04:40 UTC | 75c | 75c | moving | 3 of 3 | 392 |  |
 | Peace Tea | 249865 | 5s 0c | 2026-11-07 04:40 UTC | 1s 65c | 1s 65c | volatile | 3 of 3 | 44 |  |
 | Pincer Bites | 263512 | 1s 37c | 2026-11-07 05:23 UTC | 1s 37c | 1s 37c | steady | 3 of 3 | 315 |  |
 | Rainbow Fin Albacore | 5095 | 20c | 2026-11-07 04:40 UTC | 25c | 25c | volatile | 3 of 3 | 1184 |  |
+| Raptor Punch | 5342 | 88c | 2026-11-07 05:23 UTC | 88c | 88c | steady | 3 of 3 | 817 |  |
 | Raw Winter Squid | 13755 | 30s 99c | 2026-11-07 04:40 UTC | 35s 49c |  | too new | 2 of 3 | 36 |  |
 | Red-speckled Mushroom | 4605 | 10c | 2026-11-07 04:40 UTC | 18c | 18c | volatile | 3 of 3 | 712 |  |
 | Refreshing Spring Water | 159 | 19c | 2026-11-07 05:23 UTC | 8c | 8c | volatile | 3 of 3 | 797 |  |
@@ -48,22 +62,29 @@
 | Sagefish Delight | 21217 | 6s 99c | 2026-11-07 04:40 UTC | 5s 99c |  | too new | 2 of 3 | 270 |  |
 | Savory Deviate Delight | 6657 | 1s 91c | 2026-11-07 05:23 UTC | 1s 91c | 1s 91c | volatile | 3 of 3 | 1864 |  |
 | Scorpid Surprise | 5473 | 26c | 2026-11-07 05:23 UTC | 37c |  | too new | 2 of 3 | 577 |  |
+| Senggin Root | 3448 | 6c | 2026-11-07 04:40 UTC | 6c | 6c | steady | 3 of 3 | 2883 |  |
 | Shiny Red Apple | 4536 | 23c | 2026-11-07 04:40 UTC | 24c | 24c | steady | 3 of 3 | 546 |  |
+| Sickly Looking Fish | 6299 | 1c | 2026-11-07 04:40 UTC | 2c | 2c | moving | 3 of 3 | 963 |  |
 | Skywall Souffle | 263509 | 1s 82c | 2026-11-07 04:40 UTC | 1s 82c | 1s 82c | moving | 3 of 3 | 129 |  |
 | Slitherskin Mackerel | 787 | 18c | 2026-11-07 05:23 UTC | 16c | 16c | moving | 3 of 3 | 3025 |  |
 | Smoked Bear Meat | 6890 | 42c | 2026-11-07 05:23 UTC | 42c | 42c | steady | 3 of 3 | 435 |  |
 | Smoked Sagefish | 21072 | 69c | 2026-11-07 05:23 UTC | 1s 12c | 1s 12c | volatile | 3 of 3 | 1719 |  |
+| Snapvine Watermelon | 4538 | 40c | 2026-11-07 05:23 UTC | 48c | 48c | volatile | 3 of 3 | 187 |  |
 | Soothing Turtle Bisque | 3729 | 9s 0c | 2026-11-07 04:40 UTC | 9s 50c |  | too new | 2 of 3 | 28 |  |
+| Southshore Stout | 3703 | 6s 0c | 2026-11-07 04:40 UTC | 13s 0c |  | too new | 2 of 3 | 2 |  |
 | Spiced Wolf Meat | 2680 | 75c | 2026-11-07 05:23 UTC | 44c | 44c | volatile | 3 of 3 | 1306 |  |
 | Spider Sausage | 17222 | 21s 50c | 2026-11-07 04:40 UTC | 21s 50c |  | too new | 1 of 3 | 12 |  |
+| Spongy Morel | 4606 | 74c | 2026-11-07 04:40 UTC | 74c |  | too new | 2 of 3 | 22 |  |
 | Spotted Yellowtail | 6887 | 67s 0c | 2026-11-07 04:40 UTC | 67s 0c |  | too new | 2 of 3 | 30 |  |
 | Strider Stew | 5477 | 26c | 2026-11-07 04:40 UTC | 30c | 30c | volatile | 3 of 3 | 1763 |  |
 | Sweet Nectar | 1708 | 3s 0c | 2026-11-07 04:40 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 32 |  |
 | Tasty Raptor Bites | 250079 | 5s 0c | 2026-11-07 05:23 UTC | 7s 50c |  | too new | 2 of 3 | 290 |  |
+| Tel'Abim Banana | 4537 | 9c | 2026-11-07 04:40 UTC | 21c | 21c | volatile | 3 of 3 | 157 |  |
 | Thistle Tea | 7676 | 3s 94c | 2026-11-07 05:23 UTC | 3s 94c | 3s 94c | moving | 3 of 3 | 254 |  |
 | Tough Hunk of Bread | 4540 | 1c | 2026-11-07 04:40 UTC | 2c | 2c | volatile | 3 of 3 | 306 |  |
 | Tough Jerky | 117 | 6c | 2026-11-07 05:23 UTC | 2c | 2c | volatile | 3 of 3 | 697 |  |
 | Twice-Spiced Raptor Slice | 250077 | 3s 12c | 2026-11-07 04:40 UTC | 3s 6c |  | too new | 2 of 3 | 512 |  |
 | Venomous Smoothie | 249871 | 6s 0c | 2026-11-07 04:40 UTC | 6s 0c |  | too new | 2 of 3 | 15 |  |
+| Wild Hog Shank | 3771 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c |  | too new | 1 of 3 | 6 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

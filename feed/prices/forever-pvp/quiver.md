@@ -12,5 +12,7 @@
 | Light Quiver | 2101 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 15 |  |
 | Small Ammo Pouch | 2102 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c | 1s 0c | volatile | 3 of 3 | 3 |  |
 | Small Leather Ammo Pouch | 7279 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 876 |  |
+| Small Quiver | 5439 | 8s 0c | 2026-11-07 04:40 UTC | 5s 0c | 5s 0c | volatile | 3 of 3 | 29 |  |
+| Small Shot Pouch | 5441 | 6s 0c | 2026-11-07 04:40 UTC | 6s 0c | 6s 0c | steady | 3 of 3 | 40 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

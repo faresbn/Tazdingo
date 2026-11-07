@@ -6,15 +6,46 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
+| Antipodean Rod | 2879 | 39s 0c | 2026-11-07 05:23 UTC | 39s 0c | 39s 0c | volatile | 3 of 3 | 7 |  |
+| Apprentice's Shirt | 6096 | 21s 0c | 2026-11-07 04:40 UTC | 21s 50c |  | too new | 2 of 3 | 8 |  |
+| Azora's Will | 4999 | 40s 0c | 2026-11-07 05:23 UTC | 42s 50c |  | too new | 2 of 3 | 24 |  |
+| Band of Thorns | 5007 | 45s 0c | 2026-11-07 04:40 UTC | 52s 0c |  | too new | 2 of 3 | 9 |  |
+| Black Widow Band | 6199 | 2g 0s 0c | 2026-11-06 14:50 UTC | 1g 30s 0c |  | too new | 1 of 3 | 4 |  |
+| Blood Ring | 4998 | 65s 0c | 2026-11-07 05:23 UTC | 20s 0c |  | too new | 2 of 3 | 28 |  |
 | Blue Linen Shirt | 2577 | 3s 0c | 2026-11-07 04:40 UTC | 3s 0c | 3s 0c | volatile | 3 of 3 | 46 |  |
+| Brawler's Harness | 6125 | 5s 0c | 2026-11-07 04:40 UTC | 4s 50c |  | too new | 2 of 3 | 5 |  |
 | Brown Linen Shirt | 4344 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 90 |  |
+| Common Gray Shirt | 3428 | 8s 0c | 2026-11-07 04:40 UTC | 12s 0c | 12s 0c | moving | 3 of 3 | 7 |  |
+| Crystal Starfire Medallion | 5003 | 2g 55s 0c | 2026-11-07 04:40 UTC | 2g 77s 50c |  | too new | 2 of 3 | 7 |  |
+| Deckhand's Shirt | 5107 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 52 |  |
+| Fireproof Orb | 4836 | 1g 10s 0c | 2026-11-07 04:40 UTC | 1g 17s 50c |  | too new | 2 of 3 | 6 |  |
 | Formal White Shirt | 4334 | 20s 0c | 2026-11-07 05:23 UTC | 20s 0c |  | too new | 1 of 3 | 3 |  |
+| Glowing Green Talisman | 5002 | 1g 12s 0c | 2026-11-07 04:40 UTC | 1g 12s 0c |  | too new | 2 of 3 | 3 |  |
 | Gray Woolen Shirt | 2587 | 3s 0c | 2026-11-07 04:40 UTC | 3s 50c |  | too new | 2 of 3 | 82 |  |
 | Green Linen Shirt | 2579 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 61 |  |
+| Heart Ring | 5001 | 25s 0c | 2026-11-07 04:40 UTC | 41s 0c | 41s 0c | volatile | 3 of 3 | 53 |  |
+| Mindbender Loop | 5009 | 1g 67s 0c | 2026-11-07 04:40 UTC | 1g 83s 50c |  | too new | 2 of 3 | 4 |  |
+| Necklace of Harmony | 5180 | 4g 99s 0c | 2026-11-07 04:40 UTC | 4g 99s 0c |  | too new | 2 of 3 | 3 |  |
+| Neophyte's Shirt | 53 | 15s 0c | 2026-11-07 04:40 UTC | 15s 0c | 15s 0c | volatile | 3 of 3 | 8 |  |
+| Orb of Power | 4838 | 1g 0s 0c | 2026-11-07 04:40 UTC | 1g 40s 0c |  | too new | 2 of 3 | 20 |  |
+| Plains Ring | 2039 | 2g 99s 0c | 2026-11-07 04:40 UTC | 2g 99s 0c |  | too new | 2 of 3 | 6 |  |
+| Primitive Mantle | 154 | 20s 0c | 2026-11-07 04:40 UTC | 20s 0c |  | too new | 2 of 3 | 4 |  |
+| Primitive Mantle | 6134 | 40s 0c | 2026-11-07 05:23 UTC | 40s 0c |  | too new | 1 of 3 | 5 |  |
 | Red Linen Shirt | 2575 | 4s 0c | 2026-11-07 04:40 UTC | 4s 0c | 4s 0c | moving | 3 of 3 | 27 |  |
+| Red Rose | 3419 | 9s 0c | 2026-11-07 04:40 UTC | 9s 0c | 9s 0c | moving | 3 of 3 | 3 |  |
+| Ring of Precision | 1491 | 2g 0s 0c | 2026-11-07 04:40 UTC | 5g 12s 50c |  | too new | 2 of 3 | 4 |  |
+| Ring of the Underwood | 2951 | 3g 0s 0c | 2026-11-07 04:40 UTC | 6g 50s 0c |  | too new | 2 of 3 | 3 |  |
+| Rod of Molten Fire | 2565 | 1g 0s 0c | 2026-11-07 04:40 UTC | 4g 73s 50c |  | too new | 2 of 3 | 2 |  |
 | Simple Dress | 6786 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 3 |  |
+| Simple Wildflowers | 3421 | 25s 0c | 2026-11-07 04:40 UTC | 17s 50c |  | too new | 2 of 3 | 6 |  |
+| Strength of Will | 4837 | 1g 19s 0c | 2026-11-07 04:40 UTC | 1g 19s 50c |  | too new | 2 of 3 | 5 |  |
 | Stylish Blue Shirt | 6384 | 49s 0c | 2026-11-06 | 49s 0c |  | too new | 1 of 3 | 5 |  |
 | Stylish Red Shirt | 4330 | 11s 0c | 2026-11-07 04:40 UTC | 12s 50c |  | too new | 2 of 3 | 66 |  |
+| Thug Shirt | 2105 | 20s 0c | 2026-11-07 05:23 UTC | 20s 0c | 20s 0c | volatile | 3 of 3 | 2 |  |
+| Thug Shirt | 6136 | 15s 0c | 2026-11-06 14:50 UTC | 15s 0c |  | too new | 1 of 3 | 1 |  |
+| Trapper's Shirt | 127 | 8s 0c | 2026-11-07 04:40 UTC | 15s 0c | 15s 0c | volatile | 3 of 3 | 12 |  |
+| Voodoo Band | 1996 | 1g 80s 0c | 2026-11-07 04:40 UTC | 1g 80s 0c |  | too new | 2 of 3 | 2 |  |
+| Welken Ring | 5011 | 1g 80s 0c | 2026-11-07 04:40 UTC | 1g 80s 0c |  | too new | 1 of 3 | 1 |  |
 | White Linen Shirt | 2576 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | volatile | 3 of 3 | 66 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

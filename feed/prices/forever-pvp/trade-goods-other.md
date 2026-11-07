@@ -21,7 +21,9 @@
 | Empty Vial | 3371 | 6c | 2026-11-07 05:23 UTC | 6c | 6c | moving | 3 of 3 | 1325 |  |
 | Fire Oil | 6371 | 3s 99c | 2026-11-07 05:23 UTC | 3s 99c |  | too new | 2 of 3 | 915 |  |
 | Firefin Snapper | 6359 | 2s 98c | 2026-11-07 05:23 UTC | 2s 70c | 2s 70c | moving | 3 of 3 | 570 |  |
+| Fist-sized Spinneret | 878 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c |  | too new | 1 of 3 | 7 |  |
 | Flask of Mojo | 8151 | 30s 0c | 2026-11-07 04:40 UTC | 30s 0c |  | too new | 2 of 3 | 3 |  |
+| Flint and Tinder | 4471 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c | 1s 0c | volatile | 3 of 3 | 147 |  |
 | Golden Pearl | 13926 | 5g 99s 99c | 2026-11-07 04:40 UTC | 5g 99s 99c |  | too new | 2 of 3 | 1 |  |
 | Gray Dye | 4340 | 4s 15c | 2026-11-07 05:23 UTC | 4s 20c | 4s 20c | volatile | 3 of 3 | 136 |  |
 | Green Dye | 2605 | 1s 0c | 2026-11-07 04:40 UTC | 2s 5c | 2s 5c | volatile | 3 of 3 | 251 |  |

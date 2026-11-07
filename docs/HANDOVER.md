@@ -4,12 +4,14 @@ Where Tazdingo stands, kept current at every checkpoint so another thread, model
 
 **Last updated:** 5 November 2026, launch day (session `docs/sessions/2026-11-05-launch-data/`). The inbox went live on 31 October (`docs/sessions/2026-10-31-inbox-live/`); the ChatGPT projects now enter through `docs/chatgpt/START_HERE.md`. `main` is the whole state.
 
-## In flight (5 November)
+## In flight (7 November)
 
 **Live data has started.** The first Live Auctionator scan is published: 78 items on CAMWOW EU5 Realm 2 PvP (Horde), market slug `forever-pvp`, scanned 01:09 UTC, two hours after launch. ForeverDB data is refreshed at the release build 1.60.1.70790 (level cap 60): recipes, trainers, abilities, 2,778 items with categories and vendor prices. Notes, including what ForeverDB.lua and OneForAll.lua hold: `docs/sessions/2026-11-05-launch-data/notes.md`.
 
 - **Auctionator keys this realm `PvP`, like the Beta market,** so `market_names` in `data/game.json` is keyed by market slug now. `ingest.py` remembers `PvP` as the default Live market; later scans need no `--market`.
 - **Keep scanning** three or four times a day and run `python3 scripts/ingest.py --push` after each. The market is tiny on day one; deals, usual prices and patterns need about two weeks of daily lows.
+- **Updates run themselves (7 November).** A watcher on Fares's Mac (`tazdingo-update.sh`, kept in the WoW SavedVariables folder, not in this repository) runs Claude Code headless: on every save of Auctionator.lua it runs `ingest.py --push` and confirms the publish run and the homepage; at 06:00, 14:00 and 22:00 it refreshes ForeverDB (site data, item names, API with the key from the Keychain) and publishes after every check. Log: `~/Library/Logs/Tazdingo/update.log`. It needs this checkout clean and on `main`: do code work in a worktree, or its runs will refuse (safely) and notify.
+- **ForeverDB's Recipes.lua gained fields on 7 November** (Classic-trainer flag; fewest/most for random counts). `parse_recipes` now ignores any fields after `new`; `tests/test_foreverdb_data.py` covers all three layouts.
 - **Next:** the design discussion Fares asked for after this update.
 - **Fares's call:** commit `adbb82f` (the first scan) has the local file path, including the WoW account folder number, in its message. Changing it means rewriting pushed history.
 

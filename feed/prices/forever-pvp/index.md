@@ -9,26 +9,28 @@ Open only the file for the item's category. Each lists every item recorded in it
 Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/main/<path>
 
 - `feed/prices/forever-pvp/alerts.md`: deals under the usual price, below vendor price, investment watch, short supply and movers.
-- `feed/prices/forever-pvp/armor-cloth.md`: Armor: Cloth, 63 items.
-- `feed/prices/forever-pvp/armor-leather.md`: Armor: Leather, 60 items.
-- `feed/prices/forever-pvp/armor-mail.md`: Armor: Mail, 39 items.
-- `feed/prices/forever-pvp/armor-miscellaneous.md`: Armor: Miscellaneous, 10 items.
+- `feed/prices/forever-pvp/armor-cloth.md`: Armor: Cloth, 310 items.
+- `feed/prices/forever-pvp/armor-leather.md`: Armor: Leather, 227 items.
+- `feed/prices/forever-pvp/armor-mail.md`: Armor: Mail, 181 items.
+- `feed/prices/forever-pvp/armor-miscellaneous.md`: Armor: Miscellaneous, 41 items.
+- `feed/prices/forever-pvp/armor-shield.md`: Armor: Shield, 38 items.
 - `feed/prices/forever-pvp/consumable-bandages.md`: Consumable: Bandages, 6 items.
 - `feed/prices/forever-pvp/consumable-device.md`: Consumable: Device, 6 items.
 - `feed/prices/forever-pvp/consumable-elixirs.md`: Consumable: Elixirs, 28 items.
 - `feed/prices/forever-pvp/consumable-explosives.md`: Consumable: Explosives, 14 items.
-- `feed/prices/forever-pvp/consumable-food-drink.md`: Consumable: Food & Drink, 59 items.
-- `feed/prices/forever-pvp/consumable-other.md`: Consumable: Other, 59 items.
+- `feed/prices/forever-pvp/consumable-food-drink.md`: Consumable: Food & Drink, 80 items.
+- `feed/prices/forever-pvp/consumable-other.md`: Consumable: Other, 72 items.
 - `feed/prices/forever-pvp/consumable-permanent.md`: Consumable: Permanent, 10 items.
-- `feed/prices/forever-pvp/consumable-potions.md`: Consumable: Potions, 30 items.
-- `feed/prices/forever-pvp/consumable-scrolls.md`: Consumable: Scrolls, 7 items.
-- `feed/prices/forever-pvp/container.md`: Container, 14 items.
-- `feed/prices/forever-pvp/miscellaneous.md`: Miscellaneous, 7 items.
-- `feed/prices/forever-pvp/other-other.md`: Other: Other, 2460 items.
-- `feed/prices/forever-pvp/projectile.md`: Projectile, 6 items.
-- `feed/prices/forever-pvp/quest.md`: Quest, 1 items.
-- `feed/prices/forever-pvp/quiver.md`: Quiver, 6 items.
-- `feed/prices/forever-pvp/recipe.md`: Recipe, 10 items.
+- `feed/prices/forever-pvp/consumable-potions.md`: Consumable: Potions, 31 items.
+- `feed/prices/forever-pvp/consumable-scrolls.md`: Consumable: Scrolls, 18 items.
+- `feed/prices/forever-pvp/container.md`: Container, 33 items.
+- `feed/prices/forever-pvp/key.md`: Key, 2 items.
+- `feed/prices/forever-pvp/miscellaneous.md`: Miscellaneous, 112 items.
+- `feed/prices/forever-pvp/other-other.md`: Other: Other, 1275 items.
+- `feed/prices/forever-pvp/projectile.md`: Projectile, 12 items.
+- `feed/prices/forever-pvp/quest.md`: Quest, 29 items.
+- `feed/prices/forever-pvp/quiver.md`: Quiver, 8 items.
+- `feed/prices/forever-pvp/recipe.md`: Recipe, 124 items.
 - `feed/prices/forever-pvp/trade-goods-cloth.md`: Trade Goods: Cloth, 18 items.
 - `feed/prices/forever-pvp/trade-goods-cooking.md`: Trade Goods: Cooking, 60 items.
 - `feed/prices/forever-pvp/trade-goods-elemental.md`: Trade Goods: Elemental, 4 items.
@@ -36,9 +38,20 @@ Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/
 - `feed/prices/forever-pvp/trade-goods-herb.md`: Trade Goods: Herb, 23 items.
 - `feed/prices/forever-pvp/trade-goods-leather.md`: Trade Goods: Leather, 28 items.
 - `feed/prices/forever-pvp/trade-goods-metal-stone.md`: Trade Goods: Metal & Stone, 25 items.
-- `feed/prices/forever-pvp/trade-goods-other.md`: Trade Goods: Other, 55 items.
+- `feed/prices/forever-pvp/trade-goods-other.md`: Trade Goods: Other, 57 items.
 - `feed/prices/forever-pvp/trade-goods-parts.md`: Trade Goods: Parts, 22 items.
-- `feed/prices/forever-pvp/weapon.md`: Weapon, 41 items.
+- `feed/prices/forever-pvp/weapon-axe.md`: Weapon: Axe, 47 items.
+- `feed/prices/forever-pvp/weapon-bow.md`: Weapon: Bow, 15 items.
+- `feed/prices/forever-pvp/weapon-dagger.md`: Weapon: Dagger, 34 items.
+- `feed/prices/forever-pvp/weapon-fishing-pole.md`: Weapon: Fishing Pole, 2 items.
+- `feed/prices/forever-pvp/weapon-gun.md`: Weapon: Gun, 20 items.
+- `feed/prices/forever-pvp/weapon-mace.md`: Weapon: Mace, 50 items.
+- `feed/prices/forever-pvp/weapon-miscellaneous.md`: Weapon: Miscellaneous, 4 items.
+- `feed/prices/forever-pvp/weapon-polearm.md`: Weapon: Polearm, 3 items.
+- `feed/prices/forever-pvp/weapon-staff.md`: Weapon: Staff, 28 items.
+- `feed/prices/forever-pvp/weapon-sword.md`: Weapon: Sword, 55 items.
+- `feed/prices/forever-pvp/weapon-thrown.md`: Weapon: Thrown, 5 items.
+- `feed/prices/forever-pvp/weapon-wand.md`: Weapon: Wand, 14 items.
 
 For people, the same market on the website: https://faresbn.github.io/Tazdingo/prices/forever-pvp/
 

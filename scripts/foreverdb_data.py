@@ -40,11 +40,12 @@ def lua_text(quoted: str) -> str:
 
 
 def parse_recipes(raw: str) -> dict:
-    """ns.recipes = {Alchemy={{spell,"name",skill,yellow,green,grey,item,count,"reagents","learned",camp,new},...},...}"""
+    """ns.recipes = {Alchemy={{spell,"name",skill,yellow,green,grey,item,count,"reagents","learned",camp,new,...},...},...}
+    Fields after `new` (since 7 November: Classic-trainer flag, fewest, most) are not used and may grow."""
     body = raw[raw.index("ns.recipes"):]
     starts = [(m.start(), m.group(1) or lua_text(m.group(2)))
               for m in re.finditer(r'(?:([A-Za-z]+)|\[("(?:[^"\\]|\\.)*")\])=\{\{', body)]
-    row = re.compile(r'\{(\d+),("(?:[^"\\]|\\.)*"),(\d+),(\d+),(\d+),(\d+),(\d+),(\d+),"([^"]*)","([^"]*)",(\d+),(\d+)\}')
+    row = re.compile(r'\{(\d+),("(?:[^"\\]|\\.)*"),(\d+),(\d+),(\d+),(\d+),(\d+),(\d+),"([^"]*)","([^"]*)",(\d+),(\d+)(?:,\d+)*\}')
     result = {}
     for n, (start, profession) in enumerate(starts):
         end = starts[n + 1][0] if n + 1 < len(starts) else len(body)
