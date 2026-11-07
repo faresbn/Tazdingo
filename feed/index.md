@@ -13,7 +13,7 @@ Every path below is in the public repository: https://raw.githubusercontent.com/
 - `feed/guides.md`: every class, spec, profession, world and More page, with its path and version.
 
 Original addon files, as uploaded (large; open only when asked about that addon):
-- `data/captures/forever/auctionator/2026-11-07T1251Z.lua`: the latest of 16 auctionator file(s) (forever), processed into the prices above.
+- `data/captures/forever/auctionator/2026-11-07T1251Z.lua`: the latest of 17 auctionator file(s) (forever), processed into the prices above.
 
 ## How to answer
 
