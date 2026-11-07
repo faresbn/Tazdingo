@@ -5,5 +5,6 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
 | Field Guide | 140 | 279969 | 1 | 25s 0c | 18s 98c | 6s 2c | ForeverDB |
+| Camp Chair | 0 | 279979 | 1 | 2s 0c | 1s 39c | 61c | our scan |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
