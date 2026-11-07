@@ -13,7 +13,7 @@
 | Greater Discolored Healing Potion | 247241 | 34s 0c | 2026-11-07 04:40 UTC | 34s 0c |  | too new | 1 of 3 | 25 |  |
 | Greater Healing Potion | 1710 | 9s 99c | 2026-11-07 05:23 UTC | 9s 98c | 9s 98c | steady | 3 of 3 | 310 |  |
 | Greater Mana Potion | 6149 | 25s 99c | 2026-11-07 06:29 UTC | 15s 0c | 15s 0c | volatile | 3 of 3 | 99 |  |
-| Healing Potion | 929 | 2s 48c | 2026-11-07 06:29 UTC | 2s 48c | 2s 48c | moving | 3 of 3 | 1383 |  |
+| Healing Potion | 929 | 2s 49c | 2026-11-07 06:29 UTC | 2s 48c | 2s 48c | moving | 3 of 3 | 1383 |  |
 | Holy Protection Potion | 6051 | 3s 99c | 2026-11-07 05:23 UTC | 3s 74c |  | too new | 2 of 3 | 288 |  |
 | Jungle Remedy | 2633 | 55s 0c | 2026-11-07 04:40 UTC | 55s 0c |  | too new | 1 of 3 | 25 |  |
 | Lesser Discolored Healing Potion | 247239 | 3s 98c | 2026-11-07 06:29 UTC | 4s 47c |  | too new | 2 of 3 | 428 |  |
