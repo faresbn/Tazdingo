@@ -29,7 +29,7 @@
 | Green Dye | 2605 | 99c | 2026-11-07 06:29 UTC | 2s 5c | 2s 5c | volatile | 3 of 3 | 251 |  |
 | Hot Spices | 2692 | 98c | 2026-11-07 06:29 UTC | 98c | 98c | moving | 3 of 3 | 428 |  |
 | Huge Venom Sac | 19441 | 24s 0c | 2026-11-07 06:29 UTC | 15s 0c | 15s 0c | moving | 3 of 3 | 3 |  |
-| Iridescent Pearl | 5500 | 60s 98c | 2026-11-07 04:40 UTC | 66s 88c | 66s 88c | volatile | 3 of 3 | 128 |  |
+| Iridescent Pearl | 5500 | 58s 85c | 2026-11-07 06:29 UTC | 66s 88c | 66s 88c | volatile | 3 of 3 | 128 |  |
 | Jade | 1529 | 6s 75c | 2026-11-07 06:29 UTC | 6s 80c | 6s 80c | steady | 3 of 3 | 570 |  |
 | Large Fang | 5637 | 5s 30c | 2026-11-07 06:29 UTC | 6s 49c |  | too new | 2 of 3 | 329 |  |
 | Large Opal | 12799 | 1g 6s 0c | 2026-11-07 04:40 UTC | 98s 0c |  | too new | 2 of 3 | 1 |  |
@@ -45,7 +45,7 @@
 | Oily Blackmouth | 6358 | 1s 80c | 2026-11-07 06:29 UTC | 60c | 60c | volatile | 3 of 3 | 1566 |  |
 | Orange Dye | 6261 | 4s 0c | 2026-11-07 04:40 UTC | 3s 50c |  | too new | 2 of 3 | 8 |  |
 | Red Dye | 2604 | 79c | 2026-11-07 05:23 UTC | 80c | 80c | moving | 3 of 3 | 269 |  |
-| Shadowgem | 1210 | 2s 99c | 2026-11-07 06:29 UTC | 2s 45c | 2s 45c | moving | 3 of 3 | 402 |  |
+| Shadowgem | 1210 | 2s 99c | 2026-11-07 06:29 UTC | 2s 45c | 2s 45c | moving | 3 of 3 | 442 |  |
 | Sharp Claw | 5635 | 79c | 2026-11-07 06:29 UTC | 48c | 48c | moving | 3 of 3 | 616 |  |
 | Simple Poultice | 255716 | 69c | 2026-11-07 04:40 UTC | 78c |  | too new | 2 of 3 | 1067 |  |
 | Simple Wood | 4470 | 79c | 2026-11-07 06:29 UTC | 59c | 59c | moving | 3 of 3 | 883 |  |

@@ -7,14 +7,14 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Barbaric Bracers | 130 | 18948 | 1 | 17g 0s 0c | 2g 31s 84c | 14g 68s 16c | ForeverDB |
 | Red Whelp Gloves | 95 | 7284 | 1 | 8g 44s 0c | 1g 86s 0c | 6g 58s 0c | ForeverDB |
 | Green Whelp Armor | 150 | 7375 | 1 | 15g 40s 0c | 10g 2s 0c | 5g 38s 0c | ForeverDB |
-| Dusky Belt | 190 | 7387 | 1 | 4g 55s 0c | 1g 9s 71c | 3g 45s 29c | ForeverDB |
+| Dusky Belt | 190 | 7387 | 1 | 4g 55s 0c | 1g 9s 69c | 3g 45s 31c | ForeverDB |
 | Thick Armor Kit | 195 | 8173 | 1 | 3g 66s 49c | 65s 0c | 3g 1s 49c | ForeverDB |
 | Cured Thick Hide | 175 | 8172 | 1 | 3g 6s 50c | 10s 50c | 2g 96s 0c | ForeverDB |
 | Herbalist's Gloves | 110 | 7349 | 1 | 3g 0s 0c | 22s 80c | 2g 77s 20c | ForeverDB |
 | Dusky Leather Armor | 170 | 7374 | 1 | 3g 91s 0c | 2g 11s 99c | 1g 79s 1c | ForeverDB |
 | Nightscape Headband | 200 | 8176 | 1 | 2g 49s 0c | 70s 0c | 1g 79s 0c | ForeverDB |
 | Raptor Hide Belt | 140 | 4456 | 1 | 1g 88s 50c | 34s 48c | 1g 54s 2c | ForeverDB |
-| Guardian Pants | 155 | 5962 | 1 | 2g 40s 0c | 1g 0s 0c | 1g 40s 0c | ForeverDB |
+| Guardian Pants | 155 | 5962 | 1 | 2g 40s 0c | 99s 98c | 1g 40s 2c | ForeverDB |
 | Dusky Leather Leggings | 140 | 7373 | 1 | 1g 90s 0c | 72s 0c | 1g 18s 0c | ForeverDB |
 | Thick Murloc Armor | 145 | 5782 | 1 | 2g 61s 75c | 1g 49s 90c | 1g 11s 85c | ForeverDB |
 | Black Whelp Tunic | 75 | 20575 | 1 | 2g 27s 50c | 1g 39s 15c | 88s 35c | ForeverDB |
@@ -31,6 +31,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Azure Windraveled Pants | 60 | 277032 | 1 | 49s 0c | 1s 67c | 47s 33c | ForeverDB |
 | Deviate Scale Belt | 90 | 6468 | 1 | 1g 70s 0c | 1g 22s 70c | 47s 30c | our scan |
 | Heavy Leather Ammo Pouch | 145 | 7372 | 1 | 95s 50c | 50s 0c | 45s 50c | ForeverDB |
+| Toughened Leather Gloves | 135 | 4253 | 1 | 1g 66s 75c | 1g 22s 24c | 44s 51c | ForeverDB |
 | Azure Gustwoven Bracers | 50 | 277023 | 1 | 44s 0c | 1s 14c | 42s 86c | ForeverDB |
 | Green Leather Belt | 155 | 4257 | 1 | 1g 0s 50c | 62s 61c | 37s 89c | ForeverDB |
 | Cloudy Windraveled Armguards | 50 | 277005 | 1 | 37s 50c | 1s 14c | 36s 36c | ForeverDB |

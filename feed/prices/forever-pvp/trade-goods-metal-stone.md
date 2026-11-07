@@ -30,6 +30,6 @@
 | Steel Bar | 3859 | 45s 95c | 2026-11-07 06:29 UTC | 47s 97c |  | too new | 2 of 3 | 104 |  |
 | Tin Bar | 3576 | 2s 29c | 2026-11-07 06:29 UTC | 2s 29c | 2s 29c | steady | 3 of 3 | 1504 |  |
 | Tin Ore | 2771 | 2s 15c | 2026-11-07 06:29 UTC | 2s 11c | 2s 11c | moving | 3 of 3 | 3913 |  |
-| Truesilver Bar | 6037 | 22s 49c | 2026-11-07 05:23 UTC | 22s 49c | 22s 49c | volatile | 3 of 3 | 86 |  |
+| Truesilver Bar | 6037 | 13s 44c | 2026-11-07 06:29 UTC | 19s 0c | 19s 0c | volatile | 3 of 3 | 86 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

@@ -18,7 +18,7 @@
 | Light Leather | 2318 | 30c | 2026-11-07 06:29 UTC | 21c | 21c | moving | 3 of 3 | 14148 |  |
 | Long Tail Feather | 5116 | 3s 47c | 2026-11-07 05:23 UTC | 4s 0c | 4s 0c | moving | 3 of 3 | 516 |  |
 | Medium Hide | 4232 | 6s 39c | 2026-11-07 06:29 UTC | 6s 39c | 6s 39c | moving | 3 of 3 | 730 |  |
-| Medium Leather | 2319 | 1s 23c | 2026-11-07 06:29 UTC | 1s 23c | 1s 23c | moving | 3 of 3 | 3896 |  |
+| Medium Leather | 2319 | 1s 50c | 2026-11-07 06:29 UTC | 1s 23c | 1s 23c | moving | 3 of 3 | 3980 |  |
 | Perfect Deviate Scale | 6471 | 14s 0c | 2026-11-07 05:23 UTC | 10s 15c | 10s 15c | moving | 3 of 3 | 377 |  |
 | Pristine Hide | 249428 | 7s 1c | 2026-11-07 06:29 UTC | 10s 39c |  | too new | 2 of 3 | 1051 |  |
 | Pristine Leather | 249427 | 2s 49c | 2026-11-07 06:29 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 1541 |  |

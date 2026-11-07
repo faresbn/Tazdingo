@@ -2,7 +2,7 @@
  "source": {
   "credit": "Data from ForeverDB.net (https://foreverdb.net)",
   "file": "Data/SearchNames.lua",
-  "data_version": "2026-11-07.d3cab7fc",
+  "data_version": "2026-11-07.d6841932",
   "client_build": "1.60.1.70862",
   "sha256": "6d1d806e8e85c69d50bf6270bdffecc6c13ee9b8d956d2eeee8d401933f6c948",
   "fetched_on": "2026-11-07"
@@ -2479,6 +2479,7 @@
   "11203": "Formula: Enchant Gloves - Advanced Mining",
   "11204": "Formula: Enchant Bracer - Greater Spirit",
   "11206": "Formula: Enchant Cloak - Lesser Agility",
+  "11208": "Formula: Enchant Weapon - Demonslaying",
   "11225": "Formula: Enchant Bracer - Greater Stamina",
   "11284": "Accurate Slugs",
   "11285": "Jagged Arrow",

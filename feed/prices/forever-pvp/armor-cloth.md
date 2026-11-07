@@ -32,7 +32,7 @@
 | Barbaric Cloth Boots | 3307 | 3s 0c | 2026-11-07 05:23 UTC | 3s 0c | 3s 0c | volatile | 3 of 3 | 102 |  |
 | Barbaric Cloth Bracers | 3644 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 17 |  |
 | Barbaric Cloth Cloak | 4686 | 1s 0c | 2026-11-07 06:29 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 13 |  |
-| Barbaric Cloth Gloves | 3308 | 3s 0c | 2026-11-07 04:40 UTC | 3s 0c | 3s 0c | steady | 3 of 3 | 211 |  |
+| Barbaric Cloth Gloves | 3308 | 2s 0c | 2026-11-07 06:29 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 211 |  |
 | Barbaric Cloth Robe | 6531 | 5s 0c | 2026-11-07 06:29 UTC | 5s 0c | 5s 0c | moving | 3 of 3 | 37 |  |
 | Barbaric Cloth Vest | 3310 | 5s 0c | 2026-11-07 06:29 UTC | 5s 0c | 5s 0c | volatile | 3 of 3 | 39 |  |
 | Barbaric Linen Vest | 2578 | 3s 0c | 2026-11-07 04:40 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 83 |  |
@@ -52,7 +52,7 @@
 | Bright Boots | 3065 | 9s 0c | 2026-11-07 06:29 UTC | 10s 0c |  | too new | 2 of 3 | 28 |  |
 | Bright Bracers | 3647 | 9s 0c | 2026-11-07 06:29 UTC | 9s 0c | 9s 0c | volatile | 3 of 3 | 10 |  |
 | Bright Cloak | 6381 | 10s 0c | 2026-11-07 06:29 UTC | 11s 0c | 11s 0c | volatile | 3 of 3 | 31 |  |
-| Bright Gloves | 3066 | 7s 0c | 2026-11-07 04:40 UTC | 7s 50c |  | too new | 2 of 3 | 24 |  |
+| Bright Gloves | 3066 | 8s 0c | 2026-11-07 06:29 UTC | 7s 50c |  | too new | 2 of 3 | 24 |  |
 | Bright Mantle | 4661 | 18s 0c | 2026-11-07 04:40 UTC | 18s 0c | 18s 0c | moving | 3 of 3 | 39 |  |
 | Bright Pants | 3067 | 22s 0c | 2026-11-07 05:23 UTC | 23s 0c |  | too new | 2 of 3 | 22 |  |
 | Bright Robe | 3069 | 25s 0c | 2026-11-07 04:40 UTC | 35s 0c | 35s 0c | moving | 3 of 3 | 11 |  |
@@ -133,11 +133,11 @@
 | Handstitched Leather Cloak | 7276 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 268 |  |
 | Handstitched Linen Britches | 4309 | 3s 0c | 2026-11-07 05:23 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 274 |  |
 | Harvest Cloak | 4771 | 5s 0c | 2026-11-07 04:40 UTC | 5s 0c | 5s 0c | volatile | 3 of 3 | 25 |  |
-| Heavy Linen Gloves | 4307 | 1s 0c | 2026-11-07 06:29 UTC | 1s 0c | 1s 0c | volatile | 3 of 3 | 509 |  |
+| Heavy Linen Gloves | 4307 | 2s 0c | 2026-11-07 06:29 UTC | 1s 0c | 1s 0c | volatile | 3 of 3 | 509 |  |
 | Heavy Runed Cloak | 4798 | 70s 0c | 2026-11-07 05:23 UTC | 95s 0c |  | too new | 2 of 3 | 4 |  |
 | Heavy Weave Pants | 838 | 4s 0c | 2026-11-06 | 4s 0c |  | too new | 1 of 3 | 1 |  |
 | Heavy Woolen Cloak | 4311 | 24s 0c | 2026-11-07 06:29 UTC | 25s 0c | 25s 0c | volatile | 3 of 3 | 14 |  |
-| Heavy Woolen Gloves | 4310 | 4s 0c | 2026-11-07 04:40 UTC | 5s 0c | 5s 0c | volatile | 3 of 3 | 49 |  |
+| Heavy Woolen Gloves | 4310 | 15s 0c | 2026-11-07 06:29 UTC | 5s 0c | 5s 0c | volatile | 3 of 3 | 49 |  |
 | Heavy Woolen Pants | 4316 | 14s 0c | 2026-11-07 04:40 UTC | 22s 0c | 22s 0c | moving | 3 of 3 | 55 |  |
 | Hillman's Cloak | 3719 | 19s 0c | 2026-11-07 04:40 UTC | 30s 0c | 30s 0c | volatile | 3 of 3 | 75 |  |
 | Holy Shroud | 2721 | 4g 99s 0c | 2026-11-07 04:40 UTC | 5g 47s 0c |  | too new | 2 of 3 | 4 |  |
@@ -219,7 +219,7 @@
 | Sage's Bracers | 6613 | 30s 0c | 2026-11-07 05:23 UTC | 20s 0c | 20s 0c | volatile | 3 of 3 | 5 |  |
 | Sage's Cloak | 6614 | 18s 0c | 2026-11-07 04:40 UTC | 20s 0c | 20s 0c | volatile | 3 of 3 | 7 |  |
 | Sage's Cloth | 6609 | 33s 0c | 2026-11-07 04:40 UTC | 33s 0c |  | too new | 2 of 3 | 2 |  |
-| Sage's Gloves | 6615 | 24s 0c | 2026-11-07 05:23 UTC | 31s 0c | 31s 0c | volatile | 3 of 3 | 7 |  |
+| Sage's Gloves | 6615 | 24s 0c | 2026-11-07 06:29 UTC | 31s 0c | 31s 0c | volatile | 3 of 3 | 7 |  |
 | Sage's Mantle | 6617 | 23s 0c | 2026-11-07 06:29 UTC | 26s 50c |  | too new | 2 of 3 | 19 |  |
 | Sage's Pants | 6616 | 79s 0c | 2026-11-07 04:40 UTC | 89s 50c |  | too new | 2 of 3 | 4 |  |
 | Sage's Robe | 6610 | 35s 0c | 2026-11-07 04:40 UTC | 50s 0c | 50s 0c | moving | 3 of 3 | 1 |  |
@@ -255,7 +255,7 @@
 | Silver-thread Boots | 6394 | 40s 0c | 2026-11-07 04:40 UTC | 54s 0c | 54s 0c | moving | 3 of 3 | 13 |  |
 | Silver-thread Cloak | 4713 | 22s 0c | 2026-11-07 06:29 UTC | 37s 0c | 37s 0c | moving | 3 of 3 | 18 |  |
 | Silver-thread Cuffs | 4036 | 42s 0c | 2026-11-07 04:40 UTC | 31s 0c |  | too new | 2 of 3 | 14 |  |
-| Silver-thread Gloves | 6393 | 33s 0c | 2026-11-07 04:40 UTC | 36s 0c |  | too new | 2 of 3 | 22 |  |
+| Silver-thread Gloves | 6393 | 20s 0c | 2026-11-07 06:29 UTC | 29s 50c |  | too new | 2 of 3 | 22 |  |
 | Silver-thread Pants | 4037 | 40s 0c | 2026-11-07 06:29 UTC | 57s 50c |  | too new | 2 of 3 | 21 |  |
 | Silver-thread Robe | 4035 | 75s 0c | 2026-11-07 04:40 UTC | 75s 0c |  | too new | 1 of 3 | 4 |  |
 | Silver-thread Sash | 4714 | 12s 0c | 2026-11-07 05:23 UTC | 15s 50c |  | too new | 2 of 3 | 29 |  |

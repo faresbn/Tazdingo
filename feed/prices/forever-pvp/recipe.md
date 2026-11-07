@@ -11,37 +11,37 @@
 | Formula: Enchant Bracer - Lesser Spirit | 6375 | 3s 0c | 2026-11-07 04:40 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 49 |  |
 | Formula: Enchant Bracer - Minor Spirit | 6344 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 134 |  |
 | Formula: Enchant Bracer - Minor Strength | 6347 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 95 |  |
-| Formula: Enchant Chest - Lesser Intellect | 6346 | 14s 0c | 2026-11-07 04:40 UTC | 15s 0c | 15s 0c | volatile | 3 of 3 | 9 |  |
+| Formula: Enchant Chest - Lesser Intellect | 6346 | 97s 0c | 2026-11-07 06:29 UTC | 15s 0c | 15s 0c | volatile | 3 of 3 | 17 |  |
 | Formula: Enchant Chest - Minor Intellect | 6342 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | volatile | 3 of 3 | 45 |  |
 | Formula: Enchant Weapon - Minor Beastslayer | 6348 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 254 |  |
 | Manual: Strong Anti-Venom | 6454 | 6s 0c | 2026-11-07 04:40 UTC | 7s 0c | 7s 0c | volatile | 3 of 3 | 34 |  |
-| Pattern: Azure Shoulders | 7085 | 5g 6s 0c | 2026-11-07 04:40 UTC | 6g 6s 0c |  | too new | 2 of 3 | 4 |  |
+| Pattern: Azure Shoulders | 7085 | 3g 0s 0c | 2026-11-07 06:29 UTC | 5g 3s 0c |  | too new | 2 of 3 | 8 |  |
 | Pattern: Barbaric Gloves | 4297 | 18s 0c | 2026-11-07 06:29 UTC | 18s 0c | 18s 0c | volatile | 3 of 3 | 16 |  |
-| Pattern: Black Silk Pack | 5775 | 2g 54s 0c | 2026-11-07 04:40 UTC | 3g 54s 0c |  | too new | 2 of 3 | 5 |  |
-| Pattern: Blue Linen Robe | 6272 | 6s 0c | 2026-11-07 04:40 UTC | 6s 0c |  | too new | 2 of 3 | 30 |  |
+| Pattern: Black Silk Pack | 5775 | 2g 54s 0c | 2026-11-07 06:29 UTC | 3g 54s 0c |  | too new | 2 of 3 | 6 |  |
+| Pattern: Blue Linen Robe | 6272 | 6s 0c | 2026-11-07 06:29 UTC | 6s 0c |  | too new | 2 of 3 | 32 |  |
 | Pattern: Blue Linen Vest | 6270 | 3s 0c | 2026-11-07 05:23 UTC | 3s 0c | 3s 0c | volatile | 3 of 3 | 21 |  |
-| Pattern: Blue Overalls | 6274 | 20s 0c | 2026-11-07 04:40 UTC | 20s 0c | 20s 0c | volatile | 3 of 3 | 5 |  |
-| Pattern: Boots of the Enchanter | 4352 | 9s 0c | 2026-11-07 06:29 UTC | 12s 0c |  | too new | 2 of 3 | 26 |  |
-| Pattern: Crimson Silk Shoulders | 7084 | 40s 0c | 2026-11-07 04:40 UTC | 45s 0c |  | too new | 2 of 3 | 6 |  |
+| Pattern: Blue Overalls | 6274 | 15s 0c | 2026-11-07 06:29 UTC | 15s 0c | 15s 0c | volatile | 3 of 3 | 5 |  |
+| Pattern: Boots of the Enchanter | 4352 | 9s 0c | 2026-11-07 06:29 UTC | 10s 50c |  | too new | 2 of 3 | 26 |  |
+| Pattern: Crimson Silk Shoulders | 7084 | 35s 0c | 2026-11-07 06:29 UTC | 42s 50c |  | too new | 2 of 3 | 6 |  |
 | Pattern: Dark Leather Shoulders | 4296 | 13s 0c | 2026-11-07 04:40 UTC | 13s 0c | 13s 0c | volatile | 3 of 3 | 19 |  |
 | Pattern: Dark Leather Tunic | 2409 | 4s 0c | 2026-11-07 06:29 UTC | 4s 0c | 4s 0c | moving | 3 of 3 | 190 |  |
 | Pattern: Deviate Scale Belt | 6476 | 5s 0c | 2026-11-07 04:40 UTC | 5s 0c | 5s 0c | volatile | 3 of 3 | 49 |  |
 | Pattern: Deviate Scale Cloak | 6474 | 9s 0c | 2026-11-07 04:40 UTC | 14s 0c | 14s 0c | volatile | 3 of 3 | 65 |  |
 | Pattern: Deviate Scale Gloves | 6475 | 9s 0c | 2026-11-07 04:40 UTC | 15s 0c | 15s 0c | volatile | 3 of 3 | 33 |  |
-| Pattern: Earthen Silk Belt | 7086 | 20s 0c | 2026-11-07 04:40 UTC | 25s 0c |  | too new | 2 of 3 | 4 |  |
+| Pattern: Earthen Silk Belt | 7086 | 12s 0c | 2026-11-07 06:29 UTC | 21s 0c |  | too new | 2 of 3 | 4 |  |
 | Pattern: Fine Leather Boots | 2406 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 250 |  |
 | Pattern: Fine Leather Gloves | 2408 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 295 |  |
 | Pattern: Fine Leather Pants | 5972 | 4s 0c | 2026-11-07 04:40 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 69 |  |
 | Pattern: Gray Woolen Robe | 2601 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | volatile | 3 of 3 | 46 |  |
-| Pattern: Greater Adept's Robe | 6275 | 17s 0c | 2026-11-07 05:23 UTC | 18s 0c | 18s 0c | steady | 3 of 3 | 10 |  |
-| Pattern: Green Silk Armor | 7090 | 28s 0c | 2026-11-07 04:40 UTC | 49s 0c | 49s 0c | volatile | 3 of 3 | 21 |  |
+| Pattern: Greater Adept's Robe | 6275 | 16s 0c | 2026-11-07 06:29 UTC | 18s 0c | 18s 0c | steady | 3 of 3 | 10 |  |
+| Pattern: Green Silk Armor | 7090 | 25s 0c | 2026-11-07 06:29 UTC | 49s 0c | 49s 0c | volatile | 3 of 3 | 21 |  |
 | Pattern: Green Silk Pack | 5774 | 12s 0c | 2026-11-07 05:23 UTC | 15s 0c | 15s 0c | volatile | 3 of 3 | 16 |  |
 | Pattern: Green Woolen Bag | 4292 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 109 |  |
 | Pattern: Guardian Armor | 4299 | 13s 0c | 2026-11-07 06:29 UTC | 13s 0c | 13s 0c | volatile | 3 of 3 | 26 |  |
 | Pattern: Guardian Belt | 4298 | 1g 0s 0c | 2026-11-07 04:40 UTC | 57s 50c |  | too new | 2 of 3 | 2 |  |
 | Pattern: Guardian Cloak | 5974 | 69s 0c | 2026-11-07 06:29 UTC | 84s 0c |  | too new | 2 of 3 | 10 |  |
 | Pattern: Guardian Leather Bracers | 4300 | 50s 0c | 2026-11-07 04:40 UTC | 50s 0c |  | too new | 2 of 3 | 5 |  |
-| Pattern: Hands of Darkness | 7092 | 4s 0c | 2026-11-07 04:40 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 29 |  |
+| Pattern: Hands of Darkness | 7092 | 4s 0c | 2026-11-07 06:29 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 33 |  |
 | Pattern: Heavy Woolen Cloak | 4346 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 73 |  |
 | Pattern: Hillman's Belt | 4294 | 4s 0c | 2026-11-07 06:29 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 63 |  |
 | Pattern: Hillman's Leather Vest | 4293 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 224 |  |
@@ -51,13 +51,13 @@
 | Pattern: Red Linen Bag | 5771 | 5s 0c | 2026-11-07 04:40 UTC | 5s 0c | 5s 0c | steady | 3 of 3 | 116 |  |
 | Pattern: Red Linen Robe | 2598 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 492 |  |
 | Pattern: Red Linen Vest | 6271 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 226 |  |
-| Pattern: Red Woolen Bag | 5772 | 4s 0c | 2026-11-07 04:40 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 50 |  |
+| Pattern: Red Woolen Bag | 5772 | 3s 0c | 2026-11-07 06:29 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 50 |  |
 | Pattern: Red Woolen Boots | 4345 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c | 1s 0c | volatile | 3 of 3 | 144 |  |
 | Pattern: Reinforced Woolen Shoulders | 4347 | 2s 0c | 2026-11-07 04:40 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 40 |  |
 | Pattern: Rich Purple Silk Shirt | 4354 | 3g 6s 0c | 2026-11-06 | 3g 6s 0c |  | too new | 1 of 3 | 1 |  |
 | Pattern: Rugged Leather Pants | 7288 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 294 |  |
-| Pattern: Shadow Hood | 4351 | 1g 88s 0c | 2026-11-07 04:40 UTC | 1g 1s 50c |  | too new | 2 of 3 | 2 |  |
-| Pattern: Spider Belt | 4353 | 86s 0c | 2026-11-07 05:23 UTC | 92s 0c |  | too new | 2 of 3 | 10 |  |
+| Pattern: Shadow Hood | 4351 | 1g 79s 0c | 2026-11-07 06:29 UTC | 97s 0c |  | too new | 2 of 3 | 2 |  |
+| Pattern: Spider Belt | 4353 | 60s 0c | 2026-11-07 06:29 UTC | 79s 0c |  | too new | 2 of 3 | 15 |  |
 | Pattern: Spider Silk Slippers | 4350 | 4s 0c | 2026-11-07 04:40 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 44 |  |
 | Pattern: Stylish Blue Shirt | 6390 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | volatile | 3 of 3 | 66 |  |
 | Pattern: Stylish Green Shirt | 6391 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 77 |  |
