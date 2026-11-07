@@ -27,7 +27,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Advanced Target Dummy | 185 | 4392 | 1 | 1g 66s 50c | 1g 10s 50c | 56s 0c | ForeverDB |
 | Minor Recombobulator | 140 | 4381 | 1 | 99s 50c | 44s 48c | 55s 2c | ForeverDB |
 | Moonsight Rifle | 145 | 4383 | 1 | 1g 46s 50c | 98s 72c | 47s 78c | ForeverDB |
-| EZ-Thro Wrap | 100 | 260794 | 1 | 55s 0c | 10s 66c | 44s 34c | ForeverDB |
+| EZ-Thro Wrap | 100 | 260794 | 1 | 55s 0c | 10s 51c | 44s 49c | ForeverDB |
 | Shadow Goggles | 120 | 4373 | 1 | 47s 0c | 12s 90c | 34s 10c | ForeverDB |
 | EZ-Thro Dynamite II | 200 | 18588 | 1 | 2g 29s 0c | 1g 96s 0c | 33s 0c | ForeverDB |
 | Crafted Solid Shot | 125 | 8069 | 200 | 38s 0c | 11s 81c | 26s 19c | ForeverDB |
@@ -38,10 +38,10 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Compact Harvest Reaper Kit | 175 | 4391 | 1 | 1g 87s 99c | 1g 73s 0c | 14s 99c | ForeverDB |
 | Iron Grenade | 175 | 4390 | 3 | 31s 50c | 23s 95c | 7s 55c | ForeverDB |
 | Iron Strut | 160 | 4387 | 1 | 32s 50c | 25s 94c | 6s 56c | ForeverDB |
-| Whirring Bronze Gizmo | 125 | 4375 | 1 | 14s 24c | 9s 11c | 5s 13c | ForeverDB |
+| Whirring Bronze Gizmo | 125 | 4375 | 1 | 14s 24c | 8s 96c | 5s 28c | ForeverDB |
 | Crafted Heavy Shot | 75 | 8068 | 200 | 8s 0c | 2s 96c | 5s 4c | ForeverDB |
 | SAF-T Dynamite | 25 | 260792 | 1 | 4s 0c | 52c | 3s 48c | ForeverDB |
-| Small Bronze Bomb | 120 | 4374 | 2 | 15s 0c | 12s 3c | 2s 97c | ForeverDB |
+| Small Bronze Bomb | 120 | 4374 | 2 | 15s 0c | 11s 88c | 3s 12c | ForeverDB |
 | Handful of Copper Bolts | 30 | 4359 | 1 | 4s 33c | 2s 48c | 1s 85c | ForeverDB |
 | Mechanical Squirrel | 75 | 4401 | 1 | 10s 0c | 9s 11c | 89c | ForeverDB |
 | Rough Dynamite | 1 | 4358 | 2 | 60c | 36c | 24c | our scan |

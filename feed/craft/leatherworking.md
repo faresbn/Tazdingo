@@ -7,7 +7,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Barbaric Bracers | 130 | 18948 | 1 | 17g 0s 0c | 3g 23s 99c | 13g 76s 1c | ForeverDB |
 | Red Whelp Gloves | 95 | 7284 | 1 | 8g 44s 0c | 2g 94s 0c | 5g 50s 0c | ForeverDB |
 | Green Whelp Armor | 150 | 7375 | 1 | 15g 40s 0c | 10g 2s 0c | 5g 38s 0c | ForeverDB |
-| Dusky Belt | 195 | 7387 | 1 | 4g 55s 0c | 1g 9s 99c | 3g 45s 1c | ForeverDB |
+| Dusky Belt | 195 | 7387 | 1 | 4g 55s 0c | 1g 9s 45c | 3g 45s 55c | ForeverDB |
 | Thick Armor Kit | 200 | 8173 | 1 | 3g 66s 49c | 65s 0c | 3g 1s 49c | ForeverDB |
 | Cured Thick Hide | 200 | 8172 | 1 | 3g 6s 50c | 10s 50c | 2g 96s 0c | ForeverDB |
 | Black Whelp Tunic | 75 | 20575 | 1 | 4g 0s 0c | 1g 38s 59c | 2g 61s 41c | ForeverDB |
@@ -15,7 +15,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Dusky Leather Armor | 175 | 7374 | 1 | 3g 91s 0c | 2g 11s 99c | 1g 79s 1c | ForeverDB |
 | Nightscape Headband | 205 | 8176 | 1 | 2g 49s 0c | 70s 0c | 1g 79s 0c | ForeverDB |
 | Raptor Hide Belt | 140 | 4456 | 1 | 1g 88s 50c | 34s 36c | 1g 54s 14c | ForeverDB |
-| Guardian Pants | 160 | 5962 | 1 | 2g 40s 0c | 1g 1s 24c | 1g 38s 76c | ForeverDB |
+| Guardian Pants | 160 | 5962 | 1 | 2g 40s 0c | 1g 0s 70c | 1g 39s 30c | ForeverDB |
 | Dusky Leather Leggings | 140 | 7373 | 1 | 1g 90s 0c | 72s 0c | 1g 18s 0c | ForeverDB |
 | Thick Murloc Armor | 145 | 5782 | 1 | 2g 61s 75c | 1g 49s 35c | 1g 12s 40c | ForeverDB |
 | Barbaric Gloves | 125 | 4254 | 1 | 1g 60s 0c | 63s 20c | 96s 80c | ForeverDB |
@@ -55,7 +55,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Guardian Gloves | 190 | 5966 | 1 | 75s 0c | 55s 35c | 19s 65c | ForeverDB |
 | Fine Leather Tunic | 85 | 4243 | 1 | 28s 50c | 9s 85c | 18s 65c | ForeverDB |
 | Heavy Armor Kit | 150 | 4265 | 1 | 49s 10c | 31s 0c | 18s 10c | ForeverDB |
-| Fine Leather Pants | 80 | 5958 | 1 | 39s 50c | 21s 70c | 17s 80c | ForeverDB |
+| Fine Leather Pants | 80 | 5958 | 1 | 39s 50c | 21s 67c | 17s 83c | ForeverDB |
 | Dark Leather Tunic | 75 | 2317 | 1 | 31s 0c | 16s 50c | 14s 50c | ForeverDB |
 | Deviate Scale Cloak | 65 | 6466 | 1 | 22s 50c | 9s 11c | 13s 39c | ForeverDB |
 | Tanning Rack | 140 | 279941 | 1 | 25s 32c | 13s 76c | 11s 56c | ForeverDB |

@@ -10,7 +10,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Strong Anti-Venom | 130 | 6453 | 3 | 15s 15c | 5s 54c | 9s 61c | ForeverDB |
 | Simple Poultice | 0 | 255716 | 3 | 5s 7c | 76c | 4s 31c | ForeverDB |
 | Anti-Venom | 80 | 6452 | 3 | 2s 85c | 88c | 1s 97c | ForeverDB |
-| Woolen Tourniquet | 0 | 255720 | 1 | 5s 75c | 4s 90c | 85c | ForeverDB |
+| Woolen Tourniquet | 0 | 255720 | 1 | 5s 75c | 4s 60c | 1s 15c | ForeverDB |
 | Heavy Silk Bandage | 180 | 6451 | 1 | 6s 72c | 6s 0c | 72c | ForeverDB |
 | First Aid Kit | 0 | 279968 | 1 | 81c | 52c | 29c | ForeverDB |
 

@@ -32,12 +32,12 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Solid Sharpening Stone | 200 | 7964 | 1 | 29s 94c | 22s 11c | 7s 83c | ForeverDB |
 | Golden Rod | 150 | 11128 | 1 | 20s 75c | 13s 57c | 7s 18c | ForeverDB |
 | Heavy Sharpening Stone | 125 | 2871 | 1 | 14s 49c | 9s 38c | 5s 11c | ForeverDB |
-| Coarse Weightstone | 65 | 3240 | 1 | 5s 19c | 95c | 4s 24c | ForeverDB |
+| Coarse Weightstone | 65 | 3240 | 1 | 5s 19c | 89c | 4s 30c | ForeverDB |
 | Rough Copper Vest | 1 | 10421 | 1 | 14s 0c | 9s 92c | 4s 8c | ForeverDB |
 | Deadly Bronze Poniard | 100 | 3490 | 1 | 73s 0c | 70s 73c | 2s 27c | our scan |
 | Heavy Weightstone | 125 | 3241 | 1 | 10s 99c | 9s 38c | 1s 61c | ForeverDB |
-| Coarse Grinding Stone | 75 | 3478 | 1 | 2s 90c | 1s 90c | 1s 0c | our scan |
-| Coarse Sharpening Stone | 65 | 2863 | 1 | 1s 87c | 95c | 92c | our scan |
+| Coarse Grinding Stone | 75 | 3478 | 1 | 2s 90c | 1s 78c | 1s 12c | our scan |
+| Coarse Sharpening Stone | 65 | 2863 | 1 | 1s 87c | 89c | 98c | our scan |
 | Gemmed Copper Gauntlets | 35 | 3474 | 1 | 21s 50c | 21s 4c | 46c | ForeverDB |
 | Mithril Plate Pants | 205 | 7920 | 1 | 3g 21s 0c | 3g 20s 88c | 12c | ForeverDB |
 | Rough Grinding Stone | 25 | 3470 | 1 | 20c | 18c | 2c | ForeverDB |

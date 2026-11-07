@@ -18,9 +18,9 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Roast Raptor | 175 | 12210 | 1 | 12s 93c | 3s 71c | 9s 22c | ForeverDB |
 | Lean Venison | 110 | 5480 | 2 | 9s 38c | 1s 28c | 8s 10c | ForeverDB |
 | Bear Brisket | 175 | 250074 | 1 | 14s 24c | 6s 24c | 8s 0c | ForeverDB |
-| Seasoned Wolf Kabob | 100 | 1017 | 3 | 8s 79c | 1s 50c | 7s 29c | ForeverDB |
+| Seasoned Wolf Kabob | 100 | 1017 | 3 | 8s 79c | 1s 48c | 7s 31c | ForeverDB |
 | Royal Tea | 100 | 249866 | 1 | 10s 0c | 2s 85c | 7s 15c | ForeverDB |
-| Lean Wolf Steak | 125 | 12209 | 1 | 7s 0c | 80c | 6s 20c | ForeverDB |
+| Lean Wolf Steak | 125 | 12209 | 1 | 7s 0c | 79c | 6s 21c | ForeverDB |
 | Carrion Surprise | 175 | 12213 | 1 | 10s 0c | 3s 92c | 6s 8c | ForeverDB |
 | Succulent Pork Ribs | 110 | 2685 | 1 | 24s 32c | 18s 40c | 5s 92c | ForeverDB |
 | Slimy Smoothie | 100 | 249872 | 1 | 6s 7c | 1s 61c | 4s 46c | ForeverDB |
@@ -40,7 +40,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Strider Stew | 50 | 5477 | 2 | 1s 10c | 74c | 36c | ForeverDB |
 | Basic Campfire | 1 | 279981 | 1 | 65c | 38c | 27c | our scan |
 | Mrrggl Smrrthle | 125 | 249873 | 1 | 6s 44c | 6s 24c | 20c | ForeverDB |
-| Smoked Bear Meat | 40 | 6890 | 1 | 43c | 24c | 19c | our scan |
+| Smoked Bear Meat | 40 | 6890 | 1 | 42c | 24c | 18c | our scan |
 | Smoked Sagefish | 80 | 21072 | 1 | 1s 48c | 1s 41c | 7c | ForeverDB |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

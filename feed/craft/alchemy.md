@@ -47,6 +47,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Catseye Draught | 200 | 10592 | 1 | 95s 87c | 91s 70c | 4s 17c | ForeverDB |
 | Elixir of Minor Strength | 0 | 2454 | 1 | 4s 54c | 1s 40c | 3s 14c | ForeverDB |
 | Minor Mender's Potion | 30 | 250944 | 1 | 5s 88c | 2s 80c | 3s 8c | ForeverDB |
+| Elixir of Wisdom | 90 | 3383 | 1 | 5s 50c | 3s 6c | 2s 44c | ForeverDB |
 | Spellblasting Potion | 135 | 250934 | 1 | 36s 25c | 33s 94c | 2s 31c | ForeverDB |
 | Elixir of Minor Force | 1 | 247755 | 1 | 2s 87c | 60c | 2s 27c | ForeverDB |
 | Sulfuric Acid | 0 | 249410 | 1 | 9s 21c | 7s 28c | 1s 93c | ForeverDB |
