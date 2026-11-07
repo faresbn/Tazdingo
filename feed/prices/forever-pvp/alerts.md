@@ -1,7 +1,7 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): alerts and estimates
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-07 12:51 UTC. Uploads in the 30-day window: 11.
+- **Latest scan:** 2026-11-07 19:24 UTC. Uploads in the 30-day window: 12.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 Everything below is an estimate from listings, recorded at the time shown; none of it says what sold.

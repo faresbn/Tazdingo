@@ -4,17 +4,17 @@ Estimated listing margins: what the item lists for against what its reagents cos
 
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
-| Barbaric Bracers | 130 | 18948 | 1 | 17g 0s 0c | 2g 31s 84c | 14g 68s 16c | ForeverDB |
+| Barbaric Bracers | 130 | 18948 | 1 | 17g 0s 0c | 2g 3s 88c | 14g 96s 12c | ForeverDB |
 | Red Whelp Gloves | 95 | 7284 | 1 | 8g 44s 0c | 1g 86s 0c | 6g 58s 0c | ForeverDB |
 | Green Whelp Armor | 150 | 7375 | 1 | 15g 40s 0c | 10g 2s 0c | 5g 38s 0c | ForeverDB |
-| Dusky Belt | 190 | 7387 | 1 | 4g 55s 0c | 1g 9s 69c | 3g 45s 31c | ForeverDB |
+| Dusky Belt | 190 | 7387 | 1 | 4g 55s 0c | 1g 9s 61c | 3g 45s 39c | ForeverDB |
 | Thick Armor Kit | 195 | 8173 | 1 | 3g 66s 49c | 65s 0c | 3g 1s 49c | ForeverDB |
 | Cured Thick Hide | 175 | 8172 | 1 | 3g 6s 50c | 10s 50c | 2g 96s 0c | ForeverDB |
 | Herbalist's Gloves | 110 | 7349 | 1 | 3g 0s 0c | 22s 80c | 2g 77s 20c | ForeverDB |
 | Dusky Leather Armor | 170 | 7374 | 1 | 3g 91s 0c | 2g 11s 99c | 1g 79s 1c | ForeverDB |
 | Nightscape Headband | 200 | 8176 | 1 | 2g 49s 0c | 70s 0c | 1g 79s 0c | ForeverDB |
 | Raptor Hide Belt | 140 | 4456 | 1 | 1g 88s 50c | 34s 48c | 1g 54s 2c | ForeverDB |
-| Guardian Pants | 155 | 5962 | 1 | 2g 40s 0c | 99s 98c | 1g 40s 2c | ForeverDB |
+| Guardian Pants | 155 | 5962 | 1 | 2g 40s 0c | 99s 90c | 1g 40s 10c | ForeverDB |
 | Dusky Leather Leggings | 140 | 7373 | 1 | 1g 90s 0c | 72s 0c | 1g 18s 0c | ForeverDB |
 | Thick Murloc Armor | 145 | 5782 | 1 | 2g 61s 75c | 1g 49s 90c | 1g 11s 85c | ForeverDB |
 | Black Whelp Tunic | 75 | 20575 | 1 | 2g 27s 50c | 1g 39s 15c | 88s 35c | ForeverDB |
@@ -44,15 +44,15 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Cloudy Gustwoven Trousers | 60 | 277002 | 1 | 35s 0c | 1s 67c | 33s 33c | ForeverDB |
 | Barbaric Shoulders | 170 | 5964 | 1 | 1g 10s 0c | 76s 90c | 33s 10c | ForeverDB |
 | Azure Gustwoven Gloves | 55 | 277024 | 1 | 34s 0c | 1s 66c | 32s 34c | ForeverDB |
-| Deviate Scale Belt | 90 | 6468 | 1 | 1g 55s 0c | 1g 22s 70c | 32s 30c | our scan |
 | Azure Gustwoven Belt | 50 | 277025 | 1 | 33s 0c | 1s 35c | 31s 65c | ForeverDB |
 | Barbaric Harness | 185 | 5739 | 1 | 1g 21s 0c | 89s 71c | 31s 29c | ForeverDB |
 | Mystic Heavy Armor Kit | 135 | 252452 | 1 | 99s 49c | 69s 46c | 30s 3c | ForeverDB |
 | Cloudy Gustwoven Belt | 50 | 277001 | 1 | 31s 0c | 1s 35c | 29s 65c | ForeverDB |
+| Moonglow Vest | 65 | 6709 | 1 | 35s 0c | 6s 77c | 28s 23c | ForeverDB |
 | Pilferer's Gloves | 115 | 7358 | 1 | 2g 45s 0c | 2g 17s 0c | 28s 0c | ForeverDB |
 | Azure Windraveled Armguards | 50 | 277029 | 1 | 25s 0c | 1s 14c | 23s 86c | ForeverDB |
+| Deviate Scale Belt | 90 | 6468 | 1 | 1g 45s 0c | 1g 22s 70c | 22s 30c | our scan |
 | Fine Leather Tunic | 85 | 4243 | 1 | 30s 0c | 7s 99c | 22s 1c | ForeverDB |
-| Moonglow Vest | 65 | 6709 | 1 | 35s 0c | 13s 76c | 21s 24c | ForeverDB |
 | Murloc Scale Belt | 65 | 5780 | 1 | 69s 50c | 50s 18c | 19s 32c | ForeverDB |
 | Guardian Gloves | 185 | 5966 | 1 | 75s 0c | 55s 90c | 19s 10c | ForeverDB |
 | Heavy Armor Kit | 145 | 4265 | 1 | 49s 10c | 31s 0c | 18s 10c | ForeverDB |
@@ -81,7 +81,6 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Light Leather Bracers | 70 | 7281 | 1 | 2s 0c | 1s 66c | 34c | our scan |
 | Handstitched Leather Bracers | 1 | 7277 | 1 | 1s 0c | 72c | 28c | our scan |
 | Handstitched Leather Vest | 1 | 5957 | 1 | 1s 0c | 73c | 27c | our scan |
-| Deviate Scale Gloves | 80 | 6467 | 1 | 34s 0c | 33s 82c | 18c | our scan |
 | Embossed Leather Gloves | 55 | 4239 | 1 | 1s 0c | 83c | 17c | our scan |
 | Light Leather | 1 | 2318 | 1 | 21c | 18c | 3c | our scan |
 | Deviate Scale Cloak | 65 | 6466 | 1 | 18s 50c | 18s 47c | 3c | ForeverDB |

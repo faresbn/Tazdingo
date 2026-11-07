@@ -8,7 +8,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Goblin Mortar | 0 | 10577 | 1 | 20g 0s 0c | 5g 76s 95c | 14g 23s 5c | ForeverDB |
 | Gnomish Harm Prevention Belt | 215 | 10721 | 1 | 22g 74s 0c | 10g 48s 67c | 12g 25s 33c | ForeverDB |
 | EZ-Thro Bronze Mortar | 190 | 260802 | 1 | 13g 87s 0c | 2g 51s 92c | 11g 35s 8c | ForeverDB |
-| Gnomish Cloaking Device | 200 | 4397 | 1 | 12g 13s 0c | 2g 73s 55c | 9g 39s 45c | ForeverDB |
+| Gnomish Cloaking Device | 200 | 4397 | 1 | 12g 13s 0c | 2g 73s 53c | 9g 39s 47c | ForeverDB |
 | Spellpower Goggles Xtreme | 225 | 10502 | 1 | 9g 31s 0c | 1g 77s 90c | 7g 53s 10c | ForeverDB |
 | Deadly Scope | 210 | 10546 | 1 | 7g 55s 75c | 2g 86s 98c | 4g 68s 77c | ForeverDB |
 | Discombobulator Ray | 160 | 4388 | 1 | 4g 0s 0c | 50s 2c | 3g 49s 98c | ForeverDB |
@@ -18,7 +18,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Portable Bronze Mortar | 165 | 4403 | 1 | 2g 94s 50c | 1g 1s 92c | 1g 92s 58c | ForeverDB |
 | Ice Deflector | 155 | 4386 | 1 | 3g 97s 75c | 2g 12s 23c | 1g 85s 52c | ForeverDB |
 | EZ-Thro Fireproof Fuse | 190 | 260801 | 1 | 1g 50s 0c | 4s 25c | 1g 45s 75c | ForeverDB |
-| 9-60 Battery Pack | 125 | 274048 | 1 | 3g 49s 50c | 2g 6s 60c | 1g 42s 90c | ForeverDB |
+| 9-60 Battery Pack | 125 | 274048 | 1 | 3g 49s 50c | 2g 5s 60c | 1g 43s 90c | ForeverDB |
 | Goblin Sapper Charge | 205 | 10646 | 1 | 5g 24s 30c | 4g 3s 15c | 1g 21s 15c | ForeverDB |
 | Goblin Rocket Fuel Recipe | 205 | 10644 | 1 | 1g 42s 50c | 25s 0c | 1g 17s 50c | ForeverDB |
 | Accurate Scope | 180 | 4407 | 1 | 1g 73s 50c | 62s 5c | 1g 11s 45c | ForeverDB |
@@ -27,11 +27,11 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Goblin Land Mine | 195 | 4395 | 1 | 1g 59s 98c | 83s 66c | 76s 32c | ForeverDB |
 | Repair Bot | 140 | 279949 | 1 | 1g 3s 2c | 33s 48c | 69s 54c | ForeverDB |
 | Minor Recombobulator | 140 | 4381 | 1 | 99s 50c | 35s 48c | 64s 2c | ForeverDB |
-| Moonsight Rifle | 145 | 4383 | 1 | 1g 48s 0c | 85s 22c | 62s 78c | ForeverDB |
+| Moonsight Rifle | 145 | 4383 | 1 | 1g 48s 0c | 85s 20c | 62s 80c | ForeverDB |
 | Unstable Trigger | 200 | 10560 | 1 | 2g 2s 99c | 1g 40s 90c | 62s 9c | ForeverDB |
 | Advanced Target Dummy | 185 | 4392 | 1 | 1g 66s 50c | 1g 8s 0c | 58s 50c | ForeverDB |
-| Gold Power Core | 150 | 10558 | 3 | 51s 0c | 7s 77c | 43s 23c | ForeverDB |
-| EZ-Thro Wrap | 100 | 260794 | 1 | 42s 50c | 5s 25c | 37s 25c | ForeverDB |
+| Gold Power Core | 150 | 10558 | 3 | 51s 0c | 7s 66c | 43s 34c | ForeverDB |
+| EZ-Thro Wrap | 100 | 260794 | 1 | 42s 50c | 5s 55c | 36s 95c | ForeverDB |
 | EZ-Thro Dynamite II | 200 | 18588 | 1 | 2g 29s 0c | 1g 96s 0c | 33s 0c | ForeverDB |
 | Shadow Goggles | 120 | 4373 | 1 | 44s 0c | 12s 90c | 31s 10c | ForeverDB |
 | Crafted Solid Shot | 125 | 8069 | 200 | 38s 0c | 9s 31c | 28s 69c | ForeverDB |
@@ -41,9 +41,9 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Large Copper Bomb | 105 | 4370 | 3 | 20s 52c | 6s 70c | 13s 82c | ForeverDB |
 | Silver-plated Shotgun | 130 | 4379 | 1 | 1g 0s 0c | 91s 69c | 8s 31c | ForeverDB |
 | Crafted Heavy Shot | 75 | 8068 | 200 | 10s 0c | 1s 74c | 8s 26c | ForeverDB |
-| Small Bronze Bomb | 120 | 4374 | 2 | 15s 0c | 6s 83c | 8s 17c | ForeverDB |
-| Whirring Bronze Gizmo | 125 | 4375 | 1 | 9s 74c | 3s 91c | 5s 83c | ForeverDB |
+| Small Bronze Bomb | 120 | 4374 | 2 | 15s 0c | 7s 28c | 7s 72c | ForeverDB |
 | Iron Grenade | 175 | 4390 | 3 | 31s 50c | 25s 84c | 5s 66c | ForeverDB |
+| Whirring Bronze Gizmo | 125 | 4375 | 1 | 9s 74c | 4s 36c | 5s 38c | ForeverDB |
 | Solid Blasting Powder | 175 | 10505 | 1 | 43s 0c | 38s 46c | 4s 54c | ForeverDB |
 | EZ-Thro Copper Bomb XL | 130 | 260795 | 1 | 53s 69c | 49s 20c | 4s 49c | ForeverDB |
 | Flying Tiger Goggles | 100 | 4368 | 1 | 7s 0c | 3s 36c | 3s 64c | ForeverDB |
