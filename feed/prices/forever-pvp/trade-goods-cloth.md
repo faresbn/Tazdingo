@@ -9,7 +9,7 @@
 | Bolt of Linen Cloth | 2996 | 63c | 2026-11-07 12:51 UTC | 51c | 51c | steady | 3 of 3 | 2586 |  |
 | Bolt of Mageweave | 4339 | 42s 0c | 2026-11-07 12:51 UTC | 31s 69c | 31s 69c | moving | 3 of 3 | 263 |  |
 | Bolt of Runecloth | 14048 | 34s 80c | 2026-11-07 12:51 UTC | 44s 80c | 44s 80c | volatile | 3 of 3 | 115 |  |
-| Bolt of Silk Cloth | 4305 | 14s 75c | 2026-11-07 12:51 UTC | 12s 99c | 12s 99c | moving | 3 of 3 | 271 |  |
+| Bolt of Silk Cloth | 4305 | 14s 78c | 2026-11-07 12:51 UTC | 12s 99c | 12s 99c | moving | 3 of 3 | 271 |  |
 | Bolt of Woolen Cloth | 2997 | 4s 20c | 2026-11-07 12:51 UTC | 4s 46c | 4s 46c | moving | 3 of 3 | 865 |  |
 | Coarse Thread | 2320 | 14c | 2026-11-07 12:51 UTC | 14c | 14c | moving | 3 of 3 | 4392 |  |
 | Fine Thread | 2321 | 1s 18c | 2026-11-07 12:51 UTC | 1s 0c | 1s 0c | moving | 3 of 3 | 1280 |  |
