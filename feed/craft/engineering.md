@@ -31,7 +31,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Unstable Trigger | 200 | 10560 | 1 | 2g 2s 99c | 1g 40s 90c | 62s 9c | ForeverDB |
 | Advanced Target Dummy | 185 | 4392 | 1 | 1g 66s 50c | 1g 8s 0c | 58s 50c | ForeverDB |
 | Gold Power Core | 150 | 10558 | 3 | 51s 0c | 7s 77c | 43s 23c | ForeverDB |
-| EZ-Thro Wrap | 100 | 260794 | 1 | 42s 50c | 5s 30c | 37s 20c | ForeverDB |
+| EZ-Thro Wrap | 100 | 260794 | 1 | 42s 50c | 5s 25c | 37s 25c | ForeverDB |
 | EZ-Thro Dynamite II | 200 | 18588 | 1 | 2g 29s 0c | 1g 96s 0c | 33s 0c | ForeverDB |
 | Shadow Goggles | 120 | 4373 | 1 | 44s 0c | 12s 90c | 31s 10c | ForeverDB |
 | Crafted Solid Shot | 125 | 8069 | 200 | 38s 0c | 9s 31c | 28s 69c | ForeverDB |
@@ -40,8 +40,9 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Solid Dynamite | 175 | 10507 | 2 | 61s 90c | 46s 0c | 15s 90c | ForeverDB |
 | Large Copper Bomb | 105 | 4370 | 3 | 20s 52c | 6s 70c | 13s 82c | ForeverDB |
 | Silver-plated Shotgun | 130 | 4379 | 1 | 1g 0s 0c | 91s 69c | 8s 31c | ForeverDB |
-| Small Bronze Bomb | 120 | 4374 | 2 | 15s 0c | 6s 88c | 8s 12c | ForeverDB |
-| Whirring Bronze Gizmo | 125 | 4375 | 1 | 9s 74c | 3s 96c | 5s 78c | ForeverDB |
+| Crafted Heavy Shot | 75 | 8068 | 200 | 10s 0c | 1s 74c | 8s 26c | ForeverDB |
+| Small Bronze Bomb | 120 | 4374 | 2 | 15s 0c | 6s 83c | 8s 17c | ForeverDB |
+| Whirring Bronze Gizmo | 125 | 4375 | 1 | 9s 74c | 3s 91c | 5s 83c | ForeverDB |
 | Iron Grenade | 175 | 4390 | 3 | 31s 50c | 25s 84c | 5s 66c | ForeverDB |
 | Solid Blasting Powder | 175 | 10505 | 1 | 43s 0c | 38s 46c | 4s 54c | ForeverDB |
 | EZ-Thro Copper Bomb XL | 130 | 260795 | 1 | 53s 69c | 49s 20c | 4s 49c | ForeverDB |
@@ -49,7 +50,6 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | SAF-T Dynamite | 25 | 260792 | 1 | 4s 0c | 52c | 3s 48c | ForeverDB |
 | Mechanical Squirrel | 75 | 4401 | 1 | 10s 0c | 6s 76c | 3s 24c | ForeverDB |
 | Big Bronze Bomb | 140 | 4380 | 3 | 23s 76c | 20s 95c | 2s 81c | ForeverDB |
-| Crafted Heavy Shot | 75 | 8068 | 200 | 4s 0c | 1s 74c | 2s 26c | our scan |
 | Handful of Copper Bolts | 30 | 4359 | 1 | 3s 20c | 1s 26c | 1s 94c | ForeverDB |
 | Coarse Dynamite | 75 | 4365 | 2 | 2s 76c | 1s 64c | 1s 12c | ForeverDB |
 | Crafted Light Shot | 1 | 8067 | 200 | 2s 0c | 1s 42c | 58c | our scan |

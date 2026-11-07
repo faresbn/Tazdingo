@@ -59,19 +59,17 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Fine Leather Gloves | 50 | 2312 | 1 | 20s 50c | 3s 15c | 17s 35c | ForeverDB |
 | Dark Leather Tunic | 75 | 2317 | 1 | 31s 0c | 16s 50c | 14s 50c | ForeverDB |
 | Fine Leather Pants | 80 | 5958 | 1 | 35s 0c | 21s 46c | 13s 54c | ForeverDB |
+| Cured Heavy Hide | 135 | 4236 | 1 | 26s 90c | 14s 50c | 12s 40c | ForeverDB |
 | Tanning Rack | 140 | 279941 | 1 | 25s 32c | 13s 76c | 11s 56c | ForeverDB |
-| Cured Heavy Hide | 135 | 4236 | 1 | 26s 90c | 16s 61c | 10s 29c | ForeverDB |
 | Green Leather Bracers | 175 | 4259 | 1 | 99s 50c | 91s 80c | 7s 70c | ForeverDB |
 | Forceful Heavy Armor Kit | 135 | 252453 | 1 | 1g 10s 0c | 1g 2s 76c | 7s 24c | ForeverDB |
 | Embossed Leather Pants | 75 | 4242 | 1 | 9s 0c | 3s 57c | 5s 43c | ForeverDB |
 | Hillman's Leather Vest | 75 | 4244 | 1 | 39s 50c | 34s 42c | 5s 8c | ForeverDB |
 | Light Leather Reagent Bag | 30 | 277715 | 1 | 7s 0c | 4s 9c | 2s 91c | our scan |
-| Cured Medium Hide | 90 | 4233 | 1 | 9s 21c | 6s 32c | 2s 89c | ForeverDB |
 | Medium Armor Kit | 90 | 2313 | 1 | 10s 40c | 8s 10c | 2s 30c | ForeverDB |
 | Handstitched Leather Pants | 15 | 2303 | 1 | 3s 0c | 94c | 2s 6c | ForeverDB |
 | White Leather Jerkin | 40 | 2311 | 1 | 4s 0c | 2s 13c | 1s 87c | our scan |
 | Fine Leather Boots | 65 | 2307 | 1 | 3s 0c | 1s 67c | 1s 33c | our scan |
-| Deviate Scale Gloves | 80 | 6467 | 1 | 35s 0c | 33s 82c | 1s 18c | our scan |
 | Embossed Leather Boots | 55 | 2309 | 1 | 3s 0c | 2s 18c | 82c | our scan |
 | Light Leather Pants | 95 | 7282 | 1 | 6s 0c | 5s 21c | 79c | our scan |
 | Embossed Leather Cloak | 60 | 2310 | 1 | 2s 0c | 1s 25c | 75c | our scan |
@@ -83,6 +81,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Light Leather Bracers | 70 | 7281 | 1 | 2s 0c | 1s 66c | 34c | our scan |
 | Handstitched Leather Bracers | 1 | 7277 | 1 | 1s 0c | 72c | 28c | our scan |
 | Handstitched Leather Vest | 1 | 5957 | 1 | 1s 0c | 73c | 27c | our scan |
+| Deviate Scale Gloves | 80 | 6467 | 1 | 34s 0c | 33s 82c | 18c | our scan |
 | Embossed Leather Gloves | 55 | 4239 | 1 | 1s 0c | 83c | 17c | our scan |
 | Light Leather | 1 | 2318 | 1 | 21c | 18c | 3c | our scan |
 | Deviate Scale Cloak | 65 | 6466 | 1 | 18s 50c | 18s 47c | 3c | ForeverDB |

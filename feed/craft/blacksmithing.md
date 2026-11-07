@@ -27,8 +27,8 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Cloudy Skyforged Legguards | 60 | 276996 | 1 | 45s 0c | 11s 8c | 33s 92c | ForeverDB |
 | Anvil | 140 | 279988 | 1 | 50s 0c | 16s 45c | 33s 55c | ForeverDB |
 | Silvered Bronze Leggings | 130 | 10423 | 1 | 99s 0c | 70s 4c | 28s 96c | ForeverDB |
-| Deadly Bronze Poniard | 100 | 3490 | 1 | 70s 0c | 42s 24c | 27s 76c | our scan |
 | Hardened Iron Shortsword | 135 | 3849 | 1 | 2g 0s 0c | 1g 79s 16c | 20s 84c | ForeverDB |
+| Deadly Bronze Poniard | 100 | 3490 | 1 | 63s 0c | 42s 24c | 20s 76c | our scan |
 | Solid Weightstone | 175 | 7965 | 1 | 37s 48c | 19s 23c | 18s 25c | ForeverDB |
 | Heavy Bronze Mace | 130 | 3491 | 1 | 60s 0c | 46s 89c | 13s 11c | our scan |
 | Golden Rod | 130 | 11128 | 1 | 24s 50c | 13s 57c | 10s 93c | ForeverDB |
@@ -41,7 +41,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Heavy Sharpening Stone | 100 | 2871 | 1 | 13s 99c | 9s 10c | 4s 89c | ForeverDB |
 | Coarse Weightstone | 40 | 3240 | 1 | 5s 48c | 86c | 4s 62c | ForeverDB |
 | Big Bronze Knife | 100 | 3848 | 1 | 20s 0c | 15s 67c | 4s 33c | our scan |
-| Bronze Axe | 115 | 2849 | 1 | 19s 0c | 15s 31c | 3s 69c | our scan |
+| Bronze Axe | 115 | 2849 | 1 | 18s 0c | 15s 31c | 2s 69c | our scan |
 | Bronze Battle Axe | 135 | 7958 | 1 | 44s 0c | 42s 62c | 1s 38c | our scan |
 | Coarse Grinding Stone | 50 | 3478 | 1 | 2s 90c | 1s 72c | 1s 18c | our scan |
 | Copper Chain Vest | 30 | 3471 | 1 | 12s 0c | 10s 87c | 1s 13c | ForeverDB |

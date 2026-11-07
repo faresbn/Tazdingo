@@ -37,17 +37,18 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Dig Rat Stew | 90 | 5478 | 2 | 3s 94c | 2s 92c | 1s 2c | ForeverDB |
 | Crab Cake | 75 | 2683 | 1 | 9s 0c | 8s 33c | 67c | ForeverDB |
 | Cooked Crab Claw | 85 | 2682 | 1 | 98c | 35c | 63c | ForeverDB |
+| Sagefish Delight | 175 | 21217 | 1 | 4s 12c | 3s 50c | 62c | ForeverDB |
 | Gooey Spider Cake | 110 | 3666 | 1 | 2s 74c | 2s 14c | 60c | ForeverDB |
-| Sagefish Delight | 175 | 21217 | 1 | 4s 12c | 3s 53c | 59c | ForeverDB |
+| Blood Sausage | 60 | 3220 | 2 | 1s 8c | 58c | 50c | ForeverDB |
 | Goblin Deviled Clams | 125 | 5527 | 1 | 1s 79c | 1s 30c | 49c | ForeverDB |
-| Blood Sausage | 60 | 3220 | 2 | 1s 8c | 61c | 47c | ForeverDB |
 | Basic Campfire | 1 | 279981 | 1 | 65c | 38c | 27c | our scan |
 | Murloc Fin Soup | 90 | 3663 | 1 | 1s 80c | 1s 56c | 24c | ForeverDB |
 | Strider Stew | 50 | 5477 | 2 | 1s 12c | 90c | 22c | ForeverDB |
+| Rainbow Fin Albacore | 50 | 5095 | 1 | 69c | 49c | 20c | ForeverDB |
 | Loch Frenzy Delight | 50 | 6316 | 1 | 59c | 42c | 17c | ForeverDB |
 | Kaldorei Spider Kabob | 10 | 5472 | 1 | 17c | 3c | 14c | ForeverDB |
+| Smoked Bear Meat | 40 | 6890 | 1 | 35c | 22c | 13c | our scan |
 | Breakfast Omelette | 75 | 250080 | 1 | 2s 0c | 1s 89c | 11c | ForeverDB |
-| Smoked Bear Meat | 40 | 6890 | 1 | 35c | 25c | 10c | our scan |
 | Mrrggl Smrrthle | 125 | 249873 | 1 | 6s 44c | 6s 38c | 6c | ForeverDB |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

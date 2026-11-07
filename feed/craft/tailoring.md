@@ -50,7 +50,6 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Orange Mageweave Shirt | 185 | 10056 | 1 | 75s 0c | 61s 69c | 13s 31c | ForeverDB |
 | Blue Linen Robe | 45 | 6242 | 1 | 13s 0c | 3s 24c | 9s 76c | ForeverDB |
 | Woolen Boots | 95 | 2583 | 1 | 29s 50c | 20s 26c | 9s 24c | ForeverDB |
-| Blue Overalls | 75 | 6263 | 1 | 29s 0c | 20s 84c | 8s 16c | our scan |
 | Heavy Woolen Gloves | 85 | 4310 | 1 | 22s 0c | 14s 38c | 7s 62c | ForeverDB |
 | Soft-soled Linen Boots | 80 | 4312 | 1 | 11s 0c | 3s 97c | 7s 3c | ForeverDB |
 | Green Woolen Vest | 85 | 2582 | 1 | 17s 0c | 11s 92c | 5s 8c | ForeverDB |
@@ -66,7 +65,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Bolt of Silk Cloth | 110 | 4305 | 1 | 12s 99c | 12s 0c | 99c | our scan |
 | Brown Linen Pants | 30 | 4343 | 1 | 2s 0c | 1s 12c | 88c | our scan |
 | Red Linen Vest | 35 | 6239 | 1 | 3s 0c | 2s 13c | 87c | our scan |
-| Bolt of Woolen Cloth | 70 | 2997 | 1 | 4s 46c | 3s 90c | 56c | our scan |
+| Bolt of Woolen Cloth | 70 | 2997 | 1 | 4s 46c | 3s 75c | 71c | our scan |
 | Lesser Wizard's Robe | 130 | 5766 | 1 | 42s 50c | 42s 0c | 50c | ForeverDB |
 | Brown Linen Shirt | 1 | 4344 | 1 | 1s 0c | 61c | 39c | our scan |
 | Linen Cloak | 1 | 2570 | 1 | 1s 0c | 61c | 39c | our scan |
@@ -78,6 +77,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Red Linen Robe | 25 | 2572 | 1 | 3s 0c | 2s 73c | 27c | our scan |
 | Faction Banner | 0 | 279973 | 1 | 80c | 61c | 19c | ForeverDB |
 | Linen Boots | 65 | 2569 | 1 | 2s 0c | 1s 84c | 16c | our scan |
+| Blue Overalls | 75 | 6263 | 1 | 21s 0c | 20s 84c | 16c | ForeverDB |
 | Simple Dress | 40 | 6786 | 1 | 2s 0c | 1s 87c | 13c | ForeverDB |
 | White Linen Robe | 30 | 6241 | 1 | 2s 0c | 1s 88c | 12c | our scan |
 | Bolt of Linen Cloth | 1 | 2996 | 1 | 51c | 40c | 11c | our scan |
