@@ -28,35 +28,28 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Lesser Mender's Potion | 80 | 250945 | 1 | 25s 97c | 10s 40c | 15s 57c | ForeverDB |
 | Elixir of Agility | 185 | 8949 | 1 | 94s 50c | 79s 88c | 14s 62c | ForeverDB |
 | Great Rage Potion | 175 | 5633 | 1 | 30s 62c | 16s 30c | 14s 32c | ForeverDB |
+| Frenzy Potion | 140 | 250940 | 1 | 52s 32c | 39s 48c | 12s 84c | ForeverDB |
 | Lesser Spellblasting Potion | 85 | 250933 | 1 | 12s 49c | 1s 80c | 10s 69c | ForeverDB |
 | Fermenter | 140 | 279970 | 1 | 23s 99c | 13s 40c | 10s 59c | ForeverDB |
+| Swiftness Potion | 60 | 2459 | 1 | 20s 71c | 11s 43c | 9s 28c | ForeverDB |
 | Nature Protection Potion | 190 | 6052 | 1 | 19s 88c | 10s 89c | 8s 99c | ForeverDB |
 | Lesser Invisibility Potion | 165 | 3823 | 1 | 29s 94c | 21s 71c | 8s 23c | ForeverDB |
+| Lesser Discolored Healing Potion | 0 | 247239 | 1 | 24s 0c | 15s 97c | 8s 3c | ForeverDB |
+| Lesser Frenzy Potion | 90 | 250939 | 1 | 10s 66c | 2s 83c | 7s 83c | ForeverDB |
 | Elixir of Giant Growth | 90 | 6662 | 1 | 18s 65c | 11s 27c | 7s 38c | ForeverDB |
 | Elixir of Fire Power | 140 | 6373 | 1 | 12s 28c | 5s 18c | 7s 10c | ForeverDB |
 | Minor Cleric's Elixir | 45 | 250330 | 1 | 9s 62c | 2s 80c | 6s 82c | ForeverDB |
+| Lesser Troll's Blood Elixir | 125 | 3388 | 1 | 12s 88c | 6s 6c | 6s 82c | ForeverDB |
 | Minor Mageblood Elixir | 25 | 250339 | 1 | 7s 72c | 1s 80c | 5s 92c | ForeverDB |
-| Swiftness Potion | 60 | 2459 | 1 | 20s 71c | 15s 59c | 5s 12c | ForeverDB |
+| Rage Potion | 60 | 5631 | 1 | 6s 49c | 1s 71c | 4s 78c | ForeverDB |
 | Elixir of Minor Spirit | 15 | 250344 | 1 | 6s 92c | 2s 20c | 4s 72c | ForeverDB |
-| Frenzy Potion | 140 | 250940 | 1 | 52s 32c | 47s 80c | 4s 52c | ForeverDB |
 | Blackmouth Oil | 80 | 6370 | 1 | 13s 17c | 8s 70c | 4s 47c | ForeverDB |
 | Catseye Draught | 200 | 10592 | 1 | 95s 87c | 91s 70c | 4s 17c | ForeverDB |
-| Lesser Discolored Healing Potion | 0 | 247239 | 1 | 24s 0c | 20s 13c | 3s 87c | ForeverDB |
-| Lesser Frenzy Potion | 90 | 250939 | 1 | 10s 66c | 6s 99c | 3s 67c | ForeverDB |
 | Elixir of Minor Strength | 0 | 2454 | 1 | 4s 54c | 1s 40c | 3s 14c | ForeverDB |
 | Minor Mender's Potion | 30 | 250944 | 1 | 5s 88c | 2s 80c | 3s 8c | ForeverDB |
-| Transmute: Iron to Gold | 225 | 3577 | 1 | 15s 30c | 12s 97c | 2s 33c | ForeverDB |
 | Spellblasting Potion | 135 | 250934 | 1 | 36s 25c | 33s 94c | 2s 31c | ForeverDB |
 | Elixir of Minor Force | 1 | 247755 | 1 | 2s 87c | 60c | 2s 27c | ForeverDB |
-| Minor Frenzy Potion | 40 | 250938 | 1 | 3s 58c | 1s 40c | 2s 18c | ForeverDB |
-| Elixir of Minor Fortitude | 50 | 2458 | 1 | 4s 37c | 2s 20c | 2s 17c | ForeverDB |
 | Sulfuric Acid | 0 | 249410 | 1 | 9s 21c | 7s 28c | 1s 93c | ForeverDB |
-| Minor Troll's Blood Elixir | 15 | 3382 | 1 | 4s 0c | 2s 20c | 1s 80c | ForeverDB |
-| Minor Arcane Elixir | 1 | 247754 | 1 | 2s 16c | 60c | 1s 56c | ForeverDB |
-| Minor Spellblasting Potion | 35 | 250932 | 1 | 2s 19c | 1s 0c | 1s 19c | ForeverDB |
-| Minor Discolored Healing Potion | 50 | 4596 | 1 | 16s 44c | 15s 34c | 1s 10c | ForeverDB |
 | Elixir of Minor Agility | 50 | 2457 | 1 | 11s 54c | 10s 80c | 74c | ForeverDB |
-| Fire Oil | 130 | 6371 | 2 | 1s 98c | 1s 24c | 74c | ForeverDB |
-| Rage Potion | 60 | 5631 | 1 | 6s 49c | 5s 84c | 65c | ForeverDB |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

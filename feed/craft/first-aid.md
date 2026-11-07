@@ -8,9 +8,10 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Toxin Study | 140 | 279940 | 1 | 3g 56s 48c | 1g 61s 71c | 1g 94s 77c | ForeverDB |
 | Clever Poultice | 140 | 255717 | 3 | 58s 50c | 2s 54c | 55s 96c | ForeverDB |
 | Strong Anti-Venom | 130 | 6453 | 3 | 15s 15c | 5s 54c | 9s 61c | ForeverDB |
-| Simple Poultice | 0 | 255716 | 3 | 5s 7c | 88c | 4s 19c | ForeverDB |
-| Anti-Venom | 80 | 6452 | 3 | 2s 85c | 1s 63c | 1s 22c | ForeverDB |
-| Woolen Tourniquet | 0 | 255720 | 1 | 5s 75c | 5s 38c | 37c | ForeverDB |
-| First Aid Kit | 0 | 279968 | 1 | 81c | 55c | 26c | ForeverDB |
+| Simple Poultice | 0 | 255716 | 3 | 5s 7c | 76c | 4s 31c | ForeverDB |
+| Anti-Venom | 80 | 6452 | 3 | 2s 85c | 88c | 1s 97c | ForeverDB |
+| Woolen Tourniquet | 0 | 255720 | 1 | 5s 75c | 4s 90c | 85c | ForeverDB |
+| Heavy Silk Bandage | 180 | 6451 | 1 | 6s 72c | 6s 0c | 72c | ForeverDB |
+| First Aid Kit | 0 | 279968 | 1 | 81c | 52c | 29c | ForeverDB |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
