@@ -1,57 +1,59 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Weapon: Axe
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-07 19:24 UTC. Uploads in the 30-day window: 12.
+- **Latest scan:** 2026-11-08 16:27 UTC. Uploads in the 30-day window: 13.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Axe of the Enforcer | 1454 | 3g 20s 0c | 2026-11-07 19:24 UTC | 2g 59s 0c |  | too new | 2 of 3 | 4 |  |
-| Barbarian War Axe | 3201 | 45s 0c | 2026-11-07 19:24 UTC | 47s 50c |  | too new | 2 of 3 | 36 |  |
-| Barbaric Battle Axe | 3195 | 14s 0c | 2026-11-07 19:24 UTC | 14s 0c | 14s 0c | moving | 3 of 3 | 184 |  |
-| Battle Slayer | 3199 | 23s 0c | 2026-11-07 19:24 UTC | 23s 0c | 23s 0c | moving | 3 of 3 | 37 |  |
-| Bearded Boneaxe | 2878 | 99s 0c | 2026-11-07 19:24 UTC | 1g 49s 50c |  | too new | 2 of 3 | 12 |  |
-| Beaten Battle Axe | 1417 | 1s 0c | 2026-11-07 19:24 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 38 |  |
-| Blurred Axe | 4824 | 2g 20s 0c | 2026-11-07 19:24 UTC | 2g 90s 50c |  | too new | 2 of 3 | 2 |  |
-| Boahn's Fang | 5423 | 1g 80s 0c | 2026-11-05 18:58 UTC | 1g 80s 0c |  | too new | 1 of 3 | 1 |  |
-| Bronze Axe | 2849 | 16s 0c | 2026-11-07 19:24 UTC | 16s 0c | 16s 0c | moving | 3 of 3 | 33 |  |
-| Bronze Battle Axe | 7958 | 45s 0c | 2026-11-07 10:45 UTC | 44s 0c | 44s 0c | moving | 3 of 3 | 19 |  |
-| Brutal War Axe | 3210 | 59s 0c | 2026-11-07 19:24 UTC | 79s 0c | 79s 0c | volatile | 3 of 3 | 11 |  |
-| Brutish Riverpaw Axe | 826 | 35s 0c | 2026-11-05 18:58 UTC | 35s 0c |  | too new | 1 of 3 | 1 |  |
-| Burning War Axe | 2299 | 8g 0s 0c | 2026-11-07 19:24 UTC | 8g 50s 0c |  | too new | 2 of 3 | 14 |  |
-| Callous Axe | 4825 | 3g 62s 0c | 2026-11-07 19:24 UTC | 3g 41s 0c |  | too new | 2 of 3 | 2 |  |
-| Cleaver | 2029 | 13s 0c | 2026-11-07 04:40 UTC | 13s 0c |  | too new | 1 of 3 | 1 |  |
-| Copper Axe | 2845 | 2s 0c | 2026-11-07 12:51 UTC | 2s 0c | 2s 0c | volatile | 3 of 3 | 18 |  |
-| Copper Battle Axe | 3488 | 9s 0c | 2026-11-07 19:24 UTC | 9s 0c | 9s 0c | steady | 3 of 3 | 39 |  |
-| Crude Battle Axe | 1512 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 51 |  |
-| Deadman Cleaver | 3293 | 50s 0c | 2026-11-07 04:40 UTC | 50s 0c |  | too new | 2 of 3 | 1 |  |
-| Dwarven Hatchet | 2073 | 8s 0c | 2026-11-07 19:24 UTC | 7s 0c | 7s 0c | moving | 3 of 3 | 568 |  |
-| Flesh Carver | 4445 | 76s 0c | 2026-11-07 19:24 UTC | 68s 0c | 68s 0c | steady | 3 of 3 | 6 |  |
-| Flurry Axe | 871 | 1,000g 45s 0c | 2026-11-07 04:40 UTC | 1,000g 45s 0c |  | too new | 1 of 3 | 1 |  |
-| Forester's Axe | 790 | 21s 0c | 2026-11-07 19:24 UTC | 21s 0c | 21s 0c | volatile | 3 of 3 | 52 |  |
-| Gloom Reaper | 863 | 1g 20s 0c | 2026-11-07 19:24 UTC | 3g 10s 0c |  | too new | 2 of 3 | 8 |  |
-| Gouging Pick | 1819 | 23s 0c | 2026-11-07 19:24 UTC | 17s 50c |  | too new | 2 of 3 | 12 |  |
-| Grimclaw | 1481 | 1g 77s 0c | 2026-11-07 19:24 UTC | 1g 63s 50c |  | too new | 2 of 3 | 7 |  |
-| Grunt Axe | 4568 | 17s 0c | 2026-11-07 19:24 UTC | 17s 0c | 17s 0c | moving | 3 of 3 | 52 |  |
-| Guillotine Axe | 2807 | 1g 0s 0c | 2026-11-07 19:24 UTC | 1g 12s 50c |  | too new | 2 of 3 | 25 |  |
-| Hatchet | 853 | 20s 0c | 2026-11-07 04:40 UTC | 19s 50c |  | too new | 2 of 3 | 2 |  |
-| Hillborne Axe | 2080 | 89s 0c | 2026-11-07 19:24 UTC | 1g 39s 0c |  | too new | 2 of 3 | 15 |  |
-| Large Axe | 2491 | 3s 0c | 2026-11-07 04:40 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 4 |  |
-| Lumberjack Axe | 768 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 81 |  |
-| Marauder Axe | 4826 | 50s 0c | 2026-11-07 04:40 UTC | 50s 0c |  | too new | 1 of 3 | 1 |  |
-| Night Reaver | 1318 | 3g 75s 0c | 2026-11-07 19:24 UTC | 1g 90s 0c | 1g 90s 0c | moving | 3 of 3 | 17 |  |
-| Rusty Hatchet | 1416 | 1s 0c | 2026-11-07 19:24 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 26 |  |
-| Scalping Tomahawk | 4561 | 4s 0c | 2026-11-07 19:24 UTC | 3s 0c | 3s 0c | steady | 3 of 3 | 685 |  |
-| Severing Axe | 4562 | 3s 0c | 2026-11-07 19:24 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 590 |  |
-| Shiny War Axe | 1824 | 13s 0c | 2026-11-07 19:24 UTC | 15s 0c |  | too new | 2 of 3 | 4 |  |
-| Short-handled Battle Axe | 1812 | 5s 0c | 2026-11-07 19:24 UTC | 5s 0c | 5s 0c | moving | 3 of 3 | 19 |  |
-| Stalvan's Reaper | 934 | 8g 0s 0c | 2026-11-07 19:24 UTC | 4g 99s 50c |  | too new | 2 of 3 | 4 |  |
-| Thick War Axe | 3489 | 24s 0c | 2026-11-07 19:24 UTC | 15s 0c | 15s 0c | steady | 3 of 3 | 59 |  |
-| Tomahawk | 2490 | 10s 0c | 2026-11-05 06:58 UTC | 10s 0c |  | too new | 1 of 3 | 1 |  |
-| Unbalanced Axe | 1816 | 5s 0c | 2026-11-07 19:24 UTC | 5s 0c | 5s 0c | moving | 3 of 3 | 8 |  |
-| Vile Fin Battle Axe | 3325 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 37 |  |
-| Wood Chopper | 3189 | 1s 0c | 2026-11-07 19:24 UTC | 1s 0c | 1s 0c | volatile | 3 of 3 | 29 |  |
-| Worn Axe | 37 | 2g 0s 0c | 2026-11-07 19:24 UTC | 1s 0c |  | too new | 2 of 3 | 1 |  |
-| Worn Hatchet | 1516 | 3s 0c | 2026-11-07 19:24 UTC | 3s 0c | 3s 0c | steady | 3 of 3 | 55 |  |
+| Axe of the Enforcer | 1454 | 4g 70s 0c | 2026-11-08 16:27 UTC | 3g 44s 0c | 3g 44s 0c | volatile | 3 of 4 | 4 |  |
+| Barbarian War Axe | 3201 | 45s 0c | 2026-11-08 16:27 UTC | 45s 0c | 45s 0c | steady | 3 of 4 | 45 |  |
+| Barbaric Battle Axe | 3195 | 14s 0c | 2026-11-08 16:27 UTC | 14s 0c | 14s 0c | steady | 4 of 4 | 214 |  |
+| Battle Slayer | 3199 | 23s 0c | 2026-11-08 16:27 UTC | 23s 0c | 23s 0c | steady | 4 of 4 | 60 |  |
+| Bearded Boneaxe | 2878 | 1g 0s 0c | 2026-11-08 16:27 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 4 | 17 |  |
+| Beaten Battle Axe | 1417 | 1s 0c | 2026-11-08 16:27 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 34 |  |
+| Blurred Axe | 4824 | 1g 77s 0c | 2026-11-08 16:27 UTC | 1g 77s 0c | 1g 77s 0c | volatile | 3 of 4 | 3 |  |
+| Boahn's Fang | 5423 | 2g 32s 0c | 2026-11-08 16:27 UTC | 2g 6s 0c |  | too new | 2 of 4 | 1 |  |
+| Bronze Axe | 2849 | 14s 0c | 2026-11-08 16:27 UTC | 15s 50c | 15s 50c | steady | 4 of 4 | 42 |  |
+| Bronze Battle Axe | 7958 | 1g 30s 0c | 2026-11-08 16:27 UTC | 44s 50c | 44s 50c | moving | 4 of 4 | 18 |  |
+| Brutal War Axe | 3210 | 57s 0c | 2026-11-08 16:27 UTC | 69s 0c | 69s 0c | moving | 4 of 4 | 24 |  |
+| Brutish Riverpaw Axe | 826 | 35s 0c | 2026-11-05 18:58 UTC | 35s 0c |  | too new | 1 of 4 | 1 |  |
+| Burning War Axe | 2299 | 5g 5s 0c | 2026-11-08 16:27 UTC | 8g 0s 0c | 8g 0s 0c | moving | 3 of 4 | 23 |  |
+| Callous Axe | 4825 | 2g 68s 0c | 2026-11-08 16:27 UTC | 3g 20s 0c | 3g 20s 0c | moving | 3 of 4 | 2 |  |
+| Cleaver | 2029 | 13s 0c | 2026-11-07 04:40 UTC | 13s 0c |  | too new | 1 of 4 | 1 |  |
+| Copper Axe | 2845 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 17 |  |
+| Copper Battle Axe | 3488 | 11s 0c | 2026-11-08 16:27 UTC | 9s 0c | 9s 0c | steady | 4 of 4 | 36 |  |
+| Crude Battle Axe | 1512 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 60 |  |
+| Deadman Cleaver | 3293 | 50s 0c | 2026-11-08 16:27 UTC | 50s 0c | 50s 0c | steady | 3 of 4 | 1 |  |
+| Dwarven Hatchet | 2073 | 8s 0c | 2026-11-08 16:27 UTC | 7s 50c | 7s 50c | moving | 4 of 4 | 619 |  |
+| Flesh Carver | 4445 | 73s 0c | 2026-11-08 16:27 UTC | 70s 50c | 70s 50c | steady | 4 of 4 | 6 |  |
+| Flurry Axe | 871 | 500g 45s 0c | 2026-11-08 16:27 UTC | 750g 45s 0c |  | too new | 2 of 4 | 1 |  |
+| Forester's Axe | 790 | 21s 0c | 2026-11-08 16:27 UTC | 21s 0c | 21s 0c | steady | 4 of 4 | 62 |  |
+| Gloom Reaper | 863 | 93s 0c | 2026-11-08 16:27 UTC | 1g 20s 0c | 1g 20s 0c | volatile | 3 of 4 | 14 |  |
+| Gouging Pick | 1819 | 8s 0c | 2026-11-08 16:27 UTC | 12s 0c | 12s 0c | volatile | 3 of 4 | 21 |  |
+| Grimclaw | 1481 | 1g 50s 0c | 2026-11-08 16:27 UTC | 1g 50s 0c | 1g 50s 0c | steady | 3 of 4 | 8 |  |
+| Grunt Axe | 4568 | 17s 0c | 2026-11-08 16:27 UTC | 17s 0c | 17s 0c | steady | 4 of 4 | 68 |  |
+| Guillotine Axe | 2807 | 1g 11s 0c | 2026-11-08 16:27 UTC | 1g 11s 0c | 1g 11s 0c | steady | 3 of 4 | 14 |  |
+| Hatchet | 853 | 20s 0c | 2026-11-07 04:40 UTC | 19s 50c |  | too new | 2 of 4 | 2 |  |
+| Heavy Mithril Axe | 7941 | 4g 0s 0c | 2026-11-08 16:27 UTC | 4g 0s 0c |  | too new | 1 of 4 | 1 |  |
+| Hillborne Axe | 2080 | 70s 0c | 2026-11-08 16:27 UTC | 89s 0c | 89s 0c | volatile | 3 of 4 | 26 |  |
+| Large Axe | 2491 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 3 |  |
+| Lumberjack Axe | 768 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 72 |  |
+| Marauder Axe | 4826 | 2g 0s 0c | 2026-11-08 16:27 UTC | 1g 25s 0c |  | too new | 2 of 4 | 1 |  |
+| Massive Iron Axe | 3855 | 3g 20s 0c | 2026-11-08 16:27 UTC | 3g 20s 0c |  | too new | 1 of 4 | 7 |  |
+| Night Reaver | 1318 | 1g 88s 0c | 2026-11-08 16:27 UTC | 1g 89s 0c | 1g 89s 0c | moving | 4 of 4 | 18 |  |
+| Rusty Hatchet | 1416 | 1s 0c | 2026-11-08 16:27 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 24 |  |
+| Scalping Tomahawk | 4561 | 4s 0c | 2026-11-08 16:27 UTC | 3s 0c | 3s 0c | steady | 4 of 4 | 598 |  |
+| Severing Axe | 4562 | 3s 0c | 2026-11-08 16:27 UTC | 3s 0c | 3s 0c | moving | 4 of 4 | 515 |  |
+| Shiny War Axe | 1824 | 12s 0c | 2026-11-08 16:27 UTC | 13s 0c | 13s 0c | moving | 3 of 4 | 8 |  |
+| Short-handled Battle Axe | 1812 | 5s 0c | 2026-11-08 16:27 UTC | 5s 0c | 5s 0c | steady | 4 of 4 | 28 |  |
+| Stalvan's Reaper | 934 | 3g 0s 0c | 2026-11-08 16:27 UTC | 4g 99s 0c | 4g 99s 0c | moving | 3 of 4 | 5 |  |
+| Thick War Axe | 3489 | 23s 0c | 2026-11-08 16:27 UTC | 16s 0c | 16s 0c | steady | 4 of 4 | 40 |  |
+| Tomahawk | 2490 | 2s 0c | 2026-11-08 16:27 UTC | 6s 0c |  | too new | 2 of 4 | 1 |  |
+| Unbalanced Axe | 1816 | 5s 0c | 2026-11-08 16:27 UTC | 5s 0c | 5s 0c | steady | 4 of 4 | 18 |  |
+| Vile Fin Battle Axe | 3325 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 36 |  |
+| Wood Chopper | 3189 | 1s 0c | 2026-11-08 16:27 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 28 |  |
+| Worn Axe | 37 | 1s 0c | 2026-11-08 16:27 UTC | 1s 0c | 1s 0c | steady | 3 of 4 | 1 |  |
+| Worn Hatchet | 1516 | 3s 0c | 2026-11-08 16:27 UTC | 3s 0c | 3s 0c | steady | 4 of 4 | 68 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

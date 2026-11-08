@@ -4,11 +4,10 @@ Estimated listing margins: what the item lists for against what its reagents cos
 
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
-| Rock Garden | 140 | 279948 | 1 | 95s 50c | 43s 86c | 51s 64c | ForeverDB |
-| Smelt Truesilver | 230 | 6037 | 1 | 29s 87c | 17s 50c | 12s 37c | ForeverDB |
+| Rock Garden | 140 | 279948 | 1 | 95s 50c | 19s 95c | 75s 55c | ForeverDB |
+| Smelt Steel | 165 | 3859 | 1 | 18s 12c | 10s 29c | 7s 83c | ForeverDB |
 | Smelt Mithril | 175 | 3860 | 1 | 26s 74c | 19s 83c | 6s 91c | ForeverDB |
-| Smelt Silver | 75 | 2842 | 1 | 12s 7c | 7s 77c | 4s 30c | ForeverDB |
-| Smelt Iron | 125 | 3575 | 1 | 14s 86c | 13s 59c | 1s 27c | ForeverDB |
-| Smelt Tin | 50 | 3576 | 1 | 2s 16c | 1s 99c | 17c | our scan |
+| Smelt Tin | 50 | 3576 | 1 | 2s 7c | 1s 92c | 15c | our scan |
+| Smelt Iron | 125 | 3575 | 1 | 5s 29c | 5s 17c | 12c | our scan |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

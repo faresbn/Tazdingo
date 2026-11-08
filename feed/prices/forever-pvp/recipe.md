@@ -1,134 +1,136 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Recipe
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-07 19:24 UTC. Uploads in the 30-day window: 12.
+- **Latest scan:** 2026-11-08 16:27 UTC. Uploads in the 30-day window: 13.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Formula: Enchant 2H Weapon - Lesser Intellect | 6349 | 10s 0c | 2026-11-07 19:24 UTC | 10s 0c | 10s 0c | steady | 3 of 3 | 28 |  |
-| Formula: Enchant Boots - Minor Agility | 6377 | 5s 0c | 2026-11-07 19:24 UTC | 6s 0c | 6s 0c | volatile | 3 of 3 | 68 |  |
-| Formula: Enchant Bracer - Lesser Spirit | 6375 | 3s 0c | 2026-11-07 19:24 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 98 |  |
-| Formula: Enchant Bracer - Minor Spirit | 6344 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 163 |  |
-| Formula: Enchant Bracer - Minor Strength | 6347 | 2s 0c | 2026-11-07 19:24 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 161 |  |
-| Formula: Enchant Chest - Lesser Intellect | 6346 | 36s 0c | 2026-11-07 19:24 UTC | 15s 0c | 15s 0c | volatile | 3 of 3 | 17 |  |
-| Formula: Enchant Chest - Minor Intellect | 6342 | 6s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | volatile | 3 of 3 | 45 |  |
-| Formula: Enchant Weapon - Minor Beastslayer | 6348 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 264 |  |
-| Manual: Strong Anti-Venom | 6454 | 6s 0c | 2026-11-07 12:51 UTC | 7s 0c | 7s 0c | volatile | 3 of 3 | 34 |  |
-| Pattern: Azure Shoulders | 7085 | 50s 0c | 2026-11-07 19:24 UTC | 3g 78s 0c |  | too new | 2 of 3 | 22 |  |
-| Pattern: Barbaric Gloves | 4297 | 7s 0c | 2026-11-07 19:24 UTC | 7s 0c | 7s 0c | volatile | 3 of 3 | 43 |  |
-| Pattern: Black Silk Pack | 5775 | 48s 0c | 2026-11-07 19:24 UTC | 2g 51s 0c |  | too new | 2 of 3 | 16 |  |
-| Pattern: Blue Linen Robe | 6272 | 5s 0c | 2026-11-07 19:24 UTC | 5s 50c |  | too new | 2 of 3 | 32 |  |
-| Pattern: Blue Linen Vest | 6270 | 3s 0c | 2026-11-07 19:24 UTC | 3s 0c | 3s 0c | volatile | 3 of 3 | 21 |  |
-| Pattern: Blue Overalls | 6274 | 13s 0c | 2026-11-07 19:24 UTC | 13s 0c | 13s 0c | volatile | 3 of 3 | 5 |  |
-| Pattern: Boots of the Enchanter | 4352 | 5s 0c | 2026-11-07 19:24 UTC | 10s 0c |  | too new | 2 of 3 | 32 |  |
-| Pattern: Crimson Silk Shoulders | 7084 | 16s 0c | 2026-11-07 19:24 UTC | 33s 0c |  | too new | 2 of 3 | 16 |  |
-| Pattern: Dark Leather Shoulders | 4296 | 10s 0c | 2026-11-07 19:24 UTC | 10s 0c | 10s 0c | volatile | 3 of 3 | 34 |  |
-| Pattern: Dark Leather Tunic | 2409 | 4s 0c | 2026-11-07 19:24 UTC | 4s 0c | 4s 0c | moving | 3 of 3 | 259 |  |
-| Pattern: Deviate Scale Belt | 6476 | 5s 0c | 2026-11-07 19:24 UTC | 5s 0c | 5s 0c | volatile | 3 of 3 | 53 |  |
-| Pattern: Deviate Scale Cloak | 6474 | 6s 0c | 2026-11-07 19:24 UTC | 14s 0c | 14s 0c | volatile | 3 of 3 | 65 |  |
-| Pattern: Deviate Scale Gloves | 6475 | 8s 0c | 2026-11-07 19:24 UTC | 15s 0c | 15s 0c | volatile | 3 of 3 | 33 |  |
-| Pattern: Earthen Silk Belt | 7086 | 8s 0c | 2026-11-07 19:24 UTC | 19s 0c |  | too new | 2 of 3 | 13 |  |
-| Pattern: Fine Leather Boots | 2406 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 250 |  |
-| Pattern: Fine Leather Gloves | 2408 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 295 |  |
-| Pattern: Fine Leather Pants | 5972 | 4s 0c | 2026-11-07 19:24 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 79 |  |
-| Pattern: Gray Woolen Robe | 2601 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | volatile | 3 of 3 | 63 |  |
-| Pattern: Greater Adept's Robe | 6275 | 16s 0c | 2026-11-07 10:45 UTC | 18s 0c | 18s 0c | steady | 3 of 3 | 10 |  |
-| Pattern: Green Silk Armor | 7090 | 7s 0c | 2026-11-07 19:24 UTC | 49s 0c | 49s 0c | volatile | 3 of 3 | 21 |  |
-| Pattern: Green Silk Pack | 5774 | 7s 0c | 2026-11-07 19:24 UTC | 15s 0c | 15s 0c | volatile | 3 of 3 | 24 |  |
-| Pattern: Green Woolen Bag | 4292 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 129 |  |
-| Pattern: Guardian Armor | 4299 | 9s 0c | 2026-11-07 19:24 UTC | 9s 0c | 9s 0c | volatile | 3 of 3 | 26 |  |
-| Pattern: Guardian Belt | 4298 | 50s 0c | 2026-11-07 19:24 UTC | 32s 50c |  | too new | 2 of 3 | 8 |  |
-| Pattern: Guardian Cloak | 5974 | 22s 0c | 2026-11-07 19:24 UTC | 60s 50c |  | too new | 2 of 3 | 22 |  |
-| Pattern: Guardian Leather Bracers | 4300 | 9s 0c | 2026-11-07 19:24 UTC | 29s 50c |  | too new | 2 of 3 | 11 |  |
-| Pattern: Hands of Darkness | 7092 | 4s 0c | 2026-11-07 19:24 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 42 |  |
-| Pattern: Heavy Woolen Cloak | 4346 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 73 |  |
-| Pattern: Hillman's Belt | 4294 | 4s 0c | 2026-11-07 19:24 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 63 |  |
-| Pattern: Hillman's Leather Vest | 4293 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 271 |  |
-| Pattern: Kodo Hide Bag | 5083 | 9s 0c | 2026-11-07 19:24 UTC | 9s 0c | 9s 0c | moving | 3 of 3 | 18 |  |
-| Pattern: Phoenix Gloves | 4348 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 88 |  |
-| Pattern: Phoenix Pants | 4349 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 108 |  |
-| Pattern: Red Linen Bag | 5771 | 4s 0c | 2026-11-07 19:24 UTC | 4s 0c | 4s 0c | moving | 3 of 3 | 155 |  |
-| Pattern: Red Linen Robe | 2598 | 1s 0c | 2026-11-07 19:24 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 492 |  |
-| Pattern: Red Linen Vest | 6271 | 1s 0c | 2026-11-07 19:24 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 226 |  |
-| Pattern: Red Woolen Bag | 5772 | 3s 0c | 2026-11-07 19:24 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 60 |  |
-| Pattern: Red Woolen Boots | 4345 | 2s 0c | 2026-11-07 19:24 UTC | 1s 0c | 1s 0c | volatile | 3 of 3 | 144 |  |
-| Pattern: Reinforced Woolen Shoulders | 4347 | 2s 0c | 2026-11-07 19:24 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 60 |  |
-| Pattern: Rich Purple Silk Shirt | 4354 | 5g 6s 0c | 2026-11-07 19:24 UTC | 1g 88s 0c |  | too new | 2 of 3 | 1 |  |
-| Pattern: Rugged Leather Pants | 7288 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 294 |  |
-| Pattern: Shadow Hood | 4351 | 1g 25s 0c | 2026-11-07 19:24 UTC | 70s 0c |  | too new | 2 of 3 | 4 |  |
-| Pattern: Spider Belt | 4353 | 35s 0c | 2026-11-07 19:24 UTC | 66s 50c |  | too new | 2 of 3 | 25 |  |
-| Pattern: Spider Silk Slippers | 4350 | 2s 0c | 2026-11-07 19:24 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 44 |  |
-| Pattern: Stylish Blue Shirt | 6390 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | volatile | 3 of 3 | 81 |  |
-| Pattern: Stylish Green Shirt | 6391 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 80 |  |
-| Pattern: Truefaith Gloves | 7091 | 3s 0c | 2026-11-07 19:24 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 62 |  |
-| Pattern: White Leather Jerkin | 2407 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 288 |  |
-| Plans: Copper Chain Vest | 3609 | 1s 0c | 2026-11-07 19:24 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 536 |  |
-| Plans: Deadly Bronze Poniard | 2883 | 4s 0c | 2026-11-07 19:24 UTC | 4s 0c | 4s 0c | moving | 3 of 3 | 102 |  |
-| Plans: Frost Tiger Blade | 3868 | 27s 0c | 2026-11-07 19:24 UTC | 62s 50c |  | too new | 2 of 3 | 22 |  |
-| Plans: Gemmed Copper Gauntlets | 3610 | 1s 0c | 2026-11-07 19:24 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 191 |  |
-| Plans: Golden Iron Destroyer | 3867 | 10s 0c | 2026-11-07 19:24 UTC | 24s 0c | 24s 0c | volatile | 3 of 3 | 28 |  |
-| Plans: Golden Scale Boots | 3875 | 1g 19s 0c | 2026-11-07 04:40 UTC | 4g 69s 0c |  | too new | 2 of 3 | 1 |  |
-| Plans: Golden Scale Cuirass | 3873 | 22s 0c | 2026-11-07 19:24 UTC | 53s 50c |  | too new | 2 of 3 | 18 |  |
-| Plans: Golden Scale Leggings | 3872 | 9s 0c | 2026-11-07 12:51 UTC | 22s 50c |  | too new | 2 of 3 | 28 |  |
-| Plans: Golden Scale Shoulders | 3871 | 1g 99s 0c | 2026-11-07 10:45 UTC | 2g 14s 50c |  | too new | 2 of 3 | 4 |  |
-| Plans: Green Iron Boots | 3611 | 5s 0c | 2026-11-07 19:24 UTC | 5s 0c | 5s 0c | volatile | 3 of 3 | 22 |  |
-| Plans: Green Iron Gauntlets | 3612 | 6s 0c | 2026-11-07 19:24 UTC | 6s 0c | 6s 0c | moving | 3 of 3 | 26 |  |
-| Plans: Green Iron Shoulders | 3870 | 20s 0c | 2026-11-07 19:24 UTC | 27s 50c |  | too new | 2 of 3 | 25 |  |
-| Plans: Iridescent Hammer | 5543 | 5s 0c | 2026-11-07 19:24 UTC | 6s 0c | 6s 0c | volatile | 3 of 3 | 45 |  |
-| Plans: Iron Counterweight | 6045 | 11s 0c | 2026-11-07 19:24 UTC | 41s 0c | 41s 0c | volatile | 3 of 3 | 29 |  |
-| Plans: Iron Shield Spike | 6044 | 12s 0c | 2026-11-07 19:24 UTC | 18s 0c | 18s 0c | volatile | 3 of 3 | 55 |  |
-| Plans: Jade Serpentblade | 3866 | 10s 0c | 2026-11-07 19:24 UTC | 20s 0c |  | too new | 2 of 3 | 27 |  |
-| Plans: Mighty Iron Hammer | 3608 | 6s 0c | 2026-11-07 19:24 UTC | 6s 0c | 6s 0c | volatile | 3 of 3 | 33 |  |
-| Plans: Polished Steel Boots | 3874 | 16s 0c | 2026-11-07 19:24 UTC | 24s 0c |  | too new | 2 of 3 | 9 |  |
-| Plans: Runed Copper Breastplate | 2881 | 3s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 94 |  |
-| Plans: Shadow Crescent Axe | 3869 | 28s 0c | 2026-11-07 19:24 UTC | 36s 50c |  | too new | 2 of 3 | 18 |  |
-| Plans: Silvered Bronze Breastplate | 5578 | 4s 0c | 2026-11-07 19:24 UTC | 3s 0c | 3s 0c | steady | 3 of 3 | 53 |  |
-| Plans: Silvered Bronze Shoulders | 2882 | 5s 0c | 2026-11-07 19:24 UTC | 3s 0c | 3s 0c | volatile | 3 of 3 | 80 |  |
-| Plans: Steel Weapon Chain | 6046 | 115g 0s 0c | 2026-11-07 12:51 UTC | 3g 0s 0c |  | too new | 2 of 3 | 2 |  |
-| Recipe: Brilliant Smallfish | 6325 | 2s 0c | 2026-11-07 19:24 UTC | 1s 0c | 1s 0c | volatile | 3 of 3 | 205 |  |
-| Recipe: Bristle Whisker Catfish | 6330 | 17s 0c | 2026-11-07 19:24 UTC | 14s 0c | 14s 0c | moving | 3 of 3 | 64 |  |
-| Recipe: Cooked Crab Claw | 2698 | 10s 0c | 2026-11-05 18:58 UTC | 10s 0c |  | too new | 1 of 3 | 1 |  |
-| Recipe: Crispy Lizard Tail | 5488 | 14s 0c | 2026-11-07 19:24 UTC | 10s 0c | 10s 0c | moving | 3 of 3 | 30 |  |
-| Recipe: Curiously Tasty Omelet | 3682 | 59s 0c | 2026-11-07 12:51 UTC | 79s 0c |  | too new | 2 of 3 | 22 |  |
-| Recipe: Dig Rat Stew | 5487 | 16s 0c | 2026-11-07 19:24 UTC | 17s 50c |  | too new | 2 of 3 | 26 |  |
-| Recipe: Elixir of Detect Lesser Invisibility | 3832 | 32s 0c | 2026-11-07 19:24 UTC | 36s 0c |  | too new | 2 of 3 | 22 |  |
-| Recipe: Elixir of Giant Growth | 6663 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 310 |  |
-| Recipe: Elixir of Lesser Agility | 3396 | 5s 0c | 2026-11-07 19:24 UTC | 9s 0c | 9s 0c | volatile | 3 of 3 | 53 |  |
-| Recipe: Elixir of Lesser Fortitude | 3830 | 12s 0c | 2026-11-07 19:24 UTC | 13s 50c |  | too new | 2 of 3 | 29 |  |
-| Recipe: Elixir of Minor Agility | 2553 | 3s 0c | 2026-11-07 12:51 UTC | 1s 0c | 1s 0c | volatile | 3 of 3 | 185 |  |
-| Recipe: Elixir of Ogre's Strength | 6211 | 7s 0c | 2026-11-07 19:24 UTC | 7s 0c | 7s 0c | volatile | 3 of 3 | 77 |  |
-| Recipe: Free Action Potion | 5642 | 29s 0c | 2026-11-07 19:24 UTC | 25s 0c | 25s 0c | steady | 3 of 3 | 14 |  |
-| Recipe: Giant Clam Scorcho | 6039 | 2g 19s 0c | 2026-11-07 05:23 UTC | 2g 19s 0c |  | too new | 1 of 3 | 1 |  |
-| Recipe: Goretusk Liver Pie | 2697 | 1g 22s 0c | 2026-11-07 19:24 UTC | 1g 0s 0c |  | too new | 1 of 3 | 2 |  |
-| Recipe: Great Rage Potion | 5643 | 30s 0c | 2026-11-07 19:24 UTC | 33s 0c | 33s 0c | moving | 3 of 3 | 6 |  |
-| Recipe: Limited Invulnerability Potion | 3395 | 25g 0s 0c | 2026-11-07 19:24 UTC | 25g 0s 0c |  | too new | 1 of 3 | 8 |  |
-| Recipe: Longjaw Mud Snapper | 6328 | 8s 0c | 2026-11-07 19:24 UTC | 6s 0c | 6s 0c | moving | 3 of 3 | 113 |  |
-| Recipe: Minor Frenzy Potion | 250982 | 8s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 73 |  |
-| Recipe: Minor Magic Resistance Potion | 3393 | 4s 0c | 2026-11-07 19:24 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 91 |  |
-| Recipe: Minor Mender's Potion | 250988 | 14s 0c | 2026-11-07 19:24 UTC | 7s 0c | 7s 0c | volatile | 3 of 3 | 38 |  |
-| Recipe: Murloc Fin Soup | 3680 | 1g 11s 0c | 2026-11-07 19:24 UTC | 99s 0c |  | too new | 1 of 3 | 2 |  |
-| Recipe: Rage Potion | 5640 | 8s 0c | 2026-11-07 19:24 UTC | 5s 0c | 5s 0c | moving | 3 of 3 | 31 |  |
-| Recipe: Rainbow Fin Albacore | 6368 | 6s 0c | 2026-11-07 19:24 UTC | 4s 0c | 4s 0c | volatile | 3 of 3 | 34 |  |
-| Recipe: Roasted Kodo Meat | 5484 | 17s 0c | 2026-11-07 12:51 UTC | 15s 0c | 15s 0c | volatile | 3 of 3 | 31 |  |
-| Recipe: Rockscale Cod | 6369 | 36s 0c | 2026-11-07 19:24 UTC | 50s 0c | 50s 0c | volatile | 3 of 3 | 23 |  |
-| Recipe: Savory Deviate Delight | 6661 | 70s 0c | 2026-11-07 19:24 UTC | 13s 0c | 13s 0c | volatile | 3 of 3 | 75 |  |
-| Recipe: Scorpid Surprise | 5483 | 20s 0c | 2026-11-07 19:24 UTC | 8s 0c | 8s 0c | volatile | 3 of 3 | 35 |  |
-| Recipe: Slitherskin Mackerel | 6326 | 5s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 153 |  |
-| Recipe: Smoked Bear Meat | 6892 | 8s 0c | 2026-11-07 12:51 UTC | 10s 0c | 10s 0c | volatile | 3 of 3 | 106 |  |
-| Recipe: Soothing Turtle Bisque | 3737 | 7s 0c | 2026-11-07 19:24 UTC | 17s 50c |  | too new | 2 of 3 | 67 |  |
-| Recipe: Strider Stew | 5486 | 13s 0c | 2026-11-07 12:51 UTC | 9s 0c | 9s 0c | moving | 3 of 3 | 68 |  |
-| Recipe: Swiftness Potion | 2555 | 5s 0c | 2026-11-07 12:51 UTC | 2s 0c | 2s 0c | volatile | 3 of 3 | 169 |  |
-| Recipe: Troll's Blood Elixir | 3831 | 1g 0s 0c | 2026-11-07 19:24 UTC | 1g 71s 0c |  | too new | 2 of 3 | 18 |  |
-| Recipe: Westfall Stew | 728 | 99s 0c | 2026-11-07 19:24 UTC | 99s 0c |  | too new | 1 of 3 | 6 |  |
-| Schematic: Craftsman's Monocle | 4415 | 1g 25s 0c | 2026-11-07 19:24 UTC | 1g 2s 50c |  | too new | 2 of 3 | 3 |  |
-| Schematic: EZ-Thro Dynamite | 6716 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 214 |  |
-| Schematic: Goblin Land Mine | 4416 | 22s 0c | 2026-11-07 19:24 UTC | 55s 0c |  | too new | 2 of 3 | 24 |  |
-| Schematic: Large Seaforium Charge | 4417 | 9s 0c | 2026-11-07 19:24 UTC | 27s 0c |  | too new | 2 of 3 | 17 |  |
-| Schematic: Mechanical Squirrel | 4408 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 379 |  |
-| Schematic: Moonsight Rifle | 4412 | 4s 0c | 2026-11-07 19:24 UTC | 6s 0c | 6s 0c | volatile | 3 of 3 | 75 |  |
-| Schematic: Portable Bronze Mortar | 4414 | 9s 0c | 2026-11-07 19:24 UTC | 25s 0c | 25s 0c | volatile | 3 of 3 | 44 |  |
-| Schematic: Shadow Goggles | 4410 | 3s 0c | 2026-11-07 12:51 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 67 |  |
-| Schematic: Small Seaforium Charge | 4409 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 244 |  |
+| Formula: Enchant 2H Weapon - Lesser Intellect | 6349 | 7s 0c | 2026-11-08 16:27 UTC | 10s 0c | 10s 0c | moving | 4 of 4 | 43 |  |
+| Formula: Enchant Boots - Minor Agility | 6377 | 4s 0c | 2026-11-08 16:27 UTC | 5s 50c | 5s 50c | moving | 4 of 4 | 70 |  |
+| Formula: Enchant Bracer - Lesser Spirit | 6375 | 3s 0c | 2026-11-08 16:27 UTC | 3s 0c | 3s 0c | moving | 4 of 4 | 98 |  |
+| Formula: Enchant Bracer - Minor Spirit | 6344 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | moving | 4 of 4 | 164 |  |
+| Formula: Enchant Bracer - Minor Strength | 6347 | 2s 0c | 2026-11-08 16:27 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 204 |  |
+| Formula: Enchant Chest - Lesser Intellect | 6346 | 25s 0c | 2026-11-08 16:27 UTC | 20s 0c | 20s 0c | moving | 4 of 4 | 21 |  |
+| Formula: Enchant Chest - Minor Intellect | 6342 | 3s 0c | 2026-11-08 16:27 UTC | 2s 50c | 2s 50c | moving | 4 of 4 | 34 |  |
+| Formula: Enchant Weapon - Minor Beastslayer | 6348 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 270 |  |
+| Manual: Strong Anti-Venom | 6454 | 58s 0c | 2026-11-08 16:27 UTC | 18s 50c | 18s 50c | volatile | 4 of 4 | 48 |  |
+| Pattern: Azure Shoulders | 7085 | 13s 0c | 2026-11-08 16:27 UTC | 50s 0c | 50s 0c | volatile | 3 of 4 | 41 |  |
+| Pattern: Barbaric Gloves | 4297 | 6s 0c | 2026-11-08 16:27 UTC | 6s 50c | 6s 50c | moving | 4 of 4 | 39 |  |
+| Pattern: Black Silk Pack | 5775 | 7s 0c | 2026-11-08 16:27 UTC | 48s 0c | 48s 0c | volatile | 3 of 4 | 29 |  |
+| Pattern: Blue Linen Robe | 6272 | 5s 0c | 2026-11-08 16:27 UTC | 5s 0c | 5s 0c | steady | 3 of 4 | 25 |  |
+| Pattern: Blue Linen Vest | 6270 | 10s 0c | 2026-11-08 16:27 UTC | 5s 0c | 5s 0c | volatile | 4 of 4 | 20 |  |
+| Pattern: Blue Overalls | 6274 | 5s 0c | 2026-11-08 16:27 UTC | 9s 0c | 9s 0c | volatile | 4 of 4 | 22 |  |
+| Pattern: Boots of the Enchanter | 4352 | 4s 0c | 2026-11-08 16:27 UTC | 5s 0c | 5s 0c | volatile | 3 of 4 | 41 |  |
+| Pattern: Crimson Silk Shoulders | 7084 | 5s 0c | 2026-11-08 16:27 UTC | 16s 0c | 16s 0c | volatile | 3 of 4 | 28 |  |
+| Pattern: Dark Leather Shoulders | 4296 | 9s 0c | 2026-11-08 16:27 UTC | 10s 0c | 10s 0c | steady | 4 of 4 | 26 |  |
+| Pattern: Dark Leather Tunic | 2409 | 4s 0c | 2026-11-08 16:27 UTC | 4s 0c | 4s 0c | moving | 4 of 4 | 242 |  |
+| Pattern: Deviate Scale Belt | 6476 | 5s 0c | 2026-11-08 16:27 UTC | 5s 0c | 5s 0c | steady | 4 of 4 | 66 |  |
+| Pattern: Deviate Scale Cloak | 6474 | 6s 0c | 2026-11-08 16:27 UTC | 10s 0c | 10s 0c | volatile | 4 of 4 | 47 |  |
+| Pattern: Deviate Scale Gloves | 6475 | 6s 0c | 2026-11-08 16:27 UTC | 11s 50c | 11s 50c | volatile | 4 of 4 | 22 |  |
+| Pattern: Earthen Silk Belt | 7086 | 7s 0c | 2026-11-08 16:27 UTC | 8s 0c | 8s 0c | volatile | 3 of 4 | 24 |  |
+| Pattern: Fine Leather Boots | 2406 | 1s 0c | 2026-11-08 16:27 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 218 |  |
+| Pattern: Fine Leather Gloves | 2408 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 285 |  |
+| Pattern: Fine Leather Pants | 5972 | 4s 0c | 2026-11-08 16:27 UTC | 4s 0c | 4s 0c | steady | 4 of 4 | 72 |  |
+| Pattern: Gray Woolen Robe | 2601 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 69 |  |
+| Pattern: Greater Adept's Robe | 6275 | 10s 0c | 2026-11-08 16:27 UTC | 17s 0c | 17s 0c | moving | 4 of 4 | 14 |  |
+| Pattern: Green Silk Armor | 7090 | 4s 0c | 2026-11-08 16:27 UTC | 28s 0c | 28s 0c | volatile | 4 of 4 | 32 |  |
+| Pattern: Green Silk Pack | 5774 | 4s 0c | 2026-11-08 16:27 UTC | 11s 0c | 11s 0c | volatile | 4 of 4 | 36 |  |
+| Pattern: Green Woolen Bag | 4292 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 132 |  |
+| Pattern: Guardian Armor | 4299 | 7s 0c | 2026-11-08 16:27 UTC | 8s 50c | 8s 50c | steady | 4 of 4 | 39 |  |
+| Pattern: Guardian Belt | 4298 | 50s 0c | 2026-11-08 16:27 UTC | 50s 0c | 50s 0c | moving | 3 of 4 | 13 |  |
+| Pattern: Guardian Cloak | 5974 | 12s 0c | 2026-11-08 16:27 UTC | 22s 0c | 22s 0c | volatile | 3 of 4 | 36 |  |
+| Pattern: Guardian Leather Bracers | 4300 | 11s 0c | 2026-11-08 16:27 UTC | 11s 0c | 11s 0c | volatile | 3 of 4 | 20 |  |
+| Pattern: Hands of Darkness | 7092 | 3s 0c | 2026-11-08 16:27 UTC | 4s 0c | 4s 0c | moving | 4 of 4 | 40 |  |
+| Pattern: Heavy Woolen Cloak | 4346 | 1s 0c | 2026-11-08 16:27 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 107 |  |
+| Pattern: Hillman's Belt | 4294 | 4s 0c | 2026-11-08 16:27 UTC | 4s 0c | 4s 0c | moving | 4 of 4 | 63 |  |
+| Pattern: Hillman's Leather Vest | 4293 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 276 |  |
+| Pattern: Kodo Hide Bag | 5083 | 33s 0c | 2026-11-08 16:27 UTC | 9s 0c | 9s 0c | moving | 4 of 4 | 21 |  |
+| Pattern: Phoenix Gloves | 4348 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 98 |  |
+| Pattern: Phoenix Pants | 4349 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 110 |  |
+| Pattern: Red Linen Bag | 5771 | 4s 0c | 2026-11-08 16:27 UTC | 4s 0c | 4s 0c | steady | 4 of 4 | 136 |  |
+| Pattern: Red Linen Robe | 2598 | 1s 0c | 2026-11-08 16:27 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 440 |  |
+| Pattern: Red Linen Vest | 6271 | 1s 0c | 2026-11-08 16:27 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 202 |  |
+| Pattern: Red Woolen Bag | 5772 | 2s 0c | 2026-11-08 16:27 UTC | 3s 50c | 3s 50c | moving | 4 of 4 | 54 |  |
+| Pattern: Red Woolen Boots | 4345 | 2s 0c | 2026-11-08 16:27 UTC | 1s 50c | 1s 50c | moving | 4 of 4 | 168 |  |
+| Pattern: Reinforced Woolen Shoulders | 4347 | 2s 0c | 2026-11-08 16:27 UTC | 2s 50c | 2s 50c | moving | 4 of 4 | 66 |  |
+| Pattern: Rich Purple Silk Shirt | 4354 | 4g 45s 0c | 2026-11-08 16:27 UTC | 3g 6s 0c | 3g 6s 0c | volatile | 3 of 4 | 1 |  |
+| Pattern: Rugged Leather Pants | 7288 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 290 |  |
+| Pattern: Shadow Hood | 4351 | 74s 0c | 2026-11-08 16:27 UTC | 74s 0c | 74s 0c | volatile | 3 of 4 | 3 |  |
+| Pattern: Spider Belt | 4353 | 11s 0c | 2026-11-08 16:27 UTC | 35s 0c | 35s 0c | volatile | 3 of 4 | 38 |  |
+| Pattern: Spider Silk Slippers | 4350 | 3s 0c | 2026-11-08 16:27 UTC | 3s 50c | 3s 50c | moving | 4 of 4 | 41 |  |
+| Pattern: Stylish Blue Shirt | 6390 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 102 |  |
+| Pattern: Stylish Green Shirt | 6391 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 92 |  |
+| Pattern: Truefaith Gloves | 7091 | 3s 0c | 2026-11-08 16:27 UTC | 3s 50c | 3s 50c | moving | 4 of 4 | 68 |  |
+| Pattern: White Leather Jerkin | 2407 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 256 |  |
+| Plans: Copper Chain Vest | 3609 | 1s 0c | 2026-11-08 16:27 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 468 |  |
+| Plans: Deadly Bronze Poniard | 2883 | 4s 0c | 2026-11-08 16:27 UTC | 4s 0c | 4s 0c | steady | 4 of 4 | 137 |  |
+| Plans: Frost Tiger Blade | 3868 | 13s 0c | 2026-11-08 16:27 UTC | 27s 0c | 27s 0c | volatile | 3 of 4 | 31 |  |
+| Plans: Gemmed Copper Gauntlets | 3610 | 1s 0c | 2026-11-08 16:27 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 170 |  |
+| Plans: Golden Iron Destroyer | 3867 | 10s 0c | 2026-11-08 16:27 UTC | 17s 0c | 17s 0c | volatile | 4 of 4 | 33 |  |
+| Plans: Golden Scale Boots | 3875 | 2g 10s 0c | 2026-11-08 16:27 UTC | 2g 10s 0c | 2g 10s 0c | volatile | 3 of 4 | 1 |  |
+| Plans: Golden Scale Cuirass | 3873 | 14s 0c | 2026-11-08 16:27 UTC | 22s 0c | 22s 0c | volatile | 3 of 4 | 32 |  |
+| Plans: Golden Scale Leggings | 3872 | 9s 0c | 2026-11-08 16:27 UTC | 9s 0c | 9s 0c | volatile | 3 of 4 | 26 |  |
+| Plans: Golden Scale Shoulders | 3871 | 1g 25s 0c | 2026-11-08 16:27 UTC | 1g 99s 0c | 1g 99s 0c | moving | 3 of 4 | 4 |  |
+| Plans: Green Iron Boots | 3611 | 8s 0c | 2026-11-08 16:27 UTC | 6s 50c | 6s 50c | moving | 4 of 4 | 28 |  |
+| Plans: Green Iron Gauntlets | 3612 | 7s 0c | 2026-11-08 16:27 UTC | 6s 50c | 6s 50c | moving | 4 of 4 | 35 |  |
+| Plans: Green Iron Shoulders | 3870 | 22s 0c | 2026-11-08 16:27 UTC | 22s 0c | 22s 0c | moving | 3 of 4 | 29 |  |
+| Plans: Inlaid Mithril Cylinder | 10713 | 50s 0c | 2026-11-08 16:27 UTC | 50s 0c |  | too new | 1 of 4 | 1 |  |
+| Plans: Iridescent Hammer | 5543 | 5s 0c | 2026-11-08 16:27 UTC | 5s 50c | 5s 50c | steady | 4 of 4 | 44 |  |
+| Plans: Iron Counterweight | 6045 | 10s 0c | 2026-11-08 16:27 UTC | 26s 0c | 26s 0c | volatile | 4 of 4 | 28 |  |
+| Plans: Iron Shield Spike | 6044 | 12s 0c | 2026-11-08 16:27 UTC | 15s 0c | 15s 0c | moving | 4 of 4 | 43 |  |
+| Plans: Jade Serpentblade | 3866 | 13s 0c | 2026-11-08 16:27 UTC | 13s 0c | 13s 0c | volatile | 3 of 4 | 34 |  |
+| Plans: Mighty Iron Hammer | 3608 | 5s 0c | 2026-11-08 16:27 UTC | 6s 0c | 6s 0c | steady | 4 of 4 | 40 |  |
+| Plans: Polished Steel Boots | 3874 | 14s 0c | 2026-11-08 16:27 UTC | 16s 0c | 16s 0c | volatile | 3 of 4 | 16 |  |
+| Plans: Runed Copper Breastplate | 2881 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 100 |  |
+| Plans: Shadow Crescent Axe | 3869 | 17s 0c | 2026-11-08 16:27 UTC | 28s 0c | 28s 0c | volatile | 3 of 4 | 32 |  |
+| Plans: Silvered Bronze Breastplate | 5578 | 3s 0c | 2026-11-08 16:27 UTC | 3s 0c | 3s 0c | steady | 4 of 4 | 46 |  |
+| Plans: Silvered Bronze Shoulders | 2882 | 5s 0c | 2026-11-08 16:27 UTC | 4s 0c | 4s 0c | moving | 4 of 4 | 90 |  |
+| Plans: Steel Weapon Chain | 6046 | 10g 95s 0c | 2026-11-08 16:27 UTC | 5g 0s 0c | 5g 0s 0c | volatile | 3 of 4 | 2 |  |
+| Recipe: Brilliant Smallfish | 6325 | 2s 0c | 2026-11-08 16:27 UTC | 1s 50c | 1s 50c | moving | 4 of 4 | 244 |  |
+| Recipe: Bristle Whisker Catfish | 6330 | 18s 0c | 2026-11-08 16:27 UTC | 16s 0c | 16s 0c | moving | 4 of 4 | 66 |  |
+| Recipe: Cooked Crab Claw | 2698 | 1g 0s 0c | 2026-11-08 16:27 UTC | 55s 0c |  | too new | 2 of 4 | 2 |  |
+| Recipe: Crispy Lizard Tail | 5488 | 6s 0c | 2026-11-08 16:27 UTC | 9s 0c | 9s 0c | moving | 4 of 4 | 36 |  |
+| Recipe: Curiously Tasty Omelet | 3682 | 35s 0c | 2026-11-08 16:27 UTC | 58s 0c | 58s 0c | volatile | 3 of 4 | 41 |  |
+| Recipe: Dig Rat Stew | 5487 | 11s 0c | 2026-11-08 16:27 UTC | 16s 0c | 16s 0c | moving | 3 of 4 | 41 |  |
+| Recipe: Elixir of Detect Lesser Invisibility | 3832 | 9s 0c | 2026-11-08 16:27 UTC | 32s 0c | 32s 0c | volatile | 3 of 4 | 24 |  |
+| Recipe: Elixir of Giant Growth | 6663 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 272 |  |
+| Recipe: Elixir of Lesser Agility | 3396 | 12s 0c | 2026-11-08 16:27 UTC | 10s 50c | 10s 50c | moving | 4 of 4 | 64 |  |
+| Recipe: Elixir of Lesser Fortitude | 3830 | 9s 0c | 2026-11-08 16:27 UTC | 12s 0c | 12s 0c | moving | 3 of 4 | 21 |  |
+| Recipe: Elixir of Minor Agility | 2553 | 3s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | volatile | 4 of 4 | 138 |  |
+| Recipe: Elixir of Ogre's Strength | 6211 | 7s 0c | 2026-11-08 16:27 UTC | 7s 0c | 7s 0c | moving | 4 of 4 | 72 |  |
+| Recipe: Free Action Potion | 5642 | 28s 0c | 2026-11-08 16:27 UTC | 25s 0c | 25s 0c | steady | 4 of 4 | 22 |  |
+| Recipe: Giant Clam Scorcho | 6039 | 1g 0s 0c | 2026-11-08 16:27 UTC | 1g 59s 50c |  | too new | 2 of 4 | 3 |  |
+| Recipe: Goblin Rocket Fuel | 10644 | 7g 50s 0c | 2026-11-08 16:27 UTC | 7g 50s 0c |  | too new | 1 of 4 | 8 |  |
+| Recipe: Goretusk Liver Pie | 2697 | 1g 0s 0c | 2026-11-08 16:27 UTC | 1g 0s 0c |  | too new | 2 of 4 | 2 |  |
+| Recipe: Great Rage Potion | 5643 | 66s 0c | 2026-11-08 16:27 UTC | 38s 0c | 38s 0c | moving | 4 of 4 | 10 |  |
+| Recipe: Limited Invulnerability Potion | 3395 | 3g 11s 0c | 2026-11-08 16:27 UTC | 14g 5s 50c |  | too new | 2 of 4 | 16 |  |
+| Recipe: Longjaw Mud Snapper | 6328 | 7s 0c | 2026-11-08 16:27 UTC | 6s 50c | 6s 50c | steady | 4 of 4 | 197 |  |
+| Recipe: Minor Frenzy Potion | 250982 | 10s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | moving | 4 of 4 | 46 |  |
+| Recipe: Minor Magic Resistance Potion | 3393 | 4s 0c | 2026-11-08 16:27 UTC | 3s 50c | 3s 50c | moving | 4 of 4 | 92 |  |
+| Recipe: Minor Mender's Potion | 250988 | 23s 0c | 2026-11-08 16:27 UTC | 8s 0c | 8s 0c | volatile | 4 of 4 | 38 |  |
+| Recipe: Murloc Fin Soup | 3680 | 1g 0s 0c | 2026-11-08 16:27 UTC | 99s 50c |  | too new | 2 of 4 | 2 |  |
+| Recipe: Rage Potion | 5640 | 7s 0c | 2026-11-08 16:27 UTC | 5s 50c | 5s 50c | moving | 4 of 4 | 42 |  |
+| Recipe: Rainbow Fin Albacore | 6368 | 5s 0c | 2026-11-08 16:27 UTC | 4s 50c | 4s 50c | moving | 4 of 4 | 68 |  |
+| Recipe: Roasted Kodo Meat | 5484 | 13s 0c | 2026-11-08 16:27 UTC | 14s 0c | 14s 0c | volatile | 4 of 4 | 35 |  |
+| Recipe: Rockscale Cod | 6369 | 25s 0c | 2026-11-08 16:27 UTC | 37s 50c | 37s 50c | volatile | 4 of 4 | 25 |  |
+| Recipe: Savory Deviate Delight | 6661 | 91s 0c | 2026-11-08 16:27 UTC | 38s 50c | 38s 50c | volatile | 4 of 4 | 83 |  |
+| Recipe: Scorpid Surprise | 5483 | 10s 0c | 2026-11-08 16:27 UTC | 9s 0c | 9s 0c | volatile | 4 of 4 | 64 |  |
+| Recipe: Slitherskin Mackerel | 6326 | 3s 0c | 2026-11-08 16:27 UTC | 2s 50c | 2s 50c | moving | 4 of 4 | 172 |  |
+| Recipe: Smoked Bear Meat | 6892 | 6s 0c | 2026-11-08 16:27 UTC | 8s 50c | 8s 50c | moving | 4 of 4 | 112 |  |
+| Recipe: Soothing Turtle Bisque | 3737 | 6s 0c | 2026-11-08 16:27 UTC | 7s 0c | 7s 0c | volatile | 3 of 4 | 107 |  |
+| Recipe: Strider Stew | 5486 | 9s 0c | 2026-11-08 16:27 UTC | 9s 0c | 9s 0c | moving | 4 of 4 | 72 |  |
+| Recipe: Swiftness Potion | 2555 | 12s 0c | 2026-11-08 16:27 UTC | 3s 0c | 3s 0c | volatile | 4 of 4 | 136 |  |
+| Recipe: Troll's Blood Elixir | 3831 | 62s 0c | 2026-11-08 16:27 UTC | 62s 0c | 62s 0c | volatile | 3 of 4 | 25 |  |
+| Recipe: Westfall Stew | 728 | 1g 0s 0c | 2026-11-08 16:27 UTC | 99s 50c |  | too new | 2 of 4 | 4 |  |
+| Schematic: Craftsman's Monocle | 4415 | 1g 99s 0c | 2026-11-08 16:27 UTC | 1g 25s 0c | 1g 25s 0c | volatile | 3 of 4 | 5 |  |
+| Schematic: EZ-Thro Dynamite | 6716 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 226 |  |
+| Schematic: Goblin Land Mine | 4416 | 14s 0c | 2026-11-08 16:27 UTC | 22s 0c | 22s 0c | volatile | 3 of 4 | 43 |  |
+| Schematic: Large Seaforium Charge | 4417 | 8s 0c | 2026-11-08 16:27 UTC | 9s 0c | 9s 0c | volatile | 3 of 4 | 23 |  |
+| Schematic: Mechanical Squirrel | 4408 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 356 |  |
+| Schematic: Moonsight Rifle | 4412 | 4s 0c | 2026-11-08 16:27 UTC | 5s 0c | 5s 0c | moving | 4 of 4 | 81 |  |
+| Schematic: Portable Bronze Mortar | 4414 | 6s 0c | 2026-11-08 16:27 UTC | 17s 0c | 17s 0c | volatile | 4 of 4 | 58 |  |
+| Schematic: Shadow Goggles | 4410 | 3s 0c | 2026-11-08 16:27 UTC | 3s 0c | 3s 0c | moving | 4 of 4 | 92 |  |
+| Schematic: Small Seaforium Charge | 4409 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 246 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

@@ -1,67 +1,69 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Weapon: Sword
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-07 19:24 UTC. Uploads in the 30-day window: 12.
+- **Latest scan:** 2026-11-08 16:27 UTC. Uploads in the 30-day window: 13.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Blackwater Cutlass | 1951 | 80s 0c | 2026-11-07 19:24 UTC | 77s 0c | 77s 0c | volatile | 3 of 3 | 39 |  |
-| Blessed Claymore | 4817 | 1g 50s 0c | 2026-11-07 12:51 UTC | 1g 75s 0c |  | too new | 2 of 3 | 5 |  |
-| Blunt Claymore | 1811 | 5s 0c | 2026-11-07 19:24 UTC | 5s 0c | 5s 0c | moving | 3 of 3 | 23 |  |
-| Bronze Greatsword | 7957 | 60s 0c | 2026-11-07 19:24 UTC | 49s 0c | 49s 0c | moving | 3 of 3 | 23 |  |
-| Bronze Shortsword | 2850 | 14s 0c | 2026-11-07 19:24 UTC | 16s 0c | 16s 0c | volatile | 3 of 3 | 100 |  |
-| Cavalier Two-hander | 3206 | 46s 0c | 2026-11-07 19:24 UTC | 53s 0c |  | too new | 2 of 3 | 62 |  |
-| Combatant Claymore | 2877 | 2g 50s 0c | 2026-11-07 19:24 UTC | 4g 0s 0c |  | too new | 2 of 3 | 10 |  |
-| Commoner's Sword | 1511 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 50 |  |
-| Copper Claymore | 7955 | 5s 0c | 2026-11-07 10:45 UTC | 5s 0c | 5s 0c | steady | 3 of 3 | 36 |  |
-| Copper Shortsword | 2847 | 3s 0c | 2026-11-07 04:40 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 155 |  |
-| Crude Bastard Sword | 1412 | 1s 0c | 2026-11-07 19:24 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 49 |  |
-| Cutlass | 851 | 20s 0c | 2026-11-07 19:24 UTC | 20s 0c | 20s 0c | moving | 3 of 3 | 1 |  |
-| Darksteel Bastard Sword | 2084 | 86s 0c | 2026-11-07 19:24 UTC | 86s 0c |  | too new | 1 of 3 | 4 |  |
-| Deadman Blade | 3295 | 50s 0c | 2026-11-07 04:40 UTC | 50s 0c |  | too new | 2 of 3 | 1 |  |
-| Decapitating Sword | 3740 | 25s 0c | 2026-11-07 19:24 UTC | 25s 0c | 25s 0c | volatile | 3 of 3 | 49 |  |
-| Defias Rapier | 1925 | 29s 0c | 2026-11-07 19:24 UTC | 44s 0c |  | too new | 2 of 3 | 8 |  |
-| Dull Blade | 1384 | 2s 0c | 2026-11-05 18:58 UTC | 2s 0c |  | too new | 1 of 3 | 2 |  |
-| Duskbringer | 2205 | 2g 47s 0c | 2026-11-07 19:24 UTC | 2g 49s 0c | 2g 49s 0c | volatile | 3 of 3 | 6 |  |
-| Edged Bastard Sword | 3196 | 14s 0c | 2026-11-07 19:24 UTC | 14s 0c | 14s 0c | moving | 3 of 3 | 209 |  |
-| Enamelled Broadsword | 4765 | 34s 0c | 2026-11-07 12:51 UTC | 24s 50c |  | too new | 2 of 3 | 19 |  |
-| Espadon | 2024 | 50s 0c | 2026-11-07 04:40 UTC | 50s 0c |  | too new | 1 of 3 | 1 |  |
-| Executioner's Sword | 4818 | 1g 85s 0c | 2026-11-07 19:24 UTC | 1g 9s 0c | 1g 9s 0c | volatile | 3 of 3 | 5 |  |
-| Exquisite Flamberge | 1625 | 3g 99s 0c | 2026-11-07 19:24 UTC | 3g 99s 0c |  | too new | 1 of 3 | 5 |  |
-| Feeble Sword | 1413 | 1s 0c | 2026-11-07 19:24 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 31 |  |
-| Feral Blade | 4766 | 36s 0c | 2026-11-07 19:24 UTC | 23s 0c | 23s 0c | volatile | 3 of 3 | 32 |  |
-| Fine Scimitar | 4560 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 11 |  |
-| Gladius | 2488 | 6s 0c | 2026-11-05 18:58 UTC | 4s 0c |  | too new | 2 of 3 | 2 |  |
-| Heavy Copper Broadsword | 3487 | 19s 0c | 2026-11-07 19:24 UTC | 14s 0c | 14s 0c | steady | 3 of 3 | 44 |  |
-| Heavy Marauder Scimitar | 1493 | 6g 0s 0c | 2026-11-07 19:24 UTC | 3g 96s 0c |  | too new | 2 of 3 | 5 |  |
-| Jade Serpentblade | 3850 | 2g 30s 0c | 2026-11-07 19:24 UTC | 2g 30s 0c |  | too new | 1 of 3 | 4 |  |
-| Knightly Longsword | 864 | 2g 0s 0c | 2026-11-07 19:24 UTC | 1g 46s 0c |  | too new | 1 of 3 | 6 |  |
-| Long Bastard Sword | 1830 | 27s 0c | 2026-11-07 19:24 UTC | 23s 50c |  | too new | 2 of 3 | 2 |  |
-| Longsword | 923 | 35s 0c | 2026-11-07 10:45 UTC | 42s 50c |  | too new | 2 of 3 | 2 |  |
-| Merc Sword | 4567 | 11s 0c | 2026-11-07 19:24 UTC | 11s 0c | 11s 0c | moving | 3 of 3 | 374 |  |
-| Moonsteel Broadsword | 3853 | 3g 84s 0c | 2026-11-07 19:24 UTC | 3g 84s 0c |  | too new | 1 of 3 | 19 |  |
-| Night Watch Shortsword | 935 | 80s 0c | 2026-11-07 10:45 UTC | 85s 0c | 85s 0c | volatile | 3 of 3 | 29 |  |
-| Northern Shortsword | 2078 | 11s 0c | 2026-11-07 19:24 UTC | 11s 0c | 11s 0c | moving | 3 of 3 | 104 |  |
-| Notched Shortsword | 727 | 3s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 618 |  |
-| Onyx Claymore | 3417 | 1g 0s 0c | 2026-11-07 19:24 UTC | 1g 42s 0c |  | too new | 2 of 3 | 19 |  |
-| Pysan's Old Greatsword | 1975 | 1g 0s 0c | 2026-11-07 19:24 UTC | 1g 92s 0c |  | too new | 2 of 3 | 13 |  |
-| Scimitar | 2027 | 30s 0c | 2026-11-07 19:24 UTC | 14s 50c |  | too new | 2 of 3 | 2 |  |
-| Scorpion Sting | 1265 | 10g 0s 0c | 2026-11-07 19:24 UTC | 9g 38s 50c |  | too new | 2 of 3 | 2 |  |
-| Shadowfang | 1482 | 3g 99s 0c | 2026-11-07 19:24 UTC | 8g 49s 50c |  | too new | 2 of 3 | 12 |  |
-| Shiver Blade | 5182 | 20s 0c | 2026-11-07 19:24 UTC | 20s 0c | 20s 0c | steady | 3 of 3 | 22 |  |
-| Short Bastard Sword | 3192 | 5s 0c | 2026-11-07 19:24 UTC | 4s 0c | 4s 0c | moving | 3 of 3 | 650 |  |
-| Short Sabre | 3319 | 2s 0c | 2026-11-07 19:24 UTC | 2s 0c | 2s 0c | steady | 3 of 3 | 59 |  |
-| Standard Claymore | 1818 | 16s 0c | 2026-11-07 19:24 UTC | 17s 50c |  | too new | 2 of 3 | 6 |  |
-| Stock Shortsword | 1817 | 6s 0c | 2026-11-07 19:24 UTC | 6s 0c |  | too new | 2 of 3 | 24 |  |
-| Stonecutter Claymore | 3197 | 98s 0c | 2026-11-07 19:24 UTC | 1g 99s 0c |  | too new | 2 of 3 | 11 |  |
-| Sword of Decay | 1727 | 3g 50s 0c | 2026-11-07 19:24 UTC | 2g 84s 50c |  | too new | 2 of 3 | 4 |  |
-| Sword of the Night Sky | 2035 | 33s 0c | 2026-11-07 19:24 UTC | 35s 0c | 35s 0c | moving | 3 of 3 | 14 |  |
-| Tarnished Bastard Sword | 2754 | 11s 0c | 2026-11-07 19:24 UTC | 11s 0c | 11s 0c | volatile | 3 of 3 | 7 |  |
-| Training Sword | 8178 | 4s 0c | 2026-11-07 19:24 UTC | 3s 0c | 3s 0c | moving | 3 of 3 | 991 |  |
-| Twisted Sabre | 2011 | 69s 0c | 2026-11-07 19:24 UTC | 88s 0c | 88s 0c | volatile | 3 of 3 | 26 |  |
-| Two-handed Sword | 2489 | 2s 0c | 2026-11-05 11:04 UTC | 2s 0c |  | too new | 2 of 3 | 1 |  |
-| Viking Sword | 3186 | 49s 0c | 2026-11-07 19:24 UTC | 58s 0c |  | too new | 2 of 3 | 28 |  |
-| Warped Blade | 1821 | 12s 0c | 2026-11-07 19:24 UTC | 13s 50c |  | too new | 2 of 3 | 5 |  |
+| Blackwater Cutlass | 1951 | 59s 0c | 2026-11-08 16:27 UTC | 68s 0c | 68s 0c | moving | 4 of 4 | 38 |  |
+| Blessed Claymore | 4817 | 95s 0c | 2026-11-08 16:27 UTC | 1g 50s 0c | 1g 50s 0c | moving | 3 of 4 | 6 |  |
+| Blunt Claymore | 1811 | 5s 0c | 2026-11-08 16:27 UTC | 5s 0c | 5s 0c | steady | 4 of 4 | 28 |  |
+| Bronze Greatsword | 7957 | 71s 0c | 2026-11-08 16:27 UTC | 54s 50c | 54s 50c | moving | 4 of 4 | 32 |  |
+| Bronze Shortsword | 2850 | 13s 0c | 2026-11-08 16:27 UTC | 14s 50c | 14s 50c | steady | 4 of 4 | 104 |  |
+| Cavalier Two-hander | 3206 | 46s 0c | 2026-11-08 16:27 UTC | 46s 0c | 46s 0c | moving | 3 of 4 | 80 |  |
+| Combatant Claymore | 2877 | 1g 25s 0c | 2026-11-08 16:27 UTC | 2g 50s 0c | 2g 50s 0c | volatile | 3 of 4 | 5 |  |
+| Commoner's Sword | 1511 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 54 |  |
+| Copper Claymore | 7955 | 8s 0c | 2026-11-08 16:27 UTC | 5s 0c | 5s 0c | steady | 4 of 4 | 34 |  |
+| Copper Shortsword | 2847 | 3s 0c | 2026-11-08 16:27 UTC | 3s 0c | 3s 0c | steady | 4 of 4 | 145 |  |
+| Crude Bastard Sword | 1412 | 1s 0c | 2026-11-08 16:27 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 44 |  |
+| Cutlass | 851 | 20s 0c | 2026-11-08 16:27 UTC | 20s 0c | 20s 0c | moving | 4 of 4 | 2 |  |
+| Darksteel Bastard Sword | 2084 | 80s 0c | 2026-11-08 16:27 UTC | 83s 0c |  | too new | 2 of 4 | 7 |  |
+| Deadman Blade | 3295 | 50s 0c | 2026-11-08 16:27 UTC | 50s 0c | 50s 0c | steady | 3 of 4 | 1 |  |
+| Decapitating Sword | 3740 | 25s 0c | 2026-11-08 16:27 UTC | 25s 0c | 25s 0c | steady | 4 of 4 | 58 |  |
+| Defias Rapier | 1925 | 19s 0c | 2026-11-08 16:27 UTC | 29s 0c | 29s 0c | volatile | 3 of 4 | 11 |  |
+| Dull Blade | 1384 | 2s 0c | 2026-11-05 18:58 UTC | 2s 0c |  | too new | 1 of 4 | 2 |  |
+| Duskbringer | 2205 | 2g 0s 0c | 2026-11-08 16:27 UTC | 2g 24s 50c | 2g 24s 50c | steady | 4 of 4 | 6 |  |
+| Edged Bastard Sword | 3196 | 14s 0c | 2026-11-08 16:27 UTC | 14s 0c | 14s 0c | moving | 4 of 4 | 274 |  |
+| Enamelled Broadsword | 4765 | 33s 0c | 2026-11-08 16:27 UTC | 30s 0c | 30s 0c | moving | 3 of 4 | 12 |  |
+| Espadon | 2024 | 50s 0c | 2026-11-07 04:40 UTC | 50s 0c |  | too new | 1 of 4 | 1 |  |
+| Executioner's Sword | 4818 | 75s 0c | 2026-11-08 16:27 UTC | 1g 8s 50c | 1g 8s 50c | moving | 4 of 4 | 12 |  |
+| Exquisite Flamberge | 1625 | 1g 99s 0c | 2026-11-08 16:27 UTC | 2g 99s 0c |  | too new | 2 of 4 | 6 |  |
+| Feeble Sword | 1413 | 1s 0c | 2026-11-08 16:27 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 30 |  |
+| Feral Blade | 4766 | 23s 0c | 2026-11-08 16:27 UTC | 23s 0c | 23s 0c | steady | 4 of 4 | 36 |  |
+| Fine Scimitar | 4560 | 15s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | moving | 4 of 4 | 12 |  |
+| Frost Tiger Blade | 3854 | 9g 99s 0c | 2026-11-08 16:27 UTC | 9g 99s 0c |  | too new | 1 of 4 | 1 |  |
+| Gladius | 2488 | 6s 0c | 2026-11-05 18:58 UTC | 4s 0c |  | too new | 2 of 4 | 2 |  |
+| Hardened Iron Shortsword | 3849 | 69s 0c | 2026-11-08 16:27 UTC | 69s 0c |  | too new | 1 of 4 | 7 |  |
+| Heavy Copper Broadsword | 3487 | 18s 0c | 2026-11-08 16:27 UTC | 14s 50c | 14s 50c | steady | 4 of 4 | 40 |  |
+| Heavy Marauder Scimitar | 1493 | 1g 70s 0c | 2026-11-08 16:27 UTC | 2g 33s 0c | 2g 33s 0c | volatile | 3 of 4 | 7 |  |
+| Jade Serpentblade | 3850 | 1g 70s 0c | 2026-11-08 16:27 UTC | 2g 0s 0c |  | too new | 2 of 4 | 7 |  |
+| Knightly Longsword | 864 | 99s 0c | 2026-11-08 16:27 UTC | 1g 22s 50c |  | too new | 2 of 4 | 12 |  |
+| Long Bastard Sword | 1830 | 18s 0c | 2026-11-08 16:27 UTC | 20s 0c | 20s 0c | moving | 3 of 4 | 2 |  |
+| Longsword | 923 | 80s 0c | 2026-11-08 16:27 UTC | 50s 0c | 50s 0c | volatile | 3 of 4 | 2 |  |
+| Merc Sword | 4567 | 11s 0c | 2026-11-08 16:27 UTC | 11s 0c | 11s 0c | moving | 4 of 4 | 414 |  |
+| Moonsteel Broadsword | 3853 | 2g 68s 0c | 2026-11-08 16:27 UTC | 3g 26s 0c |  | too new | 2 of 4 | 28 |  |
+| Night Watch Shortsword | 935 | 73s 0c | 2026-11-08 16:27 UTC | 82s 0c | 82s 0c | steady | 4 of 4 | 23 |  |
+| Northern Shortsword | 2078 | 11s 0c | 2026-11-08 16:27 UTC | 11s 0c | 11s 0c | moving | 4 of 4 | 140 |  |
+| Notched Shortsword | 727 | 3s 0c | 2026-11-08 16:27 UTC | 2s 50c | 2s 50c | moving | 4 of 4 | 577 |  |
+| Onyx Claymore | 3417 | 89s 0c | 2026-11-08 16:27 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 4 | 18 |  |
+| Pysan's Old Greatsword | 1975 | 99s 0c | 2026-11-08 16:27 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 4 | 11 |  |
+| Scimitar | 2027 | 40s 0c | 2026-11-08 16:27 UTC | 17s 0c | 17s 0c | volatile | 3 of 4 | 4 |  |
+| Scorpion Sting | 1265 | 3g 50s 0c | 2026-11-08 16:27 UTC | 8g 77s 0c | 8g 77s 0c | moving | 3 of 4 | 3 |  |
+| Shadowfang | 1482 | 9g 99s 0c | 2026-11-08 16:27 UTC | 9g 99s 0c | 9g 99s 0c | volatile | 3 of 4 | 13 |  |
+| Shiver Blade | 5182 | 24s 0c | 2026-11-08 16:27 UTC | 20s 0c | 20s 0c | steady | 4 of 4 | 20 |  |
+| Short Bastard Sword | 3192 | 5s 0c | 2026-11-08 16:27 UTC | 4s 50c | 4s 50c | moving | 4 of 4 | 650 |  |
+| Short Sabre | 3319 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 4 of 4 | 53 |  |
+| Standard Claymore | 1818 | 15s 0c | 2026-11-08 16:27 UTC | 16s 0c | 16s 0c | moving | 3 of 4 | 10 |  |
+| Stock Shortsword | 1817 | 6s 0c | 2026-11-08 16:27 UTC | 6s 0c | 6s 0c | steady | 3 of 4 | 25 |  |
+| Stonecutter Claymore | 3197 | 99s 0c | 2026-11-08 16:27 UTC | 99s 0c | 99s 0c | volatile | 3 of 4 | 19 |  |
+| Sword of Decay | 1727 | 1g 59s 0c | 2026-11-08 16:27 UTC | 2g 0s 0c | 2g 0s 0c | volatile | 3 of 4 | 6 |  |
+| Sword of the Night Sky | 2035 | 48s 0c | 2026-11-08 16:27 UTC | 41s 50c | 41s 50c | moving | 4 of 4 | 12 |  |
+| Tarnished Bastard Sword | 2754 | 4s 0c | 2026-11-08 16:27 UTC | 9s 0c | 9s 0c | volatile | 4 of 4 | 6 |  |
+| Training Sword | 8178 | 4s 0c | 2026-11-08 16:27 UTC | 3s 0c | 3s 0c | moving | 4 of 4 | 986 |  |
+| Twisted Sabre | 2011 | 58s 0c | 2026-11-08 16:27 UTC | 76s 50c | 76s 50c | moving | 4 of 4 | 27 |  |
+| Two-handed Sword | 2489 | 2s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | steady | 3 of 4 | 1 |  |
+| Viking Sword | 3186 | 45s 0c | 2026-11-08 16:27 UTC | 49s 0c | 49s 0c | moving | 3 of 4 | 41 |  |
+| Warped Blade | 1821 | 11s 0c | 2026-11-08 16:27 UTC | 12s 0c | 12s 0c | moving | 3 of 4 | 8 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
