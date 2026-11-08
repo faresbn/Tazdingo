@@ -21,6 +21,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Elixir of Defense | 195 | 8951 | 1 | 57s 85c | 30s 78c | 27s 7c | ForeverDB |
 | Spellblasting Potion | 135 | 250934 | 1 | 36s 25c | 11s 27c | 24s 98c | ForeverDB |
 | Elixir of Spirit | 115 | 250346 | 1 | 45s 49c | 24s 20c | 21s 29c | ForeverDB |
+| Fermenter | 140 | 279970 | 1 | 23s 99c | 5s 1c | 18s 98c | ForeverDB |
 | Elixir of Lesser Intellect | 95 | 250353 | 1 | 24s 49c | 5s 60c | 18s 89c | ForeverDB |
 | Fire Protection Potion | 165 | 6049 | 1 | 46s 0c | 28s 22c | 17s 78c | ForeverDB |
 | Greater Discolored Healing Potion | 0 | 247241 | 1 | 19s 0c | 3s 56c | 15s 44c | ForeverDB |
@@ -35,7 +36,6 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Elixir of Lesser Fortitude | 175 | 3825 | 1 | 38s 81c | 30s 78c | 8s 3c | ForeverDB |
 | Elixir of Lesser Defense | 130 | 3389 | 1 | 13s 67c | 6s 18c | 7s 49c | ForeverDB |
 | Lesser Mender's Potion | 80 | 250945 | 1 | 15s 57c | 10s 40c | 5s 17c | ForeverDB |
-| Fermenter | 140 | 279970 | 1 | 9s 99c | 5s 1c | 4s 98c | our scan |
 | Cerulean Dye | 0 | 249409 | 1 | 41s 78c | 37s 40c | 4s 38c | ForeverDB |
 | Discolored Healing Potion | 0 | 247240 | 1 | 7s 0c | 3s 36c | 3s 64c | ForeverDB |
 | Minor Magic Resistance Potion | 110 | 3384 | 1 | 8s 19c | 4s 60c | 3s 59c | ForeverDB |
@@ -49,9 +49,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Blackmouth Oil | 80 | 6370 | 1 | 3s 16c | 1s 84c | 1s 32c | our scan |
 | Minor Cleric's Elixir | 45 | 250330 | 1 | 3s 83c | 2s 80c | 1s 3c | our scan |
 | Elixir of Ogre Strength | 150 | 3391 | 1 | 4s 78c | 4s 0c | 78c | our scan |
-| Lesser Frenzy Potion | 90 | 250939 | 1 | 3s 50c | 2s 78c | 72c | our scan |
 | Lesser Discolored Healing Potion | 0 | 247239 | 1 | 2s 0c | 1s 54c | 46c | ForeverDB |
-| Rage Potion | 60 | 5631 | 1 | 1s 71c | 1s 63c | 8c | our scan |
-| Minor Mageblood Elixir | 25 | 250339 | 1 | 1s 84c | 1s 80c | 4c | our scan |
+| Lesser Frenzy Potion | 90 | 250939 | 1 | 2s 95c | 2s 78c | 17c | our scan |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

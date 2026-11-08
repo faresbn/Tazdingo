@@ -49,7 +49,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Cloudy Stormsewn Cord | 50 | 277013 | 1 | 30s 0c | 1s 80c | 28s 20c | ForeverDB |
 | Crimson Silk Vest | 170 | 7058 | 1 | 75s 0c | 48s 88c | 26s 12c | ForeverDB |
 | Green Silken Shoulders | 165 | 7057 | 1 | 89s 0c | 67s 35c | 21s 65c | ForeverDB |
-| Green Silk Pack | 140 | 5764 | 1 | 89s 0c | 67s 88c | 21s 12c | our scan |
+| Green Silk Pack | 140 | 5764 | 1 | 88s 0c | 67s 88c | 20s 12c | our scan |
 | Cloudy Stormsewn Cuffs | 50 | 277011 | 1 | 20s 0c | 1s 80c | 18s 20c | ForeverDB |
 | Crimson Silk Belt | 160 | 7055 | 1 | 72s 0c | 54s 38c | 17s 62c | ForeverDB |
 | Phoenix Pants | 100 | 4317 | 1 | 1g 44s 58c | 1g 28s 32c | 16s 26c | ForeverDB |
@@ -58,18 +58,18 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Greater Adept's Robe | 90 | 6264 | 1 | 37s 0c | 25s 65c | 11s 35c | our scan |
 | Red Woolen Boots | 75 | 4313 | 1 | 29s 0c | 19s 36c | 9s 64c | our scan |
 | Small Silk Pack | 145 | 4245 | 1 | 58s 50c | 49s 41c | 9s 9c | our scan |
-| Invoker's Cord | 150 | 215366 | 1 | 47s 0c | 41s 43c | 5s 57c | ForeverDB |
+| Invoker's Cord | 150 | 215366 | 1 | 47s 0c | 41s 28c | 5s 72c | ForeverDB |
 | Red Swashbuckler's Shirt | 150 | 6796 | 1 | 45s 0c | 40s 41c | 4s 59c | ForeverDB |
-| Blue Overalls | 75 | 6263 | 1 | 24s 0c | 19s 92c | 4s 8c | our scan |
 | Azure Silk Vest | 145 | 4324 | 1 | 63s 0c | 59s 35c | 3s 65c | ForeverDB |
 | Colorful Kilt | 70 | 10048 | 1 | 27s 0c | 23s 65c | 3s 35c | our scan |
+| Blue Overalls | 75 | 6263 | 1 | 23s 0c | 19s 92c | 3s 8c | our scan |
 | Red Linen Bag | 50 | 5762 | 1 | 5s 0c | 3s 50c | 1s 50c | our scan |
-| Linen Reagent Bag | 5 | 253664 | 1 | 5s 0c | 3s 60c | 1s 40c | our scan |
 | Blue Linen Shirt | 40 | 2577 | 1 | 3s 0c | 1s 60c | 1s 40c | ForeverDB |
+| Heavy Woolen Cloak | 80 | 4311 | 1 | 22s 50c | 21s 37c | 1s 13c | our scan |
 | Bolt of Woolen Cloth | 70 | 2997 | 1 | 4s 23c | 3s 15c | 1s 8c | our scan |
+| Linen Reagent Bag | 5 | 253664 | 1 | 4s 50c | 3s 60c | 90c | our scan |
 | Brown Linen Pants | 30 | 4343 | 1 | 2s 0c | 1s 10c | 90c | our scan |
 | Red Linen Vest | 35 | 6239 | 1 | 3s 0c | 2s 10c | 90c | our scan |
-| Heavy Woolen Cloak | 80 | 4311 | 1 | 22s 50c | 21s 69c | 81c | our scan |
 | Simple Linen Boots | 20 | 10046 | 1 | 2s 0c | 1s 32c | 68c | our scan |
 | White Linen Shirt | 1 | 2576 | 1 | 1s 50c | 85c | 65c | our scan |
 | White Linen Robe | 30 | 6241 | 1 | 2s 50c | 1s 85c | 65c | our scan |
@@ -89,7 +89,6 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Linen Bag | 1 | 4238 | 1 | 2s 0c | 1s 80c | 20c | our scan |
 | Linen Boots | 65 | 2569 | 1 | 2s 0c | 1s 82c | 18c | our scan |
 | Faction Banner | 0 | 279972 | 1 | 77c | 60c | 17c | our scan |
-| Simple Dress | 40 | 6786 | 1 | 2s 0c | 1s 85c | 15c | ForeverDB |
 | Bolt of Linen Cloth | 1 | 2996 | 1 | 50c | 38c | 12c | our scan |
 | Soft-soled Linen Boots | 80 | 4312 | 1 | 4s 0c | 3s 94c | 6c | our scan |
 

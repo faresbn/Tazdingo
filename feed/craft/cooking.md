@@ -10,7 +10,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Spiced Chili Crab | 225 | 12216 | 1 | 87s 0c | 38s 79c | 48s 21c | ForeverDB |
 | Hot Wolf Ribs | 175 | 13851 | 1 | 50s 0c | 11s 36c | 38s 64c | ForeverDB |
 | Barbecued Buzzard Wing | 175 | 4457 | 1 | 34s 0c | 5s 40c | 28s 60c | ForeverDB |
-| Savory Stag Sliders | 225 | 250065 | 1 | 30s 0c | 3s 2c | 26s 98c | ForeverDB |
+| Savory Stag Sliders | 225 | 250065 | 1 | 30s 0c | 3s 0c | 27s 0c | ForeverDB |
 | Tender Wolf Steak | 225 | 18045 | 1 | 45s 0c | 20s 60c | 24s 40c | ForeverDB |
 | Jungle Stew | 175 | 12212 | 2 | 26s 0c | 5s 51c | 20s 49c | ForeverDB |
 | Spider Sausage | 200 | 17222 | 1 | 21s 0c | 4s 50c | 16s 50c | ForeverDB |
@@ -30,7 +30,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Journeyman Campfire | 90 | 279961 | 1 | 49s 99c | 45s 0c | 4s 99c | our scan |
 | Carrion Surprise | 175 | 12213 | 1 | 7s 0c | 2s 13c | 4s 87c | ForeverDB |
 | Venomous Smoothie | 25 | 249871 | 1 | 6s 0c | 1s 30c | 4s 70c | our scan |
-| Lean Venison | 110 | 5480 | 2 | 6s 0c | 1s 31c | 4s 69c | our scan |
+| Lean Venison | 110 | 5480 | 2 | 6s 0c | 1s 30c | 4s 70c | our scan |
 | Filet of Redgill | 225 | 13930 | 1 | 4s 99c | 1s 10c | 3s 89c | ForeverDB |
 | Royal Tea | 100 | 249866 | 1 | 6s 0c | 2s 85c | 3s 15c | our scan |
 | Gooey Spider Cake | 110 | 3666 | 1 | 3s 85c | 72c | 3s 13c | ForeverDB |
@@ -38,22 +38,22 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Slimy Smoothie | 100 | 249872 | 1 | 4s 0c | 1s 61c | 2s 39c | ForeverDB |
 | Thistle Tea | 60 | 7676 | 1 | 4s 19c | 2s 6c | 2s 13c | our scan |
 | Plain Ol' Paletusk | 185 | 274976 | 1 | 5s 0c | 3s 18c | 1s 82c | ForeverDB |
-| Sagefish Delight | 175 | 21217 | 1 | 5s 0c | 3s 26c | 1s 74c | our scan |
+| Sagefish Delight | 175 | 21217 | 1 | 5s 0c | 3s 20c | 1s 80c | our scan |
 | Mithril Headed Trout | 175 | 8364 | 1 | 2s 88c | 1s 17c | 1s 71c | ForeverDB |
 | Roasted Kodo Meat | 35 | 5474 | 2 | 2s 0c | 37c | 1s 63c | our scan |
 | Crocolisk Steak | 80 | 3662 | 1 | 1s 90c | 34c | 1s 56c | ForeverDB |
 | Tasty Raptor Bites | 25 | 250079 | 1 | 2s 48c | 1s 37c | 1s 11c | ForeverDB |
 | Hot Lion Chops | 125 | 3727 | 1 | 2s 23c | 1s 26c | 97c | ForeverDB |
+| Crispy Lizard Tail | 100 | 5479 | 2 | 2s 98c | 2s 4c | 94c | our scan |
 | Scorpid Surprise | 20 | 5473 | 1 | 90c | 10c | 80c | ForeverDB |
-| Crispy Lizard Tail | 100 | 5479 | 2 | 2s 98c | 2s 19c | 79c | our scan |
 | Peace Tea | 25 | 249865 | 1 | 1s 82c | 1s 5c | 77c | our scan |
 | Cooked Crab Claw | 85 | 2682 | 1 | 97c | 31c | 66c | ForeverDB |
 | Blood Sausage | 60 | 3220 | 2 | 86c | 61c | 25c | ForeverDB |
-| Basic Campfire | 1 | 279981 | 1 | 62c | 38c | 24c | our scan |
+| Murloc Fin Soup | 90 | 3663 | 1 | 1s 28c | 1s 4c | 24c | ForeverDB |
+| Basic Campfire | 1 | 279981 | 1 | 61c | 38c | 23c | our scan |
 | Big Bear Steak | 110 | 3726 | 1 | 1s 25c | 1s 8c | 17c | our scan |
-| Murloc Fin Soup | 90 | 3663 | 1 | 1s 28c | 1s 12c | 16c | ForeverDB |
 | Kaldorei Spider Kabob | 10 | 5472 | 1 | 18c | 3c | 15c | ForeverDB |
-| Smoked Bear Meat | 40 | 6890 | 1 | 35c | 24c | 11c | our scan |
 | Strider Stew | 50 | 5477 | 2 | 52c | 41c | 11c | our scan |
+| Smoked Bear Meat | 40 | 6890 | 1 | 30c | 24c | 6c | our scan |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

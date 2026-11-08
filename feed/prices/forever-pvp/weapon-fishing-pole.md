@@ -1,12 +1,12 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Weapon: Fishing Pole
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-08 17:40 UTC. Uploads in the 30-day window: 14.
+- **Latest scan:** 2026-11-08 20:10 UTC. Uploads in the 30-day window: 15.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | Fishing Pole | 6256 | 1s 0c | 2026-11-08 16:27 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 51 |  |
-| Strong Fishing Pole | 6365 | 1g 10s 0c | 2026-11-08 17:40 UTC | 39s 50c | 39s 50c | volatile | 4 of 4 | 16 |  |
+| Strong Fishing Pole | 6365 | 1g 0s 0c | 2026-11-08 20:10 UTC | 39s 50c | 39s 50c | volatile | 4 of 4 | 22 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

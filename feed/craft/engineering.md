@@ -5,28 +5,28 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
 | Mechanical Dragonling | 200 | 4396 | 1 | 49g 91s 0c | 3g 1s 72c | 46g 89s 28c | ForeverDB |
-| Gnomish Harm Prevention Belt | 215 | 10721 | 1 | 22g 74s 0c | 4g 53s 54c | 18g 20s 46c | ForeverDB |
+| Gnomish Harm Prevention Belt | 215 | 10721 | 1 | 22g 74s 0c | 4g 53s 32c | 18g 20s 68c | ForeverDB |
 | Goblin Mortar | 0 | 10577 | 1 | 20g 0s 0c | 2g 42s 17c | 17g 57s 83c | ForeverDB |
 | EZ-Thro Bronze Mortar | 190 | 260802 | 1 | 13g 87s 0c | 2g 40s 92c | 11g 46s 8c | ForeverDB |
-| Gnomish Cloaking Device | 200 | 4397 | 1 | 12g 13s 0c | 2g 3s 50c | 10g 9s 50c | ForeverDB |
+| Gnomish Cloaking Device | 200 | 4397 | 1 | 12g 13s 0c | 2g 3s 28c | 10g 9s 72c | ForeverDB |
 | Spellpower Goggles Xtreme | 225 | 10502 | 1 | 9g 31s 0c | 1g 77s 94c | 7g 53s 6c | ForeverDB |
 | Deadly Scope | 210 | 10546 | 1 | 6g 18s 75c | 1g 47s 18c | 4g 71s 57c | ForeverDB |
 | 9-60 Battery Pack | 125 | 274048 | 1 | 4g 0s 0c | 48s 9c | 3g 51s 91c | ForeverDB |
 | Goblin Sapper Charge | 205 | 10646 | 1 | 5g 8s 0c | 1g 58s 47c | 3g 49s 53c | ForeverDB |
-| Goblin Jumper Cables | 165 | 7148 | 1 | 4g 1s 0c | 63s 58c | 3g 37s 42c | ForeverDB |
+| Goblin Jumper Cables | 165 | 7148 | 1 | 4g 1s 0c | 62s 82c | 3g 38s 18c | ForeverDB |
 | Hoof-Shaped Foot Pedal | 140 | 269902 | 1 | 4g 15s 0c | 1g 84s 9c | 2g 30s 91c | ForeverDB |
 | Portable Bronze Mortar | 165 | 4403 | 1 | 2g 99s 0c | 90s 92c | 2g 8s 8c | ForeverDB |
-| Discombobulator Ray | 160 | 4388 | 1 | 2g 33s 0c | 31s 33c | 2g 1s 67c | ForeverDB |
-| Flame Deflector | 125 | 4376 | 1 | 2g 15s 0c | 28s 63c | 1g 86s 37c | ForeverDB |
+| Discombobulator Ray | 160 | 4388 | 1 | 2g 33s 0c | 30s 58c | 2g 2s 42c | ForeverDB |
+| Flame Deflector | 125 | 4376 | 1 | 2g 15s 0c | 28s 38c | 1g 86s 62c | ForeverDB |
 | EZ-Thro Fireproof Fuse | 190 | 260801 | 1 | 1g 50s 0c | 4s 40c | 1g 45s 60c | ForeverDB |
-| Gnomish Universal Remote | 125 | 7506 | 1 | 1g 50s 0c | 14s 82c | 1g 35s 18c | ForeverDB |
-| Ice Deflector | 155 | 4386 | 1 | 3g 97s 75c | 2g 69s 12c | 1g 28s 63c | ForeverDB |
+| Gnomish Universal Remote | 125 | 7506 | 1 | 1g 50s 0c | 14s 51c | 1g 35s 49c | ForeverDB |
+| Ice Deflector | 155 | 4386 | 1 | 3g 97s 75c | 2g 68s 87c | 1g 28s 88c | ForeverDB |
 | Accurate Scope | 180 | 4407 | 1 | 1g 58s 0c | 37s 1c | 1g 20s 99c | ForeverDB |
 | Goblin Rocket Fuel Recipe | 205 | 10644 | 1 | 1g 42s 50c | 25s 0c | 1g 17s 50c | ForeverDB |
 | Mithril Frag Bomb | 215 | 10514 | 3 | 3g 0s 0c | 2g 8s 43c | 91s 57c | ForeverDB |
 | Advanced Target Dummy | 185 | 4392 | 1 | 1g 87s 0c | 1g 3s 0c | 84s 0c | ForeverDB |
-| Minor Recombobulator | 140 | 4381 | 1 | 99s 0c | 23s 31c | 75s 69c | ForeverDB |
-| Repair Bot | 140 | 279949 | 1 | 96s 0c | 21s 26c | 74s 74c | ForeverDB |
+| Minor Recombobulator | 140 | 4381 | 1 | 99s 0c | 22s 81c | 76s 19c | ForeverDB |
+| Repair Bot | 140 | 279949 | 1 | 96s 0c | 20s 76c | 75s 24c | ForeverDB |
 | Unstable Trigger | 200 | 10560 | 1 | 1g 16s 0c | 41s 73c | 74s 27c | ForeverDB |
 | Goblin Land Mine | 195 | 4395 | 1 | 1g 29s 99c | 60s 2c | 69s 97c | ForeverDB |
 | EZ-Thro Dynamite II | 200 | 18588 | 1 | 2g 29s 0c | 1g 62s 76c | 66s 24c | ForeverDB |
@@ -38,29 +38,29 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Iron Grenade | 175 | 4390 | 3 | 34s 14c | 14s 54c | 19s 60c | ForeverDB |
 | Gyromatic Micro-Adjustor | 175 | 10498 | 1 | 89s 50c | 71s 44c | 18s 6c | ForeverDB |
 | Large Seaforium Charge | 200 | 4398 | 1 | 50s 0c | 32s 23c | 17s 77c | ForeverDB |
-| Crafted Solid Shot | 125 | 8069 | 200 | 24s 0c | 8s 6c | 15s 94c | ForeverDB |
+| Crafted Solid Shot | 125 | 8069 | 200 | 24s 0c | 8s 5c | 15s 95c | ForeverDB |
 | Iron Strut | 160 | 4387 | 1 | 25s 0c | 10s 58c | 14s 42c | ForeverDB |
 | EZ-Thro Wrap | 100 | 260794 | 1 | 18s 99c | 4s 87c | 14s 12c | ForeverDB |
 | Gold Power Core | 150 | 10558 | 3 | 21s 27c | 7s 52c | 13s 75c | ForeverDB |
-| Moonsight Rifle | 145 | 4383 | 1 | 79s 0c | 66s 87c | 12s 13c | our scan |
-| Big Bronze Bomb | 140 | 4380 | 3 | 30s 12c | 18s 70c | 11s 42c | ForeverDB |
+| Moonsight Rifle | 145 | 4383 | 1 | 79s 0c | 65s 90c | 13s 10c | our scan |
+| Big Bronze Bomb | 140 | 4380 | 3 | 30s 12c | 18s 67c | 11s 45c | ForeverDB |
 | Hi-Impact Mithril Slugs | 210 | 10512 | 200 | 40s 0c | 29s 23c | 10s 77c | ForeverDB |
 | Sandpaper | 0 | 249432 | 1 | 77s 15c | 66s 52c | 10s 63c | ForeverDB |
 | Mechanical Repair Kit | 200 | 11590 | 1 | 50s 0c | 41s 73c | 8s 27c | ForeverDB |
-| Shadow Goggles | 120 | 4373 | 1 | 19s 0c | 13s 4c | 5s 96c | our scan |
+| Shadow Goggles | 120 | 4373 | 1 | 19s 0c | 12s 74c | 6s 26c | our scan |
 | Crafted Heavy Shot | 75 | 8068 | 200 | 6s 0c | 1s 46c | 4s 54c | ForeverDB |
 | Big Iron Bomb | 190 | 4394 | 2 | 40s 0c | 36s 31c | 3s 69c | ForeverDB |
 | Large Copper Bomb | 105 | 4370 | 3 | 9s 0c | 5s 86c | 3s 14c | ForeverDB |
-| Small Bronze Bomb | 120 | 4374 | 2 | 10s 0c | 7s 13c | 2s 87c | ForeverDB |
-| Green Tinted Goggles | 150 | 4385 | 1 | 23s 0c | 21s 10c | 1s 90c | our scan |
-| Flying Tiger Goggles | 100 | 4368 | 1 | 5s 0c | 3s 44c | 1s 56c | our scan |
+| Small Bronze Bomb | 120 | 4374 | 2 | 10s 0c | 7s 11c | 2s 89c | ForeverDB |
+| Flash Bomb | 185 | 4852 | 1 | 60s 0c | 58s 25c | 1s 75c | ForeverDB |
+| Flying Tiger Goggles | 100 | 4368 | 1 | 5s 0c | 3s 36c | 1s 64c | our scan |
 | Mechanical Squirrel | 75 | 4401 | 1 | 6s 50c | 5s 28c | 1s 22c | our scan |
 | Coarse Dynamite | 75 | 4365 | 2 | 2s 72c | 1s 63c | 1s 9c | our scan |
 | Handful of Copper Bolts | 30 | 4359 | 1 | 2s 0c | 98c | 1s 2c | ForeverDB |
+| Green Tinted Goggles | 150 | 4385 | 1 | 22s 0c | 21s 10c | 90c | our scan |
 | Crafted Light Shot | 1 | 8067 | 200 | 2s 0c | 1s 14c | 86c | our scan |
-| Flash Bomb | 185 | 4852 | 1 | 60s 0c | 59s 25c | 75c | ForeverDB |
 | SAF-T Dynamite | 25 | 260792 | 1 | 1s 9c | 51c | 58c | our scan |
-| Heavy Blasting Powder | 125 | 4377 | 1 | 6s 48c | 5s 94c | 54c | our scan |
+| Heavy Blasting Powder | 125 | 4377 | 1 | 6s 48c | 6s 20c | 28c | our scan |
 | Rough Dynamite | 1 | 4358 | 2 | 58c | 35c | 23c | our scan |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

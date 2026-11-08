@@ -6,7 +6,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 |---|---|---|---|---|---|---|---|
 | Superior Poultice | 210 | 255718 | 3 | 3g 75s 0c | 8s 51c | 3g 66s 49c | ForeverDB |
 | Toxin Study | 140 | 279940 | 1 | 3g 56s 48c | 61s 7c | 2g 95s 41c | ForeverDB |
-| Clever Poultice | 140 | 255717 | 3 | 22s 47c | 2s 46c | 20s 1c | ForeverDB |
+| Clever Poultice | 140 | 255717 | 3 | 22s 47c | 2s 42c | 20s 5c | ForeverDB |
 | Mageweave Bandage | 210 | 8544 | 1 | 30s 0c | 12s 50c | 17s 50c | ForeverDB |
 | Strong Anti-Venom | 130 | 6453 | 3 | 6s 0c | 1s 97c | 4s 3c | ForeverDB |
 | Heavy Silk Bandage | 180 | 6451 | 1 | 6s 50c | 5s 54c | 96c | ForeverDB |
