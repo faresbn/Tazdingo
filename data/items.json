@@ -2,9 +2,9 @@
  "source": {
   "credit": "Data from ForeverDB.net (https://foreverdb.net)",
   "file": "Data/SearchNames.lua",
-  "data_version": "2026-11-08.1838dfe5",
+  "data_version": "2026-11-08.949d670e",
   "client_build": "1.60.1.70862",
-  "sha256": "16c5d2c6f2baaa792147ffee23ba061369c56d3419f53c2973cda0f5d110016c",
+  "sha256": "e816a8b3763ef19567bd3da7a162b5b01fe9b3d015afd90fd7ba2b61762abdce",
   "fetched_on": "2026-11-08"
  },
  "names": {

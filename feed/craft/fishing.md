@@ -4,6 +4,6 @@ Estimated listing margins: what the item lists for against what its reagents cos
 
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
-| Fish Bowl | 0 | 279967 | 1 | 91c | 60c | 31c | our scan |
+| Fish Bowl | 0 | 279967 | 1 | 91c | 82c | 9c | our scan |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
