@@ -12,6 +12,8 @@ import argparse
 import hashlib
 import json
 import re
+import time
+import urllib.error
 import urllib.request
 from datetime import date
 from pathlib import Path
@@ -26,10 +28,22 @@ CREDIT = "Data from ForeverDB.net (https://foreverdb.net)"
 AGENT = "Tazdingo item-name refresh (private fan project)"
 
 
-def fetch(url: str, limit: int) -> bytes:
+def fetch(url: str, limit: int, attempts: int = 4) -> bytes:
+    """GET with a size limit. A busy server's 5xx answer or a dropped connection is retried,
+    waiting 15, 30, then 45 seconds; anything else fails at once."""
     request = urllib.request.Request(url, headers={"User-Agent": AGENT})
-    with urllib.request.urlopen(request, timeout=30) as response:
-        body = response.read(limit + 1)
+    for attempt in range(attempts):
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                body = response.read(limit + 1)
+            break
+        except urllib.error.HTTPError as error:
+            if error.code < 500 or attempt == attempts - 1:
+                raise
+        except urllib.error.URLError:
+            if attempt == attempts - 1:
+                raise
+        time.sleep(15 * (attempt + 1))
     if len(body) > limit:
         raise InvalidCapture(f"{url} is larger than expected")
     return body

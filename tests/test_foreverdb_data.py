@@ -6,6 +6,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from auctionator import InvalidCapture
 from foreverdb_data import parse_recipes
+import item_names
+import urllib.error
+from unittest import mock
 
 # ForeverDB's row layouts: before 7 November (12 fields), since (13), and random-count recipes (15).
 OLD = '{%d,"Recipe %d",1,10,12,15,247755,1,"765:1,3371:1","a",0,1}'
@@ -35,6 +38,40 @@ class Recipes(unittest.TestCase):
     def test_too_few_recipes_is_refused(self):
         with self.assertRaises(InvalidCapture):
             parse_recipes(recipes_file(NEW, count=10))
+
+
+class Fetch(unittest.TestCase):
+    def answer(self, *results):
+        """urlopen stand-in: raises or returns each result in turn."""
+        calls = iter(results)
+        def urlopen(request, timeout):
+            result = next(calls)
+            if isinstance(result, Exception):
+                raise result
+            response = mock.MagicMock()
+            response.__enter__.return_value.read.return_value = result
+            return response
+        return urlopen
+
+    def busy(self, code=502):
+        return urllib.error.HTTPError("https://foreverdb.net/x", code, "busy", {}, None)
+
+    def test_a_busy_server_is_retried(self):
+        with mock.patch("urllib.request.urlopen", self.answer(self.busy(), self.busy(503), b"ok")), \
+             mock.patch("time.sleep") as sleep:
+            self.assertEqual(item_names.fetch("https://foreverdb.net/x", 10), b"ok")
+        self.assertEqual(sleep.call_count, 2)
+
+    def test_it_gives_up_after_four_tries(self):
+        with mock.patch("urllib.request.urlopen", self.answer(*[self.busy()] * 4)), mock.patch("time.sleep"):
+            with self.assertRaises(urllib.error.HTTPError):
+                item_names.fetch("https://foreverdb.net/x", 10)
+
+    def test_a_missing_file_fails_at_once(self):
+        with mock.patch("urllib.request.urlopen", self.answer(self.busy(404))), mock.patch("time.sleep") as sleep:
+            with self.assertRaises(urllib.error.HTTPError):
+                item_names.fetch("https://foreverdb.net/x", 10)
+        sleep.assert_not_called()
 
 
 if __name__ == "__main__":
