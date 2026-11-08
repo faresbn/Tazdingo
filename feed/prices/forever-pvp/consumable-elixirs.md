@@ -46,5 +46,6 @@
 | Minor Mageblood Elixir | 250339 | 1s 70c | 2026-11-08 20:10 UTC | 1s 75c | 1s 75c | moving | 4 of 4 | 755 |  |
 | Minor Troll's Blood Elixir | 3382 | 60c | 2026-11-08 20:10 UTC | 29c | 29c | moving | 4 of 4 | 728 |  |
 | Troll's Blood Elixir | 3826 | 6s 97c | 2026-11-08 20:10 UTC | 8s 97c |  | too new | 2 of 4 | 504 |  |
+| Winterfall Firewater | 12820 | 5g 1s 0c | 2026-11-08 16:27 UTC | 5g 1s 0c |  | too new | 1 of 4 | 1 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

@@ -10,6 +10,7 @@
 | Heavy Quiver | 7371 | 17s 0c | 2026-11-08 20:10 UTC | 40s 50c | 40s 50c | volatile | 4 of 4 | 70 |  |
 | Light Leather Quiver | 7278 | 1s 0c | 2026-11-08 17:40 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 1167 |  |
 | Light Quiver | 2101 | 1s 0c | 2026-11-08 20:10 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 33 |  |
+| Medium Quiver | 11362 | 13s 0c | 2026-11-08 20:10 UTC | 15s 0c | 15s 0c | moving | 4 of 4 | 59 |  |
 | Quickdraw Quiver | 8217 | 2g 0s 0c | 2026-11-08 20:10 UTC | 4g 27s 0c |  | too new | 2 of 4 | 20 |  |
 | Small Ammo Pouch | 2102 | 2s 0c | 2026-11-08 16:27 UTC | 1s 50c | 1s 50c | moving | 4 of 4 | 8 |  |
 | Small Leather Ammo Pouch | 7279 | 1s 0c | 2026-11-08 16:27 UTC | 1s 0c | 1s 0c | steady | 4 of 4 | 884 |  |

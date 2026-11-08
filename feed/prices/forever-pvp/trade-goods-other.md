@@ -17,6 +17,7 @@
 | Blue Pearl | 4611 | 47s 0c | 2026-11-08 20:10 UTC | 49s 0c | 49s 0c | steady | 3 of 4 | 187 |  |
 | Blue Sapphire | 12361 | 6g 0s 99c | 2026-11-08 20:10 UTC | 6g 0s 99c |  | too new | 1 of 4 | 9 |  |
 | Cerulean Dye | 249409 | 33s 85c | 2026-11-08 20:10 UTC | 22s 19c | 22s 19c | volatile | 4 of 4 | 458 |  |
+| Chef's Knife | 273636 | 3s 0c | 2026-11-08 16:27 UTC | 5s 0c | 5s 0c | volatile | 3 of 4 | 22 |  |
 | Citrine | 3864 | 13s 66c | 2026-11-08 20:10 UTC | 20s 83c | 20s 83c | volatile | 4 of 4 | 84 |  |
 | Crystal Vial | 8925 | 1s 49c | 2026-11-08 20:10 UTC | 2s 74c | 2s 74c | moving | 4 of 4 | 140 |  |
 | Empty Vial | 3371 | 9c | 2026-11-08 20:10 UTC | 6c | 6c | steady | 4 of 4 | 3242 |  |
@@ -40,6 +41,7 @@
 | Leaded Vial | 3372 | 49c | 2026-11-08 17:40 UTC | 98c | 98c | moving | 4 of 4 | 918 |  |
 | Leather Tourniquet | 255721 | 4s 98c | 2026-11-08 20:10 UTC | 12s 0c | 12s 0c | volatile | 3 of 4 | 58 |  |
 | Lesser Moonstone | 1705 | 5s 78c | 2026-11-08 20:10 UTC | 5s 88c | 5s 88c | steady | 4 of 4 | 723 |  |
+| Lightning Eel | 13757 | 10s 0c | 2026-11-08 20:10 UTC | 39s 0c |  | too new | 2 of 4 | 194 |  |
 | Long Elegant Feather | 4589 | 1g 89s 0c | 2026-11-08 20:10 UTC | 48s 50c |  | too new | 2 of 4 | 10 |  |
 | Magenta Dye | 249430 | 27s 94c | 2026-11-08 20:10 UTC | 94s 71c | 94s 71c | volatile | 3 of 4 | 161 |  |
 | Malachite | 774 | 15c | 2026-11-08 17:40 UTC | 15c | 15c | steady | 4 of 4 | 1904 |  |

@@ -14,6 +14,8 @@
 | Green Leather Bag | 5573 | 9s 0c | 2026-11-08 20:10 UTC | 12s 0c | 12s 0c | moving | 4 of 4 | 78 |  |
 | Green Silk Pack | 5764 | 79s 0c | 2026-11-08 20:10 UTC | 88s 0c | 88s 0c | moving | 3 of 4 | 8 |  |
 | Green Woolen Bag | 4241 | 9s 0c | 2026-11-08 16:27 UTC | 12s 0c | 12s 0c | moving | 4 of 4 | 136 |  |
+| Heavy Brown Bag | 4497 | 2g 0s 0c | 2026-11-08 17:40 UTC | 2g 0s 0c |  | too new | 1 of 4 | 2 |  |
+| Herb Pouch | 22250 | 12s 0c | 2026-11-08 20:10 UTC | 11s 50c | 11s 50c | steady | 4 of 4 | 133 |  |
 | Journeyman's Backpack | 3914 | 6g 99s 0c | 2026-11-08 20:10 UTC | 8g 69s 50c | 8g 69s 50c | moving | 4 of 4 | 4 |  |
 | Kodo Hide Bag | 5081 | 3s 0c | 2026-11-08 20:10 UTC | 4s 0c | 4s 0c | moving | 4 of 4 | 98 |  |
 | Large Blue Sack | 804 | 98s 0c | 2026-11-08 20:10 UTC | 94s 0c | 94s 0c | moving | 3 of 4 | 51 |  |
@@ -41,6 +43,7 @@
 | Small Green Pouch | 5572 | 3s 0c | 2026-11-08 20:10 UTC | 3s 0c | 3s 0c | steady | 4 of 4 | 811 |  |
 | Small Red Pouch | 805 | 3s 0c | 2026-11-08 20:10 UTC | 3s 0c | 3s 0c | steady | 4 of 4 | 924 |  |
 | Small Silk Pack | 4245 | 34s 0c | 2026-11-08 20:10 UTC | 58s 50c | 58s 50c | moving | 4 of 4 | 387 |  |
+| Traveler's Backpack | 4500 | 35g 0s 0c | 2026-11-08 17:40 UTC | 49g 50s 0c |  | too new | 2 of 4 | 2 |  |
 | Troll-hide Bag | 1685 | 8g 3s 0c | 2026-11-08 16:27 UTC | 19g 1s 50c |  | too new | 2 of 4 | 2 |  |
 | White Leather Bag | 5574 | 9s 0c | 2026-11-08 20:10 UTC | 10s 0c | 10s 0c | moving | 4 of 4 | 84 |  |
 | Woolen Bag | 4240 | 7s 0c | 2026-11-08 20:10 UTC | 9s 0c | 9s 0c | moving | 4 of 4 | 259 |  |

@@ -30,11 +30,14 @@
 | Plaguebloom | 13466 | 3g 4s 0c | 2026-11-08 16:27 UTC | 3g 4s 0c |  | too new | 1 of 4 | 1 |  |
 | Purple Lotus | 8831 | 12s 0c | 2026-11-08 20:10 UTC | 49s 99c | 49s 99c | volatile | 3 of 4 | 127 |  |
 | Rosecap | 249424 | 13s 0c | 2026-11-08 20:10 UTC | 41s 94c | 41s 94c | volatile | 3 of 4 | 342 |  |
+| Scarce Herb Seeds | 268418 | 69s 99c | 2026-11-08 20:10 UTC | 1g 35s 99c |  | too new | 2 of 4 | 29 |  |
 | Silverleaf | 765 | 18c | 2026-11-08 20:10 UTC | 10c | 10c | steady | 4 of 4 | 9588 |  |
 | Stranglekelp | 3820 | 2s 97c | 2026-11-08 20:10 UTC | 2s 18c | 2s 18c | moving | 4 of 4 | 2306 |  |
 | Stranglevine | 249274 | 2g 45s 0c | 2026-11-08 20:10 UTC | 5g 22s 50c |  | too new | 2 of 4 | 23 |  |
 | Sungrass | 8838 | 87s 0c | 2026-11-08 20:10 UTC | 87s 0c |  | too new | 1 of 4 | 230 |  |
 | Swiftthistle | 2452 | 4s 20c | 2026-11-08 20:10 UTC | 1s 81c | 1s 81c | moving | 4 of 4 | 1988 |  |
+| Uncommon Herb Seeds | 268416 | 96c | 2026-11-08 20:10 UTC | 2s 49c | 2s 49c | volatile | 4 of 4 | 220 |  |
+| Unusual Herb Seeds | 268417 | 15s 0c | 2026-11-08 20:10 UTC | 15s 0c | 15s 0c | volatile | 3 of 4 | 36 |  |
 | Wild Steelbloom | 3355 | 1s 9c | 2026-11-08 20:10 UTC | 4s 13c | 4s 13c | volatile | 4 of 4 | 1892 |  |
 | Wildvine | 8153 | 3s 0c | 2026-11-08 20:10 UTC | 19s 98c | 19s 98c | volatile | 3 of 4 | 286 |  |
 | Wintersbite | 3819 | 15s 17c | 2026-11-08 20:10 UTC | 20s 58c |  | too new | 2 of 4 | 499 |  |

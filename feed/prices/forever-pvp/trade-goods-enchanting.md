@@ -13,6 +13,7 @@
 | Greater Magic Essence | 10939 | 2s 90c | 2026-11-08 20:10 UTC | 2s 72c | 2s 72c | steady | 4 of 4 | 1059 |  |
 | Greater Mystic Essence | 11135 | 24s 98c | 2026-11-08 20:10 UTC | 26s 99c | 26s 99c | volatile | 3 of 4 | 156 |  |
 | Greater Nether Essence | 11175 | 1g 15s 88c | 2026-11-08 20:10 UTC | 1g 82s 94c |  | too new | 2 of 4 | 34 |  |
+| Hexed Pendant | 275724 | 1s 0c | 2026-11-08 17:40 UTC | 1s 50c | 1s 50c | moving | 4 of 4 | 102 |  |
 | Illusion Dust | 16204 | 3g 0s 0c | 2026-11-08 16:27 UTC | 3g 0s 0c |  | too new | 1 of 4 | 1 |  |
 | Large Glimmering Shard | 11084 | 22s 0c | 2026-11-08 20:10 UTC | 21s 60c | 21s 60c | moving | 4 of 4 | 236 |  |
 | Large Glowing Shard | 11139 | 42s 90c | 2026-11-08 17:40 UTC | 47s 95c | 47s 95c | volatile | 3 of 4 | 167 |  |
@@ -23,6 +24,7 @@
 | Lesser Mystic Essence | 11134 | 8s 32c | 2026-11-08 20:10 UTC | 28s 5c | 28s 5c | volatile | 4 of 4 | 273 |  |
 | Lesser Nether Essence | 11174 | 39s 90c | 2026-11-08 20:10 UTC | 99s 82c | 99s 82c | volatile | 3 of 4 | 32 |  |
 | Lesser Wizard Oil | 20746 | 14s 0c | 2026-11-08 16:27 UTC | 53s 0c | 53s 0c | volatile | 3 of 4 | 134 |  |
+| Luminous Residue | 247884 | 20c | 2026-11-08 16:27 UTC | 19c | 19c | moving | 4 of 4 | 220 |  |
 | Mote of Magic | 247786 | 13c | 2026-11-08 20:10 UTC | 8c | 8c | moving | 4 of 4 | 1498 |  |
 | Silver Rod | 6338 | 3s 0c | 2026-11-08 16:27 UTC | 2s 0c | 2s 0c | moving | 4 of 4 | 622 |  |
 | Small Glimmering Shard | 10978 | 3s 95c | 2026-11-08 20:10 UTC | 3s 84c | 3s 84c | moving | 4 of 4 | 779 |  |
