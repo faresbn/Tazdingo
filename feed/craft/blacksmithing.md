@@ -19,8 +19,8 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Golden Iron Destroyer | 145 | 3852 | 1 | 2g 99s 0c | 1g 82s 28c | 1g 16s 72c | ForeverDB |
 | Golden Scale Shoulders | 150 | 3841 | 1 | 2g 47s 0c | 1g 39s 86c | 1g 7s 14c | ForeverDB |
 | Golden Scale Leggings | 145 | 3843 | 1 | 1g 92s 0c | 85s 60c | 1g 6s 40c | ForeverDB |
-| Truesilver Rod | 180 | 11144 | 1 | 1g 40s 0c | 34s 42c | 1g 5s 58c | ForeverDB |
-| Truesilver Skeleton Key | 175 | 15871 | 2 | 1g 84s 0c | 83s 93c | 1g 0s 7c | ForeverDB |
+| Truesilver Rod | 180 | 11144 | 1 | 1g 40s 0c | 33s 96c | 1g 6s 4c | ForeverDB |
+| Truesilver Skeleton Key | 175 | 15871 | 2 | 1g 84s 0c | 83s 47c | 1g 0s 53c | ForeverDB |
 | Mighty Iron Hammer | 120 | 3492 | 1 | 1g 95s 0c | 97s 60c | 97s 40c | ForeverDB |
 | Sterling Silver Boots | 100 | 250483 | 1 | 1g 20s 0c | 28s 46c | 91s 54c | ForeverDB |
 | Jade Serpentblade | 150 | 3850 | 1 | 2g 40s 0c | 1g 49s 44c | 90s 56c | ForeverDB |
