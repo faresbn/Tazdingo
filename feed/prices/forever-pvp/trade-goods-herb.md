@@ -1,45 +1,45 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Trade Goods: Herb
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-08 20:10 UTC. Uploads in the 30-day window: 15.
+- **Latest scan:** 2026-11-08 23:12 UTC. Uploads in the 30-day window: 16.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Arthas' Tears | 8836 | 85s 50c | 2026-11-08 20:10 UTC | 1g 67s 74c |  | too new | 2 of 4 | 94 |  |
-| Blindweed | 8839 | 10s 33c | 2026-11-08 20:10 UTC | 35s 99c | 35s 99c | volatile | 3 of 4 | 81 |  |
-| Briarthorn | 2450 | 98c | 2026-11-08 20:10 UTC | 98c | 98c | moving | 4 of 4 | 3640 |  |
-| Bruiseweed | 2453 | 1s 0c | 2026-11-08 20:10 UTC | 1s 12c | 1s 12c | steady | 4 of 4 | 1416 |  |
-| Commonplace Herb Seeds | 268415 | 37c | 2026-11-08 20:10 UTC | 21c | 21c | volatile | 4 of 4 | 396 |  |
-| Dreamfoil | 13463 | 1g 0s 0c | 2026-11-08 20:10 UTC | 1g 0s 0c |  | too new | 1 of 4 | 24 |  |
-| Earthroot | 2449 | 48c | 2026-11-08 20:10 UTC | 37c | 37c | volatile | 4 of 4 | 3684 |  |
-| Fadeleaf | 3818 | 8s 50c | 2026-11-08 20:10 UTC | 10s 0c | 10s 0c | volatile | 3 of 4 | 695 |  |
-| Firebloom | 4625 | 30s 20c | 2026-11-08 20:10 UTC | 49s 99c | 49s 99c | moving | 4 of 4 | 9 |  |
-| Frilled Lichen | 249399 | 15s 76c | 2026-11-08 20:10 UTC | 8s 95c | 8s 95c | volatile | 4 of 4 | 744 |  |
-| Ghost Mushroom | 8845 | 1g 50s 0c | 2026-11-08 20:10 UTC | 1g 50s 0c |  | too new | 1 of 4 | 19 |  |
-| Golden Sansam | 13464 | 1g 75s 0c | 2026-11-08 20:10 UTC | 1g 75s 0c |  | too new | 1 of 4 | 33 |  |
-| Goldthorn | 3821 | 7s 25c | 2026-11-08 20:10 UTC | 23s 20c | 23s 20c | volatile | 3 of 4 | 1902 |  |
-| Grave Moss | 3369 | 6s 14c | 2026-11-08 20:10 UTC | 7s 98c | 7s 98c | volatile | 3 of 4 | 450 |  |
-| Gromsblood | 8846 | 98s 90c | 2026-11-08 20:10 UTC | 98s 90c |  | too new | 1 of 4 | 56 |  |
-| Khadgar's Whisker | 3358 | 3s 65c | 2026-11-08 20:10 UTC | 7s 19c | 7s 19c | volatile | 3 of 4 | 1114 |  |
-| Kingsblood | 3356 | 1s 20c | 2026-11-08 20:10 UTC | 1s 37c | 1s 37c | moving | 4 of 4 | 3960 |  |
-| Liferoot | 3357 | 3s 23c | 2026-11-08 20:10 UTC | 5s 17c | 5s 17c | moving | 4 of 4 | 696 |  |
-| Mageroyal | 785 | 46c | 2026-11-08 20:10 UTC | 43c | 43c | moving | 4 of 4 | 4713 |  |
-| Mountain Silversage | 13465 | 1g 50s 0c | 2026-11-08 16:27 UTC | 1g 50s 0c |  | too new | 1 of 4 | 6 |  |
-| Peacebloom | 2447 | 25c | 2026-11-08 20:10 UTC | 15c | 15c | moving | 4 of 4 | 6562 |  |
-| Plaguebloom | 13466 | 3g 4s 0c | 2026-11-08 16:27 UTC | 3g 4s 0c |  | too new | 1 of 4 | 1 |  |
-| Purple Lotus | 8831 | 12s 0c | 2026-11-08 20:10 UTC | 49s 99c | 49s 99c | volatile | 3 of 4 | 127 |  |
-| Rosecap | 249424 | 13s 0c | 2026-11-08 20:10 UTC | 41s 94c | 41s 94c | volatile | 3 of 4 | 342 |  |
-| Scarce Herb Seeds | 268418 | 69s 99c | 2026-11-08 20:10 UTC | 1g 35s 99c |  | too new | 2 of 4 | 29 |  |
-| Silverleaf | 765 | 18c | 2026-11-08 20:10 UTC | 10c | 10c | steady | 4 of 4 | 9588 |  |
-| Stranglekelp | 3820 | 2s 97c | 2026-11-08 20:10 UTC | 2s 18c | 2s 18c | moving | 4 of 4 | 2306 |  |
-| Stranglevine | 249274 | 2g 45s 0c | 2026-11-08 20:10 UTC | 5g 22s 50c |  | too new | 2 of 4 | 23 |  |
-| Sungrass | 8838 | 87s 0c | 2026-11-08 20:10 UTC | 87s 0c |  | too new | 1 of 4 | 230 |  |
-| Swiftthistle | 2452 | 4s 20c | 2026-11-08 20:10 UTC | 1s 81c | 1s 81c | moving | 4 of 4 | 1988 |  |
-| Uncommon Herb Seeds | 268416 | 96c | 2026-11-08 20:10 UTC | 2s 49c | 2s 49c | volatile | 4 of 4 | 220 |  |
-| Unusual Herb Seeds | 268417 | 15s 0c | 2026-11-08 20:10 UTC | 15s 0c | 15s 0c | volatile | 3 of 4 | 36 |  |
-| Wild Steelbloom | 3355 | 1s 9c | 2026-11-08 20:10 UTC | 4s 13c | 4s 13c | volatile | 4 of 4 | 1892 |  |
-| Wildvine | 8153 | 3s 0c | 2026-11-08 20:10 UTC | 19s 98c | 19s 98c | volatile | 3 of 4 | 286 |  |
-| Wintersbite | 3819 | 15s 17c | 2026-11-08 20:10 UTC | 20s 58c |  | too new | 2 of 4 | 499 |  |
+| Arthas' Tears | 8836 | 80s 11c | 2026-11-08 23:12 UTC | 85s 50c | 85s 50c | volatile | 3 of 5 | 159 |  |
+| Blindweed | 8839 | 8s 90c | 2026-11-08 23:12 UTC | 23s 16c | 23s 16c | volatile | 4 of 5 | 564 |  |
+| Briarthorn | 2450 | 92c | 2026-11-08 23:12 UTC | 96c | 96c | moving | 5 of 5 | 3581 |  |
+| Bruiseweed | 2453 | 1s 8c | 2026-11-08 23:12 UTC | 1s 8c | 1s 8c | steady | 5 of 5 | 1856 |  |
+| Commonplace Herb Seeds | 268415 | 42c | 2026-11-08 23:12 UTC | 30c | 30c | moving | 5 of 5 | 369 |  |
+| Dreamfoil | 13463 | 1g 0s 0c | 2026-11-08 23:12 UTC | 1g 0s 0c |  | too new | 2 of 5 | 16 |  |
+| Earthroot | 2449 | 60c | 2026-11-08 23:12 UTC | 48c | 48c | moving | 5 of 5 | 3646 |  |
+| Fadeleaf | 3818 | 8s 99c | 2026-11-08 23:12 UTC | 9s 49c | 9s 49c | steady | 4 of 5 | 786 |  |
+| Firebloom | 4625 | 29s 66c | 2026-11-08 23:12 UTC | 49s 99c | 49s 99c | moving | 5 of 5 | 17 |  |
+| Frilled Lichen | 249399 | 15s 29c | 2026-11-08 23:12 UTC | 12s 90c | 12s 90c | volatile | 5 of 5 | 781 |  |
+| Ghost Mushroom | 8845 | 1g 25s 0c | 2026-11-08 23:12 UTC | 1g 37s 50c |  | too new | 2 of 5 | 17 |  |
+| Golden Sansam | 13464 | 1g 20s 0c | 2026-11-08 23:12 UTC | 1g 47s 50c |  | too new | 2 of 5 | 43 |  |
+| Goldthorn | 3821 | 6s 10c | 2026-11-08 23:12 UTC | 15s 22c | 15s 22c | volatile | 4 of 5 | 1773 |  |
+| Grave Moss | 3369 | 7s 91c | 2026-11-08 23:12 UTC | 7s 94c | 7s 94c | moving | 4 of 5 | 396 |  |
+| Gromsblood | 8846 | 98s 90c | 2026-11-08 23:12 UTC | 98s 90c |  | too new | 2 of 5 | 70 |  |
+| Khadgar's Whisker | 3358 | 3s 20c | 2026-11-08 23:12 UTC | 5s 40c | 5s 40c | moving | 4 of 5 | 1666 |  |
+| Kingsblood | 3356 | 1s 14c | 2026-11-08 23:12 UTC | 1s 20c | 1s 20c | moving | 5 of 5 | 2955 |  |
+| Liferoot | 3357 | 3s 17c | 2026-11-08 23:12 UTC | 5s 15c | 5s 15c | moving | 5 of 5 | 1116 |  |
+| Mageroyal | 785 | 48c | 2026-11-08 23:12 UTC | 43c | 43c | moving | 5 of 5 | 5066 |  |
+| Mountain Silversage | 13465 | 1g 50s 0c | 2026-11-08 23:12 UTC | 1g 50s 0c |  | too new | 2 of 5 | 6 |  |
+| Peacebloom | 2447 | 40c | 2026-11-08 23:12 UTC | 18c | 18c | volatile | 5 of 5 | 6311 |  |
+| Plaguebloom | 13466 | 3g 4s 0c | 2026-11-08 16:27 UTC | 3g 4s 0c |  | too new | 1 of 5 | 1 |  |
+| Purple Lotus | 8831 | 11s 73c | 2026-11-08 23:12 UTC | 30s 99c | 30s 99c | volatile | 4 of 5 | 546 |  |
+| Rosecap | 249424 | 13s 53c | 2026-11-08 23:12 UTC | 27s 73c | 27s 73c | volatile | 4 of 5 | 557 |  |
+| Scarce Herb Seeds | 268418 | 69s 99c | 2026-11-08 23:12 UTC | 69s 99c | 69s 99c | volatile | 3 of 5 | 56 |  |
+| Silverleaf | 765 | 15c | 2026-11-08 23:12 UTC | 11c | 11c | moving | 5 of 5 | 9553 |  |
+| Stranglekelp | 3820 | 3s 5c | 2026-11-08 23:12 UTC | 2s 79c | 2s 79c | moving | 5 of 5 | 2198 |  |
+| Stranglevine | 249274 | 2g 40s 0c | 2026-11-08 23:12 UTC | 2g 45s 0c | 2g 45s 0c | volatile | 3 of 5 | 45 |  |
+| Sungrass | 8838 | 45s 99c | 2026-11-08 23:12 UTC | 66s 49c |  | too new | 2 of 5 | 286 |  |
+| Swiftthistle | 2452 | 4s 66c | 2026-11-08 23:12 UTC | 1s 85c | 1s 85c | volatile | 5 of 5 | 2440 |  |
+| Uncommon Herb Seeds | 268416 | 68c | 2026-11-08 23:12 UTC | 1s 9c | 1s 9c | volatile | 5 of 5 | 244 |  |
+| Unusual Herb Seeds | 268417 | 8s 99c | 2026-11-08 23:12 UTC | 11s 99c | 11s 99c | volatile | 4 of 5 | 76 |  |
+| Wild Steelbloom | 3355 | 1s 9c | 2026-11-08 23:12 UTC | 1s 78c | 1s 78c | volatile | 5 of 5 | 1871 |  |
+| Wildvine | 8153 | 4s 32c | 2026-11-08 23:12 UTC | 12s 15c | 12s 15c | volatile | 4 of 5 | 621 |  |
+| Wintersbite | 3819 | 27s 9c | 2026-11-08 23:12 UTC | 27s 9c | 27s 9c | moving | 3 of 5 | 407 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
