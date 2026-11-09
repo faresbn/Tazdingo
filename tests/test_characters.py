@@ -24,7 +24,9 @@ def record(guid, name, level, cls="Warlock", race="Orc"):
             [1] = {{ ["name"] = "Affliction" }}, [2] = {{ ["name"] = "Demonology", ["spent"] = 20 }} }} }} }} }},
         ["professions"] = {{ [1] = {{ ["name"] = "Tailoring", ["rank"] = 130, ["max"] = 150 }} }},
         ["skills"] = {{ [1] = {{ ["name"] = "Wands", ["cat"] = "Weapon Skills", ["rank"] = 123, ["max"] = 145 }} }},
-        ["reps"] = {{ [1] = {{ ["name"] = "Orgrimmar", ["reaction"] = 6, ["standing"] = 10822, ["lo"] = 9000, ["hi"] = 21000 }} }},
+        ["reps"] = {{ [1] = {{ ["name"] = "Orgrimmar", ["id"] = 76, ["reaction"] = 6, ["standing"] = 10822, ["lo"] = 9000, ["hi"] = 21000 }},
+                      [2] = {{ ["name"] = "Secretguild", ["id"] = 1168, ["reaction"] = 5, ["standing"] = 100, ["lo"] = 0, ["hi"] = 3000 }},
+                      [3] = {{ ["name"] = "Unknownheader", ["reaction"] = 4 }} }},
         ["stats"] = {{ ["health"] = 1241, ["int"] = 99 }}, ["pvp"] = {{ ["hk"] = 3, ["honorPoints"] = 34 }},
         ["mounts"] = 2, ["pets"] = 4,
     }},'''
@@ -54,7 +56,7 @@ class Characters(unittest.TestCase):
     def test_no_names_ids_realms_or_other_players(self):
         out = json.dumps(characters.extract(SAMPLE))
         for secret in ("Mainname", "Altname", "Strangername", "Secretsurname", "Hiddenrealm", "Player-", "Botname",
-                       "Guildmate", "Verol"):
+                       "Guildmate", "Verol", "Secretguild", "Unknownheader"):
             self.assertNotIn(secret, out)
 
     def test_progression_fields(self):

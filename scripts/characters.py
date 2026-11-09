@@ -32,6 +32,7 @@ SLOTS = {1: "Head", 2: "Neck", 3: "Shoulder", 4: "Shirt", 5: "Chest", 6: "Waist"
          16: "Main hand", 17: "Off hand", 18: "Ranged", 19: "Tabard"}
 STANDINGS = {1: "Hated", 2: "Hostile", 3: "Unfriendly", 4: "Neutral", 5: "Friendly", 6: "Honored",
              7: "Revered", 8: "Exalted"}
+GUILD_FACTION = 1168  # the client's guild reputation, which is named after the guild: never copied
 STATS = (("health", "Health"), ("power", "Mana or energy"), ("str", "Strength"), ("agi", "Agility"),
          ("sta", "Stamina"), ("int", "Intellect"), ("spi", "Spirit"), ("armor", "Armour"))
 
@@ -97,6 +98,8 @@ def character(record: dict, collections: dict) -> dict:
     when = number(record.get(b"time"))
     reps = []
     for r in rows(record.get(b"reps")):
+        if number(r.get(b"id")) in (None, GUILD_FACTION):  # no faction ID, or the guild's own reputation
+            continue
         lo, hi, now = number(r.get(b"lo")), number(r.get(b"hi")), number(r.get(b"standing"))
         reps.append({"name": text(r.get(b"name")), "standing": STANDINGS.get(number(r.get(b"reaction")), "Unknown"),
                      **({"progress": now - lo, "needed": hi - lo} if None not in (lo, hi, now) else {})})
