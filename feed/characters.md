@@ -4,7 +4,7 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 | Character | Level | Item level | Talents | Professions | Recorded |
 |---|---|---|---|---|---|
-| Orc Warlock | 29 | 23.9 | Demonology 20 | Enchanting 150/225, Tailoring 130/150, Cooking 110/150, First Aid 142/225, Fishing 1/75 | 2026-11-09 12:55:11 UTC |
+| Orc Warlock | 29 | 24.5 | Demonology 20 | Enchanting 150/225, Tailoring 130/150, Cooking 150/150, First Aid 150/225, Fishing 1/75 | 2026-11-09 14:13:15 UTC |
 | Troll Rogue | 12 | 6.9 | Combat 3 | Alchemy 61/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-09 05:47:43 UTC |
 | Tauren Druid | 3 | 0.3 | none | Herbalism 13/75, Skinning 68/75, First Aid 1/75 | 2026-11-07 20:40:17 UTC |
 | Troll Mage | 1 | 0 | none | none | 2026-11-05 18:39:27 UTC |
@@ -13,7 +13,7 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 ## Orc Warlock
 
-Horde, level 29, item level 23.9; recorded 2026-11-09 12:55:11 UTC on logout, build 70862.
+Horde, level 29, item level 24.5; recorded 2026-11-09 14:13:15 UTC on logout, build 70862.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
@@ -26,7 +26,7 @@ Horde, level 29, item level 23.9; recorded 2026-11-09 12:55:11 UTC on logout, bu
 | Feet | Spidersilk Boots | 4320 | 25 |
 | Wrist | Tabitha's Cuffs | 251486 | 24 |
 | Hands | Shadow Gloves | 253919 | 20 |
-| Finger | Ring of Scorn | 3235 | 20 |
+| Finger | Jacinth Circle of the Channeler | 11969 | 29 |
 | Finger | Seal of Sylvanas | 6414 | 29 |
 | Trinket | Satchel of Potions | 280766 | 33 |
 | Trinket | Transformative Cocoon | 276895 | 30 |
@@ -40,8 +40,8 @@ Talents: Affliction 0, Demonology 20, Destruction 0. Loadout code: `CIdBa0K/6fjl
 |---|---|---|---|
 | Enchanting | Profession | 150 | 225 |
 | Tailoring | Profession | 130 | 150 |
-| Cooking | Profession | 110 | 150 |
-| First Aid | Profession | 142 | 225 |
+| Cooking | Profession | 150 | 150 |
+| First Aid | Profession | 150 | 225 |
 | Fishing | Profession | 1 | 75 |
 | Daggers | Weapon Skills | 23 | 145 |
 | Defense | Weapon Skills | 135 | 145 |
@@ -67,7 +67,7 @@ Talents: Affliction 0, Demonology 20, Destruction 0. Loadout code: `CIdBa0K/6fjl
 | Durotar Supply and Logistics | Neutral | 2000/3000 |
 | Earthen Ring | Neutral | 900/3000 |
 
-Stats: Health 1241, Mana or energy 2078, Strength 33, Agility 37, Stamina 107, Intellect 99, Spirit 69, Armour 351. PvP: Honourable kills 0, Dishonourable kills 104, Honour points 34, Renown 0. Collected: mounts 2, pets 5, titles 0.
+Stats: Health 1241, Mana or energy 2078, Strength 33, Agility 37, Stamina 107, Intellect 99, Spirit 74, Armour 351. PvP: Honourable kills 0, Dishonourable kills -93, Honour points 34, Renown 0. Collected: mounts 2, pets 5, titles 0.
 
 ## Troll Rogue
 

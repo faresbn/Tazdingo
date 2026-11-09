@@ -4,12 +4,12 @@ Estimated listing margins: what the item lists for against what its reagents cos
 
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
-| Superior Poultice | 210 | 255718 | 3 | 3g 0s 0c | 9s 58c | 2g 90s 42c | ForeverDB |
+| Superior Poultice | 210 | 255718 | 3 | 1g 64s 97c | 9s 58c | 1g 55s 39c | ForeverDB |
+| Major Healing Potion | 275 | 13446 | 1 | 1g 50s 0c | 33s 80c | 1g 16s 20c | ForeverDB |
 | Toxin Study | 140 | 279940 | 1 | 63s 25c | 36s 36c | 26s 89c | our scan |
-| Clever Poultice | 140 | 255717 | 3 | 22s 35c | 2s 40c | 19s 95c | ForeverDB |
+| Clever Poultice | 140 | 255717 | 3 | 21s 60c | 2s 40c | 19s 20c | ForeverDB |
 | Mageweave Bandage | 210 | 8544 | 1 | 17s 66c | 8s 41c | 9s 25c | our scan |
 | Strong Anti-Venom | 130 | 6453 | 3 | 3s 0c | 1s 94c | 1s 6c | our scan |
 | Simple Poultice | 0 | 255716 | 3 | 1s 5c | 76c | 29c | our scan |
-| First Aid Kit | 0 | 279968 | 1 | 53c | 52c | 1c | ForeverDB |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

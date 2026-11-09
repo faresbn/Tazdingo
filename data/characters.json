@@ -11,8 +11,8 @@
    "race": "Orc",
    "faction": "Horde",
    "level": 29,
-   "item_level": 23.9,
-   "recorded_at": "2026-11-09T12:55:11Z",
+   "item_level": 24.5,
+   "recorded_at": "2026-11-09T14:13:15Z",
    "recorded_on": "logout",
    "build": "70862",
    "gear": [
@@ -72,9 +72,9 @@
     },
     {
      "slot": "Finger",
-     "item": 3235,
-     "name": "Ring of Scorn",
-     "item_level": 20
+     "item": 11969,
+     "name": "Jacinth Circle of the Channeler",
+     "item_level": 29
     },
     {
      "slot": "Finger",
@@ -134,12 +134,12 @@
     },
     {
      "name": "Cooking",
-     "skill": 110,
+     "skill": 150,
      "max": 150
     },
     {
      "name": "First Aid",
-     "skill": 142,
+     "skill": 150,
      "max": 225
     },
     {
@@ -279,12 +279,12 @@
     "Agility": 37,
     "Stamina": 107,
     "Intellect": 99,
-    "Spirit": 69,
+    "Spirit": 74,
     "Armour": 351
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": 104,
+    "Dishonourable kills": -93,
     "Honour points": 34,
     "Renown": 0
    },
