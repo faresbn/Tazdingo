@@ -11,6 +11,7 @@ Every path below is in the public repository: https://raw.githubusercontent.com/
 - `feed/prices/forever-beta-classicbetapvp/index.md`: Beta Classic PvP realm (Forever Beta), 6 items, latest scan 2026-10-17 12:36 UTC, a Beta sample.
 - `feed/craft/index.md`: what to craft, by profession, with estimated margins.
 - `feed/guides.md`: every class, spec, profession, world and More page, with its path and version.
+- `feed/characters.md`: the account's own characters (level, gear, talents, professions, reputations), as last saved in the game.
 
 Original addon files, as uploaded (large; open only when asked about that addon):
 - `data/captures/forever/auctionator/2026-11-09T1228Z.lua`: the latest of 25 auctionator file(s) (forever), processed into the prices above.
@@ -20,7 +21,7 @@ Original addon files, as uploaded (large; open only when asked about that addon)
 - **Auction House prices:** each time the game saves Auctionator's file (a `/reload` or logout after a scan), the scan is imported and published within minutes. A save with no new scan adds nothing. Times quoted are when the scan was made, not when it was imported.
 - **ForeverDB data** (recipes, trainers, abilities, vendor and other players' prices, item names): refreshed three times a day. When the game build changes, the full refresh takes a couple of hours.
 - **Blizzard's posts:** collected every two hours.
-- **Character progression is not here.** The ForeverDB addon records each character's level, gear, talents, professions, reputations and collections in the game, and OneForAll records known recipes per character, but those files carry character names and IDs, so they stay on the player's computer. For a character's own progress, ask the player.
+- **Characters:** with the ForeverDB refresh, the account's own characters are read from ForeverDB's addon file (`feed/characters.md`), under labels, not names. Each is as of that character's last logout or reload.
 
 ## How to answer
 

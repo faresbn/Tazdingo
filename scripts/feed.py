@@ -11,6 +11,7 @@ identical files and nothing is committed.
 """
 from __future__ import annotations
 
+import json
 import re
 import shutil
 import subprocess
@@ -131,6 +132,40 @@ def alerts(market: dict, money) -> str:
     return "\n".join(parts).rstrip() + "\n"
 
 
+def characters(record: dict) -> str:
+    """feed/characters.md: the account's own characters, from data/characters.json (scripts/characters.py)."""
+    chars = record["characters"]
+    parts = ["# Characters: progression", "",
+             "The account's own characters, each as ForeverDB's addon saved it when the character last logged out or "
+             "reloaded. A character played since then is further along. Labels, not names. Levels, gear and skills are "
+             "facts from the game; anything else (what to do next) is advice to work out from them.", "",
+             table(["Character", "Level", "Item level", "Talents", "Professions", "Recorded"],
+                   [[c["label"], c["level"], c["item_level"],
+                     ", ".join(f"{k} {v}" for k, v in c["talents"]["points"].items() if v) or "none",
+                     ", ".join(f"{p['name']} {p['skill']}/{p['max']}" for p in c["professions"]) or "none",
+                     (c["recorded_at"] or "unknown").replace("T", " ").replace("Z", " UTC")] for c in chars])]
+    for c in chars:
+        parts += ["", f"## {c['label']}", "",
+                  f"{c['faction']}, level {c['level']}, item level {c['item_level']}; recorded "
+                  f"{(c['recorded_at'] or 'unknown').replace('T', ' ').replace('Z', ' UTC')} on {c['recorded_on'] or 'save'}, build {c['build']}."]
+        if c["gear"]:
+            parts += ["", table(["Slot", "Item", "Item ID", "Item level"], [[g["slot"], g["name"], g["item"], g["item_level"]] for g in c["gear"]])]
+        points = ", ".join(f"{k} {v}" for k, v in c["talents"]["points"].items())
+        if points:
+            parts += ["", f"Talents: {points}" + (f". Loadout code: `{c['talents']['loadout']}`" if c["talents"].get("loadout") else "") + "."]
+        if c["professions"] or c["skills"]:
+            parts += ["", table(["Skill", "Kind", "Skill level", "Max"],
+                                [[p["name"], "Profession", p["skill"], p["max"]] for p in c["professions"]]
+                                + [[s["name"], s["category"], s["skill"], s["max"]] for s in c["skills"]])]
+        if c["reputations"]:
+            parts += ["", table(["Reputation", "Standing", "Progress"],
+                                [[r["name"], r["standing"], f"{r['progress']}/{r['needed']}" if "needed" in r else ""] for r in c["reputations"]])]
+        extra = [", ".join(f"{k} {v}" for k, v in c["stats"].items()), ", ".join(f"{k} {v}" for k, v in c["pvp"].items()),
+                 ", ".join(f"{k} {v}" for k, v in c["collected"].items())]
+        parts += ["", "Stats: " + (extra[0] or "none") + ". PvP: " + (extra[1] or "none") + ". Collected: " + extra[2] + "."]
+    return "\n".join(parts) + "\n"
+
+
 def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list[str]:
     """Write feed/ from the build's markets and context; returns the files written."""
     if feed.name != "feed":
@@ -190,6 +225,10 @@ def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list
         f"Every guide page, with its version. Paths are in the repository: {RAW}<path>", "",
         "Pre-launch means the page's advice isn't checked in the live game yet. To edit a page, read it at its path, "
         "then submit the whole file through the inbox with the version shown here.", *page_lines, ""]) + "\n"
+    chars_path = root / "data/characters.json"
+    chars = json.loads(chars_path.read_text()) if chars_path.is_file() else None
+    if chars:
+        files["feed/characters.md"] = characters(chars)
     addon_lines = []
     for environment in sorted(p for p in (root / "data/captures").iterdir() if p.is_dir()) if (root / "data/captures").is_dir() else []:
         for addon in sorted(p for p in environment.iterdir() if p.is_dir()):
@@ -205,6 +244,8 @@ def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list
         *market_lines,
         f"- {link('feed/craft/index.md')}: what to craft, by profession, with estimated margins.",
         f"- {link('feed/guides.md')}: every class, spec, profession, world and More page, with its path and version.",
+        *([f"- {link('feed/characters.md')}: the account's own characters (level, gear, talents, professions, reputations), "
+           f"as last saved in the game."] if chars else []),
         *(["", "Original addon files, as uploaded (large; open only when asked about that addon):", *addon_lines] if addon_lines else []), "",
         "## How the data stays current", "",
         "- **Auction House prices:** each time the game saves Auctionator's file (a `/reload` or logout after a scan), the "
@@ -213,9 +254,8 @@ def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list
         "- **ForeverDB data** (recipes, trainers, abilities, vendor and other players' prices, item names): refreshed three "
         "times a day. When the game build changes, the full refresh takes a couple of hours.",
         "- **Blizzard's posts:** collected every two hours.",
-        "- **Character progression is not here.** The ForeverDB addon records each character's level, gear, talents, "
-        "professions, reputations and collections in the game, and OneForAll records known recipes per character, but those "
-        "files carry character names and IDs, so they stay on the player's computer. For a character's own progress, ask the player.", "",
+        "- **Characters:** with the ForeverDB refresh, the account's own characters are read from ForeverDB's addon file "
+        "(`feed/characters.md`), under labels, not names. Each is as of that character's last logout or reload.", "",
         "## How to answer", "",
         "- **Prices:** open the market's map, then only the category file the item belongs to, or `alerts.md` for bargains, "
         "investments and movers. Quote the latest, typical or usual price with its scan time and steadiness. They're asking prices, "

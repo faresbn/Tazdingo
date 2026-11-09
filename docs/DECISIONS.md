@@ -12,6 +12,13 @@ Asked for by Fares on 30 October ("I want to very quickly notice there's nothing
 - **Professions overview leads with the gold-making pages** (What to craft, Materials, Camping, Waylaid Crates); the professions follow as a compact grid.
 - **Oxblood is used** as the design decision below always said: for the open tab, the menu rule and the cheatsheet's margin line only.
 
+## Characters (9 November)
+
+Decided by Fares on 9 November.
+- **The 8-hourly job tracks the account's characters** from ForeverDB.lua, alongside the public ForeverDB data: "the idea was that the 8 hourly job reads the ForeverDB.lua and updates Tazdingo with the public website data as well."
+- **Labels, not names** ("Orc Warlock"): the repository is public. Character names, player IDs and realms aren't copied.
+- **ForeverDB.lua itself isn't committed**, an exception to committing addon files unchanged: it also holds other players (guild members, inspected players, ForeverDB's suspected-bot list). Only the extract in `data/characters.json` is kept. Nothing about characters goes on the website.
+
 ## A public repository, a feed and an inbox (30 October)
 
 Decided by Fares on 30 October; the plan, research and review are in `docs/sessions/2026-10-30-public-inbox/`.

@@ -10,6 +10,7 @@ What the site and the feed are built from.
 | `items.json` | Item names | ForeverDB's companion addon |
 | `foreverdb.json` | Recipes, camp kits, crates, other players' and vendor prices | ForeverDB's addon data and site |
 | `foreverdb-api.json` | Trainers, recipe vendors, gathering, abilities, disenchanting, vendor prices, item categories | ForeverDB's API |
+| `characters.json` | The account's own characters' progression, under labels | ForeverDB's addon file, via `scripts/characters.py` (the file itself isn't kept) |
 | `game.json` | Classes, specs, professions, world topics, links, market names | Written here |
 | `blue.json`, `news-config.json` | Blizzard's Forever posts and how they're classified | Blizzard's forums |
 | `art.json` | Sourced artwork and its credits | See each entry |

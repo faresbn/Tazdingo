@@ -1,0 +1,1194 @@
+{
+ "source": {
+  "addon": "ForeverDB",
+  "table": "ForeverDB_DB.armory",
+  "note": "Each character's snapshot from when it last logged out or reloaded. Labels, not names."
+ },
+ "characters": [
+  {
+   "label": "Orc Warlock",
+   "class": "Warlock",
+   "race": "Orc",
+   "faction": "Horde",
+   "level": 29,
+   "item_level": 23.9,
+   "recorded_at": "2026-11-09T12:55:11Z",
+   "recorded_on": "logout",
+   "build": "70862",
+   "gear": [
+    {
+     "slot": "Head",
+     "item": 253955,
+     "name": "Shadow Circlet",
+     "item_level": 25
+    },
+    {
+     "slot": "Neck",
+     "item": 273457,
+     "name": "Sorcerer Collar",
+     "item_level": 22
+    },
+    {
+     "slot": "Shoulder",
+     "item": 3748,
+     "name": "Feline Mantle",
+     "item_level": 28
+    },
+    {
+     "slot": "Chest",
+     "item": 253907,
+     "name": "Filigreed Shadow Gown",
+     "item_level": 20
+    },
+    {
+     "slot": "Waist",
+     "item": 253885,
+     "name": "Novice Arcanist's Sash",
+     "item_level": 15
+    },
+    {
+     "slot": "Legs",
+     "item": 253943,
+     "name": "Filigreed Shadow Leggings",
+     "item_level": 25
+    },
+    {
+     "slot": "Feet",
+     "item": 4320,
+     "name": "Spidersilk Boots",
+     "item_level": 25
+    },
+    {
+     "slot": "Wrist",
+     "item": 251486,
+     "name": "Tabitha's Cuffs",
+     "item_level": 24
+    },
+    {
+     "slot": "Hands",
+     "item": 253919,
+     "name": "Shadow Gloves",
+     "item_level": 20
+    },
+    {
+     "slot": "Finger",
+     "item": 3235,
+     "name": "Ring of Scorn",
+     "item_level": 20
+    },
+    {
+     "slot": "Finger",
+     "item": 6414,
+     "name": "Seal of Sylvanas",
+     "item_level": 29
+    },
+    {
+     "slot": "Trinket",
+     "item": 280766,
+     "name": "Satchel of Potions",
+     "item_level": 33
+    },
+    {
+     "slot": "Trinket",
+     "item": 276895,
+     "name": "Transformative Cocoon",
+     "item_level": 30
+    },
+    {
+     "slot": "Back",
+     "item": 5542,
+     "name": "Pearl-clasped Cloak",
+     "item_level": 19
+    },
+    {
+     "slot": "Main hand",
+     "item": 6505,
+     "name": "Crescent Staff",
+     "item_level": 24
+    },
+    {
+     "slot": "Ranged",
+     "item": 7001,
+     "name": "Gravestone Scepter",
+     "item_level": 29
+    }
+   ],
+   "talents": {
+    "points": {
+     "Affliction": 0,
+     "Demonology": 20,
+     "Destruction": 0
+    },
+    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAgZegZMGGAAA"
+   },
+   "professions": [
+    {
+     "name": "Enchanting",
+     "skill": 150,
+     "max": 225
+    },
+    {
+     "name": "Tailoring",
+     "skill": 130,
+     "max": 150
+    },
+    {
+     "name": "Cooking",
+     "skill": 110,
+     "max": 150
+    },
+    {
+     "name": "First Aid",
+     "skill": 142,
+     "max": 225
+    },
+    {
+     "name": "Fishing",
+     "skill": 1,
+     "max": 75
+    }
+   ],
+   "skills": [
+    {
+     "name": "Daggers",
+     "category": "Weapon Skills",
+     "skill": 23,
+     "max": 145
+    },
+    {
+     "name": "Defense",
+     "category": "Weapon Skills",
+     "skill": 135,
+     "max": 145
+    },
+    {
+     "name": "Staves",
+     "category": "Weapon Skills",
+     "skill": 4,
+     "max": 145
+    },
+    {
+     "name": "Swords",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 145
+    },
+    {
+     "name": "Unarmed",
+     "category": "Weapon Skills",
+     "skill": 13,
+     "max": 145
+    },
+    {
+     "name": "Wands",
+     "category": "Weapon Skills",
+     "skill": 123,
+     "max": 145
+    },
+    {
+     "name": "Cloth",
+     "category": "Armor Proficiencies",
+     "skill": 1,
+     "max": 1
+    },
+    {
+     "name": "Language: Orcish",
+     "category": "Languages",
+     "skill": 300,
+     "max": 300
+    }
+   ],
+   "reputations": [
+    {
+     "name": "Darkspear Trolls",
+     "standing": "Friendly",
+     "progress": 5935,
+     "needed": 6000
+    },
+    {
+     "name": "Orgrimmar",
+     "standing": "Honored",
+     "progress": 1822,
+     "needed": 12000
+    },
+    {
+     "name": "Thunder Bluff",
+     "standing": "Friendly",
+     "progress": 4020,
+     "needed": 6000
+    },
+    {
+     "name": "Undercity",
+     "standing": "Friendly",
+     "progress": 3861,
+     "needed": 6000
+    },
+    {
+     "name": "Booty Bay",
+     "standing": "Neutral",
+     "progress": 826,
+     "needed": 3000
+    },
+    {
+     "name": "Everlook",
+     "standing": "Neutral",
+     "progress": 826,
+     "needed": 3000
+    },
+    {
+     "name": "Gadgetzan",
+     "standing": "Neutral",
+     "progress": 826,
+     "needed": 3000
+    },
+    {
+     "name": "Powderfuse",
+     "standing": "Neutral",
+     "progress": 826,
+     "needed": 3000
+    },
+    {
+     "name": "Ratchet",
+     "standing": "Neutral",
+     "progress": 1253,
+     "needed": 3000
+    },
+    {
+     "name": "Argent Dawn",
+     "standing": "Neutral",
+     "progress": 1250,
+     "needed": 3000
+    },
+    {
+     "name": "Durotar Supply and Logistics",
+     "standing": "Neutral",
+     "progress": 2000,
+     "needed": 3000
+    },
+    {
+     "name": "Earthen Ring",
+     "standing": "Neutral",
+     "progress": 900,
+     "needed": 3000
+    }
+   ],
+   "stats": {
+    "Health": 1241,
+    "Mana or energy": 2078,
+    "Strength": 33,
+    "Agility": 37,
+    "Stamina": 107,
+    "Intellect": 99,
+    "Spirit": 69,
+    "Armour": 351
+   },
+   "pvp": {
+    "Honourable kills": 0,
+    "Dishonourable kills": 104,
+    "Honour points": 34,
+    "Renown": 0
+   },
+   "collected": {
+    "mounts": 2,
+    "pets": 5,
+    "titles": 0
+   }
+  },
+  {
+   "label": "Troll Rogue",
+   "class": "Rogue",
+   "race": "Troll",
+   "faction": "Horde",
+   "level": 12,
+   "item_level": 6.9,
+   "recorded_at": "2026-11-09T05:47:43Z",
+   "recorded_on": "logout",
+   "build": "70862",
+   "gear": [
+    {
+     "slot": "Chest",
+     "item": 2300,
+     "name": "Embossed Leather Vest",
+     "item_level": 12
+    },
+    {
+     "slot": "Waist",
+     "item": 15011,
+     "name": "Lupine Cord of the Wolf",
+     "item_level": 15
+    },
+    {
+     "slot": "Legs",
+     "item": 2974,
+     "name": "Hunting Pants",
+     "item_level": 16
+    },
+    {
+     "slot": "Feet",
+     "item": 4936,
+     "name": "Dirt-trodden Boots",
+     "item_level": 8
+    },
+    {
+     "slot": "Wrist",
+     "item": 281271,
+     "name": "Puk's Friendship Bracelet",
+     "item_level": 10
+    },
+    {
+     "slot": "Hands",
+     "item": 4239,
+     "name": "Embossed Leather Gloves",
+     "item_level": 13
+    },
+    {
+     "slot": "Finger",
+     "item": 281268,
+     "name": "Depleted Ritual Band",
+     "item_level": 9
+    },
+    {
+     "slot": "Back",
+     "item": 1421,
+     "name": "Worn Hide Cloak",
+     "item_level": 10
+    },
+    {
+     "slot": "Main hand",
+     "item": 7298,
+     "name": "Blade of Cunning",
+     "item_level": 13
+    },
+    {
+     "slot": "Off hand",
+     "item": 2632,
+     "name": "Curved Dagger of the Monkey",
+     "item_level": 14
+    },
+    {
+     "slot": "Ranged",
+     "item": 3111,
+     "name": "Crude Throwing Axe",
+     "item_level": 3
+    }
+   ],
+   "talents": {
+    "points": {
+     "Assassination": 0,
+     "Combat": 3,
+     "Subtlety": 0
+    },
+    "loadout": "CAdBfBw6kaEYM3VLTSibWa4K4+AAAAAwAAAAA"
+   },
+   "professions": [
+    {
+     "name": "Alchemy",
+     "skill": 61,
+     "max": 150
+    },
+    {
+     "name": "Herbalism",
+     "skill": 75,
+     "max": 75
+    },
+    {
+     "name": "Cooking",
+     "skill": 10,
+     "max": 75
+    },
+    {
+     "name": "First Aid",
+     "skill": 64,
+     "max": 150
+    }
+   ],
+   "skills": [
+    {
+     "name": "Axes",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 60
+    },
+    {
+     "name": "Daggers",
+     "category": "Weapon Skills",
+     "skill": 54,
+     "max": 60
+    },
+    {
+     "name": "Defense",
+     "category": "Weapon Skills",
+     "skill": 52,
+     "max": 60
+    },
+    {
+     "name": "Thrown",
+     "category": "Weapon Skills",
+     "skill": 45,
+     "max": 60
+    },
+    {
+     "name": "Unarmed",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 60
+    },
+    {
+     "name": "Cloth",
+     "category": "Armor Proficiencies",
+     "skill": 1,
+     "max": 1
+    },
+    {
+     "name": "Leather",
+     "category": "Armor Proficiencies",
+     "skill": 1,
+     "max": 1
+    },
+    {
+     "name": "Language: Orcish",
+     "category": "Languages",
+     "skill": 300,
+     "max": 300
+    },
+    {
+     "name": "Language: Troll",
+     "category": "Languages",
+     "skill": 300,
+     "max": 300
+    }
+   ],
+   "reputations": [
+    {
+     "name": "Darkspear Trolls",
+     "standing": "Friendly",
+     "progress": 4485,
+     "needed": 6000
+    },
+    {
+     "name": "Orgrimmar",
+     "standing": "Friendly",
+     "progress": 3910,
+     "needed": 6000
+    },
+    {
+     "name": "Thunder Bluff",
+     "standing": "Friendly",
+     "progress": 150,
+     "needed": 6000
+    },
+    {
+     "name": "Undercity",
+     "standing": "Neutral",
+     "progress": 550,
+     "needed": 3000
+    },
+    {
+     "name": "Booty Bay",
+     "standing": "Neutral",
+     "progress": 525,
+     "needed": 3000
+    },
+    {
+     "name": "Everlook",
+     "standing": "Neutral",
+     "progress": 525,
+     "needed": 3000
+    },
+    {
+     "name": "Gadgetzan",
+     "standing": "Neutral",
+     "progress": 525,
+     "needed": 3000
+    },
+    {
+     "name": "Powderfuse",
+     "standing": "Neutral",
+     "progress": 525,
+     "needed": 3000
+    },
+    {
+     "name": "Ratchet",
+     "standing": "Neutral",
+     "progress": 650,
+     "needed": 3000
+    }
+   ],
+   "stats": {
+    "Health": 332,
+    "Mana or energy": 100,
+    "Strength": 30,
+    "Agility": 49,
+    "Stamina": 37,
+    "Intellect": 18,
+    "Spirit": 29,
+    "Armour": 346
+   },
+   "pvp": {
+    "Honourable kills": 0,
+    "Dishonourable kills": -22,
+    "Honour points": 0,
+    "Renown": 0
+   },
+   "collected": {
+    "mounts": 2,
+    "pets": 5,
+    "titles": 0
+   }
+  },
+  {
+   "label": "Tauren Druid",
+   "class": "Druid",
+   "race": "Tauren",
+   "faction": "Horde",
+   "level": 3,
+   "item_level": 0.3,
+   "recorded_at": "2026-11-07T20:40:17Z",
+   "recorded_on": "logout",
+   "build": "70862",
+   "gear": [
+    {
+     "slot": "Chest",
+     "item": 6139,
+     "name": "Novice's Robe",
+     "item_level": 1
+    },
+    {
+     "slot": "Waist",
+     "item": 1369,
+     "name": "Ragged Leather Belt",
+     "item_level": 5
+    },
+    {
+     "slot": "Legs",
+     "item": 1378,
+     "name": "Frayed Pants",
+     "item_level": 2
+    },
+    {
+     "slot": "Wrist",
+     "item": 4908,
+     "name": "Nomadic Bracers",
+     "item_level": 5
+    },
+    {
+     "slot": "Back",
+     "item": 1376,
+     "name": "Frayed Cloak",
+     "item_level": 5
+    },
+    {
+     "slot": "Main hand",
+     "item": 2495,
+     "name": "Walking Stick",
+     "item_level": 8
+    }
+   ],
+   "talents": {
+    "points": {
+     "Balance": 0,
+     "Feral Combat": 0,
+     "Restoration": 0
+    },
+    "loadout": "CwcBpUhv2/yOLN4UI7kXaviD2CAAAAAAAA"
+   },
+   "professions": [
+    {
+     "name": "Herbalism",
+     "skill": 13,
+     "max": 75
+    },
+    {
+     "name": "Skinning",
+     "skill": 68,
+     "max": 75
+    },
+    {
+     "name": "First Aid",
+     "skill": 1,
+     "max": 75
+    }
+   ],
+   "skills": [
+    {
+     "name": "Defense",
+     "category": "Weapon Skills",
+     "skill": 19,
+     "max": 25
+    },
+    {
+     "name": "Feral Combat",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 25
+    },
+    {
+     "name": "Maces",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 25
+    },
+    {
+     "name": "Staves",
+     "category": "Weapon Skills",
+     "skill": 18,
+     "max": 25
+    },
+    {
+     "name": "Unarmed",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 25
+    },
+    {
+     "name": "Cloth",
+     "category": "Armor Proficiencies",
+     "skill": 1,
+     "max": 1
+    },
+    {
+     "name": "Leather",
+     "category": "Armor Proficiencies",
+     "skill": 1,
+     "max": 1
+    },
+    {
+     "name": "Language: Orcish",
+     "category": "Languages",
+     "skill": 300,
+     "max": 300
+    },
+    {
+     "name": "Language: Taurahe",
+     "category": "Languages",
+     "skill": 300,
+     "max": 300
+    }
+   ],
+   "reputations": [
+    {
+     "name": "Darkspear Trolls",
+     "standing": "Friendly",
+     "progress": 112,
+     "needed": 6000
+    },
+    {
+     "name": "Orgrimmar",
+     "standing": "Friendly",
+     "progress": 112,
+     "needed": 6000
+    },
+    {
+     "name": "Thunder Bluff",
+     "standing": "Friendly",
+     "progress": 1675,
+     "needed": 6000
+    },
+    {
+     "name": "Undercity",
+     "standing": "Neutral",
+     "progress": 512,
+     "needed": 3000
+    }
+   ],
+   "stats": {
+    "Health": 149,
+    "Mana or energy": 119,
+    "Strength": 28,
+    "Agility": 17,
+    "Stamina": 24,
+    "Intellect": 21,
+    "Spirit": 28,
+    "Armour": 113
+   },
+   "pvp": {
+    "Honourable kills": 0,
+    "Dishonourable kills": -58,
+    "Honour points": 0,
+    "Renown": 0
+   },
+   "collected": {
+    "mounts": 2,
+    "pets": 5,
+    "titles": 0
+   }
+  },
+  {
+   "label": "Troll Mage",
+   "class": "Mage",
+   "race": "Troll",
+   "faction": "Horde",
+   "level": 1,
+   "item_level": 0,
+   "recorded_at": "2026-11-05T18:39:27Z",
+   "recorded_on": "logout",
+   "build": "70790",
+   "gear": [
+    {
+     "slot": "Shirt",
+     "item": 6096,
+     "name": "Apprentice's Shirt",
+     "item_level": 1
+    },
+    {
+     "slot": "Chest",
+     "item": 6140,
+     "name": "Apprentice's Robe",
+     "item_level": 1
+    },
+    {
+     "slot": "Legs",
+     "item": 1395,
+     "name": "Apprentice's Pants",
+     "item_level": 1
+    },
+    {
+     "slot": "Feet",
+     "item": 55,
+     "name": "Apprentice's Boots",
+     "item_level": 1
+    },
+    {
+     "slot": "Main hand",
+     "item": 35,
+     "name": "Bent Staff",
+     "item_level": 2
+    }
+   ],
+   "talents": {
+    "points": {
+     "Arcane": 0,
+     "Fire": 0,
+     "Frost": 0
+    },
+    "loadout": "CocBa4lXwG/uhPtZpvfHj+nHTAAAAAAAAAA"
+   },
+   "professions": [],
+   "skills": [
+    {
+     "name": "Defense",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 5
+    },
+    {
+     "name": "Staves",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 5
+    },
+    {
+     "name": "Unarmed",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 5
+    },
+    {
+     "name": "Wands",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 5
+    },
+    {
+     "name": "Cloth",
+     "category": "Armor Proficiencies",
+     "skill": 1,
+     "max": 1
+    },
+    {
+     "name": "Language: Orcish",
+     "category": "Languages",
+     "skill": 300,
+     "max": 300
+    },
+    {
+     "name": "Language: Troll",
+     "category": "Languages",
+     "skill": 300,
+     "max": 300
+    }
+   ],
+   "reputations": [
+    {
+     "name": "Darkspear Trolls",
+     "standing": "Friendly",
+     "progress": 1050,
+     "needed": 6000
+    },
+    {
+     "name": "Orgrimmar",
+     "standing": "Friendly",
+     "progress": 150,
+     "needed": 6000
+    },
+    {
+     "name": "Thunder Bluff",
+     "standing": "Friendly",
+     "progress": 100,
+     "needed": 6000
+    },
+    {
+     "name": "Undercity",
+     "standing": "Neutral",
+     "progress": 500,
+     "needed": 3000
+    }
+   ],
+   "stats": {
+    "Health": 62,
+    "Mana or energy": 119,
+    "Strength": 21,
+    "Agility": 22,
+    "Stamina": 21,
+    "Intellect": 19,
+    "Spirit": 23,
+    "Armour": 51
+   },
+   "pvp": {
+    "Honourable kills": 0,
+    "Dishonourable kills": -65,
+    "Honour points": 0,
+    "Renown": 0
+   },
+   "collected": {
+    "mounts": 2,
+    "pets": 4,
+    "titles": 0
+   }
+  },
+  {
+   "label": "Undead Paladin",
+   "class": "Paladin",
+   "race": "Undead",
+   "faction": "Horde",
+   "level": 1,
+   "item_level": 0,
+   "recorded_at": "2026-11-05T18:57:57Z",
+   "recorded_on": "logout",
+   "build": "70790",
+   "gear": [
+    {
+     "slot": "Shirt",
+     "item": 6125,
+     "name": "Brawler's Harness",
+     "item_level": 1
+    },
+    {
+     "slot": "Legs",
+     "item": 139,
+     "name": "Brawler's Pants",
+     "item_level": 1
+    },
+    {
+     "slot": "Feet",
+     "item": 140,
+     "name": "Brawler's Boots",
+     "item_level": 1
+    },
+    {
+     "slot": "Main hand",
+     "item": 2361,
+     "name": "Battleworn Hammer",
+     "item_level": 2
+    }
+   ],
+   "talents": {
+    "points": {
+     "Holy": 0,
+     "Protection": 0,
+     "Retribution": 0
+    },
+    "loadout": "C4cBGcV93ZFuZit9ndAatAMOTDAAAAAAAA"
+   },
+   "professions": [],
+   "skills": [
+    {
+     "name": "Defense",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 5
+    },
+    {
+     "name": "Maces",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 5
+    },
+    {
+     "name": "Two-Handed Maces",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 5
+    },
+    {
+     "name": "Unarmed",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 5
+    },
+    {
+     "name": "Cloth",
+     "category": "Armor Proficiencies",
+     "skill": 1,
+     "max": 1
+    },
+    {
+     "name": "Leather",
+     "category": "Armor Proficiencies",
+     "skill": 1,
+     "max": 1
+    },
+    {
+     "name": "Mail",
+     "category": "Armor Proficiencies",
+     "skill": 1,
+     "max": 1
+    },
+    {
+     "name": "Shield",
+     "category": "Armor Proficiencies",
+     "skill": 1,
+     "max": 1
+    },
+    {
+     "name": "Language: Gutterspeak",
+     "category": "Languages",
+     "skill": 300,
+     "max": 300
+    },
+    {
+     "name": "Language: Orcish",
+     "category": "Languages",
+     "skill": 300,
+     "max": 300
+    }
+   ],
+   "reputations": [
+    {
+     "name": "Darkspear Trolls",
+     "standing": "Neutral",
+     "progress": 2000,
+     "needed": 3000
+    },
+    {
+     "name": "Orgrimmar",
+     "standing": "Neutral",
+     "progress": 2000,
+     "needed": 3000
+    },
+    {
+     "name": "Thunder Bluff",
+     "standing": "Neutral",
+     "progress": 500,
+     "needed": 3000
+    },
+    {
+     "name": "Undercity",
+     "standing": "Friendly",
+     "progress": 1050,
+     "needed": 6000
+    }
+   ],
+   "stats": {
+    "Health": 68,
+    "Mana or energy": 78,
+    "Strength": 21,
+    "Agility": 18,
+    "Stamina": 23,
+    "Intellect": 18,
+    "Spirit": 26,
+    "Armour": 40
+   },
+   "pvp": {
+    "Honourable kills": 0,
+    "Dishonourable kills": -59,
+    "Honour points": 0,
+    "Renown": 0
+   },
+   "collected": {
+    "mounts": 2,
+    "pets": 4,
+    "titles": 0
+   }
+  },
+  {
+   "label": "Windshaper Skyborne Shaman",
+   "class": "Shaman",
+   "race": "Windshaper Skyborne",
+   "faction": "Horde",
+   "level": 1,
+   "item_level": 0.1,
+   "recorded_at": "2026-11-05T18:35:54Z",
+   "recorded_on": "logout",
+   "build": "70790",
+   "gear": [
+    {
+     "slot": "Shirt",
+     "item": 271663,
+     "name": "Thendal Novice's Shirt",
+     "item_level": 1
+    },
+    {
+     "slot": "Legs",
+     "item": 271662,
+     "name": "Thendal Novice's Pants",
+     "item_level": 1
+    },
+    {
+     "slot": "Feet",
+     "item": 271661,
+     "name": "Thendal Novice's Boots",
+     "item_level": 1
+    },
+    {
+     "slot": "Finger",
+     "item": 264908,
+     "name": "Ancient Heirloom",
+     "item_level": 1
+    },
+    {
+     "slot": "Main hand",
+     "item": 280400,
+     "name": "Worn Bludgeon",
+     "item_level": 2
+    }
+   ],
+   "talents": {
+    "points": {
+     "Elemental Combat": 0,
+     "Enhancement": 0,
+     "Restoration": 0
+    },
+    "loadout": "CEdBzT2eoXLGqEykspPS/k8VfDAAAAAAAA"
+   },
+   "professions": [],
+   "skills": [
+    {
+     "name": "Daggers",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 5
+    },
+    {
+     "name": "Defense",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 5
+    },
+    {
+     "name": "Maces",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 5
+    },
+    {
+     "name": "Staves",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 5
+    },
+    {
+     "name": "Two-Handed Maces",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 5
+    },
+    {
+     "name": "Unarmed",
+     "category": "Weapon Skills",
+     "skill": 1,
+     "max": 5
+    },
+    {
+     "name": "Cloth",
+     "category": "Armor Proficiencies",
+     "skill": 1,
+     "max": 1
+    },
+    {
+     "name": "Leather",
+     "category": "Armor Proficiencies",
+     "skill": 1,
+     "max": 1
+    },
+    {
+     "name": "Shield",
+     "category": "Armor Proficiencies",
+     "skill": 1,
+     "max": 1
+    },
+    {
+     "name": "Language: Darnassian",
+     "category": "Languages",
+     "skill": 300,
+     "max": 300
+    },
+    {
+     "name": "Language: Orcish",
+     "category": "Languages",
+     "skill": 300,
+     "max": 300
+    }
+   ],
+   "reputations": [
+    {
+     "name": "Darkspear Trolls",
+     "standing": "Neutral",
+     "progress": 2000,
+     "needed": 3000
+    },
+    {
+     "name": "Orgrimmar",
+     "standing": "Neutral",
+     "progress": 2000,
+     "needed": 3000
+    },
+    {
+     "name": "Thunder Bluff",
+     "standing": "Friendly",
+     "progress": 100,
+     "needed": 6000
+    },
+    {
+     "name": "Undercity",
+     "standing": "Neutral",
+     "progress": 500,
+     "needed": 3000
+    },
+    {
+     "name": "Nightclaw Druids",
+     "standing": "Neutral",
+     "progress": 0,
+     "needed": 3000
+    },
+    {
+     "name": "Windshapers",
+     "standing": "Friendly",
+     "progress": 125,
+     "needed": 6000
+    }
+   ],
+   "stats": {
+    "Health": 57,
+    "Mana or energy": 75,
+    "Strength": 17,
+    "Agility": 23,
+    "Stamina": 21,
+    "Intellect": 20,
+    "Spirit": 25,
+    "Armour": 50
+   },
+   "pvp": {
+    "Honourable kills": 0,
+    "Dishonourable kills": -121,
+    "Honour points": 0,
+    "Renown": 0
+   },
+   "collected": {
+    "mounts": 2,
+    "pets": 4,
+    "titles": 0
+   }
+  }
+ ]
+}
