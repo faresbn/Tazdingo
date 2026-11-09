@@ -29,8 +29,8 @@ AGENT = "Tazdingo item-name refresh (private fan project)"
 
 
 def fetch(url: str, limit: int, attempts: int = 4) -> bytes:
-    """GET with a size limit. A busy server's 5xx answer or a dropped connection is retried,
-    waiting 15, 30, then 45 seconds; anything else fails at once."""
+    """GET with a size limit. A busy server's 5xx answer or a dropped connection (refused, reset
+    mid-download, timed out) is retried, waiting 15, 30, then 45 seconds; anything else fails at once."""
     request = urllib.request.Request(url, headers={"User-Agent": AGENT})
     for attempt in range(attempts):
         try:
@@ -40,7 +40,7 @@ def fetch(url: str, limit: int, attempts: int = 4) -> bytes:
         except urllib.error.HTTPError as error:
             if error.code < 500 or attempt == attempts - 1:
                 raise
-        except urllib.error.URLError:
+        except (urllib.error.URLError, ConnectionError, TimeoutError):  # a reset mid-read isn't a URLError
             if attempt == attempts - 1:
                 raise
         time.sleep(15 * (attempt + 1))

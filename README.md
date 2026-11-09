@@ -81,7 +81,7 @@ shown on the site. Run them after launch to replace pre-launch data; the
 Pre-launch labels clear once the data is fetched on or after 4 November. The
 API script needs `FOREVERDB_API_KEY` (never written anywhere) and caches its
 answers in `tmp/foreverdb-api/`; when ForeverDB's build changes it moves that
-cache aside and fetches everything again.
+cache aside and fetches everything again (about two hours at release, at roughly one request a second).
 
 ## How prices work
 

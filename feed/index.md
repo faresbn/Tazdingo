@@ -15,6 +15,13 @@ Every path below is in the public repository: https://raw.githubusercontent.com/
 Original addon files, as uploaded (large; open only when asked about that addon):
 - `data/captures/forever/auctionator/2026-11-09T0547Z.lua`: the latest of 24 auctionator file(s) (forever), processed into the prices above.
 
+## How the data stays current
+
+- **Auction House prices:** each time the game saves Auctionator's file (a `/reload` or logout after a scan), the scan is imported and published within minutes. A save with no new scan adds nothing. Times quoted are when the scan was made, not when it was imported.
+- **ForeverDB data** (recipes, trainers, abilities, vendor and other players' prices, item names): refreshed three times a day. When the game build changes, the full refresh takes a couple of hours.
+- **Blizzard's posts:** collected every two hours.
+- **Character progression is not here.** The ForeverDB addon records each character's level, gear, talents, professions, reputations and collections in the game, and OneForAll records known recipes per character, but those files carry character names and IDs, so they stay on the player's computer. For a character's own progress, ask the player.
+
 ## How to answer
 
 - **Prices:** open the market's map, then only the category file the item belongs to, or `alerts.md` for bargains, investments and movers. Quote the latest, typical or usual price with its scan time and steadiness. They're asking prices, not sales. Never mix markets.

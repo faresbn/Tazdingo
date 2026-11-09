@@ -62,6 +62,13 @@ class Fetch(unittest.TestCase):
             self.assertEqual(item_names.fetch("https://foreverdb.net/x", 10), b"ok")
         self.assertEqual(sleep.call_count, 2)
 
+    def test_a_connection_reset_mid_download_is_retried(self):
+        # 9 November: ForeverDB reset the connection while a price shard was downloading.
+        with mock.patch("urllib.request.urlopen", self.answer(ConnectionResetError(54, "reset"), TimeoutError(), b"ok")), \
+             mock.patch("time.sleep") as sleep:
+            self.assertEqual(item_names.fetch("https://foreverdb.net/x", 10), b"ok")
+        self.assertEqual(sleep.call_count, 2)
+
     def test_it_gives_up_after_four_tries(self):
         with mock.patch("urllib.request.urlopen", self.answer(*[self.busy()] * 4)), mock.patch("time.sleep"):
             with self.assertRaises(urllib.error.HTTPError):
