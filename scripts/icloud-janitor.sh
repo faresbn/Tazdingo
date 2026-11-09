@@ -8,8 +8,14 @@
 # same name, widened to sources because an identical copy is safe to delete
 # wherever it is.
 #
-# A copy that differs from its original, or has no original, is only listed:
-# a person decides which version to keep.
+# A copy that matches an earlier committed version is also removed (9 November):
+# the build rewrites every feed file, so iCloud's copies are usually of the
+# version before. Git stores every version it committed, so if the copy's exact
+# content is in git, deleting it loses nothing.
+#
+# A copy that differs from its original and isn't in git, or has no original,
+# is only listed: a person decides which version to keep. Copies inside .git are
+# listed, never touched (a copied ref can break `git fetch`).
 #
 # Dry-run by default. Pass --delete to remove the identical copies.
 
@@ -29,6 +35,8 @@ while IFS= read -r -d '' copy; do
   original="$(dirname "$copy")/$(sed -E 's/ [2-9](\.[^.]+)?$/\1/' <<<"$name")"
   if [[ -f "$copy" && -f "$original" ]] && cmp -s "$copy" "$original"; then
     identical+=("$copy")
+  elif [[ -f "$copy" ]] && git -C "$REPO_ROOT" cat-file -e "$(git -C "$REPO_ROOT" hash-object "$copy")" 2>/dev/null; then
+    identical+=("$copy")   # this exact content is already stored in git
   elif [[ -d "$copy" && -d "$original" ]] && diff -rq "$copy" "$original" >/dev/null 2>&1; then
     identical+=("$copy")
   else
@@ -36,6 +44,10 @@ while IFS= read -r -d '' copy; do
   fi
 done < <(find "$REPO_ROOT" \( -name .git -o -name '*.nosync' -o -name node_modules \) -prune \
   -o \( -name '* [2-9].*' -o -name '* [2-9]' \) -print0 2>/dev/null)
+
+while IFS= read -r -d '' copy; do
+  review+=("$copy")
+done < <(find "$REPO_ROOT/.git" \( -name '* [2-9].*' -o -name '* [2-9]' \) -print0 2>/dev/null)
 
 if [[ ${#identical[@]} -eq 0 && ${#review[@]} -eq 0 ]]; then
   echo "[icloud-janitor] clean — no bounced copies found"
@@ -48,7 +60,7 @@ if [[ ${#review[@]} -gt 0 ]]; then
 fi
 
 if [[ ${#identical[@]} -gt 0 ]]; then
-  echo "[icloud-janitor] ${#identical[@]} identical copy/copies:"
+  echo "[icloud-janitor] ${#identical[@]} copy/copies identical to the original or to a version in git:"
   for p in "${identical[@]}"; do echo "  ${p#$REPO_ROOT/}"; done
   if [[ $DELETE -eq 1 ]]; then
     for p in "${identical[@]}"; do rm -rf "$p"; done
