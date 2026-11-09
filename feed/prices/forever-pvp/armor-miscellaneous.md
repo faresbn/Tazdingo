@@ -6,6 +6,7 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
+| Abjurer's Crystal | 9944 | 5g 0s 0c | 2026-11-09 12:28 UTC | 5g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Aboriginal Rod | 15971 | 11s 0c | 2026-11-08 23:12 UTC | 11s 0c | 11s 0c | steady | 5 of 5 | 30 |  |
 | Airy Windseeker's Shirt | 273815 | 50s 0c | 2026-11-09 12:28 UTC | 6s 0c | 6s 0c | moving | 5 of 5 | 15 |  |
 | Amber Hoop | 11968 | 22s 0c | 2026-11-09 12:28 UTC | 33s 50c | 33s 50c | moving | 4 of 5 | 68 |  |
@@ -53,6 +54,8 @@
 | Coral Band | 11994 | 23s 0c | 2026-11-09 12:28 UTC | 29s 0c | 29s 0c | moving | 5 of 5 | 61 |  |
 | Crystal Starfire Medallion | 5003 | 1g 55s 0c | 2026-11-09 12:28 UTC | 1g 83s 0c | 1g 83s 0c | moving | 4 of 5 | 20 |  |
 | Dark Silk Shirt | 4333 | 32s 0c | 2026-11-09 12:28 UTC | 38s 0c | 38s 0c | moving | 3 of 5 | 13 |  |
+| Darkmist Orb | 15980 | 1g 13s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c |  | too new | 1 of 5 | 2 |  |
+| Darkmoon Flower | 19295 | 5g 0s 0c | 2026-11-09 05:47 UTC | 5g 0s 0c |  | too new | 1 of 5 | 2 |  |
 | Deckhand's Shirt | 5107 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 110 |  |
 | Demon Band | 12054 | 29s 0c | 2026-11-09 12:28 UTC | 30s 0c | 30s 0c | steady | 5 of 5 | 46 |  |
 | Demonstrike Emblem | 284708 | 2g 26s 0c | 2026-11-08 16:27 UTC | 2g 26s 0c |  | too new | 1 of 5 | 1 |  |
@@ -88,8 +91,10 @@
 | Heart of Alterac | 283254 | 2g 15s 0c | 2026-11-09 12:28 UTC | 80s 0c | 80s 0c | volatile | 3 of 5 | 5 |  |
 | Heart Ring | 5001 | 21s 0c | 2026-11-09 12:28 UTC | 25s 0c | 25s 0c | volatile | 5 of 5 | 46 |  |
 | Hematite Link | 11973 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 30s 0c | 1g 30s 0c | moving | 3 of 5 | 5 |  |
+| Horizon Choker | 13085 | 6g 38s 0c | 2026-11-09 05:47 UTC | 6g 38s 0c |  | too new | 1 of 5 | 1 |  |
 | Iridium Chain | 12022 | 1g 22s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c | 2g 0s 0c | moving | 3 of 5 | 9 |  |
 | Iridium Circle | 11987 | 1g 25s 0c | 2026-11-09 12:28 UTC | 2g 77s 0c | 2g 77s 0c | volatile | 4 of 5 | 6 |  |
+| Ironback Signet | 284041 | 15g 0s 0c | 2026-11-09 12:28 UTC | 15g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Ivory Band | 11995 | 25s 0c | 2026-11-09 12:28 UTC | 30s 0c | 30s 0c | volatile | 5 of 5 | 58 |  |
 | Ivy Orb | 9800 | 21s 0c | 2026-11-09 05:47 UTC | 40s 0c | 40s 0c | volatile | 4 of 5 | 24 |  |
 | Jacinth Circle | 11969 | 25s 0c | 2026-11-08 23:12 UTC | 25s 50c | 25s 50c | steady | 4 of 5 | 40 |  |
@@ -101,6 +106,7 @@
 | Lead Band | 11981 | 40s 0c | 2026-11-09 12:28 UTC | 38s 0c | 38s 0c | moving | 5 of 5 | 37 |  |
 | Lodestone Hoop | 11999 | 2g 0s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c |  | too new | 2 of 5 | 2 |  |
 | Lodestone Necklace | 12031 | 2g 50s 0c | 2026-11-09 12:28 UTC | 3g 74s 50c | 3g 74s 50c | volatile | 4 of 5 | 4 |  |
+| Lord Sakrasis' Scepter | 5028 | 1g 50s 0c | 2026-11-09 05:47 UTC | 1g 50s 0c |  | too new | 1 of 5 | 2 |  |
 | Marble Necklace | 12034 | 6g 90s 0c | 2026-11-09 05:47 UTC | 7g 0s 0c | 7g 0s 0c | moving | 3 of 5 | 1 |  |
 | Mark of Kern | 2262 | 8g 99s 0c | 2026-11-09 12:28 UTC | 6g 58s 0c | 6g 58s 0c | moving | 3 of 5 | 4 |  |
 | Mark of the Marsh | 286984 | 8g 0s 0c | 2026-11-08 23:12 UTC | 8g 31s 0c | 8g 31s 0c | steady | 4 of 5 | 4 |  |
@@ -117,6 +123,7 @@
 | Nightsky Orb | 15929 | 59s 0c | 2026-11-09 12:28 UTC | 64s 50c |  | too new | 2 of 5 | 19 |  |
 | Ogremind Ring | 1993 | 28s 0c | 2026-11-08 23:12 UTC | 34s 0c | 34s 0c | volatile | 3 of 5 | 12 |  |
 | Onyx Choker | 12032 | 2g 55s 0c | 2026-11-09 12:28 UTC | 2g 52s 50c |  | too new | 2 of 5 | 4 |  |
+| Onyx Ring | 12001 | 2g 98s 0c | 2026-11-09 12:28 UTC | 2g 98s 0c |  | too new | 1 of 5 | 4 |  |
 | Orange Mageweave Shirt | 10056 | 24s 0c | 2026-11-09 12:28 UTC | 40s 0c | 40s 0c | moving | 3 of 5 | 3 |  |
 | Orb of Mistmantle | 13031 | 70s 0c | 2026-11-09 12:28 UTC | 67s 50c | 67s 50c | moving | 4 of 5 | 17 |  |
 | Orb of Power | 4838 | 35s 0c | 2026-11-08 23:12 UTC | 47s 50c | 47s 50c | moving | 4 of 5 | 24 |  |
@@ -130,6 +137,7 @@
 | Red Linen Shirt | 2575 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 35 |  |
 | Red Rose | 3419 | 5s 0c | 2026-11-09 12:28 UTC | 5s 0c | 5s 0c | volatile | 5 of 5 | 7 |  |
 | Red Swashbuckler's Shirt | 6796 | 17s 0c | 2026-11-08 23:12 UTC | 20s 0c | 20s 0c | volatile | 3 of 5 | 39 |  |
+| Regal Star | 7555 | 5g 0s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c |  | too new | 1 of 5 | 3 |  |
 | Rich Purple Silk Shirt | 4335 | 1g 11s 0c | 2026-11-09 12:28 UTC | 1g 17s 0c |  | too new | 2 of 5 | 10 |  |
 | Ring of Defense | 12985 | 21s 0c | 2026-11-09 12:28 UTC | 28s 0c | 28s 0c | moving | 5 of 5 | 19 |  |
 | Ring of Precision | 1491 | 3g 88s 0c | 2026-11-09 12:28 UTC | 1g 75s 0c | 1g 75s 0c | moving | 4 of 5 | 10 |  |
@@ -139,6 +147,7 @@
 | Ritual Stein | 15972 | 12s 0c | 2026-11-09 05:47 UTC | 12s 0c | 12s 0c | steady | 4 of 5 | 10 |  |
 | River Pride Choker | 13087 | 5g 50s 0c | 2026-11-09 12:28 UTC | 4g 24s 50c | 4g 24s 50c | moving | 4 of 5 | 14 |  |
 | Rod of Molten Fire | 2565 | 41s 0c | 2026-11-09 12:28 UTC | 68s 50c | 68s 50c | moving | 4 of 5 | 19 |  |
+| Royal Scepter | 9914 | 2g 14s 0c | 2026-11-09 12:28 UTC | 2g 14s 0c |  | too new | 1 of 5 | 2 |  |
 | Runic Cane | 7559 | 8s 0c | 2026-11-08 23:12 UTC | 8s 0c | 8s 0c | steady | 5 of 5 | 14 |  |
 | Runic Stave | 15945 | 9s 0c | 2026-11-08 23:12 UTC | 9s 0c | 9s 0c | steady | 5 of 5 | 172 |  |
 | Sage's Stave | 15934 | 30s 0c | 2026-11-08 23:12 UTC | 30s 0c | 30s 0c | volatile | 3 of 5 | 6 |  |
@@ -153,6 +162,7 @@
 | Simple Dress | 6786 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | moving | 5 of 5 | 7 |  |
 | Simple Wildflowers | 3421 | 12s 0c | 2026-11-09 12:28 UTC | 12s 0c | 12s 0c | steady | 4 of 5 | 12 |  |
 | Six Demon Bag | 7734 | 10g 81s 0c | 2026-11-08 23:12 UTC | 10g 81s 0c |  | too new | 2 of 5 | 4 |  |
+| Skibi's Pendant | 13089 | 8g 0s 0c | 2026-11-09 12:28 UTC | 8g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Sludge-Stained Band | 286535 | 52s 0c | 2026-11-09 12:28 UTC | 52s 0c | 52s 0c | moving | 5 of 5 | 31 |  |
 | Sorcerer Sphere | 9882 | 1g 0s 0c | 2026-11-09 05:47 UTC | 1g 7s 50c |  | too new | 2 of 5 | 1 |  |
 | Spectral Necklace | 12047 | 1g 27s 0c | 2026-11-09 12:28 UTC | 1g 48s 0c | 1g 48s 0c | moving | 4 of 5 | 18 |  |
@@ -165,6 +175,7 @@
 | Stylish Red Shirt | 4330 | 3s 0c | 2026-11-08 23:12 UTC | 3s 0c | 3s 0c | steady | 4 of 5 | 62 |  |
 | Swamp Pendant | 12045 | 3g 17s 0c | 2026-11-08 23:12 UTC | 3g 67s 0c |  | too new | 2 of 5 | 1 |  |
 | Swamp Roamer's Band | 285089 | 99s 0c | 2026-11-09 05:47 UTC | 1g 19s 0c | 1g 19s 0c | volatile | 3 of 5 | 6 |  |
+| Swampchill Fetish | 1992 | 7g 10s 0c | 2026-11-09 12:28 UTC | 7g 3s 0c |  | too new | 1 of 5 | 2 |  |
 | Talisman of the Naga Lord | 5029 | 2g 29s 0c | 2026-11-09 12:28 UTC | 2g 92s 0c |  | too new | 2 of 5 | 2 |  |
 | Tellurium Band | 11988 | 2g 0s 0c | 2026-11-09 12:28 UTC | 2g 62s 50c |  | too new | 2 of 5 | 2 |  |
 | Tellurium Necklace | 12023 | 2g 50s 0c | 2026-11-09 12:28 UTC | 2g 50s 0c | 2g 50s 0c | volatile | 3 of 5 | 5 |  |

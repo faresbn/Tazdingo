@@ -11,6 +11,7 @@
 | Brown Ground Squirrel Whistle | 280794 | 1g 9s 0c | 2026-11-09 12:28 UTC | 1g 54s 50c |  | too new | 2 of 5 | 6 |  |
 | Brown Snake | 10361 | 75s 0c | 2026-11-08 16:27 UTC | 75s 0c |  | too new | 2 of 5 | 1 |  |
 | Cat Carrier (Black Tabby) | 8491 | 76s 0c | 2026-11-09 12:28 UTC | 35s 0c | 35s 0c | volatile | 5 of 5 | 20 |  |
+| Cat Carrier (Bombay) | 8485 | 2g 60s 0c | 2026-11-08 23:12 UTC | 2g 60s 0c |  | too new | 1 of 5 | 1 |  |
 | Cat Carrier (Siamese) | 8490 | 15g 35s 0c | 2026-11-09 12:28 UTC | 28s 0c | 28s 0c | volatile | 5 of 5 | 20 |  |
 | Cat Carrier (White Kitten) | 8489 | 95s 0c | 2026-11-09 12:28 UTC | 90s 0c | 90s 0c | moving | 5 of 5 | 11 |  |
 | Cockroach | 10393 | 99s 0c | 2026-11-09 12:28 UTC | 60s 0c | 60s 0c | volatile | 5 of 5 | 5 |  |
@@ -28,6 +29,7 @@
 | Prairie Wolf Pup Carrier | 277508 | 77s 0c | 2026-11-09 12:28 UTC | 77s 0c | 77s 0c | moving | 5 of 5 | 10 |  |
 | Red Ground Squirrel Whistle | 280795 | 99s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c | 2g 0s 0c | volatile | 3 of 5 | 6 |  |
 | Tiny Crimson Whelpling | 8499 | 118g 0s 0c | 2026-11-09 12:28 UTC | 134g 50s 0c | 134g 50s 0c | steady | 4 of 5 | 2 |  |
+| Tiny Emerald Whelpling | 8498 | 10g 38s 0c | 2026-11-09 12:28 UTC | 10g 38s 0c |  | too new | 1 of 5 | 1 |  |
 | Undercity Cockroach | 280699 | 77s 0c | 2026-11-08 23:12 UTC | 77s 0c | 77s 0c | moving | 5 of 5 | 2 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

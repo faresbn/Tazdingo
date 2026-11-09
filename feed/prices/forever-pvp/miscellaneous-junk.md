@@ -13,12 +13,15 @@
 | 19 Pound Catfish | 6310 | 21s 0c | 2026-11-09 12:28 UTC | 19s 0c | 19s 0c | steady | 5 of 5 | 47 |  |
 | 22 Pound Catfish | 6311 | 40s 0c | 2026-11-09 12:28 UTC | 22s 0c | 22s 0c | moving | 5 of 5 | 16 |  |
 | 26 Pound Catfish | 6363 | 48s 0c | 2026-11-09 05:47 UTC | 1g 45s 0c | 1g 45s 0c | volatile | 4 of 5 | 12 |  |
+| 32 Pound Catfish | 6364 | 15g 0s 0c | 2026-11-09 05:47 UTC | 15g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | 34 Pound Redgill | 13885 | 52s 0c | 2026-11-09 05:47 UTC | 52s 0c |  | too new | 2 of 5 | 3 |  |
+| 37 Pound Redgill | 13886 | 2g 66s 0c | 2026-11-09 12:28 UTC | 1g 66s 0c |  | too new | 1 of 5 | 2 |  |
 | 40 Pound Yellowtail | 13876 | 80s 0c | 2026-11-09 12:28 UTC | 1g 39s 50c |  | too new | 2 of 5 | 6 |  |
 | 47 Pound Yellowtail | 13877 | 1g 0s 0c | 2026-11-08 23:12 UTC | 1g 0s 0c | 1g 0s 0c | moving | 3 of 5 | 2 |  |
 | 53 Pound Yellowtail | 13878 | 1g 70s 0c | 2026-11-09 12:28 UTC | 1g 35s 0c | 1g 35s 0c | moving | 4 of 5 | 2 |  |
 | 68 Pound Yellowtail | 13880 | 1g 3s 0c | 2026-11-08 23:12 UTC | 1g 3s 0c |  | too new | 2 of 5 | 1 |  |
 | A Frayed Knot | 6150 | 1s 0c | 2026-11-08 16:27 UTC | 1s 0c |  | too new | 1 of 5 | 2 |  |
+| A Pretty Rock | 5429 | 3s 0c | 2026-11-09 05:47 UTC | 3s 0c |  | too new | 1 of 5 | 2 |  |
 | Acidic Slime | 6456 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 4 of 5 | 14 |  |
 | Basilisk Scale | 11385 | 2s 69c | 2026-11-09 12:28 UTC | 3s 38c | 3s 38c | moving | 4 of 5 | 46 |  |
 | Bat Heart | 11394 | 8s 0c | 2026-11-08 23:12 UTC | 9s 0c | 9s 0c | steady | 3 of 5 | 18 |  |
@@ -93,12 +96,15 @@
 | Gelatinous Goo | 3669 | 2s 0c | 2026-11-09 12:28 UTC | 1s 95c | 1s 95c | steady | 5 of 5 | 114 |  |
 | Ghastly Cloth | 275894 | 50s 0c | 2026-11-09 12:28 UTC | 2s 0c | 2s 0c | steady | 4 of 5 | 5 |  |
 | Glistening Frenzy Scale | 4860 | 12s 0c | 2026-11-09 12:28 UTC | 12s 0c |  | too new | 2 of 5 | 1 |  |
+| Glowing Scorpid Blood | 19933 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c |  | too new | 1 of 5 | 4 |  |
 | Gnawed Bone | 5369 | 3s 0c | 2026-11-08 23:12 UTC | 3s 0c | 3s 0c | moving | 3 of 5 | 3 |  |
+| Grass Clippings | 256037 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c |  | too new | 1 of 5 | 6 |  |
 | Hard Spider Leg Tip | 1074 | 5s 55c | 2026-11-08 23:12 UTC | 6s 70c | 6s 70c | moving | 4 of 5 | 64 |  |
 | Hatched Egg Sac | 5601 | 70c | 2026-11-09 12:28 UTC | 93c | 93c | moving | 4 of 5 | 58 |  |
 | Heavy Scorpid Leg | 19938 | 8s 96c | 2026-11-09 12:28 UTC | 8s 99c | 8s 99c | steady | 3 of 5 | 23 |  |
 | Hickory Pipe | 5432 | 3s 90c | 2026-11-09 12:28 UTC | 6s 49c | 6s 49c | moving | 4 of 5 | 30 |  |
 | Hoarder's Foot | 252671 | 70c | 2026-11-09 12:28 UTC | 1s 0c | 1s 0c | moving | 5 of 5 | 27 |  |
+| Hollow Wing Bone | 11418 | 10s 0c | 2026-11-09 05:47 UTC | 10s 0c |  | too new | 1 of 5 | 9 |  |
 | How to Make Friend | 271646 | 50s 0c | 2026-11-08 16:27 UTC | 50s 0c |  | too new | 1 of 5 | 1 |  |
 | Husk Fragment | 6300 | 7s 0c | 2026-11-09 05:47 UTC | 7s 0c | 7s 0c | steady | 3 of 5 | 9 |  |
 | Intact Basilisk Spine | 1702 | 4s 0c | 2026-11-08 23:12 UTC | 5s 0c | 5s 0c | steady | 3 of 5 | 40 |  |
@@ -139,11 +145,13 @@
 | Rotting Bear Carcass | 11406 | 2s 96c | 2026-11-09 12:28 UTC | 1s 68c | 1s 68c | moving | 5 of 5 | 120 |  |
 | Rough Crocolisk Scale | 3401 | 83c | 2026-11-08 23:12 UTC | 89c | 89c | moving | 5 of 5 | 227 |  |
 | Ruffled Feather | 4776 | 42c | 2026-11-09 12:28 UTC | 44c | 44c | steady | 5 of 5 | 71 |  |
+| Ruined Dragonhide | 3175 | 2s 0c | 2026-11-09 05:47 UTC | 2s 0c |  | too new | 1 of 5 | 2 |  |
 | Ruined Gyrostabilizer | 255154 | 1s 0c | 2026-11-05 18:58 UTC | 1s 0c |  | too new | 1 of 5 | 2 |  |
 | Ruined Pelt | 4865 | 1s 0c | 2026-11-09 12:28 UTC | 18c | 18c | moving | 5 of 5 | 55 |  |
 | Rusted Construct Parts | 260927 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 4 |  |
 | Rusted Engineering Parts | 6457 | 4s 97c | 2026-11-09 05:47 UTC | 4s 98c | 4s 98c | steady | 3 of 5 | 59 |  |
 | Scratching Stick | 5375 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c |  | too new | 2 of 5 | 2 |  |
+| Searing Gourd | 275893 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c |  | too new | 1 of 5 | 1 |  |
 | Seaweed | 5569 | 2s 89c | 2026-11-09 12:28 UTC | 2s 99c | 2s 99c | moving | 3 of 5 | 59 |  |
 | Seeping Gizzard | 5133 | 3s 0c | 2026-11-09 12:28 UTC | 4s 40c | 4s 40c | moving | 4 of 5 | 34 |  |
 | Severed Bat Claw | 11392 | 5s 90c | 2026-11-08 23:12 UTC | 5s 98c | 5s 98c | steady | 3 of 5 | 25 |  |
@@ -163,6 +171,7 @@
 | Small Raptor Tooth | 5124 | 2s 0c | 2026-11-09 12:28 UTC | 1s 17c | 1s 17c | steady | 5 of 5 | 296 |  |
 | Small Scorpid Claw | 19937 | 11s 0c | 2026-11-09 05:47 UTC | 11s 50c |  | too new | 2 of 5 | 17 |  |
 | Smooth Raptor Skin | 4586 | 11s 0c | 2026-11-08 23:12 UTC | 11s 0c |  | too new | 2 of 5 | 40 |  |
+| Smooth Stone Chip | 4552 | 8s 0c | 2026-11-09 05:47 UTC | 8s 0c |  | too new | 1 of 5 | 8 |  |
 | Snapped Spider Limb | 1476 | 14c | 2026-11-09 12:28 UTC | 20c | 20c | volatile | 5 of 5 | 113 |  |
 | Soft Patch of Fur | 3402 | 6s 25c | 2026-11-09 12:28 UTC | 7s 26c | 7s 26c | moving | 4 of 5 | 97 |  |
 | Speckled Shell Fragment | 4556 | 10s 0c | 2026-11-08 23:12 UTC | 11s 0c | 11s 0c | steady | 4 of 5 | 88 |  |
@@ -177,6 +186,7 @@
 | Sticky Spider Webbing | 5602 | 1s 20c | 2026-11-09 12:28 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 41 |  |
 | Stone Arrowhead | 4877 | 22c | 2026-11-09 12:28 UTC | 26c | 26c | moving | 5 of 5 | 38 |  |
 | Tale of I'lalai in Zandali | 270313 | 15s 0c | 2026-11-09 05:47 UTC | 18s 0c |  | too new | 2 of 5 | 36 |  |
+| Thick Furry Mane | 4583 | 13s 0c | 2026-11-09 05:47 UTC | 13s 0c |  | too new | 1 of 5 | 1 |  |
 | Thick Kodo Hair | 5122 | 3s 90c | 2026-11-08 23:12 UTC | 3s 90c | 3s 90c | moving | 3 of 5 | 9 |  |
 | Thick Scaly Tail | 4555 | 2s 49c | 2026-11-09 12:28 UTC | 1s 55c | 1s 55c | steady | 5 of 5 | 94 |  |
 | Thick Spider Hair | 3167 | 85c | 2026-11-09 12:28 UTC | 85c | 85c | steady | 5 of 5 | 421 |  |

@@ -6,12 +6,14 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
+| Blackbone Wand | 5239 | 2g 0s 0c | 2026-11-08 23:12 UTC | 2g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Blazing Wand | 5212 | 7s 0c | 2026-11-08 23:12 UTC | 7s 0c | 7s 0c | moving | 5 of 5 | 219 |  |
 | Dire Wand | 8186 | 25s 0c | 2026-11-09 05:47 UTC | 27s 0c | 27s 0c | moving | 5 of 5 | 44 |  |
 | Ember Wand | 5215 | 98s 0c | 2026-11-09 12:28 UTC | 1g 10s 0c | 1g 10s 0c | volatile | 3 of 5 | 18 |  |
 | Fire Wand | 5069 | 3s 0c | 2026-11-08 23:12 UTC | 3s 0c | 3s 0c | moving | 5 of 5 | 489 |  |
 | Firestarter | 8184 | 31s 0c | 2026-11-09 05:47 UTC | 34s 0c | 34s 0c | volatile | 5 of 5 | 66 |  |
 | Freezing Shard | 10572 | 13g 99s 0c | 2026-11-08 23:12 UTC | 14g 99s 0c | 14g 99s 0c | volatile | 3 of 5 | 2 |  |
+| Gloom Wand | 5209 | 25s 0c | 2026-11-08 23:12 UTC | 25s 0c |  | too new | 1 of 5 | 1 |  |
 | Greater Magic Wand | 11288 | 3s 0c | 2026-11-08 23:12 UTC | 3s 0c | 3s 0c | steady | 5 of 5 | 3104 |  |
 | Greater Mystic Wand | 217287 | 49s 0c | 2026-11-09 12:28 UTC | 64s 0c | 64s 0c | moving | 4 of 5 | 52 |  |
 | Jaina's Firestarter | 13064 | 5g 75s 0c | 2026-11-09 05:47 UTC | 8g 42s 0c | 8g 42s 0c | volatile | 3 of 5 | 7 |  |
@@ -30,6 +32,7 @@
 | Touch of the Depths | 287004 | 3g 0s 0c | 2026-11-09 12:28 UTC | 3g 99s 0c | 3g 99s 0c | volatile | 3 of 5 | 9 |  |
 | Twisted Nether Wand | 249144 | 2g 16s 0c | 2026-11-09 12:28 UTC | 1g 94s 50c |  | too new | 2 of 5 | 8 |  |
 | Umbral Wand | 5216 | 1g 50s 0c | 2026-11-09 05:47 UTC | 1g 75s 0c |  | too new | 2 of 5 | 8 |  |
+| Wand of Allistarj | 13065 | 12g 15s 0c | 2026-11-09 05:47 UTC | 12g 15s 0c |  | too new | 1 of 5 | 1 |  |
 | Wand of Eventide | 5214 | 40s 0c | 2026-11-09 12:28 UTC | 44s 0c | 44s 0c | steady | 4 of 5 | 24 |  |
 | Wizard's Hand | 15280 | 3g 10s 0c | 2026-11-08 16:27 UTC | 3g 10s 0c |  | too new | 1 of 5 | 1 |  |
 

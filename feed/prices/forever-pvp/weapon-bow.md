@@ -32,9 +32,11 @@
 | Mishandled Recurve Bow | 2782 | 8s 0c | 2026-11-08 23:12 UTC | 8s 0c | 8s 0c | steady | 3 of 5 | 13 |  |
 | Needle Threader | 13021 | 29g 0s 0c | 2026-11-08 23:12 UTC | 29g 0s 0c |  | too new | 2 of 5 | 1 |  |
 | Precision Bow | 8183 | 28s 0c | 2026-11-09 12:28 UTC | 35s 0c | 35s 0c | moving | 4 of 5 | 39 |  |
+| Quillshooter | 10567 | 23g 89s 0c | 2026-11-09 12:28 UTC | 23g 89s 0c |  | too new | 1 of 5 | 2 |  |
 | Ranger Bow | 3021 | 2g 22s 0c | 2026-11-09 12:28 UTC | 1g 99s 0c | 1g 99s 0c | moving | 5 of 5 | 27 |  |
 | Reinforced Bow | 3026 | 38s 0c | 2026-11-09 12:28 UTC | 20s 0c | 20s 0c | volatile | 3 of 5 | 3 |  |
 | Short Ash Bow | 3039 | 18s 0c | 2026-11-08 23:12 UTC | 23s 0c | 23s 0c | moving | 5 of 5 | 38 |  |
+| Siege Bow | 15294 | 9g 67s 0c | 2026-11-09 12:28 UTC | 9g 67s 0c |  | too new | 1 of 5 | 1 |  |
 | Skystriker Bow | 13020 | 4g 99s 0c | 2026-11-09 12:28 UTC | 5g 48s 50c | 5g 48s 50c | moving | 4 of 5 | 6 |  |
 | Stiff Recurve Bow | 2785 | 14s 0c | 2026-11-09 12:28 UTC | 14s 0c | 14s 0c | steady | 3 of 5 | 12 |  |
 | Sturdy Recurve | 11306 | 1g 8s 0c | 2026-11-08 23:12 UTC | 1g 9s 0c | 1g 9s 0c | steady | 3 of 5 | 4 |  |

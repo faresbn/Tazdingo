@@ -10,14 +10,17 @@
 | Blueprint: Expert Campfire | 273101 | 15g 0s 0c | 2026-11-09 12:28 UTC | 20g 0s 0c |  | too new | 2 of 5 | 2 |  |
 | Blueprint: Journeyman Campfire | 273087 | 2g 78s 0c | 2026-11-09 12:28 UTC | 1g 89s 0c | 1g 89s 0c | moving | 5 of 5 | 47 |  |
 | Expert Cookbook | 16072 | 1g 7s 0c | 2026-11-09 12:28 UTC | 1g 12s 0c | 1g 12s 0c | steady | 4 of 5 | 98 |  |
+| Recipe: Baked Salmon | 13949 | 5g 20s 0c | 2026-11-09 12:28 UTC | 5g 20s 0c |  | too new | 1 of 5 | 6 |  |
 | Recipe: Beer Basted Boar Ribs | 2889 | 97s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c | 1g 0s 0c | steady | 3 of 5 | 2 |  |
 | Recipe: Blood Sausage | 3679 | 97s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c | 1g 0s 0c | steady | 3 of 5 | 2 |  |
 | Recipe: Brilliant Smallfish | 6325 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | moving | 5 of 5 | 282 |  |
 | Recipe: Bristle Whisker Catfish | 6330 | 15s 0c | 2026-11-09 12:28 UTC | 14s 0c | 14s 0c | steady | 5 of 5 | 113 |  |
+| Recipe: Clam Chowder | 5528 | 1g 99s 0c | 2026-11-09 12:28 UTC | 1g 99s 0c |  | too new | 1 of 5 | 1 |  |
 | Recipe: Cooked Crab Claw | 2698 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 5 | 3 |  |
 | Recipe: Cooked Glossy Mightfish | 13940 | 4g 61s 0c | 2026-11-09 12:28 UTC | 2g 61s 0c |  | too new | 2 of 5 | 3 |  |
 | Recipe: Crispy Bat Wing | 12226 | 2s 0c | 2026-11-09 05:47 UTC | 2s 0c | 2s 0c | moving | 5 of 5 | 110 |  |
 | Recipe: Crispy Lizard Tail | 5488 | 14s 0c | 2026-11-09 12:28 UTC | 8s 0c | 8s 0c | moving | 5 of 5 | 41 |  |
+| Recipe: Crocolisk Gumbo | 3681 | 1g 99s 0c | 2026-11-09 12:28 UTC | 1g 50s 0c |  | too new | 1 of 5 | 1 |  |
 | Recipe: Crocolisk Steak | 3678 | 97s 0c | 2026-11-09 12:28 UTC | 99s 0c | 99s 0c | steady | 3 of 5 | 5 |  |
 | Recipe: Curiously Tasty Omelet | 3682 | 29s 0c | 2026-11-09 12:28 UTC | 46s 50c | 46s 50c | moving | 4 of 5 | 67 |  |
 | Recipe: Dig Rat Stew | 5487 | 15s 0c | 2026-11-09 12:28 UTC | 13s 0c | 13s 0c | moving | 4 of 5 | 32 |  |
@@ -30,9 +33,12 @@
 | Recipe: Heavy Crocolisk Stew | 20075 | 53s 0c | 2026-11-09 12:28 UTC | 61s 50c | 61s 50c | moving | 4 of 5 | 26 |  |
 | Recipe: Hot Smoked Bass | 13943 | 2g 61s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c |  | too new | 2 of 5 | 1 |  |
 | Recipe: Kaldorei Spider Kabob | 5482 | 97s 0c | 2026-11-09 12:28 UTC | 99s 0c | 99s 0c | steady | 3 of 5 | 8 |  |
+| Recipe: Lobster Stew | 13947 | 5g 0s 0c | 2026-11-09 12:28 UTC | 5g 0s 0c |  | too new | 1 of 5 | 5 |  |
 | Recipe: Loch Frenzy Delight | 6329 | 1g 99s 0c | 2026-11-09 12:28 UTC | 1g 60s 50c |  | too new | 2 of 5 | 1 |  |
 | Recipe: Longjaw Mud Snapper | 6328 | 6s 0c | 2026-11-08 23:12 UTC | 6s 0c | 6s 0c | steady | 5 of 5 | 281 |  |
+| Recipe: Mightfish Steak | 13948 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c |  | too new | 1 of 5 | 6 |  |
 | Recipe: Mithril Head Trout | 17062 | 87s 0c | 2026-11-09 12:28 UTC | 28s 0c | 28s 0c | steady | 5 of 5 | 22 |  |
+| Recipe: Monster Omelet | 16110 | 2g 44s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c |  | too new | 1 of 5 | 5 |  |
 | Recipe: Murloc Fin Soup | 3680 | 97s 0c | 2026-11-09 12:28 UTC | 99s 0c | 99s 0c | steady | 3 of 5 | 3 |  |
 | Recipe: Nightfin Soup | 13945 | 3g 46s 0c | 2026-11-09 05:47 UTC | 3g 61s 0c |  | too new | 2 of 5 | 4 |  |
 | Recipe: Pincer Bites | 263513 | 10s 0c | 2026-11-09 12:28 UTC | 4s 0c | 4s 0c | volatile | 5 of 5 | 40 |  |
@@ -54,6 +60,7 @@
 | Recipe: Spiced Chili Crab | 16111 | 1g 25s 0c | 2026-11-09 12:28 UTC | 3g 53s 0c | 3g 53s 0c | volatile | 4 of 5 | 12 |  |
 | Recipe: Spotted Yellowtail | 13939 | 3g 49s 0c | 2026-11-09 12:28 UTC | 2g 99s 50c |  | too new | 2 of 5 | 6 |  |
 | Recipe: Strider Stew | 5486 | 9s 0c | 2026-11-09 12:28 UTC | 9s 0c | 9s 0c | moving | 5 of 5 | 75 |  |
+| Recipe: Succulent Pork Ribs | 2700 | 2g 0s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Recipe: Tasty Lion Steak | 3736 | 99s 0c | 2026-11-09 12:28 UTC | 99s 0c |  | too new | 2 of 5 | 4 |  |
 | Recipe: Tender Wolf Steak | 18046 | 2g 30s 0c | 2026-11-09 12:28 UTC | 2g 50s 0c | 2g 50s 0c | moving | 3 of 5 | 7 |  |
 | Recipe: Westfall Stew | 728 | 96s 0c | 2026-11-09 12:28 UTC | 99s 0c | 99s 0c | steady | 3 of 5 | 6 |  |

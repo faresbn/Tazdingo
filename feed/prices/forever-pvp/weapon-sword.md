@@ -19,6 +19,7 @@
 | Bronze Greatsword | 7957 | 57s 0c | 2026-11-09 12:28 UTC | 57s 0c | 57s 0c | moving | 5 of 5 | 41 |  |
 | Bronze Shortsword | 2850 | 13s 0c | 2026-11-09 05:47 UTC | 13s 0c | 13s 0c | moving | 5 of 5 | 107 |  |
 | Cavalier Two-hander | 3206 | 46s 0c | 2026-11-08 23:12 UTC | 46s 0c | 46s 0c | steady | 4 of 5 | 94 |  |
+| Chromatic Sword | 1604 | 25g 92s 0c | 2026-11-09 05:47 UTC | 25g 92s 0c |  | too new | 1 of 5 | 1 |  |
 | City Guard's Tarnished Blade | 286996 | 5g 0s 0c | 2026-11-09 12:28 UTC | 3g 98s 0c | 3g 98s 0c | moving | 3 of 5 | 5 |  |
 | Claymore | 1198 | 19s 0c | 2026-11-08 23:12 UTC | 19s 50c |  | too new | 2 of 5 | 2 |  |
 | Combatant Claymore | 2877 | 1g 25s 0c | 2026-11-08 23:12 UTC | 1g 87s 50c | 1g 87s 50c | moving | 4 of 5 | 15 |  |
@@ -48,6 +49,8 @@
 | Fighter Broadsword | 15212 | 35s 0c | 2026-11-08 23:12 UTC | 35s 0c | 35s 0c | steady | 4 of 5 | 58 |  |
 | Fine Scimitar | 4560 | 10s 0c | 2026-11-09 12:28 UTC | 2s 0c | 2s 0c | volatile | 5 of 5 | 15 |  |
 | Frost Tiger Blade | 3854 | 2g 70s 0c | 2026-11-09 12:28 UTC | 6g 34s 50c |  | too new | 2 of 5 | 6 |  |
+| Furious Falchion | 15215 | 2g 45s 0c | 2026-11-09 12:28 UTC | 2g 45s 0c |  | too new | 1 of 5 | 6 |  |
+| Ginn-su Sword | 9424 | 15g 15s 0c | 2026-11-09 12:28 UTC | 15g 15s 0c |  | too new | 1 of 5 | 1 |  |
 | Gizmotron Megachopper | 9490 | 3g 40s 0c | 2026-11-09 12:28 UTC | 3g 40s 0c | 3g 40s 0c | moving | 3 of 5 | 7 |  |
 | Gladius | 2488 | 6s 0c | 2026-11-05 18:58 UTC | 4s 0c |  | too new | 2 of 5 | 2 |  |
 | Gleaming Claymore | 15248 | 18s 0c | 2026-11-08 23:12 UTC | 18s 0c | 18s 0c | steady | 5 of 5 | 179 |  |
@@ -63,6 +66,7 @@
 | Ironpatch Blade | 12976 | 3g 90s 0c | 2026-11-09 12:28 UTC | 88s 0c | 88s 0c | steady | 5 of 5 | 26 |  |
 | Jade Serpentblade | 3850 | 1g 5s 0c | 2026-11-09 05:47 UTC | 1g 12s 0c | 1g 12s 0c | volatile | 3 of 5 | 9 |  |
 | Knightly Longsword | 864 | 1g 45s 0c | 2026-11-09 12:28 UTC | 99s 0c | 99s 0c | moving | 3 of 5 | 14 |  |
+| Krol Blade | 2244 | 399g 99s 0c | 2026-11-09 12:28 UTC | 399g 99s 0c |  | too new | 1 of 5 | 2 |  |
 | Light Scimitar | 3783 | 44s 0c | 2026-11-09 12:28 UTC | 45s 0c |  | too new | 2 of 5 | 4 |  |
 | Long Bastard Sword | 1830 | 18s 0c | 2026-11-08 23:12 UTC | 19s 0c | 19s 0c | steady | 4 of 5 | 5 |  |
 | Longsword | 923 | 80s 0c | 2026-11-09 05:47 UTC | 57s 50c | 57s 50c | moving | 4 of 5 | 2 |  |
@@ -82,6 +86,7 @@
 | Practice Sword | 8177 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 31 |  |
 | Pysan's Old Greatsword | 1975 | 80s 0c | 2026-11-09 12:28 UTC | 99s 0c | 99s 0c | steady | 4 of 5 | 14 |  |
 | Raider Shortsword | 15210 | 9s 0c | 2026-11-08 23:12 UTC | 9s 0c | 9s 0c | moving | 5 of 5 | 318 |  |
+| Rune Sword | 15216 | 15g 89s 0c | 2026-11-09 12:28 UTC | 15g 89s 0c |  | too new | 1 of 5 | 1 |  |
 | Scimitar | 2027 | 20s 0c | 2026-11-09 12:28 UTC | 18s 50c | 18s 50c | moving | 4 of 5 | 8 |  |
 | Scorpion Sting | 1265 | 4g 20s 0c | 2026-11-09 12:28 UTC | 6g 48s 50c | 6g 48s 50c | volatile | 4 of 5 | 6 |  |
 | Searing Blade | 12992 | 1g 12s 0c | 2026-11-09 12:28 UTC | 40s 0c | 40s 0c | steady | 5 of 5 | 29 |  |
@@ -118,6 +123,7 @@
 | Warped Blade | 1821 | 10s 0c | 2026-11-09 05:47 UTC | 11s 50c | 11s 50c | steady | 4 of 5 | 18 |  |
 | Wicked Mithril Blade | 7943 | 2g 75s 0c | 2026-11-08 23:12 UTC | 2g 75s 0c |  | too new | 1 of 5 | 5 |  |
 | Witchfury | 13051 | 9g 99s 0c | 2026-11-09 12:28 UTC | 11g 44s 0c | 11g 44s 0c | volatile | 3 of 5 | 2 |  |
+| Worn Greatsword | 258882 | 1g 1s 0c | 2026-11-09 12:28 UTC | 1g 1s 0c |  | too new | 1 of 5 | 1 |  |
 | Zealot Blade | 13033 | 2g 0s 0c | 2026-11-09 12:28 UTC | 2g 50s 0c | 2g 50s 0c | moving | 4 of 5 | 18 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

@@ -45,7 +45,9 @@
 | Scroll of Strength III | 4426 | 98s 0c | 2026-11-09 05:47 UTC | 1g 0s 0c |  | too new | 2 of 5 | 10 |  |
 | Scroll: CHAP BALK WELLES | 211786 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 2795 |  |
 | Scroll: CWAL | 211785 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 3181 |  |
+| Scroll: DOST OREM | 281015 | 1g 1s 0c | 2026-11-09 12:28 UTC | 1g 1s 0c |  | too new | 1 of 5 | 1 |  |
 | Scroll: FORGOT HOOF THUD | 281016 | 2g 0s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c |  | too new | 2 of 5 | 2 |  |
+| Scroll: KEEP CLEF FOCI | 281017 | 7g 1s 0c | 2026-11-09 12:28 UTC | 7g 1s 0c |  | too new | 1 of 5 | 3 |  |
 | Scroll: KWYJIBO | 211780 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 3105 |  |
 | Scroll: LOWER PING WHOMEVER | 211787 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 3160 |  |
 | Scroll: OMIT KESA | 211854 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | moving | 5 of 5 | 249 |  |

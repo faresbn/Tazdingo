@@ -6,6 +6,7 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
+| A Little Somethin' | 281282 | 3g 1s 0c | 2026-11-09 05:47 UTC | 3g 1s 0c |  | too new | 1 of 5 | 2 |  |
 | Alterac Swiss | 8932 | 12s 0c | 2026-11-09 12:28 UTC | 15s 48c | 15s 48c | moving | 4 of 5 | 54 |  |
 | Barbecued Buzzard Wing | 4457 | 7s 41c | 2026-11-09 12:28 UTC | 10s 45c | 10s 45c | volatile | 3 of 5 | 398 |  |
 | Bear Brisket | 250074 | 7s 74c | 2026-11-09 12:28 UTC | 7s 36c | 7s 36c | moving | 4 of 5 | 624 |  |
@@ -79,6 +80,7 @@
 | Melon Juice | 1205 | 86c | 2026-11-09 12:28 UTC | 1s 2c | 1s 2c | moving | 5 of 5 | 266 |  |
 | Mithril Head Trout | 8364 | 1s 87c | 2026-11-09 12:28 UTC | 1s 77c | 1s 77c | moving | 4 of 5 | 3158 |  |
 | Moist Cornbread | 4542 | 28c | 2026-11-09 12:28 UTC | 59c | 59c | volatile | 4 of 5 | 190 |  |
+| Moon Harvest Pumpkin | 4602 | 15s 0c | 2026-11-09 12:28 UTC | 15s 0c |  | too new | 1 of 5 | 5 |  |
 | Moonberry Juice | 1645 | 7s 90c | 2026-11-09 12:28 UTC | 10s 0c | 10s 0c | volatile | 3 of 5 | 172 |  |
 | Morning Glory Dew | 8766 | 9s 20c | 2026-11-09 05:47 UTC | 10s 0c | 10s 0c | moving | 3 of 5 | 40 |  |
 | Mrrggl Smrrthle | 249873 | 5s 54c | 2026-11-09 12:28 UTC | 5s 59c | 5s 59c | moving | 3 of 5 | 222 |  |
@@ -95,6 +97,7 @@
 | Rainbow Fin Albacore | 5095 | 20c | 2026-11-09 12:28 UTC | 20c | 20c | moving | 5 of 5 | 1532 |  |
 | Raptor Punch | 5342 | 88c | 2026-11-08 23:12 UTC | 88c | 88c | steady | 5 of 5 | 1990 |  |
 | Raptor Rouladen | 250076 | 24s 99c | 2026-11-09 12:28 UTC | 19s 99c |  | too new | 2 of 5 | 14 |  |
+| Raw Black Truffle | 4608 | 12s 0c | 2026-11-09 12:28 UTC | 12s 0c |  | too new | 1 of 5 | 5 |  |
 | Raw Winter Squid | 13755 | 2s 30c | 2026-11-09 12:28 UTC | 2s 30c | 2s 30c | steady | 4 of 5 | 676 |  |
 | Red Delicious Stormapple | 252032 | 38c | 2026-11-09 12:28 UTC | 30c | 30c | steady | 5 of 5 | 728 |  |
 | Red-speckled Mushroom | 4605 | 9c | 2026-11-09 12:28 UTC | 6c | 6c | volatile | 5 of 5 | 595 |  |

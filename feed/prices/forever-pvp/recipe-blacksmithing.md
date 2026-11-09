@@ -7,9 +7,14 @@
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | Blueprint: Anvil | 273086 | 1g 90s 0c | 2026-11-09 12:28 UTC | 1g 60s 0c | 1g 60s 0c | volatile | 5 of 5 | 15 |  |
+| Plans: Barbaric Iron Boots | 7981 | 2g 99s 0c | 2026-11-09 05:47 UTC | 2g 99s 0c |  | too new | 1 of 5 | 2 |  |
 | Plans: Barbaric Iron Breastplate | 7979 | 1g 99s 0c | 2026-11-08 23:12 UTC | 1g 99s 0c |  | too new | 2 of 5 | 2 |  |
+| Plans: Barbaric Iron Gloves | 7982 | 10g 0s 0c | 2026-11-08 23:12 UTC | 10g 0s 0c |  | too new | 1 of 5 | 1 |  |
+| Plans: Barbaric Iron Helm | 7980 | 10g 0s 0c | 2026-11-08 23:12 UTC | 10g 0s 0c |  | too new | 1 of 5 | 1 |  |
+| Plans: Barbaric Iron Shoulders | 7978 | 10g 99s 0c | 2026-11-08 23:12 UTC | 10g 99s 0c |  | too new | 1 of 5 | 1 |  |
 | Plans: Blue Glittering Axe | 7992 | 22s 0c | 2026-11-08 23:12 UTC | 25s 0c | 25s 0c | moving | 3 of 5 | 31 |  |
 | Plans: Copper Chain Vest | 3609 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 399 |  |
+| Plans: Dark Iron Plate | 11612 | 5g 0s 0c | 2026-11-09 12:28 UTC | 5g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Plans: Dazzling Mithril Rapier | 7993 | 43s 0c | 2026-11-09 12:28 UTC | 43s 0c | 43s 0c | steady | 3 of 5 | 6 |  |
 | Plans: Deadly Bronze Poniard | 2883 | 4s 0c | 2026-11-08 23:12 UTC | 4s 0c | 4s 0c | steady | 5 of 5 | 174 |  |
 | Plans: Frost Tiger Blade | 3868 | 2g 0s 0c | 2026-11-09 12:28 UTC | 20s 0c | 20s 0c | moving | 4 of 5 | 26 |  |
@@ -38,6 +43,7 @@
 | Plans: Radiant Breastplate | 12689 | 2g 0s 0c | 2026-11-09 12:28 UTC | 1g 51s 0c |  | too new | 2 of 5 | 2 |  |
 | Plans: Runed Copper Breastplate | 2881 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 94 |  |
 | Plans: Runed Mithril Hammer | 8028 | 3g 95s 0c | 2026-11-09 12:28 UTC | 4g 47s 50c |  | too new | 2 of 5 | 2 |  |
+| Plans: Searing Golden Blade | 12261 | 10g 15s 0c | 2026-11-09 12:28 UTC | 10g 15s 0c |  | too new | 1 of 5 | 3 |  |
 | Plans: Shadow Crescent Axe | 3869 | 13s 0c | 2026-11-09 12:28 UTC | 22s 50c | 22s 50c | moving | 4 of 5 | 35 |  |
 | Plans: Silvered Bronze Breastplate | 5578 | 4s 0c | 2026-11-08 23:12 UTC | 3s 0c | 3s 0c | steady | 5 of 5 | 65 |  |
 | Plans: Silvered Bronze Leggings | 10424 | 9s 0c | 2026-11-09 12:28 UTC | 8s 0c | 8s 0c | steady | 5 of 5 | 36 |  |
@@ -46,5 +52,6 @@
 | Plans: Thorium Armor | 12682 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 23s 0c |  | too new | 2 of 5 | 2 |  |
 | Plans: Thorium Belt | 12683 | 46s 0c | 2026-11-09 12:28 UTC | 2g 96s 0c |  | too new | 2 of 5 | 2 |  |
 | Plans: Thorium Bracers | 12684 | 2g 0s 0c | 2026-11-09 12:28 UTC | 46s 0c |  | too new | 2 of 5 | 2 |  |
+| Plans: Thorium Leggings | 12704 | 5g 0s 0c | 2026-11-08 23:12 UTC | 5g 0s 0c |  | too new | 1 of 5 | 1 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

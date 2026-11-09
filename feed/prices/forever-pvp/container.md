@@ -9,6 +9,7 @@
 | Black Silk Pack | 5765 | 67s 0c | 2026-11-09 12:28 UTC | 83s 50c |  | too new | 2 of 5 | 80 |  |
 | Blue Leather Bag | 856 | 9s 0c | 2026-11-09 05:47 UTC | 11s 0c | 11s 0c | moving | 5 of 5 | 61 |  |
 | Brown Leather Satchel | 4498 | 8s 0c | 2026-11-09 12:28 UTC | 11s 50c | 11s 50c | moving | 4 of 5 | 48 |  |
+| Darkmoon Storage Box | 19291 | 7g 30s 0c | 2026-11-09 05:47 UTC | 7g 30s 0c |  | too new | 1 of 5 | 2 |  |
 | Enchanted Mageweave Pouch | 22246 | 3g 39s 0c | 2026-11-09 12:28 UTC | 4g 38s 0c | 4g 38s 0c | moving | 3 of 5 | 5 |  |
 | Gnoll Hide Sack | 3233 | 20s 0c | 2026-11-09 05:47 UTC | 20s 0c | 20s 0c | volatile | 5 of 5 | 6 |  |
 | Green Leather Bag | 5573 | 9s 0c | 2026-11-08 23:12 UTC | 11s 0c | 11s 0c | moving | 5 of 5 | 80 |  |

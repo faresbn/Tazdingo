@@ -18,6 +18,7 @@
 | Jagged Arrow | 11285 | 7c | 2026-11-09 12:28 UTC | 8c | 8c | moving | 3 of 5 | 5800 |  |
 | Light Shot | 2516 | 1c | 2026-11-08 23:12 UTC | 1c | 1c | steady | 5 of 5 | 19811 |  |
 | Mithril Gyro-Shot | 10513 | 1s 0c | 2026-11-09 05:47 UTC | 1s 0c |  | too new | 1 of 5 | 1200 |  |
+| Precision Arrow | 9399 | 1s 0c | 2026-11-09 12:28 UTC | 1s 0c |  | too new | 1 of 5 | 895 |  |
 | Razor Arrow | 3030 | 1c | 2026-11-09 12:28 UTC | 2c | 2c | volatile | 5 of 5 | 25208 |  |
 | Rough Arrow | 2512 | 1c | 2026-11-08 23:12 UTC | 1c | 1c | steady | 5 of 5 | 68938 |  |
 | Sharp Arrow | 2515 | 1c | 2026-11-09 12:28 UTC | 1c | 1c | steady | 5 of 5 | 73634 |  |

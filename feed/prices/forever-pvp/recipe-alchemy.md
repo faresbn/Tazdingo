@@ -13,6 +13,7 @@
 | Recipe: Elixir of Fortitude | 250370 | 1g 70s 0c | 2026-11-09 12:28 UTC | 1g 70s 0c | 1g 70s 0c | moving | 3 of 5 | 9 |  |
 | Recipe: Elixir of Giant Growth | 6663 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 248 |  |
 | Recipe: Elixir of Giants | 9298 | 90s 0c | 2026-11-09 12:28 UTC | 2g 18s 0c | 2g 18s 0c | volatile | 3 of 5 | 25 |  |
+| Recipe: Elixir of Greater Firepower | 21547 | 1g 55s 0c | 2026-11-09 12:28 UTC | 1g 55s 0c |  | too new | 1 of 5 | 10 |  |
 | Recipe: Elixir of Intellect | 250389 | 13s 0c | 2026-11-09 12:28 UTC | 15s 0c | 15s 0c | steady | 4 of 5 | 24 |  |
 | Recipe: Elixir of Lesser Agility | 3396 | 10s 0c | 2026-11-09 05:47 UTC | 10s 0c | 10s 0c | moving | 5 of 5 | 59 |  |
 | Recipe: Elixir of Lesser Fortitude | 3830 | 8s 0c | 2026-11-08 23:12 UTC | 10s 50c | 10s 50c | moving | 4 of 5 | 38 |  |
@@ -25,6 +26,7 @@
 | Recipe: Elixir of Superior Defense | 13478 | 2g 0s 0c | 2026-11-08 23:12 UTC | 2g 0s 0c | 2g 0s 0c | moving | 3 of 5 | 1 |  |
 | Recipe: Elixir of the Mongoose | 13491 | 20g 99s 0c | 2026-11-09 12:28 UTC | 15g 30s 0c |  | too new | 2 of 5 | 6 |  |
 | Recipe: Free Action Potion | 5642 | 25s 0c | 2026-11-09 12:28 UTC | 25s 0c | 25s 0c | steady | 5 of 5 | 29 |  |
+| Recipe: Gift of Arthas | 9296 | 100g 0s 0c | 2026-11-09 12:28 UTC | 100g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Recipe: Goblin Rocket Fuel | 10644 | 7g 50s 0c | 2026-11-09 12:28 UTC | 7g 50s 0c |  | too new | 2 of 5 | 11 |  |
 | Recipe: Great Rage Potion | 5643 | 47s 0c | 2026-11-09 12:28 UTC | 43s 0c | 43s 0c | moving | 5 of 5 | 13 |  |
 | Recipe: Greater Stoneshield Potion | 13490 | 20g 61s 0c | 2026-11-09 05:47 UTC | 20g 61s 0c |  | too new | 2 of 5 | 2 |  |
@@ -42,6 +44,7 @@
 | Recipe: Minor Mender's Potion | 250988 | 1g 0s 0c | 2026-11-09 12:28 UTC | 9s 0c | 9s 0c | volatile | 5 of 5 | 37 |  |
 | Recipe: Minor Spellblasting Potion | 250976 | 53s 0c | 2026-11-09 12:28 UTC | 3s 0c | 3s 0c | volatile | 5 of 5 | 53 |  |
 | Recipe: Philosopher's Stone | 9303 | 1g 19s 0c | 2026-11-09 12:28 UTC | 3g 0s 0c | 3g 0s 0c | volatile | 3 of 5 | 12 |  |
+| Recipe: Potion of Predatory Senses | 250363 | 9g 99s 0c | 2026-11-09 05:47 UTC | 9g 99s 0c |  | too new | 1 of 5 | 4 |  |
 | Recipe: Rage Potion | 5640 | 7s 0c | 2026-11-09 12:28 UTC | 6s 0c | 6s 0c | moving | 5 of 5 | 55 |  |
 | Recipe: Superior Mana Potion | 13477 | 1g 99s 0c | 2026-11-09 12:28 UTC | 1g 99s 0c | 1g 99s 0c | volatile | 3 of 5 | 6 |  |
 | Recipe: Superior Mender's Potion | 250992 | 5g 1s 0c | 2026-11-09 05:47 UTC | 52g 50s 50c |  | too new | 2 of 5 | 2 |  |

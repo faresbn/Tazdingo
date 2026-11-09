@@ -11,6 +11,7 @@
 | Manual: Clever Poultice | 255724 | 1g 27s 0c | 2026-11-09 12:28 UTC | 1g 98s 0c | 1g 98s 0c | volatile | 3 of 5 | 7 |  |
 | Manual: Greater Healing Potion | 255723 | 5s 0c | 2026-11-08 23:12 UTC | 5s 50c | 5s 50c | steady | 4 of 5 | 124 |  |
 | Manual: Heavy Silk Bandage | 16112 | 34s 0c | 2026-11-09 12:28 UTC | 31s 0c | 31s 0c | steady | 5 of 5 | 198 |  |
+| Manual: Leather Tourniquet | 255726 | 19s 0c | 2026-11-09 12:28 UTC | 19s 0c |  | too new | 1 of 5 | 1 |  |
 | Manual: Mageweave Bandage | 16113 | 62s 0c | 2026-11-09 12:28 UTC | 52s 0c | 52s 0c | volatile | 5 of 5 | 89 |  |
 | Manual: Potent Anti-Venom | 255728 | 20s 0c | 2026-11-09 05:47 UTC | 37s 50c | 37s 50c | volatile | 4 of 5 | 30 |  |
 | Manual: Strong Anti-Venom | 6454 | 9s 0c | 2026-11-09 12:28 UTC | 9s 0c | 9s 0c | volatile | 5 of 5 | 62 |  |

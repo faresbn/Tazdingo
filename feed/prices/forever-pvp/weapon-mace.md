@@ -18,13 +18,17 @@
 | Billy Club | 4563 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 49 |  |
 | Birchwood Maul | 4570 | 10s 0c | 2026-11-08 23:12 UTC | 9s 0c | 9s 0c | moving | 5 of 5 | 473 |  |
 | Black Malice | 3194 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c | 1g 0s 0c | steady | 5 of 5 | 26 |  |
+| Blesswind Hammer | 15229 | 8g 79s 0c | 2026-11-09 12:28 UTC | 8g 79s 0c |  | too new | 1 of 5 | 1 |  |
 | Bludgeoning Cudgel | 1823 | 8s 0c | 2026-11-08 23:12 UTC | 8s 0c | 8s 0c | steady | 4 of 5 | 7 |  |
+| Broken Wine Bottle | 6651 | 10g 0s 0c | 2026-11-08 23:12 UTC | 10g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Bronze Mace | 2848 | 13s 0c | 2026-11-09 12:28 UTC | 14s 0c | 14s 0c | steady | 5 of 5 | 65 |  |
 | Bronze Warhammer | 7956 | 16s 0c | 2026-11-08 23:12 UTC | 16s 0c | 16s 0c | steady | 5 of 5 | 121 |  |
 | Bruiser Club | 4439 | 28s 0c | 2026-11-09 12:28 UTC | 28s 0c | 28s 0c | moving | 5 of 5 | 9 |  |
 | Bulky Bludgeon | 1825 | 18s 0c | 2026-11-09 12:28 UTC | 19s 0c | 19s 0c | moving | 3 of 5 | 13 |  |
 | Carpenter's Mallet | 1415 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 28 |  |
 | Cobalt Crusher | 7730 | 6g 99s 0c | 2026-11-09 12:28 UTC | 9g 42s 0c | 9g 42s 0c | moving | 3 of 5 | 6 |  |
+| Combat Tuning Wrench | 282550 | 4g 0s 0c | 2026-11-09 12:28 UTC | 4g 0s 0c |  | too new | 1 of 5 | 1 |  |
+| Conk Hammer | 3208 | 7g 59s 0c | 2026-11-09 05:47 UTC | 7g 59s 0c |  | too new | 1 of 5 | 1 |  |
 | Copper Mace | 2844 | 2s 0c | 2026-11-09 05:47 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 22 |  |
 | Cracked Sledge | 1414 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 32 |  |
 | Cranial Thumper | 4303 | 11s 0c | 2026-11-09 12:28 UTC | 9s 0c | 9s 0c | moving | 5 of 5 | 12 |  |
@@ -48,6 +52,7 @@
 | Goblin Nutcracker | 8194 | 2g 25s 0c | 2026-11-09 12:28 UTC | 2g 60s 0c | 2g 60s 0c | moving | 3 of 5 | 6 |  |
 | Golden Iron Destroyer | 3852 | 3g 26s 0c | 2026-11-09 12:28 UTC | 3g 26s 0c |  | too new | 2 of 5 | 6 |  |
 | Greater Maul | 15262 | 3g 19s 0c | 2026-11-09 12:28 UTC | 3g 85s 50c |  | too new | 2 of 5 | 4 |  |
+| Hammer of the Northern Wind | 810 | 39g 99s 0c | 2026-11-08 23:12 UTC | 39g 99s 0c |  | too new | 1 of 5 | 1 |  |
 | Heaven's Light | 13026 | 6g 99s 0c | 2026-11-09 12:28 UTC | 9g 0s 0c | 9g 0s 0c | volatile | 3 of 5 | 5 |  |
 | Heavy Bronze Mace | 3491 | 48s 0c | 2026-11-09 12:28 UTC | 57s 0c | 57s 0c | steady | 5 of 5 | 23 |  |
 | Heavy Copper Maul | 6214 | 16s 0c | 2026-11-09 12:28 UTC | 10s 0c | 10s 0c | moving | 5 of 5 | 78 |  |
@@ -68,6 +73,7 @@
 | Midnight Mace | 936 | 2g 50s 0c | 2026-11-09 12:28 UTC | 3g 0s 0c | 3g 0s 0c | volatile | 3 of 5 | 10 |  |
 | Mighty Iron Hammer | 3492 | 1g 25s 0c | 2026-11-09 12:28 UTC | 90s 0c |  | too new | 2 of 5 | 24 |  |
 | Mithril Warhammer | 250608 | 3g 75s 0c | 2026-11-09 12:28 UTC | 1g 75s 0c |  | too new | 1 of 5 | 9 |  |
+| Mug O' Hurt | 4090 | 7g 12s 0c | 2026-11-09 05:47 UTC | 7g 12s 0c |  | too new | 1 of 5 | 2 |  |
 | Murphstar | 1207 | 1g 50s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c | 1g 0s 0c | steady | 3 of 5 | 14 |  |
 | Oak Mallet | 3193 | 21s 0c | 2026-11-08 23:12 UTC | 21s 0c | 21s 0c | steady | 5 of 5 | 45 |  |
 | Ornamental Mace | 1815 | 4s 0c | 2026-11-08 23:12 UTC | 4s 0c | 4s 0c | steady | 5 of 5 | 35 |  |
@@ -92,13 +98,16 @@
 | Spiked Club | 4564 | 7s 0c | 2026-11-08 23:12 UTC | 7s 0c | 7s 0c | moving | 5 of 5 | 628 |  |
 | Spiked Wooden Plank | 3329 | 4s 0c | 2026-11-06 14:50 UTC | 3s 50c |  | too new | 2 of 5 | 1 |  |
 | Staunch Hammer | 4569 | 7s 0c | 2026-11-08 23:12 UTC | 6s 0c | 6s 0c | moving | 5 of 5 | 703 |  |
+| Stone Club | 3787 | 65s 0c | 2026-11-09 05:47 UTC | 65s 0c |  | too new | 1 of 5 | 3 |  |
 | Stone Hammer | 15260 | 1g 16s 0c | 2026-11-09 12:28 UTC | 1g 40s 0c | 1g 40s 0c | moving | 4 of 5 | 16 |  |
 | Stout Battlehammer | 789 | 20s 0c | 2026-11-08 23:12 UTC | 20s 0c | 20s 0c | steady | 5 of 5 | 58 |  |
 | Supreme Smasher | 287015 | 30g 14s 0c | 2026-11-09 12:28 UTC | 49g 7s 0c |  | too new | 2 of 5 | 2 |  |
 | The Pacifier | 6327 | 80g 0s 0c | 2026-11-08 23:12 UTC | 56g 96s 50c |  | too new | 2 of 5 | 1 |  |
+| The Shoveler | 9391 | 15g 95s 0c | 2026-11-09 12:28 UTC | 10g 0s 0c |  | too new | 1 of 5 | 2 |  |
 | Thornstone Sledgehammer | 1722 | 19g 99s 0c | 2026-11-09 05:47 UTC | 22g 96s 0c |  | too new | 2 of 5 | 4 |  |
 | Thunderstomp's Horn | 286537 | 35s 0c | 2026-11-08 23:12 UTC | 37s 0c | 37s 0c | steady | 5 of 5 | 15 |  |
 | Viscous Hammer | 13045 | 6g 40s 0c | 2026-11-09 12:28 UTC | 7g 49s 0c | 7g 49s 0c | steady | 4 of 5 | 16 |  |
+| Weighted Sap | 1926 | 15s 0c | 2026-11-09 05:47 UTC | 15s 0c |  | too new | 1 of 5 | 1 |  |
 | Wicked Blackjack | 827 | 15s 0c | 2026-11-08 16:27 UTC | 31s 0c |  | too new | 2 of 5 | 1 |  |
 | Wicked Spiked Mace | 920 | 50s 0c | 2026-11-09 12:28 UTC | 43s 0c | 43s 0c | steady | 3 of 5 | 2 |  |
 | Wooden Mallet | 2493 | 5s 0c | 2026-11-09 05:47 UTC | 4s 0c | 4s 0c | moving | 5 of 5 | 10 |  |

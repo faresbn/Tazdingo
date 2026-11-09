@@ -9,6 +9,7 @@
 | Blueprint: Arcane Salvager | 273103 | 1g 0s 0c | 2026-11-09 12:28 UTC | 83s 0c | 83s 0c | moving | 4 of 5 | 41 |  |
 | Formula: Enchant 2H Weapon - Lesser Intellect | 6349 | 9s 0c | 2026-11-09 05:47 UTC | 10s 0c | 10s 0c | moving | 5 of 5 | 28 |  |
 | Formula: Enchant 2H Weapon - Lesser Spirit | 11038 | 3s 0c | 2026-11-08 23:12 UTC | 3s 0c | 3s 0c | moving | 5 of 5 | 77 |  |
+| Formula: Enchant Boots - Greater Agility | 16245 | 13g 99s 0c | 2026-11-09 12:28 UTC | 13g 99s 0c |  | too new | 1 of 5 | 2 |  |
 | Formula: Enchant Boots - Greater Stamina | 16215 | 5g 85s 0c | 2026-11-09 12:28 UTC | 4g 92s 50c |  | too new | 2 of 5 | 6 |  |
 | Formula: Enchant Boots - Lesser Spirit | 11167 | 11s 0c | 2026-11-09 05:47 UTC | 14s 50c | 14s 50c | moving | 4 of 5 | 34 |  |
 | Formula: Enchant Boots - Minor Agility | 6377 | 4s 0c | 2026-11-08 23:12 UTC | 5s 0c | 5s 0c | moving | 5 of 5 | 71 |  |
@@ -29,10 +30,12 @@
 | Formula: Enchant Gloves - Advanced Herbalism | 11205 | 7g 99s 0c | 2026-11-09 12:28 UTC | 11g 99s 0c |  | too new | 2 of 5 | 3 |  |
 | Formula: Enchant Gloves - Advanced Mining | 11203 | 20s 0c | 2026-11-09 12:28 UTC | 27s 0c | 27s 0c | volatile | 3 of 5 | 74 |  |
 | Formula: Enchant Gloves - Fishing | 11152 | 8s 0c | 2026-11-08 23:12 UTC | 9s 0c | 9s 0c | steady | 4 of 5 | 112 |  |
+| Formula: Enchant Gloves - Greater Agility | 16219 | 10g 0s 0c | 2026-11-09 12:28 UTC | 10g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Formula: Enchant Gloves - Herbalism | 11151 | 90s 0c | 2026-11-09 12:28 UTC | 21s 50c | 21s 50c | volatile | 4 of 5 | 30 |  |
 | Formula: Enchant Gloves - Mining | 11150 | 1g 88s 0c | 2026-11-09 12:28 UTC | 60s 0c | 60s 0c | moving | 4 of 5 | 8 |  |
 | Formula: Enchant Gloves - Riding Skill | 11226 | 25g 20s 0c | 2026-11-09 05:47 UTC | 22g 72s 0c |  | too new | 2 of 5 | 2 |  |
 | Formula: Enchant Gloves - Skinning | 11166 | 10s 0c | 2026-11-08 23:12 UTC | 14s 50c | 14s 50c | moving | 4 of 5 | 48 |  |
+| Formula: Enchant Shield - Frost Resistance | 11224 | 98s 0c | 2026-11-09 12:28 UTC | 98s 0c |  | too new | 1 of 5 | 2 |  |
 | Formula: Enchant Shield - Lesser Block | 11168 | 13g 25s 0c | 2026-11-09 12:28 UTC | 13g 25s 0c | 13g 25s 0c | moving | 3 of 5 | 5 |  |
 | Formula: Enchant Shield - Lesser Protection | 11081 | 3s 0c | 2026-11-08 23:12 UTC | 3s 0c | 3s 0c | moving | 5 of 5 | 90 |  |
 | Formula: Enchant Shield - Stamina | 11202 | 14s 0c | 2026-11-09 12:28 UTC | 63s 50c | 63s 50c | volatile | 4 of 5 | 30 |  |

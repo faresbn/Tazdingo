@@ -14,11 +14,13 @@
 | Cedar Walking Stick | 1822 | 11s 0c | 2026-11-08 23:12 UTC | 12s 0c | 12s 0c | steady | 4 of 5 | 11 |  |
 | Channeler's Staff | 4437 | 38s 0c | 2026-11-09 12:28 UTC | 41s 50c | 41s 50c | steady | 4 of 5 | 7 |  |
 | Chipped Quarterstaff | 1813 | 6s 0c | 2026-11-08 23:12 UTC | 6s 0c | 6s 0c | steady | 5 of 5 | 43 |  |
+| Diviner Long Staff | 15274 | 10g 0s 0c | 2026-11-08 23:12 UTC | 10g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Dwarven Magestaff | 2072 | 44s 0c | 2026-11-09 12:28 UTC | 45s 0c | 45s 0c | steady | 4 of 5 | 85 |  |
 | Elunar Longstaff | 263935 | 1g 13s 0c | 2026-11-08 17:40 UTC | 69s 0c |  | too new | 2 of 5 | 2 |  |
 | Farmer's Broom | 3335 | 19s 0c | 2026-11-09 05:47 UTC | 8s 0c | 8s 0c | volatile | 5 of 5 | 7 |  |
 | Foamspittle Staff | 1405 | 40s 0c | 2026-11-08 16:27 UTC | 40s 0c |  | too new | 1 of 5 | 1 |  |
 | Frostbitten Staff | 284704 | 50s 0c | 2026-11-09 05:47 UTC | 47s 50c | 47s 50c | steady | 4 of 5 | 1 |  |
+| Glowing Brightwood Staff | 812 | 145g 56s 0c | 2026-11-09 05:47 UTC | 145g 56s 0c |  | too new | 1 of 5 | 1 |  |
 | Gnarled Ash Staff | 791 | 99s 0c | 2026-11-09 12:28 UTC | 1g 62s 50c | 1g 62s 50c | volatile | 4 of 5 | 15 |  |
 | Gnarled Hermit's Staff | 1539 | 19s 0c | 2026-11-09 05:47 UTC | 19s 0c | 19s 0c | steady | 5 of 5 | 20 |  |
 | Gnarled Staff | 2030 | 30s 0c | 2026-11-08 23:12 UTC | 34s 0c | 34s 0c | steady | 4 of 5 | 4 |  |
@@ -43,10 +45,12 @@
 | Staff of the Shade | 2549 | 2g 99s 0c | 2026-11-09 12:28 UTC | 2g 99s 0c | 2g 99s 0c | volatile | 3 of 5 | 21 |  |
 | Sturdy Quarterstaff | 4566 | 7s 0c | 2026-11-08 23:12 UTC | 7s 0c | 7s 0c | moving | 5 of 5 | 213 |  |
 | Tactician's Staff | 215375 | 22s 0c | 2026-11-09 12:28 UTC | 25s 0c | 25s 0c | volatile | 3 of 5 | 31 |  |
+| Tanglewood Staff | 1720 | 10g 0s 0c | 2026-11-09 12:28 UTC | 10g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Twisted Chanter's Staff | 890 | 53s 0c | 2026-11-09 12:28 UTC | 53s 0c | 53s 0c | moving | 5 of 5 | 35 |  |
 | Ukta's Conduit | 286754 | 40s 0c | 2026-11-08 23:12 UTC | 24s 0c | 24s 0c | moving | 5 of 5 | 10 |  |
 | Vile Fin Oracle Staff | 3327 | 3s 0c | 2026-11-09 05:47 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 22 |  |
 | Walking Stick | 2495 | 5s 0c | 2026-11-08 20:10 UTC | 2s 0c | 2s 0c | steady | 3 of 5 | 1 |  |
+| Warden Staff | 943 | 80g 0s 0c | 2026-11-09 05:47 UTC | 80g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Windweaver Staff | 7757 | 4g 50s 0c | 2026-11-09 12:28 UTC | 7g 0s 0c | 7g 0s 0c | volatile | 3 of 5 | 5 |  |
 | Witching Stave | 1484 | 3g 79s 0c | 2026-11-09 12:28 UTC | 1g 33s 50c | 1g 33s 50c | steady | 4 of 5 | 16 |  |
 | Withered Staff | 1411 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 31 |  |

@@ -4,8 +4,9 @@ Estimated listing margins: what the item lists for against what its reagents cos
 
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
-| Arcane Salvager | 140 | 279985 | 1 | 3g 77s 99c | 2g 9s 50c | 1g 68s 49c | ForeverDB |
-| Lesser Wizard Oil | 200 | 20746 | 1 | 38s 50c | 28s 50c | 10s 0c | ForeverDB |
+| Arcane Salvager | 140 | 279985 | 1 | 1g 77s 99c | 1g 54s 26c | 23s 73c | ForeverDB |
+| Lesser Wizard Oil | 200 | 20746 | 1 | 37s 0c | 28s 17c | 8s 83c | ForeverDB |
+| Lesser Mystic Wand | 155 | 11289 | 1 | 59s 50c | 58s 87c | 63c | our scan |
 | Novice's Practice Wand | 1 | 247789 | 1 | 1s 0c | 48c | 52c | our scan |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

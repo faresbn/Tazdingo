@@ -9,6 +9,8 @@
 | Abandoned Leggings | 286986 | 87s 0c | 2026-11-09 12:28 UTC | 88s 50c | 88s 50c | steady | 4 of 5 | 10 |  |
 | Abjurer's Bands | 9937 | 61s 0c | 2026-11-06 14:50 UTC | 61s 0c |  | too new | 1 of 5 | 1 |  |
 | Abjurer's Boots | 9936 | 3g 97s 0c | 2026-11-09 12:28 UTC | 4g 97s 0c |  | too new | 2 of 5 | 1 |  |
+| Abjurer's Gloves | 9939 | 6g 65s 0c | 2026-11-08 23:12 UTC | 6g 65s 0c |  | too new | 1 of 5 | 1 |  |
+| Abjurer's Hood | 9940 | 2g 0s 0c | 2026-11-09 05:47 UTC | 2g 0s 0c |  | too new | 1 of 5 | 2 |  |
 | Abjurer's Mantle | 9941 | 2g 94s 0c | 2026-11-09 12:28 UTC | 2g 72s 0c |  | too new | 2 of 5 | 2 |  |
 | Abjurer's Pants | 9942 | 1g 35s 0c | 2026-11-09 12:28 UTC | 1g 38s 0c |  | too new | 2 of 5 | 2 |  |
 | Abjurer's Sash | 9945 | 2g 0s 0c | 2026-11-08 16:27 UTC | 2g 0s 0c |  | too new | 1 of 5 | 2 |  |
@@ -92,14 +94,17 @@
 | Blackflame Cape | 13109 | 13g 23s 0c | 2026-11-08 23:12 UTC | 24g 23s 0c |  | too new | 2 of 5 | 1 |  |
 | Blackforge Cape | 6424 | 60s 0c | 2026-11-09 12:28 UTC | 74s 50c |  | too new | 2 of 5 | 8 |  |
 | Bloodspattered Cloak | 15490 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | moving | 5 of 5 | 27 |  |
+| Bloodwoven Boots | 14259 | 2g 0s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c |  | too new | 1 of 5 | 3 |  |
 | Bloodwoven Bracers | 14260 | 70s 0c | 2026-11-09 05:47 UTC | 1g 85s 0c |  | too new | 2 of 5 | 2 |  |
 | Bloodwoven Cloak | 14261 | 1g 11s 0c | 2026-11-09 12:28 UTC | 1g 30s 50c |  | too new | 2 of 5 | 3 |  |
 | Bloodwoven Cord | 14258 | 2g 70s 0c | 2026-11-08 23:12 UTC | 2g 72s 50c |  | too new | 2 of 5 | 2 |  |
 | Bloodwoven Mitts | 14262 | 2g 0s 0c | 2026-11-08 23:12 UTC | 2g 0s 0c |  | too new | 2 of 5 | 2 |  |
 | Bloodwoven Pads | 14266 | 2g 0s 0c | 2026-11-09 12:28 UTC | 16g 0s 0c |  | too new | 2 of 5 | 2 |  |
+| Bloodwoven Pants | 14264 | 3g 21s 0c | 2026-11-09 05:47 UTC | 3g 21s 0c |  | too new | 1 of 5 | 1 |  |
 | Blue Linen Robe | 6242 | 3s 0c | 2026-11-09 12:28 UTC | 3s 0c | 3s 0c | moving | 5 of 5 | 54 |  |
 | Blue Linen Vest | 6240 | 3s 0c | 2026-11-08 23:12 UTC | 3s 0c | 3s 0c | moving | 5 of 5 | 153 |  |
 | Blue Overalls | 6263 | 11s 0c | 2026-11-09 12:28 UTC | 21s 0c | 21s 0c | moving | 5 of 5 | 48 |  |
+| Bonelink Cape | 15611 | 2g 66s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Boots of the Enchanter | 4325 | 40s 0c | 2026-11-09 12:28 UTC | 50s 0c | 50s 0c | volatile | 3 of 5 | 10 |  |
 | Brackwater Cloak | 4680 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 19 |  |
 | Brawler's Boots | 140 | 1s 0c | 2026-11-06 14:50 UTC | 1s 0c |  | too new | 2 of 5 | 2 |  |
@@ -157,7 +162,10 @@
 | Canvas Shoulderpads | 1769 | 4s 0c | 2026-11-09 12:28 UTC | 4s 0c | 4s 0c | moving | 5 of 5 | 48 |  |
 | Canvas Vest | 1770 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 4 of 5 | 32 |  |
 | Captain's Cloak | 7492 | 44s 0c | 2026-11-09 12:28 UTC | 45s 0c | 45s 0c | volatile | 3 of 5 | 13 |  |
+| Cassandra's Grace | 13102 | 15g 0s 0c | 2026-11-08 23:12 UTC | 15g 0s 0c |  | too new | 1 of 5 | 2 |  |
 | Ceremonial Cloak | 4692 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 16 |  |
+| Champion's Cape | 7544 | 99s 0c | 2026-11-09 05:47 UTC | 99s 0c |  | too new | 1 of 5 | 3 |  |
+| Chan's Imperial Robes | 17050 | 15g 89s 0c | 2026-11-09 05:47 UTC | 15g 89s 0c |  | too new | 1 of 5 | 1 |  |
 | Charger's Cloak | 15475 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 7 |  |
 | Chief Brigadier Cloak | 4726 | 27s 0c | 2026-11-09 12:28 UTC | 31s 0c | 31s 0c | volatile | 3 of 5 | 46 |  |
 | Chieftain's Cloak | 9951 | 2g 2s 0c | 2026-11-09 12:28 UTC | 2g 1s 0c |  | too new | 2 of 5 | 1 |  |
@@ -199,12 +207,16 @@
 | Dark Hooded Cape | 5257 | 6g 69s 0c | 2026-11-09 12:28 UTC | 7g 9s 50c | 7g 9s 50c | moving | 4 of 5 | 4 |  |
 | Dark Leather Cloak | 2316 | 5s 0c | 2026-11-08 23:12 UTC | 5s 0c | 5s 0c | steady | 5 of 5 | 1145 |  |
 | Dark Runner Boots | 2232 | 19s 0c | 2026-11-08 16:27 UTC | 19s 0c |  | too new | 1 of 5 | 3 |  |
+| Darkmist Armor | 14237 | 3g 0s 0c | 2026-11-09 05:47 UTC | 3g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Darkmist Bands | 14240 | 1g 98s 0c | 2026-11-09 12:28 UTC | 2g 49s 0c |  | too new | 2 of 5 | 6 |  |
 | Darkmist Boots | 14238 | 1g 0s 0c | 2026-11-09 12:28 UTC | 99s 50c |  | too new | 2 of 5 | 4 |  |
 | Darkmist Cape | 14239 | 99s 0c | 2026-11-09 12:28 UTC | 99s 0c |  | too new | 2 of 5 | 4 |  |
 | Darkmist Girdle | 14245 | 99s 0c | 2026-11-09 12:28 UTC | 1g 36s 0c | 1g 36s 0c | volatile | 3 of 5 | 1 |  |
 | Darkmist Handguards | 14241 | 3g 0s 0c | 2026-11-09 12:28 UTC | 1g 90s 0c |  | too new | 2 of 5 | 2 |  |
 | Darkmist Mantle | 14243 | 1g 15s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c | 2g 0s 0c | moving | 3 of 5 | 3 |  |
+| Darkmist Pants | 14242 | 9g 99s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c |  | too new | 1 of 5 | 3 |  |
+| Darkmist Wizard Hat | 14246 | 3g 0s 0c | 2026-11-09 12:28 UTC | 2g 75s 0c |  | too new | 1 of 5 | 3 |  |
+| Darkmist Wraps | 14244 | 1g 50s 0c | 2026-11-09 12:28 UTC | 1g 50s 0c |  | too new | 1 of 5 | 1 |  |
 | Darkweave Breeches | 12987 | 89s 0c | 2026-11-09 12:28 UTC | 83s 0c | 83s 0c | steady | 5 of 5 | 26 |  |
 | Death's Head Vestment | 10581 | 9g 80s 0c | 2026-11-09 05:47 UTC | 3g 65s 0c |  | too new | 2 of 5 | 1 |  |
 | Deep Flora Bindings | 286998 | 6g 97s 0c | 2026-11-09 05:47 UTC | 7g 48s 50c |  | too new | 2 of 5 | 6 |  |
@@ -213,6 +225,7 @@
 | Depth-Risen Leggings | 286997 | 4g 0s 0c | 2026-11-09 12:28 UTC | 6g 50s 0c | 6g 50s 0c | moving | 3 of 5 | 6 |  |
 | Dervish Cape | 6604 | 12s 0c | 2026-11-08 23:12 UTC | 12s 0c | 12s 0c | steady | 5 of 5 | 21 |  |
 | Deviate Scale Cloak | 6466 | 5s 0c | 2026-11-08 23:12 UTC | 6s 0c | 6s 0c | moving | 5 of 5 | 46 |  |
+| Devout Belt | 16696 | 9g 36s 0c | 2026-11-09 05:47 UTC | 9g 36s 0c |  | too new | 1 of 5 | 1 |  |
 | Disciple's Boots | 7351 | 1s 0c | 2026-11-09 12:28 UTC | 2s 0c | 2s 0c | moving | 5 of 5 | 14 |  |
 | Disciple's Bracers | 7350 | 2s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | volatile | 5 of 5 | 5 |  |
 | Disciple's Cloak | 6514 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 13 |  |
@@ -288,6 +301,7 @@
 | Flying Tiger Goggles | 4368 | 5s 0c | 2026-11-08 23:12 UTC | 5s 0c | 5s 0c | steady | 5 of 5 | 154 |  |
 | Forest Cloak | 4710 | 8s 0c | 2026-11-09 12:28 UTC | 8s 0c | 8s 0c | volatile | 5 of 5 | 25 |  |
 | Forgotten Wraps | 9433 | 5g 62s 0c | 2026-11-08 23:12 UTC | 5g 31s 0c |  | too new | 2 of 5 | 1 |  |
+| Formidable Cape | 15632 | 3g 0s 0c | 2026-11-09 12:28 UTC | 3g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Fortified Cloak | 9812 | 6s 0c | 2026-11-08 23:12 UTC | 9s 0c | 9s 0c | moving | 5 of 5 | 26 |  |
 | Frayed Belt | 3363 | 1s 0c | 2026-11-07 04:40 UTC | 1s 0c |  | too new | 2 of 5 | 2 |  |
 | Frayed Bracers | 3365 | 4s 0c | 2026-11-09 05:47 UTC | 2s 0c | 2s 0c | volatile | 5 of 5 | 7 |  |
@@ -328,6 +342,7 @@
 | Gossamer Gloves | 7521 | 1g 9s 0c | 2026-11-09 12:28 UTC | 1g 54s 50c |  | too new | 2 of 5 | 2 |  |
 | Gossamer Headpiece | 7520 | 2g 55s 0c | 2026-11-09 12:28 UTC | 1g 77s 50c |  | too new | 2 of 5 | 3 |  |
 | Gossamer Pants | 7519 | 4g 80s 0c | 2026-11-09 12:28 UTC | 6g 40s 0c |  | too new | 2 of 5 | 3 |  |
+| Gossamer Robe | 7518 | 2g 98s 0c | 2026-11-09 05:47 UTC | 2g 98s 0c |  | too new | 1 of 5 | 1 |  |
 | Gossamer Shoulderpads | 7523 | 1g 50s 0c | 2026-11-09 12:28 UTC | 2g 12s 50c |  | too new | 2 of 5 | 4 |  |
 | Gossamer Tunic | 7517 | 4g 0s 0c | 2026-11-09 12:28 UTC | 4g 0s 0c |  | too new | 2 of 5 | 2 |  |
 | Gray Woolen Robe | 2585 | 18s 0c | 2026-11-09 12:28 UTC | 20s 0c | 20s 0c | moving | 5 of 5 | 32 |  |
@@ -349,6 +364,7 @@
 | Greenweave Vest | 9774 | 14s 0c | 2026-11-08 23:12 UTC | 14s 0c | 14s 0c | steady | 5 of 5 | 24 |  |
 | Grizzly Cape | 15299 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 19 |  |
 | Grunt's Cape | 15508 | 4s 0c | 2026-11-08 23:12 UTC | 4s 0c | 4s 0c | moving | 5 of 5 | 68 |  |
+| Gryphon Cloak | 15624 | 2g 0s 0c | 2026-11-09 12:28 UTC | 1g 75s 0c |  | too new | 1 of 5 | 5 |  |
 | Guardian Cloak | 5965 | 74s 0c | 2026-11-09 12:28 UTC | 70s 0c |  | too new | 2 of 5 | 26 |  |
 | Hands of Darkness | 7047 | 55s 0c | 2026-11-09 12:28 UTC | 80s 0c | 80s 0c | volatile | 3 of 5 | 38 |  |
 | Handstitched Leather Cloak | 7276 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 456 |  |
@@ -373,7 +389,10 @@
 | Hibernal Bracers | 8108 | 1g 85s 0c | 2026-11-08 23:12 UTC | 2g 20s 0c |  | too new | 2 of 5 | 2 |  |
 | Hibernal Cowl | 8115 | 5g 0s 0c | 2026-11-09 12:28 UTC | 1g 50s 0c |  | too new | 2 of 5 | 1 |  |
 | Hibernal Gloves | 8110 | 1g 30s 0c | 2026-11-09 12:28 UTC | 1g 65s 0c |  | too new | 2 of 5 | 1 |  |
+| Hibernal Mantle | 8111 | 1g 50s 0c | 2026-11-09 12:28 UTC | 1g 50s 0c |  | too new | 1 of 5 | 3 |  |
 | Hibernal Pants | 8112 | 2g 99s 0c | 2026-11-09 05:47 UTC | 2g 27s 0c |  | too new | 2 of 5 | 1 |  |
+| Hibernal Sash | 8114 | 2g 49s 0c | 2026-11-09 12:28 UTC | 2g 49s 0c |  | too new | 1 of 5 | 3 |  |
+| Highborne Bracelets | 14448 | 1g 70s 0c | 2026-11-09 12:28 UTC | 1g 70s 0c |  | too new | 1 of 5 | 2 |  |
 | Hillman's Cloak | 3719 | 11s 0c | 2026-11-09 12:28 UTC | 11s 0c | 11s 0c | volatile | 5 of 5 | 226 |  |
 | Hippogryph Down Leggings | 284847 | 3g 0s 0c | 2026-11-08 23:12 UTC | 2g 23s 50c |  | too new | 2 of 5 | 1 |  |
 | Holy Shroud | 2721 | 1g 80s 0c | 2026-11-09 12:28 UTC | 2g 21s 50c | 2g 21s 50c | moving | 4 of 5 | 18 |  |
@@ -383,14 +402,20 @@
 | Hunting Cloak | 4689 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 18 |  |
 | Huntsman's Cape | 9890 | 35s 0c | 2026-11-09 05:47 UTC | 43s 0c | 43s 0c | volatile | 3 of 5 | 22 |  |
 | Icy Cloak | 4327 | 3g 99s 0c | 2026-11-09 12:28 UTC | 3g 99s 0c |  | too new | 1 of 5 | 12 |  |
+| Impenetrable Cloak | 15661 | 3g 0s 0c | 2026-11-09 05:47 UTC | 3g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Imperial Cloak | 6432 | 1g 29s 0c | 2026-11-09 12:28 UTC | 94s 50c |  | too new | 2 of 5 | 10 |  |
 | Imperial Red Cloak | 8248 | 3g 90s 0c | 2026-11-09 12:28 UTC | 3g 90s 0c |  | too new | 2 of 5 | 2 |  |
 | Imperial Red Gloves | 8249 | 1g 81s 0c | 2026-11-09 12:28 UTC | 1g 95s 50c |  | too new | 2 of 5 | 1 |  |
+| Imposing Cape | 15165 | 1g 90s 0c | 2026-11-09 12:28 UTC | 1g 90s 0c |  | too new | 1 of 5 | 3 |  |
 | Infantry Cloak | 6508 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 10 |  |
 | Inferno Cloak | 4790 | 42s 0c | 2026-11-08 23:12 UTC | 42s 50c | 42s 50c | steady | 4 of 5 | 6 |  |
 | Infiltrator Cloak | 7411 | 20s 0c | 2026-11-08 23:12 UTC | 20s 0c | 20s 0c | steady | 4 of 5 | 12 |  |
 | Inscribed Cloak | 4701 | 3s 0c | 2026-11-08 23:12 UTC | 3s 0c | 3s 0c | steady | 5 of 5 | 203 |  |
 | Insignia Cloak | 4722 | 23s 0c | 2026-11-09 12:28 UTC | 24s 50c | 24s 50c | steady | 4 of 5 | 18 |  |
+| Interlaced Belt | 3792 | 8s 0c | 2026-11-09 05:47 UTC | 8s 0c |  | too new | 1 of 5 | 1 |  |
+| Interlaced Boots | 3793 | 10s 0c | 2026-11-09 05:47 UTC | 10s 0c |  | too new | 1 of 5 | 1 |  |
+| Interlaced Bracers | 3794 | 12s 0c | 2026-11-09 05:47 UTC | 12s 0c |  | too new | 1 of 5 | 1 |  |
+| Interlaced Cloak | 3795 | 15s 0c | 2026-11-08 23:12 UTC | 15s 0c |  | too new | 1 of 5 | 1 |  |
 | Interlaced Cowl | 8746 | 20s 0c | 2026-11-09 12:28 UTC | 22s 0c | 22s 0c | steady | 3 of 5 | 16 |  |
 | Interlaced Pants | 3797 | 26s 0c | 2026-11-09 12:28 UTC | 24s 0c |  | too new | 2 of 5 | 1 |  |
 | Interlaced Shoulderpads | 3798 | 14s 0c | 2026-11-08 23:12 UTC | 14s 0c | 14s 0c | steady | 3 of 5 | 5 |  |
@@ -414,7 +439,9 @@
 | Journeyman's Pants | 2958 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | moving | 5 of 5 | 276 |  |
 | Journeyman's Robe | 6511 | 3s 0c | 2026-11-09 12:28 UTC | 3s 0c | 3s 0c | moving | 5 of 5 | 99 |  |
 | Journeyman's Vest | 2957 | 5s 0c | 2026-11-09 12:28 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 118 |  |
+| Keeper's Cloak | 14665 | 2g 67s 0c | 2026-11-08 23:12 UTC | 2g 67s 0c |  | too new | 1 of 5 | 1 |  |
 | Keller's Girdle | 2911 | 21s 0c | 2026-11-09 12:28 UTC | 20s 0c | 20s 0c | steady | 5 of 5 | 54 |  |
+| Khan's Cloak | 14781 | 1g 0s 0c | 2026-11-09 05:47 UTC | 1g 0s 0c |  | too new | 1 of 5 | 3 |  |
 | Knight's Cloak | 7460 | 25s 0c | 2026-11-09 05:47 UTC | 29s 0c | 29s 0c | steady | 4 of 5 | 16 |  |
 | Knitted Belt | 3602 | 2s 0c | 2026-11-06 14:50 UTC | 1s 50c |  | too new | 2 of 5 | 2 |  |
 | Knitted Bracers | 3603 | 2s 0c | 2026-11-07 12:51 UTC | 3s 50c |  | too new | 2 of 5 | 2 |  |
@@ -430,6 +457,7 @@
 | Living Cowl | 5608 | 4g 52s 0c | 2026-11-08 23:12 UTC | 4g 52s 0c |  | too new | 2 of 5 | 2 |  |
 | Long Silken Cloak | 4326 | 30s 0c | 2026-11-09 12:28 UTC | 40s 0c | 40s 0c | moving | 4 of 5 | 47 |  |
 | Loose Chain Cloak | 2644 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 22 |  |
+| Lord's Cape | 10079 | 4g 96s 0c | 2026-11-09 12:28 UTC | 4g 96s 0c |  | too new | 1 of 5 | 1 |  |
 | Lunar Belt | 14255 | 1g 70s 0c | 2026-11-09 12:28 UTC | 79s 50c |  | too new | 2 of 5 | 2 |  |
 | Lunar Bindings | 14248 | 2g 0s 0c | 2026-11-09 05:47 UTC | 1g 60s 50c |  | too new | 2 of 5 | 2 |  |
 | Lunar Cloak | 14251 | 75s 0c | 2026-11-09 12:28 UTC | 75s 0c | 75s 0c | volatile | 3 of 5 | 1 |  |
@@ -444,7 +472,9 @@
 | Marauder's Cloak | 15568 | 30s 0c | 2026-11-09 12:28 UTC | 50s 0c | 50s 0c | volatile | 3 of 5 | 10 |  |
 | Mechbuilder's Overalls | 9508 | 2g 0s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c | 2g 0s 0c | volatile | 3 of 5 | 7 |  |
 | Melrache's Cape | 3331 | 3s 0c | 2026-11-08 20:10 UTC | 3s 0c | 3s 0c | moving | 3 of 5 | 1 |  |
+| Merciless Cloak | 15652 | 15g 8s 0c | 2026-11-09 12:28 UTC | 15g 8s 0c |  | too new | 1 of 5 | 1 |  |
 | Mindthrust Bracers | 1974 | 4g 60s 0c | 2026-11-09 12:28 UTC | 2g 10s 50c | 2g 10s 50c | moving | 4 of 5 | 6 |  |
+| Miner's Hat of the Deep | 9429 | 5g 82s 0c | 2026-11-09 12:28 UTC | 5g 82s 0c |  | too new | 1 of 5 | 1 |  |
 | Mistscape Armor | 7113 | 2g 1s 0c | 2026-11-07 12:51 UTC | 2g 1s 0c |  | too new | 1 of 5 | 1 |  |
 | Mistscape Boots | 4047 | 66s 0c | 2026-11-09 12:28 UTC | 60s 0c |  | too new | 2 of 5 | 3 |  |
 | Mistscape Bracers | 4045 | 76s 0c | 2026-11-09 05:47 UTC | 99s 0c | 99s 0c | moving | 3 of 5 | 5 |  |
@@ -466,6 +496,7 @@
 | Mystic's Woolies | 14370 | 5s 0c | 2026-11-08 23:12 UTC | 5s 0c | 5s 0c | steady | 5 of 5 | 139 |  |
 | Mystic's Wrap | 14369 | 9s 0c | 2026-11-08 23:12 UTC | 9s 0c | 9s 0c | steady | 5 of 5 | 23 |  |
 | Mystical Bracers | 10173 | 5g 0s 0c | 2026-11-09 12:28 UTC | 52g 93s 0c |  | too new | 2 of 5 | 1 |  |
+| Mystical Mantle | 10172 | 6g 0s 0c | 2026-11-09 12:28 UTC | 6g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Naga Maiden's Gown | 282711 | 31s 0c | 2026-11-09 12:28 UTC | 42s 50c | 42s 50c | moving | 4 of 5 | 16 |  |
 | Native Bands | 14095 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | moving | 5 of 5 | 22 |  |
 | Native Cloak | 14098 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 14 |  |
@@ -495,6 +526,8 @@
 | Nocturnal Cloak | 15153 | 45s 0c | 2026-11-09 12:28 UTC | 54s 0c | 54s 0c | volatile | 3 of 5 | 9 |  |
 | Nomad Cloak | 9754 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 21 |  |
 | Ogre Magi's Mantle | 287008 | 3g 90s 0c | 2026-11-09 12:28 UTC | 4g 45s 0c |  | too new | 2 of 5 | 2 |  |
+| Opulent Cape | 14280 | 89s 0c | 2026-11-09 05:47 UTC | 89s 0c |  | too new | 1 of 5 | 1 |  |
+| Opulent Gloves | 14282 | 1g 25s 0c | 2026-11-08 23:12 UTC | 1g 25s 0c |  | too new | 1 of 5 | 1 |  |
 | Opulent Leggings | 14283 | 6g 75s 0c | 2026-11-08 16:27 UTC | 6g 75s 0c |  | too new | 1 of 5 | 1 |  |
 | Opulent Mantle | 14278 | 8g 0s 0c | 2026-11-08 20:10 UTC | 8g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Ornate Cloak | 10120 | 4g 32s 0c | 2026-11-08 23:12 UTC | 4g 32s 0c |  | too new | 2 of 5 | 1 |  |
@@ -530,8 +563,11 @@
 | Plain Robe | 2612 | 1s 0c | 2026-11-06 14:50 UTC | 1s 0c |  | too new | 1 of 5 | 3 |  |
 | Potent Cape | 15173 | 3g 99s 0c | 2026-11-09 12:28 UTC | 3g 61s 0c |  | too new | 2 of 5 | 2 |  |
 | Pressed Felt Robe | 1997 | 28s 0c | 2026-11-08 23:12 UTC | 31s 0c | 31s 0c | moving | 3 of 5 | 16 |  |
+| Pridelord Cape | 14673 | 3g 25s 0c | 2026-11-09 12:28 UTC | 3g 25s 0c |  | too new | 1 of 5 | 1 |  |
 | Primal Cape | 15007 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | volatile | 5 of 5 | 13 |  |
+| Privateer's Cape | 6179 | 1g 18s 0c | 2026-11-08 23:12 UTC | 1g 18s 0c |  | too new | 1 of 5 | 1 |  |
 | Prospector's Cloak | 14563 | 3s 0c | 2026-11-08 23:12 UTC | 3s 0c | 3s 0c | steady | 5 of 5 | 132 |  |
+| Protector Cape | 14791 | 1g 91s 0c | 2026-11-09 12:28 UTC | 1g 91s 0c |  | too new | 1 of 5 | 1 |  |
 | Rageclaw Cloak | 15382 | 2g 0s 0c | 2026-11-09 12:28 UTC | 2g 50s 0c |  | too new | 2 of 5 | 2 |  |
 | Ragged Cloak | 1372 | 1s 0c | 2026-11-09 05:47 UTC | 1s 0c | 1s 0c | steady | 4 of 5 | 2 |  |
 | Raider's Cloak | 9786 | 3s 0c | 2026-11-08 23:12 UTC | 3s 0c | 3s 0c | steady | 5 of 5 | 87 |  |
@@ -556,6 +592,7 @@
 | Red Mageweave Headband | 10033 | 3g 40s 0c | 2026-11-09 12:28 UTC | 3g 70s 0c |  | too new | 2 of 5 | 12 |  |
 | Red Mageweave Shoulders | 10029 | 4g 81s 0c | 2026-11-09 12:28 UTC | 4g 81s 0c |  | too new | 2 of 5 | 2 |  |
 | Red Woolen Boots | 4313 | 22s 0c | 2026-11-09 12:28 UTC | 26s 0c | 26s 0c | moving | 4 of 5 | 40 |  |
+| Regal Armor | 7332 | 1g 0s 0c | 2026-11-09 05:47 UTC | 1g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Regal Boots | 7472 | 70s 0c | 2026-11-09 12:28 UTC | 79s 0c | 79s 0c | steady | 3 of 5 | 11 |  |
 | Regal Cloak | 7474 | 55s 0c | 2026-11-09 12:28 UTC | 93s 50c | 93s 50c | moving | 4 of 5 | 8 |  |
 | Regal Cuffs | 7475 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 58s 50c | 1g 58s 50c | volatile | 4 of 5 | 8 |  |
@@ -621,6 +658,7 @@
 | Sage's Pants | 6616 | 35s 0c | 2026-11-09 12:28 UTC | 36s 50c | 36s 50c | steady | 4 of 5 | 22 |  |
 | Sage's Robe | 6610 | 27s 0c | 2026-11-09 12:28 UTC | 36s 0c | 36s 0c | moving | 5 of 5 | 13 |  |
 | Sage's Sash | 6611 | 11s 0c | 2026-11-08 23:12 UTC | 11s 0c | 11s 0c | volatile | 5 of 5 | 28 |  |
+| Sand-Covered Silk Sash | 286612 | 150g 0s 0c | 2026-11-09 05:47 UTC | 150g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Sanguine Armor | 14372 | 16s 0c | 2026-11-08 23:12 UTC | 18s 0c | 18s 0c | steady | 4 of 5 | 28 |  |
 | Sanguine Belt | 14373 | 6s 0c | 2026-11-08 23:12 UTC | 6s 0c | 6s 0c | volatile | 5 of 5 | 45 |  |
 | Sanguine Cape | 14376 | 6s 0c | 2026-11-08 23:12 UTC | 6s 0c | 6s 0c | steady | 5 of 5 | 33 |  |
@@ -664,14 +702,17 @@
 | Shimmering Sash | 6570 | 9s 0c | 2026-11-09 12:28 UTC | 5s 0c | 5s 0c | steady | 5 of 5 | 59 |  |
 | Shimmering Trousers | 6568 | 10s 0c | 2026-11-08 23:12 UTC | 10s 0c | 10s 0c | steady | 5 of 5 | 37 |  |
 | Silk Headband | 7050 | 26s 0c | 2026-11-09 12:28 UTC | 39s 0c | 39s 0c | volatile | 4 of 5 | 107 |  |
+| Silk Wizard Hat | 3345 | 3g 0s 0c | 2026-11-09 12:28 UTC | 3g 0s 0c |  | too new | 1 of 5 | 2 |  |
 | Silk-threaded Trousers | 1929 | 50s 0c | 2026-11-09 12:28 UTC | 35s 50c | 35s 50c | steady | 4 of 5 | 18 |  |
 | Silksand Boots | 14418 | 75s 0c | 2026-11-09 12:28 UTC | 87s 50c | 87s 50c | moving | 4 of 5 | 3 |  |
 | Silksand Bracers | 14419 | 43s 0c | 2026-11-09 12:28 UTC | 69s 0c |  | too new | 2 of 5 | 5 |  |
 | Silksand Cape | 14420 | 44s 0c | 2026-11-09 05:47 UTC | 46s 50c |  | too new | 2 of 5 | 15 |  |
 | Silksand Circlet | 14421 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 11s 0c |  | too new | 2 of 5 | 6 |  |
+| Silksand Girdle | 14426 | 75s 0c | 2026-11-08 23:12 UTC | 75s 0c |  | too new | 1 of 5 | 1 |  |
 | Silksand Gloves | 14422 | 1g 2s 0c | 2026-11-09 12:28 UTC | 1g 0s 50c |  | too new | 2 of 5 | 2 |  |
 | Silksand Legwraps | 14424 | 1g 25s 0c | 2026-11-09 05:47 UTC | 80s 0c |  | too new | 2 of 5 | 2 |  |
 | Silksand Shoulder Pads | 14423 | 1g 22s 0c | 2026-11-09 12:28 UTC | 1g 50s 0c | 1g 50s 0c | steady | 3 of 5 | 3 |  |
+| Silksand Tunic | 14417 | 3g 0s 0c | 2026-11-09 12:28 UTC | 89s 0c |  | too new | 1 of 5 | 1 |  |
 | Silksand Wraps | 14425 | 1g 30s 0c | 2026-11-09 12:28 UTC | 1g 40s 0c |  | too new | 2 of 5 | 4 |  |
 | Silver-thread Amice | 6395 | 13s 0c | 2026-11-08 23:12 UTC | 15s 50c | 15s 50c | moving | 4 of 5 | 30 |  |
 | Silver-thread Armor | 7110 | 24s 0c | 2026-11-09 12:28 UTC | 38s 0c | 38s 0c | moving | 4 of 5 | 20 |  |
@@ -698,6 +739,7 @@
 | Skyseer's Pants | 263015 | 15s 0c | 2026-11-09 12:28 UTC | 15s 0c | 15s 0c | steady | 5 of 5 | 3 |  |
 | Skyseer's Slippers | 285264 | 16s 0c | 2026-11-08 20:10 UTC | 12s 50c | 12s 50c | moving | 4 of 5 | 2 |  |
 | Slayer's Cape | 14752 | 12s 0c | 2026-11-09 12:28 UTC | 17s 0c | 17s 0c | moving | 4 of 5 | 23 |  |
+| Smoldering Boots | 3076 | 10s 0c | 2026-11-09 12:28 UTC | 10s 0c |  | too new | 1 of 5 | 2 |  |
 | Smoldering Pants | 3073 | 57s 0c | 2026-11-07 10:45 UTC | 37s 0c |  | too new | 2 of 5 | 1 |  |
 | Soft-soled Linen Boots | 4312 | 4s 0c | 2026-11-09 12:28 UTC | 4s 0c | 4s 0c | moving | 5 of 5 | 143 |  |
 | Soldier's Cloak | 6549 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 22 |  |
@@ -739,6 +781,7 @@
 | Stonecloth Circlet | 14410 | 35s 0c | 2026-11-08 23:12 UTC | 67s 50c | 67s 50c | volatile | 4 of 5 | 4 |  |
 | Stonecloth Epaulets | 14412 | 27s 0c | 2026-11-09 12:28 UTC | 64s 0c | 64s 0c | volatile | 4 of 5 | 10 |  |
 | Stonecloth Gloves | 14411 | 20s 0c | 2026-11-09 12:28 UTC | 30s 0c | 30s 0c | moving | 3 of 5 | 11 |  |
+| Stonecloth Robe | 14413 | 60s 0c | 2026-11-09 12:28 UTC | 60s 0c |  | too new | 1 of 5 | 1 |  |
 | Stonecloth Vest | 14407 | 64s 0c | 2026-11-08 23:12 UTC | 64s 0c | 64s 0c | steady | 3 of 5 | 2 |  |
 | Stonemason Cloak | 1930 | 5s 0c | 2026-11-08 23:12 UTC | 5s 0c | 5s 0c | moving | 5 of 5 | 26 |  |
 | Stretched Footpads | 287007 | 5g 83s 0c | 2026-11-08 23:12 UTC | 5g 83s 0c |  | too new | 2 of 5 | 1 |  |
@@ -755,6 +798,7 @@
 | Thendal Warrior's Pants | 271672 | 20s 0c | 2026-11-07 12:51 UTC | 20s 0c |  | too new | 1 of 5 | 1 |  |
 | Thick Cloth Vest | 200 | 7s 0c | 2026-11-08 16:27 UTC | 7s 0c |  | too new | 1 of 5 | 1 |  |
 | Thick Scale Cloak | 15547 | 20s 0c | 2026-11-09 12:28 UTC | 20s 50c | 20s 50c | moving | 4 of 5 | 12 |  |
+| Thinking Cap | 2624 | 58s 0c | 2026-11-09 05:47 UTC | 58s 0c |  | too new | 1 of 5 | 1 |  |
 | Thistlefur Bands | 14197 | 12s 0c | 2026-11-08 23:12 UTC | 18s 0c | 18s 0c | moving | 4 of 5 | 14 |  |
 | Thistlefur Belt | 14205 | 17s 0c | 2026-11-09 05:47 UTC | 30s 50c | 30s 50c | moving | 4 of 5 | 20 |  |
 | Thistlefur Cap | 14200 | 55s 0c | 2026-11-09 12:28 UTC | 45s 0c | 45s 0c | volatile | 3 of 5 | 12 |  |
@@ -767,6 +811,7 @@
 | Thistlefur Sandals | 14196 | 19s 0c | 2026-11-09 05:47 UTC | 25s 50c | 25s 50c | moving | 4 of 5 | 9 |  |
 | Thoughtcast Boots | 10578 | 8g 0s 0c | 2026-11-09 12:28 UTC | 9g 26s 0c |  | too new | 2 of 5 | 1 |  |
 | Thug Boots | 121 | 1s 0c | 2026-11-06 14:50 UTC | 1s 0c |  | too new | 2 of 5 | 2 |  |
+| Thug Pants | 120 | 20s 0c | 2026-11-09 05:47 UTC | 20s 0c |  | too new | 1 of 5 | 1 |  |
 | Tigerstrike Mantle | 13108 | 3g 21s 0c | 2026-11-09 12:28 UTC | 5g 45s 50c | 5g 45s 50c | volatile | 4 of 5 | 24 |  |
 | Tough Cloak | 1806 | 7s 0c | 2026-11-08 23:12 UTC | 7s 0c |  | too new | 2 of 5 | 3 |  |
 | Tracker's Cloak | 9919 | 1g 0s 0c | 2026-11-08 23:12 UTC | 2g 39s 0c |  | too new | 2 of 5 | 6 |  |
@@ -787,7 +832,9 @@
 | Twilight Mantle | 7435 | 29s 0c | 2026-11-09 12:28 UTC | 39s 0c | 39s 0c | volatile | 3 of 5 | 41 |  |
 | Twilight Pants | 7431 | 45s 0c | 2026-11-09 12:28 UTC | 59s 0c | 59s 0c | steady | 4 of 5 | 13 |  |
 | Twilight Robe | 7430 | 1g 0s 0c | 2026-11-09 12:28 UTC | 50s 0c | 50s 0c | moving | 3 of 5 | 4 |  |
+| Venomshroud Armguards | 14439 | 1g 58s 0c | 2026-11-09 12:28 UTC | 1g 14s 0c |  | too new | 1 of 5 | 1 |  |
 | Venomshroud Belt | 14446 | 1g 64s 0c | 2026-11-08 16:27 UTC | 1g 64s 0c |  | too new | 1 of 5 | 1 |  |
+| Venomshroud Cape | 14440 | 2g 0s 0c | 2026-11-09 05:47 UTC | 2g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Veteran Cloak | 4677 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 11 |  |
 | Vibrant Silk Cape | 5181 | 35s 0c | 2026-11-08 23:12 UTC | 35s 0c |  | too new | 2 of 5 | 6 |  |
 | Vicar's Robe | 3569 | 27s 0c | 2026-11-09 12:28 UTC | 27s 0c | 27s 0c | moving | 3 of 5 | 19 |  |
@@ -805,6 +852,7 @@
 | Vital Shoulders | 14212 | 37s 0c | 2026-11-09 12:28 UTC | 53s 50c | 53s 50c | moving | 4 of 5 | 9 |  |
 | Vital Tunic | 14215 | 80s 0c | 2026-11-09 12:28 UTC | 85s 0c |  | too new | 2 of 5 | 4 |  |
 | Walking Boots | 4660 | 45s 0c | 2026-11-09 12:28 UTC | 45s 0c |  | too new | 2 of 5 | 2 |  |
+| Wanderer's Cloak | 10108 | 2g 78s 0c | 2026-11-09 12:28 UTC | 2g 78s 0c |  | too new | 1 of 5 | 1 |  |
 | War Paint Cloak | 14724 | 3s 0c | 2026-11-08 23:12 UTC | 3s 0c | 3s 0c | steady | 5 of 5 | 98 |  |
 | War Torn Cape | 15483 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 11 |  |
 | Warden's Cloak | 14602 | 1g 20s 0c | 2026-11-09 12:28 UTC | 2g 9s 50c |  | too new | 2 of 5 | 10 |  |
@@ -837,7 +885,12 @@
 | Willow Robe | 6538 | 5s 0c | 2026-11-08 23:12 UTC | 5s 0c | 5s 0c | steady | 5 of 5 | 45 |  |
 | Willow Vest | 6536 | 5s 0c | 2026-11-09 12:28 UTC | 6s 0c | 6s 0c | steady | 5 of 5 | 29 |  |
 | Windchaser Amice | 14432 | 1g 0s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c | 2g 0s 0c | volatile | 3 of 5 | 1 |  |
+| Windchaser Cinch | 14435 | 1g 49s 0c | 2026-11-09 12:28 UTC | 1g 49s 0c |  | too new | 1 of 5 | 6 |  |
+| Windchaser Coronet | 14436 | 1g 5s 0c | 2026-11-09 12:28 UTC | 1g 5s 0c |  | too new | 1 of 5 | 4 |  |
 | Windchaser Cuffs | 14429 | 1g 40s 0c | 2026-11-08 23:12 UTC | 1g 19s 50c |  | too new | 2 of 5 | 2 |  |
+| Windchaser Footpads | 14428 | 2g 68s 0c | 2026-11-09 12:28 UTC | 71s 0c |  | too new | 1 of 5 | 3 |  |
+| Windchaser Handguards | 14431 | 65s 0c | 2026-11-09 05:47 UTC | 65s 0c |  | too new | 1 of 5 | 1 |  |
+| Windchaser Woolies | 14433 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Wing of the Whelpling | 13121 | 1g 23s 0c | 2026-11-09 12:28 UTC | 2g 20s 0c | 2g 20s 0c | volatile | 3 of 5 | 24 |  |
 | Wise Man's Belt | 4786 | 15s 0c | 2026-11-09 12:28 UTC | 13s 0c | 13s 0c | moving | 5 of 5 | 14 |  |
 | Wispy Cloak | 3322 | 8s 0c | 2026-11-09 12:28 UTC | 3s 0c | 3s 0c | moving | 5 of 5 | 12 |  |

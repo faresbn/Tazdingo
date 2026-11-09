@@ -30,10 +30,12 @@
 | Oiled Blunderbuss | 2786 | 16s 0c | 2026-11-08 23:12 UTC | 16s 0c | 16s 0c | steady | 3 of 5 | 16 |  |
 | Ornate Blunderbuss | 2509 | 3g 0s 0c | 2026-11-09 12:28 UTC | 2s 0c | 2s 0c | volatile | 3 of 5 | 5 |  |
 | Pellet Rifle | 8182 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 34 |  |
+| Percussion Shotgun | 15323 | 3g 5s 0c | 2026-11-09 05:47 UTC | 3g 5s 0c |  | too new | 1 of 5 | 3 |  |
 | Precisely Calibrated Boomstick | 2100 | 67g 67s 0c | 2026-11-08 16:27 UTC | 67g 67s 0c |  | too new | 1 of 5 | 2 |  |
 | Ricochet Blunderbuss | 4089 | 5g 26s 0c | 2026-11-08 17:40 UTC | 4g 13s 0c |  | too new | 2 of 5 | 1 |  |
 | Rough Boomstick | 4362 | 3s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | moving | 5 of 5 | 267 |  |
 | Rust-covered Blunderbuss | 2774 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 42 |  |
+| Shell Launcher Shotgun | 13146 | 50g 0s 0c | 2026-11-09 12:28 UTC | 50g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Shoddy Blunderbuss | 2783 | 6s 0c | 2026-11-08 23:12 UTC | 6s 0c | 6s 0c | steady | 4 of 5 | 11 |  |
 | Silver-plated Shotgun | 4379 | 30s 0c | 2026-11-09 12:28 UTC | 35s 0c | 35s 0c | volatile | 5 of 5 | 38 |  |
 | Smoothbore Gun | 15322 | 79s 0c | 2026-11-09 12:28 UTC | 89s 50c | 89s 50c | steady | 4 of 5 | 8 |  |

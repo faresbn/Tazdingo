@@ -20,6 +20,7 @@
 | Holy Candle | 17028 | 13s 65c | 2026-11-09 12:28 UTC | 13s 65c | 13s 65c | moving | 3 of 5 | 14 |  |
 | Hornbeam Seed | 17037 | 18s 50c | 2026-11-09 12:28 UTC | 20s 27c | 20s 27c | volatile | 4 of 5 | 14 |  |
 | Infernal Stone | 5565 | 12s 0c | 2026-11-06 | 12s 0c |  | too new | 1 of 5 | 1 |  |
+| Ironwood Seed | 17038 | 60s 0c | 2026-11-09 12:28 UTC | 60s 0c |  | too new | 1 of 5 | 2 |  |
 | Light Feather | 17056 | 18c | 2026-11-09 12:28 UTC | 7c | 7c | moving | 5 of 5 | 4619 |  |
 | Maple Seed | 17034 | 2s 20c | 2026-11-09 05:47 UTC | 2s 77c | 2s 77c | moving | 5 of 5 | 442 |  |
 | Rune of Portals | 17032 | 15s 42c | 2026-11-09 05:47 UTC | 17s 70c | 17s 70c | moving | 4 of 5 | 20 |  |

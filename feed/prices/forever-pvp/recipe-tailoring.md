@@ -10,11 +10,13 @@
 | Pattern: Admiral's Hat | 10318 | 66s 0c | 2026-11-09 12:28 UTC | 5g 33s 0c |  | too new | 2 of 5 | 5 |  |
 | Pattern: Azure Shoulders | 7085 | 5s 0c | 2026-11-08 23:12 UTC | 27s 50c | 27s 50c | volatile | 4 of 5 | 51 |  |
 | Pattern: Black Cord | 254044 | 98s 0c | 2026-11-09 12:28 UTC | 1g 9s 50c |  | too new | 2 of 5 | 12 |  |
+| Pattern: Black Gloves | 254102 | 14g 90s 0c | 2026-11-09 05:47 UTC | 14g 90s 0c |  | too new | 1 of 5 | 1 |  |
 | Pattern: Black Silk Pack | 5775 | 6s 0c | 2026-11-09 05:47 UTC | 27s 50c | 27s 50c | volatile | 4 of 5 | 41 |  |
 | Pattern: Blue Linen Robe | 6272 | 5s 0c | 2026-11-09 12:28 UTC | 5s 0c | 5s 0c | steady | 4 of 5 | 24 |  |
 | Pattern: Blue Linen Vest | 6270 | 4s 0c | 2026-11-09 05:47 UTC | 4s 0c | 4s 0c | moving | 5 of 5 | 24 |  |
 | Pattern: Blue Overalls | 6274 | 5s 0c | 2026-11-08 23:12 UTC | 5s 0c | 5s 0c | volatile | 5 of 5 | 12 |  |
 | Pattern: Boots of the Enchanter | 4352 | 4s 0c | 2026-11-08 23:12 UTC | 4s 50c | 4s 50c | steady | 4 of 5 | 44 |  |
+| Pattern: Brightcloth Cloak | 14484 | 2g 0s 0c | 2026-11-08 23:12 UTC | 2g 0s 0c |  | too new | 1 of 5 | 2 |  |
 | Pattern: Brightcloth Gloves | 14479 | 4g 53s 0c | 2026-11-09 12:28 UTC | 5g 3s 0c |  | too new | 2 of 5 | 3 |  |
 | Pattern: Brightcloth Robe | 14478 | 1g 33s 0c | 2026-11-09 12:28 UTC | 2g 53s 0c | 2g 53s 0c | volatile | 3 of 5 | 1 |  |
 | Pattern: Cindercloth Gloves | 14476 | 2g 0s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c |  | too new | 2 of 5 | 1 |  |
@@ -27,7 +29,12 @@
 | Pattern: Earthen Silk Hood | 254016 | 77s 0c | 2026-11-09 05:47 UTC | 47s 50c |  | too new | 2 of 5 | 6 |  |
 | Pattern: Earthen Silk Shoulders | 254034 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c |  | too new | 2 of 5 | 1 |  |
 | Pattern: Earthen Silk Slippers | 254014 | 3g 5s 0c | 2026-11-08 23:12 UTC | 2g 55s 0c |  | too new | 2 of 5 | 4 |  |
+| Pattern: Earthenweave Cord | 254078 | 46s 0c | 2026-11-09 12:28 UTC | 46s 0c |  | too new | 1 of 5 | 3 |  |
+| Pattern: Earthenweave Mantle | 254120 | 2g 0s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c |  | too new | 1 of 5 | 6 |  |
 | Pattern: Enchanted Mageweave Pouch | 22307 | 47s 0c | 2026-11-09 12:28 UTC | 50s 0c | 50s 0c | moving | 5 of 5 | 23 |  |
+| Pattern: Felcloth Boots | 14492 | 2g 0s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c |  | too new | 1 of 5 | 1 |  |
+| Pattern: Felcloth Hood | 14496 | 5g 0s 0c | 2026-11-09 12:28 UTC | 5g 0s 0c |  | too new | 1 of 5 | 3 |  |
+| Pattern: Felcloth Shoulders | 14508 | 15g 0s 0c | 2026-11-09 12:28 UTC | 15g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Pattern: Fiery Cord | 254042 | 75s 0c | 2026-11-09 12:28 UTC | 77s 50c |  | too new | 2 of 5 | 9 |  |
 | Pattern: Fiery Gloves | 254100 | 1g 61s 0c | 2026-11-08 23:12 UTC | 1g 61s 0c |  | too new | 2 of 5 | 2 |  |
 | Pattern: Filigreed Flame Circlet | 253980 | 7s 0c | 2026-11-08 23:12 UTC | 13s 50c | 13s 50c | volatile | 4 of 5 | 46 |  |
@@ -70,6 +77,7 @@
 | Pattern: Phoenix Pants | 4349 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 113 |  |
 | Pattern: Pink Mageweave Shirt | 10317 | 77s 0c | 2026-11-09 12:28 UTC | 80s 0c | 80s 0c | steady | 3 of 5 | 3 |  |
 | Pattern: Radiant Cord | 254048 | 45s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 5 | 15 |  |
+| Pattern: Radiant Gloves | 254106 | 4g 0s 0c | 2026-11-09 12:28 UTC | 4g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Pattern: Red Linen Bag | 5771 | 4s 0c | 2026-11-08 23:12 UTC | 4s 0c | 4s 0c | steady | 5 of 5 | 134 |  |
 | Pattern: Red Linen Robe | 2598 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 387 |  |
 | Pattern: Red Linen Vest | 6271 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 179 |  |
@@ -82,18 +90,23 @@
 | Pattern: Red Woolen Boots | 4345 | 2s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | volatile | 5 of 5 | 168 |  |
 | Pattern: Reinforced Woolen Shoulders | 4347 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | moving | 5 of 5 | 60 |  |
 | Pattern: Rich Purple Silk Shirt | 4354 | 10g 0s 0c | 2026-11-09 12:28 UTC | 3g 25s 50c | 3g 25s 50c | volatile | 4 of 5 | 2 |  |
+| Pattern: Robes of Arcana | 5773 | 145g 0s 0c | 2026-11-09 12:28 UTC | 145g 0s 0c |  | too new | 1 of 5 | 2 |  |
 | Pattern: Runecloth Tunic | 14470 | 3g 0s 0c | 2026-11-09 12:28 UTC | 4g 0s 0c |  | too new | 2 of 5 | 6 |  |
 | Pattern: Shadow Hood | 4351 | 69s 0c | 2026-11-09 12:28 UTC | 47s 0c | 47s 0c | volatile | 4 of 5 | 4 |  |
+| Pattern: Soul Pouch | 21358 | 4g 0s 0c | 2026-11-09 12:28 UTC | 4g 0s 0c |  | too new | 1 of 5 | 4 |  |
 | Pattern: Spider Belt | 4353 | 8s 0c | 2026-11-09 05:47 UTC | 22s 50c | 22s 50c | volatile | 4 of 5 | 48 |  |
 | Pattern: Spider Silk Slippers | 4350 | 3s 0c | 2026-11-08 23:12 UTC | 3s 0c | 3s 0c | moving | 5 of 5 | 44 |  |
 | Pattern: Star Belt | 4356 | 2g 0s 0c | 2026-11-09 12:28 UTC | 1g 50s 0c |  | too new | 2 of 5 | 5 |  |
 | Pattern: Stormcloth Boots | 254686 | 75s 0c | 2026-11-08 23:12 UTC | 75s 0c |  | too new | 2 of 5 | 2 |  |
 | Pattern: Stormcloth Headband | 254684 | 2g 99s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c |  | too new | 2 of 5 | 2 |  |
 | Pattern: Stormcloth Pants | 254681 | 1g 11s 0c | 2026-11-09 12:28 UTC | 1g 55s 50c |  | too new | 2 of 5 | 1 |  |
+| Pattern: Stormcloth Shoulders | 254685 | 3g 31s 0c | 2026-11-09 12:28 UTC | 31s 0c |  | too new | 1 of 5 | 1 |  |
 | Pattern: Stylish Blue Shirt | 6390 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 123 |  |
 | Pattern: Stylish Green Shirt | 6391 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 103 |  |
 | Pattern: Truefaith Gloves | 7091 | 3s 0c | 2026-11-08 23:12 UTC | 3s 0c | 3s 0c | moving | 5 of 5 | 73 |  |
 | Pattern: Tuxedo Jacket | 10326 | 1g 19s 0c | 2026-11-09 12:28 UTC | 87s 0c |  | too new | 2 of 5 | 1 |  |
+| Pattern: Tuxedo Pants | 10323 | 1g 19s 0c | 2026-11-09 12:28 UTC | 1g 19s 0c |  | too new | 1 of 5 | 1 |  |
+| Pattern: Tuxedo Shirt | 10321 | 1g 19s 0c | 2026-11-09 12:28 UTC | 1g 19s 0c |  | too new | 1 of 5 | 1 |  |
 | Pattern: White Bandit Mask | 10301 | 95s 0c | 2026-11-09 12:28 UTC | 59s 0c | 59s 0c | volatile | 3 of 5 | 36 |  |
 | Pattern: White Wedding Dress | 10325 | 80s 0c | 2026-11-09 12:28 UTC | 90s 0c |  | too new | 2 of 5 | 2 |  |
 | Pattern: Woolen Reagent Bag | 253668 | 2s 0c | 2026-11-08 23:12 UTC | 3s 0c | 3s 0c | moving | 5 of 5 | 55 |  |

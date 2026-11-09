@@ -33,6 +33,7 @@
 | Craftsman's Writ: Blue Overalls | 264048 | 55s 0c | 2026-11-09 12:28 UTC | 22s 0c | 22s 0c | moving | 4 of 5 | 20 |  |
 | Craftsman's Writ: Catseye Draught | 264060 | 45s 0c | 2026-11-09 05:47 UTC | 49s 50c |  | too new | 2 of 5 | 8 |  |
 | Craftsman's Writ: Catseye Ultra Goggles | 264084 | 14s 0c | 2026-11-09 05:47 UTC | 48s 0c | 48s 0c | volatile | 3 of 5 | 23 |  |
+| Craftsman's Writ: Chimeric Vest | 264148 | 1g 1s 0c | 2026-11-09 12:28 UTC | 1g 1s 0c |  | too new | 1 of 5 | 1 |  |
 | Craftsman's Writ: Cindercloth Robe | 264114 | 18s 0c | 2026-11-09 12:28 UTC | 47s 0c | 47s 0c | volatile | 3 of 5 | 20 |  |
 | Craftsman's Writ: Colorful Kilt | 264053 | 50s 0c | 2026-11-09 12:28 UTC | 31s 0c | 31s 0c | volatile | 4 of 5 | 29 |  |
 | Craftsman's Writ: Comfortable Leather Hat | 264092 | 6s 0c | 2026-11-09 12:28 UTC | 49s 0c | 49s 0c | volatile | 3 of 5 | 11 |  |
@@ -85,6 +86,7 @@
 | Craftsman's Writ: Lesser Wizard's Robe | 264047 | 15s 0c | 2026-11-09 12:28 UTC | 19s 0c | 19s 0c | moving | 4 of 5 | 22 |  |
 | Craftsman's Writ: Mageweave Bag | 264104 | 25s 0c | 2026-11-09 12:28 UTC | 1g 99s 0c | 1g 99s 0c | volatile | 3 of 5 | 21 |  |
 | Craftsman's Writ: Mana Potion | 264062 | 1g 50s 0c | 2026-11-09 12:28 UTC | 2g 51s 0c | 2g 51s 0c | volatile | 4 of 5 | 10 |  |
+| Craftsman's Writ: Masterwork Target Dummy | 264134 | 1g 1s 0c | 2026-11-09 12:28 UTC | 1g 1s 0c |  | too new | 1 of 5 | 1 |  |
 | Craftsman's Writ: Mechanical Dragonling | 264080 | 15s 0c | 2026-11-09 12:28 UTC | 20s 0c | 20s 0c | volatile | 3 of 5 | 17 |  |
 | Craftsman's Writ: Mechanical Repair Kit | 264090 | 1g 33s 0c | 2026-11-09 12:28 UTC | 4g 16s 0c |  | too new | 2 of 5 | 34 |  |
 | Craftsman's Writ: Minor Recombobulator | 264032 | 55s 0c | 2026-11-09 12:28 UTC | 4s 50c | 4s 50c | moving | 4 of 5 | 20 |  |
@@ -94,6 +96,7 @@
 | Craftsman's Writ: Nature Protection Potion | 264059 | 75s 0c | 2026-11-09 05:47 UTC | 81s 50c |  | too new | 2 of 5 | 18 |  |
 | Craftsman's Writ: Nightscape Shoulders | 264099 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 5 | 15 |  |
 | Craftsman's Writ: Orange Martial Shirt | 264112 | 29s 0c | 2026-11-09 12:28 UTC | 1g 69s 0c | 1g 69s 0c | volatile | 4 of 5 | 14 |  |
+| Craftsman's Writ: Orcish War Leggings | 264127 | 1g 0s 0c | 2026-11-09 05:47 UTC | 1g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Craftsman's Writ: Ornate Mithril Shoulders | 264071 | 15s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 5 | 18 |  |
 | Craftsman's Writ: Ornate Spyglass | 264029 | 10s 0c | 2026-11-09 12:28 UTC | 87s 50c | 87s 50c | volatile | 4 of 5 | 48 |  |
 | Craftsman's Writ: Pearl-Handled Dagger | 264020 | 7s 0c | 2026-11-09 12:28 UTC | 13s 0c | 13s 0c | volatile | 4 of 5 | 32 |  |
@@ -105,6 +108,8 @@
 | Craftsman's Writ: Red Whelp Gloves | 264046 | 4s 0c | 2026-11-09 12:28 UTC | 13s 50c | 13s 50c | volatile | 4 of 5 | 40 |  |
 | Craftsman's Writ: Red Woolen Boots | 264052 | 18s 0c | 2026-11-08 23:12 UTC | 21s 50c | 21s 50c | moving | 4 of 5 | 22 |  |
 | Craftsman's Writ: Rough Bronze Leggings | 264025 | 32s 0c | 2026-11-09 05:47 UTC | 41s 0c | 41s 0c | moving | 4 of 5 | 25 |  |
+| Craftsman's Writ: Runecloth Boots | 264154 | 5g 1s 0c | 2026-11-08 23:12 UTC | 5g 1s 0c |  | too new | 1 of 5 | 1 |  |
+| Craftsman's Writ: Runic Leather Bracers | 264150 | 1g 25s 0c | 2026-11-08 23:12 UTC | 1g 25s 0c |  | too new | 1 of 5 | 1 |  |
 | Craftsman's Writ: Shadow Goggles | 264034 | 15s 0c | 2026-11-09 05:47 UTC | 30s 0c | 30s 0c | volatile | 4 of 5 | 32 |  |
 | Craftsman's Writ: Shadow Oil | 264064 | 70s 0c | 2026-11-09 12:28 UTC | 90s 0c | 90s 0c | moving | 3 of 5 | 16 |  |
 | Craftsman's Writ: Shadow Protection Potion | 264014 | 55s 0c | 2026-11-09 12:28 UTC | 15s 0c | 15s 0c | steady | 4 of 5 | 30 |  |
@@ -120,13 +125,16 @@
 | Craftsman's Writ: Swift Boots | 264098 | 50s 0c | 2026-11-09 12:28 UTC | 78s 0c | 78s 0c | moving | 4 of 5 | 7 |  |
 | Craftsman's Writ: Thick Leather Ammo Pouch | 264103 | 55s 0c | 2026-11-09 12:28 UTC | 2g 7s 0c | 2g 7s 0c | volatile | 4 of 5 | 16 |  |
 | Craftsman's Writ: Truesilver Rod | 264077 | 44s 0c | 2026-11-09 12:28 UTC | 1g 40s 0c | 1g 40s 0c | volatile | 3 of 5 | 25 |  |
+| Craftsman's Writ: Truesilver Transformer | 264140 | 20g 1s 0c | 2026-11-09 05:47 UTC | 20g 1s 0c |  | too new | 1 of 5 | 1 |  |
 | Craftsman's Writ: Turtle Scale Breastplate | 264102 | 11s 0c | 2026-11-09 12:28 UTC | 35s 0c | 35s 0c | volatile | 3 of 5 | 14 |  |
 | Craftsman's Writ: Unstable Trigger | 264085 | 38s 0c | 2026-11-09 12:28 UTC | 80s 0c | 80s 0c | volatile | 3 of 5 | 17 |  |
 | Craftsman's Writ: White Bandit Mask | 264113 | 56s 0c | 2026-11-09 05:47 UTC | 73s 0c | 73s 0c | volatile | 3 of 5 | 17 |  |
+| Craftsman's Writ: Wicked Leather Bracers | 264147 | 2g 3s 0c | 2026-11-09 12:28 UTC | 2g 3s 0c |  | too new | 1 of 5 | 1 |  |
 | Craftsman's Writ: Wicked Mithril Blade | 264076 | 25s 0c | 2026-11-09 12:28 UTC | 1g 33s 0c | 1g 33s 0c | volatile | 4 of 5 | 12 |  |
 | Craftsman's Writ: Wild Leather Helmet | 264095 | 1s 0c | 2026-11-09 12:28 UTC | 70s 0c | 70s 0c | volatile | 3 of 5 | 13 |  |
 | Craftsman's Writ: Wild Leather Shoulders | 264096 | 32s 0c | 2026-11-09 12:28 UTC | 90s 0c | 90s 0c | volatile | 3 of 5 | 23 |  |
 | Craftsman's Writ: Wildvine Potion | 264067 | 25s 0c | 2026-11-09 12:28 UTC | 99s 0c | 99s 0c | volatile | 3 of 5 | 18 |  |
+| Craftsman's Writ: Wizardweave Turban | 264152 | 1g 1s 0c | 2026-11-09 12:28 UTC | 1g 1s 0c |  | too new | 1 of 5 | 1 |  |
 | Cresting Charm | 4481 | 33s 53c | 2026-11-09 12:28 UTC | 55s 34c | 55s 34c | volatile | 4 of 5 | 176 |  |
 | Crippling Poison | 3775 | 77c | 2026-11-09 12:28 UTC | 87c | 87c | moving | 4 of 5 | 558 |  |
 | Crystal Basilisk Spine | 1703 | 1s 0c | 2026-11-09 12:28 UTC | 1s 70c | 1s 70c | moving | 4 of 5 | 375 |  |
@@ -162,6 +170,7 @@
 | Nightcrawlers | 6530 | 2s 20c | 2026-11-09 12:28 UTC | 1s 10c | 1s 10c | moving | 5 of 5 | 269 |  |
 | Oil Covered Fish | 6458 | 50c | 2026-11-09 12:28 UTC | 1s 80c | 1s 80c | volatile | 4 of 5 | 272 |  |
 | Oil of Immolation | 8956 | 29s 0c | 2026-11-09 12:28 UTC | 66s 30c | 66s 30c | volatile | 3 of 5 | 93 |  |
+| Oil of Olaf | 1177 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c |  | too new | 1 of 5 | 3 |  |
 | Razorlash Root | 17747 | 2g 0s 0c | 2026-11-08 23:12 UTC | 2g 0s 0c |  | too new | 2 of 5 | 2 |  |
 | Reagent Bot | 279950 | 1s 97c | 2026-11-08 23:12 UTC | 1s 97c | 1s 97c | volatile | 5 of 5 | 189 |  |
 | Red Firework | 9318 | 3s 50c | 2026-11-09 05:47 UTC | 2s 50c |  | too new | 2 of 5 | 102 |  |

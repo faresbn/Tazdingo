@@ -45,18 +45,21 @@
 | Sacrificial Kris | 3187 | 1g 75s 0c | 2026-11-09 12:28 UTC | 2g 50s 0c | 2g 50s 0c | volatile | 3 of 5 | 7 |  |
 | Sharpened Cirrusfly Stinger | 251932 | 33s 0c | 2026-11-08 16:27 UTC | 50s 0c | 50s 0c | moving | 4 of 5 | 2 |  |
 | Sharpened Letter Opener | 2138 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 22 |  |
+| Shiny Dirk | 3786 | 60s 0c | 2026-11-09 12:28 UTC | 60s 0c |  | too new | 1 of 5 | 1 |  |
 | Silithid Piercer | 286534 | 60s 0c | 2026-11-09 05:47 UTC | 50s 0c | 50s 0c | moving | 5 of 5 | 17 |  |
 | Simple Dagger | 4565 | 2s 0c | 2026-11-09 12:28 UTC | 2s 0c | 2s 0c | moving | 5 of 5 | 14 |  |
 | Sliverblade | 5756 | 9g 0s 0c | 2026-11-09 12:28 UTC | 5g 0s 0c | 5g 0s 0c | steady | 3 of 5 | 6 |  |
 | Small Dagger | 2764 | 5s 0c | 2026-11-08 23:12 UTC | 5s 0c | 5s 0c | steady | 4 of 5 | 39 |  |
 | Small Green Dagger | 4302 | 7s 0c | 2026-11-08 23:12 UTC | 4s 0c | 4s 0c | volatile | 5 of 5 | 16 |  |
 | Stiletto | 2494 | 8s 0c | 2026-11-09 12:28 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 9 |  |
+| Stonevault Shiv | 9384 | 10g 0s 0c | 2026-11-08 23:12 UTC | 10g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | The Ziggler | 8006 | 3g 0s 0c | 2026-11-09 12:28 UTC | 6g 88s 50c | 6g 88s 50c | volatile | 4 of 5 | 10 |  |
 | Threshadon Fang | 5516 | 4s 0c | 2026-11-08 23:12 UTC | 5s 0c | 5s 0c | steady | 3 of 5 | 11 |  |
 | Tigerbane | 1465 | 1g 4s 0c | 2026-11-09 12:28 UTC | 1g 14s 50c | 1g 14s 50c | steady | 4 of 5 | 18 |  |
 | Vendetta | 776 | 10g 0s 0c | 2026-11-09 12:28 UTC | 5g 0s 0c | 5g 0s 0c | moving | 3 of 5 | 6 |  |
 | Vorpal Dagger | 15245 | 4g 0s 0c | 2026-11-09 05:47 UTC | 6g 75s 0c |  | too new | 2 of 5 | 2 |  |
 | War Knife | 4571 | 10s 0c | 2026-11-08 23:12 UTC | 10s 0c | 10s 0c | steady | 5 of 5 | 155 |  |
+| Widowmaker | 4091 | 20g 0s 0c | 2026-11-09 05:47 UTC | 20g 0s 0c |  | too new | 1 of 5 | 2 |  |
 | Worn Dagger | 2092 | 97s 0c | 2026-11-09 12:28 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 2 |  |
 | Wyvern Tailspike | 5752 | 39s 0c | 2026-11-09 12:28 UTC | 46s 0c | 46s 0c | steady | 4 of 5 | 28 |  |
 
