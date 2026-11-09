@@ -1,12 +1,12 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Miscellaneous: Other
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-08 23:12 UTC. Uploads in the 30-day window: 16.
+- **Latest scan:** 2026-11-09 05:47 UTC. Uploads in the 30-day window: 17.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | Broken Blade of Heroes | 9719 | 3g 55s 0c | 2026-11-08 23:12 UTC | 4g 89s 0c | 4g 89s 0c | volatile | 3 of 5 | 11 |  |
-| Rotheap Innards | 279537 | 48s 0c | 2026-11-08 23:12 UTC | 74s 50c | 74s 50c | moving | 4 of 5 | 11 |  |
+| Rotheap Innards | 279537 | 48s 0c | 2026-11-09 05:47 UTC | 74s 50c | 74s 50c | moving | 4 of 5 | 12 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
