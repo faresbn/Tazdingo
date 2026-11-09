@@ -24,7 +24,7 @@
 | Band of Purification | 12996 | 49s 0c | 2026-11-09 12:28 UTC | 46s 0c | 46s 0c | moving | 5 of 5 | 28 |  |
 | Band of the Unicorn | 7553 | 6g 89s 0c | 2026-11-09 12:28 UTC | 5g 88s 50c |  | too new | 2 of 5 | 4 |  |
 | Band of Thorns | 5007 | 18s 0c | 2026-11-08 23:12 UTC | 21s 0c | 21s 0c | moving | 4 of 5 | 33 |  |
-| Basalt Necklace | 12028 | 1g 90s 0c | 2026-11-09 12:28 UTC | 1g 25s 50c | 1g 25s 50c | steady | 4 of 5 | 18 |  |
+| Basalt Necklace | 12028 | 2g 0s 0c | 2026-11-09 12:28 UTC | 1g 25s 50c | 1g 25s 50c | steady | 4 of 5 | 20 |  |
 | Basalt Ring | 11996 | 20s 0c | 2026-11-09 12:28 UTC | 42s 0c | 42s 0c | volatile | 4 of 5 | 34 |  |
 | Beacon of Hope | 9393 | 9g 79s 0c | 2026-11-08 23:12 UTC | 12g 39s 0c |  | too new | 2 of 5 | 1 |  |
 | Beaded Orb | 15969 | 5s 0c | 2026-11-08 23:12 UTC | 5s 0c | 5s 0c | steady | 5 of 5 | 135 |  |
@@ -45,14 +45,14 @@
 | Cerulean Talisman | 12019 | 1g 10s 0c | 2026-11-09 12:28 UTC | 1g 55s 0c | 1g 55s 0c | moving | 4 of 5 | 23 |  |
 | Chrome Ring | 11983 | 24s 0c | 2026-11-09 12:28 UTC | 32s 50c | 32s 50c | moving | 4 of 5 | 66 |  |
 | Clay Ring | 11993 | 31s 0c | 2026-11-09 12:28 UTC | 35s 0c | 35s 0c | moving | 5 of 5 | 42 |  |
-| Cobalt Ring | 11984 | 30s 0c | 2026-11-08 23:12 UTC | 30s 0c | 30s 0c | steady | 4 of 5 | 46 |  |
+| Cobalt Ring | 11984 | 29s 0c | 2026-11-09 12:28 UTC | 29s 50c | 29s 50c | steady | 4 of 5 | 46 |  |
 | Cold Basilisk Eye | 5079 | 60s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 5 | 34 |  |
 | Common Brown Shirt | 16059 | 6s 0c | 2026-11-09 12:28 UTC | 23s 0c | 23s 0c | volatile | 5 of 5 | 23 |  |
 | Common Gray Shirt | 3428 | 6s 0c | 2026-11-09 12:28 UTC | 9s 0c | 9s 0c | moving | 5 of 5 | 14 |  |
 | Common White Shirt | 16060 | 5s 0c | 2026-11-09 12:28 UTC | 12s 0c | 12s 0c | volatile | 5 of 5 | 12 |  |
 | Conjurer's Sphere | 15918 | 78s 0c | 2026-11-09 05:47 UTC | 79s 0c |  | too new | 2 of 5 | 18 |  |
 | Coral Band | 11994 | 23s 0c | 2026-11-09 12:28 UTC | 29s 0c | 29s 0c | moving | 5 of 5 | 61 |  |
-| Crystal Starfire Medallion | 5003 | 1g 55s 0c | 2026-11-09 12:28 UTC | 1g 83s 0c | 1g 83s 0c | moving | 4 of 5 | 20 |  |
+| Crystal Starfire Medallion | 5003 | 1g 55s 0c | 2026-11-09 12:28 UTC | 1g 78s 0c | 1g 78s 0c | moving | 4 of 5 | 21 |  |
 | Dark Silk Shirt | 4333 | 32s 0c | 2026-11-09 12:28 UTC | 38s 0c | 38s 0c | moving | 3 of 5 | 13 |  |
 | Darkmist Orb | 15980 | 1g 13s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c |  | too new | 1 of 5 | 2 |  |
 | Darkmoon Flower | 19295 | 5g 0s 0c | 2026-11-09 05:47 UTC | 5g 0s 0c |  | too new | 1 of 5 | 2 |  |
@@ -75,7 +75,7 @@
 | Furlfeather Ring | 286745 | 60s 0c | 2026-11-09 12:28 UTC | 33s 0c | 33s 0c | volatile | 5 of 5 | 16 |  |
 | Gazlowe's Charm | 13088 | 3g 0s 0c | 2026-11-09 12:28 UTC | 4g 55s 50c | 4g 55s 50c | moving | 4 of 5 | 4 |  |
 | Geomancer's Rod | 15978 | 3g 0s 0c | 2026-11-09 12:28 UTC | 2g 90s 50c |  | too new | 2 of 5 | 2 |  |
-| Glowing Green Talisman | 5002 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c | 1g 0s 0c | steady | 4 of 5 | 18 |  |
+| Glowing Green Talisman | 5002 | 1g 0s 0c | 2026-11-09 12:28 UTC | 99s 50c | 99s 50c | steady | 4 of 5 | 18 |  |
 | Gnomish Cloaking Device | 4397 | 2g 96s 0c | 2026-11-09 05:47 UTC | 3g 86s 0c |  | too new | 2 of 5 | 2 |  |
 | Gnomish Universal Remote | 7506 | 1g 28s 0c | 2026-11-09 12:28 UTC | 1g 38s 50c |  | too new | 2 of 5 | 24 |  |
 | Goblin Jumper Cables | 7148 | 1g 49s 0c | 2026-11-09 12:28 UTC | 1g 49s 0c | 1g 49s 0c | volatile | 3 of 5 | 4 |  |
@@ -86,7 +86,7 @@
 | Greenstone Talisman | 12029 | 1g 90s 0c | 2026-11-09 12:28 UTC | 1g 62s 0c | 1g 62s 0c | moving | 4 of 5 | 16 |  |
 | Greenweave Branch | 9769 | 20s 0c | 2026-11-08 23:12 UTC | 20s 0c | 20s 0c | steady | 4 of 5 | 15 |  |
 | Grove Scoundrel's Shirt | 271675 | 5g 0s 0c | 2026-11-09 12:28 UTC | 1g 27s 50c | 1g 27s 50c | volatile | 4 of 5 | 2 |  |
-| Guardian's Emblem | 286995 | 7g 50s 0c | 2026-11-09 12:28 UTC | 8g 75s 0c | 8g 75s 0c | moving | 4 of 5 | 4 |  |
+| Guardian's Emblem | 286995 | 7g 77s 0c | 2026-11-09 12:28 UTC | 8g 75s 0c | 8g 75s 0c | moving | 4 of 5 | 4 |  |
 | Guild Tabard | 5976 | 1g 66s 0c | 2026-11-09 12:28 UTC | 1g 50s 0c |  | too new | 2 of 5 | 6 |  |
 | Heart of Alterac | 283254 | 2g 15s 0c | 2026-11-09 12:28 UTC | 80s 0c | 80s 0c | volatile | 3 of 5 | 5 |  |
 | Heart Ring | 5001 | 21s 0c | 2026-11-09 12:28 UTC | 25s 0c | 25s 0c | volatile | 5 of 5 | 46 |  |
@@ -109,7 +109,7 @@
 | Lord Sakrasis' Scepter | 5028 | 1g 50s 0c | 2026-11-09 05:47 UTC | 1g 50s 0c |  | too new | 1 of 5 | 2 |  |
 | Marble Necklace | 12034 | 6g 90s 0c | 2026-11-09 05:47 UTC | 7g 0s 0c | 7g 0s 0c | moving | 3 of 5 | 1 |  |
 | Mark of Kern | 2262 | 8g 99s 0c | 2026-11-09 12:28 UTC | 6g 58s 0c | 6g 58s 0c | moving | 3 of 5 | 4 |  |
-| Mark of the Marsh | 286984 | 8g 0s 0c | 2026-11-08 23:12 UTC | 8g 31s 0c | 8g 31s 0c | steady | 4 of 5 | 4 |  |
+| Mark of the Marsh | 286984 | 6g 0s 0c | 2026-11-09 12:28 UTC | 8g 31s 0c | 8g 31s 0c | moving | 4 of 5 | 4 |  |
 | Marsh Chain | 12042 | 1g 22s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c | 2g 0s 0c | volatile | 3 of 5 | 8 |  |
 | Marsh Ring | 12012 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 49s 0c | 1g 49s 0c | moving | 3 of 5 | 2 |  |
 | Meadow Ring | 12006 | 32s 0c | 2026-11-09 05:47 UTC | 38s 0c | 38s 0c | moving | 5 of 5 | 40 |  |
@@ -128,7 +128,7 @@
 | Orb of Mistmantle | 13031 | 70s 0c | 2026-11-09 12:28 UTC | 67s 50c | 67s 50c | moving | 4 of 5 | 17 |  |
 | Orb of Power | 4838 | 35s 0c | 2026-11-08 23:12 UTC | 47s 50c | 47s 50c | moving | 4 of 5 | 24 |  |
 | Pagan Rod | 15974 | 15s 0c | 2026-11-08 23:12 UTC | 16s 50c | 16s 50c | steady | 4 of 5 | 18 |  |
-| Plains Ring | 2039 | 1g 99s 0c | 2026-11-09 12:28 UTC | 2g 89s 50c | 2g 89s 50c | moving | 4 of 5 | 12 |  |
+| Plains Ring | 2039 | 2g 0s 0c | 2026-11-09 12:28 UTC | 2g 89s 50c | 2g 89s 50c | moving | 4 of 5 | 12 |  |
 | Prairie Ring | 12007 | 23s 0c | 2026-11-09 12:28 UTC | 30s 0c | 30s 0c | steady | 5 of 5 | 53 |  |
 | Primitive Mantle | 154 | 15s 0c | 2026-11-08 23:12 UTC | 17s 50c | 17s 50c | moving | 4 of 5 | 10 |  |
 | Primitive Mantle | 6134 | 30s 0c | 2026-11-07 19:24 UTC | 30s 0c |  | too new | 1 of 5 | 6 |  |
@@ -145,7 +145,7 @@
 | Ring of the Moon | 12052 | 28s 0c | 2026-11-09 12:28 UTC | 33s 0c | 33s 0c | steady | 5 of 5 | 44 |  |
 | Ring of the Underwood | 2951 | 3g 80s 0c | 2026-11-09 12:28 UTC | 3g 80s 0c | 3g 80s 0c | steady | 4 of 5 | 15 |  |
 | Ritual Stein | 15972 | 12s 0c | 2026-11-09 05:47 UTC | 12s 0c | 12s 0c | steady | 4 of 5 | 10 |  |
-| River Pride Choker | 13087 | 5g 50s 0c | 2026-11-09 12:28 UTC | 4g 24s 50c | 4g 24s 50c | moving | 4 of 5 | 14 |  |
+| River Pride Choker | 13087 | 5g 50s 0c | 2026-11-09 12:28 UTC | 4g 24s 50c | 4g 24s 50c | moving | 4 of 5 | 16 |  |
 | Rod of Molten Fire | 2565 | 41s 0c | 2026-11-09 12:28 UTC | 68s 50c | 68s 50c | moving | 4 of 5 | 19 |  |
 | Royal Scepter | 9914 | 2g 14s 0c | 2026-11-09 12:28 UTC | 2g 14s 0c |  | too new | 1 of 5 | 2 |  |
 | Runic Cane | 7559 | 8s 0c | 2026-11-08 23:12 UTC | 8s 0c | 8s 0c | steady | 5 of 5 | 14 |  |
@@ -157,7 +157,7 @@
 | Seer's Fine Stein | 7608 | 14s 0c | 2026-11-09 12:28 UTC | 15s 0c | 15s 0c | moving | 5 of 5 | 30 |  |
 | Shadow-Seer Orb | 287016 | 7g 50s 0c | 2026-11-09 05:47 UTC | 6g 32s 0c |  | too new | 2 of 5 | 1 |  |
 | Shimmering Stave | 7558 | 18s 0c | 2026-11-09 05:47 UTC | 18s 50c | 18s 50c | moving | 4 of 5 | 14 |  |
-| Silver-thread Rod | 15928 | 26s 0c | 2026-11-09 05:47 UTC | 51s 50c | 51s 50c | volatile | 4 of 5 | 16 |  |
+| Silver-thread Rod | 15928 | 25s 0c | 2026-11-09 12:28 UTC | 51s 50c | 51s 50c | volatile | 4 of 5 | 16 |  |
 | Simple Branch | 15933 | 7s 0c | 2026-11-08 23:12 UTC | 7s 0c | 7s 0c | steady | 5 of 5 | 139 |  |
 | Simple Dress | 6786 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | moving | 5 of 5 | 7 |  |
 | Simple Wildflowers | 3421 | 12s 0c | 2026-11-09 12:28 UTC | 12s 0c | 12s 0c | steady | 4 of 5 | 12 |  |
@@ -165,7 +165,7 @@
 | Skibi's Pendant | 13089 | 8g 0s 0c | 2026-11-09 12:28 UTC | 8g 0s 0c |  | too new | 1 of 5 | 1 |  |
 | Sludge-Stained Band | 286535 | 52s 0c | 2026-11-09 12:28 UTC | 52s 0c | 52s 0c | moving | 5 of 5 | 31 |  |
 | Sorcerer Sphere | 9882 | 1g 0s 0c | 2026-11-09 05:47 UTC | 1g 7s 50c |  | too new | 2 of 5 | 1 |  |
-| Spectral Necklace | 12047 | 1g 27s 0c | 2026-11-09 12:28 UTC | 1g 48s 0c | 1g 48s 0c | moving | 4 of 5 | 18 |  |
+| Spectral Necklace | 12047 | 1g 27s 0c | 2026-11-09 12:28 UTC | 1g 47s 0c | 1g 47s 0c | moving | 4 of 5 | 18 |  |
 | Spellbinder Orb | 15926 | 9s 0c | 2026-11-08 23:12 UTC | 9s 0c | 9s 0c | steady | 5 of 5 | 47 |  |
 | Spinel Ring | 11970 | 20s 0c | 2026-11-09 12:28 UTC | 38s 50c | 38s 50c | moving | 4 of 5 | 38 |  |
 | Stonecloth Branch | 15963 | 1g 49s 0c | 2026-11-09 12:28 UTC | 85s 0c |  | too new | 2 of 5 | 6 |  |
@@ -192,7 +192,7 @@
 | Thunderbrow Ring | 13097 | 1g 48s 0c | 2026-11-09 12:28 UTC | 1g 97s 50c | 1g 97s 50c | moving | 4 of 5 | 30 |  |
 | Topaz Ring | 11975 | 2g 0s 0c | 2026-11-09 12:28 UTC | 2g 20s 0c | 2g 20s 0c | volatile | 3 of 5 | 1 |  |
 | Trapper's Shirt | 127 | 9s 0c | 2026-11-09 12:28 UTC | 9s 0c | 9s 0c | volatile | 5 of 5 | 7 |  |
-| Tundra Necklace | 12039 | 1g 55s 0c | 2026-11-09 05:47 UTC | 2g 9s 50c | 2g 9s 50c | volatile | 4 of 5 | 20 |  |
+| Tundra Necklace | 12039 | 1g 25s 0c | 2026-11-09 12:28 UTC | 1g 94s 50c | 1g 94s 50c | volatile | 4 of 5 | 20 |  |
 | Tundra Ring | 12009 | 45s 0c | 2026-11-09 12:28 UTC | 31s 0c | 31s 0c | moving | 4 of 5 | 41 |  |
 | Twilight Orb | 7556 | 90s 0c | 2026-11-09 05:47 UTC | 97s 0c | 97s 0c | moving | 3 of 5 | 4 |  |
 | Twitching Eye | 285095 | 2g 0s 0c | 2026-11-09 05:47 UTC | 1g 35s 0c |  | too new | 2 of 5 | 1 |  |
