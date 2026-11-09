@@ -4,7 +4,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
-| Barbaric Bracers | 130 | 18948 | 1 | 4g 49s 0c | 90s 16c | 3g 58s 84c | ForeverDB |
+| Barbaric Bracers | 130 | 18948 | 1 | 4g 49s 0c | 89s 56c | 3g 59s 44c | ForeverDB |
 | Nightscape Cloak | 205 | 8195 | 1 | 4g 50s 0c | 1g 64s 0c | 2g 86s 0c | our scan |
 | Cured Thick Hide | 175 | 8172 | 1 | 2g 78s 0c | 63s 49c | 2g 14s 51c | ForeverDB |
 | Dusky Boots | 175 | 7390 | 1 | 3g 90s 0c | 1g 88s 43c | 2g 1s 57c | our scan |
@@ -15,9 +15,9 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Forceful Thick Armor Kit | 185 | 252463 | 1 | 2g 0s 50c | 1g 0s 71c | 99s 79c | ForeverDB |
 | Thick Murloc Armor | 145 | 5782 | 1 | 2g 24s 50c | 1g 33s 60c | 90s 90c | ForeverDB |
 | Guardian Belt | 145 | 4258 | 1 | 1g 37s 0c | 47s 40c | 89s 60c | ForeverDB |
+| Herbalist's Gloves | 110 | 7349 | 1 | 1g 11s 0c | 22s 80c | 88s 20c | ForeverDB |
 | Guardian Armor | 150 | 4256 | 1 | 2g 75s 0c | 1g 96s 69c | 78s 31c | ForeverDB |
 | Guardian Cloak | 160 | 5965 | 1 | 1g 80s 0c | 1g 14s 0c | 66s 0c | ForeverDB |
-| Herbalist's Gloves | 110 | 7349 | 1 | 77s 50c | 22s 80c | 54s 70c | our scan |
 | Frost Leather Cloak | 175 | 7377 | 1 | 1g 35s 0c | 84s 96c | 50s 4c | ForeverDB |
 | Dusky Belt | 190 | 7387 | 1 | 1g 50s 0c | 1g 1s 20c | 48s 80c | ForeverDB |
 | Azure Gustwoven Trousers | 60 | 277026 | 1 | 50s 0c | 1s 88c | 48s 12c | ForeverDB |
@@ -35,6 +35,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Azure Windraveled Mitts | 55 | 277030 | 1 | 35s 0c | 1s 84c | 33s 16c | ForeverDB |
 | Raptor Hide Belt | 140 | 4456 | 1 | 66s 50c | 34s 32c | 32s 18c | ForeverDB |
 | Azure Gustwoven Belt | 50 | 277025 | 1 | 33s 0c | 1s 50c | 31s 50c | ForeverDB |
+| Deviate Scale Belt | 90 | 6468 | 1 | 1g 45s 0c | 1g 14s 0c | 31s 0c | our scan |
 | Cloudy Windraveled Strap | 50 | 277007 | 1 | 31s 50c | 1s 50c | 30s 0c | ForeverDB |
 | Cloudy Gustwoven Belt | 50 | 277001 | 1 | 31s 0c | 1s 50c | 29s 50c | ForeverDB |
 | Cloudy Windraveled Armguards | 50 | 277005 | 1 | 30s 0c | 1s 26c | 28s 74c | ForeverDB |
@@ -47,7 +48,6 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Nightscape Headband | 200 | 8176 | 1 | 88s 0c | 70s 0c | 18s 0c | ForeverDB |
 | Hillman's Leather Boots | 110 | 252449 | 1 | 35s 0c | 19s 0c | 16s 0c | ForeverDB |
 | Green Leather Belt | 155 | 4257 | 1 | 59s 0c | 43s 80c | 15s 20c | ForeverDB |
-| Deviate Scale Belt | 90 | 6468 | 1 | 1g 45s 0c | 1g 31s 50c | 13s 50c | our scan |
 | Azure Gustwoven Gloves | 55 | 277024 | 1 | 15s 0c | 1s 84c | 13s 16c | our scan |
 | Cloudy Gustwoven Bracers | 50 | 276999 | 1 | 12s 0c | 1s 26c | 10s 74c | our scan |
 | Cloudy Gustwoven Boots | 55 | 277003 | 1 | 12s 0c | 1s 74c | 10s 26c | our scan |
@@ -55,7 +55,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Cloudy Windraveled Mitts | 55 | 277006 | 1 | 12s 0c | 1s 84c | 10s 16c | our scan |
 | Azure Gustwoven Bracers | 50 | 277023 | 1 | 11s 0c | 1s 26c | 9s 74c | our scan |
 | Barbaric Harness | 185 | 5739 | 1 | 95s 0c | 87s 20c | 7s 80c | ForeverDB |
-| Moonglow Vest | 65 | 6709 | 1 | 14s 0c | 7s 7c | 6s 93c | ForeverDB |
+| Moonglow Vest | 65 | 6709 | 1 | 14s 0c | 6s 92c | 7s 8c | ForeverDB |
 | Heavy Leather Ammo Pouch | 145 | 7372 | 1 | 56s 50c | 50s 0c | 6s 50c | ForeverDB |
 | Raptor Hide Harness | 140 | 4455 | 1 | 42s 50c | 38s 48c | 4s 2c | ForeverDB |
 | Guardian Gloves | 185 | 5966 | 1 | 43s 25c | 39s 60c | 3s 65c | ForeverDB |
@@ -80,8 +80,8 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Embossed Leather Pants | 75 | 4242 | 1 | 4s 0c | 3s 59c | 41c | our scan |
 | Fine Leather Belt | 80 | 4246 | 1 | 2s 0c | 1s 64c | 36c | our scan |
 | Rugged Leather Pants | 30 | 7280 | 1 | 2s 0c | 1s 70c | 30c | our scan |
-| Tanning Rack | 140 | 279941 | 1 | 14s 5c | 13s 76c | 29c | our scan |
 | Murloc Scale Belt | 65 | 5780 | 1 | 27s 50c | 27s 24c | 26c | our scan |
+| Tanning Rack | 140 | 279941 | 1 | 13s 99c | 13s 76c | 23c | our scan |
 | Handstitched Leather Bracers | 1 | 7277 | 1 | 1s 0c | 78c | 22c | our scan |
 | Light Leather Bracers | 70 | 7281 | 1 | 2s 0c | 1s 84c | 16c | our scan |
 | Embossed Leather Gloves | 55 | 4239 | 1 | 1s 0c | 92c | 8c | our scan |

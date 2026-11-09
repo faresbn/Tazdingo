@@ -5,9 +5,10 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
 | Heavy Kodo Stew | 200 | 12215 | 2 | 8g 1s 98c | 75s 81c | 7g 26s 17c | ForeverDB |
+| Giant Clam Scorcho | 175 | 6038 | 1 | 6g 80s 90c | 31s 90c | 6g 49s 0c | ForeverDB |
 | Cookie's Feast | 140 | 279957 | 1 | 1g 51s 0c | 41s 90c | 1g 9s 10c | ForeverDB |
 | Spiced Chili Crab | 225 | 12216 | 1 | 87s 0c | 38s 79c | 48s 21c | ForeverDB |
-| Hot Wolf Ribs | 175 | 13851 | 1 | 50s 0c | 2s 67c | 47s 33c | ForeverDB |
+| Hot Wolf Ribs | 175 | 13851 | 1 | 50s 0c | 2s 60c | 47s 40c | ForeverDB |
 | Barbecued Buzzard Wing | 175 | 4457 | 1 | 34s 0c | 5s 27c | 28s 73c | ForeverDB |
 | Savory Stag Sliders | 225 | 250065 | 1 | 30s 0c | 3s 8c | 26s 92c | ForeverDB |
 | Tender Wolf Steak | 225 | 18045 | 1 | 45s 0c | 20s 60c | 24s 40c | ForeverDB |
@@ -23,26 +24,26 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Fillet of Frenzy | 50 | 5476 | 2 | 6s 26c | 1s 8c | 5s 18c | ForeverDB |
 | Tasty Lion Steak | 150 | 3728 | 1 | 8s 36c | 3s 38c | 4s 98c | ForeverDB |
 | Carrion Surprise | 175 | 12213 | 1 | 7s 0c | 2s 6c | 4s 94c | ForeverDB |
-| Bear Brisket | 175 | 250074 | 1 | 7s 44c | 2s 58c | 4s 86c | our scan |
+| Bear Brisket | 175 | 250074 | 1 | 7s 36c | 2s 58c | 4s 78c | our scan |
 | Venomous Smoothie | 25 | 249871 | 1 | 5s 99c | 1s 37c | 4s 62c | our scan |
-| Lean Venison | 110 | 5480 | 2 | 5s 96c | 1s 34c | 4s 62c | our scan |
-| Royal Tea | 100 | 249866 | 1 | 7s 45c | 2s 85c | 4s 60c | our scan |
-| Journeyman Campfire | 90 | 279961 | 1 | 48s 99c | 45s 0c | 3s 99c | our scan |
+| Lean Venison | 110 | 5480 | 2 | 5s 50c | 1s 34c | 4s 16c | our scan |
 | Peace Tea | 25 | 249865 | 1 | 4s 98c | 1s 5c | 3s 93c | ForeverDB |
 | Filet of Redgill | 225 | 13930 | 1 | 4s 99c | 1s 10c | 3s 89c | ForeverDB |
 | Lean Wolf Steak | 125 | 12209 | 1 | 4s 89c | 1s 9c | 3s 80c | our scan |
 | Heavy Crocolisk Stew | 150 | 20074 | 1 | 6s 96c | 3s 62c | 3s 34c | our scan |
 | Gooey Spider Cake | 110 | 3666 | 1 | 3s 85c | 80c | 3s 5c | ForeverDB |
+| Journeyman Campfire | 90 | 279961 | 1 | 47s 99c | 45s 0c | 2s 99c | our scan |
+| Royal Tea | 100 | 249866 | 1 | 5s 50c | 2s 85c | 2s 65c | our scan |
 | Curiously Tasty Omelet | 130 | 3665 | 1 | 3s 89c | 1s 31c | 2s 58c | ForeverDB |
 | Slimy Smoothie | 100 | 249872 | 1 | 4s 0c | 1s 61c | 2s 39c | ForeverDB |
-| Sagefish Delight | 175 | 21217 | 1 | 4s 94c | 3s 0c | 1s 94c | our scan |
 | Roast Raptor | 175 | 12210 | 1 | 4s 40c | 2s 48c | 1s 92c | our scan |
-| Roasted Kodo Meat | 35 | 5474 | 2 | 1s 70c | 39c | 1s 31c | our scan |
+| Sagefish Delight | 175 | 21217 | 1 | 4s 46c | 3s 0c | 1s 46c | our scan |
 | Plain Ol' Paletusk | 185 | 274976 | 1 | 5s 0c | 3s 70c | 1s 30c | ForeverDB |
+| Roasted Kodo Meat | 35 | 5474 | 2 | 1s 68c | 39c | 1s 29c | our scan |
 | Tasty Raptor Bites | 25 | 250079 | 1 | 2s 48c | 1s 31c | 1s 17c | ForeverDB |
 | Crocolisk Steak | 80 | 3662 | 1 | 1s 90c | 92c | 98c | ForeverDB |
 | Cooked Crab Claw | 85 | 2682 | 1 | 97c | 28c | 69c | ForeverDB |
-| Mithril Headed Trout | 175 | 8364 | 1 | 1s 77c | 1s 25c | 52c | our scan |
+| Mithril Headed Trout | 175 | 8364 | 1 | 1s 77c | 1s 18c | 59c | our scan |
 | Crispy Lizard Tail | 100 | 5479 | 2 | 2s 88c | 2s 40c | 48c | our scan |
 | Smoked Sagefish | 80 | 21072 | 1 | 1s 70c | 1s 25c | 45c | ForeverDB |
 | Crocolisk Gumbo | 120 | 3664 | 1 | 1s 80c | 1s 41c | 39c | ForeverDB |
