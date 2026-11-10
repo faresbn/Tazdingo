@@ -4,8 +4,8 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 | Character | Level | Item level | Talents | Professions | Recorded |
 |---|---|---|---|---|---|
-| Orc Warlock | 29 | 24.5 | Demonology 20 | Enchanting 150/225, Tailoring 130/150, Cooking 150/150, First Aid 150/225, Fishing 1/75 | 2026-11-09 14:13:15 UTC |
-| Troll Rogue | 12 | 6.9 | Combat 3 | Alchemy 61/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-09 05:47:43 UTC |
+| Orc Warlock | 29 | 24.5 | Demonology 20 | Enchanting 150/225, Tailoring 130/150, Cooking 150/150, First Aid 150/225, Fishing 1/75 | 2026-11-09 21:12:01 UTC |
+| Troll Rogue | 12 | 6.9 | Combat 3 | Alchemy 61/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-09 19:32:50 UTC |
 | Tauren Druid | 3 | 0.3 | none | Herbalism 13/75, Skinning 68/75, First Aid 1/75 | 2026-11-07 20:40:17 UTC |
 | Troll Mage | 1 | 0 | none | none | 2026-11-05 18:39:27 UTC |
 | Undead Paladin | 1 | 0 | none | none | 2026-11-05 18:57:57 UTC |
@@ -13,7 +13,7 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 ## Orc Warlock
 
-Horde, level 29, item level 24.5; recorded 2026-11-09 14:13:15 UTC on logout, build 70862.
+Horde, level 29, item level 24.5; recorded 2026-11-09 21:12:01 UTC on logout, build 70862.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
@@ -67,11 +67,11 @@ Talents: Affliction 0, Demonology 20, Destruction 0. Loadout code: `CIdBa0K/6fjl
 | Durotar Supply and Logistics | Neutral | 2000/3000 |
 | Earthen Ring | Neutral | 900/3000 |
 
-Stats: Health 1241, Mana or energy 2078, Strength 33, Agility 37, Stamina 107, Intellect 99, Spirit 74, Armour 351. PvP: Honourable kills 0, Dishonourable kills -93, Honour points 34, Renown 0. Collected: mounts 2, pets 5, titles 0.
+Stats: Health 1241, Mana or energy 2078, Strength 47, Agility 37, Stamina 107, Intellect 99, Spirit 74, Armour 561. PvP: Honourable kills 0, Dishonourable kills 52, Honour points 45, Renown 0. Collected: mounts 2, pets 5, titles 0.
 
 ## Troll Rogue
 
-Horde, level 12, item level 6.9; recorded 2026-11-09 05:47:43 UTC on logout, build 70862.
+Horde, level 12, item level 6.9; recorded 2026-11-09 19:32:50 UTC on logout, build 70862.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
@@ -117,7 +117,7 @@ Talents: Assassination 0, Combat 3, Subtlety 0. Loadout code: `CAdBfBw6kaEYM3VLT
 | Powderfuse | Neutral | 525/3000 |
 | Ratchet | Neutral | 650/3000 |
 
-Stats: Health 332, Mana or energy 100, Strength 30, Agility 49, Stamina 37, Intellect 18, Spirit 29, Armour 346. PvP: Honourable kills 0, Dishonourable kills -22, Honour points 0, Renown 0. Collected: mounts 2, pets 5, titles 0.
+Stats: Health 332, Mana or energy 100, Strength 30, Agility 49, Stamina 37, Intellect 18, Spirit 29, Armour 346. PvP: Honourable kills 0, Dishonourable kills 88, Honour points 0, Renown 0. Collected: mounts 2, pets 5, titles 0.
 
 ## Tauren Druid
 

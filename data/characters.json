@@ -12,7 +12,7 @@
    "faction": "Horde",
    "level": 29,
    "item_level": 24.5,
-   "recorded_at": "2026-11-09T14:13:15Z",
+   "recorded_at": "2026-11-09T21:12:01Z",
    "recorded_on": "logout",
    "build": "70862",
    "gear": [
@@ -275,17 +275,17 @@
    "stats": {
     "Health": 1241,
     "Mana or energy": 2078,
-    "Strength": 33,
+    "Strength": 47,
     "Agility": 37,
     "Stamina": 107,
     "Intellect": 99,
     "Spirit": 74,
-    "Armour": 351
+    "Armour": 561
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": -93,
-    "Honour points": 34,
+    "Dishonourable kills": 52,
+    "Honour points": 45,
     "Renown": 0
    },
    "collected": {
@@ -301,7 +301,7 @@
    "faction": "Horde",
    "level": 12,
    "item_level": 6.9,
-   "recorded_at": "2026-11-09T05:47:43Z",
+   "recorded_at": "2026-11-09T19:32:50Z",
    "recorded_on": "logout",
    "build": "70862",
    "gear": [
@@ -526,7 +526,7 @@
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": -22,
+    "Dishonourable kills": 88,
     "Honour points": 0,
     "Renown": 0
    },
