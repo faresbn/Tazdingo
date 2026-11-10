@@ -6,48 +6,48 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Blueprint: Repair Bot | 273092 | 5g 80s 0c | 2026-11-09 12:28 UTC | 1g 39s 50c | 1g 39s 50c | moving | 4 of 5 | 22 |  |
-| Schematic: Bright-Eye Goggles | 10601 | 6s 0c | 2026-11-08 23:12 UTC | 9s 0c | 9s 0c | volatile | 5 of 5 | 42 |  |
-| Schematic: Catseye Ultra Goggles | 10603 | 11s 0c | 2026-11-09 12:28 UTC | 32s 50c | 32s 50c | volatile | 4 of 5 | 24 |  |
-| Schematic: Craftsman's Monocle | 4415 | 1g 90s 0c | 2026-11-09 12:28 UTC | 1g 57s 0c | 1g 57s 0c | moving | 4 of 5 | 6 |  |
-| Schematic: Discombobulator Ray | 4413 | 2g 0s 0c | 2026-11-08 23:12 UTC | 1g 50s 50c |  | too new | 2 of 5 | 2 |  |
-| Schematic: EZ-Thro Bronze Mortar | 264212 | 48s 0c | 2026-11-09 12:28 UTC | 1g 60s 0c | 1g 60s 0c | volatile | 3 of 5 | 16 |  |
-| Schematic: EZ-Thro Copper Bomb XL | 264205 | 4g 99s 0c | 2026-11-09 12:28 UTC | 4g 99s 0c |  | too new | 1 of 5 | 4 |  |
-| Schematic: EZ-Thro Dynamite | 6716 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 237 |  |
-| Schematic: EZ-Thro Tru-Trigger | 264218 | 5g 0s 0c | 2026-11-09 12:28 UTC | 5g 0s 0c |  | too new | 2 of 5 | 4 |  |
-| Schematic: EZ-Thro Wrap | 264204 | 4g 99s 0c | 2026-11-09 12:28 UTC | 4g 99s 0c |  | too new | 1 of 5 | 3 |  |
-| Schematic: Flame Deflector | 4411 | 45g 1s 0c | 2026-11-09 12:28 UTC | 45g 1s 0c | 45g 1s 0c | volatile | 3 of 5 | 1 |  |
-| Schematic: Flash Bomb | 6672 | 4g 99s 0c | 2026-11-09 12:28 UTC | 4g 99s 0c |  | too new | 1 of 5 | 1 |  |
-| Schematic: Goblin Land Mine | 4416 | 8s 0c | 2026-11-09 12:28 UTC | 18s 0c | 18s 0c | volatile | 4 of 5 | 55 |  |
-| Schematic: Goblin Rocket Boots | 7192 | 10g 0s 0c | 2026-11-09 12:28 UTC | 10g 0s 0c | 10g 0s 0c | volatile | 3 of 5 | 4 |  |
-| Schematic: Large Seaforium Charge | 4417 | 8s 0c | 2026-11-08 23:12 UTC | 8s 50c | 8s 50c | steady | 4 of 5 | 26 |  |
-| Schematic: Mechanical Dragonling | 13311 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 61s 0c |  | too new | 2 of 5 | 10 |  |
-| Schematic: Mechanical Squirrel | 4408 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 336 |  |
-| Schematic: Mithril Heavy-bore Rifle | 10604 | 10s 0c | 2026-11-08 23:12 UTC | 21s 0c | 21s 0c | volatile | 4 of 5 | 23 |  |
-| Schematic: Moonsight Rifle | 4412 | 4s 0c | 2026-11-08 23:12 UTC | 4s 0c | 4s 0c | moving | 5 of 5 | 89 |  |
-| Schematic: No Slip SAF-T Padding | 264206 | 4g 99s 0c | 2026-11-09 05:47 UTC | 4g 99s 0c |  | too new | 1 of 5 | 2 |  |
-| Schematic: Parachute Cloak | 10606 | 20s 0c | 2026-11-09 12:28 UTC | 24s 0c | 24s 0c | volatile | 3 of 5 | 30 |  |
-| Schematic: Portable Bronze Mortar | 4414 | 5s 0c | 2026-11-08 23:12 UTC | 9s 0c | 9s 0c | volatile | 5 of 5 | 68 |  |
-| Schematic: Red Firework | 18647 | 32s 0c | 2026-11-09 12:28 UTC | 35s 0c | 35s 0c | moving | 3 of 5 | 7 |  |
-| Schematic: SAF-T Bomb | 264215 | 59s 0c | 2026-11-09 12:28 UTC | 99s 0c | 99s 0c | moving | 3 of 5 | 16 |  |
-| Schematic: SAF-T Bronze Bomb | 264207 | 33s 0c | 2026-11-09 12:28 UTC | 49s 0c | 49s 0c | volatile | 3 of 5 | 12 |  |
-| Schematic: SAF-T Casing | 264214 | 13s 0c | 2026-11-09 05:47 UTC | 13s 0c |  | too new | 1 of 5 | 1 |  |
-| Schematic: SAF-T Clever Dynamite | 264224 | 2g 99s 0c | 2026-11-09 12:28 UTC | 2g 99s 0c |  | too new | 1 of 5 | 1 |  |
-| Schematic: SAF-T Copper Bomb | 264203 | 4g 99s 0c | 2026-11-09 05:47 UTC | 4g 99s 0c |  | too new | 1 of 5 | 2 |  |
-| Schematic: SAF-T Dynamite | 264202 | 4g 99s 0c | 2026-11-09 12:28 UTC | 4g 99s 0c |  | too new | 1 of 5 | 3 |  |
-| Schematic: SAF-T Jumbo Dynamite | 264208 | 40s 0c | 2026-11-09 12:28 UTC | 46s 0c | 46s 0c | steady | 4 of 5 | 10 |  |
-| Schematic: SAF-T Tabs | 264201 | 4g 99s 0c | 2026-11-09 12:28 UTC | 4g 99s 0c |  | too new | 1 of 5 | 3 |  |
-| Schematic: Shadow Goggles | 4410 | 3s 0c | 2026-11-09 05:47 UTC | 3s 0c | 3s 0c | moving | 5 of 5 | 86 |  |
-| Schematic: Shafety Sheep | 264210 | 90s 0c | 2026-11-09 12:28 UTC | 1g 30s 0c | 1g 30s 0c | volatile | 3 of 5 | 9 |  |
-| Schematic: Small Seaforium Charge | 4409 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 5 | 247 |  |
-| Schematic: Sniper Scope | 10608 | 22g 0s 0c | 2026-11-09 12:28 UTC | 34g 0s 0c | 34g 0s 0c | moving | 3 of 5 | 4 |  |
-| Schematic: Spellpower Goggles Xtreme | 10605 | 97s 0c | 2026-11-09 12:28 UTC | 2g 50s 0c | 2g 50s 0c | volatile | 4 of 5 | 8 |  |
-| Schematic: Spellpower Goggles Xtreme Plus | 16045 | 5g 0s 0c | 2026-11-09 12:28 UTC | 10g 0s 0c |  | too new | 2 of 5 | 2 |  |
-| Schematic: Thorium Grenade | 16041 | 3g 46s 0c | 2026-11-09 05:47 UTC | 3g 46s 0c |  | too new | 1 of 5 | 2 |  |
-| Schematic: Thorium Rifle | 16043 | 46s 0c | 2026-11-09 12:28 UTC | 46s 0c |  | too new | 1 of 5 | 1 |  |
-| Schematic: Thorium Shells | 16051 | 10g 76s 0c | 2026-11-08 23:12 UTC | 15g 76s 0c |  | too new | 2 of 5 | 2 |  |
-| Schematic: Thorium Widget | 16042 | 3g 46s 0c | 2026-11-09 05:47 UTC | 3g 46s 0c |  | too new | 1 of 5 | 2 |  |
-| Schematic: Tru-Trigger Frag Bomb | 264219 | 75s 0c | 2026-11-09 12:28 UTC | 1g 37s 50c |  | too new | 2 of 5 | 6 |  |
-| Schematic: Unsanctified Grenade | 284870 | 89s 0c | 2026-11-09 12:28 UTC | 94s 0c |  | too new | 2 of 5 | 7 |  |
+| Blueprint: Repair Bot | 273092 | 5g 80s 0c | 2026-11-09 12:28 UTC | 1g 39s 50c | 1g 39s 50c | moving | 4 of 6 | 22 |  |
+| Schematic: Bright-Eye Goggles | 10601 | 6s 0c | 2026-11-08 23:12 UTC | 9s 0c | 9s 0c | volatile | 5 of 6 | 42 |  |
+| Schematic: Catseye Ultra Goggles | 10603 | 11s 0c | 2026-11-09 12:28 UTC | 32s 50c | 32s 50c | volatile | 4 of 6 | 24 |  |
+| Schematic: Craftsman's Monocle | 4415 | 1g 90s 0c | 2026-11-09 12:28 UTC | 1g 57s 0c | 1g 57s 0c | moving | 4 of 6 | 6 |  |
+| Schematic: Discombobulator Ray | 4413 | 2g 0s 0c | 2026-11-08 23:12 UTC | 1g 50s 50c |  | too new | 2 of 6 | 2 |  |
+| Schematic: EZ-Thro Bronze Mortar | 264212 | 48s 0c | 2026-11-09 12:28 UTC | 1g 60s 0c | 1g 60s 0c | volatile | 3 of 6 | 16 |  |
+| Schematic: EZ-Thro Copper Bomb XL | 264205 | 4g 99s 0c | 2026-11-09 12:28 UTC | 4g 99s 0c |  | too new | 1 of 6 | 4 |  |
+| Schematic: EZ-Thro Dynamite | 6716 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 6 | 237 |  |
+| Schematic: EZ-Thro Tru-Trigger | 264218 | 5g 0s 0c | 2026-11-09 12:28 UTC | 5g 0s 0c |  | too new | 2 of 6 | 4 |  |
+| Schematic: EZ-Thro Wrap | 264204 | 4g 99s 0c | 2026-11-09 12:28 UTC | 4g 99s 0c |  | too new | 1 of 6 | 3 |  |
+| Schematic: Flame Deflector | 4411 | 45g 1s 0c | 2026-11-09 12:28 UTC | 45g 1s 0c | 45g 1s 0c | volatile | 3 of 6 | 1 |  |
+| Schematic: Flash Bomb | 6672 | 4g 99s 0c | 2026-11-09 12:28 UTC | 4g 99s 0c |  | too new | 1 of 6 | 1 |  |
+| Schematic: Goblin Land Mine | 4416 | 8s 0c | 2026-11-09 12:28 UTC | 18s 0c | 18s 0c | volatile | 4 of 6 | 55 |  |
+| Schematic: Goblin Rocket Boots | 7192 | 10g 0s 0c | 2026-11-09 12:28 UTC | 10g 0s 0c | 10g 0s 0c | volatile | 3 of 6 | 4 |  |
+| Schematic: Large Seaforium Charge | 4417 | 8s 0c | 2026-11-08 23:12 UTC | 8s 50c | 8s 50c | steady | 4 of 6 | 26 |  |
+| Schematic: Mechanical Dragonling | 13311 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 61s 0c |  | too new | 2 of 6 | 10 |  |
+| Schematic: Mechanical Squirrel | 4408 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 6 | 336 |  |
+| Schematic: Mithril Heavy-bore Rifle | 10604 | 10s 0c | 2026-11-08 23:12 UTC | 21s 0c | 21s 0c | volatile | 4 of 6 | 23 |  |
+| Schematic: Moonsight Rifle | 4412 | 4s 0c | 2026-11-08 23:12 UTC | 4s 0c | 4s 0c | moving | 5 of 6 | 89 |  |
+| Schematic: No Slip SAF-T Padding | 264206 | 4g 99s 0c | 2026-11-09 05:47 UTC | 4g 99s 0c |  | too new | 1 of 6 | 2 |  |
+| Schematic: Parachute Cloak | 10606 | 20s 0c | 2026-11-09 12:28 UTC | 24s 0c | 24s 0c | volatile | 3 of 6 | 30 |  |
+| Schematic: Portable Bronze Mortar | 4414 | 5s 0c | 2026-11-08 23:12 UTC | 9s 0c | 9s 0c | volatile | 5 of 6 | 68 |  |
+| Schematic: Red Firework | 18647 | 32s 0c | 2026-11-09 12:28 UTC | 35s 0c | 35s 0c | moving | 3 of 6 | 7 |  |
+| Schematic: SAF-T Bomb | 264215 | 59s 0c | 2026-11-09 12:28 UTC | 99s 0c | 99s 0c | moving | 3 of 6 | 16 |  |
+| Schematic: SAF-T Bronze Bomb | 264207 | 33s 0c | 2026-11-09 12:28 UTC | 49s 0c | 49s 0c | volatile | 3 of 6 | 12 |  |
+| Schematic: SAF-T Casing | 264214 | 13s 0c | 2026-11-09 05:47 UTC | 13s 0c |  | too new | 1 of 6 | 1 |  |
+| Schematic: SAF-T Clever Dynamite | 264224 | 2g 99s 0c | 2026-11-09 12:28 UTC | 2g 99s 0c |  | too new | 1 of 6 | 1 |  |
+| Schematic: SAF-T Copper Bomb | 264203 | 4g 99s 0c | 2026-11-09 05:47 UTC | 4g 99s 0c |  | too new | 1 of 6 | 2 |  |
+| Schematic: SAF-T Dynamite | 264202 | 4g 99s 0c | 2026-11-09 12:28 UTC | 4g 99s 0c |  | too new | 1 of 6 | 3 |  |
+| Schematic: SAF-T Jumbo Dynamite | 264208 | 40s 0c | 2026-11-09 12:28 UTC | 46s 0c | 46s 0c | steady | 4 of 6 | 10 |  |
+| Schematic: SAF-T Tabs | 264201 | 4g 99s 0c | 2026-11-09 12:28 UTC | 4g 99s 0c |  | too new | 1 of 6 | 3 |  |
+| Schematic: Shadow Goggles | 4410 | 3s 0c | 2026-11-09 05:47 UTC | 3s 0c | 3s 0c | moving | 5 of 6 | 86 |  |
+| Schematic: Shafety Sheep | 264210 | 90s 0c | 2026-11-09 12:28 UTC | 1g 30s 0c | 1g 30s 0c | volatile | 3 of 6 | 9 |  |
+| Schematic: Small Seaforium Charge | 4409 | 2s 0c | 2026-11-08 23:12 UTC | 2s 0c | 2s 0c | steady | 5 of 6 | 247 |  |
+| Schematic: Sniper Scope | 10608 | 22g 0s 0c | 2026-11-09 12:28 UTC | 34g 0s 0c | 34g 0s 0c | moving | 3 of 6 | 4 |  |
+| Schematic: Spellpower Goggles Xtreme | 10605 | 97s 0c | 2026-11-09 12:28 UTC | 2g 50s 0c | 2g 50s 0c | volatile | 4 of 6 | 8 |  |
+| Schematic: Spellpower Goggles Xtreme Plus | 16045 | 5g 0s 0c | 2026-11-09 12:28 UTC | 10g 0s 0c |  | too new | 2 of 6 | 2 |  |
+| Schematic: Thorium Grenade | 16041 | 3g 46s 0c | 2026-11-09 05:47 UTC | 3g 46s 0c |  | too new | 1 of 6 | 2 |  |
+| Schematic: Thorium Rifle | 16043 | 46s 0c | 2026-11-09 12:28 UTC | 46s 0c |  | too new | 1 of 6 | 1 |  |
+| Schematic: Thorium Shells | 16051 | 10g 76s 0c | 2026-11-08 23:12 UTC | 15g 76s 0c |  | too new | 2 of 6 | 2 |  |
+| Schematic: Thorium Widget | 16042 | 3g 46s 0c | 2026-11-09 05:47 UTC | 3g 46s 0c |  | too new | 1 of 6 | 2 |  |
+| Schematic: Tru-Trigger Frag Bomb | 264219 | 75s 0c | 2026-11-09 12:28 UTC | 1g 37s 50c |  | too new | 2 of 6 | 6 |  |
+| Schematic: Unsanctified Grenade | 284870 | 89s 0c | 2026-11-09 12:28 UTC | 94s 0c |  | too new | 2 of 6 | 7 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

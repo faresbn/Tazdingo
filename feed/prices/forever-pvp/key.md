@@ -6,8 +6,8 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Benedict's Key | 4882 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 61 |  |
-| Captain's Key | 9249 | 77s 0c | 2026-11-09 12:28 UTC | 63s 50c |  | too new | 2 of 5 | 4 |  |
-| Kolkar Booty Key | 5020 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 5 | 223 |  |
+| Benedict's Key | 4882 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 6 | 61 |  |
+| Captain's Key | 9249 | 77s 0c | 2026-11-09 12:28 UTC | 63s 50c |  | too new | 2 of 6 | 4 |  |
+| Kolkar Booty Key | 5020 | 1s 0c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 6 | 223 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

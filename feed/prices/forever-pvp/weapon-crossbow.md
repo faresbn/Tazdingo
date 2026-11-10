@@ -6,10 +6,10 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Crystalpine Stinger | 13037 | 2g 49s 0c | 2026-11-09 12:28 UTC | 2g 97s 50c | 2g 97s 50c | volatile | 4 of 5 | 20 |  |
-| Fine Light Crossbow | 15808 | 49s 0c | 2026-11-07 10:45 UTC | 49s 0c |  | too new | 1 of 5 | 1 |  |
-| Heavy Crossbow | 15809 | 45s 0c | 2026-11-07 10:45 UTC | 45s 0c |  | too new | 1 of 5 | 1 |  |
-| Skull Splitting Crossbow | 13039 | 19g 75s 0c | 2026-11-09 12:28 UTC | 29g 87s 50c |  | too new | 2 of 5 | 2 |  |
-| Swiftwind | 13038 | 4g 80s 0c | 2026-11-09 12:28 UTC | 4g 20s 0c | 4g 20s 0c | steady | 3 of 5 | 12 |  |
+| Crystalpine Stinger | 13037 | 2g 49s 0c | 2026-11-09 12:28 UTC | 2g 97s 50c | 2g 97s 50c | volatile | 4 of 6 | 20 |  |
+| Fine Light Crossbow | 15808 | 49s 0c | 2026-11-07 10:45 UTC | 49s 0c |  | too new | 1 of 6 | 1 |  |
+| Heavy Crossbow | 15809 | 45s 0c | 2026-11-07 10:45 UTC | 45s 0c |  | too new | 1 of 6 | 1 |  |
+| Skull Splitting Crossbow | 13039 | 19g 75s 0c | 2026-11-09 12:28 UTC | 29g 87s 50c |  | too new | 2 of 6 | 2 |  |
+| Swiftwind | 13038 | 4g 80s 0c | 2026-11-09 12:28 UTC | 4g 20s 0c | 4g 20s 0c | steady | 3 of 6 | 12 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

@@ -6,6 +6,6 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Iron Fists | 250604 | 1g 0s 0c | 2026-11-08 16:27 UTC | 1g 0s 0c |  | too new | 1 of 5 | 3 |  |
+| Iron Fists | 250604 | 1g 0s 0c | 2026-11-08 16:27 UTC | 1g 0s 0c |  | too new | 1 of 6 | 3 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

@@ -14,6 +14,6 @@ Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/
 - `feed/craft/leatherworking.md`: Leatherworking, 79 recipes with a margin.
 - `feed/craft/mining.md`: Mining, 8 recipes with a margin.
 - `feed/craft/skinning.md`: Skinning, 1 recipes with a margin.
-- `feed/craft/tailoring.md`: Tailoring, 96 recipes with a margin.
+- `feed/craft/tailoring.md`: Tailoring, 97 recipes with a margin.
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

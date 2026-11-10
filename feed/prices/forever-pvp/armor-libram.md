@@ -6,6 +6,6 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Libram of Fervor | 23203 | 100g 0s 0c | 2026-11-08 23:12 UTC | 100g 0s 0c |  | too new | 1 of 5 | 1 |  |
+| Libram of Fervor | 23203 | 100g 0s 0c | 2026-11-08 23:12 UTC | 100g 0s 0c |  | too new | 1 of 6 | 1 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

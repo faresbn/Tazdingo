@@ -40,7 +40,6 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Cloudy Skyforged Legguards | 60 | 276996 | 1 | 45s 0c | 9s 0c | 36s 0c | ForeverDB |
 | Mighty Iron Hammer | 120 | 3492 | 1 | 1g 29s 0c | 93s 12c | 35s 88c | ForeverDB |
 | Solid Grinding Stone | 175 | 7966 | 1 | 44s 96c | 10s 92c | 34s 4c | ForeverDB |
-| Azure Skyforged Greaves | 55 | 277021 | 1 | 40s 0c | 7s 0c | 33s 0c | ForeverDB |
 | Golden Scale Coif | 165 | 3837 | 1 | 1g 74s 50c | 1g 44s 8c | 30s 42c | ForeverDB |
 | Glinting Steel Dagger | 180 | 12259 | 1 | 2g 33s 50c | 2g 4s 81c | 28s 69c | ForeverDB |
 | Cloudy Skyforged Wristguards | 50 | 276993 | 1 | 33s 10c | 5s 0c | 28s 10c | ForeverDB |
@@ -48,24 +47,25 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Azure Skyforged Chainmail | 60 | 277016 | 1 | 35s 0c | 9s 0c | 26s 0c | ForeverDB |
 | Azure Skyforged Chain | 50 | 277019 | 1 | 30s 62c | 6s 0c | 24s 62c | ForeverDB |
 | Golden Scale Leggings | 145 | 3843 | 1 | 95s 0c | 71s 5c | 23s 95c | ForeverDB |
-| Azure Skyforged Gauntlets | 55 | 277018 | 1 | 30s 0c | 7s 0c | 23s 0c | ForeverDB |
 | Azure Skyforged Wristguards | 50 | 277017 | 1 | 27s 50c | 5s 0c | 22s 50c | ForeverDB |
-| Cloudy Skyforged Greaves | 55 | 276997 | 1 | 29s 0c | 7s 0c | 22s 0c | ForeverDB |
 | Cloudy Skyforged Chain | 50 | 276995 | 1 | 27s 50c | 6s 0c | 21s 50c | ForeverDB |
 | Azure Skyforged Legguards | 60 | 277020 | 1 | 30s 0c | 9s 0c | 21s 0c | ForeverDB |
 | Ironforge Breastplate | 100 | 6731 | 1 | 39s 0c | 18s 37c | 20s 63c | our scan |
-| Cloudy Skyforged Gauntlets | 55 | 276994 | 1 | 26s 87c | 7s 0c | 19s 87c | ForeverDB |
 | Solid Sharpening Stone | 175 | 7964 | 1 | 19s 65c | 2s 73c | 16s 92c | ForeverDB |
-| Deadly Bronze Poniard | 100 | 3490 | 1 | 59s 0c | 42s 97c | 16s 3c | our scan |
 | Anvil | 140 | 279988 | 1 | 32s 48c | 16s 75c | 15s 73c | our scan |
+| Deadly Bronze Poniard | 100 | 3490 | 1 | 57s 0c | 42s 97c | 14s 3c | our scan |
+| Azure Skyforged Gauntlets | 55 | 277018 | 1 | 20s 0c | 7s 0c | 13s 0c | our scan |
+| Azure Skyforged Greaves | 55 | 277021 | 1 | 20s 0c | 7s 0c | 13s 0c | our scan |
+| Cloudy Skyforged Gauntlets | 55 | 276994 | 1 | 20s 0c | 7s 0c | 13s 0c | our scan |
+| Cloudy Skyforged Greaves | 55 | 276997 | 1 | 20s 0c | 7s 0c | 13s 0c | our scan |
 | Heavy Mithril Shoulder | 200 | 7918 | 1 | 1g 16s 50c | 1g 3s 52c | 12s 98c | ForeverDB |
 | Silvered Bronze Shoulders | 100 | 3481 | 1 | 40s 0c | 27s 76c | 12s 24c | ForeverDB |
 | Iridescent Hammer | 115 | 5541 | 1 | 1g 23s 0c | 1g 11s 85c | 11s 15c | ForeverDB |
 | Solid Weightstone | 175 | 7965 | 1 | 13s 83c | 2s 73c | 11s 10c | ForeverDB |
 | Heavy Bronze Mace | 130 | 3491 | 1 | 57s 0c | 48s 32c | 8s 68c | our scan |
 | Silvered Bronze Breastplate | 105 | 2869 | 1 | 44s 0c | 37s 9c | 6s 91c | our scan |
-| Pearl-handled Dagger | 110 | 5540 | 1 | 46s 0c | 40s 68c | 5s 32c | our scan |
 | Green Iron Helm | 170 | 3836 | 1 | 85s 50c | 80s 54c | 4s 96c | our scan |
+| Pearl-handled Dagger | 110 | 5540 | 1 | 45s 50c | 40s 68c | 4s 82c | our scan |
 | Heavy Mithril Gauntlet | 200 | 7919 | 1 | 89s 0c | 84s 28c | 4s 72c | ForeverDB |
 | Green Iron Gauntlets | 125 | 3485 | 1 | 33s 50c | 30s 58c | 2s 92c | our scan |
 | Big Bronze Knife | 100 | 3848 | 1 | 20s 0c | 17s 25c | 2s 75c | our scan |

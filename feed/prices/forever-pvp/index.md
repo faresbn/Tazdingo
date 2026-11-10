@@ -9,12 +9,12 @@ Open only the file for the item's category. Each lists every item recorded in it
 Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/main/<path>
 
 - `feed/prices/forever-pvp/alerts.md`: deals under the usual price, below vendor price, investment watch, short supply and movers.
-- `feed/prices/forever-pvp/armor-cloth.md`: Armor: Cloth, 901 items.
-- `feed/prices/forever-pvp/armor-leather.md`: Armor: Leather, 652 items.
+- `feed/prices/forever-pvp/armor-cloth.md`: Armor: Cloth, 911 items.
+- `feed/prices/forever-pvp/armor-leather.md`: Armor: Leather, 657 items.
 - `feed/prices/forever-pvp/armor-libram.md`: Armor: Libram, 1 items.
-- `feed/prices/forever-pvp/armor-mail.md`: Armor: Mail, 575 items.
+- `feed/prices/forever-pvp/armor-mail.md`: Armor: Mail, 576 items.
 - `feed/prices/forever-pvp/armor-miscellaneous.md`: Armor: Miscellaneous, 205 items.
-- `feed/prices/forever-pvp/armor-plate.md`: Armor: Plate, 131 items.
+- `feed/prices/forever-pvp/armor-plate.md`: Armor: Plate, 134 items.
 - `feed/prices/forever-pvp/armor-shield.md`: Armor: Shield, 118 items.
 - `feed/prices/forever-pvp/consumable-bandages.md`: Consumable: Bandages, 9 items.
 - `feed/prices/forever-pvp/consumable-device.md`: Consumable: Device, 14 items.
@@ -32,7 +32,7 @@ Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/
 - `feed/prices/forever-pvp/miscellaneous-other.md`: Miscellaneous: Other, 3 items.
 - `feed/prices/forever-pvp/miscellaneous-pet.md`: Miscellaneous: Pet, 25 items.
 - `feed/prices/forever-pvp/miscellaneous-reagent.md`: Miscellaneous: Reagent, 26 items.
-- `feed/prices/forever-pvp/other.md`: Other, 4 items.
+- `feed/prices/forever-pvp/other.md`: Other, 141 items.
 - `feed/prices/forever-pvp/projectile.md`: Projectile, 18 items.
 - `feed/prices/forever-pvp/quest.md`: Quest, 80 items.
 - `feed/prices/forever-pvp/quiver.md`: Quiver, 11 items.

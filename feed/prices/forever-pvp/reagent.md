@@ -6,6 +6,6 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Ankh | 17030 | 20s 97c | 2026-11-09 12:28 UTC | 24s 43c | 24s 43c | volatile | 4 of 5 | 78 |  |
+| Ankh | 17030 | 20s 97c | 2026-11-09 12:28 UTC | 24s 43c | 24s 43c | volatile | 4 of 6 | 78 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

@@ -9,6 +9,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Runecloth Cloak | 220 | 13860 | 1 | 9g 99s 0c | 2g 15s 0c | 7g 84s 0c | ForeverDB |
 | Runecloth Reagent Bag | 215 | 254079 | 1 | 14g 86s 4c | 9g 25s 53c | 5g 60s 51c | ForeverDB |
 | Soul Pouch | 215 | 21340 | 1 | 10g 0s 0c | 5g 56s 24c | 4g 43s 76c | ForeverDB |
+| Dreamweave Circlet | 220 | 10041 | 1 | 8g 99s 0c | 5g 24s 93c | 3g 74s 7c | our scan |
 | Dreamweave Gloves | 205 | 10019 | 1 | 6g 99s 0c | 3g 57s 78c | 3g 41s 22c | ForeverDB |
 | Dreamweave Vest | 205 | 10021 | 1 | 6g 90s 0c | 4g 31s 22c | 2g 58s 78c | ForeverDB |
 | Earthen Silk Belt | 160 | 7061 | 1 | 4g 2s 60c | 1g 47s 20c | 2g 55s 40c | ForeverDB |
@@ -81,8 +82,8 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Heavy Linen Gloves | 35 | 4307 | 1 | 2s 0c | 1s 12c | 88c | our scan |
 | Blue Linen Vest | 35 | 6240 | 1 | 3s 0c | 2s 13c | 87c | our scan |
 | Red Linen Vest | 35 | 6239 | 1 | 3s 0c | 2s 13c | 87c | our scan |
-| Reinforced Linen Cape | 60 | 2580 | 1 | 2s 0c | 1s 32c | 68c | ForeverDB |
-| Simple Linen Boots | 20 | 10046 | 1 | 2s 0c | 1s 36c | 64c | our scan |
+| Simple Linen Boots | 20 | 10046 | 1 | 2s 0c | 1s 36c | 64c | ForeverDB |
+| White Linen Robe | 30 | 6241 | 1 | 2s 50c | 1s 88c | 62c | our scan |
 | Brown Linen Shirt | 1 | 4344 | 1 | 1s 0c | 61c | 39c | our scan |
 | Linen Cloak | 1 | 2570 | 1 | 1s 0c | 61c | 39c | our scan |
 | Simple Linen Pants | 1 | 10045 | 1 | 1s 0c | 61c | 39c | our scan |
@@ -93,11 +94,11 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Red Linen Robe | 25 | 2572 | 1 | 3s 0c | 2s 73c | 27c | our scan |
 | Phoenix Pants | 100 | 4317 | 1 | 94s 0c | 93s 75c | 25c | ForeverDB |
 | Faction Banner | 0 | 279972 | 1 | 80c | 61c | 19c | our scan |
+| Reinforced Linen Cape | 60 | 2580 | 1 | 1s 50c | 1s 32c | 18c | our scan |
 | Linen Bag | 1 | 4238 | 1 | 2s 0c | 1s 83c | 17c | our scan |
 | Bolt of Linen Cloth | 1 | 2996 | 1 | 51c | 38c | 13c | our scan |
 | Simple Dress | 40 | 6786 | 1 | 2s 0c | 1s 87c | 13c | our scan |
 | Linen Boots | 65 | 2569 | 1 | 2s 0c | 1s 87c | 13c | our scan |
-| White Linen Robe | 30 | 6241 | 1 | 2s 0c | 1s 88c | 12c | our scan |
 | Faction Banner | 0 | 279973 | 1 | 72c | 61c | 11c | ForeverDB |
 | Bolt of Woolen Cloth | 70 | 2997 | 1 | 4s 0c | 3s 90c | 10c | our scan |
 
