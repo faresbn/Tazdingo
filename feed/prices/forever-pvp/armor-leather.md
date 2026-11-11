@@ -383,7 +383,6 @@
 | Insignia Mantle | 4721 | 33s 0c | 2026-11-11 15:03 UTC | 40s 0c | 40s 0c | volatile | 5 of 7 | 11 |  |
 | Ironfeather Breastplate | 15066 | 67g 67s 0c | 2026-11-11 15:03 UTC | 67g 67s 0c |  | too new | 1 of 7 | 1 |  |
 | Ironfeather Shoulders | 15067 | 28g 92s 0c | 2026-11-11 15:03 UTC | 28g 92s 0c |  | too new | 1 of 7 | 2 |  |
-| Item 287039 | 287039 | 15g 0s 0c | 2026-11-11 15:03 UTC | 15g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Jadefire Belt | 15388 | 3g 0s 0c | 2026-11-09 12:28 UTC | 3g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Jadefire Bracelets | 15387 | 2g 0s 0c | 2026-11-11 15:03 UTC | 3g 0s 0c | 3g 0s 0c | moving | 3 of 7 | 1 |  |
 | Jadefire Cap | 15391 | 4g 0s 0c | 2026-11-11 15:03 UTC | 4g 0s 0c |  | too new | 1 of 7 | 2 |  |
@@ -649,6 +648,7 @@
 | Tanned Leather Gloves | 844 | 3s 0c | 2026-11-11 15:03 UTC | 3s 50c | 3s 50c | moving | 4 of 7 | 6 |  |
 | Tanned Leather Jerkin | 846 | 5s 0c | 2026-11-11 15:03 UTC | 9s 0c | 9s 0c | moving | 4 of 7 | 5 |  |
 | Tanned Leather Pants | 845 | 5s 0c | 2026-11-11 15:03 UTC | 5s 0c | 5s 0c | steady | 5 of 7 | 3 |  |
+| Tattered Explorer's Cuffs | 287039 | 15g 0s 0c | 2026-11-11 15:03 UTC | 15g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Thick Leather Shoulderpads | 3967 | 44s 0c | 2026-11-09 12:28 UTC | 44s 0c |  | too new | 1 of 7 | 1 |  |
 | Thick Murloc Armor | 5782 | 73s 0c | 2026-11-11 15:03 UTC | 94s 0c | 94s 0c | steady | 3 of 7 | 16 |  |
 | Thicket Bindings | 286985 | 2g 40s 0c | 2026-11-11 15:03 UTC | 2g 22s 0c | 2g 22s 0c | moving | 5 of 7 | 8 |  |

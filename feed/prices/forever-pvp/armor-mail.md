@@ -314,7 +314,6 @@
 | Ironhide Helmet | 15645 | 5g 0s 0c | 2026-11-09 12:28 UTC | 5g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Ironhide Legguards | 15646 | 5g 0s 0c | 2026-11-09 12:28 UTC | 5g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Ironhide Pauldrons | 15647 | 2g 97s 0c | 2026-11-09 12:28 UTC | 2g 97s 0c |  | too new | 1 of 7 | 1 |  |
-| Item 287031 | 287031 | 40g 0s 0c | 2026-11-11 15:03 UTC | 40g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Jazeraint Belt | 9901 | 35s 0c | 2026-11-11 15:03 UTC | 57s 0c | 57s 0c | moving | 4 of 7 | 9 |  |
 | Jazeraint Boots | 9895 | 72s 0c | 2026-11-11 15:03 UTC | 77s 50c | 77s 50c | steady | 4 of 7 | 11 |  |
 | Jazeraint Bracers | 9896 | 30s 0c | 2026-11-11 15:03 UTC | 44s 0c | 44s 0c | moving | 5 of 7 | 11 |  |
@@ -559,6 +558,7 @@
 | Sparkleshell Sabatons | 15576 | 1g 0s 0c | 2026-11-11 15:03 UTC | 77s 50c | 77s 50c | moving | 4 of 7 | 4 |  |
 | Sparkleshell Shoulder Pads | 15583 | 1g 0s 0c | 2026-11-11 15:03 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 7 | 4 |  |
 | Spaulders of Containment | 287022 | 20g 0s 0c | 2026-11-11 15:03 UTC | 20g 0s 0c |  | too new | 1 of 7 | 1 |  |
+| Spearfisher's Waders | 287031 | 40g 0s 0c | 2026-11-11 15:03 UTC | 40g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Spiked Chain Belt | 15515 | 9s 0c | 2026-11-11 15:03 UTC | 9s 0c | 9s 0c | steady | 5 of 7 | 33 |  |
 | Spiked Chain Breastplate | 15518 | 30s 0c | 2026-11-11 15:03 UTC | 30s 0c | 30s 0c | moving | 5 of 7 | 13 |  |
 | Spiked Chain Gauntlets | 15520 | 18s 0c | 2026-11-11 15:03 UTC | 14s 0c | 14s 0c | moving | 5 of 7 | 22 |  |

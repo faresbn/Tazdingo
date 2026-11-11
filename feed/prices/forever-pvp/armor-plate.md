@@ -37,6 +37,7 @@
 | Chromite Legplates | 8143 | 1g 15s 0c | 2026-11-11 15:03 UTC | 1g 15s 0c |  | too new | 1 of 7 | 4 |  |
 | Chromite Pauldrons | 8144 | 2g 0s 0c | 2026-11-11 15:03 UTC | 2g 39s 50c |  | too new | 2 of 7 | 4 |  |
 | Commander's Boots | 10376 | 5g 88s 0c | 2026-11-11 15:03 UTC | 5g 88s 0c |  | too new | 1 of 7 | 1 |  |
+| Den Champion's Binding | 287032 | 25g 16s 0c | 2026-11-11 15:03 UTC | 25g 16s 0c |  | too new | 1 of 7 | 1 |  |
 | Embossed Plate Armor | 9966 | 1g 20s 0c | 2026-11-11 15:03 UTC | 3g 0s 0c | 3g 0s 0c | moving | 4 of 7 | 2 |  |
 | Embossed Plate Boots | 9973 | 1g 10s 0c | 2026-11-11 15:03 UTC | 82s 0c | 82s 0c | moving | 4 of 7 | 2 |  |
 | Embossed Plate Bracers | 9972 | 65s 0c | 2026-11-11 15:03 UTC | 1g 0s 0c | 1g 0s 0c | moving | 4 of 7 | 4 |  |
@@ -97,7 +98,6 @@
 | Imbued Plate Gauntlets | 10369 | 3g 11s 0c | 2026-11-11 15:03 UTC | 9g 11s 0c |  | too new | 2 of 7 | 2 |  |
 | Imperial Plate Belt | 12424 | 6g 0s 0c | 2026-11-11 15:03 UTC | 6g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Iron-Wrought Cuffs | 287023 | 15g 79s 0c | 2026-11-11 15:03 UTC | 15g 79s 0c |  | too new | 1 of 7 | 1 |  |
-| Item 287032 | 287032 | 25g 16s 0c | 2026-11-11 15:03 UTC | 25g 16s 0c |  | too new | 1 of 7 | 1 |  |
 | Jade Belt | 14918 | 1g 97s 0c | 2026-11-11 15:03 UTC | 1g 97s 0c |  | too new | 1 of 7 | 5 |  |
 | Jade Bracers | 14914 | 1g 0s 0c | 2026-11-11 15:03 UTC | 1g 0s 0c |  | too new | 2 of 7 | 2 |  |
 | Jade Gauntlets | 14917 | 1g 0s 0c | 2026-11-11 15:03 UTC | 2g 0s 0c |  | too new | 2 of 7 | 2 |  |

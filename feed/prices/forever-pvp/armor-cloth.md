@@ -427,6 +427,7 @@
 | Gossamer Robe | 7518 | 5g 0s 0c | 2026-11-11 15:03 UTC | 5g 0s 0c | 5g 0s 0c | moving | 3 of 7 | 2 |  |
 | Gossamer Shoulderpads | 7523 | 1g 15s 0c | 2026-11-11 15:03 UTC | 1g 50s 0c | 1g 50s 0c | volatile | 3 of 7 | 5 |  |
 | Gossamer Tunic | 7517 | 1g 55s 0c | 2026-11-11 15:03 UTC | 3g 0s 0c | 3g 0s 0c | volatile | 4 of 7 | 2 |  |
+| Gracious Cape | 18743 | 30g 0s 0c | 2026-11-11 15:03 UTC | 30g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Gray Woolen Robe | 2585 | 22s 0c | 2026-11-11 15:03 UTC | 21s 0c | 21s 0c | moving | 6 of 7 | 35 |  |
 | Greater Adept's Robe | 6264 | 24s 0c | 2026-11-11 15:03 UTC | 24s 0c | 24s 0c | volatile | 5 of 7 | 48 |  |
 | Green Lens | 10504 | 1g 99s 0c | 2026-11-11 15:03 UTC | 5g 0s 0c | 5g 0s 0c | volatile | 3 of 7 | 2 |  |
@@ -516,7 +517,6 @@
 | Interlaced Vest | 3799 | 16s 0c | 2026-11-11 15:03 UTC | 22s 0c | 22s 0c | moving | 4 of 7 | 4 |  |
 | Invoker's Cord | 215366 | 99s 0c | 2026-11-11 15:03 UTC | 99s 0c |  | too new | 1 of 7 | 24 |  |
 | Ironhide Cloak | 15643 | 3g 0s 0c | 2026-11-11 15:03 UTC | 3g 0s 0c |  | too new | 1 of 7 | 3 |  |
-| Item 18743 | 18743 | 30g 0s 0c | 2026-11-11 15:03 UTC | 30g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Ivycloth Boots | 9792 | 9s 0c | 2026-11-11 15:03 UTC | 12s 0c | 12s 0c | volatile | 6 of 7 | 34 |  |
 | Ivycloth Bracelets | 9793 | 6s 0c | 2026-11-11 15:03 UTC | 7s 50c | 7s 50c | moving | 6 of 7 | 28 |  |
 | Ivycloth Cloak | 9794 | 9s 0c | 2026-11-11 15:03 UTC | 10s 50c | 10s 50c | moving | 6 of 7 | 25 |  |

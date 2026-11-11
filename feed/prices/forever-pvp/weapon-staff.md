@@ -11,6 +11,7 @@
 | Big Stick | 12251 | 3g 99s 0c | 2026-11-11 15:03 UTC | 5g 25s 0c | 5g 25s 0c | moving | 4 of 7 | 1 |  |
 | Black Duskwood Staff | 937 | 2g 54s 0c | 2026-11-11 15:03 UTC | 2g 76s 0c | 2g 76s 0c | steady | 4 of 7 | 15 |  |
 | Bloodscalp Channeling Staff | 1998 | 74s 0c | 2026-11-11 15:03 UTC | 98s 0c | 98s 0c | steady | 5 of 7 | 11 |  |
+| Bludgeon of the Grinning Dog | 10627 | 14g 0s 0c | 2026-11-11 15:03 UTC | 14g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Cedar Walking Stick | 1822 | 11s 0c | 2026-11-11 15:03 UTC | 11s 0c | 11s 0c | steady | 5 of 7 | 13 |  |
 | Channeler's Staff | 4437 | 48s 0c | 2026-11-11 15:03 UTC | 46s 50c | 46s 50c | moving | 6 of 7 | 4 |  |
 | Chipped Quarterstaff | 1813 | 6s 0c | 2026-11-11 15:03 UTC | 6s 0c | 6s 0c | steady | 6 of 7 | 51 |  |
@@ -27,7 +28,6 @@
 | Gnarled Hermit's Staff | 1539 | 21s 0c | 2026-11-11 15:03 UTC | 19s 0c | 19s 0c | steady | 7 of 7 | 15 |  |
 | Gnarled Staff | 2030 | 17s 0c | 2026-11-11 15:03 UTC | 30s 0c | 30s 0c | moving | 5 of 7 | 3 |  |
 | Gnoll Shaman's Staff | 282721 | 26s 0c | 2026-11-11 15:03 UTC | 28s 0c | 28s 0c | volatile | 6 of 7 | 14 |  |
-| Item 10627 | 10627 | 14g 0s 0c | 2026-11-11 15:03 UTC | 14g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Long Bo Staff | 767 | 2s 0c | 2026-11-11 15:03 UTC | 2s 0c | 2s 0c | moving | 6 of 7 | 42 |  |
 | Long Staff | 928 | 3g 0s 0c | 2026-11-11 15:03 UTC | 69s 0c | 69s 0c | moving | 5 of 7 | 4 |  |
 | Magician Staff | 2077 | 51s 0c | 2026-11-11 15:03 UTC | 51s 0c | 51s 0c | steady | 6 of 7 | 72 |  |

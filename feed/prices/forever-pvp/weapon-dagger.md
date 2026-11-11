@@ -36,7 +36,6 @@
 | Hook Dagger | 3184 | 14s 0c | 2026-11-11 15:03 UTC | 14s 0c | 14s 0c | steady | 7 of 7 | 86 |  |
 | Howling Blade | 6331 | 13g 99s 0c | 2026-11-11 15:03 UTC | 11g 99s 50c |  | too new | 2 of 7 | 1 |  |
 | Hunting Knife | 2765 | 9s 0c | 2026-11-11 15:03 UTC | 9s 0c | 9s 0c | steady | 5 of 7 | 12 |  |
-| Item 12531 | 12531 | 29g 96s 0c | 2026-11-11 15:03 UTC | 29g 96s 0c |  | too new | 1 of 7 | 2 |  |
 | Jambiya | 2207 | 12s 0c | 2026-11-09 05:47 UTC | 10s 0c |  | too new | 2 of 7 | 2 |  |
 | Julie's Dagger | 6660 | 5g 43s 0c | 2026-11-11 15:03 UTC | 5g 43s 0c |  | too new | 1 of 7 | 2 |  |
 | Long Crawler Limb | 2088 | 48s 0c | 2026-11-08 23:12 UTC | 48s 0c |  | too new | 2 of 7 | 1 |  |
@@ -48,6 +47,7 @@
 | Sacrificial Kris | 3187 | 1g 55s 0c | 2026-11-11 15:03 UTC | 2g 12s 50c | 2g 12s 50c | moving | 4 of 7 | 10 |  |
 | Scarlet Kris | 5267 | 123g 98s 0c | 2026-11-11 15:03 UTC | 123g 98s 0c |  | too new | 1 of 7 | 1 |  |
 | Searing Golden Blade | 12260 | 5g 0s 0c | 2026-11-11 15:03 UTC | 5g 0s 0c |  | too new | 1 of 7 | 1 |  |
+| Searing Needle | 12531 | 29g 96s 0c | 2026-11-11 15:03 UTC | 29g 96s 0c |  | too new | 1 of 7 | 2 |  |
 | Shadowblade | 2163 | 75g 88s 0c | 2026-11-11 15:03 UTC | 75g 88s 0c |  | too new | 1 of 7 | 6 |  |
 | Sharpened Cirrusfly Stinger | 251932 | 10s 0c | 2026-11-11 15:03 UTC | 50s 0c | 50s 0c | volatile | 5 of 7 | 1 |  |
 | Sharpened Letter Opener | 2138 | 1s 0c | 2026-11-11 15:03 UTC | 1s 0c | 1s 0c | steady | 6 of 7 | 18 |  |

@@ -65,7 +65,6 @@
 | Hefty War Axe | 3779 | 32s 0c | 2026-11-11 15:03 UTC | 43s 0c | 43s 0c | moving | 3 of 7 | 4 |  |
 | Hellslayer Battle Axe | 13017 | 3g 50s 0c | 2026-11-11 15:03 UTC | 12g 39s 0c | 12g 39s 0c | volatile | 3 of 7 | 7 |  |
 | Hillborne Axe | 2080 | 66s 0c | 2026-11-11 15:03 UTC | 68s 0c | 68s 0c | moving | 5 of 7 | 32 |  |
-| Item 10623 | 10623 | 13g 99s 0c | 2026-11-11 15:03 UTC | 13g 99s 0c |  | too new | 1 of 7 | 3 |  |
 | Kang the Decapitator | 2291 | 69g 98s 0c | 2026-11-11 15:03 UTC | 69g 98s 0c |  | too new | 1 of 7 | 3 |  |
 | Keen Axe | 3785 | 37s 0c | 2026-11-11 15:03 UTC | 46s 0c |  | too new | 2 of 7 | 7 |  |
 | Killmaim | 13016 | 75s 0c | 2026-11-11 15:03 UTC | 89s 50c | 89s 50c | moving | 6 of 7 | 25 |  |
@@ -107,6 +106,7 @@
 | Unbalanced Axe | 1816 | 5s 0c | 2026-11-11 15:03 UTC | 5s 0c | 5s 0c | steady | 6 of 7 | 28 |  |
 | Vibroblade | 9485 | 3g 20s 0c | 2026-11-11 15:03 UTC | 4g 11s 0c | 4g 11s 0c | moving | 5 of 7 | 5 |  |
 | Vile Fin Battle Axe | 3325 | 2s 0c | 2026-11-11 15:03 UTC | 2s 0c | 2s 0c | steady | 6 of 7 | 30 |  |
+| Winter's Bite | 10623 | 13g 99s 0c | 2026-11-11 15:03 UTC | 13g 99s 0c |  | too new | 1 of 7 | 3 |  |
 | Wood Chopper | 3189 | 2s 0c | 2026-11-11 15:03 UTC | 1s 0c | 1s 0c | volatile | 6 of 7 | 22 |  |
 | Worn Axe | 37 | 70s 0c | 2026-11-11 15:03 UTC | 1s 0c | 1s 0c | volatile | 5 of 7 | 1 |  |
 | Worn Battleaxe | 12282 | 60s 0c | 2026-11-11 15:03 UTC | 60s 0c | 60s 0c | volatile | 3 of 7 | 2 |  |
