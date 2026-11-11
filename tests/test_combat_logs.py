@@ -5,6 +5,7 @@ import sys
 import tempfile
 import time
 import unittest
+from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -49,109 +50,154 @@ def sample() -> str:
     return "".join(out)
 
 
+def git(folder, *args):
+    return subprocess.run(["git", "-C", str(folder), *args], check=True, capture_output=True, text=True).stdout.strip()
+
+
 class CombatLogs(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
-        self.root, self.game = Path(self.tmp.name) / "repo", Path(self.tmp.name) / "Logs"
-        self.root.mkdir(); self.game.mkdir()
+        base = Path(self.tmp.name)
+        self.out, self.game = base / "branch", base / "Logs"
+        self.game.mkdir()
         self.log = self.game / "WoWCombatLog-111126_180000.txt"
         self.log.write_text(sample(), encoding="utf-8")
-        old = time.time() - 3600
-        os.utime(self.log, (old, old))
+        self.age(self.log, hours=1)
+        self.levels = ({ME: "Orc Warlock"}, {ME: 29})
+        self.saved = combat_logs.foreverdb_levels
+        combat_logs.foreverdb_levels = lambda path: self.levels
 
     def tearDown(self):
+        combat_logs.foreverdb_levels = self.saved
         self.tmp.cleanup()
 
-    def run_it(self, **kw):
-        return combat_logs.refresh(self.game, None, root=self.root, **kw)
+    def age(self, path, hours=0, days=0):
+        when = time.time() - hours * 3600 - days * 86400
+        os.utime(path, (when, when))
 
     def files(self):
-        return {p.relative_to(self.root).as_posix() for p in (self.root / "logs").rglob("*") if p.is_file()}
+        return {p.relative_to(self.out).as_posix() for p in self.out.rglob("*") if p.is_file() and ".git" not in p.parts}
+
+    def entries(self):
+        return json.loads((self.out / "sources.json").read_text())["sources"][self.log.name]
+
+    # --- filing
 
     def test_instance_run_is_kept_exactly_with_its_header(self):
-        self.run_it()
-        run = self.root / "logs/myname/2026-11-11/1801-shadowfang-keep.txt"
-        source = self.log.read_bytes()
+        combat_logs.refresh(self.game, None, self.out)
+        run = self.out / "orc-warlock/2026-11-11/1801-shadowfang-keep.txt"
         header, body = run.read_bytes().split(b"\n", 1)
+        source = self.log.read_bytes()
         self.assertTrue(source.startswith(header + b"\n"))
         self.assertIn(body, source)
         self.assertTrue(body.startswith(b"11/11/2026 18:01:00.0000  ZONE_CHANGE,33"))
         self.assertNotIn(b'ZONE_CHANGE,0,"Silverpine Forest"', body)
         lines = run.read_text().splitlines()
-        entry = json.loads((self.root / "logs/sources.json").read_text())["sources"][self.log.name]["written"][0]
-        boss = entry["encounters"][0]
+        boss = self.entries()["written"][0]["encounters"][0]
         self.assertEqual((boss["name"], boss["result"], boss["seconds"]), ("Rethilgore", "kill", 21))
         self.assertIn("ENCOUNTER_START", lines[boss["start_line"] - 1])
         self.assertIn("ENCOUNTER_END", lines[boss["end_line"] - 1])
-        self.assertEqual(entry["players"], ["Matename-Realm"])
+        self.assertEqual(self.entries()["written"][0]["players"], ["Matename-Realm"])
 
     def test_open_world_is_ours_only(self):
-        self.run_it()
-        summary = (self.root / "logs/myname/2026-11-11/1800-open-world.md").read_text()
-        self.assertIn("Searing Pain", summary)
-        self.assertIn("Firebolt (pet Cenobrus)", summary)
-        self.assertIn("Hillsbrad Footman", summary)
-        self.assertIn("From another player: Rejuvenation 20", summary)
-        self.assertIn("Kills: 1", summary)
+        combat_logs.refresh(self.game, None, self.out)
+        summary = (self.out / "orc-warlock/2026-11-11/1800-open-world.md").read_text()
+        for wanted in ("Searing Pain", "Firebolt (pet Cenobrus)", "Hillsbrad Footman", "From another player: Rejuvenation 20", "Kills: 1"):
+            self.assertIn(wanted, summary)
         for other in ("Strangername", "Bystander", "Matename", "999", "Player-"):
             self.assertNotIn(other, summary)
 
     def test_indexes_and_guide(self):
-        self.run_it()
-        guide = (self.root / "logs/README.md").read_text()
+        combat_logs.refresh(self.game, None, self.out)
+        guide = (self.out / "README.md").read_text()
         self.assertIn("How to use this folder efficiently", guide)
-        self.assertIn("logs/myname/2026-11-11/index.md", guide)
-        day = (self.root / "logs/myname/2026-11-11/index.md").read_text()
+        self.assertIn("raw.githubusercontent.com/faresbn/Tazdingo/logs/", guide)
+        self.assertIn("`orc-warlock/2026-11-11/index.md`", guide)
+        day = (self.out / "orc-warlock/2026-11-11/index.md").read_text()
         self.assertIn("| Rethilgore | 18:01 | kill | 21 |", day)
         self.assertIn("1800-open-world.md", day)
 
-    def test_labels_name_the_folders(self):
-        combat_logs.refresh(self.game, None, root=self.root)
-        self.assertTrue(any("myname" in f for f in self.files()))
-        for f in self.files():
-            (self.root / f).unlink()
-        (self.root / "logs/sources.json").unlink(missing_ok=True)
-        orig, orig_load = combat_logs.character_labels, combat_logs.load_foreverdb
-        try:
-            combat_logs.refresh.__globals__["character_labels"] = lambda db: {ME: "Orc Warlock"}
-            combat_logs.refresh.__globals__["load_foreverdb"] = lambda raw: {}
-            fake = Path(self.tmp.name) / "ForeverDB.lua"; fake.write_text("x")
-            combat_logs.refresh(self.game, fake, root=self.root)
-        finally:
-            combat_logs.refresh.__globals__["character_labels"] = orig
-            combat_logs.refresh.__globals__["load_foreverdb"] = orig_load
-        self.assertIn("logs/orc-warlock/2026-11-11/1801-shadowfang-keep.txt", self.files())
-
-    def test_unchanged_waiting_and_old_logs(self):
-        self.run_it()
-        self.assertEqual(self.run_it()["unchanged"], 1)
+    def test_a_settling_log_waits_and_an_unchanged_one_is_left(self):
+        combat_logs.refresh(self.game, None, self.out)
+        self.assertEqual(combat_logs.refresh(self.game, None, self.out)["unchanged"], 1)
         fresh = self.game / "WoWCombatLog-111126_190000.txt"
         fresh.write_text(sample())
-        self.assertEqual(self.run_it()["waiting"], [fresh.name])
-        week = time.time() - 8 * 86400
-        os.utime(self.log, (week, week))
-        self.run_it()
-        self.assertTrue(self.log.exists(), "filing never deletes")
-        self.assertEqual(combat_logs.prune(self.game, self.root), [], "nothing is committed yet")
-        git = lambda *a: subprocess.run(["git", "-C", str(self.root), *a], check=True, capture_output=True)
-        git("init", "-q"); git("config", "user.email", "t@example.com"); git("config", "user.name", "T")
-        git("add", "logs"); git("commit", "-qm", "filed")
-        self.assertEqual(combat_logs.prune(self.game, self.root), [self.log.name])
-        self.assertFalse(self.log.exists())
-        self.assertTrue(fresh.exists(), "a recent log is kept")
-        self.assertIn("logs/myname/2026-11-11/1801-shadowfang-keep.txt", self.files())
+        self.assertEqual(combat_logs.refresh(self.game, None, self.out)["waiting"], [fresh.name])
 
-    def test_prune_keeps_a_log_that_changed_since_filing(self):
-        self.run_it()
-        git = lambda *a: subprocess.run(["git", "-C", str(self.root), *a], check=True, capture_output=True)
-        git("init", "-q"); git("config", "user.email", "t@example.com"); git("config", "user.name", "T")
-        git("add", "logs"); git("commit", "-qm", "filed")
-        with self.log.open("a") as f:
-            f.write("11/11/2026 18:03:00.0000  ZONE_CHANGE,0,\"Hillsbrad Foothills\",0\n")
-        week = time.time() - 8 * 86400
-        os.utime(self.log, (week, week))
-        self.assertEqual(combat_logs.prune(self.game, self.root), [])
-        self.assertTrue(self.log.exists())
+    # --- level 60
+
+    def test_a_level_60_character_is_skipped_entirely(self):
+        self.levels = ({ME: "Orc Warlock"}, {ME: 60})
+        report = combat_logs.refresh(self.game, None, self.out)
+        self.assertEqual(report["skipped at level 60"], ["Orc Warlock"])
+        self.assertFalse(any(f.endswith((".txt", "-open-world.md")) for f in self.files()))
+        self.assertEqual(self.entries()["skipped"], ["Orc Warlock"])
+
+    # --- retention
+
+    def test_retention_keeps_14_days_or_the_last_10_whichever_is_more(self):
+        self.out.mkdir()
+        today = datetime(2026, 12, 31)
+
+        def entry(date, character="Orc Warlock"):
+            path = f"{character.lower().replace(' ', '-')}/{date}/0100-x.txt"
+            (self.out / path).parent.mkdir(parents=True, exist_ok=True)
+            (self.out / path).write_text("x")
+            return {"kind": "instance", "character": character, "date": date, "start": "01:00", "file": path}
+        recent = [entry(f"2026-12-{d:02d}") for d in range(18, 32)]                    # 14 logs within 14 days: all kept
+        old = [entry(f"2026-11-{d:02d}") for d in range(1, 6)]                         # older, beyond the last 10: removed
+        idle = [entry(f"2026-10-{d:02d}", "Troll Rogue") for d in range(1, 13)]        # 12 old ones: the last 10 kept
+        capped = [entry(f"2026-09-{d:02d}", "Tauren Druid") for d in range(1, 13)]     # level 60: left alone
+        record = {"sources": {"a": {"written": recent + old + idle + capped}}}
+        removed = combat_logs.retain(record, self.out, {"Tauren Druid": 60, "Orc Warlock": 29}, today)
+        self.assertEqual(sorted(removed), sorted(e["file"] for e in old + idle[:2]))
+        self.assertTrue(all((self.out / e["file"]).exists() for e in recent + idle[2:] + capped))
+        self.assertFalse(any((self.out / e["file"]).exists() for e in old + idle[:2]))
+        self.assertTrue(all(e.get("expired") for e in old + idle[:2]))
+
+    # --- the branch: one commit, force-pushed; pruning only what's safely pushed
+
+    def setup_remote(self):
+        base = Path(self.tmp.name)
+        remote, repo = base / "remote.git", base / "repo"
+        subprocess.run(["git", "init", "-q", "--bare", str(remote)], check=True)
+        subprocess.run(["git", "init", "-q", str(repo)], check=True)
+        git(repo, "remote", "add", "origin", str(remote))
+        git(repo, "config", "user.name", "Test")
+        git(repo, "config", "user.email", "test@example.com")
+        return remote, repo
+
+    def test_the_branch_never_keeps_history(self):
+        remote, repo = self.setup_remote()
+        report = combat_logs.run(self.game, None, self.out, repo)
+        self.assertNotEqual(report["published"], "unchanged")
+        self.assertEqual(git(remote, "rev-list", "--count", "logs"), "1")
+        self.assertIn("orc-warlock/2026-11-11/1801-shadowfang-keep.txt", git(remote, "ls-tree", "-r", "--name-only", "logs"))
+        self.assertEqual(combat_logs.run(self.game, None, self.out, repo)["published"], "unchanged")
+        second = self.game / "WoWCombatLog-111226_180000.txt"
+        second.write_text(sample().replace("11/11/2026", "11/12/2026"))
+        self.age(second, hours=1)
+        combat_logs.run(self.game, None, self.out, repo)
+        self.assertEqual(git(remote, "rev-list", "--count", "logs"), "1", "still a single commit")
+        self.assertIn("orc-warlock/2026-11-12/index.md", git(remote, "ls-tree", "-r", "--name-only", "logs"))
+        self.assertEqual(git(self.out, "log", "-1", "--format=%ae"), "test@example.com")
+
+    def test_old_game_logs_go_only_once_pushed_and_never_at_60(self):
+        remote, repo = self.setup_remote()
+        combat_logs.checkout(self.out, repo)
+        combat_logs.refresh(self.game, None, self.out)
+        self.age(self.log, days=8)
+        self.assertEqual(combat_logs.prune(self.game, self.out), [], "nothing is pushed yet")
+        combat_logs.run(self.game, None, self.out, repo)   # re-files (its time changed), pushes, then prunes
+        self.assertFalse(self.log.exists())
+        capped = self.game / "WoWCombatLog-111026_180000.txt"
+        capped.write_text(sample())
+        self.age(capped, hours=1)
+        self.levels = ({ME: "Orc Warlock"}, {ME: 60})
+        combat_logs.run(self.game, None, self.out, repo)
+        self.age(capped, days=8)
+        combat_logs.run(self.game, None, self.out, repo)
+        self.assertTrue(capped.exists(), "a level-60 character's log is never deleted")
 
 
 if __name__ == "__main__":

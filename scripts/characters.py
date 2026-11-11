@@ -144,6 +144,11 @@ def labels(db: dict) -> dict[str, str]:
     return out
 
 
+def levels(db: dict) -> dict[str, int]:
+    """{player ID: level} for the account's own characters, as last saved. Used by scripts/combat_logs.py."""
+    return {text(key): int(number(record.get(b"level")) or 0) for key, record in own_records(db)}
+
+
 def extract(raw: bytes) -> dict:
     """The record written to data/characters.json: own characters only, labelled, no names or IDs."""
     db = load(raw)

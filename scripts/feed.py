@@ -246,9 +246,9 @@ def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list
         f"- {link('feed/guides.md')}: every class, spec, profession, world and More page, with its path and version.",
         *([f"- {link('feed/characters.md')}: the account's own characters (level, gear, talents, professions, reputations), "
            f"as last saved in the game."] if chars else []),
-        *([f"- {link('logs/README.md')}: combat logs. Instance runs complete (every player, as the game wrote them) and "
-           f"open-world summaries of our own characters; read its guide first, the instance files are large."]
-          if (root / "logs/README.md").is_file() else []),
+        "- Combat logs, on the repository's `logs` branch: https://raw.githubusercontent.com/faresbn/Tazdingo/logs/README.md "
+        "is the guide and the list. Instance runs complete (every player, as the game wrote them) and open-world summaries "
+        "of our own characters; read the guide first, the instance files are large.",
         *(["", "Original addon files, as uploaded (large; open only when asked about that addon):", *addon_lines] if addon_lines else []), "",
         "## How the data stays current", "",
         "- **Auction House prices:** each time the game saves Auctionator's file (a `/reload` or logout after a scan), the "
@@ -257,7 +257,8 @@ def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list
         "- **ForeverDB data** (recipes, trainers, abilities, vendor and other players' prices, item names): refreshed three "
         "times a day. When the game build changes, the full refresh takes a couple of hours.",
         "- **Blizzard's posts:** collected every two hours.",
-        "- **Combat logs:** with the ForeverDB refresh, each finished combat log is filed in `logs/` (see its README).",
+        "- **Combat logs:** with the ForeverDB refresh, each finished combat log is filed on the `logs` branch: the last "
+        "14 days or 10 logs per character below level 60, whichever is more; none for level-60 characters.",
         "- **Characters:** with the ForeverDB refresh, the account's own characters are read from ForeverDB's addon file "
         "(`feed/characters.md`), under labels, not names. Each is as of that character's last logout or reload.", "",
         "## How to answer", "",

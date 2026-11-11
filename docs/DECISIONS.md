@@ -15,7 +15,9 @@ Asked for by Fares on 30 October ("I want to very quickly notice there's nothing
 ## Combat logs (11 November)
 
 Decided by Fares on 11 November.
-- **Combat logs are filed in the public repository, in `logs/`,** by the 8-hourly job (`scripts/combat_logs.py`).
+- **Combat logs are filed in the public repository, on its own `logs` branch** (was: `logs/` in `main`, for an evening), by the 8-hourly job (`scripts/combat_logs.py`). The branch is rebuilt as a single commit and force-pushed each run, so GitHub keeps no history of old logs; Fares approved that force-push ("Logs branch"). It's the only branch ever force-pushed. The 76 MB filed into `main` on 11 November stays in `main`'s history (rewriting `main` wasn't asked for).
+- **Retention:** for each character below level 60, the last 14 days or the last 10 logs, whichever keeps more ("sometimes a character hasn't been played for days so we need 10 logs instead").
+- **Level 60: none of it.** A level-60 character's logs aren't filed or deleted ("I'll just upload to Warcraft Logs at level 60").
 - **Instance runs are kept exactly as the game wrote them,** every player and name included, so they upload to Warcraft Logs: "there's no big deal with the logs being on my repo even if it's public. The logs would be public on Warcraft Logs anyway." No second, relabelled copy ("I don't want duplicates of them").
 - **Open world keeps only our own characters,** as concise but thorough summaries; other players appear only as "another player".
 - **ChatGPT gets the complete instance logs,** through `logs/README.md`: a guide to using the folder efficiently and an index of everything in it, with each encounter's line numbers.

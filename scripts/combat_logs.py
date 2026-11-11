@@ -1,4 +1,4 @@
-"""File the game's combat logs into logs/: instance runs complete, open world as summaries of our own characters.
+"""File the game's combat logs on the repository's logs branch: instance runs complete, open world as summaries of our own characters.
 
 WoW writes one WoWCombatLog-<date>_<time>.txt per logging session in _forever_/Logs. For each one
 that has stopped changing:
@@ -11,15 +11,18 @@ that has stopped changing:
   done and taken by ability, healing, resources, casts, failed casts, kills and deaths. Other
   players appear only as "another player"; nothing else about them is kept.
 
-logs/<character>/<date>/ holds a day's files and an index.md (each run's encounters with their
-line numbers); logs/README.md tells a reader how to use the folder and lists everything in it;
-logs/sources.json records which game logs were filed. `--prune`, run after the filing is pushed,
-deletes game logs older than a week from the game's folder, only if git has everything they wrote. Characters are named by the same labels as
-data/characters.json (scripts/characters.py), read from ForeverDB.lua.
+They live on the `logs` branch, not main (decided 11 November): a clone of only that branch, outside
+iCloud, is filled and then pushed as a single commit with --force, so GitHub keeps no history of old
+logs. <character>/<date>/ holds a day's files and an index.md (each run's encounters with their line
+numbers); README.md tells a reader how to use the branch and lists everything on it; sources.json
+records which game logs were filed. Per character below level 60 it keeps the last 14 days or the
+last 10 logs, whichever is more. Level-60 characters are skipped entirely: nothing of theirs is
+filed, and a game log with their play in it is never deleted. Other game logs are deleted from the
+game's folder after a week, only once the pushed branch has everything they wrote. Characters are
+named by the same labels as data/characters.json (scripts/characters.py), read from ForeverDB.lua.
 
 Run on the player's Mac (the 8-hourly watcher runs it). Usage:
-    python3 scripts/combat_logs.py <_forever_/Logs folder> <ForeverDB.lua>
-    python3 scripts/combat_logs.py --prune <_forever_/Logs folder>
+    python3 scripts/combat_logs.py <_forever_/Logs folder> <ForeverDB.lua> --out <logs branch clone> [--no-push]
 """
 from __future__ import annotations
 
@@ -34,7 +37,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
 
-from characters import labels as character_labels, load as load_foreverdb
+from characters import labels as character_labels, levels as character_levels, load as load_foreverdb
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTINENTS = {0, 1}           # Eastern Kingdoms and Kalimdor: open world. Every other instance ID is an instance.
@@ -43,7 +46,10 @@ KEEP_DAYS = 7                 # filed game logs older than this are deleted from
 MIN_LINES = 100               # a shorter "run" is a login or logout inside an instance, with no fighting
 MERGE_GAP = timedelta(minutes=10)   # a trip out of an instance shorter than this stays in the run
 FIGHT_GAP = timedelta(seconds=6)    # no damage to or from us for this long ends an open-world fight
-GITHUB_LIMIT = 95_000_000     # GitHub refuses files over 100 MB; bigger runs stay on the Mac (tmp/combat-logs/)
+GITHUB_LIMIT = 95_000_000     # GitHub refuses files over 100 MB; bigger runs stay on the Mac (combat-logs-large/)
+BRANCH = "logs"               # the branch the logs live on, rebuilt as one commit each time
+RETAIN_DAYS, RETAIN_COUNT = 14, 10   # per character: the last 14 days or the last 10 logs, whichever keeps more
+LEVEL_CAP = 60                # characters at this level are skipped entirely (their logs go to Warcraft Logs)
 MINE = 0x1                    # unit flag: ours (the logging character, its pet and guardians)
 GROUP = 0x7                   # mine, party or raid
 PLAYER = 0x400
@@ -393,12 +399,15 @@ def open_world(lines: list[bytes], skip: list[tuple[int, int]], names: dict[str,
     return {k: v for k, v in ledgers.items() if v.fights}
 
 
+
 # --- Filing ---------------------------------------------------------------------------------------
 
-def file_log(path: Path, root: Path, label_of: dict[str, str]) -> list[dict]:
-    """File one game log; returns what was written (relative paths with their details)."""
+def file_log(path: Path, out: Path, label_of: dict[str, str], level_of: dict[str, int] | None = None) -> tuple[list[dict], list[str]]:
+    """File one game log into out (the logs branch's folder). Returns (what was written, characters skipped at the
+    level cap). A level-60 character's runs and open world are never written."""
+    level_of = level_of or {}
     lines = path.read_bytes().splitlines(keepends=True)
-    written = []
+    written, skipped = [], set()
     taken: set[Path] = set()
 
     def place(folder: Path, name: str, ext: str) -> Path:
@@ -410,45 +419,72 @@ def file_log(path: Path, root: Path, label_of: dict[str, str]) -> list[dict]:
         taken.add(target)
         return target
 
-    def who(own: set[str], group: dict[str, str]) -> str:
+    def who(own: set[str], group: dict[str, str]) -> tuple[str, int]:
         guid = sorted(own)[0] if own else None
-        return label_of.get(guid) or (group.get(guid, "").split("-")[0] if guid else "") or "Unknown character"
+        label = label_of.get(guid) or (group.get(guid, "").split("-")[0] if guid else "") or "Unknown character"
+        return label, level_of.get(guid, 0)
 
     spans = runs(lines)
     for span in spans:
         body = lines[span["start"]:span["end"]]
+        own, group = players(body)
+        character, level = who(own, group)
+        if level >= LEVEL_CAP:
+            skipped.add(character)
+            continue
         first = stamp(body[0]) or stamp(lines[0])
         header = header_before(lines, span["start"])
-        out = ([header] if header and not body[0].count(b"  COMBAT_LOG_VERSION,") else []) + body
-        own, group = players(body)
-        character = who(own, group)
-        folder = root / "logs" / slug(character) / f"{first:%Y-%m-%d}"
-        target = place(folder, f"{first:%H%M}-{slug(span['name'])}", ".txt")
-        size = sum(len(x) for x in out)
+        text = ([header] if header and not body[0].count(b"  COMBAT_LOG_VERSION,") else []) + body
+        target = place(out / slug(character) / f"{first:%Y-%m-%d}", f"{first:%H%M}-{slug(span['name'])}", ".txt")
+        size = sum(len(x) for x in text)
         entry = {"kind": "instance", "character": character, "date": f"{first:%Y-%m-%d}", "place": span["name"],
-                 "start": f"{first:%H:%M}", "end": f"{(stamp(body[-1]) or first):%H:%M}", "bytes": size, "lines": len(out),
-                 "encounters": encounters(body, offset=len(out) - len(body) + 1),
+                 "start": f"{first:%H:%M}", "end": f"{(stamp(body[-1]) or first):%H:%M}", "bytes": size, "lines": len(text),
+                 "encounters": encounters(body, offset=len(text) - len(body) + 1),
                  "players": sorted(n for g, n in group.items() if g not in own),
-                 "source": path.name}
-        if size > GITHUB_LIMIT:
-            target = root / "tmp/combat-logs" / target.relative_to(root / "logs")
-            entry["note"] = "over GitHub's 100 MB limit: kept on the Mac in tmp/combat-logs/, not in the repository"
+                 "source": path.name, "file": target.relative_to(out).as_posix()}
+        if size > GITHUB_LIMIT:   # GitHub refuses it: kept beside the branch's folder on the Mac
+            target = out.parent / "combat-logs-large" / entry["file"]
+            entry["note"] = "over GitHub's 100 MB limit, so kept on the player's Mac only"
+            entry["local_only"] = True
         target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_bytes(b"".join(out))
-        entry["file"] = target.relative_to(root).as_posix()
+        target.write_bytes(b"".join(text))
         written.append(entry)
     names = players(lines)[1]
     for guid, book in open_world(lines, [(s["start"], s["end"]) for s in spans], names).items():
         book.label = label_of.get(guid) or names.get(guid, "").split("-")[0] or "Unknown character"
-        folder = root / "logs" / slug(book.label) / f"{book.first:%Y-%m-%d}"
-        target = place(folder, f"{book.first:%H%M}-open-world", ".md")
+        if level_of.get(guid, 0) >= LEVEL_CAP:
+            skipped.add(book.label)
+            continue
+        target = place(out / slug(book.label) / f"{book.first:%Y-%m-%d}", f"{book.first:%H%M}-open-world", ".md")
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(book.summary(), encoding="utf-8")
         written.append({"kind": "open world", "character": book.label, "date": f"{book.first:%Y-%m-%d}",
                         "place": ", ".join(book.zones) or "open world", "start": f"{book.first:%H:%M}", "end": f"{book.last:%H:%M}",
-                        "fights": len(book.fights), "deaths": len(book.deaths), "file": target.relative_to(root).as_posix(),
+                        "fights": len(book.fights), "deaths": len(book.deaths), "file": target.relative_to(out).as_posix(),
                         "source": path.name})
-    return written
+    return written, sorted(skipped)
+
+
+def retain(record: dict, out: Path, level_by_label: dict[str, int], today: datetime) -> list[str]:
+    """Per character below the level cap, keep the last RETAIN_DAYS days or the last RETAIN_COUNT logs, whichever
+    keeps more; remove the rest from the branch (marked "expired" in sources.json). Level-60 characters are left alone."""
+    by_character = defaultdict(list)
+    for source in record["sources"].values():
+        for e in source.get("written", []):
+            if not e.get("expired") and not e.get("local_only"):
+                by_character[e["character"]].append(e)
+    cutoff = (today - timedelta(days=RETAIN_DAYS)).strftime("%Y-%m-%d")
+    removed = []
+    for character, items in by_character.items():
+        if level_by_label.get(character, 0) >= LEVEL_CAP:
+            continue
+        items.sort(key=lambda e: (e["date"], e["start"], e["file"]), reverse=True)
+        for e in items[RETAIN_COUNT:]:
+            if e["date"] < cutoff:
+                (out / e["file"]).unlink(missing_ok=True)
+                e["expired"] = today.strftime("%Y-%m-%d")
+                removed.append(e["file"])
+    return removed
 
 
 # --- Indexes and the guide ------------------------------------------------------------------------
@@ -457,8 +493,14 @@ GUIDE = """# Combat logs: start here
 
 What's here, for reading and discussing performance. Everything is from the game's own combat log (advanced logging),
 filed automatically from the player's Mac. Times are the game's clock (the player's local time). Characters are named
-by the same labels as `feed/characters.md`. Every path here is in the public repository:
-https://raw.githubusercontent.com/faresbn/Tazdingo/main/<path>
+by the same labels as `feed/characters.md` in the main branch.
+
+This is the repository's `logs` branch. Every path below is relative to it:
+https://raw.githubusercontent.com/faresbn/Tazdingo/logs/<path> (browse: https://github.com/faresbn/Tazdingo/tree/logs).
+
+**What's kept:** for each character below level 60, the last 14 days or the last 10 logs, whichever is more; older
+ones are removed, and the branch keeps no history. Level-60 characters aren't filed here at all (their logs go to
+Warcraft Logs).
 
 ## Two kinds of file
 
@@ -499,13 +541,16 @@ commas, so parse as CSV). Fields are numbered from 0 at the event name:
 """
 
 
-def write_indexes(root: Path, record: dict) -> None:
-    entries = [e for s in record["sources"].values() for e in s.get("written", [])]
+def write_indexes(out: Path, record: dict) -> None:
+    """README.md (the guide and the full list) and each day's index.md, for what's on the branch now."""
+    for old in out.glob("*/*/index.md"):
+        old.unlink()
+    entries = [e for s in record["sources"].values() for e in s.get("written", []) if not e.get("expired")]
     days = defaultdict(list)
     for e in entries:
         days[(e["character"], e["date"])].append(e)
     for (character, date), items in days.items():
-        folder = root / "logs" / slug(character) / date
+        folder = out / slug(character) / date
         if not folder.is_dir():
             continue
         lines = [f"# {character}: {date}", "", "Back to [the guide and the full list](../../README.md).", ""]
@@ -526,26 +571,86 @@ def write_indexes(root: Path, record: dict) -> None:
                 lines += [f"## {e['start']}–{e['end']} open world", "",
                           f"[{name}]({name}): {e['place']}; {e['fights']} fights, {e['deaths']} deaths.", ""]
         (folder / "index.md").write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    for folder in sorted(out.glob("*/*"), reverse=True):   # days and characters left empty by retention
+        if folder.is_dir() and not any(folder.iterdir()):
+            folder.rmdir()
+    for folder in out.glob("*"):
+        if folder.is_dir() and folder.name != ".git" and not any(folder.iterdir()):
+            folder.rmdir()
     catalog = ["", "## What's here", "", "Newest first. Each day's `index.md` has the details.", "",
                "| Date | Character | What | Size | Day |", "|---|---|---|---|---|"]
     for e in sorted(entries, key=lambda e: (e["date"], e["start"]), reverse=True):
         what = (f"{e['place']} ({len(e['encounters'])} encounters)" if e["kind"] == "instance"
                 else f"open world: {e['place']} ({e['fights']} fights)")
         size = f"{e['bytes'] / 1e6:.1f} MB" if e["kind"] == "instance" else "summary"
-        day = f"logs/{slug(e['character'])}/{e['date']}/index.md"
-        catalog.append(f"| {e['date']} {e['start']} | {e['character']} | {what} | {size} | `{day}` |")
-    (root / "logs").mkdir(exist_ok=True)
-    (root / "logs/README.md").write_text(GUIDE + "\n".join(catalog) + "\n", encoding="utf-8")
+        catalog.append(f"| {e['date']} {e['start']} | {e['character']} | {what} | {size} | `{slug(e['character'])}/{e['date']}/index.md` |")
+    (out / "README.md").write_text(GUIDE + "\n".join(catalog) + "\n", encoding="utf-8")
+
+
+# --- The logs branch ------------------------------------------------------------------------------
+
+def git(folder: Path, *args: str, check: bool = True) -> subprocess.CompletedProcess:
+    result = subprocess.run(["git", "-C", str(folder), *args], capture_output=True, text=True)
+    if check and result.returncode != 0:
+        raise RuntimeError(f"git {' '.join(args)} failed: {result.stderr.strip()}")
+    return result
+
+
+def checkout(out: Path, repo: Path) -> None:
+    """A clone of only the logs branch at out (outside iCloud), created on first use; the branch starts empty."""
+    if (out / ".git").is_dir():
+        git(out, "fetch", "-q", "origin", BRANCH, check=False)
+        return
+    url = git(repo, "remote", "get-url", "origin").stdout.strip()
+    out.parent.mkdir(parents=True, exist_ok=True)
+    if git(repo, "ls-remote", "--exit-code", "--heads", "origin", BRANCH, check=False).returncode == 0:
+        subprocess.run(["git", "clone", "-q", "--single-branch", "--branch", BRANCH, url, str(out)], check=True, capture_output=True)
+    else:
+        out.mkdir(parents=True, exist_ok=True)
+        git(out, "init", "-q")
+        git(out, "remote", "add", "origin", url)
+        git(out, "checkout", "-q", "--orphan", BRANCH)
+    for key in ("user.name", "user.email"):   # commit as the main repository does (its private address)
+        value = git(repo, "config", key, check=False).stdout.strip()
+        if value:
+            git(out, "config", key, value)
+
+
+def publish(out: Path) -> str:
+    """Replace the logs branch with one commit of what's in out and force-push it: no history is kept.
+    Returns "unchanged" or the new commit."""
+    if not git(out, "status", "--porcelain").stdout.strip() and git(out, "rev-parse", "--verify", "-q", "HEAD", check=False).returncode == 0:
+        return "unchanged"
+    git(out, "checkout", "-q", "--orphan", "logs-new")
+    git(out, "add", "-A")
+    git(out, "commit", "-q", "-m", f"Combat logs as of {datetime.now():%Y-%m-%d %H:%M} (no history kept: see README.md)")
+    git(out, "branch", "-D", BRANCH, check=False)
+    git(out, "branch", "-m", BRANCH)
+    git(out, "push", "-q", "--force", "origin", f"{BRANCH}:{BRANCH}")
+    git(out, "update-ref", f"refs/remotes/origin/{BRANCH}", "HEAD")
+    git(out, "reflog", "expire", "--expire=now", "--all", check=False)
+    git(out, "gc", "-q", "--prune=now", check=False)
+    return git(out, "rev-parse", "--short", "HEAD").stdout.strip()
 
 
 # --- The run --------------------------------------------------------------------------------------
 
-def refresh(game_logs: Path, foreverdb: Path | None, root: Path = ROOT, now: float | None = None) -> dict:
+def foreverdb_levels(foreverdb: Path | None) -> tuple[dict[str, str], dict[str, int]]:
+    if not (foreverdb and foreverdb.is_file()):
+        return {}, {}
+    db = load_foreverdb(foreverdb.read_bytes())
+    return character_labels(db), character_levels(db)
+
+
+def refresh(game_logs: Path, foreverdb: Path | None, out: Path, now: float | None = None) -> dict:
+    """File every settled game log into out, apply retention and rewrite the indexes (no git)."""
     now = now or time.time()
-    state_path = root / "logs/sources.json"
+    out.mkdir(parents=True, exist_ok=True)
+    state_path = out / "sources.json"
     record = json.loads(state_path.read_text()) if state_path.is_file() else {"sources": {}}
-    label_of = character_labels(load_foreverdb(foreverdb.read_bytes())) if foreverdb and foreverdb.is_file() else {}
-    report = {"filed": [], "unchanged": 0, "waiting": []}
+    label_of, level_of = foreverdb_levels(foreverdb)
+    level_by_label = {label_of[g]: level for g, level in level_of.items() if g in label_of}
+    report = {"filed": [], "unchanged": 0, "waiting": [], "skipped at level 60": [], "removed by retention": []}
     for path in sorted(game_logs.glob("WoWCombatLog-*.txt")):
         info = path.stat()
         seen = record["sources"].get(path.name)
@@ -553,44 +658,66 @@ def refresh(game_logs: Path, foreverdb: Path | None, root: Path = ROOT, now: flo
             report["unchanged"] += 1
         elif now - info.st_mtime < SETTLED:
             report["waiting"].append(path.name)
-            continue
         else:
             for old in (seen or {}).get("written", []):   # a log that grew: replace what it wrote before
-                (root / old["file"]).unlink(missing_ok=True)
-            record["sources"][path.name] = {"bytes": info.st_size, "modified": int(info.st_mtime),
-                                            "written": file_log(path, root, label_of)}
+                if not old.get("expired"):
+                    (out / old["file"]).unlink(missing_ok=True)
+            written, skipped = file_log(path, out, label_of, level_of)
+            record["sources"][path.name] = {"bytes": info.st_size, "modified": int(info.st_mtime), "written": written,
+                                            **({"skipped": skipped} if skipped else {})}
             report["filed"].append(path.name)
-    (root / "logs").mkdir(exist_ok=True)
+            report["skipped at level 60"] += skipped
+    report["removed by retention"] = retain(record, out, level_by_label, datetime.fromtimestamp(now))
     state_path.write_text(json.dumps(record, indent=1, ensure_ascii=False, sort_keys=True) + "\n")
-    write_indexes(root, record)
+    write_indexes(out, record)
     return report
 
 
-def prune(game_logs: Path, root: Path = ROOT, now: float | None = None) -> list[str]:
-    """Delete game logs older than a week, only once filed and committed: logs/sources.json in git records the log at
-    its current size and time, and every file it wrote is tracked by git. Run only after the filing has been pushed."""
+def prune(game_logs: Path, out: Path, foreverdb: Path | None = None, now: float | None = None) -> list[str]:
+    """Delete game logs older than a week from the game's folder, only when they're safely on GitHub: the pushed logs
+    branch (origin/logs is HEAD) records the log at its current size and time, and has every file it wrote (or
+    retention already removed it). A log with a level-60 character's play in it is never deleted."""
     now = now or time.time()
-    committed = subprocess.run(["git", "-C", str(root), "show", "HEAD:logs/sources.json"], capture_output=True, text=True)
-    if committed.returncode != 0:
+    head = git(out, "rev-parse", "-q", "--verify", "HEAD", check=False).stdout.strip()
+    pushed = git(out, "rev-parse", "-q", "--verify", f"refs/remotes/origin/{BRANCH}", check=False).stdout.strip()
+    if not head or head != pushed:
         return []
-    sources = json.loads(committed.stdout)["sources"]
-    tracked = set(subprocess.run(["git", "-C", str(root), "ls-files", "logs"], capture_output=True, text=True).stdout.split())
+    sources = json.loads(git(out, "show", "HEAD:sources.json").stdout)["sources"]
+    tracked = set(git(out, "ls-files").stdout.split())
+    label_of, level_of = foreverdb_levels(foreverdb)
+    capped = {label_of[g] for g, level in level_of.items() if level >= LEVEL_CAP and g in label_of}
     deleted = []
     for path in sorted(game_logs.glob("WoWCombatLog-*.txt")):
         info, seen = path.stat(), sources.get(path.name)
-        if (now - info.st_mtime > KEEP_DAYS * 86400 and seen and seen["bytes"] == info.st_size
-                and seen["modified"] == int(info.st_mtime)
-                and all(w["file"] in tracked or w["file"].startswith("tmp/") for w in seen.get("written", []))):
+        if not (seen and now - info.st_mtime > KEEP_DAYS * 86400 and seen["bytes"] == info.st_size
+                and seen["modified"] == int(info.st_mtime)):
+            continue
+        written = seen.get("written", [])
+        if seen.get("skipped") or any(w["character"] in capped for w in written):
+            continue
+        if all(w["file"] in tracked or w.get("expired") or w.get("local_only") for w in written):
             path.unlink()
             deleted.append(path.name)
     return deleted
 
 
+def run(game_logs: Path, foreverdb: Path | None, out: Path, repo: Path = ROOT) -> dict:
+    """The 8-hourly job: update the logs branch's clone, file, publish (force-push), then prune the game's folder."""
+    checkout(out, repo)
+    report = refresh(game_logs, foreverdb, out)
+    report["published"] = publish(out)
+    report["deleted from the game folder"] = prune(game_logs, out, foreverdb)
+    return report
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("logs", type=Path, help="the game's _forever_/Logs folder")
-    parser.add_argument("foreverdb", type=Path, nargs="?", help="ForeverDB.lua, for character labels")
-    parser.add_argument("--prune", action="store_true",
-                        help="only delete game logs over a week old that are filed and committed (run after a push)")
+    parser.add_argument("foreverdb", type=Path, nargs="?", help="ForeverDB.lua, for character labels and levels")
+    parser.add_argument("--out", type=Path, required=True, help="the logs branch's clone (outside iCloud)")
+    parser.add_argument("--no-push", action="store_true", help="file and index only: no git, nothing deleted")
     args = parser.parse_args()
-    print(json.dumps(prune(args.logs) if args.prune else refresh(args.logs, args.foreverdb), indent=2))
+    if args.no_push:
+        print(json.dumps(refresh(args.logs, args.foreverdb, args.out), indent=2))
+    else:
+        print(json.dumps(run(args.logs, args.foreverdb, args.out), indent=2))
