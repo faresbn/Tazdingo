@@ -110,18 +110,21 @@ def zones(lines: list[bytes]) -> list[tuple[int, int, str, int]]:
 
 
 def runs(lines: list[bytes]) -> list[dict]:
-    """Instance runs as line ranges [start, end): consecutive zone lines with the same non-continent
-    instance ID, merged across a short trip out."""
+    """Instance runs as line ranges [start, end), merged across a short trip out. A zone is an instance when its
+    instance ID isn't a continent, the game gives it a difficulty, or a boss fight starts in it: Forever logs some
+    dungeons (Razorfen Kraul, 11 November) with the continent's ID and no difficulty."""
     marks = zones(lines)
     spans = []
     for n, (i, instance, name, difficulty) in enumerate(marks):
         end = marks[n + 1][0] if n + 1 < len(marks) else len(lines)
-        if instance in CONTINENTS:
+        boss = any(b"  ENCOUNTER_START," in lines[j] for j in range(i, end))
+        if instance in CONTINENTS and not difficulty and not boss:
             continue
-        if spans and spans[-1]["instance"] == instance and spans[-1]["end"] == i:
+        key = instance if instance not in CONTINENTS else name
+        if spans and spans[-1]["instance"] == key and spans[-1]["end"] == i:
             spans[-1]["end"] = end
         else:
-            spans.append({"instance": instance, "start": i, "end": end, "names": []})
+            spans.append({"instance": key, "start": i, "end": end, "names": []})
         spans[-1]["names"].append((difficulty, name))
     merged: list[dict] = []
     for span in spans:
@@ -642,8 +645,9 @@ def foreverdb_levels(foreverdb: Path | None) -> tuple[dict[str, str], dict[str, 
     return character_labels(db), character_levels(db)
 
 
-def refresh(game_logs: Path, foreverdb: Path | None, out: Path, now: float | None = None) -> dict:
-    """File every settled game log into out, apply retention and rewrite the indexes (no git)."""
+def refresh(game_logs: Path, foreverdb: Path | None, out: Path, now: float | None = None, settled: int = SETTLED) -> dict:
+    """File every settled game log into out, apply retention and rewrite the indexes (no git). settled=0 files a log
+    still being written too; when it grows, the next run files it again and replaces what it wrote."""
     now = now or time.time()
     out.mkdir(parents=True, exist_ok=True)
     state_path = out / "sources.json"
@@ -656,7 +660,7 @@ def refresh(game_logs: Path, foreverdb: Path | None, out: Path, now: float | Non
         seen = record["sources"].get(path.name)
         if seen and seen["bytes"] == info.st_size and seen["modified"] == int(info.st_mtime):
             report["unchanged"] += 1
-        elif now - info.st_mtime < SETTLED:
+        elif now - info.st_mtime < settled:
             report["waiting"].append(path.name)
         else:
             for old in (seen or {}).get("written", []):   # a log that grew: replace what it wrote before
@@ -701,10 +705,10 @@ def prune(game_logs: Path, out: Path, foreverdb: Path | None = None, now: float 
     return deleted
 
 
-def run(game_logs: Path, foreverdb: Path | None, out: Path, repo: Path = ROOT) -> dict:
+def run(game_logs: Path, foreverdb: Path | None, out: Path, repo: Path = ROOT, settled: int = SETTLED) -> dict:
     """The 8-hourly job: update the logs branch's clone, file, publish (force-push), then prune the game's folder."""
     checkout(out, repo)
-    report = refresh(game_logs, foreverdb, out)
+    report = refresh(game_logs, foreverdb, out, settled=settled)
     report["published"] = publish(out)
     report["deleted from the game folder"] = prune(game_logs, out, foreverdb)
     return report
@@ -716,8 +720,10 @@ if __name__ == "__main__":
     parser.add_argument("foreverdb", type=Path, nargs="?", help="ForeverDB.lua, for character labels and levels")
     parser.add_argument("--out", type=Path, required=True, help="the logs branch's clone (outside iCloud)")
     parser.add_argument("--no-push", action="store_true", help="file and index only: no git, nothing deleted")
+    parser.add_argument("--now", action="store_true", help="also file a log the game is still writing (it's refiled as it grows)")
     args = parser.parse_args()
+    settled = 0 if args.now else SETTLED
     if args.no_push:
-        print(json.dumps(refresh(args.logs, args.foreverdb, args.out), indent=2))
+        print(json.dumps(refresh(args.logs, args.foreverdb, args.out, settled=settled), indent=2))
     else:
-        print(json.dumps(run(args.logs, args.foreverdb, args.out), indent=2))
+        print(json.dumps(run(args.logs, args.foreverdb, args.out, settled=settled), indent=2))
