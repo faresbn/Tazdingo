@@ -1,6 +1,7 @@
 """Fetch ForeverDB API data into a local cache, then write the slim data/foreverdb-api.json.
 
-    python3 scripts/foreverdb_api.py fetch     download what the site uses (resumable; about 20 minutes)
+    python3 scripts/foreverdb_api.py fetch     download what the site uses (resumable; a few minutes)
+    python3 scripts/foreverdb_api.py fetch --full   everything again, item details included (about two hours)
     python3 scripts/foreverdb_api.py slim      write data/foreverdb-api.json from the cache
 
 The API needs a key: set FOREVERDB_API_KEY. The key is sent only to foreverdb.net and
@@ -9,14 +10,18 @@ so a rerun only fetches what's missing. ForeverDB asks for a visible link to
 https://foreverdb.net wherever its data is shown, at most 60 requests a minute and
 10,000 a day; this script stays near one request a second. Run on demand, never during
 the build, so publishing never depends on ForeverDB being reachable. When ForeverDB's build
-changes (at launch, say), the old cache is moved aside to tmp/foreverdb-api-<old build>/ and
-everything is fetched again.
+changes, the old cache is moved aside to tmp/foreverdb-api-<old build>/ and the lists (professions,
+trainers, classes, gathering, zones, the item list) are fetched again. Each item's details (vendor
+prices, categories), one request per item, are copied from the previous build's cache when it has
+them and only fetched for new items (decided 11 November: a minor build barely changes them, and
+fetching all of them took two hours). `--full` fetches everything again, for a big patch.
 """
 from __future__ import annotations
 
 import argparse
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -35,6 +40,16 @@ PROFESSIONS = ["alchemy", "blacksmithing", "cooking", "enchanting", "engineering
                "herbalism", "leatherworking", "mining", "skinning", "tailoring"]
 GATHERING = ["herbalism", "mining", "skinning", "fishing"]
 CLASSES = ["Warrior", "Paladin", "Hunter", "Rogue", "Priest", "Shaman", "Mage", "Warlock", "Druid"]
+ITEM_DETAIL = re.compile(r"/items/\d+")
+REUSE: Path | None = None   # the previous build's cache, for item details (set by fetch)
+
+
+def previous_cache(build: str) -> Path | None:
+    """The cache of the newest build before this one (tmp/foreverdb-api-<build>/), if any."""
+    def version(folder: Path) -> tuple[int, ...]:
+        return tuple(int(n) for n in re.findall(r"\d+", folder.name.removeprefix("foreverdb-api-")))
+    older = [f for f in CACHE.parent.glob("foreverdb-api-*") if f.is_dir() and version(f) < version(Path(f"foreverdb-api-{build}"))]
+    return max(older, key=version, default=None)
 
 
 def get(path: str, key: str, fresh: bool = False) -> dict:
@@ -42,6 +57,10 @@ def get(path: str, key: str, fresh: bool = False) -> dict:
     name = path.strip("/").replace("/", "_").replace("?", "_").replace("&", "_").replace("=", "-") + ".json"
     cached = CACHE / name
     if cached.exists() and not fresh:
+        return json.loads(cached.read_text())
+    if not fresh and REUSE and ITEM_DETAIL.fullmatch(path) and (REUSE / name).is_file():
+        CACHE.mkdir(parents=True, exist_ok=True)
+        cached.write_text((REUSE / name).read_text())   # the previous build's answer: item details barely change
         return json.loads(cached.read_text())
     for attempt in range(5):
         request = urllib.request.Request(API + path, headers={"User-Agent": AGENT, "X-API-Key": key,
@@ -93,7 +112,8 @@ def market_items() -> set[int]:
     return wanted_ids(ROOT)
 
 
-def fetch(key: str) -> None:
+def fetch(key: str, full: bool = False) -> None:
+    global REUSE
     old = (CACHE / "meta.json").read_text() if (CACHE / "meta.json").exists() else None
     old_build = (json.loads(old).get("data") or {}).get("build") if old else None
     meta = get("/meta", key, fresh=True)
@@ -103,7 +123,9 @@ def fetch(key: str) -> None:
         (aside / "meta.json").write_text(old)  # the folder keeps the answers of the build it's named for
         print(f"ForeverDB's build changed from {old_build}; the old answers are in {aside.relative_to(ROOT)}.")
         meta = get("/meta", key, fresh=True)
-    print(f"ForeverDB build {meta['data']['build']}, level cap {meta['data']['levelCap']}")
+    REUSE = None if full else previous_cache(meta["data"]["build"])
+    print(f"ForeverDB build {meta['data']['build']}, level cap {meta['data']['levelCap']}"
+          + (f"; item details reused from {REUSE.name} where it has them" if REUSE else ""))
     for slug in PROFESSIONS:
         pages(f"/professions/{slug}", key)
     for slug in GATHERING:
@@ -126,12 +148,13 @@ def fetch(key: str) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("step", choices=("fetch", "slim"))
+    parser.add_argument("--full", action="store_true", help="fetch: every item's details again too (a big patch)")
     args = parser.parse_args()
     if args.step == "fetch":
         key = os.environ.get("FOREVERDB_API_KEY")
         if not key:
             raise SystemExit("Set FOREVERDB_API_KEY first.")
-        fetch(key)
+        fetch(key, full=args.full)
     else:
         from foreverdb_slim import slim  # written once the cached answers' shapes are known
         slim(CACHE, OUT, CREDIT, date.today().isoformat())
