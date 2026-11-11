@@ -21,6 +21,7 @@ Original addon files, as uploaded (large; open only when asked about that addon)
 - **Auction House prices:** each time the game saves Auctionator's file (a `/reload` or logout after a scan), the scan is imported and published within minutes. A save with no new scan adds nothing. Times quoted are when the scan was made, not when it was imported.
 - **ForeverDB data** (recipes, trainers, abilities, vendor and other players' prices, item names): refreshed three times a day. When the game build changes, the full refresh takes a couple of hours.
 - **Blizzard's posts:** collected every two hours.
+- **Combat logs:** with the ForeverDB refresh, each finished combat log is filed in `logs/` (see its README).
 - **Characters:** with the ForeverDB refresh, the account's own characters are read from ForeverDB's addon file (`feed/characters.md`), under labels, not names. Each is as of that character's last logout or reload.
 
 ## How to answer

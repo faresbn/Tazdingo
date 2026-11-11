@@ -127,21 +127,32 @@ def character(record: dict, collections: dict) -> dict:
     }
 
 
+def own_records(db: dict) -> list[tuple[bytes, dict]]:
+    """The account's own characters' snapshots, oldest character first (player IDs grow with creation)."""
+    own = own_ids(db)
+    return sorted((k, v) for k, v in db[b"armory"].items() if k in own and isinstance(v, dict))
+
+
+def labels(db: dict) -> dict[str, str]:
+    """{player ID: label}: "Orc Warlock", or "Orc Warlock 2" for a second one. Also used by scripts/combat_logs.py."""
+    seen: dict[str, int] = {}
+    out = {}
+    for key, record in own_records(db):
+        base = f"{text(record.get(b'race'))} {text(record.get(b'class'))}"
+        seen[base] = seen.get(base, 0) + 1
+        out[text(key)] = base if seen[base] == 1 else f"{base} {seen[base]}"
+    return out
+
+
 def extract(raw: bytes) -> dict:
     """The record written to data/characters.json: own characters only, labelled, no names or IDs."""
     db = load(raw)
-    own = own_ids(db)
-    picked = sorted((k, v) for k, v in db[b"armory"].items() if k in own and isinstance(v, dict))  # IDs grow with creation
+    picked = own_records(db)
     if not picked:
         raise InvalidCapture("ForeverDB.lua has no snapshots of the account's own characters")
     collections = db.get(b"collections") if isinstance(db.get(b"collections"), dict) else {}
-    chars = [character(record, collections.get(key) or {}) for key, record in picked]
-    seen: dict[str, int] = {}
-    for c in chars:
-        base = f"{c['race']} {c['class']}"
-        seen[base] = seen.get(base, 0) + 1
-        c["label"] = base if seen[base] == 1 else f"{base} {seen[base]}"
-    chars = [{"label": c.pop("label"), **c} for c in chars]
+    named = labels(db)
+    chars = [{"label": named[text(key)], **character(record, collections.get(key) or {})} for key, record in picked]
     return {"source": {"addon": "ForeverDB", "table": "ForeverDB_DB.armory",
                        "note": "Each character's snapshot from when it last logged out or reloaded. Labels, not names."},
             "characters": sorted(chars, key=lambda c: (-(c["level"] or 0), c["label"]))}

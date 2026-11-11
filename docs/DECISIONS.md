@@ -12,6 +12,15 @@ Asked for by Fares on 30 October ("I want to very quickly notice there's nothing
 - **Professions overview leads with the gold-making pages** (What to craft, Materials, Camping, Waylaid Crates); the professions follow as a compact grid.
 - **Oxblood is used** as the design decision below always said: for the open tab, the menu rule and the cheatsheet's margin line only.
 
+## Combat logs (11 November)
+
+Decided by Fares on 11 November.
+- **Combat logs are filed in the public repository, in `logs/`,** by the 8-hourly job (`scripts/combat_logs.py`).
+- **Instance runs are kept exactly as the game wrote them,** every player and name included, so they upload to Warcraft Logs: "there's no big deal with the logs being on my repo even if it's public. The logs would be public on Warcraft Logs anyway." No second, relabelled copy ("I don't want duplicates of them").
+- **Open world keeps only our own characters,** as concise but thorough summaries; other players appear only as "another player".
+- **ChatGPT gets the complete instance logs,** through `logs/README.md`: a guide to using the folder efficiently and an index of everything in it, with each encounter's line numbers.
+- **Game logs over a week old are deleted** from `_forever_/Logs` once filed.
+
 ## Characters (9 November)
 
 Decided by Fares on 9 November.
