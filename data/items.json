@@ -2,7 +2,7 @@
  "source": {
   "credit": "Data from ForeverDB.net (https://foreverdb.net)",
   "file": "Data/SearchNames.lua",
-  "data_version": "2026-11-11.675511d6",
+  "data_version": "2026-11-11.2e9d93d2",
   "client_build": "1.60.1.70862",
   "sha256": "66e56f509014f385b72901edf4b9916bd0dfc8ac00136636affba472c32fbf69",
   "fetched_on": "2026-11-11"
@@ -7181,6 +7181,7 @@
   233960,
   233962,
   233964,
+  233965,
   233966,
   233967,
   233968,

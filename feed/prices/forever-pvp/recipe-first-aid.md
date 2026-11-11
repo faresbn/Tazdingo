@@ -13,6 +13,7 @@
 | Manual: Heavy Silk Bandage | 16112 | 27s 0c | 2026-11-11 15:03 UTC | 31s 0c | 31s 0c | steady | 6 of 7 | 166 |  |
 | Manual: Leather Tourniquet | 255726 | 98s 0c | 2026-11-11 15:03 UTC | 58s 50c |  | too new | 2 of 7 | 6 |  |
 | Manual: Mageweave Bandage | 16113 | 61s 0c | 2026-11-11 15:03 UTC | 56s 50c | 56s 50c | moving | 6 of 7 | 83 |  |
+| Manual: Major Healing Potion | 255729 | 5g 0s 0c | 2026-11-11 15:03 UTC | 5g 0s 0c |  | too new | 1 of 7 | 13 |  |
 | Manual: Potent Anti-Venom | 255728 | 16s 0c | 2026-11-11 15:03 UTC | 25s 0c | 25s 0c | volatile | 5 of 7 | 15 |  |
 | Manual: Strong Anti-Venom | 6454 | 15s 0c | 2026-11-11 15:03 UTC | 12s 0c | 12s 0c | volatile | 6 of 7 | 76 |  |
 | Manual: Superior Healing Potion | 255725 | 25s 0c | 2026-11-11 15:03 UTC | 96s 0c | 96s 0c | volatile | 4 of 7 | 35 |  |

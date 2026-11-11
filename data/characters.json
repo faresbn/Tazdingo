@@ -11,10 +11,10 @@
    "race": "Orc",
    "faction": "Horde",
    "level": 29,
-   "item_level": 24.5,
-   "recorded_at": "2026-11-09T21:12:01Z",
+   "item_level": 25.1,
+   "recorded_at": "2026-11-11T17:03:28Z",
    "recorded_on": "logout",
-   "build": "70862",
+   "build": "70888",
    "gear": [
     {
      "slot": "Head",
@@ -78,9 +78,9 @@
     },
     {
      "slot": "Finger",
-     "item": 6414,
-     "name": "Seal of Sylvanas",
-     "item_level": 29
+     "item": 3739,
+     "name": "Skull Ring",
+     "item_level": 25
     },
     {
      "slot": "Trinket",
@@ -102,9 +102,15 @@
     },
     {
      "slot": "Main hand",
-     "item": 6505,
-     "name": "Crescent Staff",
-     "item_level": 24
+     "item": 15242,
+     "name": "Honed Stiletto of the Elder",
+     "item_level": 30
+    },
+    {
+     "slot": "Off hand",
+     "item": 273027,
+     "name": "Raptor's Gaze",
+     "item_level": 31
     },
     {
      "slot": "Ranged",
@@ -158,7 +164,7 @@
     {
      "name": "Defense",
      "category": "Weapon Skills",
-     "skill": 135,
+     "skill": 140,
      "max": 145
     },
     {
@@ -182,7 +188,7 @@
     {
      "name": "Wands",
      "category": "Weapon Skills",
-     "skill": 123,
+     "skill": 124,
      "max": 145
     },
     {
@@ -201,26 +207,26 @@
    "reputations": [
     {
      "name": "Darkspear Trolls",
-     "standing": "Friendly",
-     "progress": 5935,
-     "needed": 6000
+     "standing": "Honored",
+     "progress": 47,
+     "needed": 12000
     },
     {
      "name": "Orgrimmar",
      "standing": "Honored",
-     "progress": 1822,
+     "progress": 1935,
      "needed": 12000
     },
     {
      "name": "Thunder Bluff",
      "standing": "Friendly",
-     "progress": 4020,
+     "progress": 4132,
      "needed": 6000
     },
     {
      "name": "Undercity",
      "standing": "Friendly",
-     "progress": 3861,
+     "progress": 4311,
      "needed": 6000
     },
     {
@@ -273,18 +279,18 @@
     }
    ],
    "stats": {
-    "Health": 1241,
-    "Mana or energy": 2078,
-    "Strength": 47,
-    "Agility": 37,
-    "Stamina": 107,
-    "Intellect": 99,
-    "Spirit": 74,
-    "Armour": 561
+    "Health": 1161,
+    "Mana or energy": 2061,
+    "Strength": 33,
+    "Agility": 30,
+    "Stamina": 99,
+    "Intellect": 98,
+    "Spirit": 77,
+    "Armour": 547
    },
    "pvp": {
-    "Honourable kills": 0,
-    "Dishonourable kills": 52,
+    "Honourable kills": 16,
+    "Dishonourable kills": 0,
     "Honour points": 45,
     "Renown": 0
    },

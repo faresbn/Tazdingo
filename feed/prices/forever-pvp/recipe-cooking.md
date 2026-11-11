@@ -8,6 +8,7 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Blueprint: Cookie's Feast | 273102 | 2g 0s 0c | 2026-11-11 15:03 UTC | 2g 5s 0c | 2g 5s 0c | moving | 5 of 7 | 10 |  |
 | Blueprint: Expert Campfire | 273101 | 10g 0s 0c | 2026-11-11 15:03 UTC | 15g 0s 0c | 15g 0s 0c | volatile | 3 of 7 | 3 |  |
+| Blueprint: Iron Oven | 273115 | 300g 1s 0c | 2026-11-11 15:03 UTC | 300g 1s 0c |  | too new | 1 of 7 | 1 |  |
 | Blueprint: Journeyman Campfire | 273087 | 3g 1s 0c | 2026-11-11 15:03 UTC | 1g 89s 0c | 1g 89s 0c | volatile | 6 of 7 | 42 |  |
 | Expert Cookbook | 16072 | 1g 3s 0c | 2026-11-11 15:03 UTC | 1g 7s 0c | 1g 7s 0c | steady | 5 of 7 | 175 |  |
 | Recipe: Baked Salmon | 13949 | 2g 47s 0c | 2026-11-11 15:03 UTC | 3g 23s 50c |  | too new | 2 of 7 | 11 |  |

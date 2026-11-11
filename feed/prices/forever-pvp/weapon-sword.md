@@ -7,12 +7,16 @@
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | Ancestral Sword | 215374 | 13s 0c | 2026-11-11 15:03 UTC | 16s 50c | 16s 50c | moving | 4 of 7 | 30 |  |
+| Annealed Blade | 9392 | 13g 0s 0c | 2026-11-11 15:03 UTC | 13g 0s 0c |  | too new | 1 of 7 | 2 |  |
 | Archaic Defender | 9385 | 1g 99s 0c | 2026-11-11 15:03 UTC | 1g 99s 0c | 1g 99s 0c | steady | 4 of 7 | 12 |  |
+| Assassination Blade | 13036 | 50g 0s 0c | 2026-11-11 15:03 UTC | 50g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Battlefield Destroyer | 8199 | 2g 55s 0c | 2026-11-11 15:03 UTC | 5g 0s 0c | 5g 0s 0c | volatile | 3 of 7 | 7 |  |
+| Beheading Blade | 15253 | 6g 50s 0c | 2026-11-11 15:03 UTC | 6g 50s 0c |  | too new | 1 of 7 | 4 |  |
 | Blackwater Cutlass | 1951 | 57s 0c | 2026-11-11 15:03 UTC | 59s 0c | 59s 0c | moving | 7 of 7 | 38 |  |
 | Blade of the Basilisk | 8223 | 5g 0s 0c | 2026-11-11 15:03 UTC | 9g 50s 0c | 9g 50s 0c | moving | 5 of 7 | 1 |  |
 | Blade of the Titans | 13043 | 9g 0s 0c | 2026-11-11 15:03 UTC | 15g 99s 0c | 15g 99s 0c | volatile | 3 of 7 | 2 |  |
 | Blessed Claymore | 4817 | 85s 0c | 2026-11-11 15:03 UTC | 95s 0c | 95s 0c | moving | 5 of 7 | 6 |  |
+| Bloodrazor | 809 | 55g 75s 0c | 2026-11-11 15:03 UTC | 55g 75s 0c |  | too new | 1 of 7 | 2 |  |
 | Blunt Claymore | 1811 | 5s 0c | 2026-11-11 15:03 UTC | 5s 0c | 5s 0c | steady | 6 of 7 | 40 |  |
 | Boneslasher | 10573 | 10g 0s 0c | 2026-11-11 15:03 UTC | 10g 0s 0c | 10g 0s 0c | moving | 3 of 7 | 5 |  |
 | Broad Claymore | 3781 | 32s 0c | 2026-11-11 15:03 UTC | 47s 0c | 47s 0c | moving | 3 of 7 | 2 |  |
@@ -35,6 +39,7 @@
 | Deanship Claymore | 13049 | 1g 0s 0c | 2026-11-11 15:03 UTC | 75s 0c | 75s 0c | moving | 5 of 7 | 12 |  |
 | Decapitating Sword | 3740 | 25s 0c | 2026-11-11 15:03 UTC | 25s 0c | 25s 0c | steady | 7 of 7 | 103 |  |
 | Defias Rapier | 1925 | 1g 0s 0c | 2026-11-11 15:03 UTC | 30s 0c | 30s 0c | volatile | 6 of 7 | 10 |  |
+| Destiny | 647 | 199g 0s 0c | 2026-11-11 15:03 UTC | 199g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Dull Blade | 1384 | 2s 0c | 2026-11-05 18:58 UTC | 2s 0c |  | too new | 1 of 7 | 2 |  |
 | Duskbringer | 2205 | 2g 9s 0c | 2026-11-11 15:03 UTC | 2g 5s 0c | 2g 5s 0c | moving | 6 of 7 | 6 |  |
 | Ebon Scimitar | 8196 | 1g 58s 0c | 2026-11-11 15:03 UTC | 1g 92s 50c | 1g 92s 50c | moving | 4 of 7 | 6 |  |
@@ -86,10 +91,12 @@
 | Practice Sword | 8177 | 2s 0c | 2026-11-11 15:03 UTC | 1s 0c | 1s 0c | steady | 6 of 7 | 28 |  |
 | Pysan's Old Greatsword | 1975 | 1g 19s 0c | 2026-11-11 15:03 UTC | 1g 0s 0c | 1g 0s 0c | moving | 5 of 7 | 14 |  |
 | Raider Shortsword | 15210 | 8s 0c | 2026-11-11 15:03 UTC | 9s 0c | 9s 0c | moving | 7 of 7 | 297 |  |
+| Reforged Blade of Heroes | 9718 | 12g 11s 0c | 2026-11-11 15:03 UTC | 12g 11s 0c |  | too new | 1 of 7 | 4 |  |
 | Rune Sword | 15216 | 4g 99s 0c | 2026-11-11 15:03 UTC | 10g 44s 0c |  | too new | 2 of 7 | 2 |  |
 | Scimitar | 2027 | 15s 0c | 2026-11-11 15:03 UTC | 17s 0c | 17s 0c | moving | 5 of 7 | 6 |  |
 | Scorpion Sting | 1265 | 2g 99s 0c | 2026-11-11 15:03 UTC | 4g 20s 0c | 4g 20s 0c | volatile | 5 of 7 | 8 |  |
 | Searing Blade | 12992 | 39s 0c | 2026-11-11 15:03 UTC | 39s 50c | 39s 50c | steady | 6 of 7 | 38 |  |
+| Serpent Slicer | 13035 | 6g 30s 0c | 2026-11-11 15:03 UTC | 6g 30s 0c |  | too new | 1 of 7 | 9 |  |
 | Shadowfang | 1482 | 13g 55s 0c | 2026-11-11 15:03 UTC | 9g 50s 0c | 9g 50s 0c | volatile | 6 of 7 | 12 |  |
 | Shiver Blade | 5182 | 19s 0c | 2026-11-11 15:03 UTC | 20s 0c | 20s 0c | steady | 6 of 7 | 23 |  |
 | Short Bastard Sword | 3192 | 5s 0c | 2026-11-11 15:03 UTC | 5s 0c | 5s 0c | moving | 6 of 7 | 665 |  |
@@ -109,6 +116,7 @@
 | Sword of the Magistrate | 13042 | 4g 10s 0c | 2026-11-11 15:03 UTC | 9g 64s 0c | 9g 64s 0c | moving | 3 of 7 | 11 |  |
 | Sword of the Night Sky | 2035 | 37s 0c | 2026-11-11 15:03 UTC | 37s 0c | 37s 0c | moving | 7 of 7 | 11 |  |
 | Syndicate Executioner's Slicer | 283255 | 1g 8s 0c | 2026-11-11 15:03 UTC | 99s 0c | 99s 0c | moving | 4 of 7 | 16 |  |
+| Ta'Kierthan Songblade | 16039 | 99g 89s 0c | 2026-11-11 15:03 UTC | 99g 89s 0c |  | too new | 1 of 7 | 1 |  |
 | Tainted Pierce | 8225 | 4g 0s 0c | 2026-11-11 15:03 UTC | 4g 72s 0c | 4g 72s 0c | steady | 4 of 7 | 1 |  |
 | Tarnished Bastard Sword | 2754 | 3s 0c | 2026-11-11 15:03 UTC | 8s 50c | 8s 50c | volatile | 6 of 7 | 6 |  |
 | The Black Knight | 12974 | 99s 0c | 2026-11-11 15:03 UTC | 1g 15s 0c | 1g 15s 0c | volatile | 6 of 7 | 18 |  |

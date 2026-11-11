@@ -9,5 +9,6 @@
 | Benedict's Key | 4882 | 1s 0c | 2026-11-11 15:03 UTC | 1s 0c | 1s 0c | steady | 6 of 7 | 60 |  |
 | Captain's Key | 9249 | 21s 0c | 2026-11-11 15:03 UTC | 50s 0c | 50s 0c | volatile | 3 of 7 | 6 |  |
 | Kolkar Booty Key | 5020 | 1s 0c | 2026-11-11 15:03 UTC | 1s 0c | 1s 0c | steady | 6 of 7 | 208 |  |
+| Relic Coffer Key | 11078 | 35s 64c | 2026-11-11 15:03 UTC | 35s 64c |  | too new | 1 of 7 | 76 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

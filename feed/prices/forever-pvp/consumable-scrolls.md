@@ -9,18 +9,23 @@
 | Scroll of Agility | 3012 | 1s 20c | 2026-11-11 15:03 UTC | 1s 51c | 1s 51c | moving | 6 of 7 | 188 |  |
 | Scroll of Agility II | 1477 | 3s 30c | 2026-11-11 15:03 UTC | 9s 37c | 9s 37c | volatile | 6 of 7 | 116 |  |
 | Scroll of Agility III | 4425 | 14s 0c | 2026-11-11 15:03 UTC | 1g 22s 0c | 1g 22s 0c | volatile | 3 of 7 | 18 |  |
+| Scroll of Agility IV | 10309 | 99s 0c | 2026-11-11 15:03 UTC | 99s 0c |  | too new | 1 of 7 | 3 |  |
 | Scroll of Cat Familiar | 277493 | 3s 20c | 2026-11-11 15:03 UTC | 8s 42c | 8s 42c | moving | 4 of 7 | 144 |  |
 | Scroll of Cryoblast | 217495 | 4s 0c | 2026-11-11 15:03 UTC | 2s 70c | 2s 70c | moving | 6 of 7 | 236 |  |
 | Scroll of Frog Familiar | 277483 | 80c | 2026-11-11 15:03 UTC | 1s 58c | 1s 58c | volatile | 6 of 7 | 200 |  |
+| Scroll of Greater Cryoblast | 277499 | 2g 99s 0c | 2026-11-11 15:03 UTC | 2g 99s 0c |  | too new | 1 of 7 | 29 |  |
 | Scroll of Imbue Accuracy | 277494 | 97c | 2026-11-11 15:03 UTC | 2s 75c | 2s 75c | volatile | 5 of 7 | 105 |  |
 | Scroll of Imbue Baleflame | 277487 | 75c | 2026-11-11 15:03 UTC | 96c | 96c | volatile | 6 of 7 | 132 |  |
 | Scroll of Imbue Balefrost | 277496 | 2s 50c | 2026-11-11 15:03 UTC | 2s 25c | 2s 25c | steady | 4 of 7 | 128 |  |
 | Scroll of Imbue Chillknife | 275067 | 1s 0c | 2026-11-11 15:03 UTC | 75c | 75c | steady | 6 of 7 | 334 |  |
 | Scroll of Imbue Flame | 277497 | 97c | 2026-11-11 15:03 UTC | 4s 10c | 4s 10c | volatile | 5 of 7 | 130 |  |
 | Scroll of Imbue Frost | 277485 | 2s 48c | 2026-11-11 15:03 UTC | 2s 5c | 2s 5c | moving | 6 of 7 | 97 |  |
+| Scroll of Imbue Greater Flame | 277500 | 3g 1s 0c | 2026-11-11 15:03 UTC | 3g 1s 0c |  | too new | 1 of 7 | 12 |  |
+| Scroll of Imbue Greater Frost | 277501 | 1g 85s 0c | 2026-11-11 15:03 UTC | 1g 85s 0c |  | too new | 1 of 7 | 14 |  |
 | Scroll of Imbue Iceknife | 277488 | 75c | 2026-11-11 15:03 UTC | 79c | 79c | moving | 6 of 7 | 126 |  |
 | Scroll of Imbue Lesser Flame | 274947 | 75c | 2026-11-11 15:03 UTC | 75c | 75c | steady | 6 of 7 | 276 |  |
 | Scroll of Imbue Manablade | 277498 | 1s 84c | 2026-11-11 15:03 UTC | 3s 48c | 3s 48c | moving | 4 of 7 | 134 |  |
+| Scroll of Imbue Precision | 277502 | 3g 0s 0c | 2026-11-11 15:03 UTC | 3g 0s 0c |  | too new | 1 of 7 | 19 |  |
 | Scroll of Imbue Quickening | 277495 | 95c | 2026-11-11 15:03 UTC | 3s 0c | 3s 0c | volatile | 5 of 7 | 143 |  |
 | Scroll of Imbue Spark | 277489 | 75c | 2026-11-11 15:03 UTC | 76c | 76c | moving | 6 of 7 | 100 |  |
 | Scroll of Imbue Striking | 277486 | 1s 18c | 2026-11-11 15:03 UTC | 1s 84c | 1s 84c | volatile | 6 of 7 | 131 |  |
@@ -34,16 +39,20 @@
 | Scroll of Protection | 3013 | 31c | 2026-11-11 15:03 UTC | 27c | 27c | steady | 6 of 7 | 450 |  |
 | Scroll of Protection II | 1478 | 1s 0c | 2026-11-11 15:03 UTC | 2s 56c | 2s 56c | volatile | 6 of 7 | 110 |  |
 | Scroll of Protection III | 4421 | 3s 13c | 2026-11-11 15:03 UTC | 8s 95c | 8s 95c | volatile | 5 of 7 | 68 |  |
+| Scroll of Protection IV | 10305 | 75s 0c | 2026-11-11 15:03 UTC | 75s 0c |  | too new | 1 of 7 | 19 |  |
 | Scroll of Rat Familiar | 275069 | 75c | 2026-11-11 15:03 UTC | 75c | 75c | steady | 6 of 7 | 170 |  |
 | Scroll of Spirit | 1181 | 28c | 2026-11-11 15:03 UTC | 25c | 25c | moving | 6 of 7 | 284 |  |
 | Scroll of Spirit II | 1712 | 1s 18c | 2026-11-11 15:03 UTC | 2s 45c | 2s 45c | volatile | 6 of 7 | 88 |  |
 | Scroll of Spirit III | 4424 | 3s 0c | 2026-11-11 15:03 UTC | 9s 0c | 9s 0c | volatile | 5 of 7 | 99 |  |
+| Scroll of Spirit IV | 10306 | 98s 99c | 2026-11-11 15:03 UTC | 98s 99c |  | too new | 1 of 7 | 22 |  |
 | Scroll of Stamina | 1180 | 54c | 2026-11-11 15:03 UTC | 73c | 73c | moving | 6 of 7 | 190 |  |
 | Scroll of Stamina II | 1711 | 1s 50c | 2026-11-11 15:03 UTC | 3s 97c | 3s 97c | volatile | 6 of 7 | 112 |  |
 | Scroll of Stamina III | 4422 | 6s 0c | 2026-11-11 15:03 UTC | 35s 85c | 35s 85c | volatile | 3 of 7 | 32 |  |
+| Scroll of Stamina IV | 10307 | 5g 87s 0c | 2026-11-11 15:03 UTC | 5g 87s 0c |  | too new | 1 of 7 | 2 |  |
 | Scroll of Strength | 954 | 85c | 2026-11-11 15:03 UTC | 1s 5c | 1s 5c | moving | 6 of 7 | 198 |  |
 | Scroll of Strength II | 2289 | 3s 32c | 2026-11-11 15:03 UTC | 4s 0c | 4s 0c | volatile | 5 of 7 | 144 |  |
 | Scroll of Strength III | 4426 | 29s 69c | 2026-11-11 15:03 UTC | 98s 0c | 98s 0c | moving | 3 of 7 | 12 |  |
+| Scroll of Strength IV | 10310 | 4g 99s 98c | 2026-11-11 15:03 UTC | 4g 99s 98c |  | too new | 1 of 7 | 7 |  |
 | Scroll: CHAP BALK WELLES | 211786 | 1s 0c | 2026-11-11 15:03 UTC | 1s 0c | 1s 0c | steady | 6 of 7 | 2638 |  |
 | Scroll: CWAL | 211785 | 1s 0c | 2026-11-11 15:03 UTC | 1s 0c | 1s 0c | steady | 6 of 7 | 3177 |  |
 | Scroll: DOST OREM | 281015 | 20s 0c | 2026-11-11 15:03 UTC | 60s 50c |  | too new | 2 of 7 | 17 |  |

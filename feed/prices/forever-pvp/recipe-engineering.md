@@ -10,20 +10,29 @@
 | Schematic: Bright-Eye Goggles | 10601 | 5s 0c | 2026-11-11 15:03 UTC | 7s 50c | 7s 50c | volatile | 6 of 7 | 40 |  |
 | Schematic: Catseye Ultra Goggles | 10603 | 24s 0c | 2026-11-11 15:03 UTC | 24s 0c | 24s 0c | volatile | 5 of 7 | 31 |  |
 | Schematic: Craftsman's Monocle | 4415 | 1g 50s 0c | 2026-11-11 15:03 UTC | 1g 50s 0c | 1g 50s 0c | moving | 5 of 7 | 7 |  |
+| Schematic: Dark Iron Bomb | 16049 | 20g 76s 0c | 2026-11-11 15:03 UTC | 20g 76s 0c |  | too new | 1 of 7 | 2 |  |
+| Schematic: Dark Iron Rifle | 16048 | 2g 61s 0c | 2026-11-11 15:03 UTC | 2g 61s 0c |  | too new | 1 of 7 | 2 |  |
 | Schematic: Discombobulator Ray | 4413 | 9g 99s 0c | 2026-11-11 15:03 UTC | 2g 0s 0c | 2g 0s 0c | volatile | 3 of 7 | 2 |  |
+| Schematic: EZ and SAF Field Transporter: Mt. Hyjal | 264231 | 9g 0s 0c | 2026-11-11 15:03 UTC | 9g 0s 0c |  | too new | 1 of 7 | 4 |  |
 | Schematic: EZ-Thro Bronze Mortar | 264212 | 20s 0c | 2026-11-11 15:03 UTC | 1g 4s 0c | 1g 4s 0c | volatile | 4 of 7 | 20 |  |
 | Schematic: EZ-Thro Copper Bomb XL | 264205 | 1g 98s 0c | 2026-11-11 15:03 UTC | 3g 48s 50c |  | too new | 2 of 7 | 4 |  |
 | Schematic: EZ-Thro Dynamite | 6716 | 2s 0c | 2026-11-11 15:03 UTC | 2s 0c | 2s 0c | steady | 6 of 7 | 226 |  |
+| Schematic: EZ-Thro Grenade | 264213 | 13g 70s 0c | 2026-11-11 15:03 UTC | 13g 70s 0c |  | too new | 1 of 7 | 6 |  |
+| Schematic: EZ-Thro Mana Bomb | 264228 | 5g 50s 0c | 2026-11-11 15:03 UTC | 5g 50s 0c |  | too new | 1 of 7 | 6 |  |
+| Schematic: EZ-Thro Thorium Grenade | 264226 | 20g 76s 0c | 2026-11-11 15:03 UTC | 20g 76s 0c |  | too new | 1 of 7 | 1 |  |
 | Schematic: EZ-Thro Tru-Trigger | 264218 | 18s 0c | 2026-11-11 15:03 UTC | 5g 0s 0c | 5g 0s 0c | volatile | 3 of 7 | 6 |  |
 | Schematic: EZ-Thro Wrap | 264204 | 3g 49s 0c | 2026-11-11 15:03 UTC | 4g 24s 0c |  | too new | 2 of 7 | 4 |  |
 | Schematic: Flame Deflector | 4411 | 5g 70s 0c | 2026-11-11 15:03 UTC | 26g 26s 0c | 26g 26s 0c | volatile | 4 of 7 | 2 |  |
 | Schematic: Flash Bomb | 6672 | 2g 99s 0c | 2026-11-11 15:03 UTC | 3g 99s 0c |  | too new | 2 of 7 | 2 |  |
+| Schematic: Gnomish Alarm-O-Bot | 18654 | 22g 0s 0c | 2026-11-11 15:03 UTC | 22g 0s 0c |  | too new | 1 of 7 | 3 |  |
 | Schematic: Goblin Land Mine | 4416 | 9s 0c | 2026-11-11 15:03 UTC | 14s 0c | 14s 0c | volatile | 5 of 7 | 67 |  |
 | Schematic: Goblin Rocket Boots | 7192 | 7g 50s 0c | 2026-11-11 15:03 UTC | 8g 75s 0c | 8g 75s 0c | volatile | 4 of 7 | 4 |  |
 | Schematic: Large Seaforium Charge | 4417 | 7s 0c | 2026-11-11 15:03 UTC | 8s 0c | 8s 0c | moving | 5 of 7 | 27 |  |
 | Schematic: Mechanical Dragonling | 13311 | 1g 22s 0c | 2026-11-11 15:03 UTC | 1g 22s 0c | 1g 22s 0c | volatile | 3 of 7 | 11 |  |
 | Schematic: Mechanical Squirrel | 4408 | 2s 0c | 2026-11-11 15:03 UTC | 2s 0c | 2s 0c | steady | 6 of 7 | 335 |  |
+| Schematic: Minor Recombobulator | 14639 | 2g 9s 0c | 2026-11-11 15:03 UTC | 2g 9s 0c |  | too new | 1 of 7 | 2 |  |
 | Schematic: Mithril Heavy-bore Rifle | 10604 | 9s 0c | 2026-11-11 15:03 UTC | 15s 0c | 15s 0c | volatile | 5 of 7 | 35 |  |
+| Schematic: Mithril Mechanical Dragonling | 10609 | 10g 16s 0c | 2026-11-11 15:03 UTC | 10g 16s 0c |  | too new | 1 of 7 | 2 |  |
 | Schematic: Moonsight Rifle | 4412 | 4s 0c | 2026-11-11 15:03 UTC | 4s 0c | 4s 0c | moving | 6 of 7 | 89 |  |
 | Schematic: No Slip SAF-T Padding | 264206 | 2g 0s 0c | 2026-11-11 15:03 UTC | 3g 49s 50c |  | too new | 2 of 7 | 5 |  |
 | Schematic: Parachute Cloak | 10606 | 10s 0c | 2026-11-11 15:03 UTC | 22s 0c | 22s 0c | moving | 4 of 7 | 30 |  |
@@ -48,6 +57,8 @@
 | Schematic: Thorium Shells | 16051 | 2g 50s 0c | 2026-11-11 15:03 UTC | 10g 76s 0c | 10g 76s 0c | volatile | 3 of 7 | 2 |  |
 | Schematic: Thorium Widget | 16042 | 2g 0s 0c | 2026-11-11 15:03 UTC | 2g 73s 0c |  | too new | 2 of 7 | 3 |  |
 | Schematic: Tru-Trigger Frag Bomb | 264219 | 24s 0c | 2026-11-11 15:03 UTC | 75s 0c | 75s 0c | volatile | 3 of 7 | 9 |  |
+| Schematic: Ultra-Flash Shadow Reflector | 18658 | 40g 91s 0c | 2026-11-11 15:03 UTC | 40g 91s 0c |  | too new | 1 of 7 | 2 |  |
 | Schematic: Unsanctified Grenade | 284870 | 44s 0c | 2026-11-11 15:03 UTC | 89s 0c | 89s 0c | moving | 3 of 7 | 8 |  |
+| Schematic: World Enlarger | 18661 | 7g 99s 0c | 2026-11-11 15:03 UTC | 7g 99s 0c |  | too new | 1 of 7 | 5 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

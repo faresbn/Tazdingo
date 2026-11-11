@@ -8,6 +8,7 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Bloodpike | 13057 | 63s 0c | 2026-11-11 15:03 UTC | 70s 0c | 70s 0c | steady | 6 of 7 | 12 |  |
 | Bonechewer | 13055 | 8g 0s 0c | 2026-11-11 15:03 UTC | 19g 99s 0c | 19g 99s 0c | volatile | 3 of 7 | 4 |  |
+| Frenzied Striker | 13056 | 30g 25s 0c | 2026-11-11 15:03 UTC | 30g 25s 0c |  | too new | 1 of 7 | 3 |  |
 | Gargoyle's Bite | 12989 | 35s 0c | 2026-11-11 15:03 UTC | 34s 0c | 34s 0c | steady | 6 of 7 | 43 |  |
 | Grim Reaper | 13054 | 2g 10s 0c | 2026-11-11 15:03 UTC | 4g 50s 0c | 4g 50s 0c | moving | 3 of 7 | 7 |  |
 | Headhunting Spear | 1522 | 1g 4s 0c | 2026-11-11 15:03 UTC | 1g 5s 0c | 1g 5s 0c | steady | 4 of 7 | 18 |  |
@@ -16,6 +17,8 @@
 | Poison-tipped Bone Spear | 1726 | 1g 27s 0c | 2026-11-11 15:03 UTC | 1g 89s 50c | 1g 89s 50c | moving | 4 of 7 | 12 |  |
 | Ruthless Shiv | 7758 | 10g 0s 0c | 2026-11-11 15:03 UTC | 19g 99s 0c | 19g 99s 0c | moving | 3 of 7 | 2 |  |
 | Steel Spear | 250605 | 2g 20s 0c | 2026-11-11 15:03 UTC | 3g 89s 0c | 3g 89s 0c | moving | 4 of 7 | 7 |  |
+| Stoneraven | 13059 | 25g 0s 0c | 2026-11-11 15:03 UTC | 25g 0s 0c |  | too new | 1 of 7 | 5 |  |
+| The Needler | 13060 | 35g 0s 0c | 2026-11-11 15:03 UTC | 35g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Well-Worn Pitchfork | 281661 | 1g 69s 0c | 2026-11-11 15:03 UTC | 1g 55s 0c | 1g 55s 0c | steady | 3 of 7 | 6 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

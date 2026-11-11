@@ -23,6 +23,7 @@
 | Coarse Weightstone | 3240 | 60c | 2026-11-11 15:03 UTC | 94c | 94c | moving | 6 of 7 | 549 |  |
 | Cookie's Feast | 279957 | 19s 98c | 2026-11-11 15:03 UTC | 40s 0c | 40s 0c | volatile | 3 of 7 | 28 |  |
 | Craftsman's Writ: Advanced Target Dummy | 264081 | 18s 0c | 2026-11-11 15:03 UTC | 36s 50c | 36s 50c | volatile | 4 of 7 | 19 |  |
+| Craftsman's Writ: Arcanite Skeleton Key | 264132 | 1g 99s 0c | 2026-11-11 15:03 UTC | 1g 99s 0c |  | too new | 1 of 7 | 6 |  |
 | Craftsman's Writ: Azure Silk Hood | 264049 | 48s 0c | 2026-11-11 15:03 UTC | 48s 0c | 48s 0c | volatile | 5 of 7 | 27 |  |
 | Craftsman's Writ: Barbaric Gloves | 264045 | 40s 0c | 2026-11-11 15:03 UTC | 30s 0c | 30s 0c | moving | 5 of 7 | 41 |  |
 | Craftsman's Writ: Big Bronze Bomb | 264036 | 39s 0c | 2026-11-11 15:03 UTC | 36s 0c | 36s 0c | moving | 5 of 7 | 17 |  |
@@ -34,6 +35,7 @@
 | Craftsman's Writ: Blue Overalls | 264048 | 28s 0c | 2026-11-11 15:03 UTC | 28s 0c | 28s 0c | moving | 5 of 7 | 23 |  |
 | Craftsman's Writ: Catseye Draught | 264060 | 1g 16s 0c | 2026-11-11 15:03 UTC | 54s 0c | 54s 0c | volatile | 3 of 7 | 8 |  |
 | Craftsman's Writ: Catseye Ultra Goggles | 264084 | 6s 0c | 2026-11-11 15:03 UTC | 31s 0c | 31s 0c | volatile | 4 of 7 | 21 |  |
+| Craftsman's Writ: Cenarion Herb Bag | 264157 | 2g 0s 0c | 2026-11-11 15:03 UTC | 2g 0s 0c |  | too new | 1 of 7 | 2 |  |
 | Craftsman's Writ: Chimeric Vest | 264148 | 2g 50s 0c | 2026-11-11 15:03 UTC | 1g 75s 50c |  | too new | 2 of 7 | 2 |  |
 | Craftsman's Writ: Cindercloth Robe | 264114 | 4s 0c | 2026-11-11 15:03 UTC | 32s 50c | 32s 50c | volatile | 4 of 7 | 22 |  |
 | Craftsman's Writ: Colorful Kilt | 264053 | 16s 0c | 2026-11-11 15:03 UTC | 16s 0c | 16s 0c | volatile | 5 of 7 | 32 |  |
@@ -44,9 +46,13 @@
 | Craftsman's Writ: Dark Iron Bomb | 264091 | 10s 0c | 2026-11-11 15:03 UTC | 48s 50c | 48s 50c | volatile | 4 of 7 | 28 |  |
 | Craftsman's Writ: Dark Leather Shoulders | 264044 | 19s 0c | 2026-11-11 15:03 UTC | 19s 0c | 19s 0c | volatile | 5 of 7 | 35 |  |
 | Craftsman's Writ: Dark Leather Tunic | 264041 | 15s 0c | 2026-11-11 15:03 UTC | 15s 0c | 15s 0c | steady | 5 of 7 | 27 |  |
+| Craftsman's Writ: Darkrune Gauntlets | 264130 | 1g 1s 0c | 2026-11-11 15:03 UTC | 1g 1s 0c |  | too new | 1 of 7 | 2 |  |
+| Craftsman's Writ: Distilled Firewater | 264124 | 4g 0s 0c | 2026-11-11 15:03 UTC | 4g 0s 0c |  | too new | 1 of 7 | 4 |  |
 | Craftsman's Writ: Draught of Water Breathing | 264019 | 25s 0c | 2026-11-11 15:03 UTC | 40s 0c | 40s 0c | volatile | 5 of 7 | 62 |  |
+| Craftsman's Writ: Dreamless Sleep Potion | 264117 | 5g 0s 0c | 2026-11-11 15:03 UTC | 5g 0s 0c |  | too new | 1 of 7 | 5 |  |
 | Craftsman's Writ: Dusky Bracers | 264094 | 51s 0c | 2026-11-11 15:03 UTC | 50s 50c | 50s 50c | steady | 4 of 7 | 4 |  |
 | Craftsman's Writ: Earthen Silk Belt | 264115 | 5s 0c | 2026-11-11 15:03 UTC | 22s 50c | 22s 50c | volatile | 4 of 7 | 15 |  |
+| Craftsman's Writ: Ebon Shiv | 264133 | 5g 98s 0c | 2026-11-11 15:03 UTC | 5g 98s 0c |  | too new | 1 of 7 | 4 |  |
 | Craftsman's Writ: Elixir of Agility | 264066 | 61s 0c | 2026-11-11 15:03 UTC | 72s 0c | 72s 0c | steady | 4 of 7 | 14 |  |
 | Craftsman's Writ: Elixir of Defense | 264018 | 1g 0s 0c | 2026-11-11 15:03 UTC | 66s 50c | 66s 50c | volatile | 6 of 7 | 38 |  |
 | Craftsman's Writ: Elixir of Lesser Agility | 264016 | 2g 84s 0c | 2026-11-11 15:03 UTC | 67s 0c | 67s 0c | volatile | 5 of 7 | 29 |  |
@@ -54,12 +60,19 @@
 | Craftsman's Writ: Elixir of Wisdom | 264012 | 56s 0c | 2026-11-11 15:03 UTC | 56s 0c | 56s 0c | volatile | 5 of 7 | 34 |  |
 | Craftsman's Writ: Enchanted Mageweave Pouch | 264108 | 5s 0c | 2026-11-11 15:03 UTC | 39s 50c | 39s 50c | volatile | 4 of 7 | 20 |  |
 | Craftsman's Writ: Explosive Sheep | 264030 | 28s 0c | 2026-11-11 15:03 UTC | 26s 50c | 26s 50c | volatile | 6 of 7 | 29 |  |
+| Craftsman's Writ: Felcloth Boots | 264156 | 2g 25s 0c | 2026-11-11 15:03 UTC | 2g 25s 0c |  | too new | 1 of 7 | 3 |  |
+| Craftsman's Writ: Field Repair Bot 74A | 264139 | 2g 99s 0c | 2026-11-11 15:03 UTC | 2g 99s 0c |  | too new | 1 of 7 | 8 |  |
 | Craftsman's Writ: Fine Leather Pants | 264039 | 39s 0c | 2026-11-11 15:03 UTC | 33s 0c | 33s 0c | moving | 5 of 7 | 29 |  |
 | Craftsman's Writ: Fire Goggles | 264087 | 4s 0c | 2026-11-11 15:03 UTC | 16s 50c | 16s 50c | volatile | 4 of 7 | 16 |  |
 | Craftsman's Writ: Fire Protection Potion | 264063 | 50s 0c | 2026-11-11 15:03 UTC | 42s 50c | 42s 50c | moving | 4 of 7 | 18 |  |
 | Craftsman's Writ: Flash Bomb | 264086 | 39s 0c | 2026-11-11 15:03 UTC | 24s 0c | 24s 0c | volatile | 4 of 7 | 16 |  |
+| Craftsman's Writ: Flask of Chromatic Resistance | 264121 | 9g 99s 0c | 2026-11-11 15:03 UTC | 9g 99s 0c |  | too new | 1 of 7 | 4 |  |
 | Craftsman's Writ: Free Action Potion | 264015 | 50s 0c | 2026-11-11 15:03 UTC | 50s 0c | 50s 0c | moving | 5 of 7 | 23 |  |
 | Craftsman's Writ: Frost Protection Potion | 264056 | 80s 0c | 2026-11-11 15:03 UTC | 59s 50c | 59s 50c | volatile | 4 of 7 | 26 |  |
+| Craftsman's Writ: Frostsaber Boots | 264151 | 4g 1s 0c | 2026-11-11 15:03 UTC | 4g 1s 0c |  | too new | 1 of 7 | 2 |  |
+| Craftsman's Writ: Ghostweave Vest | 264159 | 1g 0s 0c | 2026-11-11 15:03 UTC | 1g 0s 0c |  | too new | 1 of 7 | 4 |  |
+| Craftsman's Writ: Gift of Arthas | 264120 | 90s 0c | 2026-11-11 15:03 UTC | 90s 0c |  | too new | 1 of 7 | 8 |  |
+| Craftsman's Writ: Gnomish Alarm-O-Bot | 264137 | 1g 0s 0c | 2026-11-11 15:03 UTC | 1g 0s 0c |  | too new | 1 of 7 | 4 |  |
 | Craftsman's Writ: Gnomish Universal Remote | 264035 | 3s 0c | 2026-11-11 15:03 UTC | 6s 0c | 6s 0c | volatile | 5 of 7 | 58 |  |
 | Craftsman's Writ: Goblin Jumper Cables XL | 264138 | 3g 31s 0c | 2026-11-11 15:03 UTC | 5g 1s 0c | 5g 1s 0c | moving | 3 of 7 | 1 |  |
 | Craftsman's Writ: Goblin Land Mine | 264083 | 14s 0c | 2026-11-11 15:03 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 5 of 7 | 17 |  |
@@ -67,17 +80,22 @@
 | Craftsman's Writ: Golden Rod | 264021 | 38s 0c | 2026-11-11 15:03 UTC | 38s 0c | 38s 0c | volatile | 5 of 7 | 35 |  |
 | Craftsman's Writ: Golden Scale Coif | 264074 | 8s 0c | 2026-11-11 15:03 UTC | 1g 75s 0c | 1g 75s 0c | volatile | 5 of 7 | 15 |  |
 | Craftsman's Writ: Golden Scale Gauntlets | 264078 | 7s 0c | 2026-11-11 15:03 UTC | 18s 0c | 18s 0c | volatile | 4 of 7 | 17 |  |
+| Craftsman's Writ: Gordok Ogre Suit | 264144 | 2g 0s 0c | 2026-11-11 15:03 UTC | 2g 0s 0c |  | too new | 1 of 7 | 2 |  |
 | Craftsman's Writ: Great Rage Potion | 264061 | 1g 0s 0c | 2026-11-11 15:03 UTC | 99s 0c | 99s 0c | moving | 3 of 7 | 23 |  |
 | Craftsman's Writ: Greater Adept's Robe | 264054 | 33s 0c | 2026-11-11 15:03 UTC | 21s 0c | 21s 0c | volatile | 5 of 7 | 33 |  |
+| Craftsman's Writ: Greater Fire Protection Potion | 264118 | 3g 0s 0c | 2026-11-11 15:03 UTC | 3g 0s 0c |  | too new | 1 of 7 | 6 |  |
 | Craftsman's Writ: Green Iron Boots | 264028 | 45s 0c | 2026-11-11 15:03 UTC | 14s 0c | 14s 0c | volatile | 5 of 7 | 35 |  |
 | Craftsman's Writ: Green Iron Gauntlets | 264026 | 45s 0c | 2026-11-11 15:03 UTC | 35s 0c | 35s 0c | moving | 5 of 7 | 25 |  |
+| Craftsman's Writ: Green Lens | 264135 | 6g 0s 0c | 2026-11-11 15:03 UTC | 6g 0s 0c |  | too new | 1 of 7 | 4 |  |
 | Craftsman's Writ: Guardian Cloak | 264093 | 35s 0c | 2026-11-11 15:03 UTC | 39s 50c | 39s 50c | volatile | 4 of 7 | 14 |  |
 | Craftsman's Writ: Gyromatic Micro-Adjuster | 264089 | 80s 0c | 2026-11-11 15:03 UTC | 63s 50c | 63s 50c | volatile | 4 of 7 | 19 |  |
 | Craftsman's Writ: Heavy Bronze Mace | 264024 | 19s 0c | 2026-11-11 15:03 UTC | 19s 0c | 19s 0c | moving | 5 of 7 | 31 |  |
 | Craftsman's Writ: Heavy Leather Ball | 264038 | 39s 0c | 2026-11-11 15:03 UTC | 33s 0c | 33s 0c | moving | 5 of 7 | 36 |  |
 | Craftsman's Writ: Heavy Mithril Axe | 264079 | 8s 0c | 2026-11-11 15:03 UTC | 8s 0c | 8s 0c | volatile | 3 of 7 | 19 |  |
 | Craftsman's Writ: Heavy Quiver | 264043 | 55s 0c | 2026-11-11 15:03 UTC | 52s 0c | 52s 0c | volatile | 6 of 7 | 22 |  |
+| Craftsman's Writ: Heavy Scorpid Helm | 264149 | 2g 0s 0c | 2026-11-11 15:03 UTC | 2g 0s 0c |  | too new | 1 of 7 | 2 |  |
 | Craftsman's Writ: Herbalist's Gloves | 264040 | 26s 0c | 2026-11-11 15:03 UTC | 26s 0c | 26s 0c | volatile | 5 of 7 | 58 |  |
+| Craftsman's Writ: Huge Thorium Battleaxe | 264131 | 1g 1s 0c | 2026-11-11 15:03 UTC | 1g 1s 0c |  | too new | 1 of 7 | 3 |  |
 | Craftsman's Writ: Inlaid Mithril Cylinder | 264069 | 5s 0c | 2026-11-11 15:03 UTC | 13s 50c | 13s 50c | volatile | 4 of 7 | 24 |  |
 | Craftsman's Writ: Iridescent Hammer | 264022 | 43s 0c | 2026-11-11 15:03 UTC | 13s 0c | 13s 0c | volatile | 5 of 7 | 27 |  |
 | Craftsman's Writ: Lesser Invisibility Potion | 264057 | 58s 0c | 2026-11-11 15:03 UTC | 88s 0c | 88s 0c | moving | 4 of 7 | 19 |  |
@@ -85,7 +103,9 @@
 | Craftsman's Writ: Lesser Stoneshield Potion | 264058 | 94s 0c | 2026-11-11 15:03 UTC | 85s 50c | 85s 50c | moving | 4 of 7 | 15 |  |
 | Craftsman's Writ: Lesser Troll's Blood Elixir | 264017 | 68s 0c | 2026-11-11 15:03 UTC | 68s 0c | 68s 0c | volatile | 5 of 7 | 38 |  |
 | Craftsman's Writ: Lesser Wizard's Robe | 264047 | 19s 0c | 2026-11-11 15:03 UTC | 19s 0c | 19s 0c | moving | 5 of 7 | 21 |  |
+| Craftsman's Writ: Lifelike Mechanical Toad | 264136 | 7g 15s 0c | 2026-11-11 15:03 UTC | 7g 15s 0c |  | too new | 1 of 7 | 8 |  |
 | Craftsman's Writ: Mageweave Bag | 264104 | 15s 0c | 2026-11-11 15:03 UTC | 1g 12s 0c | 1g 12s 0c | volatile | 4 of 7 | 24 |  |
+| Craftsman's Writ: Major Rejuvenation Potion | 264123 | 1g 55s 0c | 2026-11-11 15:03 UTC | 1g 55s 0c |  | too new | 1 of 7 | 5 |  |
 | Craftsman's Writ: Mana Potion | 264062 | 88s 0c | 2026-11-11 15:03 UTC | 1g 1s 0c | 1g 1s 0c | volatile | 5 of 7 | 16 |  |
 | Craftsman's Writ: Masterwork Target Dummy | 264134 | 2g 43s 0c | 2026-11-11 15:03 UTC | 1g 72s 0c |  | too new | 2 of 7 | 4 |  |
 | Craftsman's Writ: Mechanical Dragonling | 264080 | 3s 0c | 2026-11-11 15:03 UTC | 17s 50c | 17s 50c | volatile | 4 of 7 | 14 |  |
@@ -103,34 +123,44 @@
 | Craftsman's Writ: Pearl-Handled Dagger | 264020 | 9s 0c | 2026-11-11 15:03 UTC | 9s 0c | 9s 0c | volatile | 5 of 7 | 34 |  |
 | Craftsman's Writ: Phoenix Pants | 264051 | 14s 0c | 2026-11-11 15:03 UTC | 14s 0c | 14s 0c | volatile | 5 of 7 | 35 |  |
 | Craftsman's Writ: Pilferer's Gloves | 264042 | 7s 0c | 2026-11-11 15:03 UTC | 7s 0c | 7s 0c | volatile | 5 of 7 | 41 |  |
+| Craftsman's Writ: Potion of Demonslaying | 264116 | 4g 0s 0c | 2026-11-11 15:03 UTC | 4g 0s 0c |  | too new | 1 of 7 | 5 |  |
 | Craftsman's Writ: Practice Lock | 264033 | 47s 0c | 2026-11-11 15:03 UTC | 25s 0c | 25s 0c | steady | 5 of 7 | 26 |  |
 | Craftsman's Writ: Quickdraw Quiver | 264097 | 40s 0c | 2026-11-11 15:03 UTC | 32s 0c | 32s 0c | volatile | 4 of 7 | 15 |  |
+| Craftsman's Writ: Radiant Belt | 264126 | 54s 0c | 2026-11-11 15:03 UTC | 54s 0c |  | too new | 1 of 7 | 2 |  |
+| Craftsman's Writ: Radiant Circlet | 264125 | 79s 0c | 2026-11-11 15:03 UTC | 79s 0c |  | too new | 1 of 7 | 10 |  |
 | Craftsman's Writ: Red Mageweave Pants | 264111 | 26s 0c | 2026-11-11 15:03 UTC | 66s 0c | 66s 0c | volatile | 4 of 7 | 32 |  |
 | Craftsman's Writ: Red Whelp Gloves | 264046 | 4s 0c | 2026-11-11 15:03 UTC | 7s 0c | 7s 0c | volatile | 5 of 7 | 43 |  |
 | Craftsman's Writ: Red Woolen Boots | 264052 | 77s 0c | 2026-11-11 15:03 UTC | 25s 0c | 25s 0c | volatile | 5 of 7 | 19 |  |
 | Craftsman's Writ: Rough Bronze Leggings | 264025 | 45s 0c | 2026-11-11 15:03 UTC | 45s 0c | 45s 0c | moving | 5 of 7 | 32 |  |
+| Craftsman's Writ: Runecloth Bag | 264153 | 2g 55s 0c | 2026-11-11 15:03 UTC | 2g 55s 0c |  | too new | 1 of 7 | 4 |  |
 | Craftsman's Writ: Runecloth Boots | 264154 | 1g 98s 0c | 2026-11-11 15:03 UTC | 3g 49s 50c |  | too new | 2 of 7 | 4 |  |
 | Craftsman's Writ: Runic Leather Bracers | 264150 | 2g 50s 0c | 2026-11-11 15:03 UTC | 1g 87s 50c |  | too new | 2 of 7 | 4 |  |
+| Craftsman's Writ: Runic Leather Headband | 264146 | 3g 75s 0c | 2026-11-11 15:03 UTC | 3g 75s 0c |  | too new | 1 of 7 | 5 |  |
 | Craftsman's Writ: Shadow Goggles | 264034 | 1g 0s 0c | 2026-11-11 15:03 UTC | 46s 0c | 46s 0c | volatile | 5 of 7 | 34 |  |
 | Craftsman's Writ: Shadow Oil | 264064 | 74s 0c | 2026-11-11 15:03 UTC | 82s 0c | 82s 0c | steady | 4 of 7 | 16 |  |
 | Craftsman's Writ: Shadow Protection Potion | 264014 | 26s 0c | 2026-11-11 15:03 UTC | 15s 0c | 15s 0c | volatile | 5 of 7 | 30 |  |
 | Craftsman's Writ: Shadoweave Gloves | 264105 | 3s 0c | 2026-11-11 15:03 UTC | 55s 0c | 55s 0c | volatile | 4 of 7 | 30 |  |
+| Craftsman's Writ: Shadoweave Mask | 264158 | 2g 1s 0c | 2026-11-11 15:03 UTC | 2g 1s 0c |  | too new | 1 of 7 | 4 |  |
 | Craftsman's Writ: Shadoweave Robe | 264107 | 7s 0c | 2026-11-11 15:03 UTC | 30s 50c | 30s 50c | volatile | 4 of 7 | 23 |  |
 | Craftsman's Writ: Silver Skeleton Key | 264023 | 34s 0c | 2026-11-11 15:03 UTC | 30s 0c | 30s 0c | moving | 5 of 7 | 27 |  |
 | Craftsman's Writ: Small Silk Pack | 264050 | 98s 0c | 2026-11-11 15:03 UTC | 70s 0c | 70s 0c | volatile | 5 of 7 | 37 |  |
 | Craftsman's Writ: Solid Sharpening Stone | 264075 | 75s 0c | 2026-11-11 15:03 UTC | 98s 0c | 98s 0c | moving | 3 of 7 | 13 |  |
+| Craftsman's Writ: Soul Pouch | 264160 | 4g 1s 0c | 2026-11-11 15:03 UTC | 4g 1s 0c |  | too new | 1 of 7 | 3 |  |
 | Craftsman's Writ: Spider Silk Slippers | 264055 | 7s 0c | 2026-11-11 15:03 UTC | 7s 0c | 7s 0c | volatile | 5 of 7 | 47 |  |
 | Craftsman's Writ: Star Belt | 264109 | 4s 0c | 2026-11-11 15:03 UTC | 32s 0c | 32s 0c | volatile | 4 of 7 | 24 |  |
 | Craftsman's Writ: Steel Plate Helm | 264068 | 13s 0c | 2026-11-11 15:03 UTC | 26s 50c | 26s 50c | volatile | 4 of 7 | 16 |  |
 | Craftsman's Writ: Steel Weapon Chain | 264070 | 5s 0c | 2026-11-11 15:03 UTC | 99s 50c | 99s 50c | volatile | 4 of 7 | 26 |  |
 | Craftsman's Writ: Swift Boots | 264098 | 72s 0c | 2026-11-11 15:03 UTC | 72s 0c | 72s 0c | moving | 5 of 7 | 13 |  |
 | Craftsman's Writ: Thick Leather Ammo Pouch | 264103 | 51s 0c | 2026-11-11 15:03 UTC | 1g 13s 0c | 1g 13s 0c | volatile | 5 of 7 | 23 |  |
+| Craftsman's Writ: Tranquil Mechanical Yeti | 264142 | 2g 55s 0c | 2026-11-11 15:03 UTC | 2g 55s 0c |  | too new | 1 of 7 | 6 |  |
 | Craftsman's Writ: Truesilver Rod | 264077 | 80s 0c | 2026-11-11 15:03 UTC | 1g 10s 0c | 1g 10s 0c | volatile | 4 of 7 | 22 |  |
 | Craftsman's Writ: Truesilver Transformer | 264140 | 2g 1s 0c | 2026-11-11 15:03 UTC | 11g 1s 0c |  | too new | 2 of 7 | 2 |  |
 | Craftsman's Writ: Turtle Scale Breastplate | 264102 | 55s 0c | 2026-11-11 15:03 UTC | 45s 0c | 45s 0c | volatile | 4 of 7 | 14 |  |
 | Craftsman's Writ: Unstable Trigger | 264085 | 30s 0c | 2026-11-11 15:03 UTC | 59s 0c | 59s 0c | volatile | 4 of 7 | 14 |  |
+| Craftsman's Writ: Volcanic Breastplate | 264145 | 2g 1s 0c | 2026-11-11 15:03 UTC | 2g 1s 0c |  | too new | 1 of 7 | 3 |  |
 | Craftsman's Writ: White Bandit Mask | 264113 | 15s 0c | 2026-11-11 15:03 UTC | 64s 50c | 64s 50c | volatile | 4 of 7 | 20 |  |
 | Craftsman's Writ: Wicked Leather Bracers | 264147 | 3g 0s 0c | 2026-11-11 15:03 UTC | 2g 51s 50c |  | too new | 2 of 7 | 2 |  |
+| Craftsman's Writ: Wicked Leather Pants | 264143 | 1g 43s 0c | 2026-11-11 15:03 UTC | 1g 43s 0c |  | too new | 1 of 7 | 9 |  |
 | Craftsman's Writ: Wicked Mithril Blade | 264076 | 5s 0c | 2026-11-11 15:03 UTC | 90s 0c | 90s 0c | volatile | 5 of 7 | 20 |  |
 | Craftsman's Writ: Wild Leather Helmet | 264095 | 6s 0c | 2026-11-11 15:03 UTC | 38s 0c | 38s 0c | volatile | 4 of 7 | 14 |  |
 | Craftsman's Writ: Wild Leather Shoulders | 264096 | 8s 0c | 2026-11-11 15:03 UTC | 61s 0c | 61s 0c | volatile | 4 of 7 | 20 |  |
@@ -140,6 +170,7 @@
 | Crippling Poison | 3775 | 33c | 2026-11-11 15:03 UTC | 74c | 74c | volatile | 5 of 7 | 386 |  |
 | Crystal Basilisk Spine | 1703 | 91c | 2026-11-11 15:03 UTC | 1s 40c | 1s 40c | volatile | 5 of 7 | 565 |  |
 | Deadly Poison | 2892 | 2s 0c | 2026-11-11 15:03 UTC | 3s 99c | 3s 99c | volatile | 3 of 7 | 92 |  |
+| Deadly Poison II | 2893 | 5s 90c | 2026-11-11 15:03 UTC | 5s 90c |  | too new | 1 of 7 | 60 |  |
 | Dense Sharpening Stone | 12404 | 9s 80c | 2026-11-11 15:03 UTC | 34s 90c |  | too new | 2 of 7 | 512 |  |
 | Dense Weightstone | 12643 | 19s 98c | 2026-11-11 15:03 UTC | 54s 98c |  | too new | 2 of 7 | 210 |  |
 | Enchanted Lute | 279976 | 1s 42c | 2026-11-11 15:03 UTC | 1s 50c | 1s 50c | moving | 6 of 7 | 144 |  |
@@ -160,11 +191,13 @@
 | Instant Poison | 6947 | 5c | 2026-11-11 15:03 UTC | 10c | 10c | volatile | 6 of 7 | 1655 |  |
 | Instant Poison II | 6949 | 1s 0c | 2026-11-11 15:03 UTC | 1s 0c | 1s 0c | moving | 4 of 7 | 238 |  |
 | Instant Poison III | 6950 | 2s 90c | 2026-11-11 15:03 UTC | 2s 90c | 2s 90c | volatile | 3 of 7 | 76 |  |
+| Instant Poison IV | 8926 | 2s 0c | 2026-11-11 15:03 UTC | 2s 0c |  | too new | 1 of 7 | 3 |  |
 | Iron Oven | 279982 | 5g 1s 0c | 2026-11-11 15:03 UTC | 5g 1s 0c |  | too new | 1 of 7 | 8 |  |
 | Journeyman Campfire Kit | 279961 | 88s 0c | 2026-11-11 15:03 UTC | 49s 99c | 49s 99c | steady | 5 of 7 | 66 |  |
 | Lodestone | 279960 | 1s 28c | 2026-11-11 15:03 UTC | 19c | 19c | volatile | 6 of 7 | 1048 |  |
 | Magic Dust | 2091 | 1g 49s 99c | 2026-11-11 15:03 UTC | 1g 9s 94c | 1g 9s 94c | moving | 5 of 7 | 18 |  |
 | Mana Well | 279956 | 55c | 2026-11-11 15:03 UTC | 21c | 21c | volatile | 6 of 7 | 529 |  |
+| Mathystral Amulet | 279277 | 2g 1s 0c | 2026-11-11 15:03 UTC | 2g 1s 0c |  | too new | 1 of 7 | 1 |  |
 | Mathystral Amulet Fragment | 279276 | 2s 0c | 2026-11-09 05:47 UTC | 2s 0c | 2s 0c | moving | 3 of 7 | 9 |  |
 | Mind-numbing Poison | 5237 | 62c | 2026-11-11 15:03 UTC | 1s 62c | 1s 62c | volatile | 4 of 7 | 152 |  |
 | Minor Mana Oil | 20745 | 5s 0c | 2026-11-11 15:03 UTC | 6s 0c | 6s 0c | steady | 5 of 7 | 361 |  |

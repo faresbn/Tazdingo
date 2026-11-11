@@ -7,6 +7,8 @@
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | Archer's Longbow | 15285 | 41s 0c | 2026-11-11 15:03 UTC | 44s 0c | 44s 0c | moving | 5 of 7 | 43 |  |
+| Balanced Long Bow | 4025 | 77s 0c | 2026-11-11 15:03 UTC | 77s 0c |  | too new | 1 of 7 | 1 |  |
+| Blasthorn Bow | 15288 | 15g 0s 0c | 2026-11-11 15:03 UTC | 15g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Bow of Searing Arrows | 2825 | 24g 0s 0c | 2026-11-11 15:03 UTC | 30g 0s 0c | 30g 0s 0c | volatile | 3 of 7 | 4 |  |
 | Cadet's Bow | 8179 | 4s 0c | 2026-11-11 15:03 UTC | 2s 0c | 2s 0c | volatile | 6 of 7 | 8 |  |
 | Cracked Shortbow | 2773 | 1s 0c | 2026-11-11 15:03 UTC | 1s 0c | 1s 0c | steady | 6 of 7 | 22 |  |
@@ -15,6 +17,7 @@
 | Feeble Shortbow | 2777 | 2s 0c | 2026-11-11 15:03 UTC | 2s 0c | 2s 0c | steady | 6 of 7 | 56 |  |
 | Fine Longbow | 11304 | 59s 0c | 2026-11-11 15:03 UTC | 75s 0c | 75s 0c | moving | 6 of 7 | 30 |  |
 | Fine Shortbow | 11303 | 64s 0c | 2026-11-11 15:03 UTC | 51s 50c | 51s 50c | moving | 6 of 7 | 18 |  |
+| Gryphonwing Long Bow | 13022 | 35g 20s 0c | 2026-11-11 15:03 UTC | 35g 20s 0c |  | too new | 1 of 7 | 3 |  |
 | Harpy Needler | 15291 | 3g 22s 0c | 2026-11-11 15:03 UTC | 7g 0s 0c | 7g 0s 0c | volatile | 3 of 7 | 1 |  |
 | Harpyclaw Short Bow | 13019 | 1g 0s 0c | 2026-11-11 15:03 UTC | 1g 55s 0c | 1g 55s 0c | volatile | 5 of 7 | 13 |  |
 | Heavy Recurve Bow | 3027 | 80s 0c | 2026-11-08 16:27 UTC | 55s 0c |  | too new | 2 of 7 | 2 |  |
@@ -39,6 +42,7 @@
 | Siege Bow | 15294 | 6g 0s 0c | 2026-11-11 15:03 UTC | 7g 83s 50c |  | too new | 2 of 7 | 2 |  |
 | Skystriker Bow | 13020 | 2g 10s 0c | 2026-11-11 15:03 UTC | 4g 99s 0c | 4g 99s 0c | volatile | 5 of 7 | 10 |  |
 | Stiff Recurve Bow | 2785 | 12s 0c | 2026-11-11 15:03 UTC | 13s 50c | 13s 50c | steady | 4 of 7 | 11 |  |
+| Stinging Bow | 10624 | 13g 99s 0c | 2026-11-11 15:03 UTC | 13g 99s 0c |  | too new | 1 of 7 | 4 |  |
 | Sturdy Recurve | 11306 | 1g 8s 0c | 2026-11-08 23:12 UTC | 1g 9s 0c | 1g 9s 0c | steady | 3 of 7 | 4 |  |
 | Taut Compound Bow | 3778 | 17s 0c | 2026-11-11 15:03 UTC | 24s 0c | 24s 0c | moving | 3 of 7 | 4 |  |
 | Trueshot Bow | 4087 | 90s 0c | 2026-11-11 15:03 UTC | 1g 5s 0c | 1g 5s 0c | steady | 4 of 7 | 22 |  |

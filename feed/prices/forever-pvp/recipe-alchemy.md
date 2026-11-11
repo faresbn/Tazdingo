@@ -25,10 +25,18 @@
 | Recipe: Elixir of Strength | 250385 | 30g 1s 0c | 2026-11-11 15:03 UTC | 4g 0s 0c | 4g 0s 0c | volatile | 5 of 7 | 1 |  |
 | Recipe: Elixir of Superior Defense | 13478 | 2g 0s 0c | 2026-11-08 23:12 UTC | 2g 0s 0c | 2g 0s 0c | moving | 3 of 7 | 1 |  |
 | Recipe: Elixir of the Mongoose | 13491 | 3g 0s 0c | 2026-11-11 15:03 UTC | 9g 99s 0c | 9g 99s 0c | volatile | 3 of 7 | 10 |  |
+| Recipe: Flask of Chromatic Resistance | 13522 | 200g 51s 0c | 2026-11-11 15:03 UTC | 200g 51s 0c |  | too new | 1 of 7 | 1 |  |
+| Recipe: Flask of Distilled Wisdom | 13520 | 498g 99s 0c | 2026-11-11 15:03 UTC | 498g 99s 0c |  | too new | 1 of 7 | 2 |  |
+| Recipe: Flask of Petrification | 13518 | 249g 51s 0c | 2026-11-11 15:03 UTC | 249g 51s 0c |  | too new | 1 of 7 | 3 |  |
+| Recipe: Flask of Supreme Power | 13521 | 499g 51s 0c | 2026-11-11 15:03 UTC | 499g 51s 0c |  | too new | 1 of 7 | 1 |  |
+| Recipe: Flask of the Titans | 13519 | 2,000g 51s 0c | 2026-11-11 15:03 UTC | 2,000g 51s 0c |  | too new | 1 of 7 | 1 |  |
 | Recipe: Free Action Potion | 5642 | 29s 0c | 2026-11-11 15:03 UTC | 25s 0c | 25s 0c | steady | 6 of 7 | 46 |  |
 | Recipe: Gift of Arthas | 9296 | 14g 0s 0c | 2026-11-11 15:03 UTC | 57g 0s 0c |  | too new | 2 of 7 | 12 |  |
 | Recipe: Goblin Rocket Fuel | 10644 | 1g 90s 0c | 2026-11-11 15:03 UTC | 7g 50s 0c | 7g 50s 0c | moving | 3 of 7 | 14 |  |
 | Recipe: Great Rage Potion | 5643 | 32s 0c | 2026-11-11 15:03 UTC | 38s 0c | 38s 0c | moving | 6 of 7 | 20 |  |
+| Recipe: Greater Arcane Elixir | 13493 | 199g 76s 0c | 2026-11-11 15:03 UTC | 199g 76s 0c |  | too new | 1 of 7 | 1 |  |
+| Recipe: Greater Fire Protection Potion | 13494 | 998g 0s 0c | 2026-11-11 15:03 UTC | 998g 0s 0c |  | too new | 1 of 7 | 3 |  |
+| Recipe: Greater Frost Protection Potion | 13495 | 450g 91s 0c | 2026-11-11 15:03 UTC | 450g 91s 0c |  | too new | 1 of 7 | 1 |  |
 | Recipe: Greater Stoneshield Potion | 13490 | 14g 90s 0c | 2026-11-11 15:03 UTC | 20g 61s 0c | 20g 61s 0c | moving | 3 of 7 | 2 |  |
 | Recipe: Invisibility Potion | 9295 | 25s 0c | 2026-11-11 15:03 UTC | 79s 50c | 79s 50c | volatile | 4 of 7 | 28 |  |
 | Recipe: Lesser Frenzy Potion | 250983 | 10s 0c | 2026-11-11 15:03 UTC | 7s 50c | 7s 50c | volatile | 6 of 7 | 54 |  |
@@ -37,6 +45,7 @@
 | Recipe: Lesser Stoneshield Potion | 4624 | 9s 0c | 2026-11-11 15:03 UTC | 44s 50c | 44s 50c | volatile | 4 of 7 | 41 |  |
 | Recipe: Limited Invulnerability Potion | 3395 | 24s 0c | 2026-11-11 15:03 UTC | 1g 32s 50c | 1g 32s 50c | volatile | 4 of 7 | 42 |  |
 | Recipe: Magic Resistance Potion | 9293 | 15s 0c | 2026-11-11 15:03 UTC | 27s 50c | 27s 50c | moving | 4 of 7 | 37 |  |
+| Recipe: Mighty Rage Potion | 13476 | 99g 0s 0c | 2026-11-11 15:03 UTC | 99g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Recipe: Minor Cleric's Elixir | 250366 | 10s 0c | 2026-11-11 15:03 UTC | 3s 50c | 3s 50c | volatile | 6 of 7 | 53 |  |
 | Recipe: Minor Frenzy Potion | 250982 | 20s 0c | 2026-11-11 15:03 UTC | 5s 0c | 5s 0c | volatile | 6 of 7 | 34 |  |
 | Recipe: Minor Mageblood Elixir | 250375 | 1g 30s 0c | 2026-11-11 15:03 UTC | 64s 0c | 64s 0c | volatile | 6 of 7 | 18 |  |
@@ -46,13 +55,17 @@
 | Recipe: Philosopher's Stone | 9303 | 1g 0s 0c | 2026-11-11 15:03 UTC | 2g 9s 50c | 2g 9s 50c | volatile | 4 of 7 | 10 |  |
 | Recipe: Potion of Predatory Senses | 250363 | 9g 99s 0c | 2026-11-09 05:47 UTC | 9g 99s 0c |  | too new | 1 of 7 | 4 |  |
 | Recipe: Rage Potion | 5640 | 10s 0c | 2026-11-11 15:03 UTC | 6s 50c | 6s 50c | moving | 6 of 7 | 43 |  |
+| Recipe: Superior Frenzy Potion | 250986 | 4g 50s 0c | 2026-11-11 15:03 UTC | 4g 50s 0c |  | too new | 1 of 7 | 18 |  |
 | Recipe: Superior Mana Potion | 13477 | 1g 45s 0c | 2026-11-11 15:03 UTC | 1g 72s 0c | 1g 72s 0c | moving | 4 of 7 | 6 |  |
 | Recipe: Superior Mender's Potion | 250992 | 2g 20s 0c | 2026-11-11 15:03 UTC | 5g 1s 0c | 5g 1s 0c | volatile | 3 of 7 | 2 |  |
 | Recipe: Superior Spellblasting Potion | 250980 | 75g 0s 0c | 2026-11-11 15:03 UTC | 38g 0s 50c |  | too new | 2 of 7 | 2 |  |
 | Recipe: Swiftness Potion | 2555 | 18s 0c | 2026-11-11 15:03 UTC | 7s 0c | 7s 0c | volatile | 6 of 7 | 112 |  |
 | Recipe: Transmute Arcanite | 12958 | 5g 99s 0c | 2026-11-11 15:03 UTC | 8g 0s 0c | 8g 0s 0c | moving | 3 of 7 | 1 |  |
+| Recipe: Transmute Earth to Life | 13489 | 95g 0s 0c | 2026-11-11 15:03 UTC | 95g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Recipe: Transmute Iron to Gold | 9304 | 1g 19s 0c | 2026-11-11 15:03 UTC | 2g 0s 0c | 2g 0s 0c | volatile | 3 of 7 | 5 |  |
+| Recipe: Transmute Legionite | 284871 | 25g 0s 0c | 2026-11-11 15:03 UTC | 25g 0s 0c |  | too new | 1 of 7 | 7 |  |
 | Recipe: Transmute Life to Earth | 13488 | 19g 0s 0c | 2026-11-11 15:03 UTC | 100g 0s 0c | 100g 0s 0c | volatile | 3 of 7 | 1 |  |
+| Recipe: Transmute Water to Undeath | 13487 | 2g 57s 0c | 2026-11-11 15:03 UTC | 2g 57s 0c |  | too new | 1 of 7 | 3 |  |
 | Recipe: Troll's Blood Elixir | 3831 | 25s 0c | 2026-11-11 15:03 UTC | 39s 0c | 39s 0c | moving | 5 of 7 | 55 |  |
 | Recipe: Wildvine Potion | 9294 | 20s 0c | 2026-11-11 15:03 UTC | 20s 50c | 20s 50c | steady | 4 of 7 | 56 |  |
 

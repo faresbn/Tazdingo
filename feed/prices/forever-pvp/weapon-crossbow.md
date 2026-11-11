@@ -8,7 +8,9 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Crystalpine Stinger | 13037 | 1g 35s 0c | 2026-11-11 15:03 UTC | 1g 99s 0c | 1g 99s 0c | volatile | 5 of 7 | 22 |  |
 | Fine Light Crossbow | 15808 | 49s 0c | 2026-11-07 10:45 UTC | 49s 0c |  | too new | 1 of 7 | 1 |  |
+| Heartseeking Crossbow | 13040 | 50g 0s 0c | 2026-11-11 15:03 UTC | 50g 0s 0c |  | too new | 1 of 7 | 2 |  |
 | Heavy Crossbow | 15809 | 45s 0c | 2026-11-07 10:45 UTC | 45s 0c |  | too new | 1 of 7 | 1 |  |
+| Silithid Sinew Crossbow | 284859 | 4g 55s 0c | 2026-11-11 15:03 UTC | 4g 55s 0c |  | too new | 1 of 7 | 6 |  |
 | Skull Splitting Crossbow | 13039 | 7g 34s 0c | 2026-11-11 15:03 UTC | 19g 75s 0c | 19g 75s 0c | volatile | 3 of 7 | 2 |  |
 | Swiftwind | 13038 | 1g 79s 0c | 2026-11-11 15:03 UTC | 4g 10s 0c | 4g 10s 0c | moving | 4 of 7 | 12 |  |
 

@@ -15,6 +15,7 @@
 | Deadly Blunderbuss | 4369 | 29s 0c | 2026-11-11 15:03 UTC | 23s 0c | 23s 0c | moving | 6 of 7 | 205 |  |
 | Dirty Blunderbuss | 2781 | 4s 0c | 2026-11-11 15:03 UTC | 4s 0c | 4s 0c | moving | 6 of 7 | 40 |  |
 | Double-barreled Shotgun | 2098 | 1g 20s 0c | 2026-11-11 15:03 UTC | 1g 99s 0c | 1g 99s 0c | moving | 5 of 7 | 21 |  |
+| Escape Plan | 287026 | 99g 99s 0c | 2026-11-11 15:03 UTC | 99g 99s 0c |  | too new | 1 of 7 | 1 |  |
 | Explosive Shotgun | 8188 | 65s 0c | 2026-11-11 15:03 UTC | 67s 0c | 67s 0c | steady | 5 of 7 | 40 |  |
 | Guttbuster | 13139 | 11g 0s 0c | 2026-11-11 15:03 UTC | 17g 95s 0c |  | too new | 2 of 7 | 4 |  |
 | Hi-Tech Supergun | 9487 | 1g 90s 0c | 2026-11-11 15:03 UTC | 3g 48s 0c | 3g 48s 0c | moving | 5 of 7 | 7 |  |
@@ -36,6 +37,7 @@
 | Ricochet Blunderbuss | 4089 | 2g 0s 0c | 2026-11-11 15:03 UTC | 3g 26s 0c | 3g 26s 0c | volatile | 3 of 7 | 1 |  |
 | Rough Boomstick | 4362 | 3s 0c | 2026-11-11 15:03 UTC | 2s 50c | 2s 50c | moving | 6 of 7 | 254 |  |
 | Rust-covered Blunderbuss | 2774 | 1s 0c | 2026-11-11 15:03 UTC | 1s 0c | 1s 0c | steady | 6 of 7 | 40 |  |
+| Shadowforge Bushmaster | 9422 | 22g 0s 0c | 2026-11-11 15:03 UTC | 22g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Shell Launcher Shotgun | 13146 | 14g 21s 0c | 2026-11-11 15:03 UTC | 32g 10s 50c |  | too new | 2 of 7 | 3 |  |
 | Shoddy Blunderbuss | 2783 | 6s 0c | 2026-11-11 15:03 UTC | 6s 0c | 6s 0c | steady | 5 of 7 | 14 |  |
 | Silver-plated Shotgun | 4379 | 24s 0c | 2026-11-11 15:03 UTC | 32s 50c | 32s 50c | volatile | 6 of 7 | 36 |  |

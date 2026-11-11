@@ -22,6 +22,7 @@
 | Calcified Smoothie | 249874 | 18s 50c | 2026-11-11 15:03 UTC | 14s 0c |  | too new | 2 of 7 | 56 |  |
 | Carrion Surprise | 12213 | 3s 84c | 2026-11-11 15:03 UTC | 4s 19c | 4s 19c | volatile | 3 of 7 | 134 |  |
 | Charred Wolf Meat | 2679 | 5c | 2026-11-11 15:03 UTC | 5c | 5c | steady | 6 of 7 | 1520 |  |
+| Cherry Grog | 4600 | 50s 0c | 2026-11-11 15:03 UTC | 50s 0c |  | too new | 1 of 7 | 3 |  |
 | Clamlette Surprise | 16971 | 3s 31c | 2026-11-11 15:03 UTC | 20s 0c | 20s 0c | volatile | 3 of 7 | 520 |  |
 | Cooked Crab Claw | 2682 | 1s 30c | 2026-11-11 15:03 UTC | 1s 60c | 1s 60c | moving | 4 of 7 | 142 |  |
 | Cooked Glossy Mightfish | 13927 | 5s 87c | 2026-11-11 15:03 UTC | 14s 99c | 14s 99c | moving | 4 of 7 | 249 |  |
@@ -32,9 +33,11 @@
 | Crispy Lizard Tail | 5479 | 1s 36c | 2026-11-11 15:03 UTC | 1s 39c | 1s 39c | steady | 5 of 7 | 617 |  |
 | Crocolisk Gumbo | 3664 | 2s 1c | 2026-11-11 15:03 UTC | 2s 1c |  | too new | 1 of 7 | 101 |  |
 | Crocolisk Steak | 3662 | 1s 10c | 2026-11-11 15:03 UTC | 1s 24c |  | too new | 2 of 7 | 166 |  |
+| Cuergo's Gold | 9360 | 7s 0c | 2026-11-11 15:03 UTC | 7s 0c |  | too new | 1 of 7 | 2 |  |
 | Cured Ham Steak | 4599 | 1s 7c | 2026-11-11 15:03 UTC | 2s 0c | 2s 0c | volatile | 3 of 7 | 229 |  |
 | Curiously Tasty Omelet | 3665 | 1s 50c | 2026-11-11 15:03 UTC | 1s 69c | 1s 69c | steady | 4 of 7 | 490 |  |
 | Dalaran Sharp | 414 | 7c | 2026-11-11 15:03 UTC | 7c | 7c | moving | 6 of 7 | 193 |  |
+| Darkmoon Special Reserve | 19221 | 5s 0c | 2026-11-11 15:03 UTC | 5s 0c |  | too new | 1 of 7 | 1 |  |
 | Darkshore Grouper | 12238 | 1s 93c | 2026-11-11 15:03 UTC | 3s 50c | 3s 50c | moving | 4 of 7 | 44 |  |
 | Darnassian Bleu | 2070 | 3c | 2026-11-11 15:03 UTC | 2c | 2c | volatile | 6 of 7 | 316 |  |
 | Deep Fried Plantains | 8953 | 10s 0c | 2026-11-09 05:47 UTC | 10s 0c | 10s 0c | steady | 3 of 7 | 4 |  |
@@ -47,7 +50,9 @@
 | Dwarven Mild | 422 | 25c | 2026-11-11 15:03 UTC | 25c | 25c | moving | 5 of 7 | 443 |  |
 | Enchanted Water | 4791 | 1s 60c | 2026-11-11 15:03 UTC | 2s 40c | 2s 40c | moving | 4 of 7 | 239 |  |
 | Filet of Redgill | 13930 | 1s 39c | 2026-11-11 15:03 UTC | 4s 44c |  | too new | 2 of 7 | 500 |  |
+| Fine Aged Cheddar | 3927 | 2s 0c | 2026-11-11 15:03 UTC | 2s 0c |  | too new | 1 of 7 | 96 |  |
 | Fissure Plant | 5066 | 22c | 2026-11-11 15:03 UTC | 25c | 25c | volatile | 6 of 7 | 230 |  |
+| Flask of Stormwind Tawny | 2593 | 9s 0c | 2026-11-11 15:03 UTC | 9s 0c |  | too new | 1 of 7 | 37 |  |
 | Forest Mushroom Cap | 4604 | 3c | 2026-11-11 15:03 UTC | 2c | 2c | moving | 6 of 7 | 516 |  |
 | Fresh Gustberry Bread | 252028 | 1s 0c | 2026-11-11 15:03 UTC | 5c | 5c | volatile | 6 of 7 | 308 |  |
 | Freshly Baked Bread | 4541 | 40c | 2026-11-11 15:03 UTC | 45c | 45c | volatile | 6 of 7 | 209 |  |

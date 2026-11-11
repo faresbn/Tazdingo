@@ -12,6 +12,7 @@ Every path below is in the public repository: https://raw.githubusercontent.com/
 - `feed/craft/index.md`: what to craft, by profession, with estimated margins.
 - `feed/guides.md`: every class, spec, profession, world and More page, with its path and version.
 - `feed/characters.md`: the account's own characters (level, gear, talents, professions, reputations), as last saved in the game.
+- `logs/README.md`: combat logs. Instance runs complete (every player, as the game wrote them) and open-world summaries of our own characters; read its guide first, the instance files are large.
 
 Original addon files, as uploaded (large; open only when asked about that addon):
 - `data/captures/forever/auctionator/2026-11-11T1503Z.lua`: the latest of 28 auctionator file(s) (forever), processed into the prices above.

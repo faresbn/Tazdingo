@@ -20,6 +20,7 @@
 | Mithril Gyro-Shot | 10513 | 28c | 2026-11-11 15:03 UTC | 64c |  | too new | 2 of 7 | 14300 |  |
 | Precision Arrow | 9399 | 20c | 2026-11-11 15:03 UTC | 60c |  | too new | 2 of 7 | 1360 |  |
 | Razor Arrow | 3030 | 3c | 2026-11-11 15:03 UTC | 2c | 2c | volatile | 6 of 7 | 38629 |  |
+| Rockshard Pellets | 11630 | 3s 98c | 2026-11-11 15:03 UTC | 3s 98c |  | too new | 1 of 7 | 1400 |  |
 | Rough Arrow | 2512 | 1c | 2026-11-11 15:03 UTC | 1c | 1c | steady | 6 of 7 | 68010 |  |
 | Sharp Arrow | 2515 | 1c | 2026-11-11 15:03 UTC | 1c | 1c | steady | 6 of 7 | 113282 |  |
 | Smooth Pebble | 5568 | 1s 0c | 2026-11-11 15:03 UTC | 55c | 55c | volatile | 4 of 7 | 60 |  |
