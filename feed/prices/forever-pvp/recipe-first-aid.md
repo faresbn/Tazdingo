@@ -7,8 +7,8 @@
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | Blueprint: Toxin Study | 273105 | 2g 15s 0c | 2026-11-11 17:37 UTC | 76s 50c | 76s 50c | volatile | 6 of 7 | 42 |  |
-| Expert First Aid - Under Wraps | 16084 | 1g 2s 0c | 2026-11-11 17:37 UTC | 1g 8s 50c | 1g 8s 50c | steady | 6 of 7 | 150 |  |
-| Manual: Clever Poultice | 255724 | 90s 0c | 2026-11-11 17:37 UTC | 1g 62s 50c | 1g 62s 50c | moving | 4 of 7 | 10 |  |
+| Expert First Aid - Under Wraps | 16084 | 1g 2s 0c | 2026-11-11 17:37 UTC | 1g 4s 50c | 1g 8s 50c | steady | 6 of 7 | 150 |  |
+| Manual: Clever Poultice | 255724 | 90s 0c | 2026-11-11 17:37 UTC | 1g 27s 0c | 1g 62s 50c | volatile | 4 of 7 | 10 |  |
 | Manual: Greater Healing Potion | 255723 | 5s 0c | 2026-11-11 17:37 UTC | 5s 0c | 5s 0c | steady | 5 of 7 | 128 |  |
 | Manual: Heavy Silk Bandage | 16112 | 31s 0c | 2026-11-11 17:37 UTC | 31s 0c | 31s 0c | steady | 6 of 7 | 166 |  |
 | Manual: Leather Tourniquet | 255726 | 98s 0c | 2026-11-11 15:03 UTC | 58s 50c |  | too new | 2 of 7 | 6 |  |
