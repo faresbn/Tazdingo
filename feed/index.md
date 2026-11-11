@@ -14,7 +14,7 @@ Every path below is in the public repository: https://raw.githubusercontent.com/
 - `feed/characters.md`: the account's own characters (level, gear, talents, professions, reputations), as last saved in the game.
 
 Original addon files, as uploaded (large; open only when asked about that addon):
-- `data/captures/forever/auctionator/2026-11-09T1228Z.lua`: the latest of 27 auctionator file(s) (forever), processed into the prices above.
+- `data/captures/forever/auctionator/2026-11-11T1503Z.lua`: the latest of 28 auctionator file(s) (forever), processed into the prices above.
 
 ## How the data stays current
 
