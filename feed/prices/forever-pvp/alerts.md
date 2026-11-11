@@ -55,7 +55,7 @@ None at the latest scan.
 
 Steady or moving items, listed most days, recorded at or under their cheaper days. The margin is an estimate after the 5% Auction House cut.
 
-The strongest 30 of 375.
+The strongest 30 of 370.
 
 | Item | ID | Latest | Usual | Estimated margin a unit | Steadiness | Recorded at |
 |---|---|---|---|---|---|---|
@@ -72,23 +72,23 @@ The strongest 30 of 375.
 | Warden's Waistband | 14598 | 85s 0c | 2g 0s 0c | 1g 5s 0c | moving | 2026-11-11 17:37 UTC |
 | Vibroblade | 9485 | 3g 1s 0c | 4g 11s 0c | 89s 45c | moving | 2026-11-11 17:37 UTC |
 | Journeyman's Backpack | 3914 | 5g 80s 0c | 6g 82s 50c | 68s 37c | moving | 2026-11-11 15:03 UTC |
-| Forest Tracker Epaulets | 2278 | 2g 99s 0c | 4g 0s 0c | 81s 0c | moving | 2026-11-11 17:37 UTC |
 | Gazlowe's Charm | 13088 | 2g 99s 0c | 3g 99s 0c | 80s 5c | moving | 2026-11-11 17:37 UTC |
 | Topaz Ring | 11975 | 1g 15s 0c | 2g 0s 0c | 75s 0c | moving | 2026-11-11 17:37 UTC |
 | Holy Shroud | 2721 | 1g 20s 0c | 1g 99s 0c | 69s 5c | moving | 2026-11-11 17:37 UTC |
 | City Guard's Tarnished Blade | 286996 | 3g 10s 0c | 3g 98s 0c | 68s 10c | moving | 2026-11-11 17:37 UTC |
 | Desert Ring | 12013 | 2g 20s 0c | 2g 99s 0c | 64s 5c | moving | 2026-11-11 15:03 UTC |
-| Reticulated Bone Gauntlets | 9435 | 88s 0c | 1g 55s 0c | 59s 25c | moving | 2026-11-11 17:37 UTC |
+| Forest Tracker Epaulets | 2278 | 3g 19s 0c | 4g 0s 0c | 61s 0c | moving | 2026-11-11 17:37 UTC |
 | Double-barreled Shotgun | 2098 | 1g 33s 0c | 1g 99s 0c | 56s 5c | moving | 2026-11-11 17:37 UTC |
 | Jouster's Visor | 8161 | 38s 0c | 99s 0c | 56s 5c | moving | 2026-11-11 17:37 UTC |
 | Sentinel Cap | 7441 | 40s 0c | 99s 0c | 54s 5c | moving | 2026-11-11 15:03 UTC |
 | Arcane Charged Robes | 284697 | 80s 0c | 1g 40s 0c | 53s 0c | moving | 2026-11-11 17:37 UTC |
 | Slayer's Skullcap | 14753 | 87s 0c | 1g 44s 0c | 49s 80c | moving | 2026-11-11 17:37 UTC |
 | Hawkeye's Epaulets | 14596 | 95s 0c | 1g 51s 0c | 48s 45c | moving | 2026-11-11 17:37 UTC |
+| Reticulated Bone Gauntlets | 9435 | 1g 0s 0c | 1g 55s 0c | 47s 25c | moving | 2026-11-11 17:37 UTC |
 | Field Plate Gauntlets | 9287 | 77s 0c | 1g 30s 0c | 46s 50c | moving | 2026-11-11 17:37 UTC |
 | Regal Cloak | 7474 | 37s 0c | 87s 0c | 45s 65c | moving | 2026-11-11 17:37 UTC |
+| Wolfclaw Gloves | 1978 | 1g 60s 0c | 2g 0s 0c | 30s 0c | steady | 2026-11-11 17:37 UTC |
 | Ironweaver | 13137 | 99s 0c | 1g 49s 0c | 42s 55c | moving | 2026-11-11 17:37 UTC |
-| Jouster's Girdle | 8159 | 52s 0c | 99s 0c | 42s 5c | moving | 2026-11-11 17:37 UTC |
 
 ## Short supply
 

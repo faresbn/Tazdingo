@@ -18,7 +18,7 @@
 | Earthroot | 2449 | 95c | 2026-11-11 17:37 UTC | 48c | 48c | volatile | 6 of 7 | 3808 |  |
 | Fadeleaf | 3818 | 4s 48c | 2026-11-11 17:37 UTC | 8s 50c | 8s 50c | moving | 5 of 7 | 877 |  |
 | Firebloom | 4625 | 11s 17c | 2026-11-11 17:37 UTC | 40s 9c | 40s 9c | volatile | 6 of 7 | 220 |  |
-| Frilled Lichen | 249399 | 24s 99c | 2026-11-11 17:37 UTC | 14s 9c | 14s 9c | volatile | 6 of 7 | 797 |  |
+| Frilled Lichen | 249399 | 25s 0c | 2026-11-11 17:37 UTC | 14s 9c | 14s 9c | volatile | 6 of 7 | 797 |  |
 | Ghost Mushroom | 8845 | 60s 0c | 2026-11-11 17:37 UTC | 70s 0c | 70s 0c | volatile | 3 of 7 | 71 |  |
 | Golden Sansam | 13464 | 27s 90c | 2026-11-11 17:37 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 7 | 137 |  |
 | Goldthorn | 3821 | 3s 87c | 2026-11-11 17:37 UTC | 7s 25c | 7s 25c | volatile | 5 of 7 | 1902 |  |

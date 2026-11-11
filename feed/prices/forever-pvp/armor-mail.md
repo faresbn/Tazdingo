@@ -21,9 +21,9 @@
 | Ancient Legguards | 15607 | 1g 0s 0c | 2026-11-11 15:03 UTC | 2g 21s 0c | 2g 21s 0c | volatile | 3 of 7 | 3 |  |
 | Ancient Pauldrons | 15608 | 1g 0s 0c | 2026-11-11 17:37 UTC | 1g 50s 0c |  | too new | 2 of 7 | 8 |  |
 | Ancient Vambraces | 15600 | 66s 0c | 2026-11-11 15:03 UTC | 99s 0c | 99s 0c | volatile | 3 of 7 | 5 |  |
-| Archon Chestpiece | 7759 | 12g 97s 0c | 2026-11-11 17:37 UTC | 12g 97s 0c | 12g 97s 0c | moving | 3 of 7 | 1 |  |
+| Archon Chestpiece | 7759 | 12g 97s 0c | 2026-11-11 17:37 UTC | 11g 96s 0c | 11g 96s 0c | moving | 3 of 7 | 1 |  |
 | Arena Bands | 18711 | 5g 99s 0c | 2026-11-11 17:37 UTC | 5g 99s 0c | 5g 99s 0c | moving | 5 of 7 | 7 |  |
-| Avenger's Armor | 1488 | 3g 50s 0c | 2026-11-11 17:37 UTC | 3g 75s 0c | 3g 75s 0c | steady | 4 of 7 | 2 |  |
+| Avenger's Armor | 1488 | 3g 50s 0c | 2026-11-11 17:37 UTC | 3g 60s 0c | 3g 60s 0c | steady | 4 of 7 | 2 |  |
 | Azure Skyforged Chain | 277019 | 49s 0c | 2026-11-11 17:37 UTC | 15s 0c | 15s 0c | volatile | 3 of 7 | 4 |  |
 | Azure Skyforged Chainmail | 277016 | 27s 0c | 2026-11-11 15:03 UTC | 17s 50c | 17s 50c | volatile | 4 of 7 | 4 |  |
 | Azure Skyforged Gauntlets | 277018 | 44s 0c | 2026-11-11 15:03 UTC | 20s 0c | 20s 0c | moving | 6 of 7 | 4 |  |
@@ -121,7 +121,7 @@
 | Captain's Leggings | 7487 | 1g 99s 0c | 2026-11-11 17:37 UTC | 1g 64s 50c | 1g 64s 50c | moving | 4 of 7 | 2 |  |
 | Captain's Shoulderguards | 7491 | 87s 0c | 2026-11-11 15:03 UTC | 1g 77s 50c | 1g 77s 50c | volatile | 4 of 7 | 2 |  |
 | Captain's Waistguard | 7494 | 53s 0c | 2026-11-11 17:37 UTC | 60s 0c | 60s 0c | steady | 3 of 7 | 7 |  |
-| Caverndeep Trudgers | 9510 | 4g 0s 0c | 2026-11-11 17:37 UTC | 4g 0s 0c | 4g 0s 0c | moving | 3 of 7 | 6 |  |
+| Caverndeep Trudgers | 9510 | 4g 0s 0c | 2026-11-11 17:37 UTC | 3g 49s 0c | 3g 49s 0c | moving | 3 of 7 | 6 |  |
 | Chainmail Armor | 847 | 39s 0c | 2026-11-11 17:37 UTC | 6s 0c | 6s 0c | volatile | 3 of 7 | 1 |  |
 | Chainmail Belt | 1845 | 3g 0s 0c | 2026-11-11 17:37 UTC | 51s 50c | 51s 50c | volatile | 4 of 7 | 2 |  |
 | Chainmail Boots | 849 | 4s 0c | 2026-11-07 19:24 UTC | 7s 0c |  | too new | 2 of 7 | 1 |  |
@@ -175,7 +175,7 @@
 | Crusader's Pauldrons | 10200 | 5g 0s 0c | 2026-11-08 23:12 UTC | 5g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Crushridge Bindings | 13199 | 1g 87s 0c | 2026-11-11 15:03 UTC | 3g 50s 0c | 3g 50s 0c | volatile | 3 of 7 | 10 |  |
 | Dargol's Hauberk | 3330 | 30s 0c | 2026-11-09 12:28 UTC | 8s 0c | 8s 0c | volatile | 5 of 7 | 9 |  |
-| Death Bindings | 286981 | 7s 0c | 2026-11-11 17:37 UTC | 8s 0c | 8s 0c | steady | 6 of 7 | 72 |  |
+| Death Bindings | 286981 | 9s 0c | 2026-11-11 17:37 UTC | 8s 0c | 8s 0c | steady | 6 of 7 | 72 |  |
 | Defender Boots | 6573 | 10s 0c | 2026-11-11 17:37 UTC | 10s 50c | 10s 50c | moving | 6 of 7 | 29 |  |
 | Defender Bracers | 6574 | 6s 0c | 2026-11-11 17:37 UTC | 6s 50c | 6s 50c | moving | 6 of 7 | 24 |  |
 | Defender Gauntlets | 6577 | 9s 0c | 2026-11-11 17:37 UTC | 9s 0c | 9s 0c | volatile | 6 of 7 | 26 |  |
@@ -241,7 +241,7 @@
 | Gauntlets of Elements | 16672 | 45g 14s 0c | 2026-11-11 15:03 UTC | 44g 64s 0c |  | too new | 2 of 7 | 1 |  |
 | Gauntlets of Ogre Strength | 3341 | 18s 0c | 2026-11-11 17:37 UTC | 20s 0c | 20s 0c | volatile | 5 of 7 | 16 |  |
 | Gemmed Copper Gauntlets | 3474 | 14s 0c | 2026-11-11 17:37 UTC | 4s 0c | 4s 0c | volatile | 6 of 7 | 28 |  |
-| Girdle of Golem Strength | 9405 | 55s 0c | 2026-11-11 17:37 UTC | 98s 0c | 98s 0c | volatile | 5 of 7 | 26 |  |
+| Girdle of Golem Strength | 9405 | 65s 0c | 2026-11-11 17:37 UTC | 98s 0c | 98s 0c | volatile | 5 of 7 | 26 |  |
 | Glimmering Mail Bracers | 6387 | 13s 0c | 2026-11-11 17:37 UTC | 13s 0c | 13s 0c | steady | 5 of 7 | 18 |  |
 | Glimmering Mail Breastplate | 4071 | 30s 0c | 2026-11-11 17:37 UTC | 31s 0c | 31s 0c | moving | 5 of 7 | 23 |  |
 | Glimmering Mail Coif | 6389 | 59s 0c | 2026-11-11 17:37 UTC | 99s 0c | 99s 0c | moving | 5 of 7 | 29 |  |
@@ -261,7 +261,7 @@
 | Green Iron Boots | 3484 | 29s 0c | 2026-11-11 17:37 UTC | 33s 0c | 33s 0c | moving | 5 of 7 | 122 |  |
 | Green Iron Bracers | 3835 | 14s 0c | 2026-11-11 15:03 UTC | 14s 0c | 14s 0c | steady | 5 of 7 | 258 |  |
 | Green Iron Gauntlets | 3485 | 15s 0c | 2026-11-11 17:37 UTC | 24s 0c | 24s 0c | volatile | 5 of 7 | 64 |  |
-| Green Iron Hauberk | 3844 | 1g 95s 0c | 2026-11-11 17:37 UTC | 2g 40s 0c | 2g 40s 0c | steady | 3 of 7 | 8 |  |
+| Green Iron Hauberk | 3844 | 1g 95s 0c | 2026-11-11 17:37 UTC | 2g 40s 0c | 2g 40s 0c | moving | 3 of 7 | 8 |  |
 | Green Iron Helm | 3836 | 41s 0c | 2026-11-11 17:37 UTC | 76s 0c | 76s 0c | moving | 5 of 7 | 49 |  |
 | Green Iron Leggings | 3842 | 30s 0c | 2026-11-11 17:37 UTC | 37s 0c | 37s 0c | moving | 5 of 7 | 110 |  |
 | Green Iron Shoulders | 3840 | 29s 0c | 2026-11-11 15:03 UTC | 32s 0c | 32s 0c | volatile | 5 of 7 | 105 |  |
@@ -405,7 +405,7 @@
 | Marauder's Leggings | 15573 | 75s 0c | 2026-11-11 17:37 UTC | 99s 0c | 99s 0c | moving | 3 of 7 | 9 |  |
 | Marauder's Shoulder Pads | 15574 | 80s 0c | 2026-11-11 15:03 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 7 | 4 |  |
 | Marauder's Tunic | 15567 | 99s 0c | 2026-11-11 15:03 UTC | 1g 52s 0c |  | too new | 2 of 7 | 5 |  |
-| Martyr's Chain | 3416 | 6g 67s 0c | 2026-11-11 17:37 UTC | 2g 94s 0c | 2g 94s 0c | moving | 5 of 7 | 12 |  |
+| Martyr's Chain | 3416 | 6g 67s 0c | 2026-11-11 17:37 UTC | 2g 94s 0c | 2g 94s 0c | moving | 5 of 7 | 13 |  |
 | Merciless Crown | 15651 | 5g 37s 0c | 2026-11-11 17:37 UTC | 4g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Merciless Greaves | 15694 | 3g 99s 0c | 2026-11-11 15:03 UTC | 3g 49s 50c |  | too new | 2 of 7 | 1 |  |
 | Mercurial Pauldrons | 10163 | 10g 0s 0c | 2026-11-11 15:03 UTC | 10g 0s 0c |  | too new | 1 of 7 | 1 |  |
@@ -458,7 +458,7 @@
 | Polished Scale Gloves | 2151 | 7s 0c | 2026-11-08 23:12 UTC | 7s 0c |  | too new | 1 of 7 | 1 |  |
 | Protector Pads | 14797 | 2g 0s 0c | 2026-11-11 15:03 UTC | 2g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Protector Waistband | 14793 | 2g 5s 0c | 2026-11-09 12:28 UTC | 2g 5s 0c |  | too new | 1 of 7 | 1 |  |
-| Pugilist Bracers | 4438 | 3g 30s 0c | 2026-11-11 17:37 UTC | 2g 73s 50c | 2g 73s 50c | moving | 4 of 7 | 8 |  |
+| Pugilist Bracers | 4438 | 3g 30s 0c | 2026-11-11 17:37 UTC | 2g 60s 50c | 2g 60s 50c | moving | 4 of 7 | 8 |  |
 | Raider's Belt | 9788 | 4s 0c | 2026-11-11 17:37 UTC | 4s 0c | 4s 0c | steady | 6 of 7 | 114 |  |
 | Raider's Boots | 9784 | 6s 0c | 2026-11-11 15:03 UTC | 6s 0c | 6s 0c | steady | 6 of 7 | 36 |  |
 | Raider's Bracers | 9785 | 3s 0c | 2026-11-11 17:37 UTC | 3s 0c | 3s 0c | steady | 7 of 7 | 33 |  |
@@ -474,7 +474,7 @@
 | Ravager's Mantle | 14776 | 95s 0c | 2026-11-11 17:37 UTC | 1g 59s 0c | 1g 59s 0c | moving | 3 of 7 | 3 |  |
 | Ravager's Sandals | 14769 | 1g 35s 0c | 2026-11-11 17:37 UTC | 1g 84s 0c | 1g 84s 0c | moving | 3 of 7 | 4 |  |
 | Ravager's Woolies | 14775 | 99s 0c | 2026-11-11 17:37 UTC | 99s 0c |  | too new | 1 of 7 | 15 |  |
-| Ravasaur Scale Boots | 13124 | 95s 0c | 2026-11-11 15:03 UTC | 1g 0s 0c | 1g 0s 0c | moving | 5 of 7 | 22 |  |
+| Ravasaur Scale Boots | 13124 | 99s 0c | 2026-11-11 17:37 UTC | 1g 0s 0c | 1g 0s 0c | moving | 5 of 7 | 28 |  |
 | Reinforced Chain Belt | 1754 | 5s 0c | 2026-11-11 17:37 UTC | 10s 0c | 10s 0c | volatile | 3 of 7 | 11 |  |
 | Reinforced Chain Boots | 1755 | 6s 0c | 2026-11-11 15:03 UTC | 9s 0c | 9s 0c | moving | 3 of 7 | 7 |  |
 | Reinforced Chain Bracers | 1756 | 5s 0c | 2026-11-11 17:37 UTC | 6s 50c | 6s 50c | moving | 4 of 7 | 4 |  |
@@ -490,7 +490,7 @@
 | Renegade Gauntlets | 9868 | 23s 0c | 2026-11-11 17:37 UTC | 35s 0c | 35s 0c | volatile | 5 of 7 | 27 |  |
 | Renegade Leggings | 9871 | 55s 0c | 2026-11-11 17:37 UTC | 70s 0c | 70s 0c | moving | 5 of 7 | 25 |  |
 | Renegade Pauldrons | 9872 | 44s 0c | 2026-11-11 15:03 UTC | 46s 50c | 46s 50c | steady | 4 of 7 | 32 |  |
-| Reticulated Bone Gauntlets | 9435 | 88s 0c | 2026-11-11 17:37 UTC | 1g 55s 0c | 1g 55s 0c | moving | 5 of 7 | 10 |  |
+| Reticulated Bone Gauntlets | 9435 | 1g 0s 0c | 2026-11-11 17:37 UTC | 1g 55s 0c | 1g 55s 0c | moving | 5 of 7 | 10 |  |
 | Risen Sentry's Links | 287002 | 1g 70s 0c | 2026-11-11 17:37 UTC | 3g 0s 50c | 3g 0s 50c | moving | 4 of 7 | 18 |  |
 | Rot-Fused Greaves | 285101 | 1g 22s 0c | 2026-11-11 15:03 UTC | 1g 89s 0c |  | too new | 2 of 7 | 1 |  |
 | Rough Bronze Boots | 6350 | 3s 0c | 2026-11-11 17:37 UTC | 3s 0c | 3s 0c | steady | 7 of 7 | 368 |  |
@@ -511,11 +511,11 @@
 | Rusted Chain Leggings | 2388 | 2s 0c | 2026-11-06 14:50 UTC | 2s 0c |  | too new | 1 of 7 | 2 |  |
 | Rusted Chain Vest | 2386 | 1s 0c | 2026-11-06 14:50 UTC | 1s 0c |  | too new | 1 of 7 | 1 |  |
 | Scalemail Vest | 285 | 11s 0c | 2026-11-08 16:27 UTC | 11s 0c |  | too new | 1 of 7 | 1 |  |
-| Scarlet Belt | 10329 | 99s 0c | 2026-11-11 17:37 UTC | 3g 50s 0c | 3g 50s 0c | volatile | 5 of 7 | 20 |  |
-| Scarlet Boots | 10332 | 19g 67s 0c | 2026-11-11 15:03 UTC | 8g 45s 0c | 8g 45s 0c | moving | 4 of 7 | 4 |  |
+| Scarlet Belt | 10329 | 1g 1s 0c | 2026-11-11 17:37 UTC | 3g 50s 0c | 3g 50s 0c | volatile | 5 of 7 | 20 |  |
+| Scarlet Boots | 10332 | 23g 0s 0c | 2026-11-11 17:37 UTC | 8g 45s 0c | 8g 45s 0c | moving | 4 of 7 | 4 |  |
 | Scarlet Chestpiece | 10328 | 20g 0s 0c | 2026-11-11 17:37 UTC | 17g 0s 0c |  | too new | 2 of 7 | 5 |  |
-| Scarlet Gauntlets | 10331 | 4g 98s 0c | 2026-11-11 17:37 UTC | 5g 95s 0c | 5g 95s 0c | steady | 4 of 7 | 12 |  |
-| Scarlet Wristguards | 10333 | 1g 10s 0c | 2026-11-11 17:37 UTC | 1g 10s 0c | 1g 10s 0c | volatile | 5 of 7 | 28 |  |
+| Scarlet Gauntlets | 10331 | 5g 30s 0c | 2026-11-11 17:37 UTC | 5g 95s 0c | 5g 95s 0c | steady | 4 of 7 | 12 |  |
+| Scarlet Wristguards | 10333 | 1g 10s 0c | 2026-11-11 17:37 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 5 of 7 | 28 |  |
 | Sentry's Armsplints | 15532 | 10s 0c | 2026-11-11 15:03 UTC | 11s 0c | 11s 0c | steady | 5 of 7 | 35 |  |
 | Sentry's Gloves | 15527 | 11s 0c | 2026-11-11 15:03 UTC | 11s 0c | 11s 0c | moving | 5 of 7 | 19 |  |
 | Sentry's Headdress | 15533 | 80s 0c | 2026-11-11 15:03 UTC | 88s 0c | 88s 0c | moving | 5 of 7 | 9 |  |
@@ -524,9 +524,9 @@
 | Sentry's Shoulderguards | 15531 | 29s 0c | 2026-11-11 17:37 UTC | 35s 0c | 35s 0c | moving | 5 of 7 | 13 |  |
 | Sentry's Slippers | 15525 | 18s 0c | 2026-11-11 17:37 UTC | 20s 0c | 20s 0c | moving | 5 of 7 | 23 |  |
 | Sentry's Surcoat | 15524 | 44s 0c | 2026-11-11 17:37 UTC | 44s 0c | 44s 0c | steady | 5 of 7 | 17 |  |
-| Shining Silver Breastplate | 2870 | 90s 0c | 2026-11-11 17:37 UTC | 1g 0s 0c | 1g 0s 0c | moving | 5 of 7 | 35 |  |
+| Shining Silver Breastplate | 2870 | 90s 0c | 2026-11-11 17:37 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 5 of 7 | 35 |  |
 | Silver Defias Belt | 832 | 50s 0c | 2026-11-09 05:47 UTC | 50s 0c |  | too new | 1 of 7 | 1 |  |
-| Silver-linked Footguards | 12982 | 44s 0c | 2026-11-11 17:37 UTC | 41s 50c | 41s 50c | moving | 6 of 7 | 34 |  |
+| Silver-linked Footguards | 12982 | 49s 0c | 2026-11-11 17:37 UTC | 41s 50c | 41s 50c | moving | 6 of 7 | 34 |  |
 | Silvered Bronze Boots | 3482 | 10s 0c | 2026-11-11 17:37 UTC | 10s 0c | 10s 0c | moving | 6 of 7 | 151 |  |
 | Silvered Bronze Breastplate | 2869 | 31s 0c | 2026-11-11 17:37 UTC | 39s 0c | 39s 0c | moving | 6 of 7 | 35 |  |
 | Silvered Bronze Gauntlets | 3483 | 10s 0c | 2026-11-11 17:37 UTC | 10s 50c | 10s 50c | volatile | 6 of 7 | 198 |  |
@@ -579,10 +579,10 @@
 | Sterling Silver Breastplate | 250487 | 60s 0c | 2026-11-11 17:37 UTC | 95s 0c | 95s 0c | volatile | 4 of 7 | 10 |  |
 | Sterling Silver Gauntlet | 250485 | 75s 0c | 2026-11-11 17:37 UTC | 75s 0c | 75s 0c | steady | 3 of 7 | 3 |  |
 | Stonerender Gauntlets | 17007 | 45g 0s 0c | 2026-11-11 17:37 UTC | 47g 72s 0c | 47g 72s 0c | moving | 3 of 7 | 4 |  |
-| Stormbringer Belt | 12978 | 57s 0c | 2026-11-11 17:37 UTC | 46s 0c | 46s 0c | volatile | 6 of 7 | 32 |  |
-| Stormgale Fists | 10584 | 95s 0c | 2026-11-11 17:37 UTC | 3g 16s 0c | 3g 16s 0c | volatile | 4 of 7 | 7 |  |
+| Stormbringer Belt | 12978 | 57s 0c | 2026-11-11 17:37 UTC | 43s 50c | 43s 50c | volatile | 6 of 7 | 32 |  |
+| Stormgale Fists | 10584 | 98s 0c | 2026-11-11 17:37 UTC | 3g 16s 0c | 3g 16s 0c | volatile | 4 of 7 | 7 |  |
 | Suffused Bindings | 286993 | 1g 34s 0c | 2026-11-11 17:37 UTC | 2g 2s 50c | 2g 2s 50c | moving | 4 of 7 | 11 |  |
-| Sunblaze Coif | 5819 | 1g 28s 0c | 2026-11-11 15:03 UTC | 3g 40s 0c | 3g 40s 0c | volatile | 4 of 7 | 10 |  |
+| Sunblaze Coif | 5819 | 1g 24s 0c | 2026-11-11 17:37 UTC | 3g 40s 0c | 3g 40s 0c | volatile | 4 of 7 | 10 |  |
 | Supple Scorpid Boots | 252574 | 7g 0s 0c | 2026-11-11 15:03 UTC | 7g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Supple Scorpid Leggings | 252580 | 4g 99s 0c | 2026-11-11 15:03 UTC | 4g 99s 0c |  | too new | 1 of 7 | 1 |  |
 | Thendal Watcher's Belt | 285274 | 1g 2s 0c | 2026-11-11 17:37 UTC | 21s 50c | 21s 50c | volatile | 6 of 7 | 3 |  |
@@ -597,7 +597,7 @@
 | Thick Scale Legguards | 15551 | 54s 0c | 2026-11-11 15:03 UTC | 74s 50c | 74s 50c | moving | 4 of 7 | 12 |  |
 | Thick Scale Sabatons | 15544 | 30s 0c | 2026-11-11 15:03 UTC | 33s 0c | 33s 0c | steady | 5 of 7 | 8 |  |
 | Thick Scale Shoulder Pads | 15553 | 50s 0c | 2026-11-11 17:37 UTC | 64s 0c | 64s 0c | volatile | 5 of 7 | 10 |  |
-| Thorbia's Gauntlets | 12994 | 80s 0c | 2026-11-11 17:37 UTC | 84s 0c | 84s 0c | moving | 6 of 7 | 32 |  |
+| Thorbia's Gauntlets | 12994 | 90s 0c | 2026-11-11 17:37 UTC | 84s 0c | 84s 0c | moving | 6 of 7 | 32 |  |
 | Tough Scorpid Boots | 8209 | 3g 46s 0c | 2026-11-11 17:37 UTC | 3g 46s 0c |  | too new | 1 of 7 | 19 |  |
 | Tough Scorpid Bracers | 8205 | 1g 35s 0c | 2026-11-11 17:37 UTC | 3g 12s 50c |  | too new | 2 of 7 | 16 |  |
 | Tough Scorpid Breastplate | 8203 | 2g 55s 0c | 2026-11-11 17:37 UTC | 2g 55s 0c |  | too new | 1 of 7 | 34 |  |
@@ -662,6 +662,6 @@
 | Worn Mail Gloves | 1734 | 1s 0c | 2026-11-11 17:37 UTC | 1s 0c | 1s 0c | steady | 7 of 7 | 21 |  |
 | Worn Mail Pants | 1735 | 1s 0c | 2026-11-11 17:37 UTC | 1s 0c | 1s 0c | steady | 7 of 7 | 26 |  |
 | Worn Mail Vest | 1737 | 2s 0c | 2026-11-11 17:37 UTC | 2s 0c | 2s 0c | steady | 7 of 7 | 33 |  |
-| Yorgen Bracers | 13012 | 1g 8s 0c | 2026-11-11 17:37 UTC | 1g 8s 0c | 1g 8s 0c | moving | 5 of 7 | 29 |  |
+| Yorgen Bracers | 13012 | 1g 8s 0c | 2026-11-11 17:37 UTC | 1g 7s 0c | 1g 7s 0c | moving | 5 of 7 | 29 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

@@ -97,7 +97,7 @@
 | Reflective Heater | 3816 | 23s 0c | 2026-11-11 17:37 UTC | 60s 0c | 60s 0c | volatile | 3 of 7 | 8 |  |
 | Reinforced Buckler | 3817 | 22s 0c | 2026-11-11 17:37 UTC | 24s 0c | 24s 0c | steady | 3 of 7 | 2 |  |
 | Renegade Shield | 9873 | 59s 0c | 2026-11-11 15:03 UTC | 61s 0c | 61s 0c | steady | 4 of 7 | 8 |  |
-| Resplendent Guardian | 7787 | 1g 0s 0c | 2026-11-11 17:37 UTC | 1g 25s 0c | 1g 25s 0c | steady | 5 of 7 | 8 |  |
+| Resplendent Guardian | 7787 | 1g 0s 0c | 2026-11-11 17:37 UTC | 1g 25s 0c | 1g 25s 0c | steady | 5 of 7 | 10 |  |
 | Rigid Buckler | 15113 | 14s 0c | 2026-11-11 15:03 UTC | 19s 0c | 19s 0c | moving | 5 of 7 | 22 |  |
 | Ringed Buckler | 17188 | 7s 0c | 2026-11-06 14:50 UTC | 7s 0c |  | too new | 1 of 7 | 1 |  |
 | Robust Buckler | 15123 | 25s 0c | 2026-11-11 15:03 UTC | 30s 0c | 30s 0c | steady | 5 of 7 | 19 |  |
@@ -107,9 +107,9 @@
 | Scouting Buckler | 6571 | 13s 0c | 2026-11-11 17:37 UTC | 18s 0c | 18s 0c | moving | 5 of 7 | 25 |  |
 | Sentinel Buckler | 7463 | 63s 0c | 2026-11-11 17:37 UTC | 66s 0c | 66s 0c | steady | 4 of 7 | 8 |  |
 | Sentry's Shield | 15530 | 34s 0c | 2026-11-11 17:37 UTC | 36s 0c | 36s 0c | volatile | 5 of 7 | 10 |  |
-| Shield of Thorsen | 13079 | 1g 50s 0c | 2026-11-11 17:37 UTC | 93s 0c | 93s 0c | moving | 5 of 7 | 19 |  |
+| Shield of Thorsen | 13079 | 1g 50s 0c | 2026-11-11 17:37 UTC | 93s 0c | 93s 0c | moving | 5 of 7 | 27 |  |
 | Simple Buckler | 2216 | 3s 0c | 2026-11-11 17:37 UTC | 3s 0c | 3s 0c | moving | 7 of 7 | 19 |  |
-| Skullance Shield | 13081 | 1g 50s 0c | 2026-11-11 17:37 UTC | 1g 75s 0c | 1g 75s 0c | moving | 4 of 7 | 16 |  |
+| Skullance Shield | 13081 | 1g 50s 0c | 2026-11-11 17:37 UTC | 1g 68s 0c | 1g 68s 0c | moving | 4 of 7 | 16 |  |
 | Slayer's Shield | 15892 | 38s 0c | 2026-11-11 17:37 UTC | 45s 0c | 45s 0c | volatile | 5 of 7 | 13 |  |
 | Small Round Shield | 2219 | 5s 0c | 2026-11-11 17:37 UTC | 5s 0c | 5s 0c | steady | 4 of 7 | 8 |  |
 | Soldier's Shield | 6560 | 7s 0c | 2026-11-11 17:37 UTC | 7s 0c | 7s 0c | moving | 6 of 7 | 47 |  |

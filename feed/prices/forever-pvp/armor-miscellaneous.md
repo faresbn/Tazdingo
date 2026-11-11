@@ -94,7 +94,7 @@
 | Greenstone Talisman | 12029 | 1g 0s 0c | 2026-11-11 17:37 UTC | 1g 25s 0c | 1g 25s 0c | volatile | 5 of 7 | 24 |  |
 | Greenweave Branch | 9769 | 17s 0c | 2026-11-11 17:37 UTC | 20s 0c | 20s 0c | steady | 5 of 7 | 17 |  |
 | Grove Scoundrel's Shirt | 271675 | 5g 0s 0c | 2026-11-09 12:28 UTC | 2g 0s 0c | 2g 0s 0c | volatile | 5 of 7 | 3 |  |
-| Guardian's Emblem | 286995 | 15g 15s 0c | 2026-11-11 17:37 UTC | 8g 15s 0c | 8g 15s 0c | moving | 5 of 7 | 2 |  |
+| Guardian's Emblem | 286995 | 15g 15s 0c | 2026-11-11 17:37 UTC | 8g 15s 0c | 8g 15s 0c | moving | 5 of 7 | 5 |  |
 | Guild Tabard | 5976 | 89s 0c | 2026-11-11 17:37 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 7 | 8 |  |
 | Heart of Alterac | 283254 | 74s 0c | 2026-11-11 17:37 UTC | 79s 50c | 79s 50c | steady | 4 of 7 | 4 |  |
 | Heart Ring | 5001 | 15s 0c | 2026-11-11 17:37 UTC | 23s 50c | 23s 50c | volatile | 6 of 7 | 50 |  |
@@ -125,7 +125,7 @@
 | Marble Circle | 12002 | 3g 95s 0c | 2026-11-11 17:37 UTC | 2g 55s 0c |  | too new | 1 of 7 | 2 |  |
 | Marble Necklace | 12034 | 3g 20s 0c | 2026-11-11 17:37 UTC | 7g 0s 0c | 7g 0s 0c | moving | 5 of 7 | 1 |  |
 | Mark of Captivity | 287024 | 15g 0s 0c | 2026-11-09 12:28 UTC | 15g 0s 0c |  | too new | 1 of 7 | 2 |  |
-| Mark of Kern | 2262 | 5g 89s 0c | 2026-11-11 17:37 UTC | 6g 29s 0c | 6g 29s 0c | steady | 4 of 7 | 5 |  |
+| Mark of Kern | 2262 | 5g 89s 0c | 2026-11-11 17:37 UTC | 6g 29s 0c | 6g 29s 0c | moving | 4 of 7 | 5 |  |
 | Mark of the Marsh | 286984 | 10g 0s 0c | 2026-11-11 17:37 UTC | 8g 40s 0c | 8g 40s 0c | moving | 5 of 7 | 5 |  |
 | Marsh Chain | 12042 | 1g 9s 0c | 2026-11-11 17:37 UTC | 1g 61s 0c | 1g 61s 0c | moving | 4 of 7 | 9 |  |
 | Marsh Ring | 12012 | 1g 0s 0c | 2026-11-11 17:37 UTC | 1g 24s 50c | 1g 24s 50c | moving | 4 of 7 | 4 |  |
@@ -211,21 +211,21 @@
 | Swamp Pendant | 12045 | 7g 94s 0c | 2026-11-11 17:37 UTC | 3g 17s 0c | 3g 17s 0c | moving | 3 of 7 | 1 |  |
 | Swamp Ring | 12015 | 4g 33s 0c | 2026-11-11 17:37 UTC | 4g 33s 0c |  | too new | 1 of 7 | 1 |  |
 | Swamp Roamer's Band | 285089 | 55s 0c | 2026-11-11 15:03 UTC | 1g 9s 0c | 1g 9s 0c | moving | 4 of 7 | 7 |  |
-| Swampchill Fetish | 1992 | 3g 0s 0c | 2026-11-11 17:37 UTC | 4g 76s 50c |  | too new | 2 of 7 | 4 |  |
+| Swampchill Fetish | 1992 | 6g 99s 0c | 2026-11-11 17:37 UTC | 4g 76s 50c |  | too new | 2 of 7 | 4 |  |
 | Talisman of the Naga Lord | 5029 | 91s 0c | 2026-11-11 17:37 UTC | 2g 9s 50c | 2g 9s 50c | moving | 4 of 7 | 6 |  |
 | Tellurium Band | 11988 | 1g 0s 0c | 2026-11-11 17:37 UTC | 1g 67s 50c | 1g 67s 50c | moving | 4 of 7 | 4 |  |
 | Tellurium Necklace | 12023 | 1g 10s 0c | 2026-11-11 17:37 UTC | 2g 12s 50c | 2g 12s 50c | moving | 4 of 7 | 6 |  |
 | Thallium Choker | 12020 | 1g 0s 0c | 2026-11-11 17:37 UTC | 1g 5s 0c | 1g 5s 0c | volatile | 5 of 7 | 21 |  |
 | Thallium Hoop | 11986 | 52s 0c | 2026-11-11 17:37 UTC | 82s 0c | 82s 0c | volatile | 4 of 7 | 28 |  |
 | The 1 Ring | 8350 | 4g 85s 0c | 2026-11-11 17:37 UTC | 1g 9s 0c | 1g 9s 0c | moving | 6 of 7 | 16 |  |
-| The Queen's Jewel | 13094 | 59s 0c | 2026-11-11 15:03 UTC | 60s 0c | 60s 0c | moving | 5 of 7 | 25 |  |
+| The Queen's Jewel | 13094 | 66s 0c | 2026-11-11 17:37 UTC | 60s 0c | 60s 0c | moving | 5 of 7 | 25 |  |
 | Thendal Novice's Shirt | 271663 | 60s 0c | 2026-11-11 17:37 UTC | 48s 0c | 48s 0c | volatile | 7 of 7 | 6 |  |
 | Thendal Survivalist's Shirt | 271668 | 14s 0c | 2026-11-11 15:03 UTC | 10s 0c | 10s 0c | volatile | 7 of 7 | 8 |  |
 | Thendal Warrior's Shirt | 271669 | 99s 0c | 2026-11-11 15:03 UTC | 69s 0c | 69s 0c | volatile | 5 of 7 | 1 |  |
 | Thistlefur Branch | 15976 | 45s 0c | 2026-11-11 17:37 UTC | 63s 0c | 63s 0c | volatile | 5 of 7 | 8 |  |
 | Thug Shirt | 2105 | 30s 0c | 2026-11-11 17:37 UTC | 20s 0c | 20s 0c | volatile | 7 of 7 | 3 |  |
 | Thug Shirt | 6136 | 80s 0c | 2026-11-11 15:03 UTC | 80s 0c | 80s 0c | volatile | 3 of 7 | 1 |  |
-| Thunderbrow Ring | 13097 | 1g 50s 0c | 2026-11-11 17:37 UTC | 1g 95s 0c | 1g 95s 0c | moving | 5 of 7 | 30 |  |
+| Thunderbrow Ring | 13097 | 1g 75s 0c | 2026-11-11 17:37 UTC | 1g 95s 0c | 1g 95s 0c | moving | 5 of 7 | 30 |  |
 | Topaz Ring | 11975 | 1g 15s 0c | 2026-11-11 17:37 UTC | 2g 0s 0c | 2g 0s 0c | moving | 5 of 7 | 3 |  |
 | Trapper's Shirt | 127 | 40s 0c | 2026-11-11 15:03 UTC | 12s 0c | 12s 0c | volatile | 6 of 7 | 8 |  |
 | Tundra Necklace | 12039 | 1g 0s 0c | 2026-11-11 17:37 UTC | 1g 25s 0c | 1g 25s 0c | volatile | 5 of 7 | 23 |  |

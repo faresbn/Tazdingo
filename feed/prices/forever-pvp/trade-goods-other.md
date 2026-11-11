@@ -19,7 +19,7 @@
 | Blue Dye | 6260 | 65c | 2026-11-11 15:03 UTC | 63c | 63c | moving | 6 of 7 | 369 |  |
 | Blue Pearl | 4611 | 18s 79c | 2026-11-11 17:37 UTC | 47s 0c | 47s 0c | moving | 5 of 7 | 471 |  |
 | Blue Sapphire | 12361 | 3g 99s 0c | 2026-11-11 17:37 UTC | 4g 0s 0c | 4g 0s 0c | moving | 3 of 7 | 9 |  |
-| Cerulean Dye | 249409 | 53s 0c | 2026-11-11 17:37 UTC | 31s 62c | 31s 62c | volatile | 6 of 7 | 584 |  |
+| Cerulean Dye | 249409 | 53s 12c | 2026-11-11 17:37 UTC | 31s 62c | 31s 62c | volatile | 6 of 7 | 584 |  |
 | Chef's Knife | 273636 | 3s 0c | 2026-11-11 17:37 UTC | 3s 0c | 3s 0c | moving | 5 of 7 | 17 |  |
 | Citrine | 3864 | 8s 0c | 2026-11-11 17:37 UTC | 12s 55c | 12s 55c | volatile | 6 of 7 | 269 |  |
 | Crystal Vial | 8925 | 4s 59c | 2026-11-11 17:37 UTC | 3s 89c | 3s 89c | moving | 6 of 7 | 176 |  |
