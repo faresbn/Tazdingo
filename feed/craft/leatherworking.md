@@ -8,8 +8,8 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Barbaric Bracers | 130 | 18948 | 1 | 2g 80s 15c | 89s 92c | 1g 90s 23c | ForeverDB |
 | Red Whelp Gloves | 95 | 7284 | 1 | 3g 0s 0c | 1g 23s 0c | 1g 77s 0c | ForeverDB |
 | Azure Gustwoven Hood | 175 | 277050 | 1 | 2g 50s 0c | 1g 45s 0c | 1g 5s 0c | ForeverDB |
-| Barbaric Belt | 175 | 4264 | 1 | 1g 74s 0c | 84s 53c | 89s 47c | ForeverDB |
-| Gem-studded Leather Belt | 160 | 4262 | 1 | 2g 50s 0c | 1g 79s 95c | 70s 5c | ForeverDB |
+| Barbaric Belt | 175 | 4264 | 1 | 1g 74s 0c | 84s 50c | 89s 50c | ForeverDB |
+| Gem-studded Leather Belt | 160 | 4262 | 1 | 2g 50s 0c | 1g 79s 93c | 70s 7c | ForeverDB |
 | Turtle Scale Breastplate | 205 | 8189 | 1 | 3g 4s 0c | 2g 46s 8c | 57s 92c | ForeverDB |
 | Forceful Thick Armor Kit | 185 | 252463 | 1 | 1g 8s 30c | 54s 46c | 53s 84c | ForeverDB |
 | Azure Gustwoven Trousers | 60 | 277026 | 1 | 45s 0c | 2s 9c | 42s 91c | ForeverDB |
@@ -28,15 +28,14 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Cloudy Windraveled Mitts | 55 | 277006 | 1 | 33s 0c | 2s 2c | 30s 98c | ForeverDB |
 | Cloudy Windraveled Pants | 60 | 277008 | 1 | 32s 50c | 2s 9c | 30s 41c | ForeverDB |
 | Cloudy Gustwoven Belt | 50 | 277001 | 1 | 31s 0c | 1s 65c | 29s 35c | ForeverDB |
+| Deviate Scale Belt | 90 | 6468 | 1 | 1g 43s 0c | 1g 16s 0c | 27s 0c | our scan |
 | Azure Gustwoven Harness | 60 | 277022 | 1 | 30s 75c | 4s 1c | 26s 74c | ForeverDB |
 | Nightscape Cloak | 205 | 8195 | 1 | 1g 88s 33c | 1g 64s 0c | 24s 33c | ForeverDB |
 | Cloudy Windraveled Armguards | 50 | 277005 | 1 | 22s 0c | 1s 38c | 20s 62c | ForeverDB |
 | Green Leather Armor | 130 | 4255 | 1 | 80s 0c | 60s 0c | 20s 0c | our scan |
-| Deviate Scale Belt | 90 | 6468 | 1 | 1g 43s 0c | 1g 24s 10c | 18s 90c | our scan |
 | Azure Gustwoven Boots | 55 | 277027 | 1 | 16s 0c | 1s 92c | 14s 8c | our scan |
 | Cloudy Windraveled Jerkin | 60 | 277004 | 1 | 18s 0c | 4s 1c | 13s 99c | our scan |
 | Cloudy Gustwoven Bracers | 50 | 276999 | 1 | 15s 0c | 1s 38c | 13s 62c | our scan |
-| Wild Leather Boots | 220 | 8213 | 1 | 3g 0s 0c | 2g 86s 46c | 13s 54c | ForeverDB |
 | Azure Windraveled Strap | 50 | 277031 | 1 | 15s 0c | 1s 65c | 13s 35c | our scan |
 | Wild Leather Vest | 200 | 8211 | 1 | 2g 16s 25c | 2g 3s 23c | 13s 2c | ForeverDB |
 | Azure Gustwoven Gloves | 55 | 277024 | 1 | 15s 0c | 2s 2c | 12s 98c | our scan |
@@ -49,12 +48,13 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Azure Windraveled Armguards | 50 | 277029 | 1 | 11s 0c | 1s 38c | 9s 62c | our scan |
 | Dusky Boots | 175 | 7390 | 1 | 1g 56s 16c | 1g 46s 82c | 9s 34c | ForeverDB |
 | Cloudy Gustwoven Trousers | 60 | 277002 | 1 | 10s 0c | 2s 9c | 7s 91c | our scan |
-| Guardian Belt | 145 | 4258 | 1 | 55s 0c | 48s 19c | 6s 81c | ForeverDB |
+| Guardian Belt | 145 | 4258 | 1 | 55s 0c | 48s 16c | 6s 84c | ForeverDB |
 | Swift Boots | 175 | 7391 | 1 | 91s 0c | 86s 80c | 4s 20c | our scan |
 | Light Leather Reagent Bag | 30 | 277715 | 1 | 7s 0c | 4s 38c | 2s 62c | our scan |
 | Moonglow Vest | 65 | 6709 | 1 | 9s 50c | 7s 0c | 2s 50c | ForeverDB |
 | Murloc Scale Belt | 65 | 5780 | 1 | 24s 50c | 22s 14c | 2s 36c | ForeverDB |
 | Guardian Leather Bracers | 170 | 4260 | 1 | 65s 0c | 63s 0c | 2s 0c | our scan |
+| Deviate Scale Cloak | 65 | 6466 | 1 | 6s 0c | 4s 60c | 1s 40c | our scan |
 | Hillman's Leather Boots | 110 | 252449 | 1 | 20s 50c | 19s 15c | 1s 35c | ForeverDB |
 | Fine Leather Gloves | 50 | 2312 | 1 | 4s 50c | 3s 20c | 1s 30c | our scan |
 | Cured Medium Hide | 90 | 4233 | 1 | 6s 15c | 4s 99c | 1s 16c | ForeverDB |

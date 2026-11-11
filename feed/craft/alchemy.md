@@ -25,26 +25,26 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Fire Protection Potion | 165 | 6049 | 1 | 28s 0c | 15s 20c | 12s 80c | our scan |
 | Magic Resistance Potion | 210 | 9036 | 1 | 63s 0c | 53s 98c | 9s 2c | ForeverDB |
 | Elixir of Fortitude | 150 | 250334 | 1 | 57s 0c | 49s 68c | 7s 32c | ForeverDB |
-| Shadow Protection Potion | 135 | 6048 | 1 | 16s 23c | 9s 0c | 7s 23c | our scan |
 | Potion of Predatory Senses | 195 | 250327 | 1 | 50s 0c | 42s 84c | 7s 16c | ForeverDB |
-| Transmute: Mithril to Truesilver | 225 | 6037 | 1 | 14s 88c | 8s 76c | 6s 12c | our scan |
+| Transmute: Mithril to Truesilver | 225 | 6037 | 1 | 13s 66c | 8s 60c | 5s 6c | our scan |
 | Elixir of Lesser Intellect | 95 | 250353 | 1 | 10s 21c | 5s 60c | 4s 61c | ForeverDB |
+| Shadow Protection Potion | 135 | 6048 | 1 | 13s 25c | 9s 0c | 4s 25c | our scan |
+| Elixir of Lesser Defense | 130 | 3389 | 1 | 10s 84c | 6s 63c | 4s 21c | ForeverDB |
 | Catseye Draught | 200 | 10592 | 1 | 26s 61c | 22s 42c | 4s 19c | our scan |
-| Elixir of Lesser Defense | 130 | 3389 | 1 | 10s 84c | 6s 67c | 4s 17c | ForeverDB |
 | Spellblasting Potion | 135 | 250934 | 1 | 12s 0c | 8s 0c | 4s 0c | ForeverDB |
 | Cerulean Dye | 0 | 249409 | 1 | 37s 91c | 34s 66c | 3s 25c | ForeverDB |
 | Lesser Arcane Elixir | 120 | 250342 | 1 | 10s 0c | 6s 80c | 3s 20c | ForeverDB |
 | Elixir of Lesser Spirit | 65 | 250345 | 1 | 7s 94c | 5s 0c | 2s 94c | our scan |
-| Transmute: Iron to Gold | 225 | 3577 | 1 | 7s 52c | 4s 71c | 2s 81c | our scan |
 | Lesser Cleric's Elixir | 95 | 250331 | 1 | 13s 19c | 10s 40c | 2s 79c | ForeverDB |
-| Frost Protection Potion | 190 | 6050 | 1 | 31s 37c | 28s 61c | 2s 76c | our scan |
+| Frost Protection Potion | 190 | 6050 | 1 | 31s 36c | 28s 61c | 2s 75c | our scan |
+| Transmute: Iron to Gold | 225 | 3577 | 1 | 7s 32c | 4s 71c | 2s 61c | our scan |
 | Elixir of Giant Growth | 90 | 6662 | 1 | 4s 55c | 2s 26c | 2s 29c | ForeverDB |
-| Greater Discolored Healing Potion | 0 | 247241 | 1 | 6s 26c | 4s 0c | 2s 26c | our scan |
+| Greater Discolored Healing Potion | 0 | 247241 | 1 | 6s 22c | 4s 0c | 2s 22c | our scan |
 | Lesser Mageblood Elixir | 75 | 250340 | 1 | 5s 90c | 3s 80c | 2s 10c | our scan |
 | Troll's Blood Elixir | 180 | 3826 | 1 | 7s 20c | 6s 0c | 1s 20c | our scan |
 | Sulfuric Acid | 0 | 249410 | 1 | 3s 92c | 2s 74c | 1s 18c | our scan |
+| Elixir of Agility | 185 | 8949 | 1 | 17s 59c | 16s 55c | 1s 4c | ForeverDB |
 | Minor Cleric's Elixir | 45 | 250330 | 1 | 3s 82c | 2s 80c | 1s 2c | our scan |
-| Elixir of Agility | 185 | 8949 | 1 | 17s 59c | 16s 59c | 1s 0c | ForeverDB |
 | Minor Mender's Potion | 30 | 250944 | 1 | 3s 61c | 2s 80c | 81c | our scan |
 | Blackmouth Oil | 80 | 6370 | 1 | 3s 32c | 2s 52c | 80c | our scan |
 | Fermenter | 140 | 279970 | 1 | 8s 0c | 7s 22c | 78c | our scan |
