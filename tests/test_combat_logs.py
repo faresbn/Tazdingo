@@ -124,6 +124,21 @@ class CombatLogs(unittest.TestCase):
         fresh.write_text(sample())
         self.assertEqual(combat_logs.refresh(self.game, None, self.out)["waiting"], [fresh.name])
 
+    def test_a_dungeon_logged_with_the_continents_id_is_still_a_run(self):
+        # Forever logs Razorfen Kraul as ZONE_CHANGE,1,"Razorfen Kraul",0: only its boss fights give it away.
+        text = sample().replace('ZONE_CHANGE,33,"Silverpine Forest",0', 'ZONE_CHANGE,1,"The Barrens",0')
+        text = text.replace('ZONE_CHANGE,33,"Shadowfang Keep",1', 'ZONE_CHANGE,1,"Razorfen Kraul",0')
+        self.log.write_text(text)
+        self.age(self.log, hours=1)
+        combat_logs.refresh(self.game, None, self.out)
+        self.assertIn("orc-warlock/2026-11-11/1801-razorfen-kraul.txt", self.files())
+        self.assertNotIn("barrens", " ".join(self.files()))
+
+    def test_now_files_a_log_still_being_written(self):
+        fresh = self.game / "WoWCombatLog-111126_190000.txt"
+        fresh.write_text(sample().replace("11/11/2026", "11/13/2026"))
+        self.assertIn(fresh.name, combat_logs.refresh(self.game, None, self.out, settled=0)["filed"])
+
     # --- level 60
 
     def test_a_level_60_character_is_skipped_entirely(self):

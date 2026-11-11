@@ -12,6 +12,10 @@ Asked for by Fares on 30 October ("I want to very quickly notice there's nothing
 - **Professions overview leads with the gold-making pages** (What to craft, Materials, Camping, Waylaid Crates); the professions follow as a compact grid.
 - **Oxblood is used** as the design decision below always said: for the open tab, the menu rule and the cheatsheet's margin line only.
 
+## ForeverDB's API on a new build (11 November)
+
+- **A build change refetches the lists, not every item** (was: everything again, about two hours): item details (vendor prices, categories) are copied from the previous build's cache and only new items are fetched. Fares: "I don't think you need to download the whole new build". `foreverdb_api.py fetch --full` still fetches everything, for a big patch.
+
 ## Combat logs (11 November)
 
 Decided by Fares on 11 November.
