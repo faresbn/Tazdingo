@@ -15,7 +15,7 @@ Every path below is in the public repository: https://raw.githubusercontent.com/
 - Combat logs, on the repository's `logs` branch: https://raw.githubusercontent.com/faresbn/Tazdingo/logs/README.md is the guide and the list. Instance runs complete (every player, as the game wrote them) and open-world summaries of our own characters; read the guide first, the instance files are large.
 
 Original addon files, as uploaded (large; open only when asked about that addon):
-- `data/captures/forever/auctionator/2026-11-11T1737Z.lua`: the latest of 30 auctionator file(s) (forever), processed into the prices above.
+- `data/captures/forever/auctionator/2026-11-11T1737Z.lua`: the latest of 31 auctionator file(s) (forever), processed into the prices above.
 
 ## How the data stays current
 
