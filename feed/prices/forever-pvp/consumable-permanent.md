@@ -1,26 +1,26 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Consumable: Permanent
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-09 12:28 UTC. Uploads in the 30-day window: 18.
+- **Latest scan:** 2026-11-11 15:03 UTC. Uploads in the 30-day window: 19.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Forceful Heavy Armor Kit | 252453 | 30s 0c | 2026-11-09 12:28 UTC | 18s 71c | 18s 71c | steady | 4 of 6 | 242 |  |
-| Forceful Medium Armor Kit | 252437 | 11s 66c | 2026-11-09 12:28 UTC | 8s 50c | 8s 50c | steady | 5 of 6 | 360 |  |
-| Forceful Thick Armor Kit | 252463 | 1g 45s 0c | 2026-11-09 12:28 UTC | 1g 23s 0c |  | too new | 2 of 6 | 40 |  |
-| Heavy Armor Kit | 4265 | 7s 18c | 2026-11-09 12:28 UTC | 7s 40c | 7s 40c | steady | 4 of 6 | 584 |  |
-| Iron Counterweight | 6043 | 48s 0c | 2026-11-09 12:28 UTC | 24s 38c | 24s 38c | volatile | 4 of 6 | 126 |  |
-| Iron Shield Spike | 6042 | 15s 74c | 2026-11-09 12:28 UTC | 16s 82c | 16s 82c | moving | 4 of 6 | 118 |  |
-| Light Armor Kit | 2304 | 15c | 2026-11-09 12:28 UTC | 15c | 15c | steady | 5 of 6 | 5795 |  |
-| Medium Armor Kit | 2313 | 2s 88c | 2026-11-09 12:28 UTC | 2s 89c | 2s 89c | moving | 5 of 6 | 532 |  |
-| Mithril Shield Spike | 7967 | 1g 30s 77c | 2026-11-09 12:28 UTC | 1g 65s 38c |  | too new | 2 of 6 | 41 |  |
-| Mithril Spurs | 7969 | 1g 10s 0c | 2026-11-09 12:28 UTC | 2g 82s 50c |  | too new | 2 of 6 | 26 |  |
-| Mystic Heavy Armor Kit | 252452 | 28s 0c | 2026-11-09 12:28 UTC | 16s 49c | 16s 49c | moving | 4 of 6 | 260 |  |
-| Mystic Medium Armor Kit | 252436 | 6s 48c | 2026-11-09 05:47 UTC | 8s 60c | 8s 60c | moving | 5 of 6 | 379 |  |
-| Mystic Thick Armor Kit | 252462 | 1g 18s 0c | 2026-11-09 12:28 UTC | 1g 53s 0c |  | too new | 2 of 6 | 90 |  |
-| Rugged Armor Kit | 15564 | 99s 0c | 2026-11-09 12:28 UTC | 1g 7s 50c |  | too new | 2 of 6 | 20 |  |
-| Steel Weapon Chain | 6041 | 5g 90s 0c | 2026-11-08 23:12 UTC | 5g 90s 0c | 5g 90s 0c | steady | 3 of 6 | 3 |  |
-| Thick Armor Kit | 8173 | 15s 0c | 2026-11-09 12:28 UTC | 15s 0c | 15s 0c | volatile | 3 of 6 | 111 |  |
+| Forceful Heavy Armor Kit | 252453 | 22s 0c | 2026-11-11 15:03 UTC | 19s 99c | 19s 99c | moving | 5 of 7 | 232 |  |
+| Forceful Medium Armor Kit | 252437 | 9s 0c | 2026-11-11 15:03 UTC | 8s 69c | 8s 69c | steady | 6 of 7 | 420 |  |
+| Forceful Thick Armor Kit | 252463 | 51s 29c | 2026-11-11 15:03 UTC | 1g 1s 0c | 1g 1s 0c | volatile | 3 of 7 | 55 |  |
+| Heavy Armor Kit | 4265 | 6s 50c | 2026-11-11 15:03 UTC | 6s 50c | 6s 50c | moving | 5 of 7 | 592 |  |
+| Iron Counterweight | 6043 | 5s 69c | 2026-11-11 15:03 UTC | 14s 79c | 14s 79c | volatile | 5 of 7 | 125 |  |
+| Iron Shield Spike | 6042 | 8s 2c | 2026-11-11 15:03 UTC | 14s 75c | 14s 75c | moving | 5 of 7 | 142 |  |
+| Light Armor Kit | 2304 | 15c | 2026-11-11 15:03 UTC | 15c | 15c | steady | 6 of 7 | 5691 |  |
+| Medium Armor Kit | 2313 | 2s 0c | 2026-11-11 15:03 UTC | 2s 64c | 2s 64c | moving | 6 of 7 | 550 |  |
+| Mithril Shield Spike | 7967 | 95s 99c | 2026-11-11 15:03 UTC | 1g 30s 77c | 1g 30s 77c | volatile | 3 of 7 | 47 |  |
+| Mithril Spurs | 7969 | 56s 80c | 2026-11-11 15:03 UTC | 1g 10s 0c | 1g 10s 0c | volatile | 3 of 7 | 41 |  |
+| Mystic Heavy Armor Kit | 252452 | 9s 33c | 2026-11-11 15:03 UTC | 11s 99c | 11s 99c | volatile | 5 of 7 | 315 |  |
+| Mystic Medium Armor Kit | 252436 | 5s 80c | 2026-11-11 15:03 UTC | 7s 72c | 7s 72c | moving | 6 of 7 | 311 |  |
+| Mystic Thick Armor Kit | 252462 | 55s 0c | 2026-11-11 15:03 UTC | 1g 18s 0c | 1g 18s 0c | volatile | 3 of 7 | 28 |  |
+| Rugged Armor Kit | 15564 | 47s 0c | 2026-11-11 15:03 UTC | 99s 0c | 99s 0c | moving | 3 of 7 | 22 |  |
+| Steel Weapon Chain | 6041 | 1g 99s 99c | 2026-11-11 15:03 UTC | 5g 44s 50c | 5g 44s 50c | moving | 4 of 7 | 5 |  |
+| Thick Armor Kit | 8173 | 12s 44c | 2026-11-11 15:03 UTC | 15s 0c | 15s 0c | steady | 4 of 7 | 136 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
