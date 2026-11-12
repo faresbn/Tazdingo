@@ -8,6 +8,7 @@
 | Learn how to edit or propose a public finding | [`docs/chatgpt/UPDATING.md`](UPDATING.md) |
 | Select the current authenticated submit/read/status route | [`docs/chatgpt/TAZDINGO_CONNECTION.md`](TAZDINGO_CONNECTION.md) |
 | Use the user-operated form and its current validation format | [`docs/chatgpt/TAZDINGO_INBOX.md`](TAZDINGO_INBOX.md) |
+| Set up a co-player's Windows PC to send its Auction House scans automatically (Codex) | [`docs/chatgpt/MIKE_CODEX_WOW_SCRIPTS.md`](MIKE_CODEX_WOW_SCRIPTS.md) |
 | Understand dataset provenance and external credits | [`data/README.md`](../../data/README.md) |
 | Understand the site and its ingestion/build machinery | [`README.md`](../../README.md); development rules in [`AGENTS.md`](../../AGENTS.md) |
 
