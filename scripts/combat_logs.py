@@ -495,11 +495,13 @@ def retain(record: dict, out: Path, level_by_label: dict[str, int], today: datet
 GUIDE = """# Combat logs: start here
 
 What's here, for reading and discussing performance. Everything is from the game's own combat log (advanced logging),
-filed automatically from the player's Mac. Times are the game's clock (the player's local time). Characters are named
-by the same labels as `feed/characters.md` in the main branch.
+filed automatically from the player's own computer. Times are the game's clock (the player's local time). Characters
+are named by labels (race and class, never names), as in `characters.md` on this branch, or, on the owner's `logs`
+branch, `feed/characters.md` in main.
 
-This is the repository's `logs` branch. Every path below is relative to it:
-https://raw.githubusercontent.com/faresbn/Tazdingo/logs/<path> (browse: https://github.com/faresbn/Tazdingo/tree/logs).
+This is the repository's `{branch}` branch. Every path below is relative to it:
+https://raw.githubusercontent.com/faresbn/Tazdingo/{branch}/<path> (browse: https://github.com/faresbn/Tazdingo/tree/{branch}).
+{characters}
 
 **What's kept:** for each character below level 60, the last 14 days or the last 10 logs, whichever is more; older
 ones are removed, and the branch keeps no history. Level-60 characters aren't filed here at all (their logs go to
@@ -544,7 +546,7 @@ commas, so parse as CSV). Fields are numbered from 0 at the event name:
 """
 
 
-def write_indexes(out: Path, record: dict) -> None:
+def write_indexes(out: Path, record: dict, branch: str = BRANCH) -> None:
     """README.md (the guide and the full list) and each day's index.md, for what's on the branch now."""
     for old in out.glob("*/*/index.md"):
         old.unlink()
@@ -587,7 +589,10 @@ def write_indexes(out: Path, record: dict) -> None:
                 else f"open world: {e['place']} ({e['fights']} fights)")
         size = f"{e['bytes'] / 1e6:.1f} MB" if e["kind"] == "instance" else "summary"
         catalog.append(f"| {e['date']} {e['start']} | {e['character']} | {what} | {size} | `{slug(e['character'])}/{e['date']}/index.md` |")
-    (out / "README.md").write_text(GUIDE + "\n".join(catalog) + "\n", encoding="utf-8")
+    note = ("\n**`characters.md`** has this player's characters (level, gear, talents, professions, reputations), as the game "
+            "last saved them: read it first for questions about a character.\n" if (out / "characters.md").is_file() else "")
+    (out / "README.md").write_text(GUIDE.replace("{branch}", branch).replace("{characters}", note) + "\n".join(catalog) + "\n",
+                                   encoding="utf-8")
 
 
 # --- The logs branch ------------------------------------------------------------------------------
@@ -599,27 +604,27 @@ def git(folder: Path, *args: str, check: bool = True) -> subprocess.CompletedPro
     return result
 
 
-def checkout(out: Path, repo: Path) -> None:
+def checkout(out: Path, repo: Path, branch: str = BRANCH) -> None:
     """A clone of only the logs branch at out (outside iCloud), created on first use; the branch starts empty."""
     if (out / ".git").is_dir():
-        git(out, "fetch", "-q", "origin", BRANCH, check=False)
+        git(out, "fetch", "-q", "origin", branch, check=False)
         return
     url = git(repo, "remote", "get-url", "origin").stdout.strip()
     out.parent.mkdir(parents=True, exist_ok=True)
-    if git(repo, "ls-remote", "--exit-code", "--heads", "origin", BRANCH, check=False).returncode == 0:
-        subprocess.run(["git", "clone", "-q", "--single-branch", "--branch", BRANCH, url, str(out)], check=True, capture_output=True)
+    if git(repo, "ls-remote", "--exit-code", "--heads", "origin", branch, check=False).returncode == 0:
+        subprocess.run(["git", "clone", "-q", "--single-branch", "--branch", branch, url, str(out)], check=True, capture_output=True)
     else:
         out.mkdir(parents=True, exist_ok=True)
         git(out, "init", "-q")
         git(out, "remote", "add", "origin", url)
-        git(out, "checkout", "-q", "--orphan", BRANCH)
+        git(out, "checkout", "-q", "--orphan", branch)
     for key in ("user.name", "user.email"):   # commit as the main repository does (its private address)
         value = git(repo, "config", key, check=False).stdout.strip()
         if value:
             git(out, "config", key, value)
 
 
-def publish(out: Path) -> str:
+def publish(out: Path, branch: str = BRANCH) -> str:
     """Replace the logs branch with one commit of what's in out and force-push it: no history is kept.
     Returns "unchanged" or the new commit."""
     if not git(out, "status", "--porcelain").stdout.strip() and git(out, "rev-parse", "--verify", "-q", "HEAD", check=False).returncode == 0:
@@ -627,10 +632,10 @@ def publish(out: Path) -> str:
     git(out, "checkout", "-q", "--orphan", "logs-new")
     git(out, "add", "-A")
     git(out, "commit", "-q", "-m", f"Combat logs as of {datetime.now():%Y-%m-%d %H:%M} (no history kept: see README.md)")
-    git(out, "branch", "-D", BRANCH, check=False)
-    git(out, "branch", "-m", BRANCH)
-    git(out, "push", "-q", "--force", "origin", f"{BRANCH}:{BRANCH}")
-    git(out, "update-ref", f"refs/remotes/origin/{BRANCH}", "HEAD")
+    git(out, "branch", "-D", branch, check=False)
+    git(out, "branch", "-m", branch)
+    git(out, "push", "-q", "--force", "origin", f"{branch}:{branch}")
+    git(out, "update-ref", f"refs/remotes/origin/{branch}", "HEAD")
     git(out, "reflog", "expire", "--expire=now", "--all", check=False)
     git(out, "gc", "-q", "--prune=now", check=False)
     return git(out, "rev-parse", "--short", "HEAD").stdout.strip()
@@ -645,7 +650,8 @@ def foreverdb_levels(foreverdb: Path | None) -> tuple[dict[str, str], dict[str, 
     return character_labels(db), character_levels(db)
 
 
-def refresh(game_logs: Path, foreverdb: Path | None, out: Path, now: float | None = None, settled: int = SETTLED) -> dict:
+def refresh(game_logs: Path, foreverdb: Path | None, out: Path, now: float | None = None, settled: int = SETTLED,
+            branch: str = BRANCH, with_characters: bool = False) -> dict:
     """File every settled game log into out, apply retention and rewrite the indexes (no git). settled=0 files a log
     still being written too; when it grows, the next run files it again and replaces what it wrote."""
     now = now or time.time()
@@ -673,17 +679,21 @@ def refresh(game_logs: Path, foreverdb: Path | None, out: Path, now: float | Non
             report["skipped at level 60"] += skipped
     report["removed by retention"] = retain(record, out, level_by_label, datetime.fromtimestamp(now))
     state_path.write_text(json.dumps(record, indent=1, ensure_ascii=False, sort_keys=True) + "\n")
-    write_indexes(out, record)
+    if with_characters and foreverdb and foreverdb.is_file():   # a second player's characters live on their own branch
+        from characters import extract
+        from feed import characters as characters_page
+        (out / "characters.md").write_text(characters_page(extract(foreverdb.read_bytes())), encoding="utf-8")
+    write_indexes(out, record, branch)
     return report
 
 
-def prune(game_logs: Path, out: Path, foreverdb: Path | None = None, now: float | None = None) -> list[str]:
+def prune(game_logs: Path, out: Path, foreverdb: Path | None = None, now: float | None = None, branch: str = BRANCH) -> list[str]:
     """Delete game logs older than a week from the game's folder, only when they're safely on GitHub: the pushed logs
     branch (origin/logs is HEAD) records the log at its current size and time, and has every file it wrote (or
     retention already removed it). A log with a level-60 character's play in it is never deleted."""
     now = now or time.time()
     head = git(out, "rev-parse", "-q", "--verify", "HEAD", check=False).stdout.strip()
-    pushed = git(out, "rev-parse", "-q", "--verify", f"refs/remotes/origin/{BRANCH}", check=False).stdout.strip()
+    pushed = git(out, "rev-parse", "-q", "--verify", f"refs/remotes/origin/{branch}", check=False).stdout.strip()
     if not head or head != pushed:
         return []
     sources = json.loads(git(out, "show", "HEAD:sources.json").stdout)["sources"]
@@ -705,12 +715,13 @@ def prune(game_logs: Path, out: Path, foreverdb: Path | None = None, now: float 
     return deleted
 
 
-def run(game_logs: Path, foreverdb: Path | None, out: Path, repo: Path = ROOT, settled: int = SETTLED) -> dict:
+def run(game_logs: Path, foreverdb: Path | None, out: Path, repo: Path = ROOT, settled: int = SETTLED,
+        branch: str = BRANCH, with_characters: bool = False) -> dict:
     """The 8-hourly job: update the logs branch's clone, file, publish (force-push), then prune the game's folder."""
-    checkout(out, repo)
-    report = refresh(game_logs, foreverdb, out, settled=settled)
-    report["published"] = publish(out)
-    report["deleted from the game folder"] = prune(game_logs, out, foreverdb)
+    checkout(out, repo, branch)
+    report = refresh(game_logs, foreverdb, out, settled=settled, branch=branch, with_characters=with_characters)
+    report["published"] = publish(out, branch)
+    report["deleted from the game folder"] = prune(game_logs, out, foreverdb, branch=branch)
     return report
 
 
@@ -721,9 +732,15 @@ if __name__ == "__main__":
     parser.add_argument("--out", type=Path, required=True, help="the logs branch's clone (outside iCloud)")
     parser.add_argument("--no-push", action="store_true", help="file and index only: no git, nothing deleted")
     parser.add_argument("--now", action="store_true", help="also file a log the game is still writing (it's refiled as it grows)")
+    parser.add_argument("--branch", default=BRANCH, help="the player's branch: logs (the owner), logs-<GitHub username> for a co-player")
+    parser.add_argument("--characters", action="store_true",
+                        help="also write characters.md on the branch from ForeverDB.lua (a co-player: main holds the owner's)")
     args = parser.parse_args()
+    if not re.fullmatch(r"logs(-[a-z0-9-]+)?", args.branch) or args.branch in ("main",):
+        raise SystemExit("--branch must be logs or logs-<github username>: this script force-pushes it")
     settled = 0 if args.now else SETTLED
+    options = {"settled": settled, "branch": args.branch, "with_characters": args.characters}
     if args.no_push:
-        print(json.dumps(refresh(args.logs, args.foreverdb, args.out, settled=settled), indent=2))
+        print(json.dumps(refresh(args.logs, args.foreverdb, args.out, **options), indent=2))
     else:
-        print(json.dumps(run(args.logs, args.foreverdb, args.out, settled=settled), indent=2))
+        print(json.dumps(run(args.logs, args.foreverdb, args.out, **options), indent=2))

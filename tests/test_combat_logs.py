@@ -5,6 +5,7 @@ import sys
 import tempfile
 import time
 import unittest
+import unittest.mock
 from datetime import datetime
 from pathlib import Path
 
@@ -196,6 +197,22 @@ class CombatLogs(unittest.TestCase):
         self.assertEqual(git(remote, "rev-list", "--count", "logs"), "1", "still a single commit")
         self.assertIn("orc-warlock/2026-11-12/index.md", git(remote, "ls-tree", "-r", "--name-only", "logs"))
         self.assertEqual(git(self.out, "log", "-1", "--format=%ae"), "test@example.com")
+
+    def test_a_co_players_branch_with_their_characters(self):
+        remote, repo = self.setup_remote()
+        fdb = Path(self.tmp.name) / "ForeverDB.lua"
+        fdb.write_text("x")
+        page = {"characters": [{"label": "Orc Warlock"}]}
+        with unittest.mock.patch("characters.extract", lambda raw: page), \
+             unittest.mock.patch("feed.characters", lambda record: "# Characters: progression\n\nOrc Warlock\n"):
+            combat_logs.run(self.game, fdb, self.out, repo, branch="logs-someone", with_characters=True)
+        files = git(remote, "ls-tree", "-r", "--name-only", "logs-someone")
+        self.assertIn("characters.md", files)
+        self.assertIn("orc-warlock/2026-11-11/1801-shadowfang-keep.txt", files)
+        guide = git(remote, "show", "logs-someone:README.md")
+        self.assertIn("raw.githubusercontent.com/faresbn/Tazdingo/logs-someone/", guide)
+        self.assertIn("`characters.md`", guide)
+        self.assertNotIn("logs", git(remote, "branch", "--list", "logs"), "the owner's branch is untouched")
 
     def test_old_game_logs_go_only_once_pushed_and_never_at_60(self):
         remote, repo = self.setup_remote()

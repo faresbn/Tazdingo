@@ -166,6 +166,13 @@ def characters(record: dict) -> str:
     return "\n".join(parts) + "\n"
 
 
+def co_players(root: Path) -> list[dict]:
+    """Co-players' own branches (data/game.json, "co_players": [{"branch": "logs-<GitHub username>"}]), each holding
+    their characters.md and combat logs (scripts/combat_logs.py --branch ... --characters, run on their PC)."""
+    game = json.loads((root / "data/game.json").read_text())
+    return [p for p in game.get("co_players", []) if str(p.get("branch", "")).startswith("logs-")]
+
+
 def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list[str]:
     """Write feed/ from the build's markets and context; returns the files written."""
     if feed.name != "feed":
@@ -249,6 +256,9 @@ def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list
         "- Combat logs, on the repository's `logs` branch: https://raw.githubusercontent.com/faresbn/Tazdingo/logs/README.md "
         "is the guide and the list. Instance runs complete (every player, as the game wrote them) and open-world summaries "
         "of our own characters; read the guide first, the instance files are large.",
+        *[f"- A co-player's characters and combat logs, on the `{p['branch']}` branch: "
+          f"https://raw.githubusercontent.com/faresbn/Tazdingo/{p['branch']}/README.md (the guide and list) and its `characters.md`."
+          for p in co_players(root)],
         *(["", "Original addon files, as uploaded (large; open only when asked about that addon):", *addon_lines] if addon_lines else []), "",
         "## How the data stays current", "",
         "- **Auction House prices:** each time the game saves Auctionator's file (a `/reload` or logout after a scan), the "

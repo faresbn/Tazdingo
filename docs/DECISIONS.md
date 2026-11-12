@@ -12,6 +12,11 @@ Asked for by Fares on 30 October ("I want to very quickly notice there's nothing
 - **Professions overview leads with the gold-making pages** (What to craft, Materials, Camping, Waylaid Crates); the professions follow as a compact grid.
 - **Oxblood is used** as the design decision below always said: for the open tab, the menu rule and the cheatsheet's margin line only.
 
+## A co-player's PC (12 November)
+
+- **A co-player gets a free GitHub account** (Fares: "Free GitHub account"), set up by Fares and fully controlled by Codex on their Windows PC ("it will only be for this sort of stuff"). Codex there must say what access it needs when it's blocked, not work around it.
+- **Their scans go through the inbox** (no writes to `main`); **their characters and combat logs go to their own branch, `logs-<username>`**, rebuilt and force-pushed like `logs`, by the same retention and level-60 rules. Their characters live there (`characters.md`), since `feed/characters.md` in `main` is the owner's. `data/game.json` `co_players` lists the branches for the feed map.
+
 ## ForeverDB's API on a new build (11 November)
 
 - **A build change refetches the lists, not every item** (was: everything again, about two hours): item details (vendor prices, categories) are copied from the previous build's cache and only new items are fetched. Fares: "I don't think you need to download the whole new build". `foreverdb_api.py fetch --full` still fetches everything, for a big patch.

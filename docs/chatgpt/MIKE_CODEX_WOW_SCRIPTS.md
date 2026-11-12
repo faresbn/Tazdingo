@@ -1,12 +1,13 @@
 # Tazdingo's automatic updates on a co-player's Windows PC: instructions for Codex
 
-**Reader:** Codex (CLI or desktop app) on a co-player's Windows 11 Home PC, working with that co-player. They have no GitHub account. Read this whole file before doing anything, then do the install steps with them, one at a time, and stop to ask whenever a step needs their answer or their hands.
+**Reader:** Codex (CLI or desktop app) on a co-player's Windows 11 Home PC, working with that co-player. Read this whole file before doing anything, then do the steps with them, one at a time, and stop to ask whenever a step needs their answer or their hands.
 
 **Address of this file:** https://raw.githubusercontent.com/faresbn/Tazdingo/main/docs/chatgpt/MIKE_CODEX_WOW_SCRIPTS.md (the repository is public: reading it needs no account).
 
 ## What this gives the co-player
 
-After every Auction House scan in World of Warcraft: Forever, when they `/reload` or log out, their PC sends the scan to Tazdingo by itself. A few minutes later it shows a Windows notification saying the prices are published, or why not. Their scans then sit in the same price history as Fares's (one market per realm and faction) on https://faresbn.github.io/Tazdingo/ and in the feed ChatGPT reads.
+- **Auction House scans, automatically (part 1).** After every scan, when they `/reload` or log out, their PC sends the scan to Tazdingo by itself, and a few minutes later a Windows notification says the prices are published, or why not. Their scans join the same price history as Fares's (one market per realm and faction) on https://faresbn.github.io/Tazdingo/ and in the feed ChatGPT reads.
+- **Their characters and combat logs (part 2), three times a day.** Their own characters' progression and their finished combat logs go to their own branch of the repository, `logs-<their GitHub username>`, for discussing performance with ChatGPT and uploading instance runs to Warcraft Logs.
 
 ## What runs on Fares's Mac (so you know the whole system)
 
@@ -20,31 +21,40 @@ A watcher script in the game's SavedVariables folder, run by macOS (launchd), wi
 
 It sends macOS notifications when a job finishes or fails. Fares's Mac writes to GitHub with his own account.
 
-**Why this PC needs much less:** the co-player has no GitHub account, so their PC can't write to the repository. Tazdingo has a route for exactly that: the **inbox**, which takes an addon's file with a **personal inbox key** and does the import on GitHub's side (`.github/workflows/inbox.yml` runs the same `ingest.py`). So this PC only has to notice a new scan and send the file. That's a small PowerShell script; **no AI runs on each update**, and Codex is only needed to install and troubleshoot it.
-
-## What this PC can and can't do yet
-
-| Capability | On this PC | Why |
-|---|---|---|
-| Auction House scans, automatically | **Yes** (this file) | The inbox takes `Auctionator.lua` with a personal key, no account needed |
-| Characters' progression (`ForeverDB.lua`) | **Not yet** | The inbox publishes what it receives exactly as sent, and `ForeverDB.lua` holds other players' names. It must be reduced to our own characters first (as `characters.py` does on the Mac), and the repository's character file is written for one account only. |
-| Combat logs | **Not yet** | They're too big for the inbox (25 MB per file, `.lua` only), and the logs branch is rebuilt by one machine at a time. |
-
-Fares decides how to add the last two. Don't improvise a route for them, and don't send either file through the inbox.
+**This PC does less, on purpose:**
+- **Scans go through the inbox,** which takes an addon's file with a **personal inbox key** and does the import on GitHub's side (`.github/workflows/inbox.yml` runs the same `ingest.py`). So this PC never writes to `main`, and never collides with the Mac's commits. Part 1 is a small PowerShell script; **no AI runs on each update**.
+- **Characters and combat logs go to the co-player's own branch** with `scripts/combat_logs.py --branch logs-<username> --characters`, the same script the Mac uses. That needs their GitHub account, invited to the repository by Fares. The branch is rebuilt as one commit and force-pushed each time, so GitHub keeps no history of old logs. Per character below level 60 it keeps the last 14 days or the last 10 logs, whichever is more; level-60 characters are skipped entirely (their logs go to Warcraft Logs by hand); game logs over a week old are deleted from the game's folder only once the pushed branch has them.
+- **ForeverDB's public data is refreshed by the Mac alone.** Don't run `foreverdb_data.py`, `item_names.py` or `foreverdb_api.py` here.
 
 ## Ground rules for Codex
 
 1. **Never see, type or store the inbox key yourself.** The co-player types it into the prompt in step 4. Don't echo it, log it, paste it into a file, a command line you show, or this conversation.
 2. **Send only `Auctionator.lua` through the inbox.** Everything sent there is **published** in the public repository, held submissions included. Never send `ForeverDB.lua`, `OneForAll.lua`, combat logs, screenshots or anything with a key or password in it.
-3. **The copy of the repository on this PC is read-only.** Don't commit or push from it, and don't edit its files: the script runs `git pull` on it before each check, and any local change would stop that.
-4. Keep everything in `%LOCALAPPDATA%\Tazdingo`. That folder isn't synced by OneDrive, which, like iCloud on the Mac, can make conflicting "file 2" copies.
-5. Ask before anything outside these steps.
+3. **Write to GitHub only through `combat_logs.py`, and only to `logs-<username>`.** It refuses any other branch. Never push to `main`, never force-push anything else, never commit `ForeverDB.lua` or `OneForAll.lua`, and don't change the repository's settings.
+4. **The copy of the repository in `%LOCALAPPDATA%\Tazdingo\repo` is read-only.** Don't edit or commit in it: the scripts run `git pull` on it, and a local change would stop that.
+5. Keep everything in `%LOCALAPPDATA%\Tazdingo`. That folder isn't synced by OneDrive, which, like iCloud on the Mac, can make conflicting "file 2" copies.
+6. Ask before anything outside these steps.
+
+## When you're blocked: say what access you need
+
+Fares has given you full control of the co-player's GitHub account for this work. When something stops you, **don't work around it and don't give up quietly**. Stop and tell Fares and the co-player, in plain words: what you were doing, what blocked it (with the exact message), and **exactly what they need to do or allow** so you can carry on. Then wait. For example:
+
+- **Codex's own sandbox or approval mode** blocks the network, writing outside the workspace, or running a command: say which setting or approval to change (for example, allow network access, add `%LOCALAPPDATA%\Tazdingo` as a writable folder, or approve the command), and why.
+- **A Windows prompt** (User Account Control for an install, a SmartScreen warning): say what will appear and that the co-player must click it themselves.
+- **PowerShell won't run scripts** ("running scripts is disabled"): the scheduled tasks already pass `-ExecutionPolicy Bypass`. For running a script by hand, suggest `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` and ask first.
+- **GitHub refuses a push** (403, "permission denied", or a sign-in window): the invitation may be unaccepted, or Git signed in as a different account. Say which, and what to click on github.com.
+- **A file or folder can't be read or deleted** (the game's `Logs` folder, `SavedVariables`): say which path, and ask the co-player to check its permissions or close the game.
+
+Never weaken security to get past a block (disable antivirus, change system-wide policies, store a password or key in plain text) without asking, and never put the inbox key anywhere but step 4's prompt.
 
 ## Before you start: what the co-player needs
 
 - **A personal inbox key from Fares**, sent privately (not in a shared chat or project). Without it the inbox refuses the file.
 - **Their realm and faction.** If they play on **CAMWOW EU5 Realm 2 PvP, Horde**, the inbox already knows that market and needs nothing more. Otherwise note it as `Realm Faction` (for example `Realm Alliance`) for step 5.
 - **Their WoW account folder.** It's under `C:\Program Files (x86)\World of Warcraft\_forever_\WTF\Account\`, unless the game is installed elsewhere. If there's more than one account folder, ask which one they play on.
+- **For part 2:** their GitHub account (Fares sets it up), the invitation to `faresbn/Tazdingo` accepted, and the **ForeverDB** addon installed (its file gives the characters' labels and levels).
+
+# Part 1: Auction House scans
 
 ## Install
 
@@ -189,6 +199,92 @@ Register-ScheduledTask -TaskName 'Tazdingo scan' -Action $action -Trigger $trigg
 2. In the game: scan the Auction House, `/reload`, and wait up to two minutes plus the inbox's two. Expect **"Tazdingo: scan published"**.
 3. `/reload` again without scanning. The log should say "no new scan in it", and nothing is sent.
 
+# Part 2: characters and combat logs
+
+### 8. The GitHub account and invitation
+
+Fares sets up the co-player's GitHub account and invites it to `faresbn/Tazdingo` (on github.com: the repository's **Settings → Collaborators → Add people**). Signed in as the co-player, accept the invitation (it's emailed, and shown at https://github.com/faresbn/Tazdingo/invitations). Note the account's **username**: their branch is `logs-<username>`, in lower case (for example `logs-mikesmith`).
+
+Set Git's name and email for this PC (use the account's private address: on github.com, **Settings → Emails**, "Keep my email addresses private" shows `<number>+<username>@users.noreply.github.com`):
+
+```powershell
+git -C "$env:LOCALAPPDATA\Tazdingo\repo" config user.name "<username>"
+git -C "$env:LOCALAPPDATA\Tazdingo\repo" config user.email "<number>+<username>@users.noreply.github.com"
+```
+
+### 9. Combat logging in the game
+
+Instance runs are only worth uploading with **advanced combat logging**: in the game, **Options → Gameplay → Network** (or System → Network) → **Advanced Combat Logging**, on. Then type `/combatlog` in chat at the start of each session; the game writes `WoWCombatLog-<date>_<time>.txt` into `_forever_\Logs`. If the co-player already uses an addon that turns logging on by itself, leave it.
+
+### 10. The first run, by hand
+
+```powershell
+$repo = "$env:LOCALAPPDATA\Tazdingo\repo"
+$game = "C:\Program Files (x86)\World of Warcraft\_forever_"            # the game folder (step 3)
+$sv   = "$game\WTF\Account\<ACCOUNT>\SavedVariables"                    # as in step 5
+py -3 "$repo\scripts\combat_logs.py" "$game\Logs" "$sv\ForeverDB.lua" --out "$env:LOCALAPPDATA\Tazdingo\logs-branch" --branch logs-<username> --characters --no-push
+```
+
+`--no-push` files everything into `%LOCALAPPDATA%\Tazdingo\logs-branch` without touching GitHub or deleting anything. It prints what it filed, what's still being written (a log changed in the last 30 minutes waits), and anything skipped at level 60. Look at `README.md` and `characters.md` there with the co-player: characters appear under labels like "Troll Mage", never names.
+
+Then the same command without `--no-push`. The first time, **Git Credential Manager** opens a browser window to sign in to GitHub: sign in as the co-player's account. It creates the branch, force-pushes it, and prints `"published": "<commit>"`. Check it at https://github.com/faresbn/Tazdingo/tree/logs-<username>.
+
+### 11. Three times a day
+
+Save this as `%LOCALAPPDATA%\Tazdingo\tazdingo-logs.ps1`, with the same paths as step 10:
+
+```powershell
+# tazdingo-logs.ps1: file this player's characters and finished combat logs on their branch, three times a day.
+$Branch = 'logs-<username>'
+$Game   = 'C:\Program Files (x86)\World of Warcraft\_forever_'
+$SV     = "$Game\WTF\Account\<ACCOUNT>\SavedVariables"
+
+$Base = Join-Path $env:LOCALAPPDATA 'Tazdingo'
+$Repo = Join-Path $Base 'repo'
+$Log  = Join-Path $Base 'update.log'
+function Log($text) { Add-Content -Path $Log -Value ("{0:yyyy-MM-dd HH:mm:ss} {1}" -f (Get-Date), $text) }
+function Notify($title, $text) {
+  try {
+    [Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] | Out-Null
+    $xml = [Windows.UI.Notifications.ToastNotificationManager]::GetTemplateContent([Windows.UI.Notifications.ToastTemplateType]::ToastText02)
+    $lines = $xml.GetElementsByTagName('text')
+    $lines.Item(0).AppendChild($xml.CreateTextNode($title)) | Out-Null
+    $lines.Item(1).AppendChild($xml.CreateTextNode($text)) | Out-Null
+    $app = '{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\WindowsPowerShell\v1.0\powershell.exe'
+    [Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier($app).Show([Windows.UI.Notifications.ToastNotification]::new($xml))
+  } catch { Log "notification failed: $_" }
+}
+
+git -C $Repo pull -q 2>$null
+$output = & py -3 "$Repo\scripts\combat_logs.py" "$Game\Logs" "$SV\ForeverDB.lua" --out (Join-Path $Base 'logs-branch') --branch $Branch --characters 2>&1
+$code = $LASTEXITCODE
+Add-Content -Path $Log -Value $output
+if ($code -eq 0) {
+  $published = ($output | Select-String '"published": "([^"]+)"').Matches.Groups[1].Value
+  if ($published -and $published -ne 'unchanged') { Notify 'Tazdingo: logs published' "Branch $Branch updated ($published)" }
+  Log 'logs: done'
+} else {
+  Log 'logs: failed (see above)'
+  Notify 'Tazdingo: logs not filed' 'See %LOCALAPPDATA%\Tazdingo\update.log'
+}
+```
+
+Register it at the Mac's times:
+
+```powershell
+$script = "$env:LOCALAPPDATA\Tazdingo\tazdingo-logs.ps1"
+$action = New-ScheduledTaskAction -Execute 'conhost.exe' -Argument "--headless powershell.exe -NoProfile -ExecutionPolicy Bypass -File `"$script`""
+$triggers = @('06:00', '14:00', '22:00') | ForEach-Object { New-ScheduledTaskTrigger -Daily -At $_ }
+$settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -StartWhenAvailable -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Hours 1)
+Register-ScheduledTask -TaskName 'Tazdingo logs' -Action $action -Trigger $triggers -Settings $settings -Description 'Files characters and combat logs on this player''s Tazdingo branch'
+```
+
+`-StartWhenAvailable` runs a missed time once the PC is on again.
+
+### 12. Tell Fares the branch
+
+Give Fares (or his Claude Code) the branch name. It's added to `data/game.json` as `"co_players": [{"branch": "logs-<username>"}]`, and from then on `feed/index.md`, the map ChatGPT reads first, points to the branch's `README.md` (the guide to its logs) and `characters.md`.
+
 ## What the notifications mean
 
 | Notification | Meaning | Do |
@@ -200,6 +296,8 @@ Register-ScheduledTask -TaskName 'Tazdingo scan' -Action $action -Trigger $trigg
 | Scan not sent: "say which market…" | The realm isn't known yet | Set `$Market` to `Realm Faction` in the script |
 | Scan not sent: busy or full | The inbox's hourly limit | Nothing: the next run tries again |
 | Scan not sent: no answer | No internet, or the inbox is down | Nothing: the next run tries again |
+| Logs published | Their branch was updated | Nothing |
+| Logs not filed | `combat_logs.py` failed: the log says why | See "When you're blocked" |
 
 ## Troubleshooting
 
@@ -212,7 +310,8 @@ Register-ScheduledTask -TaskName 'Tazdingo scan' -Action $action -Trigger $trigg
 
 ```powershell
 Unregister-ScheduledTask -TaskName 'Tazdingo scan' -Confirm:$false
+Unregister-ScheduledTask -TaskName 'Tazdingo logs' -Confirm:$false
 Remove-Item -Recurse "$env:LOCALAPPDATA\Tazdingo"
 ```
 
-Ask Fares to revoke the key too.
+Ask Fares to revoke the key, and to remove the branch `logs-<username>` and its line in `data/game.json`.
