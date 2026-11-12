@@ -1,27 +1,29 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Consumable: Permanent
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-11 17:37 UTC. Uploads in the 30-day window: 20.
+- **Latest scan:** 2026-11-12 03:40 UTC. Uploads in the 30-day window: 21.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Forceful Heavy Armor Kit | 252453 | 21s 0c | 2026-11-11 17:37 UTC | 19s 99c | 19s 99c | moving | 5 of 7 | 254 |  |
-| Forceful Medium Armor Kit | 252437 | 8s 70c | 2026-11-11 17:37 UTC | 8s 60c | 8s 60c | steady | 6 of 7 | 420 |  |
-| Forceful Thick Armor Kit | 252463 | 51s 29c | 2026-11-11 15:03 UTC | 1g 1s 0c | 1g 1s 0c | volatile | 3 of 7 | 55 |  |
-| Heavy Armor Kit | 4265 | 6s 50c | 2026-11-11 17:37 UTC | 6s 50c | 6s 50c | moving | 5 of 7 | 592 |  |
-| Iron Counterweight | 6043 | 5s 69c | 2026-11-11 17:37 UTC | 14s 79c | 14s 79c | volatile | 5 of 7 | 125 |  |
-| Iron Shield Spike | 6042 | 8s 0c | 2026-11-11 17:37 UTC | 14s 75c | 14s 75c | moving | 5 of 7 | 142 |  |
-| Light Armor Kit | 2304 | 15c | 2026-11-11 17:37 UTC | 15c | 15c | steady | 6 of 7 | 5691 |  |
-| Medium Armor Kit | 2313 | 2s 54c | 2026-11-11 17:37 UTC | 2s 64c | 2s 64c | moving | 6 of 7 | 550 |  |
-| Mithril Shield Spike | 7967 | 80s 99c | 2026-11-11 17:37 UTC | 1g 30s 77c | 1g 30s 77c | volatile | 3 of 7 | 47 |  |
-| Mithril Spurs | 7969 | 40s 0c | 2026-11-11 17:37 UTC | 1g 10s 0c | 1g 10s 0c | volatile | 3 of 7 | 41 |  |
-| Mystic Heavy Armor Kit | 252452 | 9s 25c | 2026-11-11 17:37 UTC | 11s 99c | 11s 99c | volatile | 5 of 7 | 315 |  |
-| Mystic Medium Armor Kit | 252436 | 5s 98c | 2026-11-11 17:37 UTC | 7s 72c | 7s 72c | moving | 6 of 7 | 311 |  |
-| Mystic Thick Armor Kit | 252462 | 58s 0c | 2026-11-11 17:37 UTC | 1g 18s 0c | 1g 18s 0c | volatile | 3 of 7 | 44 |  |
-| Rugged Armor Kit | 15564 | 41s 0c | 2026-11-11 17:37 UTC | 99s 0c | 99s 0c | volatile | 3 of 7 | 36 |  |
-| Steel Weapon Chain | 6041 | 1g 45s 98c | 2026-11-11 17:37 UTC | 5g 44s 50c | 5g 44s 50c | volatile | 4 of 7 | 5 |  |
-| Thick Armor Kit | 8173 | 12s 43c | 2026-11-11 17:37 UTC | 15s 0c | 15s 0c | steady | 4 of 7 | 136 |  |
-| Thorium Shield Spike | 12645 | 25g 0s 0c | 2026-11-11 17:37 UTC | 25g 0s 0c |  | too new | 1 of 7 | 2 |  |
+| Forceful Heavy Armor Kit | 252453 | 39s 99c | 2026-11-12 03:40 UTC | 20s 49c | 20s 49c | volatile | 6 of 8 | 259 |  |
+| Forceful Medium Armor Kit | 252437 | 9s 50c | 2026-11-12 03:40 UTC | 8s 60c | 8s 70c | steady | 7 of 8 | 360 |  |
+| Forceful Rugged Armor Kit | 252488 | 14g 1s 0c | 2026-11-12 03:40 UTC | 14g 1s 0c |  | too new | 1 of 8 | 4 |  |
+| Forceful Thick Armor Kit | 252463 | 50s 98c | 2026-11-12 03:40 UTC | 76s 14c | 76s 14c | moving | 4 of 8 | 127 |  |
+| Heavy Armor Kit | 4265 | 6s 49c | 2026-11-12 03:40 UTC | 6s 50c | 6s 50c | moving | 6 of 8 | 693 |  |
+| Iron Counterweight | 6043 | 5s 65c | 2026-11-12 03:40 UTC | 13s 79c | 13s 79c | volatile | 6 of 8 | 110 |  |
+| Iron Shield Spike | 6042 | 7s 0c | 2026-11-12 03:40 UTC | 14s 24c | 14s 24c | volatile | 6 of 8 | 132 |  |
+| Light Armor Kit | 2304 | 2s 70c | 2026-11-12 03:40 UTC | 15c | 15c | steady | 7 of 8 | 5587 |  |
+| Medium Armor Kit | 2313 | 2s 50c | 2026-11-12 03:40 UTC | 2s 45c | 2s 50c | moving | 7 of 8 | 532 |  |
+| Mithril Shield Spike | 7967 | 79s 0c | 2026-11-12 03:40 UTC | 1g 5s 88c | 1g 5s 88c | moving | 4 of 8 | 45 |  |
+| Mithril Spurs | 7969 | 14s 99c | 2026-11-12 03:40 UTC | 75s 0c | 75s 0c | volatile | 4 of 8 | 262 |  |
+| Mystic Heavy Armor Kit | 252452 | 9s 22c | 2026-11-12 03:40 UTC | 10s 62c | 10s 62c | volatile | 6 of 8 | 260 |  |
+| Mystic Medium Armor Kit | 252436 | 7s 70c | 2026-11-12 03:40 UTC | 7s 27c | 7s 70c | moving | 7 of 8 | 379 |  |
+| Mystic Rugged Armor Kit | 252487 | 16g 1s 0c | 2026-11-12 03:40 UTC | 16g 1s 0c |  | too new | 1 of 8 | 1 |  |
+| Mystic Thick Armor Kit | 252462 | 90s 0c | 2026-11-12 03:40 UTC | 1g 4s 0c | 1g 4s 0c | moving | 4 of 8 | 64 |  |
+| Rugged Armor Kit | 15564 | 40s 0c | 2026-11-12 03:40 UTC | 70s 0c | 70s 0c | volatile | 4 of 8 | 64 |  |
+| Steel Weapon Chain | 6041 | 1g 0s 0c | 2026-11-12 03:40 UTC | 4g 99s 0c | 4g 99s 0c | volatile | 5 of 8 | 7 |  |
+| Thick Armor Kit | 8173 | 12s 20c | 2026-11-12 03:40 UTC | 15s 0c | 15s 0c | steady | 5 of 8 | 160 |  |
+| Thorium Shield Spike | 12645 | 50g 8s 0c | 2026-11-12 03:40 UTC | 37g 54s 0c |  | too new | 2 of 8 | 2 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

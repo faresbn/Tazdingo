@@ -1,93 +1,93 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Trade Goods: Other
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-11 17:37 UTC. Uploads in the 30-day window: 20.
+- **Latest scan:** 2026-11-12 03:40 UTC. Uploads in the 30-day window: 21.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Aquamarine | 7909 | 13s 76c | 2026-11-11 17:37 UTC | 13s 87c | 13s 87c | volatile | 6 of 7 | 204 |  |
-| Arcane Crystal | 12363 | 8g 66s 0c | 2026-11-11 17:37 UTC | 16g 83s 0c |  | too new | 2 of 7 | 91 |  |
-| Azerothian Diamond | 12800 | 1g 89s 1c | 2026-11-11 17:37 UTC | 1g 89s 1c |  | too new | 1 of 7 | 50 |  |
-| Black Dye | 2325 | 8s 16c | 2026-11-11 17:37 UTC | 8s 58c | 8s 58c | moving | 6 of 7 | 104 |  |
-| Black Pearl | 7971 | 23s 97c | 2026-11-11 17:37 UTC | 1g 11s 0c | 1g 11s 0c | volatile | 5 of 7 | 229 |  |
-| Black Vitriol | 9262 | 10s 1c | 2026-11-11 17:37 UTC | 11s 0c | 11s 0c | volatile | 5 of 7 | 110 |  |
-| Blackmouth Oil | 6370 | 5s 29c | 2026-11-11 17:37 UTC | 3s 32c | 3s 32c | moving | 6 of 7 | 957 |  |
-| Blank Parchment | 10648 | 5s 99c | 2026-11-11 15:03 UTC | 2s 0c | 2s 0c | volatile | 5 of 7 | 4 |  |
-| Bleach | 2324 | 25c | 2026-11-11 17:37 UTC | 23c | 23c | volatile | 6 of 7 | 326 |  |
-| Blood of the Mountain | 11382 | 28g 96s 99c | 2026-11-11 17:37 UTC | 28g 96s 99c |  | too new | 1 of 7 | 9 |  |
-| Blue Dye | 6260 | 65c | 2026-11-11 15:03 UTC | 63c | 63c | moving | 6 of 7 | 369 |  |
-| Blue Pearl | 4611 | 18s 79c | 2026-11-11 17:37 UTC | 47s 0c | 47s 0c | moving | 5 of 7 | 471 |  |
-| Blue Sapphire | 12361 | 3g 99s 0c | 2026-11-11 17:37 UTC | 4g 0s 0c | 4g 0s 0c | moving | 3 of 7 | 9 |  |
-| Cerulean Dye | 249409 | 53s 12c | 2026-11-11 17:37 UTC | 31s 62c | 31s 62c | volatile | 6 of 7 | 584 |  |
-| Chef's Knife | 273636 | 3s 0c | 2026-11-11 17:37 UTC | 3s 0c | 3s 0c | moving | 5 of 7 | 17 |  |
-| Citrine | 3864 | 8s 0c | 2026-11-11 17:37 UTC | 12s 55c | 12s 55c | volatile | 6 of 7 | 269 |  |
-| Crystal Vial | 8925 | 4s 59c | 2026-11-11 17:37 UTC | 3s 89c | 3s 89c | moving | 6 of 7 | 176 |  |
-| Dark Rune | 20520 | 9g 30s 0c | 2026-11-11 17:37 UTC | 9g 30s 0c |  | too new | 1 of 7 | 17 |  |
-| Empty Vial | 3371 | 7c | 2026-11-11 17:37 UTC | 6c | 6c | moving | 6 of 7 | 5976 |  |
-| Fel Crystal | 248819 | 43g 55s 0c | 2026-11-11 17:37 UTC | 43g 55s 0c |  | too new | 1 of 7 | 34 |  |
-| Fire Oil | 6371 | 77c | 2026-11-11 17:37 UTC | 1s 0c | 1s 0c | volatile | 5 of 7 | 1664 |  |
-| Firefin Snapper | 6359 | 79c | 2026-11-11 17:37 UTC | 1s 52c | 1s 52c | volatile | 6 of 7 | 1850 |  |
-| Fist-sized Spinneret | 878 | 77c | 2026-11-11 17:37 UTC | 98c | 98c | steady | 4 of 7 | 70 |  |
-| Flask of Big Mojo | 8152 | 5s 45c | 2026-11-11 17:37 UTC | 7s 0c | 7s 0c | moving | 3 of 7 | 84 |  |
-| Flask of Mojo | 8151 | 2s 80c | 2026-11-11 17:37 UTC | 7s 49c | 7s 49c | volatile | 5 of 7 | 997 |  |
-| Flint and Tinder | 4471 | 1s 0c | 2026-11-11 17:37 UTC | 1s 0c | 1s 0c | steady | 6 of 7 | 213 |  |
-| Ghost Dye | 9210 | 1g 99s 0c | 2026-11-11 17:37 UTC | 3g 37s 37c |  | too new | 2 of 7 | 128 |  |
-| Golden Pearl | 13926 | 2g 94s 99c | 2026-11-11 17:37 UTC | 2g 99s 0c | 2g 99s 0c | moving | 5 of 7 | 48 |  |
-| Gray Dye | 4340 | 3s 96c | 2026-11-11 17:37 UTC | 4s 2c | 4s 2c | steady | 6 of 7 | 230 |  |
-| Green Dye | 2605 | 1s 54c | 2026-11-11 17:37 UTC | 1s 76c | 1s 76c | moving | 6 of 7 | 598 |  |
-| Hot Spices | 2692 | 42c | 2026-11-11 17:37 UTC | 58c | 58c | moving | 6 of 7 | 1816 |  |
-| Huge Emerald | 12364 | 1g 39s 0c | 2026-11-11 17:37 UTC | 5g 95s 0c |  | too new | 2 of 7 | 26 |  |
-| Huge Venom Sac | 19441 | 18s 99c | 2026-11-11 17:37 UTC | 18s 99c | 18s 99c | steady | 6 of 7 | 14 |  |
-| Imbued Vial | 18256 | 36s 0c | 2026-11-11 17:37 UTC | 49s 0c | 49s 0c | moving | 4 of 7 | 28 |  |
-| Iridescent Pearl | 5500 | 10s 29c | 2026-11-11 17:37 UTC | 21s 99c | 21s 99c | volatile | 6 of 7 | 468 |  |
-| Jade | 1529 | 6s 98c | 2026-11-11 17:37 UTC | 6s 99c | 6s 99c | steady | 6 of 7 | 888 |  |
-| Large Fang | 5637 | 80c | 2026-11-11 17:37 UTC | 1s 40c | 1s 40c | moving | 5 of 7 | 875 |  |
-| Large Opal | 12799 | 94s 0c | 2026-11-11 17:37 UTC | 90s 0c | 90s 0c | volatile | 5 of 7 | 7 |  |
-| Large Venom Sac | 1288 | 1s 92c | 2026-11-11 17:37 UTC | 1s 93c | 1s 93c | steady | 6 of 7 | 816 |  |
-| Larval Acid | 18512 | 2g 47s 0c | 2026-11-11 17:37 UTC | 6g 23s 50c |  | too new | 2 of 7 | 63 |  |
-| Leaded Vial | 3372 | 59c | 2026-11-11 17:37 UTC | 68c | 68c | volatile | 6 of 7 | 1824 |  |
-| Leather Tourniquet | 255721 | 1s 47c | 2026-11-11 17:37 UTC | 4s 98c | 4s 98c | volatile | 5 of 7 | 277 |  |
-| Lesser Moonstone | 1705 | 6s 0c | 2026-11-11 15:03 UTC | 5s 99c | 5s 99c | steady | 6 of 7 | 723 |  |
-| Lightning Eel | 13757 | 3s 84c | 2026-11-11 17:37 UTC | 9s 0c | 9s 0c | volatile | 4 of 7 | 299 |  |
-| Long Elegant Feather | 4589 | 83s 85c | 2026-11-11 17:37 UTC | 86s 42c | 86s 42c | volatile | 4 of 7 | 43 |  |
-| Magenta Dye | 249430 | 49s 94c | 2026-11-11 17:37 UTC | 49s 94c | 49s 94c | volatile | 5 of 7 | 513 |  |
-| Malachite | 774 | 15c | 2026-11-11 17:37 UTC | 15c | 15c | steady | 6 of 7 | 2062 |  |
-| Mild Spices | 2678 | 6c | 2026-11-11 15:03 UTC | 5c | 5c | moving | 6 of 7 | 6226 |  |
-| Moss Agate | 1206 | 5s 30c | 2026-11-11 17:37 UTC | 4s 17c | 4s 17c | moving | 6 of 7 | 916 |  |
-| Naga Scale | 7072 | 1s 49c | 2026-11-11 17:37 UTC | 1s 50c | 1s 50c | volatile | 5 of 7 | 1119 |  |
-| Oily Blackmouth | 6358 | 2s 7c | 2026-11-11 17:37 UTC | 1s 16c | 1s 16c | moving | 6 of 7 | 3784 |  |
-| Orange Dye | 6261 | 3s 33c | 2026-11-11 17:37 UTC | 4s 0c | 4s 0c | volatile | 5 of 7 | 40 |  |
-| Pink Dye | 10290 | 10s 0c | 2026-11-11 15:03 UTC | 27s 0c | 27s 0c | volatile | 4 of 7 | 4 |  |
-| Potent Anti-Venom | 255715 | 4s 0c | 2026-11-11 17:37 UTC | 4s 0c |  | too new | 1 of 7 | 143 |  |
-| Powerful Mojo | 12804 | 1g 30s 99c | 2026-11-11 17:37 UTC | 1g 19s 0c |  | too new | 1 of 7 | 10 |  |
-| Purple Dye | 4342 | 47s 0c | 2026-11-11 17:37 UTC | 26s 50c | 26s 50c | moving | 4 of 7 | 40 |  |
-| Red Dye | 2604 | 3s 90c | 2026-11-11 17:37 UTC | 71c | 71c | moving | 6 of 7 | 282 |  |
-| Righteous Orb | 12811 | 20g 0s 0c | 2026-11-11 17:37 UTC | 20g 0s 0c |  | too new | 1 of 7 | 32 |  |
-| Shadowgem | 1210 | 2s 20c | 2026-11-11 17:37 UTC | 2s 37c | 2s 37c | steady | 6 of 7 | 812 |  |
-| Sharp Claw | 5635 | 45c | 2026-11-11 15:03 UTC | 45c | 45c | steady | 6 of 7 | 1135 |  |
-| Simple Poultice | 255716 | 28c | 2026-11-11 17:37 UTC | 29c | 29c | moving | 5 of 7 | 1364 |  |
-| Simple Wood | 4470 | 40c | 2026-11-11 17:37 UTC | 43c | 43c | steady | 6 of 7 | 2691 |  |
-| Small Flame Sac | 4402 | 12s 91c | 2026-11-11 17:37 UTC | 12s 0c | 12s 0c | steady | 5 of 7 | 352 |  |
-| Small Lustrous Pearl | 5498 | 2s 87c | 2026-11-11 17:37 UTC | 3s 6c | 3s 6c | moving | 6 of 7 | 576 |  |
-| Small Venom Sac | 1475 | 96c | 2026-11-11 17:37 UTC | 99c | 99c | moving | 6 of 7 | 660 |  |
-| Soothing Spices | 3713 | 1s 80c | 2026-11-11 17:37 UTC | 1s 48c | 1s 48c | moving | 6 of 7 | 865 |  |
-| Star Ruby | 7910 | 2g 0s 0c | 2026-11-11 17:37 UTC | 52s 0c | 52s 0c | moving | 5 of 7 | 82 |  |
-| Star Wood | 11291 | 45s 0c | 2026-11-11 17:37 UTC | 44s 50c | 44s 50c | steady | 6 of 7 | 14 |  |
-| Stonescale Eel | 13422 | 2s 60c | 2026-11-11 17:37 UTC | 2s 57c | 2s 57c | moving | 6 of 7 | 1588 |  |
-| Stonescale Oil | 13423 | 5s 99c | 2026-11-11 17:37 UTC | 16s 85c | 16s 85c | volatile | 3 of 7 | 173 |  |
-| Strong Flux | 3466 | 21s 50c | 2026-11-11 17:37 UTC | 20s 50c | 20s 50c | steady | 6 of 7 | 67 |  |
-| Sulfuric Acid | 249410 | 9s 84c | 2026-11-11 17:37 UTC | 3s 92c | 3s 92c | moving | 6 of 7 | 1108 |  |
-| Superior Poultice | 255718 | 19s 97c | 2026-11-11 17:37 UTC | 19s 97c |  | too new | 1 of 7 | 382 |  |
-| Swollen Venom Sac | 255645 | 11s 28c | 2026-11-11 17:37 UTC | 64s 97c | 64s 97c | volatile | 3 of 7 | 45 |  |
-| Thick Logs | 272941 | 15g 0s 0c | 2026-11-11 17:37 UTC | 17g 25s 0c |  | too new | 2 of 7 | 2 |  |
-| Tigerseye | 818 | 1s 0c | 2026-11-11 17:37 UTC | 1s 2c | 1s 2c | steady | 6 of 7 | 871 |  |
-| Torbernite | 248820 | 14g 89s 0c | 2026-11-11 17:37 UTC | 14g 89s 0c |  | too new | 1 of 7 | 22 |  |
-| Viridian Dye | 249431 | 2g 75s 64c | 2026-11-11 17:37 UTC | 5g 99s 0c | 5g 99s 0c | moving | 3 of 7 | 32 |  |
-| Weak Flux | 2880 | 1s 2c | 2026-11-11 17:37 UTC | 1s 1c | 1s 1c | steady | 6 of 7 | 425 |  |
-| Whimsyfin | 251524 | 9s 98c | 2026-11-11 17:37 UTC | 14s 80c | 14s 80c | moving | 3 of 7 | 155 |  |
-| Wicked Claw | 8146 | 5s 43c | 2026-11-11 17:37 UTC | 5s 60c | 5s 60c | steady | 4 of 7 | 604 |  |
-| Woolen Tourniquet | 255720 | 60c | 2026-11-11 15:03 UTC | 94c | 94c | moving | 5 of 7 | 225 |  |
-| Yellow Dye | 4341 | 2s 39c | 2026-11-11 17:37 UTC | 5s 25c | 5s 25c | volatile | 6 of 7 | 222 |  |
+| Aquamarine | 7909 | 12s 16c | 2026-11-12 03:40 UTC | 12s 96c | 13s 76c | volatile | 7 of 8 | 261 |  |
+| Arcane Crystal | 12363 | 7g 87s 0c | 2026-11-12 03:40 UTC | 8g 66s 0c | 8g 66s 0c | volatile | 3 of 8 | 26 |  |
+| Azerothian Diamond | 12800 | 1g 33s 0c | 2026-11-12 03:40 UTC | 1g 61s 0c |  | too new | 2 of 8 | 38 |  |
+| Black Dye | 2325 | 10s 10c | 2026-11-12 03:40 UTC | 9s 8c | 9s 0c | moving | 7 of 8 | 42 |  |
+| Black Pearl | 7971 | 18s 11c | 2026-11-12 03:40 UTC | 70s 48c | 70s 48c | volatile | 6 of 8 | 268 |  |
+| Black Vitriol | 9262 | 10s 96c | 2026-11-12 03:40 UTC | 10s 98c | 10s 98c | volatile | 6 of 8 | 114 |  |
+| Blackmouth Oil | 6370 | 5s 30c | 2026-11-12 03:40 UTC | 3s 47c | 3s 44c | volatile | 7 of 8 | 844 |  |
+| Blank Parchment | 10648 | 5s 99c | 2026-11-12 03:40 UTC | 3s 99c | 3s 99c | volatile | 6 of 8 | 4 |  |
+| Bleach | 2324 | 20c | 2026-11-12 03:40 UTC | 21c | 23c | volatile | 7 of 8 | 383 |  |
+| Blood of the Mountain | 11382 | 28g 94s 0c | 2026-11-12 03:40 UTC | 28g 95s 49c |  | too new | 2 of 8 | 8 |  |
+| Blue Dye | 6260 | 57c | 2026-11-12 03:40 UTC | 59c | 62c | moving | 7 of 8 | 378 |  |
+| Blue Pearl | 4611 | 19s 76c | 2026-11-12 03:40 UTC | 36s 0c | 36s 0c | volatile | 6 of 8 | 561 |  |
+| Blue Sapphire | 12361 | 3g 40s 0c | 2026-11-12 03:40 UTC | 3g 99s 50c | 3g 99s 50c | steady | 4 of 8 | 20 |  |
+| Cerulean Dye | 249409 | 51s 93c | 2026-11-12 03:40 UTC | 34s 42c | 33s 85c | volatile | 7 of 8 | 687 |  |
+| Chef's Knife | 273636 | 2s 98c | 2026-11-12 03:40 UTC | 3s 0c | 3s 0c | moving | 6 of 8 | 16 |  |
+| Citrine | 3864 | 8s 45c | 2026-11-12 03:40 UTC | 10s 97c | 11s 45c | volatile | 7 of 8 | 374 |  |
+| Crystal Vial | 8925 | 6s 95c | 2026-11-12 03:40 UTC | 3s 89c | 4s 28c | moving | 7 of 8 | 187 |  |
+| Dark Rune | 20520 | 6g 73s 0c | 2026-11-12 03:40 UTC | 8g 1s 50c |  | too new | 2 of 8 | 43 |  |
+| Empty Vial | 3371 | 7c | 2026-11-12 03:40 UTC | 6c | 6c | moving | 7 of 8 | 7051 |  |
+| Fel Crystal | 248819 | 23g 98s 94c | 2026-11-12 03:40 UTC | 33g 76s 97c |  | too new | 2 of 8 | 50 |  |
+| Fire Oil | 6371 | 79c | 2026-11-12 03:40 UTC | 1s 0c | 1s 0c | volatile | 6 of 8 | 1674 |  |
+| Firefin Snapper | 6359 | 58c | 2026-11-12 03:40 UTC | 86c | 1s 5c | volatile | 7 of 8 | 2591 |  |
+| Fist-sized Spinneret | 878 | 56c | 2026-11-12 03:40 UTC | 98c | 98c | moving | 5 of 8 | 80 |  |
+| Flask of Big Mojo | 8152 | 5s 32c | 2026-11-12 03:40 UTC | 6s 22c | 6s 22c | moving | 4 of 8 | 248 |  |
+| Flask of Mojo | 8151 | 2s 50c | 2026-11-12 03:40 UTC | 5s 6c | 5s 6c | volatile | 6 of 8 | 650 |  |
+| Flint and Tinder | 4471 | 1s 0c | 2026-11-12 03:40 UTC | 1s 0c | 1s 0c | steady | 7 of 8 | 238 |  |
+| Ghost Dye | 9210 | 1g 93s 0c | 2026-11-12 03:40 UTC | 1g 99s 0c | 1g 99s 0c | volatile | 3 of 8 | 153 |  |
+| Golden Pearl | 13926 | 3g 0s 11c | 2026-11-12 03:40 UTC | 2g 99s 55c | 2g 99s 55c | moving | 6 of 8 | 48 |  |
+| Gray Dye | 4340 | 3s 82c | 2026-11-12 03:40 UTC | 3s 99c | 4s 0c | steady | 7 of 8 | 237 |  |
+| Green Dye | 2605 | 1s 29c | 2026-11-12 03:40 UTC | 1s 54c | 1s 55c | moving | 7 of 8 | 742 |  |
+| Hot Spices | 2692 | 59c | 2026-11-12 03:40 UTC | 55c | 59c | moving | 7 of 8 | 2553 |  |
+| Huge Emerald | 12364 | 3g 29s 0c | 2026-11-12 03:40 UTC | 3g 29s 0c | 3g 29s 0c | volatile | 3 of 8 | 51 |  |
+| Huge Venom Sac | 19441 | 15s 97c | 2026-11-12 03:40 UTC | 17s 48c | 18s 99c | steady | 7 of 8 | 15 |  |
+| Imbued Vial | 18256 | 36s 0c | 2026-11-12 03:40 UTC | 40s 0c | 40s 0c | moving | 5 of 8 | 25 |  |
+| Iridescent Pearl | 5500 | 8s 99c | 2026-11-12 03:40 UTC | 13s 0c | 14s 0c | volatile | 7 of 8 | 525 |  |
+| Jade | 1529 | 7s 0c | 2026-11-12 03:40 UTC | 6s 99c | 7s 0c | steady | 7 of 8 | 863 |  |
+| Large Fang | 5637 | 80c | 2026-11-12 03:40 UTC | 1s 19c | 1s 19c | moving | 6 of 8 | 998 |  |
+| Large Opal | 12799 | 90s 0c | 2026-11-12 03:40 UTC | 90s 0c | 90s 0c | volatile | 6 of 8 | 9 |  |
+| Large Venom Sac | 1288 | 2s 29c | 2026-11-12 03:40 UTC | 1s 93c | 1s 94c | steady | 7 of 8 | 937 |  |
+| Larval Acid | 18512 | 75s 99c | 2026-11-12 03:40 UTC | 2g 47s 0c | 2g 47s 0c | volatile | 3 of 8 | 125 |  |
+| Leaded Vial | 3372 | 50c | 2026-11-12 03:40 UTC | 50c | 50c | volatile | 7 of 8 | 2644 |  |
+| Leather Tourniquet | 255721 | 1s 23c | 2026-11-12 03:40 UTC | 3s 62c | 3s 62c | volatile | 6 of 8 | 223 |  |
+| Lesser Moonstone | 1705 | 5s 95c | 2026-11-12 03:40 UTC | 5s 97c | 5s 99c | steady | 7 of 8 | 698 |  |
+| Lightning Eel | 13757 | 2s 22c | 2026-11-12 03:40 UTC | 8s 0c | 8s 0c | volatile | 5 of 8 | 325 |  |
+| Long Elegant Feather | 4589 | 55s 68c | 2026-11-12 03:40 UTC | 83s 85c | 83s 85c | volatile | 5 of 8 | 69 |  |
+| Magenta Dye | 249430 | 50s 32c | 2026-11-12 03:40 UTC | 50s 13c | 50s 13c | volatile | 6 of 8 | 470 |  |
+| Malachite | 774 | 15c | 2026-11-12 03:40 UTC | 15c | 15c | steady | 7 of 8 | 2110 |  |
+| Mild Spices | 2678 | 4c | 2026-11-12 03:40 UTC | 4c | 5c | moving | 7 of 8 | 7026 |  |
+| Moss Agate | 1206 | 6s 5c | 2026-11-12 03:40 UTC | 4s 50c | 4s 24c | moving | 7 of 8 | 844 |  |
+| Naga Scale | 7072 | 1s 50c | 2026-11-12 03:40 UTC | 1s 50c | 1s 50c | volatile | 6 of 8 | 1148 |  |
+| Oily Blackmouth | 6358 | 2s 49c | 2026-11-12 03:40 UTC | 1s 23c | 1s 19c | moving | 7 of 8 | 3192 |  |
+| Orange Dye | 6261 | 3s 33c | 2026-11-11 17:37 UTC | 4s 0c | 4s 0c | volatile | 5 of 8 | 40 |  |
+| Pink Dye | 10290 | 9s 55c | 2026-11-12 03:40 UTC | 21s 0c | 21s 0c | volatile | 5 of 8 | 7 |  |
+| Potent Anti-Venom | 255715 | 11s 0c | 2026-11-12 03:40 UTC | 7s 50c |  | too new | 2 of 8 | 80 |  |
+| Powerful Mojo | 12804 | 1g 30s 98c | 2026-11-12 03:40 UTC | 1g 24s 99c |  | too new | 2 of 8 | 19 |  |
+| Purple Dye | 4342 | 17s 99c | 2026-11-12 03:40 UTC | 20s 0c | 20s 0c | volatile | 5 of 8 | 60 |  |
+| Red Dye | 2604 | 1s 0c | 2026-11-12 03:40 UTC | 71c | 80c | moving | 7 of 8 | 296 |  |
+| Righteous Orb | 12811 | 14g 61s 21c | 2026-11-12 03:40 UTC | 17g 30s 60c |  | too new | 2 of 8 | 46 |  |
+| Shadowgem | 1210 | 2s 66c | 2026-11-12 03:40 UTC | 2s 48c | 2s 45c | steady | 7 of 8 | 794 |  |
+| Sharp Claw | 5635 | 44c | 2026-11-12 03:40 UTC | 45c | 45c | steady | 7 of 8 | 981 |  |
+| Simple Poultice | 255716 | 28c | 2026-11-12 03:40 UTC | 28c | 28c | moving | 6 of 8 | 1274 |  |
+| Simple Wood | 4470 | 65c | 2026-11-12 03:40 UTC | 43c | 43c | moving | 7 of 8 | 2578 |  |
+| Small Flame Sac | 4402 | 10s 78c | 2026-11-12 03:40 UTC | 11s 39c | 11s 39c | steady | 6 of 8 | 467 |  |
+| Small Lustrous Pearl | 5498 | 2s 57c | 2026-11-12 03:40 UTC | 3s 6c | 3s 0c | moving | 7 of 8 | 678 |  |
+| Small Venom Sac | 1475 | 1s 3c | 2026-11-12 03:40 UTC | 1s 2c | 1s 2c | steady | 7 of 8 | 672 |  |
+| Soothing Spices | 3713 | 1s 77c | 2026-11-12 03:40 UTC | 1s 65c | 1s 53c | moving | 7 of 8 | 887 |  |
+| Star Ruby | 7910 | 50s 99c | 2026-11-12 03:40 UTC | 51s 49c | 51s 49c | moving | 6 of 8 | 90 |  |
+| Star Wood | 11291 | 69s 69c | 2026-11-12 03:40 UTC | 44s 50c | 45s 0c | steady | 7 of 8 | 21 |  |
+| Stonescale Eel | 13422 | 2s 65c | 2026-11-12 03:40 UTC | 2s 54c | 2s 65c | moving | 7 of 8 | 2339 |  |
+| Stonescale Oil | 13423 | 5s 97c | 2026-11-12 03:40 UTC | 11s 42c | 11s 42c | volatile | 4 of 8 | 266 |  |
+| Strong Flux | 3466 | 20s 98c | 2026-11-12 03:40 UTC | 20s 99c | 20s 98c | steady | 7 of 8 | 113 |  |
+| Sulfuric Acid | 249410 | 4s 99c | 2026-11-12 03:40 UTC | 4s 13c | 4s 0c | moving | 7 of 8 | 1212 |  |
+| Superior Poultice | 255718 | 14s 99c | 2026-11-12 03:40 UTC | 17s 48c |  | too new | 2 of 8 | 474 |  |
+| Swollen Venom Sac | 255645 | 7s 50c | 2026-11-12 03:40 UTC | 38s 12c | 38s 12c | volatile | 4 of 8 | 130 |  |
+| Thick Logs | 272941 | 13g 99s 99c | 2026-11-12 03:40 UTC | 15g 0s 0c | 15g 0s 0c | moving | 3 of 8 | 2 |  |
+| Tigerseye | 818 | 1s 47c | 2026-11-12 03:40 UTC | 1s 6c | 1s 5c | moving | 7 of 8 | 827 |  |
+| Torbernite | 248820 | 8g 66s 0c | 2026-11-12 03:40 UTC | 11g 77s 50c |  | too new | 2 of 8 | 28 |  |
+| Viridian Dye | 249431 | 2g 42s 0c | 2026-11-12 03:40 UTC | 4g 24s 99c | 4g 24s 99c | volatile | 4 of 8 | 98 |  |
+| Weak Flux | 2880 | 1s 20c | 2026-11-12 03:40 UTC | 1s 1c | 1s 2c | moving | 7 of 8 | 392 |  |
+| Whimsyfin | 251524 | 9s 97c | 2026-11-12 03:40 UTC | 12s 38c | 12s 38c | moving | 4 of 8 | 166 |  |
+| Wicked Claw | 8146 | 5s 20c | 2026-11-12 03:40 UTC | 5s 20c | 5s 20c | steady | 5 of 8 | 596 |  |
+| Woolen Tourniquet | 255720 | 58c | 2026-11-12 03:40 UTC | 82c | 82c | moving | 6 of 8 | 210 |  |
+| Yellow Dye | 4341 | 2s 15c | 2026-11-12 03:40 UTC | 3s 46c | 3s 50c | volatile | 7 of 8 | 223 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
