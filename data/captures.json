@@ -581,6 +581,22 @@
       "received_on": "2026-11-12",
       "full_scan_items": null,
       "scope_source": "Auctionator export"
+    },
+    {
+      "path": "data/market/forever-pvp/scans/2026-11-12T12-44-28Z.json",
+      "market_slug": "forever-pvp",
+      "environment": "forever",
+      "market": "PvP",
+      "scan_timestamp": 1794487468,
+      "scan_time": "2026-11-12T12:44:28Z",
+      "day": 2507,
+      "source_sha256": "a70722dddad25c390c46c348ccf175e3d7c98cd77c8a961892410030eba26905",
+      "content_sha256": "6f8a67d05a7d6adb6021e61602844aa59a9a9d12cc4b1b3f9a95bb59a495044d",
+      "record_sha256": "e882a4ea69a15c55f3c3e860a92618e83654d2e2893450d2c341a29d519778c9",
+      "status": "kept",
+      "received_on": "2026-11-12",
+      "full_scan_items": null,
+      "scope_source": "Auctionator export"
     }
   ],
   "archives": {
