@@ -21,6 +21,7 @@
 | Blue Glittering Axe | 7942 | 3g 20s 0c | 2026-11-11 17:37 UTC | 3g 0s 0c | 3g 0s 0c | moving | 3 of 7 | 2 |  |
 | Blurred Axe | 4824 | 1g 35s 0c | 2026-11-11 15:03 UTC | 1g 65s 0c | 1g 65s 0c | steady | 5 of 7 | 3 |  |
 | Boahn's Fang | 5423 | 2g 32s 0c | 2026-11-08 16:27 UTC | 2g 6s 0c |  | too new | 2 of 7 | 1 |  |
+| Brain Hacker | 1263 | 249g 0s 0c | 2026-11-11 17:37 UTC | 249g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Brashclaw's Chopper | 2203 | 99s 0c | 2026-11-11 17:37 UTC | 99s 0c |  | too new | 1 of 7 | 3 |  |
 | Bronze Axe | 2849 | 12s 0c | 2026-11-11 17:37 UTC | 15s 50c | 15s 50c | moving | 6 of 7 | 30 |  |
 | Bronze Battle Axe | 7958 | 44s 0c | 2026-11-11 17:37 UTC | 44s 0c | 44s 0c | moving | 6 of 7 | 43 |  |
@@ -69,6 +70,7 @@
 | Keen Axe | 3785 | 37s 0c | 2026-11-11 17:37 UTC | 46s 0c |  | too new | 2 of 7 | 8 |  |
 | Killmaim | 13016 | 77s 0c | 2026-11-11 17:37 UTC | 89s 50c | 89s 50c | moving | 6 of 7 | 25 |  |
 | Large Axe | 2491 | 50s 0c | 2026-11-11 17:37 UTC | 2s 50c | 2s 50c | volatile | 6 of 7 | 3 |  |
+| Lumbering Ogre Axe | 1521 | 8g 0s 0c | 2026-11-11 17:37 UTC | 8g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Lumberjack Axe | 768 | 2s 0c | 2026-11-11 17:37 UTC | 2s 0c | 2s 0c | steady | 6 of 7 | 64 |  |
 | Manslayer | 10570 | 10g 0s 0c | 2026-11-11 17:37 UTC | 10g 0s 0c | 10g 0s 0c | volatile | 3 of 7 | 3 |  |
 | Marauder Axe | 4826 | 50s 0c | 2026-11-11 17:37 UTC | 1g 24s 50c | 1g 24s 50c | volatile | 4 of 7 | 1 |  |
@@ -76,6 +78,7 @@
 | Massive Iron Axe | 3855 | 1g 97s 0c | 2026-11-11 17:37 UTC | 2g 48s 0c | 2g 48s 0c | moving | 3 of 7 | 19 |  |
 | Meat Cleaver | 1827 | 13s 0c | 2026-11-11 17:37 UTC | 14s 0c | 14s 0c | moving | 3 of 7 | 31 |  |
 | Merciless Axe | 12249 | 2g 70s 0c | 2026-11-11 17:37 UTC | 2g 65s 0c | 2g 65s 0c | moving | 4 of 7 | 5 |  |
+| Midnight Axe | 12250 | 6g 0s 0c | 2026-11-11 17:37 UTC | 6g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Monstrous War Axe | 1640 | 1g 59s 0c | 2026-11-11 17:37 UTC | 2g 50s 0c | 2g 50s 0c | moving | 4 of 7 | 12 |  |
 | Moon Cleaver | 15236 | 4g 99s 0c | 2026-11-11 17:37 UTC | 4g 99s 0c |  | too new | 1 of 7 | 4 |  |
 | Night Reaver | 1318 | 1g 99s 0c | 2026-11-11 17:37 UTC | 1g 70s 0c | 1g 70s 0c | moving | 6 of 7 | 20 |  |
@@ -84,6 +87,7 @@
 | Razor's Edge | 12990 | 55s 0c | 2026-11-11 17:37 UTC | 56s 50c | 56s 50c | moving | 6 of 7 | 24 |  |
 | Resurged Axe | 287006 | 1g 90s 0c | 2026-11-11 17:37 UTC | 4g 10s 0c | 4g 10s 0c | volatile | 3 of 7 | 8 |  |
 | Ridge Cleaver | 15230 | 28s 0c | 2026-11-11 17:37 UTC | 28s 0c | 28s 0c | steady | 6 of 7 | 65 |  |
+| Rodentia Flint Axe | 2281 | 6s 0c | 2026-11-11 17:37 UTC | 6s 0c |  | too new | 1 of 7 | 1 |  |
 | Royal Satyr Slicer | 284717 | 1g 0s 0c | 2026-11-11 17:37 UTC | 1g 4s 0c | 1g 4s 0c | steady | 4 of 7 | 2 |  |
 | Rusty Hatchet | 1416 | 1s 0c | 2026-11-11 17:37 UTC | 1s 0c | 1s 0c | steady | 6 of 7 | 20 |  |
 | Savage Axe | 15233 | 1g 7s 0c | 2026-11-11 17:37 UTC | 1g 13s 50c | 1g 13s 50c | steady | 4 of 7 | 26 |  |

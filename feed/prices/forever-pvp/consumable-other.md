@@ -48,6 +48,7 @@
 | Craftsman's Writ: Dark Leather Tunic | 264041 | 21s 0c | 2026-11-11 17:37 UTC | 15s 0c | 15s 0c | steady | 5 of 7 | 27 |  |
 | Craftsman's Writ: Darkrune Gauntlets | 264130 | 1g 1s 0c | 2026-11-11 17:37 UTC | 1g 1s 0c |  | too new | 1 of 7 | 4 |  |
 | Craftsman's Writ: Distilled Firewater | 264124 | 4g 0s 0c | 2026-11-11 17:37 UTC | 4g 0s 0c |  | too new | 1 of 7 | 8 |  |
+| Craftsman's Writ: Draught of Detect Demon | 264119 | 2g 55s 0c | 2026-11-11 17:37 UTC | 2g 55s 0c |  | too new | 1 of 7 | 2 |  |
 | Craftsman's Writ: Draught of Water Breathing | 264019 | 24s 0c | 2026-11-11 17:37 UTC | 40s 0c | 40s 0c | volatile | 5 of 7 | 65 |  |
 | Craftsman's Writ: Dreamless Sleep Potion | 264117 | 5g 0s 0c | 2026-11-11 15:03 UTC | 5g 0s 0c |  | too new | 1 of 7 | 5 |  |
 | Craftsman's Writ: Dusky Bracers | 264094 | 51s 0c | 2026-11-11 15:03 UTC | 50s 50c | 50s 50c | steady | 4 of 7 | 4 |  |
@@ -96,6 +97,7 @@
 | Craftsman's Writ: Heavy Scorpid Helm | 264149 | 2g 0s 0c | 2026-11-11 17:37 UTC | 2g 0s 0c |  | too new | 1 of 7 | 5 |  |
 | Craftsman's Writ: Herbalist's Gloves | 264040 | 25s 0c | 2026-11-11 17:37 UTC | 25s 0c | 25s 0c | volatile | 5 of 7 | 69 |  |
 | Craftsman's Writ: Huge Thorium Battleaxe | 264131 | 1g 1s 0c | 2026-11-11 15:03 UTC | 1g 1s 0c |  | too new | 1 of 7 | 3 |  |
+| Craftsman's Writ: Imperial Plate Chest | 264129 | 1g 99s 0c | 2026-11-11 17:37 UTC | 1g 99s 0c |  | too new | 1 of 7 | 3 |  |
 | Craftsman's Writ: Inlaid Mithril Cylinder | 264069 | 5s 0c | 2026-11-11 17:37 UTC | 13s 50c | 13s 50c | volatile | 4 of 7 | 24 |  |
 | Craftsman's Writ: Iridescent Hammer | 264022 | 30s 0c | 2026-11-11 17:37 UTC | 13s 0c | 13s 0c | volatile | 5 of 7 | 27 |  |
 | Craftsman's Writ: Lesser Invisibility Potion | 264057 | 58s 0c | 2026-11-11 15:03 UTC | 88s 0c | 88s 0c | moving | 4 of 7 | 19 |  |
@@ -156,6 +158,7 @@
 | Craftsman's Writ: Truesilver Rod | 264077 | 80s 0c | 2026-11-11 15:03 UTC | 1g 10s 0c | 1g 10s 0c | volatile | 4 of 7 | 22 |  |
 | Craftsman's Writ: Truesilver Transformer | 264140 | 2g 0s 0c | 2026-11-11 17:37 UTC | 11g 0s 50c |  | too new | 2 of 7 | 3 |  |
 | Craftsman's Writ: Turtle Scale Breastplate | 264102 | 41s 0c | 2026-11-11 17:37 UTC | 38s 0c | 38s 0c | volatile | 4 of 7 | 16 |  |
+| Craftsman's Writ: Tuxedo Jacket | 264155 | 9g 99s 0c | 2026-11-11 17:37 UTC | 9g 99s 0c |  | too new | 1 of 7 | 1 |  |
 | Craftsman's Writ: Unstable Trigger | 264085 | 87s 0c | 2026-11-11 17:37 UTC | 59s 0c | 59s 0c | volatile | 4 of 7 | 16 |  |
 | Craftsman's Writ: Volcanic Breastplate | 264145 | 2g 1s 0c | 2026-11-11 17:37 UTC | 2g 1s 0c |  | too new | 1 of 7 | 6 |  |
 | Craftsman's Writ: White Bandit Mask | 264113 | 18s 0c | 2026-11-11 17:37 UTC | 64s 50c | 64s 50c | volatile | 4 of 7 | 20 |  |

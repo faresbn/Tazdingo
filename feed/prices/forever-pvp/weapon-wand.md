@@ -39,6 +39,7 @@
 | Twisted Nether Wand | 249144 | 2g 16s 0c | 2026-11-09 12:28 UTC | 1g 94s 50c |  | too new | 2 of 7 | 8 |  |
 | Umbral Wand | 5216 | 2g 0s 0c | 2026-11-11 17:37 UTC | 1g 50s 0c | 1g 50s 0c | moving | 3 of 7 | 11 |  |
 | Wand of Allistarj | 13065 | 6g 0s 0c | 2026-11-11 17:37 UTC | 8g 97s 50c |  | too new | 2 of 7 | 4 |  |
+| Wand of Arcane Potency | 18338 | 15g 33s 0c | 2026-11-11 17:37 UTC | 15g 33s 0c |  | too new | 1 of 7 | 1 |  |
 | Wand of Eventide | 5214 | 40s 0c | 2026-11-11 17:37 UTC | 40s 0c | 40s 0c | steady | 6 of 7 | 29 |  |
 | Wizard's Hand | 15280 | 3g 0s 0c | 2026-11-11 17:37 UTC | 3g 5s 0c |  | too new | 2 of 7 | 2 |  |
 

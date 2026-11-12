@@ -8,6 +8,7 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Blueprint: Field Guide | 273098 | 40s 0c | 2026-11-11 17:37 UTC | 19s 0c | 19s 0c | volatile | 6 of 7 | 48 |  |
 | Blueprint: Greenhouse | 273106 | 4g 19s 0c | 2026-11-11 17:37 UTC | 1g 25s 0c | 1g 25s 0c | steady | 5 of 7 | 25 |  |
+| Blueprint: Molten Foundry | 273122 | 250g 1s 0c | 2026-11-11 17:37 UTC | 250g 1s 0c |  | too new | 1 of 7 | 1 |  |
 | Blueprint: Rock Garden | 273097 | 1g 50s 0c | 2026-11-11 17:37 UTC | 1g 19s 0c | 1g 19s 0c | moving | 5 of 7 | 12 |  |
 | Blueprint: Trapper's Workbench | 273109 | 1g 32s 0c | 2026-11-11 17:37 UTC | 2g 32s 50c | 2g 32s 50c | moving | 4 of 7 | 22 |  |
 | Book: Gift of the Wild | 17682 | 2g 0s 0c | 2026-11-11 17:37 UTC | 21g 0s 0c |  | too new | 2 of 7 | 18 |  |

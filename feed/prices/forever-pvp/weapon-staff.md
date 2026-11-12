@@ -35,11 +35,15 @@
 | Medicine Staff | 4575 | 15s 0c | 2026-11-11 17:37 UTC | 15s 0c | 15s 0c | steady | 7 of 7 | 148 |  |
 | Metal Stave | 3784 | 44s 0c | 2026-11-11 17:37 UTC | 64s 0c | 64s 0c | moving | 3 of 7 | 4 |  |
 | Monk's Staff | 866 | 1g 79s 0c | 2026-11-11 17:37 UTC | 3g 45s 0c | 3g 45s 0c | volatile | 4 of 7 | 13 |  |
+| Nightbane Staff | 3227 | 40s 0c | 2026-11-11 17:37 UTC | 40s 0c |  | too new | 1 of 7 | 1 |  |
 | Oaken War Staff | 1831 | 18s 0c | 2026-11-11 17:37 UTC | 24s 0c | 24s 0c | moving | 4 of 7 | 17 |  |
 | Quarter Staff | 854 | 10s 0c | 2026-11-08 23:12 UTC | 10s 0c | 10s 0c | moving | 3 of 7 | 1 |  |
+| Riverside Staff | 1473 | 45s 0c | 2026-11-11 17:37 UTC | 45s 0c |  | too new | 1 of 7 | 1 |  |
 | Rough Wooden Staff | 1515 | 2s 0c | 2026-11-11 17:37 UTC | 2s 0c | 2s 0c | steady | 6 of 7 | 50 |  |
+| Scalding Staff | 282632 | 5g 0s 0c | 2026-11-11 17:37 UTC | 5g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Short Staff | 2132 | 3s 0c | 2026-11-06 | 3s 0c |  | too new | 1 of 7 | 1 |  |
 | Skyseeker's Greatstaff | 263937 | 10g 13s 0c | 2026-11-11 17:37 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 5 of 7 | 1 |  |
+| Soulkeeper | 1607 | 25g 0s 0c | 2026-11-11 17:37 UTC | 25g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Spellforce Rod | 1664 | 2g 49s 0c | 2026-11-11 15:03 UTC | 2g 49s 0c | 2g 49s 0c | volatile | 3 of 7 | 2 |  |
 | Spiritchaser Staff | 1613 | 2g 0s 0c | 2026-11-11 17:37 UTC | 5g 51s 0c | 5g 51s 0c | volatile | 4 of 7 | 6 |  |
 | Staff of Conjuring | 1933 | 1g 0s 0c | 2026-11-08 16:27 UTC | 49s 0c | 49s 0c | volatile | 3 of 7 | 2 |  |

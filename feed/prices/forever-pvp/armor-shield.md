@@ -52,6 +52,7 @@
 | Field Plate Shield | 7496 | 2g 20s 0c | 2026-11-11 17:37 UTC | 3g 0s 0c | 3g 0s 0c | volatile | 3 of 7 | 2 |  |
 | Forest Buckler | 6383 | 16s 0c | 2026-11-11 15:03 UTC | 16s 0c | 16s 0c | steady | 5 of 7 | 31 |  |
 | Fortified Shield | 9816 | 19s 0c | 2026-11-11 15:03 UTC | 23s 0c | 23s 0c | steady | 5 of 7 | 14 |  |
+| Garrett Family Crest | 13083 | 20g 0s 0c | 2026-11-11 17:37 UTC | 20g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Ghostwalker Buckler | 15145 | 50s 0c | 2026-11-11 17:37 UTC | 65s 0c | 65s 0c | moving | 5 of 7 | 10 |  |
 | Glimmering Shield | 6400 | 32s 0c | 2026-11-11 17:37 UTC | 34s 0c | 34s 0c | volatile | 5 of 7 | 19 |  |
 | Glyphed Buckler | 4067 | 64s 0c | 2026-11-11 17:37 UTC | 79s 0c | 79s 0c | moving | 5 of 7 | 14 |  |
@@ -69,6 +70,7 @@
 | Inscribed Buckler | 6380 | 6s 0c | 2026-11-11 17:37 UTC | 7s 0c | 7s 0c | steady | 6 of 7 | 110 |  |
 | Insignia Buckler | 4066 | 49s 0c | 2026-11-11 17:37 UTC | 50s 0c | 50s 0c | moving | 5 of 7 | 5 |  |
 | Invading Marine's Shield | 284322 | 5s 0c | 2026-11-09 12:28 UTC | 5s 0c | 5s 0c | volatile | 5 of 7 | 8 |  |
+| Ironhide Shield | 15648 | 8g 34s 0c | 2026-11-11 17:37 UTC | 8g 34s 0c |  | too new | 1 of 7 | 1 |  |
 | Jade Deflector | 14916 | 6g 59s 0c | 2026-11-11 17:37 UTC | 4g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Jazeraint Shield | 9899 | 98s 0c | 2026-11-11 15:03 UTC | 1g 30s 50c | 1g 30s 50c | moving | 4 of 7 | 4 |  |
 | Jouster's Crest | 4070 | 80s 0c | 2026-11-11 17:37 UTC | 99s 0c | 99s 0c | steady | 3 of 7 | 6 |  |
@@ -110,6 +112,7 @@
 | Shield of Thorsen | 13079 | 1g 50s 0c | 2026-11-11 17:37 UTC | 93s 0c | 93s 0c | moving | 5 of 7 | 27 |  |
 | Simple Buckler | 2216 | 3s 0c | 2026-11-11 17:37 UTC | 3s 0c | 3s 0c | moving | 7 of 7 | 19 |  |
 | Skullance Shield | 13081 | 1g 50s 0c | 2026-11-11 17:37 UTC | 1g 68s 0c | 1g 68s 0c | moving | 4 of 7 | 16 |  |
+| Skullflame Shield | 1168 | 700g 35s 0c | 2026-11-11 15:03 UTC | 849g 67s 50c |  | too new | 2 of 7 | 1 |  |
 | Slayer's Shield | 15892 | 38s 0c | 2026-11-11 17:37 UTC | 45s 0c | 45s 0c | volatile | 5 of 7 | 13 |  |
 | Small Round Shield | 2219 | 5s 0c | 2026-11-11 17:37 UTC | 5s 0c | 5s 0c | steady | 4 of 7 | 8 |  |
 | Soldier's Shield | 6560 | 7s 0c | 2026-11-11 17:37 UTC | 7s 0c | 7s 0c | moving | 6 of 7 | 47 |  |

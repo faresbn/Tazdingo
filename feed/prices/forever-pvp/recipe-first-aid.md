@@ -6,6 +6,7 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
+| Blueprint: Plague Doctor's Laboratory | 273118 | 200g 1s 0c | 2026-11-11 17:37 UTC | 200g 1s 0c |  | too new | 1 of 7 | 1 |  |
 | Blueprint: Toxin Study | 273105 | 2g 15s 0c | 2026-11-11 17:37 UTC | 76s 50c | 76s 50c | volatile | 6 of 7 | 42 |  |
 | Expert First Aid - Under Wraps | 16084 | 1g 2s 0c | 2026-11-11 17:37 UTC | 1g 4s 50c | 1g 8s 50c | steady | 6 of 7 | 150 |  |
 | Manual: Clever Poultice | 255724 | 90s 0c | 2026-11-11 17:37 UTC | 1g 27s 0c | 1g 62s 50c | volatile | 4 of 7 | 10 |  |

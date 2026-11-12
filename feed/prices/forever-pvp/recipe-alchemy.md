@@ -9,6 +9,7 @@
 | Blueprint: Fermenter | 273085 | 1g 75s 0c | 2026-11-11 17:37 UTC | 24s 50c | 24s 50c | volatile | 6 of 7 | 56 |  |
 | Recipe: Cleric's Elixir | 250368 | 1g 12s 0c | 2026-11-11 17:37 UTC | 39s 0c | 39s 0c | volatile | 5 of 7 | 29 |  |
 | Recipe: Draught of Dream Vision | 9297 | 1g 75s 0c | 2026-11-11 17:37 UTC | 6g 99s 0c | 6g 99s 0c | volatile | 3 of 7 | 3 |  |
+| Recipe: Elixir of Brute Force | 13481 | 2,000g 0s 0c | 2026-11-11 17:37 UTC | 2,000g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Recipe: Elixir of Detect Lesser Invisibility | 3832 | 46s 0c | 2026-11-11 17:37 UTC | 32s 0c | 32s 0c | volatile | 5 of 7 | 33 |  |
 | Recipe: Elixir of Fortitude | 250370 | 2g 49s 0c | 2026-11-11 17:37 UTC | 1g 96s 0c | 1g 96s 0c | moving | 4 of 7 | 10 |  |
 | Recipe: Elixir of Giant Growth | 6663 | 3s 0c | 2026-11-11 17:37 UTC | 2s 0c | 2s 0c | steady | 6 of 7 | 244 |  |

@@ -18,6 +18,7 @@
 | Plans: Copper Chain Vest | 3609 | 1s 0c | 2026-11-11 17:37 UTC | 1s 0c | 1s 0c | steady | 6 of 7 | 378 |  |
 | Plans: Dark Iron Plate | 11612 | 20g 0s 0c | 2026-11-11 15:03 UTC | 12g 50s 0c |  | too new | 2 of 7 | 2 |  |
 | Plans: Dark Iron Pulverizer | 11610 | 12g 0s 0c | 2026-11-11 17:37 UTC | 12g 0s 0c |  | too new | 1 of 7 | 5 |  |
+| Plans: Dark Iron Sunderer | 11611 | 8g 46s 0c | 2026-11-11 17:37 UTC | 8g 46s 0c |  | too new | 1 of 7 | 1 |  |
 | Plans: Dazzling Mithril Rapier | 7993 | 25s 0c | 2026-11-11 17:37 UTC | 40s 50c | 40s 50c | moving | 4 of 7 | 8 |  |
 | Plans: Deadly Bronze Poniard | 2883 | 4s 0c | 2026-11-11 17:37 UTC | 4s 0c | 4s 0c | steady | 6 of 7 | 156 |  |
 | Plans: Frost Tiger Blade | 3868 | 13s 0c | 2026-11-11 17:37 UTC | 13s 0c | 13s 0c | volatile | 5 of 7 | 33 |  |
@@ -44,6 +45,7 @@
 | Plans: Mithril Plate Shoulders | 7991 | 1g 8s 0c | 2026-11-11 17:37 UTC | 79s 0c | 79s 0c | volatile | 4 of 7 | 2 |  |
 | Plans: Mithril Shield Spike | 7976 | 1g 0s 0c | 2026-11-11 15:03 UTC | 4g 40s 0c | 4g 40s 0c | volatile | 5 of 7 | 23 |  |
 | Plans: Mithril Spurs | 7989 | 3g 20s 0c | 2026-11-11 17:37 UTC | 2g 80s 0c | 2g 80s 0c | moving | 4 of 7 | 26 |  |
+| Plans: Persuader | 22390 | 500g 0s 0c | 2026-11-11 17:37 UTC | 500g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Plans: Polished Steel Boots | 3874 | 11s 0c | 2026-11-11 17:37 UTC | 11s 0c | 11s 0c | moving | 5 of 7 | 29 |  |
 | Plans: Radiant Boots | 12697 | 2g 0s 0c | 2026-11-11 17:37 UTC | 2g 0s 0c |  | too new | 1 of 7 | 6 |  |
 | Plans: Radiant Breastplate | 12689 | 45s 0c | 2026-11-11 15:03 UTC | 1g 2s 0c | 1g 2s 0c | volatile | 3 of 7 | 2 |  |
@@ -63,5 +65,7 @@
 | Plans: Thorium Helm | 12694 | 2g 20s 0c | 2026-11-11 15:03 UTC | 2g 20s 0c |  | too new | 1 of 7 | 8 |  |
 | Plans: Thorium Leggings | 12704 | 4g 0s 0c | 2026-11-11 17:37 UTC | 4g 50s 0c |  | too new | 2 of 7 | 8 |  |
 | Plans: Thorium Shield Spike | 12692 | 65g 98s 0c | 2026-11-11 15:03 UTC | 65g 98s 0c |  | too new | 1 of 7 | 5 |  |
+| Plans: Volcanic Hammer | 12828 | 1g 0s 0c | 2026-11-11 17:37 UTC | 1g 0s 0c |  | too new | 1 of 7 | 1 |  |
+| Plans: Whitesoul Helm | 12711 | 99g 0s 0c | 2026-11-11 17:37 UTC | 99g 0s 0c |  | too new | 1 of 7 | 1 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

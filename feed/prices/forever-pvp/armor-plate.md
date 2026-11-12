@@ -8,6 +8,7 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Alabaster Breastplate | 8312 | 4g 99s 0c | 2026-11-11 15:03 UTC | 6g 61s 0c |  | too new | 2 of 7 | 1 |  |
 | Alabaster Plate Gauntlets | 8314 | 2g 61s 0c | 2026-11-11 17:37 UTC | 2g 80s 0c | 2g 80s 0c | steady | 3 of 7 | 2 |  |
+| Alabaster Plate Greaves | 8316 | 3g 0s 0c | 2026-11-11 17:37 UTC | 3g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Alabaster Plate Leggings | 8318 | 5g 94s 0c | 2026-11-11 17:37 UTC | 5g 94s 0c |  | too new | 1 of 7 | 3 |  |
 | Alabaster Plate Vambraces | 8311 | 4g 20s 0c | 2026-11-09 12:28 UTC | 4g 20s 0c |  | too new | 1 of 7 | 1 |  |
 | Arena Vambraces | 18712 | 1g 80s 0c | 2026-11-11 17:37 UTC | 3g 16s 0c | 3g 16s 0c | moving | 6 of 7 | 4 |  |
@@ -24,6 +25,7 @@
 | Brutish Armguards | 14910 | 99s 0c | 2026-11-11 15:03 UTC | 1g 72s 50c |  | too new | 2 of 7 | 10 |  |
 | Brutish Belt | 14906 | 87s 0c | 2026-11-11 17:37 UTC | 1g 99s 0c | 1g 99s 0c | volatile | 3 of 7 | 4 |  |
 | Brutish Boots | 14911 | 2g 55s 0c | 2026-11-11 17:37 UTC | 1g 80s 0c | 1g 80s 0c | moving | 3 of 7 | 1 |  |
+| Brutish Breastplate | 14904 | 1g 39s 0c | 2026-11-11 17:37 UTC | 1g 39s 0c |  | too new | 1 of 7 | 2 |  |
 | Brutish Gauntlets | 14905 | 1g 0s 0c | 2026-11-11 17:37 UTC | 1g 49s 0c | 1g 49s 0c | moving | 3 of 7 | 2 |  |
 | Brutish Helmet | 14907 | 2g 0s 0c | 2026-11-11 17:37 UTC | 2g 96s 0c |  | too new | 2 of 7 | 2 |  |
 | Brutish Legguards | 14908 | 3g 0s 0c | 2026-11-11 17:37 UTC | 3g 0s 0c |  | too new | 1 of 7 | 2 |  |
@@ -37,7 +39,9 @@
 | Chromite Legplates | 8143 | 1g 15s 0c | 2026-11-11 15:03 UTC | 1g 15s 0c |  | too new | 1 of 7 | 4 |  |
 | Chromite Pauldrons | 8144 | 2g 0s 0c | 2026-11-11 17:37 UTC | 2g 39s 50c |  | too new | 2 of 7 | 4 |  |
 | Commander's Boots | 10376 | 5g 88s 0c | 2026-11-11 15:03 UTC | 5g 88s 0c |  | too new | 1 of 7 | 1 |  |
+| Commander's Leggings | 10382 | 8g 83s 0c | 2026-11-11 17:37 UTC | 8g 83s 0c |  | too new | 1 of 7 | 1 |  |
 | Den Champion's Binding | 287032 | 20g 16s 0c | 2026-11-11 17:37 UTC | 20g 16s 0c |  | too new | 1 of 7 | 1 |  |
+| Diamond Studded Belt | 284848 | 2g 0s 0c | 2026-11-11 17:37 UTC | 2g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Embossed Plate Armor | 9966 | 1g 11s 0c | 2026-11-11 17:37 UTC | 3g 0s 0c | 3g 0s 0c | moving | 4 of 7 | 2 |  |
 | Embossed Plate Boots | 9973 | 59s 0c | 2026-11-11 17:37 UTC | 62s 0c | 62s 0c | steady | 4 of 7 | 2 |  |
 | Embossed Plate Bracers | 9972 | 62s 0c | 2026-11-11 17:37 UTC | 1g 0s 0c | 1g 0s 0c | moving | 4 of 7 | 4 |  |
@@ -49,6 +53,7 @@
 | Emerald Girdle | 10278 | 2g 11s 0c | 2026-11-11 15:03 UTC | 11g 11s 0c |  | too new | 2 of 7 | 1 |  |
 | Emerald Helm | 10279 | 4g 99s 0c | 2026-11-11 17:37 UTC | 4g 99s 50c |  | too new | 2 of 7 | 2 |  |
 | Emerald Legplates | 10280 | 4g 99s 0c | 2026-11-11 15:03 UTC | 4g 99s 0c |  | too new | 1 of 7 | 1 |  |
+| Emerald Pauldrons | 10281 | 4g 0s 0c | 2026-11-11 17:37 UTC | 4g 0s 0c |  | too new | 1 of 7 | 2 |  |
 | Emerald Sabatons | 10276 | 7g 48s 0c | 2026-11-11 15:03 UTC | 12g 48s 0c | 12g 48s 0c | volatile | 3 of 7 | 2 |  |
 | Enormous Ogre Belt | 13145 | 89s 0c | 2026-11-11 17:37 UTC | 1g 94s 50c | 1g 94s 50c | moving | 4 of 7 | 14 |  |
 | Field Plate Armor | 9286 | 1g 32s 0c | 2026-11-11 15:03 UTC | 2g 66s 0c |  | too new | 2 of 7 | 8 |  |
@@ -90,17 +95,20 @@
 | High Chief's Belt | 14960 | 3g 99s 0c | 2026-11-11 17:37 UTC | 3g 99s 0c |  | too new | 1 of 7 | 2 |  |
 | High Chief's Bindings | 14965 | 3g 0s 0c | 2026-11-11 17:37 UTC | 3g 0s 0c |  | too new | 2 of 7 | 2 |  |
 | High Chief's Gauntlets | 14959 | 2g 0s 0c | 2026-11-11 15:03 UTC | 2g 0s 0c |  | too new | 2 of 7 | 1 |  |
+| High Chief's Legguards | 14962 | 5g 99s 0c | 2026-11-11 17:37 UTC | 5g 99s 0c |  | too new | 1 of 7 | 1 |  |
 | High Chief's Pauldrons | 14963 | 9g 99s 0c | 2026-11-11 17:37 UTC | 9g 99s 0c |  | too new | 1 of 7 | 3 |  |
 | High Chief's Sabatons | 14957 | 3g 0s 0c | 2026-11-11 15:03 UTC | 3g 0s 0c |  | too new | 1 of 7 | 5 |  |
 | Hydralick Armor | 13067 | 19g 99s 0c | 2026-11-11 17:37 UTC | 10g 16s 0c | 10g 16s 0c | volatile | 3 of 7 | 1 |  |
 | Hyperion Girdle | 10387 | 6g 0s 0c | 2026-11-11 15:03 UTC | 6g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Hyperion Vambraces | 10391 | 8g 23s 0c | 2026-11-11 15:03 UTC | 10g 23s 0c |  | too new | 2 of 7 | 2 |  |
 | Imbued Plate Gauntlets | 10369 | 3g 11s 0c | 2026-11-11 15:03 UTC | 9g 11s 0c |  | too new | 2 of 7 | 2 |  |
+| Imbued Plate Vambraces | 10375 | 4g 0s 0c | 2026-11-11 17:37 UTC | 4g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Imperial Plate Belt | 12424 | 6g 0s 0c | 2026-11-11 17:37 UTC | 6g 0s 0c |  | too new | 1 of 7 | 4 |  |
 | Imperial Plate Bracers | 12425 | 7g 0s 0c | 2026-11-11 17:37 UTC | 7g 0s 0c |  | too new | 1 of 7 | 3 |  |
 | Iron-Wrought Cuffs | 287023 | 15g 79s 0c | 2026-11-11 15:03 UTC | 15g 79s 0c |  | too new | 1 of 7 | 1 |  |
 | Jade Belt | 14918 | 1g 2s 0c | 2026-11-11 17:37 UTC | 1g 2s 0c |  | too new | 1 of 7 | 5 |  |
 | Jade Bracers | 14914 | 1g 0s 0c | 2026-11-11 15:03 UTC | 1g 0s 0c |  | too new | 2 of 7 | 2 |  |
+| Jade Epaulets | 14921 | 2g 50s 0c | 2026-11-11 17:37 UTC | 2g 50s 0c |  | too new | 1 of 7 | 1 |  |
 | Jade Gauntlets | 14917 | 1g 0s 0c | 2026-11-11 15:03 UTC | 2g 0s 0c |  | too new | 2 of 7 | 2 |  |
 | Jade Greaves | 14913 | 4g 0s 0c | 2026-11-11 17:37 UTC | 4g 0s 0c |  | too new | 1 of 7 | 6 |  |
 | Jade Legplates | 14920 | 5g 55s 0c | 2026-11-11 15:03 UTC | 3g 77s 0c |  | too new | 2 of 7 | 2 |  |
@@ -118,6 +126,8 @@
 | Lightforge Belt | 16723 | 41g 55s 0c | 2026-11-11 17:37 UTC | 30g 47s 0c |  | too new | 2 of 7 | 4 |  |
 | Lightforge Bracers | 16722 | 35g 25s 0c | 2026-11-09 12:28 UTC | 35g 25s 0c |  | too new | 1 of 7 | 2 |  |
 | Lightforge Gauntlets | 16724 | 49g 0s 0c | 2026-11-11 15:03 UTC | 49g 0s 0c |  | too new | 1 of 7 | 1 |  |
+| Lofty Armguards | 14923 | 5g 70s 0c | 2026-11-11 17:37 UTC | 5g 70s 0c |  | too new | 1 of 7 | 1 |  |
+| Lofty Breastplate | 14924 | 13g 99s 0c | 2026-11-11 17:37 UTC | 13g 99s 0c |  | too new | 1 of 7 | 1 |  |
 | Lofty Gauntlets | 14926 | 5g 84s 0c | 2026-11-11 15:03 UTC | 3g 34s 0c |  | too new | 2 of 7 | 1 |  |
 | Lofty Helm | 14925 | 4g 0s 0c | 2026-11-11 15:03 UTC | 4g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Lofty Legguards | 14928 | 14g 0s 0c | 2026-11-11 15:03 UTC | 14g 0s 0c |  | too new | 1 of 7 | 1 |  |
@@ -153,6 +163,7 @@
 | Sapphiron's Scale Boots | 13070 | 30g 12s 0c | 2026-11-11 17:37 UTC | 30g 12s 0c |  | too new | 1 of 7 | 3 |  |
 | Shining Mithril Boots | 250542 | 2g 0s 0c | 2026-11-11 15:03 UTC | 2g 0s 0c |  | too new | 1 of 7 | 7 |  |
 | Shining Mithril Helm | 250543 | 3g 99s 0c | 2026-11-11 15:03 UTC | 3g 99s 0c |  | too new | 1 of 7 | 1 |  |
+| Silvershell Leggings | 10633 | 12g 99s 0c | 2026-11-11 17:37 UTC | 12g 99s 0c |  | too new | 1 of 7 | 1 |  |
 | Steel Plate Helm | 7922 | 46s 0c | 2026-11-11 17:37 UTC | 50s 0c | 50s 0c | volatile | 3 of 7 | 76 |  |
 | Stockade Pauldrons | 14552 | 200g 31s 0c | 2026-11-11 17:37 UTC | 200g 31s 0c | 200g 31s 0c | volatile | 3 of 7 | 1 |  |
 | Sunscale Belt | 14847 | 2g 64s 0c | 2026-11-11 15:03 UTC | 4g 14s 0c |  | too new | 2 of 7 | 2 |  |

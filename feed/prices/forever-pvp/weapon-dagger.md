@@ -32,6 +32,7 @@
 | Flesh Piercer | 3336 | 46s 0c | 2026-11-11 17:37 UTC | 52s 50c | 52s 50c | moving | 6 of 7 | 16 |  |
 | Glinting Steel Dagger | 12259 | 1g 40s 0c | 2026-11-11 17:37 UTC | 1g 70s 0c |  | too new | 2 of 7 | 22 |  |
 | Goblin Screwdriver | 1936 | 1g 18s 0c | 2026-11-11 17:37 UTC | 1g 20s 0c | 1g 20s 0c | volatile | 7 of 7 | 12 |  |
+| Grove Subjugator's Blade | 287034 | 35g 22s 0c | 2026-11-11 17:37 UTC | 24g 61s 0c |  | too new | 2 of 7 | 2 |  |
 | Gut Ripper | 2164 | 26g 84s 0c | 2026-11-11 17:37 UTC | 65g 0s 0c | 65g 0s 0c | volatile | 3 of 7 | 5 |  |
 | Honed Stiletto | 15242 | 45s 0c | 2026-11-11 17:37 UTC | 45s 0c | 45s 0c | steady | 6 of 7 | 34 |  |
 | Hook Dagger | 3184 | 14s 0c | 2026-11-11 17:37 UTC | 14s 0c | 14s 0c | steady | 7 of 7 | 86 |  |

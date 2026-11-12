@@ -4,8 +4,8 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 | Character | Level | Item level | Talents | Professions | Recorded |
 |---|---|---|---|---|---|
-| Orc Warlock | 29 | 25.1 | Demonology 20 | Enchanting 150/225, Tailoring 130/150, Cooking 150/150, First Aid 150/225, Fishing 1/75 | 2026-11-11 17:03:28 UTC |
-| Troll Rogue | 12 | 6.9 | Combat 3 | Alchemy 61/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-09 19:32:50 UTC |
+| Orc Warlock | 31 | 27.3 | Demonology 22 | Enchanting 150/225, Tailoring 147/150, Cooking 150/150, First Aid 150/225, Fishing 1/75 | 2026-11-11 21:44:07 UTC |
+| Troll Rogue | 12 | 6.9 | Combat 3 | Alchemy 61/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-11 20:35:32 UTC |
 | Tauren Druid | 3 | 0.3 | none | Herbalism 13/75, Skinning 68/75, First Aid 1/75 | 2026-11-07 20:40:17 UTC |
 | Troll Mage | 1 | 0 | none | none | 2026-11-05 18:39:27 UTC |
 | Undead Paladin | 1 | 0 | none | none | 2026-11-05 18:57:57 UTC |
@@ -13,21 +13,21 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 ## Orc Warlock
 
-Horde, level 29, item level 25.1; recorded 2026-11-11 17:03:28 UTC on logout, build 70888.
+Horde, level 31, item level 27.3; recorded 2026-11-11 21:44:07 UTC on logout, build 70888.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
 | Head | Shadow Circlet | 253955 | 25 |
 | Neck | Sorcerer Collar | 273457 | 22 |
-| Shoulder | Feline Mantle | 3748 | 28 |
+| Shoulder | Berylline Pads | 4197 | 36 |
 | Chest | Filigreed Shadow Gown | 253907 | 20 |
-| Waist | Novice Arcanist's Sash | 253885 | 15 |
+| Waist | Crimson Silk Belt | 7055 | 35 |
 | Legs | Filigreed Shadow Leggings | 253943 | 25 |
 | Feet | Spidersilk Boots | 4320 | 25 |
 | Wrist | Tabitha's Cuffs | 251486 | 24 |
 | Hands | Shadow Gloves | 253919 | 20 |
 | Finger | Jacinth Circle of the Channeler | 11969 | 29 |
-| Finger | Skull Ring | 3739 | 25 |
+| Finger | Snake Hoop | 6750 | 32 |
 | Trinket | Satchel of Potions | 280766 | 33 |
 | Trinket | Transformative Cocoon | 276895 | 30 |
 | Back | Pearl-clasped Cloak | 5542 | 19 |
@@ -35,44 +35,44 @@ Horde, level 29, item level 25.1; recorded 2026-11-11 17:03:28 UTC on logout, bu
 | Off hand | Raptor's Gaze | 273027 | 31 |
 | Ranged | Gravestone Scepter | 7001 | 29 |
 
-Talents: Affliction 0, Demonology 20, Destruction 0. Loadout code: `CIdBa0K/6fjlwoPQnhZ43PxtUAAAgZegZMGGAAA`.
+Talents: Affliction 0, Demonology 22, Destruction 0. Loadout code: `CIdBa0K/6fjlwoPQnhZ43PxtUAAAMMzDMzMGGAAA`.
 
 | Skill | Kind | Skill level | Max |
 |---|---|---|---|
 | Enchanting | Profession | 150 | 225 |
-| Tailoring | Profession | 130 | 150 |
+| Tailoring | Profession | 147 | 150 |
 | Cooking | Profession | 150 | 150 |
 | First Aid | Profession | 150 | 225 |
 | Fishing | Profession | 1 | 75 |
-| Daggers | Weapon Skills | 23 | 145 |
-| Defense | Weapon Skills | 140 | 145 |
-| Staves | Weapon Skills | 4 | 145 |
-| Swords | Weapon Skills | 1 | 145 |
-| Unarmed | Weapon Skills | 13 | 145 |
-| Wands | Weapon Skills | 124 | 145 |
+| Daggers | Weapon Skills | 23 | 155 |
+| Defense | Weapon Skills | 142 | 155 |
+| Staves | Weapon Skills | 4 | 155 |
+| Swords | Weapon Skills | 1 | 155 |
+| Unarmed | Weapon Skills | 13 | 155 |
+| Wands | Weapon Skills | 128 | 155 |
 | Cloth | Armor Proficiencies | 1 | 1 |
 | Language: Orcish | Languages | 300 | 300 |
 
 | Reputation | Standing | Progress |
 |---|---|---|
-| Darkspear Trolls | Honored | 47/12000 |
-| Orgrimmar | Honored | 1935/12000 |
-| Thunder Bluff | Friendly | 4132/6000 |
-| Undercity | Friendly | 4311/6000 |
-| Booty Bay | Neutral | 826/3000 |
-| Everlook | Neutral | 826/3000 |
-| Gadgetzan | Neutral | 826/3000 |
-| Powderfuse | Neutral | 826/3000 |
-| Ratchet | Neutral | 1253/3000 |
+| Darkspear Trolls | Honored | 203/12000 |
+| Orgrimmar | Honored | 2091/12000 |
+| Thunder Bluff | Friendly | 4507/6000 |
+| Undercity | Friendly | 4767/6000 |
+| Booty Bay | Neutral | 976/3000 |
+| Everlook | Neutral | 976/3000 |
+| Gadgetzan | Neutral | 976/3000 |
+| Powderfuse | Neutral | 976/3000 |
+| Ratchet | Neutral | 1553/3000 |
 | Argent Dawn | Neutral | 1250/3000 |
 | Durotar Supply and Logistics | Neutral | 2000/3000 |
 | Earthen Ring | Neutral | 900/3000 |
 
-Stats: Health 1161, Mana or energy 2061, Strength 33, Agility 30, Stamina 99, Intellect 98, Spirit 77, Armour 547. PvP: Honourable kills 16, Dishonourable kills 0, Honour points 45, Renown 0. Collected: mounts 2, pets 5, titles 0.
+Stats: Health 1468, Mana or energy 2316, Strength 33, Agility 29, Stamina 125, Intellect 108, Spirit 98, Armour 649. PvP: Honourable kills 0, Dishonourable kills -109, Honour points 45, Renown 0. Collected: mounts 2, pets 5, titles 0.
 
 ## Troll Rogue
 
-Horde, level 12, item level 6.9; recorded 2026-11-09 19:32:50 UTC on logout, build 70862.
+Horde, level 12, item level 6.9; recorded 2026-11-11 20:35:32 UTC on logout, build 70888.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
@@ -118,7 +118,7 @@ Talents: Assassination 0, Combat 3, Subtlety 0. Loadout code: `CAdBfBw6kaEYM3VLT
 | Powderfuse | Neutral | 525/3000 |
 | Ratchet | Neutral | 650/3000 |
 
-Stats: Health 332, Mana or energy 100, Strength 30, Agility 49, Stamina 37, Intellect 18, Spirit 29, Armour 346. PvP: Honourable kills 0, Dishonourable kills 88, Honour points 0, Renown 0. Collected: mounts 2, pets 5, titles 0.
+Stats: Health 332, Mana or energy 100, Strength 30, Agility 49, Stamina 37, Intellect 18, Spirit 29, Armour 346. PvP: Honourable kills 0, Dishonourable kills -76, Honour points 0, Renown 0. Collected: mounts 2, pets 5, titles 0.
 
 ## Tauren Druid
 

@@ -15,6 +15,8 @@
 | Blue Power Crystal | 11184 | 5s 97c | 2026-11-11 17:37 UTC | 49s 0c | 49s 0c | volatile | 4 of 7 | 95 |  |
 | Bottom Half of Advanced Armorsmithing: Volume II | 18781 | 11g 1s 0c | 2026-11-11 15:03 UTC | 11g 1s 0c |  | too new | 1 of 7 | 1 |  |
 | Broken Dragonmaw Shinbone | 7135 | 1s 0c | 2026-11-11 15:03 UTC | 1s 0c |  | too new | 1 of 7 | 75 |  |
+| Chillwind E'ko | 12434 | 4g 1s 0c | 2026-11-11 17:37 UTC | 4g 1s 0c |  | too new | 1 of 7 | 2 |  |
+| Cortello's Riddle | 4056 | 2g 1s 0c | 2026-11-11 17:37 UTC | 2g 1s 0c |  | too new | 1 of 7 | 1 |  |
 | Cuergo's Treasure Map | 9254 | 85s 0c | 2026-11-11 15:03 UTC | 2g 1s 0c | 2g 1s 0c | moving | 3 of 7 | 2 |  |
 | Dark Iron Residue | 18945 | 1s 70c | 2026-11-11 17:37 UTC | 1s 99c | 1s 99c | steady | 3 of 7 | 152 |  |
 | Dig Rat | 5051 | 2s 99c | 2026-11-11 17:37 UTC | 3s 16c | 3s 16c | volatile | 6 of 7 | 198 |  |
@@ -77,6 +79,7 @@
 | Scorpok Pincer | 8393 | 2g 10s 96c | 2026-11-11 17:37 UTC | 1g 22s 99c |  | too new | 2 of 7 | 43 |  |
 | Security DELTA Data Access Card | 9327 | 7s 0c | 2026-11-11 17:37 UTC | 7s 0c | 7s 0c | steady | 4 of 7 | 74 |  |
 | Seven of Elementals | 19274 | 100g 88s 0c | 2026-11-11 15:03 UTC | 100g 88s 0c |  | too new | 1 of 7 | 2 |  |
+| Seven of Portals | 19283 | 1g 88s 0c | 2026-11-11 17:37 UTC | 1g 88s 0c |  | too new | 1 of 7 | 1 |  |
 | Shellfish | 13545 | 74s 98c | 2026-11-11 17:37 UTC | 76s 0c | 76s 0c | volatile | 5 of 7 | 217 |  |
 | Shredder Operating Manual - Page 1 | 16645 | 4s 0c | 2026-11-11 17:37 UTC | 7s 0c | 7s 0c | volatile | 6 of 7 | 124 |  |
 | Shredder Operating Manual - Page 10 | 16654 | 4s 0c | 2026-11-11 17:37 UTC | 3s 50c | 3s 50c | volatile | 6 of 7 | 243 |  |

@@ -47,6 +47,7 @@
 | Formula: Enchant Shield - Stamina | 11202 | 12s 0c | 2026-11-11 17:37 UTC | 41s 0c | 41s 0c | volatile | 5 of 7 | 41 |  |
 | Formula: Enchant Weapon - Crusader | 16252 | 350g 0s 0c | 2026-11-11 17:37 UTC | 350g 0s 0c |  | too new | 1 of 7 | 2 |  |
 | Formula: Enchant Weapon - Demonslaying | 11208 | 15s 0c | 2026-11-11 17:37 UTC | 20s 50c | 20s 50c | moving | 4 of 7 | 23 |  |
+| Formula: Enchant Weapon - Fiery Weapon | 11207 | 80g 46s 0c | 2026-11-11 17:37 UTC | 80g 46s 0c |  | too new | 1 of 7 | 1 |  |
 | Formula: Enchant Weapon - Lesser Beastslayer | 11164 | 10s 0c | 2026-11-11 17:37 UTC | 9s 0c | 9s 0c | volatile | 6 of 7 | 54 |  |
 | Formula: Enchant Weapon - Lesser Elemental Slayer | 11165 | 8s 0c | 2026-11-11 17:37 UTC | 8s 0c | 8s 0c | steady | 5 of 7 | 52 |  |
 | Formula: Enchant Weapon - Minor Beastslayer | 6348 | 2s 0c | 2026-11-11 17:37 UTC | 2s 0c | 2s 0c | steady | 6 of 7 | 271 |  |

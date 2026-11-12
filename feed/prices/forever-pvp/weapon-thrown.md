@@ -6,6 +6,7 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
+| Balanced Knives | 285284 | 10g 77s 0c | 2026-11-11 17:37 UTC | 10g 77s 0c |  | too new | 1 of 7 | 1 |  |
 | Balanced Throwing Dagger | 2946 | 8s 0c | 2026-11-11 17:37 UTC | 9s 0c | 9s 0c | steady | 6 of 7 | 15 |  |
 | Boot Knife | 5379 | 6s 0c | 2026-11-11 17:37 UTC | 6s 50c | 6s 50c | moving | 4 of 7 | 7 |  |
 | Carved Furbolg Tooth | 284696 | 3g 30s 0c | 2026-11-08 16:27 UTC | 3g 30s 0c |  | too new | 2 of 7 | 1 |  |

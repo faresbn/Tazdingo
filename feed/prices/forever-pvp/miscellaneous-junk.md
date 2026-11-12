@@ -32,6 +32,7 @@
 | Bat Heart | 11394 | 5s 95c | 2026-11-11 17:37 UTC | 8s 50c | 8s 50c | moving | 4 of 7 | 20 |  |
 | Bear Flank | 11409 | 8s 0c | 2026-11-11 15:03 UTC | 8s 0c |  | too new | 1 of 7 | 9 |  |
 | Bear Gall Bladder | 3702 | 4s 98c | 2026-11-11 17:37 UTC | 4s 98c | 4s 98c | steady | 5 of 7 | 56 |  |
+| Bear Jaw | 11408 | 14s 0c | 2026-11-11 17:37 UTC | 14s 0c |  | too new | 1 of 7 | 9 |  |
 | Blackmaw Pouch | 273050 | 49s 98c | 2026-11-11 17:37 UTC | 49s 98c |  | too new | 1 of 7 | 36 |  |
 | Blinding Powder | 5530 | 1s 99c | 2026-11-11 17:37 UTC | 5s 39c | 5s 39c | moving | 4 of 7 | 554 |  |
 | Bloody Bat Fang | 6298 | 2s 0c | 2026-11-11 15:03 UTC | 2s 0c | 2s 0c | steady | 3 of 7 | 2 |  |
@@ -70,6 +71,7 @@
 | Clean Fishbones | 4874 | 47c | 2026-11-11 17:37 UTC | 76c | 76c | moving | 6 of 7 | 28 |  |
 | Coarse Gorilla Hair | 4096 | 6s 25c | 2026-11-11 17:37 UTC | 8s 8c | 8s 8c | moving | 4 of 7 | 274 |  |
 | Cracked Bill | 4775 | 29c | 2026-11-11 17:37 UTC | 28c | 28c | steady | 6 of 7 | 194 |  |
+| Cracked Crab Pincer | 279046 | 6s 0c | 2026-11-11 17:37 UTC | 6s 0c |  | too new | 1 of 7 | 3 |  |
 | Cracked Egg Shells | 4757 | 40c | 2026-11-11 17:37 UTC | 64c | 64c | volatile | 6 of 7 | 16 |  |
 | Cracked Silithid Shell | 5268 | 2s 19c | 2026-11-11 17:37 UTC | 2s 21c | 2s 21c | steady | 4 of 7 | 70 |  |
 | Cracked Windstone | 257224 | 99c | 2026-11-08 23:12 UTC | 1s 0c | 1s 0c | steady | 5 of 7 | 21 |  |
@@ -82,6 +84,7 @@
 | Curved Yellow Bill | 4590 | 10s 0c | 2026-11-11 15:03 UTC | 10s 0c |  | too new | 1 of 7 | 1 |  |
 | Damaged Elemental Bracer | 5447 | 1s 0c | 2026-11-11 15:03 UTC | 1s 0c | 1s 0c | steady | 3 of 7 | 1 |  |
 | Damp Diary Page (Day 4) | 6304 | 19s 0c | 2026-11-11 17:37 UTC | 17s 0c | 17s 0c | steady | 4 of 7 | 2 |  |
+| Damp Diary Page (Day 512) | 6306 | 30s 0c | 2026-11-11 17:37 UTC | 30s 0c |  | too new | 1 of 7 | 1 |  |
 | Damp Diary Page (Day 87) | 6305 | 5s 0c | 2026-11-11 15:03 UTC | 5s 0c |  | too new | 1 of 7 | 1 |  |
 | Dark Purple Berries | 278029 | 1s 0c | 2026-11-11 15:03 UTC | 9s 50c | 9s 50c | volatile | 6 of 7 | 26 |  |
 | Decomposed Boot | 3674 | 1s 0c | 2026-11-11 17:37 UTC | 1s 50c | 1s 50c | moving | 6 of 7 | 31 |  |
@@ -90,6 +93,7 @@
 | Delicate Ribcage | 11416 | 4s 0c | 2026-11-11 15:03 UTC | 5s 0c | 5s 0c | steady | 3 of 7 | 28 |  |
 | Dirty Kodo Scale | 5121 | 29s 99c | 2026-11-11 17:37 UTC | 4s 94c | 4s 94c | volatile | 4 of 7 | 2 |  |
 | Discolored Fang | 4814 | 10c | 2026-11-11 15:03 UTC | 17c | 17c | volatile | 6 of 7 | 79 |  |
+| Document Box | 274041 | 80g 0s 0c | 2026-11-11 17:37 UTC | 80g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Dried Bat Blood | 6293 | 35c | 2026-11-11 15:03 UTC | 40c | 40c | moving | 6 of 7 | 36 |  |
 | Dried Scorpid Carapace | 19936 | 13s 0c | 2026-11-11 15:03 UTC | 13s 0c |  | too new | 1 of 7 | 13 |  |
 | Dripping Spider Mandible | 4585 | 6s 40c | 2026-11-11 17:37 UTC | 9s 85c | 9s 85c | moving | 5 of 7 | 45 |  |
@@ -99,6 +103,7 @@
 | Dull Frenzy Scale | 537 | 1s 5c | 2026-11-11 15:03 UTC | 2s 0c | 2s 0c | moving | 5 of 7 | 13 |  |
 | Dull Kodo Tooth | 4779 | 45s 0c | 2026-11-11 17:37 UTC | 3s 0c | 3s 0c | volatile | 5 of 7 | 25 |  |
 | Dwarven Skull | 275891 | 2s 0c | 2026-11-07 04:40 UTC | 2s 0c |  | too new | 1 of 7 | 1 |  |
+| Eagle Eye | 4591 | 7s 0c | 2026-11-11 17:37 UTC | 7s 0c |  | too new | 1 of 7 | 5 |  |
 | Empty Hip Flask | 5431 | 3s 0c | 2026-11-11 17:37 UTC | 3s 0c |  | too new | 1 of 7 | 8 |  |
 | Empty Sea Snail Shell | 10457 | 3s 0c | 2026-11-11 15:03 UTC | 3s 0c |  | too new | 1 of 7 | 2 |  |
 | Empty Venom Sac | 19935 | 13s 0c | 2026-11-11 15:03 UTC | 13s 0c |  | too new | 1 of 7 | 6 |  |
@@ -171,6 +176,7 @@
 | Rogue's Diary | 24282 | 2g 24s 0c | 2026-11-11 17:37 UTC | 2g 24s 0c |  | too new | 1 of 7 | 5 |  |
 | Rotting Bear Carcass | 11406 | 1s 68c | 2026-11-11 17:37 UTC | 1s 68c | 1s 68c | moving | 6 of 7 | 144 |  |
 | Rough Crocolisk Scale | 3401 | 81c | 2026-11-11 17:37 UTC | 87c | 87c | moving | 6 of 7 | 227 |  |
+| Rough Vulture Feathers | 555 | 1s 0c | 2026-11-11 17:37 UTC | 1s 0c |  | too new | 1 of 7 | 1 |  |
 | Ruffled Feather | 4776 | 42c | 2026-11-11 17:37 UTC | 43c | 43c | steady | 6 of 7 | 70 |  |
 | Ruined Dragonhide | 3175 | 2s 0c | 2026-11-11 17:37 UTC | 2s 0c |  | too new | 2 of 7 | 2 |  |
 | Ruined Gyrostabilizer | 255154 | 1s 0c | 2026-11-05 18:58 UTC | 1s 0c |  | too new | 1 of 7 | 2 |  |

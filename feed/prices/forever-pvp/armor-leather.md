@@ -6,6 +6,7 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
+| Adventurer's Bandana | 10261 | 12g 0s 0c | 2026-11-11 17:37 UTC | 12g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Adventurer's Boots | 10257 | 5g 54s 0c | 2026-11-11 15:03 UTC | 5g 54s 0c |  | too new | 1 of 7 | 1 |  |
 | Adventurer's Pith Helmet | 9420 | 9g 0s 0c | 2026-11-11 17:37 UTC | 9g 0s 0c |  | too new | 1 of 7 | 2 |  |
 | Agile Boots | 4788 | 22s 0c | 2026-11-11 15:03 UTC | 22s 50c | 22s 50c | moving | 6 of 7 | 14 |  |
@@ -273,6 +274,7 @@
 | Grizzly Jerkin | 15304 | 6s 0c | 2026-11-11 17:37 UTC | 5s 0c | 5s 0c | moving | 6 of 7 | 63 |  |
 | Grizzly Pants | 15303 | 3s 0c | 2026-11-11 17:37 UTC | 3s 0c | 3s 0c | steady | 7 of 7 | 113 |  |
 | Grizzly Slippers | 15301 | 2s 0c | 2026-11-11 17:37 UTC | 2s 0c | 2s 0c | steady | 7 of 7 | 23 |  |
+| Grunt's Harness | 6525 | 16s 0c | 2026-11-11 17:37 UTC | 16s 0c |  | too new | 1 of 7 | 1 |  |
 | Guardian Armor | 4256 | 70s 0c | 2026-11-11 17:37 UTC | 90s 0c | 90s 0c | moving | 3 of 7 | 3 |  |
 | Guardian Belt | 4258 | 25s 0c | 2026-11-11 17:37 UTC | 56s 50c | 56s 50c | volatile | 4 of 7 | 36 |  |
 | Guardian Gloves | 5966 | 19s 0c | 2026-11-11 17:37 UTC | 19s 0c | 19s 0c | steady | 4 of 7 | 245 |  |
@@ -420,6 +422,7 @@
 | Nightscape Pants | 8193 | 88s 0c | 2026-11-11 17:37 UTC | 1g 12s 50c | 1g 12s 50c | moving | 4 of 7 | 42 |  |
 | Nightscape Shoulders | 8192 | 92s 0c | 2026-11-11 17:37 UTC | 1g 65s 0c | 1g 65s 0c | moving | 3 of 7 | 38 |  |
 | Nightscape Tunic | 8175 | 45s 0c | 2026-11-11 15:03 UTC | 47s 0c | 47s 0c | steady | 4 of 7 | 52 |  |
+| Nightshade Armguards | 10223 | 4g 42s 0c | 2026-11-11 17:37 UTC | 4g 42s 0c |  | too new | 1 of 7 | 1 |  |
 | Nightshade Boots | 10222 | 5g 17s 0c | 2026-11-11 15:03 UTC | 4g 58s 50c |  | too new | 2 of 7 | 1 |  |
 | Nightshade Girdle | 10221 | 3g 38s 0c | 2026-11-11 15:03 UTC | 3g 38s 0c |  | too new | 1 of 7 | 1 |  |
 | Nightshade Gloves | 10225 | 4g 51s 0c | 2026-11-11 15:03 UTC | 4g 51s 0c |  | too new | 1 of 7 | 2 |  |
@@ -467,6 +470,7 @@
 | Pioneer Gloves | 6521 | 2s 0c | 2026-11-11 17:37 UTC | 1s 0c | 1s 0c | steady | 6 of 7 | 8 |  |
 | Pioneer Trousers | 6269 | 3s 0c | 2026-11-11 17:37 UTC | 3s 0c | 3s 0c | moving | 7 of 7 | 60 |  |
 | Pioneer Tunic | 6268 | 3s 0c | 2026-11-11 15:03 UTC | 3s 0c | 3s 0c | steady | 6 of 7 | 74 |  |
+| Plaguebat Fur Gloves | 18744 | 35g 71s 0c | 2026-11-11 17:37 UTC | 35g 71s 0c |  | too new | 1 of 7 | 1 |  |
 | Potent Armor | 15170 | 1g 97s 0c | 2026-11-11 17:37 UTC | 1g 97s 0c |  | too new | 1 of 7 | 2 |  |
 | Potent Bands | 15172 | 1g 0s 0c | 2026-11-11 15:03 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 7 | 1 |  |
 | Potent Belt | 15178 | 98s 0c | 2026-11-11 17:37 UTC | 1g 26s 50c |  | too new | 2 of 7 | 4 |  |
@@ -607,6 +611,7 @@
 | Serpentskin Bracers | 8257 | 1g 10s 0c | 2026-11-11 17:37 UTC | 3g 51s 50c | 3g 51s 50c | volatile | 4 of 7 | 2 |  |
 | Serpentskin Girdle | 8255 | 1g 0s 0c | 2026-11-11 17:37 UTC | 1g 72s 0c | 1g 72s 0c | volatile | 3 of 7 | 4 |  |
 | Serpentskin Gloves | 8260 | 4g 0s 0c | 2026-11-11 17:37 UTC | 4g 52s 50c | 4g 52s 50c | moving | 4 of 7 | 2 |  |
+| Serpentskin Helm | 8261 | 5g 98s 0c | 2026-11-11 17:37 UTC | 5g 98s 0c |  | too new | 1 of 7 | 4 |  |
 | Serpentskin Leggings | 8262 | 2g 20s 0c | 2026-11-11 15:03 UTC | 3g 20s 0c | 3g 20s 0c | moving | 4 of 7 | 2 |  |
 | Serpentskin Spaulders | 8263 | 1g 56s 0c | 2026-11-11 15:03 UTC | 1g 56s 0c |  | too new | 1 of 7 | 1 |  |
 | Shadowcraft Belt | 16713 | 24g 88s 0c | 2026-11-11 17:37 UTC | 50g 0s 0c | 50g 0s 0c | volatile | 3 of 7 | 1 |  |
@@ -675,6 +680,7 @@
 | Tracker's Shoulderpads | 9923 | 1g 30s 0c | 2026-11-11 17:37 UTC | 1g 61s 0c | 1g 61s 0c | moving | 4 of 7 | 3 |  |
 | Tracker's Tunic | 9924 | 1g 40s 0c | 2026-11-11 17:37 UTC | 2g 17s 50c | 2g 17s 50c | moving | 4 of 7 | 3 |  |
 | Tracker's Wristguards | 9925 | 77s 0c | 2026-11-11 17:37 UTC | 1g 61s 0c | 1g 61s 0c | volatile | 4 of 7 | 4 |  |
+| Traveler's Bracers | 8295 | 6g 0s 0c | 2026-11-11 17:37 UTC | 6g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Tribal Belt | 4675 | 1s 0c | 2026-11-11 15:03 UTC | 1s 0c | 1s 0c | volatile | 7 of 7 | 18 |  |
 | Tribal Boots | 3284 | 2s 0c | 2026-11-11 17:37 UTC | 2s 0c | 2s 0c | steady | 7 of 7 | 17 |  |
 | Tribal Bracers | 3285 | 1s 0c | 2026-11-11 17:37 UTC | 1s 0c | 1s 0c | steady | 7 of 7 | 9 |  |
@@ -696,6 +702,7 @@
 | Wanderer's Armor | 10105 | 3g 0s 0c | 2026-11-11 15:03 UTC | 3g 0s 0c |  | too new | 1 of 7 | 2 |  |
 | Wanderer's Belt | 10109 | 5g 0s 0c | 2026-11-11 17:37 UTC | 3g 50s 0c |  | too new | 2 of 7 | 3 |  |
 | Wanderer's Boots | 10106 | 10g 82s 0c | 2026-11-08 23:12 UTC | 10g 82s 0c |  | too new | 2 of 7 | 1 |  |
+| Wanderer's Bracers | 10107 | 1g 99s 0c | 2026-11-11 17:37 UTC | 1g 99s 0c |  | too new | 1 of 7 | 1 |  |
 | Wanderer's Gloves | 10110 | 2g 45s 0c | 2026-11-11 15:03 UTC | 2g 72s 50c |  | too new | 2 of 7 | 2 |  |
 | Warchief Kilt | 7760 | 9g 80s 0c | 2026-11-11 15:03 UTC | 5g 0s 0c | 5g 0s 0c | volatile | 3 of 7 | 2 |  |
 | Warden's Footpads | 14599 | 78s 0c | 2026-11-11 17:37 UTC | 3g 50s 0c | 3g 50s 0c | volatile | 3 of 7 | 3 |  |

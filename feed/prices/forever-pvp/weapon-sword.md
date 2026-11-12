@@ -31,6 +31,7 @@
 | Copper Claymore | 7955 | 12s 0c | 2026-11-11 17:37 UTC | 6s 50c | 6s 50c | moving | 6 of 7 | 27 |  |
 | Copper Shortsword | 2847 | 5s 0c | 2026-11-11 17:37 UTC | 3s 0c | 3s 0c | moving | 7 of 7 | 78 |  |
 | Crude Bastard Sword | 1412 | 1s 0c | 2026-11-11 15:03 UTC | 1s 0c | 1s 0c | steady | 6 of 7 | 40 |  |
+| Crystal Sword | 15218 | 24g 99s 0c | 2026-11-11 17:37 UTC | 24g 99s 0c |  | too new | 1 of 7 | 2 |  |
 | Cutlass | 851 | 21s 0c | 2026-11-11 17:37 UTC | 20s 0c | 20s 0c | moving | 6 of 7 | 4 |  |
 | Dacian Falx | 922 | 1g 0s 0c | 2026-11-08 16:27 UTC | 1g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Darksteel Bastard Sword | 2084 | 80s 0c | 2026-11-11 17:37 UTC | 65s 0c | 65s 0c | steady | 4 of 7 | 6 |  |
@@ -130,6 +131,7 @@
 | Warmonger | 13052 | 39g 67s 0c | 2026-11-11 17:37 UTC | 69g 46s 50c |  | too new | 2 of 7 | 4 |  |
 | Warped Blade | 1821 | 10s 0c | 2026-11-11 17:37 UTC | 11s 0c | 11s 0c | steady | 5 of 7 | 19 |  |
 | Wicked Mithril Blade | 7943 | 4g 39s 0c | 2026-11-11 17:37 UTC | 3g 57s 0c |  | too new | 2 of 7 | 8 |  |
+| Widow Blade | 15217 | 6g 65s 0c | 2026-11-11 17:37 UTC | 6g 65s 0c |  | too new | 1 of 7 | 2 |  |
 | Witchfury | 13051 | 3g 49s 0c | 2026-11-11 15:03 UTC | 10g 71s 50c | 10g 71s 50c | moving | 4 of 7 | 3 |  |
 | Worn Greatsword | 258882 | 1g 1s 0c | 2026-11-09 12:28 UTC | 1g 1s 0c |  | too new | 1 of 7 | 1 |  |
 | Zealot Blade | 13033 | 1g 29s 0c | 2026-11-11 17:37 UTC | 2g 11s 0c | 2g 11s 0c | volatile | 6 of 7 | 18 |  |

@@ -10,9 +10,9 @@
    "class": "Warlock",
    "race": "Orc",
    "faction": "Horde",
-   "level": 29,
-   "item_level": 25.1,
-   "recorded_at": "2026-11-11T17:03:28Z",
+   "level": 31,
+   "item_level": 27.3,
+   "recorded_at": "2026-11-11T21:44:07Z",
    "recorded_on": "logout",
    "build": "70888",
    "gear": [
@@ -30,9 +30,9 @@
     },
     {
      "slot": "Shoulder",
-     "item": 3748,
-     "name": "Feline Mantle",
-     "item_level": 28
+     "item": 4197,
+     "name": "Berylline Pads",
+     "item_level": 36
     },
     {
      "slot": "Chest",
@@ -42,9 +42,9 @@
     },
     {
      "slot": "Waist",
-     "item": 253885,
-     "name": "Novice Arcanist's Sash",
-     "item_level": 15
+     "item": 7055,
+     "name": "Crimson Silk Belt",
+     "item_level": 35
     },
     {
      "slot": "Legs",
@@ -78,9 +78,9 @@
     },
     {
      "slot": "Finger",
-     "item": 3739,
-     "name": "Skull Ring",
-     "item_level": 25
+     "item": 6750,
+     "name": "Snake Hoop",
+     "item_level": 32
     },
     {
      "slot": "Trinket",
@@ -122,10 +122,10 @@
    "talents": {
     "points": {
      "Affliction": 0,
-     "Demonology": 20,
+     "Demonology": 22,
      "Destruction": 0
     },
-    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAgZegZMGGAAA"
+    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAMMzDMzMGGAAA"
    },
    "professions": [
     {
@@ -135,7 +135,7 @@
     },
     {
      "name": "Tailoring",
-     "skill": 130,
+     "skill": 147,
      "max": 150
     },
     {
@@ -159,37 +159,37 @@
      "name": "Daggers",
      "category": "Weapon Skills",
      "skill": 23,
-     "max": 145
+     "max": 155
     },
     {
      "name": "Defense",
      "category": "Weapon Skills",
-     "skill": 140,
-     "max": 145
+     "skill": 142,
+     "max": 155
     },
     {
      "name": "Staves",
      "category": "Weapon Skills",
      "skill": 4,
-     "max": 145
+     "max": 155
     },
     {
      "name": "Swords",
      "category": "Weapon Skills",
      "skill": 1,
-     "max": 145
+     "max": 155
     },
     {
      "name": "Unarmed",
      "category": "Weapon Skills",
      "skill": 13,
-     "max": 145
+     "max": 155
     },
     {
      "name": "Wands",
      "category": "Weapon Skills",
-     "skill": 124,
-     "max": 145
+     "skill": 128,
+     "max": 155
     },
     {
      "name": "Cloth",
@@ -208,55 +208,55 @@
     {
      "name": "Darkspear Trolls",
      "standing": "Honored",
-     "progress": 47,
+     "progress": 203,
      "needed": 12000
     },
     {
      "name": "Orgrimmar",
      "standing": "Honored",
-     "progress": 1935,
+     "progress": 2091,
      "needed": 12000
     },
     {
      "name": "Thunder Bluff",
      "standing": "Friendly",
-     "progress": 4132,
+     "progress": 4507,
      "needed": 6000
     },
     {
      "name": "Undercity",
      "standing": "Friendly",
-     "progress": 4311,
+     "progress": 4767,
      "needed": 6000
     },
     {
      "name": "Booty Bay",
      "standing": "Neutral",
-     "progress": 826,
+     "progress": 976,
      "needed": 3000
     },
     {
      "name": "Everlook",
      "standing": "Neutral",
-     "progress": 826,
+     "progress": 976,
      "needed": 3000
     },
     {
      "name": "Gadgetzan",
      "standing": "Neutral",
-     "progress": 826,
+     "progress": 976,
      "needed": 3000
     },
     {
      "name": "Powderfuse",
      "standing": "Neutral",
-     "progress": 826,
+     "progress": 976,
      "needed": 3000
     },
     {
      "name": "Ratchet",
      "standing": "Neutral",
-     "progress": 1253,
+     "progress": 1553,
      "needed": 3000
     },
     {
@@ -279,18 +279,18 @@
     }
    ],
    "stats": {
-    "Health": 1161,
-    "Mana or energy": 2061,
+    "Health": 1468,
+    "Mana or energy": 2316,
     "Strength": 33,
-    "Agility": 30,
-    "Stamina": 99,
-    "Intellect": 98,
-    "Spirit": 77,
-    "Armour": 547
+    "Agility": 29,
+    "Stamina": 125,
+    "Intellect": 108,
+    "Spirit": 98,
+    "Armour": 649
    },
    "pvp": {
-    "Honourable kills": 16,
-    "Dishonourable kills": 0,
+    "Honourable kills": 0,
+    "Dishonourable kills": -109,
     "Honour points": 45,
     "Renown": 0
    },
@@ -307,9 +307,9 @@
    "faction": "Horde",
    "level": 12,
    "item_level": 6.9,
-   "recorded_at": "2026-11-09T19:32:50Z",
+   "recorded_at": "2026-11-11T20:35:32Z",
    "recorded_on": "logout",
-   "build": "70862",
+   "build": "70888",
    "gear": [
     {
      "slot": "Chest",
@@ -532,7 +532,7 @@
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": 88,
+    "Dishonourable kills": -76,
     "Honour points": 0,
     "Renown": 0
    },

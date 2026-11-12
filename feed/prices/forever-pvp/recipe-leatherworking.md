@@ -18,6 +18,7 @@
 | Pattern: Black Dragonscale Shoulders | 15770 | 180g 13s 0c | 2026-11-11 15:03 UTC | 180g 13s 0c |  | too new | 1 of 7 | 2 |  |
 | Pattern: Black Whelp Cloak | 7289 | 89s 0c | 2026-11-11 15:03 UTC | 93s 0c | 93s 0c | moving | 4 of 7 | 4 |  |
 | Pattern: Black Whelp Tunic | 20576 | 1g 99s 0c | 2026-11-11 17:37 UTC | 88s 50c | 88s 50c | moving | 4 of 7 | 3 |  |
+| Pattern: Blue Dragonscale Helm | 252938 | 300g 13s 0c | 2026-11-11 17:37 UTC | 300g 13s 0c |  | too new | 1 of 7 | 1 |  |
 | Pattern: Blue Suede Gloves | 252866 | 1g 0s 0c | 2026-11-11 15:03 UTC | 1g 0s 0c |  | too new | 1 of 7 | 11 |  |
 | Pattern: Blue Suede Hat | 252890 | 5g 0s 0c | 2026-11-11 15:03 UTC | 5g 0s 0c |  | too new | 1 of 7 | 3 |  |
 | Pattern: Blue Suede Shoes | 252859 | 97s 0c | 2026-11-11 17:37 UTC | 71s 50c |  | too new | 2 of 7 | 13 |  |
@@ -79,6 +80,7 @@
 | Pattern: Ironfeather Leggings | 252895 | 300g 0s 0c | 2026-11-11 15:03 UTC | 180g 6s 50c |  | too new | 2 of 7 | 2 |  |
 | Pattern: Ironfeather Shoulders | 15735 | 53s 0c | 2026-11-11 17:37 UTC | 3g 3s 0c |  | too new | 2 of 7 | 10 |  |
 | Pattern: Kodo Hide Bag | 5083 | 15s 0c | 2026-11-11 17:37 UTC | 11s 50c | 11s 50c | volatile | 6 of 7 | 26 |  |
+| Pattern: Living Crown | 252891 | 75g 13s 0c | 2026-11-11 17:37 UTC | 75g 13s 0c |  | too new | 1 of 7 | 2 |  |
 | Pattern: Living Leggings | 15752 | 75s 0c | 2026-11-11 17:37 UTC | 75s 0c |  | too new | 1 of 7 | 9 |  |
 | Pattern: Mender's Leather Gauntlets | 252871 | 1g 67s 0c | 2026-11-11 17:37 UTC | 3g 64s 0c |  | too new | 2 of 7 | 9 |  |
 | Pattern: Mender's Leather Shoes | 252847 | 25s 0c | 2026-11-11 15:03 UTC | 50s 0c | 50s 0c | volatile | 3 of 7 | 14 |  |
@@ -92,6 +94,8 @@
 | Pattern: Prowler's Leather Gauntlets | 252867 | 2g 55s 0c | 2026-11-11 17:37 UTC | 2g 55s 0c | 2g 55s 0c | volatile | 3 of 7 | 1 |  |
 | Pattern: Prowler's Leather Shoes | 252843 | 65s 0c | 2026-11-11 17:37 UTC | 3g 58s 50c | 3g 58s 50c | volatile | 4 of 7 | 6 |  |
 | Pattern: Raptor Hide Belt | 13288 | 40s 0c | 2026-11-11 17:37 UTC | 35s 0c | 35s 0c | moving | 5 of 7 | 21 |  |
+| Pattern: Raptor Hide Harness | 13287 | 4g 44s 0c | 2026-11-11 17:37 UTC | 4g 44s 0c |  | too new | 1 of 7 | 6 |  |
+| Pattern: Red Dragonscale Leggings | 252937 | 200g 0s 0c | 2026-11-11 17:37 UTC | 200g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Pattern: Red Whelp Gloves | 7290 | 3g 99s 0c | 2026-11-11 17:37 UTC | 1g 49s 50c | 1g 49s 50c | volatile | 4 of 7 | 2 |  |
 | Pattern: Rugged Leather Pants | 7288 | 2s 0c | 2026-11-11 17:37 UTC | 2s 0c | 2s 0c | steady | 6 of 7 | 264 |  |
 | Pattern: Runic Leather Belt | 15745 | 5g 0s 0c | 2026-11-11 15:03 UTC | 5g 0s 0c |  | too new | 1 of 7 | 5 |  |
@@ -123,6 +127,7 @@
 | Pattern: Tooled Leather Boots | 252865 | 5g 0s 0c | 2026-11-11 17:37 UTC | 5g 0s 0c |  | too new | 1 of 7 | 6 |  |
 | Pattern: Tooled Leather Bracers | 252885 | 555g 94s 0c | 2026-11-11 15:03 UTC | 555g 94s 0c |  | too new | 1 of 7 | 1 |  |
 | Pattern: Tooled Leather Crown | 252882 | 9g 99s 0c | 2026-11-11 17:37 UTC | 5g 41s 0c |  | too new | 2 of 7 | 1 |  |
+| Pattern: Tooled Leather Gauntlets | 252880 | 9g 99s 0c | 2026-11-11 17:37 UTC | 9g 99s 0c |  | too new | 1 of 7 | 1 |  |
 | Pattern: Totemic Leather Armor | 252774 | 12s 0c | 2026-11-11 15:03 UTC | 12s 50c | 12s 50c | moving | 6 of 7 | 27 |  |
 | Pattern: Totemic Leather Helm | 252817 | 13s 0c | 2026-11-11 15:03 UTC | 21s 0c | 21s 0c | volatile | 5 of 7 | 20 |  |
 | Pattern: Totemic Leather Pants | 252795 | 15s 0c | 2026-11-11 17:37 UTC | 13s 50c | 13s 50c | volatile | 6 of 7 | 40 |  |
@@ -142,6 +147,7 @@
 | Pattern: Warden's Leather Shoes | 252845 | 50s 0c | 2026-11-11 17:37 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 7 | 10 |  |
 | Pattern: White Leather Jerkin | 2407 | 2s 0c | 2026-11-11 17:37 UTC | 2s 0c | 2s 0c | steady | 6 of 7 | 210 |  |
 | Pattern: Wicked Leather Bracers | 15728 | 1g 45s 0c | 2026-11-11 17:37 UTC | 8g 45s 50c |  | too new | 2 of 7 | 9 |  |
+| Pattern: Wicked Leather Pants | 15757 | 83s 0c | 2026-11-11 17:37 UTC | 83s 0c |  | too new | 1 of 7 | 3 |  |
 | Pattern: Wildthorn Mail | 12691 | 47s 0c | 2026-11-11 17:37 UTC | 7g 0s 0c | 7g 0s 0c | volatile | 3 of 7 | 4 |  |
 | Pattern: Wisdom's Leather Armor | 252776 | 10s 0c | 2026-11-11 17:37 UTC | 9s 0c | 9s 0c | steady | 6 of 7 | 32 |  |
 | Pattern: Wisdom's Leather Helm | 252819 | 10s 0c | 2026-11-11 15:03 UTC | 19s 0c | 19s 0c | volatile | 5 of 7 | 18 |  |

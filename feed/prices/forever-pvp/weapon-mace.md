@@ -73,6 +73,7 @@
 | Jagged Star | 15223 | 24s 0c | 2026-11-11 17:37 UTC | 24s 0c | 24s 0c | steady | 6 of 7 | 102 |  |
 | Korg Bat | 1679 | 1g 10s 0c | 2026-11-11 17:37 UTC | 1g 37s 50c | 1g 37s 50c | moving | 4 of 7 | 17 |  |
 | Kovork's Rattle | 5256 | 99s 0c | 2026-11-11 17:37 UTC | 1g 3s 50c | 1g 3s 50c | steady | 4 of 7 | 8 |  |
+| Large Bear Bone | 11411 | 23s 0c | 2026-11-11 17:37 UTC | 23s 0c |  | too new | 1 of 7 | 2 |  |
 | Large Club | 2480 | 1s 0c | 2026-11-05 18:58 UTC | 1s 0c |  | too new | 1 of 7 | 1 |  |
 | Large War Club | 3782 | 35s 0c | 2026-11-11 17:37 UTC | 40s 0c | 40s 0c | moving | 3 of 7 | 2 |  |
 | Leaden Mace | 865 | 51s 0c | 2026-11-11 17:37 UTC | 52s 0c | 52s 0c | moving | 5 of 7 | 39 |  |

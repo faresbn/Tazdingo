@@ -25,9 +25,12 @@
 | Schematic: Flame Deflector | 4411 | 5g 70s 0c | 2026-11-11 17:37 UTC | 26g 26s 0c | 26g 26s 0c | volatile | 4 of 7 | 2 |  |
 | Schematic: Flash Bomb | 6672 | 2g 99s 0c | 2026-11-11 17:37 UTC | 3g 99s 0c |  | too new | 2 of 7 | 4 |  |
 | Schematic: Gnomish Alarm-O-Bot | 18654 | 15g 0s 0c | 2026-11-11 17:37 UTC | 15g 0s 0c |  | too new | 1 of 7 | 6 |  |
+| Schematic: Goblin Jumper Cables XL | 18653 | 5g 61s 0c | 2026-11-11 17:37 UTC | 5g 61s 0c |  | too new | 1 of 7 | 1 |  |
 | Schematic: Goblin Land Mine | 4416 | 7s 0c | 2026-11-11 17:37 UTC | 14s 0c | 14s 0c | volatile | 5 of 7 | 67 |  |
 | Schematic: Goblin Rocket Boots | 7192 | 6g 55s 0c | 2026-11-11 17:37 UTC | 8g 27s 50c | 8g 27s 50c | volatile | 4 of 7 | 6 |  |
 | Schematic: Large Seaforium Charge | 4417 | 7s 0c | 2026-11-11 17:37 UTC | 8s 0c | 8s 0c | moving | 5 of 7 | 27 |  |
+| Schematic: Lifelike Mechanical Toad | 16044 | 15g 99s 0c | 2026-11-11 17:37 UTC | 15g 99s 0c |  | too new | 1 of 7 | 2 |  |
+| Schematic: Major Recombobulator | 18655 | 5g 61s 0c | 2026-11-11 17:37 UTC | 5g 61s 0c |  | too new | 1 of 7 | 2 |  |
 | Schematic: Mechanical Dragonling | 13311 | 1g 22s 0c | 2026-11-11 15:03 UTC | 1g 22s 0c | 1g 22s 0c | volatile | 3 of 7 | 11 |  |
 | Schematic: Mechanical Squirrel | 4408 | 2s 0c | 2026-11-11 17:37 UTC | 2s 0c | 2s 0c | steady | 6 of 7 | 335 |  |
 | Schematic: Minor Recombobulator | 14639 | 2g 5s 0c | 2026-11-11 17:37 UTC | 2g 5s 0c |  | too new | 1 of 7 | 7 |  |

@@ -9,12 +9,14 @@
 | "Mage-Eye" Blunderbuss | 3041 | 39s 0c | 2026-11-11 15:03 UTC | 39s 0c | 39s 0c | moving | 5 of 7 | 32 |  |
 | BKP "Sparrow" Smallbore | 3042 | 46s 0c | 2026-11-11 17:37 UTC | 46s 0c | 46s 0c | steady | 5 of 7 | 32 |  |
 | BKP 2700 "Enforcer" | 3024 | 45s 0c | 2026-11-06 | 45s 0c |  | too new | 1 of 7 | 1 |  |
+| Burnside Rifle | 15324 | 5g 0s 0c | 2026-11-11 17:37 UTC | 5g 0s 0c |  | too new | 1 of 7 | 1 |  |
 | Cheap Blunderbuss | 2778 | 2s 0c | 2026-11-11 17:37 UTC | 2s 0c | 2s 0c | steady | 6 of 7 | 74 |  |
 | Chesterfall Musket | 7729 | 1g 30s 0c | 2026-11-11 17:37 UTC | 3g 77s 50c | 3g 77s 50c | moving | 4 of 7 | 8 |  |
 | Compact Shotgun | 4577 | 3s 0c | 2026-11-11 17:37 UTC | 4s 0c | 4s 0c | volatile | 6 of 7 | 782 |  |
 | Deadly Blunderbuss | 4369 | 32s 0c | 2026-11-11 17:37 UTC | 23s 0c | 23s 0c | moving | 6 of 7 | 208 |  |
 | Dirty Blunderbuss | 2781 | 4s 0c | 2026-11-11 17:37 UTC | 4s 0c | 4s 0c | moving | 6 of 7 | 43 |  |
 | Double-barreled Shotgun | 2098 | 1g 33s 0c | 2026-11-11 17:37 UTC | 1g 99s 0c | 1g 99s 0c | moving | 5 of 7 | 21 |  |
+| Dwarven Hand Cannon | 2099 | 240g 0s 0c | 2026-11-11 15:03 UTC | 240g 0s 0c |  | too new | 1 of 7 | 2 |  |
 | Escape Plan | 287026 | 59g 99s 0c | 2026-11-11 17:37 UTC | 59g 99s 0c |  | too new | 1 of 7 | 1 |  |
 | Explosive Shotgun | 8188 | 65s 0c | 2026-11-11 17:37 UTC | 67s 0c | 67s 0c | steady | 5 of 7 | 40 |  |
 | Guttbuster | 13139 | 11g 0s 0c | 2026-11-11 17:37 UTC | 17g 95s 0c |  | too new | 2 of 7 | 6 |  |

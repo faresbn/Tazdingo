@@ -35,6 +35,7 @@
 | Mishandled Recurve Bow | 2782 | 8s 0c | 2026-11-11 17:37 UTC | 8s 0c | 8s 0c | steady | 4 of 7 | 16 |  |
 | Needle Threader | 13021 | 5g 55s 0c | 2026-11-11 17:37 UTC | 29g 0s 0c | 29g 0s 0c | volatile | 3 of 7 | 1 |  |
 | Precision Bow | 8183 | 26s 0c | 2026-11-11 17:37 UTC | 30s 0c | 30s 0c | moving | 5 of 7 | 41 |  |
+| Quillfire Bow | 15295 | 4g 99s 0c | 2026-11-11 17:37 UTC | 4g 99s 0c |  | too new | 1 of 7 | 1 |  |
 | Quillshooter | 10567 | 6g 10s 0c | 2026-11-11 17:37 UTC | 14g 99s 50c |  | too new | 2 of 7 | 11 |  |
 | Ranger Bow | 3021 | 1g 95s 0c | 2026-11-11 17:37 UTC | 1g 98s 50c | 1g 98s 50c | moving | 6 of 7 | 20 |  |
 | Reinforced Bow | 3026 | 8s 0c | 2026-11-11 17:37 UTC | 15s 0c | 15s 0c | volatile | 4 of 7 | 4 |  |

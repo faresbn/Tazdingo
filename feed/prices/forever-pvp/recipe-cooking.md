@@ -27,6 +27,7 @@
 | Recipe: Dig Rat Stew | 5487 | 13s 0c | 2026-11-11 17:37 UTC | 12s 0c | 13s 0c | moving | 5 of 7 | 38 |  |
 | Recipe: Dragonbreath Chili | 12239 | 45s 0c | 2026-11-11 17:37 UTC | 1g 28s 0c | 1g 28s 0c | volatile | 4 of 7 | 22 |  |
 | Recipe: Filet of Redgill | 13941 | 1g 80s 0c | 2026-11-11 17:37 UTC | 1g 61s 0c | 1g 61s 0c | steady | 4 of 7 | 4 |  |
+| Recipe: Fillet of Frenzy | 5485 | 2g 55s 0c | 2026-11-11 17:37 UTC | 2g 55s 0c |  | too new | 1 of 7 | 3 |  |
 | Recipe: Giant Clam Scorcho | 6039 | 69s 0c | 2026-11-11 15:03 UTC | 90s 0c | 90s 0c | moving | 4 of 7 | 10 |  |
 | Recipe: Gooey Spider Cake | 3683 | 1g 99s 0c | 2026-11-11 17:37 UTC | 1g 96s 0c | 1g 53s 50c | moving | 4 of 7 | 6 |  |
 | Recipe: Goretusk Liver Pie | 2697 | 1g 60s 0c | 2026-11-11 17:37 UTC | 1g 0s 0c | 1g 0s 0c | moving | 4 of 7 | 4 |  |

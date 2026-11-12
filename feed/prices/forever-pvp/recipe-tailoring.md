@@ -36,9 +36,11 @@
 | Pattern: Earthen Silk Slippers | 254014 | 1g 20s 0c | 2026-11-11 17:37 UTC | 1g 62s 50c | 2g 5s 0c | volatile | 3 of 7 | 4 |  |
 | Pattern: Earthenweave Boots | 254094 | 75s 0c | 2026-11-11 17:37 UTC | 75s 0c |  | too new | 1 of 7 | 11 |  |
 | Pattern: Earthenweave Cord | 254078 | 35s 0c | 2026-11-11 17:37 UTC | 40s 50c |  | too new | 2 of 7 | 12 |  |
+| Pattern: Earthenweave Crown | 254138 | 1g 13s 0c | 2026-11-11 17:37 UTC | 1g 13s 0c |  | too new | 1 of 7 | 2 |  |
 | Pattern: Earthenweave Gloves | 254076 | 48s 0c | 2026-11-11 17:37 UTC | 48s 0c |  | too new | 1 of 7 | 5 |  |
 | Pattern: Earthenweave Mantle | 254120 | 1g 0s 0c | 2026-11-11 15:03 UTC | 1g 50s 0c |  | too new | 2 of 7 | 7 |  |
 | Pattern: Enchanted Mageweave Pouch | 22307 | 38s 0c | 2026-11-11 17:37 UTC | 49s 0c | 49s 0c | volatile | 6 of 7 | 22 |  |
+| Pattern: Enchanted Runecloth Bag | 22308 | 10g 76s 0c | 2026-11-11 17:37 UTC | 10g 76s 0c |  | too new | 1 of 7 | 2 |  |
 | Pattern: Felcloth Boots | 14492 | 99s 0c | 2026-11-11 15:03 UTC | 1g 49s 50c |  | too new | 2 of 7 | 4 |  |
 | Pattern: Felcloth Hood | 14496 | 3g 0s 0c | 2026-11-11 15:03 UTC | 4g 0s 0c |  | too new | 2 of 7 | 8 |  |
 | Pattern: Felcloth Robe | 14506 | 1g 75s 0c | 2026-11-11 15:03 UTC | 1g 75s 0c |  | too new | 1 of 7 | 10 |  |
@@ -70,6 +72,8 @@
 | Pattern: Frothing Cord | 254040 | 18s 0c | 2026-11-11 17:37 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 7 | 10 |  |
 | Pattern: Frothing Gloves | 254098 | 1g 0s 0c | 2026-11-11 17:37 UTC | 1g 0s 0c |  | too new | 1 of 7 | 13 |  |
 | Pattern: Ghostweave Belt | 14473 | 2g 43s 0c | 2026-11-11 15:03 UTC | 2g 43s 0c |  | too new | 1 of 7 | 1 |  |
+| Pattern: Ghostweave Cord | 254074 | 46s 0c | 2026-11-11 17:37 UTC | 46s 0c |  | too new | 1 of 7 | 2 |  |
+| Pattern: Ghostweave Mantle | 254128 | 2g 94s 0c | 2026-11-11 17:37 UTC | 2g 94s 0c |  | too new | 1 of 7 | 1 |  |
 | Pattern: Gilded Cord | 254038 | 20s 0c | 2026-11-11 17:37 UTC | 80s 0c | 80s 0c | volatile | 4 of 7 | 16 |  |
 | Pattern: Gilded Gloves | 254096 | 1g 44s 0c | 2026-11-11 17:37 UTC | 1g 44s 0c |  | too new | 1 of 7 | 20 |  |
 | Pattern: Gilded Handwraps | 254022 | 75s 0c | 2026-11-11 17:37 UTC | 90s 0c | 90s 0c | moving | 4 of 7 | 8 |  |
