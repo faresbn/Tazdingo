@@ -16,6 +16,7 @@
 | Manual: Mageweave Bandage | 16113 | 51s 0c | 2026-11-12 12:44 UTC | 51s 50c | 52s 0c | volatile | 7 of 8 | 89 |  |
 | Manual: Major Healing Potion | 255729 | 8g 98s 45c | 2026-11-12 12:44 UTC | 3g 99s 0c |  | too new | 2 of 8 | 15 |  |
 | Manual: Potent Anti-Venom | 255728 | 19s 0c | 2026-11-12 12:44 UTC | 22s 50c | 22s 50c | volatile | 6 of 8 | 30 |  |
+| Manual: Powerful Poultice | 255731 | 6g 76s 0c | 2026-11-12 12:44 UTC | 6g 76s 0c |  | too new | 1 of 8 | 6 |  |
 | Manual: Strong Anti-Venom | 6454 | 12s 0c | 2026-11-12 12:44 UTC | 9s 50c | 10s 0c | volatile | 7 of 8 | 62 |  |
 | Manual: Superior Healing Potion | 255725 | 24s 0c | 2026-11-12 12:44 UTC | 67s 0c | 67s 0c | volatile | 5 of 8 | 31 |  |
 | Manual: Superior Poultice | 255727 | 16s 0c | 2026-11-12 12:44 UTC | 16s 0c | 16s 0c | moving | 5 of 8 | 57 |  |

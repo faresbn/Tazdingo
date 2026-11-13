@@ -22,12 +22,14 @@
 | Blackforge Buckler | 4069 | 1g 69s 0c | 2026-11-12 12:44 UTC | 1g 79s 0c | 1g 79s 0c | steady | 4 of 8 | 2 |  |
 | Blackskull Shield | 1169 | 20g 0s 0c | 2026-11-12 12:44 UTC | 20g 0s 0c | 20g 0s 0c | volatile | 3 of 8 | 7 |  |
 | Blocking Targe | 3989 | 48s 0c | 2026-11-11 15:03 UTC | 48s 0c |  | too new | 1 of 8 | 1 |  |
+| Bloodforged Shield | 14954 | 3g 0s 0c | 2026-11-12 12:44 UTC | 3g 0s 0c |  | too new | 1 of 8 | 2 |  |
 | Bloodspattered Shield | 15494 | 6s 99c | 2026-11-12 03:40 UTC | 7s 0c | 7s 0c | steady | 7 of 8 | 100 |  |
 | Bonelink Wall Shield | 15618 | 1g 77s 0c | 2026-11-12 03:40 UTC | 1g 77s 0c | 1g 77s 0c | steady | 3 of 8 | 1 |  |
 | Box Shield | 2220 | 6s 0c | 2026-11-12 03:40 UTC | 6s 50c | 6s 50c | moving | 6 of 8 | 14 |  |
 | Brackwater Shield | 3654 | 4s 0c | 2026-11-12 12:44 UTC | 4s 0c | 4s 0c | moving | 7 of 8 | 167 |  |
 | Brigade Defender | 9918 | 1g 98s 0c | 2026-11-12 03:40 UTC | 1g 98s 0c |  | too new | 2 of 8 | 4 |  |
 | Bristlebark Buckler | 15894 | 18s 0c | 2026-11-12 12:44 UTC | 19s 0c | 19s 0c | volatile | 7 of 8 | 32 |  |
+| Brutish Shield | 14912 | 2g 29s 0c | 2026-11-12 12:44 UTC | 2g 0s 0c |  | too new | 1 of 8 | 1 |  |
 | Burnished Shield | 3655 | 15s 0c | 2026-11-12 12:44 UTC | 19s 0c | 20s 0c | moving | 7 of 8 | 19 |  |
 | Burnt Buckler | 15895 | 5s 0c | 2026-11-08 23:12 UTC | 4s 0c | 4s 0c | volatile | 4 of 8 | 6 |  |
 | Cadet Shield | 9764 | 4s 0c | 2026-11-12 03:40 UTC | 4s 0c | 4s 0c | moving | 7 of 8 | 74 |  |
@@ -48,6 +50,7 @@
 | Embossed Plate Shield | 9935 | 1g 70s 0c | 2026-11-12 12:44 UTC | 3g 34s 50c | 3g 34s 50c | volatile | 4 of 8 | 2 |  |
 | Emerald Shield | 10365 | 3g 95s 0c | 2026-11-12 03:40 UTC | 3g 95s 0c |  | too new | 2 of 8 | 1 |  |
 | Enduring Shield | 15990 | 79s 0c | 2026-11-12 12:44 UTC | 87s 0c | 87s 0c | moving | 4 of 8 | 8 |  |
+| Engraved Wall | 10363 | 4g 11s 0c | 2026-11-12 12:44 UTC | 4g 11s 0c |  | too new | 1 of 8 | 1 |  |
 | Feral Buckler | 15307 | 9s 0c | 2026-11-12 03:40 UTC | 9s 0c | 9s 0c | moving | 7 of 8 | 31 |  |
 | Field Plate Shield | 7496 | 1g 50s 0c | 2026-11-12 12:44 UTC | 2g 60s 0c | 2g 60s 0c | moving | 4 of 8 | 8 |  |
 | Forest Buckler | 6383 | 16s 0c | 2026-11-12 03:40 UTC | 16s 0c | 16s 0c | steady | 6 of 8 | 31 |  |
@@ -63,6 +66,7 @@
 | Guardian Buckler | 4820 | 1g 0s 0c | 2026-11-11 17:37 UTC | 1g 10s 0c | 1g 10s 0c | moving | 4 of 8 | 2 |  |
 | Hawkeye's Buckler | 14607 | 70s 0c | 2026-11-12 12:44 UTC | 98s 0c | 98s 0c | moving | 4 of 8 | 5 |  |
 | Headhunter's Buckler | 15352 | 43s 0c | 2026-11-12 12:44 UTC | 62s 0c | 62s 0c | volatile | 6 of 8 | 10 |  |
+| Heavy Lamellar Shield | 10204 | 4g 99s 0c | 2026-11-12 12:44 UTC | 4g 99s 0c |  | too new | 1 of 8 | 1 |  |
 | Hulking Shield | 15891 | 22s 0c | 2026-11-12 12:44 UTC | 24s 0c | 24s 0c | moving | 7 of 8 | 15 |  |
 | Hunting Buckler | 3652 | 3s 99c | 2026-11-12 12:44 UTC | 4s 0c | 4s 0c | steady | 7 of 8 | 129 |  |
 | Infantry Shield | 7108 | 10s 0c | 2026-11-12 12:44 UTC | 3s 0c | 3s 0c | volatile | 8 of 8 | 40 |  |
@@ -79,12 +83,16 @@
 | Lambent Scale Shield | 3656 | 23s 0c | 2026-11-12 12:44 UTC | 23s 0c | 23s 0c | moving | 7 of 8 | 14 |  |
 | Lord's Crest | 10078 | 3g 80s 0c | 2026-11-12 03:40 UTC | 3g 80s 0c | 3g 80s 0c | moving | 3 of 8 | 1 |  |
 | Lupine Buckler | 15014 | 5s 99c | 2026-11-12 12:44 UTC | 6s 0c | 6s 0c | steady | 7 of 8 | 78 |  |
+| Magnificent Guard | 15675 | 10g 0s 0c | 2026-11-12 12:44 UTC | 10g 0s 0c |  | too new | 1 of 8 | 1 |  |
 | Marauder's Crest | 15569 | 1g 0s 0c | 2026-11-12 12:44 UTC | 1g 10s 0c | 1g 10s 0c | steady | 4 of 8 | 4 |  |
+| Merciless Shield | 15657 | 2g 50s 0c | 2026-11-12 03:40 UTC | 2g 50s 0c |  | too new | 1 of 8 | 1 |  |
 | Mountainside Buckler | 13082 | 2g 75s 0c | 2026-11-12 12:44 UTC | 3g 76s 0c | 3g 76s 0c | moving | 4 of 8 | 4 |  |
 | Myrmidon's Defender | 8134 | 2g 10s 0c | 2026-11-12 12:44 UTC | 2g 25s 0c | 2g 25s 0c | steady | 4 of 8 | 2 |  |
 | Nefarious Buckler | 4477 | 66s 0c | 2026-11-11 15:03 UTC | 66s 0c |  | too new | 1 of 8 | 1 |  |
 | Nomad Buckler | 9753 | 4s 0c | 2026-11-12 03:40 UTC | 3s 0c | 3s 50c | moving | 8 of 8 | 70 |  |
+| Ornate Shield | 10362 | 6g 0s 0c | 2026-11-12 03:40 UTC | 6g 0s 0c |  | too new | 1 of 8 | 1 |  |
 | Outrunner's Shield | 15504 | 12s 0c | 2026-11-12 03:40 UTC | 14s 50c | 17s 0c | volatile | 7 of 8 | 17 |  |
+| Overlord's Shield | 9974 | 5g 47s 0c | 2026-11-12 12:44 UTC | 5g 47s 0c |  | too new | 1 of 8 | 1 |  |
 | Owl's Disk | 4822 | 21s 0c | 2026-11-12 03:40 UTC | 36s 0c | 36s 0c | volatile | 5 of 8 | 1 |  |
 | Pathfinder Guard | 15342 | 30s 0c | 2026-11-12 03:40 UTC | 30s 0c | 30s 0c | steady | 6 of 8 | 13 |  |
 | Phalanx Shield | 7331 | 44s 0c | 2026-11-12 03:40 UTC | 60s 0c | 60s 0c | moving | 5 of 8 | 20 |  |
@@ -92,6 +100,7 @@
 | Pioneer Buckler | 7109 | 4s 0c | 2026-11-12 12:44 UTC | 3s 0c | 3s 0c | steady | 7 of 8 | 7 |  |
 | Primal Buckler | 15006 | 4s 0c | 2026-11-12 03:40 UTC | 2s 0c | 2s 50c | volatile | 8 of 8 | 12 |  |
 | Prospector's Buckler | 15893 | 11s 0c | 2026-11-12 03:40 UTC | 11s 0c | 11s 0c | steady | 7 of 8 | 52 |  |
+| Protector Buckler | 14790 | 3g 99s 0c | 2026-11-12 12:44 UTC | 3g 99s 0c |  | too new | 1 of 8 | 1 |  |
 | Raider's Shield | 9790 | 11s 0c | 2026-11-12 12:44 UTC | 9s 50c | 10s 0c | moving | 7 of 8 | 20 |  |
 | Ravager's Shield | 14777 | 1g 20s 0c | 2026-11-12 12:44 UTC | 1g 26s 50c |  | too new | 2 of 8 | 14 |  |
 | Rectangular Shield | 2217 | 3s 50c | 2026-11-12 12:44 UTC | 3s 0c | 3s 0c | steady | 7 of 8 | 19 |  |
@@ -123,6 +132,7 @@
 | Superior Buckler | 9804 | 21s 50c | 2026-11-12 12:44 UTC | 20s 0c | 20s 0c | moving | 7 of 8 | 16 |  |
 | Symbolic Crest | 14825 | 1g 3s 0c | 2026-11-12 12:44 UTC | 1g 46s 0c |  | too new | 2 of 8 | 12 |  |
 | Targe Shield | 2221 | 10s 0c | 2026-11-12 03:40 UTC | 14s 50c | 14s 50c | moving | 4 of 8 | 14 |  |
+| Templar Shield | 10364 | 5g 0s 0c | 2026-11-12 12:44 UTC | 5g 0s 0c |  | too new | 1 of 8 | 1 |  |
 | The Green Tower | 1204 | 12g 0s 0c | 2026-11-12 12:44 UTC | 16g 50s 0c | 16g 50s 0c | moving | 5 of 8 | 6 |  |
 | Thick Scale Shield | 15552 | 55s 0c | 2026-11-12 03:40 UTC | 56s 0c | 56s 0c | steady | 5 of 8 | 13 |  |
 | Tower Shield | 2222 | 10s 70c | 2026-11-12 12:44 UTC | 13s 0c | 13s 0c | steady | 5 of 8 | 15 |  |

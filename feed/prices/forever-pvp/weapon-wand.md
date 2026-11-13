@@ -8,12 +8,14 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Blackbone Wand | 5239 | 1g 99s 0c | 2026-11-12 03:40 UTC | 1g 99s 0c | 1g 99s 0c | steady | 3 of 8 | 2 |  |
 | Blazing Wand | 5212 | 6s 79c | 2026-11-12 12:44 UTC | 7s 0c | 7s 0c | moving | 8 of 8 | 244 |  |
+| Burning Wand | 5210 | 15s 0c | 2026-11-12 03:40 UTC | 15s 0c |  | too new | 1 of 8 | 1 |  |
 | Dire Wand | 8186 | 22s 98c | 2026-11-12 12:44 UTC | 24s 0c | 24s 50c | moving | 8 of 8 | 49 |  |
 | Dragon Finger | 15282 | 14g 60s 0c | 2026-11-12 12:44 UTC | 19g 80s 0c |  | too new | 2 of 8 | 1 |  |
 | Earthen Rod | 9381 | 9g 44s 0c | 2026-11-12 12:44 UTC | 12g 21s 50c |  | too new | 2 of 8 | 7 |  |
 | Ember Wand | 5215 | 91s 0c | 2026-11-12 12:44 UTC | 98s 0c | 98s 0c | steady | 5 of 8 | 21 |  |
 | Fire Wand | 5069 | 2s 98c | 2026-11-12 12:44 UTC | 3s 0c | 3s 0c | moving | 8 of 8 | 452 |  |
 | Firestarter | 8184 | 30s 0c | 2026-11-12 03:40 UTC | 31s 0c | 32s 0c | volatile | 8 of 8 | 54 |  |
+| Flaming Incinerator | 9483 | 17g 60s 0c | 2026-11-12 12:44 UTC | 17g 60s 0c |  | too new | 1 of 8 | 1 |  |
 | Freezing Shard | 10572 | 5g 0s 0c | 2026-11-12 03:40 UTC | 13g 99s 0c | 13g 99s 0c | volatile | 5 of 8 | 2 |  |
 | Gloom Wand | 5209 | 12s 0c | 2026-11-12 12:44 UTC | 18s 50c |  | too new | 2 of 8 | 1 |  |
 | Glowstar Rod | 15281 | 4g 0s 0c | 2026-11-12 03:40 UTC | 4g 50s 0c |  | too new | 2 of 8 | 2 |  |
@@ -33,11 +35,14 @@
 | Skycaller | 12984 | 97s 0c | 2026-11-12 12:44 UTC | 95s 0c | 97s 0c | steady | 8 of 8 | 26 |  |
 | Smoldering Wand | 5208 | 30s 0c | 2026-11-12 03:40 UTC | 19s 50c | 11s 0c | volatile | 5 of 8 | 1 |  |
 | Starfaller | 13063 | 95s 0c | 2026-11-12 12:44 UTC | 1g 20s 0c | 1g 20s 0c | volatile | 7 of 8 | 24 |  |
+| Stonegaze Wand | 282020 | 3g 0s 0c | 2026-11-12 03:40 UTC | 3g 0s 0c |  | too new | 1 of 8 | 1 |  |
 | Summoner's Wand | 5245 | 51s 0c | 2026-11-12 03:40 UTC | 52s 0c | 52s 0c | steady | 7 of 8 | 17 |  |
 | Thunderwood | 13062 | 2g 75s 0c | 2026-11-12 12:44 UTC | 2g 98s 0c | 2g 99s 0c | steady | 8 of 8 | 20 |  |
+| Torch of Austen | 13004 | 7g 99s 0c | 2026-11-12 12:44 UTC | 7g 99s 0c |  | too new | 1 of 8 | 5 |  |
 | Touch of the Depths | 287004 | 3g 49s 0c | 2026-11-12 12:44 UTC | 3g 49s 0c | 3g 49s 0c | moving | 5 of 8 | 9 |  |
 | Twisted Nether Wand | 249144 | 1g 70s 0c | 2026-11-12 03:40 UTC | 1g 90s 0c | 1g 90s 0c | steady | 3 of 8 | 10 |  |
 | Umbral Wand | 5216 | 1g 28s 0c | 2026-11-12 12:44 UTC | 1g 39s 0c | 1g 39s 0c | steady | 4 of 8 | 12 |  |
+| Wail of Death | 281600 | 4g 79s 0c | 2026-11-12 12:44 UTC | 4g 79s 0c |  | too new | 1 of 8 | 1 |  |
 | Wand of Allistarj | 13065 | 4g 99s 0c | 2026-11-12 12:44 UTC | 5g 80s 0c | 5g 80s 0c | volatile | 3 of 8 | 7 |  |
 | Wand of Arcane Potency | 18338 | 69g 99s 0c | 2026-11-12 12:44 UTC | 42g 66s 0c |  | too new | 2 of 8 | 2 |  |
 | Wand of Eventide | 5214 | 40s 0c | 2026-11-12 03:40 UTC | 40s 0c | 40s 0c | steady | 7 of 8 | 26 |  |

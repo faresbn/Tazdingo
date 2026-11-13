@@ -6,10 +6,12 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
+| Blueprint: Arcane Forge | 273116 | 250g 1s 0c | 2026-11-12 12:44 UTC | 250g 1s 0c |  | too new | 1 of 8 | 1 |  |
 | Blueprint: Arcane Salvager | 273103 | 1g 39s 0c | 2026-11-12 12:44 UTC | 1g 19s 0c | 1g 19s 0c | volatile | 6 of 8 | 45 |  |
 | Formula: Enchant 2H Weapon - Lesser Intellect | 6349 | 11s 89c | 2026-11-12 12:44 UTC | 9s 50c | 10s 0c | moving | 7 of 8 | 35 |  |
 | Formula: Enchant 2H Weapon - Lesser Spirit | 11038 | 3s 99c | 2026-11-12 12:44 UTC | 3s 0c | 3s 0c | moving | 7 of 8 | 77 |  |
 | Formula: Enchant 2H Weapon - Major Intellect | 16249 | 30g 0s 0c | 2026-11-12 12:44 UTC | 40g 6s 50c |  | too new | 2 of 8 | 2 |  |
+| Formula: Enchant 2H Weapon - Major Spirit | 16255 | 50g 0s 0c | 2026-11-12 03:40 UTC | 50g 0s 0c |  | too new | 1 of 8 | 2 |  |
 | Formula: Enchant Boots - Greater Agility | 16245 | 3g 99s 0c | 2026-11-12 12:44 UTC | 13g 99s 0c | 13g 99s 0c | volatile | 3 of 8 | 17 |  |
 | Formula: Enchant Boots - Greater Stamina | 16215 | 90s 0c | 2026-11-12 12:44 UTC | 2g 45s 0c | 2g 45s 0c | volatile | 4 of 8 | 10 |  |
 | Formula: Enchant Boots - Lesser Spirit | 11167 | 12s 0c | 2026-11-12 12:44 UTC | 14s 50c | 14s 50c | volatile | 6 of 8 | 36 |  |
@@ -25,6 +27,7 @@
 | Formula: Enchant Bracer - Minor Strength | 6347 | 2s 0c | 2026-11-12 12:44 UTC | 1s 70c | 1s 40c | moving | 7 of 8 | 161 |  |
 | Formula: Enchant Bracer - Superior Spirit | 16218 | 45s 0c | 2026-11-12 12:44 UTC | 2g 77s 0c | 2g 77s 0c | volatile | 4 of 8 | 10 |  |
 | Formula: Enchant Bracer - Superior Stamina | 16251 | 97s 0c | 2026-11-12 12:44 UTC | 2g 87s 0c |  | too new | 2 of 8 | 23 |  |
+| Formula: Enchant Bracer - Superior Strength | 16246 | 500g 0s 0c | 2026-11-12 12:44 UTC | 500g 0s 0c |  | too new | 1 of 8 | 1 |  |
 | Formula: Enchant Chest - Greater Stats | 16253 | 3,000g 13s 0c | 2026-11-12 03:40 UTC | 4,000g 13s 0c |  | too new | 2 of 8 | 1 |  |
 | Formula: Enchant Chest - Lesser Intellect | 6346 | 99s 99c | 2026-11-12 12:44 UTC | 18s 50c | 22s 0c | moving | 7 of 8 | 24 |  |
 | Formula: Enchant Chest - Major Stamina | 16221 | 30g 61s 0c | 2026-11-12 12:44 UTC | 40g 61s 0c |  | too new | 2 of 8 | 2 |  |
@@ -32,6 +35,7 @@
 | Formula: Enchant Cloak - Greater Resistance | 16216 | 3g 0s 0c | 2026-11-12 12:44 UTC | 5g 0s 0c |  | too new | 2 of 8 | 6 |  |
 | Formula: Enchant Cloak - Lesser Agility | 11206 | 70s 0c | 2026-11-12 12:44 UTC | 70s 0c | 70s 0c | volatile | 5 of 8 | 25 |  |
 | Formula: Enchant Cloak - Lesser Shadow Resistance | 11098 | 9s 0c | 2026-11-12 12:44 UTC | 5s 0c | 5s 0c | moving | 7 of 8 | 58 |  |
+| Formula: Enchant Cloak - Superior Defense | 16224 | 1g 0s 0c | 2026-11-12 12:44 UTC | 1g 0s 0c |  | too new | 1 of 8 | 1 |  |
 | Formula: Enchant Gloves - Advanced Herbalism | 11205 | 3g 27s 0c | 2026-11-12 03:40 UTC | 5g 64s 50c | 5g 64s 50c | volatile | 4 of 8 | 6 |  |
 | Formula: Enchant Gloves - Advanced Mining | 11203 | 11s 0c | 2026-11-12 03:40 UTC | 20s 0c | 20s 0c | volatile | 5 of 8 | 79 |  |
 | Formula: Enchant Gloves - Fishing | 11152 | 8s 0c | 2026-11-11 17:37 UTC | 8s 0c | 8s 0c | moving | 6 of 8 | 127 |  |
@@ -51,6 +55,7 @@
 | Formula: Enchant Weapon - Lesser Beastslayer | 11164 | 8s 0c | 2026-11-12 12:44 UTC | 8s 0c | 8s 0c | volatile | 7 of 8 | 60 |  |
 | Formula: Enchant Weapon - Lesser Elemental Slayer | 11165 | 8s 0c | 2026-11-12 12:44 UTC | 8s 0c | 8s 0c | steady | 6 of 8 | 51 |  |
 | Formula: Enchant Weapon - Minor Beastslayer | 6348 | 2s 0c | 2026-11-12 12:44 UTC | 2s 0c | 2s 0c | steady | 7 of 8 | 264 |  |
+| Formula: Enchant Weapon - Superior Striking | 16250 | 199g 0s 0c | 2026-11-12 03:40 UTC | 199g 0s 0c |  | too new | 1 of 8 | 1 |  |
 | Formula: Lesser Mana Oil | 20754 | 2g 90s 0c | 2026-11-12 12:44 UTC | 2g 94s 50c |  | too new | 2 of 8 | 14 |  |
 | Formula: Lesser Wizard Oil | 20753 | 1g 0s 0c | 2026-11-12 12:44 UTC | 45s 0c | 40s 0c | volatile | 7 of 8 | 10 |  |
 | Formula: Minor Mana Oil | 20752 | 44s 0c | 2026-11-12 12:44 UTC | 32s 0c | 34s 0c | volatile | 7 of 8 | 11 |  |

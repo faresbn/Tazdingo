@@ -54,6 +54,7 @@
 | Filet of Redgill | 13930 | 79c | 2026-11-12 12:44 UTC | 1s 20c | 1s 20c | volatile | 3 of 8 | 1134 |  |
 | Fine Aged Cheddar | 3927 | 1s 98c | 2026-11-12 12:44 UTC | 1s 98c |  | too new | 2 of 8 | 92 |  |
 | Fissure Plant | 5066 | 21c | 2026-11-12 03:40 UTC | 21c | 21c | volatile | 7 of 8 | 228 |  |
+| Fizzy Faire Drink | 19299 | 1g 0s 0c | 2026-11-12 12:44 UTC | 1g 0s 0c |  | too new | 1 of 8 | 5 |  |
 | Flask of Stormwind Tawny | 2593 | 3s 93c | 2026-11-12 12:44 UTC | 6s 46c |  | too new | 2 of 8 | 43 |  |
 | Forest Mushroom Cap | 4604 | 3c | 2026-11-12 12:44 UTC | 2c | 2c | moving | 7 of 8 | 637 |  |
 | Fresh Gustberry Bread | 252028 | 40c | 2026-11-12 12:44 UTC | 5c | 6c | volatile | 7 of 8 | 279 |  |
@@ -67,6 +68,7 @@
 | Goldthorn Tea | 10841 | 1s 99c | 2026-11-12 12:44 UTC | 7s 83c | 7s 83c | volatile | 4 of 8 | 847 |  |
 | Gooey Spider Cake | 3666 | 1s 99c | 2026-11-12 03:40 UTC | 3s 99c | 3s 99c | volatile | 4 of 8 | 94 |  |
 | Green Tea Leaf | 1401 | 1s 0c | 2026-11-12 03:40 UTC | 1s 0c | 1s 0c | steady | 6 of 8 | 7 |  |
+| Grilled King Crawler Legs | 9681 | 2s 0c | 2026-11-12 03:40 UTC | 2s 0c |  | too new | 1 of 8 | 20 |  |
 | Grilled Squid | 13928 | 38s 0c | 2026-11-12 12:44 UTC | 68s 50c |  | too new | 2 of 8 | 138 |  |
 | Gustberry Juice | 252027 | 35c | 2026-11-12 03:40 UTC | 11c | 11c | steady | 4 of 8 | 336 |  |
 | Haunch of Meat | 2287 | 20c | 2026-11-12 12:44 UTC | 7c | 8c | moving | 7 of 8 | 473 |  |

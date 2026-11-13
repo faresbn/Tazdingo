@@ -107,6 +107,7 @@
 | Craftsman's Writ: Lesser Troll's Blood Elixir | 264017 | 99s 99c | 2026-11-12 12:44 UTC | 45s 50c | 45s 50c | volatile | 6 of 8 | 44 |  |
 | Craftsman's Writ: Lesser Wizard's Robe | 264047 | 66s 0c | 2026-11-12 12:44 UTC | 21s 0c | 21s 0c | volatile | 6 of 8 | 26 |  |
 | Craftsman's Writ: Lifelike Mechanical Toad | 264136 | 87s 0c | 2026-11-12 12:44 UTC | 4g 1s 0c |  | too new | 2 of 8 | 15 |  |
+| Craftsman's Writ: Limited Invulnerability Potion | 264122 | 2g 0s 0c | 2026-11-12 12:44 UTC | 2g 0s 0c |  | too new | 1 of 8 | 11 |  |
 | Craftsman's Writ: Mageweave Bag | 264104 | 70s 0c | 2026-11-12 12:44 UTC | 25s 0c | 25s 0c | volatile | 5 of 8 | 28 |  |
 | Craftsman's Writ: Major Rejuvenation Potion | 264123 | 85s 0c | 2026-11-12 12:44 UTC | 1g 20s 0c |  | too new | 2 of 8 | 10 |  |
 | Craftsman's Writ: Mana Potion | 264062 | 1g 27s 0c | 2026-11-12 12:44 UTC | 1g 1s 0c | 1g 1s 0c | volatile | 6 of 8 | 16 |  |
@@ -115,6 +116,7 @@
 | Craftsman's Writ: Mechanical Repair Kit | 264090 | 1g 9s 99c | 2026-11-12 12:44 UTC | 91s 0c | 91s 0c | volatile | 4 of 8 | 34 |  |
 | Craftsman's Writ: Minor Recombobulator | 264032 | 47s 0c | 2026-11-12 12:44 UTC | 4s 50c | 4s 50c | moving | 6 of 8 | 29 |  |
 | Craftsman's Writ: Mithril Frag Bomb | 264088 | 1g 22s 0c | 2026-11-12 12:44 UTC | 33s 0c | 33s 0c | moving | 5 of 8 | 14 |  |
+| Craftsman's Writ: Mithril Spurs | 264128 | 4g 0s 0c | 2026-11-12 12:44 UTC | 4g 0s 0c |  | too new | 1 of 8 | 7 |  |
 | Craftsman's Writ: Moonsight Rifle | 264031 | 59s 99c | 2026-11-12 12:44 UTC | 4s 50c | 4s 50c | volatile | 6 of 8 | 47 |  |
 | Craftsman's Writ: Moonsteel Broadsword | 264073 | 32s 0c | 2026-11-12 12:44 UTC | 29s 0c | 29s 0c | volatile | 5 of 8 | 24 |  |
 | Craftsman's Writ: Nature Protection Potion | 264059 | 84s 0c | 2026-11-12 12:44 UTC | 81s 50c | 81s 50c | moving | 4 of 8 | 37 |  |
@@ -147,6 +149,7 @@
 | Craftsman's Writ: Shadoweave Robe | 264107 | 29s 0c | 2026-11-12 12:44 UTC | 15s 0c | 15s 0c | volatile | 5 of 8 | 24 |  |
 | Craftsman's Writ: Silver Skeleton Key | 264023 | 68s 0c | 2026-11-12 12:44 UTC | 29s 0c | 29s 0c | moving | 6 of 8 | 32 |  |
 | Craftsman's Writ: Small Silk Pack | 264050 | 58s 99c | 2026-11-12 12:44 UTC | 49s 50c | 49s 50c | volatile | 6 of 8 | 45 |  |
+| Craftsman's Writ: Sniper Scope | 264141 | 4g 95s 0c | 2026-11-12 12:44 UTC | 4g 95s 0c |  | too new | 1 of 8 | 5 |  |
 | Craftsman's Writ: Solid Sharpening Stone | 264075 | 94s 94c | 2026-11-12 12:44 UTC | 86s 50c | 86s 50c | moving | 4 of 8 | 20 |  |
 | Craftsman's Writ: Soul Pouch | 264160 | 1g 98s 0c | 2026-11-12 12:44 UTC | 2g 98s 50c |  | too new | 2 of 8 | 8 |  |
 | Craftsman's Writ: Spider Silk Slippers | 264055 | 59s 99c | 2026-11-12 12:44 UTC | 7s 0c | 7s 0c | volatile | 6 of 8 | 50 |  |
@@ -173,8 +176,10 @@
 | Cresting Charm | 4481 | 25s 64c | 2026-11-12 12:44 UTC | 45s 62c | 45s 62c | volatile | 6 of 8 | 343 |  |
 | Crippling Poison | 3775 | 25c | 2026-11-12 12:44 UTC | 67c | 67c | volatile | 6 of 8 | 582 |  |
 | Crystal Basilisk Spine | 1703 | 87c | 2026-11-12 12:44 UTC | 1s 20c | 1s 20c | volatile | 6 of 8 | 509 |  |
+| Dark Iron Ale Mug | 11325 | 5g 0s 0c | 2026-11-12 12:44 UTC | 5g 0s 0c |  | too new | 1 of 8 | 2 |  |
 | Deadly Poison | 2892 | 1s 99c | 2026-11-12 12:44 UTC | 2s 99c | 2s 99c | moving | 4 of 8 | 172 |  |
 | Deadly Poison II | 2893 | 5s 0c | 2026-11-12 12:44 UTC | 5s 45c |  | too new | 2 of 8 | 91 |  |
+| Deadly Poison III | 8984 | 8s 0c | 2026-11-12 03:40 UTC | 8s 0c |  | too new | 1 of 8 | 20 |  |
 | Dense Sharpening Stone | 12404 | 9s 98c | 2026-11-12 12:44 UTC | 9s 98c | 9s 98c | volatile | 3 of 8 | 936 |  |
 | Dense Weightstone | 12643 | 14s 52c | 2026-11-12 12:44 UTC | 17s 48c | 17s 48c | volatile | 3 of 8 | 509 |  |
 | Enchanted Lute | 279976 | 4s 99c | 2026-11-12 12:44 UTC | 1s 59c | 1s 58c | moving | 7 of 8 | 162 |  |
@@ -196,6 +201,7 @@
 | Instant Poison II | 6949 | 50c | 2026-11-12 12:44 UTC | 95c | 95c | moving | 5 of 8 | 232 |  |
 | Instant Poison III | 6950 | 1s 70c | 2026-11-12 12:44 UTC | 2s 36c | 2s 36c | moving | 4 of 8 | 350 |  |
 | Instant Poison IV | 8926 | 10s 0c | 2026-11-12 12:44 UTC | 6s 0c |  | too new | 2 of 8 | 3 |  |
+| Instant Poison V | 8927 | 2s 0c | 2026-11-12 12:44 UTC | 2s 0c |  | too new | 1 of 8 | 2 |  |
 | Iron Oven | 279982 | 10g 1s 0c | 2026-11-12 12:44 UTC | 7g 1s 0c |  | too new | 2 of 8 | 8 |  |
 | Journeyman Campfire Kit | 279961 | 39s 99c | 2026-11-12 12:44 UTC | 47s 99c | 47s 99c | steady | 6 of 8 | 70 |  |
 | Lodestone | 279960 | 3s 5c | 2026-11-12 12:44 UTC | 47c | 30c | volatile | 7 of 8 | 978 |  |

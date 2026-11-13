@@ -53,6 +53,7 @@
 | Plans: Radiant Leggings | 12713 | 3g 0s 0c | 2026-11-12 12:44 UTC | 3g 99s 50c |  | too new | 2 of 8 | 10 |  |
 | Plans: Runed Copper Breastplate | 2881 | 2s 0c | 2026-11-12 03:40 UTC | 2s 0c | 2s 0c | steady | 7 of 8 | 82 |  |
 | Plans: Runed Mithril Hammer | 8028 | 3g 90s 0c | 2026-11-12 12:44 UTC | 2g 47s 0c | 2g 47s 0c | volatile | 4 of 8 | 4 |  |
+| Plans: Sageblade | 22389 | 300g 1s 0c | 2026-11-12 03:40 UTC | 300g 1s 0c |  | too new | 1 of 8 | 1 |  |
 | Plans: Searing Golden Blade | 12261 | 95s 0c | 2026-11-12 12:44 UTC | 2g 56s 0c | 2g 56s 0c | volatile | 3 of 8 | 14 |  |
 | Plans: Shadow Crescent Axe | 3869 | 12s 50c | 2026-11-12 12:44 UTC | 15s 0c | 15s 0c | volatile | 6 of 8 | 35 |  |
 | Plans: Silvered Bronze Breastplate | 5578 | 3s 99c | 2026-11-12 12:44 UTC | 3s 0c | 3s 0c | steady | 7 of 8 | 65 |  |
@@ -61,6 +62,7 @@
 | Plans: Steel Weapon Chain | 6046 | 20g 5s 0c | 2026-11-12 12:44 UTC | 10g 97s 50c | 10g 97s 50c | volatile | 6 of 8 | 2 |  |
 | Plans: Thorium Armor | 12682 | 45s 0c | 2026-11-12 12:44 UTC | 79s 0c | 79s 0c | moving | 4 of 8 | 5 |  |
 | Plans: Thorium Belt | 12683 | 60s 0c | 2026-11-12 12:44 UTC | 91s 0c | 91s 0c | volatile | 4 of 8 | 10 |  |
+| Plans: Thorium Boots | 12693 | 1g 25s 0c | 2026-11-12 12:44 UTC | 1g 25s 0c |  | too new | 1 of 8 | 2 |  |
 | Plans: Thorium Bracers | 12684 | 88s 0c | 2026-11-12 12:44 UTC | 67s 0c | 67s 0c | moving | 4 of 8 | 8 |  |
 | Plans: Thorium Helm | 12694 | 2g 19s 0c | 2026-11-12 12:44 UTC | 2g 19s 50c |  | too new | 2 of 8 | 8 |  |
 | Plans: Thorium Leggings | 12704 | 4g 0s 0c | 2026-11-12 03:40 UTC | 4g 0s 0c | 4g 0s 0c | moving | 3 of 8 | 6 |  |

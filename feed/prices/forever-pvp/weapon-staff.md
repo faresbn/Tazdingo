@@ -28,6 +28,7 @@
 | Gnarled Hermit's Staff | 1539 | 17s 0c | 2026-11-12 03:40 UTC | 18s 0c | 18s 50c | steady | 8 of 8 | 14 |  |
 | Gnarled Staff | 2030 | 17s 0c | 2026-11-12 03:40 UTC | 30s 0c | 30s 0c | moving | 6 of 8 | 2 |  |
 | Gnoll Shaman's Staff | 282721 | 20s 0c | 2026-11-12 12:44 UTC | 24s 0c | 24s 0c | volatile | 7 of 8 | 19 |  |
+| Heavy War Staff | 4024 | 1g 48s 0c | 2026-11-12 12:44 UTC | 1g 48s 0c |  | too new | 1 of 8 | 1 |  |
 | Long Bo Staff | 767 | 2s 0c | 2026-11-12 03:40 UTC | 2s 0c | 2s 0c | moving | 7 of 8 | 41 |  |
 | Long Staff | 928 | 59s 0c | 2026-11-12 03:40 UTC | 64s 0c | 64s 0c | moving | 6 of 8 | 6 |  |
 | Magician Staff | 2077 | 50s 98c | 2026-11-12 12:44 UTC | 51s 0c | 51s 0c | steady | 7 of 8 | 82 |  |
@@ -45,6 +46,7 @@
 | Skyseeker's Greatstaff | 263937 | 10g 13s 0c | 2026-11-11 17:37 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 5 of 8 | 1 |  |
 | Soulkeeper | 1607 | 14g 0s 0c | 2026-11-12 12:44 UTC | 19g 50s 0c |  | too new | 2 of 8 | 3 |  |
 | Spellforce Rod | 1664 | 1g 95s 0c | 2026-11-12 12:44 UTC | 2g 22s 0c | 2g 22s 0c | moving | 4 of 8 | 4 |  |
+| Spire of the Stoneshaper | 12532 | 50g 28s 0c | 2026-11-12 12:44 UTC | 50g 28s 0c |  | too new | 1 of 8 | 1 |  |
 | Spiritchaser Staff | 1613 | 1g 98s 0c | 2026-11-12 03:40 UTC | 4g 14s 0c | 4g 14s 0c | volatile | 5 of 8 | 9 |  |
 | Staff of Conjuring | 1933 | 80s 0c | 2026-11-12 12:44 UTC | 64s 50c | 64s 50c | moving | 4 of 8 | 2 |  |
 | Staff of Jordan | 873 | 62g 50s 0c | 2026-11-12 12:44 UTC | 60g 99s 0c | 60g 99s 0c | moving | 5 of 8 | 4 |  |

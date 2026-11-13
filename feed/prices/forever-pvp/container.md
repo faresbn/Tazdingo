@@ -46,6 +46,7 @@
 | Small Red Pouch | 805 | 2s 49c | 2026-11-12 12:44 UTC | 3s 0c | 3s 0c | steady | 7 of 8 | 896 |  |
 | Small Silk Pack | 4245 | 22s 0c | 2026-11-12 12:44 UTC | 31s 50c | 34s 0c | volatile | 7 of 8 | 688 |  |
 | Soul Pouch | 21340 | 5g 33s 0c | 2026-11-12 12:44 UTC | 3g 79s 0c | 3g 79s 0c | volatile | 3 of 8 | 40 |  |
+| Sturdy Lunchbox | 1652 | 5g 0s 0c | 2026-11-12 12:44 UTC | 5g 0s 0c |  | too new | 1 of 8 | 3 |  |
 | Traveler's Backpack | 4500 | 26g 99s 0c | 2026-11-12 12:44 UTC | 33g 0s 0c | 33g 0s 0c | moving | 5 of 8 | 3 |  |
 | Troll-hide Bag | 1685 | 4g 30s 0c | 2026-11-12 12:44 UTC | 7g 54s 0c | 7g 54s 0c | moving | 5 of 8 | 5 |  |
 | White Leather Bag | 5574 | 9s 0c | 2026-11-12 03:40 UTC | 9s 0c | 9s 0c | moving | 7 of 8 | 93 |  |

@@ -23,11 +23,13 @@
 | Deadly Kris | 15243 | 79s 0c | 2026-11-12 12:44 UTC | 80s 0c | 80s 0c | moving | 6 of 8 | 42 |  |
 | Deadman Dagger | 3296 | 50s 0c | 2026-11-08 23:12 UTC | 50s 0c | 50s 0c | steady | 4 of 8 | 1 |  |
 | Deft Stiletto | 2766 | 16s 0c | 2026-11-12 03:40 UTC | 21s 0c | 21s 0c | moving | 5 of 8 | 25 |  |
+| Demon Blade | 15246 | 15g 86s 0c | 2026-11-12 12:44 UTC | 15g 86s 0c |  | too new | 1 of 8 | 1 |  |
 | Dirk | 2139 | 50s 0c | 2026-11-12 03:40 UTC | 99s 0c | 74s 50c | volatile | 6 of 8 | 1 |  |
 | Doomspike | 3413 | 3g 80s 0c | 2026-11-12 12:44 UTC | 2g 18s 0c | 2g 18s 0c | volatile | 7 of 8 | 17 |  |
 | Dreadblade | 4088 | 1g 89s 0c | 2026-11-12 03:40 UTC | 2g 3s 0c | 2g 3s 0c | steady | 4 of 8 | 12 |  |
 | Ebon Shiv | 7947 | 5g 99s 0c | 2026-11-12 12:44 UTC | 7g 99s 0c |  | too new | 2 of 8 | 2 |  |
 | Evocator's Blade | 2567 | 1g 11s 0c | 2026-11-12 12:44 UTC | 1g 11s 0c | 1g 11s 0c | volatile | 7 of 8 | 27 |  |
+| Fine Pointed Dagger | 4023 | 94s 0c | 2026-11-12 12:44 UTC | 94s 0c |  | too new | 1 of 8 | 1 |  |
 | Fisherman Knife | 2763 | 2s 50c | 2026-11-12 12:44 UTC | 3s 0c | 3s 0c | moving | 7 of 8 | 49 |  |
 | Flesh Piercer | 3336 | 48s 0c | 2026-11-12 03:40 UTC | 50s 0c | 50s 0c | moving | 7 of 8 | 11 |  |
 | Glinting Steel Dagger | 12259 | 1g 30s 0c | 2026-11-12 12:44 UTC | 1g 40s 0c | 1g 40s 0c | moving | 3 of 8 | 31 |  |
@@ -41,11 +43,14 @@
 | Jambiya | 2207 | 10s 0c | 2026-11-12 03:40 UTC | 10s 0c | 10s 0c | moving | 4 of 8 | 2 |  |
 | Julie's Dagger | 6660 | 12g 50s 0c | 2026-11-12 12:44 UTC | 8g 96s 50c |  | too new | 2 of 8 | 4 |  |
 | Long Crawler Limb | 2088 | 48s 0c | 2026-11-08 23:12 UTC | 48s 0c |  | too new | 2 of 8 | 1 |  |
+| Main Gauche | 2526 | 1g 0s 0c | 2026-11-12 12:44 UTC | 1g 0s 0c |  | too new | 1 of 8 | 1 |  |
+| Murloc Oracle's Dagger | 281750 | 1g 99s 99c | 2026-11-12 12:44 UTC | 1g 99s 99c |  | too new | 1 of 8 | 3 |  |
 | Needletooth's Needletooth | 282703 | 99s 0c | 2026-11-12 12:44 UTC | 99s 0c | 99s 0c | moving | 5 of 8 | 4 |  |
 | Pearl-handled Dagger | 5540 | 38s 0c | 2026-11-12 12:44 UTC | 42s 0c | 43s 50c | steady | 8 of 8 | 63 |  |
 | Poniard | 2208 | 11s 0c | 2026-11-11 15:03 UTC | 20s 0c | 20s 0c | moving | 3 of 8 | 2 |  |
 | Razor Blade | 15244 | 1g 32s 0c | 2026-11-12 12:44 UTC | 1g 80s 0c | 1g 80s 0c | moving | 5 of 8 | 12 |  |
 | Ritual Blade | 5112 | 17s 98c | 2026-11-12 12:44 UTC | 20s 0c | 21s 0c | moving | 8 of 8 | 29 |  |
+| Rondel | 2534 | 1g 37s 0c | 2026-11-12 12:44 UTC | 1g 37s 0c |  | too new | 1 of 8 | 1 |  |
 | Sacrificial Kris | 3187 | 1g 50s 0c | 2026-11-12 12:44 UTC | 1g 75s 0c | 1g 75s 0c | moving | 5 of 8 | 12 |  |
 | Scarlet Kris | 5267 | 99g 98s 0c | 2026-11-12 03:40 UTC | 111g 98s 0c |  | too new | 2 of 8 | 1 |  |
 | Searing Golden Blade | 12260 | 3g 33s 0c | 2026-11-12 12:44 UTC | 3g 16s 50c |  | too new | 2 of 8 | 3 |  |

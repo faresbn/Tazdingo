@@ -4,6 +4,6 @@ Estimated listing margins: what the item lists for against what its reagents cos
 
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
-| Greenhouse | 140 | 279964 | 1 | 1g 29s 0c | 90s 59c | 38s 41c | ForeverDB |
+| Greenhouse | 140 | 279964 | 1 | 1g 0s 0c | 61s 38c | 38s 62c | ForeverDB |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

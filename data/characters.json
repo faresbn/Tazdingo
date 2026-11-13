@@ -11,10 +11,10 @@
    "race": "Orc",
    "faction": "Horde",
    "level": 31,
-   "item_level": 27.3,
-   "recorded_at": "2026-11-11T21:44:07Z",
+   "item_level": 31.3,
+   "recorded_at": "2026-11-13T13:04:30Z",
    "recorded_on": "logout",
-   "build": "70888",
+   "build": "70938",
    "gear": [
     {
      "slot": "Head",
@@ -36,9 +36,9 @@
     },
     {
      "slot": "Chest",
-     "item": 253907,
-     "name": "Filigreed Shadow Gown",
-     "item_level": 20
+     "item": 7058,
+     "name": "Crimson Silk Vest",
+     "item_level": 37
     },
     {
      "slot": "Waist",
@@ -54,21 +54,21 @@
     },
     {
      "slot": "Feet",
-     "item": 4320,
-     "name": "Spidersilk Boots",
-     "item_level": 25
+     "item": 254007,
+     "name": "Black Slippers",
+     "item_level": 35
     },
     {
      "slot": "Wrist",
-     "item": 251486,
-     "name": "Tabitha's Cuffs",
-     "item_level": 24
+     "item": 273036,
+     "name": "Graveweave Bindings",
+     "item_level": 31
     },
     {
      "slot": "Hands",
-     "item": 253919,
-     "name": "Shadow Gloves",
-     "item_level": 20
+     "item": 273034,
+     "name": "Ephemeral Grips",
+     "item_level": 32
     },
     {
      "slot": "Finger",
@@ -96,9 +96,9 @@
     },
     {
      "slot": "Back",
-     "item": 5542,
-     "name": "Pearl-clasped Cloak",
-     "item_level": 19
+     "item": 4326,
+     "name": "Long Silken Cloak",
+     "item_level": 37
     },
     {
      "slot": "Main hand",
@@ -122,30 +122,30 @@
    "talents": {
     "points": {
      "Affliction": 0,
-     "Demonology": 22,
+     "Demonology": 23,
      "Destruction": 0
     },
-    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAMMzDMzMGGAAA"
+    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAMPgZegZmxwAAAA"
    },
    "professions": [
     {
      "name": "Enchanting",
-     "skill": 150,
+     "skill": 160,
      "max": 225
     },
     {
      "name": "Tailoring",
-     "skill": 147,
-     "max": 150
+     "skill": 156,
+     "max": 225
     },
     {
      "name": "Cooking",
      "skill": 150,
-     "max": 150
+     "max": 225
     },
     {
      "name": "First Aid",
-     "skill": 150,
+     "skill": 156,
      "max": 225
     },
     {
@@ -159,37 +159,37 @@
      "name": "Daggers",
      "category": "Weapon Skills",
      "skill": 23,
-     "max": 155
+     "max": 160
     },
     {
      "name": "Defense",
      "category": "Weapon Skills",
-     "skill": 142,
-     "max": 155
+     "skill": 156,
+     "max": 160
     },
     {
      "name": "Staves",
      "category": "Weapon Skills",
      "skill": 4,
-     "max": 155
+     "max": 160
     },
     {
      "name": "Swords",
      "category": "Weapon Skills",
      "skill": 1,
-     "max": 155
+     "max": 160
     },
     {
      "name": "Unarmed",
      "category": "Weapon Skills",
      "skill": 13,
-     "max": 155
+     "max": 160
     },
     {
      "name": "Wands",
      "category": "Weapon Skills",
      "skill": 128,
-     "max": 155
+     "max": 160
     },
     {
      "name": "Cloth",
@@ -208,25 +208,25 @@
     {
      "name": "Darkspear Trolls",
      "standing": "Honored",
-     "progress": 203,
+     "progress": 272,
      "needed": 12000
     },
     {
      "name": "Orgrimmar",
      "standing": "Honored",
-     "progress": 2091,
+     "progress": 2235,
      "needed": 12000
     },
     {
      "name": "Thunder Bluff",
      "standing": "Friendly",
-     "progress": 4507,
+     "progress": 4576,
      "needed": 6000
     },
     {
      "name": "Undercity",
      "standing": "Friendly",
-     "progress": 4767,
+     "progress": 4967,
      "needed": 6000
     },
     {
@@ -279,19 +279,19 @@
     }
    ],
    "stats": {
-    "Health": 1468,
-    "Mana or energy": 2316,
-    "Strength": 33,
-    "Agility": 29,
-    "Stamina": 125,
-    "Intellect": 108,
-    "Spirit": 98,
-    "Armour": 649
+    "Health": 1678,
+    "Mana or energy": 2616,
+    "Strength": 40,
+    "Agility": 30,
+    "Stamina": 114,
+    "Intellect": 124,
+    "Spirit": 83,
+    "Armour": 753
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": -109,
-    "Honour points": 45,
+    "Dishonourable kills": -59,
+    "Honour points": 48,
     "Renown": 0
    },
    "collected": {
@@ -307,7 +307,7 @@
    "faction": "Horde",
    "level": 12,
    "item_level": 6.9,
-   "recorded_at": "2026-11-11T20:35:32Z",
+   "recorded_at": "2026-11-12T14:17:43Z",
    "recorded_on": "logout",
    "build": "70888",
    "gear": [
@@ -389,7 +389,7 @@
    "professions": [
     {
      "name": "Alchemy",
-     "skill": 61,
+     "skill": 63,
      "max": 150
     },
     {
@@ -532,7 +532,7 @@
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": -76,
+    "Dishonourable kills": -123,
     "Honour points": 0,
     "Renown": 0
    },

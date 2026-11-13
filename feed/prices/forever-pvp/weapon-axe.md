@@ -32,6 +32,7 @@
 | Callous Axe | 4825 | 1g 2s 0c | 2026-11-12 12:44 UTC | 2g 22s 50c | 2g 22s 50c | volatile | 6 of 8 | 2 |  |
 | Centaur Raider's Axe | 284321 | 1g 42s 0c | 2026-11-12 12:44 UTC | 33s 0c | 33s 0c | volatile | 7 of 8 | 3 |  |
 | Cleaver | 2029 | 14s 0c | 2026-11-11 17:37 UTC | 13s 50c |  | too new | 2 of 8 | 1 |  |
+| Cold Iron Pick | 1959 | 19s 0c | 2026-11-12 03:40 UTC | 19s 0c |  | too new | 1 of 8 | 1 |  |
 | Colossal Great Axe | 15271 | 14g 40s 0c | 2026-11-12 12:44 UTC | 15g 48s 0c |  | too new | 2 of 8 | 6 |  |
 | Copper Axe | 2845 | 4s 0c | 2026-11-12 03:40 UTC | 2s 50c | 3s 0c | moving | 7 of 8 | 14 |  |
 | Copper Battle Axe | 3488 | 24s 0c | 2026-11-12 12:44 UTC | 10s 0c | 10s 0c | moving | 7 of 8 | 35 |  |
@@ -60,6 +61,7 @@
 | Guillotine Axe | 2807 | 1g 0s 0c | 2026-11-12 12:44 UTC | 1g 4s 50c | 1g 4s 50c | steady | 6 of 8 | 14 |  |
 | Hacking Cleaver | 15232 | 61s 38c | 2026-11-12 12:44 UTC | 62s 0c | 62s 0c | steady | 6 of 8 | 53 |  |
 | Hatchet | 853 | 10s 0c | 2026-11-11 17:37 UTC | 14s 50c | 14s 50c | volatile | 4 of 8 | 1 |  |
+| Headchopper | 1680 | 7g 89s 0c | 2026-11-12 03:40 UTC | 7g 89s 0c |  | too new | 1 of 8 | 3 |  |
 | Headsplitter | 7786 | 1g 50s 0c | 2026-11-12 12:44 UTC | 1g 59s 0c | 1g 59s 0c | volatile | 5 of 8 | 15 |  |
 | Heavy Flint Axe | 4019 | 1g 26s 0c | 2026-11-12 03:40 UTC | 1g 24s 0c |  | too new | 2 of 8 | 2 |  |
 | Heavy Mithril Axe | 7941 | 1g 45s 0c | 2026-11-12 03:40 UTC | 1g 84s 50c | 1g 84s 50c | moving | 4 of 8 | 20 |  |
@@ -86,6 +88,7 @@
 | Prospector Axe | 12975 | 80s 0c | 2026-11-12 12:44 UTC | 80s 0c | 80s 0c | moving | 7 of 8 | 30 |  |
 | Razor's Edge | 12990 | 52s 99c | 2026-11-12 12:44 UTC | 53s 99c | 55s 0c | moving | 7 of 8 | 24 |  |
 | Resurged Axe | 287006 | 2g 60s 0c | 2026-11-12 12:44 UTC | 3g 0s 0c | 3g 0s 0c | volatile | 4 of 8 | 8 |  |
+| Ribsplitter | 12527 | 20g 99s 0c | 2026-11-12 12:44 UTC | 20g 99s 0c |  | too new | 1 of 8 | 2 |  |
 | Ridge Cleaver | 15230 | 28s 0c | 2026-11-12 12:44 UTC | 28s 0c | 28s 0c | steady | 7 of 8 | 90 |  |
 | Rodentia Flint Axe | 2281 | 6s 0c | 2026-11-11 17:37 UTC | 6s 0c |  | too new | 1 of 8 | 1 |  |
 | Royal Satyr Slicer | 284717 | 1g 0s 0c | 2026-11-12 12:44 UTC | 1g 4s 0c | 1g 4s 0c | steady | 5 of 8 | 2 |  |
@@ -97,6 +100,7 @@
 | Shadow Crescent Axe | 3856 | 2g 48s 0c | 2026-11-12 12:44 UTC | 2g 99s 0c | 2g 99s 0c | steady | 4 of 8 | 5 |  |
 | Shiny War Axe | 1824 | 12s 0c | 2026-11-12 03:40 UTC | 12s 0c | 12s 0c | steady | 6 of 8 | 22 |  |
 | Short-handled Battle Axe | 1812 | 5s 0c | 2026-11-12 03:40 UTC | 5s 0c | 5s 0c | steady | 7 of 8 | 51 |  |
+| Shovelphlange's Mining Axe | 9378 | 15g 71s 0c | 2026-11-12 03:40 UTC | 15g 71s 0c |  | too new | 1 of 8 | 1 |  |
 | Sickle Axe | 1602 | 9g 76s 0c | 2026-11-12 12:44 UTC | 9g 87s 50c | 9g 87s 50c | steady | 4 of 8 | 1 |  |
 | Splitting Hatchet | 15231 | 50s 45c | 2026-11-12 12:44 UTC | 51s 50c | 51s 50c | steady | 6 of 8 | 52 |  |
 | Stalvan's Reaper | 934 | 2g 30s 0c | 2026-11-12 12:44 UTC | 2g 89s 50c | 2g 89s 50c | volatile | 6 of 8 | 15 |  |
@@ -110,6 +114,7 @@
 | Unbalanced Axe | 1816 | 4s 90c | 2026-11-12 03:40 UTC | 5s 0c | 5s 0c | steady | 7 of 8 | 28 |  |
 | Vibroblade | 9485 | 4g 89s 0c | 2026-11-12 12:44 UTC | 3g 56s 0c | 3g 56s 0c | moving | 6 of 8 | 6 |  |
 | Vile Fin Battle Axe | 3325 | 4s 20c | 2026-11-12 12:44 UTC | 2s 0c | 2s 0c | steady | 7 of 8 | 26 |  |
+| Warlord's Axe | 15238 | 5g 0s 0c | 2026-11-12 12:44 UTC | 5g 0s 0c |  | too new | 1 of 8 | 3 |  |
 | Winter's Bite | 10623 | 7g 99s 0c | 2026-11-12 12:44 UTC | 9g 99s 0c |  | too new | 2 of 8 | 4 |  |
 | Wood Chopper | 3189 | 2s 0c | 2026-11-12 03:40 UTC | 1s 0c | 1s 0c | volatile | 7 of 8 | 24 |  |
 | Worn Axe | 37 | 55s 0c | 2026-11-12 12:44 UTC | 28s 0c | 28s 0c | volatile | 6 of 8 | 2 |  |

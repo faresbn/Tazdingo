@@ -30,7 +30,9 @@
 | Bronze Warhammer | 7956 | 16s 0c | 2026-11-12 03:40 UTC | 16s 0c | 16s 0c | steady | 7 of 8 | 121 |  |
 | Bruiser Club | 4439 | 45s 0c | 2026-11-12 12:44 UTC | 37s 50c | 35s 0c | moving | 7 of 8 | 5 |  |
 | Bulky Bludgeon | 1825 | 16s 0c | 2026-11-12 03:40 UTC | 18s 0c | 18s 0c | steady | 5 of 8 | 12 |  |
+| Burrowing Shovel | 6205 | 10g 0s 0c | 2026-11-12 03:40 UTC | 10g 0s 0c |  | too new | 1 of 8 | 1 |  |
 | Carpenter's Mallet | 1415 | 1s 0c | 2026-11-12 03:40 UTC | 1s 0c | 1s 0c | steady | 7 of 8 | 26 |  |
+| Changuk Smasher | 17055 | 5g 0s 0c | 2026-11-12 12:44 UTC | 5g 0s 0c |  | too new | 1 of 8 | 1 |  |
 | Cobalt Crusher | 7730 | 3g 80s 0c | 2026-11-12 12:44 UTC | 6g 99s 0c | 6g 99s 0c | volatile | 5 of 8 | 12 |  |
 | Combat Tuning Wrench | 282550 | 5g 14s 0c | 2026-11-12 03:40 UTC | 5g 14s 0c | 5g 14s 0c | moving | 3 of 8 | 2 |  |
 | Conk Hammer | 3208 | 3g 0s 0c | 2026-11-12 12:44 UTC | 3g 0s 0c | 3g 0s 0c | volatile | 3 of 8 | 17 |  |
@@ -76,6 +78,7 @@
 | Large Bear Bone | 11411 | 23s 0c | 2026-11-11 17:37 UTC | 23s 0c |  | too new | 1 of 8 | 2 |  |
 | Large Club | 2480 | 1s 0c | 2026-11-05 18:58 UTC | 1s 0c |  | too new | 1 of 8 | 1 |  |
 | Large War Club | 3782 | 35s 0c | 2026-11-12 03:40 UTC | 37s 50c | 37s 50c | steady | 4 of 8 | 5 |  |
+| Last Month's Mutton | 19292 | 61s 0c | 2026-11-12 03:40 UTC | 61s 0c |  | too new | 1 of 8 | 1 |  |
 | Leaden Mace | 865 | 51s 0c | 2026-11-12 03:40 UTC | 51s 50c | 51s 50c | moving | 6 of 8 | 43 |  |
 | Looming Gavel | 13048 | 80s 0c | 2026-11-12 03:40 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 6 of 8 | 26 |  |
 | Mace | 852 | 6s 0c | 2026-11-08 23:12 UTC | 6s 0c | 6s 0c | steady | 4 of 8 | 2 |  |
@@ -90,6 +93,7 @@
 | Ornamental Mace | 1815 | 4s 0c | 2026-11-12 03:40 UTC | 4s 0c | 4s 0c | steady | 7 of 8 | 42 |  |
 | Oscillating Power Hammer | 9488 | 1g 45s 0c | 2026-11-12 03:40 UTC | 1g 47s 50c | 1g 47s 50c | moving | 6 of 8 | 8 |  |
 | Painbringer | 15265 | 10g 0s 0c | 2026-11-12 12:44 UTC | 8g 0s 0c |  | too new | 2 of 8 | 2 |  |
+| Petrified Shinbone | 1958 | 2g 0s 0c | 2026-11-12 03:40 UTC | 2g 0s 0c |  | too new | 1 of 8 | 1 |  |
 | Priest's Mace | 2075 | 3s 97c | 2026-11-12 12:44 UTC | 4s 0c | 4s 0c | moving | 7 of 8 | 279 |  |
 | Putrid Wooden Hammer | 3262 | 5s 0c | 2026-11-08 23:12 UTC | 5s 0c | 5s 0c | steady | 3 of 8 | 1 |  |
 | Ragehammer | 10626 | 50g 26s 0c | 2026-11-11 15:03 UTC | 50g 26s 0c |  | too new | 1 of 8 | 1 |  |
@@ -113,16 +117,19 @@
 | Spiked Club | 4564 | 6s 20c | 2026-11-12 12:44 UTC | 7s 0c | 7s 0c | moving | 7 of 8 | 548 |  |
 | Spiked Wooden Plank | 3329 | 4s 0c | 2026-11-06 14:50 UTC | 3s 50c |  | too new | 2 of 8 | 1 |  |
 | Staunch Hammer | 4569 | 6s 11c | 2026-11-12 12:44 UTC | 6s 55c | 6s 11c | moving | 7 of 8 | 489 |  |
+| Steelscale Crushfish | 6360 | 40g 39s 0c | 2026-11-12 03:40 UTC | 40g 39s 0c |  | too new | 1 of 8 | 1 |  |
 | Stone Club | 3787 | 43s 0c | 2026-11-12 03:40 UTC | 43s 0c | 43s 0c | moving | 3 of 8 | 6 |  |
 | Stone Hammer | 15260 | 1g 16s 0c | 2026-11-12 03:40 UTC | 1g 18s 50c | 1g 18s 50c | moving | 6 of 8 | 26 |  |
 | Stonevault Bonebreaker | 9427 | 7g 0s 0c | 2026-11-12 12:44 UTC | 8g 50s 0c |  | too new | 2 of 8 | 2 |  |
 | Stout Battlehammer | 789 | 19s 80c | 2026-11-12 12:44 UTC | 20s 0c | 20s 0c | steady | 7 of 8 | 92 |  |
 | Supreme Smasher | 287015 | 17g 98s 0c | 2026-11-12 12:44 UTC | 25g 56s 50c | 25g 56s 50c | moving | 4 of 8 | 4 |  |
 | Taran Icebreaker | 2915 | 89g 99s 0c | 2026-11-12 12:44 UTC | 94g 98s 50c |  | too new | 2 of 8 | 4 |  |
+| The Judge's Gavel | 12528 | 50g 97s 0c | 2026-11-12 03:40 UTC | 50g 97s 0c |  | too new | 1 of 8 | 1 |  |
 | The Pacifier | 6327 | 19g 0s 0c | 2026-11-12 12:44 UTC | 33g 93s 0c | 33g 93s 0c | volatile | 3 of 8 | 1 |  |
 | The Shoveler | 9391 | 5g 97s 0c | 2026-11-12 12:44 UTC | 3g 80s 0c | 3g 80s 0c | volatile | 3 of 8 | 3 |  |
 | Thornstone Sledgehammer | 1722 | 6g 0s 0c | 2026-11-12 12:44 UTC | 11g 49s 50c | 11g 49s 50c | volatile | 4 of 8 | 8 |  |
 | Thunderstomp's Horn | 286537 | 35s 0c | 2026-11-12 12:44 UTC | 35s 0c | 35s 0c | steady | 7 of 8 | 13 |  |
+| Twig of the World Tree | 13047 | 69g 99s 0c | 2026-11-12 12:44 UTC | 69g 99s 0c |  | too new | 1 of 8 | 1 |  |
 | Viking Warhammer | 1721 | 12g 0s 0c | 2026-11-12 03:40 UTC | 13g 50s 0c |  | too new | 2 of 8 | 6 |  |
 | Viscous Hammer | 13045 | 4g 59s 0c | 2026-11-12 12:44 UTC | 6g 69s 0c | 6g 69s 0c | moving | 6 of 8 | 16 |  |
 | Weighted Sap | 1926 | 15s 0c | 2026-11-09 05:47 UTC | 15s 0c |  | too new | 1 of 8 | 1 |  |

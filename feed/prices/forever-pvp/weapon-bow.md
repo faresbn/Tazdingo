@@ -33,6 +33,7 @@
 | Long Redwood Bow | 15286 | 55s 99c | 2026-11-12 12:44 UTC | 58s 0c | 58s 0c | moving | 6 of 8 | 23 |  |
 | Massive Longbow | 11307 | 6g 0s 0c | 2026-11-12 12:44 UTC | 7g 96s 50c | 7g 96s 50c | moving | 6 of 8 | 3 |  |
 | Mishandled Recurve Bow | 2782 | 8s 0c | 2026-11-12 03:40 UTC | 8s 0c | 8s 0c | steady | 5 of 8 | 18 |  |
+| Monolithic Bow | 9426 | 12g 61s 0c | 2026-11-12 12:44 UTC | 12g 61s 0c |  | too new | 1 of 8 | 2 |  |
 | Needle Threader | 13021 | 4g 0s 0c | 2026-11-12 12:44 UTC | 17g 27s 50c | 17g 27s 50c | volatile | 4 of 8 | 5 |  |
 | Precision Bow | 8183 | 27s 98c | 2026-11-12 12:44 UTC | 29s 0c | 29s 0c | moving | 6 of 8 | 39 |  |
 | Quillfire Bow | 15295 | 3g 27s 0c | 2026-11-12 12:44 UTC | 4g 13s 0c |  | too new | 2 of 8 | 4 |  |

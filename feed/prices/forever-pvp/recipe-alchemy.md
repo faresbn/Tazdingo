@@ -6,6 +6,7 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
+| Blueprint: Alchemy Laboratory | 273112 | 299g 1s 0c | 2026-11-12 12:44 UTC | 299g 1s 0c |  | too new | 1 of 8 | 1 |  |
 | Blueprint: Fermenter | 273085 | 3g 77s 0c | 2026-11-12 12:44 UTC | 39s 50c | 39s 0c | volatile | 7 of 8 | 48 |  |
 | Recipe: Cleric's Elixir | 250368 | 49s 0c | 2026-11-12 03:40 UTC | 44s 0c | 44s 0c | volatile | 6 of 8 | 32 |  |
 | Recipe: Draught of Dream Vision | 9297 | 1g 40s 0c | 2026-11-12 12:44 UTC | 4g 37s 0c | 4g 37s 0c | volatile | 4 of 8 | 7 |  |
@@ -26,6 +27,7 @@
 | Recipe: Elixir of Strength | 250385 | 30g 1s 0c | 2026-11-11 15:03 UTC | 4g 0s 0c | 4g 0s 0c | volatile | 5 of 8 | 1 |  |
 | Recipe: Elixir of Superior Defense | 13478 | 1g 86s 99c | 2026-11-12 12:44 UTC | 2g 0s 0c | 2g 0s 0c | moving | 5 of 8 | 3 |  |
 | Recipe: Elixir of the Mongoose | 13491 | 2g 88s 0c | 2026-11-12 03:40 UTC | 6g 49s 50c | 6g 49s 50c | volatile | 4 of 8 | 13 |  |
+| Recipe: Elixir of the Sages | 13479 | 199g 53s 0c | 2026-11-12 12:44 UTC | 199g 53s 0c |  | too new | 1 of 8 | 1 |  |
 | Recipe: Flask of Chromatic Resistance | 13522 | 400g 51s 0c | 2026-11-12 03:40 UTC | 300g 51s 0c |  | too new | 2 of 8 | 1 |  |
 | Recipe: Flask of Distilled Wisdom | 13520 | 200g 0s 0c | 2026-11-12 12:44 UTC | 348g 99s 50c |  | too new | 2 of 8 | 3 |  |
 | Recipe: Flask of Petrification | 13518 | 60g 50s 0c | 2026-11-12 12:44 UTC | 105g 50s 50c |  | too new | 2 of 8 | 4 |  |
@@ -66,6 +68,7 @@
 | Recipe: Transmute Iron to Gold | 9304 | 1g 17s 0c | 2026-11-12 12:44 UTC | 1g 59s 0c | 1g 59s 0c | moving | 4 of 8 | 15 |  |
 | Recipe: Transmute Legionite | 284871 | 5g 14s 0c | 2026-11-12 12:44 UTC | 10g 32s 0c |  | too new | 2 of 8 | 16 |  |
 | Recipe: Transmute Life to Earth | 13488 | 7g 50s 0c | 2026-11-12 12:44 UTC | 59g 50s 0c | 59g 50s 0c | volatile | 4 of 8 | 2 |  |
+| Recipe: Transmute Undeath to Water | 13486 | 800g 0s 0c | 2026-11-12 12:44 UTC | 300g 0s 0c |  | too new | 1 of 8 | 4 |  |
 | Recipe: Transmute Water to Undeath | 13487 | 69g 99s 0c | 2026-11-12 12:44 UTC | 36g 28s 0c |  | too new | 2 of 8 | 4 |  |
 | Recipe: Troll's Blood Elixir | 3831 | 14s 0c | 2026-11-12 12:44 UTC | 34s 0c | 34s 0c | volatile | 6 of 8 | 48 |  |
 | Recipe: Wildvine Potion | 9294 | 20s 0c | 2026-11-12 12:44 UTC | 20s 0c | 20s 0c | steady | 5 of 8 | 60 |  |

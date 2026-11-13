@@ -46,6 +46,7 @@
 | Smoothbore Gun | 15322 | 78s 0c | 2026-11-12 03:40 UTC | 79s 0c | 79s 0c | moving | 6 of 8 | 10 |  |
 | Snarlsnout Shooter | 286753 | 12s 0c | 2026-11-12 12:44 UTC | 11s 0c | 10s 0c | moving | 7 of 8 | 16 |  |
 | Sniper Rifle | 3430 | 1g 15s 0c | 2026-11-12 03:40 UTC | 1g 35s 0c | 1g 35s 0c | volatile | 5 of 8 | 14 |  |
+| Solid Blunderbuss | 2510 | 9s 36c | 2026-11-12 12:44 UTC | 9s 36c |  | too new | 1 of 8 | 4 |  |
 | The Silencer | 13138 | 4g 0s 0c | 2026-11-12 12:44 UTC | 6g 49s 50c | 6g 49s 50c | volatile | 4 of 8 | 14 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

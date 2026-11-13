@@ -58,18 +58,21 @@
 | Common White Shirt | 16060 | 10s 0c | 2026-11-12 12:44 UTC | 11s 0c | 12s 0c | volatile | 7 of 8 | 32 |  |
 | Conjurer's Sphere | 15918 | 49s 0c | 2026-11-12 03:40 UTC | 64s 50c | 64s 50c | moving | 4 of 8 | 18 |  |
 | Coral Band | 11994 | 17s 0c | 2026-11-12 12:44 UTC | 24s 0c | 25s 0c | volatile | 7 of 8 | 76 |  |
+| Councillor's Scepter | 15939 | 7g 57s 0c | 2026-11-12 03:40 UTC | 7g 57s 0c |  | too new | 1 of 8 | 1 |  |
 | Crystal Starfire Medallion | 5003 | 99s 0c | 2026-11-12 12:44 UTC | 1g 42s 50c | 1g 42s 50c | volatile | 6 of 8 | 20 |  |
 | Dark Silk Shirt | 4333 | 17s 0c | 2026-11-12 12:44 UTC | 29s 0c | 29s 0c | moving | 5 of 8 | 34 |  |
 | Darkmist Orb | 15980 | 1g 8s 0c | 2026-11-12 12:44 UTC | 1g 8s 0c | 1g 8s 0c | volatile | 3 of 8 | 5 |  |
 | Darkmoon Flower | 19295 | 50s 0c | 2026-11-12 03:40 UTC | 50s 0c | 50s 0c | volatile | 3 of 8 | 5 |  |
 | Deckhand's Shirt | 5107 | 1s 99c | 2026-11-12 12:44 UTC | 2s 0c | 2s 0c | steady | 8 of 8 | 89 |  |
 | Demon Band | 12054 | 20s 0c | 2026-11-12 12:44 UTC | 29s 0c | 29s 0c | moving | 7 of 8 | 46 |  |
+| Demon Worshipper's Necklace | 287035 | 23g 77s 0c | 2026-11-12 12:44 UTC | 23g 77s 0c |  | too new | 1 of 8 | 1 |  |
 | Demonstrike Emblem | 284708 | 4g 0s 0c | 2026-11-12 12:44 UTC | 3g 12s 50c |  | too new | 2 of 8 | 2 |  |
 | Desert Choker | 12043 | 1g 0s 0c | 2026-11-12 12:44 UTC | 1g 55s 0c | 1g 55s 0c | volatile | 7 of 8 | 4 |  |
 | Desert Ring | 12013 | 1g 0s 0c | 2026-11-12 03:40 UTC | 2g 84s 50c | 2g 84s 50c | moving | 6 of 8 | 4 |  |
 | Disciple's Stein | 15932 | 6s 0c | 2026-11-12 03:40 UTC | 6s 0c | 6s 0c | steady | 8 of 8 | 99 |  |
 | Durable Rod | 15935 | 34s 0c | 2026-11-12 03:40 UTC | 42s 50c | 42s 50c | moving | 6 of 8 | 16 |  |
 | Duskwoven Branch | 15936 | 3g 50s 0c | 2026-11-12 12:44 UTC | 4g 92s 50c |  | too new | 2 of 8 | 1 |  |
+| Eidolon Talisman | 18340 | 50g 0s 0c | 2026-11-12 12:44 UTC | 50g 0s 0c |  | too new | 1 of 8 | 1 |  |
 | Elder's Amber Stave | 7609 | 43s 0c | 2026-11-12 03:40 UTC | 50s 0c | 50s 0c | steady | 5 of 8 | 8 |  |
 | Embersilk Stave | 15979 | 1g 20s 0c | 2026-11-12 12:44 UTC | 1g 50s 0c | 1g 50s 0c | steady | 5 of 8 | 4 |  |
 | Eye of Adaegus | 5266 | 6g 99s 0c | 2026-11-12 12:44 UTC | 8g 68s 0c | 8g 68s 0c | volatile | 5 of 8 | 2 |  |
@@ -107,6 +110,7 @@
 | Heart of Alterac | 283254 | 60s 0c | 2026-11-12 12:44 UTC | 79s 0c | 79s 0c | moving | 5 of 8 | 4 |  |
 | Heart Ring | 5001 | 14s 0c | 2026-11-12 12:44 UTC | 20s 50c | 22s 0c | volatile | 7 of 8 | 46 |  |
 | Hematite Link | 11973 | 55s 0c | 2026-11-12 12:44 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 5 of 8 | 10 |  |
+| Highborne Star | 15967 | 6g 55s 0c | 2026-11-12 12:44 UTC | 6g 55s 0c |  | too new | 1 of 8 | 1 |  |
 | Horizon Choker | 13085 | 7g 98s 0c | 2026-11-12 03:40 UTC | 7g 98s 0c | 7g 98s 0c | steady | 3 of 8 | 3 |  |
 | Imperial Red Scepter | 15930 | 5g 38s 0c | 2026-11-12 03:40 UTC | 4g 88s 0c |  | too new | 2 of 8 | 1 |  |
 | Iridium Chain | 12022 | 1g 0s 0c | 2026-11-12 12:44 UTC | 1g 22s 0c | 1g 22s 0c | volatile | 5 of 8 | 10 |  |
@@ -118,7 +122,10 @@
 | Jasper Link | 11978 | 3g 0s 0c | 2026-11-12 12:44 UTC | 3g 50s 0c |  | too new | 2 of 8 | 2 |  |
 | Jet Chain | 12030 | 1g 5s 0c | 2026-11-12 12:44 UTC | 1g 67s 0c | 1g 67s 0c | moving | 5 of 8 | 23 |  |
 | Jet Loop | 11998 | 60s 0c | 2026-11-12 12:44 UTC | 94s 50c | 94s 50c | volatile | 6 of 8 | 8 |  |
+| Jeweled Amulet of Cainwyn | 1443 | 500g 0s 0c | 2026-11-12 12:44 UTC | 500g 0s 0c |  | too new | 1 of 8 | 2 |  |
 | Journeyman's Stave | 15925 | 4s 55c | 2026-11-12 12:44 UTC | 5s 0c | 5s 0c | steady | 8 of 8 | 151 |  |
+| Jungle Necklace | 12046 | 4g 87s 0c | 2026-11-12 12:44 UTC | 4g 87s 0c |  | too new | 1 of 8 | 1 |  |
+| Jungle Ring | 12016 | 12g 17s 0c | 2026-11-12 12:44 UTC | 5g 17s 0c |  | too new | 1 of 8 | 1 |  |
 | Kaleidoscope Chain | 13084 | 4g 45s 0c | 2026-11-12 03:40 UTC | 4g 72s 0c | 4g 72s 0c | volatile | 6 of 8 | 8 |  |
 | Kobold Firestarter | 285192 | 21s 0c | 2026-11-12 03:40 UTC | 34s 50c | 34s 50c | volatile | 6 of 8 | 14 |  |
 | Lady Alizabeth's Pendant | 13002 | 9g 0s 0c | 2026-11-12 12:44 UTC | 14g 50s 0c |  | too new | 2 of 8 | 2 |  |
@@ -174,6 +181,7 @@
 | Quicksilver Pendant | 12026 | 3g 0s 0c | 2026-11-12 12:44 UTC | 4g 8s 50c |  | too new | 2 of 8 | 2 |  |
 | Quicksilver Ring | 11991 | 8g 95s 0c | 2026-11-12 12:44 UTC | 8g 0s 0c |  | too new | 2 of 8 | 2 |  |
 | Raincaller Scepter | 15975 | 30s 0c | 2026-11-12 03:40 UTC | 33s 0c | 33s 0c | volatile | 5 of 8 | 4 |  |
+| Recruit's Shirt | 38 | 99s 0c | 2026-11-12 12:44 UTC | 99s 0c |  | too new | 1 of 8 | 1 |  |
 | Red Linen Shirt | 2575 | 1s 99c | 2026-11-12 12:44 UTC | 2s 0c | 2s 0c | moving | 8 of 8 | 32 |  |
 | Red Rose | 3419 | 14s 0c | 2026-11-12 12:44 UTC | 9s 50c | 9s 0c | volatile | 7 of 8 | 13 |  |
 | Red Swashbuckler's Shirt | 6796 | 8s 0c | 2026-11-12 12:44 UTC | 17s 0c | 17s 0c | moving | 5 of 8 | 41 |  |
@@ -189,6 +197,7 @@
 | River Pride Choker | 13087 | 3g 0s 0c | 2026-11-12 12:44 UTC | 3g 30s 0c | 3g 30s 0c | moving | 6 of 8 | 16 |  |
 | Rod of Molten Fire | 2565 | 33s 0c | 2026-11-12 12:44 UTC | 45s 50c | 45s 50c | volatile | 6 of 8 | 24 |  |
 | Royal Scepter | 9914 | 1g 14s 0c | 2026-11-12 12:44 UTC | 1g 7s 0c | 1g 7s 0c | steady | 4 of 8 | 3 |  |
+| Rugged Trapper's Shirt | 148 | 40s 0c | 2026-11-12 12:44 UTC | 40s 0c |  | too new | 1 of 8 | 1 |  |
 | Runic Cane | 7559 | 8s 0c | 2026-11-12 03:40 UTC | 8s 0c | 8s 0c | steady | 7 of 8 | 12 |  |
 | Runic Stave | 15945 | 8s 65c | 2026-11-12 12:44 UTC | 8s 82c | 9s 0c | steady | 7 of 8 | 181 |  |
 | Rusthowl's Worn Collar | 281598 | 15g 81s 0c | 2026-11-09 12:28 UTC | 15g 81s 0c |  | too new | 1 of 8 | 1 |  |
@@ -253,6 +262,7 @@
 | Uther's Strength | 11302 | 24g 99s 0c | 2026-11-12 12:44 UTC | 32g 0s 0c | 32g 0s 0c | moving | 3 of 8 | 7 |  |
 | Vanadium Loop | 11989 | 5g 0s 0c | 2026-11-12 12:44 UTC | 2g 0s 0c | 2g 0s 0c | volatile | 5 of 8 | 3 |  |
 | Vanadium Talisman | 12024 | 1g 99s 0c | 2026-11-12 12:44 UTC | 3g 49s 0c | 3g 49s 0c | moving | 6 of 8 | 4 |  |
+| Venomshroud Orb | 15966 | 1g 38s 0c | 2026-11-12 12:44 UTC | 1g 38s 0c |  | too new | 1 of 8 | 1 |  |
 | Vial of Vile Liquid | 284228 | 4g 0s 0c | 2026-11-12 12:44 UTC | 7g 0s 0c |  | too new | 2 of 8 | 1 |  |
 | Viridian Band | 11982 | 21s 0c | 2026-11-12 12:44 UTC | 22s 50c | 24s 0c | moving | 7 of 8 | 85 |  |
 | Vital Orb | 15977 | 79s 0c | 2026-11-12 03:40 UTC | 74s 50c | 74s 50c | moving | 4 of 8 | 3 |  |
@@ -262,6 +272,7 @@
 | Welken Ring | 5011 | 23s 0c | 2026-11-12 12:44 UTC | 26s 0c | 26s 0c | moving | 5 of 8 | 22 |  |
 | White Linen Shirt | 2576 | 1s 98c | 2026-11-12 12:44 UTC | 1s 0c | 1s 0c | volatile | 8 of 8 | 78 |  |
 | White Swashbuckler's Shirt | 6795 | 25s 0c | 2026-11-12 12:44 UTC | 41s 0c | 41s 0c | moving | 4 of 8 | 28 |  |
+| White Traditional Hanbok | 13897 | 40s 0c | 2026-11-12 03:40 UTC | 40s 0c |  | too new | 1 of 8 | 3 |  |
 | Willow Branch | 7554 | 10s 99c | 2026-11-12 12:44 UTC | 11s 0c | 11s 0c | steady | 7 of 8 | 20 |  |
 | Windchaser Orb | 15965 | 1g 20s 0c | 2026-11-12 12:44 UTC | 1g 10s 0c |  | too new | 2 of 8 | 1 |  |
 | Wolfpack Medallion | 5754 | 5g 39s 0c | 2026-11-07 19:24 UTC | 5g 39s 0c |  | too new | 1 of 8 | 1 |  |

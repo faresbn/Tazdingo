@@ -7,6 +7,7 @@
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | Blueprint: Repair Bot | 273092 | 3g 17s 0c | 2026-11-12 12:44 UTC | 1g 39s 50c | 1g 39s 50c | moving | 6 of 8 | 26 |  |
+| Schematic: Arcane Bomb | 16055 | 200g 0s 0c | 2026-11-12 12:44 UTC | 200g 0s 0c |  | too new | 1 of 8 | 1 |  |
 | Schematic: Bright-Eye Goggles | 10601 | 5s 0c | 2026-11-12 03:40 UTC | 6s 0c | 6s 0c | volatile | 7 of 8 | 38 |  |
 | Schematic: Catseye Ultra Goggles | 10603 | 9s 99c | 2026-11-12 12:44 UTC | 19s 50c | 19s 50c | volatile | 6 of 8 | 36 |  |
 | Schematic: Craftsman's Monocle | 4415 | 1g 1s 99c | 2026-11-12 12:44 UTC | 1g 37s 50c | 1g 37s 50c | volatile | 6 of 8 | 8 |  |
@@ -19,11 +20,13 @@
 | Schematic: EZ-Thro Dynamite | 6716 | 1s 99c | 2026-11-12 12:44 UTC | 2s 0c | 2s 0c | steady | 7 of 8 | 214 |  |
 | Schematic: EZ-Thro Grenade | 264213 | 3g 98s 0c | 2026-11-12 12:44 UTC | 7g 83s 50c |  | too new | 2 of 8 | 12 |  |
 | Schematic: EZ-Thro Mana Bomb | 264228 | 4g 0s 0c | 2026-11-12 12:44 UTC | 4g 75s 0c |  | too new | 2 of 8 | 12 |  |
+| Schematic: EZ-Thro Shell | 264225 | 300g 0s 0c | 2026-11-12 12:44 UTC | 300g 0s 0c |  | too new | 1 of 8 | 1 |  |
 | Schematic: EZ-Thro Thorium Grenade | 264226 | 125g 76s 0c | 2026-11-12 12:44 UTC | 20g 37s 50c |  | too new | 2 of 8 | 1 |  |
 | Schematic: EZ-Thro Tru-Trigger | 264218 | 13s 0c | 2026-11-12 12:44 UTC | 2g 59s 0c | 2g 59s 0c | volatile | 4 of 8 | 14 |  |
 | Schematic: EZ-Thro Wrap | 264204 | 2g 48s 0c | 2026-11-12 12:44 UTC | 3g 0s 0c | 3g 0s 0c | volatile | 3 of 8 | 7 |  |
 | Schematic: Flame Deflector | 4411 | 5g 0s 0c | 2026-11-12 12:44 UTC | 7g 51s 0c | 7g 51s 0c | volatile | 5 of 8 | 4 |  |
 | Schematic: Flash Bomb | 6672 | 1g 80s 0c | 2026-11-12 12:44 UTC | 2g 99s 0c | 2g 99s 0c | volatile | 3 of 8 | 6 |  |
+| Schematic: Flawless Arcanite Rifle | 16056 | 15g 86s 50c | 2026-11-12 12:44 UTC | 10g 91s 0c |  | too new | 1 of 8 | 2 |  |
 | Schematic: Gnomish Alarm-O-Bot | 18654 | 4g 0s 0c | 2026-11-12 12:44 UTC | 9g 50s 0c |  | too new | 2 of 8 | 10 |  |
 | Schematic: Goblin Jumper Cables XL | 18653 | 66g 66s 66c | 2026-11-12 12:44 UTC | 36g 13s 83c |  | too new | 2 of 8 | 2 |  |
 | Schematic: Goblin Land Mine | 4416 | 6s 0c | 2026-11-12 12:44 UTC | 11s 0c | 11s 0c | volatile | 6 of 8 | 62 |  |
@@ -49,6 +52,7 @@
 | Schematic: SAF-T Dynamite | 264202 | 1g 90s 0c | 2026-11-12 12:44 UTC | 1g 90s 0c | 1g 90s 0c | volatile | 3 of 8 | 3 |  |
 | Schematic: SAF-T Jumbo Dynamite | 264208 | 39s 0c | 2026-11-12 12:44 UTC | 42s 50c | 42s 50c | moving | 6 of 8 | 10 |  |
 | Schematic: SAF-T Tabs | 264201 | 1g 50s 0c | 2026-11-12 12:44 UTC | 1g 95s 0c | 1g 95s 0c | volatile | 3 of 8 | 8 |  |
+| Schematic: SAF-T Tube | 264223 | 50g 0s 0c | 2026-11-12 03:40 UTC | 50g 0s 0c |  | too new | 1 of 8 | 2 |  |
 | Schematic: Shadow Goggles | 4410 | 2s 95c | 2026-11-12 12:44 UTC | 3s 0c | 3s 0c | moving | 7 of 8 | 102 |  |
 | Schematic: Shafety Sheep | 264210 | 15s 0c | 2026-11-12 12:44 UTC | 90s 0c | 90s 0c | volatile | 5 of 8 | 10 |  |
 | Schematic: Small Seaforium Charge | 4409 | 2s 0c | 2026-11-12 03:40 UTC | 2s 0c | 2s 0c | steady | 7 of 8 | 244 |  |
