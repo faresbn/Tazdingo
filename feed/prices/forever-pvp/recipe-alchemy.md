@@ -14,7 +14,7 @@
 | Recipe: Elixir of Fortitude | 250370 | 1g 15s 0c | 2026-11-12 12:44 UTC | 1g 70s 0c | 1g 70s 0c | moving | 5 of 8 | 12 |  |
 | Recipe: Elixir of Giant Growth | 6663 | 2s 98c | 2026-11-12 12:44 UTC | 2s 0c | 2s 0c | steady | 7 of 8 | 239 |  |
 | Recipe: Elixir of Giants | 9298 | 30s 0c | 2026-11-12 12:44 UTC | 99s 0c | 99s 0c | volatile | 5 of 8 | 42 |  |
-| Recipe: Elixir of Greater Firepower | 21547 | 31s 0c | 2026-11-12 12:44 UTC | 35s 0c | 35s 0c | volatile | 3 of 8 | 33 |  |
+| Recipe: Elixir of Holy Power | 21547 | 31s 0c | 2026-11-12 12:44 UTC | 35s 0c | 35s 0c | volatile | 3 of 8 | 33 |  |
 | Recipe: Elixir of Intellect | 250389 | 5s 0c | 2026-11-12 12:44 UTC | 15s 0c | 15s 0c | volatile | 6 of 8 | 28 |  |
 | Recipe: Elixir of Lesser Agility | 3396 | 24s 0c | 2026-11-12 12:44 UTC | 9s 0c | 9s 0c | moving | 7 of 8 | 53 |  |
 | Recipe: Elixir of Lesser Fortitude | 3830 | 7s 0c | 2026-11-12 03:40 UTC | 8s 50c | 8s 50c | moving | 6 of 8 | 37 |  |

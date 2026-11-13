@@ -231,7 +231,7 @@
 | Silver Skeleton Key | 15869 | 78c | 2026-11-12 12:44 UTC | 55c | 60c | moving | 7 of 8 | 731 |  |
 | Solid Sharpening Stone | 7964 | 3s 14c | 2026-11-12 12:44 UTC | 4s 49c | 4s 49c | moving | 5 of 8 | 1153 |  |
 | Solid Weightstone | 7965 | 5s 70c | 2026-11-12 12:44 UTC | 4s 89c | 4s 89c | moving | 5 of 8 | 847 |  |
-| Spinning Wheel | 279943 | 56s 94c | 2026-11-12 12:44 UTC | 74s 6c | 74s 6c | moving | 4 of 8 | 78 |  |
+| Spinning Wheel | 279943 | 57s 99c | 2026-11-12 12:44 UTC | 74s 6c | 74s 6c | moving | 4 of 8 | 78 |  |
 | Strong Anti-Venom | 6453 | 98c | 2026-11-12 12:44 UTC | 98c | 98c | moving | 5 of 8 | 634 |  |
 | Tanning Rack | 279941 | 14s 90c | 2026-11-12 12:44 UTC | 13s 99c | 13s 99c | moving | 6 of 8 | 360 |  |
 | Thundering Charm | 4480 | 60s 0c | 2026-11-12 12:44 UTC | 45s 50c | 45s 50c | volatile | 6 of 8 | 310 |  |

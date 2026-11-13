@@ -151,7 +151,6 @@
 | Instant Poison V | 8927 | 2s 0c | 2026-11-12 12:44 UTC | 2s 0c |  | too new | 1 of 8 | 2 |  |
 | Ironhide Bracers | 15639 | 1g 6s 0c | 2026-11-12 12:44 UTC | 1g 6s 0c |  | too new | 1 of 8 | 1 |  |
 | Ironhide Breastplate | 15640 | 4g 99s 0c | 2026-11-12 12:44 UTC | 4g 99s 0c |  | too new | 1 of 8 | 1 |  |
-| Item 12532 | 12532 | 50g 28s 0c | 2026-11-12 12:44 UTC | 50g 28s 0c |  | too new | 1 of 8 | 1 |  |
 | Item 1513 | 1513 | 2s 99c | 2026-11-12 12:44 UTC | 3s 0c | 3s 0c | steady | 7 of 8 | 48 |  |
 | Item 6297 | 6297 | 7c | 2026-11-12 03:40 UTC | 8c | 9c | volatile | 7 of 8 | 182 |  |
 | Item 6301 | 6301 | 1s 0c | 2026-11-12 12:44 UTC | 1s 0c | 1s 0c | steady | 7 of 8 | 7 |  |
@@ -263,6 +262,7 @@
 | Smoldering Robe | 3072 | 19s 0c | 2026-11-12 12:44 UTC | 19s 0c |  | too new | 1 of 8 | 1 |  |
 | Smooth Cloak | 3972 | 59s 0c | 2026-11-12 03:40 UTC | 59s 0c |  | too new | 1 of 8 | 1 |  |
 | Solid Blunderbuss | 2510 | 9s 36c | 2026-11-12 12:44 UTC | 9s 36c |  | too new | 1 of 8 | 4 |  |
+| Spire of the Stoneshaper | 12532 | 50g 28s 0c | 2026-11-12 12:44 UTC | 50g 28s 0c |  | too new | 1 of 8 | 1 |  |
 | Steelscale Crushfish | 6360 | 40g 39s 0c | 2026-11-12 03:40 UTC | 40g 39s 0c |  | too new | 1 of 8 | 1 |  |
 | Stonebark Gauntlets | 18344 | 20g 80s 0c | 2026-11-12 03:40 UTC | 20g 80s 0c |  | too new | 1 of 8 | 1 |  |
 | Stonegaze Wand | 282020 | 3g 0s 0c | 2026-11-12 03:40 UTC | 3g 0s 0c |  | too new | 1 of 8 | 1 |  |

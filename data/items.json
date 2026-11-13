@@ -2,10 +2,10 @@
  "source": {
   "credit": "Data from ForeverDB.net (https://foreverdb.net)",
   "file": "Data/SearchNames.lua",
-  "data_version": "2026-11-11.5fe262fd",
-  "client_build": "1.60.1.70888",
-  "sha256": "48799cce4c1f8dfbd086286afc49ca1e5cda2cc79b24d22b06057a3f8b7bb8b6",
-  "fetched_on": "2026-11-12"
+  "data_version": "2026-11-13.5715f1ac",
+  "client_build": "1.60.1.70938",
+  "sha256": "cb2f3d35f2faef1eb1d40b9c71b8ce3bf18f1f6ec61e9d06a5cd6228c4c3bf93",
+  "fetched_on": "2026-11-13"
  },
  "names": {
   "35": "Bent Staff",
@@ -3748,6 +3748,7 @@
   "12528": "The Judge's Gavel",
   "12529": "Smolderweb Carrier",
   "12531": "Searing Needle",
+  "12532": "Spire of the Stoneshaper",
   "12542": "Funeral Pyre Vestment",
   "12549": "Braincage",
   "12607": "Brilliant Chromatic Scale",
@@ -5697,7 +5698,7 @@
   "21358": "Pattern: Soul Pouch",
   "21542": "Festival Suit",
   "21546": "Elixir of Holy Power",
-  "21547": "Recipe: Elixir of Greater Firepower",
+  "21547": "Recipe: Elixir of Holy Power",
   "21557": "Small Red Rocket",
   "21558": "Small Blue Rocket",
   "21559": "Small Green Rocket",
@@ -7451,7 +7452,6 @@
   10580,
   10585,
   10723,
-  12532,
   12779,
   22762,
   22763,
