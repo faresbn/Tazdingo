@@ -11,6 +11,7 @@
 | 15 Pound Salmon | 13901 | 7g 0s 0c | 2026-11-15 14:40 UTC | 2g 0s 0c |  | too new | 1 of 10 | 3 |  |
 | 18 Pound Salmon | 13902 | 9g 13s 0c | 2026-11-15 12:38 UTC | 9g 13s 0c |  | too new | 1 of 10 | 6 |  |
 | 19 Pound Lobster | 13911 | 24g 7s 0c | 2026-11-15 14:40 UTC | 24g 7s 0c |  | too new | 1 of 10 | 5 |  |
+| 22 Pound Lobster | 13913 | 34s 0c | 2026-11-15 14:40 UTC | 34s 0c |  | too new | 1 of 10 | 1 |  |
 | 22 Pound Salmon | 13903 | 10g 34s 0c | 2026-11-15 12:38 UTC | 5g 67s 0c |  | too new | 2 of 10 | 2 |  |
 | 7 Pound Lobster | 13907 | 3g 10s 0c | 2026-11-15 14:40 UTC | 1g 60s 50c |  | too new | 2 of 10 | 6 |  |
 | 70 Pound Mightfish | 13914 | 1g 2s 0c | 2026-11-15 14:40 UTC | 1g 2s 0c |  | too new | 1 of 10 | 4 |  |
@@ -18,8 +19,10 @@
 | A Head Rag | 9358 | 4s 0c | 2026-11-15 12:38 UTC | 4s 0c |  | too new | 1 of 10 | 3 |  |
 | A Parrot Skeleton | 9357 | 4s 0c | 2026-11-15 14:40 UTC | 4s 0c |  | too new | 1 of 10 | 9 |  |
 | A Thoroughly Read Copy of "Nat Pagle's Extreme' Anglin." | 18365 | 4g 3s 0c | 2026-11-15 14:40 UTC | 37g 2s 0c |  | too new | 2 of 10 | 2 |  |
+| A Wooden Leg | 9356 | 4s 0c | 2026-11-15 14:40 UTC | 4s 0c |  | too new | 1 of 10 | 1 |  |
 | Adventurer's Belt | 10259 | 8g 71s 0c | 2026-11-15 14:40 UTC | 8g 35s 49c |  | too new | 2 of 10 | 2 |  |
 | Adventurer's Bracers | 10256 | 3g 99s 99c | 2026-11-15 14:40 UTC | 3g 99s 49c |  | too new | 2 of 10 | 2 |  |
+| Adventurer's Gloves | 10260 | 3g 19s 99c | 2026-11-15 14:40 UTC | 3g 19s 99c |  | too new | 1 of 10 | 3 |  |
 | Adventurer's Legguards | 10262 | 3g 80s 0c | 2026-11-15 12:38 UTC | 3g 80s 0c |  | too new | 1 of 10 | 2 |  |
 | Adventurer's Shoulders | 10263 | 5g 72s 0c | 2026-11-15 14:40 UTC | 5g 0s 0c |  | too new | 1 of 10 | 2 |  |
 | Adventurer's Tunic | 10264 | 10g 0s 0c | 2026-11-15 12:38 UTC | 12g 50s 50c |  | too new | 2 of 10 | 2 |  |
@@ -32,12 +35,15 @@
 | Arcane Armor | 8283 | 4g 0s 0c | 2026-11-15 12:38 UTC | 3g 50s 0c |  | too new | 2 of 10 | 1 |  |
 | Arcane Pads | 8288 | 2g 11s 44c | 2026-11-15 12:38 UTC | 2g 45s 11c |  | too new | 2 of 10 | 8 |  |
 | Arcane Robe | 8290 | 4g 99s 0c | 2026-11-15 12:38 UTC | 4g 99s 0c |  | too new | 1 of 10 | 1 |  |
+| Arcane Star | 15931 | 12g 60s 0c | 2026-11-15 14:40 UTC | 12g 60s 0c |  | too new | 1 of 10 | 1 |  |
 | Aristocratic Cuffs | 12546 | 19g 49s 0c | 2026-11-15 14:40 UTC | 15g 24s 50c |  | too new | 2 of 10 | 4 |  |
+| Balanced War Axe | 13819 | 4g 0s 0c | 2026-11-15 14:40 UTC | 4g 0s 0c |  | too new | 1 of 10 | 1 |  |
 | Basilisk Sinew Belt | 284707 | 2g 39s 0c | 2026-11-15 12:38 UTC | 2g 39s 0c |  | too new | 2 of 10 | 1 |  |
 | Basilisk Venom | 11388 | 24s 0c | 2026-11-15 12:38 UTC | 74s 0c |  | too new | 2 of 10 | 3 |  |
 | Bat Ear | 11395 | 13s 0c | 2026-11-15 12:38 UTC | 13s 0c |  | too new | 1 of 10 | 11 |  |
 | Battle Staff | 2527 | 89s 0c | 2026-11-15 12:38 UTC | 1g 39s 0c |  | too new | 2 of 10 | 2 |  |
 | Battlechaser's Greaves | 12555 | 75g 59s 0c | 2026-11-15 14:40 UTC | 75g 59s 0c |  | too new | 1 of 10 | 5 |  |
+| Battlefell Sabre | 15220 | 7g 53s 0c | 2026-11-15 14:40 UTC | 7g 53s 0c |  | too new | 1 of 10 | 1 |  |
 | Beasts Deck | 19228 | 249g 0s 0c | 2026-11-15 14:40 UTC | 200g 0s 49c |  | too new | 2 of 10 | 2 |  |
 | Belt of the Ordained | 18702 | 45g 0s 0c | 2026-11-15 14:40 UTC | 45g 0s 0c |  | too new | 1 of 10 | 3 |  |
 | Bent Spoon | 5370 | 12s 0c | 2026-11-15 14:40 UTC | 12s 0c |  | too new | 2 of 10 | 2 |  |
@@ -66,7 +72,9 @@
 | Brainlash | 6440 | 20g 0s 0c | 2026-11-13 | 20g 0s 0c |  | too new | 1 of 10 | 1 |  |
 | Bristlebark Bow | 286748 | 1g 0s 0c | 2026-11-13 | 1g 0s 0c |  | too new | 1 of 10 | 2 |  |
 | Broken Mirror | 5376 | 1s 0c | 2026-11-13 | 1s 0c |  | too new | 1 of 10 | 3 |  |
+| Broken Obsidian Club | 9335 | 1s 0c | 2026-11-15 14:40 UTC | 1s 0c |  | too new | 1 of 10 | 2 |  |
 | Broken Silithid Chitin | 20499 | 6s 0c | 2026-11-15 12:38 UTC | 6s 0c |  | too new | 1 of 10 | 2 |  |
+| Bubbling Green Ichor | 20770 | 7s 0c | 2026-11-15 14:40 UTC | 7s 0c |  | too new | 1 of 10 | 1 |  |
 | Calm Air Band | 286597 | 9g 0s 0c | 2026-11-15 12:38 UTC | 17g 0s 0c |  | too new | 2 of 10 | 2 |  |
 | Cat Carrier (Cornish Rex) | 8486 | 2g 50s 0c | 2026-11-15 12:38 UTC | 2g 75s 0c |  | too new | 2 of 10 | 5 |  |
 | Cat Carrier (Orange Tabby) | 8487 | 2g 85s 0c | 2026-11-15 14:40 UTC | 2g 92s 50c |  | too new | 2 of 10 | 3 |  |
@@ -106,6 +114,7 @@
 | Dragonmaw Shortsword | 753 | 5g 0s 0c | 2026-11-13 | 5g 0s 0c |  | too new | 1 of 10 | 1 |  |
 | Dragonscale Band | 12057 | 4g 0s 0c | 2026-11-15 14:40 UTC | 3g 50s 0c |  | too new | 2 of 10 | 5 |  |
 | Dreadscorn's Spaulders | 282021 | 5g 0s 0c | 2026-11-15 12:38 UTC | 5g 0s 0c |  | too new | 1 of 10 | 1 |  |
+| Dreadwhisper's Touch | 284070 | 8g 7s 0c | 2026-11-15 14:40 UTC | 8g 7s 0c |  | too new | 1 of 10 | 1 |  |
 | Dust Bowl | 4290 | 11s 8c | 2026-11-15 12:38 UTC | 11s 8c |  | too new | 1 of 10 | 1 |  |
 | Eaglehorn Long Bow | 13023 | 79g 99s 0c | 2026-11-15 12:38 UTC | 115g 20s 0c |  | too new | 2 of 10 | 3 |  |
 | Ebonhold Armor | 8265 | 3g 49s 0c | 2026-11-15 14:40 UTC | 3g 49s 0c |  | too new | 1 of 10 | 16 |  |
@@ -121,6 +130,7 @@
 | Elementals Deck | 19267 | 129g 99s 99c | 2026-11-15 14:40 UTC | 290g 0s 49c |  | too new | 2 of 10 | 2 |  |
 | Elunarian Belt | 14465 | 3g 29s 0c | 2026-11-15 12:38 UTC | 3g 29s 0c |  | too new | 1 of 10 | 1 |  |
 | Elunarian Cuffs | 14457 | 6g 13s 0c | 2026-11-15 14:40 UTC | 6g 13s 0c |  | too new | 1 of 10 | 7 |  |
+| Elunarian Spaulders | 14463 | 7g 99s 0c | 2026-11-15 14:40 UTC | 7g 99s 0c |  | too new | 1 of 10 | 1 |  |
 | Emerald Gauntlets | 10277 | 3g 0s 0c | 2026-11-15 12:38 UTC | 2g 52s 50c |  | too new | 2 of 10 | 6 |  |
 | Emerald Vambraces | 10282 | 2g 44s 0c | 2026-11-15 14:40 UTC | 2g 72s 0c |  | too new | 2 of 10 | 7 |  |
 | Empty Barrel | 4558 | 24s 0c | 2026-11-15 12:38 UTC | 24s 0c |  | too new | 1 of 10 | 1 |  |
@@ -132,6 +142,7 @@
 | Enriched Manna Biscuit | 13724 | 20s 0c | 2026-11-15 12:38 UTC | 20s 0c |  | too new | 1 of 10 | 20 |  |
 | Eternal Cloak | 14331 | 3g 50s 0c | 2026-11-15 14:40 UTC | 3g 50s 0c |  | too new | 1 of 10 | 4 |  |
 | Exalted Armsplints | 14983 | 3g 0s 0c | 2026-11-15 12:38 UTC | 3g 0s 0c |  | too new | 1 of 10 | 2 |  |
+| Exalted Epaulets | 14981 | 9g 99s 0c | 2026-11-15 14:40 UTC | 9g 99s 0c |  | too new | 1 of 10 | 1 |  |
 | Exalted Girdle | 14977 | 2g 5s 0c | 2026-11-15 14:40 UTC | 3g 2s 50c |  | too new | 2 of 10 | 4 |  |
 | Executioner's Key | 8444 | 2g 50s 0c | 2026-11-15 12:38 UTC | 2g 50s 0c |  | too new | 1 of 10 | 1 |  |
 | False Documents | 11941 | 89s 0c | 2026-11-15 12:38 UTC | 89s 0c |  | too new | 1 of 10 | 1 |  |
@@ -163,6 +174,7 @@
 | Grand Boots | 15189 | 3g 99s 0c | 2026-11-15 12:38 UTC | 5g 49s 50c |  | too new | 2 of 10 | 2 |  |
 | Grand Breastplate | 15195 | 5g 50s 0c | 2026-11-15 12:38 UTC | 5g 50s 0c |  | too new | 1 of 10 | 1 |  |
 | Grand Gauntlets | 15192 | 5g 50s 0c | 2026-11-15 12:38 UTC | 5g 50s 0c |  | too new | 1 of 10 | 2 |  |
+| Great Axe | 2531 | 5g 69s 0c | 2026-11-15 14:40 UTC | 5g 69s 0c |  | too new | 1 of 10 | 1 |  |
 | Great Horned Owl | 8500 | 15g 19s 0c | 2026-11-15 12:38 UTC | 15g 19s 0c |  | too new | 1 of 10 | 1 |  |
 | Green Carapace Shield | 2021 | 25s 0c | 2026-11-15 12:38 UTC | 25s 0c |  | too new | 1 of 10 | 1 |  |
 | Gruklash's Basher | 282070 | 8g 49s 0c | 2026-11-13 | 8g 49s 0c |  | too new | 1 of 10 | 1 |  |
@@ -217,54 +229,20 @@
 | Imperial Red Robe | 8252 | 2g 40s 0c | 2026-11-15 14:40 UTC | 2g 40s 0c |  | too new | 1 of 10 | 7 |  |
 | Imperial Red Tunic | 8245 | 3g 99s 0c | 2026-11-15 14:40 UTC | 3g 99s 0c |  | too new | 1 of 10 | 3 |  |
 | Indomitable Armguards | 14682 | 2g 0s 0c | 2026-11-15 12:38 UTC | 2g 0s 0c |  | too new | 1 of 10 | 1 |  |
+| Indomitable Boots | 14681 | 5g 58s 0c | 2026-11-15 14:40 UTC | 5g 58s 0c |  | too new | 1 of 10 | 1 |  |
 | Indomitable Cloak | 14683 | 2g 79s 0c | 2026-11-15 12:38 UTC | 2g 79s 0c |  | too new | 1 of 10 | 1 |  |
 | Inigo's Copper Coin | 286312 | 9g 99s 99c | 2026-11-13 | 9g 99s 99c |  | too new | 1 of 10 | 1 |  |
 | Ironwood Treebranch | 911 | 2g 50s 0c | 2026-11-13 | 2g 50s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 10150 | 10150 | 19g 99s 0c | 2026-11-15 14:40 UTC | 19g 99s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 10260 | 10260 | 3g 19s 99c | 2026-11-15 14:40 UTC | 3g 19s 99c |  | too new | 1 of 10 | 3 |  |
-| Item 10265 | 10265 | 4g 0s 0c | 2026-11-15 14:40 UTC | 4g 0s 0c |  | too new | 1 of 10 | 2 |  |
-| Item 10272 | 10272 | 13g 13s 0c | 2026-11-15 14:40 UTC | 13g 13s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 10273 | 10273 | 4g 40s 0c | 2026-11-15 14:40 UTC | 4g 40s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 10274 | 10274 | 4g 0s 0c | 2026-11-15 14:40 UTC | 4g 0s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 10921 | 10921 | 2s 0c | 2026-11-15 14:40 UTC | 2s 0c |  | too new | 1 of 10 | 3 |  |
-| Item 13819 | 13819 | 4g 0s 0c | 2026-11-15 14:40 UTC | 4g 0s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 13913 | 13913 | 34s 0c | 2026-11-15 14:40 UTC | 34s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 14324 | 14324 | 4g 51s 0c | 2026-11-15 14:40 UTC | 4g 51s 0c |  | too new | 1 of 10 | 4 |  |
-| Item 14463 | 14463 | 7g 99s 0c | 2026-11-15 14:40 UTC | 7g 99s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 14681 | 14681 | 5g 58s 0c | 2026-11-15 14:40 UTC | 5g 58s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 14981 | 14981 | 9g 99s 0c | 2026-11-15 14:40 UTC | 9g 99s 0c |  | too new | 1 of 10 | 1 |  |
 | Item 1513 | 1513 | 2s 95c | 2026-11-15 14:40 UTC | 2s 99c | 3s 0c | steady | 9 of 10 | 47 | +0% |
-| Item 15220 | 15220 | 7g 53s 0c | 2026-11-15 14:40 UTC | 7g 53s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 15283 | 15283 | 8g 61s 0c | 2026-11-15 14:40 UTC | 8g 61s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 15441 | 15441 | 9g 99s 99c | 2026-11-15 14:40 UTC | 9g 99s 99c |  | too new | 1 of 10 | 1 |  |
-| Item 15674 | 15674 | 4g 0s 0c | 2026-11-15 14:40 UTC | 4g 0s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 15771 | 15771 | 120g 0s 0c | 2026-11-15 14:40 UTC | 120g 0s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 15777 | 15777 | 4g 50s 0c | 2026-11-15 14:40 UTC | 4g 50s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 15931 | 15931 | 12g 60s 0c | 2026-11-15 14:40 UTC | 12g 60s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 18676 | 18676 | 35g 0s 0c | 2026-11-15 14:40 UTC | 35g 0s 0c |  | too new | 1 of 10 | 2 |  |
-| Item 19293 | 19293 | 4g 91s 0c | 2026-11-15 14:40 UTC | 4g 91s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 20770 | 20770 | 7s 0c | 2026-11-15 14:40 UTC | 7s 0c |  | too new | 1 of 10 | 1 |  |
 | Item 2508 | 2508 | 5s 0c | 2026-11-13 | 5s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 252884 | 252884 | 4g 99s 99c | 2026-11-15 14:40 UTC | 4g 99s 99c |  | too new | 1 of 10 | 1 |  |
-| Item 2531 | 2531 | 5g 69s 0c | 2026-11-15 14:40 UTC | 5g 69s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 280801 | 280801 | 3g 0s 0c | 2026-11-15 14:40 UTC | 3g 0s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 282097 | 282097 | 1g 11s 0c | 2026-11-15 14:40 UTC | 1g 11s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 284070 | 284070 | 8g 7s 0c | 2026-11-15 14:40 UTC | 8g 7s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 287037 | 287037 | 29g 93s 0c | 2026-11-15 14:40 UTC | 29g 93s 0c |  | too new | 1 of 10 | 2 |  |
-| Item 3944 | 3944 | 35s 0c | 2026-11-15 14:40 UTC | 35s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 3965 | 3965 | 34s 0c | 2026-11-15 14:40 UTC | 34s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 3971 | 3971 | 58s 0c | 2026-11-15 14:40 UTC | 58s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 4001 | 4001 | 48s 0c | 2026-11-15 14:40 UTC | 48s 0c |  | too new | 1 of 10 | 1 |  |
-| Item 4007 | 4007 | 56s 0c | 2026-11-15 14:40 UTC | 56s 0c |  | too new | 1 of 10 | 1 |  |
 | Item 6297 | 6297 | 18c | 2026-11-15 14:40 UTC | 8c | 9c | volatile | 9 of 10 | 182 | -47% |
 | Item 6301 | 6301 | 1s 0c | 2026-11-15 12:38 UTC | 1s 0c | 1s 0c | steady | 9 of 10 | 8 | +0% |
-| Item 9335 | 9335 | 1s 0c | 2026-11-15 14:40 UTC | 1s 0c |  | too new | 1 of 10 | 2 |  |
-| Item 9356 | 9356 | 4s 0c | 2026-11-15 14:40 UTC | 4s 0c |  | too new | 1 of 10 | 1 |  |
 | Jade Breastplate | 14915 | 4g 11s 0c | 2026-11-15 14:40 UTC | 4g 68s 0c |  | too new | 2 of 10 | 2 |  |
 | King's Square Postbox Key | 13306 | 87s 99c | 2026-11-15 12:38 UTC | 93s 99c |  | too new | 2 of 10 | 10 |  |
 | Knitted Gloves | 793 | 50s 0c | 2026-11-15 12:38 UTC | 50s 0c |  | too new | 1 of 10 | 4 |  |
 | Large Bat Fang | 11403 | 24s 0c | 2026-11-15 12:38 UTC | 24s 0c |  | too new | 1 of 10 | 2 |  |
 | Lasher Root | 18224 | 26s 0c | 2026-11-15 14:40 UTC | 26s 0c |  | too new | 1 of 10 | 13 |  |
+| Last Year's Mutton | 19293 | 4g 91s 0c | 2026-11-15 14:40 UTC | 4g 91s 0c |  | too new | 1 of 10 | 1 |  |
 | Light Crossbow | 15807 | 48s 45c | 2026-11-15 14:40 UTC | 48s 45c |  | too new | 1 of 10 | 3 |  |
 | Light Magesmith Robe | 2110 | 1g 0s 0c | 2026-11-13 | 1g 0s 0c |  | too new | 1 of 10 | 1 |  |
 | Light Plate Bracers | 8083 | 34s 0c | 2026-11-15 12:38 UTC | 34s 0c |  | too new | 1 of 10 | 1 |  |
@@ -272,7 +250,9 @@
 | Lofty Belt | 14927 | 1g 50s 0c | 2026-11-15 14:40 UTC | 2g 2s 50c |  | too new | 2 of 10 | 4 |  |
 | Lofty Shield | 14930 | 4g 45s 0c | 2026-11-15 14:40 UTC | 6g 45s 0c |  | too new | 2 of 10 | 1 |  |
 | Lord Alexander's Battle Axe | 13003 | 38g 0s 0c | 2026-11-15 14:40 UTC | 40g 83s 83c |  | too new | 2 of 10 | 10 |  |
+| Lunar Wand | 15283 | 8g 61s 0c | 2026-11-15 14:40 UTC | 8g 61s 0c |  | too new | 1 of 10 | 1 |  |
 | Magnificent Gauntlets | 15672 | 8g 0s 0c | 2026-11-15 12:38 UTC | 8g 0s 0c |  | too new | 1 of 10 | 1 |  |
+| Magnificent Greaves | 15674 | 4g 0s 0c | 2026-11-15 14:40 UTC | 4g 0s 0c |  | too new | 1 of 10 | 1 |  |
 | Magnificent Helmet | 15670 | 2g 49s 0c | 2026-11-15 12:38 UTC | 2g 49s 0c |  | too new | 1 of 10 | 1 |  |
 | Magnificent Leggings | 15676 | 3g 89s 0c | 2026-11-15 14:40 UTC | 10g 89s 0c |  | too new | 2 of 10 | 1 |  |
 | Magnificent Shoulders | 15677 | 9g 95s 0c | 2026-11-15 14:40 UTC | 9g 95s 0c |  | too new | 1 of 10 | 2 |  |
@@ -286,7 +266,11 @@
 | Master's Leggings | 10252 | 9g 99s 0c | 2026-11-13 | 9g 99s 0c |  | too new | 1 of 10 | 1 |  |
 | Master's Vest | 10246 | 5g 0s 0c | 2026-11-15 12:38 UTC | 5g 0s 0c |  | too new | 1 of 10 | 1 |  |
 | Masterwork Boots | 10270 | 9g 99s 0c | 2026-11-13 | 9g 99s 0c |  | too new | 1 of 10 | 1 |  |
+| Masterwork Bracers | 10265 | 4g 0s 0c | 2026-11-15 14:40 UTC | 4g 0s 0c |  | too new | 1 of 10 | 2 |  |
 | Masterwork Breastplate | 10266 | 5g 22s 22c | 2026-11-13 | 5g 22s 22c |  | too new | 1 of 10 | 1 |  |
+| Masterwork Circlet | 10272 | 13g 13s 0c | 2026-11-15 14:40 UTC | 13g 13s 0c |  | too new | 1 of 10 | 1 |  |
+| Masterwork Legplates | 10273 | 4g 40s 0c | 2026-11-15 14:40 UTC | 4g 40s 0c |  | too new | 1 of 10 | 1 |  |
+| Masterwork Pauldrons | 10274 | 4g 0s 0c | 2026-11-15 14:40 UTC | 4g 0s 0c |  | too new | 1 of 10 | 1 |  |
 | Mastiff Jawbone | 18237 | 25s 0c | 2026-11-15 12:38 UTC | 25s 0c |  | too new | 1 of 10 | 3 |  |
 | Merciless Belt | 15654 | 3g 0s 0c | 2026-11-15 12:38 UTC | 4g 14s 50c |  | too new | 2 of 10 | 2 |  |
 | Merciless Bracers | 15649 | 1g 18s 0c | 2026-11-15 14:40 UTC | 1g 9s 0c |  | too new | 2 of 10 | 5 |  |
@@ -297,6 +281,7 @@
 | Mighty Armsplints | 10147 | 2g 49s 99c | 2026-11-15 14:40 UTC | 2g 24s 99c |  | too new | 2 of 10 | 6 |  |
 | Mighty Boots | 10146 | 3g 43s 0c | 2026-11-15 14:40 UTC | 3g 43s 0c |  | too new | 1 of 10 | 6 |  |
 | Mighty Gauntlets | 10149 | 3g 0s 0c | 2026-11-15 12:38 UTC | 4g 0s 0c |  | too new | 2 of 10 | 4 |  |
+| Mighty Helmet | 10150 | 19g 99s 0c | 2026-11-15 14:40 UTC | 19g 99s 0c |  | too new | 1 of 10 | 1 |  |
 | Mighty Spaulders | 10153 | 3g 66s 0c | 2026-11-15 12:38 UTC | 3g 66s 0c |  | too new | 1 of 10 | 3 |  |
 | Mind-numbing Poison II | 6951 | 4s 99c | 2026-11-15 12:38 UTC | 3s 49c |  | too new | 2 of 10 | 44 |  |
 | Mistwalker Boots | 10629 | 10g 0s 0c | 2026-11-15 14:40 UTC | 10g 0s 0c |  | too new | 1 of 10 | 4 |  |
@@ -314,7 +299,9 @@
 | Opulent Scepter | 15984 | 5g 0s 0c | 2026-11-15 14:40 UTC | 5g 0s 0c |  | too new | 1 of 10 | 2 |  |
 | Opulent Tunic | 14287 | 2g 99s 0c | 2026-11-15 12:38 UTC | 2g 99s 0c |  | too new | 1 of 10 | 2 |  |
 | Orphic Bracers | 18337 | 3g 0s 0c | 2026-11-15 14:40 UTC | 3g 0s 0c |  | too new | 1 of 10 | 7 |  |
+| Overlinked Chain Armor | 4007 | 56s 0c | 2026-11-15 14:40 UTC | 56s 0c |  | too new | 1 of 10 | 1 |  |
 | Overlinked Chain Belt | 4000 | 27s 0c | 2026-11-15 12:38 UTC | 27s 0c |  | too new | 2 of 10 | 2 |  |
+| Overlinked Chain Boots | 4001 | 48s 0c | 2026-11-15 14:40 UTC | 48s 0c |  | too new | 1 of 10 | 1 |  |
 | Overlinked Chain Gloves | 4004 | 36s 0c | 2026-11-15 12:38 UTC | 36s 0c |  | too new | 1 of 10 | 2 |  |
 | Overlinked Chain Pants | 4005 | 53s 0c | 2026-11-15 12:38 UTC | 53s 0c |  | too new | 1 of 10 | 1 |  |
 | Overlinked Chain Shoulderpads | 4006 | 40s 0c | 2026-11-15 14:40 UTC | 70s 0c |  | too new | 2 of 10 | 4 |  |
@@ -335,9 +322,11 @@
 | Pattern: Heavy Scorpid Gauntlets | 15738 | 2g 99s 0c | 2026-11-13 | 2g 99s 0c |  | too new | 1 of 10 | 1 |  |
 | Pattern: Helm of the Great Chief | 12716 | 10g 26s 0c | 2026-11-15 12:38 UTC | 10g 26s 0c |  | too new | 1 of 10 | 2 |  |
 | Pattern: Hide of the Wild | 18518 | 299g 99s 99c | 2026-11-15 14:40 UTC | 424g 99s 99c |  | too new | 2 of 10 | 2 |  |
+| Pattern: Living Breastplate | 15771 | 120g 0s 0c | 2026-11-15 14:40 UTC | 120g 0s 0c |  | too new | 1 of 10 | 1 |  |
 | Pattern: Mooncloth Leggings | 14497 | 9g 49s 0c | 2026-11-15 14:40 UTC | 12g 99s 50c |  | too new | 2 of 10 | 6 |  |
 | Pattern: Mooncloth Robe | 18487 | 20g 99s 89c | 2026-11-15 12:38 UTC | 20g 99s 89c |  | too new | 1 of 10 | 4 |  |
 | Pattern: Runic Leather Armor | 15776 | 2g 50s 0c | 2026-11-15 12:38 UTC | 1g 97s 0c |  | too new | 2 of 10 | 2 |  |
+| Pattern: Runic Leather Shoulders | 15777 | 4g 50s 0c | 2026-11-15 14:40 UTC | 4g 50s 0c |  | too new | 1 of 10 | 1 |  |
 | Pattern: Shifting Cloak | 18519 | 250g 0s 0c | 2026-11-15 12:38 UTC | 250g 0s 0c |  | too new | 1 of 10 | 1 |  |
 | Pattern: Stormshroud Armor | 15753 | 40g 76s 0c | 2026-11-15 12:38 UTC | 90g 76s 0c |  | too new | 2 of 10 | 2 |  |
 | Pattern: Stormshroud Gloves | 21548 | 150g 26s 0c | 2026-11-15 14:40 UTC | 150g 26s 0c |  | too new | 1 of 10 | 4 |  |
@@ -345,6 +334,7 @@
 | Pattern: Tooled Leather Epaulets | 252887 | 14g 0s 0c | 2026-11-15 12:38 UTC | 14g 0s 0c |  | too new | 2 of 10 | 2 |  |
 | Pattern: Wicked Leather Armor | 15773 | 11g 99s 99c | 2026-11-15 14:40 UTC | 15g 99s 99c |  | too new | 2 of 10 | 5 |  |
 | Pattern: Wicked Leather Belt | 15768 | 50g 0s 0c | 2026-11-15 14:40 UTC | 50g 0s 0c |  | too new | 1 of 10 | 5 |  |
+| Pattern: Wicked Leather Shoulders | 252884 | 4g 99s 99c | 2026-11-15 14:40 UTC | 4g 99s 99c |  | too new | 1 of 10 | 1 |  |
 | Pattern: Wizardweave Robe | 14500 | 9g 23s 99c | 2026-11-15 12:38 UTC | 14g 61s 99c |  | too new | 2 of 10 | 2 |  |
 | Pauldrons of the Stone Guardian | 287042 | 50g 10s 0c | 2026-11-13 | 50g 10s 0c |  | too new | 1 of 10 | 1 |  |
 | Peerless Armor | 15433 | 5g 28s 0c | 2026-11-15 12:38 UTC | 5g 28s 0c |  | too new | 1 of 10 | 1 |  |
@@ -375,6 +365,7 @@
 | Protector Helm | 14795 | 1g 91s 0c | 2026-11-15 12:38 UTC | 2g 95s 49c |  | too new | 2 of 10 | 2 |  |
 | Protector Legguards | 14796 | 2g 54s 0c | 2026-11-15 12:38 UTC | 2g 54s 50c |  | too new | 2 of 10 | 2 |  |
 | Rabbit Crate (Arctic) | 280797 | 3g 0s 0c | 2026-11-15 12:38 UTC | 3g 0s 0c |  | too new | 1 of 10 | 1 |  |
+| Rabbit Crate (Brown) | 280801 | 3g 0s 0c | 2026-11-15 14:40 UTC | 3g 0s 0c |  | too new | 1 of 10 | 1 |  |
 | Rabbit Crate (Snowshoe) | 8497 | 3g 0s 0c | 2026-11-15 12:38 UTC | 3g 0s 0c |  | too new | 1 of 10 | 1 |  |
 | Rag Doll | 5433 | 70s 0c | 2026-11-15 12:38 UTC | 70s 0c |  | too new | 1 of 10 | 12 |  |
 | Ranger Lord's Longsword | 284157 | 13g 0s 98c | 2026-11-15 12:38 UTC | 13g 0s 98c |  | too new | 1 of 10 | 5 |  |
@@ -386,6 +377,7 @@
 | Recipe: Greater Nature Protection Potion | 13496 | 100g 0s 0c | 2026-11-15 14:40 UTC | 350g 45s 50c |  | too new | 2 of 10 | 3 |  |
 | Resplendent Bracelets | 14320 | 2g 22s 0c | 2026-11-15 14:40 UTC | 3g 11s 0c |  | too new | 2 of 10 | 5 |  |
 | Resplendent Epaulets | 14325 | 4g 99s 0c | 2026-11-15 14:40 UTC | 3g 99s 0c |  | too new | 1 of 10 | 1 |  |
+| Resplendent Sarong | 14324 | 4g 51s 0c | 2026-11-15 14:40 UTC | 4g 51s 0c |  | too new | 1 of 10 | 4 |  |
 | Revenant Deflector | 10093 | 2g 37s 0c | 2026-11-15 12:38 UTC | 3g 96s 27c |  | too new | 2 of 10 | 4 |  |
 | Robe of Apprenticeship | 2614 | 3s 50c | 2026-11-15 12:38 UTC | 3s 50c |  | too new | 1 of 10 | 1 |  |
 | Rough Leather Vest | 799 | 2s 0c | 2026-11-13 | 2s 0c |  | too new | 1 of 10 | 3 |  |
@@ -394,6 +386,7 @@
 | Rusted Family Memento | 284067 | 7g 0s 0c | 2026-11-15 12:38 UTC | 8g 38s 0c |  | too new | 2 of 10 | 1 |  |
 | Sacred Cloth Leggings | 18745 | 29g 90s 0c | 2026-11-15 14:40 UTC | 29g 90s 0c |  | too new | 1 of 10 | 1 |  |
 | Sash of Mercy | 14553 | 398g 55s 0c | 2026-11-15 14:40 UTC | 398g 55s 0c |  | too new | 1 of 10 | 5 |  |
+| Sash of the Windreaver | 18676 | 35g 0s 0c | 2026-11-15 14:40 UTC | 35g 0s 0c |  | too new | 1 of 10 | 2 |  |
 | Scalemail Gloves | 718 | 5s 0c | 2026-11-13 | 5s 0c |  | too new | 1 of 10 | 1 |  |
 | Scallop Shell | 5377 | 1s 0c | 2026-11-15 12:38 UTC | 1s 0c |  | too new | 1 of 10 | 5 |  |
 | Schematic: Arcanite Dragonling | 16054 | 159g 99s 99c | 2026-11-15 12:38 UTC | 159g 99s 99c |  | too new | 1 of 10 | 6 |  |
@@ -411,6 +404,7 @@
 | Serpentskin Armor | 8258 | 2g 51s 0c | 2026-11-15 14:40 UTC | 2g 75s 0c |  | too new | 2 of 10 | 4 |  |
 | Serrated Petal | 18223 | 93s 0c | 2026-11-15 14:40 UTC | 93s 0c |  | too new | 2 of 10 | 1 |  |
 | Shadowhide Maul | 1458 | 50s 0c | 2026-11-13 | 50s 0c |  | too new | 1 of 10 | 1 |  |
+| Shaper's Robe | 287037 | 29g 93s 0c | 2026-11-15 14:40 UTC | 29g 93s 0c |  | too new | 1 of 10 | 2 |  |
 | Sharpshooter Harquebus | 15325 | 3g 50s 99c | 2026-11-15 14:40 UTC | 4g 63s 99c |  | too new | 2 of 10 | 6 |  |
 | Shimmering Basilisk Skin | 11389 | 33s 0c | 2026-11-15 12:38 UTC | 33s 0c |  | too new | 1 of 10 | 2 |  |
 | Shin Blade | 15257 | 18g 0s 0c | 2026-11-15 14:40 UTC | 13g 50s 0c |  | too new | 2 of 10 | 2 |  |
@@ -418,6 +412,7 @@
 | Sleek Bat Pelt | 11402 | 19s 0c | 2026-11-15 12:38 UTC | 19s 0c |  | too new | 2 of 10 | 6 |  |
 | Sleeveless T-Shirt | 18231 | 2g 0s 0c | 2026-11-15 12:38 UTC | 1g 12s 50c |  | too new | 2 of 10 | 1 |  |
 | Slushberry Brandy | 260632 | 25s 0c | 2026-11-15 12:38 UTC | 25s 0c |  | too new | 1 of 10 | 10 |  |
+| Smooth Leather Bracers | 3971 | 58s 0c | 2026-11-15 14:40 UTC | 58s 0c |  | too new | 1 of 10 | 1 |  |
 | Smooth Leather Gloves | 3973 | 55s 0c | 2026-11-15 12:38 UTC | 55s 0c |  | too new | 1 of 10 | 1 |  |
 | Solstice Staff | 15278 | 9g 55s 0c | 2026-11-15 14:40 UTC | 7g 55s 0c |  | too new | 2 of 10 | 6 |  |
 | Spaulders of a Lost Age | 9430 | 10g 0s 0c | 2026-11-15 12:38 UTC | 10g 0s 0c |  | too new | 1 of 10 | 1 |  |
@@ -429,6 +424,7 @@
 | Sunscale Shield | 14852 | 2g 91s 99c | 2026-11-15 12:38 UTC | 5g 45s 99c |  | too new | 2 of 10 | 2 |  |
 | Supreme Bracers | 15436 | 3g 58s 0c | 2026-11-15 14:40 UTC | 3g 58s 0c |  | too new | 1 of 10 | 3 |  |
 | Supreme Sash | 15434 | 10g 0s 0c | 2026-11-15 12:38 UTC | 10g 0s 0c |  | too new | 1 of 10 | 1 |  |
+| Supreme Shoulders | 15441 | 9g 99s 99c | 2026-11-15 14:40 UTC | 9g 99s 99c |  | too new | 1 of 10 | 1 |  |
 | Sword of Zeal | 6622 | 200g 0s 0c | 2026-11-15 12:38 UTC | 135g 0s 0c |  | too new | 2 of 10 | 2 |  |
 | Tarnished Chain Belt | 2380 | 20s 0c | 2026-11-13 | 20s 0c |  | too new | 1 of 10 | 1 |  |
 | Tarnished Chain Boots | 2383 | 2g 40s 0c | 2026-11-15 12:38 UTC | 1g 30s 0c |  | too new | 2 of 10 | 1 |  |
@@ -446,6 +442,7 @@
 | Thick Cloth Gloves | 203 | 3s 50c | 2026-11-13 | 3s 50c |  | too new | 1 of 10 | 1 |  |
 | Thick Leather Belt | 3961 | 80s 0c | 2026-11-15 14:40 UTC | 80s 0c |  | too new | 1 of 10 | 4 |  |
 | Thick Leather Boots | 3962 | 47s 0c | 2026-11-15 14:40 UTC | 47s 0c |  | too new | 1 of 10 | 2 |  |
+| Thick Leather Gloves | 3965 | 34s 0c | 2026-11-15 14:40 UTC | 34s 0c |  | too new | 1 of 10 | 1 |  |
 | Thick Leather Pants | 3966 | 40s 0c | 2026-11-15 12:38 UTC | 40s 0c |  | too new | 1 of 10 | 1 |  |
 | Thick Leather Tunic | 3968 | 1g 54s 0c | 2026-11-15 14:40 UTC | 1g 54s 0c |  | too new | 1 of 10 | 11 |  |
 | Thin Cloth Armor | 2121 | 20s 0c | 2026-11-13 | 20s 0c |  | too new | 1 of 10 | 1 |  |
@@ -466,7 +463,9 @@
 | Tusk of Grunter | 282010 | 1g 50s 0c | 2026-11-15 12:38 UTC | 1g 50s 0c |  | too new | 1 of 10 | 1 |  |
 | Twilight Lexicon - Chapter 1 | 20394 | 1g 1s 0c | 2026-11-15 12:38 UTC | 1g 1s 0c |  | too new | 1 of 10 | 4 |  |
 | Twilight Lexicon - Chapter 3 | 20396 | 95s 0c | 2026-11-15 14:40 UTC | 95s 0c |  | too new | 1 of 10 | 9 |  |
+| Twill Belt | 3944 | 35s 0c | 2026-11-15 14:40 UTC | 35s 0c |  | too new | 1 of 10 | 1 |  |
 | Twill Cloak | 3947 | 49s 0c | 2026-11-15 12:38 UTC | 49s 0c |  | too new | 1 of 10 | 1 |  |
+| Unbreakable Golem Grips | 282097 | 1g 11s 0c | 2026-11-15 14:40 UTC | 1g 11s 0c |  | too new | 1 of 10 | 1 |  |
 | Unbridled Leggings | 18298 | 15g 0s 0c | 2026-11-15 14:40 UTC | 22g 50s 0c |  | too new | 2 of 10 | 5 |  |
 | Unyielding Battle Signet | 282026 | 3g 0s 0c | 2026-11-15 12:38 UTC | 3g 66s 50c |  | too new | 2 of 10 | 2 |  |
 | Vanguard Breastplate | 14854 | 2g 44s 0c | 2026-11-15 14:40 UTC | 3g 94s 0c |  | too new | 2 of 10 | 2 |  |
@@ -487,6 +486,7 @@
 | Wintersaber Hide Lined Gloves | 284266 | 150g 0s 0c | 2026-11-15 12:38 UTC | 150g 0s 0c |  | too new | 1 of 10 | 2 |  |
 | Witch Doctor's Cane | 9482 | 29g 25s 99c | 2026-11-15 12:38 UTC | 24g 75s 99c |  | too new | 2 of 10 | 1 |  |
 | Witherbark Hatecleaver | 284063 | 5g 55s 55c | 2026-11-15 12:38 UTC | 10g 24s 77c |  | too new | 2 of 10 | 1 |  |
+| Wound Poison III | 10921 | 2s 0c | 2026-11-15 14:40 UTC | 2s 0c |  | too new | 1 of 10 | 3 |  |
 | Xorothian Footwraps | 282631 | 200g 0s 0c | 2026-11-15 12:38 UTC | 200g 0s 0c |  | too new | 1 of 10 | 1 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

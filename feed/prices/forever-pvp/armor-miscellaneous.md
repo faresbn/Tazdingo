@@ -160,10 +160,10 @@
 | Necklace of Calisea | 1714 | 3g 0s 0c | 2026-11-15 14:40 UTC | 3g 0s 0c | 3g 14s 0c | moving | 7 of 10 | 11 | -45% |
 | Necklace of Harmony | 5180 | 1g 55s 0c | 2026-11-15 14:40 UTC | 1g 55s 0c | 2g 27s 50c | volatile | 8 of 10 | 10 | -56% |
 | Neophyte's Shirt | 53 | 5s 0c | 2026-11-15 14:40 UTC | 8s 0c | 9s 0c | volatile | 9 of 10 | 10 | -24% |
-| Nightsky Orb | 15929 | 46s 99c | 2026-11-15 14:40 UTC | 48s 90c | 48s 95c | steady | 6 of 10 | 20 |  |
+| Nightsky Orb | 15929 | 46s 99c | 2026-11-15 14:40 UTC | 48s 90c | 48s 95c | moving | 6 of 10 | 20 |  |
 | Obsidian Band | 12004 | 2g 0s 0c | 2026-11-15 14:40 UTC | 3g 0s 0c | 3g 0s 0c | moving | 4 of 10 | 7 |  |
 | Obsidian Pendant | 12035 | 1g 99s 99c | 2026-11-15 14:40 UTC | 3g 11s 0c | 3g 11s 0c | moving | 5 of 10 | 4 |  |
-| Ogremind Ring | 1993 | 27s 0c | 2026-11-15 12:38 UTC | 28s 0c | 34s 0c | moving | 7 of 10 | 15 | -66% |
+| Ogremind Ring | 1993 | 27s 0c | 2026-11-15 14:40 UTC | 28s 0c | 34s 0c | moving | 7 of 10 | 15 | -66% |
 | Onyx Choker | 12032 | 95s 0c | 2026-11-15 12:38 UTC | 1g 19s 50c | 1g 20s 0c | volatile | 7 of 10 | 10 |  |
 | Onyx Ring | 12001 | 95s 0c | 2026-11-15 14:40 UTC | 97s 0c | 97s 0c | volatile | 6 of 10 | 14 |  |
 | Orange Mageweave Shirt | 10056 | 35s 0c | 2026-11-15 14:40 UTC | 17s 0c | 18s 0c | volatile | 7 of 10 | 32 | -62% |
@@ -269,7 +269,7 @@
 | Viridian Band | 11982 | 19s 80c | 2026-11-15 14:40 UTC | 20s 0c | 21s 0c | moving | 9 of 10 | 68 | -29% |
 | Vital Orb | 15977 | 79s 42c | 2026-11-15 14:40 UTC | 79s 0c | 78s 50c | moving | 6 of 10 | 4 |  |
 | Volcanic Rock Ring | 12053 | 27s 0c | 2026-11-15 14:40 UTC | 27s 0c | 32s 0c | moving | 9 of 10 | 22 | -39% |
-| Voodoo Band | 1996 | 98s 50c | 2026-11-15 14:40 UTC | 23s 0c | 27s 0c | volatile | 8 of 10 | 26 | -74% |
+| Voodoo Band | 1996 | 98s 50c | 2026-11-15 14:40 UTC | 23s 0c | 27s 0c | volatile | 8 of 10 | 29 | -74% |
 | Watcher's Star | 15973 | 23s 74c | 2026-11-15 14:40 UTC | 24s 0c | 25s 0c | moving | 9 of 10 | 9 | -38% |
 | Welken Ring | 5011 | 22s 71c | 2026-11-15 14:40 UTC | 23s 0c | 25s 0c | moving | 7 of 10 | 22 | -66% |
 | White Linen Shirt | 2576 | 1s 45c | 2026-11-15 14:40 UTC | 1s 22c | 1s 22c | volatile | 10 of 10 | 94 | -19% |

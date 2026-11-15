@@ -10,7 +10,7 @@ Everything below is an estimate from listings, recorded at the time shown; none 
 
 At least 20% under the usual price. Exceptional ones are at least 30% under and far outside the item's normal spread; they come first. Confidence says how much history stands behind it; low-confidence ones are left out.
 
-The strongest 30 of 1227.
+The strongest 30 of 1226.
 
 | Item | ID | Latest | Usual | Under usual | Exceptional | Confidence | Recorded at |
 |---|---|---|---|---|---|---|---|
@@ -55,7 +55,7 @@ None at the latest scan.
 
 Steady or moving items, listed most days, recorded at or under their cheaper days. The margin is an estimate after the 5% Auction House cut.
 
-The strongest 30 of 462.
+The strongest 30 of 461.
 
 | Item | ID | Latest | Usual | Estimated margin a unit | Steadiness | Recorded at |
 |---|---|---|---|---|---|---|

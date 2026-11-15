@@ -7,9 +7,9 @@
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | Blackbone Wand | 5239 | 1g 20s 0c | 2026-11-15 12:38 UTC | 1g 99s 0c | 1g 99s 0c | moving | 5 of 10 | 2 |  |
-| Blazing Wand | 5212 | 6s 72c | 2026-11-15 14:40 UTC | 6s 75c | 6s 89c | moving | 10 of 10 | 217 | -4% |
+| Blazing Wand | 5212 | 6s 73c | 2026-11-15 14:40 UTC | 6s 75c | 6s 89c | moving | 10 of 10 | 217 | -4% |
 | Burning Wand | 5210 | 15s 0c | 2026-11-12 03:40 UTC | 15s 0c |  | too new | 1 of 10 | 1 |  |
-| Dire Wand | 8186 | 23s 4c | 2026-11-15 14:40 UTC | 22s 85c | 23s 52c | steady | 10 of 10 | 52 | -25% |
+| Dire Wand | 8186 | 23s 4c | 2026-11-15 14:40 UTC | 22s 85c | 23s 51c | steady | 10 of 10 | 52 | -25% |
 | Dragon Finger | 15282 | 3g 19s 0c | 2026-11-15 14:40 UTC | 11g 30s 0c | 11g 30s 0c | volatile | 4 of 10 | 4 |  |
 | Dreambough Wand | 249234 | 2g 39s 98c | 2026-11-15 14:40 UTC | 2g 39s 98c |  | too new | 1 of 10 | 13 |  |
 | Earthen Rod | 9381 | 6g 19s 99c | 2026-11-15 12:38 UTC | 7g 81s 99c | 7g 81s 99c | moving | 4 of 10 | 7 |  |
@@ -25,10 +25,10 @@
 | Ivory Wand | 15279 | 2g 69s 0c | 2026-11-15 14:40 UTC | 1g 97s 50c | 1g 97s 50c | steady | 4 of 10 | 10 |  |
 | Jaina's Firestarter | 13064 | 3g 39s 99c | 2026-11-15 14:40 UTC | 3g 39s 99c | 4g 10s 0c | volatile | 7 of 10 | 16 | -71% |
 | Lesser Eternal Wand | 249232 | 1g 99s 91c | 2026-11-15 14:40 UTC | 3g 74s 97c | 3g 74s 97c | moving | 4 of 10 | 18 |  |
-| Lesser Magic Wand | 11287 | 1s 19c | 2026-11-15 14:40 UTC | 1s 83c | 2s 0c | moving | 10 of 10 | 2884 | -8% |
-| Lesser Mystic Wand | 11289 | 44s 99c | 2026-11-15 14:40 UTC | 40s 0c | 45s 0c | moving | 9 of 10 | 46 | -46% |
+| Lesser Magic Wand | 11287 | 1s 25c | 2026-11-15 14:40 UTC | 1s 83c | 2s 0c | moving | 10 of 10 | 2884 | -8% |
+| Lesser Mystic Wand | 11289 | 44s 99c | 2026-11-15 14:40 UTC | 39s 99c | 45s 0c | moving | 9 of 10 | 46 | -46% |
 | Novice's Practice Wand | 247789 | 1s 0c | 2026-11-15 12:38 UTC | 1s 0c | 1s 0c | steady | 9 of 10 | 429 | +0% |
-| Opaque Wand | 5207 | 10s 75c | 2026-11-15 14:40 UTC | 10s 92c | 11s 0c | steady | 10 of 10 | 98 | -1% |
+| Opaque Wand | 5207 | 10s 80c | 2026-11-15 14:40 UTC | 10s 92c | 11s 0c | steady | 10 of 10 | 104 | -1% |
 | Pestilent Wand | 5347 | 88s 0c | 2026-11-15 12:38 UTC | 1g 0s 0c | 1g 11s 0c | moving | 7 of 10 | 3 | -23% |
 | Satyr's Touch | 287036 | 3g 48s 22c | 2026-11-15 14:40 UTC | 4g 72s 0c | 4g 72s 0c | moving | 4 of 10 | 14 |  |
 | Scorching Wand | 5213 | 52s 98c | 2026-11-15 14:40 UTC | 53s 0c | 53s 0c | steady | 8 of 10 | 50 | -4% |
