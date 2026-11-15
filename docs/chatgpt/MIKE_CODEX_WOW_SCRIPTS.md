@@ -16,7 +16,7 @@ A watcher script in the game's SavedVariables folder, run by macOS (launchd). Sc
 | When | What it does |
 |---|---|
 | Every save of `Auctionator.lua` | Imports the scan (`scripts/ingest.py --push`: a scan record, tests, build, commit, push) and confirms the website published it |
-| 06:00, 14:00, 22:00 | Refreshes ForeverDB's public data; reads the account's own characters from `ForeverDB.lua` (`scripts/characters.py`, labels such as "Orc Warlock", never names); files finished combat logs on the repository's `logs` branch (`scripts/combat_logs.py`) |
+| 06:00, 14:00, 22:00 | Refreshes ForeverDB's public data (its API every 3½ days); reads the account's own characters from `ForeverDB.lua` (`scripts/characters.py`, labels such as "Orc Warlock", never names); files finished combat logs on the repository's `logs` branch (`scripts/combat_logs.py`) |
 | Before every job | Clears iCloud's duplicate "name 2.ext" files (`scripts/icloud_janitor.py`) |
 
 It sends macOS notifications when a job finishes or fails. Fares's Mac writes to GitHub with his own account.
