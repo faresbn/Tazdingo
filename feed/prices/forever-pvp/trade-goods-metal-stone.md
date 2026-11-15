@@ -1,51 +1,51 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Trade Goods: Metal & Stone
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-12 12:44 UTC. Uploads in the 30-day window: 22.
+- **Latest scan:** 2026-11-15 12:38 UTC. Uploads in the 30-day window: 23.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Arcanite Bar | 12360 | 54g 75s 80c | 2026-11-12 12:44 UTC | 20g 99s 0c |  | too new | 2 of 8 | 26 |  |
-| Azerothium Bar | 249726 | 2g 85s 1c | 2026-11-12 12:44 UTC | 2g 92s 0c |  | too new | 2 of 8 | 53 |  |
-| Bauxite | 249425 | 4s 85c | 2026-11-12 12:44 UTC | 10s 50c | 10s 50c | volatile | 6 of 8 | 522 |  |
-| Bronze Bar | 2841 | 1s 71c | 2026-11-12 12:44 UTC | 1s 75c | 1s 71c | moving | 7 of 8 | 14249 |  |
-| Coal | 3857 | 4s 55c | 2026-11-12 12:44 UTC | 2s 97c | 3s 94c | volatile | 7 of 8 | 689 |  |
-| Coarse Grinding Stone | 3478 | 1s 6c | 2026-11-12 12:44 UTC | 1s 55c | 1s 80c | volatile | 7 of 8 | 2033 |  |
-| Coarse Stone | 2836 | 35c | 2026-11-12 12:44 UTC | 47c | 50c | volatile | 7 of 8 | 4497 |  |
-| Copper Bar | 2840 | 1s 92c | 2026-11-12 12:44 UTC | 1s 34c | 1s 24c | volatile | 7 of 8 | 9070 |  |
-| Copper Ore | 2770 | 1s 76c | 2026-11-12 12:44 UTC | 1s 25c | 1s 16c | volatile | 7 of 8 | 8841 |  |
-| Dark Iron Bar | 11371 | 4g 99s 0c | 2026-11-12 12:44 UTC | 7g 49s 50c |  | too new | 2 of 8 | 14 |  |
-| Dark Iron Ore | 11370 | 15s 99c | 2026-11-12 12:44 UTC | 11s 99c | 11s 99c | moving | 4 of 8 | 230 |  |
-| Dense Grinding Stone | 12644 | 35s 88c | 2026-11-12 12:44 UTC | 42s 93c |  | too new | 2 of 8 | 185 |  |
-| Dense Stone | 12365 | 5s 52c | 2026-11-12 12:44 UTC | 13s 22c | 13s 22c | volatile | 4 of 8 | 2379 |  |
-| Enchanted Thorium Bar | 12655 | 1g 94s 96c | 2026-11-12 12:44 UTC | 2g 42s 48c |  | too new | 2 of 8 | 54 |  |
-| Gold Bar | 3577 | 7s 34c | 2026-11-12 12:44 UTC | 7s 29c | 7s 34c | steady | 7 of 8 | 636 |  |
-| Gold Ore | 2776 | 8s 39c | 2026-11-12 12:44 UTC | 9s 50c | 10s 95c | volatile | 7 of 8 | 2048 |  |
-| Guardian Stone | 12809 | 14g 98s 0c | 2026-11-12 12:44 UTC | 16g 99s 0c |  | too new | 2 of 8 | 26 |  |
-| Heavy Grinding Stone | 3486 | 9s 31c | 2026-11-12 12:44 UTC | 9s 15c | 9s 15c | moving | 6 of 8 | 743 |  |
-| Heavy Stone | 2838 | 2s 43c | 2026-11-12 12:44 UTC | 3s 0c | 3s 0c | volatile | 7 of 8 | 5485 |  |
-| Heavy Thorium Bar | 251291 | 5g 23s 0c | 2026-11-12 03:40 UTC | 6g 73s 0c |  | too new | 2 of 8 | 30 |  |
-| Heavy Thorium Ore | 248815 | 50s 0c | 2026-11-12 12:44 UTC | 1g 7s 0c |  | too new | 2 of 8 | 1612 |  |
-| Iron Bar | 3575 | 2s 87c | 2026-11-12 12:44 UTC | 4s 63c | 4s 70c | moving | 7 of 8 | 4777 |  |
-| Iron Ore | 2772 | 2s 39c | 2026-11-12 12:44 UTC | 4s 3c | 4s 4c | volatile | 7 of 8 | 5910 |  |
-| Legionite Bar | 251290 | 69g 99s 99c | 2026-11-12 12:44 UTC | 69g 99s 99c |  | too new | 1 of 8 | 1 |  |
-| Mithril Bar | 3860 | 11s 14c | 2026-11-12 12:44 UTC | 8s 69c | 8s 69c | moving | 6 of 8 | 3280 |  |
-| Mithril Ore | 3858 | 9s 3c | 2026-11-12 12:44 UTC | 7s 79c | 7s 79c | steady | 6 of 8 | 3699 |  |
-| Pitchblende | 249426 | 87s 0c | 2026-11-12 12:44 UTC | 1g 40s 0c | 1g 40s 0c | volatile | 5 of 8 | 18 |  |
-| Pyrite | 249391 | 1s 79c | 2026-11-12 12:44 UTC | 1s 57c | 1s 50c | moving | 7 of 8 | 1504 |  |
-| Rough Grinding Stone | 3470 | 6c | 2026-11-12 12:44 UTC | 6c | 6c | moving | 7 of 8 | 4839 |  |
-| Rough Stone | 2835 | 10c | 2026-11-12 12:44 UTC | 5c | 6c | moving | 7 of 8 | 14060 |  |
-| Silver Bar | 2842 | 3s 34c | 2026-11-12 12:44 UTC | 2s 60c | 2s 55c | volatile | 7 of 8 | 2289 |  |
-| Silver Ore | 2775 | 6s 8c | 2026-11-12 12:44 UTC | 6s 99c | 6s 98c | moving | 7 of 8 | 2450 |  |
-| Solid Grinding Stone | 7966 | 11s 44c | 2026-11-12 12:44 UTC | 13s 99c | 13s 99c | moving | 5 of 8 | 203 |  |
-| Solid Stone | 7912 | 2s 50c | 2026-11-12 12:44 UTC | 2s 49c | 2s 49c | moving | 6 of 8 | 4264 |  |
-| Steel Bar | 3859 | 8s 80c | 2026-11-12 12:44 UTC | 9s 92c | 9s 92c | volatile | 6 of 8 | 994 |  |
-| Thorium Bar | 12359 | 15s 0c | 2026-11-12 12:44 UTC | 15s 0c | 15s 0c | volatile | 3 of 8 | 2060 |  |
-| Thorium Ore | 10620 | 12s 99c | 2026-11-12 12:44 UTC | 21s 49c | 21s 49c | volatile | 4 of 8 | 1386 |  |
-| Tin Bar | 3576 | 1s 19c | 2026-11-12 12:44 UTC | 1s 52c | 1s 68c | moving | 7 of 8 | 4392 |  |
-| Tin Ore | 2771 | 1s 14c | 2026-11-12 12:44 UTC | 1s 44c | 1s 60c | moving | 7 of 8 | 5830 |  |
-| Truesilver Bar | 6037 | 19s 0c | 2026-11-12 12:44 UTC | 13s 43c | 13s 48c | moving | 7 of 8 | 239 |  |
-| Truesilver Ore | 7911 | 14s 60c | 2026-11-12 12:44 UTC | 14s 90c | 14s 90c | moving | 5 of 8 | 469 |  |
+| Arcanite Bar | 12360 | 55g 98s 96c | 2026-11-15 12:38 UTC | 33g 49s 0c | 33g 49s 0c | moving | 4 of 10 | 24 |  |
+| Azerothium Bar | 249726 | 55s 3c | 2026-11-15 12:38 UTC | 2g 59s 0c | 2g 59s 0c | volatile | 4 of 10 | 152 |  |
+| Bauxite | 249425 | 10s 77c | 2026-11-15 12:38 UTC | 6s 9c | 10s 38c | volatile | 8 of 10 | 581 | -64% |
+| Bronze Bar | 2841 | 1s 90c | 2026-11-15 12:38 UTC | 1s 79c | 1s 79c | moving | 9 of 10 | 16005 | +14% |
+| Coal | 3857 | 4s 65c | 2026-11-15 12:38 UTC | 4s 55c | 4s 50c | moving | 9 of 10 | 689 | +157% |
+| Coarse Grinding Stone | 3478 | 98c | 2026-11-15 12:38 UTC | 1s 11c | 1s 30c | volatile | 9 of 10 | 2033 | -56% |
+| Coarse Stone | 2836 | 36c | 2026-11-15 12:38 UTC | 36c | 45c | moving | 9 of 10 | 5177 | -48% |
+| Copper Bar | 2840 | 2s 40c | 2026-11-15 12:38 UTC | 1s 90c | 1s 44c | volatile | 9 of 10 | 8135 | +184% |
+| Copper Ore | 2770 | 2s 31c | 2026-11-15 12:38 UTC | 1s 39c | 1s 16c | volatile | 9 of 10 | 8841 | +144% |
+| Dark Iron Bar | 11371 | 3g 30s 0c | 2026-11-15 12:38 UTC | 4g 98s 50c | 4g 98s 50c | moving | 4 of 10 | 24 |  |
+| Dark Iron Ore | 11370 | 8s 0c | 2026-11-15 12:38 UTC | 8s 0c | 8s 48c | volatile | 6 of 10 | 730 |  |
+| Dense Grinding Stone | 12644 | 33s 48c | 2026-11-15 12:38 UTC | 35s 94c | 35s 94c | steady | 4 of 10 | 185 |  |
+| Dense Stone | 12365 | 2s 70c | 2026-11-15 12:38 UTC | 6s 44c | 6s 66c | volatile | 6 of 10 | 4504 |  |
+| Enchanted Thorium Bar | 12655 | 80s 0c | 2026-11-15 12:38 UTC | 1g 44s 98c | 1g 44s 98c | volatile | 4 of 10 | 91 |  |
+| Gold Bar | 3577 | 10s 20c | 2026-11-15 12:38 UTC | 7s 34c | 7s 39c | steady | 9 of 10 | 1316 | -2% |
+| Gold Ore | 2776 | 10s 30c | 2026-11-15 12:38 UTC | 8s 5c | 10s 30c | moving | 9 of 10 | 2048 | -55% |
+| Guardian Stone | 12809 | 3g 0s 0c | 2026-11-15 12:38 UTC | 10g 94s 0c | 10g 94s 0c | volatile | 4 of 10 | 54 |  |
+| Heavy Grinding Stone | 3486 | 9s 97c | 2026-11-15 12:38 UTC | 9s 30c | 9s 35c | moving | 8 of 10 | 814 | -7% |
+| Heavy Stone | 2838 | 3s 0c | 2026-11-15 12:38 UTC | 2s 50c | 3s 0c | volatile | 9 of 10 | 6816 | -58% |
+| Heavy Thorium Bar | 251291 | 33s 10c | 2026-11-15 12:38 UTC | 4g 77s 99c | 4g 77s 99c | volatile | 4 of 10 | 226 |  |
+| Heavy Thorium Ore | 248815 | 17s 99c | 2026-11-15 12:38 UTC | 61s 77c | 61s 77c | volatile | 4 of 10 | 1152 |  |
+| Iron Bar | 3575 | 2s 56c | 2026-11-15 12:38 UTC | 2s 56c | 4s 57c | moving | 9 of 10 | 6405 | -52% |
+| Iron Ore | 2772 | 2s 34c | 2026-11-15 12:38 UTC | 2s 22c | 4s 2c | moving | 9 of 10 | 5910 | -57% |
+| Legionite Bar | 251290 | 43g 99s 96c | 2026-11-15 12:38 UTC | 62g 99s 0c | 62g 99s 0c | moving | 3 of 10 | 7 |  |
+| Mithril Bar | 3860 | 10s 37c | 2026-11-15 12:38 UTC | 8s 79c | 8s 99c | moving | 8 of 10 | 4136 | -4% |
+| Mithril Ore | 3858 | 9s 40c | 2026-11-15 12:38 UTC | 7s 87c | 8s 2c | moving | 8 of 10 | 4218 | -4% |
+| Pitchblende | 249426 | 23s 50c | 2026-11-15 12:38 UTC | 56s 99c | 66s 65c | volatile | 7 of 10 | 307 | -69% |
+| Pyrite | 249391 | 2s 95c | 2026-11-15 12:38 UTC | 1s 87c | 1s 65c | moving | 9 of 10 | 2098 | +83% |
+| Rough Grinding Stone | 3470 | 5c | 2026-11-15 12:38 UTC | 6c | 6c | moving | 9 of 10 | 3595 | -33% |
+| Rough Stone | 2835 | 4c | 2026-11-15 12:38 UTC | 6c | 6c | moving | 9 of 10 | 14269 | -14% |
+| Silver Bar | 2842 | 2s 60c | 2026-11-15 12:38 UTC | 2s 55c | 2s 55c | moving | 9 of 10 | 2709 | -12% |
+| Silver Ore | 2775 | 5s 0c | 2026-11-15 12:38 UTC | 5s 92c | 6s 84c | moving | 9 of 10 | 2473 | -20% |
+| Solid Grinding Stone | 7966 | 8s 45c | 2026-11-15 12:38 UTC | 9s 54c | 10s 54c | volatile | 7 of 10 | 374 | -68% |
+| Solid Stone | 7912 | 1s 54c | 2026-11-15 12:38 UTC | 1s 69c | 2s 22c | moving | 8 of 10 | 5658 | -43% |
+| Steel Bar | 3859 | 7s 82c | 2026-11-15 12:38 UTC | 7s 82c | 8s 91c | volatile | 8 of 10 | 1654 | -56% |
+| Thorium Bar | 12359 | 16s 99c | 2026-11-15 12:38 UTC | 16s 99c | 16s 99c | moving | 5 of 10 | 2277 |  |
+| Thorium Ore | 10620 | 15s 68c | 2026-11-15 12:38 UTC | 15s 68c | 17s 84c | volatile | 6 of 10 | 3050 |  |
+| Tin Bar | 3576 | 1s 21c | 2026-11-15 12:38 UTC | 1s 27c | 1s 40c | moving | 9 of 10 | 4392 | -39% |
+| Tin Ore | 2771 | 1s 6c | 2026-11-15 12:38 UTC | 1s 10c | 1s 28c | moving | 9 of 10 | 7076 | -43% |
+| Truesilver Bar | 6037 | 14s 77c | 2026-11-15 12:38 UTC | 13s 93c | 13s 93c | steady | 9 of 10 | 268 | -14% |
+| Truesilver Ore | 7911 | 13s 69c | 2026-11-15 12:38 UTC | 12s 22c | 13s 69c | moving | 7 of 10 | 1195 | -74% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

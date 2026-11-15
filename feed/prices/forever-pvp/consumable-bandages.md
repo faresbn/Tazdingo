@@ -1,20 +1,20 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Consumable: Bandages
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-12 12:44 UTC. Uploads in the 30-day window: 22.
+- **Latest scan:** 2026-11-15 12:38 UTC. Uploads in the 30-day window: 23.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Heavy Linen Bandage | 2581 | 20c | 2026-11-12 03:40 UTC | 20c | 20c | steady | 7 of 8 | 14625 |  |
-| Heavy Mageweave Bandage | 8545 | 7s 90c | 2026-11-12 03:40 UTC | 26s 87c | 26s 87c | volatile | 4 of 8 | 206 |  |
-| Heavy Runecloth Bandage | 14530 | 30s 0c | 2026-11-12 12:44 UTC | 16s 32c |  | too new | 2 of 8 | 46 |  |
-| Heavy Silk Bandage | 6451 | 4s 0c | 2026-11-12 12:44 UTC | 4s 0c | 4s 0c | steady | 5 of 8 | 1105 |  |
-| Heavy Wool Bandage | 3531 | 57c | 2026-11-12 03:40 UTC | 57c | 57c | steady | 6 of 8 | 3755 |  |
-| Linen Bandage | 1251 | 30c | 2026-11-12 12:44 UTC | 10c | 10c | steady | 7 of 8 | 12900 |  |
-| Mageweave Bandage | 8544 | 4s 7c | 2026-11-12 12:44 UTC | 10s 90c | 10s 90c | volatile | 5 of 8 | 250 |  |
-| Runecloth Bandage | 14529 | 9s 0c | 2026-11-12 12:44 UTC | 9s 0c | 9s 0c | steady | 3 of 8 | 257 |  |
-| Silk Bandage | 6450 | 2s 0c | 2026-11-12 03:40 UTC | 2s 0c | 2s 0c | steady | 6 of 8 | 2100 |  |
-| Wool Bandage | 3530 | 28c | 2026-11-12 03:40 UTC | 28c | 28c | steady | 7 of 8 | 8997 |  |
+| Heavy Linen Bandage | 2581 | 19c | 2026-11-15 12:38 UTC | 20c | 20c | steady | 9 of 10 | 13105 | +5% |
+| Heavy Mageweave Bandage | 8545 | 8s 0c | 2026-11-15 12:38 UTC | 8s 0c | 8s 37c | volatile | 6 of 10 | 526 |  |
+| Heavy Runecloth Bandage | 14530 | 13s 90c | 2026-11-15 12:38 UTC | 16s 32c | 16s 32c | steady | 4 of 10 | 177 |  |
+| Heavy Silk Bandage | 6451 | 4s 0c | 2026-11-15 12:38 UTC | 4s 0c | 4s 0c | steady | 7 of 10 | 1837 | -20% |
+| Heavy Wool Bandage | 3531 | 57c | 2026-11-15 12:38 UTC | 57c | 57c | steady | 8 of 10 | 4366 | +0% |
+| Linen Bandage | 1251 | 10c | 2026-11-15 12:38 UTC | 10c | 10c | steady | 9 of 10 | 12751 | +11% |
+| Mageweave Bandage | 8544 | 4s 58c | 2026-11-15 12:38 UTC | 4s 10c | 4s 58c | volatile | 7 of 10 | 250 | -78% |
+| Runecloth Bandage | 14529 | 5s 80c | 2026-11-15 12:38 UTC | 8s 0c | 8s 0c | moving | 5 of 10 | 294 |  |
+| Silk Bandage | 6450 | 2s 0c | 2026-11-15 12:38 UTC | 1s 99c | 2s 0c | steady | 8 of 10 | 3641 | +0% |
+| Wool Bandage | 3530 | 27c | 2026-11-15 12:38 UTC | 28c | 28c | steady | 9 of 10 | 10814 | +0% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

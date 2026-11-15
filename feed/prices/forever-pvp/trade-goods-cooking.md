@@ -1,79 +1,79 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Trade Goods: Cooking
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-12 12:44 UTC. Uploads in the 30-day window: 22.
+- **Latest scan:** 2026-11-15 12:38 UTC. Uploads in the 30-day window: 23.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Bear Meat | 3173 | 33c | 2026-11-12 12:44 UTC | 33c | 33c | moving | 7 of 8 | 2037 |  |
-| Big Bear Meat | 3730 | 1s 13c | 2026-11-12 12:44 UTC | 68c | 69c | moving | 7 of 8 | 3540 |  |
-| Boar Intestines | 3172 | 18c | 2026-11-12 03:40 UTC | 18c | 18c | volatile | 6 of 8 | 1854 |  |
-| Boar Ribs | 2677 | 3s 96c | 2026-11-12 12:44 UTC | 4s 40c | 4s 40c | volatile | 6 of 8 | 1208 |  |
-| Buzzard Wing | 3404 | 2s 84c | 2026-11-12 12:44 UTC | 4s 15c | 4s 15c | moving | 6 of 8 | 724 |  |
-| Chunk of Boar Meat | 769 | 1s 85c | 2026-11-12 03:40 UTC | 1s 82c | 1s 80c | moving | 7 of 8 | 2741 |  |
-| Clam Meat | 5503 | 1s 60c | 2026-11-12 12:44 UTC | 1s 31c | 1s 12c | volatile | 7 of 8 | 2202 |  |
-| Coyote Meat | 2673 | 16s 39c | 2026-11-12 12:44 UTC | 16s 2c | 16s 2c | volatile | 6 of 8 | 732 |  |
-| Crag Boar Rib | 2886 | 1s 99c | 2026-11-12 12:44 UTC | 1s 20c | 1s 20c | moving | 4 of 8 | 317 |  |
-| Crawler Claw | 2675 | 48c | 2026-11-12 12:44 UTC | 16c | 18c | volatile | 7 of 8 | 996 |  |
-| Crawler Meat | 2674 | 4s 19c | 2026-11-12 12:44 UTC | 4s 4c | 4s 4c | moving | 6 of 8 | 741 |  |
-| Crisp Spider Meat | 1081 | 50c | 2026-11-12 03:40 UTC | 50c | 50c | steady | 7 of 8 | 13882 |  |
-| Crocolisk Meat | 2924 | 93c | 2026-11-12 12:44 UTC | 24c | 24c | volatile | 7 of 8 | 1080 |  |
-| Darkclaw Lobster | 13888 | 17s 64c | 2026-11-12 12:44 UTC | 18s 95c | 18s 95c | volatile | 3 of 8 | 1015 |  |
-| Giant Clam Meat | 4655 | 2s 68c | 2026-11-12 12:44 UTC | 6s 46c | 6s 46c | volatile | 6 of 8 | 672 |  |
-| Giant Egg | 12207 | 23s 98c | 2026-11-12 12:44 UTC | 66s 97c | 66s 97c | volatile | 6 of 8 | 180 |  |
-| Gooey Spider Leg | 2251 | 15c | 2026-11-12 12:44 UTC | 17c | 20c | moving | 7 of 8 | 1684 |  |
-| Goretusk Liver | 723 | 1s 30c | 2026-11-12 12:44 UTC | 1s 15c | 1s 0c | moving | 7 of 8 | 179 |  |
-| Goretusk Snout | 731 | 69c | 2026-11-12 12:44 UTC | 1s 54c | 1s 0c | volatile | 7 of 8 | 248 |  |
-| Heavy Kodo Meat | 12204 | 9s 89c | 2026-11-12 12:44 UTC | 13s 19c | 13s 19c | volatile | 6 of 8 | 76 |  |
-| Kodo Meat | 5467 | 34c | 2026-11-12 12:44 UTC | 32c | 32c | moving | 7 of 8 | 810 |  |
-| Lean Wolf Flank | 1015 | 1s 98c | 2026-11-12 12:44 UTC | 84c | 99c | moving | 7 of 8 | 796 |  |
-| Lion Meat | 3731 | 1s 7c | 2026-11-12 12:44 UTC | 90c | 90c | moving | 7 of 8 | 2434 |  |
-| Meaty Bat Wing | 12223 | 93c | 2026-11-12 12:44 UTC | 82c | 80c | volatile | 7 of 8 | 1038 |  |
-| Murloc Eye | 730 | 3s 40c | 2026-11-12 12:44 UTC | 44c | 49c | volatile | 7 of 8 | 2604 |  |
-| Murloc Fin | 1468 | 73c | 2026-11-12 12:44 UTC | 30c | 30c | moving | 7 of 8 | 668 |  |
-| Mystery Meat | 12037 | 2s 0c | 2026-11-12 12:44 UTC | 1s 66c | 1s 66c | moving | 6 of 8 | 1336 |  |
-| Raptor Egg | 3685 | 95c | 2026-11-12 12:44 UTC | 85c | 85c | steady | 6 of 8 | 3244 |  |
-| Raptor Flesh | 12184 | 2s 38c | 2026-11-12 12:44 UTC | 2s 18c | 2s 18c | moving | 6 of 8 | 3132 |  |
-| Raw Brilliant Smallfish | 6291 | 88c | 2026-11-12 12:44 UTC | 82c | 80c | volatile | 7 of 8 | 3570 |  |
-| Raw Bristle Whisker Catfish | 6308 | 22c | 2026-11-12 12:44 UTC | 33c | 28c | volatile | 7 of 8 | 3172 |  |
-| Raw Glossy Mightfish | 13754 | 3s 96c | 2026-11-12 12:44 UTC | 6s 24c | 6s 24c | volatile | 6 of 8 | 1079 |  |
-| Raw Greater Sagefish | 21153 | 1s 75c | 2026-11-12 12:44 UTC | 2s 69c | 2s 60c | moving | 7 of 8 | 1044 |  |
-| Raw Loch Frenzy | 6317 | 1s 79c | 2026-11-12 12:44 UTC | 1s 99c | 1s 99c | steady | 5 of 8 | 8 |  |
-| Raw Longjaw Mud Snapper | 6289 | 8c | 2026-11-12 12:44 UTC | 9c | 9c | moving | 7 of 8 | 6319 |  |
-| Raw Mithril Head Trout | 8365 | 85c | 2026-11-12 12:44 UTC | 1s 6c | 94c | volatile | 7 of 8 | 3281 |  |
-| Raw Nightfin Snapper | 13759 | 4s 80c | 2026-11-12 12:44 UTC | 4s 80c | 4s 80c | moving | 5 of 8 | 454 |  |
-| Raw Rainbow Fin Albacore | 6361 | 21c | 2026-11-12 12:44 UTC | 38c | 48c | moving | 7 of 8 | 3443 |  |
-| Raw Redgill | 13758 | 11c | 2026-11-12 12:44 UTC | 58c | 58c | volatile | 6 of 8 | 3016 |  |
-| Raw Rockscale Cod | 6362 | 4c | 2026-11-12 12:44 UTC | 6c | 7c | volatile | 7 of 8 | 3729 |  |
-| Raw Sagefish | 21071 | 47c | 2026-11-12 12:44 UTC | 84c | 94c | volatile | 7 of 8 | 2143 |  |
-| Raw Slitherskin Mackerel | 6303 | 44c | 2026-11-12 12:44 UTC | 48c | 44c | volatile | 7 of 8 | 4113 |  |
-| Raw Spinefin Halibut | 8959 | 1s 73c | 2026-11-12 12:44 UTC | 3s 0c | 3s 0c | volatile | 5 of 8 | 142 |  |
-| Raw Spotted Yellowtail | 4603 | 39c | 2026-11-12 12:44 UTC | 34c | 39c | volatile | 7 of 8 | 3337 |  |
-| Raw Sunscale Salmon | 13760 | 3s 30c | 2026-11-12 12:44 UTC | 5s 85c | 5s 85c | moving | 5 of 8 | 1074 |  |
-| Raw Whitescale Salmon | 13889 | 15s 0c | 2026-11-12 12:44 UTC | 15s 0c | 15s 0c | volatile | 3 of 8 | 199 |  |
-| Red Wolf Meat | 12203 | 2s 59c | 2026-11-12 12:44 UTC | 2s 37c | 2s 37c | steady | 6 of 8 | 1074 |  |
-| Sandworm Meat | 20424 | 31s 98c | 2026-11-12 12:44 UTC | 28s 50c |  | too new | 2 of 8 | 60 |  |
-| Scorpid Stinger | 5466 | 34c | 2026-11-12 12:44 UTC | 24c | 22c | volatile | 7 of 8 | 1206 |  |
-| Seasonal Fish Steaks | 273295 | 39s 90c | 2026-11-12 12:44 UTC | 39s 90c | 39s 90c | volatile | 3 of 8 | 153 |  |
-| Simple Flour | 10284 | 1s 55c | 2026-11-12 12:44 UTC | 1s 74c | 1s 94c | volatile | 7 of 8 | 237 |  |
-| Small Egg | 6889 | 2s 74c | 2026-11-12 12:44 UTC | 2s 42c | 2s 10c | volatile | 7 of 8 | 745 |  |
-| Small Spider Leg | 5465 | 4c | 2026-11-12 12:44 UTC | 3c | 3c | moving | 7 of 8 | 6539 |  |
-| Soft Frenzy Flesh | 5468 | 45c | 2026-11-12 03:40 UTC | 44c | 45c | volatile | 7 of 8 | 75 |  |
-| Spider Ichor | 3174 | 18c | 2026-11-12 12:44 UTC | 16c | 16c | moving | 7 of 8 | 2568 |  |
-| Stag Meat | 5471 | 2s 37c | 2026-11-12 12:44 UTC | 97c | 1s 0c | moving | 7 of 8 | 1344 |  |
-| Strider Meat | 5469 | 26c | 2026-11-12 12:44 UTC | 20c | 20c | moving | 7 of 8 | 2405 |  |
-| Stringy Vulture Meat | 729 | 17c | 2026-11-12 12:44 UTC | 33c | 33c | volatile | 6 of 8 | 2640 |  |
-| Stringy Wolf Meat | 2672 | 1s 95c | 2026-11-12 12:44 UTC | 1s 73c | 1s 60c | volatile | 7 of 8 | 2631 |  |
-| Tangy Clam Meat | 5504 | 50c | 2026-11-12 12:44 UTC | 53c | 57c | moving | 7 of 8 | 3301 |  |
-| Tender Crab Meat | 12206 | 7s 99c | 2026-11-12 12:44 UTC | 13s 50c | 13s 50c | moving | 5 of 8 | 776 |  |
-| Tender Crocolisk Meat | 3667 | 96c | 2026-11-12 12:44 UTC | 74c | 74c | volatile | 6 of 8 | 1742 |  |
-| Tender Wolf Meat | 12208 | 2s 97c | 2026-11-12 12:44 UTC | 3s 0c | 3s 0c | volatile | 5 of 8 | 642 |  |
-| Thunder Lizard Tail | 5470 | 2s 6c | 2026-11-12 12:44 UTC | 1s 44c | 1s 49c | volatile | 7 of 8 | 624 |  |
-| Tiger Meat | 12202 | 5s 33c | 2026-11-12 12:44 UTC | 5s 3c | 5s 3c | steady | 6 of 8 | 1586 |  |
-| Tough Condor Meat | 1080 | 5s 0c | 2026-11-12 12:44 UTC | 42s 45c | 42s 45c | volatile | 4 of 8 | 60 |  |
-| Turtle Meat | 3712 | 2s 86c | 2026-11-12 12:44 UTC | 8s 74c | 11s 0c | volatile | 7 of 8 | 1382 |  |
-| White Spider Meat | 12205 | 6s 36c | 2026-11-12 12:44 UTC | 1s 95c | 1s 98c | moving | 7 of 8 | 1695 |  |
-| Zesty Clam Meat | 7974 | 82c | 2026-11-12 12:44 UTC | 1s 71c | 1s 71c | volatile | 6 of 8 | 2126 |  |
+| Bear Meat | 3173 | 28c | 2026-11-15 12:38 UTC | 39c | 33c | moving | 9 of 10 | 2037 | +62% |
+| Big Bear Meat | 3730 | 94c | 2026-11-15 12:38 UTC | 85c | 69c | moving | 9 of 10 | 2046 | +25% |
+| Boar Intestines | 3172 | 18c | 2026-11-15 12:38 UTC | 18c | 18c | volatile | 8 of 10 | 2102 | -58% |
+| Boar Ribs | 2677 | 3s 94c | 2026-11-15 12:38 UTC | 3s 87c | 3s 95c | volatile | 8 of 10 | 1250 | -45% |
+| Buzzard Wing | 3404 | 2s 54c | 2026-11-15 12:38 UTC | 2s 87c | 3s 26c | volatile | 8 of 10 | 908 | -43% |
+| Chunk of Boar Meat | 769 | 2s 0c | 2026-11-15 12:38 UTC | 1s 90c | 1s 85c | moving | 9 of 10 | 3028 | +23% |
+| Clam Meat | 5503 | 1s 22c | 2026-11-15 12:38 UTC | 1s 22c | 1s 12c | volatile | 9 of 10 | 2202 | +23% |
+| Coyote Meat | 2673 | 9s 96c | 2026-11-15 12:38 UTC | 10s 75c | 13s 20c | volatile | 8 of 10 | 732 | -40% |
+| Crag Boar Rib | 2886 | 80c | 2026-11-15 12:38 UTC | 1s 49c | 1s 19c | moving | 6 of 10 | 307 | +71% |
+| Crawler Claw | 2675 | 22c | 2026-11-15 12:38 UTC | 14c | 18c | moving | 9 of 10 | 945 | -33% |
+| Crawler Meat | 2674 | 4s 54c | 2026-11-15 12:38 UTC | 4s 22c | 4s 31c | moving | 8 of 10 | 806 | -9% |
+| Crisp Spider Meat | 1081 | 50c | 2026-11-15 12:38 UTC | 50c | 50c | steady | 9 of 10 | 15215 | +0% |
+| Crocolisk Meat | 2924 | 25c | 2026-11-15 12:38 UTC | 25c | 24c | volatile | 9 of 10 | 1080 | +4% |
+| Darkclaw Lobster | 13888 | 7s 25c | 2026-11-15 12:38 UTC | 17s 64c | 17s 64c | moving | 5 of 10 | 1091 |  |
+| Giant Clam Meat | 4655 | 4s 49c | 2026-11-15 12:38 UTC | 4s 49c | 4s 76c | volatile | 8 of 10 | 672 | -77% |
+| Giant Egg | 12207 | 19s 0c | 2026-11-15 12:38 UTC | 28s 70c | 50s 37c | volatile | 8 of 10 | 512 | -72% |
+| Gooey Spider Leg | 2251 | 25c | 2026-11-15 12:38 UTC | 20c | 20c | moving | 9 of 10 | 1651 | +25% |
+| Goretusk Liver | 723 | 73c | 2026-11-15 12:38 UTC | 73c | 1s 0c | volatile | 9 of 10 | 302 | -27% |
+| Goretusk Snout | 731 | 49c | 2026-11-15 12:38 UTC | 69c | 99c | volatile | 9 of 10 | 252 | -82% |
+| Heavy Kodo Meat | 12204 | 10s 0c | 2026-11-15 12:38 UTC | 9s 89c | 9s 94c | volatile | 8 of 10 | 76 | -45% |
+| Kodo Meat | 5467 | 40c | 2026-11-15 12:38 UTC | 33c | 32c | moving | 9 of 10 | 745 | +22% |
+| Lean Wolf Flank | 1015 | 1s 30c | 2026-11-15 12:38 UTC | 1s 0c | 1s 0c | moving | 9 of 10 | 781 | +19% |
+| Lion Meat | 3731 | 1s 64c | 2026-11-15 12:38 UTC | 1s 5c | 91c | moving | 9 of 10 | 1917 | +22% |
+| Meaty Bat Wing | 12223 | 1s 26c | 2026-11-15 12:38 UTC | 1s 0c | 84c | volatile | 9 of 10 | 1038 | +54% |
+| Murloc Eye | 730 | 4s 20c | 2026-11-15 12:38 UTC | 2s 18c | 1s 98c | volatile | 9 of 10 | 2835 | +506% |
+| Murloc Fin | 1468 | 1s 0c | 2026-11-15 12:38 UTC | 37c | 35c | moving | 9 of 10 | 668 | +16% |
+| Mystery Meat | 12037 | 2s 49c | 2026-11-15 12:38 UTC | 1s 99c | 1s 85c | moving | 8 of 10 | 1467 | +15% |
+| Raptor Egg | 3685 | 83c | 2026-11-15 12:38 UTC | 84c | 85c | steady | 8 of 10 | 3306 | -13% |
+| Raptor Flesh | 12184 | 2s 29c | 2026-11-15 12:38 UTC | 2s 21c | 2s 18c | moving | 8 of 10 | 2357 | +10% |
+| Raw Brilliant Smallfish | 6291 | 99c | 2026-11-15 12:38 UTC | 93c | 85c | volatile | 9 of 10 | 3567 | +35% |
+| Raw Bristle Whisker Catfish | 6308 | 40c | 2026-11-15 12:38 UTC | 38c | 38c | volatile | 9 of 10 | 3172 | +6% |
+| Raw Glossy Mightfish | 13754 | 99c | 2026-11-15 12:38 UTC | 3s 0c | 4s 97c | volatile | 8 of 10 | 1335 | -76% |
+| Raw Greater Sagefish | 21153 | 1s 99c | 2026-11-15 12:38 UTC | 2s 49c | 2s 55c | moving | 9 of 10 | 1308 | -11% |
+| Raw Loch Frenzy | 6317 | 1s 79c | 2026-11-12 12:44 UTC | 1s 79c | 1s 89c | moving | 6 of 10 | 8 |  |
+| Raw Longjaw Mud Snapper | 6289 | 10c | 2026-11-15 12:38 UTC | 8c | 9c | moving | 9 of 10 | 5682 | -20% |
+| Raw Mithril Head Trout | 8365 | 89c | 2026-11-15 12:38 UTC | 89c | 93c | moving | 9 of 10 | 3725 | -24% |
+| Raw Nightfin Snapper | 13759 | 4s 14c | 2026-11-15 12:38 UTC | 4s 80c | 4s 80c | moving | 7 of 10 | 754 | +12% |
+| Raw Rainbow Fin Albacore | 6361 | 18c | 2026-11-15 12:38 UTC | 21c | 28c | volatile | 9 of 10 | 3536 | -57% |
+| Raw Redgill | 13758 | 9c | 2026-11-15 12:38 UTC | 21c | 45c | volatile | 8 of 10 | 3408 | -96% |
+| Raw Rockscale Cod | 6362 | 6c | 2026-11-15 12:38 UTC | 5c | 6c | volatile | 9 of 10 | 6757 | -81% |
+| Raw Sagefish | 21071 | 44c | 2026-11-15 12:38 UTC | 50c | 75c | volatile | 9 of 10 | 2777 | -58% |
+| Raw Slitherskin Mackerel | 6303 | 71c | 2026-11-15 12:38 UTC | 52c | 52c | moving | 9 of 10 | 4113 | +37% |
+| Raw Spinefin Halibut | 8959 | 1s 90c | 2026-11-15 12:38 UTC | 1s 90c | 1s 94c | volatile | 7 of 10 | 142 | -84% |
+| Raw Spotted Yellowtail | 4603 | 45c | 2026-11-15 12:38 UTC | 45c | 44c | volatile | 9 of 10 | 3337 | +22% |
+| Raw Sunscale Salmon | 13760 | 4s 0c | 2026-11-15 12:38 UTC | 5s 85c | 5s 85c | moving | 7 of 10 | 1336 | -29% |
+| Raw Whitescale Salmon | 13889 | 11s 74c | 2026-11-15 12:38 UTC | 15s 0c | 15s 0c | moving | 5 of 10 | 825 |  |
+| Red Wolf Meat | 12203 | 2s 29c | 2026-11-15 12:38 UTC | 2s 29c | 2s 29c | steady | 8 of 10 | 1082 | +0% |
+| Sandworm Meat | 20424 | 1g 7s 45c | 2026-11-15 12:38 UTC | 28s 50c | 28s 50c | moving | 4 of 10 | 162 |  |
+| Scorpid Stinger | 5466 | 38c | 2026-11-15 12:38 UTC | 30c | 26c | volatile | 9 of 10 | 1591 | +200% |
+| Seasonal Fish Steaks | 273295 | 25s 0c | 2026-11-15 12:38 UTC | 25s 0c | 25s 0c | volatile | 5 of 10 | 176 |  |
+| Simple Flour | 10284 | 1s 15c | 2026-11-15 12:38 UTC | 1s 55c | 1s 94c | volatile | 9 of 10 | 238 | -46% |
+| Small Egg | 6889 | 2s 35c | 2026-11-15 12:38 UTC | 2s 35c | 2s 35c | volatile | 9 of 10 | 822 | +1% |
+| Small Spider Leg | 5465 | 3c | 2026-11-15 12:38 UTC | 3c | 3c | moving | 9 of 10 | 5473 | +0% |
+| Soft Frenzy Flesh | 5468 | 1s 0c | 2026-11-15 12:38 UTC | 45c | 45c | volatile | 9 of 10 | 65 | -66% |
+| Spider Ichor | 3174 | 18c | 2026-11-15 12:38 UTC | 18c | 16c | moving | 9 of 10 | 2502 | +12% |
+| Stag Meat | 5471 | 6s 66c | 2026-11-15 12:38 UTC | 2s 9c | 1s 0c | volatile | 9 of 10 | 1550 | +132% |
+| Strider Meat | 5469 | 29c | 2026-11-15 12:38 UTC | 21c | 20c | moving | 9 of 10 | 2405 | +31% |
+| Stringy Vulture Meat | 729 | 18c | 2026-11-15 12:38 UTC | 18c | 23c | volatile | 8 of 10 | 2640 | -77% |
+| Stringy Wolf Meat | 2672 | 1s 90c | 2026-11-15 12:38 UTC | 1s 90c | 1s 86c | volatile | 9 of 10 | 2925 | +70% |
+| Tangy Clam Meat | 5504 | 47c | 2026-11-15 12:38 UTC | 49c | 50c | moving | 9 of 10 | 3278 | -27% |
+| Tender Crab Meat | 12206 | 4s 9c | 2026-11-15 12:38 UTC | 7s 99c | 10s 0c | volatile | 7 of 10 | 918 | -81% |
+| Tender Crocolisk Meat | 3667 | 83c | 2026-11-15 12:38 UTC | 70c | 74c | volatile | 8 of 10 | 1821 | -47% |
+| Tender Wolf Meat | 12208 | 2s 18c | 2026-11-15 12:38 UTC | 2s 23c | 2s 97c | volatile | 7 of 10 | 766 | -81% |
+| Thunder Lizard Tail | 5470 | 2s 1c | 2026-11-15 12:38 UTC | 1s 40c | 1s 49c | volatile | 9 of 10 | 624 | -15% |
+| Tiger Meat | 12202 | 5s 69c | 2026-11-15 12:38 UTC | 5s 22c | 5s 3c | moving | 8 of 10 | 1586 | +10% |
+| Tough Condor Meat | 1080 | 13s 25c | 2026-11-15 12:38 UTC | 8s 90c | 11s 7c | volatile | 6 of 10 | 104 |  |
+| Turtle Meat | 3712 | 2s 14c | 2026-11-15 12:38 UTC | 2s 80c | 6s 29c | volatile | 9 of 10 | 2097 | -78% |
+| White Spider Meat | 12205 | 2s 21c | 2026-11-15 12:38 UTC | 1s 89c | 1s 98c | steady | 9 of 10 | 1695 | -16% |
+| Zesty Clam Meat | 7974 | 69c | 2026-11-15 12:38 UTC | 76c | 91c | volatile | 8 of 10 | 2126 | -81% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

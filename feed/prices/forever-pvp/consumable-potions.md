@@ -1,70 +1,77 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Consumable: Potions
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-12 12:44 UTC. Uploads in the 30-day window: 22.
+- **Latest scan:** 2026-11-15 12:38 UTC. Uploads in the 30-day window: 23.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Discolored Healing Potion | 247240 | 4s 22c | 2026-11-12 03:40 UTC | 3s 18c | 3s 18c | moving | 6 of 8 | 258 |  |
-| Dragonfire Potion | 250953 | 99s 0c | 2026-11-12 03:40 UTC | 2g 24s 50c |  | too new | 2 of 8 | 6 |  |
-| Dreamless Sleep Potion | 12190 | 12s 77c | 2026-11-12 12:44 UTC | 15s 88c |  | too new | 2 of 8 | 298 |  |
-| Fire Protection Potion | 6049 | 19s 17c | 2026-11-12 12:44 UTC | 23s 70c | 23s 70c | moving | 4 of 8 | 144 |  |
-| Free Action Potion | 5634 | 19s 84c | 2026-11-12 12:44 UTC | 10s 12c | 10s 12c | moving | 6 of 8 | 1181 |  |
-| Frenzy Potion | 250940 | 12s 19c | 2026-11-12 12:44 UTC | 16s 99c | 16s 99c | moving | 5 of 8 | 62 |  |
-| Frost Protection Potion | 6050 | 25s 26c | 2026-11-12 12:44 UTC | 26s 99c | 26s 99c | moving | 5 of 8 | 26 |  |
-| Great Rage Potion | 5633 | 3s 28c | 2026-11-12 12:44 UTC | 4s 43c | 4s 43c | volatile | 6 of 8 | 880 |  |
-| Greater Discolored Healing Potion | 247241 | 8s 97c | 2026-11-12 12:44 UTC | 6s 0c | 6s 0c | moving | 5 of 8 | 299 |  |
-| Greater Fire Protection Potion | 13457 | 3g 0s 0c | 2026-11-12 12:44 UTC | 3g 0s 0c |  | too new | 1 of 8 | 4 |  |
-| Greater Frenzy Potion | 250941 | 50s 0c | 2026-11-12 12:44 UTC | 50s 0c | 50s 0c | volatile | 3 of 8 | 13 |  |
-| Greater Healing Potion | 1710 | 4s 20c | 2026-11-12 12:44 UTC | 6s 19c | 6s 28c | volatile | 7 of 8 | 921 |  |
-| Greater Mana Potion | 6149 | 5s 40c | 2026-11-12 12:44 UTC | 9s 50c | 10s 0c | volatile | 7 of 8 | 440 |  |
-| Greater Mender's Potion | 250947 | 74c | 2026-11-12 12:44 UTC | 4s 94c | 4s 94c | volatile | 4 of 8 | 460 |  |
-| Greater Spellblasting Potion | 250935 | 16s 0c | 2026-11-12 12:44 UTC | 33s 94c | 33s 94c | volatile | 4 of 8 | 82 |  |
-| Greater Stoneshield Potion | 13455 | 50s 0c | 2026-11-12 12:44 UTC | 1g 24s 99c |  | too new | 2 of 8 | 78 |  |
-| Healing Potion | 929 | 88c | 2026-11-12 12:44 UTC | 1s 46c | 1s 74c | moving | 7 of 8 | 1388 |  |
-| Holy Protection Potion | 6051 | 65c | 2026-11-12 12:44 UTC | 70c | 70c | volatile | 6 of 8 | 576 |  |
-| Invisibility Potion | 9172 | 81s 98c | 2026-11-12 12:44 UTC | 90s 49c |  | too new | 2 of 8 | 140 |  |
-| Jungle Remedy | 2633 | 1s 89c | 2026-11-12 12:44 UTC | 4s 41c | 4s 41c | volatile | 5 of 8 | 355 |  |
-| Lesser Discolored Healing Potion | 247239 | 1s 98c | 2026-11-12 12:44 UTC | 1s 49c | 1s 49c | volatile | 6 of 8 | 386 |  |
-| Lesser Frenzy Potion | 250939 | 4s 87c | 2026-11-12 12:44 UTC | 2s 62c | 2s 62c | moving | 6 of 8 | 324 |  |
-| Lesser Healing Potion | 858 | 25c | 2026-11-12 03:40 UTC | 27c | 27c | volatile | 7 of 8 | 1139 |  |
-| Lesser Invisibility Potion | 3823 | 7s 15c | 2026-11-12 12:44 UTC | 11s 52c | 11s 52c | volatile | 6 of 8 | 408 |  |
-| Lesser Mana Potion | 3385 | 35c | 2026-11-12 12:44 UTC | 54c | 60c | volatile | 7 of 8 | 1452 |  |
-| Lesser Mender's Potion | 250945 | 4s 0c | 2026-11-12 12:44 UTC | 6s 50c | 6s 50c | volatile | 6 of 8 | 82 |  |
-| Lesser Spellblasting Potion | 250933 | 50c | 2026-11-12 12:44 UTC | 90c | 98c | moving | 7 of 8 | 443 |  |
-| Lesser Stoneshield Potion | 4623 | 4s 50c | 2026-11-12 12:44 UTC | 10s 1c | 10s 1c | volatile | 5 of 8 | 167 |  |
-| Limited Invulnerability Potion | 3387 | 70s 97c | 2026-11-12 12:44 UTC | 86s 0c | 86s 0c | volatile | 3 of 8 | 146 |  |
-| Magic Resistance Potion | 9036 | 3s 74c | 2026-11-12 12:44 UTC | 12s 33c | 12s 33c | volatile | 4 of 8 | 124 |  |
-| Major Discolored Healing Potion | 241650 | 1g 0s 99c | 2026-11-12 12:44 UTC | 90s 49c |  | too new | 2 of 8 | 28 |  |
-| Major Healing Potion | 13446 | 42s 84c | 2026-11-12 12:44 UTC | 83s 99c | 83s 99c | volatile | 4 of 8 | 303 |  |
-| Major Mana Potion | 13444 | 95s 0c | 2026-11-12 12:44 UTC | 1g 37s 98c | 1g 37s 98c | moving | 4 of 8 | 74 |  |
-| Mana Potion | 3827 | 2s 0c | 2026-11-12 12:44 UTC | 3s 4c | 3s 44c | volatile | 7 of 8 | 1277 |  |
-| Mender's Potion | 250946 | 45s 97c | 2026-11-12 12:44 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 4 of 8 | 20 |  |
-| Mighty Rage Potion | 13442 | 3g 99s 0c | 2026-11-12 12:44 UTC | 4g 49s 50c |  | too new | 2 of 8 | 24 |  |
-| Minor Discolored Healing Potion | 4596 | 70c | 2026-11-12 12:44 UTC | 55c | 44c | volatile | 7 of 8 | 166 |  |
-| Minor Frenzy Potion | 250938 | 1s 20c | 2026-11-12 03:40 UTC | 1s 20c | 1s 20c | moving | 7 of 8 | 136 |  |
-| Minor Healing Potion | 118 | 58c | 2026-11-12 12:44 UTC | 8c | 8c | moving | 7 of 8 | 1245 |  |
-| Minor Magic Resistance Potion | 3384 | 35c | 2026-11-12 03:40 UTC | 50c | 50c | volatile | 6 of 8 | 407 |  |
-| Minor Mana Potion | 2455 | 12c | 2026-11-12 12:44 UTC | 19c | 20c | volatile | 7 of 8 | 1816 |  |
-| Minor Mender's Potion | 250944 | 1s 84c | 2026-11-12 12:44 UTC | 3s 7c | 3s 8c | volatile | 7 of 8 | 110 |  |
-| Minor Rejuvenation Potion | 2456 | 16c | 2026-11-12 12:44 UTC | 15c | 15c | steady | 7 of 8 | 751 |  |
-| Minor Spellblasting Potion | 250932 | 39c | 2026-11-12 12:44 UTC | 62c | 69c | volatile | 7 of 8 | 266 |  |
-| Nature Protection Potion | 6052 | 3s 15c | 2026-11-12 12:44 UTC | 5s 47c | 5s 47c | volatile | 6 of 8 | 532 |  |
-| Potion of Beast Slaying | 250955 | 17s 91c | 2026-11-12 12:44 UTC | 26s 44c | 26s 44c | volatile | 4 of 8 | 139 |  |
-| Potion of Elemental Purging | 250954 | 3g 99s 0c | 2026-11-12 12:44 UTC | 3g 99s 0c |  | too new | 1 of 8 | 2 |  |
-| Rage Potion | 5631 | 49c | 2026-11-12 12:44 UTC | 1s 5c | 1s 18c | volatile | 7 of 8 | 841 |  |
-| Shadow Protection Potion | 6048 | 5s 90c | 2026-11-12 12:44 UTC | 13s 0c | 13s 0c | moving | 5 of 8 | 606 |  |
-| Spellblasting Potion | 250934 | 4s 0c | 2026-11-12 12:44 UTC | 13s 88c | 13s 88c | volatile | 5 of 8 | 136 |  |
-| Superior Discolored Healing Potion | 247242 | 35s 0c | 2026-11-12 12:44 UTC | 35s 0c | 35s 0c | volatile | 3 of 8 | 113 |  |
-| Superior Frenzy Potion | 250942 | 59s 99c | 2026-11-12 12:44 UTC | 59s 99c |  | too new | 1 of 8 | 20 |  |
-| Superior Healing Potion | 3928 | 9s 80c | 2026-11-12 12:44 UTC | 10s 70c | 11s 40c | volatile | 7 of 8 | 289 |  |
-| Superior Mana Potion | 13443 | 38s 0c | 2026-11-12 12:44 UTC | 49s 96c | 49s 96c | moving | 5 of 8 | 53 |  |
-| Superior Mender's Potion | 250948 | 3g 1s 0c | 2026-11-12 12:44 UTC | 3g 1s 0c |  | too new | 2 of 8 | 1 |  |
-| Superior Spellblasting Potion | 250936 | 25s 0c | 2026-11-12 12:44 UTC | 25s 0c |  | too new | 1 of 8 | 10 |  |
-| Swiftness Potion | 2459 | 6s 40c | 2026-11-12 12:44 UTC | 4s 7c | 3s 78c | volatile | 7 of 8 | 1131 |  |
-| Swim Speed Potion | 6372 | 4s 0c | 2026-11-12 12:44 UTC | 1s 10c | 1s 0c | volatile | 7 of 8 | 802 |  |
-| Volatile Rum | 9260 | 11s 78c | 2026-11-12 12:44 UTC | 30s 0c | 30s 0c | volatile | 4 of 8 | 298 |  |
-| Wildvine Potion | 9144 | 9s 78c | 2026-11-12 12:44 UTC | 17s 98c | 17s 98c | volatile | 4 of 8 | 180 |  |
+| Caustic Smog Potion | 250951 | 3g 49s 85c | 2026-11-15 12:38 UTC | 3g 99s 92c |  | too new | 2 of 10 | 29 |  |
+| Discolored Healing Potion | 247240 | 5s 47c | 2026-11-15 12:38 UTC | 4s 22c | 3s 74c | volatile | 8 of 10 | 258 | +29% |
+| Dragonfire Potion | 250953 | 94s 98c | 2026-11-15 12:38 UTC | 99s 49c | 99s 49c | steady | 4 of 10 | 6 |  |
+| Dreamless Sleep Potion | 12190 | 2s 75c | 2026-11-15 12:38 UTC | 9s 3c | 9s 3c | volatile | 4 of 10 | 358 |  |
+| Fire Protection Potion | 6049 | 12s 49c | 2026-11-15 12:38 UTC | 19s 17c | 19s 28c | volatile | 6 of 10 | 222 |  |
+| Free Action Potion | 5634 | 15s 80c | 2026-11-15 12:38 UTC | 15s 80c | 12s 83c | moving | 8 of 10 | 1350 | +58% |
+| Frenzy Potion | 250940 | 9s 86c | 2026-11-15 12:38 UTC | 12s 19c | 16s 99c | volatile | 7 of 10 | 86 | -69% |
+| Frost Protection Potion | 6050 | 34s 0c | 2026-11-15 12:38 UTC | 26s 99c | 26s 99c | moving | 7 of 10 | 280 | -84% |
+| Great Rage Potion | 5633 | 2s 0c | 2026-11-15 12:38 UTC | 2s 0c | 2s 45c | volatile | 8 of 10 | 880 | -77% |
+| Greater Arcane Protection Potion | 13461 | 2g 10s 99c | 2026-11-15 12:38 UTC | 2g 10s 99c |  | too new | 1 of 10 | 10 |  |
+| Greater Discolored Healing Potion | 247241 | 6s 0c | 2026-11-15 12:38 UTC | 6s 0c | 6s 0c | volatile | 7 of 10 | 425 | -64% |
+| Greater Fire Protection Potion | 13457 | 1g 55s 49c | 2026-11-15 12:38 UTC | 3g 0s 0c | 3g 0s 0c | volatile | 3 of 10 | 49 |  |
+| Greater Frenzy Potion | 250941 | 39s 98c | 2026-11-15 12:38 UTC | 50s 0c | 50s 0c | volatile | 5 of 10 | 13 |  |
+| Greater Healing Potion | 1710 | 3s 54c | 2026-11-15 12:38 UTC | 4s 20c | 6s 10c | moving | 9 of 10 | 1237 | -46% |
+| Greater Mana Potion | 6149 | 3s 97c | 2026-11-15 12:38 UTC | 5s 0c | 9s 0c | volatile | 9 of 10 | 536 | -61% |
+| Greater Mender's Potion | 250947 | 20c | 2026-11-15 12:38 UTC | 86c | 93c | volatile | 6 of 10 | 536 |  |
+| Greater Shadow Protection Potion | 13459 | 1g 25s 0c | 2026-11-15 12:38 UTC | 1g 25s 0c |  | too new | 1 of 10 | 280 |  |
+| Greater Spellblasting Potion | 250935 | 15s 99c | 2026-11-15 12:38 UTC | 16s 0c | 16s 94c | volatile | 6 of 10 | 105 |  |
+| Greater Stoneshield Potion | 13455 | 33s 0c | 2026-11-15 12:38 UTC | 45s 95c | 45s 95c | moving | 4 of 10 | 148 |  |
+| Healing Potion | 929 | 75c | 2026-11-15 12:38 UTC | 88c | 1s 18c | volatile | 9 of 10 | 1388 | -57% |
+| Holy Protection Potion | 6051 | 2s 44c | 2026-11-15 12:38 UTC | 65c | 70c | volatile | 8 of 10 | 576 | -70% |
+| Invisibility Potion | 9172 | 45s 0c | 2026-11-15 12:38 UTC | 63s 49c | 63s 49c | moving | 4 of 10 | 140 |  |
+| Jungle Remedy | 2633 | 99c | 2026-11-15 12:38 UTC | 1s 23c | 1s 39c | volatile | 7 of 10 | 386 | -96% |
+| Lesser Discolored Healing Potion | 247239 | 34c | 2026-11-15 12:38 UTC | 74c | 87c | volatile | 8 of 10 | 318 | -26% |
+| Lesser Frenzy Potion | 250939 | 3s 70c | 2026-11-15 12:38 UTC | 2s 84c | 2s 89c | moving | 8 of 10 | 324 | -4% |
+| Lesser Healing Potion | 858 | 25c | 2026-11-15 12:38 UTC | 25c | 27c | steady | 9 of 10 | 1540 | -36% |
+| Lesser Invisibility Potion | 3823 | 5s 0c | 2026-11-15 12:38 UTC | 7s 15c | 9s 26c | volatile | 8 of 10 | 480 | -58% |
+| Lesser Mana Potion | 3385 | 33c | 2026-11-15 12:38 UTC | 35c | 49c | volatile | 9 of 10 | 1331 | -70% |
+| Lesser Mender's Potion | 250945 | 1s 99c | 2026-11-15 12:38 UTC | 4s 0c | 5s 2c | volatile | 8 of 10 | 94 | -69% |
+| Lesser Spellblasting Potion | 250933 | 1s 40c | 2026-11-15 12:38 UTC | 98c | 1s 0c | volatile | 9 of 10 | 443 | -6% |
+| Lesser Stoneshield Potion | 4623 | 5s 4c | 2026-11-15 12:38 UTC | 5s 4c | 5s 20c | volatile | 7 of 10 | 167 | -92% |
+| Limited Invulnerability Potion | 3387 | 66s 30c | 2026-11-15 12:38 UTC | 70s 97c | 70s 97c | moving | 5 of 10 | 188 |  |
+| Magic Resistance Potion | 9036 | 2s 0c | 2026-11-15 12:38 UTC | 3s 80c | 6s 23c | volatile | 6 of 10 | 170 |  |
+| Major Discolored Healing Potion | 241650 | 40s 0c | 2026-11-15 12:38 UTC | 82s 49c | 82s 49c | moving | 4 of 10 | 112 |  |
+| Major Frenzy Potion | 250943 | 2g 99s 98c | 2026-11-15 12:38 UTC | 3g 49s 98c |  | too new | 2 of 10 | 62 |  |
+| Major Healing Potion | 13446 | 22s 72c | 2026-11-15 12:38 UTC | 42s 84c | 50s 91c | volatile | 6 of 10 | 536 |  |
+| Major Mana Potion | 13444 | 84s 99c | 2026-11-15 12:38 UTC | 1g 20s 0c | 1g 20s 48c | moving | 6 of 10 | 136 |  |
+| Major Mender's Potion | 250949 | 2g 69s 0c | 2026-11-15 12:38 UTC | 2g 69s 0c |  | too new | 1 of 10 | 23 |  |
+| Major Rejuvenation Potion | 18253 | 3g 52s 98c | 2026-11-15 12:38 UTC | 3g 52s 98c |  | too new | 1 of 10 | 61 |  |
+| Major Spellblasting Potion | 250937 | 2g 29s 99c | 2026-11-15 12:38 UTC | 2g 89s 99c |  | too new | 2 of 10 | 85 |  |
+| Mana Potion | 3827 | 1s 45c | 2026-11-15 12:38 UTC | 2s 0c | 2s 65c | volatile | 9 of 10 | 1287 | -55% |
+| Mender's Potion | 250946 | 44s 70c | 2026-11-15 12:38 UTC | 45s 97c | 55s 48c | volatile | 6 of 10 | 26 |  |
+| Mighty Rage Potion | 13442 | 95s 98c | 2026-11-15 12:38 UTC | 3g 74s 50c | 3g 74s 50c | volatile | 4 of 10 | 182 |  |
+| Minor Discolored Healing Potion | 4596 | 28c | 2026-11-15 12:38 UTC | 66c | 35c | volatile | 9 of 10 | 161 | +128% |
+| Minor Frenzy Potion | 250938 | 1s 30c | 2026-11-15 12:38 UTC | 1s 27c | 1s 20c | moving | 9 of 10 | 136 | +30% |
+| Minor Healing Potion | 118 | 23c | 2026-11-15 12:38 UTC | 9c | 9c | steady | 9 of 10 | 1245 | +12% |
+| Minor Magic Resistance Potion | 3384 | 30c | 2026-11-15 12:38 UTC | 30c | 40c | volatile | 8 of 10 | 395 | -91% |
+| Minor Mana Potion | 2455 | 13c | 2026-11-15 12:38 UTC | 13c | 18c | volatile | 9 of 10 | 1816 | -63% |
+| Minor Mender's Potion | 250944 | 1s 86c | 2026-11-15 12:38 UTC | 1s 86c | 3s 7c | volatile | 9 of 10 | 110 | -55% |
+| Minor Rejuvenation Potion | 2456 | 15c | 2026-11-15 12:38 UTC | 15c | 15c | steady | 9 of 10 | 698 | +0% |
+| Minor Spellblasting Potion | 250932 | 97c | 2026-11-15 12:38 UTC | 44c | 69c | volatile | 9 of 10 | 266 | -41% |
+| Nature Protection Potion | 6052 | 3s 0c | 2026-11-15 12:38 UTC | 3s 23c | 5s 47c | volatile | 8 of 10 | 532 | -76% |
+| Potion of Beast Slaying | 250955 | 9s 96c | 2026-11-15 12:38 UTC | 12s 89c | 26s 44c | volatile | 6 of 10 | 242 |  |
+| Potion of Elemental Purging | 250954 | 2g 99s 99c | 2026-11-15 12:38 UTC | 2g 99s 99c | 2g 99s 99c | moving | 3 of 10 | 7 |  |
+| Rage Potion | 5631 | 42c | 2026-11-15 12:38 UTC | 49c | 1s 18c | volatile | 9 of 10 | 841 | -68% |
+| Shadow Protection Potion | 6048 | 8s 40c | 2026-11-15 12:38 UTC | 8s 40c | 8s 55c | volatile | 7 of 10 | 606 | -77% |
+| Spellblasting Potion | 250934 | 18s 0c | 2026-11-15 12:38 UTC | 9s 99c | 13s 88c | volatile | 7 of 10 | 148 | -54% |
+| Superior Discolored Healing Potion | 247242 | 22s 46c | 2026-11-15 12:38 UTC | 27s 0c | 27s 0c | moving | 5 of 10 | 113 |  |
+| Superior Frenzy Potion | 250942 | 45s 90c | 2026-11-15 12:38 UTC | 50s 0c | 50s 0c | moving | 3 of 10 | 57 |  |
+| Superior Healing Potion | 3928 | 11s 0c | 2026-11-15 12:38 UTC | 11s 0c | 11s 0c | moving | 9 of 10 | 575 | -34% |
+| Superior Mana Potion | 13443 | 30s 87c | 2026-11-15 12:38 UTC | 30s 87c | 39s 98c | volatile | 7 of 10 | 214 | -38% |
+| Superior Mender's Potion | 250948 | 79s 0c | 2026-11-15 12:38 UTC | 2g 39s 38c | 2g 39s 38c | volatile | 4 of 10 | 64 |  |
+| Superior Spellblasting Potion | 250936 | 45s 0c | 2026-11-15 12:38 UTC | 25s 0c | 25s 0c | volatile | 3 of 10 | 56 |  |
+| Swiftness Potion | 2459 | 8s 0c | 2026-11-15 12:38 UTC | 6s 40c | 4s 37c | volatile | 9 of 10 | 922 | +146% |
+| Swim Speed Potion | 6372 | 3s 88c | 2026-11-15 12:38 UTC | 2s 45c | 1s 20c | volatile | 9 of 10 | 738 | +155% |
+| Volatile Rum | 9260 | 6s 40c | 2026-11-15 12:38 UTC | 6s 0c | 6s 20c | volatile | 6 of 10 | 453 |  |
+| Wildvine Potion | 9144 | 9s 0c | 2026-11-15 12:38 UTC | 9s 78c | 10s 89c | volatile | 6 of 10 | 106 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

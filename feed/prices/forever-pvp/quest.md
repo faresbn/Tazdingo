@@ -1,148 +1,149 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Quest
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-12 12:44 UTC. Uploads in the 30-day window: 22.
+- **Latest scan:** 2026-11-15 12:38 UTC. Uploads in the 30-day window: 23.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Ace of Beasts | 19227 | 100g 88s 0c | 2026-11-12 12:44 UTC | 97g 88s 0c |  | too new | 1 of 8 | 3 |  |
-| Ace of Elementals | 19268 | 270g 0s 0c | 2026-11-12 12:44 UTC | 270g 0s 0c |  | too new | 1 of 8 | 4 |  |
-| Ace of Portals | 19276 | 25g 88s 0c | 2026-11-12 12:44 UTC | 25g 88s 0c |  | too new | 1 of 8 | 1 |  |
-| Ace of Warlords | 19258 | 10g 88s 0c | 2026-11-12 03:40 UTC | 10g 88s 0c | 10g 88s 0c | moving | 3 of 8 | 3 |  |
-| Basilisk Brain | 8394 | 1g 75s 99c | 2026-11-12 12:44 UTC | 1g 75s 99c | 1g 75s 99c | volatile | 3 of 8 | 64 |  |
-| Belamoore's Research Journal | 3711 | 1s 0c | 2026-11-12 03:40 UTC | 1s 0c | 1s 0c | volatile | 6 of 8 | 80 |  |
-| Black Diamond | 11754 | 4s 90c | 2026-11-12 12:44 UTC | 15s 42c | 15s 42c | volatile | 3 of 8 | 236 |  |
-| Blasted Boar Lung | 8392 | 90s 0c | 2026-11-12 12:44 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 8 | 104 |  |
-| Blood Shard | 5075 | 25c | 2026-11-12 03:40 UTC | 25c | 25c | moving | 7 of 8 | 19080 |  |
-| Blue Power Crystal | 11184 | 10s 65c | 2026-11-12 12:44 UTC | 49s 0c | 49s 0c | volatile | 5 of 8 | 124 |  |
-| Bottom Half of Advanced Armorsmithing: Volume II | 18781 | 19g 99s 99c | 2026-11-12 12:44 UTC | 6g 51s 0c |  | too new | 2 of 8 | 2 |  |
-| Broken Dragonmaw Shinbone | 7135 | 1s 0c | 2026-11-12 12:44 UTC | 1s 0c |  | too new | 2 of 8 | 106 |  |
-| Carefully Folded Note | 4098 | 4g 75s 0c | 2026-11-12 12:44 UTC | 4g 75s 0c |  | too new | 1 of 8 | 4 |  |
-| Chillwind E'ko | 12434 | 3g 10s 0c | 2026-11-12 12:44 UTC | 3g 55s 50c |  | too new | 2 of 8 | 5 |  |
-| Codex of Defense | 18357 | 39g 99s 99c | 2026-11-12 12:44 UTC | 39g 99s 99c |  | too new | 1 of 8 | 3 |  |
-| Cortello's Riddle | 4056 | 1g 1s 0c | 2026-11-12 03:40 UTC | 1g 51s 0c |  | too new | 2 of 8 | 1 |  |
-| Cuergo's Treasure Map | 9254 | 80s 0c | 2026-11-12 12:44 UTC | 1g 43s 0c | 1g 43s 0c | volatile | 4 of 8 | 28 |  |
-| Dark Iron Residue | 18945 | 1s 0c | 2026-11-12 12:44 UTC | 1s 84c | 1s 84c | moving | 4 of 8 | 2557 |  |
-| Dig Rat | 5051 | 4s 95c | 2026-11-12 12:44 UTC | 3s 16c | 3s 32c | volatile | 7 of 8 | 203 |  |
-| Dran's Ripple Delivery | 8685 | 1g 99s 99c | 2026-11-12 12:44 UTC | 3g 49s 99c |  | too new | 2 of 8 | 5 |  |
-| Eight of Elementals | 19275 | 40g 0s 0c | 2026-11-12 12:44 UTC | 12g 88s 0c |  | too new | 2 of 8 | 2 |  |
-| Eight of Portals | 19284 | 40g 0s 0c | 2026-11-12 12:44 UTC | 40g 0s 0c |  | too new | 1 of 8 | 4 |  |
-| Eight of Warlords | 19265 | 14g 0s 0c | 2026-11-12 12:44 UTC | 14g 0s 0c |  | too new | 1 of 8 | 3 |  |
-| Enchanted Sea Kelp | 4639 | 1g 10s 0c | 2026-11-12 12:44 UTC | 16s 0c | 16s 0c | volatile | 5 of 8 | 26 |  |
-| Evil Bat Eye | 11404 | 29s 54c | 2026-11-12 12:44 UTC | 30s 67c |  | too new | 2 of 8 | 136 |  |
-| Evoroot | 11242 | 2g 99s 99c | 2026-11-12 12:44 UTC | 2g 99s 99c | 2g 99s 99c | volatile | 3 of 8 | 3 |  |
-| Faded Photograph | 11108 | 1g 0s 0c | 2026-11-12 03:40 UTC | 1g 0s 0c |  | too new | 2 of 8 | 6 |  |
-| Fel-Tainted Flesh | 249695 | 12s 84c | 2026-11-12 12:44 UTC | 54s 94c | 54s 94c | volatile | 5 of 8 | 82 |  |
-| Felnok's Package | 12445 | 5g 0s 0c | 2026-11-12 12:44 UTC | 5g 0s 0c |  | too new | 1 of 8 | 1 |  |
-| Five of Beasts | 19233 | 17g 0s 0c | 2026-11-12 12:44 UTC | 15g 50s 0c |  | too new | 2 of 8 | 3 |  |
-| Five of Elementals | 19272 | 15g 0s 0c | 2026-11-11 15:03 UTC | 15g 0s 0c |  | too new | 1 of 8 | 1 |  |
-| Five of Portals | 19281 | 9g 88s 0c | 2026-11-12 03:40 UTC | 9g 88s 0c |  | too new | 2 of 8 | 2 |  |
-| Five of Warlords | 19262 | 250g 88s 0c | 2026-11-12 12:44 UTC | 181g 38s 0c |  | too new | 2 of 8 | 2 |  |
-| Flawless Draenethyst Sphere | 8244 | 28g 0s 0c | 2026-11-12 12:44 UTC | 29g 74s 99c |  | too new | 2 of 8 | 6 |  |
-| Four of Beasts | 19232 | 8g 89s 0c | 2026-11-12 12:44 UTC | 9g 88s 0c | 9g 88s 0c | steady | 3 of 8 | 9 |  |
-| Four of Elementals | 19271 | 10g 0s 0c | 2026-11-12 12:44 UTC | 12g 44s 0c |  | too new | 2 of 8 | 6 |  |
-| Four of Portals | 19280 | 31g 88s 0c | 2026-11-12 03:40 UTC | 35g 71s 50c |  | too new | 2 of 8 | 6 |  |
-| Four of Warlords | 19261 | 4g 48s 0c | 2026-11-12 12:44 UTC | 9g 94s 0c | 9g 94s 0c | moving | 4 of 8 | 4 |  |
-| Frost Shock and You | 18363 | 50g 0s 0c | 2026-11-12 12:44 UTC | 45g 0s 0c |  | too new | 1 of 8 | 1 |  |
-| Frostsaber E'ko | 12430 | 69s 0c | 2026-11-12 12:44 UTC | 85s 0c |  | too new | 2 of 8 | 24 |  |
-| Garona: A Study on Stealth and Treachery | 18356 | 26g 0s 0c | 2026-11-12 12:44 UTC | 38g 0s 0c |  | too new | 2 of 8 | 2 |  |
-| Gni'kiv Medallion | 7740 | 1s 0c | 2026-11-12 03:40 UTC | 1s 0c |  | too new | 1 of 8 | 1 |  |
-| Gorilla Fang | 2799 | 1s 87c | 2026-11-12 12:44 UTC | 15s 35c | 15s 35c | volatile | 5 of 8 | 469 |  |
-| Green Hills of Stranglethorn - Page 1 | 2725 | 3s 95c | 2026-11-12 12:44 UTC | 6s 49c | 6s 49c | volatile | 6 of 8 | 276 |  |
-| Green Hills of Stranglethorn - Page 10 | 2734 | 3s 96c | 2026-11-12 12:44 UTC | 5s 24c | 5s 24c | volatile | 6 of 8 | 207 |  |
-| Green Hills of Stranglethorn - Page 11 | 2735 | 4s 99c | 2026-11-12 12:44 UTC | 5s 94c | 5s 94c | volatile | 6 of 8 | 196 |  |
-| Green Hills of Stranglethorn - Page 14 | 2738 | 3s 92c | 2026-11-12 12:44 UTC | 6s 54c | 6s 54c | volatile | 6 of 8 | 207 |  |
-| Green Hills of Stranglethorn - Page 16 | 2740 | 5s 85c | 2026-11-12 12:44 UTC | 7s 53c | 7s 53c | volatile | 6 of 8 | 240 |  |
-| Green Hills of Stranglethorn - Page 18 | 2742 | 3s 79c | 2026-11-12 12:44 UTC | 5s 86c | 5s 86c | moving | 6 of 8 | 170 |  |
-| Green Hills of Stranglethorn - Page 20 | 2744 | 4s 28c | 2026-11-12 12:44 UTC | 5s 88c | 5s 88c | volatile | 6 of 8 | 287 |  |
-| Green Hills of Stranglethorn - Page 21 | 2745 | 5s 47c | 2026-11-12 12:44 UTC | 5s 93c | 5s 93c | volatile | 6 of 8 | 312 |  |
-| Green Hills of Stranglethorn - Page 24 | 2748 | 6s 59c | 2026-11-12 12:44 UTC | 4s 93c | 4s 93c | moving | 6 of 8 | 174 |  |
-| Green Hills of Stranglethorn - Page 25 | 2749 | 3s 96c | 2026-11-12 12:44 UTC | 5s 49c | 5s 49c | volatile | 6 of 8 | 220 |  |
-| Green Hills of Stranglethorn - Page 26 | 2750 | 3s 87c | 2026-11-12 12:44 UTC | 5s 50c | 5s 50c | volatile | 6 of 8 | 192 |  |
-| Green Hills of Stranglethorn - Page 27 | 2751 | 3s 95c | 2026-11-12 03:40 UTC | 5s 44c | 5s 44c | moving | 6 of 8 | 174 |  |
-| Green Hills of Stranglethorn - Page 4 | 2728 | 5s 90c | 2026-11-12 12:44 UTC | 8s 37c | 8s 37c | volatile | 6 of 8 | 250 |  |
-| Green Hills of Stranglethorn - Page 6 | 2730 | 8s 60c | 2026-11-12 12:44 UTC | 5s 24c | 5s 24c | volatile | 6 of 8 | 223 |  |
-| Green Hills of Stranglethorn - Page 8 | 2732 | 4s 79c | 2026-11-12 12:44 UTC | 4s 86c | 4s 86c | volatile | 6 of 8 | 185 |  |
-| Green Power Crystal | 11185 | 8s 77c | 2026-11-12 12:44 UTC | 49s 0c | 49s 0c | volatile | 5 of 8 | 128 |  |
-| Grime-Encrusted Object | 9308 | 50c | 2026-11-12 12:44 UTC | 39c | 39c | volatile | 6 of 8 | 902 |  |
-| Grimesilt Outhouse Key | 11818 | 1g 0s 0c | 2026-11-12 12:44 UTC | 3g 0s 0c |  | too new | 2 of 8 | 2 |  |
-| Harnessing Shadows | 18360 | 43g 99s 0c | 2026-11-12 12:44 UTC | 62g 51s 0c | 62g 51s 0c | moving | 4 of 8 | 3 |  |
-| Hops | 1274 | 92c | 2026-11-12 12:44 UTC | 64c | 80c | volatile | 7 of 8 | 94 |  |
-| Ice Thistle E'ko | 12435 | 1g 1s 0c | 2026-11-12 12:44 UTC | 3g 1s 0c |  | too new | 2 of 8 | 32 |  |
-| Imperfect Draenethyst Fragment | 10593 | 99s 0c | 2026-11-12 12:44 UTC | 1g 10s 93c | 1g 10s 93c | volatile | 3 of 8 | 99 |  |
-| Incendicite Ore | 3340 | 34c | 2026-11-12 12:44 UTC | 48c | 48c | volatile | 6 of 8 | 949 |  |
-| Indurium Ore | 5833 | 89c | 2026-11-12 12:44 UTC | 1s 32c | 1s 32c | volatile | 3 of 8 | 413 |  |
-| Kravel's Scheme | 5826 | 7s 0c | 2026-11-12 03:40 UTC | 19s 0c | 19s 0c | volatile | 5 of 8 | 12 |  |
-| Lesser Bloodstone Ore | 4278 | 62c | 2026-11-12 12:44 UTC | 1s 0c | 1s 0c | volatile | 5 of 8 | 2039 |  |
-| Lower Map Fragment | 9252 | 11s 0c | 2026-11-12 12:44 UTC | 34s 50c | 34s 50c | volatile | 4 of 8 | 67 |  |
-| Mason's Note | 274077 | 80s 0c | 2026-11-12 03:40 UTC | 90s 0c |  | too new | 2 of 8 | 6 |  |
-| Medallion of Faith | 12845 | 15g 0s 0c | 2026-11-12 12:44 UTC | 12g 49s 0c |  | too new | 2 of 8 | 2 |  |
-| Middle Map Fragment | 9253 | 20s 0c | 2026-11-12 12:44 UTC | 34s 50c | 34s 50c | moving | 4 of 8 | 52 |  |
-| Morrowgrain | 11040 | 80s 78c | 2026-11-12 12:44 UTC | 67s 50c |  | too new | 2 of 8 | 261 |  |
-| Okra | 732 | 28c | 2026-11-12 12:44 UTC | 17c | 20c | volatile | 7 of 8 | 84 |  |
-| Packet of Tharlendris Seeds | 11022 | 2s 98c | 2026-11-12 12:44 UTC | 4s 99c |  | too new | 2 of 8 | 838 |  |
-| Pristine Black Diamond | 18335 | 50g 0s 0c | 2026-11-12 03:40 UTC | 30g 1s 0c | 30g 1s 0c | moving | 3 of 8 | 1 |  |
-| Raw Plated Armorfish | 13890 | 22s 0c | 2026-11-12 12:44 UTC | 30s 0c | 30s 0c | volatile | 3 of 8 | 30 |  |
-| Red Power Crystal | 11186 | 3s 60c | 2026-11-12 12:44 UTC | 49s 0c | 49s 0c | volatile | 5 of 8 | 163 |  |
-| Rune of Opening | 3745 | 58c | 2026-11-12 12:44 UTC | 10c | 10c | volatile | 6 of 8 | 1858 |  |
-| Scorpok Pincer | 8393 | 1g 50s 0c | 2026-11-12 12:44 UTC | 1g 45s 98c | 1g 45s 98c | moving | 3 of 8 | 55 |  |
-| Security DELTA Data Access Card | 9327 | 6s 55c | 2026-11-12 12:44 UTC | 7s 0c | 7s 0c | steady | 5 of 8 | 76 |  |
-| Seven of Beasts | 19235 | 5g 0s 0c | 2026-11-12 03:40 UTC | 5g 0s 0c |  | too new | 1 of 8 | 2 |  |
-| Seven of Elementals | 19274 | 44g 0s 0c | 2026-11-12 12:44 UTC | 72g 44s 0c |  | too new | 2 of 8 | 3 |  |
-| Seven of Portals | 19283 | 5g 49s 0c | 2026-11-12 12:44 UTC | 3g 68s 50c |  | too new | 2 of 8 | 2 |  |
-| Seven of Warlords | 19264 | 10g 0s 0c | 2026-11-12 03:40 UTC | 10g 0s 0c |  | too new | 1 of 8 | 2 |  |
-| Shardtooth E'ko | 12432 | 3g 0s 0c | 2026-11-12 12:44 UTC | 3g 0s 0c |  | too new | 1 of 8 | 2 |  |
-| Shellfish | 13545 | 49s 75c | 2026-11-12 12:44 UTC | 62s 44c | 62s 44c | volatile | 6 of 8 | 252 |  |
-| Shredder Operating Manual - Page 1 | 16645 | 3s 0c | 2026-11-12 12:44 UTC | 5s 50c | 7s 0c | volatile | 7 of 8 | 158 |  |
-| Shredder Operating Manual - Page 10 | 16654 | 6s 0c | 2026-11-12 12:44 UTC | 2s 94c | 3s 0c | volatile | 7 of 8 | 262 |  |
-| Shredder Operating Manual - Page 11 | 16655 | 3s 99c | 2026-11-12 12:44 UTC | 3s 99c | 4s 0c | volatile | 7 of 8 | 149 |  |
-| Shredder Operating Manual - Page 12 | 16656 | 2s 99c | 2026-11-12 12:44 UTC | 4s 0c | 5s 0c | volatile | 7 of 8 | 193 |  |
-| Shredder Operating Manual - Page 2 | 16646 | 6s 95c | 2026-11-12 12:44 UTC | 3s 0c | 3s 0c | volatile | 7 of 8 | 210 |  |
-| Shredder Operating Manual - Page 3 | 16647 | 9s 0c | 2026-11-12 12:44 UTC | 5s 0c | 5s 0c | volatile | 7 of 8 | 163 |  |
-| Shredder Operating Manual - Page 4 | 16648 | 7s 88c | 2026-11-12 12:44 UTC | 4s 50c | 5s 0c | volatile | 7 of 8 | 193 |  |
-| Shredder Operating Manual - Page 5 | 16649 | 7s 0c | 2026-11-12 12:44 UTC | 3s 50c | 4s 0c | volatile | 7 of 8 | 178 |  |
-| Shredder Operating Manual - Page 6 | 16650 | 2s 99c | 2026-11-12 12:44 UTC | 3s 0c | 3s 0c | volatile | 7 of 8 | 219 |  |
-| Shredder Operating Manual - Page 7 | 16651 | 6s 0c | 2026-11-12 12:44 UTC | 4s 0c | 4s 0c | volatile | 7 of 8 | 170 |  |
-| Shredder Operating Manual - Page 8 | 16652 | 3s 0c | 2026-11-12 03:40 UTC | 4s 0c | 4s 0c | volatile | 7 of 8 | 179 |  |
-| Shredder Operating Manual - Page 9 | 16653 | 4s 90c | 2026-11-12 12:44 UTC | 4s 45c | 4s 90c | volatile | 7 of 8 | 145 |  |
-| Six of Beasts | 19234 | 25g 0s 0c | 2026-11-12 03:40 UTC | 25g 0s 0c |  | too new | 1 of 8 | 1 |  |
-| Six of Elementals | 19273 | 20g 88s 0c | 2026-11-12 12:44 UTC | 30g 38s 0c |  | too new | 2 of 8 | 2 |  |
-| Six of Portals | 19282 | 5g 88s 0c | 2026-11-12 03:40 UTC | 5g 88s 0c |  | too new | 2 of 8 | 2 |  |
-| Six of Warlords | 19263 | 45g 0s 0c | 2026-11-12 03:40 UTC | 45g 0s 0c |  | too new | 1 of 8 | 3 |  |
-| Skonk's List | 283389 | 1s 0c | 2026-11-12 03:40 UTC | 1s 0c | 1s 0c | steady | 4 of 8 | 36 |  |
-| Small Furry Paw | 5134 | 1s 20c | 2026-11-12 12:44 UTC | 92c | 92c | moving | 7 of 8 | 1239 |  |
-| Snickerfang Jowl | 8391 | 45s 0c | 2026-11-12 12:44 UTC | 45s 0c | 45s 0c | volatile | 3 of 8 | 93 |  |
-| Soft Bushy Tail | 4582 | 8s 69c | 2026-11-12 12:44 UTC | 9s 75c | 9s 75c | volatile | 6 of 8 | 535 |  |
-| Sunscale Feather | 5165 | 1c | 2026-11-12 12:44 UTC | 1c | 1c | steady | 7 of 8 | 4545 |  |
-| The Arcanist's Cookbook | 18358 | 45g 1s 0c | 2026-11-12 12:44 UTC | 45g 1s 0c |  | too new | 1 of 8 | 3 |  |
-| The Emerald Dream | 18364 | 25g 1s 0c | 2026-11-12 12:44 UTC | 57g 1s 0c |  | too new | 2 of 8 | 3 |  |
-| The Greatest Race of Hunters | 18361 | 90g 0s 0c | 2026-11-12 12:44 UTC | 95g 0s 0c |  | too new | 2 of 8 | 2 |  |
-| The Light and How to Swing It | 18359 | 67g 67s 67c | 2026-11-12 12:44 UTC | 78g 34s 33c |  | too new | 2 of 8 | 2 |  |
-| The Pariah's Instructions | 17781 | 4s 0c | 2026-11-12 03:40 UTC | 7s 0c |  | too new | 2 of 8 | 26 |  |
-| The Shaft of Tsol | 7741 | 35s 0c | 2026-11-12 12:44 UTC | 1g 67s 50c |  | too new | 2 of 8 | 8 |  |
-| Three of Beasts | 19231 | 3g 70s 0c | 2026-11-12 12:44 UTC | 4g 35s 0c |  | too new | 2 of 8 | 4 |  |
-| Three of Elementals | 19270 | 12g 98s 0c | 2026-11-12 12:44 UTC | 15g 0s 0c | 15g 0s 0c | moving | 3 of 8 | 9 |  |
-| Three of Portals | 19279 | 5g 88s 0c | 2026-11-12 03:40 UTC | 10g 88s 0c | 10g 88s 0c | moving | 4 of 8 | 4 |  |
-| Three of Warlords | 19260 | 6g 0s 0c | 2026-11-12 12:44 UTC | 7g 50s 0c |  | too new | 2 of 8 | 7 |  |
-| Top Half of Advanced Armorsmithing: Volume I | 18780 | 3g 1s 0c | 2026-11-12 12:44 UTC | 3g 1s 0c |  | too new | 1 of 8 | 1 |  |
-| Top Half of Advanced Armorsmithing: Volume II | 18782 | 15g 0s 0c | 2026-11-12 03:40 UTC | 15g 0s 0c |  | too new | 2 of 8 | 2 |  |
-| Top Half of Advanced Armorsmithing: Volume III | 18784 | 9g 90s 0c | 2026-11-12 12:44 UTC | 11g 95s 0c |  | too new | 2 of 8 | 4 |  |
-| Torn Bear Pelt | 11407 | 3s 99c | 2026-11-12 12:44 UTC | 1s 16c | 1s 18c | volatile | 7 of 8 | 963 |  |
-| Two of Beasts | 19230 | 15g 88s 0c | 2026-11-12 12:44 UTC | 22g 88s 0c |  | too new | 2 of 8 | 8 |  |
-| Two of Elementals | 19269 | 5g 0s 0c | 2026-11-12 12:44 UTC | 10g 0s 0c |  | too new | 2 of 8 | 4 |  |
-| Two of Portals | 19278 | 6g 73s 0c | 2026-11-12 12:44 UTC | 15g 88s 0c | 15g 88s 0c | volatile | 3 of 8 | 5 |  |
-| Two of Warlords | 19259 | 3g 0s 0c | 2026-11-12 12:44 UTC | 7g 0s 0c | 7g 0s 0c | volatile | 3 of 8 | 4 |  |
-| Un'Goro Soil | 11018 | 5s 96c | 2026-11-12 12:44 UTC | 29s 0c | 29s 0c | volatile | 5 of 8 | 220 |  |
-| Unadorned Seal of Ascension | 12219 | 2g 0s 0c | 2026-11-12 12:44 UTC | 3g 50s 0c |  | too new | 2 of 8 | 11 |  |
-| Unconscious Dig Rat | 5052 | 26s 0c | 2026-11-12 12:44 UTC | 28s 0c | 28s 0c | volatile | 6 of 8 | 20 |  |
-| Undamaged Hippogryph Feather | 10450 | 4s 42c | 2026-11-12 12:44 UTC | 6s 0c | 6s 0c | moving | 3 of 8 | 152 |  |
-| Upper Map Fragment | 9251 | 15s 0c | 2026-11-12 12:44 UTC | 40s 0c | 40s 0c | volatile | 4 of 8 | 56 |  |
-| Vibrant Plume | 5117 | 10s 0c | 2026-11-12 12:44 UTC | 9s 34c | 9s 92c | moving | 7 of 8 | 915 |  |
-| Vulture Gizzard | 8396 | 2g 55s 99c | 2026-11-12 12:44 UTC | 2g 55s 99c | 2g 55s 99c | volatile | 3 of 8 | 52 |  |
-| Wastewander Water Pouch | 8483 | 6s 55c | 2026-11-12 12:44 UTC | 10s 0c | 10s 0c | volatile | 5 of 8 | 405 |  |
-| Wildkin E'ko | 12433 | 1g 0s 0c | 2026-11-12 12:44 UTC | 1g 0s 50c |  | too new | 2 of 8 | 26 |  |
-| Winterfall E'ko | 12431 | 1g 0s 1c | 2026-11-12 12:44 UTC | 1g 0s 50c |  | too new | 2 of 8 | 43 |  |
-| Yellow Power Crystal | 11188 | 5s 8c | 2026-11-12 12:44 UTC | 44s 0c | 44s 0c | volatile | 5 of 8 | 96 |  |
+| Ace of Beasts | 19227 | 655g 67s 67c | 2026-11-15 12:38 UTC | 376g 77s 83c |  | too new | 2 of 10 | 2 |  |
+| Ace of Elementals | 19268 | 14g 44s 19c | 2026-11-15 12:38 UTC | 50g 0s 0c | 50g 0s 0c | volatile | 3 of 10 | 10 |  |
+| Ace of Portals | 19276 | 5g 67s 0c | 2026-11-15 12:38 UTC | 15g 88s 0c | 15g 88s 0c | volatile | 3 of 10 | 3 |  |
+| Ace of Warlords | 19258 | 19g 90s 0c | 2026-11-15 12:38 UTC | 10g 88s 0c | 10g 88s 0c | volatile | 5 of 10 | 5 |  |
+| Basilisk Brain | 8394 | 3g 0s 0c | 2026-11-15 12:38 UTC | 1g 75s 99c | 1g 75s 99c | volatile | 5 of 10 | 142 |  |
+| Belamoore's Research Journal | 3711 | 1s 0c | 2026-11-15 12:38 UTC | 1s 0c | 1s 0c | volatile | 8 of 10 | 116 | -80% |
+| Black Diamond | 11754 | 20c | 2026-11-15 12:38 UTC | 4s 90c | 4s 90c | volatile | 5 of 10 | 364 |  |
+| Blasted Boar Lung | 8392 | 80s 0c | 2026-11-15 12:38 UTC | 1g 0s 0c | 1g 0s 0c | steady | 5 of 10 | 290 |  |
+| Blood Shard | 5075 | 20c | 2026-11-15 12:38 UTC | 25c | 25c | moving | 9 of 10 | 17795 | +4% |
+| Blue Power Crystal | 11184 | 5s 67c | 2026-11-15 12:38 UTC | 5s 97c | 8s 75c | volatile | 7 of 10 | 400 | -92% |
+| Bottom Half of Advanced Armorsmithing: Volume II | 18781 | 97s 0c | 2026-11-15 12:38 UTC | 6g 51s 0c | 6g 51s 0c | volatile | 4 of 10 | 4 |  |
+| Broken Dragonmaw Shinbone | 7135 | 29c | 2026-11-15 12:38 UTC | 99c | 99c | moving | 4 of 10 | 156 |  |
+| Carefully Folded Note | 4098 | 1g 49s 1c | 2026-11-15 12:38 UTC | 2g 80s 0c | 2g 80s 0c | volatile | 3 of 10 | 4 |  |
+| Chillwind E'ko | 12434 | 54s 43c | 2026-11-15 12:38 UTC | 2g 17s 94c | 2g 17s 94c | volatile | 4 of 10 | 30 |  |
+| Codex of Defense | 18357 | 10g 54s 0c | 2026-11-15 12:38 UTC | 33g 99s 97c | 33g 99s 97c | volatile | 3 of 10 | 12 |  |
+| Cortello's Riddle | 4056 | 3g 0s 0c | 2026-11-15 12:38 UTC | 2g 1s 0c | 2g 1s 0c | volatile | 3 of 10 | 1 |  |
+| Cuergo's Treasure Map | 9254 | 67s 0c | 2026-11-15 12:38 UTC | 80s 0c | 82s 50c | volatile | 6 of 10 | 60 |  |
+| Dark Iron Residue | 18945 | 1s 1c | 2026-11-15 12:38 UTC | 1s 1c | 1s 35c | moving | 6 of 10 | 4264 |  |
+| Dig Rat | 5051 | 3s 0c | 2026-11-15 12:38 UTC | 3s 0c | 3s 32c | moving | 9 of 10 | 203 | -35% |
+| Dran's Ripple Delivery | 8685 | 73s 26c | 2026-11-15 12:38 UTC | 1g 50s 46c | 1g 50s 46c | volatile | 4 of 10 | 6 |  |
+| Eight of Elementals | 19275 | 10g 99s 97c | 2026-11-15 12:38 UTC | 12g 88s 0c | 12g 88s 0c | steady | 4 of 10 | 4 |  |
+| Eight of Portals | 19284 | 2g 50s 99c | 2026-11-15 12:38 UTC | 14g 99s 99c | 14g 99s 99c | volatile | 3 of 10 | 7 |  |
+| Eight of Warlords | 19265 | 3g 25s 0c | 2026-11-15 12:38 UTC | 12g 0s 0c | 12g 0s 0c | volatile | 3 of 10 | 8 |  |
+| Enchanted Sea Kelp | 4639 | 19s 91c | 2026-11-15 12:38 UTC | 12s 0c | 16s 0c | volatile | 7 of 10 | 31 | -81% |
+| Evil Bat Eye | 11404 | 27s 0c | 2026-11-15 12:38 UTC | 28s 86c | 28s 86c | steady | 4 of 10 | 292 |  |
+| Evoroot | 11242 | 1g 55s 0c | 2026-11-15 12:38 UTC | 2g 98s 99c | 2g 98s 0c | moving | 5 of 10 | 4 |  |
+| Faded Photograph | 11108 | 5s 44c | 2026-11-15 12:38 UTC | 60s 0c | 60s 0c | volatile | 4 of 10 | 14 |  |
+| Fel-Tainted Flesh | 249695 | 8s 0c | 2026-11-15 12:38 UTC | 12s 84c | 19s 89c | volatile | 7 of 10 | 82 | -78% |
+| Felnok's Package | 12445 | 1g 80s 0c | 2026-11-15 12:38 UTC | 2g 1s 0c | 2g 1s 0c | volatile | 3 of 10 | 1 |  |
+| Five of Beasts | 19233 | 3g 99s 0c | 2026-11-15 12:38 UTC | 12g 93s 50c | 12g 93s 50c | volatile | 4 of 10 | 5 |  |
+| Five of Elementals | 19272 | 20g 0s 0c | 2026-11-15 12:38 UTC | 15g 0s 0c | 15g 0s 0c | moving | 3 of 10 | 5 |  |
+| Five of Portals | 19281 | 4g 43s 0c | 2026-11-15 12:38 UTC | 9g 88s 0c | 9g 88s 0c | moving | 4 of 10 | 3 |  |
+| Five of Warlords | 19262 | 3g 24s 0c | 2026-11-15 12:38 UTC | 59g 38s 0c | 59g 38s 0c | volatile | 4 of 10 | 4 |  |
+| Flawless Draenethyst Sphere | 8244 | 8g 0s 0c | 2026-11-15 12:38 UTC | 22g 43s 0c | 22g 43s 0c | volatile | 4 of 10 | 6 |  |
+| Four of Beasts | 19232 | 1g 88s 0c | 2026-11-15 12:38 UTC | 8g 89s 0c | 8g 89s 0c | volatile | 5 of 10 | 9 |  |
+| Four of Elementals | 19271 | 5g 55s 0c | 2026-11-15 12:38 UTC | 7g 77s 50c | 7g 77s 50c | volatile | 4 of 10 | 8 |  |
+| Four of Portals | 19280 | 1g 38s 97c | 2026-11-15 12:38 UTC | 19g 16s 0c | 19g 16s 0c | volatile | 4 of 10 | 10 |  |
+| Four of Warlords | 19261 | 1g 68s 0c | 2026-11-15 12:38 UTC | 4g 48s 0c | 7g 18s 0c | volatile | 6 of 10 | 6 |  |
+| Frost Shock and You | 18363 | 10g 45s 0c | 2026-11-15 12:38 UTC | 25g 50s 0c | 25g 50s 0c | volatile | 3 of 10 | 4 |  |
+| Frostsaber E'ko | 12430 | 25s 0c | 2026-11-15 12:38 UTC | 61s 44c | 61s 44c | moving | 4 of 10 | 60 |  |
+| Garona: A Study on Stealth and Treachery | 18356 | 26g 0s 0c | 2026-11-15 12:38 UTC | 27g 0s 0c | 27g 0s 0c | steady | 4 of 10 | 4 |  |
+| Gni'kiv Medallion | 7740 | 45s 99c | 2026-11-15 12:38 UTC | 1s 0c | 1s 0c | volatile | 3 of 10 | 1 |  |
+| Gordok Ogre Suit | 18258 | 28g 0s 0c | 2026-11-15 12:38 UTC | 28g 0s 0c |  | too new | 1 of 10 | 1 |  |
+| Gorilla Fang | 2799 | 82c | 2026-11-15 12:38 UTC | 1s 31c | 1s 87c | volatile | 7 of 10 | 1014 | -95% |
+| Green Hills of Stranglethorn - Page 1 | 2725 | 6s 99c | 2026-11-15 12:38 UTC | 4s 69c | 6s 49c | volatile | 8 of 10 | 370 | -55% |
+| Green Hills of Stranglethorn - Page 10 | 2734 | 3s 95c | 2026-11-15 12:38 UTC | 3s 96c | 4s 20c | volatile | 8 of 10 | 320 | -67% |
+| Green Hills of Stranglethorn - Page 11 | 2735 | 3s 94c | 2026-11-15 12:38 UTC | 4s 0c | 5s 20c | volatile | 8 of 10 | 218 | -60% |
+| Green Hills of Stranglethorn - Page 14 | 2738 | 3s 79c | 2026-11-15 12:38 UTC | 4s 33c | 5s 5c | volatile | 8 of 10 | 214 | -73% |
+| Green Hills of Stranglethorn - Page 16 | 2740 | 3s 80c | 2026-11-15 12:38 UTC | 4s 96c | 7s 53c | volatile | 8 of 10 | 240 | -55% |
+| Green Hills of Stranglethorn - Page 18 | 2742 | 3s 90c | 2026-11-15 12:38 UTC | 3s 95c | 5s 33c | moving | 8 of 10 | 222 | -34% |
+| Green Hills of Stranglethorn - Page 20 | 2744 | 3s 96c | 2026-11-15 12:38 UTC | 4s 17c | 5s 88c | volatile | 8 of 10 | 287 | -40% |
+| Green Hills of Stranglethorn - Page 21 | 2745 | 3s 90c | 2026-11-15 12:38 UTC | 4s 48c | 5s 22c | volatile | 8 of 10 | 312 | -50% |
+| Green Hills of Stranglethorn - Page 24 | 2748 | 3s 80c | 2026-11-15 12:38 UTC | 4s 77c | 4s 93c | volatile | 8 of 10 | 230 | -36% |
+| Green Hills of Stranglethorn - Page 25 | 2749 | 3s 70c | 2026-11-15 12:38 UTC | 3s 94c | 3s 98c | volatile | 8 of 10 | 279 | -75% |
+| Green Hills of Stranglethorn - Page 26 | 2750 | 13s 37c | 2026-11-15 12:38 UTC | 5s 0c | 5s 50c | volatile | 8 of 10 | 256 | -17% |
+| Green Hills of Stranglethorn - Page 27 | 2751 | 4s 0c | 2026-11-15 12:38 UTC | 4s 0c | 4s 49c | moving | 8 of 10 | 284 | -43% |
+| Green Hills of Stranglethorn - Page 4 | 2728 | 6s 90c | 2026-11-15 12:38 UTC | 4s 99c | 7s 40c | volatile | 8 of 10 | 314 | -67% |
+| Green Hills of Stranglethorn - Page 6 | 2730 | 5s 88c | 2026-11-15 12:38 UTC | 3s 98c | 5s 9c | volatile | 8 of 10 | 304 | -60% |
+| Green Hills of Stranglethorn - Page 8 | 2732 | 4s 8c | 2026-11-15 12:38 UTC | 4s 8c | 4s 86c | volatile | 8 of 10 | 316 | -59% |
+| Green Power Crystal | 11185 | 6s 22c | 2026-11-15 12:38 UTC | 8s 77c | 11s 57c | volatile | 7 of 10 | 711 | -88% |
+| Grime-Encrusted Object | 9308 | 38c | 2026-11-15 12:38 UTC | 38c | 38c | volatile | 8 of 10 | 902 | -62% |
+| Grimesilt Outhouse Key | 11818 | 85s 0c | 2026-11-15 12:38 UTC | 99s 50c | 99s 50c | steady | 4 of 10 | 4 |  |
+| Harnessing Shadows | 18360 | 29g 99s 99c | 2026-11-15 12:38 UTC | 43g 99s 0c | 47g 0s 0c | volatile | 6 of 10 | 4 |  |
+| Hops | 1274 | 10c | 2026-11-15 12:38 UTC | 48c | 48c | volatile | 9 of 10 | 97 | -25% |
+| Ice Thistle E'ko | 12435 | 10s 99c | 2026-11-15 12:38 UTC | 78s 43c | 78s 43c | volatile | 4 of 10 | 43 |  |
+| Imperfect Draenethyst Fragment | 10593 | 90s 89c | 2026-11-15 12:38 UTC | 1g 10s 93c | 1g 10s 93c | moving | 5 of 10 | 99 |  |
+| Incendicite Ore | 3340 | 43c | 2026-11-15 12:38 UTC | 35c | 40c | volatile | 8 of 10 | 949 | -85% |
+| Indurium Ore | 5833 | 97c | 2026-11-15 12:38 UTC | 97c | 97c | volatile | 5 of 10 | 413 |  |
+| Kravel's Scheme | 5826 | 1s 92c | 2026-11-15 12:38 UTC | 7s 0c | 7s 0c | volatile | 7 of 10 | 16 | -71% |
+| Lesser Bloodstone Ore | 4278 | 40c | 2026-11-15 12:38 UTC | 74c | 78c | volatile | 7 of 10 | 2079 | -96% |
+| Lower Map Fragment | 9252 | 10s 0c | 2026-11-15 12:38 UTC | 14s 98c | 19s 99c | volatile | 6 of 10 | 116 |  |
+| Mason's Note | 274077 | 1g 50s 0c | 2026-11-15 12:38 UTC | 90s 0c | 90s 0c | volatile | 4 of 10 | 18 |  |
+| Medallion of Faith | 12845 | 2g 87s 0c | 2026-11-15 12:38 UTC | 11g 98s 50c | 11g 98s 50c | volatile | 4 of 10 | 4 |  |
+| Middle Map Fragment | 9253 | 18s 0c | 2026-11-15 12:38 UTC | 18s 0c | 24s 0c | volatile | 6 of 10 | 110 |  |
+| Morrowgrain | 11040 | 18s 0c | 2026-11-15 12:38 UTC | 53s 92c | 53s 92c | volatile | 4 of 10 | 390 |  |
+| Okra | 732 | 15c | 2026-11-15 12:38 UTC | 19c | 19c | volatile | 9 of 10 | 86 | +12% |
+| Packet of Tharlendris Seeds | 11022 | 3s 32c | 2026-11-15 12:38 UTC | 3s 15c | 3s 15c | steady | 4 of 10 | 868 |  |
+| Pristine Black Diamond | 18335 | 74g 0s 0c | 2026-11-15 12:38 UTC | 30g 1s 0c | 30g 1s 0c | volatile | 5 of 10 | 9 |  |
+| Raw Plated Armorfish | 13890 | 1s 95c | 2026-11-15 12:38 UTC | 22s 0c | 22s 0c | volatile | 5 of 10 | 178 |  |
+| Red Power Crystal | 11186 | 15s 79c | 2026-11-15 12:38 UTC | 9s 21c | 15s 79c | volatile | 7 of 10 | 291 | -88% |
+| Rune of Opening | 3745 | 33c | 2026-11-15 12:38 UTC | 3c | 10c | volatile | 8 of 10 | 1858 | -85% |
+| Scorpok Pincer | 8393 | 1g 19s 0c | 2026-11-15 12:38 UTC | 1g 45s 98c | 1g 45s 98c | moving | 5 of 10 | 235 |  |
+| Security DELTA Data Access Card | 9327 | 6s 24c | 2026-11-15 12:38 UTC | 6s 55c | 7s 0c | steady | 7 of 10 | 76 | -6% |
+| Seven of Beasts | 19235 | 17g 0s 0c | 2026-11-15 12:38 UTC | 17g 0s 0c | 17g 0s 0c | volatile | 3 of 10 | 4 |  |
+| Seven of Elementals | 19274 | 39g 89s 99c | 2026-11-15 12:38 UTC | 43g 49s 50c | 43g 49s 50c | steady | 4 of 10 | 4 |  |
+| Seven of Portals | 19283 | 1g 70s 0c | 2026-11-15 12:38 UTC | 2g 44s 0c | 2g 44s 0c | moving | 4 of 10 | 4 |  |
+| Seven of Warlords | 19264 | 4g 10s 0c | 2026-11-15 12:38 UTC | 5g 0s 0c | 5g 0s 0c | volatile | 3 of 10 | 7 |  |
+| Shardtooth E'ko | 12432 | 31s 55c | 2026-11-15 12:38 UTC | 1g 99s 89c | 1g 99s 89c | volatile | 3 of 10 | 18 |  |
+| Shellfish | 13545 | 25s 67c | 2026-11-15 12:38 UTC | 33s 88c | 41s 38c | volatile | 8 of 10 | 296 | -57% |
+| Shredder Operating Manual - Page 1 | 16645 | 3s 0c | 2026-11-15 12:38 UTC | 3s 0c | 4s 0c | volatile | 9 of 10 | 165 | -62% |
+| Shredder Operating Manual - Page 10 | 16654 | 6s 89c | 2026-11-15 12:38 UTC | 5s 0c | 4s 0c | volatile | 9 of 10 | 277 | +150% |
+| Shredder Operating Manual - Page 11 | 16655 | 2s 0c | 2026-11-15 12:38 UTC | 3s 0c | 3s 99c | volatile | 9 of 10 | 160 | -45% |
+| Shredder Operating Manual - Page 12 | 16656 | 4s 39c | 2026-11-15 12:38 UTC | 3s 0c | 4s 39c | moving | 9 of 10 | 237 | -45% |
+| Shredder Operating Manual - Page 2 | 16646 | 2s 47c | 2026-11-15 12:38 UTC | 3s 0c | 3s 0c | volatile | 9 of 10 | 210 | -45% |
+| Shredder Operating Manual - Page 3 | 16647 | 2s 50c | 2026-11-15 12:38 UTC | 5s 0c | 5s 0c | volatile | 9 of 10 | 163 | -29% |
+| Shredder Operating Manual - Page 4 | 16648 | 2s 10c | 2026-11-15 12:38 UTC | 3s 0c | 4s 0c | moving | 9 of 10 | 203 | -73% |
+| Shredder Operating Manual - Page 5 | 16649 | 1s 50c | 2026-11-15 12:38 UTC | 3s 0c | 3s 90c | moving | 9 of 10 | 172 | -50% |
+| Shredder Operating Manual - Page 6 | 16650 | 2s 0c | 2026-11-15 12:38 UTC | 3s 0c | 3s 0c | moving | 9 of 10 | 219 | -25% |
+| Shredder Operating Manual - Page 7 | 16651 | 2s 65c | 2026-11-15 12:38 UTC | 3s 0c | 4s 0c | volatile | 9 of 10 | 170 | -50% |
+| Shredder Operating Manual - Page 8 | 16652 | 2s 44c | 2026-11-15 12:38 UTC | 3s 0c | 4s 0c | volatile | 9 of 10 | 179 | -45% |
+| Shredder Operating Manual - Page 9 | 16653 | 1s 0c | 2026-11-15 12:38 UTC | 3s 0c | 4s 0c | volatile | 9 of 10 | 175 | -62% |
+| Six of Beasts | 19234 | 2g 99s 0c | 2026-11-15 12:38 UTC | 19g 98s 98c | 19g 98s 98c | volatile | 3 of 10 | 3 |  |
+| Six of Elementals | 19273 | 8g 0s 0c | 2026-11-15 12:38 UTC | 16g 44s 0c | 16g 44s 0c | volatile | 4 of 10 | 4 |  |
+| Six of Portals | 19282 | 3g 1s 0c | 2026-11-15 12:38 UTC | 5g 44s 0c | 5g 44s 0c | moving | 4 of 10 | 4 |  |
+| Six of Warlords | 19263 | 9g 99s 99c | 2026-11-15 12:38 UTC | 28g 98s 88c | 28g 98s 88c | volatile | 3 of 10 | 7 |  |
+| Skonk's List | 283389 | 1s 0c | 2026-11-15 12:38 UTC | 1s 0c | 1s 0c | steady | 6 of 10 | 52 |  |
+| Small Furry Paw | 5134 | 97c | 2026-11-15 12:38 UTC | 1s 20c | 93c | moving | 9 of 10 | 1239 | +30% |
+| Snickerfang Jowl | 8391 | 24s 77c | 2026-11-15 12:38 UTC | 29s 99c | 29s 99c | volatile | 5 of 10 | 331 |  |
+| Soft Bushy Tail | 4582 | 7s 45c | 2026-11-15 12:38 UTC | 8s 0c | 9s 16c | volatile | 8 of 10 | 488 | -56% |
+| Sunscale Feather | 5165 | 76c | 2026-11-15 12:38 UTC | 1c | 1c | steady | 9 of 10 | 4545 | +0% |
+| The Arcanist's Cookbook | 18358 | 45g 1s 0c | 2026-11-12 12:44 UTC | 40g 1s 0c |  | too new | 2 of 10 | 4 |  |
+| The Emerald Dream | 18364 | 40g 1s 0c | 2026-11-15 12:38 UTC | 32g 51s 0c | 32g 51s 0c | moving | 4 of 10 | 5 |  |
+| The Greatest Race of Hunters | 18361 | 20g 39s 0c | 2026-11-15 12:38 UTC | 75g 25s 69c | 75g 25s 69c | volatile | 4 of 10 | 4 |  |
+| The Light and How to Swing It | 18359 | 9g 99s 0c | 2026-11-15 12:38 UTC | 61g 34s 33c | 61g 34s 33c | volatile | 4 of 10 | 2 |  |
+| The Pariah's Instructions | 17781 | 1s 0c | 2026-11-15 12:38 UTC | 2s 50c | 2s 50c | volatile | 4 of 10 | 30 |  |
+| The Shaft of Tsol | 7741 | 10s 58c | 2026-11-15 12:38 UTC | 27s 50c | 27s 50c | volatile | 4 of 10 | 14 |  |
+| Three of Beasts | 19231 | 1g 50s 99c | 2026-11-15 12:38 UTC | 4g 35s 0c | 4g 35s 0c | volatile | 4 of 10 | 8 |  |
+| Three of Elementals | 19270 | 3g 96s 66c | 2026-11-15 12:38 UTC | 12g 98s 0c | 12g 98s 0c | volatile | 5 of 10 | 10 |  |
+| Three of Portals | 19279 | 1g 40s 0c | 2026-11-15 12:38 UTC | 5g 88s 0c | 8g 38s 0c | volatile | 6 of 10 | 6 |  |
+| Three of Warlords | 19260 | 1g 31s 99c | 2026-11-15 12:38 UTC | 4g 0s 0c | 4g 0s 0c | volatile | 4 of 10 | 7 |  |
+| Top Half of Advanced Armorsmithing: Volume I | 18780 | 3g 50s 0c | 2026-11-15 12:38 UTC | 3g 1s 0c | 3g 1s 0c | steady | 3 of 10 | 5 |  |
+| Top Half of Advanced Armorsmithing: Volume II | 18782 | 2g 66s 0c | 2026-11-15 12:38 UTC | 9g 0s 0c | 9g 0s 0c | volatile | 4 of 10 | 6 |  |
+| Top Half of Advanced Armorsmithing: Volume III | 18784 | 1g 53s 0c | 2026-11-15 12:38 UTC | 8g 29s 50c | 8g 29s 50c | volatile | 4 of 10 | 8 |  |
+| Torn Bear Pelt | 11407 | 1s 27c | 2026-11-15 12:38 UTC | 2s 88c | 1s 27c | volatile | 9 of 10 | 1000 | +159% |
+| Two of Beasts | 19230 | 2g 55s 98c | 2026-11-15 12:38 UTC | 10g 87s 50c | 10g 87s 50c | volatile | 4 of 10 | 13 |  |
+| Two of Elementals | 19269 | 2g 70s 0c | 2026-11-15 12:38 UTC | 5g 40s 0c | 5g 40s 0c | moving | 4 of 10 | 8 |  |
+| Two of Portals | 19278 | 1g 50s 0c | 2026-11-15 12:38 UTC | 6g 73s 0c | 6g 73s 0c | volatile | 5 of 10 | 7 |  |
+| Two of Warlords | 19259 | 1g 50s 99c | 2026-11-15 12:38 UTC | 3g 0s 0c | 3g 0s 0c | volatile | 5 of 10 | 10 |  |
+| Un'Goro Soil | 11018 | 3s 11c | 2026-11-15 12:38 UTC | 3s 50c | 10s 98c | volatile | 7 of 10 | 1025 | -95% |
+| Unadorned Seal of Ascension | 12219 | 8s 88c | 2026-11-15 12:38 UTC | 1g 40s 0c | 1g 40s 0c | volatile | 4 of 10 | 16 |  |
+| Unconscious Dig Rat | 5052 | 4s 35c | 2026-11-15 12:38 UTC | 15s 0c | 20s 50c | volatile | 8 of 10 | 14 | -53% |
+| Undamaged Hippogryph Feather | 10450 | 3s 98c | 2026-11-15 12:38 UTC | 4s 42c | 4s 42c | moving | 5 of 10 | 153 |  |
+| Upper Map Fragment | 9251 | 7s 89c | 2026-11-15 12:38 UTC | 15s 0c | 25s 0c | volatile | 6 of 10 | 102 |  |
+| Vibrant Plume | 5117 | 8s 42c | 2026-11-15 12:38 UTC | 9s 92c | 8s 77c | steady | 9 of 10 | 915 | +16% |
+| Vulture Gizzard | 8396 | 2g 48s 97c | 2026-11-15 12:38 UTC | 2g 48s 97c | 2g 48s 97c | steady | 5 of 10 | 158 |  |
+| Wastewander Water Pouch | 8483 | 6s 95c | 2026-11-15 12:38 UTC | 6s 95c | 7s 53c | volatile | 7 of 10 | 405 | -81% |
+| Wildkin E'ko | 12433 | 15s 50c | 2026-11-15 12:38 UTC | 77s 0c | 77s 0c | volatile | 4 of 10 | 74 |  |
+| Winterfall E'ko | 12431 | 40s 0c | 2026-11-15 12:38 UTC | 99s 50c | 99s 50c | moving | 4 of 10 | 94 |  |
+| Yellow Power Crystal | 11188 | 38s 0c | 2026-11-15 12:38 UTC | 7s 76c | 38s 0c | volatile | 7 of 10 | 649 | -90% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

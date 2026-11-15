@@ -1,7 +1,7 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): alerts and estimates
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-12 12:44 UTC. Uploads in the 30-day window: 22.
+- **Latest scan:** 2026-11-15 12:38 UTC. Uploads in the 30-day window: 23.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 Everything below is an estimate from listings, recorded at the time shown; none of it says what sold.
@@ -10,40 +10,40 @@ Everything below is an estimate from listings, recorded at the time shown; none 
 
 At least 20% under the usual price. Exceptional ones are at least 30% under and far outside the item's normal spread; they come first. Confidence says how much history stands behind it; low-confidence ones are left out.
 
-The strongest 30 of 970.
+The strongest 30 of 1201.
 
 | Item | ID | Latest | Usual | Under usual | Exceptional | Confidence | Recorded at |
 |---|---|---|---|---|---|---|---|
-| Six Demon Bag | 7734 | 5g 48s 0c | 10g 81s 0c | 49% | yes | medium | 2026-11-12 03:40 UTC |
-| Champion's Greaves | 7542 | 1g 43s 0c | 5g 0s 0c | 71% | yes | medium | 2026-11-12 03:40 UTC |
-| Warmonger's Pauldrons | 9965 | 1g 19s 0c | 3g 50s 0c | 66% | yes | medium | 2026-11-12 03:40 UTC |
-| Heraldic Boots | 8117 | 89s 0c | 2g 98s 0c | 70% | yes | medium | 2026-11-12 12:44 UTC |
-| Vanadium Talisman | 12024 | 1g 99s 0c | 3g 49s 0c | 43% | yes | medium | 2026-11-12 12:44 UTC |
-| Scorpashi Cape | 14656 | 55s 0c | 1g 99s 0c | 72% | yes | medium | 2026-11-12 03:40 UTC |
-| Barbaric Iron Helm | 7915 | 44s 0c | 1g 79s 0c | 75% | yes | medium | 2026-11-12 12:44 UTC |
-| Field Plate Pauldrons | 9292 | 63s 0c | 1g 97s 0c | 68% | yes | medium | 2026-11-12 12:44 UTC |
-| Overlord's Girdle | 10206 | 94s 0c | 2g 0s 0c | 53% | yes | medium | 2026-11-12 12:44 UTC |
-| Revenant Gauntlets | 10129 | 1g 5s 0c | 1g 71s 0c | 39% | yes | medium | 2026-11-12 12:44 UTC |
-| Saber Leggings | 4830 | 50s 0c | 99s 0c | 49% | yes | medium | 2026-11-12 03:40 UTC |
-| Fel-Tainted Flesh | 249695 | 12s 84c | 54s 94c | 77% | yes | medium | 2026-11-12 12:44 UTC |
-| Embersilk Boots | 14236 | 39s 0c | 73s 0c | 47% | yes | medium | 2026-11-12 03:40 UTC |
-| Headhunter's Woolies | 15358 | 45s 0c | 76s 0c | 41% | yes | medium | 2026-11-12 12:44 UTC |
-| Reinforced Chain Vest | 1761 | 9s 0c | 25s 0c | 64% | yes | medium | 2026-11-12 12:44 UTC |
-| Pattern: Filigreed Shadow Gown | 253908 | 10s 0c | 19s 0c | 47% | yes | medium | 2026-11-12 12:44 UTC |
-| Bristlebark Boots | 14568 | 13s 0c | 20s 0c | 35% | yes | medium | 2026-11-12 12:44 UTC |
-| Pattern: Big Voodoo Cloak | 8390 | 14s 0c | 20s 0c | 30% | yes | medium | 2026-11-12 12:44 UTC |
-| Hillman's Cloak | 3719 | 6s 28c | 11s 0c | 43% | yes | medium | 2026-11-12 12:44 UTC |
-| Rusted Engineering Parts | 6457 | 50c | 4s 97c | 90% | yes | medium | 2026-11-12 12:44 UTC |
-| Large Basilisk Tail | 4093 | 7s 19c | 11s 0c | 35% | yes | medium | 2026-11-12 12:44 UTC |
-| Small Bat Skull | 11393 | 7s 80c | 11s 50c | 32% | yes | medium | 2026-11-12 12:44 UTC |
-| Delicate Insect Wing | 6302 | 6s 28c | 9s 96c | 37% | yes | medium | 2026-11-12 03:40 UTC |
-| Heavy Scorpid Leg | 19938 | 5s 99c | 8s 96c | 33% | yes | medium | 2026-11-12 03:40 UTC |
-| Husk Fragment | 6300 | 4s 49c | 7s 0c | 36% | yes | medium | 2026-11-12 12:44 UTC |
-| Rawhide Cloak | 1798 | 3s 0c | 5s 0c | 40% | yes | medium | 2026-11-12 03:40 UTC |
-| Spined Bat Wing | 11391 | 2s 5c | 3s 89c | 47% | yes | medium | 2026-11-12 03:40 UTC |
-| Linked Chain Gloves | 1750 | 3s 20c | 5s 0c | 36% | yes | medium | 2026-11-12 12:44 UTC |
-| Ivory Boar Tusk | 3403 | 3s 21c | 4s 85c | 34% | yes | medium | 2026-11-12 03:40 UTC |
-| Lifeless Skull | 3671 | 2s 50c | 3s 90c | 36% | yes | medium | 2026-11-12 03:40 UTC |
+| Skullflame Shield | 1168 | 440g 98s 98c | 693g 20s 0c | 36% | yes | medium | 2026-11-15 12:38 UTC |
+| Sand-Covered Silk Sash | 286612 | 49g 50s 0c | 150g 0s 0c | 67% | yes | medium | 2026-11-15 12:38 UTC |
+| Libram of Fervor | 23203 | 38g 0s 0c | 99g 88s 0c | 62% | yes | medium | 2026-11-15 12:38 UTC |
+| Hurricane | 2824 | 35g 97s 99c | 75g 81s 0c | 53% | yes | medium | 2026-11-15 12:38 UTC |
+| Grove Subjugator's Blade | 287034 | 10g 77s 99c | 24g 22s 0c | 55% | yes | medium | 2026-11-15 12:38 UTC |
+| Four of Beasts | 19232 | 1g 88s 0c | 8g 89s 0c | 79% | yes | medium | 2026-11-15 12:38 UTC |
+| Heavy Lamellar Vambraces | 10239 | 98s 0c | 5g 0s 0c | 80% | yes | medium | 2026-11-15 12:38 UTC |
+| Serpentskin Boots | 8256 | 1g 70s 0c | 4g 85s 0c | 65% | yes | medium | 2026-11-15 12:38 UTC |
+| Duskwoven Gloves | 10062 | 99s 99c | 2g 70s 0c | 63% | yes | medium | 2026-11-15 12:38 UTC |
+| Mighty Cloak | 10148 | 2g 0s 0c | 3g 70s 0c | 46% | yes | medium | 2026-11-15 12:38 UTC |
+| Ornate Greaves | 10119 | 2g 0s 0c | 3g 50s 0c | 43% | yes | medium | 2026-11-15 12:38 UTC |
+| Runecloth Gloves | 13863 | 1g 21s 16c | 2g 53s 0c | 52% | yes | medium | 2026-11-15 12:38 UTC |
+| Formidable Bracers | 15629 | 80s 0c | 1g 80s 0c | 56% | yes | medium | 2026-11-15 12:38 UTC |
+| Sunscale Sabatons | 14848 | 99s 0c | 1g 99s 0c | 50% | yes | medium | 2026-11-15 12:38 UTC |
+| Ebonhold Wristguards | 8264 | 1g 18s 80c | 2g 18s 0c | 46% | yes | medium | 2026-11-15 12:38 UTC |
+| Craftsman's Writ: Wizardweave Turban | 264152 | 13s 0c | 99s 0c | 87% | yes | medium | 2026-11-15 12:38 UTC |
+| Chromite Chestplate | 8138 | 1g 15s 0c | 2g 0s 0c | 43% | yes | medium | 2026-11-15 12:38 UTC |
+| Venomshroud Belt | 14446 | 80s 4c | 1g 64s 0c | 51% | yes | medium | 2026-11-15 12:38 UTC |
+| Blackbone Wand | 5239 | 1g 20s 0c | 1g 99s 0c | 40% | yes | medium | 2026-11-15 12:38 UTC |
+| Cabalist Chestpiece | 7527 | 1g 45s 0c | 2g 23s 0c | 35% | yes | medium | 2026-11-15 12:38 UTC |
+| Imposing Bandana | 15167 | 1g 11s 69c | 1g 88s 0c | 41% | yes | medium | 2026-11-15 12:38 UTC |
+| Recipe: Clam Chowder | 5528 | 1g 25s 0c | 1g 99s 0c | 37% | yes | medium | 2026-11-15 12:38 UTC |
+| Vanadium Loop | 11989 | 1g 35s 0c | 2g 0s 0c | 32% | yes | medium | 2026-11-15 12:38 UTC |
+| Pristine Scale | 249429 | 50s 98c | 1g 6s 0c | 52% | yes | medium | 2026-11-15 12:38 UTC |
+| Inferno Cloak | 4790 | 13s 0c | 42s 0c | 69% | yes | medium | 2026-11-15 12:38 UTC |
+| Pattern: Felcloth Boots | 14492 | 67s 0c | 96s 0c | 30% | yes | medium | 2026-11-15 12:38 UTC |
+| Captain's Boots | 7490 | 60s 49c | 86s 50c | 30% | yes | medium | 2026-11-15 12:38 UTC |
+| Dragonmaw Chain Boots | 1955 | 24s 0c | 50s 0c | 52% | yes | medium | 2026-11-15 12:38 UTC |
+| Sterling Silver Gauntlet | 250485 | 50s 0c | 74s 0c | 32% | yes | medium | 2026-11-15 12:38 UTC |
+| Raven's Claws | 6628 | 12s 0c | 19s 0c | 37% | yes | medium | 2026-11-15 12:38 UTC |
 
 ## Recorded below what a vendor pays
 
@@ -55,154 +55,154 @@ None at the latest scan.
 
 Steady or moving items, listed most days, recorded at or under their cheaper days. The margin is an estimate after the 5% Auction House cut.
 
-The strongest 30 of 554.
+The strongest 30 of 469.
 
 | Item | ID | Latest | Usual | Estimated margin a unit | Steadiness | Recorded at |
 |---|---|---|---|---|---|---|
-| Six Demon Bag | 7734 | 5g 48s 0c | 10g 81s 0c | 4g 78s 95c | moving | 2026-11-12 03:40 UTC |
-| Big Iron Fishing Pole | 6367 | 5g 98s 0c | 10g 99s 0c | 4g 46s 5c | moving | 2026-11-12 12:44 UTC |
-| Traveler's Backpack | 4500 | 26g 99s 0c | 33g 0s 0c | 4g 36s 0c | moving | 2026-11-12 12:44 UTC |
-| The Green Tower | 1204 | 12g 0s 0c | 16g 50s 0c | 3g 67s 50c | moving | 2026-11-12 12:44 UTC |
-| Troll-hide Bag | 1685 | 4g 30s 0c | 7g 54s 0c | 2g 86s 30c | moving | 2026-11-12 12:44 UTC |
-| Bloodspiller | 7753 | 2g 20s 0c | 4g 49s 50c | 2g 7s 2c | moving | 2026-11-12 12:44 UTC |
-| Obsidian Greaves | 13068 | 4g 50s 0c | 6g 99s 0c | 2g 14s 5c | moving | 2026-11-12 12:44 UTC |
-| Warmonger's Pauldrons | 9965 | 1g 19s 0c | 3g 50s 0c | 2g 13s 50c | moving | 2026-11-12 03:40 UTC |
-| Viscous Hammer | 13045 | 4g 59s 0c | 6g 69s 0c | 1g 76s 55c | moving | 2026-11-12 12:44 UTC |
-| Swiftwind | 13038 | 1g 75s 0c | 4g 0s 0c | 2g 5s 0c | moving | 2026-11-12 12:44 UTC |
-| Desert Ring | 12013 | 1g 0s 0c | 2g 84s 50c | 1g 70s 27c | moving | 2026-11-12 03:40 UTC |
-| Broad Bladed Knife | 12247 | 1g 49s 0c | 3g 10s 0c | 1g 45s 50c | moving | 2026-11-12 12:44 UTC |
-| Heraldic Boots | 8117 | 89s 0c | 2g 98s 0c | 1g 94s 10c | moving | 2026-11-12 12:44 UTC |
-| Massive Longbow | 11307 | 6g 0s 0c | 7g 96s 50c | 1g 56s 67c | moving | 2026-11-12 12:44 UTC |
-| Embossed Plate Armor | 9966 | 99s 0c | 3g 0s 0c | 1g 86s 0c | moving | 2026-11-12 12:44 UTC |
-| Skeletal Shoulders | 13132 | 1g 50s 0c | 3g 44s 0c | 1g 76s 80c | moving | 2026-11-12 12:44 UTC |
-| Vanadium Talisman | 12024 | 1g 99s 0c | 3g 49s 0c | 1g 32s 55c | moving | 2026-11-12 12:44 UTC |
-| Skin-Flayed Footguards | 287000 | 5g 0s 0c | 6g 69s 0c | 1g 35s 55c | moving | 2026-11-12 12:44 UTC |
-| Scorpashi Cape | 14656 | 55s 0c | 1g 99s 0c | 1g 34s 5c | moving | 2026-11-12 03:40 UTC |
-| Enchanted Mageweave Pouch | 22246 | 1g 90s 0c | 3g 39s 0c | 1g 32s 5c | moving | 2026-11-12 12:44 UTC |
-| Firemane Leggings | 13129 | 2g 0s 0c | 3g 30s 0c | 1g 13s 50c | moving | 2026-11-12 12:44 UTC |
-| Scarlet Gauntlets | 10331 | 4g 49s 0c | 5g 90s 0c | 1g 11s 50c | moving | 2026-11-12 12:44 UTC |
-| Ring of the Underwood | 2951 | 2g 99s 0c | 3g 80s 0c | 62s 0c | steady | 2026-11-12 12:44 UTC |
-| Headstriker Sword | 15251 | 1g 82s 0c | 2g 95s 0c | 98s 25c | moving | 2026-11-12 03:40 UTC |
-| Stranglevine | 249274 | 94s 64c | 2g 0s 75c | 96s 7c | moving | 2026-11-12 12:44 UTC |
-| Topaz Ring | 11975 | 1g 11s 0c | 2g 0s 0c | 79s 0c | moving | 2026-11-12 12:44 UTC |
-| Bloodwoven Pads | 14266 | 96s 0c | 2g 0s 0c | 94s 0c | moving | 2026-11-12 03:40 UTC |
-| Frostreaver Crown | 13127 | 1g 39s 99c | 2g 29s 0c | 77s 56c | moving | 2026-11-12 12:44 UTC |
-| Pattern: Dusky Boots | 7452 | 99s 0c | 2g 0s 0c | 91s 0c | moving | 2026-11-12 12:44 UTC |
-| Myrmidon's Greaves | 8130 | 1g 75s 0c | 2g 77s 0c | 88s 15c | moving | 2026-11-12 12:44 UTC |
+| Traveler's Backpack | 4500 | 18g 60s 0c | 26g 99s 0c | 7g 4s 5c | moving | 2026-11-15 12:38 UTC |
+| Supreme Smasher | 287015 | 19g 50s 0c | 25g 49s 50c | 4g 72s 2c | moving | 2026-11-15 12:38 UTC |
+| Serpentskin Boots | 8256 | 1g 70s 0c | 4g 85s 0c | 2g 90s 75c | moving | 2026-11-15 12:38 UTC |
+| Journeyman's Backpack | 3914 | 3g 55s 60c | 5g 99s 0c | 2g 13s 45c | moving | 2026-11-15 12:38 UTC |
+| Wildheart Bracers | 16714 | 11g 50s 0c | 15g 30s 50c | 3g 3s 97c | moving | 2026-11-15 12:38 UTC |
+| Mystical Bracers | 10173 | 1g 90s 0c | 4g 90s 0c | 2g 75s 50c | moving | 2026-11-15 12:38 UTC |
+| Vanadium Talisman | 12024 | 1g 55s 0c | 3g 49s 0c | 1g 76s 55c | moving | 2026-11-15 12:38 UTC |
+| Scorpashi Skullcap | 14658 | 1g 75s 0c | 3g 99s 50c | 2g 4s 52c | moving | 2026-11-15 12:38 UTC |
+| Duskwoven Gloves | 10062 | 99s 99c | 2g 70s 0c | 1g 56s 51c | moving | 2026-11-15 12:38 UTC |
+| Arena Vambraces | 18712 | 1g 76s 0c | 2g 99s 0c | 1g 8s 5c | moving | 2026-11-15 12:38 UTC |
+| Jadefire Gloves | 15393 | 1g 50s 0c | 2g 98s 0c | 1g 33s 10c | moving | 2026-11-15 12:38 UTC |
+| Hi-Tech Supergun | 9487 | 1g 49s 98c | 2g 75s 0c | 1g 11s 27c | moving | 2026-11-15 12:38 UTC |
+| Swamp Pendant | 12045 | 1g 99s 0c | 3g 63s 50c | 1g 46s 32c | moving | 2026-11-15 12:38 UTC |
+| Firemane Leggings | 13129 | 1g 90s 0c | 3g 30s 0c | 1g 23s 50c | moving | 2026-11-15 12:38 UTC |
+| Troll-hide Bag | 1685 | 4g 89s 0c | 6g 30s 0c | 1g 9s 50c | moving | 2026-11-15 12:38 UTC |
+| Arena Bands | 18711 | 3g 88s 0c | 4g 99s 50c | 86s 52c | moving | 2026-11-15 12:38 UTC |
+| Righteous Bracers | 10069 | 94s 0c | 2g 0s 0c | 96s 0c | moving | 2026-11-15 12:38 UTC |
+| Zealot Blade | 13033 | 1g 19s 0c | 1g 94s 0c | 65s 30c | moving | 2026-11-15 12:38 UTC |
+| Gnomish Cloaking Device | 4397 | 1g 30s 0c | 2g 39s 48c | 97s 50c | moving | 2026-11-15 12:38 UTC |
+| Lord's Armguards | 10076 | 1g 11s 0c | 1g 99s 0c | 78s 5c | moving | 2026-11-15 12:38 UTC |
+| Recipe: Loch Frenzy Delight | 6329 | 99s 0c | 1g 89s 0c | 80s 55c | moving | 2026-11-15 12:38 UTC |
+| Basilisk Hide Pants | 1718 | 2g 99s 0c | 3g 98s 50c | 79s 57c | moving | 2026-11-15 12:38 UTC |
+| Cabalist Chestpiece | 7527 | 1g 45s 0c | 2g 23s 0c | 66s 85c | moving | 2026-11-15 12:38 UTC |
+| Lord's Gauntlets | 10080 | 1g 0s 0c | 1g 75s 0c | 66s 25c | moving | 2026-11-15 12:38 UTC |
+| Speedsteel Rapier | 13034 | 3g 88s 0c | 4g 77s 0c | 65s 15c | moving | 2026-11-15 12:38 UTC |
+| Vorpal Dagger | 15245 | 2g 35s 99c | 3g 27s 50c | 75s 13c | moving | 2026-11-15 12:38 UTC |
+| Wyrmslayer Spaulders | 13066 | 13g 44s 97c | 14g 92s 50c | 72s 90c | moving | 2026-11-15 12:38 UTC |
+| Warmonger's Gauntlets | 9960 | 80s 0c | 1g 49s 0c | 61s 55c | moving | 2026-11-15 12:38 UTC |
+| Overlord's Vambraces | 10202 | 90s 0c | 1g 70s 0c | 71s 50c | moving | 2026-11-15 12:38 UTC |
+| Imperial Red Gloves | 8249 | 1g 12s 0c | 1g 81s 0c | 59s 95c | moving | 2026-11-15 12:38 UTC |
 
 ## Short supply
 
 At least 20% over usual with at most half the units usually listed, on the last full day.
 
-The strongest 30 of 115.
+The strongest 30 of 205.
 
 | Item | ID | Latest | Usual | Units vs usual | Recorded at |
 |---|---|---|---|---|---|
-| Greater Adept's Robe | 6264 | 34s 0c | 27s 0c | 2% | 2026-11-12 12:44 UTC |
-| Vile Fin Battle Axe | 3325 | 4s 20c | 2s 0c | 9% | 2026-11-12 12:44 UTC |
-| Pioneer Buckler | 7109 | 4s 0c | 3s 0c | 12% | 2026-11-12 12:44 UTC |
-| Galestrider Jerky | 252022 | 50c | 39c | 13% | 2026-11-12 12:44 UTC |
-| Crisp Spring Water | 252031 | 80c | 7c | 13% | 2026-11-12 12:44 UTC |
-| Recipe: Minor Cleric's Elixir | 250366 | 20s 0c | 6s 0c | 13% | 2026-11-12 12:44 UTC |
-| Vile Fin Oracle Staff | 3327 | 3s 0c | 2s 0c | 14% | 2026-11-12 03:40 UTC |
-| Copper Chain Boots | 3469 | 5s 40c | 2s 0c | 14% | 2026-11-12 12:44 UTC |
-| Heavy Copper Maul | 6214 | 17s 87c | 12s 0c | 14% | 2026-11-12 12:44 UTC |
-| Primal Bands | 15005 | 4s 69c | 1s 0c | 14% | 2026-11-12 12:44 UTC |
-| Ez-Thro Dynamite | 6714 | 10s 55c | 8s 42c | 15% | 2026-11-12 12:44 UTC |
-| Cadet's Bow | 8179 | 4s 0c | 2s 0c | 15% | 2026-11-12 12:44 UTC |
-| Hunting Bow | 8180 | 4s 0c | 3s 0c | 16% | 2026-11-12 03:40 UTC |
-| Infantry Boots | 6506 | 30s 0c | 1s 0c | 16% | 2026-11-12 12:44 UTC |
-| Blue Linen Robe | 6242 | 4s 0c | 3s 0c | 16% | 2026-11-12 03:40 UTC |
-| Recipe: Slitherskin Mackerel | 6326 | 5s 62c | 3s 0c | 16% | 2026-11-12 12:44 UTC |
-| Cloudy Gustwoven Belt | 277001 | 30s 0c | 19s 0c | 17% | 2026-11-12 12:44 UTC |
-| Sleek Feathered Tunic | 4861 | 30s 0c | 16s 50c | 17% | 2026-11-12 03:40 UTC |
-| Tarnished Bastard Sword | 2754 | 40s 0c | 10s 0c | 17% | 2026-11-12 03:40 UTC |
-| Pattern: Red Linen Vest | 6271 | 1s 99c | 1s 0c | 17% | 2026-11-12 12:44 UTC |
-| Squashed Rabbit Carcass | 4879 | 67c | 23c | 18% | 2026-11-12 12:44 UTC |
-| Furlfeather Ring | 286745 | 90s 0c | 50s 0c | 19% | 2026-11-12 12:44 UTC |
-| Cracked Carapace Hauberk | 283480 | 72s 0c | 48s 0c | 20% | 2026-11-12 12:44 UTC |
-| Recipe: Minor Mender's Potion | 250988 | 59s 99c | 19s 0c | 22% | 2026-11-12 12:44 UTC |
-| Bruiser Club | 4439 | 45s 0c | 35s 0c | 22% | 2026-11-12 12:44 UTC |
-| Stiletto | 2494 | 7s 0c | 2s 0c | 22% | 2026-11-12 12:44 UTC |
-| Shiny Seashell | 779 | 1s 0c | 44c | 23% | 2026-11-12 03:40 UTC |
-| Battle Chain Tunic | 3283 | 4s 0c | 3s 0c | 24% | 2026-11-12 12:44 UTC |
-| Hunting Gloves | 2976 | 4s 0c | 3s 0c | 25% | 2026-11-12 03:40 UTC |
-| Primitive Mantle | 154 | 29s 0c | 15s 0c | 25% | 2026-11-12 12:44 UTC |
+| Carpenter's Mallet | 1415 | 1s 23c | 1s 0c | 4% | 2026-11-15 12:38 UTC |
+| Vile Fin Battle Axe | 3325 | 2s 99c | 2s 0c | 4% | 2026-11-15 12:38 UTC |
+| War Torn Handgrips | 15484 | 2s 0c | 1s 0c | 4% | 2026-11-15 12:38 UTC |
+| Burnt Leather Breeches | 2962 | 4s 0c | 3s 0c | 4% | 2026-11-15 12:38 UTC |
+| Loose Chain Cloak | 2644 | 1s 89c | 1s 0c | 5% | 2026-11-15 12:38 UTC |
+| Patchwork Shoes | 1427 | 2s 0c | 1s 0c | 6% | 2026-11-15 12:38 UTC |
+| Copper Mace | 2844 | 4s 90c | 2s 0c | 6% | 2026-11-15 12:38 UTC |
+| Worn Large Shield | 2213 | 3s 75c | 2s 0c | 6% | 2026-11-15 12:38 UTC |
+| Scalping Tomahawk | 4561 | 4s 90c | 4s 0c | 7% | 2026-11-15 12:38 UTC |
+| Red Linen Robe | 2572 | 9s 0c | 3s 0c | 7% | 2026-11-15 12:38 UTC |
+| Rough Copper Vest | 10421 | 9s 30c | 2s 0c | 8% | 2026-11-15 12:38 UTC |
+| Minor Spellblasting Potion | 250932 | 97c | 69c | 9% | 2026-11-15 12:38 UTC |
+| Decaying Flesh Belt | 283460 | 13s 99c | 6s 0c | 10% | 2026-11-15 12:38 UTC |
+| Simple Cape | 9745 | 2s 99c | 1s 0c | 10% | 2026-11-15 12:38 UTC |
+| Gray Woolen Robe | 2585 | 29s 0c | 20s 0c | 10% | 2026-11-15 12:38 UTC |
+| Pioneer Cloak | 6520 | 2s 99c | 1s 0c | 10% | 2026-11-15 12:38 UTC |
+| Hunting Bow | 8180 | 4s 50c | 3s 0c | 10% | 2026-11-15 12:38 UTC |
+| Beaded Gloves | 14089 | 1s 89c | 1s 44c | 11% | 2026-11-15 12:38 UTC |
+| Hunting Gloves | 2976 | 7s 0c | 4s 0c | 11% | 2026-11-15 12:38 UTC |
+| Cracked Sledge | 1414 | 1s 99c | 1s 0c | 12% | 2026-11-15 12:38 UTC |
+| Copper Chain Pants | 2852 | 1s 48c | 1s 22c | 12% | 2026-11-15 12:38 UTC |
+| Beatstick | 3190 | 4s 0c | 2s 0c | 12% | 2026-11-15 12:38 UTC |
+| Burnt Leather Boots | 2963 | 59s 0c | 2s 0c | 12% | 2026-11-15 12:38 UTC |
+| Disciple's Gloves | 6515 | 2s 0c | 1s 0c | 12% | 2026-11-15 12:38 UTC |
+| Tribal Belt | 4675 | 1s 50c | 1s 0c | 12% | 2026-11-15 12:38 UTC |
+| Embossed Leather Vest | 2300 | 3s 90c | 2s 0c | 12% | 2026-11-15 12:38 UTC |
+| Pioneer Gloves | 6521 | 8s 0c | 1s 0c | 12% | 2026-11-15 12:38 UTC |
+| Disciple's Pants | 6267 | 2s 70c | 2s 0c | 13% | 2026-11-15 12:38 UTC |
+| Warped Leather Vest | 1509 | 1s 99c | 1s 0c | 13% | 2026-11-15 12:38 UTC |
+| Burnt Leather Vest | 2961 | 7s 33c | 2s 0c | 13% | 2026-11-15 12:38 UTC |
 
 ## Rising since the last full day
 
 The latest recorded price against the last full day's lowest.
 
-The strongest 30 of 744.
+The strongest 30 of 1092.
 
 | Item | ID | Latest | Change | Recorded at |
 |---|---|---|---|---|
-| Pattern: Green Silk Pack | 5774 | 2g 0s 0c | +6567% | 2026-11-12 12:44 UTC |
-| Pattern: Black Silk Pack | 5775 | 1g 50s 0c | +3650% | 2026-11-12 12:44 UTC |
-| Padded Lining | 16748 | 37s 0c | +3600% | 2026-11-12 12:44 UTC |
-| Enchanted Sea Kelp | 4639 | 1g 10s 0c | +3567% | 2026-11-12 12:44 UTC |
-| Infantry Boots | 6506 | 30s 0c | +2900% | 2026-11-12 12:44 UTC |
-| Formula: Enchant Weapon - Demonslaying | 11208 | 3g 75s 0c | +2400% | 2026-11-12 12:44 UTC |
-| Craftsman's Writ: Wild Leather Shoulders | 264096 | 1g 99s 0c | +2388% | 2026-11-12 12:44 UTC |
-| Craftsman's Writ: Crimson Silk Robe | 264106 | 59s 0c | +1867% | 2026-11-12 12:44 UTC |
-| Craftsman's Writ: Cindercloth Robe | 264114 | 75s 0c | +1775% | 2026-11-12 12:44 UTC |
-| Craftsman's Writ: Wicked Mithril Blade | 264076 | 74s 99c | +1775% | 2026-11-12 12:44 UTC |
-| Craftsman's Writ: Blue Glittering Axe | 264072 | 69s 98c | +1650% | 2026-11-12 12:44 UTC |
-| Craftsman's Writ: Star Belt | 264109 | 69s 90c | +1648% | 2026-11-12 12:44 UTC |
-| Pattern: Filigreed Flame Circlet | 253980 | 84s 0c | +1580% | 2026-11-12 12:44 UTC |
-| Gossamer Headpiece | 7520 | 15g 99s 0c | +1499% | 2026-11-12 12:44 UTC |
-| Craftsman's Writ: Moonsight Rifle | 264031 | 59s 99c | +1400% | 2026-11-12 12:44 UTC |
-| Craftsman's Writ: Mechanical Dragonling | 264080 | 39s 99c | +1233% | 2026-11-12 12:44 UTC |
-| Craftsman's Writ: Shadoweave Gloves | 264105 | 40s 0c | +1233% | 2026-11-12 12:44 UTC |
-| Tarnished Bastard Sword | 2754 | 40s 0c | +1233% | 2026-11-12 03:40 UTC |
-| Craftsman's Writ: Gnomish Universal Remote | 264035 | 38s 0c | +1167% | 2026-11-12 12:44 UTC |
-| Airy Windseeker's Shirt | 273815 | 88s 0c | +1000% | 2026-11-12 12:44 UTC |
-| Coyote Steak | 2684 | 33s 97c | +996% | 2026-11-12 12:44 UTC |
-| Pattern: Filigreed Flame Gown | 253906 | 62s 83c | +947% | 2026-11-12 12:44 UTC |
-| Craftsman's Writ: Golden Scale Gauntlets | 264078 | 71s 99c | +928% | 2026-11-12 12:44 UTC |
-| SAF-T Copper Bomb | 260793 | 44s 0c | +926% | 2026-11-12 12:44 UTC |
-| Craftsman's Writ: Steel Weapon Chain | 264070 | 50s 0c | +900% | 2026-11-12 12:44 UTC |
-| Craftsman's Writ: Red Mageweave Pants | 264111 | 2g 29s 0c | +896% | 2026-11-12 12:44 UTC |
-| Craftsman's Writ: Big Voodoo Mask | 264100 | 1g 48s 0c | +887% | 2026-11-12 12:44 UTC |
-| Heavy Copper Broadsword | 3487 | 1g 18s 0c | +883% | 2026-11-12 12:44 UTC |
-| Craftsman's Writ: Minor Recombobulator | 264032 | 47s 0c | +840% | 2026-11-12 12:44 UTC |
-| Craftsman's Writ: Red Whelp Gloves | 264046 | 36s 96c | +824% | 2026-11-12 12:44 UTC |
+| Pattern: Admiral's Hat | 10318 | 50g 19s 0c | +17825% | 2026-11-15 12:38 UTC |
+| Journeyman's Vest | 2957 | 1g 1s 0c | +4950% | 2026-11-15 12:38 UTC |
+| Thendal Watcher's Gloves | 285255 | 99s 99c | +4900% | 2026-11-15 12:38 UTC |
+| Simple Shoes | 9743 | 50s 0c | +3233% | 2026-11-15 12:38 UTC |
+| Tattered Cloth Pants | 194 | 65s 0c | +3150% | 2026-11-15 12:38 UTC |
+| Burnt Leather Boots | 2963 | 59s 0c | +2850% | 2026-11-15 12:38 UTC |
+| Waylaid Crate: Artisan Ingots | 248712 | 54s 0c | +2060% | 2026-11-15 12:38 UTC |
+| Pattern: Hands of Darkness | 7092 | 58s 0c | +1971% | 2026-11-15 12:38 UTC |
+| Ragged Leather Belt | 1369 | 20s 0c | +1900% | 2026-11-15 12:38 UTC |
+| Yellow Power Crystal | 11188 | 38s 0c | +1800% | 2026-11-15 12:38 UTC |
+| Pattern: Blue Overalls | 6274 | 75s 0c | +1780% | 2026-11-15 12:38 UTC |
+| Pattern: Filigreed Pristine Gown | 253902 | 2g 2s 0c | +1583% | 2026-11-15 12:38 UTC |
+| Recipe: Elixir of Holy Power | 21547 | 4g 19s 0c | +1512% | 2026-11-15 12:38 UTC |
+| Beaded Cloak | 14088 | 15s 0c | +1400% | 2026-11-15 12:38 UTC |
+| Small Ammo Pouch | 2102 | 13s 0c | +1200% | 2026-11-15 12:38 UTC |
+| Frayed Shoes | 1374 | 1g 0s 99c | +1162% | 2026-11-15 12:38 UTC |
+| Pattern: Cindercloth Gloves | 14476 | 7g 99s 99c | +967% | 2026-11-15 12:38 UTC |
+| Spellbinder Boots | 2971 | 20s 98c | +954% | 2026-11-15 12:38 UTC |
+| Mistscape Bracers | 4045 | 3g 90s 0c | +927% | 2026-11-15 12:38 UTC |
+| Charger's Bindings | 15474 | 10s 0c | +900% | 2026-11-15 12:38 UTC |
+| Laced Mail Shoulderpads | 1744 | 99s 0c | +890% | 2026-11-15 12:38 UTC |
+| Stiletto | 2494 | 97s 0c | +880% | 2026-11-15 12:38 UTC |
+| Pioneer Boots | 6518 | 15s 0c | +843% | 2026-11-15 12:38 UTC |
+| Scarlet Initiate Robes | 3260 | 3g 70s 0c | +825% | 2026-11-15 12:38 UTC |
+| Formula: Enchant Boots - Greater Stamina | 16215 | 8g 0s 0c | +733% | 2026-11-15 12:38 UTC |
+| Pattern: Filigreed Pearly Circlet | 253984 | 50s 0c | +733% | 2026-11-15 12:38 UTC |
+| Seasonal Fish Steaks | 273295 | 25s 0c | +733% | 2026-11-15 12:38 UTC |
+| Waylaid Crate: Artisan Parts | 248713 | 40s 22c | +728% | 2026-11-15 12:38 UTC |
+| Delicious Cave Mold | 4607 | 3s 91c | +682% | 2026-11-15 12:38 UTC |
+| Ironwood Seed | 17038 | 38s 99c | +680% | 2026-11-15 12:38 UTC |
 
 ## Falling since the last full day
 
 The latest recorded price against the last full day's lowest.
 
-The strongest 30 of 596.
+The strongest 30 of 1164.
 
 | Item | ID | Latest | Change | Recorded at |
 |---|---|---|---|---|
-| Bent Staff | 35 | 1g 0s 0c | -98% | 2026-11-12 12:44 UTC |
-| Battered Leather Harness | 2370 | 2s 0c | -96% | 2026-11-12 12:44 UTC |
-| Dull Kodo Tooth | 4779 | 2s 49c | -94% | 2026-11-12 12:44 UTC |
-| Hops | 1274 | 92c | -86% | 2026-11-12 12:44 UTC |
-| Valorous Helm | 8279 | 1g 0s 0c | -83% | 2026-11-12 03:40 UTC |
-| Dust of Decay | 2928 | 23c | -82% | 2026-11-12 12:44 UTC |
-| Formula: Enchant Boots - Lesser Spirit | 11167 | 12s 0c | -82% | 2026-11-12 12:44 UTC |
-| Red Rose | 3419 | 14s 0c | -82% | 2026-11-12 12:44 UTC |
-| Pattern: Guardian Cloak | 5974 | 5s 0c | -80% | 2026-11-12 12:44 UTC |
-| Recipe: Elixir of Intellect | 250389 | 5s 0c | -80% | 2026-11-12 12:44 UTC |
-| Worn Dragonscale | 8165 | 5s 0c | -80% | 2026-11-12 12:44 UTC |
-| Lesser Discolored Healing Potion | 247239 | 1s 98c | -79% | 2026-11-12 12:44 UTC |
-| Fel-Tainted Flesh | 249695 | 12s 84c | -78% | 2026-11-12 12:44 UTC |
-| Pattern: Wisdom's Leather Pants | 252797 | 12s 0c | -77% | 2026-11-12 12:44 UTC |
-| Recipe: Elixir of Detect Lesser Invisibility | 3832 | 11s 0c | -76% | 2026-11-12 12:44 UTC |
-| Pattern: Green Silk Armor | 7090 | 3s 0c | -75% | 2026-11-12 12:44 UTC |
-| Embersilk Mantle | 14232 | 39s 99c | -74% | 2026-11-12 12:44 UTC |
-| Large Axe | 2491 | 13s 0c | -74% | 2026-11-12 12:44 UTC |
-| Commonplace Herb Seeds | 268415 | 19c | -73% | 2026-11-12 12:44 UTC |
-| Owl's Disk | 4822 | 21s 0c | -73% | 2026-11-12 03:40 UTC |
-| Plans: Green Iron Boots | 3611 | 9s 0c | -72% | 2026-11-12 03:40 UTC |
-| Trapper's Shirt | 127 | 11s 0c | -72% | 2026-11-12 12:44 UTC |
-| Wizard's Belt | 4827 | 18s 0c | -72% | 2026-11-12 12:44 UTC |
-| Blackened Defias Gloves | 10401 | 26s 99c | -70% | 2026-11-12 12:44 UTC |
-| Long Staff | 928 | 59s 0c | -70% | 2026-11-12 03:40 UTC |
-| Purple Dye | 4342 | 14s 0c | -70% | 2026-11-12 12:44 UTC |
-| Recipe: Elixir of Giants | 9298 | 30s 0c | -70% | 2026-11-12 12:44 UTC |
-| Waylaid Crate: Earthly Artisan Herbs | 248695 | 3s 1c | -70% | 2026-11-12 12:44 UTC |
-| Plans: Iron Shield Spike | 6044 | 13s 0c | -69% | 2026-11-12 12:44 UTC |
-| Golem Isospring | 255007 | 87c | -68% | 2026-11-12 12:44 UTC |
+| Battle Chain Cloak | 4668 | 1s 50c | -100% | 2026-11-15 12:38 UTC |
+| Ceremonial Cloak | 4692 | 2s 78c | -100% | 2026-11-15 12:38 UTC |
+| Disciple's Gloves | 6515 | 2s 0c | -100% | 2026-11-15 12:38 UTC |
+| Patchwork Cloak | 1429 | 1s 0c | -100% | 2026-11-15 12:38 UTC |
+| War Torn Handgrips | 15484 | 2s 0c | -100% | 2026-11-15 12:38 UTC |
+| Pattern: Filigreed Pearly Leggings | 253946 | 5s 0c | -99% | 2026-11-15 12:38 UTC |
+| Pattern: Filigreed Shining Circlet | 253986 | 5s 0c | -99% | 2026-11-15 12:38 UTC |
+| Journeyman's Pants | 2958 | 1s 80c | -98% | 2026-11-15 12:38 UTC |
+| Pattern: Filigreed Flame Leggings | 253942 | 4s 98c | -98% | 2026-11-15 12:38 UTC |
+| Sharpened Letter Opener | 2138 | 1s 50c | -98% | 2026-11-15 12:38 UTC |
+| Craftsman's Writ: Golden Scale Gauntlets | 264078 | 1s 0c | -97% | 2026-11-15 12:38 UTC |
+| Infantry Cloak | 6508 | 35s 0c | -97% | 2026-11-15 12:38 UTC |
+| Recipe: Magic Resistance Potion | 9293 | 13s 50c | -97% | 2026-11-15 12:38 UTC |
+| Scorpid Surprise | 5473 | 30c | -97% | 2026-11-15 12:38 UTC |
+| Pattern: Earthen Silk Belt | 7086 | 3s 90c | -96% | 2026-11-15 12:38 UTC |
+| Battle Chain Gloves | 3281 | 2s 45c | -95% | 2026-11-15 12:38 UTC |
+| Craftsman's Writ: Mechanical Dragonling | 264080 | 1s 0c | -95% | 2026-11-15 12:38 UTC |
+| Crimson Lotus | 6986 | 80c | -95% | 2026-11-15 12:38 UTC |
+| Decaying Flesh Belt | 283460 | 13s 99c | -95% | 2026-11-15 12:38 UTC |
+| Mild Spices | 2678 | 5c | -95% | 2026-11-15 12:38 UTC |
+| Schematic: Discombobulator Ray | 4413 | 4g 99s 0c | -95% | 2026-11-15 12:38 UTC |
+| Squealer's Belt | 4951 | 4s 99c | -95% | 2026-11-15 12:38 UTC |
+| Charger's Shield | 15478 | 19s 0c | -94% | 2026-11-15 12:38 UTC |
+| Padded Lining | 16748 | 45c | -93% | 2026-11-15 12:38 UTC |
+| Crude Bastard Sword | 1412 | 1s 97c | -92% | 2026-11-15 12:38 UTC |
+| Huge Venom Sac | 19441 | 15s 0c | -92% | 2026-11-15 12:38 UTC |
+| Journeyman's Robe | 6511 | 3s 96c | -92% | 2026-11-15 12:38 UTC |
+| Pattern: Filigreed Shining Leggings | 253948 | 4s 0c | -92% | 2026-11-15 12:38 UTC |
+| Shadow-Seer Orb | 287016 | 1g 15s 0c | -92% | 2026-11-15 12:38 UTC |
+| Sprite Darter Egg | 11474 | 5s 95c | -92% | 2026-11-15 12:38 UTC |
