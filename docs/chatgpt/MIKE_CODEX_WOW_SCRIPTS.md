@@ -11,7 +11,7 @@
 
 ## What runs on Fares's Mac (so you know the whole system)
 
-A watcher script in the game's SavedVariables folder, run by macOS (launchd), with Claude Code doing the repository work:
+A watcher script in the game's SavedVariables folder, run by macOS (launchd). Scan imports run `ingest.py` directly; the 8-hourly job has Claude Code run the checks and commit:
 
 | When | What it does |
 |---|---|
