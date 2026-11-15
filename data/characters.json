@@ -10,9 +10,9 @@
    "class": "Warlock",
    "race": "Orc",
    "faction": "Horde",
-   "level": 31,
-   "item_level": 31.3,
-   "recorded_at": "2026-11-13T13:04:30Z",
+   "level": 33,
+   "item_level": 31.6,
+   "recorded_at": "2026-11-15T18:51:27Z",
    "recorded_on": "logout",
    "build": "70938",
    "gear": [
@@ -108,9 +108,9 @@
     },
     {
      "slot": "Off hand",
-     "item": 273027,
-     "name": "Raptor's Gaze",
-     "item_level": 31
+     "item": 7685,
+     "name": "Orb of the Forgotten Seer",
+     "item_level": 37
     },
     {
      "slot": "Ranged",
@@ -122,20 +122,20 @@
    "talents": {
     "points": {
      "Affliction": 0,
-     "Demonology": 23,
+     "Demonology": 24,
      "Destruction": 0
     },
-    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAMPgZegZmxwAAAA"
+    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAMXgZegZmxwAAAA"
    },
    "professions": [
     {
      "name": "Enchanting",
-     "skill": 160,
+     "skill": 180,
      "max": 225
     },
     {
      "name": "Tailoring",
-     "skill": 156,
+     "skill": 165,
      "max": 225
     },
     {
@@ -145,7 +145,7 @@
     },
     {
      "name": "First Aid",
-     "skill": 156,
+     "skill": 187,
      "max": 225
     },
     {
@@ -159,37 +159,37 @@
      "name": "Daggers",
      "category": "Weapon Skills",
      "skill": 23,
-     "max": 160
+     "max": 165
     },
     {
      "name": "Defense",
      "category": "Weapon Skills",
-     "skill": 156,
-     "max": 160
+     "skill": 157,
+     "max": 165
     },
     {
      "name": "Staves",
      "category": "Weapon Skills",
      "skill": 4,
-     "max": 160
+     "max": 165
     },
     {
      "name": "Swords",
      "category": "Weapon Skills",
      "skill": 1,
-     "max": 160
+     "max": 165
     },
     {
      "name": "Unarmed",
      "category": "Weapon Skills",
      "skill": 13,
-     "max": 160
+     "max": 165
     },
     {
      "name": "Wands",
      "category": "Weapon Skills",
      "skill": 128,
-     "max": 160
+     "max": 165
     },
     {
      "name": "Cloth",
@@ -208,25 +208,25 @@
     {
      "name": "Darkspear Trolls",
      "standing": "Honored",
-     "progress": 272,
+     "progress": 347,
      "needed": 12000
     },
     {
      "name": "Orgrimmar",
      "standing": "Honored",
-     "progress": 2235,
+     "progress": 2310,
      "needed": 12000
     },
     {
      "name": "Thunder Bluff",
      "standing": "Friendly",
-     "progress": 4576,
+     "progress": 4876,
      "needed": 6000
     },
     {
      "name": "Undercity",
      "standing": "Friendly",
-     "progress": 4967,
+     "progress": 5192,
      "needed": 6000
     },
     {
@@ -279,18 +279,18 @@
     }
    ],
    "stats": {
-    "Health": 1678,
-    "Mana or energy": 2616,
-    "Strength": 40,
-    "Agility": 30,
-    "Stamina": 114,
-    "Intellect": 124,
-    "Spirit": 83,
-    "Armour": 753
+    "Health": 1299,
+    "Mana or energy": 2796,
+    "Strength": 48,
+    "Agility": 38,
+    "Stamina": 104,
+    "Intellect": 132,
+    "Spirit": 93,
+    "Armour": 948
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": -59,
+    "Dishonourable kills": -15,
     "Honour points": 48,
     "Renown": 0
    },

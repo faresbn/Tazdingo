@@ -4,7 +4,7 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 | Character | Level | Item level | Talents | Professions | Recorded |
 |---|---|---|---|---|---|
-| Orc Warlock | 31 | 31.3 | Demonology 23 | Enchanting 160/225, Tailoring 156/225, Cooking 150/225, First Aid 156/225, Fishing 1/75 | 2026-11-13 13:04:30 UTC |
+| Orc Warlock | 33 | 31.6 | Demonology 24 | Enchanting 180/225, Tailoring 165/225, Cooking 150/225, First Aid 187/225, Fishing 1/75 | 2026-11-15 18:51:27 UTC |
 | Troll Rogue | 12 | 6.9 | Combat 3 | Alchemy 63/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-12 14:17:43 UTC |
 | Tauren Druid | 3 | 0.3 | none | Herbalism 13/75, Skinning 68/75, First Aid 1/75 | 2026-11-07 20:40:17 UTC |
 | Troll Mage | 1 | 0 | none | none | 2026-11-05 18:39:27 UTC |
@@ -13,7 +13,7 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 ## Orc Warlock
 
-Horde, level 31, item level 31.3; recorded 2026-11-13 13:04:30 UTC on logout, build 70938.
+Horde, level 33, item level 31.6; recorded 2026-11-15 18:51:27 UTC on logout, build 70938.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
@@ -32,33 +32,33 @@ Horde, level 31, item level 31.3; recorded 2026-11-13 13:04:30 UTC on logout, bu
 | Trinket | Transformative Cocoon | 276895 | 30 |
 | Back | Long Silken Cloak | 4326 | 37 |
 | Main hand | Honed Stiletto of the Elder | 15242 | 30 |
-| Off hand | Raptor's Gaze | 273027 | 31 |
+| Off hand | Orb of the Forgotten Seer | 7685 | 37 |
 | Ranged | Gravestone Scepter | 7001 | 29 |
 
-Talents: Affliction 0, Demonology 23, Destruction 0. Loadout code: `CIdBa0K/6fjlwoPQnhZ43PxtUAAAMPgZegZmxwAAAA`.
+Talents: Affliction 0, Demonology 24, Destruction 0. Loadout code: `CIdBa0K/6fjlwoPQnhZ43PxtUAAAMXgZegZmxwAAAA`.
 
 | Skill | Kind | Skill level | Max |
 |---|---|---|---|
-| Enchanting | Profession | 160 | 225 |
-| Tailoring | Profession | 156 | 225 |
+| Enchanting | Profession | 180 | 225 |
+| Tailoring | Profession | 165 | 225 |
 | Cooking | Profession | 150 | 225 |
-| First Aid | Profession | 156 | 225 |
+| First Aid | Profession | 187 | 225 |
 | Fishing | Profession | 1 | 75 |
-| Daggers | Weapon Skills | 23 | 160 |
-| Defense | Weapon Skills | 156 | 160 |
-| Staves | Weapon Skills | 4 | 160 |
-| Swords | Weapon Skills | 1 | 160 |
-| Unarmed | Weapon Skills | 13 | 160 |
-| Wands | Weapon Skills | 128 | 160 |
+| Daggers | Weapon Skills | 23 | 165 |
+| Defense | Weapon Skills | 157 | 165 |
+| Staves | Weapon Skills | 4 | 165 |
+| Swords | Weapon Skills | 1 | 165 |
+| Unarmed | Weapon Skills | 13 | 165 |
+| Wands | Weapon Skills | 128 | 165 |
 | Cloth | Armor Proficiencies | 1 | 1 |
 | Language: Orcish | Languages | 300 | 300 |
 
 | Reputation | Standing | Progress |
 |---|---|---|
-| Darkspear Trolls | Honored | 272/12000 |
-| Orgrimmar | Honored | 2235/12000 |
-| Thunder Bluff | Friendly | 4576/6000 |
-| Undercity | Friendly | 4967/6000 |
+| Darkspear Trolls | Honored | 347/12000 |
+| Orgrimmar | Honored | 2310/12000 |
+| Thunder Bluff | Friendly | 4876/6000 |
+| Undercity | Friendly | 5192/6000 |
 | Booty Bay | Neutral | 976/3000 |
 | Everlook | Neutral | 976/3000 |
 | Gadgetzan | Neutral | 976/3000 |
@@ -68,7 +68,7 @@ Talents: Affliction 0, Demonology 23, Destruction 0. Loadout code: `CIdBa0K/6fjl
 | Durotar Supply and Logistics | Neutral | 2000/3000 |
 | Earthen Ring | Neutral | 900/3000 |
 
-Stats: Health 1678, Mana or energy 2616, Strength 40, Agility 30, Stamina 114, Intellect 124, Spirit 83, Armour 753. PvP: Honourable kills 0, Dishonourable kills -59, Honour points 48, Renown 0. Collected: mounts 2, pets 5, titles 0.
+Stats: Health 1299, Mana or energy 2796, Strength 48, Agility 38, Stamina 104, Intellect 132, Spirit 93, Armour 948. PvP: Honourable kills 0, Dishonourable kills -15, Honour points 48, Renown 0. Collected: mounts 2, pets 5, titles 0.
 
 ## Troll Rogue
 
