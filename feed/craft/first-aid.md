@@ -11,6 +11,6 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Heavy Runecloth Bandage | 290 | 14530 | 1 | 16s 32c | 15s 16c | 1s 16c | our scan |
 | Runecloth Bandage | 260 | 14529 | 1 | 8s 0c | 7s 58c | 42c | our scan |
 | Strong Anti-Venom | 130 | 6453 | 3 | 2s 25c | 1s 92c | 33c | our scan |
-| Simple Poultice | 0 | 255716 | 3 | 84c | 78c | 6c | our scan |
+| Simple Poultice | 0 | 255716 | 3 | 84c | 77c | 7c | our scan |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

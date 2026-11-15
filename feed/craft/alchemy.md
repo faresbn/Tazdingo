@@ -5,25 +5,25 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
 | Transmute: Arcanite | 275 | 12360 | 1 | 33g 49s 0c | 8g 82s 99c | 24g 66s 1c | our scan |
-| Distilled Firewater | 250 | 246948 | 1 | 5g 4s 0c | 66s 44c | 4g 37s 56c | ForeverDB |
+| Distilled Firewater | 250 | 246948 | 1 | 5g 4s 0c | 66s 40c | 4g 37s 60c | ForeverDB |
 | Transmute: Life to Earth | 275 | 7076 | 1 | 4g 50s 0c | 1g 10s 83c | 3g 39s 17c | our scan |
 | Ghost Dye | 245 | 9210 | 2 | 3g 55s 34c | 80s 0c | 2g 75s 34c | ForeverDB |
-| Transmute: Water to Air | 275 | 7082 | 1 | 7g 77s 94c | 5g 7s 0c | 2g 70s 94c | our scan |
+| Transmute: Water to Air | 275 | 7082 | 1 | 7g 59s 60c | 5g 7s 0c | 2g 52s 60c | our scan |
 | Elixir of the Whale | 275 | 250348 | 1 | 2g 99s 0c | 47s 0c | 2g 52s 0c | our scan |
 | Transmute: Fire to Earth | 275 | 7076 | 1 | 4g 50s 0c | 2g 7s 0c | 2g 43s 0c | our scan |
 | Elixir of the Grizzly | 300 | 250351 | 1 | 2g 99s 0c | 67s 63c | 2g 31s 37c | ForeverDB |
-| Potion of Elemental Purging | 280 | 250954 | 1 | 2g 99s 99c | 97s 6c | 2g 2s 93c | our scan |
+| Potion of Elemental Purging | 280 | 250954 | 1 | 2g 99s 99c | 97s 4c | 2g 2s 95c | our scan |
 | Draught of Water Walking | 0 | 8827 | 1 | 1g 92s 99c | 7s 60c | 1g 85s 39c | our scan |
 | Goblin Rocket Fuel | 210 | 9061 | 2 | 1g 99s 98c | 36s 61c | 1g 63s 37c | ForeverDB |
 | Elixir of Wicked Regeneration | 285 | 250336 | 1 | 1g 99s 0c | 45s 0c | 1g 54s 0c | our scan |
 | Elixir of Ferocity | 275 | 250350 | 1 | 2g 2s 0c | 70s 0c | 1g 32s 0c | ForeverDB |
-| Frost Oil | 200 | 3829 | 2 | 1g 80s 0c | 52s 22c | 1g 27s 78c | ForeverDB |
+| Frost Oil | 200 | 3829 | 2 | 1g 80s 0c | 52s 20c | 1g 27s 80c | ForeverDB |
 | Elixir of the Phalanx | 250 | 250329 | 1 | 2g 50s 0c | 1g 56s 88c | 93s 12c | ForeverDB |
 | Elixir of the Owl | 280 | 250337 | 1 | 5g 0s 0c | 4g 16s 0c | 84s 0c | ForeverDB |
 | Transmute: Undeath to Water | 275 | 7080 | 1 | 5g 7s 0c | 4g 31s 72c | 75s 28c | our scan |
 | Elixir of Shadow Power | 250 | 9264 | 1 | 1g 37s 98c | 70s 0c | 67s 98c | our scan |
 | Potion of Demon Slaying | 250 | 9224 | 1 | 1g 15s 96c | 50s 0c | 65s 96c | our scan |
-| Superior Spellblasting Potion | 235 | 250936 | 1 | 95s 75c | 38s 22c | 57s 53c | ForeverDB |
+| Superior Spellblasting Potion | 235 | 250936 | 1 | 95s 75c | 38s 20c | 57s 55c | ForeverDB |
 | Viridian Dye | 0 | 249431 | 1 | 3g 75s 0c | 3g 17s 56c | 57s 44c | ForeverDB |
 | Transmute: Earth to Water | 275 | 7080 | 1 | 5g 7s 0c | 4g 50s 0c | 57s 0c | our scan |
 | Shadow Oil | 165 | 3824 | 2 | 99s 62c | 57s 80c | 41s 82c | ForeverDB |
@@ -34,12 +34,12 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Fire Protection Potion | 165 | 6049 | 1 | 25s 99c | 13s 16c | 12s 83c | ForeverDB |
 | Elixir of Greater Strength | 245 | 9206 | 1 | 76s 50c | 65s 97c | 10s 53c | ForeverDB |
 | Catseye Draught | 200 | 10592 | 1 | 25s 49c | 17s 97c | 7s 52c | ForeverDB |
-| Frost Protection Potion | 190 | 6050 | 1 | 26s 99c | 20s 10c | 6s 89c | our scan |
+| Frost Protection Potion | 190 | 6050 | 1 | 25s 99c | 20s 9c | 5s 90c | our scan |
 | Shadow Protection Potion | 135 | 6048 | 1 | 13s 92c | 8s 17c | 5s 75c | ForeverDB |
 | Limited Invulnerability Potion | 250 | 3387 | 1 | 70s 97c | 65s 26c | 5s 71c | our scan |
-| Free Action Potion | 150 | 5634 | 1 | 15s 80c | 10s 19c | 5s 61c | our scan |
 | Lesser Mageblood Elixir | 75 | 250340 | 1 | 9s 21c | 3s 80c | 5s 41c | ForeverDB |
 | Elixir of Fortitude | 150 | 250334 | 1 | 35s 31c | 29s 96c | 5s 35c | ForeverDB |
+| Free Action Potion | 150 | 5634 | 1 | 15s 41c | 10s 19c | 5s 22c | our scan |
 | Transmute: Mithril to Truesilver | 225 | 6037 | 1 | 13s 93c | 8s 79c | 5s 14c | our scan |
 | Spellblasting Potion | 135 | 250934 | 1 | 11s 97c | 7s 17c | 4s 80c | ForeverDB |
 | Transmute: Iron to Gold | 225 | 3577 | 1 | 7s 34c | 2s 56c | 4s 78c | our scan |
