@@ -4,17 +4,17 @@ Estimated listing margins: what the item lists for against what its reagents cos
 
 Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/main/<path>
 
-- `feed/craft/alchemy.md`: Alchemy, 66 recipes with a margin.
-- `feed/craft/blacksmithing.md`: Blacksmithing, 107 recipes with a margin.
-- `feed/craft/cooking.md`: Cooking, 67 recipes with a margin.
+- `feed/craft/alchemy.md`: Alchemy, 63 recipes with a margin.
+- `feed/craft/blacksmithing.md`: Blacksmithing, 108 recipes with a margin.
+- `feed/craft/cooking.md`: Cooking, 68 recipes with a margin.
 - `feed/craft/enchanting.md`: Enchanting, 7 recipes with a margin.
-- `feed/craft/engineering.md`: Engineering, 71 recipes with a margin.
-- `feed/craft/first-aid.md`: First Aid, 8 recipes with a margin.
+- `feed/craft/engineering.md`: Engineering, 74 recipes with a margin.
+- `feed/craft/first-aid.md`: First Aid, 9 recipes with a margin.
 - `feed/craft/fishing.md`: Fishing, 2 recipes with a margin.
 - `feed/craft/herbalism.md`: Herbalism, 1 recipes with a margin.
-- `feed/craft/leatherworking.md`: Leatherworking, 94 recipes with a margin.
-- `feed/craft/mining.md`: Mining, 10 recipes with a margin.
+- `feed/craft/leatherworking.md`: Leatherworking, 88 recipes with a margin.
+- `feed/craft/mining.md`: Mining, 11 recipes with a margin.
 - `feed/craft/skinning.md`: Skinning, 2 recipes with a margin.
-- `feed/craft/tailoring.md`: Tailoring, 119 recipes with a margin.
+- `feed/craft/tailoring.md`: Tailoring, 123 recipes with a margin.
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
