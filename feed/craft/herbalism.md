@@ -4,7 +4,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
-| Seed Hybridizer | 300 | 279947 | 1 | 6g 98s 74c | 1g 80s 16c | 5g 18s 58c | ForeverDB |
+| Seed Hybridizer | 300 | 279947 | 1 | 6g 98s 74c | 1g 78s 52c | 5g 20s 22c | ForeverDB |
 | Greenhouse | 140 | 279964 | 1 | 50s 0c | 49s 44c | 56c | ForeverDB |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

@@ -1,73 +1,73 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Recipe: Blacksmithing
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-15 17:55 UTC. Uploads in the 30-day window: 25.
+- **Latest scan:** 2026-11-16 17:11 UTC. Uploads in the 30-day window: 26.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Blueprint: Anvil | 273086 | 5g 90s 0c | 2026-11-15 17:55 UTC | 1g 70s 0c | 1g 70s 0c | volatile | 9 of 10 | 25 | -14% |
-| Plans: Annihilator | 12835 | 2g 0s 0c | 2026-11-15 17:55 UTC | 20g 0s 0c | 20g 0s 0c | volatile | 4 of 10 | 4 |  |
-| Plans: Arcanite Reaper | 12838 | 19g 95s 0c | 2026-11-15 17:55 UTC | 32g 51s 0c | 32g 51s 0c | moving | 4 of 10 | 1 |  |
-| Plans: Barbaric Iron Boots | 7981 | 1g 28s 99c | 2026-11-15 17:55 UTC | 1g 44s 0c | 1g 44s 0c | volatile | 5 of 10 | 6 |  |
-| Plans: Barbaric Iron Breastplate | 7979 | 49s 99c | 2026-11-15 17:55 UTC | 95s 0c | 1g 27s 50c | volatile | 6 of 10 | 4 |  |
-| Plans: Barbaric Iron Gloves | 7982 | 2g 17s 0c | 2026-11-15 17:55 UTC | 2g 15s 0c | 2g 15s 0c | moving | 5 of 10 | 3 |  |
-| Plans: Barbaric Iron Helm | 7980 | 7g 0s 0c | 2026-11-15 17:55 UTC | 7g 0s 0c | 7g 0s 0c | moving | 5 of 10 | 2 |  |
-| Plans: Barbaric Iron Shoulders | 7978 | 1g 32s 99c | 2026-11-15 17:55 UTC | 2g 49s 0c | 2g 49s 0c | volatile | 5 of 10 | 6 |  |
-| Plans: Blue Glittering Axe | 7992 | 20s 0c | 2026-11-15 17:55 UTC | 20s 0c | 20s 0c | moving | 7 of 10 | 34 | -33% |
-| Plans: Copper Chain Vest | 3609 | 1s 0c | 2026-11-15 17:55 UTC | 1s 0c | 1s 0c | steady | 9 of 10 | 291 | +0% |
-| Plans: Dark Iron Plate | 11612 | 94s 0c | 2026-11-15 17:55 UTC | 5g 0s 0c | 5g 0s 0c | volatile | 5 of 10 | 6 |  |
-| Plans: Dark Iron Pulverizer | 11610 | 66s 0c | 2026-11-15 17:55 UTC | 3g 99s 0c | 3g 99s 0c | volatile | 4 of 10 | 18 |  |
-| Plans: Dark Iron Sunderer | 11611 | 70s 97c | 2026-11-15 14:40 UTC | 3g 46s 0c | 3g 46s 0c | volatile | 4 of 10 | 7 |  |
-| Plans: Dazzling Mithril Rapier | 7993 | 25s 48c | 2026-11-15 17:55 UTC | 25s 22c | 28s 0c | moving | 7 of 10 | 16 | -38% |
-| Plans: Deadly Bronze Poniard | 2883 | 3s 74c | 2026-11-15 17:55 UTC | 3s 90c | 4s 0c | steady | 9 of 10 | 119 | -2% |
-| Plans: Frost Tiger Blade | 3868 | 12s 50c | 2026-11-15 17:55 UTC | 13s 0c | 13s 0c | volatile | 8 of 10 | 40 | -52% |
-| Plans: Frostguard | 12836 | 2g 33s 97c | 2026-11-15 14:40 UTC | 3g 5s 0c | 3g 5s 0c | moving | 4 of 10 | 8 |  |
-| Plans: Gemmed Copper Gauntlets | 3610 | 1s 30c | 2026-11-15 17:55 UTC | 1s 50c | 1s 0c | moving | 9 of 10 | 81 | +50% |
-| Plans: Golden Iron Destroyer | 3867 | 9s 49c | 2026-11-15 17:55 UTC | 10s 0c | 10s 0c | steady | 9 of 10 | 41 | -41% |
-| Plans: Golden Scale Boots | 3875 | 1g 30s 0c | 2026-11-15 17:55 UTC | 1g 11s 0c | 1g 24s 50c | volatile | 8 of 10 | 5 | -42% |
-| Plans: Golden Scale Cuirass | 3873 | 12s 21c | 2026-11-15 17:55 UTC | 11s 0c | 11s 60c | volatile | 8 of 10 | 36 | -50% |
-| Plans: Golden Scale Leggings | 3872 | 8s 50c | 2026-11-15 17:55 UTC | 9s 0c | 9s 0c | steady | 8 of 10 | 30 | +0% |
-| Plans: Golden Scale Shoulders | 3871 | 1g 4s 4c | 2026-11-15 17:55 UTC | 99s 0c | 1g 5s 50c | volatile | 8 of 10 | 16 | -50% |
-| Plans: Green Iron Boots | 3611 | 6s 85c | 2026-11-15 17:55 UTC | 8s 0c | 7s 0c | moving | 9 of 10 | 36 | +33% |
-| Plans: Green Iron Gauntlets | 3612 | 16s 10c | 2026-11-15 17:55 UTC | 14s 0c | 7s 0c | volatile | 9 of 10 | 37 | +133% |
-| Plans: Green Iron Shoulders | 3870 | 10s 99c | 2026-11-15 17:55 UTC | 15s 0c | 17s 50c | moving | 8 of 10 | 34 | -25% |
-| Plans: Hardened Iron Shortsword | 12162 | 36s 0c | 2026-11-15 14:40 UTC | 40s 0c | 44s 0c | moving | 7 of 10 | 9 | -16% |
-| Plans: Heavy Mithril Helm | 7990 | 25s 50c | 2026-11-15 14:40 UTC | 26s 0c | 60s 0c | volatile | 8 of 10 | 12 | -74% |
-| Plans: Heavy Mithril Pants | 7975 | 15s 0c | 2026-11-15 17:55 UTC | 15s 0c | 15s 50c | moving | 8 of 10 | 22 | -25% |
-| Plans: Inlaid Mithril Cylinder | 10713 | 44s 49c | 2026-11-15 17:55 UTC | 1g 48s 98c | 99s 97c | volatile | 5 of 10 | 35 |  |
-| Plans: Iridescent Hammer | 5543 | 4s 99c | 2026-11-15 17:55 UTC | 4s 99c | 5s 0c | steady | 9 of 10 | 38 | -9% |
-| Plans: Iron Counterweight | 6045 | 7s 49c | 2026-11-15 14:40 UTC | 8s 0c | 11s 0c | moving | 9 of 10 | 44 | -69% |
-| Plans: Iron Shield Spike | 6044 | 15s 0c | 2026-11-15 17:55 UTC | 33s 99c | 18s 0c | volatile | 9 of 10 | 45 | +127% |
-| Plans: Ironforge Breastplate | 6735 | 4g 26s 55c | 2026-11-15 17:55 UTC | 4g 73s 50c | 4g 73s 50c | moving | 4 of 10 | 4 |  |
-| Plans: Jade Serpentblade | 3866 | 9s 99c | 2026-11-15 17:55 UTC | 10s 0c | 10s 0c | steady | 8 of 10 | 34 | -17% |
-| Plans: Mighty Iron Hammer | 3608 | 5s 0c | 2026-11-15 14:40 UTC | 5s 0c | 5s 0c | steady | 9 of 10 | 33 | -17% |
-| Plans: Mithril Plate Shoulders | 7991 | 59s 0c | 2026-11-15 17:55 UTC | 89s 0c | 89s 0c | volatile | 7 of 10 | 7 | +1% |
-| Plans: Mithril Shield Spike | 7976 | 98s 99c | 2026-11-15 17:55 UTC | 1g 19s 99c | 1g 75s 0c | volatile | 8 of 10 | 25 | -76% |
-| Plans: Mithril Spurs | 7989 | 92s 94c | 2026-11-15 17:55 UTC | 99s 99c | 1g 30s 0c | volatile | 7 of 10 | 47 | -73% |
-| Plans: Persuader | 22390 | 164g 99s 97c | 2026-11-15 12:38 UTC | 500g 0s 0c | 500g 0s 0c | moving | 4 of 10 | 2 |  |
-| Plans: Polished Steel Boots | 3874 | 11s 0c | 2026-11-15 17:55 UTC | 11s 0c | 11s 0c | moving | 8 of 10 | 26 | -31% |
-| Plans: Radiant Boots | 12697 | 83s 0c | 2026-11-15 14:40 UTC | 1g 40s 0c | 1g 40s 0c | moving | 4 of 10 | 6 |  |
-| Plans: Radiant Breastplate | 12689 | 76s 60c | 2026-11-15 17:55 UTC | 45s 0c | 60s 80c | volatile | 6 of 10 | 10 |  |
-| Plans: Radiant Gloves | 12695 | 65s 0c | 2026-11-15 14:40 UTC | 70s 50c | 70s 50c | moving | 4 of 10 | 4 |  |
-| Plans: Radiant Leggings | 12713 | 1g 0s 90c | 2026-11-15 17:55 UTC | 2g 40s 0c | 2g 40s 0c | volatile | 4 of 10 | 12 |  |
-| Plans: Runed Copper Breastplate | 2881 | 1s 81c | 2026-11-15 14:40 UTC | 2s 0c | 2s 0c | steady | 9 of 10 | 76 | +0% |
-| Plans: Runed Mithril Hammer | 8028 | 80s 0c | 2026-11-15 17:55 UTC | 99s 0c | 1g 27s 48c | volatile | 6 of 10 | 8 |  |
-| Plans: Sageblade | 22389 | 134g 0s 0c | 2026-11-15 17:55 UTC | 300g 1s 0c | 300g 1s 0c | volatile | 3 of 10 | 3 |  |
-| Plans: Searing Golden Blade | 12261 | 1g 49s 0c | 2026-11-15 17:55 UTC | 1g 30s 0c | 1g 30s 0c | volatile | 5 of 10 | 14 |  |
-| Plans: Shadow Crescent Axe | 3869 | 12s 50c | 2026-11-15 17:55 UTC | 12s 49c | 13s 0c | volatile | 8 of 10 | 35 | -55% |
-| Plans: Silvered Bronze Breastplate | 5578 | 3s 85c | 2026-11-15 17:55 UTC | 3s 0c | 3s 0c | steady | 9 of 10 | 65 | +0% |
-| Plans: Silvered Bronze Leggings | 10424 | 9s 85c | 2026-11-15 17:55 UTC | 8s 0c | 8s 0c | steady | 9 of 10 | 33 | +0% |
-| Plans: Silvered Bronze Shoulders | 2882 | 4s 0c | 2026-11-15 17:55 UTC | 3s 95c | 3s 95c | moving | 9 of 10 | 80 | +13% |
-| Plans: Steel Weapon Chain | 6046 | 30g 99s 0c | 2026-11-15 17:55 UTC | 20g 5s 0c | 11g 49s 99c | volatile | 8 of 10 | 3 | +301% |
-| Plans: Thorium Armor | 12682 | 43s 50c | 2026-11-15 17:55 UTC | 54s 0c | 56s 0c | volatile | 6 of 10 | 7 |  |
-| Plans: Thorium Belt | 12683 | 44s 0c | 2026-11-15 17:55 UTC | 54s 0c | 57s 0c | volatile | 6 of 10 | 16 |  |
-| Plans: Thorium Boots | 12693 | 75s 79c | 2026-11-15 17:55 UTC | 1g 25s 0c | 1g 25s 0c | volatile | 3 of 10 | 13 |  |
-| Plans: Thorium Bracers | 12684 | 90s 73c | 2026-11-15 17:55 UTC | 88s 0c | 88s 0c | moving | 6 of 10 | 12 |  |
-| Plans: Thorium Helm | 12694 | 85s 99c | 2026-11-15 17:55 UTC | 1g 64s 50c | 1g 64s 50c | volatile | 4 of 10 | 9 |  |
-| Plans: Thorium Leggings | 12704 | 90s 95c | 2026-11-15 17:55 UTC | 4g 0s 0c | 4g 0s 0c | volatile | 5 of 10 | 14 |  |
-| Plans: Thorium Shield Spike | 12692 | 54g 60s 0c | 2026-11-15 17:55 UTC | 59g 79s 0c | 59g 79s 0c | moving | 4 of 10 | 6 |  |
-| Plans: Volcanic Hammer | 12828 | 2g 83s 0c | 2026-11-15 17:55 UTC | 3g 24s 50c | 3g 24s 50c | volatile | 4 of 10 | 2 |  |
-| Plans: Whitesoul Helm | 12711 | 18g 51s 0c | 2026-11-15 17:55 UTC | 64g 49s 0c | 64g 49s 0c | volatile | 4 of 10 | 4 |  |
+| Blueprint: Anvil | 273086 | 1g 65s 0c | 2026-11-16 17:11 UTC | 1g 70s 0c | 1g 67s 50c | volatile | 10 of 11 | 26 | +6% |
+| Plans: Annihilator | 12835 | 2g 49s 0c | 2026-11-16 17:11 UTC | 20g 0s 0c | 20g 0s 0c | volatile | 5 of 11 | 6 |  |
+| Plans: Arcanite Reaper | 12838 | 18g 0s 0c | 2026-11-16 17:11 UTC | 30g 1s 0c | 30g 1s 0c | moving | 5 of 11 | 1 |  |
+| Plans: Barbaric Iron Boots | 7981 | 1g 28s 99c | 2026-11-16 17:11 UTC | 1g 28s 99c | 1g 36s 49c | volatile | 6 of 11 | 6 |  |
+| Plans: Barbaric Iron Breastplate | 7979 | 89s 0c | 2026-11-16 17:11 UTC | 90s 0c | 95s 0c | volatile | 7 of 11 | 5 | -55% |
+| Plans: Barbaric Iron Gloves | 7982 | 2g 0s 0c | 2026-11-16 17:11 UTC | 2g 10s 0c | 2g 12s 50c | moving | 6 of 11 | 3 |  |
+| Plans: Barbaric Iron Helm | 7980 | 7g 0s 0c | 2026-11-15 17:55 UTC | 7g 0s 0c | 7g 0s 0c | moving | 5 of 11 | 2 |  |
+| Plans: Barbaric Iron Shoulders | 7978 | 1g 97s 0c | 2026-11-16 17:11 UTC | 1g 97s 0c | 2g 23s 0c | volatile | 6 of 11 | 6 |  |
+| Plans: Blue Glittering Axe | 7992 | 20s 0c | 2026-11-16 17:11 UTC | 20s 0c | 20s 0c | moving | 8 of 11 | 34 | -20% |
+| Plans: Copper Chain Vest | 3609 | 1s 0c | 2026-11-16 17:11 UTC | 1s 0c | 1s 0c | steady | 10 of 11 | 220 | +0% |
+| Plans: Dark Iron Plate | 11612 | 58s 0c | 2026-11-16 17:11 UTC | 2g 77s 0c | 3g 88s 50c | volatile | 6 of 11 | 10 |  |
+| Plans: Dark Iron Pulverizer | 11610 | 59s 0c | 2026-11-16 17:11 UTC | 98s 0c | 98s 0c | volatile | 5 of 11 | 23 |  |
+| Plans: Dark Iron Sunderer | 11611 | 69s 98c | 2026-11-16 17:11 UTC | 2g 46s 0c | 2g 46s 0c | volatile | 5 of 11 | 9 |  |
+| Plans: Dazzling Mithril Rapier | 7993 | 25s 0c | 2026-11-16 17:11 UTC | 25s 0c | 26s 61c | moving | 8 of 11 | 19 | -42% |
+| Plans: Deadly Bronze Poniard | 2883 | 3s 79c | 2026-11-16 17:11 UTC | 3s 79c | 4s 0c | steady | 10 of 11 | 110 | -5% |
+| Plans: Frost Tiger Blade | 3868 | 12s 50c | 2026-11-16 17:11 UTC | 12s 99c | 13s 0c | steady | 9 of 11 | 38 | -35% |
+| Plans: Frostguard | 12836 | 2g 33s 95c | 2026-11-16 17:11 UTC | 2g 55s 0c | 2g 55s 0c | moving | 5 of 11 | 8 |  |
+| Plans: Gemmed Copper Gauntlets | 3610 | 1s 22c | 2026-11-16 17:11 UTC | 1s 50c | 1s 11c | moving | 10 of 11 | 74 | +50% |
+| Plans: Golden Iron Destroyer | 3867 | 9s 47c | 2026-11-16 17:11 UTC | 9s 80c | 10s 0c | steady | 10 of 11 | 40 | -2% |
+| Plans: Golden Scale Boots | 3875 | 1g 15s 89c | 2026-11-16 17:11 UTC | 1g 15s 89c | 1g 19s 0c | moving | 9 of 11 | 6 | -25% |
+| Plans: Golden Scale Cuirass | 3873 | 11s 0c | 2026-11-16 17:11 UTC | 11s 0c | 11s 0c | steady | 9 of 11 | 36 | -37% |
+| Plans: Golden Scale Leggings | 3872 | 8s 44c | 2026-11-16 17:11 UTC | 8s 90c | 9s 0c | steady | 9 of 11 | 30 | -1% |
+| Plans: Golden Scale Shoulders | 3871 | 89s 0c | 2026-11-16 17:11 UTC | 99s 0c | 1g 0s 0c | moving | 9 of 11 | 16 | -36% |
+| Plans: Green Iron Boots | 3611 | 19s 90c | 2026-11-16 17:11 UTC | 9s 0c | 7s 50c | volatile | 10 of 11 | 40 | +29% |
+| Plans: Green Iron Gauntlets | 3612 | 7s 0c | 2026-11-16 17:11 UTC | 14s 0c | 7s 0c | volatile | 10 of 11 | 40 | +133% |
+| Plans: Green Iron Shoulders | 3870 | 18s 21c | 2026-11-16 17:11 UTC | 15s 0c | 18s 0c | moving | 9 of 11 | 29 | -21% |
+| Plans: Hardened Iron Shortsword | 12162 | 34s 0c | 2026-11-16 17:11 UTC | 40s 0c | 42s 0c | moving | 8 of 11 | 13 | -11% |
+| Plans: Heavy Mithril Helm | 7990 | 25s 48c | 2026-11-16 17:11 UTC | 25s 50c | 50s 0c | volatile | 9 of 11 | 12 | -70% |
+| Plans: Heavy Mithril Pants | 7975 | 15s 0c | 2026-11-16 17:11 UTC | 15s 0c | 15s 0c | moving | 9 of 11 | 23 | -25% |
+| Plans: Inlaid Mithril Cylinder | 10713 | 1g 90s 99c | 2026-11-16 17:11 UTC | 1g 90s 99c | 1g 45s 48c | volatile | 6 of 11 | 38 |  |
+| Plans: Iridescent Hammer | 5543 | 4s 80c | 2026-11-16 17:11 UTC | 4s 90c | 5s 0c | steady | 10 of 11 | 36 | -2% |
+| Plans: Iron Counterweight | 6045 | 18s 0c | 2026-11-16 17:11 UTC | 12s 0c | 11s 50c | volatile | 10 of 11 | 45 | +9% |
+| Plans: Iron Shield Spike | 6044 | 50s 48c | 2026-11-16 17:11 UTC | 33s 99c | 25s 99c | volatile | 10 of 11 | 50 | +89% |
+| Plans: Ironforge Breastplate | 6735 | 3g 65s 70c | 2026-11-16 17:11 UTC | 4g 48s 0c | 4g 48s 0c | moving | 5 of 11 | 4 |  |
+| Plans: Jade Serpentblade | 3866 | 10s 0c | 2026-11-16 17:11 UTC | 10s 0c | 10s 0c | steady | 9 of 11 | 33 | -9% |
+| Plans: Mighty Iron Hammer | 3608 | 5s 29c | 2026-11-16 17:11 UTC | 5s 0c | 5s 0c | steady | 10 of 11 | 30 | -17% |
+| Plans: Mithril Plate Shoulders | 7991 | 1g 50s 0c | 2026-11-16 17:11 UTC | 89s 0c | 89s 0c | volatile | 8 of 11 | 7 | +78% |
+| Plans: Mithril Shield Spike | 7976 | 79s 0c | 2026-11-16 17:11 UTC | 1g 0s 0c | 1g 20s 0c | volatile | 9 of 11 | 27 | -79% |
+| Plans: Mithril Spurs | 7989 | 2g 45s 57c | 2026-11-16 17:11 UTC | 99s 99c | 1g 87s 78c | volatile | 8 of 11 | 52 | -67% |
+| Plans: Persuader | 22390 | 109g 99s 99c | 2026-11-16 17:11 UTC | 500g 0s 0c | 500g 0s 0c | volatile | 5 of 11 | 2 |  |
+| Plans: Polished Steel Boots | 3874 | 11s 0c | 2026-11-16 17:11 UTC | 11s 0c | 11s 0c | steady | 9 of 11 | 29 | -19% |
+| Plans: Radiant Boots | 12697 | 40g 0s 0c | 2026-11-16 17:11 UTC | 1g 80s 0c | 1g 80s 0c | moving | 5 of 11 | 7 |  |
+| Plans: Radiant Breastplate | 12689 | 43s 0c | 2026-11-16 17:11 UTC | 45s 0c | 45s 0c | volatile | 7 of 11 | 14 | -70% |
+| Plans: Radiant Gloves | 12695 | 76s 0c | 2026-11-16 17:11 UTC | 76s 0c | 76s 0c | moving | 5 of 11 | 5 |  |
+| Plans: Radiant Leggings | 12713 | 1g 0s 90c | 2026-11-16 17:11 UTC | 1g 80s 0c | 1g 80s 0c | volatile | 5 of 11 | 14 |  |
+| Plans: Runed Copper Breastplate | 2881 | 1s 99c | 2026-11-16 17:11 UTC | 2s 0c | 2s 0c | steady | 10 of 11 | 74 | +0% |
+| Plans: Runed Mithril Hammer | 8028 | 4g 50s 0c | 2026-11-16 17:11 UTC | 99s 0c | 1g 55s 96c | volatile | 7 of 11 | 8 | -78% |
+| Plans: Sageblade | 22389 | 295g 0s 0c | 2026-11-16 17:11 UTC | 297g 50s 50c | 297g 50s 50c | moving | 4 of 11 | 3 |  |
+| Plans: Searing Golden Blade | 12261 | 3g 49s 0c | 2026-11-16 17:11 UTC | 1g 30s 0c | 1g 93s 0c | volatile | 6 of 11 | 14 |  |
+| Plans: Shadow Crescent Axe | 3869 | 59s 59c | 2026-11-16 17:11 UTC | 12s 49c | 13s 0c | volatile | 9 of 11 | 32 | -44% |
+| Plans: Silvered Bronze Breastplate | 5578 | 3s 48c | 2026-11-16 17:11 UTC | 3s 0c | 3s 0c | steady | 10 of 11 | 59 | +0% |
+| Plans: Silvered Bronze Leggings | 10424 | 7s 99c | 2026-11-16 17:11 UTC | 8s 0c | 8s 0c | steady | 10 of 11 | 32 | +0% |
+| Plans: Silvered Bronze Shoulders | 2882 | 3s 67c | 2026-11-16 17:11 UTC | 3s 95c | 3s 81c | moving | 10 of 11 | 72 | +32% |
+| Plans: Steel Weapon Chain | 6046 | 17g 0s 0c | 2026-11-16 17:11 UTC | 17g 0s 0c | 11g 99s 99c | volatile | 9 of 11 | 4 | +113% |
+| Plans: Thorium Armor | 12682 | 42s 0c | 2026-11-16 17:11 UTC | 45s 0c | 54s 0c | volatile | 7 of 11 | 8 | -63% |
+| Plans: Thorium Belt | 12683 | 90s 0c | 2026-11-16 17:11 UTC | 60s 0c | 60s 0c | volatile | 7 of 11 | 19 | -80% |
+| Plans: Thorium Boots | 12693 | 2g 47s 50c | 2026-11-16 17:11 UTC | 1g 86s 25c | 1g 86s 25c | volatile | 4 of 11 | 8 |  |
+| Plans: Thorium Bracers | 12684 | 4g 0s 0c | 2026-11-16 17:11 UTC | 90s 73c | 88s 0c | volatile | 7 of 11 | 13 | +97% |
+| Plans: Thorium Helm | 12694 | 81s 99c | 2026-11-16 17:11 UTC | 1g 10s 0c | 1g 10s 0c | volatile | 5 of 11 | 9 |  |
+| Plans: Thorium Leggings | 12704 | 90s 95c | 2026-11-16 17:11 UTC | 1g 20s 99c | 2g 60s 49c | volatile | 6 of 11 | 10 |  |
+| Plans: Thorium Shield Spike | 12692 | 78g 5s 0c | 2026-11-16 17:11 UTC | 65g 98s 0c | 65g 98s 0c | moving | 5 of 11 | 6 |  |
+| Plans: Volcanic Hammer | 12828 | 15g 0s 0c | 2026-11-16 17:11 UTC | 3g 99s 0c | 3g 99s 0c | moving | 5 of 11 | 2 |  |
+| Plans: Whitesoul Helm | 12711 | 6g 95s 0c | 2026-11-16 17:11 UTC | 30g 0s 0c | 30g 0s 0c | volatile | 5 of 11 | 4 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
