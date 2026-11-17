@@ -11,6 +11,7 @@
 | Burning Wand | 5210 | 15s 0c | 2026-11-12 03:40 UTC | 15s 0c |  | too new | 1 of 11 | 1 |  |
 | Dire Wand | 8186 | 22s 45c | 2026-11-16 17:11 UTC | 22s 32c | 23s 0c | steady | 11 of 11 | 51 | -17% |
 | Dragon Finger | 15282 | 4g 20s 0c | 2026-11-16 17:11 UTC | 8g 0s 0c | 8g 0s 0c | volatile | 5 of 11 | 6 |  |
+| Dreadwhisper's Touch | 284070 | 8g 7s 0c | 2026-11-15 14:40 UTC | 8g 7s 0c |  | too new | 1 of 11 | 1 |  |
 | Dreambough Wand | 249234 | 2g 50s 0c | 2026-11-16 17:11 UTC | 2g 44s 98c |  | too new | 2 of 11 | 11 |  |
 | Earthen Rod | 9381 | 5g 0s 0c | 2026-11-16 17:11 UTC | 5g 0s 0c | 5g 0s 0c | volatile | 5 of 11 | 6 |  |
 | Ember Wand | 5215 | 86s 89c | 2026-11-16 17:11 UTC | 88s 0c | 90s 27c | moving | 8 of 11 | 31 | -20% |
@@ -27,6 +28,7 @@
 | Lesser Eternal Wand | 249232 | 1g 55s 50c | 2026-11-16 17:11 UTC | 3g 30s 94c | 3g 30s 94c | volatile | 5 of 11 | 19 |  |
 | Lesser Magic Wand | 11287 | 1s 90c | 2026-11-16 17:11 UTC | 1s 78c | 2s 0c | moving | 11 of 11 | 2835 | -11% |
 | Lesser Mystic Wand | 11289 | 29s 88c | 2026-11-16 17:11 UTC | 37s 0c | 42s 99c | moving | 10 of 11 | 46 | -38% |
+| Lunar Wand | 15283 | 44g 83s 80c | 2026-11-16 17:11 UTC | 26g 41s 90c |  | too new | 2 of 11 | 2 |  |
 | Novice's Practice Wand | 247789 | 1s 0c | 2026-11-16 17:11 UTC | 1s 0c | 1s 0c | steady | 10 of 11 | 422 | +0% |
 | Opaque Wand | 5207 | 11s 0c | 2026-11-16 17:11 UTC | 10s 92c | 11s 0c | steady | 11 of 11 | 103 | -1% |
 | Pestilent Wand | 5347 | 88s 0c | 2026-11-16 17:11 UTC | 1g 0s 0c | 1g 5s 50c | moving | 8 of 11 | 3 | -10% |

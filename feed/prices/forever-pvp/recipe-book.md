@@ -10,6 +10,7 @@
 | Blueprint: Greenhouse | 273106 | 6g 99s 99c | 2026-11-16 17:11 UTC | 6g 80s 0c | 2g 80s 0c | volatile | 9 of 11 | 27 | +504% |
 | Blueprint: Molten Foundry | 273122 | 55g 40s 0c | 2026-11-16 17:11 UTC | 69g 0s 0c | 69g 0s 0c | volatile | 5 of 11 | 3 |  |
 | Blueprint: Rock Garden | 273097 | 4g 69s 99c | 2026-11-16 17:11 UTC | 2g 99s 94c | 2g 99s 0c | volatile | 9 of 11 | 14 | +101% |
+| Blueprint: Seed Hybridizer | 273120 | 21g 89s 90c | 2026-11-16 17:11 UTC | 25g 99s 0c | 25g 99s 0c | volatile | 3 of 11 | 8 |  |
 | Blueprint: Trapper's Workbench | 273109 | 1g 44s 20c | 2026-11-16 17:11 UTC | 1g 44s 20c | 1g 69s 50c | volatile | 8 of 11 | 22 | -53% |
 | Book: Gift of the Wild | 17682 | 88s 0c | 2026-11-16 17:11 UTC | 90s 0c | 94s 0c | volatile | 6 of 11 | 30 |  |
 | Book: Gift of the Wild II | 17683 | 1g 97s 0c | 2026-11-16 17:11 UTC | 6g 74s 92c | 6g 74s 92c | volatile | 5 of 11 | 28 |  |

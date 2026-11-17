@@ -24,15 +24,19 @@
 | Blesswind Hammer | 15229 | 3g 79s 0c | 2026-11-16 17:11 UTC | 4g 49s 0c | 4g 49s 0c | volatile | 6 of 11 | 6 |  |
 | Bludgeoning Cudgel | 1823 | 10s 98c | 2026-11-16 17:11 UTC | 8s 0c | 8s 0c | steady | 9 of 11 | 12 | +0% |
 | Bludstone Hammer | 13028 | 8g 99s 0c | 2026-11-16 17:11 UTC | 12g 88s 0c | 12g 88s 0c | moving | 5 of 11 | 5 |  |
+| Blunting Mace | 4021 | 84s 0c | 2026-11-16 17:11 UTC | 84s 0c | 84s 0c | moving | 3 of 11 | 5 |  |
 | Bonesnapper | 13027 | 5g 49s 99c | 2026-11-16 17:11 UTC | 9g 70s 0c | 9g 70s 0c | volatile | 5 of 11 | 11 |  |
 | Broken Wine Bottle | 6651 | 10g 0s 0c | 2026-11-08 23:12 UTC | 10g 0s 0c |  | too new | 1 of 11 | 1 |  |
 | Bronze Mace | 2848 | 28s 0c | 2026-11-16 17:11 UTC | 11s 0c | 11s 50c | moving | 10 of 11 | 58 | -21% |
 | Bronze Warhammer | 7956 | 18s 50c | 2026-11-16 17:11 UTC | 16s 0c | 16s 0c | steady | 10 of 11 | 136 | +0% |
 | Bruiser Club | 4439 | 20s 0c | 2026-11-16 17:11 UTC | 28s 89c | 28s 44c | moving | 10 of 11 | 7 | +3% |
+| Brutehammer | 15267 | 12g 0s 0c | 2026-11-16 17:11 UTC | 12g 0s 0c |  | too new | 1 of 11 | 1 |  |
 | Bulky Bludgeon | 1825 | 15s 45c | 2026-11-16 17:11 UTC | 16s 0c | 17s 0c | moving | 8 of 11 | 15 | -16% |
 | Burrowing Shovel | 6205 | 5g 0s 0c | 2026-11-16 17:11 UTC | 5g 0s 0c | 5g 0s 0c | steady | 4 of 11 | 1 |  |
 | Carpenter's Mallet | 1415 | 1s 23c | 2026-11-16 17:11 UTC | 1s 23c | 1s 0c | steady | 10 of 11 | 26 | +23% |
 | Changuk Smasher | 17055 | 8g 88s 0c | 2026-11-16 17:11 UTC | 6g 95s 0c | 6g 95s 0c | moving | 4 of 11 | 1 |  |
+| Clout Mace | 13820 | 14g 45s 4c | 2026-11-16 17:11 UTC | 14g 45s 4c |  | too new | 1 of 11 | 1 |  |
+| Club | 2130 | 2g 50s 0c | 2026-11-16 17:11 UTC | 2g 50s 0c |  | too new | 1 of 11 | 7 |  |
 | Cobalt Crusher | 7730 | 4g 97s 99c | 2026-11-16 17:11 UTC | 3g 80s 0c | 5g 37s 99c | volatile | 8 of 11 | 15 | -60% |
 | Combat Tuning Wrench | 282550 | 2g 13s 99c | 2026-11-16 17:11 UTC | 3g 14s 0c | 3g 57s 0c | volatile | 6 of 11 | 1 |  |
 | Conk Hammer | 3208 | 2g 55s 0c | 2026-11-16 17:11 UTC | 2g 65s 0c | 2g 82s 50c | steady | 6 of 11 | 16 |  |
@@ -41,6 +45,7 @@
 | Cranial Thumper | 4303 | 69s 0c | 2026-11-16 17:11 UTC | 15s 97c | 9s 75c | volatile | 10 of 11 | 7 | +77% |
 | Crested Scepter | 3414 | 5g 55s 55c | 2026-11-16 17:11 UTC | 5g 50s 0c | 5g 49s 0c | moving | 9 of 11 | 9 | +15% |
 | Crusader's Mace | 215376 | 12s 60c | 2026-11-16 17:11 UTC | 12s 99c | 13s 0c | steady | 8 of 11 | 16 | -13% |
+| Crushing Maul | 4022 | 1g 30s 0c | 2026-11-16 17:11 UTC | 1g 40s 0c | 1g 40s 0c | moving | 3 of 11 | 3 |  |
 | Cudgel | 2492 | 1s 0c | 2026-11-05 06:58 UTC | 1s 0c |  | too new | 1 of 11 | 1 |  |
 | Deadman Club | 3294 | 80s 0c | 2026-11-09 12:28 UTC | 80s 0c | 80s 0c | volatile | 4 of 11 | 2 |  |
 | Deadwood Sledge | 13025 | 1g 45s 0c | 2026-11-16 17:11 UTC | 1g 24s 0c | 1g 42s 50c | moving | 8 of 11 | 15 | -41% |
@@ -53,16 +58,20 @@
 | Excavator's Brand | 9386 | 4g 0s 99c | 2026-11-16 17:11 UTC | 4g 50s 0c | 4g 50s 0c | steady | 5 of 11 | 6 |  |
 | Face Smasher | 1483 | 1g 20s 0c | 2026-11-16 17:11 UTC | 1g 5s 0c | 97s 0c | moving | 10 of 11 | 15 | +11% |
 | Farmer's Shovel | 3334 | 4s 0c | 2026-11-16 17:11 UTC | 2s 99c | 2s 49c | moving | 10 of 11 | 100 | +50% |
+| Fierce Mauler | 15266 | 7g 67s 0c | 2026-11-16 17:11 UTC | 7g 83s 50c |  | too new | 2 of 11 | 7 |  |
 | Fight Club | 7736 | 5g 99s 0c | 2026-11-16 17:11 UTC | 5g 99s 0c | 6g 90s 0c | moving | 7 of 11 | 6 | -25% |
 | Flanged Mace | 766 | 2s 99c | 2026-11-16 17:11 UTC | 1s 70c | 1s 0c | moving | 10 of 11 | 15 | +70% |
 | Foulmountain Family Hammer | 285212 | 19s 50c | 2026-11-16 17:11 UTC | 20s 0c | 25s 98c | volatile | 9 of 11 | 9 | -62% |
 | Giant Club | 15226 | 87s 99c | 2026-11-16 17:11 UTC | 88s 0c | 88s 0c | steady | 8 of 11 | 52 | -10% |
 | Giant Mace | 1197 | 8s 0c | 2026-11-15 14:40 UTC | 11s 50c | 8s 0c | volatile | 7 of 11 | 1 | +44% |
+| Gnoll Punisher | 1214 | 2g 0s 0c | 2026-11-16 17:11 UTC | 2g 0s 0c |  | too new | 1 of 11 | 1 |  |
 | Goblin Nutcracker | 8194 | 1g 38s 99c | 2026-11-16 17:11 UTC | 1g 39s 0c | 1g 39s 50c | volatile | 8 of 11 | 14 | -47% |
 | Goblin Power Shovel | 1991 | 6g 0s 0c | 2026-11-16 17:11 UTC | 1g 55s 92c | 1g 55s 92c | moving | 5 of 11 | 5 |  |
 | Golden Iron Destroyer | 3852 | 1g 4s 0c | 2026-11-16 17:11 UTC | 1g 49s 0c | 1g 65s 0c | volatile | 7 of 11 | 9 | -54% |
 | Greater Maul | 15262 | 2g 19s 0c | 2026-11-16 17:11 UTC | 2g 19s 0c | 2g 29s 0c | moving | 7 of 11 | 14 | -43% |
+| Gruklash's Basher | 282070 | 30g 0s 0c | 2026-11-15 17:55 UTC | 19g 24s 50c |  | too new | 2 of 11 | 1 |  |
 | Hammer of the Northern Wind | 810 | 19g 50s 80c | 2026-11-16 17:11 UTC | 28g 98s 97c | 31g 99s 48c | moving | 6 of 11 | 6 |  |
+| Hand of Edward the Odd | 2243 | 950g 59s 0c | 2026-11-16 17:11 UTC | 1,975g 59s 0c |  | too new | 2 of 11 | 3 |  |
 | Heaven's Light | 13026 | 2g 30s 0c | 2026-11-16 17:11 UTC | 2g 98s 0c | 3g 92s 99c | volatile | 8 of 11 | 10 | -67% |
 | Heavy Bronze Mace | 3491 | 58s 99c | 2026-11-16 17:11 UTC | 48s 85c | 55s 0c | moving | 10 of 11 | 70 | -14% |
 | Heavy Copper Maul | 6214 | 29s 90c | 2026-11-16 17:11 UTC | 17s 0c | 13s 95c | moving | 10 of 11 | 66 | +70% |
@@ -73,6 +82,7 @@
 | Iridescent Hammer | 5541 | 61s 0c | 2026-11-16 17:11 UTC | 61s 0c | 66s 49c | moving | 8 of 11 | 53 | -34% |
 | Iron Morningstar | 250606 | 1g 42s 0c | 2026-11-15 14:40 UTC | 1g 65s 50c |  | too new | 2 of 11 | 2 |  |
 | Ironwood Maul | 4777 | 99s 99c | 2026-11-16 17:11 UTC | 83s 0c | 80s 0c | moving | 9 of 11 | 7 | +11% |
+| Ironwood Treebranch | 911 | 2g 50s 0c | 2026-11-13 | 2g 50s 0c |  | too new | 1 of 11 | 1 |  |
 | Jagged Star | 15223 | 23s 79c | 2026-11-16 17:11 UTC | 23s 79c | 23s 97c | steady | 10 of 11 | 94 | -1% |
 | Korg Bat | 1679 | 1g 5s 99c | 2026-11-16 17:11 UTC | 1g 0s 0c | 1g 5s 49c | moving | 8 of 11 | 17 | -35% |
 | Kovork's Rattle | 5256 | 1g 0s 0c | 2026-11-16 17:11 UTC | 99s 0c | 1g 0s 50c | volatile | 8 of 11 | 9 | -7% |
@@ -80,10 +90,12 @@
 | Large Club | 2480 | 15s 0c | 2026-11-15 12:38 UTC | 15s 0c |  | too new | 2 of 11 | 1 |  |
 | Large War Club | 3782 | 34s 74c | 2026-11-16 17:11 UTC | 35s 0c | 35s 0c | steady | 7 of 11 | 8 | -24% |
 | Last Month's Mutton | 19292 | 1g 61s 0c | 2026-11-16 17:11 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 11 | 1 |  |
+| Last Year's Mutton | 19293 | 4g 91s 0c | 2026-11-15 14:40 UTC | 4g 91s 0c |  | too new | 1 of 11 | 1 |  |
 | Leaden Mace | 865 | 50s 98c | 2026-11-16 17:11 UTC | 51s 0c | 51s 0c | steady | 9 of 11 | 55 | -16% |
 | Looming Gavel | 13048 | 75s 0c | 2026-11-16 17:11 UTC | 88s 99c | 90s 0c | moving | 9 of 11 | 25 | -39% |
 | Mace | 852 | 6s 0c | 2026-11-08 23:12 UTC | 6s 0c | 6s 0c | steady | 5 of 11 | 1 |  |
 | Mass of McGowan | 13006 | 50g 0s 0c | 2026-11-16 17:11 UTC | 50g 0s 0c | 50g 0s 0c | volatile | 5 of 11 | 4 |  |
+| Maul | 924 | 33s 0c | 2026-11-16 17:11 UTC | 33s 0c |  | too new | 1 of 11 | 1 |  |
 | Midnight Mace | 936 | 1g 26s 0c | 2026-11-16 17:11 UTC | 1g 28s 90c | 1g 74s 44c | volatile | 8 of 11 | 16 | -57% |
 | Mighty Iron Hammer | 3492 | 83s 85c | 2026-11-16 17:11 UTC | 55s 0c | 55s 0c | moving | 7 of 11 | 17 | -39% |
 | Mithril Warhammer | 250608 | 1g 76s 96c | 2026-11-16 17:11 UTC | 1g 76s 96c | 1g 75s 98c | steady | 6 of 11 | 16 |  |
@@ -108,6 +120,7 @@
 | Sequoia Branch | 15261 | 1g 35s 90c | 2026-11-16 17:11 UTC | 1g 36s 0c | 1g 38s 50c | moving | 8 of 11 | 36 | -24% |
 | Sequoia Hammer | 15225 | 59s 70c | 2026-11-16 17:11 UTC | 59s 80c | 60s 0c | steady | 9 of 11 | 53 | -14% |
 | Sergeant's Warhammer | 2079 | 9s 37c | 2026-11-16 17:11 UTC | 9s 37c | 9s 72c | steady | 10 of 11 | 226 | -6% |
+| Shadowhide Maul | 1458 | 50s 0c | 2026-11-13 | 50s 0c |  | too new | 1 of 11 | 1 |  |
 | Silver Hand Training Hammer | 215373 | 12s 58c | 2026-11-16 17:11 UTC | 13s 0c | 13s 0c | moving | 8 of 11 | 26 | -32% |
 | Skeletal Club | 2256 | 59s 99c | 2026-11-16 17:11 UTC | 38s 0c | 42s 0c | volatile | 10 of 11 | 40 | -16% |
 | Skullcrusher Mace | 1608 | 1g 90s 0c | 2026-11-16 17:11 UTC | 1g 97s 0c | 1g 99s 0c | volatile | 7 of 11 | 12 | -47% |
@@ -125,6 +138,7 @@
 | Stout Battlehammer | 789 | 19s 80c | 2026-11-16 17:11 UTC | 19s 80c | 19s 90c | steady | 10 of 11 | 64 | -1% |
 | Supreme Smasher | 287015 | 25g 49s 0c | 2026-11-16 17:11 UTC | 20g 99s 0c | 25g 49s 0c | moving | 7 of 11 | 7 | -57% |
 | Taran Icebreaker | 2915 | 105g 0s 50c | 2026-11-16 17:11 UTC | 99g 99s 0c | 99g 99s 0c | steady | 5 of 11 | 5 |  |
+| The Jackhammer | 9423 | 25g 75s 9c | 2026-11-16 17:11 UTC | 22g 92s 54c |  | too new | 2 of 11 | 2 |  |
 | The Judge's Gavel | 12528 | 27g 96s 0c | 2026-11-16 17:11 UTC | 31g 42s 50c | 31g 42s 50c | volatile | 4 of 11 | 4 |  |
 | The Pacifier | 6327 | 22g 22s 22c | 2026-11-16 17:11 UTC | 22g 51s 11c | 23g 94s 50c | moving | 6 of 11 | 6 | -60% |
 | The Shatterer | 7954 | 7g 99s 99c | 2026-11-16 17:11 UTC | 7g 99s 99c |  | too new | 2 of 11 | 9 |  |

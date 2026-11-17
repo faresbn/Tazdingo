@@ -7,8 +7,14 @@
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | Adventurer's Bandana | 10261 | 7g 45s 99c | 2026-11-16 17:11 UTC | 9g 89s 99c | 9g 89s 99c | moving | 3 of 11 | 1 |  |
+| Adventurer's Belt | 10259 | 5g 99s 99c | 2026-11-16 17:11 UTC | 7g 99s 99c | 7g 99s 99c | moving | 3 of 11 | 3 |  |
 | Adventurer's Boots | 10257 | 5g 12s 0c | 2026-11-16 17:11 UTC | 5g 33s 0c | 5g 33s 0c | steady | 4 of 11 | 2 |  |
+| Adventurer's Bracers | 10256 | 3g 91s 0c | 2026-11-16 17:11 UTC | 3g 99s 0c | 3g 99s 0c | steady | 3 of 11 | 2 |  |
+| Adventurer's Gloves | 10260 | 12g 99s 99c | 2026-11-16 17:11 UTC | 8g 9s 99c |  | too new | 2 of 11 | 2 |  |
+| Adventurer's Legguards | 10262 | 3g 80s 0c | 2026-11-15 12:38 UTC | 3g 80s 0c |  | too new | 1 of 11 | 2 |  |
 | Adventurer's Pith Helmet | 9420 | 7g 99s 0c | 2026-11-16 17:11 UTC | 8g 0s 0c | 8g 0s 0c | moving | 5 of 11 | 3 |  |
+| Adventurer's Shoulders | 10263 | 5g 0s 0c | 2026-11-16 17:11 UTC | 5g 0s 0c |  | too new | 2 of 11 | 2 |  |
+| Adventurer's Tunic | 10264 | 5g 0s 0c | 2026-11-16 17:11 UTC | 9g 0s 0c | 9g 0s 0c | volatile | 3 of 11 | 2 |  |
 | Agile Boots | 4788 | 18s 0c | 2026-11-16 17:11 UTC | 22s 0c | 22s 50c | moving | 10 of 11 | 14 | -4% |
 | Al'Aketh Footwraps | 277073 | 7s 0c | 2026-11-07 05:23 UTC | 7s 0c |  | too new | 1 of 11 | 1 |  |
 | Al'Aketh Jerkin | 277068 | 3g 0s 0c | 2026-11-16 17:11 UTC | 3g 0s 0c |  | too new | 2 of 11 | 2 |  |
@@ -57,6 +63,7 @@
 | Bard's Trousers | 6553 | 11s 30c | 2026-11-16 17:11 UTC | 6s 0c | 6s 0c | steady | 10 of 11 | 64 | +0% |
 | Bard's Tunic | 6552 | 7s 0c | 2026-11-16 17:11 UTC | 6s 50c | 7s 0c | moving | 10 of 11 | 38 | -19% |
 | Basilisk Hide Pants | 1718 | 5g 0s 0c | 2026-11-16 17:11 UTC | 3g 59s 0c | 4g 38s 0c | moving | 7 of 11 | 14 | -38% |
+| Basilisk Sinew Belt | 284707 | 1g 39s 0c | 2026-11-16 17:11 UTC | 2g 39s 0c | 2g 39s 0c | moving | 3 of 11 | 3 |  |
 | Battered Leather Belt | 2371 | 10g 0s 0c | 2026-11-16 17:11 UTC | 5g 0s 60c | 1s 0c | steady | 6 of 11 | 2 | +49960% |
 | Battered Leather Boots | 2373 | 5s 0c | 2026-11-16 17:11 UTC | 6s 0c | 6s 0c | steady | 8 of 11 | 2 | +0% |
 | Battered Leather Bracers | 2374 | 23s 0c | 2026-11-16 17:11 UTC | 7s 50c | 6s 0c | volatile | 7 of 11 | 4 |  |
@@ -74,6 +81,7 @@
 | Black Bear Hide Vest | 2069 | 11s 0c | 2026-11-08 23:12 UTC | 11s 0c |  | too new | 1 of 11 | 1 |  |
 | Black Whelp Tunic | 20575 | 45s 0c | 2026-11-16 17:11 UTC | 46s 49c |  | too new | 2 of 11 | 25 |  |
 | Blackened Defias Gloves | 10401 | 60s 0c | 2026-11-16 17:11 UTC | 26s 99c | 50s 0c | volatile | 10 of 11 | 26 | -61% |
+| Blackheart's Vest | 282094 | 10g 4s 0c | 2026-11-16 17:11 UTC | 4g 12s 0c | 4g 12s 0c | volatile | 3 of 11 | 1 |  |
 | Bloodstained Pants | 282713 | 54s 98c | 2026-11-16 17:11 UTC | 54s 98c | 54s 98c | steady | 9 of 11 | 6 | +0% |
 | Blue Suede Bracers | 252559 | 4g 49s 0c | 2026-11-16 17:11 UTC | 3g 99s 0c |  | too new | 2 of 11 | 12 |  |
 | Blue Suede Gloves | 252546 | 1g 48s 98c | 2026-11-16 17:11 UTC | 1g 68s 99c | 1g 68s 99c | moving | 6 of 11 | 38 |  |
@@ -144,6 +152,8 @@
 | Cloudy Windraveled Strap | 277007 | 69s 69c | 2026-11-16 17:11 UTC | 20s 0c | 20s 0c | volatile | 6 of 11 | 4 |  |
 | Comfortable Leather Hat | 8174 | 95s 0c | 2026-11-16 17:11 UTC | 95s 0c | 98s 0c | steady | 8 of 11 | 26 | -4% |
 | Cow King's Hide | 13009 | 1g 55s 0c | 2026-11-16 17:11 UTC | 1g 99s 0c | 1g 99s 0c | moving | 5 of 11 | 4 |  |
+| Cracked Leather Belt | 2122 | 20s 0c | 2026-11-13 | 20s 0c |  | too new | 1 of 11 | 1 |  |
+| Cracked Leather Boots | 2123 | 2g 39s 0c | 2026-11-16 17:11 UTC | 2g 39s 0c | 2g 39s 0c | volatile | 3 of 11 | 1 |  |
 | Cracked Leather Bracers | 2124 | 1s 0c | 2026-11-07 12:51 UTC | 10s 50c |  | too new | 2 of 11 | 1 |  |
 | Cracked Leather Gloves | 2125 | 2g 0s 0c | 2026-11-16 17:11 UTC | 1g 30s 0c | 75s 0c | volatile | 4 of 11 | 1 |  |
 | Cracked Leather Pants | 2126 | 1s 0c | 2026-11-06 14:50 UTC | 20s 0c |  | too new | 2 of 11 | 1 |  |
@@ -168,6 +178,7 @@
 | Dark Leather Shoulders | 4252 | 34s 78c | 2026-11-16 17:11 UTC | 26s 95c | 27s 0c | moving | 9 of 11 | 81 | -7% |
 | Dark Leather Tunic | 2317 | 10s 48c | 2026-11-16 17:11 UTC | 9s 0c | 9s 0c | moving | 10 of 11 | 116 | +0% |
 | Dawn Armor | 252483 | 380g 0s 0c | 2026-11-16 17:11 UTC | 345g 0s 0c |  | too new | 2 of 11 | 2 |  |
+| Death Howl's Guise | 284199 | 4g 0s 0c | 2026-11-16 17:11 UTC | 3g 0s 0c |  | too new | 2 of 11 | 1 |  |
 | Deathcrawler's Chest | 286999 | 7g 99s 0c | 2026-11-16 17:11 UTC | 7g 30s 0c | 7g 99s 0c | volatile | 7 of 11 | 7 | -58% |
 | Deathmaw's Guise | 282049 | 10g 99s 0c | 2026-11-16 17:11 UTC | 15g 0s 0c | 15g 0s 0c | moving | 5 of 11 | 2 |  |
 | Decaying Flesh Belt | 283460 | 89s 99c | 2026-11-16 17:11 UTC | 9s 0c | 5s 50c | volatile | 11 of 11 | 15 | +200% |
@@ -187,9 +198,11 @@
 | Deviate Scale Gloves | 6467 | 14s 90c | 2026-11-16 17:11 UTC | 20s 0c | 21s 99c | moving | 10 of 11 | 25 | -13% |
 | Devilsaur Gauntlets | 15063 | 16g 30s 0c | 2026-11-16 17:11 UTC | 16g 30s 0c | 16g 30s 0c | moving | 5 of 11 | 34 |  |
 | Devilsaur Leggings | 15062 | 52g 72s 0c | 2026-11-16 17:11 UTC | 53g 99s 97c | 53g 99s 97c | volatile | 3 of 11 | 30 |  |
+| Dinosaur Hide Belt | 287040 | 45g 0s 0c | 2026-11-15 14:40 UTC | 28g 50s 0c |  | too new | 2 of 11 | 1 |  |
 | Dirty Leather Belt | 1835 | 75s 0c | 2026-11-16 17:11 UTC | 75s 0c | 75s 0c | volatile | 3 of 11 | 2 |  |
 | Dirty Leather Boots | 210 | 30s 55c | 2026-11-16 17:11 UTC | 57s 45c | 39s 90c | volatile | 5 of 11 | 3 |  |
 | Dirty Leather Bracers | 1836 | 15s 99c | 2026-11-16 17:11 UTC | 47s 49c | 15s 98c | volatile | 6 of 11 | 2 | +4649% |
+| Dirty Leather Gloves | 714 | 46s 0c | 2026-11-16 17:11 UTC | 69s 0c | 69s 0c | moving | 3 of 11 | 5 |  |
 | Dirty Leather Pants | 209 | 65s 0c | 2026-11-16 17:11 UTC | 65s 0c | 65s 0c | volatile | 3 of 11 | 2 |  |
 | Dirty Leather Vest | 85 | 75s 0c | 2026-11-15 12:38 UTC | 75s 0c | 87s 50c | volatile | 4 of 11 | 1 |  |
 | Dokebi Boots | 14579 | 17s 99c | 2026-11-16 17:11 UTC | 18s 0c | 18s 0c | steady | 8 of 11 | 12 | -10% |
@@ -256,6 +269,7 @@
 | Frostmane Leather Vest | 2108 | 1g 0s 0c | 2026-11-12 03:40 UTC | 1g 0s 0c |  | too new | 2 of 11 | 1 |  |
 | Frostsaber Boots | 15071 | 5g 99s 99c | 2026-11-16 17:11 UTC | 5g 99s 99c |  | too new | 1 of 11 | 3 |  |
 | Frostsaber Gloves | 15070 | 9g 0s 0c | 2026-11-16 17:11 UTC | 9g 0s 0c |  | too new | 1 of 11 | 7 |  |
+| Furbolg Shaman's Girdle | 284268 | 6g 0s 0c | 2026-11-16 17:11 UTC | 8g 50s 0c |  | too new | 2 of 11 | 2 |  |
 | Gauntlets of the Sea | 8346 | 6g 75s 0c | 2026-11-16 17:11 UTC | 9g 45s 0c |  | too new | 2 of 11 | 14 |  |
 | Gem-studded Leather Belt | 4262 | 1g 40s 0c | 2026-11-16 17:11 UTC | 68s 0c | 1g 5s 0c | volatile | 8 of 11 | 50 | -83% |
 | Ghostwalker Belt | 15148 | 22s 0c | 2026-11-16 17:11 UTC | 21s 0c | 22s 0c | volatile | 9 of 11 | 24 | -72% |
@@ -266,9 +280,11 @@
 | Ghostwalker Legguards | 15151 | 59s 0c | 2026-11-16 17:11 UTC | 59s 0c | 59s 50c | steady | 8 of 11 | 14 | -2% |
 | Ghostwalker Pads | 15150 | 42s 0c | 2026-11-16 17:11 UTC | 49s 0c | 50s 0c | moving | 9 of 11 | 9 | -35% |
 | Ghostwalker Rags | 15144 | 50s 0c | 2026-11-16 17:11 UTC | 60s 0c | 70s 50c | volatile | 8 of 11 | 11 | -45% |
+| Ghoul Fingers | 1314 | 2g 50s 0c | 2026-11-15 12:38 UTC | 2g 50s 0c |  | too new | 1 of 11 | 1 |  |
 | Gloomshroud Armor | 1489 | 5g 99s 0c | 2026-11-16 17:11 UTC | 4g 49s 0c | 3g 99s 0c | steady | 9 of 11 | 5 | +18% |
 | Gloves of Holy Might | 867 | 18g 90s 0c | 2026-11-16 17:11 UTC | 17g 99s 0c | 18g 90s 0c | steady | 7 of 11 | 10 | -55% |
 | Gloves of the Fang | 10413 | 69s 69c | 2026-11-16 17:11 UTC | 49s 0c | 66s 0c | moving | 10 of 11 | 43 | -27% |
+| Glowing Leather Bracers | 2017 | 50s 0c | 2026-11-16 17:11 UTC | 50s 0c |  | too new | 1 of 11 | 1 |  |
 | Glyphed Belt | 6421 | 25s 45c | 2026-11-16 17:11 UTC | 25s 0c | 25s 45c | moving | 9 of 11 | 23 | -47% |
 | Glyphed Boots | 6420 | 38s 0c | 2026-11-16 17:11 UTC | 41s 0c | 46s 0c | moving | 9 of 11 | 24 | -51% |
 | Glyphed Bracers | 4059 | 25s 88c | 2026-11-16 17:11 UTC | 25s 88c | 26s 0c | moving | 9 of 11 | 23 | -61% |
@@ -279,6 +295,12 @@
 | Glyphed Mitts | 6419 | 24s 97c | 2026-11-16 17:11 UTC | 25s 0c | 30s 0c | moving | 8 of 11 | 24 | -42% |
 | Gnomish Harm Prevention Belt | 10721 | 1g 55s 95c | 2026-11-16 17:11 UTC | 2g 17s 89c | 2g 17s 89c | volatile | 5 of 11 | 8 |  |
 | Gorefang's Runners | 283361 | 14s 50c | 2026-11-16 17:11 UTC | 16s 99c | 13s 25c | moving | 10 of 11 | 13 | +42% |
+| Grand Armguards | 15188 | 2g 45s 0c | 2026-11-16 17:11 UTC | 2g 72s 50c |  | too new | 2 of 11 | 13 |  |
+| Grand Belt | 15191 | 1g 84s 0c | 2026-11-16 17:11 UTC | 1g 88s 0c | 1g 88s 0c | volatile | 3 of 11 | 9 |  |
+| Grand Boots | 15189 | 2g 99s 0c | 2026-11-16 17:11 UTC | 3g 99s 0c | 3g 99s 0c | volatile | 3 of 11 | 3 |  |
+| Grand Breastplate | 15195 | 5g 50s 0c | 2026-11-15 12:38 UTC | 5g 50s 0c |  | too new | 1 of 11 | 1 |  |
+| Grand Crown | 15193 | 5g 99s 0c | 2026-11-16 17:11 UTC | 5g 99s 0c |  | too new | 1 of 11 | 1 |  |
+| Grand Gauntlets | 15192 | 4g 99s 0c | 2026-11-16 17:11 UTC | 5g 24s 50c |  | too new | 2 of 11 | 4 |  |
 | Grand Legguards | 15194 | 5g 0s 0c | 2026-11-16 17:11 UTC | 10g 87s 0c | 10g 87s 0c | volatile | 4 of 11 | 2 |  |
 | Grand Shoulders | 15693 | 3g 70s 0c | 2026-11-16 17:11 UTC | 3g 99s 50c | 3g 99s 50c | steady | 4 of 11 | 4 |  |
 | Gray Fur Booties | 3321 | 1s 0c | 2026-11-12 12:44 UTC | 1s 0c | 1s 0c | volatile | 7 of 11 | 4 |  |
@@ -365,6 +387,7 @@
 | Huntsman's Leggings | 9893 | 68s 0c | 2026-11-16 17:11 UTC | 71s 0c | 74s 0c | moving | 8 of 11 | 16 | -30% |
 | Huntsman's Shoulders | 9894 | 70s 0c | 2026-11-16 17:11 UTC | 49s 0c | 61s 50c | volatile | 8 of 11 | 13 | -60% |
 | Hyena Hide Helm | 284712 | 1g 49s 0c | 2026-11-16 17:11 UTC | 1g 49s 0c | 1g 49s 0c | moving | 6 of 11 | 6 |  |
+| Icy Tomb Spaulders | 18699 | 27g 69s 69c | 2026-11-16 17:11 UTC | 33g 19s 69c |  | too new | 2 of 11 | 3 |  |
 | Igleggings | 286752 | 5s 0c | 2026-11-16 17:11 UTC | 5s 0c | 4s 50c | moving | 10 of 11 | 6 | +25% |
 | Imperial Leather Belt | 4738 | 37s 0c | 2026-11-16 17:11 UTC | 44s 0c | 50s 49c | volatile | 8 of 11 | 18 | -56% |
 | Imperial Leather Boots | 6431 | 66s 0c | 2026-11-16 17:11 UTC | 68s 99c | 92s 0c | volatile | 8 of 11 | 18 | -54% |
@@ -382,7 +405,10 @@
 | Imposing Pants | 15168 | 89s 0c | 2026-11-16 17:11 UTC | 98s 0c | 99s 0c | steady | 6 of 11 | 16 |  |
 | Imposing Shoulders | 15169 | 60s 0c | 2026-11-16 17:11 UTC | 65s 99c | 65s 99c | moving | 6 of 11 | 20 |  |
 | Imposing Vest | 15164 | 1g 16s 0c | 2026-11-16 17:11 UTC | 1g 8s 0c | 1g 57s 50c | volatile | 8 of 11 | 8 | -60% |
+| Indomitable Armguards | 14682 | 1g 75s 0c | 2026-11-16 17:11 UTC | 1g 62s 0c |  | too new | 2 of 11 | 4 |  |
 | Indomitable Belt | 14684 | 2g 0s 0c | 2026-11-16 17:11 UTC | 5g 29s 0c | 5g 29s 0c | volatile | 4 of 11 | 2 |  |
+| Indomitable Boots | 14681 | 5g 55s 0c | 2026-11-15 17:55 UTC | 5g 55s 0c |  | too new | 1 of 11 | 2 |  |
+| Indomitable Leggings | 14687 | 8g 0s 0c | 2026-11-16 17:11 UTC | 5g 75s 50c |  | too new | 2 of 11 | 1 |  |
 | Infiltrator Armor | 7407 | 36s 88c | 2026-11-16 17:11 UTC | 36s 98c | 37s 0c | moving | 9 of 11 | 27 | -38% |
 | Infiltrator Boots | 7409 | 22s 89c | 2026-11-16 17:11 UTC | 23s 0c | 23s 0c | moving | 9 of 11 | 20 | -21% |
 | Infiltrator Bracers | 7410 | 23s 0c | 2026-11-16 17:11 UTC | 14s 0c | 18s 0c | moving | 9 of 11 | 27 | -40% |
@@ -439,11 +465,18 @@
 | Lupine Mantle | 15019 | 8s 0c | 2026-11-16 17:11 UTC | 10s 0c | 14s 7c | volatile | 10 of 11 | 25 | -52% |
 | Lupine Slippers | 15012 | 9s 50c | 2026-11-16 17:11 UTC | 3s 70c | 3s 85c | moving | 10 of 11 | 50 | -8% |
 | Lupine Vest | 15018 | 7s 8c | 2026-11-16 17:11 UTC | 7s 27c | 7s 65c | steady | 10 of 11 | 48 | -9% |
+| Malefic Bracers | 18700 | 100g 0s 0c | 2026-11-16 17:11 UTC | 100g 0s 0c |  | too new | 1 of 11 | 1 |  |
 | Mantle of Thieves | 2264 | 6g 50s 97c | 2026-11-16 17:11 UTC | 5g 35s 0c | 5g 17s 50c | moving | 8 of 11 | 9 | +28% |
+| Mar Alom's Grip | 12547 | 45g 0s 0c | 2026-11-16 17:11 UTC | 47g 50s 0c |  | too new | 2 of 11 | 2 |  |
 | Metalworking Gloves | 1944 | 17s 0c | 2026-11-16 17:11 UTC | 5s 0c | 6s 0c | moving | 9 of 11 | 21 | -17% |
 | Might of the Timbermaw | 19044 | 89g 55s 98c | 2026-11-16 17:11 UTC | 89g 61s 48c |  | too new | 2 of 11 | 4 |  |
+| Mighty Armsplints | 10147 | 2g 50s 0c | 2026-11-16 17:11 UTC | 2g 49s 0c | 2g 49s 0c | steady | 3 of 11 | 8 |  |
+| Mighty Boots | 10146 | 3g 43s 0c | 2026-11-16 17:11 UTC | 3g 43s 0c |  | too new | 2 of 11 | 6 |  |
+| Mighty Gauntlets | 10149 | 3g 89s 0c | 2026-11-16 17:11 UTC | 3g 89s 0c | 3g 89s 0c | moving | 3 of 11 | 3 |  |
 | Mighty Girdle | 10145 | 1g 44s 0c | 2026-11-16 17:11 UTC | 2g 67s 50c | 2g 67s 50c | volatile | 4 of 11 | 6 |  |
+| Mighty Helmet | 10150 | 4g 98s 99c | 2026-11-16 17:11 UTC | 12g 48s 99c |  | too new | 2 of 11 | 4 |  |
 | Mighty Leggings | 10152 | 7g 48s 0c | 2026-11-16 17:11 UTC | 9g 80s 0c | 9g 80s 0c | moving | 4 of 11 | 2 |  |
+| Mighty Spaulders | 10153 | 2g 62s 0c | 2026-11-16 17:11 UTC | 3g 14s 0c |  | too new | 2 of 11 | 2 |  |
 | Moonchaser's Headdress | 283545 | 1g 45s 0c | 2026-11-16 17:11 UTC | 1g 20s 0c | 1g 29s 0c | volatile | 7 of 11 | 3 | -52% |
 | Murloc Scale Belt | 5780 | 13s 0c | 2026-11-16 17:11 UTC | 13s 0c | 17s 0c | moving | 9 of 11 | 36 | -53% |
 | Murloc Scale Bracers | 5783 | 88s 0c | 2026-11-16 17:11 UTC | 97s 0c | 97s 0c | volatile | 5 of 11 | 13 |  |
@@ -462,6 +495,7 @@
 | Nightshade Helmet | 10226 | 2g 99s 0c | 2026-11-16 17:11 UTC | 3g 0s 0c | 3g 0s 0c | moving | 3 of 11 | 8 |  |
 | Nightshade Leggings | 10227 | 5g 0s 0c | 2026-11-16 17:11 UTC | 8g 0s 0c | 8g 0s 0c | volatile | 3 of 11 | 5 |  |
 | Nightshade Spaulders | 10228 | 2g 66s 0c | 2026-11-16 17:11 UTC | 2g 82s 50c | 3g 49s 50c | moving | 6 of 11 | 2 | -29% |
+| Nightshade Tunic | 10220 | 25g 99s 99c | 2026-11-16 17:11 UTC | 20g 0s 0c | 20g 0s 0c | volatile | 3 of 11 | 1 |  |
 | Nimble Leather Gloves | 7285 | 6s 70c | 2026-11-16 17:11 UTC | 5s 90c | 6s 0c | steady | 10 of 11 | 458 | -2% |
 | Nocturnal Cap | 15156 | 90s 0c | 2026-11-16 17:11 UTC | 79s 0c | 79s 0c | steady | 7 of 11 | 8 | -11% |
 | Nocturnal Gloves | 15155 | 65s 0c | 2026-11-16 17:11 UTC | 65s 0c | 65s 0c | volatile | 8 of 11 | 6 | -68% |
@@ -495,7 +529,11 @@
 | Pathfinder Pants | 15344 | 26s 22c | 2026-11-16 17:11 UTC | 28s 0c | 30s 0c | moving | 9 of 11 | 13 | -20% |
 | Pathfinder Shoulder Pads | 15345 | 35s 50c | 2026-11-16 17:11 UTC | 28s 0c | 28s 0c | moving | 9 of 11 | 16 | -7% |
 | Pathfinder Vest | 15346 | 29s 0c | 2026-11-16 17:11 UTC | 29s 0c | 31s 32c | moving | 8 of 11 | 15 | -28% |
+| Peerless Armor | 15433 | 4g 44s 0c | 2026-11-16 17:11 UTC | 4g 86s 0c |  | too new | 2 of 11 | 2 |  |
+| Peerless Belt | 15428 | 1g 55s 0c | 2026-11-16 17:11 UTC | 1g 55s 0c | 1g 55s 0c | volatile | 3 of 11 | 9 |  |
+| Peerless Boots | 15426 | 2g 32s 0c | 2026-11-16 17:11 UTC | 2g 32s 0c | 2g 32s 0c | volatile | 3 of 11 | 4 |  |
 | Peerless Bracers | 15425 | 1g 44s 43c | 2026-11-16 17:11 UTC | 2g 0s 0c | 2g 0s 0c | moving | 5 of 11 | 3 |  |
+| Peerless Gloves | 15429 | 3g 0s 0c | 2026-11-16 17:11 UTC | 3g 0s 0c | 3g 0s 0c | moving | 3 of 11 | 5 |  |
 | Peerless Headband | 15430 | 3g 77s 0c | 2026-11-16 17:11 UTC | 4g 4s 50c | 4g 4s 50c | moving | 4 of 11 | 2 |  |
 | Peerless Leggings | 15431 | 5g 0s 0c | 2026-11-16 17:11 UTC | 7g 49s 99c | 7g 49s 99c | moving | 4 of 11 | 4 |  |
 | Peerless Shoulders | 15432 | 2g 99s 99c | 2026-11-16 17:11 UTC | 2g 99s 99c | 2g 99s 99c | moving | 5 of 11 | 2 |  |
@@ -517,12 +555,16 @@
 | Potent Pants | 15176 | 1g 99s 99c | 2026-11-16 17:11 UTC | 1g 85s 0c | 1g 92s 49c | volatile | 6 of 11 | 6 |  |
 | Potent Shoulders | 15177 | 1g 98s 99c | 2026-11-16 17:11 UTC | 1g 98s 99c | 1g 98s 99c | moving | 5 of 11 | 4 |  |
 | Praetorian Boots | 15181 | 2g 31s 0c | 2026-11-16 17:11 UTC | 2g 99s 0c | 2g 99s 0c | volatile | 5 of 11 | 3 |  |
+| Praetorian Coif | 15185 | 3g 25s 99c | 2026-11-16 17:11 UTC | 2g 94s 0c | 2g 94s 0c | moving | 3 of 11 | 9 |  |
 | Praetorian Girdle | 15180 | 1g 15s 0c | 2026-11-16 17:11 UTC | 1g 99s 0c | 1g 99s 0c | moving | 5 of 11 | 4 |  |
 | Praetorian Gloves | 15184 | 1g 95s 0c | 2026-11-16 17:11 UTC | 2g 0s 0c | 2g 0s 0c | volatile | 5 of 11 | 3 |  |
 | Praetorian Leggings | 15186 | 1g 99s 22c | 2026-11-16 17:11 UTC | 2g 31s 0c | 2g 31s 0c | volatile | 5 of 11 | 2 |  |
+| Praetorian Padded Armor | 15179 | 2g 53s 0c | 2026-11-16 17:11 UTC | 3g 99s 0c | 3g 99s 0c | volatile | 3 of 11 | 8 |  |
 | Praetorian Pauldrons | 15187 | 3g 25s 0c | 2026-11-16 17:11 UTC | 2g 94s 50c | 2g 94s 50c | volatile | 6 of 11 | 4 |  |
 | Praetorian Wristbands | 15182 | 1g 20s 0c | 2026-11-16 17:11 UTC | 1g 47s 0c | 1g 47s 0c | volatile | 5 of 11 | 6 |  |
+| Pridelord Armor | 14670 | 3g 69s 99c | 2026-11-16 17:11 UTC | 3g 69s 99c | 3g 69s 99c | moving | 3 of 11 | 2 |  |
 | Pridelord Bands | 14672 | 1g 99s 30c | 2026-11-16 17:11 UTC | 2g 48s 0c | 2g 48s 0c | volatile | 5 of 11 | 4 |  |
+| Pridelord Boots | 14671 | 1g 55s 0c | 2026-11-16 17:11 UTC | 1g 98s 0c | 1g 98s 0c | moving | 3 of 11 | 2 |  |
 | Pridelord Girdle | 14674 | 4g 25s 0c | 2026-11-16 17:11 UTC | 4g 25s 0c | 4g 25s 0c | volatile | 5 of 11 | 5 |  |
 | Pridelord Gloves | 14675 | 4g 83s 79c | 2026-11-16 17:11 UTC | 4g 91s 89c | 4g 91s 89c | moving | 4 of 11 | 4 |  |
 | Pridelord Halo | 14676 | 1g 79s 0c | 2026-11-16 17:11 UTC | 2g 4s 0c | 2g 4s 0c | steady | 4 of 11 | 4 |  |
@@ -568,6 +610,7 @@
 | Ranger Wristguards | 7484 | 39s 90c | 2026-11-16 17:11 UTC | 44s 0c | 49s 0c | volatile | 8 of 11 | 23 | -70% |
 | Raptor Hide Belt | 4456 | 16s 9c | 2026-11-16 17:11 UTC | 16s 30c | 16s 19c | moving | 8 of 11 | 55 | +2% |
 | Raptor Hide Harness | 4455 | 39s 98c | 2026-11-16 17:11 UTC | 45s 0c | 45s 0c | steady | 5 of 11 | 46 |  |
+| Ravaged Leather Leggings | 282009 | 5g 0s 0c | 2026-11-16 17:11 UTC | 5g 0s 0c | 5g 0s 0c | moving | 3 of 11 | 1 |  |
 | Rawhide Belt | 1795 | 2s 49c | 2026-11-16 17:11 UTC | 2s 60c | 4s 0c | moving | 8 of 11 | 14 | -35% |
 | Rawhide Boots | 1796 | 4s 0c | 2026-11-16 17:11 UTC | 4s 0c | 5s 0c | moving | 9 of 11 | 8 | -43% |
 | Rawhide Bracers | 1797 | 2s 50c | 2026-11-16 17:11 UTC | 2s 0c | 2s 0c | steady | 10 of 11 | 5 | +0% |
@@ -602,7 +645,9 @@
 | Robust Leggings | 15126 | 20s 0c | 2026-11-16 17:11 UTC | 20s 0c | 20s 0c | moving | 9 of 11 | 20 | -42% |
 | Robust Shoulders | 15127 | 17s 50c | 2026-11-16 17:11 UTC | 18s 50c | 19s 0c | moving | 9 of 11 | 20 | -36% |
 | Robust Tunic | 15128 | 28s 0c | 2026-11-16 17:11 UTC | 29s 0c | 29s 0c | steady | 9 of 11 | 10 | -2% |
+| Rough Leather Gloves | 797 | 17s 0c | 2026-11-16 17:11 UTC | 17s 0c |  | too new | 1 of 11 | 4 |  |
 | Rough Leather Pants | 798 | 2s 0c | 2026-11-06 14:50 UTC | 2s 0c |  | too new | 2 of 11 | 1 |  |
+| Rough Leather Vest | 799 | 2s 0c | 2026-11-13 | 2s 0c |  | too new | 1 of 11 | 3 |  |
 | Roused Nature Footwraps | 286991 | 1g 50s 90c | 2026-11-16 17:11 UTC | 1g 40s 98c | 1g 45s 49c | volatile | 8 of 11 | 7 | -6% |
 | Ruffian Belt | 5975 | 30s 84c | 2026-11-16 17:11 UTC | 19s 0c | 23s 50c | volatile | 10 of 11 | 7 | -41% |
 | Ruffled Chaplet | 5753 | 2g 30s 0c | 2026-11-16 17:11 UTC | 1g 77s 50c | 1g 25s 0c | volatile | 3 of 11 | 1 |  |
@@ -614,6 +659,7 @@
 | Runic Leather Pants | 15095 | 9g 12s 99c | 2026-11-16 17:11 UTC | 3g 22s 0c | 3g 22s 0c | volatile | 3 of 11 | 20 |  |
 | Saber Leggings | 4830 | 98s 98c | 2026-11-16 17:11 UTC | 98s 49c | 98s 99c | moving | 7 of 11 | 6 | -2% |
 | Sandals of the Insurgent | 13111 | 5g 50s 0c | 2026-11-16 17:11 UTC | 5g 24s 0c | 5g 10s 0c | volatile | 8 of 11 | 2 | +3% |
+| Sash of Mercy | 14553 | 219g 0s 0c | 2026-11-16 17:11 UTC | 284g 27s 50c |  | too new | 2 of 11 | 6 |  |
 | Scaled Leather Belt | 9827 | 11s 75c | 2026-11-16 17:11 UTC | 11s 99c | 13s 0c | moving | 9 of 11 | 42 | -23% |
 | Scaled Leather Boots | 9828 | 37s 0c | 2026-11-16 17:11 UTC | 19s 0c | 23s 0c | volatile | 8 of 11 | 26 | -32% |
 | Scaled Leather Bracers | 9829 | 10s 89c | 2026-11-16 17:11 UTC | 11s 0c | 11s 0c | moving | 9 of 11 | 30 | -29% |
@@ -650,6 +696,7 @@
 | Sentinel Shoulders | 7445 | 36s 80c | 2026-11-16 17:11 UTC | 37s 0c | 38s 50c | volatile | 10 of 11 | 28 | -70% |
 | Sentinel Trousers | 7440 | 50s 80c | 2026-11-16 17:11 UTC | 54s 0c | 55s 0c | steady | 8 of 11 | 22 | -2% |
 | Serpentine Sash | 13118 | 11g 98s 99c | 2026-11-16 17:11 UTC | 25g 77s 0c | 25g 77s 0c | moving | 6 of 11 | 6 |  |
+| Serpentskin Armor | 8258 | 2g 33s 0c | 2026-11-16 17:11 UTC | 2g 35s 0c | 2g 35s 0c | moving | 3 of 11 | 7 |  |
 | Serpentskin Boots | 8256 | 8g 54s 0c | 2026-11-16 17:11 UTC | 4g 35s 0c | 4g 85s 0c | moving | 8 of 11 | 5 | -13% |
 | Serpentskin Bracers | 8257 | 99s 0c | 2026-11-16 17:11 UTC | 99s 0c | 1g 4s 50c | volatile | 8 of 11 | 10 | -72% |
 | Serpentskin Girdle | 8255 | 90s 0c | 2026-11-16 17:11 UTC | 90s 50c | 91s 0c | volatile | 7 of 11 | 9 |  |
@@ -666,6 +713,8 @@
 | Silver-lined Belt | 13011 | 50s 40c | 2026-11-16 17:11 UTC | 35s 0c | 35s 0c | moving | 9 of 11 | 36 | +0% |
 | Skin-Flayed Footguards | 287000 | 5g 88s 0c | 2026-11-16 17:11 UTC | 5g 49s 99c | 5g 94s 0c | moving | 8 of 11 | 4 | -21% |
 | Sleek Feathered Tunic | 4861 | 60s 0c | 2026-11-15 17:55 UTC | 21s 50c | 18s 50c | volatile | 10 of 11 | 4 | +330% |
+| Smooth Leather Bracers | 3971 | 58s 0c | 2026-11-15 14:40 UTC | 58s 0c |  | too new | 1 of 11 | 1 |  |
+| Smooth Leather Gloves | 3973 | 55s 0c | 2026-11-16 17:11 UTC | 55s 0c |  | too new | 2 of 11 | 1 |  |
 | Spaulders of the Unseen | 13116 | 19g 99s 0c | 2026-11-16 17:11 UTC | 29g 91s 0c | 29g 91s 0c | moving | 5 of 11 | 2 |  |
 | Spirewind Fetter | 9406 | 6g 33s 33c | 2026-11-16 17:11 UTC | 5g 15s 0c | 5g 15s 0c | volatile | 7 of 11 | 6 | -30% |
 | Squealer's Belt | 4951 | 10s 0c | 2026-11-16 17:11 UTC | 4s 88c | 1s 50c | volatile | 10 of 11 | 2 | +388% |
@@ -676,6 +725,8 @@
 | Stonemason Trousers | 1934 | 2g 22s 97c | 2026-11-16 17:11 UTC | 99s 99c | 1g 0s 0c | steady | 9 of 11 | 10 | -7% |
 | Stormshroud Armor | 15056 | 149g 99s 99c | 2026-11-16 17:11 UTC | 149g 99s 99c |  | too new | 1 of 11 | 1 |  |
 | Stormshroud Shoulders | 15058 | 79g 99s 99c | 2026-11-16 17:11 UTC | 79g 99s 99c |  | too new | 1 of 11 | 1 |  |
+| Studded Doublet | 2463 | 42s 0c | 2026-11-16 17:11 UTC | 42s 0c |  | too new | 1 of 11 | 1 |  |
+| Studded Hat | 3890 | 40s 0c | 2026-11-16 17:11 UTC | 40s 0c |  | too new | 1 of 11 | 1 |  |
 | Studded Leather Harness | 6524 | 9s 0c | 2026-11-07 19:24 UTC | 29s 50c |  | too new | 2 of 11 | 1 |  |
 | Sturdy Bearhide Legguards | 284843 | 15g 25s 0c | 2026-11-16 17:11 UTC | 1g 31s 0c | 1g 31s 0c | steady | 4 of 11 | 2 |  |
 | Superior Belt | 9801 | 12s 0c | 2026-11-16 17:11 UTC | 8s 0c | 8s 0c | moving | 10 of 11 | 32 | +0% |
@@ -685,6 +736,11 @@
 | Superior Leggings | 9808 | 20s 0c | 2026-11-16 17:11 UTC | 19s 0c | 20s 0c | moving | 9 of 11 | 24 | -22% |
 | Superior Shoulders | 9807 | 16s 0c | 2026-11-16 17:11 UTC | 16s 0c | 18s 50c | moving | 10 of 11 | 44 | -27% |
 | Superior Tunic | 9809 | 18s 80c | 2026-11-16 17:11 UTC | 18s 99c | 20s 50c | moving | 10 of 11 | 26 | -30% |
+| Supreme Bracers | 15436 | 8g 10s 0c | 2026-11-16 17:11 UTC | 5g 84s 0c |  | too new | 2 of 11 | 3 |  |
+| Supreme Crown | 15439 | 5g 99s 0c | 2026-11-16 17:11 UTC | 5g 99s 0c |  | too new | 1 of 11 | 1 |  |
+| Supreme Leggings | 15440 | 3g 71s 0c | 2026-11-15 17:55 UTC | 3g 71s 0c |  | too new | 1 of 11 | 1 |  |
+| Supreme Sash | 15434 | 10g 0s 0c | 2026-11-15 12:38 UTC | 10g 0s 0c |  | too new | 1 of 11 | 1 |  |
+| Supreme Shoulders | 15441 | 9g 99s 99c | 2026-11-15 14:40 UTC | 9g 99s 99c |  | too new | 1 of 11 | 1 |  |
 | Surveyor's Gloves | 281896 | 60s 0c | 2026-11-16 17:11 UTC | 60s 0c | 65s 0c | volatile | 7 of 11 | 5 | -58% |
 | Swampwalker Boots | 2276 | 2g 30s 0c | 2026-11-16 17:11 UTC | 2g 50s 90c | 3g 0s 0c | moving | 8 of 11 | 20 | -28% |
 | Swashbuckler's Belt | 10190 | 1g 67s 0c | 2026-11-16 17:11 UTC | 1g 84s 0c | 2g 0s 0c | moving | 7 of 11 | 5 |  |
@@ -703,9 +759,15 @@
 | Tanned Leather Jerkin | 846 | 5s 0c | 2026-11-16 17:11 UTC | 4s 44c | 5s 0c | volatile | 8 of 11 | 2 | -51% |
 | Tanned Leather Pants | 845 | 4s 0c | 2026-11-15 17:55 UTC | 5s 0c | 5s 0c | steady | 7 of 11 | 2 | +0% |
 | Tattered Explorer's Cuffs | 287039 | 20g 86s 0c | 2026-11-16 17:11 UTC | 17g 93s 0c |  | too new | 2 of 11 | 1 |  |
+| Tattered Leather Hood | 18698 | 124g 99s 99c | 2026-11-16 17:11 UTC | 87g 49s 99c |  | too new | 2 of 11 | 3 |  |
+| Thick Leather Belt | 3961 | 24s 0c | 2026-11-16 17:11 UTC | 48s 50c |  | too new | 2 of 11 | 7 |  |
+| Thick Leather Boots | 3962 | 47s 0c | 2026-11-15 14:40 UTC | 47s 0c |  | too new | 1 of 11 | 2 |  |
 | Thick Leather Bracers | 3963 | 22s 0c | 2026-11-15 14:40 UTC | 22s 0c |  | too new | 2 of 11 | 1 |  |
+| Thick Leather Gloves | 3965 | 34s 0c | 2026-11-16 17:11 UTC | 34s 0c |  | too new | 2 of 11 | 2 |  |
 | Thick Leather Hat | 8750 | 28s 0c | 2026-11-16 17:11 UTC | 28s 0c | 28s 0c | steady | 3 of 11 | 1 |  |
+| Thick Leather Pants | 3966 | 40s 0c | 2026-11-16 17:11 UTC | 40s 0c |  | too new | 2 of 11 | 2 |  |
 | Thick Leather Shoulderpads | 3967 | 40s 0c | 2026-11-16 17:11 UTC | 42s 0c | 42s 0c | steady | 4 of 11 | 2 |  |
+| Thick Leather Tunic | 3968 | 34s 0c | 2026-11-16 17:11 UTC | 91s 50c |  | too new | 2 of 11 | 12 |  |
 | Thick Murloc Armor | 5782 | 75s 0c | 2026-11-16 17:11 UTC | 61s 0c | 65s 0c | volatile | 7 of 11 | 16 | -35% |
 | Thicket Bindings | 286985 | 3g 0s 0c | 2026-11-16 17:11 UTC | 2g 9s 99c | 2g 9s 99c | moving | 9 of 11 | 8 | +10% |
 | Timbermaw Tunic | 252484 | 209g 0s 0c | 2026-11-16 17:11 UTC | 224g 99s 99c |  | too new | 2 of 11 | 3 |  |
@@ -732,10 +794,13 @@
 | Tracker's Tunic | 9924 | 1g 24s 0c | 2026-11-16 17:11 UTC | 1g 47s 50c | 1g 62s 50c | volatile | 8 of 11 | 6 | -54% |
 | Tracker's Wristguards | 9925 | 40s 0c | 2026-11-16 17:11 UTC | 45s 95c | 63s 50c | volatile | 8 of 11 | 14 | -79% |
 | Traveler's Belt | 8293 | 1g 65s 0c | 2026-11-16 17:11 UTC | 3g 11s 0c | 3g 11s 0c | volatile | 4 of 11 | 6 |  |
+| Traveler's Boots | 8294 | 1g 74s 0c | 2026-11-16 17:11 UTC | 2g 20s 0c | 2g 20s 0c | moving | 3 of 11 | 4 |  |
 | Traveler's Bracers | 8295 | 1g 43s 99c | 2026-11-16 17:11 UTC | 1g 99s 99c | 1g 99s 99c | volatile | 5 of 11 | 10 |  |
+| Traveler's Gloves | 8298 | 1g 50s 0c | 2026-11-16 17:11 UTC | 1g 65s 49c |  | too new | 2 of 11 | 10 |  |
 | Traveler's Helm | 8299 | 1g 98s 98c | 2026-11-16 17:11 UTC | 3g 54s 99c | 3g 54s 99c | volatile | 4 of 11 | 7 |  |
 | Traveler's Jerkin | 8296 | 4g 10s 0c | 2026-11-16 17:11 UTC | 5g 56s 50c | 5g 56s 50c | moving | 4 of 11 | 2 |  |
 | Traveler's Leggings | 8300 | 2g 98s 90c | 2026-11-16 17:11 UTC | 4g 56s 0c | 4g 56s 0c | moving | 4 of 11 | 5 |  |
+| Traveler's Spaulders | 8301 | 1g 97s 0c | 2026-11-16 17:11 UTC | 2g 1s 0c | 2g 1s 0c | moving | 3 of 11 | 4 |  |
 | Tribal Belt | 4675 | 1s 0c | 2026-11-16 17:11 UTC | 1s 0c | 1s 0c | volatile | 11 of 11 | 11 | +0% |
 | Tribal Boots | 3284 | 2s 0c | 2026-11-15 17:55 UTC | 2s 0c | 2s 0c | steady | 10 of 11 | 18 | +0% |
 | Tribal Bracers | 3285 | 2s 50c | 2026-11-16 17:11 UTC | 1s 75c | 1s 0c | volatile | 11 of 11 | 8 | +75% |
@@ -753,6 +818,7 @@
 | Troll's Bane Leggings | 13114 | 1g 99s 99c | 2026-11-16 17:11 UTC | 1g 65s 95c | 1g 89s 0c | steady | 9 of 11 | 19 | -29% |
 | Tromping Miner's Boots | 9382 | 1g 0s 0c | 2026-11-09 12:28 UTC | 1g 0s 0c |  | too new | 1 of 11 | 1 |  |
 | Twilight Enforcer's Legs | 287009 | 1g 29s 0c | 2026-11-16 17:11 UTC | 1g 29s 0c | 1g 56s 50c | volatile | 6 of 11 | 14 |  |
+| Unbridled Leggings | 18298 | 7g 20s 99c | 2026-11-16 17:11 UTC | 12g 48s 0c | 12g 48s 0c | volatile | 3 of 11 | 12 |  |
 | Unearthed Bands | 9428 | 1g 50s 0c | 2026-11-16 17:11 UTC | 3g 0s 0c | 2g 75s 0c | volatile | 6 of 11 | 4 |  |
 | Ursol'lok's Paws | 284573 | 70s 0c | 2026-11-16 17:11 UTC | 1g 0s 0c | 1g 0s 0c | moving | 4 of 11 | 2 |  |
 | Wanderer's Armor | 10105 | 2g 66s 0c | 2026-11-16 17:11 UTC | 3g 25s 99c | 3g 25s 99c | steady | 5 of 11 | 2 |  |

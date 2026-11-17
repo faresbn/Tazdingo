@@ -10,16 +10,19 @@
 | Balanced Long Bow | 4025 | 77s 0c | 2026-11-16 17:11 UTC | 77s 0c | 77s 0c | steady | 3 of 11 | 3 |  |
 | Blasthorn Bow | 15288 | 6g 11s 0c | 2026-11-16 17:11 UTC | 7g 99s 0c | 7g 99s 0c | moving | 5 of 11 | 3 |  |
 | Bow of Searing Arrows | 2825 | 19g 11s 0c | 2026-11-16 17:11 UTC | 19g 99s 80c | 24g 0s 0c | volatile | 7 of 11 | 14 | -56% |
+| Bristlebark Bow | 286748 | 1g 0s 0c | 2026-11-13 | 1g 0s 0c |  | too new | 1 of 11 | 2 |  |
 | Cadet's Bow | 8179 | 1s 0c | 2026-11-16 17:11 UTC | 2s 0c | 2s 0c | volatile | 10 of 11 | 2 | +0% |
 | Cracked Shortbow | 2773 | 1s 0c | 2026-11-16 17:11 UTC | 1s 0c | 1s 0c | steady | 10 of 11 | 16 | +0% |
 | Crusader Bow | 15287 | 1g 29s 0c | 2026-11-16 17:11 UTC | 1g 31s 0c | 1g 32s 0c | moving | 7 of 11 | 28 | -48% |
 | Dense Shortbow | 11305 | 1g 80s 0c | 2026-11-16 17:11 UTC | 95s 0c | 1g 40s 0c | moving | 9 of 11 | 2 | -60% |
+| Eaglehorn Long Bow | 13023 | 275g 99s 99c | 2026-11-16 17:11 UTC | 150g 41s 0c | 150g 41s 0c | volatile | 3 of 11 | 5 |  |
 | Feeble Shortbow | 2777 | 1s 46c | 2026-11-16 17:11 UTC | 1s 73c | 2s 0c | moving | 10 of 11 | 42 | -14% |
 | Fine Longbow | 11304 | 63s 99c | 2026-11-16 17:11 UTC | 59s 98c | 66s 99c | moving | 10 of 11 | 18 | -20% |
 | Fine Shortbow | 11303 | 50s 90c | 2026-11-16 17:11 UTC | 38s 0c | 44s 0c | moving | 10 of 11 | 16 | -24% |
 | Gryphonwing Long Bow | 13022 | 6g 40s 0c | 2026-11-16 17:11 UTC | 22g 20s 0c | 22g 20s 0c | volatile | 5 of 11 | 8 |  |
 | Harpy Needler | 15291 | 1g 97s 0c | 2026-11-16 17:11 UTC | 2g 22s 0c | 3g 0s 0c | volatile | 7 of 11 | 9 | -74% |
 | Harpyclaw Short Bow | 13019 | 1g 1s 0c | 2026-11-16 17:11 UTC | 95s 0c | 1g 1s 0c | moving | 9 of 11 | 20 | -60% |
+| Hawkeye Bow | 15296 | 200g 20s 0c | 2026-11-16 17:11 UTC | 200g 20s 0c |  | too new | 1 of 11 | 1 |  |
 | Heavy Recurve Bow | 3027 | 72s 0c | 2026-11-16 17:11 UTC | 73s 0c | 73s 0c | moving | 4 of 11 | 4 | +33% |
 | Heavy Shortbow | 3036 | 7s 45c | 2026-11-16 17:11 UTC | 6s 0c | 6s 0c | steady | 10 of 11 | 154 | +0% |
 | High Elf's Recurve | 284050 | 2g 0s 90c | 2026-11-16 17:11 UTC | 2g 80s 0c | 3g 22s 0c | volatile | 7 of 11 | 2 | -56% |
@@ -39,6 +42,7 @@
 | Quillfire Bow | 15295 | 2g 50s 0c | 2026-11-16 17:11 UTC | 3g 20s 0c | 3g 20s 0c | steady | 5 of 11 | 9 |  |
 | Quillshooter | 10567 | 13g 0s 0c | 2026-11-16 17:11 UTC | 6g 10s 0c | 6g 55s 0c | volatile | 6 of 11 | 6 |  |
 | Ranger Bow | 3021 | 2g 50s 0c | 2026-11-16 17:11 UTC | 1g 90s 0c | 1g 96s 50c | moving | 10 of 11 | 27 | -5% |
+| Ravenwood Bow | 4474 | 1g 99s 0c | 2026-11-15 14:40 UTC | 3g 81s 50c |  | too new | 2 of 11 | 1 |  |
 | Reinforced Bow | 3026 | 20s 0c | 2026-11-16 17:11 UTC | 20s 0c | 20s 0c | volatile | 8 of 11 | 4 | +0% |
 | Short Ash Bow | 3039 | 16s 50c | 2026-11-16 17:11 UTC | 16s 80c | 18s 0c | moving | 10 of 11 | 40 | -27% |
 | Siege Bow | 15294 | 2g 23s 0c | 2026-11-16 17:11 UTC | 2g 83s 0c | 3g 16s 50c | volatile | 6 of 11 | 8 |  |

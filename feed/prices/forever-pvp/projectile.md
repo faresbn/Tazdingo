@@ -25,6 +25,7 @@
 | Sharp Arrow | 2515 | 1c | 2026-11-16 17:11 UTC | 1c | 1c | steady | 10 of 11 | 172762 | +0% |
 | Smooth Pebble | 5568 | 74c | 2026-11-16 17:11 UTC | 30c | 26c | volatile | 8 of 11 | 73 | +150% |
 | Solid Shot | 3033 | 2c | 2026-11-16 17:11 UTC | 2c | 2c | volatile | 9 of 11 | 39491 | -33% |
+| Thorium Headed Arrow | 18042 | 45c | 2026-11-16 17:11 UTC | 63c |  | too new | 2 of 11 | 19575 |  |
 | Thorium Shells | 15997 | 65c | 2026-11-16 17:11 UTC | 59c | 59c | moving | 5 of 11 | 11800 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

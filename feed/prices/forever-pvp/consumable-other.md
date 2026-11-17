@@ -177,6 +177,7 @@
 | Craftsman's Writ: Wizardweave Turban | 264152 | 4s 0c | 2026-11-16 17:11 UTC | 22s 0c | 60s 50c | volatile | 6 of 11 | 20 |  |
 | Cresting Charm | 4481 | 17s 99c | 2026-11-16 17:11 UTC | 25s 35c | 25s 64c | volatile | 9 of 11 | 383 | -54% |
 | Crippling Poison | 3775 | 19c | 2026-11-16 17:11 UTC | 25c | 60c | volatile | 9 of 11 | 601 | -71% |
+| Crippling Poison II | 3776 | 19s 0c | 2026-11-16 17:11 UTC | 11s 0c |  | too new | 2 of 11 | 36 |  |
 | Crystal Basilisk Spine | 1703 | 9s 98c | 2026-11-16 17:11 UTC | 81c | 1s 0c | volatile | 9 of 11 | 453 | -52% |
 | Dark Iron Ale Mug | 11325 | 7s 22c | 2026-11-16 17:11 UTC | 1g 52s 19c | 1g 52s 19c | volatile | 4 of 11 | 41 |  |
 | Deadly Poison | 2892 | 88c | 2026-11-16 17:11 UTC | 1s 97c | 1s 99c | volatile | 7 of 11 | 177 | -72% |
@@ -185,6 +186,7 @@
 | Dense Sharpening Stone | 12404 | 5s 98c | 2026-11-16 17:11 UTC | 8s 99c | 9s 39c | moving | 6 of 11 | 1972 |  |
 | Dense Weightstone | 12643 | 4s 97c | 2026-11-16 17:11 UTC | 13s 33c | 13s 92c | volatile | 6 of 11 | 928 |  |
 | Enchanted Lute | 279976 | 1s 60c | 2026-11-16 17:11 UTC | 1s 60c | 1s 59c | moving | 10 of 11 | 339 | +1% |
+| Executioner's Key | 8444 | 2g 50s 0c | 2026-11-15 12:38 UTC | 2g 50s 0c |  | too new | 1 of 11 | 1 |  |
 | Expert Campfire Kit | 279974 | 21g 98s 99c | 2026-11-16 17:11 UTC | 22g 50s 94c | 22g 50s 94c | moving | 3 of 11 | 10 |  |
 | Faction Banner | 279972 | 58c | 2026-11-16 17:11 UTC | 75c | 77c | volatile | 10 of 11 | 474 | -6% |
 | Fermenter | 279970 | 11s 31c | 2026-11-16 17:11 UTC | 11s 31c | 8s 0c | volatile | 9 of 11 | 227 | +51% |
@@ -193,10 +195,12 @@
 | Fish Bowl | 279967 | 1s 35c | 2026-11-16 17:11 UTC | 1s 44c | 1s 1c | volatile | 10 of 11 | 1664 | +57% |
 | Fishing Hut | 279966 | 1g 48s 96c | 2026-11-16 17:11 UTC | 1g 50s 0c | 1g 50s 0c | volatile | 3 of 11 | 157 |  |
 | Fishing Rack | 279965 | 8s 80c | 2026-11-16 17:11 UTC | 8s 80c | 9s 47c | moving | 9 of 11 | 422 | -48% |
+| Flesh Eating Worm | 7307 | 22s 32c | 2026-11-16 17:11 UTC | 22s 32c | 22s 32c | volatile | 3 of 11 | 37 |  |
 | Frost Oil | 3829 | 69s 57c | 2026-11-16 17:11 UTC | 26s 54c | 39s 98c | volatile | 9 of 11 | 486 | -77% |
 | Golden Skeleton Key | 15870 | 3s 33c | 2026-11-16 17:11 UTC | 3s 33c | 3s 70c | steady | 9 of 11 | 305 | -66% |
 | Green Firework | 9313 | 3s 0c | 2026-11-16 17:11 UTC | 3s 0c | 3s 40c | volatile | 7 of 11 | 524 | -90% |
 | Greenhouse | 279964 | 32s 75c | 2026-11-16 17:11 UTC | 32s 75c | 32s 75c | volatile | 7 of 11 | 39 | -90% |
+| Happy Fun Rock | 18640 | 19s 96c | 2026-11-16 17:11 UTC | 40s 0c | 40s 0c | volatile | 3 of 11 | 32 |  |
 | Heavy Leather Ball | 18662 | 5s 11c | 2026-11-16 17:11 UTC | 7s 0c | 9s 0c | moving | 9 of 11 | 127 | -43% |
 | Heavy Sharpening Stone | 2871 | 2s 0c | 2026-11-16 17:11 UTC | 2s 40c | 3s 10c | volatile | 10 of 11 | 834 | -54% |
 | Heavy Weightstone | 3241 | 5s 0c | 2026-11-16 17:11 UTC | 3s 81c | 4s 43c | moving | 9 of 11 | 1282 | -29% |
@@ -206,6 +210,7 @@
 | Instant Poison III | 6950 | 3s 96c | 2026-11-16 17:11 UTC | 2s 40c | 2s 40c | volatile | 7 of 11 | 484 | -52% |
 | Instant Poison IV | 8926 | 13s 0c | 2026-11-16 17:11 UTC | 10s 0c | 10s 0c | volatile | 5 of 11 | 112 |  |
 | Instant Poison V | 8927 | 25s 70c | 2026-11-16 17:11 UTC | 17s 85c | 17s 85c | volatile | 4 of 11 | 38 |  |
+| Instant Poison VI | 8928 | 15s 0c | 2026-11-16 17:11 UTC | 15s 0c |  | too new | 1 of 11 | 68 |  |
 | Iron Oven | 279982 | 69s 99c | 2026-11-16 17:11 UTC | 4g 1s 0c | 4g 1s 0c | volatile | 5 of 11 | 29 |  |
 | Journeyman Campfire Kit | 279961 | 44s 0c | 2026-11-16 17:11 UTC | 44s 0c | 45s 99c | steady | 9 of 11 | 73 | -8% |
 | Lodestone | 279960 | 2s 30c | 2026-11-16 17:11 UTC | 1s 99c | 82c | volatile | 10 of 11 | 796 | +2388% |
@@ -216,6 +221,8 @@
 | Mathystral Amulet | 279277 | 50s 0c | 2026-11-16 17:11 UTC | 1g 49s 0c | 1g 49s 0c | moving | 5 of 11 | 2 |  |
 | Mathystral Amulet Fragment | 279276 | 17s 98c | 2026-11-16 17:11 UTC | 25s 49c | 16s 98c | volatile | 7 of 11 | 20 | +1174% |
 | Mind-numbing Poison | 5237 | 38c | 2026-11-16 17:11 UTC | 58c | 62c | volatile | 8 of 11 | 184 | -69% |
+| Mind-numbing Poison II | 6951 | 30s 32c | 2026-11-16 17:11 UTC | 4s 99c | 4s 99c | volatile | 3 of 11 | 42 |  |
+| Mind-numbing Poison III | 9186 | 2s 0c | 2026-11-16 17:11 UTC | 2s 0c |  | too new | 1 of 11 | 9 |  |
 | Minor Mana Oil | 20745 | 5s 73c | 2026-11-16 17:11 UTC | 5s 0c | 5s 50c | steady | 9 of 11 | 425 | -17% |
 | Minor Wizard Oil | 20744 | 3s 91c | 2026-11-16 17:11 UTC | 3s 0c | 2s 45c | moving | 10 of 11 | 624 | +50% |
 | Molten Foundry | 279952 | 3g 11s 99c | 2026-11-16 17:11 UTC | 13g 49s 44c | 13g 49s 44c | volatile | 4 of 11 | 56 |  |
@@ -286,5 +293,7 @@
 | Witherbark Mallet | 216483 | 1s 0c | 2026-11-16 17:11 UTC | 1s 0c | 1s 0c | volatile | 9 of 11 | 68 | -50% |
 | Wizard Oil | 20750 | 75s 0c | 2026-11-16 17:11 UTC | 1g 99s 99c | 1g 99s 99c | volatile | 5 of 11 | 163 |  |
 | Wound Poison | 10918 | 77c | 2026-11-16 17:11 UTC | 2s 47c | 2s 73c | volatile | 6 of 11 | 82 |  |
+| Wound Poison II | 10920 | 2s 0c | 2026-11-16 17:11 UTC | 2s 0c |  | too new | 1 of 11 | 20 |  |
+| Wound Poison III | 10921 | 2s 0c | 2026-11-15 14:40 UTC | 2s 0c |  | too new | 1 of 11 | 3 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

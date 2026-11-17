@@ -6,6 +6,7 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
+| Ankle Slicers | 284587 | 999g 0s 0c | 2026-11-16 17:11 UTC | 1,229g 0s 0c |  | too new | 2 of 11 | 2 |  |
 | Balanced Knives | 285284 | 3g 77s 0c | 2026-11-12 03:40 UTC | 7g 27s 0c |  | too new | 2 of 11 | 1 |  |
 | Balanced Throwing Dagger | 2946 | 11s 11c | 2026-11-16 17:11 UTC | 6s 0c | 8s 50c | moving | 10 of 11 | 17 | -33% |
 | Boot Knife | 5379 | 5s 0c | 2026-11-15 17:55 UTC | 5s 0c | 5s 0c | volatile | 7 of 11 | 8 | -29% |

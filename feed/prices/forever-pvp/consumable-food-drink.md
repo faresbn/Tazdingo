@@ -39,6 +39,7 @@
 | Crocolisk Gumbo | 3664 | 2s 30c | 2026-11-16 17:11 UTC | 2s 20c | 2s 20c | steady | 5 of 11 | 334 |  |
 | Crocolisk Steak | 3662 | 1s 30c | 2026-11-16 17:11 UTC | 1s 20c | 1s 25c | steady | 6 of 11 | 203 |  |
 | Cuergo's Gold | 9360 | 49s 99c | 2026-11-16 17:11 UTC | 7s 0c | 7s 0c | volatile | 5 of 11 | 5 |  |
+| Cuergo's Gold with Worm | 9361 | 5g 50s 0c | 2026-11-16 17:11 UTC | 5g 50s 0c | 5g 50s 0c | volatile | 3 of 11 | 6 |  |
 | Cured Ham Steak | 4599 | 1s 0c | 2026-11-16 17:11 UTC | 1s 0c | 1s 1c | volatile | 7 of 11 | 405 | -90% |
 | Curiously Tasty Omelet | 3665 | 1s 76c | 2026-11-16 17:11 UTC | 1s 50c | 1s 52c | steady | 8 of 11 | 608 | -17% |
 | Dalaran Sharp | 414 | 6c | 2026-11-16 17:11 UTC | 6c | 6c | steady | 10 of 11 | 166 | -14% |
@@ -54,6 +55,7 @@
 | Dry Pork Ribs | 2687 | 65c | 2026-11-16 17:11 UTC | 80c | 1s 0c | volatile | 9 of 11 | 1045 | -51% |
 | Dwarven Mild | 422 | 24c | 2026-11-16 17:11 UTC | 25c | 25c | steady | 9 of 11 | 443 | -17% |
 | Enchanted Water | 4791 | 1s 75c | 2026-11-16 17:11 UTC | 1s 58c | 1s 76c | volatile | 8 of 11 | 719 | -44% |
+| Enriched Manna Biscuit | 13724 | 30s 50c | 2026-11-16 17:11 UTC | 25s 25c |  | too new | 2 of 11 | 300 |  |
 | Filet of Redgill | 13930 | 45c | 2026-11-16 17:11 UTC | 79c | 89c | volatile | 6 of 11 | 1556 |  |
 | Fillet of Frenzy | 5476 | 4s 90c | 2026-11-16 17:11 UTC | 5s 90c |  | too new | 2 of 11 | 396 |  |
 | Fine Aged Cheddar | 3927 | 1s 50c | 2026-11-16 17:11 UTC | 1s 70c | 1s 70c | moving | 5 of 11 | 165 |  |
@@ -77,6 +79,7 @@
 | Green Tea Leaf | 1401 | 1s 0c | 2026-11-16 17:11 UTC | 1s 0c | 1s 0c | steady | 9 of 11 | 6 | +0% |
 | Grilled King Crawler Legs | 9681 | 1s 0c | 2026-11-16 17:11 UTC | 1s 58c | 1s 58c | moving | 4 of 11 | 50 |  |
 | Grilled Squid | 13928 | 5s 22c | 2026-11-16 17:11 UTC | 14s 98c | 14s 98c | volatile | 5 of 11 | 1667 |  |
+| Grim Guzzler Boar | 11444 | 4s 0c | 2026-11-16 17:11 UTC | 4s 0c |  | too new | 2 of 11 | 10 |  |
 | Gustberry Juice | 252027 | 90c | 2026-11-15 14:40 UTC | 12c | 12c | volatile | 6 of 11 | 336 |  |
 | Haunch of Meat | 2287 | 7c | 2026-11-16 17:11 UTC | 7c | 8c | moving | 10 of 11 | 364 | -22% |
 | Heavy Crocolisk Stew | 20074 | 3s 59c | 2026-11-16 17:11 UTC | 3s 15c | 3s 76c | moving | 9 of 11 | 477 | -55% |
@@ -101,6 +104,7 @@
 | Melon Juice | 1205 | 67c | 2026-11-16 17:11 UTC | 69c | 82c | moving | 10 of 11 | 565 | -32% |
 | Mightfish Steak | 13934 | 31s 0c | 2026-11-16 17:11 UTC | 55s 50c | 55s 50c | volatile | 4 of 11 | 338 |  |
 | Mithril Head Trout | 8364 | 69c | 2026-11-16 17:11 UTC | 91c | 1s 0c | moving | 9 of 11 | 3887 | -49% |
+| Mixed Berries | 11415 | 7s 89c | 2026-11-16 17:11 UTC | 2g 50s 99c | 2g 50s 99c | volatile | 3 of 11 | 5 |  |
 | Moist Cornbread | 4542 | 25c | 2026-11-16 17:11 UTC | 25c | 25c | volatile | 9 of 11 | 178 | -58% |
 | Monster Omelet | 12218 | 13s 99c | 2026-11-16 17:11 UTC | 34s 65c | 34s 65c | volatile | 5 of 11 | 205 |  |
 | Moon Harvest Pumpkin | 4602 | 1s 0c | 2026-11-16 17:11 UTC | 1s 26c | 2s 7c | volatile | 6 of 11 | 228 |  |
@@ -150,10 +154,12 @@
 | Senggin Root | 3448 | 6c | 2026-11-16 17:11 UTC | 6c | 6c | steady | 10 of 11 | 3551 | +0% |
 | Shiny Red Apple | 4536 | 8c | 2026-11-16 17:11 UTC | 10c | 12c | volatile | 10 of 11 | 1826 | -44% |
 | Sickly Looking Fish | 6299 | 95c | 2026-11-16 17:11 UTC | 2c | 1c | volatile | 10 of 11 | 1204 | +100% |
+| Sip of Lemonale | 260633 | 1g 0s 0c | 2026-11-16 17:11 UTC | 1g 0s 0c |  | too new | 1 of 11 | 6 |  |
 | Skin of Dwarven Stout | 2596 | 3s 50c | 2026-11-16 17:11 UTC | 3s 50c | 3s 50c | moving | 5 of 11 | 126 |  |
 | Skywall Souffle | 263509 | 5s 48c | 2026-11-16 17:11 UTC | 7s 23c | 2s 50c | volatile | 9 of 11 | 160 | +297% |
 | Slimy Smoothie | 249872 | 1s 92c | 2026-11-16 17:11 UTC | 1s 92c | 2s 0c | moving | 7 of 11 | 509 | -7% |
 | Slitherskin Mackerel | 787 | 24c | 2026-11-16 17:11 UTC | 24c | 18c | moving | 10 of 11 | 3055 | +50% |
+| Slushberry Brandy | 260632 | 25s 0c | 2026-11-15 12:38 UTC | 25s 0c |  | too new | 1 of 11 | 10 |  |
 | Smoked Bear Meat | 6890 | 50c | 2026-11-16 17:11 UTC | 46c | 39c | moving | 10 of 11 | 1032 | +53% |
 | Smoked Desert Dumplings | 20452 | 1g 24s 99c | 2026-11-16 17:11 UTC | 87s 48c |  | too new | 2 of 11 | 317 |  |
 | Smoked Sagefish | 21072 | 77c | 2026-11-16 17:11 UTC | 64c | 65c | moving | 10 of 11 | 2132 | -3% |
@@ -161,6 +167,7 @@
 | Soft Banana Bread | 4601 | 1s 8c | 2026-11-16 17:11 UTC | 1s 93c | 1s 93c | moving | 7 of 11 | 78 | -4% |
 | Soothing Turtle Bisque | 3729 | 3s 0c | 2026-11-16 17:11 UTC | 3s 0c | 3s 26c | moving | 9 of 11 | 516 | -49% |
 | Southshore Stout | 3703 | 1s 0c | 2026-11-16 17:11 UTC | 99c | 1s 25c | volatile | 9 of 11 | 36 | -74% |
+| Special Chicken Feed | 11109 | 2g 0s 0c | 2026-11-16 17:11 UTC | 3g 1s 0c | 3g 1s 0c | moving | 3 of 11 | 4 |  |
 | Spiced Chili Crab | 12216 | 4s 53c | 2026-11-16 17:11 UTC | 8s 0c | 9s 98c | volatile | 7 of 11 | 290 | -85% |
 | Spiced Wolf Meat | 2680 | 99c | 2026-11-16 17:11 UTC | 95c | 73c | volatile | 10 of 11 | 1147 | +73% |
 | Spicy Smoothie | 249875 | 35s 0c | 2026-11-16 17:11 UTC | 29s 15c | 29s 15c | moving | 5 of 11 | 161 |  |

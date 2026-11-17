@@ -12,6 +12,7 @@
 | Big Bronze Knife | 3848 | 22s 82c | 2026-11-16 17:11 UTC | 20s 47c | 20s 0c | steady | 11 of 11 | 68 | +2% |
 | Blackfang | 2236 | 60s 50c | 2026-11-16 17:11 UTC | 55s 74c | 68s 0c | moving | 11 of 11 | 28 | -37% |
 | Bold Dirk | 250616 | 15g 0s 0c | 2026-11-16 17:11 UTC | 15g 0s 0c |  | too new | 1 of 11 | 1 |  |
+| Brackclaw | 2235 | 2g 79s 4c | 2026-11-16 17:11 UTC | 2g 79s 4c |  | too new | 1 of 11 | 1 |  |
 | Broad Bladed Knife | 12247 | 2g 75s 0c | 2026-11-16 17:11 UTC | 2g 32s 50c | 2g 87s 50c | moving | 10 of 11 | 3 | -25% |
 | Carving Knife | 2140 | 7s 20c | 2026-11-16 17:11 UTC | 4s 0c | 4s 0c | moving | 11 of 11 | 95 | +0% |
 | Claw of the Shadowmancer | 2912 | 1g 4s 50c | 2026-11-16 17:11 UTC | 1g 29s 50c | 1g 57s 50c | volatile | 10 of 11 | 28 | -55% |
@@ -37,12 +38,14 @@
 | Goblin Screwdriver | 1936 | 2g 1s 0c | 2026-11-16 17:11 UTC | 1g 60s 0c | 1g 45s 0c | moving | 11 of 11 | 12 | +33% |
 | Grove Subjugator's Blade | 287034 | 7g 11s 87c | 2026-11-16 17:11 UTC | 11g 94s 98c | 18g 8s 49c | volatile | 6 of 11 | 10 |  |
 | Gut Ripper | 2164 | 27g 5s 0c | 2026-11-16 17:11 UTC | 26g 84s 0c | 27g 5s 0c | volatile | 7 of 11 | 8 | -85% |
+| Gutwrencher | 5616 | 18g 44s 96c | 2026-11-16 17:11 UTC | 18g 72s 47c |  | too new | 2 of 11 | 2 |  |
 | Honed Stiletto | 15242 | 44s 50c | 2026-11-16 17:11 UTC | 44s 75c | 45s 0c | steady | 10 of 11 | 46 | -3% |
 | Hook Dagger | 3184 | 13s 94c | 2026-11-16 17:11 UTC | 13s 94c | 14s 0c | steady | 11 of 11 | 86 | +0% |
 | Howling Blade | 6331 | 13g 50s 0c | 2026-11-12 03:40 UTC | 11g 75s 0c | 11g 75s 0c | moving | 4 of 11 | 1 |  |
 | Hunting Knife | 2765 | 9s 0c | 2026-11-16 17:11 UTC | 9s 0c | 9s 0c | steady | 9 of 11 | 15 | +0% |
 | Jambiya | 2207 | 10s 0c | 2026-11-15 14:40 UTC | 10s 0c | 10s 0c | moving | 6 of 11 | 2 |  |
 | Julie's Dagger | 6660 | 8g 99s 0c | 2026-11-16 17:11 UTC | 5g 43s 0c | 5g 43s 0c | volatile | 5 of 11 | 11 |  |
+| Kris | 2209 | 22s 0c | 2026-11-15 17:55 UTC | 22s 0c |  | too new | 1 of 11 | 1 |  |
 | Long Crawler Limb | 2088 | 48s 0c | 2026-11-08 23:12 UTC | 48s 0c |  | too new | 2 of 11 | 1 |  |
 | Main Gauche | 2526 | 59s 0c | 2026-11-15 17:55 UTC | 90s 0c | 90s 0c | moving | 3 of 11 | 1 |  |
 | Mithril Shortsword | 250607 | 3g 79s 0c | 2026-11-16 17:11 UTC | 3g 79s 0c |  | too new | 1 of 11 | 2 |  |
@@ -67,12 +70,14 @@
 | Small Dagger | 2764 | 4s 40c | 2026-11-16 17:11 UTC | 4s 40c | 5s 0c | steady | 9 of 11 | 36 | -12% |
 | Small Green Dagger | 4302 | 15s 0c | 2026-11-16 17:11 UTC | 16s 44c | 8s 0c | volatile | 11 of 11 | 10 | +311% |
 | Snarling Fang | 285043 | 4g 0s 0c | 2026-11-16 17:11 UTC | 3g 10s 0c | 3g 10s 0c | moving | 5 of 11 | 4 |  |
+| Stealthblade | 10625 | 75g 0s 0c | 2026-11-16 17:11 UTC | 75g 0s 0c | 75g 0s 0c | moving | 3 of 11 | 6 |  |
 | Stiletto | 2494 | 5g 0s 0c | 2026-11-16 17:11 UTC | 9s 90c | 6s 0c | volatile | 10 of 11 | 4 | +395% |
 | Stonevault Shiv | 9384 | 5g 35s 0c | 2026-11-16 17:11 UTC | 6g 49s 0c | 6g 74s 0c | moving | 6 of 11 | 8 |  |
 | The Shadowfoot Stabber | 24222 | 12g 99s 95c | 2026-11-16 17:11 UTC | 15g 99s 99c | 15g 99s 99c | volatile | 5 of 11 | 5 |  |
 | The Ziggler | 8006 | 4g 55s 0c | 2026-11-16 17:11 UTC | 2g 98s 97c | 3g 30s 0c | volatile | 9 of 11 | 16 | -57% |
 | Threshadon Fang | 5516 | 3s 17c | 2026-11-16 17:11 UTC | 3s 20c | 3s 97c | moving | 8 of 11 | 14 | -36% |
 | Tigerbane | 1465 | 98s 21c | 2026-11-16 17:11 UTC | 99s 0c | 99s 0c | steady | 9 of 11 | 33 | -14% |
+| Tusk of Grunter | 282010 | 1g 50s 0c | 2026-11-15 12:38 UTC | 1g 50s 0c |  | too new | 1 of 11 | 1 |  |
 | Vendetta | 776 | 8g 34s 0c | 2026-11-16 17:11 UTC | 5g 84s 99c | 5g 79s 0c | moving | 9 of 11 | 6 | +17% |
 | Vorpal Dagger | 15245 | 2g 35s 94c | 2026-11-16 17:11 UTC | 2g 90s 0c | 3g 0s 0c | moving | 7 of 11 | 15 | -57% |
 | War Knife | 4571 | 9s 85c | 2026-11-16 17:11 UTC | 9s 82c | 10s 0c | steady | 11 of 11 | 137 | -2% |

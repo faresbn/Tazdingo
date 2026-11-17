@@ -10,6 +10,7 @@
 | Blueprint: Fermenter | 273085 | 7g 14s 0c | 2026-11-16 17:11 UTC | 3g 77s 0c | 1g 7s 50c | volatile | 10 of 11 | 42 | +3670% |
 | Recipe: Cleric's Elixir | 250368 | 4g 49s 0c | 2026-11-16 17:11 UTC | 78s 0c | 60s 0c | volatile | 9 of 11 | 25 | +184% |
 | Recipe: Draught of Dream Vision | 9297 | 4g 89s 0c | 2026-11-16 17:11 UTC | 1g 44s 0c | 1g 75s 0c | volatile | 7 of 11 | 11 | -92% |
+| Recipe: Draught of Water Walking | 288206 | 9g 52s 0c | 2026-11-16 17:11 UTC | 30g 8s 0c | 30g 8s 0c | volatile | 3 of 11 | 10 |  |
 | Recipe: Elixir of Brute Force | 13481 | 24g 0s 0c | 2026-11-16 17:11 UTC | 150g 0s 0c | 150g 0s 0c | volatile | 5 of 11 | 4 |  |
 | Recipe: Elixir of Detect Lesser Invisibility | 3832 | 16s 62c | 2026-11-16 17:11 UTC | 11s 0c | 11s 0c | volatile | 9 of 11 | 49 | -46% |
 | Recipe: Elixir of Fortitude | 250370 | 1g 0s 0c | 2026-11-16 17:11 UTC | 1g 5s 0c | 1g 10s 0c | volatile | 8 of 11 | 22 | -38% |
@@ -38,8 +39,11 @@
 | Recipe: Goblin Rocket Fuel | 10644 | 32s 98c | 2026-11-16 17:11 UTC | 34s 0c | 65s 0c | volatile | 7 of 11 | 27 | -95% |
 | Recipe: Great Rage Potion | 5643 | 25s 0c | 2026-11-16 17:11 UTC | 32s 0c | 35s 25c | moving | 10 of 11 | 33 | -26% |
 | Recipe: Greater Arcane Elixir | 13493 | 119g 0s 0c | 2026-11-16 17:11 UTC | 199g 76s 0c | 199g 76s 0c | moving | 5 of 11 | 3 |  |
+| Recipe: Greater Arcane Protection Potion | 13497 | 9g 7s 0c | 2026-11-16 17:11 UTC | 9g 53s 50c |  | too new | 2 of 11 | 6 |  |
 | Recipe: Greater Fire Protection Potion | 13494 | 12g 88s 0c | 2026-11-16 17:11 UTC | 15g 99s 0c | 15g 99s 0c | moving | 5 of 11 | 11 |  |
 | Recipe: Greater Frost Protection Potion | 13495 | 11g 99s 96c | 2026-11-16 17:11 UTC | 22g 91s 0c | 22g 91s 0c | moving | 5 of 11 | 5 |  |
+| Recipe: Greater Nature Protection Potion | 13496 | 89g 0s 0c | 2026-11-16 17:11 UTC | 100g 0s 0c | 100g 0s 0c | volatile | 3 of 11 | 5 |  |
+| Recipe: Greater Shadow Protection Potion | 13499 | 50g 0s 0c | 2026-11-16 17:11 UTC | 37g 95s 50c |  | too new | 2 of 11 | 1 |  |
 | Recipe: Greater Stoneshield Potion | 13490 | 11g 0s 0c | 2026-11-16 17:11 UTC | 4g 99s 0c | 9g 99s 0c | volatile | 7 of 11 | 19 | -76% |
 | Recipe: Invisibility Potion | 9295 | 29s 0c | 2026-11-16 17:11 UTC | 25s 0c | 27s 50c | volatile | 8 of 11 | 36 | -77% |
 | Recipe: Lesser Frenzy Potion | 250983 | 20s 0c | 2026-11-16 17:11 UTC | 13s 99c | 9s 0c | volatile | 10 of 11 | 54 | +100% |

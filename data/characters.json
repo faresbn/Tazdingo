@@ -11,16 +11,16 @@
    "race": "Orc",
    "faction": "Horde",
    "level": 33,
-   "item_level": 31.6,
-   "recorded_at": "2026-11-15T18:51:27Z",
+   "item_level": 33.6,
+   "recorded_at": "2026-11-16T20:01:21Z",
    "recorded_on": "logout",
    "build": "70938",
    "gear": [
     {
      "slot": "Head",
-     "item": 253955,
-     "name": "Shadow Circlet",
-     "item_level": 25
+     "item": 9492,
+     "name": "Electromagnetic Gigaflux Reactivator",
+     "item_level": 36
     },
     {
      "slot": "Neck",
@@ -36,21 +36,21 @@
     },
     {
      "slot": "Chest",
-     "item": 7058,
-     "name": "Crimson Silk Vest",
-     "item_level": 37
+     "item": 273044,
+     "name": "Violet Sorcerer's Robes",
+     "item_level": 32
     },
     {
      "slot": "Waist",
-     "item": 7055,
-     "name": "Crimson Silk Belt",
-     "item_level": 35
+     "item": 273039,
+     "name": "Blightleaf Rope",
+     "item_level": 34
     },
     {
      "slot": "Legs",
-     "item": 253943,
-     "name": "Filigreed Shadow Leggings",
-     "item_level": 25
+     "item": 7062,
+     "name": "Crimson Silk Pantaloons",
+     "item_level": 39
     },
     {
      "slot": "Feet",
@@ -96,15 +96,15 @@
     },
     {
      "slot": "Back",
-     "item": 4326,
-     "name": "Long Silken Cloak",
-     "item_level": 37
+     "item": 277206,
+     "name": "Brilliant Cloak",
+     "item_level": 41
     },
     {
      "slot": "Main hand",
-     "item": 15242,
-     "name": "Honed Stiletto of the Elder",
-     "item_level": 30
+     "item": 7714,
+     "name": "Hypnotic Blade",
+     "item_level": 39
     },
     {
      "slot": "Off hand",
@@ -122,10 +122,10 @@
    "talents": {
     "points": {
      "Affliction": 0,
-     "Demonology": 24,
+     "Demonology": 25,
      "Destruction": 0
     },
-    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAMXgZegZmxwAAAA"
+    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAMjZegZmxwAAAA"
    },
    "professions": [
     {
@@ -140,12 +140,12 @@
     },
     {
      "name": "Cooking",
-     "skill": 150,
+     "skill": 202,
      "max": 225
     },
     {
      "name": "First Aid",
-     "skill": 187,
+     "skill": 205,
      "max": 225
     },
     {
@@ -159,37 +159,37 @@
      "name": "Daggers",
      "category": "Weapon Skills",
      "skill": 23,
-     "max": 165
+     "max": 170
     },
     {
      "name": "Defense",
      "category": "Weapon Skills",
-     "skill": 157,
-     "max": 165
+     "skill": 163,
+     "max": 170
     },
     {
      "name": "Staves",
      "category": "Weapon Skills",
      "skill": 4,
-     "max": 165
+     "max": 170
     },
     {
      "name": "Swords",
      "category": "Weapon Skills",
      "skill": 1,
-     "max": 165
+     "max": 170
     },
     {
      "name": "Unarmed",
      "category": "Weapon Skills",
      "skill": 13,
-     "max": 165
+     "max": 170
     },
     {
      "name": "Wands",
      "category": "Weapon Skills",
-     "skill": 128,
-     "max": 165
+     "skill": 129,
+     "max": 170
     },
     {
      "name": "Cloth",
@@ -208,25 +208,25 @@
     {
      "name": "Darkspear Trolls",
      "standing": "Honored",
-     "progress": 347,
+     "progress": 547,
      "needed": 12000
     },
     {
      "name": "Orgrimmar",
      "standing": "Honored",
-     "progress": 2310,
+     "progress": 2641,
      "needed": 12000
     },
     {
      "name": "Thunder Bluff",
      "standing": "Friendly",
-     "progress": 4876,
+     "progress": 5132,
      "needed": 6000
     },
     {
      "name": "Undercity",
      "standing": "Friendly",
-     "progress": 5192,
+     "progress": 5805,
      "needed": 6000
     },
     {
@@ -276,21 +276,27 @@
      "standing": "Neutral",
      "progress": 900,
      "needed": 3000
+    },
+    {
+     "name": "Windshapers",
+     "standing": "Neutral",
+     "progress": 0,
+     "needed": 3000
     }
    ],
    "stats": {
-    "Health": 1299,
-    "Mana or energy": 2796,
-    "Strength": 48,
-    "Agility": 38,
-    "Stamina": 104,
-    "Intellect": 132,
-    "Spirit": 93,
-    "Armour": 948
+    "Health": 1071,
+    "Mana or energy": 3130,
+    "Strength": 41,
+    "Agility": 31,
+    "Stamina": 78,
+    "Intellect": 150,
+    "Spirit": 91,
+    "Armour": 736
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": -15,
+    "Dishonourable kills": -63,
     "Honour points": 48,
     "Renown": 0
    },

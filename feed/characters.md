@@ -4,7 +4,7 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 | Character | Level | Item level | Talents | Professions | Recorded |
 |---|---|---|---|---|---|
-| Orc Warlock | 33 | 31.6 | Demonology 24 | Enchanting 180/225, Tailoring 165/225, Cooking 150/225, First Aid 187/225, Fishing 1/75 | 2026-11-15 18:51:27 UTC |
+| Orc Warlock | 33 | 33.6 | Demonology 25 | Enchanting 180/225, Tailoring 165/225, Cooking 202/225, First Aid 205/225, Fishing 1/75 | 2026-11-16 20:01:21 UTC |
 | Troll Rogue | 12 | 6.9 | Combat 3 | Alchemy 63/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-12 14:17:43 UTC |
 | Tauren Druid | 3 | 0.3 | none | Herbalism 13/75, Skinning 68/75, First Aid 1/75 | 2026-11-07 20:40:17 UTC |
 | Troll Mage | 1 | 0 | none | none | 2026-11-05 18:39:27 UTC |
@@ -13,16 +13,16 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 ## Orc Warlock
 
-Horde, level 33, item level 31.6; recorded 2026-11-15 18:51:27 UTC on logout, build 70938.
+Horde, level 33, item level 33.6; recorded 2026-11-16 20:01:21 UTC on logout, build 70938.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
-| Head | Shadow Circlet | 253955 | 25 |
+| Head | Electromagnetic Gigaflux Reactivator | 9492 | 36 |
 | Neck | Sorcerer Collar | 273457 | 22 |
 | Shoulder | Berylline Pads | 4197 | 36 |
-| Chest | Crimson Silk Vest | 7058 | 37 |
-| Waist | Crimson Silk Belt | 7055 | 35 |
-| Legs | Filigreed Shadow Leggings | 253943 | 25 |
+| Chest | Violet Sorcerer's Robes | 273044 | 32 |
+| Waist | Blightleaf Rope | 273039 | 34 |
+| Legs | Crimson Silk Pantaloons | 7062 | 39 |
 | Feet | Black Slippers | 254007 | 35 |
 | Wrist | Graveweave Bindings | 273036 | 31 |
 | Hands | Ephemeral Grips | 273034 | 32 |
@@ -30,35 +30,35 @@ Horde, level 33, item level 31.6; recorded 2026-11-15 18:51:27 UTC on logout, bu
 | Finger | Snake Hoop | 6750 | 32 |
 | Trinket | Satchel of Potions | 280766 | 33 |
 | Trinket | Transformative Cocoon | 276895 | 30 |
-| Back | Long Silken Cloak | 4326 | 37 |
-| Main hand | Honed Stiletto of the Elder | 15242 | 30 |
+| Back | Brilliant Cloak | 277206 | 41 |
+| Main hand | Hypnotic Blade | 7714 | 39 |
 | Off hand | Orb of the Forgotten Seer | 7685 | 37 |
 | Ranged | Gravestone Scepter | 7001 | 29 |
 
-Talents: Affliction 0, Demonology 24, Destruction 0. Loadout code: `CIdBa0K/6fjlwoPQnhZ43PxtUAAAMXgZegZmxwAAAA`.
+Talents: Affliction 0, Demonology 25, Destruction 0. Loadout code: `CIdBa0K/6fjlwoPQnhZ43PxtUAAAMjZegZmxwAAAA`.
 
 | Skill | Kind | Skill level | Max |
 |---|---|---|---|
 | Enchanting | Profession | 180 | 225 |
 | Tailoring | Profession | 165 | 225 |
-| Cooking | Profession | 150 | 225 |
-| First Aid | Profession | 187 | 225 |
+| Cooking | Profession | 202 | 225 |
+| First Aid | Profession | 205 | 225 |
 | Fishing | Profession | 1 | 75 |
-| Daggers | Weapon Skills | 23 | 165 |
-| Defense | Weapon Skills | 157 | 165 |
-| Staves | Weapon Skills | 4 | 165 |
-| Swords | Weapon Skills | 1 | 165 |
-| Unarmed | Weapon Skills | 13 | 165 |
-| Wands | Weapon Skills | 128 | 165 |
+| Daggers | Weapon Skills | 23 | 170 |
+| Defense | Weapon Skills | 163 | 170 |
+| Staves | Weapon Skills | 4 | 170 |
+| Swords | Weapon Skills | 1 | 170 |
+| Unarmed | Weapon Skills | 13 | 170 |
+| Wands | Weapon Skills | 129 | 170 |
 | Cloth | Armor Proficiencies | 1 | 1 |
 | Language: Orcish | Languages | 300 | 300 |
 
 | Reputation | Standing | Progress |
 |---|---|---|
-| Darkspear Trolls | Honored | 347/12000 |
-| Orgrimmar | Honored | 2310/12000 |
-| Thunder Bluff | Friendly | 4876/6000 |
-| Undercity | Friendly | 5192/6000 |
+| Darkspear Trolls | Honored | 547/12000 |
+| Orgrimmar | Honored | 2641/12000 |
+| Thunder Bluff | Friendly | 5132/6000 |
+| Undercity | Friendly | 5805/6000 |
 | Booty Bay | Neutral | 976/3000 |
 | Everlook | Neutral | 976/3000 |
 | Gadgetzan | Neutral | 976/3000 |
@@ -67,8 +67,9 @@ Talents: Affliction 0, Demonology 24, Destruction 0. Loadout code: `CIdBa0K/6fjl
 | Argent Dawn | Neutral | 1250/3000 |
 | Durotar Supply and Logistics | Neutral | 2000/3000 |
 | Earthen Ring | Neutral | 900/3000 |
+| Windshapers | Neutral | 0/3000 |
 
-Stats: Health 1299, Mana or energy 2796, Strength 48, Agility 38, Stamina 104, Intellect 132, Spirit 93, Armour 948. PvP: Honourable kills 0, Dishonourable kills -15, Honour points 48, Renown 0. Collected: mounts 2, pets 5, titles 0.
+Stats: Health 1071, Mana or energy 3130, Strength 41, Agility 31, Stamina 78, Intellect 150, Spirit 91, Armour 736. PvP: Honourable kills 0, Dishonourable kills -63, Honour points 48, Renown 0. Collected: mounts 2, pets 5, titles 0.
 
 ## Troll Rogue
 

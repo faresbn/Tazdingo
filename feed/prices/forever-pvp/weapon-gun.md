@@ -40,7 +40,9 @@
 | Ricochet Blunderbuss | 4089 | 1g 78s 0c | 2026-11-16 17:11 UTC | 1g 67s 67c | 1g 78s 0c | volatile | 7 of 11 | 12 | -59% |
 | Rough Boomstick | 4362 | 16s 90c | 2026-11-16 17:11 UTC | 3s 0c | 2s 95c | moving | 10 of 11 | 192 | +50% |
 | Rust-covered Blunderbuss | 2774 | 1s 0c | 2026-11-16 17:11 UTC | 1s 0c | 1s 0c | steady | 10 of 11 | 28 | +0% |
+| Sentinel Musket | 4026 | 45s 85c | 2026-11-16 17:11 UTC | 57s 0c | 57s 0c | moving | 3 of 11 | 7 |  |
 | Shadowforge Bushmaster | 9422 | 3g 77s 0c | 2026-11-16 17:11 UTC | 10g 0s 0c | 10g 0s 0c | moving | 5 of 11 | 3 |  |
+| Sharpshooter Harquebus | 15325 | 3g 99s 99c | 2026-11-16 17:11 UTC | 3g 99s 99c | 3g 99s 99c | moving | 3 of 11 | 6 |  |
 | Shell Launcher Shotgun | 13146 | 6g 88s 0c | 2026-11-16 17:11 UTC | 8g 21s 0c | 8g 71s 0c | volatile | 6 of 11 | 7 |  |
 | Shoddy Blunderbuss | 2783 | 5s 90c | 2026-11-16 17:11 UTC | 6s 0c | 6s 0c | steady | 9 of 11 | 15 | +0% |
 | Silver-plated Shotgun | 4379 | 26s 49c | 2026-11-16 17:11 UTC | 26s 49c | 28s 50c | moving | 10 of 11 | 36 | -24% |

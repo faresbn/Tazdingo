@@ -6,20 +6,25 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
+| Blueprint: Sewing Machine | 273121 | 199g 89s 98c | 2026-11-16 17:11 UTC | 222g 94s 98c |  | too new | 2 of 11 | 5 |  |
 | Blueprint: Tanning Rack | 273096 | 6g 90s 0c | 2026-11-16 17:11 UTC | 5g 38s 0c | 4g 50s 0c | moving | 9 of 11 | 30 | +77% |
 | Pattern: Barbaric Belt | 4301 | 89s 0c | 2026-11-16 17:11 UTC | 89s 0c | 96s 0c | volatile | 7 of 11 | 13 | -73% |
+| Pattern: Barbaric Bracers | 18949 | 9g 75s 0c | 2026-11-16 17:11 UTC | 14g 0s 0c | 14g 0s 0c | volatile | 3 of 11 | 11 |  |
 | Pattern: Barbaric Gloves | 4297 | 6s 10c | 2026-11-16 17:11 UTC | 6s 29c | 6s 19c | moving | 10 of 11 | 38 | +5% |
 | Pattern: Big Voodoo Cloak | 8390 | 13s 0c | 2026-11-16 17:11 UTC | 14s 0c | 17s 0c | moving | 8 of 11 | 16 | -30% |
 | Pattern: Big Voodoo Mask | 8387 | 10s 98c | 2026-11-16 17:11 UTC | 10s 98c | 19s 50c | volatile | 8 of 11 | 65 | -63% |
 | Pattern: Big Voodoo Pants | 8389 | 1g 1s 0c | 2026-11-16 17:11 UTC | 14s 0c | 17s 0c | volatile | 8 of 11 | 18 | -60% |
 | Pattern: Big Voodoo Robe | 8386 | 10s 0c | 2026-11-16 17:11 UTC | 10s 0c | 10s 75c | moving | 8 of 11 | 23 | -38% |
 | Pattern: Black Dragonscale Breastplate | 15759 | 2g 33s 0c | 2026-11-16 17:11 UTC | 3g 45s 0c | 3g 45s 0c | volatile | 5 of 11 | 12 |  |
+| Pattern: Black Dragonscale Helm | 252939 | 45g 5s 23c | 2026-11-16 17:11 UTC | 70g 92s 24c | 70g 92s 24c | volatile | 3 of 11 | 10 |  |
 | Pattern: Black Dragonscale Leggings | 15781 | 4g 34s 0c | 2026-11-16 17:11 UTC | 8g 0s 0c | 8g 0s 0c | volatile | 5 of 11 | 5 |  |
 | Pattern: Black Dragonscale Shoulders | 15770 | 2g 50s 99c | 2026-11-16 17:11 UTC | 15g 20s 20c | 15g 20s 20c | volatile | 5 of 11 | 9 |  |
 | Pattern: Black Whelp Cloak | 7289 | 71s 98c | 2026-11-16 17:11 UTC | 89s 0c | 90s 99c | moving | 8 of 11 | 6 | -8% |
+| Pattern: Black Whelp Slippers | 252761 | 4g 39s 0c | 2026-11-16 17:11 UTC | 5g 99s 0c | 5g 99s 0c | moving | 3 of 11 | 5 |  |
 | Pattern: Black Whelp Tunic | 20576 | 1g 0s 0c | 2026-11-16 17:11 UTC | 1g 0s 0c | 99s 50c | moving | 8 of 11 | 8 | +52% |
 | Pattern: Blue Dragonscale Breastplate | 15751 | 5g 0s 0c | 2026-11-16 17:11 UTC | 64g 50s 0c | 64g 50s 0c | volatile | 4 of 11 | 4 |  |
 | Pattern: Blue Dragonscale Helm | 252938 | 20g 90s 42c | 2026-11-16 17:11 UTC | 49g 13s 0c | 49g 13s 0c | volatile | 5 of 11 | 3 |  |
+| Pattern: Blue Dragonscale Shoulders | 15763 | 1g 32s 0c | 2026-11-16 17:11 UTC | 1g 55s 96c | 1g 55s 96c | volatile | 3 of 11 | 8 |  |
 | Pattern: Blue Suede Gloves | 252866 | 58s 62c | 2026-11-16 17:11 UTC | 60s 0c | 60s 0c | volatile | 5 of 11 | 12 |  |
 | Pattern: Blue Suede Hat | 252890 | 2g 0s 0c | 2026-11-16 17:11 UTC | 4g 99s 0c | 4g 99s 0c | moving | 5 of 11 | 8 |  |
 | Pattern: Blue Suede Pants | 252878 | 89s 98c | 2026-11-16 17:11 UTC | 1g 74s 99c | 1g 74s 99c | volatile | 4 of 11 | 13 |  |
@@ -29,6 +34,7 @@
 | Pattern: Brawler's Leather Helm | 252814 | 1g 70s 0c | 2026-11-16 17:11 UTC | 1g 90s 0c | 2g 0s 0c | moving | 9 of 11 | 16 | -36% |
 | Pattern: Brawler's Leather Pants | 252792 | 40s 86c | 2026-11-16 17:11 UTC | 60s 0c | 60s 0c | moving | 10 of 11 | 20 | +0% |
 | Pattern: Charged Scorpid Belt | 252909 | 45s 0c | 2026-11-16 17:11 UTC | 79s 0c | 79s 0c | moving | 5 of 11 | 15 |  |
+| Pattern: Charged Scorpid Boots | 252936 | 10g 0s 0c | 2026-11-15 12:38 UTC | 35g 6s 50c |  | too new | 2 of 11 | 3 |  |
 | Pattern: Charged Scorpid Bracers | 252927 | 69s 99c | 2026-11-16 17:11 UTC | 70s 45c | 70s 45c | volatile | 5 of 11 | 15 |  |
 | Pattern: Charged Scorpid Gauntlets | 252930 | 55s 0c | 2026-11-16 17:11 UTC | 1g 14s 98c | 1g 14s 98c | volatile | 4 of 11 | 14 |  |
 | Pattern: Charged Scorpid Helm | 252915 | 30s 0c | 2026-11-16 17:11 UTC | 37s 0c | 44s 50c | moving | 6 of 11 | 20 |  |
@@ -43,6 +49,7 @@
 | Pattern: Dark Leather Gloves | 7360 | 5s 0c | 2026-11-16 17:11 UTC | 4s 90c | 5s 0c | steady | 10 of 11 | 39 | -2% |
 | Pattern: Dark Leather Shoulders | 4296 | 1g 0s 0c | 2026-11-16 17:11 UTC | 8s 0c | 9s 0c | moving | 10 of 11 | 27 | -20% |
 | Pattern: Dark Leather Tunic | 2409 | 3s 59c | 2026-11-16 17:11 UTC | 3s 69c | 3s 88c | moving | 10 of 11 | 182 | -8% |
+| Pattern: Dawn Armor | 252892 | 499g 87s 99c | 2026-11-16 17:11 UTC | 1,200g 99s 96c | 1,200g 99s 96c | volatile | 3 of 11 | 3 |  |
 | Pattern: Defender's Leather Armor | 252773 | 14s 25c | 2026-11-16 17:11 UTC | 51s 90c | 29s 0c | volatile | 10 of 11 | 28 | +108% |
 | Pattern: Defender's Leather Helm | 252816 | 82s 80c | 2026-11-16 17:11 UTC | 85s 1c | 1g 0s 0c | moving | 9 of 11 | 21 | -23% |
 | Pattern: Defender's Leather Pants | 252794 | 25s 50c | 2026-11-16 17:11 UTC | 25s 50c | 25s 25c | volatile | 10 of 11 | 28 | +2% |
@@ -74,10 +81,13 @@
 | Pattern: Heavy Leather Ball | 18731 | 33s 43c | 2026-11-16 17:11 UTC | 33s 98c | 39s 94c | moving | 9 of 11 | 18 | -24% |
 | Pattern: Heavy Scorpid Belt | 15743 | 53s 99c | 2026-11-16 17:11 UTC | 60s 0c | 95s 0c | volatile | 7 of 11 | 7 | -94% |
 | Pattern: Heavy Scorpid Boots | 252928 | 90s 0c | 2026-11-16 17:11 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 5 of 11 | 10 |  |
+| Pattern: Heavy Scorpid Gauntlets | 15738 | 2g 99s 0c | 2026-11-13 | 2g 99s 0c |  | too new | 1 of 11 | 1 |  |
 | Pattern: Heavy Scorpid Leggings | 15748 | 85s 98c | 2026-11-16 17:11 UTC | 93s 49c | 1g 1s 0c | volatile | 5 of 11 | 5 |  |
 | Pattern: Heavy Scorpid Shoulders | 15774 | 2g 66s 0c | 2026-11-16 17:11 UTC | 2g 79s 0c | 2g 79s 0c | volatile | 3 of 11 | 5 |  |
 | Pattern: Heavy Scorpid Vest | 15727 | 48s 0c | 2026-11-16 17:11 UTC | 80s 0c | 80s 0c | volatile | 5 of 11 | 11 |  |
+| Pattern: Helm of the Great Chief | 12716 | 8g 99s 99c | 2026-11-16 17:11 UTC | 9g 62s 99c |  | too new | 2 of 11 | 2 |  |
 | Pattern: Herbalist's Gloves | 7361 | 4g 30s 0c | 2026-11-16 17:11 UTC | 2g 50s 0c | 2g 99s 98c | moving | 9 of 11 | 5 | -17% |
+| Pattern: Hide of the Wild | 18518 | 250g 99s 99c | 2026-11-16 17:11 UTC | 295g 99s 99c | 295g 99s 99c | volatile | 3 of 11 | 2 |  |
 | Pattern: Hillman's Belt | 4294 | 8s 0c | 2026-11-16 17:11 UTC | 4s 0c | 4s 0c | moving | 10 of 11 | 40 | +0% |
 | Pattern: Hillman's Leather Boots | 252804 | 30s 0c | 2026-11-16 17:11 UTC | 30s 0c | 20s 50c | volatile | 10 of 11 | 26 | +200% |
 | Pattern: Hillman's Leather Vest | 4293 | 1s 97c | 2026-11-16 17:11 UTC | 1s 88c | 2s 0c | steady | 10 of 11 | 199 | -6% |
@@ -86,6 +96,7 @@
 | Pattern: Ironfeather Leggings | 252895 | 45g 11s 9c | 2026-11-16 17:11 UTC | 110g 60s 0c | 85g 36s 50c | volatile | 6 of 11 | 6 |  |
 | Pattern: Ironfeather Shoulders | 15735 | 76s 60c | 2026-11-16 17:11 UTC | 45s 0c | 49s 0c | volatile | 6 of 11 | 18 |  |
 | Pattern: Kodo Hide Bag | 5083 | 60s 0c | 2026-11-16 17:11 UTC | 20s 0c | 15s 0c | volatile | 10 of 11 | 18 | +122% |
+| Pattern: Living Breastplate | 15771 | 11g 13s 0c | 2026-11-16 17:11 UTC | 65g 56s 50c |  | too new | 2 of 11 | 2 |  |
 | Pattern: Living Crown | 252891 | 9g 0s 0c | 2026-11-16 17:11 UTC | 65g 0s 0c | 65g 0s 0c | volatile | 5 of 11 | 10 |  |
 | Pattern: Living Leggings | 15752 | 50s 0c | 2026-11-16 17:11 UTC | 72s 0c | 72s 0c | moving | 5 of 11 | 15 |  |
 | Pattern: Mender's Leather Gauntlets | 252871 | 44s 32c | 2026-11-16 17:11 UTC | 64s 0c | 82s 0c | volatile | 6 of 11 | 19 |  |
@@ -105,11 +116,14 @@
 | Pattern: Red Dragonscale Leggings | 252937 | 8g 99s 0c | 2026-11-16 17:11 UTC | 58g 0s 0c | 58g 0s 0c | volatile | 5 of 11 | 4 |  |
 | Pattern: Red Whelp Gloves | 7290 | 2g 52s 42c | 2026-11-16 17:11 UTC | 3g 45s 0c | 2g 68s 71c | volatile | 8 of 11 | 4 | +245% |
 | Pattern: Rugged Leather Pants | 7288 | 1s 99c | 2026-11-16 17:11 UTC | 1s 99c | 2s 0c | moving | 10 of 11 | 164 | +0% |
+| Pattern: Runic Leather Armor | 15776 | 1g 51s 0c | 2026-11-16 17:11 UTC | 1g 51s 0c | 1g 51s 0c | moving | 3 of 11 | 1 |  |
 | Pattern: Runic Leather Belt | 15745 | 60s 98c | 2026-11-16 17:11 UTC | 1g 69s 0c | 1g 69s 0c | moving | 5 of 11 | 14 |  |
 | Pattern: Runic Leather Bracers | 15739 | 50s 97c | 2026-11-16 17:11 UTC | 64s 0c | 64s 0c | volatile | 5 of 11 | 24 |  |
 | Pattern: Runic Leather Gauntlets | 15731 | 40s 0c | 2026-11-16 17:11 UTC | 44s 0c | 53s 0c | volatile | 7 of 11 | 12 | -42% |
 | Pattern: Runic Leather Pants | 15765 | 1g 25s 0c | 2026-11-16 17:11 UTC | 1g 25s 0c | 1g 25s 0c | moving | 5 of 11 | 14 |  |
+| Pattern: Runic Leather Shoulders | 15777 | 2g 26s 0c | 2026-11-16 17:11 UTC | 3g 38s 0c |  | too new | 2 of 11 | 2 |  |
 | Pattern: Shadowskin Gloves | 18239 | 13s 50c | 2026-11-16 17:11 UTC | 22s 0c | 21s 50c | volatile | 8 of 11 | 14 | +5% |
+| Pattern: Shifting Cloak | 18519 | 130g 0s 0c | 2026-11-16 17:11 UTC | 190g 0s 0c |  | too new | 2 of 11 | 3 |  |
 | Pattern: Skirmisher's Mail Boots | 252898 | 69s 0c | 2026-11-16 17:11 UTC | 69s 0c | 86s 50c | volatile | 8 of 11 | 16 | -65% |
 | Pattern: Skirmisher's Mail Gauntlets | 252920 | 59s 99c | 2026-11-16 17:11 UTC | 69s 0c | 69s 0c | volatile | 5 of 11 | 12 |  |
 | Pattern: Skulker's Leather Gauntlets | 252868 | 1g 98s 0c | 2026-11-16 17:11 UTC | 1g 55s 0c | 1g 55s 0c | volatile | 5 of 11 | 19 |  |
@@ -124,6 +138,9 @@
 | Pattern: Stormrider's Leather Armor | 252775 | 16s 99c | 2026-11-16 17:11 UTC | 10s 0c | 9s 50c | moving | 10 of 11 | 34 | +11% |
 | Pattern: Stormrider's Leather Helm | 252818 | 9s 88c | 2026-11-16 17:11 UTC | 12s 0c | 20s 0c | volatile | 9 of 11 | 35 | -60% |
 | Pattern: Stormrider's Leather Pants | 252796 | 76s 98c | 2026-11-16 17:11 UTC | 10s 0c | 10s 0c | moving | 10 of 11 | 31 | -17% |
+| Pattern: Stormshroud Armor | 15753 | 60g 76s 0c | 2026-11-15 17:55 UTC | 90g 76s 0c |  | too new | 2 of 11 | 2 |  |
+| Pattern: Stormshroud Gloves | 21548 | 150g 26s 0c | 2026-11-16 17:11 UTC | 150g 26s 0c |  | too new | 2 of 11 | 2 |  |
+| Pattern: Stormshroud Shoulders | 15764 | 48g 0s 0c | 2026-11-16 17:11 UTC | 124g 0s 0c |  | too new | 2 of 11 | 2 |  |
 | Pattern: Supple Scorpid Belt | 252929 | 52s 85c | 2026-11-16 17:11 UTC | 78s 99c | 88s 99c | moving | 6 of 11 | 26 |  |
 | Pattern: Supple Scorpid Boots | 252908 | 46s 0c | 2026-11-16 17:11 UTC | 50s 0c | 50s 0c | volatile | 5 of 11 | 7 |  |
 | Pattern: Supple Scorpid Bracers | 252916 | 8g 99s 99c | 2026-11-16 17:11 UTC | 4g 0s 0c | 4g 0s 0c | volatile | 3 of 11 | 4 |  |
@@ -137,6 +154,7 @@
 | Pattern: Tooled Leather Boots | 252865 | 59s 99c | 2026-11-16 17:11 UTC | 99s 0c | 99s 0c | volatile | 5 of 11 | 18 |  |
 | Pattern: Tooled Leather Bracers | 252885 | 15g 99s 99c | 2026-11-16 17:11 UTC | 10g 99s 99c | 10g 99s 99c | volatile | 4 of 11 | 2 |  |
 | Pattern: Tooled Leather Crown | 252882 | 97s 98c | 2026-11-16 17:11 UTC | 2g 1s 0c | 1g 49s 49c | volatile | 6 of 11 | 14 |  |
+| Pattern: Tooled Leather Epaulets | 252887 | 14g 0s 0c | 2026-11-15 12:38 UTC | 14g 0s 0c |  | too new | 2 of 11 | 2 |  |
 | Pattern: Tooled Leather Gauntlets | 252880 | 12g 99s 0c | 2026-11-16 17:11 UTC | 9g 99s 0c | 9g 99s 0c | steady | 4 of 11 | 2 |  |
 | Pattern: Totemic Leather Armor | 252774 | 14s 99c | 2026-11-16 17:11 UTC | 14s 99c | 13s 50c | moving | 10 of 11 | 27 | +15% |
 | Pattern: Totemic Leather Helm | 252817 | 14s 40c | 2026-11-16 17:11 UTC | 13s 0c | 20s 0c | volatile | 9 of 11 | 21 | -63% |
@@ -155,13 +173,17 @@
 | Pattern: Volcanic Leggings | 15732 | 40s 0c | 2026-11-16 17:11 UTC | 70s 0c | 70s 0c | volatile | 5 of 11 | 25 |  |
 | Pattern: Volcanic Shoulders | 15775 | 1g 51s 0c | 2026-11-16 17:11 UTC | 1g 51s 0c | 1g 51s 0c | steady | 4 of 11 | 5 |  |
 | Pattern: Warbear Harness | 15742 | 8g 80s 0c | 2026-11-16 17:11 UTC | 11g 0s 0c | 11g 0s 0c | volatile | 5 of 11 | 6 |  |
+| Pattern: Warbear Helm | 252894 | 95g 0s 0c | 2026-11-16 17:11 UTC | 97g 0s 0c |  | too new | 2 of 11 | 3 |  |
 | Pattern: Warden's Leather Gauntlets | 252869 | 48s 51c | 2026-11-16 17:11 UTC | 75s 0c | 87s 0c | moving | 6 of 11 | 16 |  |
 | Pattern: Warden's Leather Shoes | 252845 | 29s 0c | 2026-11-16 17:11 UTC | 45s 0c | 47s 0c | volatile | 7 of 11 | 17 | -69% |
 | Pattern: White Leather Jerkin | 2407 | 2s 0c | 2026-11-16 17:11 UTC | 2s 0c | 2s 0c | steady | 10 of 11 | 136 | +0% |
+| Pattern: Wicked Leather Armor | 15773 | 7g 0s 0c | 2026-11-16 17:11 UTC | 11g 0s 0c | 11g 0s 0c | volatile | 3 of 11 | 9 |  |
+| Pattern: Wicked Leather Belt | 15768 | 14g 0s 0c | 2026-11-16 17:11 UTC | 32g 0s 0c |  | too new | 2 of 11 | 8 |  |
 | Pattern: Wicked Leather Boots | 252879 | 9g 33s 96c | 2026-11-16 17:11 UTC | 7g 16s 98c | 7g 16s 98c | volatile | 4 of 11 | 9 |  |
 | Pattern: Wicked Leather Bracers | 15728 | 50s 0c | 2026-11-16 17:11 UTC | 96s 0c | 98s 0c | volatile | 6 of 11 | 20 |  |
 | Pattern: Wicked Leather Headband | 15744 | 2g 65s 0c | 2026-11-16 17:11 UTC | 8g 97s 99c | 8g 97s 99c | volatile | 4 of 11 | 17 |  |
 | Pattern: Wicked Leather Pants | 15757 | 64s 93c | 2026-11-16 17:11 UTC | 83s 0c | 83s 0c | steady | 5 of 11 | 8 |  |
+| Pattern: Wicked Leather Shoulders | 252884 | 4g 99s 99c | 2026-11-15 14:40 UTC | 4g 99s 99c |  | too new | 1 of 11 | 1 |  |
 | Pattern: Wildthorn Mail | 12691 | 89s 0c | 2026-11-16 17:11 UTC | 42s 0c | 47s 0c | volatile | 7 of 11 | 16 | -94% |
 | Pattern: Wisdom's Leather Armor | 252776 | 19s 99c | 2026-11-16 17:11 UTC | 9s 99c | 9s 0c | steady | 10 of 11 | 34 | +11% |
 | Pattern: Wisdom's Leather Helm | 252819 | 10s 50c | 2026-11-16 17:11 UTC | 11s 0c | 19s 0c | volatile | 9 of 11 | 18 | -50% |

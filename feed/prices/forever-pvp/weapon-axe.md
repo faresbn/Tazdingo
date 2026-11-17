@@ -7,9 +7,11 @@
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | Ancient Cleaver | 286983 | 13g 9s 0c | 2026-11-16 17:11 UTC | 10g 0s 0c | 9g 25s 0c | moving | 8 of 11 | 6 | +18% |
+| Ancient Mattock | 287045 | 33g 11s 0c | 2026-11-16 17:11 UTC | 43g 55s 50c |  | too new | 2 of 11 | 1 |  |
 | Axe of Rin'ji | 13014 | 6g 99s 55c | 2026-11-16 17:11 UTC | 8g 21s 0c | 8g 21s 0c | steady | 5 of 11 | 6 |  |
 | Axe of the Deep Woods | 811 | 68g 0s 0c | 2026-11-16 17:11 UTC | 89g 0s 0c | 89g 0s 0c | volatile | 5 of 11 | 6 |  |
 | Axe of the Enforcer | 1454 | 2g 69s 69c | 2026-11-16 17:11 UTC | 2g 69s 69c | 2g 69s 69c | moving | 9 of 11 | 8 | +9% |
+| Balanced War Axe | 13819 | 2g 99s 0c | 2026-11-16 17:11 UTC | 3g 49s 50c |  | too new | 2 of 11 | 2 |  |
 | Barbarian War Axe | 3201 | 44s 96c | 2026-11-16 17:11 UTC | 44s 96c | 45s 0c | steady | 9 of 11 | 82 | +0% |
 | Barbaric Battle Axe | 3195 | 13s 99c | 2026-11-16 17:11 UTC | 13s 70c | 13s 99c | steady | 10 of 11 | 202 | -2% |
 | Battle Axe | 926 | 30s 0c | 2026-11-12 03:40 UTC | 30s 0c | 30s 0c | steady | 3 of 11 | 1 |  |
@@ -42,11 +44,14 @@
 | Curve-bladed Ripper | 2815 | 2g 23s 99c | 2026-11-16 17:11 UTC | 2g 35s 0c | 2g 44s 98c | volatile | 8 of 11 | 8 | -76% |
 | Deadman Cleaver | 3293 | 38s 0c | 2026-11-09 12:28 UTC | 45s 0c | 45s 0c | moving | 4 of 11 | 2 |  |
 | Deadmines Cleaver | 1927 | 84s 84c | 2026-11-15 17:55 UTC | 60s 42c | 36s 0c | volatile | 3 of 11 | 1 |  |
+| Death Striker | 15273 | 11g 99s 0c | 2026-11-16 17:11 UTC | 11g 99s 0c |  | too new | 1 of 11 | 1 |  |
+| Demon's Claw | 15240 | 25g 40s 0c | 2026-11-16 17:11 UTC | 7g 40s 0c | 7g 40s 0c | volatile | 3 of 11 | 2 |  |
 | Digmaster 5000 | 9465 | 20g 92s 0c | 2026-11-16 17:11 UTC | 20g 92s 0c | 20g 92s 0c | volatile | 3 of 11 | 1 |  |
 | Double Axe | 927 | 21s 0c | 2026-11-11 15:03 UTC | 21s 0c |  | too new | 1 of 11 | 1 |  |
 | Dwarven Hatchet | 2073 | 8s 0c | 2026-11-16 17:11 UTC | 7s 42c | 7s 71c | moving | 10 of 11 | 432 | -7% |
 | Ebonclaw Reaver | 1994 | 1g 70s 0c | 2026-11-16 17:11 UTC | 1g 70s 0c | 1g 75s 49c | moving | 8 of 11 | 19 | -32% |
 | Executioner's Cleaver | 13018 | 19g 90s 0c | 2026-11-16 17:11 UTC | 20g 91s 0c | 23g 40s 50c | moving | 6 of 11 | 7 |  |
+| Felstone Reaver | 15239 | 6g 37s 0c | 2026-11-16 17:11 UTC | 6g 37s 0c | 6g 37s 0c | steady | 3 of 11 | 2 |  |
 | Fiery War Axe | 870 | 34g 0s 0c | 2026-11-16 17:11 UTC | 34g 0s 0c | 34g 99s 99c | volatile | 7 of 11 | 11 | -43% |
 | Flesh Carver | 4445 | 67s 0c | 2026-11-16 17:11 UTC | 62s 0c | 66s 0c | moving | 10 of 11 | 6 | -9% |
 | Flurry Axe | 871 | 145g 99s 99c | 2026-11-16 17:11 UTC | 119g 99s 0c | 189g 83s 49c | volatile | 8 of 11 | 12 | -88% |
@@ -54,6 +59,7 @@
 | Gigantic War Axe | 15270 | 2g 30s 0c | 2026-11-16 17:11 UTC | 2g 30s 0c | 2g 35s 0c | moving | 7 of 11 | 14 | -56% |
 | Gloom Reaper | 863 | 89s 64c | 2026-11-16 17:11 UTC | 89s 74c | 90s 0c | steady | 9 of 11 | 63 | -16% |
 | Gouging Pick | 1819 | 7s 68c | 2026-11-16 17:11 UTC | 7s 80c | 8s 0c | steady | 9 of 11 | 17 | -22% |
+| Great Axe | 2531 | 5g 69s 0c | 2026-11-16 17:11 UTC | 5g 69s 0c |  | too new | 2 of 11 | 1 |  |
 | Greater Scythe | 15234 | 1g 13s 95c | 2026-11-16 17:11 UTC | 1g 14s 0c | 1g 14s 0c | moving | 8 of 11 | 34 | -33% |
 | Grimclaw | 1481 | 2g 28s 10c | 2026-11-16 17:11 UTC | 1g 75s 0c | 1g 75s 0c | moving | 9 of 11 | 11 | +7% |
 | Grinning Axe | 1639 | 2g 99s 0c | 2026-11-16 17:11 UTC | 2g 99s 98c | 3g 0s 0c | volatile | 7 of 11 | 12 | -60% |
@@ -69,10 +75,12 @@
 | Hellslayer Battle Axe | 13017 | 2g 88s 69c | 2026-11-16 17:11 UTC | 3g 0s 0c | 3g 40s 0c | volatile | 7 of 11 | 10 | -78% |
 | Hillborne Axe | 2080 | 65s 90c | 2026-11-16 17:11 UTC | 66s 0c | 66s 0c | steady | 9 of 11 | 52 | -16% |
 | Huge Thorium Battleaxe | 12775 | 12g 98s 99c | 2026-11-16 17:11 UTC | 12g 98s 99c |  | too new | 1 of 11 | 7 |  |
+| Jagged Axe | 13818 | 2g 2s 0c | 2026-11-16 17:11 UTC | 2g 2s 0c |  | too new | 1 of 11 | 1 |  |
 | Kang the Decapitator | 2291 | 55g 98s 99c | 2026-11-16 17:11 UTC | 55g 99s 0c | 55g 99s 0c | moving | 5 of 11 | 7 |  |
 | Keen Axe | 3785 | 36s 99c | 2026-11-16 17:11 UTC | 37s 0c | 37s 0c | steady | 6 of 11 | 10 |  |
 | Killmaim | 13016 | 95s 0c | 2026-11-16 17:11 UTC | 77s 0c | 87s 50c | moving | 10 of 11 | 22 | -14% |
 | Large Axe | 2491 | 20s 0c | 2026-11-16 17:11 UTC | 13s 0c | 6s 0c | volatile | 10 of 11 | 4 | +550% |
+| Lord Alexander's Battle Axe | 13003 | 24g 99s 96c | 2026-11-16 17:11 UTC | 29g 0s 0c | 29g 0s 0c | volatile | 3 of 11 | 10 |  |
 | Lumbering Ogre Axe | 1521 | 6g 89s 0c | 2026-11-15 14:40 UTC | 5g 37s 50c |  | too new | 2 of 11 | 2 |  |
 | Lumberjack Axe | 768 | 1s 50c | 2026-11-16 17:11 UTC | 1s 98c | 2s 0c | moving | 10 of 11 | 42 | -1% |
 | Manslayer | 10570 | 14g 0s 0c | 2026-11-16 17:11 UTC | 12g 99s 99c | 12g 99s 99c | volatile | 7 of 11 | 5 | -7% |
@@ -82,11 +90,13 @@
 | Meat Cleaver | 1827 | 13s 40c | 2026-11-16 17:11 UTC | 13s 0c | 13s 40c | steady | 7 of 11 | 22 | -30% |
 | Merciless Axe | 12249 | 2g 13s 0c | 2026-11-16 17:11 UTC | 2g 0s 0c | 2g 6s 50c | moving | 8 of 11 | 6 | -23% |
 | Midnight Axe | 12250 | 5g 0s 0c | 2026-11-16 17:11 UTC | 5g 0s 0c | 5g 0s 0c | moving | 4 of 11 | 2 |  |
+| Mo'grosh Can Opener | 2823 | 2g 25s 0c | 2026-11-15 12:38 UTC | 2g 25s 0c |  | too new | 1 of 11 | 1 |  |
 | Monstrous War Axe | 1640 | 1g 56s 90c | 2026-11-16 17:11 UTC | 1g 57s 0c | 1g 58s 0c | moving | 8 of 11 | 24 | -37% |
 | Moon Cleaver | 15236 | 2g 89s 0c | 2026-11-16 17:11 UTC | 3g 0s 0c | 3g 0s 0c | steady | 5 of 11 | 7 |  |
 | Night Reaver | 1318 | 2g 50s 0c | 2026-11-16 17:11 UTC | 2g 50s 0c | 1g 94s 50c | moving | 10 of 11 | 17 | +67% |
 | Obsidian Cleaver | 9383 | 10g 99s 99c | 2026-11-16 17:11 UTC | 10g 86s 99c | 10g 99s 99c | volatile | 5 of 11 | 5 |  |
 | Prospector Axe | 12975 | 1g 0s 0c | 2026-11-16 17:11 UTC | 90s 0c | 90s 0c | moving | 10 of 11 | 26 | +0% |
+| Razor Axe | 15272 | 6g 0s 0c | 2026-11-16 17:11 UTC | 6g 50s 0c | 6g 50s 0c | volatile | 3 of 11 | 8 |  |
 | Razor's Edge | 12990 | 40s 95c | 2026-11-16 17:11 UTC | 52s 99c | 53s 99c | moving | 10 of 11 | 24 | -9% |
 | Resurged Axe | 287006 | 2g 15s 0c | 2026-11-16 17:11 UTC | 2g 5s 0c | 2g 15s 0c | volatile | 7 of 11 | 8 | -65% |
 | Ribsplitter | 12527 | 18g 0s 0c | 2026-11-16 17:11 UTC | 19g 0s 0c | 19g 0s 0c | moving | 4 of 11 | 5 |  |
@@ -103,12 +113,14 @@
 | Short-handled Battle Axe | 1812 | 4s 52c | 2026-11-16 17:11 UTC | 4s 59c | 5s 0c | steady | 10 of 11 | 34 | -8% |
 | Shovelphlange's Mining Axe | 9378 | 15g 71s 0c | 2026-11-12 03:40 UTC | 15g 71s 0c |  | too new | 1 of 11 | 1 |  |
 | Sickle Axe | 1602 | 12g 99s 0c | 2026-11-16 17:11 UTC | 8g 85s 0c | 9g 76s 0c | moving | 7 of 11 | 2 | -65% |
+| Splintering Battle Axe | 4020 | 1g 20s 0c | 2026-11-16 17:11 UTC | 1g 66s 0c |  | too new | 2 of 11 | 18 |  |
 | Splitting Hatchet | 15231 | 50s 32c | 2026-11-16 17:11 UTC | 50s 40c | 51s 0c | steady | 9 of 11 | 68 | -6% |
 | Stalvan's Reaper | 934 | 1g 59s 0c | 2026-11-16 17:11 UTC | 1g 90s 0c | 2g 80s 0c | moving | 9 of 11 | 15 | -52% |
 | Steelclaw Reaver | 7761 | 5g 0s 0c | 2026-11-16 17:11 UTC | 3g 85s 0c | 4g 75s 0c | moving | 7 of 11 | 6 | -29% |
 | Stone War Axe | 1828 | 16s 15c | 2026-11-16 17:11 UTC | 16s 97c | 16s 99c | steady | 8 of 11 | 17 | -11% |
 | Supercharger Battle Axe | 9486 | 1g 55s 99c | 2026-11-16 17:11 UTC | 1g 66s 0c | 2g 0s 0c | moving | 9 of 11 | 9 | -31% |
 | Tabar | 1196 | 50s 0c | 2026-11-15 14:40 UTC | 27s 50c | 7s 0c | volatile | 3 of 11 | 1 |  |
+| The Minotaur | 9481 | 25g 0s 0c | 2026-11-16 17:11 UTC | 25g 0s 0c | 25g 0s 0c | volatile | 3 of 11 | 1 |  |
 | Thick War Axe | 3489 | 28s 99c | 2026-11-16 17:11 UTC | 23s 0c | 19s 50c | moving | 10 of 11 | 33 | +35% |
 | Tomahawk | 2490 | 2s 0c | 2026-11-08 16:27 UTC | 6s 0c |  | too new | 2 of 11 | 1 |  |
 | Twin-bladed Axe | 15268 | 10s 23c | 2026-11-16 17:11 UTC | 10s 23c | 10s 24c | steady | 10 of 11 | 334 | -7% |
@@ -117,6 +129,7 @@
 | Vile Fin Battle Axe | 3325 | 22s 0c | 2026-11-16 17:11 UTC | 2s 99c | 2s 0c | moving | 10 of 11 | 14 | +50% |
 | Warlord's Axe | 15238 | 4g 0s 0c | 2026-11-16 17:11 UTC | 4g 50s 0c | 4g 50s 0c | steady | 4 of 11 | 4 |  |
 | Winter's Bite | 10623 | 4g 85s 0c | 2026-11-16 17:11 UTC | 6g 0s 0c | 6g 0s 0c | moving | 5 of 11 | 5 |  |
+| Witherbark Hatecleaver | 284063 | 4g 99s 88c | 2026-11-16 17:11 UTC | 4g 99s 88c | 4g 99s 88c | volatile | 3 of 11 | 4 |  |
 | Wood Chopper | 3189 | 2s 0c | 2026-11-16 17:11 UTC | 2s 0c | 1s 89c | moving | 10 of 11 | 18 | +100% |
 | Worn Axe | 37 | 31s 0c | 2026-11-16 17:11 UTC | 50s 0c | 31s 0c | volatile | 9 of 11 | 2 | +4900% |
 | Worn Battleaxe | 12282 | 1g 0s 0c | 2026-11-16 17:11 UTC | 68s 88c | 68s 88c | volatile | 6 of 11 | 2 | -87% |

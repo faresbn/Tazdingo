@@ -11,14 +11,17 @@
 | Archaic Defender | 9385 | 1g 38s 0c | 2026-11-16 17:11 UTC | 1g 50s 0c | 1g 72s 50c | moving | 8 of 11 | 17 | -25% |
 | Assassination Blade | 13036 | 27g 22s 0c | 2026-11-16 17:11 UTC | 27g 22s 0c | 27g 22s 0c | volatile | 5 of 11 | 4 |  |
 | Bastard Sword | 1194 | 30s 0c | 2026-11-16 17:11 UTC | 30s 0c | 30s 0c | volatile | 3 of 11 | 4 |  |
+| Battlefell Sabre | 15220 | 7g 53s 0c | 2026-11-16 17:11 UTC | 7g 53s 0c |  | too new | 2 of 11 | 2 |  |
 | Battlefield Destroyer | 8199 | 2g 48s 55c | 2026-11-16 17:11 UTC | 2g 50s 0c | 2g 55s 0c | volatile | 7 of 11 | 14 | -67% |
 | Beheading Blade | 15253 | 3g 33s 33c | 2026-11-16 17:11 UTC | 3g 50s 0c | 3g 50s 0c | moving | 5 of 11 | 9 |  |
 | Blackwater Cutlass | 1951 | 54s 99c | 2026-11-16 17:11 UTC | 53s 99c | 58s 0c | moving | 11 of 11 | 38 | -8% |
+| Blade of Hanna | 2801 | 800g 0s 0c | 2026-11-15 12:38 UTC | 800g 0s 0c |  | too new | 1 of 11 | 1 |  |
 | Blade of the Basilisk | 8223 | 12g 99s 0c | 2026-11-16 17:11 UTC | 5g 0s 0c | 9g 50s 0c | moving | 9 of 11 | 3 | -47% |
 | Blade of the Titans | 13043 | 17g 0s 0c | 2026-11-16 17:11 UTC | 7g 0s 0c | 9g 0s 0c | volatile | 7 of 11 | 14 | -70% |
 | Blessed Claymore | 4817 | 2g 25s 0c | 2026-11-16 17:11 UTC | 1g 2s 0c | 1g 2s 0c | volatile | 9 of 11 | 6 | -17% |
 | Bloodletter Scalpel | 9511 | 10g 15s 0c | 2026-11-16 17:11 UTC | 13g 77s 50c |  | too new | 2 of 11 | 1 |  |
 | Bloodrazor | 809 | 54g 99s 0c | 2026-11-16 17:11 UTC | 49g 99s 0c | 49g 99s 0c | moving | 5 of 11 | 5 |  |
+| Bluegill Kukri | 2046 | 58s 0c | 2026-11-16 17:11 UTC | 47s 50c |  | too new | 2 of 11 | 2 |  |
 | Blunt Claymore | 1811 | 4s 51c | 2026-11-16 17:11 UTC | 4s 55c | 5s 0c | steady | 10 of 11 | 38 | -9% |
 | Boneslasher | 10573 | 7g 77s 76c | 2026-11-16 17:11 UTC | 5g 70s 0c | 6g 48s 0c | moving | 7 of 11 | 7 | -33% |
 | Brashclaw's Skewer | 2204 | 45s 0c | 2026-11-15 12:38 UTC | 45s 0c | 45s 0c | moving | 3 of 11 | 1 |  |
@@ -51,6 +54,8 @@
 | Destiny | 647 | 113g 98s 99c | 2026-11-16 17:11 UTC | 185g 0s 0c | 185g 0s 0c | moving | 5 of 11 | 6 |  |
 | Dimensional Blade | 15219 | 5g 10s 0c | 2026-11-16 17:11 UTC | 5g 47s 0c | 5g 47s 0c | steady | 4 of 11 | 4 |  |
 | Doombringer | 13053 | 14g 50s 99c | 2026-11-16 17:11 UTC | 19g 43s 50c | 19g 43s 50c | moving | 4 of 11 | 8 |  |
+| Doomforged Straightedge | 12535 | 32g 97s 97c | 2026-11-16 17:11 UTC | 32g 97s 97c | 32g 97s 97c | volatile | 3 of 11 | 5 |  |
+| Dragonmaw Shortsword | 753 | 5g 0s 0c | 2026-11-13 | 5g 0s 0c |  | too new | 1 of 11 | 1 |  |
 | Dull Blade | 1384 | 79s 0c | 2026-11-16 17:11 UTC | 79s 50c | 79s 0c | volatile | 3 of 11 | 4 |  |
 | Duskbringer | 2205 | 2g 90s 0c | 2026-11-16 17:11 UTC | 2g 90s 0c | 2g 29s 0c | moving | 10 of 11 | 6 | +44% |
 | Ebon Scimitar | 8196 | 1g 44s 0c | 2026-11-16 17:11 UTC | 1g 44s 0c | 1g 49s 50c | moving | 8 of 11 | 16 | -31% |
@@ -88,6 +93,7 @@
 | Long Bastard Sword | 1830 | 17s 83c | 2026-11-16 17:11 UTC | 18s 0c | 18s 0c | steady | 9 of 11 | 14 | -5% |
 | Longsword | 923 | 27s 0c | 2026-11-15 14:40 UTC | 27s 0c | 32s 50c | volatile | 8 of 11 | 2 | -46% |
 | Lost Chieftain's Greatsword | 282003 | 3g 0s 0c | 2026-11-16 17:11 UTC | 2g 33s 0c | 2g 66s 50c | volatile | 8 of 11 | 2 | -53% |
+| Massacre Sword | 15256 | 6g 0s 0c | 2026-11-16 17:11 UTC | 6g 0s 0c | 6g 0s 0c | steady | 3 of 11 | 9 |  |
 | Merc Sword | 4567 | 10s 49c | 2026-11-16 17:11 UTC | 10s 49c | 10s 49c | moving | 10 of 11 | 340 | -5% |
 | Mercenary Blade | 15213 | 82s 0c | 2026-11-16 17:11 UTC | 82s 0c | 82s 0c | steady | 9 of 11 | 56 | -21% |
 | Militant Shortsword | 15211 | 19s 14c | 2026-11-16 17:11 UTC | 19s 57c | 20s 0c | steady | 11 of 11 | 81 | -2% |
@@ -105,14 +111,17 @@
 | Practice Sword | 8177 | 2s 0c | 2026-11-16 17:11 UTC | 2s 0c | 1s 49c | moving | 10 of 11 | 27 | +100% |
 | Pysan's Old Greatsword | 1975 | 94s 99c | 2026-11-16 17:11 UTC | 84s 0c | 94s 99c | steady | 9 of 11 | 14 | -15% |
 | Raider Shortsword | 15210 | 8s 30c | 2026-11-16 17:11 UTC | 8s 27c | 8s 30c | moving | 11 of 11 | 279 | -8% |
+| Ranger Lord's Longsword | 284157 | 9g 99s 99c | 2026-11-16 17:11 UTC | 7g 99s 99c |  | too new | 2 of 11 | 4 |  |
 | Reforged Blade of Heroes | 9718 | 7g 25s 0c | 2026-11-16 17:11 UTC | 8g 30s 0c | 8g 30s 0c | moving | 5 of 11 | 12 |  |
 | Rune Sword | 15216 | 4g 0s 0c | 2026-11-16 17:11 UTC | 4g 0s 0c | 4g 49s 50c | moving | 6 of 11 | 10 |  |
 | Scimitar | 2027 | 9s 99c | 2026-11-15 17:55 UTC | 15s 0c | 16s 0c | moving | 8 of 11 | 7 | -12% |
+| Scimitar of Atun | 1469 | 15g 0s 0c | 2026-11-16 17:11 UTC | 15g 0s 0c |  | too new | 1 of 11 | 2 |  |
 | Scorpion Sting | 1265 | 3g 20s 0c | 2026-11-16 17:11 UTC | 2g 0s 0c | 3g 49s 0c | moving | 9 of 11 | 16 | -69% |
 | Searing Blade | 12992 | 82s 0c | 2026-11-16 17:11 UTC | 36s 0c | 37s 50c | steady | 10 of 11 | 38 | -10% |
 | Serpent Slicer | 13035 | 4g 75s 0c | 2026-11-16 17:11 UTC | 4g 99s 0c | 4g 99s 0c | moving | 5 of 11 | 10 |  |
 | Shadowfang | 1482 | 40g 0s 0c | 2026-11-16 17:11 UTC | 17g 24s 0c | 12g 0s 0c | volatile | 10 of 11 | 14 | +116% |
 | Sharp Shortsword | 4017 | 70s 0c | 2026-11-16 17:11 UTC | 92s 49c | 92s 49c | moving | 4 of 11 | 2 |  |
+| Shin Blade | 15257 | 10g 29s 0c | 2026-11-16 17:11 UTC | 10g 29s 0c | 10g 29s 0c | volatile | 3 of 11 | 2 |  |
 | Shiver Blade | 5182 | 19s 50c | 2026-11-16 17:11 UTC | 18s 0c | 19s 62c | steady | 10 of 11 | 22 | -10% |
 | Short Bastard Sword | 3192 | 4s 95c | 2026-11-16 17:11 UTC | 4s 95c | 4s 95c | moving | 10 of 11 | 483 | -1% |
 | Short Cutlass | 1829 | 15s 64c | 2026-11-16 17:11 UTC | 15s 90c | 16s 0c | steady | 7 of 11 | 17 | -18% |
@@ -130,6 +139,7 @@
 | Sword of the Fallen | 286977 | 39s 86c | 2026-11-16 17:11 UTC | 34s 0c | 32s 0c | steady | 10 of 11 | 74 | +6% |
 | Sword of the Magistrate | 13042 | 4g 0s 0c | 2026-11-16 17:11 UTC | 3g 68s 0c | 4g 0s 0c | volatile | 7 of 11 | 11 | -64% |
 | Sword of the Night Sky | 2035 | 50s 0c | 2026-11-16 17:11 UTC | 32s 0c | 35s 0c | moving | 11 of 11 | 11 | -20% |
+| Sword of Zeal | 6622 | 120g 98s 0c | 2026-11-16 17:11 UTC | 120g 98s 0c | 120g 98s 0c | volatile | 3 of 11 | 2 |  |
 | Syndicate Executioner's Slicer | 283255 | 73s 0c | 2026-11-16 17:11 UTC | 39s 0c | 64s 0c | volatile | 8 of 11 | 20 | -57% |
 | Ta'Kierthan Songblade | 16039 | 79g 98s 0c | 2026-11-16 17:11 UTC | 80g 89s 0c | 80g 89s 0c | steady | 3 of 11 | 1 |  |
 | Tainted Pierce | 8225 | 5g 10s 0c | 2026-11-16 17:11 UTC | 3g 88s 88c | 4g 4s 99c | moving | 8 of 11 | 4 | -22% |
@@ -146,6 +156,7 @@
 | Viking Sword | 3186 | 44s 90c | 2026-11-16 17:11 UTC | 44s 63c | 45s 0c | steady | 10 of 11 | 71 | -5% |
 | Warmonger | 13052 | 18g 7s 0c | 2026-11-16 17:11 UTC | 20g 0s 0c | 20g 27s 95c | volatile | 6 of 11 | 9 |  |
 | Warped Blade | 1821 | 9s 89c | 2026-11-16 17:11 UTC | 9s 89c | 10s 0c | steady | 9 of 11 | 21 | -14% |
+| Whetted Claymore | 4018 | 74s 0c | 2026-11-16 17:11 UTC | 80s 0c | 80s 0c | moving | 3 of 11 | 4 |  |
 | Wicked Mithril Blade | 7943 | 2g 89s 0c | 2026-11-16 17:11 UTC | 3g 48s 0c | 3g 19s 0c | moving | 6 of 11 | 18 |  |
 | Widow Blade | 15217 | 5g 0s 0c | 2026-11-16 17:11 UTC | 5g 0s 0c | 5g 0s 0c | moving | 5 of 11 | 4 |  |
 | Witchfury | 13051 | 2g 85s 0c | 2026-11-16 17:11 UTC | 2g 85s 0c | 3g 41s 0c | volatile | 8 of 11 | 13 | -75% |

@@ -9,10 +9,12 @@
 | Benedict's Key | 4882 | 1s 0c | 2026-11-16 17:11 UTC | 1s 0c | 1s 0c | steady | 10 of 11 | 50 | +0% |
 | Captain's Key | 9249 | 15s 84c | 2026-11-16 17:11 UTC | 16s 0c | 16s 0c | volatile | 7 of 11 | 41 | -75% |
 | Crusaders' Square Postbox Key | 13303 | 25s 72c | 2026-11-16 17:11 UTC | 1g 16s 44c | 1g 16s 44c | volatile | 4 of 11 | 10 |  |
+| Dark Keeper Key | 11197 | 11g 99s 99c | 2026-11-16 17:11 UTC | 13g 49s 99c |  | too new | 2 of 11 | 8 |  |
 | Elders' Square Postbox Key | 13305 | 25s 99c | 2026-11-16 17:11 UTC | 94s 43c | 94s 43c | volatile | 4 of 11 | 12 |  |
 | Ezra Grimm's Postbox Key | 13307 | 30s 89c | 2026-11-16 17:11 UTC | 1g 21s 88c | 1g 21s 88c | volatile | 4 of 11 | 10 |  |
 | Festival Lane Postbox Key | 13304 | 72s 84c | 2026-11-16 17:11 UTC | 86s 41c | 86s 41c | volatile | 4 of 11 | 14 |  |
 | Grim Guzzler Key | 11602 | 40s 98c | 2026-11-16 17:11 UTC | 1g 0s 49c | 1g 0s 49c | moving | 4 of 11 | 5 |  |
+| King's Square Postbox Key | 13306 | 35s 97c | 2026-11-16 17:11 UTC | 87s 99c | 87s 99c | moving | 3 of 11 | 15 |  |
 | Kolkar Booty Key | 5020 | 1s 0c | 2026-11-16 17:11 UTC | 1s 0c | 1s 0c | steady | 10 of 11 | 122 | +0% |
 | Market Row Postbox Key | 13302 | 66s 0c | 2026-11-16 17:11 UTC | 1g 99s 99c | 1g 99s 99c | volatile | 4 of 11 | 9 |  |
 | Relic Coffer Key | 11078 | 19s 95c | 2026-11-16 17:11 UTC | 19s 95c | 19s 95c | volatile | 5 of 11 | 189 |  |
