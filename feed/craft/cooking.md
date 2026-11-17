@@ -18,7 +18,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Raging Raptor Ribs | 180 | 250073 | 1 | 16s 41c | 5s 78c | 10s 63c | ForeverDB |
 | Sage's Tea | 250 | 249870 | 1 | 99s 99c | 91s 10c | 8s 89c | ForeverDB |
 | Dragonbreath Chili | 200 | 12217 | 1 | 20s 11c | 12s 35c | 7s 76c | ForeverDB |
-| Poached Sunscale Salmon | 250 | 13932 | 1 | 10s 65c | 3s 98c | 6s 67c | ForeverDB |
+| Poached Sunscale Salmon | 250 | 13932 | 1 | 10s 65c | 4s 3c | 6s 62c | ForeverDB |
 | Briny Seafood Stew | 200 | 274971 | 1 | 23s 46c | 17s 22c | 6s 24c | ForeverDB |
 | Sunny Tea | 200 | 249869 | 1 | 60s 0c | 53s 96c | 6s 4c | our scan |
 | Cookie's Feast | 140 | 279957 | 1 | 20s 96c | 15s 48c | 5s 48c | ForeverDB |
@@ -37,7 +37,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Nightfin Soup | 250 | 13931 | 1 | 7s 19c | 4s 33c | 2s 86c | ForeverDB |
 | Savory Stag Sliders | 225 | 250065 | 1 | 9s 98c | 7s 20c | 2s 78c | our scan |
 | Venomous Smoothie | 25 | 249871 | 1 | 3s 75c | 1s 34c | 2s 41c | ForeverDB |
-| Hot Wolf Ribs | 175 | 13851 | 1 | 4s 95c | 2s 85c | 2s 10c | ForeverDB |
+| Hot Wolf Ribs | 175 | 13851 | 1 | 4s 98c | 2s 85c | 2s 13c | ForeverDB |
 | Spider Sausage | 200 | 17222 | 1 | 5s 88c | 3s 78c | 2s 10c | ForeverDB |
 | Cooked Glossy Mightfish | 225 | 13927 | 1 | 5s 94c | 3s 86c | 2s 8c | ForeverDB |
 | Westfall Stew | 75 | 733 | 1 | 5s 9c | 3s 21c | 1s 88c | ForeverDB |
@@ -70,8 +70,8 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Crocolisk Steak | 80 | 3662 | 1 | 1s 20c | 97c | 23c | our scan |
 | Baked Salmon | 275 | 13935 | 1 | 13s 73c | 13s 56c | 17c | our scan |
 | Smoked Bear Meat | 40 | 6890 | 1 | 46c | 34c | 12c | our scan |
-| Crispy Lizard Tail | 100 | 5479 | 2 | 2s 64c | 2s 52c | 12c | our scan |
 | Heavy Crocolisk Stew | 150 | 20074 | 1 | 3s 15c | 3s 4c | 11c | our scan |
+| Crispy Lizard Tail | 100 | 5479 | 2 | 2s 64c | 2s 54c | 10c | our scan |
 | Goblin Deviled Clams | 125 | 5527 | 1 | 95c | 89c | 6c | our scan |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

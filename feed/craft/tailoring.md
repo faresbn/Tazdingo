@@ -7,7 +7,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Robe of Winter Night | 245 | 14136 | 1 | 70g 0s 0c | 38g 79s 40c | 31g 20s 60c | ForeverDB |
 | Mooncloth | 230 | 14342 | 1 | 30g 0s 0c | 1g 60s 0c | 28g 40s 0c | ForeverDB |
 | Mooncloth Reagent Bag | 255 | 254133 | 1 | 75g 44s 2c | 52g 28s 71c | 23g 15s 31c | ForeverDB |
-| Felcloth Bag | 0 | 21341 | 1 | 40g 1s 0c | 18g 17s 96c | 21g 83s 4c | ForeverDB |
+| Felcloth Bag | 0 | 21341 | 1 | 40g 1s 0c | 18g 13s 56c | 21g 87s 44c | ForeverDB |
 | Loom | 300 | 279959 | 1 | 16g 88s 0c | 4g 96s 48c | 11g 91s 52c | ForeverDB |
 | Big Bag of Enchantment | 255 | 22249 | 1 | 29g 42s 16c | 19g 69s 12c | 9g 73s 4c | ForeverDB |
 | Earthenweave Vest | 250 | 254121 | 1 | 15g 0s 0c | 7g 88s 0c | 7g 12s 0c | our scan |
@@ -97,8 +97,8 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Azure Silk Gloves | 120 | 4319 | 1 | 45s 0c | 39s 54c | 5s 46c | our scan |
 | Blue Overalls | 75 | 6263 | 1 | 25s 0c | 20s 24c | 4s 76c | ForeverDB |
 | Greater Adept's Robe | 90 | 6264 | 1 | 29s 87c | 26s 5c | 3s 82c | our scan |
+| Crimson Silk Cloak | 145 | 7056 | 1 | 52s 0c | 48s 82c | 3s 18c | ForeverDB |
 | Earthen Silk Gloves | 160 | 254017 | 1 | 99s 0c | 96s 18c | 2s 82c | ForeverDB |
-| Crimson Silk Cloak | 145 | 7056 | 1 | 51s 50c | 48s 82c | 2s 68c | ForeverDB |
 | Spider Belt | 145 | 4328 | 1 | 51s 73c | 49s 10c | 2s 63c | ForeverDB |
 | Bolt of Runecloth | 210 | 14048 | 1 | 36s 0c | 33s 80c | 2s 20c | our scan |
 | Colorful Kilt | 70 | 10048 | 1 | 25s 99c | 24s 5c | 1s 94c | our scan |

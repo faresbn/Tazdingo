@@ -26,13 +26,13 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Azure Skyforged Helm | 175 | 277048 | 1 | 4g 44s 0c | 1g 5s 58c | 3g 38s 42c | ForeverDB |
 | Ornate Mithril Breastplate | 0 | 7935 | 1 | 6g 24s 49c | 3g 12s 36c | 3g 12s 13c | our scan |
 | Shining Mithril Breastplate | 195 | 250540 | 1 | 5g 50s 99c | 2g 57s 83c | 2g 93s 16c | our scan |
+| Shining Mithril Pauldrons | 195 | 250541 | 1 | 3g 99s 0c | 1g 39s 83c | 2g 59s 17c | ForeverDB |
 | Shining Mithril Pants | 220 | 250544 | 1 | 4g 63s 75c | 2g 14s 65c | 2g 49s 10c | ForeverDB |
 | Ebon Shiv | 230 | 7947 | 1 | 5g 62s 48c | 3g 46s 18c | 2g 16s 30c | our scan |
 | Blight | 250 | 7959 | 1 | 8g 0s 0c | 6g 5s 66c | 1g 94s 34c | ForeverDB |
 | Ornate Mithril Helm | 0 | 7937 | 1 | 4g 0s 0c | 2g 6s 61c | 1g 93s 39c | our scan |
 | Shining Mithril Boots | 200 | 250542 | 1 | 3g 20s 0c | 1g 45s 35c | 1g 74s 65c | our scan |
 | Thorium Armor | 225 | 12405 | 1 | 8g 82s 66c | 7g 10s 80c | 1g 71s 86c | ForeverDB |
-| Shining Mithril Pauldrons | 195 | 250541 | 1 | 3g 0s 0c | 1g 39s 83c | 1g 60s 17c | ForeverDB |
 | Imperial Plate Shoulders | 240 | 12428 | 1 | 7g 0s 0c | 5g 44s 64c | 1g 55s 36c | our scan |
 | Ornate Mithril Pants | 195 | 7926 | 1 | 2g 97s 25c | 1g 48s 75c | 1g 48s 50c | ForeverDB |
 | Mithril Stiletto | 210 | 250611 | 1 | 3g 33s 41c | 1g 92s 90c | 1g 40s 51c | ForeverDB |
@@ -86,6 +86,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Blue Glittering Axe | 195 | 7942 | 1 | 2g 49s 0c | 2g 32s 78c | 16s 22c | our scan |
 | Golden Iron Destroyer | 145 | 3852 | 1 | 1g 59s 33c | 1g 44s 52c | 14s 81c | ForeverDB |
 | Mithril Warhammer | 190 | 250608 | 1 | 1g 76s 96c | 1g 62s 70c | 14s 26c | our scan |
+| Frost Tiger Blade | 175 | 3854 | 1 | 2g 8s 0c | 1g 96s 13c | 11s 87c | ForeverDB |
 | Barbaric Iron Boots | 155 | 7916 | 1 | 67s 0c | 57s 12c | 9s 88c | our scan |
 | Barbaric Iron Gloves | 160 | 7917 | 1 | 75s 0c | 65s 54c | 9s 46c | ForeverDB |
 | Hard Gold Bracers | 160 | 250535 | 1 | 90s 0c | 80s 90c | 9s 10c | our scan |
@@ -114,6 +115,6 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Coarse Sharpening Stone | 40 | 2863 | 1 | 1s 22c | 82c | 40c | ForeverDB |
 | Rough Copper Chain Boots | 50 | 277672 | 1 | 13s 0c | 12s 60c | 40c | ForeverDB |
 | Iron Buckle | 125 | 7071 | 2 | 2s 76c | 2s 56c | 20c | our scan |
-| Rough Sharpening Stone | 1 | 2862 | 1 | 13c | 11c | 2c | ForeverDB |
+| Rough Sharpening Stone | 1 | 2862 | 1 | 15c | 11c | 4c | ForeverDB |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

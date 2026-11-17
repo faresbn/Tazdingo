@@ -5,7 +5,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/main/<path>
 
 - `feed/craft/alchemy.md`: Alchemy, 67 recipes with a margin.
-- `feed/craft/blacksmithing.md`: Blacksmithing, 111 recipes with a margin.
+- `feed/craft/blacksmithing.md`: Blacksmithing, 112 recipes with a margin.
 - `feed/craft/cooking.md`: Cooking, 69 recipes with a margin.
 - `feed/craft/enchanting.md`: Enchanting, 7 recipes with a margin.
 - `feed/craft/engineering.md`: Engineering, 80 recipes with a margin.

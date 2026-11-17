@@ -21,7 +21,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Truesilver Transformer | 260 | 18631 | 1 | 2g 99s 0c | 99s 61c | 1g 99s 39c | our scan |
 | Gnomish Rocket Boots | 225 | 10724 | 1 | 6g 44s 50c | 4g 57s 77c | 1g 86s 73c | ForeverDB |
 | Gnomish Cloaking Device | 200 | 4397 | 1 | 3g 59s 0c | 1g 75s 86c | 1g 83s 14c | ForeverDB |
-| Green Lens | 245 | 10504 | 1 | 3g 8s 50c | 1g 67s 61c | 1g 40s 89c | ForeverDB |
+| Green Lens | 245 | 10504 | 1 | 3g 19s 8c | 1g 67s 61c | 1g 51s 47c | ForeverDB |
 | Goblin Mortar | 0 | 10577 | 1 | 2g 83s 99c | 1g 43s 79c | 1g 40s 20c | our scan |
 | EZ-Thro Bronze Mortar | 190 | 260802 | 1 | 1g 82s 0c | 83s 64c | 98s 36c | our scan |
 | EZ-Thro Tru-Trigger | 240 | 260808 | 1 | 2g 98s 99c | 2g 8s 93c | 90s 6c | ForeverDB |
@@ -44,7 +44,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Deadly Scope | 210 | 10546 | 1 | 1g 10s 36c | 70s 55c | 39s 81c | ForeverDB |
 | SAF-T Tabs | 25 | 260784 | 1 | 81s 33c | 44s 73c | 36s 60c | ForeverDB |
 | Goblin Sapper Charge | 205 | 10646 | 1 | 80s 53c | 44s 33c | 36s 20c | ForeverDB |
-| Lovingly Crafted Boomstick | 120 | 4372 | 1 | 86s 33c | 58s 5c | 28s 28c | ForeverDB |
+| Lovingly Crafted Boomstick | 120 | 4372 | 1 | 86s 33c | 58s 3c | 28s 30c | ForeverDB |
 | Ice Deflector | 155 | 4386 | 1 | 67s 49c | 40s 93c | 26s 56c | ForeverDB |
 | Mithril Blunderbuss | 205 | 10508 | 1 | 1g 88s 0c | 1g 63s 3c | 24s 97c | ForeverDB |
 | Flame Deflector | 125 | 4376 | 1 | 36s 60c | 13s 90c | 22s 70c | our scan |
@@ -63,14 +63,14 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Flash Bomb | 185 | 4852 | 1 | 35s 54c | 28s 33c | 7s 21c | ForeverDB |
 | EZ-Thro Dynamite | 100 | 6714 | 2 | 15s 80c | 11s 3c | 4s 77c | our scan |
 | EZ-Thro Copper Bomb XL | 130 | 260795 | 1 | 20s 79c | 16s 42c | 4s 37c | ForeverDB |
-| Mechanical Squirrel | 75 | 4401 | 1 | 10s 0c | 5s 65c | 4s 35c | ForeverDB |
+| Mechanical Squirrel | 75 | 4401 | 1 | 10s 0c | 5s 64c | 4s 36c | ForeverDB |
 | Solid Dynamite | 175 | 10507 | 2 | 12s 18c | 7s 84c | 4s 34c | ForeverDB |
 | Big Iron Bomb | 190 | 4394 | 2 | 24s 94c | 20s 68c | 4s 26c | ForeverDB |
 | Mithril Gyro-Shot | 245 | 10513 | 200 | 34s 0c | 30s 16c | 3s 84c | ForeverDB |
 | Iron Strut | 160 | 4387 | 1 | 8s 50c | 5s 12c | 3s 38c | our scan |
 | Gold Power Core | 150 | 10558 | 3 | 12s 42c | 9s 8c | 3s 34c | our scan |
+| Deadly Blunderbuss | 105 | 4369 | 1 | 26s 30c | 23s 36c | 2s 94c | our scan |
 | Hi-Impact Mithril Slugs | 210 | 10512 | 200 | 18s 0c | 15s 8c | 2s 92c | ForeverDB |
-| Deadly Blunderbuss | 105 | 4369 | 1 | 26s 30c | 23s 40c | 2s 90c | our scan |
 | Solid Blasting Powder | 175 | 10505 | 1 | 5s 84c | 3s 20c | 2s 64c | ForeverDB |
 | EZ-Thro Grenade | 200 | 260803 | 1 | 29s 94c | 27s 70c | 2s 24c | our scan |
 | Crafted Solid Shot | 125 | 8069 | 200 | 8s 0c | 5s 85c | 2s 15c | our scan |
@@ -80,7 +80,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Mechanical Repair Kit | 200 | 11590 | 1 | 22s 22c | 21s 15c | 1s 7c | our scan |
 | SAF-T Dynamite | 25 | 260792 | 1 | 1s 19c | 61c | 58c | our scan |
 | Flying Tiger Goggles | 100 | 4368 | 1 | 5s 0c | 4s 44c | 56c | our scan |
-| Handful of Copper Bolts | 30 | 4359 | 1 | 1s 95c | 1s 40c | 55c | ForeverDB |
+| Handful of Copper Bolts | 30 | 4359 | 1 | 1s 94c | 1s 40c | 54c | ForeverDB |
 | Big Bronze Bomb | 140 | 4380 | 3 | 15s 0c | 14s 55c | 45c | our scan |
 | Crafted Light Shot | 1 | 8067 | 200 | 2s 0c | 1s 56c | 44c | our scan |
 | Rough Dynamite | 1 | 4358 | 2 | 60c | 45c | 15c | our scan |

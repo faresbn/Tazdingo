@@ -56,7 +56,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Elixir of Fortitude | 150 | 250334 | 1 | 25s 53c | 22s 24c | 3s 29c | ForeverDB |
 | Greater Discolored Healing Potion | 0 | 247241 | 1 | 7s 24c | 4s 48c | 2s 76c | ForeverDB |
 | Potion of Predatory Senses | 195 | 250327 | 1 | 25s 0c | 22s 56c | 2s 44c | our scan |
-| Shadow Protection Potion | 135 | 6048 | 1 | 9s 80c | 7s 70c | 2s 10c | ForeverDB |
+| Shadow Protection Potion | 135 | 6048 | 1 | 9s 36c | 7s 70c | 1s 66c | ForeverDB |
 | Elixir of Giant Growth | 90 | 6662 | 1 | 4s 70c | 3s 6c | 1s 64c | ForeverDB |
 | Spellblasting Potion | 135 | 250934 | 1 | 7s 93c | 6s 70c | 1s 23c | ForeverDB |
 | Lesser Frenzy Potion | 90 | 250939 | 1 | 3s 70c | 2s 70c | 1s 0c | our scan |
