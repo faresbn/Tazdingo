@@ -10,11 +10,11 @@
    "class": "Warlock",
    "race": "Orc",
    "faction": "Horde",
-   "level": 33,
-   "item_level": 33.6,
-   "recorded_at": "2026-11-16T20:01:21Z",
+   "level": 37,
+   "item_level": 35.1,
+   "recorded_at": "2026-11-18T17:25:44Z",
    "recorded_on": "logout",
-   "build": "70938",
+   "build": "70959",
    "gear": [
     {
      "slot": "Head",
@@ -24,9 +24,9 @@
     },
     {
      "slot": "Neck",
-     "item": 273457,
-     "name": "Sorcerer Collar",
-     "item_level": 22
+     "item": 12040,
+     "name": "Forest Pendant of the Sorcerer",
+     "item_level": 38
     },
     {
      "slot": "Shoulder",
@@ -72,9 +72,9 @@
     },
     {
      "slot": "Finger",
-     "item": 11969,
-     "name": "Jacinth Circle of the Channeler",
-     "item_level": 29
+     "item": 9588,
+     "name": "Nogg's Gold Ring",
+     "item_level": 37
     },
     {
      "slot": "Finger",
@@ -122,10 +122,10 @@
    "talents": {
     "points": {
      "Affliction": 0,
-     "Demonology": 25,
+     "Demonology": 28,
      "Destruction": 0
     },
-    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAMjZegZmxwAAAA"
+    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAA+gZMzDMzMGGAAA"
    },
    "professions": [
     {
@@ -140,12 +140,12 @@
     },
     {
      "name": "Cooking",
-     "skill": 202,
+     "skill": 216,
      "max": 225
     },
     {
      "name": "First Aid",
-     "skill": 205,
+     "skill": 210,
      "max": 225
     },
     {
@@ -159,37 +159,37 @@
      "name": "Daggers",
      "category": "Weapon Skills",
      "skill": 23,
-     "max": 170
+     "max": 185
     },
     {
      "name": "Defense",
      "category": "Weapon Skills",
-     "skill": 163,
-     "max": 170
+     "skill": 178,
+     "max": 185
     },
     {
      "name": "Staves",
      "category": "Weapon Skills",
      "skill": 4,
-     "max": 170
+     "max": 185
     },
     {
      "name": "Swords",
      "category": "Weapon Skills",
      "skill": 1,
-     "max": 170
+     "max": 185
     },
     {
      "name": "Unarmed",
      "category": "Weapon Skills",
      "skill": 13,
-     "max": 170
+     "max": 185
     },
     {
      "name": "Wands",
      "category": "Weapon Skills",
-     "skill": 129,
-     "max": 170
+     "skill": 175,
+     "max": 185
     },
     {
      "name": "Cloth",
@@ -208,55 +208,55 @@
     {
      "name": "Darkspear Trolls",
      "standing": "Honored",
-     "progress": 547,
+     "progress": 1425,
      "needed": 12000
     },
     {
      "name": "Orgrimmar",
      "standing": "Honored",
-     "progress": 2641,
+     "progress": 3526,
      "needed": 12000
     },
     {
      "name": "Thunder Bluff",
      "standing": "Friendly",
-     "progress": 5132,
+     "progress": 5485,
      "needed": 6000
     },
     {
      "name": "Undercity",
-     "standing": "Friendly",
-     "progress": 5805,
-     "needed": 6000
+     "standing": "Honored",
+     "progress": 157,
+     "needed": 12000
     },
     {
      "name": "Booty Bay",
      "standing": "Neutral",
-     "progress": 976,
+     "progress": 1721,
      "needed": 3000
     },
     {
      "name": "Everlook",
      "standing": "Neutral",
-     "progress": 976,
+     "progress": 1349,
      "needed": 3000
     },
     {
      "name": "Gadgetzan",
      "standing": "Neutral",
-     "progress": 976,
+     "progress": 1349,
      "needed": 3000
     },
     {
      "name": "Powderfuse",
      "standing": "Neutral",
-     "progress": 976,
+     "progress": 1349,
      "needed": 3000
     },
     {
      "name": "Ratchet",
      "standing": "Neutral",
-     "progress": 1553,
+     "progress": 1925,
      "needed": 3000
     },
     {
@@ -264,6 +264,12 @@
      "standing": "Neutral",
      "progress": 1250,
      "needed": 3000
+    },
+    {
+     "name": "Bloodsail Buccaneers",
+     "standing": "Hated",
+     "progress": 32250,
+     "needed": 36000
     },
     {
      "name": "Durotar Supply and Logistics",
@@ -276,28 +282,22 @@
      "standing": "Neutral",
      "progress": 900,
      "needed": 3000
-    },
-    {
-     "name": "Windshapers",
-     "standing": "Neutral",
-     "progress": 0,
-     "needed": 3000
     }
    ],
    "stats": {
-    "Health": 1071,
-    "Mana or energy": 3130,
-    "Strength": 41,
-    "Agility": 31,
-    "Stamina": 78,
-    "Intellect": 150,
-    "Spirit": 91,
-    "Armour": 736
+    "Health": 1683,
+    "Mana or energy": 3513,
+    "Strength": 50,
+    "Agility": 41,
+    "Stamina": 132,
+    "Intellect": 167,
+    "Spirit": 100,
+    "Armour": 683
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": -63,
-    "Honour points": 48,
+    "Dishonourable kills": -15,
+    "Honour points": 50,
     "Renown": 0
    },
    "collected": {
@@ -313,9 +313,9 @@
    "faction": "Horde",
    "level": 12,
    "item_level": 6.9,
-   "recorded_at": "2026-11-12T14:17:43Z",
+   "recorded_at": "2026-11-18T15:03:36Z",
    "recorded_on": "logout",
-   "build": "70888",
+   "build": "70959",
    "gear": [
     {
      "slot": "Chest",
@@ -527,7 +527,7 @@
     }
    ],
    "stats": {
-    "Health": 332,
+    "Health": 632,
     "Mana or energy": 100,
     "Strength": 30,
     "Agility": 49,
@@ -538,7 +538,7 @@
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": -123,
+    "Dishonourable kills": -41,
     "Honour points": 0,
     "Renown": 0
    },
