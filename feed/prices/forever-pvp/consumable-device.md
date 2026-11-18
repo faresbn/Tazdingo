@@ -1,31 +1,31 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Consumable: Device
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-16 17:11 UTC. Uploads in the 30-day window: 26.
+- **Latest scan:** 2026-11-17 10:15 UTC. Uploads in the 30-day window: 27.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Accurate Scope | 4407 | 29s 45c | 2026-11-16 17:11 UTC | 29s 50c | 32s 97c | volatile | 8 of 11 | 92 | -44% |
-| Advanced Target Dummy | 4392 | 45s 79c | 2026-11-16 17:11 UTC | 45s 79c | 47s 87c | volatile | 8 of 11 | 250 | -61% |
-| Aquadynamic Fish Attractor | 6533 | 3s 26c | 2026-11-16 17:11 UTC | 2s 11c | 2s 30c | moving | 10 of 11 | 2642 | -16% |
-| Compact Harvest Reaper Kit | 4391 | 50s 70c | 2026-11-16 17:11 UTC | 51s 95c | 51s 95c | steady | 5 of 11 | 19 |  |
-| Crude Scope | 4405 | 1s 25c | 2026-11-16 17:11 UTC | 1s 25c | 1s 25c | steady | 10 of 11 | 266 | +0% |
-| Deadly Scope | 10546 | 83s 20c | 2026-11-16 17:11 UTC | 83s 20c | 87s 49c | volatile | 7 of 11 | 101 | -45% |
-| Discombobulator Ray | 4388 | 25s 0c | 2026-11-16 17:11 UTC | 30s 0c | 27s 50c | volatile | 8 of 11 | 20 | +20% |
-| Field Repair Bot 74A | 18232 | 15g 0s 0c | 2026-11-16 17:11 UTC | 15g 0s 0c |  | too new | 1 of 11 | 1 |  |
-| Flame Deflector | 4376 | 36s 66c | 2026-11-16 17:11 UTC | 36s 60c | 35s 51c | steady | 7 of 11 | 6 | +8% |
-| Gnomish Alarm-O-Bot | 18645 | 9g 99s 99c | 2026-11-16 17:11 UTC | 7g 99s 49c |  | too new | 2 of 11 | 6 |  |
-| Hoof-Shaped Foot Pedal | 269902 | 98s 79c | 2026-11-16 17:11 UTC | 1g 99s 0c | 2g 22s 99c | volatile | 7 of 11 | 24 | -52% |
-| Ice Deflector | 4386 | 10s 96c | 2026-11-16 17:11 UTC | 54s 97c | 54s 97c | volatile | 5 of 11 | 36 |  |
-| Masterwork Target Dummy | 16023 | 3g 99s 93c | 2026-11-16 17:11 UTC | 3g 66s 46c |  | too new | 2 of 11 | 32 |  |
-| Mechanical Repair Kit | 11590 | 22s 22c | 2026-11-16 17:11 UTC | 22s 22c | 22s 22c | moving | 5 of 11 | 87 |  |
-| Ornate Spyglass | 5507 | 43s 99c | 2026-11-16 17:11 UTC | 20s 0c | 16s 0c | moving | 9 of 11 | 92 | +60% |
-| Portable Bronze Mortar | 4403 | 23s 0c | 2026-11-16 17:11 UTC | 40s 0c | 48s 0c | volatile | 7 of 11 | 24 | -33% |
-| Salt Shaker | 15846 | 2g 25s 0c | 2026-11-16 17:11 UTC | 2g 90s 0c | 3g 22s 0c | moving | 6 of 11 | 79 |  |
-| Sniper Scope | 10548 | 1g 15s 0c | 2026-11-16 17:11 UTC | 2g 18s 14c | 2g 67s 98c | volatile | 7 of 11 | 117 | -42% |
-| Standard Scope | 4406 | 6s 0c | 2026-11-16 17:11 UTC | 5s 99c | 6s 0c | steady | 10 of 11 | 484 | +0% |
-| Target Dummy | 4366 | 6s 19c | 2026-11-16 17:11 UTC | 3s 99c | 3s 99c | moving | 10 of 11 | 256 | +0% |
-| World Enlarger | 18660 | 5g 0s 0c | 2026-11-16 17:11 UTC | 5g 0s 0c |  | too new | 2 of 11 | 2 |  |
+| Accurate Scope | 4407 | 50s 80c | 2026-11-17 10:15 UTC | 29s 73c | 35s 98c | moving | 9 of 12 | 76 | -44% |
+| Advanced Target Dummy | 4392 | 37s 99c | 2026-11-17 10:15 UTC | 43s 89c | 45s 88c | moving | 9 of 12 | 267 | -63% |
+| Aquadynamic Fish Attractor | 6533 | 2s 44c | 2026-11-17 10:15 UTC | 2s 27c | 2s 44c | moving | 11 of 12 | 2961 | -9% |
+| Compact Harvest Reaper Kit | 4391 | 50s 70c | 2026-11-17 10:15 UTC | 51s 32c | 51s 32c | steady | 6 of 12 | 18 |  |
+| Crude Scope | 4405 | 1s 25c | 2026-11-17 10:15 UTC | 1s 25c | 1s 25c | steady | 11 of 12 | 261 | +0% |
+| Deadly Scope | 10546 | 81s 69c | 2026-11-17 10:15 UTC | 83s 10c | 85s 34c | volatile | 8 of 12 | 107 | -45% |
+| Discombobulator Ray | 4388 | 19s 97c | 2026-11-17 10:15 UTC | 27s 50c | 25s 0c | moving | 9 of 12 | 22 | +10% |
+| Field Repair Bot 74A | 18232 | 15g 0s 0c | 2026-11-17 10:15 UTC | 15g 0s 0c |  | too new | 2 of 12 | 2 |  |
+| Flame Deflector | 4376 | 38s 66c | 2026-11-17 10:15 UTC | 36s 66c | 36s 3c | steady | 8 of 12 | 6 | +8% |
+| Gnomish Alarm-O-Bot | 18645 | 6g 99s 99c | 2026-11-17 10:15 UTC | 6g 99s 99c | 6g 99s 99c | moving | 3 of 12 | 4 |  |
+| Hoof-Shaped Foot Pedal | 269902 | 98s 74c | 2026-11-17 10:15 UTC | 1g 49s 44c | 2g 10s 99c | volatile | 8 of 12 | 24 | -64% |
+| Ice Deflector | 4386 | 10s 96c | 2026-11-17 10:15 UTC | 37s 98c | 37s 98c | volatile | 6 of 12 | 32 |  |
+| Masterwork Target Dummy | 16023 | 3g 50s 0c | 2026-11-17 10:15 UTC | 3g 50s 0c | 3g 50s 0c | steady | 3 of 12 | 15 |  |
+| Mechanical Repair Kit | 11590 | 28s 51c | 2026-11-17 10:15 UTC | 25s 36c | 25s 36c | moving | 6 of 12 | 138 |  |
+| Ornate Spyglass | 5507 | 30s 99c | 2026-11-17 10:15 UTC | 21s 74c | 17s 0c | volatile | 10 of 12 | 90 | +74% |
+| Portable Bronze Mortar | 4403 | 23s 0c | 2026-11-17 10:15 UTC | 33s 50c | 44s 0c | volatile | 8 of 12 | 22 | -44% |
+| Salt Shaker | 15846 | 2g 86s 0c | 2026-11-17 10:15 UTC | 2g 88s 0c | 2g 90s 0c | moving | 7 of 12 | 78 |  |
+| Sniper Scope | 10548 | 1g 49s 90c | 2026-11-17 10:15 UTC | 1g 84s 2c | 2g 43s 6c | volatile | 8 of 12 | 152 | -51% |
+| Standard Scope | 4406 | 6s 0c | 2026-11-17 10:15 UTC | 5s 99c | 6s 0c | steady | 11 of 12 | 474 | +0% |
+| Target Dummy | 4366 | 5s 12c | 2026-11-17 10:15 UTC | 3s 99c | 4s 0c | moving | 11 of 12 | 226 | +0% |
+| World Enlarger | 18660 | 5g 0s 0c | 2026-11-17 10:15 UTC | 5g 0s 0c | 5g 0s 0c | steady | 3 of 12 | 2 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

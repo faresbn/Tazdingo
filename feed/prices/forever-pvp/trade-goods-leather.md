@@ -1,65 +1,65 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Trade Goods: Leather
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-16 17:11 UTC. Uploads in the 30-day window: 26.
+- **Latest scan:** 2026-11-17 10:15 UTC. Uploads in the 30-day window: 27.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Black Dragonscale | 15416 | 2g 99s 98c | 2026-11-16 17:11 UTC | 1g 78s 9c | 2g 33s 3c | moving | 6 of 11 | 130 |  |
-| Black Whelp Scale | 7286 | 1s 30c | 2026-11-16 17:11 UTC | 2s 26c | 4s 79c | volatile | 9 of 11 | 860 | -92% |
-| Blue Dragonscale | 15415 | 39s 98c | 2026-11-16 17:11 UTC | 1g 7s 90c | 1g 7s 90c | moving | 5 of 11 | 63 |  |
-| Brilliant Chromatic Scale | 12607 | 2g 11s 0c | 2026-11-16 17:11 UTC | 2g 11s 0c | 2g 11s 0c | volatile | 5 of 11 | 17 |  |
-| Chimera Leather | 15423 | 11s 86c | 2026-11-16 17:11 UTC | 11s 86c | 11s 86c | volatile | 5 of 11 | 462 |  |
-| Cured Heavy Hide | 4236 | 16s 90c | 2026-11-16 17:11 UTC | 12s 99c | 12s 48c | moving | 9 of 11 | 1211 | +23% |
-| Cured Light Hide | 4231 | 1s 18c | 2026-11-16 17:11 UTC | 1s 29c | 1s 61c | moving | 10 of 11 | 1854 | -34% |
-| Cured Medium Hide | 4233 | 3s 77c | 2026-11-16 17:11 UTC | 3s 77c | 4s 56c | moving | 10 of 11 | 1536 | -37% |
-| Cured Rugged Hide | 15407 | 26g 34s 99c | 2026-11-16 17:11 UTC | 25g 87s 99c | 25g 87s 99c | moving | 5 of 11 | 46 |  |
-| Cured Thick Hide | 8172 | 9s 88c | 2026-11-16 17:11 UTC | 9s 88c | 10s 10c | volatile | 7 of 11 | 685 | -87% |
-| Deeprock Salt | 8150 | 2s 40c | 2026-11-16 17:11 UTC | 2s 53c | 2s 50c | steady | 9 of 11 | 1780 | +1% |
-| Deviate Scale | 6470 | 1s 10c | 2026-11-16 17:11 UTC | 45c | 25c | volatile | 10 of 11 | 1993 | +114% |
-| Devilsaur Leather | 15417 | 79s 85c | 2026-11-16 17:11 UTC | 79s 85c | 80s 46c | volatile | 7 of 11 | 978 | -95% |
-| Enchanted Leather | 12810 | 1g 40s 0c | 2026-11-16 17:11 UTC | 1g 35s 94c | 1g 35s 94c | moving | 5 of 11 | 180 |  |
-| Fel Hide | 248824 | 1g 90s 79c | 2026-11-16 17:11 UTC | 3g 84s 99c | 3g 84s 99c | volatile | 5 of 11 | 106 |  |
-| Fel Leather | 248825 | 9s 50c | 2026-11-16 17:11 UTC | 21s 24c | 29s 62c | volatile | 6 of 11 | 1308 |  |
-| Frostsaber Leather | 15422 | 28s 50c | 2026-11-16 17:11 UTC | 29s 0c | 29s 0c | volatile | 5 of 11 | 192 |  |
-| Green Dragonscale | 15412 | 5s 50c | 2026-11-16 17:11 UTC | 5s 99c | 13s 99c | volatile | 8 of 11 | 656 | -70% |
-| Green Whelp Scale | 7392 | 7s 45c | 2026-11-16 17:11 UTC | 8s 45c | 9s 27c | volatile | 8 of 11 | 254 | -60% |
-| Heavy Hide | 4235 | 12s 33c | 2026-11-16 17:11 UTC | 10s 32c | 10s 16c | moving | 10 of 11 | 1030 | +3% |
-| Heavy Leather | 4234 | 1s 80c | 2026-11-16 17:11 UTC | 1s 80c | 2s 4c | volatile | 10 of 11 | 11256 | -46% |
-| Heavy Scorpid Scale | 15408 | 22s 0c | 2026-11-16 17:11 UTC | 35s 39c | 35s 39c | moving | 5 of 11 | 417 |  |
-| Heavy Silithid Carapace | 20501 | 99s 0c | 2026-11-16 17:11 UTC | 1g 44s 37c |  | too new | 2 of 11 | 2 |  |
-| Ironfeather | 15420 | 1s 8c | 2026-11-16 17:11 UTC | 1s 69c | 1s 84c | volatile | 6 of 11 | 4722 |  |
-| Jet Black Feather | 8168 | 1s 30c | 2026-11-16 17:11 UTC | 2s 89c | 2s 94c | volatile | 6 of 11 | 1254 |  |
-| Light Hide | 783 | 69c | 2026-11-16 17:11 UTC | 69c | 86c | moving | 10 of 11 | 2230 | -31% |
-| Light Leather | 2318 | 73c | 2026-11-16 17:11 UTC | 39c | 31c | moving | 10 of 11 | 19094 | +62% |
-| Light Silithid Carapace | 20500 | 31s 76c | 2026-11-16 17:11 UTC | 55s 68c | 55s 68c | moving | 5 of 11 | 24 |  |
-| Long Tail Feather | 5116 | 3s 3c | 2026-11-16 17:11 UTC | 3s 2c | 3s 3c | steady | 10 of 11 | 1313 | -1% |
-| Medium Hide | 4232 | 2s 64c | 2026-11-16 17:11 UTC | 2s 64c | 3s 16c | moving | 10 of 11 | 1829 | -34% |
-| Medium Leather | 2319 | 1s 7c | 2026-11-16 17:11 UTC | 92c | 92c | moving | 10 of 11 | 9656 | -7% |
-| Perfect Deviate Scale | 6471 | 7s 90c | 2026-11-16 17:11 UTC | 10s 0c | 10s 22c | moving | 10 of 11 | 378 | -9% |
-| Pristine Hide | 249428 | 2s 76c | 2026-11-16 17:11 UTC | 2s 52c | 2s 58c | steady | 9 of 11 | 3171 | -18% |
-| Pristine Leather | 249427 | 4s 0c | 2026-11-16 17:11 UTC | 3s 99c | 3s 10c | moving | 10 of 11 | 2304 | +100% |
-| Pristine Scale | 249429 | 85s 0c | 2026-11-16 17:11 UTC | 98s 84c | 1g 2s 42c | moving | 6 of 11 | 380 |  |
-| Raptor Hide | 4461 | 2s 67c | 2026-11-16 17:11 UTC | 2s 20c | 2s 14c | steady | 9 of 11 | 3186 | +6% |
-| Red Dragonscale | 15414 | 25s 99c | 2026-11-16 17:11 UTC | 67s 54c | 67s 54c | volatile | 4 of 11 | 132 |  |
-| Red Whelp Scale | 7287 | 15s 94c | 2026-11-16 17:11 UTC | 28s 88c | 20s 0c | moving | 9 of 11 | 135 | +65% |
-| Refined Deeprock Salt | 15409 | 47g 75s 0c | 2026-11-16 17:11 UTC | 37g 99s 99c | 37g 99s 99c | moving | 5 of 11 | 31 |  |
-| Rugged Hide | 8171 | 6s 51c | 2026-11-16 17:11 UTC | 7s 99c | 11s 48c | volatile | 6 of 11 | 980 |  |
-| Rugged Leather | 8170 | 18s 70c | 2026-11-16 17:11 UTC | 13s 22c | 11s 49c | moving | 9 of 11 | 4008 | +89% |
-| Ruined Leather Scraps | 2934 | 27c | 2026-11-16 17:11 UTC | 16c | 11c | volatile | 10 of 11 | 8098 | +100% |
-| Salt | 4289 | 59c | 2026-11-16 17:11 UTC | 50c | 54c | moving | 10 of 11 | 1982 | -9% |
-| Scorpid Scale | 8154 | 18s 49c | 2026-11-16 17:11 UTC | 10s 98c | 15s 44c | volatile | 8 of 11 | 519 | -66% |
-| Shadowcat Hide | 7428 | 3s 9c | 2026-11-16 17:11 UTC | 3s 9c | 3s 9c | moving | 9 of 11 | 533 | -41% |
-| Silithid Chitin | 20498 | 13s 5c | 2026-11-16 17:11 UTC | 67s 47c | 67s 47c | volatile | 4 of 11 | 300 |  |
-| Slimy Murloc Scale | 5784 | 92c | 2026-11-16 17:11 UTC | 82c | 1s 3c | volatile | 10 of 11 | 1006 | -57% |
-| Thick Hide | 8169 | 5s 34c | 2026-11-16 17:11 UTC | 5s 34c | 5s 80c | volatile | 9 of 11 | 727 | -93% |
-| Thick Leather | 4304 | 6s 35c | 2026-11-16 17:11 UTC | 5s 75c | 4s 92c | moving | 10 of 11 | 6458 | +30% |
-| Thick Murloc Scale | 5785 | 5s 0c | 2026-11-16 17:11 UTC | 5s 0c | 5s 0c | steady | 9 of 11 | 875 | +0% |
-| Thick Wolfhide | 8368 | 12s 99c | 2026-11-16 17:11 UTC | 10s 60c | 12s 92c | volatile | 8 of 11 | 138 | -88% |
-| Thin Kodo Leather | 5082 | 50c | 2026-11-16 17:11 UTC | 48c | 51c | moving | 10 of 11 | 816 | -33% |
-| Turtle Scale | 8167 | 8s 4c | 2026-11-16 17:11 UTC | 10s 0c | 11s 84c | moving | 8 of 11 | 1136 | -23% |
-| Warbear Leather | 15419 | 50s 0c | 2026-11-16 17:11 UTC | 50s 0c | 50s 0c | volatile | 5 of 11 | 236 |  |
-| Worn Dragonscale | 8165 | 6s 99c | 2026-11-16 17:11 UTC | 6s 99c | 6s 27c | volatile | 8 of 11 | 846 | +26% |
+| Black Dragonscale | 15416 | 1g 99s 0c | 2026-11-17 10:15 UTC | 1g 88s 54c | 1g 99s 0c | volatile | 7 of 12 | 172 |  |
+| Black Whelp Scale | 7286 | 8s 32c | 2026-11-17 10:15 UTC | 2s 62c | 6s 55c | volatile | 10 of 12 | 1028 | -91% |
+| Blue Dragonscale | 15415 | 38s 75c | 2026-11-17 10:15 UTC | 77s 17c | 77s 17c | volatile | 6 of 12 | 102 |  |
+| Brilliant Chromatic Scale | 12607 | 1g 20s 0c | 2026-11-17 10:15 UTC | 1g 66s 0c | 1g 66s 0c | volatile | 6 of 12 | 37 |  |
+| Chimera Leather | 15423 | 10s 87c | 2026-11-17 10:15 UTC | 11s 36c | 11s 36c | volatile | 6 of 12 | 487 |  |
+| Cured Heavy Hide | 4236 | 15s 22c | 2026-11-17 10:15 UTC | 13s 71c | 12s 73c | moving | 10 of 12 | 1297 | +29% |
+| Cured Light Hide | 4231 | 1s 19c | 2026-11-17 10:15 UTC | 1s 24c | 1s 39c | moving | 11 of 12 | 1658 | -36% |
+| Cured Medium Hide | 4233 | 6s 75c | 2026-11-17 10:15 UTC | 3s 94c | 4s 98c | moving | 11 of 12 | 1613 | -34% |
+| Cured Rugged Hide | 15407 | 30g 69s 67c | 2026-11-17 10:15 UTC | 26g 11s 49c | 26g 11s 49c | moving | 6 of 12 | 54 |  |
+| Cured Thick Hide | 8172 | 11s 80c | 2026-11-17 10:15 UTC | 9s 99c | 10s 71c | volatile | 8 of 12 | 832 | -87% |
+| Deeprock Salt | 8150 | 3s 17c | 2026-11-17 10:15 UTC | 2s 54c | 2s 51c | steady | 10 of 12 | 1788 | +2% |
+| Deviate Scale | 6470 | 48c | 2026-11-17 10:15 UTC | 46c | 27c | volatile | 11 of 12 | 1636 | +119% |
+| Devilsaur Leather | 15417 | 69s 0c | 2026-11-17 10:15 UTC | 78s 3c | 80s 15c | volatile | 8 of 12 | 1057 | -95% |
+| Enchanted Leather | 12810 | 1g 5s 7c | 2026-11-17 10:15 UTC | 1g 25s 46c | 1g 25s 46c | moving | 6 of 12 | 394 |  |
+| Fel Hide | 248824 | 2g 75s 0c | 2026-11-17 10:15 UTC | 3g 35s 43c | 3g 35s 43c | volatile | 6 of 12 | 130 |  |
+| Fel Leather | 248825 | 10s 45c | 2026-11-17 10:15 UTC | 16s 12c | 21s 24c | volatile | 7 of 12 | 1241 |  |
+| Frostsaber Leather | 15422 | 18s 0c | 2026-11-17 10:15 UTC | 28s 75c | 28s 75c | volatile | 6 of 12 | 376 |  |
+| Green Dragonscale | 15412 | 5s 0c | 2026-11-17 10:15 UTC | 5s 75c | 12s 98c | volatile | 9 of 12 | 707 | -71% |
+| Green Whelp Scale | 7392 | 6s 50c | 2026-11-17 10:15 UTC | 7s 95c | 8s 87c | volatile | 9 of 12 | 258 | -62% |
+| Heavy Hide | 4235 | 12s 24c | 2026-11-17 10:15 UTC | 10s 64c | 10s 32c | moving | 11 of 12 | 994 | +6% |
+| Heavy Leather | 4234 | 2s 19c | 2026-11-17 10:15 UTC | 1s 81c | 2s 19c | volatile | 11 of 12 | 10613 | -45% |
+| Heavy Scorpid Scale | 15408 | 28s 81c | 2026-11-17 10:15 UTC | 32s 69c | 32s 69c | volatile | 6 of 12 | 1074 |  |
+| Heavy Silithid Carapace | 20501 | 90s 0c | 2026-11-17 10:15 UTC | 99s 0c | 99s 0c | volatile | 3 of 12 | 3 |  |
+| Ironfeather | 15420 | 2s 99c | 2026-11-17 10:15 UTC | 1s 84c | 1s 99c | volatile | 7 of 12 | 5619 |  |
+| Jet Black Feather | 8168 | 1s 10c | 2026-11-17 10:15 UTC | 2s 30c | 2s 89c | volatile | 7 of 12 | 1140 |  |
+| Light Hide | 783 | 84c | 2026-11-17 10:15 UTC | 69c | 84c | moving | 11 of 12 | 2392 | -31% |
+| Light Leather | 2318 | 60c | 2026-11-17 10:15 UTC | 41c | 32c | volatile | 11 of 12 | 16062 | +71% |
+| Light Silithid Carapace | 20500 | 25s 0c | 2026-11-17 10:15 UTC | 43s 72c | 43s 72c | volatile | 6 of 12 | 51 |  |
+| Long Tail Feather | 5116 | 3s 1c | 2026-11-17 10:15 UTC | 3s 2c | 3s 3c | steady | 11 of 12 | 1526 | -1% |
+| Medium Hide | 4232 | 4s 99c | 2026-11-17 10:15 UTC | 2s 74c | 3s 45c | volatile | 11 of 12 | 2040 | -32% |
+| Medium Leather | 2319 | 1s 0c | 2026-11-17 10:15 UTC | 92c | 93c | moving | 11 of 12 | 9982 | -7% |
+| Perfect Deviate Scale | 6471 | 11s 8c | 2026-11-17 10:15 UTC | 10s 14c | 10s 29c | moving | 11 of 12 | 377 | -8% |
+| Pristine Hide | 249428 | 2s 66c | 2026-11-17 10:15 UTC | 2s 53c | 2s 62c | steady | 10 of 12 | 2982 | -18% |
+| Pristine Leather | 249427 | 6s 15c | 2026-11-17 10:15 UTC | 3s 99c | 3s 21c | moving | 11 of 12 | 2084 | +100% |
+| Pristine Scale | 249429 | 61s 48c | 2026-11-17 10:15 UTC | 91s 92c | 98s 84c | moving | 7 of 12 | 435 |  |
+| Raptor Hide | 4461 | 2s 48c | 2026-11-17 10:15 UTC | 2s 21c | 2s 17c | steady | 10 of 12 | 3014 | +6% |
+| Red Dragonscale | 15414 | 19s 73c | 2026-11-17 10:15 UTC | 49s 99c | 49s 99c | volatile | 5 of 12 | 141 |  |
+| Red Whelp Scale | 7287 | 15s 93c | 2026-11-17 10:15 UTC | 23s 43c | 18s 99c | moving | 10 of 12 | 161 | +34% |
+| Refined Deeprock Salt | 15409 | 54g 99s 0c | 2026-11-17 10:15 UTC | 39g 49s 99c | 39g 49s 99c | moving | 6 of 12 | 24 |  |
+| Rugged Hide | 8171 | 5s 5c | 2026-11-17 10:15 UTC | 7s 25c | 7s 99c | volatile | 7 of 12 | 877 |  |
+| Rugged Leather | 8170 | 20s 98c | 2026-11-17 10:15 UTC | 13s 88c | 12s 35c | volatile | 10 of 12 | 4023 | +98% |
+| Ruined Leather Scraps | 2934 | 28c | 2026-11-17 10:15 UTC | 16c | 14c | volatile | 11 of 12 | 8231 | +100% |
+| Salt | 4289 | 47c | 2026-11-17 10:15 UTC | 48c | 54c | moving | 11 of 12 | 2261 | -13% |
+| Scorpid Scale | 8154 | 17s 84c | 2026-11-17 10:15 UTC | 11s 69c | 17s 84c | volatile | 9 of 12 | 553 | -63% |
+| Shadowcat Hide | 7428 | 2s 50c | 2026-11-17 10:15 UTC | 2s 79c | 2s 79c | moving | 10 of 12 | 528 | -47% |
+| Silithid Chitin | 20498 | 10s 97c | 2026-11-17 10:15 UTC | 23s 98c | 23s 98c | volatile | 5 of 12 | 338 |  |
+| Slimy Murloc Scale | 5784 | 1s 2c | 2026-11-17 10:15 UTC | 86c | 1s 2c | volatile | 11 of 12 | 1048 | -55% |
+| Thick Hide | 8169 | 5s 29c | 2026-11-17 10:15 UTC | 5s 31c | 5s 57c | volatile | 10 of 12 | 943 | -93% |
+| Thick Leather | 4304 | 7s 28c | 2026-11-17 10:15 UTC | 5s 85c | 4s 96c | moving | 11 of 12 | 5528 | +32% |
+| Thick Murloc Scale | 5785 | 5s 0c | 2026-11-17 10:15 UTC | 5s 0c | 5s 0c | steady | 10 of 12 | 769 | +0% |
+| Thick Wolfhide | 8368 | 10s 0c | 2026-11-17 10:15 UTC | 10s 30c | 12s 86c | volatile | 9 of 12 | 126 | -88% |
+| Thin Kodo Leather | 5082 | 34c | 2026-11-17 10:15 UTC | 46c | 50c | volatile | 11 of 12 | 943 | -36% |
+| Turtle Scale | 8167 | 5s 49c | 2026-11-17 10:15 UTC | 9s 2c | 10s 98c | moving | 9 of 12 | 1690 | -31% |
+| Warbear Leather | 15419 | 1g 53s 98c | 2026-11-17 10:15 UTC | 65s 43c | 65s 43c | volatile | 6 of 12 | 242 |  |
+| Worn Dragonscale | 8165 | 5s 1c | 2026-11-17 10:15 UTC | 6s 0c | 5s 55c | volatile | 9 of 12 | 726 | +8% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

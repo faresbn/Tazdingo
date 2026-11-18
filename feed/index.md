@@ -6,7 +6,7 @@ Every path below is in the public repository: https://raw.githubusercontent.com/
 
 ## Where to go
 
-- `feed/prices/forever-pvp/index.md`: CAMWOW EU5 Realm 2 PvP (Horde) (Forever), 7092 items, latest scan 2026-11-16 17:11 UTC.
+- `feed/prices/forever-pvp/index.md`: CAMWOW EU5 Realm 2 PvP (Horde) (Forever), 7121 items, latest scan 2026-11-17 10:15 UTC.
 - `feed/prices/forever-beta-pvp/index.md`: Beta PvP realm (Forever Beta), 975 items, latest scan 2026-10-17 12:36 UTC, a Beta sample.
 - `feed/prices/forever-beta-classicbetapvp/index.md`: Beta Classic PvP realm (Forever Beta), 6 items, latest scan 2026-10-17 12:36 UTC, a Beta sample.
 - `feed/craft/index.md`: what to craft, by profession, with estimated margins.
@@ -15,7 +15,7 @@ Every path below is in the public repository: https://raw.githubusercontent.com/
 - Combat logs, on the repository's `logs` branch: https://raw.githubusercontent.com/faresbn/Tazdingo/logs/README.md is the guide and the list. Instance runs complete (every player, as the game wrote them) and open-world summaries of our own characters; read the guide first, the instance files are large.
 
 Original addon files, as uploaded (large; open only when asked about that addon):
-- `data/captures/forever/auctionator/2026-11-16T1711Z.lua`: the latest of 38 auctionator file(s) (forever), processed into the prices above.
+- `data/captures/forever/auctionator/2026-11-17T1015Z.lua`: the latest of 39 auctionator file(s) (forever), processed into the prices above.
 
 ## How the data stays current
 

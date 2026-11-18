@@ -1,60 +1,60 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Container
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-16 17:11 UTC. Uploads in the 30-day window: 26.
+- **Latest scan:** 2026-11-17 10:15 UTC. Uploads in the 30-day window: 27.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Big Bag of Enchantment | 22249 | 15g 99s 0c | 2026-11-16 17:11 UTC | 20g 79s 0c | 20g 79s 0c | moving | 3 of 11 | 2 |  |
-| Black Silk Pack | 5765 | 57s 0c | 2026-11-16 17:11 UTC | 60s 0c | 61s 0c | moving | 7 of 11 | 207 | -28% |
-| Blue Leather Bag | 856 | 8s 98c | 2026-11-16 17:11 UTC | 8s 98c | 9s 0c | moving | 10 of 11 | 98 | -18% |
-| Brown Leather Satchel | 4498 | 6s 25c | 2026-11-16 17:11 UTC | 6s 25c | 7s 0c | moving | 9 of 11 | 61 | -46% |
-| Darkmoon Storage Box | 19291 | 5g 0s 0c | 2026-11-16 17:11 UTC | 5g 0s 0c | 5g 0s 49c | moving | 6 of 11 | 16 |  |
-| Enchanted Mageweave Pouch | 22246 | 1g 50s 87c | 2026-11-16 17:11 UTC | 1g 66s 66c | 1g 88s 50c | volatile | 8 of 11 | 29 | -62% |
-| Enchanted Runecloth Bag | 22248 | 9g 95s 78c | 2026-11-16 17:11 UTC | 9g 95s 78c | 9g 95s 78c | volatile | 5 of 11 | 10 |  |
-| Felcloth Bag | 21341 | 39g 93s 99c | 2026-11-16 17:11 UTC | 39g 46s 99c |  | too new | 2 of 11 | 2 |  |
-| Gnoll Hide Sack | 3233 | 11s 0c | 2026-11-16 17:11 UTC | 9s 0c | 13s 0c | volatile | 10 of 11 | 24 | -55% |
-| Green Leather Bag | 5573 | 8s 75c | 2026-11-16 17:11 UTC | 8s 75c | 8s 88c | moving | 10 of 11 | 81 | -20% |
-| Green Silk Pack | 5764 | 56s 89c | 2026-11-16 17:11 UTC | 59s 80c | 60s 0c | moving | 9 of 11 | 82 | -28% |
-| Green Woolen Bag | 4241 | 21s 32c | 2026-11-16 17:11 UTC | 21s 32c | 17s 23c | volatile | 10 of 11 | 206 | +113% |
-| Heavy Brown Bag | 4497 | 97s 0c | 2026-11-16 17:11 UTC | 99s 0c | 1g 0s 0c | volatile | 7 of 11 | 15 | -50% |
-| Herb Pouch | 22250 | 11s 98c | 2026-11-16 17:11 UTC | 11s 95c | 11s 96c | steady | 10 of 11 | 206 | +0% |
-| Journeyman's Backpack | 3914 | 2g 12s 91c | 2026-11-16 17:11 UTC | 3g 99s 0c | 5g 89s 50c | volatile | 10 of 11 | 24 | -43% |
-| Kodo Hide Bag | 5081 | 2s 50c | 2026-11-16 17:11 UTC | 2s 50c | 3s 0c | moving | 10 of 11 | 98 | -38% |
-| Large Blue Sack | 804 | 43s 20c | 2026-11-16 17:11 UTC | 26s 73c | 45s 0c | volatile | 9 of 11 | 61 | -71% |
-| Large Brown Sack | 5576 | 26s 41c | 2026-11-16 17:11 UTC | 26s 41c | 51s 50c | volatile | 10 of 11 | 56 | -62% |
-| Large Green Sack | 5575 | 25s 25c | 2026-11-16 17:11 UTC | 26s 99c | 54s 50c | volatile | 10 of 11 | 56 | -71% |
-| Large Knapsack | 1725 | 60s 0c | 2026-11-16 17:11 UTC | 75s 0c | 1g 19s 0c | volatile | 9 of 11 | 57 | -69% |
-| Large Red Sack | 857 | 25s 0c | 2026-11-16 17:11 UTC | 25s 25c | 48s 50c | volatile | 10 of 11 | 63 | -72% |
-| Large Rucksack | 933 | 89s 0c | 2026-11-16 17:11 UTC | 1g 5s 0c | 1g 43s 0c | volatile | 8 of 11 | 6 | -56% |
-| Light Leather Reagent Bag | 277715 | 24s 99c | 2026-11-16 17:11 UTC | 7s 0c | 7s 0c | moving | 10 of 11 | 326 | +0% |
-| Linen Bag | 4238 | 2s 0c | 2026-11-16 17:11 UTC | 2s 0c | 2s 0c | moving | 10 of 11 | 1777 | +0% |
-| Linen Reagent Bag | 253664 | 5s 50c | 2026-11-16 17:11 UTC | 4s 99c | 4s 99c | steady | 10 of 11 | 354 | +0% |
-| Mageweave Bag | 10050 | 56s 97c | 2026-11-16 17:11 UTC | 74s 95c | 99s 0c | volatile | 9 of 11 | 265 | -64% |
-| Mageweave Reagent Bag | 254035 | 2g 41s 90c | 2026-11-16 17:11 UTC | 2g 65s 0c | 2g 78s 50c | moving | 8 of 11 | 86 | -34% |
-| Mooncloth Bag | 14155 | 55g 98s 93c | 2026-11-16 17:11 UTC | 55g 98s 93c | 55g 98s 93c | steady | 3 of 11 | 14 |  |
-| Mooncloth Reagent Bag | 254133 | 58g 39s 99c | 2026-11-16 17:11 UTC | 58g 89s 99c |  | too new | 2 of 11 | 5 |  |
-| Murloc Skin Bag | 1470 | 21s 83c | 2026-11-16 17:11 UTC | 23s 0c | 89s 0c | volatile | 9 of 11 | 24 | -83% |
-| Red Leather Bag | 2657 | 9s 0c | 2026-11-16 17:11 UTC | 9s 0c | 9s 0c | moving | 10 of 11 | 130 | -18% |
-| Red Linen Bag | 5762 | 3s 90c | 2026-11-16 17:11 UTC | 3s 84c | 3s 95c | moving | 10 of 11 | 1345 | -23% |
-| Red Mageweave Bag | 10051 | 1g 53s 70c | 2026-11-16 17:11 UTC | 1g 69s 0c | 1g 85s 99c | moving | 7 of 11 | 242 | -37% |
-| Red Woolen Bag | 5763 | 20s 89c | 2026-11-16 17:11 UTC | 20s 0c | 17s 40c | volatile | 10 of 11 | 256 | +100% |
-| Runecloth Bag | 14046 | 4g 85s 96c | 2026-11-16 17:11 UTC | 5g 8s 0c | 5g 27s 47c | moving | 7 of 11 | 72 | -32% |
-| Runecloth Reagent Bag | 254079 | 3g 99s 96c | 2026-11-16 17:11 UTC | 4g 49s 0c | 6g 10s 0c | volatile | 7 of 11 | 77 | -76% |
-| Silk Reagent Bag | 253973 | 2g 9s 99c | 2026-11-16 17:11 UTC | 2g 24s 0c | 2g 24s 0c | moving | 7 of 11 | 70 | -10% |
-| Small Black Pouch | 5571 | 2s 50c | 2026-11-16 17:11 UTC | 2s 48c | 2s 75c | moving | 10 of 11 | 642 | -17% |
-| Small Blue Pouch | 828 | 2s 48c | 2026-11-16 17:11 UTC | 2s 49c | 3s 0c | steady | 10 of 11 | 670 | -17% |
-| Small Brown Pouch | 4496 | 1s 98c | 2026-11-16 17:11 UTC | 1s 98c | 2s 0c | steady | 10 of 11 | 624 | -1% |
-| Small Green Pouch | 5572 | 2s 50c | 2026-11-16 17:11 UTC | 2s 50c | 3s 0c | steady | 10 of 11 | 775 | -17% |
-| Small Red Pouch | 805 | 2s 50c | 2026-11-16 17:11 UTC | 2s 49c | 3s 0c | steady | 10 of 11 | 804 | -17% |
-| Small Silk Pack | 4245 | 20s 1c | 2026-11-16 17:11 UTC | 20s 44c | 26s 0c | volatile | 10 of 11 | 696 | -58% |
-| Soul Pouch | 21340 | 3g 37s 90c | 2026-11-16 17:11 UTC | 3g 49s 0c | 3g 64s 0c | moving | 6 of 11 | 58 |  |
-| Sturdy Lunchbox | 1652 | 2g 80s 99c | 2026-11-15 17:55 UTC | 2g 90s 0c | 2g 90s 0c | volatile | 3 of 11 | 8 |  |
-| Traveler's Backpack | 4500 | 17g 92s 0c | 2026-11-16 17:11 UTC | 17g 92s 0c | 26g 27s 0c | moving | 8 of 11 | 17 | -47% |
-| Troll-hide Bag | 1685 | 4g 15s 20c | 2026-11-16 17:11 UTC | 4g 88s 0c | 5g 64s 50c | moving | 8 of 11 | 10 | -39% |
-| White Leather Bag | 5574 | 8s 75c | 2026-11-16 17:11 UTC | 8s 75c | 9s 0c | steady | 10 of 11 | 94 | -3% |
-| Woolen Bag | 4240 | 3s 80c | 2026-11-16 17:11 UTC | 3s 80c | 5s 0c | volatile | 10 of 11 | 366 | -52% |
-| Woolen Reagent Bag | 253667 | 80s 48c | 2026-11-16 17:11 UTC | 74s 0c | 60s 0c | moving | 10 of 11 | 168 | +54% |
+| Big Bag of Enchantment | 22249 | 22g 0s 0c | 2026-11-17 10:15 UTC | 21g 39s 50c | 21g 39s 50c | moving | 4 of 12 | 4 |  |
+| Black Silk Pack | 5765 | 56s 50c | 2026-11-17 10:15 UTC | 58s 50c | 60s 50c | moving | 8 of 12 | 176 | -30% |
+| Blue Leather Bag | 856 | 9s 99c | 2026-11-17 10:15 UTC | 8s 99c | 9s 0c | moving | 11 of 12 | 91 | -18% |
+| Brown Leather Satchel | 4498 | 6s 24c | 2026-11-17 10:15 UTC | 6s 24c | 6s 95c | moving | 10 of 12 | 58 | -46% |
+| Darkmoon Storage Box | 19291 | 5g 0s 0c | 2026-11-17 10:15 UTC | 5g 0s 0c | 5g 0s 0c | moving | 7 of 12 | 15 |  |
+| Enchanted Mageweave Pouch | 22246 | 2g 15s 0c | 2026-11-17 10:15 UTC | 1g 75s 33c | 1g 93s 0c | volatile | 9 of 12 | 33 | -60% |
+| Enchanted Runecloth Bag | 22248 | 5g 0s 0c | 2026-11-17 10:15 UTC | 9g 47s 39c | 9g 47s 39c | volatile | 6 of 12 | 22 |  |
+| Felcloth Bag | 21341 | 39g 93s 99c | 2026-11-16 17:11 UTC | 39g 46s 99c |  | too new | 2 of 12 | 2 |  |
+| Gnoll Hide Sack | 3233 | 7s 10c | 2026-11-17 10:15 UTC | 8s 45c | 11s 0c | volatile | 11 of 12 | 22 | -58% |
+| Green Leather Bag | 5573 | 8s 74c | 2026-11-17 10:15 UTC | 8s 74c | 8s 77c | moving | 11 of 12 | 80 | -21% |
+| Green Silk Pack | 5764 | 55s 80c | 2026-11-17 10:15 UTC | 58s 34c | 59s 99c | moving | 10 of 12 | 162 | -30% |
+| Green Woolen Bag | 4241 | 20s 70c | 2026-11-17 10:15 UTC | 21s 1c | 20s 47c | volatile | 11 of 12 | 188 | +110% |
+| Heavy Brown Bag | 4497 | 99s 95c | 2026-11-17 10:15 UTC | 99s 47c | 99s 97c | volatile | 8 of 12 | 14 | -50% |
+| Herb Pouch | 22250 | 11s 80c | 2026-11-17 10:15 UTC | 11s 87c | 11s 95c | steady | 11 of 12 | 201 | -1% |
+| Journeyman's Backpack | 3914 | 2g 12s 91c | 2026-11-16 17:11 UTC | 3g 99s 0c | 5g 89s 50c | volatile | 10 of 12 | 24 | -43% |
+| Kodo Hide Bag | 5081 | 2s 50c | 2026-11-17 10:15 UTC | 2s 50c | 3s 0c | moving | 11 of 12 | 87 | -38% |
+| Large Blue Sack | 804 | 25s 0c | 2026-11-17 10:15 UTC | 25s 86c | 44s 10c | volatile | 10 of 12 | 62 | -72% |
+| Large Brown Sack | 5576 | 25s 0c | 2026-11-17 10:15 UTC | 25s 70c | 43s 0c | volatile | 11 of 12 | 52 | -63% |
+| Large Green Sack | 5575 | 26s 0c | 2026-11-17 10:15 UTC | 26s 49c | 44s 0c | volatile | 11 of 12 | 57 | -72% |
+| Large Knapsack | 1725 | 60s 0c | 2026-11-17 10:15 UTC | 71s 50c | 1g 4s 50c | volatile | 10 of 12 | 61 | -70% |
+| Large Red Sack | 857 | 25s 0c | 2026-11-17 10:15 UTC | 25s 12c | 42s 0c | volatile | 11 of 12 | 63 | -72% |
+| Large Rucksack | 933 | 90s 1c | 2026-11-17 10:15 UTC | 97s 50c | 1g 38s 0c | volatile | 9 of 12 | 4 | -59% |
+| Light Leather Reagent Bag | 277715 | 6s 99c | 2026-11-17 10:15 UTC | 7s 0c | 7s 0c | moving | 11 of 12 | 340 | +0% |
+| Linen Bag | 4238 | 2s 0c | 2026-11-17 10:15 UTC | 2s 0c | 2s 0c | moving | 11 of 12 | 1253 | +0% |
+| Linen Reagent Bag | 253664 | 5s 0c | 2026-11-17 10:15 UTC | 4s 99c | 5s 0c | steady | 11 of 12 | 332 | +0% |
+| Mageweave Bag | 10050 | 56s 93c | 2026-11-17 10:15 UTC | 68s 47c | 92s 0c | volatile | 10 of 12 | 286 | -67% |
+| Mageweave Reagent Bag | 254035 | 3g 79s 99c | 2026-11-17 10:15 UTC | 2g 66s 50c | 2g 89s 0c | moving | 9 of 12 | 77 | -33% |
+| Mooncloth Bag | 14155 | 58g 95s 23c | 2026-11-17 10:15 UTC | 57g 47s 8c | 57g 47s 8c | steady | 4 of 12 | 18 |  |
+| Mooncloth Reagent Bag | 254133 | 58g 10s 98c | 2026-11-17 10:15 UTC | 58g 39s 99c | 58g 39s 99c | steady | 3 of 12 | 7 |  |
+| Murloc Skin Bag | 1470 | 20s 99c | 2026-11-17 10:15 UTC | 22s 41c | 62s 0c | volatile | 10 of 12 | 30 | -84% |
+| Red Leather Bag | 2657 | 8s 74c | 2026-11-17 10:15 UTC | 8s 87c | 9s 0c | moving | 11 of 12 | 116 | -19% |
+| Red Linen Bag | 5762 | 3s 80c | 2026-11-17 10:15 UTC | 3s 82c | 3s 90c | moving | 11 of 12 | 1032 | -24% |
+| Red Mageweave Bag | 10051 | 1g 54s 97c | 2026-11-17 10:15 UTC | 1g 68s 49c | 1g 77s 49c | moving | 8 of 12 | 246 | -37% |
+| Red Woolen Bag | 5763 | 18s 99c | 2026-11-17 10:15 UTC | 19s 90c | 18s 99c | moving | 11 of 12 | 224 | +99% |
+| Runecloth Bag | 14046 | 4g 85s 96c | 2026-11-17 10:15 UTC | 4g 96s 98c | 5g 17s 73c | moving | 8 of 12 | 71 | -33% |
+| Runecloth Reagent Bag | 254079 | 4g 0s 0c | 2026-11-17 10:15 UTC | 4g 46s 33c | 5g 29s 50c | volatile | 8 of 12 | 74 | -76% |
+| Silk Reagent Bag | 253973 | 2g 50s 0c | 2026-11-17 10:15 UTC | 2g 37s 0c | 2g 37s 0c | moving | 8 of 12 | 66 | -5% |
+| Small Black Pouch | 5571 | 2s 49c | 2026-11-17 10:15 UTC | 2s 48c | 2s 50c | moving | 11 of 12 | 613 | -17% |
+| Small Blue Pouch | 828 | 2s 48c | 2026-11-17 10:15 UTC | 2s 48c | 3s 0c | steady | 11 of 12 | 658 | -17% |
+| Small Brown Pouch | 4496 | 1s 79c | 2026-11-17 10:15 UTC | 1s 89c | 2s 0c | steady | 11 of 12 | 595 | -6% |
+| Small Green Pouch | 5572 | 2s 48c | 2026-11-17 10:15 UTC | 2s 49c | 3s 0c | steady | 11 of 12 | 759 | -17% |
+| Small Red Pouch | 805 | 2s 49c | 2026-11-17 10:15 UTC | 2s 49c | 3s 0c | steady | 11 of 12 | 788 | -17% |
+| Small Silk Pack | 4245 | 19s 99c | 2026-11-17 10:15 UTC | 20s 22c | 23s 0c | volatile | 11 of 12 | 688 | -59% |
+| Soul Pouch | 21340 | 3g 35s 0c | 2026-11-17 10:15 UTC | 3g 48s 99c | 3g 49s 0c | moving | 7 of 12 | 49 |  |
+| Sturdy Lunchbox | 1652 | 3g 40s 0c | 2026-11-17 10:15 UTC | 3g 15s 0c | 3g 15s 0c | steady | 4 of 12 | 6 |  |
+| Traveler's Backpack | 4500 | 17g 0s 0c | 2026-11-17 10:15 UTC | 17g 86s 0c | 25g 55s 0c | moving | 9 of 12 | 11 | -47% |
+| Troll-hide Bag | 1685 | 5g 88s 99c | 2026-11-17 10:15 UTC | 4g 93s 50c | 5g 88s 99c | moving | 9 of 12 | 15 | -39% |
+| White Leather Bag | 5574 | 8s 73c | 2026-11-17 10:15 UTC | 8s 74c | 9s 0c | steady | 11 of 12 | 93 | -3% |
+| Woolen Bag | 4240 | 3s 95c | 2026-11-17 10:15 UTC | 3s 87c | 5s 0c | volatile | 11 of 12 | 353 | -52% |
+| Woolen Reagent Bag | 253667 | 1g 21s 0c | 2026-11-17 10:15 UTC | 76s 50c | 70s 0c | moving | 11 of 12 | 156 | +59% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
