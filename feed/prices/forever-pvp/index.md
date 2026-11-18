@@ -1,7 +1,7 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): map
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-18 13:03 UTC. Uploads in the 30-day window: 28.
+- **Latest scan:** 2026-11-18 16:01 UTC. Uploads in the 30-day window: 29.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 Open only the file for the item's category. Each lists every item recorded in it with its latest, typical and usual price.
@@ -9,11 +9,11 @@ Open only the file for the item's category. Each lists every item recorded in it
 Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/main/<path>
 
 - `feed/prices/forever-pvp/alerts.md`: deals under the usual price, below vendor price, investment watch, short supply and movers.
-- `feed/prices/forever-pvp/armor-cloth.md`: Armor: Cloth, 1293 items.
+- `feed/prices/forever-pvp/armor-cloth.md`: Armor: Cloth, 1295 items.
 - `feed/prices/forever-pvp/armor-idol.md`: Armor: Idol, 1 items.
-- `feed/prices/forever-pvp/armor-leather.md`: Armor: Leather, 891 items.
+- `feed/prices/forever-pvp/armor-leather.md`: Armor: Leather, 892 items.
 - `feed/prices/forever-pvp/armor-libram.md`: Armor: Libram, 1 items.
-- `feed/prices/forever-pvp/armor-mail.md`: Armor: Mail, 807 items.
+- `feed/prices/forever-pvp/armor-mail.md`: Armor: Mail, 809 items.
 - `feed/prices/forever-pvp/armor-miscellaneous.md`: Armor: Miscellaneous, 306 items.
 - `feed/prices/forever-pvp/armor-plate.md`: Armor: Plate, 325 items.
 - `feed/prices/forever-pvp/armor-shield.md`: Armor: Shield, 168 items.
@@ -35,7 +35,7 @@ Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/
 - `feed/prices/forever-pvp/miscellaneous-other.md`: Miscellaneous: Other, 9 items.
 - `feed/prices/forever-pvp/miscellaneous-pet.md`: Miscellaneous: Pet, 42 items.
 - `feed/prices/forever-pvp/miscellaneous-reagent.md`: Miscellaneous: Reagent, 31 items.
-- `feed/prices/forever-pvp/other.md`: Other, 68 items.
+- `feed/prices/forever-pvp/other.md`: Other, 80 items.
 - `feed/prices/forever-pvp/projectile.md`: Projectile, 21 items.
 - `feed/prices/forever-pvp/quest-quest.md`: Quest: Quest, 159 items.
 - `feed/prices/forever-pvp/quiver.md`: Quiver, 11 items.

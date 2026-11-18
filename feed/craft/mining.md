@@ -10,10 +10,9 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Rock Garden | 140 | 279948 | 1 | 20s 0c | 15s 94c | 4s 6c | ForeverDB |
 | Smelt Thorium | 250 | 12359 | 1 | 18s 7c | 15s 83c | 2s 24c | our scan |
 | Smelt Truesilver | 230 | 6037 | 1 | 14s 19c | 12s 31c | 1s 88c | our scan |
-| Smelt Mithril | 175 | 3860 | 1 | 10s 46c | 9s 66c | 80c | our scan |
+| Smelt Iron | 125 | 3575 | 1 | 4s 14c | 2s 34c | 1s 80c | ForeverDB |
+| Smelt Mithril | 175 | 3860 | 1 | 10s 46c | 9s 20c | 1s 26c | our scan |
 | Smelt Bronze | 65 | 2841 | 2 | 3s 94c | 3s 50c | 44c | our scan |
-| Smelt Iron | 125 | 3575 | 1 | 2s 63c | 2s 34c | 29c | our scan |
-| Smelt Steel | 165 | 3859 | 1 | 7s 90c | 7s 63c | 27c | our scan |
 | Smelt Copper | 1 | 2840 | 1 | 1s 40c | 1s 35c | 5c | ForeverDB |
 | Smelt Tin | 50 | 3576 | 1 | 2s 10c | 2s 5c | 5c | ForeverDB |
 
