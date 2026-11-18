@@ -55,7 +55,7 @@ None at the latest scan.
 
 Steady or moving items, listed most days, recorded at or under their cheaper days. The margin is an estimate after the 5% Auction House cut.
 
-The strongest 30 of 535.
+The strongest 30 of 534.
 
 | Item | ID | Latest | Usual | Estimated margin a unit | Steadiness | Recorded at |
 |---|---|---|---|---|---|---|
@@ -64,7 +64,6 @@ The strongest 30 of 535.
 | Shadowcraft Gloves | 16712 | 30g 0s 96c | 36g 15s 0c | 4g 33s 29c | moving | 2026-11-18 13:03 UTC |
 | Gilded Handwraps | 254021 | 4g 0s 0c | 7g 89s 99c | 3g 50s 49c | moving | 2026-11-18 13:03 UTC |
 | Sandals of the Insurgent | 13111 | 1g 99s 0c | 5g 4s 0c | 2g 79s 80c | moving | 2026-11-18 13:03 UTC |
-| Blade of the Basilisk | 8223 | 4g 75s 0c | 7g 48s 0c | 2g 35s 60c | moving | 2026-11-18 13:03 UTC |
 | Alabaster Breastplate | 8312 | 1g 77s 0c | 4g 49s 0c | 2g 49s 55c | moving | 2026-11-18 13:03 UTC |
 | Lifestone | 833 | 43g 99s 0c | 48g 49s 99c | 2g 8s 49c | moving | 2026-11-18 13:03 UTC |
 | Ardent Custodian | 868 | 6g 95s 0c | 9g 0s 0c | 1g 60s 0c | moving | 2026-11-18 13:03 UTC |
@@ -89,6 +88,7 @@ The strongest 30 of 535.
 | Potent Helmet | 15175 | 1g 49s 0c | 2g 40s 0c | 79s 0c | moving | 2026-11-18 13:03 UTC |
 | Gazlowe's Charm | 13088 | 2g 20s 0c | 2g 99s 0c | 64s 5c | moving | 2026-11-18 13:03 UTC |
 | Revenant Chestplate | 10128 | 3g 99s 0c | 4g 98s 99c | 75s 4c | moving | 2026-11-18 13:03 UTC |
+| Overlord's Chestplate | 10203 | 2g 99s 0c | 3g 70s 0c | 52s 50c | steady | 2026-11-18 13:03 UTC |
 
 ## Short supply
 

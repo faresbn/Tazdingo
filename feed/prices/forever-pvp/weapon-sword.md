@@ -7,7 +7,7 @@
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | Ancestral Sword | 215374 | 12s 55c | 2026-11-18 13:03 UTC | 12s 57c | 13s 0c | steady | 10 of 13 | 24 | -24% |
-| Annealed Blade | 9392 | 11g 78s 0c | 2026-11-18 13:03 UTC | 11g 38s 50c | 10g 99s 0c | moving | 7 of 13 | 3 |  |
+| Annealed Blade | 9392 | 11g 78s 0c | 2026-11-18 13:03 UTC | 10g 49s 50c | 10g 0s 0c | moving | 7 of 13 | 3 |  |
 | Archaic Defender | 9385 | 1g 32s 30c | 2026-11-18 13:03 UTC | 1g 57s 50c | 1g 72s 50c | moving | 10 of 13 | 17 | -17% |
 | Assassination Blade | 13036 | 30g 0s 0c | 2026-11-18 13:03 UTC | 26g 11s 0c | 27g 22s 0c | volatile | 7 of 13 | 10 |  |
 | Bastard Sword | 1194 | 1g 0s 0c | 2026-11-18 13:03 UTC | 30s 0c | 30s 0c | volatile | 5 of 13 | 3 |  |
@@ -16,7 +16,7 @@
 | Beheading Blade | 15253 | 3g 33s 0c | 2026-11-18 13:03 UTC | 3g 33s 16c | 3g 33s 33c | moving | 7 of 13 | 9 |  |
 | Blackwater Cutlass | 1951 | 71s 0c | 2026-11-18 13:03 UTC | 60s 49c | 59s 0c | moving | 13 of 13 | 38 | +3% |
 | Blade of Hanna | 2801 | 900g 0s 0c | 2026-11-18 13:03 UTC | 850g 0s 0c |  | too new | 2 of 13 | 1 |  |
-| Blade of the Basilisk | 8223 | 4g 75s 0c | 2026-11-18 13:03 UTC | 6g 24s 0c | 7g 48s 0c | moving | 11 of 13 | 3 | -34% |
+| Blade of the Basilisk | 8223 | 5g 20s 0c | 2026-11-18 13:03 UTC | 6g 24s 0c | 7g 48s 0c | moving | 11 of 13 | 3 | -34% |
 | Blade of the Titans | 13043 | 12g 99s 0c | 2026-11-18 13:03 UTC | 6g 47s 50c | 9g 0s 0c | volatile | 9 of 13 | 14 | -60% |
 | Blazing Rapier | 12777 | 29g 90s 0c | 2026-11-18 13:03 UTC | 29g 90s 0c |  | too new | 1 of 13 | 4 |  |
 | Blessed Claymore | 4817 | 75s 89c | 2026-11-18 13:03 UTC | 88s 99c | 95s 0c | volatile | 11 of 13 | 6 | -6% |
@@ -44,7 +44,7 @@
 | Dacian Falx | 922 | 1g 20s 0c | 2026-11-18 13:03 UTC | 99s 0c | 99s 50c | moving | 6 of 13 | 2 |  |
 | Dark Espadon | 15254 | 3g 66s 99c | 2026-11-18 13:03 UTC | 3g 94s 50c | 3g 94s 50c | moving | 6 of 13 | 7 |  |
 | Darksteel Bastard Sword | 2084 | 76s 94c | 2026-11-18 13:03 UTC | 76s 97c | 73s 47c | moving | 10 of 13 | 6 | +18% |
-| Dazzling Longsword | 869 | 17g 80s 0c | 2026-11-18 13:03 UTC | 15g 94s 50c | 17g 0s 0c | moving | 9 of 13 | 11 | -16% |
+| Dazzling Longsword | 869 | 19g 99s 99c | 2026-11-18 13:03 UTC | 15g 94s 50c | 17g 0s 0c | moving | 9 of 13 | 11 | -16% |
 | Dazzling Mithril Rapier | 7944 | 1g 68s 0c | 2026-11-18 13:03 UTC | 1g 92s 0c | 1g 92s 0c | moving | 6 of 13 | 34 |  |
 | Deadman Blade | 3295 | 50s 0c | 2026-11-17 10:15 UTC | 55s 0c | 50s 0c | moving | 8 of 13 | 1 | +22% |
 | Deanship Claymore | 13049 | 64s 0c | 2026-11-18 13:03 UTC | 63s 44c | 65s 0c | moving | 11 of 13 | 19 | -15% |
@@ -113,11 +113,11 @@
 | Pysan's Old Greatsword | 1975 | 89s 0c | 2026-11-18 13:03 UTC | 84s 99c | 89s 0c | steady | 11 of 13 | 14 | -15% |
 | Raider Shortsword | 15210 | 8s 29c | 2026-11-18 13:03 UTC | 8s 29c | 8s 30c | moving | 13 of 13 | 241 | -8% |
 | Ranger Lord's Longsword | 284157 | 9g 99s 99c | 2026-11-16 17:11 UTC | 7g 99s 99c |  | too new | 2 of 13 | 4 |  |
-| Reforged Blade of Heroes | 9718 | 7g 79s 99c | 2026-11-18 13:03 UTC | 7g 52s 49c | 7g 79s 99c | moving | 7 of 13 | 10 |  |
+| Reforged Blade of Heroes | 9718 | 7g 79s 99c | 2026-11-18 13:03 UTC | 7g 37s 98c | 7g 50s 97c | moving | 7 of 13 | 10 |  |
 | Rune Sword | 15216 | 3g 27s 99c | 2026-11-18 13:03 UTC | 3g 38s 99c | 3g 75s 0c | moving | 8 of 13 | 10 | -68% |
 | Scimitar | 2027 | 1g 0s 0c | 2026-11-18 13:03 UTC | 21s 0c | 18s 50c | moving | 10 of 13 | 5 | +24% |
 | Scimitar of Atun | 1469 | 15g 0s 0c | 2026-11-18 13:03 UTC | 15g 0s 0c | 15g 0s 0c | steady | 3 of 13 | 2 |  |
-| Scorpion Sting | 1265 | 1g 99s 0c | 2026-11-18 13:03 UTC | 1g 98s 50c | 3g 20s 0c | volatile | 11 of 13 | 16 | -53% |
+| Scorpion Sting | 1265 | 1g 99s 99c | 2026-11-18 13:03 UTC | 1g 98s 50c | 3g 20s 0c | volatile | 11 of 13 | 16 | -53% |
 | Searing Blade | 12992 | 1g 0s 0c | 2026-11-18 13:03 UTC | 38s 99c | 38s 99c | volatile | 12 of 13 | 38 | +1% |
 | Serpent Slicer | 13035 | 5g 15s 96c | 2026-11-18 13:03 UTC | 4g 87s 0c | 4g 99s 0c | moving | 7 of 13 | 10 |  |
 | Shadowfang | 1482 | 34g 99s 99c | 2026-11-18 13:03 UTC | 34g 49s 99c | 13g 24s 0c | volatile | 12 of 13 | 12 | +263% |
@@ -130,7 +130,7 @@
 | Shortsword | 2131 | 1g 0s 0c | 2026-11-18 13:03 UTC | 98s 0c | 56s 50c | volatile | 4 of 13 | 2 |  |
 | Shortsword of Vengeance | 754 | 3g 15s 0c | 2026-11-18 13:03 UTC | 3g 24s 0c | 3g 90s 0c | volatile | 9 of 13 | 16 | -50% |
 | Silithid Ripper | 8224 | 95s 90c | 2026-11-18 13:03 UTC | 87s 95c | 95s 90c | moving | 11 of 13 | 7 | -12% |
-| Speedsteel Rapier | 13034 | 4g 40s 0c | 2026-11-18 13:03 UTC | 4g 34s 99c | 4g 68s 0c | moving | 10 of 13 | 14 | -11% |
+| Speedsteel Rapier | 13034 | 4g 40s 0c | 2026-11-18 13:03 UTC | 4g 19s 99c | 4g 68s 0c | moving | 10 of 13 | 14 | -14% |
 | Standard Claymore | 1818 | 12s 22c | 2026-11-18 13:03 UTC | 12s 25c | 12s 99c | steady | 11 of 13 | 18 | -12% |
 | Stock Shortsword | 1817 | 5s 20c | 2026-11-18 13:03 UTC | 5s 9c | 5s 20c | steady | 11 of 13 | 25 | -15% |
 | Stonecutter Claymore | 3197 | 92s 94c | 2026-11-18 13:03 UTC | 92s 96c | 93s 0c | steady | 11 of 13 | 47 | -5% |

@@ -74,7 +74,7 @@
 | Stiletto | 2494 | 1g 0s 0c | 2026-11-18 13:03 UTC | 55s 0c | 7s 0c | volatile | 12 of 13 | 2 | +2650% |
 | Stonevault Shiv | 9384 | 6g 30s 0c | 2026-11-18 13:03 UTC | 6g 39s 50c | 6g 39s 50c | moving | 8 of 13 | 8 | -20% |
 | The Shadowfoot Stabber | 24222 | 20g 55s 98c | 2026-11-18 13:03 UTC | 15g 49s 99c | 15g 99s 99c | volatile | 7 of 13 | 7 |  |
-| The Ziggler | 8006 | 2g 50s 0c | 2026-11-18 13:03 UTC | 2g 58s 83c | 3g 0s 0c | volatile | 11 of 13 | 16 | -48% |
+| The Ziggler | 8006 | 2g 50s 99c | 2026-11-18 13:03 UTC | 2g 58s 83c | 3g 0s 0c | volatile | 11 of 13 | 16 | -48% |
 | Threshadon Fang | 5516 | 7s 0c | 2026-11-18 13:03 UTC | 3s 57c | 4s 0c | moving | 10 of 13 | 14 | -21% |
 | Tigerbane | 1465 | 98s 24c | 2026-11-18 13:03 UTC | 98s 24c | 99s 0c | steady | 11 of 13 | 32 | -6% |
 | Tusk of Grunter | 282010 | 1g 50s 0c | 2026-11-15 12:38 UTC | 1g 50s 0c |  | too new | 1 of 13 | 1 |  |

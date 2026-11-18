@@ -265,7 +265,7 @@
 | Swamp Pendant | 12045 | 1g 82s 0c | 2026-11-18 13:03 UTC | 2g 42s 99c | 2g 89s 99c | volatile | 9 of 13 | 8 | -23% |
 | Swamp Ring | 12015 | 1g 59s 0c | 2026-11-18 13:03 UTC | 1g 79s 50c | 2g 0s 0c | volatile | 7 of 13 | 7 |  |
 | Swamp Roamer's Band | 285089 | 53s 0c | 2026-11-18 13:03 UTC | 64s 85c | 74s 84c | volatile | 10 of 13 | 8 | -41% |
-| Swampchill Fetish | 1992 | 4g 0s 88c | 2026-11-18 13:03 UTC | 3g 90s 44c | 3g 90s 44c | moving | 8 of 13 | 5 | -18% |
+| Swampchill Fetish | 1992 | 4g 0s 88c | 2026-11-18 13:03 UTC | 3g 65s 44c | 3g 65s 44c | moving | 8 of 13 | 6 | -23% |
 | Talisman of the Naga Lord | 5029 | 79s 0c | 2026-11-18 13:03 UTC | 86s 0c | 92s 49c | volatile | 10 of 13 | 8 | -59% |
 | Tarnished Silver Necklace | 9333 | 15s 0c | 2026-11-18 13:03 UTC | 19s 99c | 19s 99c | volatile | 5 of 13 | 22 |  |
 | Tellurium Band | 11988 | 82s 0c | 2026-11-18 13:03 UTC | 87s 99c | 99s 99c | moving | 10 of 13 | 17 | -47% |
