@@ -1,44 +1,44 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Trade Goods: Enchanting
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-17 10:15 UTC. Uploads in the 30-day window: 27.
+- **Latest scan:** 2026-11-18 13:03 UTC. Uploads in the 30-day window: 28.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Arcanite Rod | 16206 | 179g 50s 89c | 2026-11-17 10:15 UTC | 179g 95s 89c | 179g 95s 89c | steady | 3 of 12 | 7 |  |
-| Copper Rod | 6217 | 1s 0c | 2026-11-17 10:15 UTC | 1s 0c | 1s 0c | steady | 11 of 12 | 1397 | +0% |
-| Dream Dust | 11176 | 28s 29c | 2026-11-17 10:15 UTC | 30s 25c | 33s 56c | volatile | 10 of 12 | 1128 | -55% |
-| Golden Rod | 11128 | 10s 0c | 2026-11-17 10:15 UTC | 9s 90c | 10s 0c | moving | 11 of 12 | 295 | -1% |
-| Greater Astral Essence | 11082 | 17s 39c | 2026-11-17 10:15 UTC | 14s 45c | 14s 47c | moving | 11 of 12 | 1022 | -4% |
-| Greater Eternal Essence | 16203 | 1g 99s 0c | 2026-11-17 10:15 UTC | 2g 1s 46c | 2g 3s 93c | steady | 7 of 12 | 267 |  |
-| Greater Magic Essence | 10939 | 4s 10c | 2026-11-17 10:15 UTC | 3s 26c | 2s 89c | moving | 11 of 12 | 1993 | +28% |
-| Greater Mystic Essence | 11135 | 24s 12c | 2026-11-17 10:15 UTC | 24s 6c | 24s 55c | moving | 10 of 12 | 415 | -7% |
-| Greater Nether Essence | 11175 | 95s 65c | 2026-11-17 10:15 UTC | 95s 29c | 99s 78c | steady | 9 of 12 | 209 | -18% |
-| Hexed Pendant | 275724 | 9s 99c | 2026-11-17 10:15 UTC | 2s 0c | 2s 0c | volatile | 11 of 12 | 63 | +100% |
-| Illusion Dust | 16204 | 27s 5c | 2026-11-17 10:15 UTC | 59s 35c | 68s 89c | volatile | 8 of 12 | 582 | -80% |
-| Large Brilliant Shard | 14344 | 3g 8s 98c | 2026-11-17 10:15 UTC | 3g 28s 98c | 3g 48s 98c | volatile | 7 of 12 | 212 |  |
-| Large Glimmering Shard | 11084 | 66s 98c | 2026-11-17 10:15 UTC | 33s 35c | 24s 43c | volatile | 11 of 12 | 698 | +57% |
-| Large Glowing Shard | 11139 | 29s 85c | 2026-11-17 10:15 UTC | 30s 87c | 35s 77c | moving | 10 of 12 | 228 | -32% |
-| Large Radiant Shard | 11178 | 1g 87s 97c | 2026-11-17 10:15 UTC | 1g 67s 90c | 2g 0s 93c | volatile | 10 of 12 | 109 | -52% |
-| Lesser Astral Essence | 10998 | 6s 10c | 2026-11-17 10:15 UTC | 4s 90c | 4s 93c | moving | 11 of 12 | 1128 | -2% |
-| Lesser Eternal Essence | 16202 | 67s 0c | 2026-11-17 10:15 UTC | 68s 46c | 73s 42c | volatile | 8 of 12 | 308 | -60% |
-| Lesser Magic Essence | 10938 | 1s 50c | 2026-11-17 10:15 UTC | 1s 36c | 1s 11c | moving | 11 of 12 | 4139 | +30% |
-| Lesser Mana Oil | 20747 | 10s 9c | 2026-11-17 10:15 UTC | 12s 49c | 12s 49c | volatile | 6 of 12 | 366 |  |
-| Lesser Mystic Essence | 11134 | 8s 18c | 2026-11-17 10:15 UTC | 8s 24c | 8s 32c | moving | 11 of 12 | 953 | -26% |
-| Lesser Nether Essence | 11174 | 31s 12c | 2026-11-17 10:15 UTC | 29s 69c | 30s 68c | moving | 10 of 12 | 514 | -58% |
-| Lesser Wizard Oil | 20746 | 11s 15c | 2026-11-17 10:15 UTC | 12s 0c | 13s 46c | steady | 10 of 12 | 368 | -64% |
-| Luminous Residue | 247884 | 1s 77c | 2026-11-17 10:15 UTC | 3s 7c | 1s 77c | volatile | 11 of 12 | 254 | +1606% |
-| Mote of Magic | 247786 | 13c | 2026-11-17 10:15 UTC | 6c | 7c | volatile | 11 of 12 | 4437 | -25% |
-| Nexus Crystal | 20725 | 44g 97s 94c | 2026-11-17 10:15 UTC | 44g 98s 96c | 44g 98s 96c | moving | 4 of 12 | 8 |  |
-| Silver Rod | 6338 | 3s 87c | 2026-11-17 10:15 UTC | 3s 0c | 3s 0c | moving | 11 of 12 | 524 | +50% |
-| Small Brilliant Shard | 14343 | 65s 74c | 2026-11-17 10:15 UTC | 64s 37c | 64s 37c | moving | 6 of 12 | 178 |  |
-| Small Glimmering Shard | 10978 | 3s 22c | 2026-11-17 10:15 UTC | 3s 37c | 3s 53c | moving | 11 of 12 | 1187 | -10% |
-| Small Glowing Shard | 11138 | 10s 54c | 2026-11-17 10:15 UTC | 10s 66c | 11s 99c | volatile | 11 of 12 | 308 | -25% |
-| Small Radiant Shard | 11177 | 65s 10c | 2026-11-17 10:15 UTC | 66s 39c | 69s 0c | moving | 9 of 12 | 260 | -34% |
-| Soul Dust | 11083 | 4s 10c | 2026-11-17 10:15 UTC | 3s 98c | 4s 10c | moving | 11 of 12 | 2583 | -13% |
-| Strange Dust | 10940 | 1s 19c | 2026-11-17 10:15 UTC | 97c | 87c | moving | 11 of 12 | 7839 | +37% |
-| Truesilver Rod | 11144 | 33s 93c | 2026-11-17 10:15 UTC | 30s 25c | 31s 50c | moving | 9 of 12 | 123 | -5% |
-| Vision Dust | 11137 | 9s 50c | 2026-11-17 10:15 UTC | 9s 43c | 9s 50c | moving | 11 of 12 | 1958 | -32% |
+| Arcanite Rod | 16206 | 174g 0s 0c | 2026-11-18 13:03 UTC | 179g 73s 39c | 179g 73s 39c | steady | 4 of 13 | 7 |  |
+| Copper Rod | 6217 | 2s 0c | 2026-11-18 13:03 UTC | 1s 0c | 1s 0c | steady | 12 of 13 | 1301 | +0% |
+| Dream Dust | 11176 | 19s 89c | 2026-11-18 13:03 UTC | 26s 14c | 32s 22c | volatile | 11 of 13 | 1356 | -40% |
+| Golden Rod | 11128 | 12s 79c | 2026-11-18 13:03 UTC | 10s 88c | 10s 0c | moving | 12 of 13 | 326 | +21% |
+| Greater Astral Essence | 11082 | 14s 79c | 2026-11-18 13:03 UTC | 14s 63c | 14s 63c | moving | 12 of 13 | 978 | +0% |
+| Greater Eternal Essence | 16203 | 2g 19s 20c | 2026-11-18 13:03 UTC | 2g 1s 49c | 2g 3s 96c | steady | 8 of 13 | 296 | -43% |
+| Greater Magic Essence | 10939 | 4s 20c | 2026-11-18 13:03 UTC | 3s 79c | 2s 94c | moving | 12 of 13 | 1921 | +48% |
+| Greater Mystic Essence | 11135 | 23s 44c | 2026-11-18 13:03 UTC | 23s 72c | 24s 12c | moving | 11 of 13 | 383 | -12% |
+| Greater Nether Essence | 11175 | 1g 11s 82c | 2026-11-18 13:03 UTC | 95s 29c | 99s 84c | moving | 10 of 13 | 221 | -12% |
+| Hexed Pendant | 275724 | 2s 79c | 2026-11-18 13:03 UTC | 2s 0c | 2s 0c | volatile | 12 of 13 | 62 | +33% |
+| Illusion Dust | 16204 | 21s 65c | 2026-11-18 13:03 UTC | 42s 20c | 68s 89c | moving | 9 of 13 | 880 | -86% |
+| Large Brilliant Shard | 14344 | 2g 80s 93c | 2026-11-18 13:03 UTC | 2g 94s 95c | 3g 28s 98c | volatile | 8 of 13 | 218 | -78% |
+| Large Glimmering Shard | 11084 | 35s 99c | 2026-11-18 13:03 UTC | 35s 19c | 28s 37c | volatile | 12 of 13 | 710 | +63% |
+| Large Glowing Shard | 11139 | 27s 12c | 2026-11-18 13:03 UTC | 30s 21c | 35s 55c | moving | 11 of 13 | 263 | -30% |
+| Large Radiant Shard | 11178 | 1g 55s 93c | 2026-11-18 13:03 UTC | 1g 67s 90c | 1g 87s 97c | volatile | 11 of 13 | 113 | -44% |
+| Lesser Astral Essence | 10998 | 5s 3c | 2026-11-18 13:03 UTC | 4s 93c | 4s 96c | moving | 12 of 13 | 977 | -1% |
+| Lesser Eternal Essence | 16202 | 83s 99c | 2026-11-18 13:03 UTC | 73s 42c | 76s 91c | moving | 9 of 13 | 378 | -48% |
+| Lesser Magic Essence | 10938 | 1s 58c | 2026-11-18 13:03 UTC | 1s 48c | 1s 19c | moving | 12 of 13 | 4667 | +45% |
+| Lesser Mana Oil | 20747 | 16s 93c | 2026-11-18 13:03 UTC | 12s 49c | 13s 99c | volatile | 7 of 13 | 382 |  |
+| Lesser Mystic Essence | 11134 | 10s 74c | 2026-11-18 13:03 UTC | 8s 24c | 8s 73c | moving | 12 of 13 | 965 | -19% |
+| Lesser Nether Essence | 11174 | 36s 77c | 2026-11-18 13:03 UTC | 30s 30c | 31s 12c | moving | 11 of 13 | 557 | -24% |
+| Lesser Wizard Oil | 20746 | 10s 80c | 2026-11-18 13:03 UTC | 12s 0c | 12s 97c | steady | 11 of 13 | 495 | -14% |
+| Luminous Residue | 247884 | 1s 0c | 2026-11-18 13:03 UTC | 2s 38c | 1s 38c | volatile | 12 of 13 | 230 | +1153% |
+| Mote of Magic | 247786 | 59c | 2026-11-18 13:03 UTC | 10c | 7c | volatile | 12 of 13 | 4504 | +43% |
+| Nexus Crystal | 20725 | 39g 99s 99c | 2026-11-18 13:03 UTC | 44g 97s 94c | 44g 97s 94c | moving | 5 of 13 | 10 |  |
+| Silver Rod | 6338 | 3s 44c | 2026-11-18 13:03 UTC | 3s 20c | 3s 0c | volatile | 12 of 13 | 514 | +28% |
+| Small Brilliant Shard | 14343 | 59s 0c | 2026-11-18 13:03 UTC | 62s 98c | 63s 0c | volatile | 7 of 13 | 161 |  |
+| Small Glimmering Shard | 10978 | 4s 19c | 2026-11-18 13:03 UTC | 3s 37c | 3s 63c | moving | 12 of 13 | 1125 | -12% |
+| Small Glowing Shard | 11138 | 11s 95c | 2026-11-18 13:03 UTC | 10s 72c | 11s 97c | volatile | 12 of 13 | 306 | -18% |
+| Small Radiant Shard | 11177 | 68s 41c | 2026-11-18 13:03 UTC | 68s 5c | 68s 70c | moving | 10 of 13 | 320 | -24% |
+| Soul Dust | 11083 | 4s 43c | 2026-11-18 13:03 UTC | 4s 6c | 4s 20c | moving | 12 of 13 | 2515 | -9% |
+| Strange Dust | 10940 | 1s 9c | 2026-11-18 13:03 UTC | 1s 4c | 88c | volatile | 12 of 13 | 7462 | +44% |
+| Truesilver Rod | 11144 | 29s 0c | 2026-11-18 13:03 UTC | 29s 0c | 31s 25c | moving | 10 of 13 | 158 | -12% |
+| Vision Dust | 11137 | 8s 90c | 2026-11-18 13:03 UTC | 9s 43c | 9s 43c | moving | 12 of 13 | 2578 | -18% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

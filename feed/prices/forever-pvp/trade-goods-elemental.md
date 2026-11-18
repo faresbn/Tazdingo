@@ -1,26 +1,26 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): Trade Goods: Elemental
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-17 10:15 UTC. Uploads in the 30-day window: 27.
+- **Latest scan:** 2026-11-18 13:03 UTC. Uploads in the 30-day window: 28.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Breath of Wind | 7081 | 8s 99c | 2026-11-17 10:15 UTC | 14s 45c | 25s 99c | volatile | 9 of 12 | 80 | -85% |
-| Core of Earth | 7075 | 6s 6c | 2026-11-17 10:15 UTC | 6s 2c | 7s 0c | moving | 9 of 12 | 196 | -84% |
-| Elemental Air | 7069 | 22s 10c | 2026-11-17 10:15 UTC | 16s 86c | 16s 96c | volatile | 11 of 12 | 316 | -60% |
-| Elemental Earth | 7067 | 24s 65c | 2026-11-17 10:15 UTC | 22s 81c | 20s 66c | moving | 10 of 12 | 808 | +47% |
-| Elemental Fire | 7068 | 40s 0c | 2026-11-17 10:15 UTC | 34s 75c | 30s 80c | volatile | 11 of 12 | 412 | +83% |
-| Elemental Water | 7070 | 9s 10c | 2026-11-17 10:15 UTC | 8s 65c | 8s 65c | moving | 10 of 12 | 530 | +8% |
-| Essence of Air | 7082 | 4g 20s 43c | 2026-11-17 10:15 UTC | 7g 27s 29c | 5g 70s 22c | moving | 8 of 12 | 36 | +79% |
-| Essence of Earth | 7076 | 17g 87s 99c | 2026-11-17 10:15 UTC | 4g 75s 50c | 4g 50s 0c | moving | 7 of 12 | 25 |  |
-| Essence of Fire | 7078 | 1g 53s 99c | 2026-11-17 10:15 UTC | 2g 5s 43c | 2g 7s 0c | moving | 8 of 12 | 184 | -1% |
-| Essence of Undeath | 12808 | 40s 5c | 2026-11-17 10:15 UTC | 76s 96c | 76s 96c | volatile | 6 of 12 | 222 |  |
-| Essence of Water | 7080 | 4g 20s 0c | 2026-11-17 10:15 UTC | 4g 21s 0c | 4g 22s 0c | moving | 7 of 12 | 228 |  |
-| Globe of Water | 7079 | 10s 98c | 2026-11-17 10:15 UTC | 25s 49c | 65s 0c | volatile | 8 of 12 | 324 | -95% |
-| Heart of Fire | 7077 | 53s 0c | 2026-11-17 10:15 UTC | 30s 99c | 30s 99c | volatile | 8 of 12 | 372 | -85% |
-| Heart of the Wild | 10286 | 4s 0c | 2026-11-17 10:15 UTC | 4s 1c | 4s 5c | volatile | 9 of 12 | 755 | -91% |
-| Ichor of Undeath | 7972 | 4s 22c | 2026-11-17 10:15 UTC | 4s 25c | 4s 77c | volatile | 9 of 12 | 911 | -81% |
-| Living Essence | 12803 | 72s 99c | 2026-11-17 10:15 UTC | 44s 7c | 54s 0c | volatile | 8 of 12 | 367 | -93% |
+| Breath of Wind | 7081 | 15s 85c | 2026-11-18 13:03 UTC | 14s 95c | 20s 92c | volatile | 10 of 13 | 80 | -75% |
+| Core of Earth | 7075 | 7s 41c | 2026-11-18 13:03 UTC | 6s 73c | 7s 20c | moving | 10 of 13 | 214 | -70% |
+| Elemental Air | 7069 | 28s 50c | 2026-11-18 13:03 UTC | 18s 47c | 18s 47c | volatile | 12 of 13 | 324 | -37% |
+| Elemental Earth | 7067 | 27s 87c | 2026-11-18 13:03 UTC | 23s 45c | 22s 64c | moving | 11 of 13 | 836 | +47% |
+| Elemental Fire | 7068 | 38s 97c | 2026-11-18 13:03 UTC | 38s 4c | 31s 59c | volatile | 12 of 13 | 423 | +88% |
+| Elemental Water | 7070 | 9s 95c | 2026-11-18 13:03 UTC | 9s 30c | 9s 10c | moving | 11 of 13 | 537 | +13% |
+| Essence of Air | 7082 | 5g 80s 97c | 2026-11-18 13:03 UTC | 6g 37s 98c | 5g 80s 97c | moving | 9 of 13 | 43 | +57% |
+| Essence of Earth | 7076 | 3g 49s 99c | 2026-11-18 13:03 UTC | 4g 15s 49c | 4g 25s 0c | moving | 8 of 13 | 56 | -8% |
+| Essence of Fire | 7078 | 1g 40s 96c | 2026-11-18 13:03 UTC | 1g 82s 44c | 2g 7s 0c | moving | 9 of 13 | 192 | -12% |
+| Essence of Undeath | 12808 | 99s 50c | 2026-11-18 13:03 UTC | 76s 96c | 89s 99c | volatile | 7 of 13 | 277 |  |
+| Essence of Water | 7080 | 3g 80s 99c | 2026-11-18 13:03 UTC | 4g 17s 49c | 4g 21s 0c | moving | 8 of 13 | 240 | -25% |
+| Globe of Water | 7079 | 5s 93c | 2026-11-18 13:03 UTC | 9s 35c | 40s 0c | volatile | 9 of 13 | 349 | -97% |
+| Heart of Fire | 7077 | 49s 90c | 2026-11-18 13:03 UTC | 35s 94c | 31s 0c | volatile | 9 of 13 | 359 | +310% |
+| Heart of the Wild | 10286 | 7s 76c | 2026-11-18 13:03 UTC | 4s 1c | 4s 10c | volatile | 10 of 13 | 763 | -91% |
+| Ichor of Undeath | 7972 | 5s 67c | 2026-11-18 13:03 UTC | 4s 25c | 5s 22c | volatile | 10 of 13 | 929 | -78% |
+| Living Essence | 12803 | 31s 98c | 2026-11-18 13:03 UTC | 34s 0c | 52s 99c | volatile | 9 of 13 | 419 | -89% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

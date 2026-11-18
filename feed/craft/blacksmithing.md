@@ -4,118 +4,110 @@ Estimated listing margins: what the item lists for against what its reagents cos
 
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
-| Arcanite Rod | 250 | 16206 | 1 | 179g 95s 89c | 143g 64s 49c | 36g 31s 40c | our scan |
-| Whitesoul Helm | 290 | 12633 | 1 | 43g 99s 98c | 13g 63s 34c | 30g 36s 64c | our scan |
-| Cloudy Skyforged Pauldrons | 175 | 277041 | 1 | 20g 0s 0c | 65s 40c | 19g 34s 60c | our scan |
-| Blessed Plate Chest | 280 | 250594 | 1 | 29g 99s 0c | 14g 49s 60c | 15g 49s 40c | ForeverDB |
-| Cloudy Skyforged Helm | 175 | 277040 | 1 | 15g 0s 0c | 93s 94c | 14g 6s 6c | our scan |
-| Thorium Poleaxe | 260 | 250615 | 1 | 39g 21s 0c | 25g 57s 20c | 13g 63s 80c | our scan |
-| Blessed Plate Belt | 270 | 250592 | 1 | 19g 95s 0c | 8g 46s 21c | 11g 48s 79c | our scan |
-| Phantom Blade | 245 | 7961 | 1 | 18g 33s 33c | 7g 64s 86c | 10g 68s 47c | ForeverDB |
-| Master Forge | 300 | 279955 | 1 | 14g 0s 0c | 4g 14s 85c | 9g 85s 15c | our scan |
-| Thorium Shield Spike | 250 | 12645 | 1 | 20g 8s 0c | 11g 78s 92c | 8g 29s 8c | ForeverDB |
-| Blessed Plate Pauldrons | 240 | 250586 | 1 | 16g 96s 94c | 8g 79s 78c | 8g 17s 16c | our scan |
-| Blessed Plate Leggings | 270 | 250591 | 1 | 22g 90s 0c | 15g 19s 56c | 7g 70s 44c | ForeverDB |
-| Blessed Plate Bracers | 255 | 250590 | 1 | 12g 95s 0c | 6g 89s 82c | 6g 5s 18c | ForeverDB |
-| Azure Skyforged Pauldrons | 175 | 277049 | 1 | 6g 49s 0c | 76s 67c | 5g 72s 33c | ForeverDB |
-| Truesilver Breastplate | 240 | 7939 | 1 | 12g 64s 0c | 7g 79s 54c | 4g 84s 46c | ForeverDB |
-| Blessed Plate Gauntlet | 245 | 250588 | 1 | 16g 16s 0c | 11g 69s 76c | 4g 46s 24c | ForeverDB |
-| Truesilver Gauntlets | 220 | 7938 | 1 | 7g 39s 10c | 3g 11s 83c | 4g 27s 27c | ForeverDB |
-| Imperial Plate Chest | 275 | 12422 | 1 | 12g 0s 0c | 8g 13s 26c | 3g 86s 74c | our scan |
-| Truesilver Champion | 260 | 7960 | 1 | 15g 33s 33c | 11g 49s 22c | 3g 84s 11c | ForeverDB |
-| Azure Skyforged Helm | 175 | 277048 | 1 | 4g 44s 0c | 1g 5s 21c | 3g 38s 79c | ForeverDB |
-| The Shatterer | 235 | 7954 | 1 | 7g 99s 99c | 5g 2s 65c | 2g 97s 34c | our scan |
-| Shining Mithril Breastplate | 195 | 250540 | 1 | 5g 45s 49c | 2g 63s 36c | 2g 82s 13c | our scan |
-| Shining Mithril Pauldrons | 195 | 250541 | 1 | 3g 99s 0c | 1g 43s 34c | 2g 55s 66c | our scan |
-| Shining Mithril Pants | 220 | 250544 | 1 | 4g 63s 75c | 2g 9s 84c | 2g 53s 91c | ForeverDB |
-| Ornate Mithril Breastplate | 0 | 7935 | 1 | 5g 50s 99c | 3g 19s 69c | 2g 31s 30c | our scan |
-| Shining Mithril Helm | 215 | 250543 | 1 | 4g 48s 0c | 2g 29s 44c | 2g 18s 56c | ForeverDB |
-| Blight | 250 | 7959 | 1 | 8g 0s 0c | 6g 7s 66c | 1g 92s 34c | ForeverDB |
-| Ornate Mithril Helm | 0 | 7937 | 1 | 4g 0s 0c | 2g 13s 34c | 1g 86s 66c | our scan |
-| Ebon Shiv | 230 | 7947 | 1 | 5g 25s 96c | 3g 48s 15c | 1g 77s 81c | our scan |
-| Shining Mithril Boots | 200 | 250542 | 1 | 3g 17s 48c | 1g 47s 74c | 1g 69s 74c | our scan |
-| Ornate Mithril Shoulders | 200 | 7928 | 1 | 3g 63s 50c | 2g 3s 68c | 1g 59s 82c | our scan |
-| Thorium Armor | 225 | 12405 | 1 | 8g 82s 66c | 7g 29s 78c | 1g 52s 88c | ForeverDB |
-| Mithril Stiletto | 210 | 250611 | 1 | 3g 33s 41c | 2g 0s 5c | 1g 33s 36c | ForeverDB |
-| Steel Spear | 160 | 250605 | 1 | 3g 13s 50c | 1g 87s 87c | 1g 25s 63c | ForeverDB |
-| Imperial Plate Gauntlets | 255 | 250589 | 1 | 5g 91s 99c | 4g 76s 59c | 1g 15s 40c | our scan |
-| Ornate Mithril Pants | 195 | 7926 | 1 | 2g 59s 47c | 1g 53s 47c | 1g 6s 0c | our scan |
-| Searing Golden Blade | 165 | 12260 | 1 | 3g 0s 0c | 1g 98s 42c | 1g 1s 58c | our scan |
-| Steel Weapon Chain | 165 | 6041 | 1 | 1g 99s 49c | 1g 5s 34c | 94s 15c | ForeverDB |
-| Mithril Claymore | 195 | 250610 | 1 | 3g 48s 0c | 2g 54s 8c | 93s 92c | ForeverDB |
-| Wicked Mithril Blade | 200 | 7943 | 1 | 3g 19s 0c | 2g 25s 93c | 93s 7c | our scan |
-| Radiant Belt | 235 | 12416 | 1 | 3g 99s 83c | 3g 14s 90c | 84s 93c | ForeverDB |
-| Hard Gold Coif | 170 | 250537 | 1 | 2g 10s 76c | 1g 28s 16c | 82s 60c | ForeverDB |
-| Mithril Shortsword | 180 | 250607 | 1 | 2g 40s 82c | 1g 72s 70c | 68s 12c | ForeverDB |
-| Sterling Silver Shoulders | 110 | 250486 | 1 | 1g 0s 0c | 40s 90c | 59s 10c | our scan |
-| Ornate Mithril Gloves | 195 | 7927 | 1 | 2g 12s 47c | 1g 56s 91c | 55s 56c | ForeverDB |
-| Bronze Dory | 95 | 250603 | 1 | 72s 25c | 21s 12c | 51s 13c | ForeverDB |
-| Ironforge Breastplate | 100 | 6731 | 1 | 75s 0c | 24s 70c | 50s 30c | our scan |
-| Mithril Claws | 195 | 250609 | 1 | 1g 50s 0c | 1g 5s 80c | 44s 20c | ForeverDB |
-| Barbaric Iron Helm | 150 | 7915 | 1 | 72s 72c | 28s 56c | 44s 16c | ForeverDB |
-| Golden Scale Coif | 165 | 3837 | 1 | 1g 44s 10c | 1g 0s 16c | 43s 94c | ForeverDB |
-| Imperial Plate Shoulders | 240 | 12428 | 1 | 6g 0s 49c | 5g 56s 68c | 43s 81c | our scan |
-| Green Iron Hauberk | 180 | 3844 | 1 | 2g 20s 5c | 1g 76s 83c | 43s 22c | ForeverDB |
-| Blue Glittering Axe | 195 | 7942 | 1 | 2g 83s 0c | 2g 39s 97c | 43s 3c | our scan |
-| Imperial Plate Helm | 270 | 12427 | 1 | 7g 50s 0c | 7g 8s 32c | 41s 68c | our scan |
-| Green Iron Helm | 170 | 3836 | 1 | 76s 25c | 40s 18c | 36s 7c | ForeverDB |
-| Solid Iron Maul | 130 | 3851 | 1 | 1g 39s 95c | 1g 4s 3c | 35s 92c | ForeverDB |
-| Hard Gold Gauntlet | 175 | 250538 | 1 | 1g 45s 0c | 1g 9s 34c | 35s 66c | ForeverDB |
+| Arcanite Rod | 250 | 16206 | 1 | 179g 73s 39c | 155g 49s 46c | 24g 23s 93c | our scan |
+| Whitesoul Helm | 290 | 12633 | 1 | 37g 49s 98c | 13g 58s 86c | 23g 91s 12c | our scan |
+| Blessed Plate Gauntlet | 245 | 250588 | 1 | 33g 0s 0c | 12g 6s 48c | 20g 93s 52c | our scan |
+| Blessed Plate Chest | 280 | 250594 | 1 | 29g 99s 0c | 14g 95s 60c | 15g 3s 40c | ForeverDB |
+| Blessed Plate Bracers | 255 | 250590 | 1 | 19g 94s 99c | 7g 11s 66c | 12g 83s 33c | our scan |
+| Thorium Poleaxe | 260 | 250615 | 1 | 36g 60s 50c | 25g 68s 80c | 10g 91s 70c | our scan |
+| Phantom Blade | 245 | 7961 | 1 | 18g 33s 33c | 7g 80s 76c | 10g 52s 57c | ForeverDB |
+| Blessed Plate Belt | 270 | 250592 | 1 | 18g 54s 0c | 8g 69s 31c | 9g 84s 69c | our scan |
+| Thorium Shield Spike | 250 | 12645 | 1 | 20g 8s 0c | 10g 61s 22c | 9g 46s 78c | ForeverDB |
+| Master Forge | 300 | 279955 | 1 | 11g 99s 99c | 3g 91s 78c | 8g 8s 21c | our scan |
+| Blessed Plate Leggings | 270 | 250591 | 1 | 22g 90s 0c | 15g 67s 88c | 7g 22s 12c | ForeverDB |
+| Blessed Plate Pauldrons | 240 | 250586 | 1 | 15g 3s 0c | 9g 3s 94c | 5g 99s 6c | ForeverDB |
+| Azure Skyforged Pauldrons | 175 | 277049 | 1 | 6g 49s 0c | 77s 27c | 5g 71s 73c | ForeverDB |
+| Truesilver Breastplate | 240 | 7939 | 1 | 12g 64s 0c | 7g 91s 24c | 4g 72s 76c | ForeverDB |
+| Truesilver Gauntlets | 220 | 7938 | 1 | 7g 39s 10c | 3g 17s 31c | 4g 21s 79c | ForeverDB |
+| The Shatterer | 235 | 7954 | 1 | 9g 33s 65c | 5g 22s 11c | 4g 11s 54c | ForeverDB |
+| Imperial Plate Chest | 275 | 12422 | 1 | 11g 99s 99c | 8g 37s 10c | 3g 62s 89c | our scan |
+| Truesilver Champion | 260 | 7960 | 1 | 15g 33s 33c | 11g 72s 14c | 3g 61s 19c | ForeverDB |
+| Azure Skyforged Helm | 175 | 277048 | 1 | 4g 44s 0c | 1g 6s 19c | 3g 37s 81c | ForeverDB |
+| Shining Mithril Pauldrons | 195 | 250541 | 1 | 4g 44s 50c | 1g 47s 73c | 2g 96s 77c | our scan |
+| Blight | 250 | 7959 | 1 | 8g 94s 0c | 6g 26s 82c | 2g 67s 18c | our scan |
+| Shining Mithril Breastplate | 195 | 250540 | 1 | 5g 25s 0c | 2g 69s 73c | 2g 55s 27c | ForeverDB |
+| Shining Mithril Pants | 220 | 250544 | 1 | 4g 63s 75c | 2g 15s 60c | 2g 48s 15c | ForeverDB |
+| Shining Mithril Helm | 215 | 250543 | 1 | 4g 48s 0c | 2g 36s 52c | 2g 11s 48c | ForeverDB |
+| Mithril Shortsword | 180 | 250607 | 1 | 3g 79s 0c | 1g 78s 8c | 2g 0s 92c | our scan |
+| Shining Mithril Boots | 200 | 250542 | 1 | 3g 37s 9c | 1g 50s 81c | 1g 86s 28c | ForeverDB |
+| Ornate Mithril Breastplate | 0 | 7935 | 1 | 5g 15s 47c | 3g 30s 84c | 1g 84s 63c | our scan |
+| Ornate Mithril Boots | 0 | 7936 | 1 | 3g 83s 50c | 2g 44s 1c | 1g 39s 49c | ForeverDB |
+| Thorium Armor | 225 | 12405 | 1 | 8g 82s 66c | 7g 51s 62c | 1g 31s 4c | ForeverDB |
+| Ornate Mithril Helm | 0 | 7937 | 1 | 3g 49s 99c | 2g 24s 5c | 1g 25s 94c | our scan |
+| Steel Spear | 160 | 250605 | 1 | 3g 13s 50c | 1g 88s 27c | 1g 25s 23c | ForeverDB |
+| Mithril Stiletto | 210 | 250611 | 1 | 3g 33s 41c | 2g 11s 76c | 1g 21s 65c | ForeverDB |
+| Ornate Mithril Shoulders | 200 | 7928 | 1 | 3g 30s 0c | 2g 11s 71c | 1g 18s 29c | our scan |
+| Imperial Plate Gauntlets | 255 | 250589 | 1 | 5g 99s 99c | 4g 90s 83c | 1g 9s 16c | our scan |
+| Ebon Shiv | 230 | 7947 | 1 | 4g 65s 94c | 3g 57s 30c | 1g 8s 64c | our scan |
+| Steel Weapon Chain | 165 | 6041 | 1 | 1g 99s 49c | 1g 5s 60c | 93s 89c | ForeverDB |
+| Mithril Claymore | 195 | 250610 | 1 | 3g 48s 0c | 2g 68s 16c | 79s 84c | ForeverDB |
+| Hard Gold Coif | 170 | 250537 | 1 | 2g 10s 76c | 1g 34s 40c | 76s 36c | ForeverDB |
+| Wicked Mithril Blade | 200 | 7943 | 1 | 2g 89s 50c | 2g 35s 54c | 53s 96c | our scan |
+| Bronze Dory | 95 | 250603 | 1 | 72s 25c | 21s 76c | 50s 49c | ForeverDB |
+| Ironforge Breastplate | 100 | 6731 | 1 | 75s 0c | 24s 67c | 50s 33c | our scan |
+| Ornate Mithril Gloves | 195 | 7927 | 1 | 2g 12s 47c | 1g 63s 55c | 48s 92c | ForeverDB |
+| Hard Gold Gauntlet | 175 | 250538 | 1 | 1g 58s 99c | 1g 14s 36c | 44s 63c | our scan |
+| Barbaric Iron Helm | 150 | 7915 | 1 | 72s 72c | 29s 58c | 43s 14c | ForeverDB |
+| Green Iron Hauberk | 180 | 3844 | 1 | 2g 20s 5c | 1g 80s 11c | 39s 94c | ForeverDB |
+| Ornate Mithril Pants | 195 | 7926 | 1 | 2g 0s 0c | 1g 60s 90c | 39s 10c | our scan |
+| Solid Iron Maul | 130 | 3851 | 1 | 1g 39s 95c | 1g 4s 64c | 35s 31c | ForeverDB |
+| Green Iron Helm | 170 | 3836 | 1 | 76s 25c | 41s 8c | 35s 17c | ForeverDB |
+| Sterling Silver Shoulders | 110 | 250486 | 1 | 75s 0c | 40s 90c | 34s 10c | ForeverDB |
 | Cloudy Skyforged Legguards | 60 | 276996 | 1 | 46s 25c | 12s 20c | 34s 5c | ForeverDB |
-| Barbaric Iron Shoulders | 135 | 7913 | 1 | 79s 99c | 46s 28c | 33s 71c | ForeverDB |
-| Thorium Helm | 255 | 12410 | 1 | 5g 50s 0c | 5g 16s 55c | 33s 45c | ForeverDB |
 | Azure Skyforged Chainmail | 60 | 277016 | 1 | 45s 0c | 12s 20c | 32s 80c | ForeverDB |
+| Barbaric Iron Shoulders | 135 | 7913 | 1 | 79s 99c | 47s 38c | 32s 61c | ForeverDB |
+| Searing Golden Blade | 165 | 12260 | 1 | 2g 31s 45c | 2g 1s 6c | 30s 39c | ForeverDB |
 | Cloudy Skyforged Chainmail | 60 | 276992 | 1 | 42s 50c | 12s 20c | 30s 30c | ForeverDB |
-| Moonsteel Broadsword | 155 | 3853 | 1 | 1g 87s 42c | 1g 57s 34c | 30s 8c | our scan |
+| Moonsteel Broadsword | 155 | 3853 | 1 | 1g 87s 42c | 1g 57s 60c | 29s 82c | our scan |
+| Radiant Belt | 235 | 12416 | 1 | 3g 50s 0c | 3g 20s 70c | 29s 30c | our scan |
 | Cloudy Skyforged Wristguards | 50 | 276993 | 1 | 34s 50c | 7s 0c | 27s 50c | ForeverDB |
 | Cloudy Skyforged Gauntlets | 55 | 276994 | 1 | 35s 0c | 9s 80c | 25s 20c | ForeverDB |
-| Massive Iron Axe | 160 | 3855 | 1 | 1g 68s 0c | 1g 43s 78c | 24s 22c | our scan |
-| Mithril Shield Spike | 190 | 7967 | 1 | 1g 25s 0c | 1g 1s 0c | 24s 0c | ForeverDB |
+| Blue Glittering Axe | 195 | 7942 | 1 | 2g 74s 0c | 2g 49s 40c | 24s 60c | our scan |
 | Azure Skyforged Wristguards | 50 | 277017 | 1 | 30s 0c | 7s 0c | 23s 0c | ForeverDB |
 | Azure Skyforged Legguards | 60 | 277020 | 1 | 35s 0c | 12s 20c | 22s 80c | ForeverDB |
-| Brass Knuckles | 80 | 250602 | 1 | 45s 0c | 22s 80c | 22s 20c | our scan |
+| Barbaric Iron Boots | 155 | 7916 | 1 | 80s 0c | 58s 16c | 21s 84c | ForeverDB |
+| Brass Knuckles | 80 | 250602 | 1 | 45s 0c | 23s 26c | 21s 74c | our scan |
 | Azure Skyforged Gauntlets | 55 | 277018 | 1 | 31s 0c | 9s 80c | 21s 20c | ForeverDB |
+| Massive Iron Axe | 160 | 3855 | 1 | 1g 68s 0c | 1g 47s 30c | 20s 70c | our scan |
 | Azure Skyforged Chain | 50 | 277019 | 1 | 29s 0c | 8s 40c | 20s 60c | ForeverDB |
-| Sterling Silver Gauntlet | 105 | 250485 | 1 | 61s 50c | 40s 90c | 20s 60c | our scan |
-| Golden Scale Gauntlets | 180 | 9366 | 1 | 1g 81s 75c | 1g 61s 50c | 20s 25c | ForeverDB |
 | Azure Skyforged Greaves | 55 | 277021 | 1 | 30s 0c | 9s 80c | 20s 20c | ForeverDB |
 | Cloudy Skyforged Greaves | 55 | 276997 | 1 | 30s 0c | 9s 80c | 20s 20c | ForeverDB |
-| Radiant Leggings | 280 | 12420 | 1 | 6g 48s 0c | 6g 29s 80c | 18s 20c | ForeverDB |
+| Inlaid Mithril Cylinder | 200 | 9060 | 1 | 96s 50c | 76s 51c | 19s 99c | ForeverDB |
+| Hard Gold Cuirass | 145 | 250533 | 1 | 1g 81s 50c | 1g 62s 34c | 19s 16c | ForeverDB |
+| Golden Scale Gauntlets | 180 | 9366 | 1 | 1g 81s 75c | 1g 64s 40c | 17s 35c | ForeverDB |
 | Cloudy Skyforged Chain | 50 | 276995 | 1 | 25s 0c | 8s 40c | 16s 60c | ForeverDB |
-| Iridescent Hammer | 115 | 5541 | 1 | 75s 0c | 58s 77c | 16s 23c | ForeverDB |
-| Inlaid Mithril Cylinder | 200 | 9060 | 1 | 86s 87c | 72s 49c | 14s 38c | our scan |
-| Golden Iron Destroyer | 145 | 3852 | 1 | 1g 59s 33c | 1g 45s 54c | 13s 79c | ForeverDB |
+| Golden Scale Coif | 165 | 3837 | 1 | 1g 15s 94c | 1g 1s 64c | 14s 30c | our scan |
 | Dense Grinding Stone | 230 | 12644 | 1 | 39s 49c | 27s 48c | 12s 1c | ForeverDB |
-| Frost Tiger Blade | 175 | 3854 | 1 | 2g 8s 0c | 1g 96s 31c | 11s 69c | ForeverDB |
-| Green Iron Boots | 120 | 3484 | 1 | 38s 0c | 27s 74c | 10s 26c | ForeverDB |
-| Barbaric Iron Boots | 155 | 7916 | 1 | 67s 0c | 57s 2c | 9s 98c | our scan |
-| Barbaric Iron Gloves | 160 | 7917 | 1 | 75s 0c | 65s 17c | 9s 83c | ForeverDB |
-| Golden Scale Boots | 175 | 3847 | 1 | 1g 71s 0c | 1g 61s 50c | 9s 50c | ForeverDB |
-| Dazzling Mithril Rapier | 215 | 7944 | 1 | 2g 4s 0c | 1g 95s 57c | 8s 43c | our scan |
-| Hard Gold Bracers | 160 | 250535 | 1 | 90s 0c | 82s 64c | 7s 36c | our scan |
-| Truesilver Rod | 180 | 11144 | 1 | 30s 25c | 23s 23c | 7s 2c | our scan |
-| Heavy Mithril Helm | 220 | 7934 | 1 | 1g 57s 0c | 1g 50s 58c | 6s 42c | our scan |
-| Big Black Mace | 230 | 7945 | 1 | 2g 25s 50c | 2g 19s 86c | 5s 64c | our scan |
-| Mithril Warhammer | 190 | 250608 | 1 | 1g 72s 48c | 1g 66s 93c | 5s 55c | our scan |
-| Anvil | 140 | 279988 | 1 | 21s 99c | 17s 95c | 4s 4c | our scan |
-| Golden Scale Shoulders | 150 | 3841 | 1 | 78s 99c | 75s 25c | 3s 74c | our scan |
+| Hard Gold Bracers | 160 | 250535 | 1 | 98s 0c | 86s 42c | 11s 58c | our scan |
+| Golden Iron Destroyer | 145 | 3852 | 1 | 1g 59s 33c | 1g 48s 78c | 10s 55c | ForeverDB |
+| Sterling Silver Gauntlet | 105 | 250485 | 1 | 50s 0c | 40s 90c | 9s 10c | our scan |
+| Barbaric Iron Gloves | 160 | 7917 | 1 | 75s 0c | 66s 40c | 8s 60c | ForeverDB |
+| Golden Scale Cuirass | 170 | 3845 | 1 | 1g 72s 33c | 1g 65s 66c | 6s 67c | ForeverDB |
+| Golden Scale Boots | 175 | 3847 | 1 | 1g 71s 0c | 1g 64s 40c | 6s 60c | ForeverDB |
+| Radiant Leggings | 280 | 12420 | 1 | 6g 48s 0c | 6g 41s 40c | 6s 60c | ForeverDB |
+| Bronze Battle Axe | 135 | 7958 | 1 | 57s 50c | 51s 58c | 5s 92c | our scan |
+| Truesilver Rod | 180 | 11144 | 1 | 29s 0c | 23s 39c | 5s 61c | our scan |
+| Sterling Silver Breastplate | 125 | 250487 | 1 | 85s 0c | 79s 55c | 5s 45c | ForeverDB |
+| Pearl-handled Dagger | 110 | 5540 | 1 | 44s 49c | 40s 68c | 3s 81c | our scan |
+| Big Bronze Knife | 100 | 3848 | 1 | 22s 63c | 18s 98c | 3s 65c | our scan |
 | Dense Weightstone | 230 | 12643 | 1 | 10s 33c | 6s 87c | 3s 46c | ForeverDB |
-| Hard Gold Boots | 150 | 250534 | 1 | 1g 5s 93c | 1g 2s 52c | 3s 41c | our scan |
-| Big Bronze Knife | 100 | 3848 | 1 | 21s 70c | 18s 52c | 3s 18c | our scan |
-| Solid Sharpening Stone | 175 | 7964 | 1 | 4s 65c | 1s 64c | 3s 1c | ForeverDB |
-| Solid Weightstone | 175 | 7965 | 1 | 3s 83c | 1s 64c | 2s 19c | ForeverDB |
+| Iridescent Hammer | 115 | 5541 | 1 | 62s 99c | 59s 57c | 3s 42c | our scan |
+| Anvil | 140 | 279988 | 1 | 21s 43c | 18s 35c | 3s 8c | our scan |
+| Solid Sharpening Stone | 175 | 7964 | 1 | 4s 65c | 1s 62c | 3s 3c | ForeverDB |
+| Green Iron Boots | 120 | 3484 | 1 | 30s 49c | 28s 2c | 2s 47c | our scan |
+| Solid Weightstone | 175 | 7965 | 1 | 3s 83c | 1s 62c | 2s 21c | ForeverDB |
+| Sterling Silver Boots | 100 | 250483 | 1 | 47s 0c | 44s 90c | 2s 10c | ForeverDB |
 | Sterling Silver Leggings | 105 | 250484 | 1 | 69s 0c | 66s 95c | 2s 5c | ForeverDB |
-| Solid Grinding Stone | 175 | 7966 | 1 | 8s 41c | 6s 56c | 1s 85c | our scan |
-| Bronze Battle Axe | 135 | 7958 | 1 | 52s 0c | 50s 46c | 1s 54c | our scan |
-| Dense Sharpening Stone | 230 | 12404 | 1 | 8s 29c | 6s 87c | 1s 42c | our scan |
+| Solid Grinding Stone | 175 | 7966 | 1 | 8s 34c | 6s 48c | 1s 86c | our scan |
 | Coarse Weightstone | 40 | 3240 | 1 | 1s 46c | 82c | 64c | ForeverDB |
 | Coarse Grinding Stone | 50 | 3478 | 1 | 2s 25c | 1s 64c | 61c | ForeverDB |
 | Sharpening Wheel | 0 | 279944 | 1 | 2s 5c | 1s 51c | 54c | ForeverDB |
-| Bronze Greatsword | 130 | 7957 | 1 | 67s 20c | 66s 68c | 52c | our scan |
-| Pearl-handled Dagger | 110 | 5540 | 1 | 40s 50c | 40s 6c | 44c | our scan |
 | Coarse Sharpening Stone | 40 | 2863 | 1 | 1s 22c | 82c | 40c | ForeverDB |
 | Rough Copper Chain Boots | 50 | 277672 | 1 | 13s 0c | 12s 60c | 40c | ForeverDB |
-| Iron Buckle | 125 | 7071 | 2 | 2s 82c | 2s 56c | 26c | our scan |
+| Iron Buckle | 125 | 7071 | 2 | 3s 2c | 2s 63c | 39c | our scan |
+| Golden Scale Shoulders | 150 | 3841 | 1 | 76s 99c | 76s 64c | 35c | our scan |
+| Thick War Axe | 70 | 3489 | 1 | 28s 49c | 28s 18c | 31c | our scan |
+| Bronze Greatsword | 130 | 7957 | 1 | 67s 69c | 67s 64c | 5c | our scan |
 | Rough Sharpening Stone | 1 | 2862 | 1 | 15c | 11c | 4c | ForeverDB |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

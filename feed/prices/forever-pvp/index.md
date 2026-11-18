@@ -1,7 +1,7 @@
 # CAMWOW EU5 Realm 2 PvP (Horde): map
 
 - **Market:** CAMWOW EU5 Realm 2 PvP (Horde) (Forever), every item recorded.
-- **Latest scan:** 2026-11-17 10:15 UTC. Uploads in the 30-day window: 27.
+- **Latest scan:** 2026-11-18 13:03 UTC. Uploads in the 30-day window: 28.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 Open only the file for the item's category. Each lists every item recorded in it with its latest, typical and usual price.
@@ -9,13 +9,13 @@ Open only the file for the item's category. Each lists every item recorded in it
 Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/main/<path>
 
 - `feed/prices/forever-pvp/alerts.md`: deals under the usual price, below vendor price, investment watch, short supply and movers.
-- `feed/prices/forever-pvp/armor-cloth.md`: Armor: Cloth, 1289 items.
+- `feed/prices/forever-pvp/armor-cloth.md`: Armor: Cloth, 1293 items.
 - `feed/prices/forever-pvp/armor-idol.md`: Armor: Idol, 1 items.
-- `feed/prices/forever-pvp/armor-leather.md`: Armor: Leather, 890 items.
+- `feed/prices/forever-pvp/armor-leather.md`: Armor: Leather, 891 items.
 - `feed/prices/forever-pvp/armor-libram.md`: Armor: Libram, 1 items.
-- `feed/prices/forever-pvp/armor-mail.md`: Armor: Mail, 802 items.
-- `feed/prices/forever-pvp/armor-miscellaneous.md`: Armor: Miscellaneous, 305 items.
-- `feed/prices/forever-pvp/armor-plate.md`: Armor: Plate, 322 items.
+- `feed/prices/forever-pvp/armor-mail.md`: Armor: Mail, 807 items.
+- `feed/prices/forever-pvp/armor-miscellaneous.md`: Armor: Miscellaneous, 306 items.
+- `feed/prices/forever-pvp/armor-plate.md`: Armor: Plate, 325 items.
 - `feed/prices/forever-pvp/armor-shield.md`: Armor: Shield, 168 items.
 - `feed/prices/forever-pvp/armor-totem.md`: Armor: Totem, 1 items.
 - `feed/prices/forever-pvp/consumable-bandages.md`: Consumable: Bandages, 10 items.
@@ -23,19 +23,19 @@ Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/
 - `feed/prices/forever-pvp/consumable-elixirs.md`: Consumable: Elixirs, 68 items.
 - `feed/prices/forever-pvp/consumable-explosives.md`: Consumable: Explosives, 36 items.
 - `feed/prices/forever-pvp/consumable-flasks.md`: Consumable: Flasks, 5 items.
-- `feed/prices/forever-pvp/consumable-food-drink.md`: Consumable: Food & Drink, 195 items.
-- `feed/prices/forever-pvp/consumable-other.md`: Consumable: Other, 289 items.
+- `feed/prices/forever-pvp/consumable-food-drink.md`: Consumable: Food & Drink, 196 items.
+- `feed/prices/forever-pvp/consumable-other.md`: Consumable: Other, 291 items.
 - `feed/prices/forever-pvp/consumable-permanent.md`: Consumable: Permanent, 19 items.
-- `feed/prices/forever-pvp/consumable-potions.md`: Consumable: Potions, 69 items.
+- `feed/prices/forever-pvp/consumable-potions.md`: Consumable: Potions, 70 items.
 - `feed/prices/forever-pvp/consumable-scrolls.md`: Consumable: Scrolls, 64 items.
 - `feed/prices/forever-pvp/container.md`: Container, 50 items.
 - `feed/prices/forever-pvp/key.md`: Key, 12 items.
 - `feed/prices/forever-pvp/miscellaneous-junk.md`: Miscellaneous: Junk, 310 items.
 - `feed/prices/forever-pvp/miscellaneous-mount.md`: Miscellaneous: Mount, 12 items.
-- `feed/prices/forever-pvp/miscellaneous-other.md`: Miscellaneous: Other, 8 items.
+- `feed/prices/forever-pvp/miscellaneous-other.md`: Miscellaneous: Other, 9 items.
 - `feed/prices/forever-pvp/miscellaneous-pet.md`: Miscellaneous: Pet, 42 items.
 - `feed/prices/forever-pvp/miscellaneous-reagent.md`: Miscellaneous: Reagent, 31 items.
-- `feed/prices/forever-pvp/other.md`: Other, 23 items.
+- `feed/prices/forever-pvp/other.md`: Other, 68 items.
 - `feed/prices/forever-pvp/projectile.md`: Projectile, 21 items.
 - `feed/prices/forever-pvp/quest-quest.md`: Quest: Quest, 159 items.
 - `feed/prices/forever-pvp/quiver.md`: Quiver, 11 items.
@@ -58,7 +58,7 @@ Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/
 - `feed/prices/forever-pvp/trade-goods-leather.md`: Trade Goods: Leather, 55 items.
 - `feed/prices/forever-pvp/trade-goods-metal-stone.md`: Trade Goods: Metal & Stone, 42 items.
 - `feed/prices/forever-pvp/trade-goods-other.md`: Trade Goods: Other, 86 items.
-- `feed/prices/forever-pvp/trade-goods-parts.md`: Trade Goods: Parts, 41 items.
+- `feed/prices/forever-pvp/trade-goods-parts.md`: Trade Goods: Parts, 42 items.
 - `feed/prices/forever-pvp/weapon-axe.md`: Weapon: Axe, 128 items.
 - `feed/prices/forever-pvp/weapon-bow.md`: Weapon: Bow, 48 items.
 - `feed/prices/forever-pvp/weapon-crossbow.md`: Weapon: Crossbow, 8 items.
@@ -66,11 +66,11 @@ Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/
 - `feed/prices/forever-pvp/weapon-fishing-pole.md`: Weapon: Fishing Pole, 4 items.
 - `feed/prices/forever-pvp/weapon-fist-weapon.md`: Weapon: Fist Weapon, 5 items.
 - `feed/prices/forever-pvp/weapon-gun.md`: Weapon: Gun, 46 items.
-- `feed/prices/forever-pvp/weapon-mace.md`: Weapon: Mace, 148 items.
+- `feed/prices/forever-pvp/weapon-mace.md`: Weapon: Mace, 150 items.
 - `feed/prices/forever-pvp/weapon-miscellaneous.md`: Weapon: Miscellaneous, 4 items.
 - `feed/prices/forever-pvp/weapon-polearm.md`: Weapon: Polearm, 16 items.
 - `feed/prices/forever-pvp/weapon-staff.md`: Weapon: Staff, 66 items.
-- `feed/prices/forever-pvp/weapon-sword.md`: Weapon: Sword, 156 items.
+- `feed/prices/forever-pvp/weapon-sword.md`: Weapon: Sword, 157 items.
 - `feed/prices/forever-pvp/weapon-thrown.md`: Weapon: Thrown, 19 items.
 - `feed/prices/forever-pvp/weapon-wand.md`: Weapon: Wand, 44 items.
 
