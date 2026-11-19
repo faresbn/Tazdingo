@@ -88,11 +88,12 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Murloc Scale Belt | 65 | 5780 | 1 | 14s 49c | 12s 76c | 1s 73c | our scan |
 | Camp Tent | 0 | 279978 | 1 | 3s 4c | 2s 0c | 1s 4c | ForeverDB |
 | Fine Leather Belt | 80 | 4246 | 1 | 3s 52c | 2s 60c | 92c | our scan |
-| Fine Leather Tunic | 85 | 4243 | 1 | 7s 23c | 6s 37c | 86c | our scan |
 | Handstitched Leather Vest | 1 | 5957 | 1 | 2s 10c | 1s 30c | 80c | our scan |
 | Cured Medium Hide | 90 | 4233 | 1 | 4s 12c | 3s 55c | 57c | our scan |
 | Fine Leather Pants | 80 | 5958 | 1 | 23s 7c | 22s 54c | 53c | ForeverDB |
 | Rugged Leather Pants | 30 | 7280 | 1 | 3s 0c | 2s 50c | 50c | ForeverDB |
+| Fine Leather Tunic | 85 | 4243 | 1 | 6s 75c | 6s 37c | 38c | our scan |
+| Hillman's Leather Vest | 75 | 4244 | 1 | 9s 68c | 9s 33c | 35c | our scan |
 | Cured Thick Hide | 175 | 8172 | 1 | 10s 23c | 9s 89c | 34c | our scan |
 | Embossed Leather Pants | 75 | 4242 | 1 | 4s 10c | 3s 79c | 31c | our scan |
 | Handstitched Leather Pants | 15 | 2303 | 1 | 2s 0c | 1s 70c | 30c | ForeverDB |

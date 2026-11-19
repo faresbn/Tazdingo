@@ -55,7 +55,7 @@ None at the latest scan.
 
 Steady or moving items, listed most days, recorded at or under their cheaper days. The margin is an estimate after the 5% Auction House cut.
 
-The strongest 30 of 597.
+The strongest 30 of 595.
 
 | Item | ID | Latest | Usual | Estimated margin a unit | Steadiness | Recorded at |
 |---|---|---|---|---|---|---|
@@ -94,7 +94,7 @@ The strongest 30 of 597.
 
 At least 20% over usual with at most half the units usually listed, on the last full day.
 
-The strongest 30 of 294.
+The strongest 30 of 296.
 
 | Item | ID | Latest | Usual | Units vs usual | Recorded at |
 |---|---|---|---|---|---|
@@ -109,7 +109,7 @@ The strongest 30 of 294.
 | White Swashbuckler's Shirt | 6795 | 30s 97c | 19s 92c | 10% | 2026-11-19 18:23 UTC |
 | Runed Copper Gauntlets | 3472 | 3s 49c | 2s 0c | 10% | 2026-11-19 18:23 UTC |
 | Balanced Throwing Dagger | 2946 | 39s 90c | 10s 11c | 11% | 2026-11-19 18:23 UTC |
-| Woolen Cape | 2584 | 3s 0c | 2s 50c | 12% | 2026-11-19 18:23 UTC |
+| Woolen Cape | 2584 | 3s 10c | 2s 50c | 12% | 2026-11-19 18:23 UTC |
 | Rough Boomstick | 4362 | 4s 90c | 3s 0c | 12% | 2026-11-19 18:23 UTC |
 | Journeyman's Stave | 15925 | 6s 49c | 5s 0c | 14% | 2026-11-19 18:23 UTC |
 | Spellbinder Pants | 2970 | 4s 88c | 3s 90c | 14% | 2026-11-19 18:23 UTC |
@@ -124,16 +124,16 @@ The strongest 30 of 294.
 | War Torn Greaves | 15481 | 12s 0c | 2s 0c | 15% | 2026-11-19 18:23 UTC |
 | White Leather Jerkin | 2311 | 11s 50c | 7s 0c | 16% | 2026-11-19 18:23 UTC |
 | Hunting Pants | 2974 | 12s 99c | 5s 0c | 16% | 2026-11-19 18:23 UTC |
+| Curved Dagger | 2632 | 8s 75c | 6s 42c | 16% | 2026-11-19 18:23 UTC |
 | Brackwater Boots | 3302 | 7s 59c | 4s 0c | 16% | 2026-11-19 18:23 UTC |
 | Cheetah Hide Grips | 286533 | 20s 99c | 13s 0c | 17% | 2026-11-19 18:23 UTC |
 | Guardian's Emblem | 286995 | 22g 50s 0c | 9g 98s 0c | 17% | 2026-11-19 18:23 UTC |
-| Hunting Buckler | 3652 | 5s 0c | 4s 0c | 17% | 2026-11-19 18:23 UTC |
 
 ## Rising since the last full day
 
 The latest recorded price against the last full day's lowest.
 
-The strongest 30 of 1566.
+The strongest 30 of 1571.
 
 | Item | ID | Latest | Change | Recorded at |
 |---|---|---|---|---|
@@ -172,7 +172,7 @@ The strongest 30 of 1566.
 
 The latest recorded price against the last full day's lowest.
 
-The strongest 30 of 1684.
+The strongest 30 of 1677.
 
 | Item | ID | Latest | Change | Recorded at |
 |---|---|---|---|---|
@@ -193,7 +193,6 @@ The strongest 30 of 1684.
 | Craftsman's Writ: Masterwork Target Dummy | 264134 | 3s 0c | -92% | 2026-11-19 18:23 UTC |
 | Craftsman's Writ: Star Belt | 264109 | 4s 67c | -91% | 2026-11-19 18:23 UTC |
 | Greater Mender's Potion | 250947 | 24c | -91% | 2026-11-19 18:23 UTC |
-| Silk Cloth | 4306 | 18c | -91% | 2026-11-19 18:23 UTC |
 | Steadfast Cloak | 15594 | 28s 0c | -91% | 2026-11-19 18:23 UTC |
 | Worn Leather Gloves | 1422 | 2s 29c | -91% | 2026-11-19 18:23 UTC |
 | Clean Fishbones | 4874 | 8s 99c | -90% | 2026-11-19 18:23 UTC |
@@ -206,3 +205,4 @@ The strongest 30 of 1684.
 | Bastard Sword | 1194 | 4s 90c | -88% | 2026-11-19 18:23 UTC |
 | Dokebi Gloves | 14583 | 17s 0c | -88% | 2026-11-19 18:23 UTC |
 | Heart Ring | 5001 | 13s 0c | -88% | 2026-11-19 18:23 UTC |
+| Sand-Covered Silk Sash | 286612 | 2g 0s 0c | -88% | 2026-11-19 18:23 UTC |

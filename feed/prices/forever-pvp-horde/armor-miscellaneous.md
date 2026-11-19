@@ -33,8 +33,8 @@
 | Basalt Necklace | 12028 | 99s 99c | 2026-11-19 18:23 UTC | 93s 43c | 99s 0c | moving | 11 of 11 | 117 | -17% |
 | Basalt Ring | 11996 | 33s 20c | 2026-11-19 18:23 UTC | 22s 0c | 25s 0c | moving | 11 of 11 | 74 | -24% |
 | Basilisk Bone | 13030 | 1g 50s 0c | 2026-11-19 12:56 UTC | 1g 79s 49c | 2g 24s 0c | moving | 8 of 11 | 10 | -39% |
-| Beacon of Hope | 9393 | 5g 99s 49c | 2026-11-19 18:23 UTC | 5g 74s 74c | 5g 74s 74c | volatile | 10 of 11 | 5 | -25% |
-| Beaded Orb | 15969 | 6s 0c | 2026-11-19 18:23 UTC | 5s 0c | 5s 0c | steady | 11 of 11 | 24 | +0% |
+| Beacon of Hope | 9393 | 5g 99s 49c | 2026-11-19 18:23 UTC | 5g 32s 49c | 5g 47s 50c | volatile | 10 of 11 | 5 | -30% |
+| Beaded Orb | 15969 | 6s 0c | 2026-11-19 18:23 UTC | 5s 0c | 5s 0c | steady | 11 of 11 | 30 | +0% |
 | Beautiful Wildflowers | 3422 | 30s 0c | 2026-11-17 | 27s 50c | 25s 0c | volatile | 5 of 11 | 1 |  |
 | Black Rose | 3420 | 1g 0s 0c | 2026-11-19 18:23 UTC | 1g 70s 0c | 1g 20s 0c | volatile | 6 of 11 | 6 | +240% |
 | Black Swashbuckler's Shirt | 4336 | 1g 49s 0c | 2026-11-19 18:23 UTC | 74s 99c | 1g 0s 0c | volatile | 9 of 11 | 12 | -62% |
@@ -79,7 +79,7 @@
 | Demonstrike Emblem | 284708 | 2g 26s 0c | 2026-11-19 18:23 UTC | 3g 0s 0c | 3g 0s 0c | moving | 7 of 11 | 3 | -4% |
 | Desert Choker | 12043 | 84s 75c | 2026-11-19 18:23 UTC | 87s 49c | 95s 0c | volatile | 11 of 11 | 30 | -71% |
 | Desert Ring | 12013 | 85s 66c | 2026-11-19 18:23 UTC | 86s 33c | 99s 0c | volatile | 11 of 11 | 20 | -70% |
-| Disciple's Stein | 15932 | 5s 27c | 2026-11-19 18:23 UTC | 5s 27c | 6s 0c | steady | 11 of 11 | 27 | -12% |
+| Disciple's Stein | 15932 | 6s 0c | 2026-11-19 18:23 UTC | 5s 27c | 6s 0c | steady | 11 of 11 | 27 | -12% |
 | Dragonscale Band | 12057 | 1g 55s 0c | 2026-11-19 18:23 UTC | 1g 99s 0c | 1g 99s 0c | moving | 6 of 11 | 12 |  |
 | Durable Rod | 15935 | 33s 84c | 2026-11-19 18:23 UTC | 33s 95c | 33s 99c | moving | 11 of 11 | 19 | -20% |
 | Duskwoven Branch | 15936 | 1g 29s 99c | 2026-11-19 18:23 UTC | 1g 29s 99c | 1g 63s 99c | volatile | 8 of 11 | 6 | -74% |
@@ -253,7 +253,7 @@
 | Sludge-Stained Band | 286535 | 90s 0c | 2026-11-19 18:23 UTC | 95s 0c | 70s 0c | volatile | 11 of 11 | 19 | +70% |
 | Sorcerer Sphere | 9882 | 65s 0c | 2026-11-19 18:23 UTC | 72s 0c | 79s 95c | moving | 10 of 11 | 8 | -26% |
 | Spectral Necklace | 12047 | 99s 0c | 2026-11-19 18:23 UTC | 94s 49c | 99s 0c | moving | 11 of 11 | 54 | -16% |
-| Spellbinder Orb | 15926 | 11s 99c | 2026-11-19 18:23 UTC | 11s 42c | 10s 0c | moving | 11 of 11 | 33 | +20% |
+| Spellbinder Orb | 15926 | 12s 0c | 2026-11-19 18:23 UTC | 11s 42c | 10s 0c | moving | 11 of 11 | 33 | +20% |
 | Spinel Ring | 11970 | 25s 39c | 2026-11-19 18:23 UTC | 22s 19c | 21s 0c | moving | 11 of 11 | 89 | -13% |
 | Squire's Shirt | 45 | 99s 0c | 2026-11-19 12:56 UTC | 1g 99s 0c | 1g 99s 0c | moving | 4 of 11 | 2 |  |
 | Stardust Band | 12055 | 1g 19s 0c | 2026-11-19 18:23 UTC | 1g 13s 0c | 1g 22s 50c | volatile | 8 of 11 | 13 | -62% |
@@ -273,7 +273,7 @@
 | Tellurium Necklace | 12023 | 66s 0c | 2026-11-19 12:56 UTC | 84s 49c | 98s 99c | volatile | 11 of 11 | 40 | -66% |
 | Thallium Choker | 12020 | 75s 0c | 2026-11-19 18:23 UTC | 84s 0c | 88s 99c | moving | 11 of 11 | 90 | -20% |
 | Thallium Hoop | 11986 | 28s 51c | 2026-11-19 18:23 UTC | 26s 75c | 33s 0c | volatile | 11 of 11 | 55 | -59% |
-| The 1 Ring | 8350 | 3g 40s 3c | 2026-11-19 18:23 UTC | 3g 9s 1c | 2g 49s 0c | volatile | 11 of 11 | 19 | +183% |
+| The 1 Ring | 8350 | 3g 50s 3c | 2026-11-19 18:23 UTC | 3g 9s 1c | 2g 49s 0c | volatile | 11 of 11 | 19 | +183% |
 | The Queen's Jewel | 13094 | 88s 98c | 2026-11-19 18:23 UTC | 67s 45c | 66s 0c | moving | 11 of 11 | 22 | -7% |
 | Thendal Novice's Shirt | 271663 | 25s 0c | 2026-11-19 18:23 UTC | 52s 49c | 69s 99c | volatile | 11 of 11 | 5 | -13% |
 | Thendal Survivalist's Shirt | 271668 | 10s 61c | 2026-11-19 18:23 UTC | 10s 37c | 10s 61c | volatile | 11 of 11 | 7 | -26% |

@@ -18,7 +18,7 @@
 | Claw of the Shadowmancer | 2912 | 1g 23s 0c | 2026-11-19 18:23 UTC | 1g 21s 50c | 1g 50s 0c | volatile | 11 of 11 | 24 | -39% |
 | Copper Dagger | 7166 | 25s 99c | 2026-11-19 18:23 UTC | 15s 38c | 12s 0c | volatile | 11 of 11 | 65 | +71% |
 | Cross Dagger | 2819 | 38s 29c | 2026-11-19 18:23 UTC | 38s 30c | 38s 50c | steady | 11 of 11 | 57 | -2% |
-| Curved Dagger | 2632 | 6s 0c | 2026-11-19 18:23 UTC | 6s 30c | 6s 42c | moving | 11 of 11 | 73 | -10% |
+| Curved Dagger | 2632 | 8s 75c | 2026-11-19 18:23 UTC | 6s 30c | 6s 42c | moving | 11 of 11 | 73 | -10% |
 | Daring Dirk | 12248 | 2g 97s 0c | 2026-11-18 16:01 UTC | 3g 0s 0c | 3g 0s 0c | moving | 6 of 11 | 1 | -20% |
 | Darkmist Dirk | 285102 | 3g 0s 0c | 2026-11-19 18:23 UTC | 1g 87s 47c | 2g 25s 0c | moving | 11 of 11 | 2 | -17% |
 | Deadly Bronze Poniard | 3490 | 60s 0c | 2026-11-19 18:23 UTC | 43s 77c | 45s 0c | moving | 11 of 11 | 38 | -12% |

@@ -805,6 +805,22 @@
       "received_on": "2026-11-19",
       "full_scan_items": null,
       "scope_source": "Auctionator export"
+    },
+    {
+      "path": "data/market/forever-pvp-horde/scans/2026-11-19T18-23-02Z-2.json",
+      "market_slug": "forever-pvp-horde",
+      "environment": "forever",
+      "market": "PvP Horde",
+      "scan_timestamp": 1795112582,
+      "scan_time": "2026-11-19T18:23:02Z",
+      "day": 2514,
+      "source_sha256": "1738cefc7ba101ab2c6a9e9c5eb328f174a69b87a5545cea8424c87e5d6afdb7",
+      "content_sha256": "a8e80c6dffeb41c35d25aa3385f942b28551a1a02c623b98e419f46e89ee325e",
+      "record_sha256": "728eb8cf5d8913cf16ba44af457f3380537004c36bb4876a731eddf88ae66c01",
+      "status": "kept",
+      "received_on": "2026-11-20",
+      "full_scan_items": null,
+      "scope_source": "Auctionator export"
     }
   ],
   "archives": {

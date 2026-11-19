@@ -191,7 +191,7 @@
 | Copper Chain Pants | 2852 | 1s 60c | 2026-11-19 18:23 UTC | 1s 47c | 1s 60c | moving | 11 of 11 | 199 | -26% |
 | Copper Chain Vest | 3471 | 35s 30c | 2026-11-19 18:23 UTC | 13s 88c | 11s 95c | volatile | 11 of 11 | 27 | +247% |
 | Cord of Elements | 16673 | 8g 9s 99c | 2026-11-19 18:23 UTC | 9g 4s 49c | 11g 99s 50c | volatile | 8 of 11 | 16 | -68% |
-| Corroded Handguards | 287003 | 99s 0c | 2026-11-19 18:23 UTC | 99s 50c | 1g 33s 79c | volatile | 10 of 11 | 11 | -50% |
+| Corroded Handguards | 287003 | 99s 0c | 2026-11-19 18:23 UTC | 99s 50c | 1g 33s 79c | volatile | 10 of 11 | 12 | -50% |
 | Cracked Carapace Hauberk | 283480 | 75s 0c | 2026-11-19 12:56 UTC | 65s 25c | 58s 0c | moving | 11 of 11 | 4 | +28% |
 | Crusader's Armguards | 10191 | 1g 12s 0c | 2026-11-19 18:23 UTC | 1g 47s 99c | 1g 70s 0c | moving | 9 of 11 | 4 | -41% |
 | Crusader's Armor | 10193 | 2g 19s 99c | 2026-11-19 18:23 UTC | 2g 50s 0c | 2g 50s 0c | moving | 9 of 11 | 6 | -17% |
@@ -201,7 +201,7 @@
 | Crusader's Helm | 10198 | 1g 80s 0c | 2026-11-19 18:23 UTC | 2g 42s 50c | 2g 62s 50c | moving | 8 of 11 | 6 | -19% |
 | Crusader's Leggings | 10199 | 2g 19s 0c | 2026-11-19 18:23 UTC | 2g 19s 50c | 2g 20s 0c | moving | 7 of 11 | 6 |  |
 | Crusader's Pauldrons | 10200 | 1g 84s 71c | 2026-11-19 18:23 UTC | 1g 85s 0c | 2g 9s 50c | volatile | 8 of 11 | 4 | -54% |
-| Crushridge Bindings | 13199 | 1g 99s 99c | 2026-11-19 18:23 UTC | 1g 94s 49c | 1g 94s 49c | volatile | 10 of 11 | 12 | -28% |
+| Crushridge Bindings | 13199 | 2g 20s 0c | 2026-11-19 18:23 UTC | 1g 94s 49c | 1g 94s 49c | volatile | 10 of 11 | 12 | -28% |
 | Dargol's Hauberk | 3330 | 1g 0s 0c | 2026-11-19 12:56 UTC | 68s 53c | 32s 50c | volatile | 8 of 11 | 4 | +357% |
 | Death Bindings | 286981 | 30s 89c | 2026-11-19 18:23 UTC | 16s 9c | 12s 0c | volatile | 11 of 11 | 49 | +89% |
 | Defender Boots | 6573 | 11s 0c | 2026-11-19 18:23 UTC | 9s 57c | 10s 0c | steady | 11 of 11 | 33 | -4% |
@@ -621,7 +621,7 @@
 | Renegade Leggings | 9871 | 54s 33c | 2026-11-19 18:23 UTC | 54s 89c | 55s 0c | moving | 11 of 11 | 26 | -14% |
 | Renegade Pauldrons | 9872 | 41s 0c | 2026-11-19 18:23 UTC | 41s 55c | 44s 0c | steady | 11 of 11 | 34 | -6% |
 | Reticulated Bone Gauntlets | 9435 | 1g 6s 82c | 2026-11-19 18:23 UTC | 1g 4s 38c | 1g 10s 0c | volatile | 11 of 11 | 19 | -31% |
-| Risen Sentry's Links | 287002 | 1g 50s 25c | 2026-11-19 18:23 UTC | 1g 35s 52c | 1g 53s 0c | volatile | 11 of 11 | 18 | -38% |
+| Risen Sentry's Links | 287002 | 1g 50s 25c | 2026-11-19 18:23 UTC | 1g 30s 44c | 1g 53s 0c | volatile | 11 of 11 | 20 | -40% |
 | Rot-Fused Greaves | 285101 | 2g 15s 0c | 2026-11-19 18:23 UTC | 2g 39s 0c | 2g 39s 0c | moving | 8 of 11 | 2 | +0% |
 | Rough Bronze Boots | 6350 | 3s 47c | 2026-11-19 18:23 UTC | 3s 23c | 3s 0c | steady | 11 of 11 | 284 | +8% |
 | Rough Bronze Cuirass | 2866 | 5s 98c | 2026-11-19 18:23 UTC | 5s 98c | 6s 0c | steady | 11 of 11 | 261 | -8% |

@@ -69,8 +69,8 @@
 | Naraxis' Fang | 4449 | 99s 0c | 2026-11-19 18:23 UTC | 99s 0c |  | too new | 1 of 11 | 2 |  |
 | Neophyte's Boots | 51 | 50g 0s 0c | 2026-11-18 16:01 UTC | 50g 0s 0c |  | too new | 1 of 11 | 2 |  |
 | Pattern: Blue Suede Bracers | 252888 | 65g 77s 99c | 2026-11-19 18:23 UTC | 94g 95s 49c |  | too new | 2 of 11 | 2 |  |
-| Pattern: Invoker's Cord | 215369 | 59g 99s 0c | 2026-11-19 12:56 UTC | 104g 99s 50c |  | too new | 2 of 11 | 3 |  |
-| Pattern: Shadoweave Mask | 10463 | 8g 33s 99c | 2026-11-18 16:01 UTC | 8g 33s 99c |  | too new | 1 of 11 | 5 |  |
+| Pattern: Invoker's Cord | 215369 | 59g 98s 99c | 2026-11-19 18:23 UTC | 104g 99s 49c |  | too new | 2 of 11 | 4 |  |
+| Pattern: Shadoweave Mask | 10463 | 9g 99s 99c | 2026-11-19 18:23 UTC | 9g 16s 99c |  | too new | 2 of 11 | 4 |  |
 | Pattern: Tooled Leather Pants | 252889 | 29g 47s 8c | 2026-11-19 12:56 UTC | 29g 47s 8c | 29g 47s 8c | volatile | 3 of 11 | 1 |  |
 | Pattern: Wizardweave Turban | 14505 | 100g 99s 0c | 2026-11-19 18:23 UTC | 100g 0s 0c |  | too new | 1 of 11 | 3 |  |
 | Piece of Coral | 5371 | 99s 0c | 2026-11-19 12:56 UTC | 99s 0c |  | too new | 1 of 11 | 1 |  |

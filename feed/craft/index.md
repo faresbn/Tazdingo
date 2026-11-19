@@ -12,7 +12,7 @@ Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/
 - `feed/craft/first-aid.md`: First Aid, 9 recipes with a margin.
 - `feed/craft/fishing.md`: Fishing, 2 recipes with a margin.
 - `feed/craft/herbalism.md`: Herbalism, 2 recipes with a margin.
-- `feed/craft/leatherworking.md`: Leatherworking, 98 recipes with a margin.
+- `feed/craft/leatherworking.md`: Leatherworking, 99 recipes with a margin.
 - `feed/craft/mining.md`: Mining, 12 recipes with a margin.
 - `feed/craft/skinning.md`: Skinning, 2 recipes with a margin.
 - `feed/craft/tailoring.md`: Tailoring, 119 recipes with a margin.

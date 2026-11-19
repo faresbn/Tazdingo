@@ -57,10 +57,10 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Cooked Crab Claw | 85 | 2682 | 1 | 1s 0c | 52c | 48c | ForeverDB |
 | Kaldorei Spider Kabob | 10 | 5472 | 1 | 57c | 11c | 46c | ForeverDB |
 | Filet of Redgill | 225 | 13930 | 1 | 83c | 37c | 46c | ForeverDB |
+| Sagefish Delight | 175 | 21217 | 1 | 2s 60c | 2s 15c | 45c | ForeverDB |
 | Carrion Surprise | 175 | 12213 | 1 | 3s 9c | 2s 66c | 43c | our scan |
 | Savory Deviate Delight | 85 | 6657 | 1 | 2s 67c | 2s 25c | 42c | ForeverDB |
 | Gooey Spider Cake | 110 | 3666 | 1 | 2s 0c | 1s 64c | 36c | ForeverDB |
-| Sagefish Delight | 175 | 21217 | 1 | 2s 60c | 2s 25c | 35c | ForeverDB |
 | Basic Campfire | 1 | 279981 | 1 | 65c | 38c | 27c | our scan |
 | Slimy Smoothie | 100 | 249872 | 1 | 1s 87c | 1s 65c | 22c | our scan |
 | Crocolisk Steak | 80 | 3662 | 1 | 1s 20c | 99c | 21c | our scan |

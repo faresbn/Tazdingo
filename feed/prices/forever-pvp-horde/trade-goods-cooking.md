@@ -38,7 +38,7 @@
 | Raw Brilliant Smallfish | 6291 | 88c | 2026-11-19 18:23 UTC | 92c | 88c | moving | 11 of 11 | 3570 | +12% |
 | Raw Bristle Whisker Catfish | 6308 | 14c | 2026-11-19 18:23 UTC | 27c | 34c | volatile | 11 of 11 | 5247 | -18% |
 | Raw Glossy Mightfish | 13754 | 69c | 2026-11-19 18:23 UTC | 1s 37c | 3s 0c | volatile | 11 of 11 | 1983 | -81% |
-| Raw Greater Sagefish | 21153 | 1s 91c | 2026-11-19 18:23 UTC | 1s 85c | 2s 16c | moving | 11 of 11 | 2596 | -34% |
+| Raw Greater Sagefish | 21153 | 1s 91c | 2026-11-19 18:23 UTC | 1s 75c | 2s 16c | moving | 11 of 11 | 2596 | -38% |
 | Raw Loch Frenzy | 6317 | 1s 0c | 2026-11-19 18:23 UTC | 1s 35c | 1s 74c | moving | 8 of 11 | 28 | -32% |
 | Raw Longjaw Mud Snapper | 6289 | 5c | 2026-11-19 18:23 UTC | 8c | 9c | moving | 11 of 11 | 8220 | -11% |
 | Raw Mithril Head Trout | 8365 | 65c | 2026-11-19 18:23 UTC | 73c | 85c | volatile | 11 of 11 | 4208 | -31% |
