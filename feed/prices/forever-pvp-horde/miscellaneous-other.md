@@ -1,19 +1,19 @@
 # PvP Horde: Miscellaneous: Other
 
 - **Market:** PvP Horde (Forever), every item recorded.
-- **Latest scan:** 2026-11-18 16:01 UTC. Uploads in the 30-day window: 1.
+- **Latest scan:** 2026-11-19 12:56 UTC. Uploads in the 30-day window: 2.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Broken Blade of Heroes | 9719 | 5g 0s 0c | 2026-11-18 16:01 UTC | 1g 87s 0c | 2g 27s 0c | volatile | 10 of 10 | 14 | -50% |
-| Centaur Banner Deployment Device | 269900 | 3g 87s 0c | 2026-11-18 16:01 UTC | 6g 93s 97c | 6g 93s 97c | moving | 4 of 10 | 10 |  |
-| Dimensional Ripper - Everlook | 18984 | 12g 0s 0c | 2026-11-18 16:01 UTC | 15g 0s 0c | 15g 0s 0c | volatile | 3 of 10 | 2 |  |
-| Fractured Insignia | 279450 | 17g 0s 0c | 2026-11-18 16:01 UTC | 18g 50s 0c | 20g 0s 0c | moving | 7 of 10 | 34 |  |
-| Mote of Unstable Magic | 274964 | 7s 52c | 2026-11-18 16:01 UTC | 9s 81c | 10s 93c | volatile | 8 of 10 | 3267 | -91% |
-| Rotheap Innards | 279537 | 20s 0c | 2026-11-18 16:01 UTC | 14s 0c | 25s 0c | volatile | 10 of 10 | 21 | -71% |
-| Steam Tonk Controller | 22728 | 4g 33s 33c | 2026-11-18 16:01 UTC | 4g 33s 33c |  | too new | 1 of 10 | 20 |  |
-| Ultralight Goblin Glider | 260825 | 12g 73s 29c | 2026-11-18 16:01 UTC | 18g 90s 90c | 18g 90s 90c | volatile | 5 of 10 | 7 |  |
-| Ultrasafe Transporter: Gadgetzan | 18986 | 11g 46s 0c | 2026-11-18 16:01 UTC | 51g 11s 0c |  | too new | 2 of 10 | 4 |  |
+| Broken Blade of Heroes | 9719 | 1g 98s 98c | 2026-11-19 12:56 UTC | 1g 98s 99c | 1g 99s 0c | volatile | 11 of 11 | 14 | -22% |
+| Centaur Banner Deployment Device | 269900 | 1g 99s 95c | 2026-11-19 12:56 UTC | 5g 88s 95c | 5g 88s 95c | volatile | 5 of 11 | 10 |  |
+| Dimensional Ripper - Everlook | 18984 | 12g 88s 96c | 2026-11-19 12:56 UTC | 13g 94s 48c | 13g 94s 48c | steady | 4 of 11 | 4 |  |
+| Fractured Insignia | 279450 | 20g 0s 0c | 2026-11-19 12:56 UTC | 18g 50s 0c | 20g 0s 0c | moving | 8 of 11 | 38 | -40% |
+| Mote of Unstable Magic | 274964 | 9s 99c | 2026-11-19 12:56 UTC | 9s 81c | 9s 99c | moving | 9 of 11 | 2718 | -57% |
+| Rotheap Innards | 279537 | 9s 0c | 2026-11-19 12:56 UTC | 14s 50c | 20s 0c | volatile | 11 of 11 | 21 | -63% |
+| Steam Tonk Controller | 22728 | 4g 33s 33c | 2026-11-18 16:01 UTC | 4g 33s 33c |  | too new | 1 of 11 | 20 |  |
+| Ultralight Goblin Glider | 260825 | 15g 99s 95c | 2026-11-19 12:56 UTC | 17g 45s 42c | 17g 45s 42c | volatile | 6 of 11 | 10 |  |
+| Ultrasafe Transporter: Gadgetzan | 18986 | 17g 99s 99c | 2026-11-19 12:56 UTC | 17g 99s 99c | 17g 99s 99c | volatile | 3 of 11 | 7 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

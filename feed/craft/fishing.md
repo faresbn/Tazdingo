@@ -4,7 +4,7 @@ Estimated listing margins: what the item lists for against what its reagents cos
 
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
-| Fishing Hut | 300 | 279966 | 1 | 1g 48s 96c | 80s 41c | 68s 55c | our scan |
-| Fish Bowl | 0 | 279967 | 1 | 1s 20c | 84c | 36c | ForeverDB |
+| Fishing Hut | 300 | 279966 | 1 | 1g 49s 48c | 81s 39c | 68s 9c | our scan |
+| Fish Bowl | 0 | 279967 | 1 | 1s 52c | 1s 13c | 39c | our scan |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
