@@ -2,10 +2,10 @@
  "source": {
   "credit": "Data from ForeverDB.net (https://foreverdb.net)",
   "file": "Data/SearchNames.lua",
-  "data_version": "2026-11-18.67a4e871",
-  "client_build": "1.60.1.70938",
-  "sha256": "350cdbf2e7a54588798e1a6eb8be922b92c229bb23e8fe0638819258803bd0f9",
-  "fetched_on": "2026-11-18"
+  "data_version": "2026-11-18.f21123cc",
+  "client_build": "1.60.1.70959",
+  "sha256": "65a364c03d4c92ba82eb109a068278f87ba7527d10bf9abd358cf915f8d9b31a",
+  "fetched_on": "2026-11-19"
  },
  "names": {
   "35": "Bent Staff",
