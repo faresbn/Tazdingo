@@ -1,31 +1,31 @@
 # PvP Horde: Trade Goods: Cloth
 
 - **Market:** PvP Horde (Forever), every item recorded.
-- **Latest scan:** 2026-11-19 18:23 UTC. Uploads in the 30-day window: 3.
+- **Latest scan:** 2026-11-20 06:35 UTC. Uploads in the 30-day window: 4.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Bolt of Linen Cloth | 2996 | 59c | 2026-11-19 18:23 UTC | 54c | 51c | moving | 11 of 11 | 3316 | +6% |
-| Bolt of Mageweave | 4339 | 20s 0c | 2026-11-19 18:23 UTC | 21s 91c | 22s 0c | volatile | 11 of 11 | 1138 | -33% |
-| Bolt of Runecloth | 14048 | 34s 35c | 2026-11-19 18:23 UTC | 36s 61c | 34s 97c | moving | 11 of 11 | 753 | +7% |
-| Bolt of Silk Cloth | 4305 | 8s 30c | 2026-11-19 18:23 UTC | 8s 26c | 8s 40c | steady | 11 of 11 | 2570 | -6% |
-| Bolt of Woolen Cloth | 2997 | 6s 68c | 2026-11-19 18:23 UTC | 5s 54c | 4s 39c | moving | 11 of 11 | 2874 | +45% |
-| Coarse Thread | 2320 | 13c | 2026-11-19 18:23 UTC | 11c | 11c | moving | 11 of 11 | 5152 | -8% |
-| Felcloth | 14256 | 71s 98c | 2026-11-19 18:23 UTC | 71s 99c | 71s 99c | volatile | 10 of 11 | 727 | -62% |
-| Fine Thread | 2321 | 99c | 2026-11-19 18:23 UTC | 1s 1c | 1s 2c | steady | 11 of 11 | 4059 | +0% |
-| Heavy Silken Thread | 8343 | 17s 77c | 2026-11-19 18:23 UTC | 19s 25c | 19s 47c | steady | 11 of 11 | 589 | -1% |
-| Ironweb Spider Silk | 14227 | 77s 11c | 2026-11-19 18:23 UTC | 47s 8c | 38s 0c | moving | 11 of 11 | 752 | +74% |
-| Linen Cloth | 2589 | 30c | 2026-11-19 18:23 UTC | 25c | 23c | moving | 11 of 11 | 23790 | +25% |
-| Mageweave Cloth | 4338 | 3s 88c | 2026-11-19 18:23 UTC | 3s 97c | 4s 9c | volatile | 11 of 11 | 10687 | -40% |
-| Mooncloth | 14342 | 49g 97s 66c | 2026-11-19 18:23 UTC | 37g 44s 49c | 36g 33s 30c | volatile | 9 of 11 | 30 | +7% |
-| Rune Thread | 14341 | 43s 20c | 2026-11-19 18:23 UTC | 46s 88c | 49s 0c | moving | 11 of 11 | 220 | -25% |
-| Runecloth | 14047 | 4s 0c | 2026-11-19 18:23 UTC | 5s 86c | 7s 0c | volatile | 11 of 11 | 12458 | -25% |
-| Shadow Silk | 10285 | 10s 0c | 2026-11-19 18:23 UTC | 10s 0c | 10s 0c | steady | 11 of 11 | 669 | +0% |
-| Silk Cloth | 4306 | 1s 85c | 2026-11-19 18:23 UTC | 1s 44c | 1s 80c | volatile | 11 of 11 | 20436 | -24% |
-| Silken Thread | 4291 | 4s 55c | 2026-11-19 18:23 UTC | 4s 67c | 4s 98c | steady | 11 of 11 | 1060 | -10% |
-| Spider's Silk | 3182 | 8s 77c | 2026-11-19 18:23 UTC | 8s 24c | 8s 0c | moving | 11 of 11 | 1084 | +10% |
-| Thick Spider's Silk | 4337 | 7s 50c | 2026-11-19 18:23 UTC | 7s 50c | 7s 50c | steady | 11 of 11 | 889 | +0% |
-| Wool Cloth | 2592 | 2s 22c | 2026-11-19 18:23 UTC | 1s 82c | 1s 36c | volatile | 11 of 11 | 14198 | +73% |
+| Bolt of Linen Cloth | 2996 | 74c | 2026-11-20 06:35 UTC | 58c | 53c | steady | 12 of 12 | 3160 | +14% |
+| Bolt of Mageweave | 4339 | 21s 80c | 2026-11-20 06:35 UTC | 21s 83c | 21s 97c | moving | 12 of 12 | 1489 | -33% |
+| Bolt of Runecloth | 14048 | 31s 44c | 2026-11-20 06:35 UTC | 35s 6c | 34s 43c | moving | 12 of 12 | 762 | +2% |
+| Bolt of Silk Cloth | 4305 | 8s 67c | 2026-11-20 06:35 UTC | 8s 34c | 8s 40c | steady | 12 of 12 | 2458 | -2% |
+| Bolt of Woolen Cloth | 2997 | 8s 55c | 2026-11-20 06:35 UTC | 5s 94c | 4s 44c | moving | 12 of 12 | 2829 | +55% |
+| Coarse Thread | 2320 | 15c | 2026-11-20 06:35 UTC | 11c | 11c | moving | 12 of 12 | 5061 | +0% |
+| Felcloth | 14256 | 69s 0c | 2026-11-20 06:35 UTC | 70s 49c | 71s 98c | volatile | 11 of 12 | 696 | -2% |
+| Fine Thread | 2321 | 1s 63c | 2026-11-20 06:35 UTC | 1s 1c | 1s 2c | steady | 12 of 12 | 3547 | -1% |
+| Heavy Silken Thread | 8343 | 19s 0c | 2026-11-20 06:35 UTC | 19s 1c | 19s 25c | steady | 12 of 12 | 570 | -4% |
+| Ironweb Spider Silk | 14227 | 59s 50c | 2026-11-20 06:35 UTC | 52s 99c | 41s 59c | volatile | 12 of 12 | 627 | +91% |
+| Linen Cloth | 2589 | 42c | 2026-11-20 06:35 UTC | 25c | 24c | moving | 12 of 12 | 22936 | +19% |
+| Mageweave Cloth | 4338 | 4s 0c | 2026-11-20 06:35 UTC | 4s 2c | 4s 7c | volatile | 12 of 12 | 10355 | -29% |
+| Mooncloth | 14342 | 52g 0s 0c | 2026-11-20 06:35 UTC | 41g 88s 5c | 37g 44s 49c | volatile | 10 of 12 | 30 | +54% |
+| Rune Thread | 14341 | 48s 99c | 2026-11-20 06:35 UTC | 46s 88c | 48s 99c | moving | 12 of 12 | 254 | -17% |
+| Runecloth | 14047 | 5s 59c | 2026-11-20 06:35 UTC | 5s 71c | 6s 98c | volatile | 12 of 12 | 9059 | -26% |
+| Shadow Silk | 10285 | 9s 89c | 2026-11-20 06:35 UTC | 10s 0c | 10s 0c | steady | 12 of 12 | 656 | +0% |
+| Silk Cloth | 4306 | 1s 98c | 2026-11-20 06:35 UTC | 1s 88c | 1s 85c | volatile | 12 of 12 | 20040 | +2% |
+| Silken Thread | 4291 | 5s 59c | 2026-11-20 06:35 UTC | 4s 76c | 4s 98c | steady | 12 of 12 | 1000 | -8% |
+| Spider's Silk | 3182 | 13s 58c | 2026-11-20 06:35 UTC | 9s 28c | 8s 38c | moving | 12 of 12 | 1072 | +24% |
+| Thick Spider's Silk | 4337 | 7s 39c | 2026-11-20 06:35 UTC | 7s 50c | 7s 50c | steady | 12 of 12 | 746 | +0% |
+| Wool Cloth | 2592 | 2s 11c | 2026-11-20 06:35 UTC | 1s 92c | 1s 40c | volatile | 12 of 12 | 13477 | +83% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

@@ -1,7 +1,7 @@
 # PvP Horde: map
 
 - **Market:** PvP Horde (Forever), every item recorded.
-- **Latest scan:** 2026-11-19 18:23 UTC. Uploads in the 30-day window: 3.
+- **Latest scan:** 2026-11-20 06:35 UTC. Uploads in the 30-day window: 4.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 Open only the file for the item's category. Each lists every item recorded in it with its latest, typical and usual price.
@@ -11,9 +11,9 @@ Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/
 - `feed/prices/forever-pvp-horde/alerts.md`: deals under the usual price, below vendor price, investment watch, short supply and movers.
 - `feed/prices/forever-pvp-horde/armor-cloth.md`: Armor: Cloth, 1298 items.
 - `feed/prices/forever-pvp-horde/armor-idol.md`: Armor: Idol, 1 items.
-- `feed/prices/forever-pvp-horde/armor-leather.md`: Armor: Leather, 893 items.
+- `feed/prices/forever-pvp-horde/armor-leather.md`: Armor: Leather, 895 items.
 - `feed/prices/forever-pvp-horde/armor-libram.md`: Armor: Libram, 1 items.
-- `feed/prices/forever-pvp-horde/armor-mail.md`: Armor: Mail, 811 items.
+- `feed/prices/forever-pvp-horde/armor-mail.md`: Armor: Mail, 812 items.
 - `feed/prices/forever-pvp-horde/armor-miscellaneous.md`: Armor: Miscellaneous, 307 items.
 - `feed/prices/forever-pvp-horde/armor-plate.md`: Armor: Plate, 326 items.
 - `feed/prices/forever-pvp-horde/armor-shield.md`: Armor: Shield, 168 items.
@@ -32,10 +32,10 @@ Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/
 - `feed/prices/forever-pvp-horde/key.md`: Key, 12 items.
 - `feed/prices/forever-pvp-horde/miscellaneous-junk.md`: Miscellaneous: Junk, 310 items.
 - `feed/prices/forever-pvp-horde/miscellaneous-mount.md`: Miscellaneous: Mount, 12 items.
-- `feed/prices/forever-pvp-horde/miscellaneous-other.md`: Miscellaneous: Other, 9 items.
+- `feed/prices/forever-pvp-horde/miscellaneous-other.md`: Miscellaneous: Other, 10 items.
 - `feed/prices/forever-pvp-horde/miscellaneous-pet.md`: Miscellaneous: Pet, 42 items.
 - `feed/prices/forever-pvp-horde/miscellaneous-reagent.md`: Miscellaneous: Reagent, 31 items.
-- `feed/prices/forever-pvp-horde/other.md`: Other, 125 items.
+- `feed/prices/forever-pvp-horde/other-other.md`: Other: Other, 152 items.
 - `feed/prices/forever-pvp-horde/projectile.md`: Projectile, 21 items.
 - `feed/prices/forever-pvp-horde/quest-quest.md`: Quest: Quest, 159 items.
 - `feed/prices/forever-pvp-horde/quiver.md`: Quiver, 11 items.

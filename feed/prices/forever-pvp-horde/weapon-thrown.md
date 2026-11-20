@@ -1,29 +1,29 @@
 # PvP Horde: Weapon: Thrown
 
 - **Market:** PvP Horde (Forever), every item recorded.
-- **Latest scan:** 2026-11-19 18:23 UTC. Uploads in the 30-day window: 3.
+- **Latest scan:** 2026-11-20 06:35 UTC. Uploads in the 30-day window: 4.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Ankle Slicers | 284587 | 329g 0s 0c | 2026-11-19 12:56 UTC | 399g 0s 0c | 399g 0s 0c | volatile | 5 of 11 | 3 |  |
-| Balanced Knives | 285284 | 7g 77s 0c | 2026-11-18 16:01 UTC | 7g 77s 0c | 8g 77s 0c | moving | 4 of 11 | 1 |  |
-| Balanced Throwing Dagger | 2946 | 39s 90c | 2026-11-19 18:23 UTC | 25s 5c | 10s 11c | volatile | 11 of 11 | 16 | +178% |
-| Boot Knife | 5379 | 4s 74c | 2026-11-19 18:23 UTC | 4s 62c | 4s 87c | moving | 8 of 11 | 7 | -23% |
-| Carved Furbolg Tooth | 284696 | 3g 0s 0c | 2026-11-16 | 2g 0s 0c | 3g 15s 0c | moving | 4 of 11 | 1 | -39% |
-| Crude Throwing Axe | 3111 | 8s 90c | 2026-11-19 12:56 UTC | 8s 90c | 7s 0c | volatile | 11 of 11 | 11 | +78% |
-| Deadly Throwing Axe | 3137 | 98s 0c | 2026-11-19 12:56 UTC | 96s 50c | 93s 50c | moving | 10 of 11 | 3 | +38% |
-| Excavated Dagger | 287068 | 6g 50s 0c | 2026-11-19 18:23 UTC | 5g 49s 55c | 4g 1s 0c | moving | 11 of 11 | 8 | +55% |
-| Gleaming Throwing Axe | 15326 | 2g 0s 0c | 2026-11-19 18:23 UTC | 1g 75s 0c | 1g 59s 0c | volatile | 5 of 11 | 2 |  |
-| Heavy Throwing Dagger | 3108 | 95s 0c | 2026-11-19 12:56 UTC | 95s 0c | 95s 0c | moving | 8 of 11 | 3 | +12% |
-| Jagged Knives | 285282 | 95s 0c | 2026-11-19 12:56 UTC | 75s 49c | 50s 43c | volatile | 11 of 11 | 10 | +70% |
-| Keen Throwing Knife | 3107 | 20s 90c | 2026-11-19 18:23 UTC | 26s 0c | 27s 99c | moving | 10 of 11 | 8 | -24% |
-| Serrated Axes | 285283 | 8g 50s 80c | 2026-11-19 18:23 UTC | 2g 44s 0c | 2g 50s 0c | volatile | 9 of 11 | 4 | -2% |
-| Serrated Knife | 287063 | 79s 85c | 2026-11-19 18:23 UTC | 56s 50c | 60s 0c | moving | 11 of 11 | 10 | +0% |
-| Serrated Raptor Teeth | 285100 | 1g 50s 50c | 2026-11-19 18:23 UTC | 1g 7s 97c | 1g 40s 0c | volatile | 11 of 11 | 5 | -51% |
-| Sharp Throwing Axe | 3135 | 25s 97c | 2026-11-19 12:56 UTC | 31s 48c | 36s 50c | moving | 10 of 11 | 6 | -26% |
-| Skypierce Javelin | 287070 | 1g 99s 99c | 2026-11-19 18:23 UTC | 2g 41s 99c | 2g 69s 49c | volatile | 10 of 11 | 14 | -32% |
-| Small Throwing Knife | 2947 | 4s 0c | 2026-11-19 18:23 UTC | 4s 50c | 6s 0c | volatile | 11 of 11 | 13 | +0% |
-| Weighted Throwing Axe | 3131 | 12s 0c | 2026-11-18 16:01 UTC | 13s 50c | 13s 0c | volatile | 10 of 11 | 7 | +50% |
+| Ankle Slicers | 284587 | 210g 0s 0c | 2026-11-20 06:35 UTC | 384g 50s 0c | 384g 50s 0c | volatile | 6 of 12 | 3 |  |
+| Balanced Knives | 285284 | 3g 77s 0c | 2026-11-20 06:35 UTC | 7g 77s 0c | 7g 77s 0c | volatile | 5 of 12 | 1 | +7% |
+| Balanced Throwing Dagger | 2946 | 35s 0c | 2026-11-20 06:35 UTC | 37s 0c | 10s 61c | volatile | 12 of 12 | 15 | +335% |
+| Boot Knife | 5379 | 4s 10c | 2026-11-20 06:35 UTC | 4s 62c | 4s 74c | moving | 9 of 12 | 6 | -23% |
+| Carved Furbolg Tooth | 284696 | 3g 0s 0c | 2026-11-16 | 2g 0s 0c | 3g 15s 0c | moving | 4 of 12 | 1 | -39% |
+| Crude Throwing Axe | 3111 | 8s 90c | 2026-11-20 06:35 UTC | 8s 90c | 7s 95c | volatile | 12 of 12 | 10 | +78% |
+| Deadly Throwing Axe | 3137 | 77s 0c | 2026-11-20 06:35 UTC | 96s 50c | 92s 0c | moving | 11 of 12 | 3 | +38% |
+| Excavated Dagger | 287068 | 5g 99s 0c | 2026-11-20 06:35 UTC | 5g 99s 5c | 4g 50s 50c | moving | 12 of 12 | 8 | +70% |
+| Gleaming Throwing Axe | 15326 | 1g 99s 0c | 2026-11-20 06:35 UTC | 1g 99s 0c | 1g 79s 0c | moving | 6 of 12 | 2 |  |
+| Heavy Throwing Dagger | 3108 | 95s 0c | 2026-11-20 06:35 UTC | 95s 0c | 95s 0c | moving | 9 of 12 | 3 | +12% |
+| Jagged Knives | 285282 | 43s 0c | 2026-11-20 06:35 UTC | 75s 49c | 49s 71c | volatile | 12 of 12 | 10 | +61% |
+| Keen Throwing Knife | 3107 | 20s 89c | 2026-11-20 06:35 UTC | 24s 90c | 26s 0c | moving | 11 of 12 | 8 | -28% |
+| Serrated Axes | 285283 | 2g 0s 0c | 2026-11-20 06:35 UTC | 2g 44s 0c | 2g 50s 0c | volatile | 10 of 12 | 4 | -2% |
+| Serrated Knife | 287063 | 72s 40c | 2026-11-20 06:35 UTC | 66s 20c | 60s 0c | moving | 12 of 12 | 10 | +17% |
+| Serrated Raptor Teeth | 285100 | 1g 9s 99c | 2026-11-20 06:35 UTC | 1g 10s 47c | 1g 30s 47c | volatile | 12 of 12 | 5 | -40% |
+| Sharp Throwing Axe | 3135 | 25s 97c | 2026-11-19 12:56 UTC | 31s 48c | 36s 50c | moving | 10 of 12 | 6 | -26% |
+| Skypierce Javelin | 287070 | 2g 40s 0c | 2026-11-20 06:35 UTC | 2g 44s 49c | 2g 48s 99c | volatile | 11 of 12 | 13 | -16% |
+| Small Throwing Knife | 2947 | 2s 0c | 2026-11-20 06:35 UTC | 4s 50c | 4s 50c | volatile | 12 of 12 | 13 | +0% |
+| Weighted Throwing Axe | 3131 | 16s 99c | 2026-11-20 06:35 UTC | 15s 0c | 14s 0c | moving | 11 of 12 | 6 | +30% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
