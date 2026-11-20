@@ -18,7 +18,7 @@
 | Fire Wand | 5069 | 3s 10c | 2026-11-20 06:35 UTC | 3s 26c | 3s 4c | steady | 12 of 12 | 124 | +9% |
 | Firestarter | 8184 | 29s 95c | 2026-11-20 06:35 UTC | 29s 43c | 29s 96c | steady | 12 of 12 | 54 | -2% |
 | Flaming Incinerator | 9483 | 16g 0s 0c | 2026-11-15 | 16g 20s 0c | 16g 20s 0c | steady | 3 of 12 | 1 |  |
-| Freezing Shard | 10572 | 5g 0s 98c | 2026-11-20 06:35 UTC | 5g 50s 98c | 5g 75s 49c | volatile | 12 of 12 | 3 | -43% |
+| Freezing Shard | 10572 | 5g 0s 98c | 2026-11-20 06:35 UTC | 5g 50s 98c | 5g 75s 49c | volatile | 12 of 12 | 4 | -43% |
 | Gloom Wand | 5209 | 12s 0c | 2026-11-19 18:23 UTC | 16s 0c | 16s 0c | moving | 4 of 12 | 1 | -14% |
 | Glowstar Rod | 15281 | 3g 69s 0c | 2026-11-20 06:35 UTC | 3g 56s 50c | 3g 59s 0c | steady | 9 of 12 | 17 | -11% |
 | Greater Magic Wand | 11288 | 2s 92c | 2026-11-20 06:35 UTC | 2s 10c | 2s 10c | moving | 12 of 12 | 450 | +1% |
@@ -27,20 +27,20 @@
 | Jaina's Firestarter | 13064 | 3g 5s 0c | 2026-11-20 06:35 UTC | 3g 10s 49c | 3g 30s 50c | volatile | 12 of 12 | 18 | -55% |
 | Lesser Eternal Wand | 249232 | 1g 94s 0c | 2026-11-20 06:35 UTC | 1g 99s 25c | 1g 99s 91c | volatile | 9 of 12 | 17 | -52% |
 | Lesser Magic Wand | 11287 | 1s 36c | 2026-11-20 06:35 UTC | 1s 34c | 1s 60c | moving | 12 of 12 | 578 | -33% |
-| Lesser Mystic Wand | 11289 | 20s 0c | 2026-11-20 06:35 UTC | 33s 86c | 39s 99c | moving | 12 of 12 | 68 | -25% |
+| Lesser Mystic Wand | 11289 | 22s 0c | 2026-11-20 06:35 UTC | 33s 86c | 39s 99c | moving | 12 of 12 | 68 | -25% |
 | Lunar Wand | 15283 | 6g 49s 0c | 2026-11-19 12:56 UTC | 8g 99s 0c | 8g 99s 0c | volatile | 5 of 12 | 3 |  |
 | Novice's Practice Wand | 247789 | 1s 0c | 2026-11-20 06:35 UTC | 1s 0c | 1s 0c | steady | 12 of 12 | 154 | +0% |
-| Opaque Wand | 5207 | 10s 80c | 2026-11-20 06:35 UTC | 10s 80c | 10s 92c | steady | 12 of 12 | 69 | -2% |
+| Opaque Wand | 5207 | 11s 80c | 2026-11-20 06:35 UTC | 10s 80c | 10s 92c | steady | 12 of 12 | 69 | -2% |
 | Pestilent Wand | 5347 | 65s 0c | 2026-11-20 06:35 UTC | 88s 0c | 99s 0c | moving | 12 of 12 | 3 | -24% |
 | Satyr's Touch | 287036 | 3g 99s 99c | 2026-11-20 06:35 UTC | 4g 0s 48c | 4g 0s 98c | moving | 9 of 12 | 18 | -27% |
 | Scorching Wand | 5213 | 52s 18c | 2026-11-20 06:35 UTC | 52s 19c | 52s 81c | steady | 12 of 12 | 68 | -2% |
 | Shadow Wand | 5071 | 4s 43c | 2026-11-20 06:35 UTC | 4s 43c | 4s 51c | steady | 12 of 12 | 116 | -11% |
 | Skycaller | 12984 | 3g 68s 97c | 2026-11-20 06:35 UTC | 1g 67s 50c | 1g 10s 0c | volatile | 12 of 12 | 27 | +68% |
 | Smoldering Wand | 5208 | 11s 0c | 2026-11-20 06:35 UTC | 15s 50c | 20s 0c | volatile | 7 of 12 | 1 | -45% |
-| Starfaller | 13063 | 1g 23s 0c | 2026-11-20 06:35 UTC | 1g 21s 79c | 1g 20s 29c | volatile | 12 of 12 | 22 | +11% |
+| Starfaller | 13063 | 1g 23s 0c | 2026-11-20 06:35 UTC | 1g 20s 29c | 1g 20s 0c | volatile | 12 of 12 | 24 | +9% |
 | Stonegaze Wand | 282020 | 4g 77s 0c | 2026-11-19 18:23 UTC | 5g 0s 0c | 4g 88s 50c | moving | 4 of 12 | 2 |  |
 | Summoner's Wand | 5245 | 81s 57c | 2026-11-20 06:35 UTC | 52s 0c | 51s 50c | steady | 12 of 12 | 18 | +2% |
-| Thunderwood | 13062 | 4g 50s 0c | 2026-11-20 06:35 UTC | 3g 94s 0c | 3g 0s 0c | moving | 12 of 12 | 18 | +32% |
+| Thunderwood | 13062 | 8g 50s 99c | 2026-11-20 06:35 UTC | 3g 94s 0c | 3g 0s 0c | moving | 12 of 12 | 18 | +32% |
 | Torch of Austen | 13004 | 3g 98s 0c | 2026-11-20 06:35 UTC | 4g 1s 95c | 4g 6s 46c | moving | 8 of 12 | 8 | -42% |
 | Touch of the Depths | 287004 | 7g 0s 0c | 2026-11-20 06:35 UTC | 3g 74s 50c | 3g 74s 50c | volatile | 12 of 12 | 11 | +0% |
 | Twisted Nether Wand | 249144 | 1g 42s 0c | 2026-11-20 06:35 UTC | 1g 24s 81c | 1g 47s 95c | moving | 10 of 12 | 20 | -35% |

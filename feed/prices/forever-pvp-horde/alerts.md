@@ -107,7 +107,7 @@ The strongest 30 of 177.
 | Lupine Mantle | 15019 | 55s 0c | 14s 0c | 12% | 2026-11-20 06:35 UTC |
 | Willow Bracers | 6543 | 5s 98c | 4s 6c | 13% | 2026-11-20 06:35 UTC |
 | Simple Cape | 9745 | 1s 98c | 1s 25c | 14% | 2026-11-20 06:35 UTC |
-| Thunderwood | 13062 | 4g 50s 0c | 3g 0s 0c | 15% | 2026-11-20 06:35 UTC |
+| Thunderwood | 13062 | 8g 50s 99c | 3g 0s 0c | 15% | 2026-11-20 06:35 UTC |
 | Pattern: Dark Leather Tunic | 2409 | 2g 90s 0c | 3s 89c | 17% | 2026-11-20 06:35 UTC |
 | Disciple's Boots | 7351 | 14s 92c | 2s 0c | 17% | 2026-11-20 06:35 UTC |
 | Schematic: SAF-T Jumbo Dynamite | 264208 | 1g 0s 0c | 48s 50c | 17% | 2026-11-20 06:35 UTC |
@@ -172,7 +172,7 @@ The strongest 30 of 1259.
 
 The latest recorded price against the last full day's lowest.
 
-The strongest 30 of 1040.
+The strongest 30 of 1039.
 
 | Item | ID | Latest | Change | Recorded at |
 |---|---|---|---|---|
