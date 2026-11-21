@@ -1,11 +1,11 @@
 # PvP Horde: Armor: Totem
 
 - **Market:** PvP Horde (Forever), every item recorded.
-- **Latest scan:** 2026-11-21 09:03 UTC. Uploads in the 30-day window: 5.
+- **Latest scan:** 2026-11-21 18:23 UTC. Uploads in the 30-day window: 6.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Totem of the Storm | 23199 | 80g 0s 0c | 2026-11-21 09:03 UTC | 120g 0s 0c | 105g 0s 0c | moving | 10 of 12 | 4 | +34% |
+| Totem of the Storm | 23199 | 75g 99s 0c | 2026-11-21 18:23 UTC | 120g 0s 0c | 105g 0s 0c | moving | 10 of 12 | 4 | +34% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
