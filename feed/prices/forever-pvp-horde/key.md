@@ -1,22 +1,22 @@
 # PvP Horde: Key
 
 - **Market:** PvP Horde (Forever), every item recorded.
-- **Latest scan:** 2026-11-20 06:35 UTC. Uploads in the 30-day window: 4.
+- **Latest scan:** 2026-11-21 09:03 UTC. Uploads in the 30-day window: 5.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Benedict's Key | 4882 | 1s 0c | 2026-11-20 06:35 UTC | 1s 0c | 1s 0c | steady | 12 of 12 | 30 | +0% |
-| Captain's Key | 9249 | 15s 80c | 2026-11-20 06:35 UTC | 15s 86c | 16s 0c | moving | 11 of 12 | 41 | -24% |
-| Crusaders' Square Postbox Key | 13303 | 47s 44c | 2026-11-20 06:35 UTC | 34s 30c | 45s 16c | volatile | 8 of 12 | 18 | -88% |
-| Dark Keeper Key | 11197 | 2g 0s 0c | 2026-11-20 06:35 UTC | 4g 99s 71c | 4g 99s 71c | volatile | 6 of 12 | 12 |  |
-| Elders' Square Postbox Key | 13305 | 47s 93c | 2026-11-20 06:35 UTC | 53s 95c | 74s 42c | volatile | 8 of 12 | 18 | -64% |
-| Ezra Grimm's Postbox Key | 13307 | 3s 0c | 2026-11-20 06:35 UTC | 19s 78c | 29s 87c | volatile | 8 of 12 | 17 | -90% |
-| Festival Lane Postbox Key | 13304 | 4s 44c | 2026-11-20 06:35 UTC | 42s 49c | 42s 49c | volatile | 8 of 12 | 26 | -79% |
-| Grim Guzzler Key | 11602 | 23s 0c | 2026-11-20 06:35 UTC | 39s 45c | 40s 94c | volatile | 8 of 12 | 8 | -61% |
-| King's Square Postbox Key | 13306 | 18s 44c | 2026-11-20 06:35 UTC | 33s 0c | 34s 1c | volatile | 7 of 12 | 19 |  |
-| Kolkar Booty Key | 5020 | 99c | 2026-11-20 06:35 UTC | 1s 0c | 1s 0c | steady | 12 of 12 | 91 | +0% |
-| Market Row Postbox Key | 13302 | 29s 41c | 2026-11-20 06:35 UTC | 48s 48c | 60s 99c | volatile | 8 of 12 | 18 | -84% |
-| Relic Coffer Key | 11078 | 20s 0c | 2026-11-20 06:35 UTC | 23s 47c | 25s 63c | volatile | 9 of 12 | 366 | -8% |
+| Benedict's Key | 4882 | 50c | 2026-11-21 09:03 UTC | 1s 0c | 1s 0c | moving | 12 of 12 | 24 | +0% |
+| Captain's Key | 9249 | 15s 60c | 2026-11-21 09:03 UTC | 15s 84c | 15s 99c | moving | 12 of 12 | 41 | -25% |
+| Crusaders' Square Postbox Key | 13303 | 29s 70c | 2026-11-21 09:03 UTC | 29s 70c | 42s 88c | volatile | 9 of 12 | 18 | -90% |
+| Dark Keeper Key | 11197 | 2g 19s 0c | 2026-11-21 09:03 UTC | 2g 99s 99c | 2g 99s 99c | volatile | 7 of 12 | 13 |  |
+| Elders' Square Postbox Key | 13305 | 18s 79c | 2026-11-21 09:03 UTC | 47s 93c | 59s 98c | volatile | 9 of 12 | 19 | -68% |
+| Ezra Grimm's Postbox Key | 13307 | 2s 71c | 2026-11-21 09:03 UTC | 10s 70c | 28s 86c | volatile | 9 of 12 | 16 | -95% |
+| Festival Lane Postbox Key | 13304 | 96c | 2026-11-21 09:03 UTC | 24s 99c | 24s 99c | volatile | 9 of 12 | 26 | -88% |
+| Grim Guzzler Key | 11602 | 5s 0c | 2026-11-21 09:03 UTC | 38s 0c | 40s 90c | volatile | 9 of 12 | 7 | -62% |
+| King's Square Postbox Key | 13306 | 10s 23c | 2026-11-21 09:03 UTC | 31s 99c | 33s 0c | volatile | 8 of 12 | 20 |  |
+| Kolkar Booty Key | 5020 | 41c | 2026-11-21 09:03 UTC | 1s 0c | 1s 0c | moving | 12 of 12 | 88 | +0% |
+| Market Row Postbox Key | 13302 | 14s 88c | 2026-11-21 09:03 UTC | 40s 98c | 55s 99c | volatile | 9 of 12 | 20 | -86% |
+| Relic Coffer Key | 11078 | 26s 97c | 2026-11-21 09:03 UTC | 25s 97c | 25s 80c | volatile | 10 of 12 | 440 | +1% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

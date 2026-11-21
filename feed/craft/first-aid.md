@@ -4,14 +4,13 @@ Estimated listing margins: what the item lists for against what its reagents cos
 
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
-| Powerful Poultice | 280 | 255719 | 3 | 9g 11s 19c | 4g 32s 89c | 4g 78s 30c | ForeverDB |
-| Plague Doctor's Laboratory | 300 | 279951 | 1 | 1g 97s 99c | 65s 62c | 1g 32s 37c | our scan |
-| Powerful Anti-Venom | 300 | 19440 | 3 | 1g 27s 47c | 15s 99c | 1g 11s 48c | ForeverDB |
-| Clever Poultice | 140 | 255717 | 3 | 25s 50c | 2s 47c | 23s 3c | our scan |
-| Toxin Study | 140 | 279940 | 1 | 18s 83c | 9s 68c | 9s 15c | ForeverDB |
-| Superior Poultice | 210 | 255718 | 3 | 11s 25c | 9s 97c | 1s 28c | ForeverDB |
+| Powerful Poultice | 280 | 255719 | 3 | 9g 11s 19c | 4g 30s 39c | 4g 80s 80c | ForeverDB |
+| Powerful Anti-Venom | 300 | 19440 | 3 | 2g 2s 38c | 15s 98c | 1g 86s 40c | our scan |
+| Plague Doctor's Laboratory | 300 | 279951 | 1 | 1g 93s 99c | 62s 58c | 1g 31s 41c | our scan |
+| Toxin Study | 140 | 279940 | 1 | 14s 84c | 9s 4c | 5s 80c | our scan |
+| Clever Poultice | 140 | 255717 | 3 | 7s 20c | 2s 50c | 4s 70c | ForeverDB |
+| Superior Poultice | 210 | 255718 | 3 | 11s 25c | 10s 35c | 90c | ForeverDB |
 | First Aid Kit | 0 | 279968 | 1 | 73c | 55c | 18c | ForeverDB |
-| Strong Anti-Venom | 130 | 6453 | 3 | 2s 4c | 2s 1c | 3c | ForeverDB |
 | Simple Poultice | 0 | 255716 | 3 | 84c | 82c | 2c | our scan |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
