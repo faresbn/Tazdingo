@@ -11,8 +11,8 @@
    "race": "Orc",
    "faction": "Horde",
    "level": 39,
-   "item_level": 36.1,
-   "recorded_at": "2026-11-20T08:17:28Z",
+   "item_level": 37.4,
+   "recorded_at": "2026-11-21T10:49:09Z",
    "recorded_on": "logout",
    "build": "70959",
    "gear": [
@@ -36,9 +36,9 @@
     },
     {
      "slot": "Chest",
-     "item": 273044,
-     "name": "Violet Sorcerer's Robes",
-     "item_level": 32
+     "item": 10021,
+     "name": "Dreamweave Vest",
+     "item_level": 45
     },
     {
      "slot": "Waist",
@@ -66,15 +66,15 @@
     },
     {
      "slot": "Hands",
-     "item": 273034,
-     "name": "Ephemeral Grips",
-     "item_level": 32
+     "item": 10019,
+     "name": "Dreamweave Gloves",
+     "item_level": 45
     },
     {
      "slot": "Finger",
-     "item": 9588,
-     "name": "Nogg's Gold Ring",
-     "item_level": 37
+     "item": 6750,
+     "name": "Snake Hoop",
+     "item_level": 32
     },
     {
      "slot": "Finger",
@@ -122,10 +122,10 @@
    "talents": {
     "points": {
      "Affliction": 0,
-     "Demonology": 30,
+     "Demonology": 31,
      "Destruction": 0
     },
-    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAmZMzDMzMGGAAA"
+    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAzMjZegZmxwAAAA"
    },
    "professions": [
     {
@@ -152,6 +152,11 @@
      "name": "Fishing",
      "skill": 1,
      "max": 75
+    },
+    {
+     "name": "Riding",
+     "skill": 75,
+     "max": 75
     }
    ],
    "skills": [
@@ -159,37 +164,37 @@
      "name": "Daggers",
      "category": "Weapon Skills",
      "skill": 23,
-     "max": 195
+     "max": 200
     },
     {
      "name": "Defense",
      "category": "Weapon Skills",
-     "skill": 188,
-     "max": 195
+     "skill": 193,
+     "max": 200
     },
     {
      "name": "Staves",
      "category": "Weapon Skills",
      "skill": 4,
-     "max": 195
+     "max": 200
     },
     {
      "name": "Swords",
      "category": "Weapon Skills",
      "skill": 1,
-     "max": 195
+     "max": 200
     },
     {
      "name": "Unarmed",
      "category": "Weapon Skills",
      "skill": 13,
-     "max": 195
+     "max": 200
     },
     {
      "name": "Wands",
      "category": "Weapon Skills",
-     "skill": 184,
-     "max": 195
+     "skill": 188,
+     "max": 200
     },
     {
      "name": "Cloth",
@@ -208,55 +213,55 @@
     {
      "name": "Darkspear Trolls",
      "standing": "Honored",
-     "progress": 1620,
+     "progress": 1638,
      "needed": 12000
     },
     {
      "name": "Orgrimmar",
      "standing": "Honored",
-     "progress": 3803,
+     "progress": 3878,
      "needed": 12000
     },
     {
      "name": "Thunder Bluff",
      "standing": "Friendly",
-     "progress": 5942,
+     "progress": 5961,
      "needed": 6000
     },
     {
      "name": "Undercity",
      "standing": "Honored",
-     "progress": 742,
+     "progress": 761,
      "needed": 12000
     },
     {
      "name": "Booty Bay",
      "standing": "Neutral",
-     "progress": 1721,
+     "progress": 1976,
      "needed": 3000
     },
     {
      "name": "Everlook",
      "standing": "Neutral",
-     "progress": 1349,
+     "progress": 1604,
      "needed": 3000
     },
     {
      "name": "Gadgetzan",
      "standing": "Neutral",
-     "progress": 1349,
+     "progress": 1604,
      "needed": 3000
     },
     {
      "name": "Powderfuse",
      "standing": "Neutral",
-     "progress": 1349,
+     "progress": 1859,
      "needed": 3000
     },
     {
      "name": "Ratchet",
      "standing": "Neutral",
-     "progress": 1925,
+     "progress": 2180,
      "needed": 3000
     },
     {
@@ -285,23 +290,23 @@
     }
    ],
    "stats": {
-    "Health": 1336,
-    "Mana or energy": 3596,
-    "Strength": 43,
-    "Agility": 34,
-    "Stamina": 91,
-    "Intellect": 168,
-    "Spirit": 93,
-    "Armour": 446
+    "Health": 1594,
+    "Mana or energy": 3741,
+    "Strength": 52,
+    "Agility": 43,
+    "Stamina": 114,
+    "Intellect": 174,
+    "Spirit": 124,
+    "Armour": 1059
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": -120,
+    "Dishonourable kills": 112,
     "Honour points": 54,
     "Renown": 0
    },
    "collected": {
-    "mounts": 2,
+    "mounts": 3,
     "pets": 5,
     "titles": 0
    }
