@@ -6,11 +6,13 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
+| Alcor's Sunrazor | 14555 | 899g 0s 0c | 2026-11-20 06:35 UTC | 849g 91s 0c |  | too new | 2 of 12 | 1 |  |
 | Assassin's Blade | 1935 | 35g 5s 76c | 2026-11-20 06:35 UTC | 28g 49s 99c | 16g 99s 99c | volatile | 12 of 12 | 11 | +256% |
 | Battle Knife | 15241 | 30s 9c | 2026-11-20 06:35 UTC | 30s 4c | 30s 36c | steady | 12 of 12 | 58 | -3% |
 | Bayne's Bite | 283462 | 44s 0c | 2026-11-20 06:35 UTC | 44s 0c | 23s 0c | volatile | 11 of 12 | 9 | +159% |
 | Big Bronze Knife | 3848 | 20s 87c | 2026-11-20 06:35 UTC | 21s 70c | 20s 91c | moving | 12 of 12 | 68 | +8% |
 | Blackfang | 2236 | 59s 95c | 2026-11-20 06:35 UTC | 65s 25c | 75s 0c | moving | 12 of 12 | 30 | -18% |
+| Bloodstrike Dagger | 15247 | 15g 0s 0c | 2026-11-19 12:56 UTC | 15g 0s 0c |  | too new | 1 of 12 | 1 |  |
 | Bold Dirk | 250616 | 15g 0s 0c | 2026-11-16 | 15g 0s 0c |  | too new | 1 of 12 | 1 |  |
 | Brackclaw | 2235 | 2g 79s 4c | 2026-11-16 | 2g 79s 4c |  | too new | 1 of 12 | 1 |  |
 | Broad Bladed Knife | 12247 | 1g 89s 99c | 2026-11-19 18:23 UTC | 2g 12s 99c | 2g 30s 99c | moving | 11 of 12 | 3 | -31% |
@@ -50,6 +52,7 @@
 | Main Gauche | 2526 | 59s 0c | 2026-11-15 | 90s 0c | 90s 0c | moving | 3 of 12 | 1 |  |
 | Mithril Shortsword | 250607 | 2g 49s 99c | 2026-11-20 06:35 UTC | 2g 75s 0c | 2g 75s 0c | moving | 5 of 12 | 9 |  |
 | Murloc Oracle's Dagger | 281750 | 1g 0s 80c | 2026-11-19 12:56 UTC | 1g 10s 35c | 1g 19s 90c | steady | 7 of 12 | 3 |  |
+| Naraxis' Fang | 4449 | 99s 0c | 2026-11-19 18:23 UTC | 99s 0c |  | too new | 1 of 12 | 2 |  |
 | Needletooth's Needletooth | 282703 | 76s 0c | 2026-11-20 06:35 UTC | 70s 0c | 80s 0c | moving | 12 of 12 | 5 | -30% |
 | Pearl-handled Dagger | 5540 | 35s 0c | 2026-11-20 06:35 UTC | 39s 36c | 41s 0c | moving | 12 of 12 | 70 | -6% |
 | Poniard | 2208 | 40s 0c | 2026-11-20 06:35 UTC | 65s 0c | 25s 0c | volatile | 7 of 12 | 2 | +225% |
@@ -70,6 +73,7 @@
 | Small Dagger | 2764 | 4s 65c | 2026-11-20 06:35 UTC | 4s 52c | 5s 0c | steady | 12 of 12 | 28 | -10% |
 | Small Green Dagger | 4302 | 55s 48c | 2026-11-20 06:35 UTC | 55s 48c | 15s 89c | volatile | 11 of 12 | 10 | +516% |
 | Snarling Fang | 285043 | 2g 78s 0c | 2026-11-20 06:35 UTC | 2g 50s 49c | 2g 99s 0c | moving | 9 of 12 | 4 | -19% |
+| Spiked Dagger | 13822 | 1g 72s 0c | 2026-11-20 06:35 UTC | 1g 72s 0c |  | too new | 2 of 12 | 4 |  |
 | Stealthblade | 10625 | 24g 99s 98c | 2026-11-20 06:35 UTC | 42g 84s 34c | 45g 99s 0c | volatile | 7 of 12 | 7 |  |
 | Stiletto | 2494 | 34s 0c | 2026-11-20 06:35 UTC | 1g 6s 50c | 9s 95c | volatile | 12 of 12 | 5 | +1421% |
 | Stonevault Shiv | 9384 | 10g 0s 0c | 2026-11-20 06:35 UTC | 6g 15s 0c | 6g 69s 0c | moving | 10 of 12 | 6 | -49% |

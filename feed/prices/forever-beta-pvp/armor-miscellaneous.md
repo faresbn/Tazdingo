@@ -29,7 +29,6 @@
 | Red Linen Shirt | 2575 | 1s 0c | 2026-10-17 12:36 UTC | 3s 0c | 4s 50c | volatile | 12 of 12 | 27 | -77% |
 | Red Swashbuckler's Shirt | 6796 | 13s 0c | 2026-10-17 12:36 UTC | 14s 0c | 14s 0c | volatile | 12 of 12 | 31 | -3% |
 | Rich Purple Silk Shirt | 4335 | 2g 3s 0c | 2026-10-17 12:36 UTC | 2g 51s 0c | 2g 99s 50c | volatile | 12 of 12 | 4 | -45% |
-| Simple Dress | 6786 | 2s 0c | 2026-10-17 12:36 UTC | 1s 0c | 1s 0c | volatile | 11 of 12 | 4 | +0% |
 | Stylish Blue Shirt | 6384 | 68s 0c | 2026-10-17 12:36 UTC | 36s 0c | 4s 0c | volatile | 11 of 12 | 6 | +800% |
 | Stylish Green Shirt | 6385 | 50s 0c | 2026-10-17 12:36 UTC | 15s 0c | 10s 50c | volatile | 12 of 12 | 8 | +200% |
 | Stylish Red Shirt | 4330 | 4s 0c | 2026-10-17 12:36 UTC | 3s 50c | 4s 0c | moving | 12 of 12 | 27 | -12% |

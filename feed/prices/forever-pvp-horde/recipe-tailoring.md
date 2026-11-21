@@ -100,6 +100,7 @@
 | Pattern: Hands of Darkness | 7092 | 4s 75c | 2026-11-20 06:35 UTC | 4s 87c | 4s 0c | moving | 12 of 12 | 47 | +62% |
 | Pattern: Heavy Woolen Cloak | 4346 | 4s 89c | 2026-11-20 06:35 UTC | 1s 15c | 1s 18c | volatile | 12 of 12 | 74 | -24% |
 | Pattern: Icy Cloak | 4355 | 5s 49c | 2026-11-20 06:35 UTC | 6s 44c | 8s 0c | volatile | 11 of 12 | 27 | -60% |
+| Pattern: Invoker's Cord | 215369 | 59g 97s 0c | 2026-11-20 06:35 UTC | 59g 98s 99c | 59g 98s 99c | volatile | 3 of 12 | 2 |  |
 | Pattern: Lavender Mageweave Shirt | 10314 | 34s 95c | 2026-11-20 06:35 UTC | 59s 25c | 72s 49c | moving | 12 of 12 | 12 | -27% |
 | Pattern: Linen Reagent Bag | 253665 | 1s 0c | 2026-11-20 06:35 UTC | 1s 0c | 1s 59c | moving | 12 of 12 | 35 | -50% |
 | Pattern: Mooncloth Bag | 14499 | 2g 95s 1c | 2026-11-20 06:35 UTC | 4g 56s 40c | 6g 0s 98c | volatile | 9 of 12 | 33 | -71% |
@@ -135,6 +136,7 @@
 | Pattern: Runecloth Shoulders | 14504 | 1g 10s 0c | 2026-11-20 06:35 UTC | 1g 21s 16c | 1g 54s 0c | volatile | 9 of 12 | 18 | -70% |
 | Pattern: Runecloth Tunic | 14470 | 35s 22c | 2026-11-20 06:35 UTC | 35s 9c | 58s 95c | volatile | 11 of 12 | 21 | -65% |
 | Pattern: Shadow Hood | 4351 | 55s 89c | 2026-11-20 06:35 UTC | 50s 21c | 60s 44c | volatile | 12 of 12 | 16 | -39% |
+| Pattern: Shadoweave Mask | 10463 | 9g 0s 0c | 2026-11-20 06:35 UTC | 9g 0s 0c | 9g 0s 0c | steady | 3 of 12 | 2 |  |
 | Pattern: Soul Pouch | 21358 | 1g 77s 44c | 2026-11-20 06:35 UTC | 1g 80s 40c | 1g 80s 40c | moving | 10 of 12 | 16 | -25% |
 | Pattern: Spider Belt | 4353 | 3s 45c | 2026-11-20 06:35 UTC | 3s 31c | 3s 99c | volatile | 12 of 12 | 56 | -49% |
 | Pattern: Spider Silk Slippers | 4350 | 3s 95c | 2026-11-20 06:35 UTC | 3s 97c | 3s 57c | volatile | 12 of 12 | 48 | +32% |
@@ -154,6 +156,7 @@
 | Pattern: White Wedding Dress | 10325 | 1g 75s 0c | 2026-11-20 06:35 UTC | 1g 62s 97c | 1g 61s 97c | moving | 11 of 12 | 5 | +25% |
 | Pattern: Wizardweave Leggings | 14485 | 19g 99s 97c | 2026-11-20 06:35 UTC | 8g 99s 97c | 7g 99s 98c | moving | 6 of 12 | 2 |  |
 | Pattern: Wizardweave Robe | 14500 | 10g 13s 0c | 2026-11-20 06:35 UTC | 9g 23s 97c | 9g 23s 98c | volatile | 5 of 12 | 1 |  |
+| Pattern: Wizardweave Turban | 14505 | 50g 0s 0c | 2026-11-20 06:35 UTC | 75g 0s 0c |  | too new | 2 of 12 | 4 |  |
 | Pattern: Woolen Reagent Bag | 253668 | 1s 80c | 2026-11-20 06:35 UTC | 1s 74c | 2s 0c | volatile | 12 of 12 | 60 | -13% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

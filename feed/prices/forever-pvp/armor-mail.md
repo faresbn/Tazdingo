@@ -346,6 +346,7 @@
 | Hero's Belt | 8306 | 1g 88s 45c | 2026-11-18 13:03 UTC | 2g 20s 95c | 2g 20s 95c | moving | 5 of 13 | 6 |  |
 | Hero's Boots | 8307 | 2g 30s 0c | 2026-11-18 13:03 UTC | 2g 42s 50c | 2g 42s 50c | steady | 4 of 13 | 3 |  |
 | Hero's Bracers | 8302 | 1g 65s 0c | 2026-11-18 16:01 UTC | 1g 66s 0c | 1g 66s 0c | moving | 5 of 13 | 7 |  |
+| Hero's Breastplate | 8303 | 5g 55s 55c | 2026-11-18 13:03 UTC | 5g 55s 55c |  | too new | 1 of 13 | 2 |  |
 | Hero's Gauntlets | 8305 | 2g 7s 0c | 2026-11-18 16:01 UTC | 1g 88s 0c | 1g 88s 0c | moving | 4 of 13 | 6 |  |
 | Hero's Leggings | 8309 | 4g 95s 0c | 2026-11-18 16:01 UTC | 4g 95s 0c | 4g 97s 50c | steady | 6 of 13 | 2 |  |
 | Hero's Pauldrons | 8310 | 2g 26s 67c | 2026-11-18 16:01 UTC | 3g 0s 0c | 3g 0s 0c | volatile | 7 of 13 | 8 |  |
@@ -423,6 +424,9 @@
 | Lambent Scale Gloves | 3047 | 11s 40c | 2026-11-18 16:01 UTC | 11s 48c | 11s 60c | moving | 11 of 13 | 23 | -4% |
 | Lambent Scale Legguards | 3048 | 19s 98c | 2026-11-18 16:01 UTC | 19s 98c | 20s 0c | steady | 11 of 13 | 23 | -5% |
 | Lambent Scale Pauldrons | 4705 | 23s 99c | 2026-11-18 16:01 UTC | 21s 75c | 30s 0c | moving | 11 of 13 | 28 | -44% |
+| Laminated Scale Bracers | 3994 | 67s 0c | 2026-11-17 10:15 UTC | 67s 0c |  | too new | 1 of 13 | 1 |  |
+| Laminated Scale Gloves | 3996 | 70s 0c | 2026-11-18 16:01 UTC | 70s 0c |  | too new | 1 of 13 | 1 |  |
+| Laminated Scale Pants | 3997 | 1g 19s 0c | 2026-11-17 10:15 UTC | 1g 19s 0c |  | too new | 1 of 13 | 1 |  |
 | Legguards of the Vault | 9396 | 30g 31s 99c | 2026-11-18 16:01 UTC | 10g 9s 50c | 11g 98s 0c | moving | 9 of 13 | 2 | -17% |
 | Legionnaire's Leggings | 4816 | 96s 99c | 2026-11-18 13:03 UTC | 1g 6s 50c | 96s 99c | moving | 11 of 13 | 2 | +97% |
 | Light Chain Armor | 2398 | 99s 0c | 2026-11-18 13:03 UTC | 4s 0c | 3s 0c | volatile | 10 of 13 | 4 | +100% |
@@ -460,6 +464,7 @@
 | Lordly Armguards | 13135 | 5g 67s 67c | 2026-11-18 16:01 UTC | 6g 64s 99c | 8g 49s 49c | volatile | 8 of 13 | 9 | -78% |
 | Magnificent Belt | 15673 | 4g 53s 0c | 2026-11-18 16:01 UTC | 3g 0s 0c | 3g 0s 0c | volatile | 7 of 13 | 1 |  |
 | Magnificent Bracers | 15668 | 1g 97s 99c | 2026-11-18 13:03 UTC | 1g 98s 49c | 1g 99s 0c | moving | 5 of 13 | 3 |  |
+| Magnificent Breastplate | 15669 | 4g 29s 0c | 2026-11-18 13:03 UTC | 4g 29s 0c |  | too new | 1 of 13 | 1 |  |
 | Magnificent Gauntlets | 15672 | 2g 43s 28c | 2026-11-18 13:03 UTC | 4g 16s 64c | 4g 16s 64c | volatile | 4 of 13 | 2 |  |
 | Magnificent Greaves | 15674 | 7g 39s 0c | 2026-11-18 16:01 UTC | 7g 39s 0c | 7g 39s 0c | moving | 3 of 13 | 2 |  |
 | Magnificent Helmet | 15670 | 5g 99s 0c | 2026-11-18 13:03 UTC | 5g 99s 0c | 5g 99s 0c | moving | 3 of 13 | 2 |  |
@@ -567,6 +572,8 @@
 | Pillager's Leggings | 15561 | 55s 98c | 2026-11-18 13:03 UTC | 52s 99c | 64s 0c | volatile | 11 of 13 | 11 | -29% |
 | Pillager's Pauldrons | 15562 | 45s 0c | 2026-11-18 13:03 UTC | 45s 0c | 46s 0c | steady | 10 of 13 | 8 | -7% |
 | Polished Jazeraint Armor | 1715 | 1g 95s 0c | 2026-11-18 13:03 UTC | 2g 0s 0c | 2g 4s 50c | steady | 10 of 13 | 13 | -41% |
+| Polished Scale Belt | 2148 | 9s 0c | 2026-11-18 13:03 UTC | 9s 0c |  | too new | 1 of 13 | 1 |  |
+| Polished Scale Boots | 2149 | 79s 0c | 2026-11-18 16:01 UTC | 79s 0c |  | too new | 1 of 13 | 1 |  |
 | Polished Scale Gloves | 2151 | 90s 0c | 2026-11-18 16:01 UTC | 90s 0c | 30s 0c | volatile | 3 of 13 | 3 |  |
 | Polished Steel Boots | 3846 | 44s 98c | 2026-11-18 16:01 UTC | 45s 49c | 45s 49c | moving | 6 of 13 | 22 |  |
 | Pristine Scorpid Leggings | 252606 | 215g 38s 99c | 2026-11-18 16:01 UTC | 225g 79s 97c | 225g 79s 97c | steady | 3 of 13 | 4 |  |
@@ -641,7 +648,9 @@
 | Sash of the Windreaver | 18676 | 160g 0s 0c | 2026-11-18 13:03 UTC | 160g 0s 0c | 160g 0s 0c | volatile | 3 of 13 | 1 |  |
 | Scalemail Belt | 1853 | 50s 0c | 2026-11-18 13:03 UTC | 50s 0c | 50s 0c | volatile | 3 of 13 | 1 |  |
 | Scalemail Boots | 287 | 50s 0c | 2026-11-18 13:03 UTC | 1g 0s 0c | 1g 0s 0c | moving | 4 of 13 | 1 |  |
+| Scalemail Bracers | 1852 | 50s 0c | 2026-11-18 13:03 UTC | 50s 0c |  | too new | 1 of 13 | 3 |  |
 | Scalemail Gloves | 718 | 60s 0c | 2026-11-18 13:03 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 5 of 13 | 1 |  |
+| Scalemail Pants | 286 | 80s 0c | 2026-11-18 13:03 UTC | 80s 0c |  | too new | 1 of 13 | 2 |  |
 | Scalemail Vest | 285 | 50s 0c | 2026-11-18 13:03 UTC | 50s 0c | 30s 50c | volatile | 4 of 13 | 2 |  |
 | Scarlet Belt | 10329 | 92s 90c | 2026-11-18 16:01 UTC | 95s 95c | 99s 99c | volatile | 11 of 13 | 35 | -73% |
 | Scarlet Boots | 10332 | 23g 0s 0c | 2026-11-18 16:01 UTC | 19g 43s 0c | 17g 49s 0c | volatile | 10 of 13 | 5 | +130% |
@@ -657,6 +666,7 @@
 | Sentry's Slippers | 15525 | 18s 0c | 2026-11-18 16:01 UTC | 17s 50c | 18s 0c | steady | 11 of 13 | 20 | -12% |
 | Sentry's Surcoat | 15524 | 35s 0c | 2026-11-18 16:01 UTC | 34s 50c | 40s 0c | moving | 11 of 13 | 17 | -22% |
 | Shining Silver Breastplate | 2870 | 89s 0c | 2026-11-18 16:01 UTC | 89s 44c | 89s 88c | moving | 11 of 13 | 43 | -11% |
+| Silithid Hauberk | 286571 | 4g 99s 0c | 2026-11-17 10:15 UTC | 4g 99s 0c |  | too new | 1 of 13 | 1 |  |
 | Silver Defias Belt | 832 | 25s 0c | 2026-11-12 03:40 UTC | 50s 0c | 50s 0c | moving | 3 of 13 | 1 |  |
 | Silver-linked Footguards | 12982 | 65s 0c | 2026-11-18 16:01 UTC | 57s 0c | 46s 97c | volatile | 12 of 13 | 32 | +37% |
 | Silvered Bronze Boots | 3482 | 10s 72c | 2026-11-18 16:01 UTC | 10s 19c | 10s 0c | steady | 12 of 13 | 172 | +2% |
@@ -717,6 +727,7 @@
 | Storm Gauntlets | 12632 | 60g 12s 0c | 2026-11-18 16:01 UTC | 76g 99s 50c | 76g 99s 50c | steady | 4 of 13 | 2 |  |
 | Stormbringer Belt | 12978 | 70s 49c | 2026-11-18 16:01 UTC | 42s 74c | 42s 74c | volatile | 12 of 13 | 32 | -2% |
 | Stormgale Fists | 10584 | 99s 99c | 2026-11-18 13:03 UTC | 1g 11s 50c | 1g 24s 50c | volatile | 10 of 13 | 12 | -65% |
+| Stratholme Militia Shoulderguard | 18742 | 218g 88s 0c | 2026-11-18 16:01 UTC | 149g 13s 0c |  | too new | 2 of 13 | 3 |  |
 | Suffused Bindings | 286993 | 2g 45s 0c | 2026-11-18 16:01 UTC | 1g 31s 0c | 1g 99s 0c | moving | 9 of 13 | 10 | -35% |
 | Sunblaze Coif | 5819 | 3g 98s 0c | 2026-11-18 16:01 UTC | 1g 82s 50c | 1g 95s 0c | volatile | 10 of 13 | 12 | -46% |
 | Supple Scorpid Belt | 252595 | 6g 4s 32c | 2026-11-18 16:01 UTC | 3g 70s 0c | 3g 70s 0c | moving | 4 of 13 | 8 |  |
@@ -753,6 +764,9 @@
 | Tough Scorpid Helm | 8208 | 2g 99s 77c | 2026-11-18 16:01 UTC | 3g 0s 38c | 3g 0s 99c | volatile | 7 of 13 | 14 |  |
 | Tough Scorpid Leggings | 8206 | 1g 42s 0c | 2026-11-18 16:01 UTC | 1g 59s 50c | 1g 69s 0c | moving | 7 of 13 | 24 |  |
 | Tough Scorpid Shoulders | 8207 | 1g 60s 0c | 2026-11-18 16:01 UTC | 3g 60s 99c | 4g 24s 49c | volatile | 8 of 13 | 23 | -38% |
+| Triumphant Bracers | 15679 | 4g 99s 99c | 2026-11-18 16:01 UTC | 3g 34s 50c |  | too new | 2 of 13 | 2 |  |
+| Triumphant Chestpiece | 15680 | 9g 0s 0c | 2026-11-18 13:03 UTC | 9g 0s 0c |  | too new | 1 of 13 | 1 |  |
+| Triumphant Gauntlets | 15682 | 7g 99s 0c | 2026-11-18 13:03 UTC | 7g 99s 0c |  | too new | 1 of 13 | 2 |  |
 | Triumphant Girdle | 15683 | 2g 19s 98c | 2026-11-18 13:03 UTC | 3g 69s 98c | 4g 19s 98c | moving | 5 of 13 | 3 |  |
 | Turtle Scale Bracers | 8198 | 2g 20s 76c | 2026-11-18 16:01 UTC | 2g 18s 38c | 2g 25s 38c | moving | 8 of 13 | 56 | -32% |
 | Turtle Scale Breastplate | 8189 | 2g 48s 0c | 2026-11-18 16:01 UTC | 1g 86s 0c | 1g 99s 0c | volatile | 8 of 13 | 54 | -37% |
@@ -795,6 +809,7 @@
 | Warrior's Tunic | 2965 | 12s 0c | 2026-11-18 16:01 UTC | 9s 90c | 3s 0c | volatile | 13 of 13 | 31 | +230% |
 | Warstrike Armsplints | 14810 | 2g 55s 0c | 2026-11-18 13:03 UTC | 3g 25s 99c | 3g 25s 99c | moving | 4 of 13 | 2 |  |
 | Warstrike Belt | 14808 | 2g 0s 0c | 2026-11-18 16:01 UTC | 2g 14s 76c | 2g 14s 76c | moving | 5 of 13 | 5 |  |
+| Warstrike Gauntlets | 14815 | 5g 0s 0c | 2026-11-18 13:03 UTC | 5g 0s 0c |  | too new | 1 of 13 | 1 |  |
 | Warstrike Legguards | 14816 | 4g 15s 0c | 2026-11-18 13:03 UTC | 4g 0s 0c | 4g 0s 0c | steady | 4 of 13 | 1 |  |
 | Warstrike Sabatons | 14809 | 3g 5s 0c | 2026-11-16 17:11 UTC | 3g 5s 0c |  | too new | 1 of 13 | 1 |  |
 | Wicked Chain Boots | 15534 | 34s 45c | 2026-11-18 16:01 UTC | 25s 6c | 30s 0c | moving | 11 of 13 | 10 | -32% |

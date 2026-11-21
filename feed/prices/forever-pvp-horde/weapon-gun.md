@@ -37,6 +37,7 @@
 | Pellet Rifle | 8182 | 1s 20c | 2026-11-20 06:35 UTC | 1s 54c | 1s 10c | volatile | 12 of 12 | 14 | +54% |
 | Percussion Shotgun | 15323 | 1g 80s 83c | 2026-11-20 06:35 UTC | 1g 80s 0c | 1g 82s 91c | steady | 10 of 12 | 16 | -20% |
 | Precisely Calibrated Boomstick | 2100 | 35g 98s 0c | 2026-11-20 06:35 UTC | 37g 24s 0c | 39g 24s 50c | moving | 10 of 12 | 8 | -36% |
+| Primed Musket | 13825 | 1g 20s 99c | 2026-11-20 06:35 UTC | 1g 36s 99c |  | too new | 2 of 12 | 3 |  |
 | Ricochet Blunderbuss | 4089 | 1g 65s 0c | 2026-11-20 06:35 UTC | 1g 67s 0c | 1g 70s 0c | moving | 11 of 12 | 16 | -16% |
 | Rough Boomstick | 4362 | 2s 99c | 2026-11-20 06:35 UTC | 4s 44c | 3s 0c | volatile | 12 of 12 | 94 | +48% |
 | Rust-covered Blunderbuss | 2774 | 1s 0c | 2026-11-20 06:35 UTC | 1s 0c | 1s 0c | steady | 12 of 12 | 14 | +0% |

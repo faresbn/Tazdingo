@@ -7,6 +7,7 @@
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | 10 Pound Mud Snapper | 6292 | 10s 0c | 2026-11-20 06:35 UTC | 9s 99c | 10s 0c | steady | 12 of 12 | 58 | +0% |
+| 103 Pound Mightfish | 13917 | 15g 0s 0c | 2026-11-17 | 15g 0s 0c |  | too new | 1 of 12 | 1 |  |
 | 12 Pound Lobster | 13909 | 98s 0c | 2026-11-20 06:35 UTC | 1g 62s 24c | 1g 62s 24c | moving | 6 of 12 | 10 |  |
 | 12 Pound Mud Snapper | 6294 | 12s 0c | 2026-11-20 06:35 UTC | 12s 0c | 12s 0c | steady | 12 of 12 | 34 | +0% |
 | 15 Pound Lobster | 13910 | 2g 86s 99c | 2026-11-20 06:35 UTC | 1g 93s 49c | 1g 93s 49c | volatile | 6 of 12 | 6 |  |
@@ -22,7 +23,9 @@
 | 22 Pound Salmon | 13903 | 70s 97c | 2026-11-20 06:35 UTC | 95s 49c | 1g 0s 0c | volatile | 7 of 12 | 4 |  |
 | 25 Pound Salmon | 13904 | 20g 0s 0c | 2026-11-19 12:56 UTC | 20g 0s 0c | 20g 0s 0c | steady | 5 of 12 | 1 |  |
 | 26 Pound Catfish | 6363 | 27s 0c | 2026-11-20 06:35 UTC | 29s 0c | 31s 0c | moving | 12 of 12 | 11 | -27% |
+| 29 Pound Salmon | 13905 | 2g 0s 0c | 2026-11-19 12:56 UTC | 3g 50s 0c |  | too new | 2 of 12 | 1 |  |
 | 32 Pound Catfish | 6364 | 49s 0c | 2026-11-20 06:35 UTC | 48s 50c | 72s 0c | volatile | 10 of 12 | 4 | -65% |
+| 32 Pound Salmon | 13906 | 1g 0s 0c | 2026-11-18 16:01 UTC | 1g 0s 0c |  | too new | 1 of 12 | 1 |  |
 | 34 Pound Redgill | 13885 | 40s 0c | 2026-11-20 06:35 UTC | 35s 0c | 40s 0c | moving | 11 of 12 | 14 | -22% |
 | 37 Pound Redgill | 13886 | 45s 0c | 2026-11-20 06:35 UTC | 37s 0c | 46s 50c | moving | 10 of 12 | 12 | -49% |
 | 40 Pound Yellowtail | 13876 | 61s 0c | 2026-11-20 06:35 UTC | 40s 50c | 43s 90c | moving | 11 of 12 | 18 | -19% |
@@ -30,6 +33,7 @@
 | 45 Pound Redgill | 13883 | 60s 0c | 2026-11-20 06:35 UTC | 73s 29c | 77s 60c | moving | 9 of 12 | 4 | -55% |
 | 47 Pound Yellowtail | 13877 | 47s 40c | 2026-11-20 06:35 UTC | 47s 67c | 49s 99c | moving | 12 of 12 | 13 | -19% |
 | 49 Pound Redgill | 13884 | 74s 0c | 2026-11-20 06:35 UTC | 74s 0c | 74s 0c | volatile | 8 of 12 | 1 | +15% |
+| 52 Pound Redgill | 13887 | 12g 79s 0c | 2026-11-20 06:35 UTC | 12g 79s 0c |  | too new | 1 of 12 | 1 |  |
 | 53 Pound Yellowtail | 13878 | 56s 85c | 2026-11-20 06:35 UTC | 58s 92c | 70s 49c | moving | 12 of 12 | 10 | -40% |
 | 59 Pound Yellowtail | 13879 | 85s 0c | 2026-11-20 06:35 UTC | 89s 99c | 95s 99c | volatile | 8 of 12 | 6 | -83% |
 | 68 Pound Yellowtail | 13880 | 98s 0c | 2026-11-20 06:35 UTC | 99s 50c | 1g 2s 0c | steady | 9 of 12 | 1 | -3% |
@@ -37,6 +41,7 @@
 | 70 Pound Mightfish | 13914 | 88s 0c | 2026-11-20 06:35 UTC | 88s 99c | 88s 99c | steady | 6 of 12 | 4 |  |
 | 85 Pound Mightfish | 13915 | 1g 25s 0c | 2026-11-19 18:23 UTC | 1g 28s 0c | 1g 28s 0c | steady | 4 of 12 | 1 |  |
 | 9 Pound Lobster | 13908 | 30s 89c | 2026-11-20 06:35 UTC | 55s 0c | 70s 0c | volatile | 8 of 12 | 8 | -95% |
+| 92 Pound Mightfish | 13916 | 1g 0s 0c | 2026-11-19 18:23 UTC | 1g 0s 0c |  | too new | 1 of 12 | 1 |  |
 | A Chewed Bone | 15793 | 1s 0c | 2026-11-17 | 1s 0c |  | too new | 2 of 12 | 7 |  |
 | A Frayed Knot | 6150 | 1s 0c | 2026-11-08 | 1s 0c |  | too new | 1 of 12 | 2 |  |
 | A Head Rag | 9358 | 3s 50c | 2026-11-20 06:35 UTC | 4s 0c | 4s 0c | steady | 5 of 12 | 3 |  |
@@ -71,6 +76,7 @@
 | Brittle Dragon Bone | 4459 | 2s 90c | 2026-11-20 06:35 UTC | 2s 90c | 2s 90c | moving | 7 of 12 | 3 |  |
 | Brittle Molting | 6445 | 89c | 2026-11-20 06:35 UTC | 89c | 89c | steady | 12 of 12 | 73 | +1% |
 | Broken Antler | 5566 | 1s 5c | 2026-11-20 06:35 UTC | 1s 10c | 1s 11c | moving | 12 of 12 | 72 | -15% |
+| Broken Arrow | 3673 | 1s 0c | 2026-11-20 06:35 UTC | 1s 0c |  | too new | 2 of 12 | 12 |  |
 | Broken Basilisk Teeth | 11384 | 70c | 2026-11-20 06:35 UTC | 70c | 88c | volatile | 12 of 12 | 46 | -50% |
 | Broken Bat Fang | 11390 | 1s 95c | 2026-11-20 06:35 UTC | 1s 80c | 1s 80c | moving | 11 of 12 | 3 | -10% |
 | Broken Binding Bracer | 6439 | 2s 40c | 2026-11-20 06:35 UTC | 2s 47c | 2s 74c | steady | 11 of 12 | 12 | -12% |
@@ -90,6 +96,7 @@
 | Bubbling Green Ichor | 20770 | 7s 0c | 2026-11-20 06:35 UTC | 7s 0c | 7s 0c | steady | 4 of 12 | 2 |  |
 | Bug Eye | 7101 | 1s 0c | 2026-11-20 06:35 UTC | 79c | 89c | volatile | 12 of 12 | 20 | -67% |
 | Burning Pitch | 4787 | 5s 77c | 2026-11-20 06:35 UTC | 5s 78c | 5s 80c | moving | 11 of 12 | 66 | -28% |
+| Buzzard Beak | 556 | 2s 0c | 2026-11-20 06:35 UTC | 2s 0c |  | too new | 2 of 12 | 4 |  |
 | Buzzard Talon | 1464 | 71c | 2026-11-20 06:35 UTC | 72c | 87c | volatile | 12 of 12 | 76 | -52% |
 | Carved Centaur Totem | 254432 | 3s 28c | 2026-11-20 06:35 UTC | 2s 87c | 2s 87c | volatile | 12 of 12 | 2046 | +8% |
 | Carved Ivory Bone | 24281 | 4s 80c | 2026-11-20 06:35 UTC | 4s 99c | 4s 99c | steady | 8 of 12 | 4 | +0% |
@@ -98,6 +105,7 @@
 | Chew Toy | 5362 | 1s 0c | 2026-11-18 16:01 UTC | 1s 0c | 1s 0c | steady | 3 of 12 | 1 |  |
 | Chipped Bear Tooth | 3169 | 1s 0c | 2026-11-20 06:35 UTC | 19c | 19c | steady | 12 of 12 | 34 | +0% |
 | Chipped Boar Tusk | 771 | 40c | 2026-11-20 06:35 UTC | 40c | 40c | steady | 12 of 12 | 59 | +0% |
+| Chipped Cirrusfly Stinger | 251927 | 1s 0c | 2026-11-20 06:35 UTC | 1s 0c |  | too new | 2 of 12 | 6 |  |
 | Chipped Claw | 7074 | 1s 0c | 2026-11-20 06:35 UTC | 8c | 9c | steady | 12 of 12 | 10 | -20% |
 | Chipped Gorilla Tooth | 4097 | 3s 22c | 2026-11-20 06:35 UTC | 3s 40c | 3s 97c | moving | 11 of 12 | 26 | -32% |
 | Chipped Ogre Teeth | 15798 | 80c | 2026-11-20 06:35 UTC | 99c | 1s 0c | steady | 8 of 12 | 18 | -1% |
@@ -149,10 +157,12 @@
 | Elder Raptor Feathers | 20015 | 17s 0c | 2026-11-20 06:35 UTC | 18s 99c | 20s 0c | steady | 7 of 12 | 18 |  |
 | Elegant Writing Tool | 11420 | 21s 11c | 2026-11-20 06:35 UTC | 23s 98c | 24s 99c | steady | 7 of 12 | 17 |  |
 | Empty Barrel | 4558 | 19s 0c | 2026-11-20 06:35 UTC | 23s 50c | 23s 50c | steady | 6 of 12 | 7 |  |
+| Empty Dew Gland | 8430 | 1s 0c | 2026-11-20 06:35 UTC | 1s 0c |  | too new | 2 of 12 | 9 |  |
 | Empty Hip Flask | 5431 | 1s 55c | 2026-11-20 06:35 UTC | 1s 79c | 1s 89c | volatile | 9 of 12 | 38 | -72% |
 | Empty Sea Snail Shell | 10457 | 3s 0c | 2026-11-19 12:56 UTC | 3s 0c | 3s 0c | steady | 4 of 12 | 2 | +0% |
 | Empty Venom Sac | 19935 | 11s 0c | 2026-11-20 06:35 UTC | 8s 45c | 8s 88c | moving | 9 of 12 | 22 | -30% |
 | Empty Wallet | 5368 | 1s 89c | 2026-11-20 06:35 UTC | 3s 98c | 3s 99c | volatile | 11 of 12 | 5 | -73% |
+| Extinguished Torch | 7296 | 1s 0c | 2026-11-20 06:35 UTC | 1s 0c |  | too new | 1 of 12 | 2 |  |
 | Fading Echo | 275895 | 2s 0c | 2026-11-20 06:35 UTC | 8s 99c | 1s 49c | volatile | 12 of 12 | 16 | +922% |
 | False Documents | 11941 | 5g 0s 0c | 2026-11-20 06:35 UTC | 2g 94s 50c |  | too new | 2 of 12 | 6 |  |
 | Feathery Wing | 11417 | 12s 18c | 2026-11-20 06:35 UTC | 12s 58c | 13s 0c | moving | 9 of 12 | 50 | -34% |
@@ -173,8 +183,10 @@
 | Glowing Scorpid Blood | 19933 | 21s 77c | 2026-11-20 06:35 UTC | 15s 53c | 18s 48c | moving | 10 of 12 | 500 | -24% |
 | Gnawed Bone | 5369 | 77c | 2026-11-20 06:35 UTC | 88c | 1s 0c | volatile | 8 of 12 | 1 | -56% |
 | Gold Nugget | 272016 | 12g 49s 98c | 2026-11-20 06:35 UTC | 13g 43s 50c | 13g 43s 50c | moving | 6 of 12 | 10 |  |
+| Gold-capped Troll Tusk | 9336 | 20s 0c | 2026-11-19 12:56 UTC | 20s 0c |  | too new | 1 of 12 | 6 |  |
 | Gordok Chew Toy | 18236 | 41s 0c | 2026-11-20 06:35 UTC | 41s 0c |  | too new | 2 of 12 | 1 |  |
 | Grass Clippings | 256037 | 1s 17c | 2026-11-20 06:35 UTC | 1s 18c | 1s 20c | moving | 10 of 12 | 36 | -40% |
+| Grizzled Mane | 11414 | 28s 0c | 2026-11-20 06:35 UTC | 28s 0c |  | too new | 2 of 12 | 2 |  |
 | Gryphon Feather Quill | 3766 | 90s 0c | 2026-11-19 18:23 UTC | 1g 1s 0c | 95s 50c | volatile | 4 of 12 | 1 |  |
 | Handful of Dirt | 256036 | 99c | 2026-11-20 06:35 UTC | 1s 20c | 1s 45c | moving | 8 of 12 | 10 | -31% |
 | Hard Spider Leg Tip | 1074 | 6s 20c | 2026-11-20 06:35 UTC | 4s 91c | 4s 91c | steady | 12 of 12 | 154 | -6% |
@@ -206,6 +218,7 @@
 | Large Trophy Paw | 4584 | 9s 40c | 2026-11-20 06:35 UTC | 9s 46c | 9s 90c | moving | 9 of 12 | 24 | -36% |
 | Lasher Root | 18224 | 20s 0c | 2026-11-20 06:35 UTC | 26s 0c | 26s 0c | steady | 6 of 12 | 11 |  |
 | Lead Ore | 9261 | 3s 0c | 2026-11-20 06:35 UTC | 2s 50c | 2s 99c | volatile | 12 of 12 | 14 | -37% |
+| Legal Documents | 11942 | 80s 0c | 2026-11-20 06:35 UTC | 80s 0c |  | too new | 1 of 12 | 2 |  |
 | Lesser Essence of the Four Winds | 257226 | 1s 0c | 2026-11-20 06:35 UTC | 1s 0c | 1s 0c | steady | 11 of 12 | 14 | +4% |
 | Lifeless Skull | 3671 | 14s 85c | 2026-11-20 06:35 UTC | 2s 3c | 2s 35c | volatile | 12 of 12 | 15 | -41% |
 | Lifeless Stone | 4784 | 3s 78c | 2026-11-20 06:35 UTC | 3s 60c | 3s 60c | steady | 12 of 12 | 267 | +0% |
@@ -217,6 +230,7 @@
 | Mark of the Syndicate | 5113 | 3s 41c | 2026-11-20 06:35 UTC | 2s 52c | 2s 77c | steady | 12 of 12 | 95 | -16% |
 | Mastiff Jawbone | 18237 | 25s 0c | 2026-11-15 | 25s 0c |  | too new | 1 of 12 | 4 |  |
 | Minor Essence of the Four Winds | 251930 | 1s 0c | 2026-11-06 | 1s 0c |  | too new | 0 of 12 |  |  |
+| Municipal Proclamation | 13363 | 21s 0c | 2026-11-19 12:56 UTC | 21s 0c |  | too new | 2 of 12 | 1 |  |
 | Mysterious Unhatched Egg | 11419 | 19s 1c | 2026-11-20 06:35 UTC | 21s 50c | 21s 50c | moving | 6 of 12 | 24 |  |
 | Ogre Tooth Cleaner | 271648 | 4s 99c | 2026-11-20 06:35 UTC | 9s 50c | 10s 0c | volatile | 9 of 12 | 6 | -88% |
 | Once Used Shoe | 271647 | 8s 99c | 2026-11-20 06:35 UTC | 10s 0c | 10s 0c | volatile | 9 of 12 | 5 | -87% |
@@ -225,6 +239,7 @@
 | Patch of Bat Hair | 6296 | 43c | 2026-11-20 06:35 UTC | 67c | 36c | volatile | 12 of 12 | 24 | +123% |
 | Patch of Fine Fur | 4581 | 49s 55c | 2026-11-20 06:35 UTC | 54s 99c | 54s 99c | volatile | 5 of 12 | 20 |  |
 | Peeling the Onion | 19483 | 1s 0c | 2026-11-20 06:35 UTC | 1s 0c | 1s 97c | volatile | 11 of 12 | 14 | -75% |
+| Piece of Coral | 5371 | 99s 0c | 2026-11-20 06:35 UTC | 99s 0c |  | too new | 2 of 12 | 1 |  |
 | Plucked Feather | 7096 | 98c | 2026-11-20 06:35 UTC | 32c | 52c | volatile | 12 of 12 | 20 | -55% |
 | Pocket Lint | 5263 | 1s 0c | 2026-11-19 18:23 UTC | 50g 1s 0c |  | too new | 2 of 12 | 1 |  |
 | Pointy Crocolisk Tooth | 770 | 4s 40c | 2026-11-20 06:35 UTC | 3s 16c | 3s 16c | moving | 12 of 12 | 181 | -9% |
@@ -266,6 +281,7 @@
 | Sharp Canine | 3301 | 1s 2c | 2026-11-20 06:35 UTC | 1s 2c | 1s 2c | steady | 12 of 12 | 86 | -6% |
 | Shed Lizard Skin | 5128 | 2s 2c | 2026-11-20 06:35 UTC | 2s 2c | 2s 2c | steady | 12 of 12 | 74 | -8% |
 | Shimmering Basilisk Skin | 11389 | 32s 99c | 2026-11-19 18:23 UTC | 32s 99c | 32s 99c | steady | 5 of 12 | 3 |  |
+| Shiny Bracelet | 11939 | 11s 0c | 2026-11-20 06:35 UTC | 11s 0c |  | too new | 1 of 12 | 1 |  |
 | Shiny Dinglehopper | 5435 | 5s 0c | 2026-11-19 18:23 UTC | 5s 0c |  | too new | 2 of 12 | 4 |  |
 | Shiny Polished Stone | 4554 | 7s 9c | 2026-11-20 06:35 UTC | 7s 47c | 8s 0c | moving | 9 of 12 | 32 | -25% |
 | Shiny Seashell | 779 | 30c | 2026-11-20 06:35 UTC | 35c | 44c | volatile | 12 of 12 | 17 | -54% |
@@ -287,6 +303,7 @@
 | Smooth Stone Chip | 4552 | 5s 31c | 2026-11-20 06:35 UTC | 5s 30c | 5s 66c | moving | 10 of 12 | 94 | -23% |
 | Snapped Spider Limb | 1476 | 1s 0c | 2026-11-20 06:35 UTC | 8c | 8c | volatile | 12 of 12 | 24 | -27% |
 | Soft Patch of Fur | 3402 | 6s 37c | 2026-11-20 06:35 UTC | 6s 2c | 6s 2c | steady | 12 of 12 | 112 | -2% |
+| Sparkly Necklace | 11940 | 6s 0c | 2026-11-20 06:35 UTC | 6s 0c |  | too new | 1 of 12 | 4 |  |
 | Speckled Shell Fragment | 4556 | 9s 3c | 2026-11-20 06:35 UTC | 9s 3c | 9s 3c | steady | 12 of 12 | 218 | -10% |
 | Spider Palp | 4428 | 3s 44c | 2026-11-20 06:35 UTC | 3s 31c | 3s 31c | steady | 12 of 12 | 83 | -2% |
 | Spined Bat Wing | 11391 | 2s 1c | 2026-11-20 06:35 UTC | 2s 5c | 2s 5c | volatile | 12 of 12 | 50 | -33% |
@@ -299,6 +316,7 @@
 | Sticky Spider Webbing | 5602 | 14s 74c | 2026-11-20 06:35 UTC | 3s 30c | 3s 0c | volatile | 12 of 12 | 70 | +200% |
 | Stone Arrowhead | 4877 | 30c | 2026-11-20 06:35 UTC | 46c | 24c | volatile | 12 of 12 | 18 | +156% |
 | Tale of I'lalai in Zandali | 270313 | 1s 0c | 2026-11-20 06:35 UTC | 1s 0c | 1s 0c | steady | 11 of 12 | 70 | +0% |
+| Tattered Ursera Feather | 251925 | 1s 0c | 2026-11-18 16:01 UTC | 1s 0c |  | too new | 1 of 12 | 1 |  |
 | Thick Furry Mane | 4583 | 8s 11c | 2026-11-20 06:35 UTC | 8s 12c | 8s 87c | moving | 10 of 12 | 116 | -34% |
 | Thick Kodo Hair | 5122 | 2s 88c | 2026-11-20 06:35 UTC | 2s 88c | 3s 40c | moving | 12 of 12 | 9 | -27% |
 | Thick Scaly Tail | 4555 | 1s 55c | 2026-11-20 06:35 UTC | 1s 55c | 1s 55c | steady | 12 of 12 | 255 | +0% |
@@ -313,6 +331,7 @@
 | Tribal Raptor Feathers | 4587 | 8s 10c | 2026-11-20 06:35 UTC | 8s 30c | 8s 64c | moving | 11 of 12 | 72 | -35% |
 | Troll Sweat | 1520 | 2s 4c | 2026-11-20 06:35 UTC | 71c | 76c | volatile | 11 of 12 | 116 | -24% |
 | Troll Tribal Necklace | 9259 | 64c | 2026-11-20 06:35 UTC | 64c | 87c | volatile | 12 of 12 | 3234 | -83% |
+| Trophy Raptor Skull | 20016 | 55s 0c | 2026-11-19 18:23 UTC | 55s 0c | 55s 0c | steady | 3 of 12 | 1 |  |
 | Tuft of Gorilla Hair | 4099 | 12s 22c | 2026-11-20 06:35 UTC | 12s 64c | 15s 0c | moving | 9 of 12 | 36 | -26% |
 | Vulture Talon | 3399 | 90c | 2026-11-20 06:35 UTC | 93c | 99c | moving | 11 of 12 | 30 | -16% |
 | Worg Carrier | 12264 | 23s 75c | 2026-11-20 06:35 UTC | 23s 85c | 24s 89c | volatile | 9 of 12 | 21 | -92% |

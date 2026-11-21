@@ -7,6 +7,7 @@
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | 10 Pound Mud Snapper | 6292 | 9s 99c | 2026-11-18 16:01 UTC | 9s 99c | 10s 0c | steady | 12 of 13 | 66 | +0% |
+| 103 Pound Mightfish | 13917 | 15g 0s 0c | 2026-11-17 10:15 UTC | 15g 0s 0c |  | too new | 1 of 13 | 1 |  |
 | 12 Pound Lobster | 13909 | 1g 24s 50c | 2026-11-18 16:01 UTC | 1g 99s 99c | 1g 99s 99c | moving | 4 of 13 | 10 |  |
 | 12 Pound Mud Snapper | 6294 | 12s 0c | 2026-11-18 16:01 UTC | 12s 0c | 12s 0c | steady | 12 of 13 | 40 | +0% |
 | 15 Pound Lobster | 13910 | 23s 0c | 2026-11-18 16:01 UTC | 94s 50c | 94s 50c | volatile | 4 of 13 | 4 |  |
@@ -22,7 +23,9 @@
 | 22 Pound Salmon | 13903 | 70s 99c | 2026-11-18 16:01 UTC | 1g 20s 0c | 1g 20s 0c | volatile | 5 of 13 | 4 |  |
 | 25 Pound Salmon | 13904 | 20g 0s 0c | 2026-11-18 13:03 UTC | 20g 0s 0c | 20g 0s 0c | steady | 4 of 13 | 1 |  |
 | 26 Pound Catfish | 6363 | 31s 0c | 2026-11-18 16:01 UTC | 28s 50c | 33s 0c | moving | 11 of 13 | 10 | -43% |
+| 29 Pound Salmon | 13905 | 5g 0s 0c | 2026-11-18 13:03 UTC | 5g 0s 0c |  | too new | 1 of 13 | 1 |  |
 | 32 Pound Catfish | 6364 | 39s 99c | 2026-11-18 13:03 UTC | 72s 0c | 86s 50c | volatile | 8 of 13 | 4 | -91% |
+| 32 Pound Salmon | 13906 | 1g 0s 0c | 2026-11-18 13:03 UTC | 1g 0s 0c |  | too new | 1 of 13 | 1 |  |
 | 34 Pound Redgill | 13885 | 34s 50c | 2026-11-18 16:01 UTC | 35s 48c | 42s 80c | steady | 9 of 13 | 14 | -32% |
 | 37 Pound Redgill | 13886 | 37s 0c | 2026-11-18 16:01 UTC | 37s 0c | 42s 50c | volatile | 8 of 13 | 10 | -70% |
 | 40 Pound Yellowtail | 13876 | 40s 0c | 2026-11-18 16:01 UTC | 40s 50c | 43s 90c | steady | 9 of 13 | 18 | -49% |
@@ -98,6 +101,7 @@
 | Chew Toy | 5362 | 1s 0c | 2026-11-18 13:03 UTC | 1s 0c | 1s 0c | steady | 3 of 13 | 1 |  |
 | Chipped Bear Tooth | 3169 | 18c | 2026-11-18 13:03 UTC | 18c | 19c | volatile | 12 of 13 | 43 | -38% |
 | Chipped Boar Tusk | 771 | 40c | 2026-11-18 16:01 UTC | 40c | 40c | moving | 12 of 13 | 59 | +0% |
+| Chipped Cirrusfly Stinger | 251927 | 1s 0c | 2026-11-17 10:15 UTC | 1s 0c |  | too new | 1 of 13 | 9 |  |
 | Chipped Claw | 7074 | 8c | 2026-11-18 16:01 UTC | 8c | 9c | volatile | 12 of 13 | 16 | -38% |
 | Chipped Gorilla Tooth | 4097 | 3s 25c | 2026-11-18 16:01 UTC | 3s 96c | 4s 0c | moving | 9 of 13 | 23 | -21% |
 | Chipped Ogre Teeth | 15798 | 1s 0c | 2026-11-18 16:01 UTC | 1s 0c | 1s 0c | steady | 6 of 13 | 18 |  |
@@ -217,6 +221,7 @@
 | Mark of the Syndicate | 5113 | 2s 49c | 2026-11-18 16:01 UTC | 2s 52c | 2s 77c | steady | 10 of 13 | 94 | -16% |
 | Mastiff Jawbone | 18237 | 25s 0c | 2026-11-15 17:55 UTC | 25s 0c |  | too new | 1 of 13 | 4 |  |
 | Minor Essence of the Four Winds | 251930 | 1s 0c | 2026-11-06 14:50 UTC | 1s 0c |  | too new | 2 of 13 | 2 |  |
+| Municipal Proclamation | 13363 | 21s 0c | 2026-11-18 13:03 UTC | 21s 0c |  | too new | 1 of 13 | 1 |  |
 | Mysterious Unhatched Egg | 11419 | 20s 1c | 2026-11-18 13:03 UTC | 24s 0c | 24s 0c | steady | 4 of 13 | 24 |  |
 | Ogre Tooth Cleaner | 271648 | 9s 0c | 2026-11-18 13:03 UTC | 13s 99c | 17s 99c | volatile | 7 of 13 | 6 |  |
 | Once Used Shoe | 271647 | 10s 0c | 2026-11-18 13:03 UTC | 14s 49c | 18s 99c | volatile | 7 of 13 | 5 |  |
@@ -299,6 +304,7 @@
 | Sticky Spider Webbing | 5602 | 3s 2c | 2026-11-18 16:01 UTC | 2s 75c | 1s 10c | volatile | 12 of 13 | 70 | +175% |
 | Stone Arrowhead | 4877 | 49c | 2026-11-18 16:01 UTC | 33c | 24c | volatile | 12 of 13 | 24 | +38% |
 | Tale of I'lalai in Zandali | 270313 | 1s 0c | 2026-11-18 16:01 UTC | 1s 0c | 1s 0c | steady | 9 of 13 | 68 | -93% |
+| Tattered Ursera Feather | 251925 | 1s 0c | 2026-11-18 13:03 UTC | 1s 0c |  | too new | 1 of 13 | 1 |  |
 | Thick Furry Mane | 4583 | 8s 44c | 2026-11-18 16:01 UTC | 8s 87c | 10s 8c | moving | 8 of 13 | 92 | -31% |
 | Thick Kodo Hair | 5122 | 2s 88c | 2026-11-18 16:01 UTC | 2s 89c | 3s 90c | moving | 10 of 13 | 9 | -27% |
 | Thick Scaly Tail | 4555 | 1s 55c | 2026-11-18 16:01 UTC | 1s 55c | 1s 55c | steady | 12 of 13 | 219 | +0% |
@@ -313,6 +319,7 @@
 | Tribal Raptor Feathers | 4587 | 8s 11c | 2026-11-18 16:01 UTC | 8s 62c | 9s 54c | moving | 9 of 13 | 72 | -34% |
 | Troll Sweat | 1520 | 71c | 2026-11-18 13:03 UTC | 71c | 76c | moving | 9 of 13 | 88 | -64% |
 | Troll Tribal Necklace | 9259 | 98c | 2026-11-18 16:01 UTC | 70c | 1s 3c | volatile | 10 of 13 | 3174 | -89% |
+| Trophy Raptor Skull | 20016 | 55s 0c | 2026-11-18 13:03 UTC | 55s 0c |  | too new | 2 of 13 | 1 |  |
 | Tuft of Gorilla Hair | 4099 | 12s 30c | 2026-11-18 16:01 UTC | 16s 99c | 16s 99c | moving | 7 of 13 | 17 |  |
 | Vulture Talon | 3399 | 99c | 2026-11-18 16:01 UTC | 99c | 1s 0c | moving | 9 of 13 | 30 | -50% |
 | Worg Carrier | 12264 | 23s 83c | 2026-11-18 16:01 UTC | 37s 19c | 49s 50c | volatile | 7 of 13 | 18 |  |

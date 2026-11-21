@@ -43,10 +43,13 @@
 | Chromite Shield | 8135 | 1g 33s 86c | 2026-11-20 06:35 UTC | 1g 43s 0c | 1g 67s 88c | moving | 9 of 12 | 5 | -19% |
 | Combat Shield | 4065 | 53s 19c | 2026-11-20 06:35 UTC | 53s 19c | 53s 32c | steady | 12 of 12 | 18 | -2% |
 | Cracked Buckler | 2212 | 17s 99c | 2026-11-20 06:35 UTC | 5s 50c | 3s 40c | volatile | 11 of 12 | 11 | +97% |
+| Crested Buckler | 3990 | 1g 11s 0c | 2026-11-20 06:35 UTC | 1g 17s 50c |  | too new | 2 of 12 | 2 |  |
 | Crusader's Shield | 10195 | 2g 88s 99c | 2026-11-20 06:35 UTC | 3g 55s 0c | 3g 39s 0c | moving | 9 of 12 | 2 | +23% |
 | Cutthroat's Buckler | 15133 | 38s 87c | 2026-11-20 06:35 UTC | 38s 87c | 39s 44c | moving | 12 of 12 | 8 | -18% |
 | Defender Shield | 6572 | 49s 99c | 2026-11-20 06:35 UTC | 15s 98c | 15s 99c | moving | 12 of 12 | 16 | +0% |
+| Deflecting Tower | 3987 | 1g 0s 0c | 2026-11-20 06:35 UTC | 1g 0s 0c | 1g 0s 0c | moving | 3 of 12 | 2 |  |
 | Demon Guard | 10366 | 5g 81s 0c | 2026-11-19 18:23 UTC | 5g 81s 0c | 5g 81s 0c | volatile | 3 of 12 | 1 |  |
+| Dented Buckler | 17183 | 10s 0c | 2026-11-20 06:35 UTC | 10s 0c |  | too new | 2 of 12 | 1 |  |
 | Dervish Buckler | 6598 | 24s 20c | 2026-11-20 06:35 UTC | 24s 42c | 24s 64c | steady | 12 of 12 | 28 | -4% |
 | Dokebi Buckler | 14608 | 56s 0c | 2026-11-20 06:35 UTC | 32s 0c | 33s 0c | moving | 12 of 12 | 11 | -9% |
 | Dust Bowl | 4290 | 15s 0c | 2026-11-19 12:56 UTC | 13s 4c |  | too new | 2 of 12 | 1 |  |
@@ -75,9 +78,11 @@
 | Hawkeye's Buckler | 14607 | 60s 0c | 2026-11-20 06:35 UTC | 61s 0c | 68s 0c | moving | 11 of 12 | 6 | -13% |
 | Headhunter's Buckler | 15352 | 41s 0c | 2026-11-20 06:35 UTC | 43s 0c | 46s 0c | moving | 12 of 12 | 11 | -28% |
 | Heavy Lamellar Shield | 10204 | 3g 0s 0c | 2026-11-20 06:35 UTC | 2g 99s 0c | 2g 99s 0c | moving | 7 of 12 | 3 |  |
+| Hero's Buckler | 8313 | 4g 44s 0c | 2026-11-20 06:35 UTC | 4g 44s 0c |  | too new | 1 of 12 | 3 |  |
 | High Chief's Shield | 14964 | 3g 0s 0c | 2026-11-20 06:35 UTC | 4g 6s 0c | 3g 27s 0c | moving | 7 of 12 | 5 |  |
 | Hulking Shield | 15891 | 24s 0c | 2026-11-20 06:35 UTC | 26s 50c | 24s 0c | moving | 12 of 12 | 20 | +13% |
 | Hunting Buckler | 3652 | 5s 0c | 2026-11-20 06:35 UTC | 4s 99c | 4s 0c | moving | 12 of 12 | 34 | +25% |
+| Husk of the Husk | 284066 | 5g 99s 0c | 2026-11-20 06:35 UTC | 5g 99s 0c | 5g 99s 0c | volatile | 3 of 12 | 1 |  |
 | Imbued Shield | 15943 | 3g 2s 0c | 2026-11-19 18:23 UTC | 5g 99s 0c | 5g 99s 0c | moving | 3 of 12 | 1 |  |
 | Impenetrable Wall | 15667 | 4g 32s 0c | 2026-11-15 | 4g 32s 0c |  | too new | 1 of 12 | 1 |  |
 | Infantry Shield | 7108 | 25s 3c | 2026-11-20 06:35 UTC | 11s 99c | 8s 72c | volatile | 12 of 12 | 14 | +140% |
@@ -93,6 +98,7 @@
 | Knight's Crest | 7465 | 67s 47c | 2026-11-20 06:35 UTC | 67s 48c | 67s 57c | steady | 12 of 12 | 26 | -8% |
 | Lambent Scale Shield | 3656 | 22s 5c | 2026-11-20 06:35 UTC | 23s 10c | 23s 0c | steady | 12 of 12 | 16 | +0% |
 | Large Metal Shield | 2445 | 90s 0c | 2026-11-18 16:01 UTC | 50s 50c |  | too new | 2 of 12 | 1 |  |
+| Large Wooden Shield | 1200 | 14s 0c | 2026-11-20 06:35 UTC | 14s 0c |  | too new | 2 of 12 | 1 |  |
 | Lofty Shield | 14930 | 3g 4s 0c | 2026-11-20 06:35 UTC | 3g 95s 27c | 4g 35s 0c | moving | 7 of 12 | 3 |  |
 | Lord's Crest | 10078 | 2g 7s 99c | 2026-11-20 06:35 UTC | 2g 34s 0c | 2g 70s 0c | moving | 10 of 12 | 4 | -29% |
 | Lupine Buckler | 15014 | 5s 95c | 2026-11-20 06:35 UTC | 5s 95c | 5s 99c | steady | 12 of 12 | 42 | -1% |
@@ -133,6 +139,7 @@
 | Scouting Buckler | 6571 | 15s 90c | 2026-11-20 06:35 UTC | 13s 95c | 15s 84c | moving | 12 of 12 | 18 | -17% |
 | Sentinel Buckler | 7463 | 63s 90c | 2026-11-20 06:35 UTC | 64s 49c | 64s 49c | steady | 12 of 12 | 19 | +1% |
 | Sentry's Shield | 15530 | 35s 0c | 2026-11-20 06:35 UTC | 34s 0c | 34s 0c | steady | 12 of 12 | 9 | +0% |
+| Shadowforge Shield | 282555 | 1g 29s 0c | 2026-11-19 18:23 UTC | 2g 39s 50c |  | too new | 2 of 12 | 1 |  |
 | Shield of Thorsen | 13079 | 81s 0c | 2026-11-20 06:35 UTC | 67s 49c | 67s 50c | moving | 12 of 12 | 22 | -7% |
 | Simple Buckler | 2216 | 4s 80c | 2026-11-20 06:35 UTC | 4s 80c | 3s 80c | moving | 11 of 12 | 26 | +60% |
 | Skullance Shield | 13081 | 1g 0s 50c | 2026-11-20 06:35 UTC | 99s 45c | 1g 0s 25c | moving | 12 of 12 | 16 | -26% |

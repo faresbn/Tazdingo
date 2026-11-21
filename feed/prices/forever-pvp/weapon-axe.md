@@ -19,6 +19,7 @@
 | Bearded Axe | 2025 | 16s 0c | 2026-11-12 12:44 UTC | 16s 0c | 16s 0c | steady | 6 of 13 | 1 |  |
 | Bearded Boneaxe | 2878 | 94s 70c | 2026-11-18 16:01 UTC | 80s 99c | 90s 0c | moving | 11 of 13 | 20 | -18% |
 | Beaten Battle Axe | 1417 | 1s 50c | 2026-11-18 16:01 UTC | 1s 98c | 1s 0c | volatile | 12 of 13 | 19 | +98% |
+| Black Metal War Axe | 2015 | 66s 0c | 2026-11-18 16:01 UTC | 66s 0c |  | too new | 1 of 13 | 1 |  |
 | Bloodspiller | 7753 | 1g 99s 99c | 2026-11-18 16:01 UTC | 1g 95s 0c | 2g 70s 0c | volatile | 11 of 13 | 10 | -61% |
 | Blue Glittering Axe | 7942 | 2g 98s 98c | 2026-11-18 16:01 UTC | 2g 73s 99c | 2g 98s 98c | moving | 9 of 13 | 27 | -9% |
 | Blurred Axe | 4824 | 1g 0s 0c | 2026-11-18 16:01 UTC | 1g 22s 50c | 1g 30s 0c | moving | 11 of 13 | 3 | -26% |

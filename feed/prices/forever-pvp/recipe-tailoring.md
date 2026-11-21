@@ -100,6 +100,7 @@
 | Pattern: Hands of Darkness | 7092 | 9s 78c | 2026-11-18 16:01 UTC | 2s 98c | 3s 50c | moving | 12 of 13 | 44 | -26% |
 | Pattern: Heavy Woolen Cloak | 4346 | 1s 15c | 2026-11-18 16:01 UTC | 1s 18c | 1s 13c | moving | 12 of 13 | 80 | +18% |
 | Pattern: Icy Cloak | 4355 | 12s 80c | 2026-11-18 16:01 UTC | 6s 94c | 11s 44c | volatile | 9 of 13 | 27 | -93% |
+| Pattern: Invoker's Cord | 215369 | 150g 0s 0c | 2026-11-18 16:01 UTC | 150g 0s 0c |  | too new | 1 of 13 | 2 |  |
 | Pattern: Lavender Mageweave Shirt | 10314 | 49s 52c | 2026-11-18 16:01 UTC | 65s 49c | 77s 50c | moving | 10 of 13 | 11 | -22% |
 | Pattern: Linen Reagent Bag | 253665 | 1s 0c | 2026-11-18 16:01 UTC | 1s 15c | 1s 99c | moving | 12 of 13 | 35 | -42% |
 | Pattern: Mooncloth Bag | 14499 | 3g 11s 83c | 2026-11-18 16:01 UTC | 4g 56s 40c | 6g 0s 98c | volatile | 7 of 13 | 28 |  |
@@ -135,6 +136,7 @@
 | Pattern: Runecloth Shoulders | 14504 | 1g 26s 32c | 2026-11-18 16:01 UTC | 1g 76s 0c | 1g 98s 0c | volatile | 7 of 13 | 18 |  |
 | Pattern: Runecloth Tunic | 14470 | 2g 50s 0c | 2026-11-18 16:01 UTC | 46s 96c | 75s 0c | volatile | 9 of 13 | 21 | -84% |
 | Pattern: Shadow Hood | 4351 | 35s 0c | 2026-11-18 16:01 UTC | 54s 77c | 65s 0c | volatile | 11 of 13 | 16 | -26% |
+| Pattern: Shadoweave Mask | 10463 | 8g 33s 99c | 2026-11-18 16:01 UTC | 8g 33s 99c |  | too new | 1 of 13 | 5 |  |
 | Pattern: Soul Pouch | 21358 | 1g 80s 0c | 2026-11-18 16:01 UTC | 1g 80s 40c | 1g 80s 40c | volatile | 8 of 13 | 15 | -30% |
 | Pattern: Spider Belt | 4353 | 3s 77c | 2026-11-18 16:01 UTC | 3s 88c | 5s 0c | volatile | 11 of 13 | 54 | -61% |
 | Pattern: Spider Silk Slippers | 4350 | 4s 98c | 2026-11-18 16:01 UTC | 3s 57c | 3s 57c | volatile | 12 of 13 | 45 | +2% |

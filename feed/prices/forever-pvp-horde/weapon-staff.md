@@ -30,6 +30,7 @@
 | Gnarled Hermit's Staff | 1539 | 20s 0c | 2026-11-20 06:35 UTC | 19s 99c | 19s 94c | steady | 12 of 12 | 12 | +11% |
 | Gnarled Staff | 2030 | 16s 50c | 2026-11-19 18:23 UTC | 45s 0c | 30s 0c | volatile | 10 of 12 | 3 | +50% |
 | Gnoll Shaman's Staff | 282721 | 45s 0c | 2026-11-20 06:35 UTC | 22s 45c | 23s 50c | moving | 12 of 12 | 14 | -6% |
+| Handcrafted Staff | 3661 | 4g 50s 0c | 2026-11-19 18:23 UTC | 4g 50s 0c |  | too new | 1 of 12 | 1 |  |
 | Heavy War Staff | 4024 | 1g 0s 0c | 2026-11-20 06:35 UTC | 1g 0s 0c | 1g 0s 0c | steady | 8 of 12 | 4 | -19% |
 | Long Bo Staff | 767 | 4s 90c | 2026-11-20 06:35 UTC | 4s 0c | 2s 59c | volatile | 11 of 12 | 18 | +100% |
 | Long Staff | 928 | 79s 0c | 2026-11-19 12:56 UTC | 41s 0c | 59s 0c | volatile | 11 of 12 | 6 | -36% |
@@ -40,6 +41,7 @@
 | Monk's Staff | 866 | 1g 72s 0c | 2026-11-20 06:35 UTC | 1g 67s 0c | 1g 70s 50c | moving | 12 of 12 | 25 | -20% |
 | Nightbane Staff | 3227 | 40s 0c | 2026-11-11 | 40s 0c |  | too new | 1 of 12 | 1 |  |
 | Oaken War Staff | 1831 | 17s 88c | 2026-11-20 06:35 UTC | 17s 90c | 17s 92c | steady | 12 of 12 | 14 | -3% |
+| Pylon Poker | 287046 | 95g 31s 0c | 2026-11-20 06:35 UTC | 94g 65s 0c | 94g 65s 0c | steady | 4 of 12 | 1 |  |
 | Quarter Staff | 854 | 10s 0c | 2026-11-12 | 10s 0c | 10s 0c | steady | 3 of 12 | 1 |  |
 | Riverside Staff | 1473 | 85s 0c | 2026-11-16 | 65s 0c |  | too new | 2 of 12 | 1 |  |
 | Rough Wooden Staff | 1515 | 2s 50c | 2026-11-20 06:35 UTC | 2s 50c | 2s 0c | moving | 12 of 12 | 20 | +25% |
@@ -58,6 +60,7 @@
 | Staff of the Blessed Seer | 2271 | 5g 69s 69c | 2026-11-20 06:35 UTC | 2g 42s 0c | 1g 53s 50c | volatile | 12 of 12 | 13 | +142% |
 | Staff of the Friar | 3415 | 2g 10s 0c | 2026-11-20 06:35 UTC | 2g 5s 0c | 1g 47s 0c | volatile | 12 of 12 | 14 | +86% |
 | Staff of the Shade | 2549 | 2g 99s 0c | 2026-11-20 06:35 UTC | 1g 94s 49c | 1g 73s 50c | volatile | 12 of 12 | 18 | +0% |
+| Stout War Staff | 13823 | 1g 50s 0c | 2026-11-20 06:35 UTC | 1g 50s 0c | 1g 50s 0c | steady | 3 of 12 | 5 |  |
 | Sturdy Quarterstaff | 4566 | 24s 99c | 2026-11-20 06:35 UTC | 13s 98c | 9s 34c | volatile | 12 of 12 | 52 | +100% |
 | Tactician's Staff | 215375 | 12s 54c | 2026-11-20 06:35 UTC | 12s 64c | 12s 86c | moving | 12 of 12 | 42 | -28% |
 | Tanglewood Staff | 1720 | 3g 15s 0c | 2026-11-20 06:35 UTC | 3g 13s 50c | 3g 44s 50c | steady | 10 of 12 | 12 | -16% |

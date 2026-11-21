@@ -43,6 +43,7 @@
 | Quillshooter | 10567 | 10g 10s 0c | 2026-11-20 06:35 UTC | 9g 80s 0c | 9g 59s 50c | moving | 10 of 12 | 6 | +17% |
 | Ranger Bow | 3021 | 4g 90s 0c | 2026-11-20 06:35 UTC | 2g 62s 0c | 1g 99s 50c | volatile | 12 of 12 | 16 | +33% |
 | Ravenwood Bow | 4474 | 1g 64s 0c | 2026-11-18 16:01 UTC | 1g 99s 0c | 1g 99s 0c | volatile | 3 of 12 | 1 |  |
+| Recurve Long Bow | 13824 | 1g 0s 0c | 2026-11-20 06:35 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 12 | 3 |  |
 | Reinforced Bow | 3026 | 11s 0c | 2026-11-17 | 22s 50c | 25s 0c | volatile | 9 of 12 | 4 | -10% |
 | Short Ash Bow | 3039 | 18s 0c | 2026-11-20 06:35 UTC | 17s 24c | 17s 99c | steady | 12 of 12 | 38 | -4% |
 | Siege Bow | 15294 | 2g 19s 0c | 2026-11-20 06:35 UTC | 2g 20s 0c | 2g 31s 50c | moving | 10 of 12 | 14 | -48% |

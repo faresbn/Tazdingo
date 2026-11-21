@@ -205,6 +205,7 @@
 | Primitive Mantle | 6134 | 3g 0s 0c | 2026-11-18 16:01 UTC | 1g 47s 50c | 1g 0s 0c | volatile | 7 of 13 | 4 |  |
 | Prismatic Band | 12017 | 15g 0s 0c | 2026-11-16 17:11 UTC | 15g 0s 0c |  | too new | 2 of 13 | 1 |  |
 | Quartz Ring | 11965 | 54s 98c | 2026-11-18 16:01 UTC | 29s 0c | 35s 0c | moving | 12 of 13 | 46 | -19% |
+| Queen Guard's Royal Seal | 284282 | 99g 0s 0c | 2026-11-18 16:01 UTC | 99g 0s 0c |  | too new | 1 of 13 | 1 |  |
 | Quicksilver Pendant | 12026 | 2g 0s 0c | 2026-11-18 16:01 UTC | 2g 22s 0c | 2g 44s 0c | moving | 7 of 13 | 24 |  |
 | Quicksilver Ring | 11991 | 1g 70s 0c | 2026-11-18 16:01 UTC | 1g 97s 49c | 1g 99s 99c | volatile | 7 of 13 | 7 |  |
 | Raincaller Scepter | 15975 | 24s 99c | 2026-11-18 16:01 UTC | 25s 49c | 27s 99c | moving | 10 of 13 | 10 | -39% |
@@ -243,9 +244,7 @@
 | Shimmering Stave | 7558 | 16s 10c | 2026-11-18 16:01 UTC | 16s 10c | 16s 10c | moving | 11 of 13 | 14 | -11% |
 | Silksand Star | 15964 | 63s 95c | 2026-11-18 16:01 UTC | 64s 0c | 64s 0c | moving | 7 of 13 | 7 |  |
 | Silver-thread Rod | 15928 | 23s 95c | 2026-11-18 16:01 UTC | 23s 97c | 24s 0c | steady | 11 of 13 | 17 | -14% |
-| Simple Black Dress | 10053 | 90s 0c | 2026-11-18 16:01 UTC | 1g 50s 0c | 1g 75s 0c | volatile | 6 of 13 | 5 |  |
 | Simple Branch | 15933 | 6s 34c | 2026-11-18 13:03 UTC | 6s 44c | 7s 0c | steady | 12 of 13 | 76 | -8% |
-| Simple Dress | 6786 | 3s 0c | 2026-11-18 13:03 UTC | 1s 59c | 1s 59c | moving | 12 of 13 | 6 | +6% |
 | Simple Wildflowers | 3421 | 5s 0c | 2026-11-18 13:03 UTC | 6s 24c | 10s 0c | volatile | 11 of 13 | 14 | -48% |
 | Six Demon Bag | 7734 | 3g 54s 45c | 2026-11-18 16:01 UTC | 4g 37s 72c | 5g 48s 50c | volatile | 10 of 13 | 8 | -60% |
 | Skibi's Pendant | 13089 | 8g 0s 0c | 2026-11-18 16:01 UTC | 8g 99s 99c | 8g 99s 0c | moving | 9 of 13 | 8 | +0% |

@@ -32,6 +32,7 @@
 | Bruiser Club | 4439 | 22s 0c | 2026-11-20 06:35 UTC | 25s 0c | 27s 50c | moving | 12 of 12 | 5 | -21% |
 | Brutehammer | 15267 | 9g 0s 0c | 2026-11-20 06:35 UTC | 12g 0s 0c | 12g 0s 0c | moving | 4 of 12 | 1 |  |
 | Bulky Bludgeon | 1825 | 15s 45c | 2026-11-20 06:35 UTC | 15s 47c | 15s 75c | steady | 12 of 12 | 16 | -16% |
+| Bulky Maul | 13821 | 2g 20s 0c | 2026-11-20 06:35 UTC | 2g 25s 0c |  | too new | 2 of 12 | 5 |  |
 | Burrowing Shovel | 6205 | 5g 0s 0c | 2026-11-16 | 5g 0s 0c | 5g 0s 0c | steady | 4 of 12 | 1 |  |
 | Carpenter's Mallet | 1415 | 1s 33c | 2026-11-20 06:35 UTC | 1s 23c | 1s 11c | moving | 12 of 12 | 10 | +23% |
 | Changuk Smasher | 17055 | 23g 53s 0c | 2026-11-20 06:35 UTC | 12g 1s 0c | 10g 44s 0c | moving | 6 of 12 | 1 | +140% |
@@ -86,6 +87,8 @@
 | Ironwood Maul | 4777 | 1g 0s 0c | 2026-11-20 06:35 UTC | 89s 49c | 81s 49c | volatile | 12 of 12 | 7 | +13% |
 | Ironwood Treebranch | 911 | 2g 50s 0c | 2026-11-13 | 2g 50s 0c |  | too new | 1 of 12 | 1 |  |
 | Jagged Star | 15223 | 23s 70c | 2026-11-20 06:35 UTC | 23s 73c | 23s 87c | steady | 12 of 12 | 83 | -1% |
+| Kazon's Maul | 2058 | 100g 50s 0c | 2026-11-20 06:35 UTC | 100g 50s 0c |  | too new | 2 of 12 | 1 |  |
+| Kobold Mining Shovel | 1195 | 9g 99s 99c | 2026-11-20 06:35 UTC | 9g 99s 99c |  | too new | 1 of 12 | 1 |  |
 | Korg Bat | 1679 | 97s 90c | 2026-11-20 06:35 UTC | 99s 32c | 1g 3s 75c | steady | 12 of 12 | 17 | -14% |
 | Kovork's Rattle | 5256 | 1g 50s 99c | 2026-11-20 06:35 UTC | 1g 25s 49c | 1g 0s 50c | volatile | 12 of 12 | 8 | +25% |
 | Large Bear Bone | 11411 | 15s 0c | 2026-11-20 06:35 UTC | 18s 50c | 21s 15c | moving | 8 of 12 | 11 | -20% |
@@ -156,6 +159,7 @@
 | Wicked Spiked Mace | 920 | 43s 0c | 2026-11-18 16:01 UTC | 43s 0c | 43s 0c | steady | 10 of 12 | 2 | +0% |
 | Wooden Mallet | 2493 | 43s 0c | 2026-11-20 06:35 UTC | 23s 0c | 5s 0c | moving | 6 of 12 | 6 | +360% |
 | Wooden Maul | 1820 | 9s 63c | 2026-11-20 06:35 UTC | 9s 79c | 10s 0c | steady | 12 of 12 | 16 | -2% |
+| Worn Bludgeon | 280400 | 1g 0s 0c | 2026-11-20 06:35 UTC | 1g 0s 0c | 1g 0s 0c | volatile | 3 of 12 | 4 |  |
 | Worn Mace | 36 | 2s 95c | 2026-11-20 06:35 UTC | 2s 95c | 2s 95c | moving | 3 of 12 | 1 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

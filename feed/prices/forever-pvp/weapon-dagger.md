@@ -6,6 +6,7 @@
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
+| Alcor's Sunrazor | 14555 | 800g 82s 0c | 2026-11-18 13:03 UTC | 800g 82s 0c |  | too new | 1 of 13 | 1 |  |
 | Assassin's Blade | 1935 | 25g 99s 99c | 2026-11-18 13:03 UTC | 20g 99s 49c | 11g 81s 0c | volatile | 12 of 13 | 12 | +185% |
 | Battle Knife | 15241 | 30s 28c | 2026-11-18 13:03 UTC | 30s 31c | 30s 41c | steady | 13 of 13 | 58 | -2% |
 | Bayne's Bite | 283462 | 2g 99s 99c | 2026-11-18 13:03 UTC | 30s 0c | 14s 50c | volatile | 12 of 13 | 10 | +200% |

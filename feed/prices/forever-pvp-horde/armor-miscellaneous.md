@@ -46,6 +46,7 @@
 | Blue Linen Shirt | 2577 | 1s 90c | 2026-11-20 06:35 UTC | 1s 49c | 1s 95c | moving | 12 of 12 | 46 | -26% |
 | Blush Ember Ring | 13093 | 1g 13s 0c | 2026-11-20 06:35 UTC | 1g 17s 50c | 1g 19s 0c | moving | 12 of 12 | 17 | -1% |
 | Bonecaster's Star | 15986 | 5g 0s 0c | 2026-11-20 06:35 UTC | 3g 0s 0c | 4g 0s 0c | volatile | 6 of 12 | 4 |  |
+| Boulderheart Band | 281927 | 1g 0s 0c | 2026-11-19 18:23 UTC | 1g 0s 0c |  | too new | 1 of 12 | 1 |  |
 | Braided Seer Stones | 282019 | 5g 26s 98c | 2026-11-20 06:35 UTC | 8g 2s 0c | 9g 49s 86c | moving | 6 of 12 | 2 |  |
 | Brainlash | 6440 | 40g 47s 0c | 2026-11-20 06:35 UTC | 40g 47s 0c |  | too new | 2 of 12 | 1 |  |
 | Brawler's Harness | 6125 | 4s 92c | 2026-11-20 06:35 UTC | 4s 97c | 9s 0c | volatile | 12 of 12 | 17 | -50% |
@@ -148,6 +149,7 @@
 | Kaleidoscope Chain | 13084 | 4g 49s 0c | 2026-11-20 06:35 UTC | 4g 93s 50c | 4g 47s 0c | volatile | 12 of 12 | 14 | +11% |
 | Kobold Firestarter | 285192 | 2g 87s 0c | 2026-11-20 06:35 UTC | 23s 48c | 24s 50c | volatile | 12 of 12 | 12 | -20% |
 | Lady Alizabeth's Pendant | 13002 | 6g 99s 99c | 2026-11-20 06:35 UTC | 3g 57s 98c | 4g 90s 0c | volatile | 9 of 12 | 9 | -60% |
+| Lady Maye's Pendant | 14558 | 255g 0s 0c | 2026-11-20 06:35 UTC | 262g 50s 0c |  | too new | 2 of 12 | 1 |  |
 | Lapidis Tankard of Tidesippe | 4696 | 3g 29s 99c | 2026-11-20 06:35 UTC | 3g 57s 98c | 3g 73s 0c | moving | 9 of 12 | 11 | -54% |
 | Lavender Mageweave Shirt | 10054 | 90s 0c | 2026-11-19 12:56 UTC | 99s 0c | 99s 0c | volatile | 6 of 12 | 21 |  |
 | Lead Band | 11981 | 59s 0c | 2026-11-20 06:35 UTC | 34s 74c | 37s 50c | volatile | 12 of 12 | 38 | -7% |
@@ -187,6 +189,7 @@
 | Ogremind Ring | 1993 | 29s 0c | 2026-11-20 06:35 UTC | 29s 0c | 30s 50c | moving | 12 of 12 | 14 | -16% |
 | Onyx Choker | 12032 | 87s 0c | 2026-11-20 06:35 UTC | 94s 50c | 99s 0c | volatile | 11 of 12 | 32 | -41% |
 | Onyx Ring | 12001 | 1g 29s 0c | 2026-11-20 06:35 UTC | 94s 99c | 94s 49c | volatile | 10 of 12 | 18 | -4% |
+| Opal Ring | 11980 | 19g 59s 0c | 2026-11-20 06:35 UTC | 19g 59s 0c |  | too new | 1 of 12 | 1 |  |
 | Opulent Scepter | 15984 | 1g 59s 99c | 2026-11-20 06:35 UTC | 2g 9s 84c | 2g 9s 84c | moving | 6 of 12 | 5 |  |
 | Orange Mageweave Shirt | 10056 | 14s 99c | 2026-11-20 06:35 UTC | 16s 74c | 18s 25c | moving | 12 of 12 | 40 | -20% |
 | Orange Martial Shirt | 10052 | 1g 18s 83c | 2026-11-20 06:35 UTC | 1g 18s 91c | 1g 22s 44c | moving | 8 of 12 | 51 | -15% |
@@ -204,7 +207,9 @@
 | Primitive Mantle | 154 | 5s 0c | 2026-11-20 06:35 UTC | 13s 81c | 15s 91c | volatile | 12 of 12 | 5 | -8% |
 | Primitive Mantle | 6134 | 1g 75s 25c | 2026-11-20 06:35 UTC | 1g 85s 12c | 1g 75s 25c | volatile | 9 of 12 | 4 | +85% |
 | Prismatic Band | 12017 | 15g 0s 0c | 2026-11-20 06:35 UTC | 15g 0s 0c | 15g 0s 0c | steady | 3 of 12 | 1 |  |
+| Prismatic Pendant | 12048 | 50g 98s 0c | 2026-11-19 12:56 UTC | 50g 98s 0c |  | too new | 1 of 12 | 1 |  |
 | Quartz Ring | 11965 | 45s 0c | 2026-11-20 06:35 UTC | 40s 27c | 36s 27c | moving | 12 of 12 | 46 | +20% |
+| Queen Guard's Royal Seal | 284282 | 70g 0s 0c | 2026-11-20 06:35 UTC | 70g 0s 0c | 70g 0s 0c | moving | 3 of 12 | 1 |  |
 | Quicksilver Pendant | 12026 | 1g 69s 69c | 2026-11-20 06:35 UTC | 2g 0s 0c | 2g 0s 0c | moving | 9 of 12 | 26 | -33% |
 | Quicksilver Ring | 11991 | 1g 40s 0c | 2026-11-20 06:35 UTC | 1g 60s 0c | 1g 95s 0c | volatile | 9 of 12 | 7 | -80% |
 | Raincaller Scepter | 15975 | 24s 20c | 2026-11-20 06:35 UTC | 24s 89c | 25s 49c | moving | 12 of 12 | 10 | -21% |
@@ -244,9 +249,7 @@
 | Shimmering Stave | 7558 | 16s 9c | 2026-11-20 06:35 UTC | 16s 10c | 16s 10c | moving | 12 of 12 | 14 | -5% |
 | Silksand Star | 15964 | 63s 95c | 2026-11-20 06:35 UTC | 63s 97c | 64s 0c | steady | 9 of 12 | 7 | -30% |
 | Silver-thread Rod | 15928 | 23s 93c | 2026-11-20 06:35 UTC | 23s 95c | 23s 99c | steady | 12 of 12 | 18 | -2% |
-| Simple Black Dress | 10053 | 5g 74s 0c | 2026-11-20 06:35 UTC | 1g 24s 99c | 1g 75s 0c | volatile | 8 of 12 | 5 | -66% |
 | Simple Branch | 15933 | 6s 31c | 2026-11-20 06:35 UTC | 6s 33c | 6s 63c | steady | 12 of 12 | 38 | -10% |
-| Simple Dress | 6786 | 2s 58c | 2026-11-20 06:35 UTC | 2s 8c | 1s 79c | volatile | 12 of 12 | 8 | +39% |
 | Simple Wildflowers | 3421 | 2s 25c | 2026-11-20 06:35 UTC | 2s 69c | 8s 24c | volatile | 12 of 12 | 15 | -80% |
 | Six Demon Bag | 7734 | 8g 81s 0c | 2026-11-20 06:35 UTC | 3g 52s 22c | 5g 48s 0c | volatile | 11 of 12 | 11 | -57% |
 | Skibi's Pendant | 13089 | 12g 6s 0c | 2026-11-20 06:35 UTC | 11g 30s 0c | 9g 77s 49c | moving | 10 of 12 | 8 | +26% |
@@ -256,6 +259,7 @@
 | Spellbinder Orb | 15926 | 14s 95c | 2026-11-20 06:35 UTC | 11s 99c | 10s 42c | moving | 12 of 12 | 32 | +26% |
 | Spinel Ring | 11970 | 20s 0c | 2026-11-20 06:35 UTC | 19s 50c | 20s 50c | moving | 12 of 12 | 88 | -16% |
 | Squire's Shirt | 45 | 99s 0c | 2026-11-19 12:56 UTC | 1g 99s 0c | 1g 99s 0c | moving | 4 of 12 | 2 |  |
+| Squire's Shirt | 6117 | 99s 0c | 2026-11-19 12:56 UTC | 99s 0c |  | too new | 1 of 12 | 2 |  |
 | Stardust Band | 12055 | 98s 0c | 2026-11-20 06:35 UTC | 1g 5s 50c | 1g 19s 0c | volatile | 9 of 12 | 13 | -63% |
 | Stonecloth Branch | 15963 | 50s 99c | 2026-11-20 06:35 UTC | 53s 18c | 58s 0c | steady | 11 of 12 | 8 | -14% |
 | Strength of Will | 4837 | 68s 99c | 2026-11-20 06:35 UTC | 24s 80c | 34s 0c | volatile | 12 of 12 | 8 | -33% |
@@ -274,6 +278,7 @@
 | Thallium Choker | 12020 | 87s 99c | 2026-11-20 06:35 UTC | 83s 99c | 88s 49c | moving | 12 of 12 | 80 | -16% |
 | Thallium Hoop | 11986 | 23s 44c | 2026-11-20 06:35 UTC | 24s 22c | 30s 75c | volatile | 12 of 12 | 53 | -62% |
 | The 1 Ring | 8350 | 3g 90s 0c | 2026-11-20 06:35 UTC | 3g 65s 1c | 2g 63s 50c | volatile | 12 of 12 | 19 | +128% |
+| The Lion Horn of Stormwind | 14557 | 1,000g 0s 0c | 2026-11-19 18:23 UTC | 800g 0s 0c |  | too new | 1 of 12 | 2 |  |
 | The Queen's Jewel | 13094 | 80s 0c | 2026-11-20 06:35 UTC | 79s 95c | 72s 50c | moving | 12 of 12 | 22 | +27% |
 | Thendal Novice's Shirt | 271663 | 24s 55c | 2026-11-20 06:35 UTC | 30s 0c | 64s 99c | volatile | 12 of 12 | 5 | -57% |
 | Thendal Survivalist's Shirt | 271668 | 99s 99c | 2026-11-20 06:35 UTC | 17s 80c | 12s 30c | volatile | 12 of 12 | 6 | +27% |

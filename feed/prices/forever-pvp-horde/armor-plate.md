@@ -86,6 +86,7 @@
 | Enormous Ogre Belt | 13145 | 90s 0c | 2026-11-20 06:35 UTC | 95s 50c | 97s 0c | volatile | 12 of 12 | 18 | -33% |
 | Exalted Armsplints | 14983 | 2g 5s 0c | 2026-11-20 06:35 UTC | 3g 2s 0c | 3g 2s 0c | volatile | 6 of 12 | 2 |  |
 | Exalted Epaulets | 14981 | 9g 99s 0c | 2026-11-15 | 9g 99s 0c |  | too new | 1 of 12 | 1 |  |
+| Exalted Gauntlets | 14976 | 1g 99s 0c | 2026-11-20 06:35 UTC | 1g 99s 0c |  | too new | 1 of 12 | 2 |  |
 | Exalted Girdle | 14977 | 3g 1s 99c | 2026-11-20 06:35 UTC | 2g 78s 99c | 3g 1s 99c | moving | 5 of 12 | 6 |  |
 | Exalted Legplates | 14980 | 20g 0s 0c | 2026-11-19 12:56 UTC | 6g 0s 0c | 6g 0s 0c | volatile | 3 of 12 | 1 |  |
 | Field Plate Armor | 9286 | 1g 44s 0c | 2026-11-20 06:35 UTC | 96s 0c | 1g 9s 0c | moving | 10 of 12 | 10 | -23% |
@@ -195,8 +196,10 @@
 | Krol'dok Warplate Gauntlets | 287012 | 2g 69s 0c | 2026-11-20 06:35 UTC | 2g 34s 49c | 2g 69s 0c | volatile | 11 of 12 | 16 | -37% |
 | Krol'dok Warplate Legplates | 287013 | 13g 97s 99c | 2026-11-20 06:35 UTC | 8g 70s 0c | 8g 70s 0c | moving | 12 of 12 | 16 | +7% |
 | Krol'dok Warplate Pauldrons | 287014 | 10g 0s 0c | 2026-11-20 06:35 UTC | 9g 0s 0c | 10g 0s 0c | moving | 11 of 12 | 21 | -10% |
+| Light Plate Boots | 8082 | 99s 0c | 2026-11-19 18:23 UTC | 99s 0c |  | too new | 1 of 12 | 1 |  |
 | Light Plate Bracers | 8083 | 34s 0c | 2026-11-19 12:56 UTC | 34s 0c |  | too new | 2 of 12 | 1 |  |
 | Light Plate Chestpiece | 8080 | 90s 0c | 2026-11-15 | 90s 0c |  | too new | 1 of 12 | 1 |  |
+| Light Plate Helmet | 8755 | 2g 11s 0c | 2026-11-20 06:35 UTC | 2g 33s 50c |  | too new | 2 of 12 | 4 |  |
 | Light Plate Pants | 8085 | 2g 79s 0c | 2026-11-20 06:35 UTC | 1g 79s 0c | 1g 79s 0c | volatile | 4 of 12 | 2 |  |
 | Lightforge Belt | 16723 | 3g 50s 0c | 2026-11-20 06:35 UTC | 7g 78s 99c | 9g 0s 0c | volatile | 9 of 12 | 17 | -68% |
 | Lightforge Bracers | 16722 | 82g 0s 0c | 2026-11-20 06:35 UTC | 68g 0s 0c | 57g 49s 99c | moving | 8 of 12 | 9 | +36% |
@@ -247,6 +250,7 @@
 | Saltstone Shoulder Pads | 14901 | 1g 95s 0c | 2026-11-20 06:35 UTC | 1g 4s 94c | 1g 12s 0c | volatile | 10 of 12 | 7 | -43% |
 | Saltstone Surcoat | 14895 | 1g 99s 0c | 2026-11-20 06:35 UTC | 1g 64s 0c | 1g 99s 0c | volatile | 10 of 12 | 6 | -31% |
 | Sapphiron's Scale Boots | 13070 | 18g 0s 0c | 2026-11-20 06:35 UTC | 22g 74s 85c | 24g 0s 0c | moving | 9 of 12 | 12 | -5% |
+| Shin Slicers | 282071 | 2g 50s 0c | 2026-11-19 18:23 UTC | 2g 50s 0c |  | too new | 1 of 12 | 1 |  |
 | Shining Mithril Boots | 250542 | 3g 99s 0c | 2026-11-20 06:35 UTC | 3g 17s 48c | 3g 20s 0c | moving | 9 of 12 | 11 | -26% |
 | Shining Mithril Breastplate | 250540 | 5g 0s 0c | 2026-11-20 06:35 UTC | 5g 30s 47c | 5g 39s 99c | moving | 7 of 12 | 4 |  |
 | Shining Mithril Gauntlet | 250545 | 1g 1s 97c | 2026-11-19 18:23 UTC | 1g 15s 98c | 1g 15s 98c | steady | 6 of 12 | 31 |  |
@@ -327,6 +331,8 @@
 | Warbringer's Spaulders | 14946 | 79s 0c | 2026-11-20 06:35 UTC | 75s 99c | 80s 0c | moving | 11 of 12 | 9 | -31% |
 | Warleader's Belt | 14864 | 2g 15s 98c | 2026-11-20 06:35 UTC | 2g 31s 0c | 2g 65s 50c | moving | 6 of 12 | 3 |  |
 | Warleader's Bracers | 14869 | 1g 45s 0c | 2026-11-20 06:35 UTC | 1g 90s 0c | 1g 90s 0c | volatile | 7 of 12 | 5 |  |
+| Warleader's Breastplate | 14862 | 15g 0s 0c | 2026-11-19 18:23 UTC | 15g 0s 0c |  | too new | 1 of 12 | 1 |  |
+| Warleader's Crown | 14866 | 3g 0s 0c | 2026-11-19 12:56 UTC | 7g 75s 0c |  | too new | 2 of 12 | 2 |  |
 | Warleader's Gauntlets | 14863 | 2g 99s 0c | 2026-11-20 06:35 UTC | 2g 83s 0c | 2g 83s 0c | volatile | 8 of 12 | 4 | -24% |
 | Warleader's Greaves | 14865 | 4g 25s 15c | 2026-11-20 06:35 UTC | 4g 25s 16c | 4g 25s 15c | moving | 6 of 12 | 2 |  |
 | Warleader's Shoulders | 14868 | 3g 50s 0c | 2026-11-17 | 3g 25s 0c |  | too new | 2 of 12 | 1 |  |

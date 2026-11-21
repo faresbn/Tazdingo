@@ -19,12 +19,14 @@
 | Bearded Axe | 2025 | 48s 0c | 2026-11-19 12:56 UTC | 32s 50c | 17s 0c | volatile | 7 of 12 | 1 | +103% |
 | Bearded Boneaxe | 2878 | 97s 0c | 2026-11-20 06:35 UTC | 95s 85c | 98s 0c | moving | 12 of 12 | 20 | -3% |
 | Beaten Battle Axe | 1417 | 3s 0c | 2026-11-20 06:35 UTC | 1s 98c | 1s 64c | volatile | 12 of 12 | 12 | +98% |
+| Black Metal War Axe | 2015 | 66s 0c | 2026-11-18 16:01 UTC | 66s 0c |  | too new | 1 of 12 | 1 |  |
 | Bloodspiller | 7753 | 1g 68s 99c | 2026-11-20 06:35 UTC | 1g 99s 99c | 2g 14s 50c | volatile | 12 of 12 | 11 | -42% |
 | Blue Glittering Axe | 7942 | 2g 48s 50c | 2026-11-20 06:35 UTC | 2g 57s 50c | 2g 98s 98c | moving | 11 of 12 | 27 | -19% |
 | Blurred Axe | 4824 | 1g 20s 0c | 2026-11-19 18:23 UTC | 1g 20s 0c | 1g 30s 0c | volatile | 11 of 12 | 4 | -27% |
 | Boahn's Fang | 5423 | 2g 25s 0c | 2026-11-18 16:01 UTC | 2g 25s 0c |  | steady | 2 of 12 | 1 |  |
 | Brain Hacker | 1263 | 249g 99s 93c | 2026-11-20 06:35 UTC | 242g 49s 96c | 249g 0s 0c | moving | 9 of 12 | 4 | -3% |
 | Brashclaw's Chopper | 2203 | 60s 0c | 2026-11-20 06:35 UTC | 62s 50c | 83s 99c | moving | 5 of 12 | 3 | -34% |
+| Broad Axe | 2479 | 34s 0c | 2026-11-20 06:35 UTC | 66s 50c |  | too new | 2 of 12 | 2 |  |
 | Bronze Axe | 2849 | 90s 0c | 2026-11-20 06:35 UTC | 14s 68c | 14s 80c | moving | 12 of 12 | 78 | -2% |
 | Bronze Battle Axe | 7958 | 57s 19c | 2026-11-20 06:35 UTC | 57s 9c | 51s 35c | moving | 12 of 12 | 81 | +28% |
 | Brutal War Axe | 3210 | 56s 20c | 2026-11-20 06:35 UTC | 56s 23c | 56s 42c | steady | 12 of 12 | 68 | -1% |
@@ -66,6 +68,7 @@
 | Grunt Axe | 4568 | 16s 90c | 2026-11-20 06:35 UTC | 16s 93c | 16s 96c | steady | 12 of 12 | 66 | +0% |
 | Guillotine Axe | 2807 | 2g 55s 50c | 2026-11-20 06:35 UTC | 2g 47s 75c | 1g 68s 0c | volatile | 12 of 12 | 10 | +125% |
 | Hacking Cleaver | 15232 | 61s 11c | 2026-11-20 06:35 UTC | 61s 10c | 61s 20c | steady | 12 of 12 | 56 | -1% |
+| Hand Axe | 2134 | 30s 0c | 2026-11-20 06:35 UTC | 30s 0c |  | too new | 1 of 12 | 2 |  |
 | Hatchet | 853 | 10s 0c | 2026-11-11 | 14s 50c | 10s 0c | volatile | 3 of 12 | 1 |  |
 | Headchopper | 1680 | 4g 99s 16c | 2026-11-20 06:35 UTC | 4g 99s 58c | 5g 27s 77c | volatile | 8 of 12 | 2 | -65% |
 | Headsplitter | 7786 | 1g 1s 50c | 2026-11-20 06:35 UTC | 1g 3s 24c | 1g 36s 50c | volatile | 12 of 12 | 14 | -33% |

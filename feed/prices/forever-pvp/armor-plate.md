@@ -326,6 +326,7 @@
 | Warbringer's Spaulders | 14946 | 60s 0c | 2026-11-18 16:01 UTC | 75s 99c | 80s 0c | moving | 9 of 13 | 9 | -60% |
 | Warleader's Belt | 14864 | 2g 31s 0c | 2026-11-18 16:01 UTC | 3g 17s 0c | 3g 17s 0c | moving | 4 of 13 | 2 |  |
 | Warleader's Bracers | 14869 | 3g 90s 0c | 2026-11-18 13:03 UTC | 2g 0s 0c | 2g 0s 0c | moving | 5 of 13 | 5 |  |
+| Warleader's Crown | 14866 | 12g 50s 0c | 2026-11-18 16:01 UTC | 12g 50s 0c |  | too new | 1 of 13 | 1 |  |
 | Warleader's Gauntlets | 14863 | 2g 67s 0c | 2026-11-18 16:01 UTC | 3g 22s 37c | 3g 22s 37c | volatile | 6 of 13 | 4 |  |
 | Warleader's Greaves | 14865 | 4g 40s 16c | 2026-11-18 16:01 UTC | 4g 20s 8c | 4g 20s 8c | moving | 4 of 13 | 2 |  |
 | Warleader's Shoulders | 14868 | 3g 50s 0c | 2026-11-17 10:15 UTC | 3g 25s 0c |  | too new | 2 of 13 | 1 |  |

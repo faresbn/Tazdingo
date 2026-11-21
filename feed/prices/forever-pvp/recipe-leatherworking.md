@@ -25,6 +25,7 @@
 | Pattern: Blue Dragonscale Breastplate | 15751 | 3g 30s 98c | 2026-11-18 13:03 UTC | 17g 45s 0c | 17g 45s 0c | volatile | 6 of 13 | 6 |  |
 | Pattern: Blue Dragonscale Helm | 252938 | 129g 13s 0c | 2026-11-18 16:01 UTC | 39g 54s 49c | 49g 13s 0c | volatile | 7 of 13 | 3 |  |
 | Pattern: Blue Dragonscale Shoulders | 15763 | 90s 0c | 2026-11-18 13:03 UTC | 1g 32s 0c | 1g 32s 0c | moving | 5 of 13 | 12 |  |
+| Pattern: Blue Suede Bracers | 252888 | 124g 13s 0c | 2026-11-18 16:01 UTC | 124g 13s 0c |  | too new | 1 of 13 | 2 |  |
 | Pattern: Blue Suede Gloves | 252866 | 59s 0c | 2026-11-18 13:03 UTC | 58s 81c | 59s 0c | volatile | 7 of 13 | 12 |  |
 | Pattern: Blue Suede Hat | 252890 | 3g 50s 0c | 2026-11-18 16:01 UTC | 4g 8s 45c | 4g 66s 90c | moving | 7 of 13 | 12 |  |
 | Pattern: Blue Suede Pants | 252878 | 2g 0s 0c | 2026-11-18 16:01 UTC | 1g 49s 99c | 1g 49s 99c | volatile | 6 of 13 | 10 |  |
@@ -156,6 +157,7 @@
 | Pattern: Tooled Leather Crown | 252882 | 80s 0c | 2026-11-18 16:01 UTC | 97s 98c | 97s 98c | volatile | 8 of 13 | 12 | -82% |
 | Pattern: Tooled Leather Epaulets | 252887 | 9g 0s 0c | 2026-11-18 16:01 UTC | 14g 0s 0c | 14g 0s 0c | moving | 3 of 13 | 1 |  |
 | Pattern: Tooled Leather Gauntlets | 252880 | 7g 99s 89c | 2026-11-18 16:01 UTC | 9g 99s 0c | 9g 99s 0c | moving | 6 of 13 | 4 |  |
+| Pattern: Tooled Leather Pants | 252889 | 10g 13s 0c | 2026-11-18 16:01 UTC | 25g 6s 50c |  | too new | 2 of 13 | 1 |  |
 | Pattern: Totemic Leather Armor | 252774 | 14s 69c | 2026-11-18 16:01 UTC | 14s 84c | 13s 50c | moving | 12 of 13 | 27 | +19% |
 | Pattern: Totemic Leather Helm | 252817 | 85s 0c | 2026-11-18 16:01 UTC | 11s 94c | 14s 40c | volatile | 11 of 13 | 21 | -43% |
 | Pattern: Totemic Leather Pants | 252795 | 14s 1c | 2026-11-18 16:01 UTC | 14s 50c | 14s 0c | moving | 12 of 13 | 30 | +7% |

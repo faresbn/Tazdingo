@@ -184,6 +184,7 @@
 | Deadly Poison | 2892 | 2s 0c | 2026-11-20 06:35 UTC | 87c | 1s 97c | moving | 11 of 12 | 136 | -56% |
 | Deadly Poison II | 2893 | 3s 58c | 2026-11-20 06:35 UTC | 3s 67c | 3s 99c | moving | 9 of 12 | 234 | -27% |
 | Deadly Poison III | 8984 | 9s 99c | 2026-11-20 06:35 UTC | 9s 99c | 9s 99c | moving | 8 of 12 | 199 | -66% |
+| Deadly Poison IV | 8985 | 12s 0c | 2026-11-20 06:35 UTC | 9s 0c | 9s 0c | moving | 3 of 12 | 40 |  |
 | Dense Sharpening Stone | 12404 | 4s 96c | 2026-11-20 06:35 UTC | 5s 13c | 6s 79c | volatile | 10 of 12 | 2653 | -49% |
 | Dense Weightstone | 12643 | 5s 7c | 2026-11-20 06:35 UTC | 5s 2c | 6s 53c | volatile | 10 of 12 | 1425 | -69% |
 | Enchanted Lute | 279976 | 1s 55c | 2026-11-20 06:35 UTC | 1s 80c | 1s 87c | moving | 12 of 12 | 376 | -4% |
@@ -298,5 +299,6 @@
 | Wound Poison | 10918 | 6s 0c | 2026-11-20 06:35 UTC | 1s 62c | 2s 73c | volatile | 10 of 12 | 88 | -46% |
 | Wound Poison II | 10920 | 9s 60c | 2026-11-20 06:35 UTC | 9s 79c | 9s 79c | volatile | 4 of 12 | 134 |  |
 | Wound Poison III | 10921 | 19s 40c | 2026-11-20 06:35 UTC | 10s 70c | 10s 70c | volatile | 4 of 12 | 26 |  |
+| Wound Poison IV | 10922 | 14s 0c | 2026-11-20 06:35 UTC | 14s 0c | 14s 0c | moving | 3 of 12 | 80 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

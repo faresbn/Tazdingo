@@ -46,7 +46,9 @@
 | Crusader's Shield | 10195 | 3g 39s 0c | 2026-11-18 16:01 UTC | 3g 80s 0c | 3g 71s 0c | moving | 7 of 13 | 2 |  |
 | Cutthroat's Buckler | 15133 | 38s 87c | 2026-11-18 13:03 UTC | 39s 44c | 39s 89c | moving | 10 of 13 | 9 | -21% |
 | Defender Shield | 6572 | 15s 98c | 2026-11-18 13:03 UTC | 15s 98c | 16s 0c | moving | 11 of 13 | 17 | -6% |
+| Deflecting Tower | 3987 | 69s 0c | 2026-11-18 13:03 UTC | 69s 0c |  | too new | 1 of 13 | 1 |  |
 | Demon Guard | 10366 | 4g 81s 0c | 2026-11-18 16:01 UTC | 7g 31s 0c |  | too new | 2 of 13 | 2 |  |
+| Dented Buckler | 17183 | 10s 0c | 2026-11-18 13:03 UTC | 10s 0c |  | too new | 1 of 13 | 1 |  |
 | Dervish Buckler | 6598 | 24s 37c | 2026-11-18 13:03 UTC | 24s 51c | 25s 0c | steady | 11 of 13 | 28 | -6% |
 | Dokebi Buckler | 14608 | 31s 99c | 2026-11-18 16:01 UTC | 32s 0c | 33s 0c | steady | 10 of 13 | 11 | -17% |
 | Dust Bowl | 4290 | 11s 8c | 2026-11-15 12:38 UTC | 11s 8c |  | too new | 1 of 13 | 1 |  |
@@ -78,6 +80,7 @@
 | High Chief's Shield | 14964 | 3g 12s 0c | 2026-11-18 16:01 UTC | 5g 0s 0c | 5g 0s 0c | moving | 5 of 13 | 5 |  |
 | Hulking Shield | 15891 | 22s 0c | 2026-11-18 16:01 UTC | 22s 52c | 24s 0c | volatile | 12 of 13 | 20 | -10% |
 | Hunting Buckler | 3652 | 5s 80c | 2026-11-18 16:01 UTC | 3s 99c | 4s 0c | moving | 12 of 13 | 86 | +0% |
+| Husk of the Husk | 284066 | 30g 20s 0c | 2026-11-18 13:03 UTC | 30g 20s 0c |  | too new | 1 of 13 | 1 |  |
 | Imbued Shield | 15943 | 5g 99s 0c | 2026-11-18 13:03 UTC | 5g 99s 0c |  | too new | 2 of 13 | 1 |  |
 | Impenetrable Wall | 15667 | 4g 32s 0c | 2026-11-15 12:38 UTC | 4g 32s 0c |  | too new | 1 of 13 | 1 |  |
 | Infantry Shield | 7108 | 16s 99c | 2026-11-18 16:01 UTC | 8s 47c | 6s 0c | volatile | 13 of 13 | 19 | +182% |
@@ -133,6 +136,7 @@
 | Scouting Buckler | 6571 | 20s 0c | 2026-11-18 16:01 UTC | 11s 98c | 13s 0c | moving | 11 of 13 | 23 | -33% |
 | Sentinel Buckler | 7463 | 65s 0c | 2026-11-18 16:01 UTC | 64s 0c | 65s 0c | steady | 10 of 13 | 19 | -3% |
 | Sentry's Shield | 15530 | 35s 0c | 2026-11-18 13:03 UTC | 33s 50c | 34s 0c | steady | 11 of 13 | 9 | -7% |
+| Shadowforge Shield | 282555 | 3g 50s 0c | 2026-11-18 16:01 UTC | 3g 50s 0c |  | too new | 1 of 13 | 1 |  |
 | Shield of Thorsen | 13079 | 50s 0c | 2026-11-18 16:01 UTC | 54s 0c | 65s 0c | volatile | 11 of 13 | 23 | -42% |
 | Simple Buckler | 2216 | 7s 50c | 2026-11-18 16:01 UTC | 3s 80c | 3s 40c | moving | 12 of 13 | 20 | +27% |
 | Skullance Shield | 13081 | 94s 99c | 2026-11-18 16:01 UTC | 96s 94c | 1g 6s 25c | moving | 10 of 13 | 17 | -42% |

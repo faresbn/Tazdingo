@@ -130,6 +130,7 @@
 | Chieftain's Headdress | 9953 | 89s 99c | 2026-11-20 06:35 UTC | 98s 50c | 1g 0s 0c | volatile | 11 of 12 | 11 | -37% |
 | Chieftain's Leggings | 9954 | 1g 49s 0c | 2026-11-20 06:35 UTC | 1g 57s 49c | 1g 75s 0c | moving | 9 of 12 | 10 | -21% |
 | Chieftain's Shoulders | 9955 | 1g 19s 97c | 2026-11-20 06:35 UTC | 1g 9s 98c | 1g 28s 0c | moving | 11 of 12 | 9 | -18% |
+| Chimaera Hide Legs | 284272 | 2g 0s 0c | 2026-11-19 12:56 UTC | 2g 0s 0c |  | too new | 2 of 12 | 1 |  |
 | Chimeric Boots | 15073 | 1g 73s 0c | 2026-11-20 06:35 UTC | 1g 92s 0c | 1g 92s 0c | moving | 6 of 12 | 22 |  |
 | Chimeric Gloves | 15074 | 3g 38s 8c | 2026-11-20 06:35 UTC | 3g 38s 8c |  | too new | 1 of 12 | 7 |  |
 | Chimeric Leggings | 15072 | 3g 0s 99c | 2026-11-19 12:56 UTC | 3g 99s 99c | 3g 99s 99c | steady | 4 of 12 | 10 |  |
@@ -240,6 +241,7 @@
 | Embossed Leather Vest | 2300 | 6s 19c | 2026-11-20 06:35 UTC | 2s 89c | 2s 40c | moving | 12 of 12 | 89 | +44% |
 | Enchanted Kodo Bracers | 13119 | 60s 50c | 2026-11-20 06:35 UTC | 45s 99c | 52s 50c | volatile | 12 of 12 | 22 | -39% |
 | Enduring Cap | 3020 | 1g 29s 0c | 2026-11-20 06:35 UTC | 88s 99c | 1g 0s 0c | moving | 12 of 12 | 20 | -26% |
+| Expert Goldminer's Helmet | 9375 | 99g 99s 99c | 2026-11-20 06:35 UTC | 99g 99s 99c | 99g 99s 99c | moving | 3 of 12 | 1 |  |
 | Feather-Stitched Moccasins | 282642 | 44s 0c | 2026-11-19 18:23 UTC | 44s 0c | 42s 0c | steady | 4 of 12 | 4 | +10% |
 | Feathered Breastplate | 8349 | 6g 98s 94c | 2026-11-20 06:35 UTC | 6g 28s 98c | 6g 34s 98c | moving | 8 of 12 | 16 | -58% |
 | Feathered Headdress | 3011 | 58s 50c | 2026-11-20 06:35 UTC | 62s 49c | 80s 97c | volatile | 11 of 12 | 3 | -31% |
@@ -412,6 +414,8 @@
 | Indomitable Armguards | 14682 | 1g 75s 0c | 2026-11-20 06:35 UTC | 1g 75s 0c | 1g 75s 0c | steady | 6 of 12 | 4 |  |
 | Indomitable Belt | 14684 | 2g 0s 0c | 2026-11-20 06:35 UTC | 1g 95s 0c | 2g 0s 0c | volatile | 8 of 12 | 2 | -74% |
 | Indomitable Boots | 14681 | 5g 55s 0c | 2026-11-20 06:35 UTC | 5g 55s 0c | 5g 55s 0c | steady | 3 of 12 | 1 |  |
+| Indomitable Epaulets | 14688 | 3g 99s 0c | 2026-11-19 18:23 UTC | 3g 99s 0c | 3g 99s 0c | moving | 3 of 12 | 1 |  |
+| Indomitable Headdress | 14686 | 3g 0s 0c | 2026-11-20 06:35 UTC | 2g 87s 50c |  | too new | 2 of 12 | 2 |  |
 | Indomitable Leggings | 14687 | 3g 51s 0c | 2026-11-20 06:35 UTC | 5g 75s 50c | 5g 75s 50c | volatile | 4 of 12 | 1 |  |
 | Infiltrator Armor | 7407 | 36s 78c | 2026-11-20 06:35 UTC | 36s 87c | 36s 93c | steady | 12 of 12 | 31 | -4% |
 | Infiltrator Boots | 7409 | 22s 88c | 2026-11-20 06:35 UTC | 22s 88c | 22s 95c | steady | 12 of 12 | 28 | -1% |
@@ -481,6 +485,7 @@
 | Mighty Helmet | 10150 | 3g 30s 0c | 2026-11-20 06:35 UTC | 3g 99s 50c | 3g 99s 50c | moving | 6 of 12 | 6 |  |
 | Mighty Leggings | 10152 | 3g 50s 0c | 2026-11-20 06:35 UTC | 5g 6s 49c | 6g 47s 99c | volatile | 8 of 12 | 3 | -49% |
 | Mighty Spaulders | 10153 | 2g 77s 0c | 2026-11-20 06:35 UTC | 3g 0s 0c | 3g 0s 0c | moving | 5 of 12 | 5 |  |
+| Mighty Tunic | 10151 | 4g 50s 0c | 2026-11-20 06:35 UTC | 4g 50s 0c | 4g 50s 0c | steady | 3 of 12 | 7 |  |
 | Moonchaser's Headdress | 283545 | 89s 90c | 2026-11-20 06:35 UTC | 1g 72s 50c | 2g 0s 0c | volatile | 11 of 12 | 3 | -31% |
 | Moonglow Vest | 6709 | 50s 0c | 2026-11-20 06:35 UTC | 40s 0c | 40s 0c | moving | 3 of 12 | 3 |  |
 | Murloc Scale Belt | 5780 | 18s 80c | 2026-11-20 06:35 UTC | 17s 39c | 16s 49c | moving | 12 of 12 | 32 | +12% |
@@ -551,6 +556,7 @@
 | Pioneer Trousers | 6269 | 9s 30c | 2026-11-20 06:35 UTC | 6s 25c | 3s 0c | volatile | 12 of 12 | 32 | +151% |
 | Pioneer Tunic | 6268 | 7s 46c | 2026-11-20 06:35 UTC | 7s 47c | 3s 0c | volatile | 12 of 12 | 21 | +149% |
 | Plaguebat Fur Gloves | 18744 | 14g 98s 0c | 2026-11-19 12:56 UTC | 15g 99s 0c | 25g 99s 99c | volatile | 7 of 12 | 2 | -58% |
+| Plaguehound Leggings | 18736 | 249g 12s 0c | 2026-11-20 06:35 UTC | 199g 10s 0c | 199g 10s 0c | moving | 3 of 12 | 2 |  |
 | Potent Armor | 15170 | 1g 40s 0c | 2026-11-20 06:35 UTC | 1g 95s 0c | 1g 99s 99c | moving | 9 of 12 | 5 | -2% |
 | Potent Bands | 15172 | 90s 0c | 2026-11-20 06:35 UTC | 87s 50c | 94s 0c | steady | 10 of 12 | 8 | -12% |
 | Potent Belt | 15178 | 93s 0c | 2026-11-20 06:35 UTC | 87s 0c | 91s 0c | steady | 10 of 12 | 6 | -9% |
@@ -718,8 +724,12 @@
 | Silver-lined Belt | 13011 | 54s 65c | 2026-11-20 06:35 UTC | 52s 52c | 45s 23c | volatile | 12 of 12 | 33 | +62% |
 | Skin-Flayed Footguards | 287000 | 7g 20s 0c | 2026-11-20 06:35 UTC | 6g 59s 49c | 6g 34s 50c | moving | 12 of 12 | 6 | +4% |
 | Sleek Feathered Tunic | 4861 | 1g 0s 0c | 2026-11-20 06:35 UTC | 75s 0c | 27s 50c | volatile | 10 of 12 | 2 | +295% |
+| Smooth Leather Belt | 3969 | 49s 0c | 2026-11-18 16:01 UTC | 49s 0c |  | too new | 1 of 12 | 2 |  |
+| Smooth Leather Boots | 3970 | 65s 0c | 2026-11-20 06:35 UTC | 65s 0c |  | too new | 2 of 12 | 2 |  |
 | Smooth Leather Bracers | 3971 | 58s 0c | 2026-11-15 | 58s 0c |  | too new | 1 of 12 | 1 |  |
 | Smooth Leather Gloves | 3973 | 1g 99s 99c | 2026-11-20 06:35 UTC | 55s 0c | 55s 0c | steady | 4 of 12 | 1 |  |
+| Smooth Leather Pants | 3974 | 83s 0c | 2026-11-19 12:56 UTC | 83s 0c |  | too new | 2 of 12 | 2 |  |
+| Smooth Leather Shoulderpads | 3975 | 4g 0s 52c | 2026-11-19 18:23 UTC | 2g 29s 76c |  | too new | 2 of 12 | 2 |  |
 | Spaulders of the Unseen | 13116 | 42g 99s 90c | 2026-11-20 06:35 UTC | 28g 40s 49c | 30g 90s 0c | moving | 9 of 12 | 4 | -21% |
 | Spirewind Fetter | 9406 | 7g 99s 99c | 2026-11-20 06:35 UTC | 5g 66s 64c | 5g 15s 0c | volatile | 11 of 12 | 6 | +10% |
 | Squealer's Belt | 4951 | 8s 97c | 2026-11-20 06:35 UTC | 6s 93c | 4s 88c | volatile | 11 of 12 | 3 | +246% |
@@ -744,6 +754,7 @@
 | Superior Tunic | 9809 | 20s 0c | 2026-11-20 06:35 UTC | 18s 80c | 19s 50c | steady | 12 of 12 | 30 | -8% |
 | Supreme Bracers | 15436 | 2g 35s 0c | 2026-11-20 06:35 UTC | 3g 1s 0c | 3g 1s 0c | volatile | 6 of 12 | 3 |  |
 | Supreme Crown | 15439 | 10g 0s 0c | 2026-11-18 16:01 UTC | 7g 99s 50c |  | too new | 2 of 12 | 1 |  |
+| Supreme Gloves | 15438 | 4g 0s 0c | 2026-11-19 12:56 UTC | 4g 0s 0c |  | too new | 1 of 12 | 1 |  |
 | Supreme Leggings | 15440 | 3g 71s 0c | 2026-11-15 | 3g 71s 0c |  | too new | 1 of 12 | 1 |  |
 | Supreme Sash | 15434 | 3g 50s 0c | 2026-11-20 06:35 UTC | 5g 65s 0c | 5g 65s 0c | moving | 4 of 12 | 2 |  |
 | Supreme Shoulders | 15441 | 9g 99s 99c | 2026-11-15 | 9g 99s 99c |  | too new | 1 of 12 | 1 |  |

@@ -40,6 +40,7 @@
 | Monk's Staff | 866 | 1g 67s 0c | 2026-11-18 16:01 UTC | 1g 67s 0c | 1g 73s 50c | moving | 10 of 13 | 25 | -52% |
 | Nightbane Staff | 3227 | 40s 0c | 2026-11-11 17:37 UTC | 40s 0c |  | too new | 1 of 13 | 1 |  |
 | Oaken War Staff | 1831 | 17s 90c | 2026-11-18 13:03 UTC | 17s 90c | 17s 97c | steady | 10 of 13 | 16 | -25% |
+| Pylon Poker | 287046 | 89g 99s 0c | 2026-11-18 13:03 UTC | 91g 99s 0c |  | too new | 2 of 13 | 1 |  |
 | Quarter Staff | 854 | 10s 0c | 2026-11-12 03:40 UTC | 10s 0c | 10s 0c | steady | 4 of 13 | 1 |  |
 | Riverside Staff | 1473 | 85s 0c | 2026-11-16 17:11 UTC | 65s 0c |  | too new | 2 of 13 | 1 |  |
 | Rough Wooden Staff | 1515 | 2s 0c | 2026-11-18 13:03 UTC | 2s 0c | 2s 0c | steady | 12 of 13 | 30 | +0% |
@@ -58,6 +59,7 @@
 | Staff of the Blessed Seer | 2271 | 1g 85s 0c | 2026-11-18 16:01 UTC | 1g 53s 50c | 1g 4s 50c | volatile | 12 of 13 | 14 | +50% |
 | Staff of the Friar | 3415 | 2g 30s 0c | 2026-11-18 16:01 UTC | 1g 15s 44c | 1g 15s 44c | volatile | 12 of 13 | 14 | -8% |
 | Staff of the Shade | 2549 | 1g 24s 88c | 2026-11-18 16:01 UTC | 1g 22s 44c | 1g 39s 0c | volatile | 11 of 13 | 18 | -41% |
+| Stout War Staff | 13823 | 1g 79s 0c | 2026-11-18 16:01 UTC | 1g 79s 0c |  | too new | 1 of 13 | 5 |  |
 | Sturdy Quarterstaff | 4566 | 10s 0c | 2026-11-18 16:01 UTC | 9s 34c | 7s 0c | volatile | 13 of 13 | 68 | +33% |
 | Tactician's Staff | 215375 | 12s 60c | 2026-11-18 13:03 UTC | 12s 75c | 12s 97c | moving | 10 of 13 | 42 | -46% |
 | Tanglewood Staff | 1720 | 3g 0s 0c | 2026-11-18 13:03 UTC | 3g 25s 50c | 3g 44s 50c | steady | 8 of 13 | 10 | -53% |

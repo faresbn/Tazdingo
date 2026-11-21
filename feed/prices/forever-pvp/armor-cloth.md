@@ -47,6 +47,7 @@
 | Antiquated Cloak | 4799 | 20s 0c | 2026-11-17 10:15 UTC | 29s 0c | 35s 50c | moving | 10 of 13 | 4 | -29% |
 | Apprentice's Boots | 55 | 95s 0c | 2026-11-17 10:15 UTC | 95s 0c |  | too new | 2 of 13 | 2 |  |
 | Apprentice's Pants | 1395 | 3g 69s 0c | 2026-11-18 16:01 UTC | 8g 0s 0c | 7g 0s 0c | volatile | 5 of 13 | 3 |  |
+| Apprentice's Robe | 6140 | 1g 0s 0c | 2026-11-17 10:15 UTC | 1g 0s 0c |  | too new | 1 of 13 | 2 |  |
 | Arachnidian Armor | 14288 | 1g 50s 0c | 2026-11-18 13:03 UTC | 3g 33s 0c | 3g 33s 0c | volatile | 7 of 13 | 2 |  |
 | Arachnidian Bracelets | 14291 | 90s 0c | 2026-11-18 16:01 UTC | 1g 4s 0c | 1g 4s 0c | moving | 6 of 13 | 6 |  |
 | Arachnidian Cape | 14292 | 82s 0c | 2026-11-18 16:01 UTC | 99s 0c | 99s 0c | steady | 9 of 13 | 3 | -3% |
@@ -242,6 +243,7 @@
 | Charger's Cloak | 15475 | 4s 0c | 2026-11-15 14:40 UTC | 1s 0c | 1s 0c | steady | 10 of 13 | 4 | +0% |
 | Chief Brigadier Cloak | 4726 | 24s 19c | 2026-11-18 16:01 UTC | 24s 59c | 25s 0c | moving | 10 of 13 | 28 | -15% |
 | Chieftain's Cloak | 9951 | 82s 0c | 2026-11-18 13:03 UTC | 91s 49c | 1g 0s 0c | volatile | 10 of 13 | 10 | -54% |
+| Chromatic Robe | 2615 | 70s 0c | 2026-11-18 13:03 UTC | 70s 0c |  | too new | 1 of 13 | 1 |  |
 | Cindercloth Boots | 10044 | 1g 99s 31c | 2026-11-18 13:03 UTC | 2g 0s 0c | 2g 0s 0c | volatile | 5 of 13 | 6 |  |
 | Cindercloth Cloak | 14044 | 5g 50s 0c | 2026-11-18 16:01 UTC | 5g 50s 0c | 5g 50s 0c | steady | 3 of 13 | 8 |  |
 | Cindercloth Gloves | 14043 | 2g 90s 0c | 2026-11-18 16:01 UTC | 2g 94s 99c | 2g 94s 99c | moving | 4 of 13 | 9 |  |
@@ -311,6 +313,7 @@
 | Cross-stitched Vest | 1786 | 6s 86c | 2026-11-18 16:01 UTC | 6s 87c | 6s 88c | steady | 10 of 13 | 14 | -24% |
 | Crown of Maldazzar | 284065 | 6g 4s 0c | 2026-11-18 13:03 UTC | 4g 4s 0c | 5g 4s 0c | volatile | 3 of 13 | 1 |  |
 | Crusader's Cloak | 10194 | 90s 99c | 2026-11-18 16:01 UTC | 92s 99c | 1g 4s 50c | volatile | 10 of 13 | 9 | -53% |
+| Cultist's Cuffs | 284104 | 35g 0s 0c | 2026-11-18 13:03 UTC | 35g 0s 0c |  | too new | 1 of 13 | 1 |  |
 | Cutthroat's Cape | 15135 | 13s 80c | 2026-11-18 16:01 UTC | 13s 99c | 14s 0c | volatile | 11 of 13 | 27 | -53% |
 | Dalaran Wizard's Robe | 5110 | 4s 40c | 2026-11-18 16:01 UTC | 2s 68c | 3s 0c | moving | 13 of 13 | 76 | -11% |
 | Dalewind Trousers | 13008 | 1g 98s 0c | 2026-11-18 16:01 UTC | 2g 16s 98c | 2g 66s 0c | volatile | 9 of 13 | 8 | -86% |
@@ -438,11 +441,13 @@
 | Embersilk Tunic | 14230 | 60s 0c | 2026-11-18 13:03 UTC | 62s 0c | 62s 0c | moving | 7 of 13 | 9 |  |
 | Emblazoned Cloak | 4715 | 11s 0c | 2026-11-18 16:01 UTC | 10s 58c | 11s 0c | moving | 12 of 13 | 36 | -15% |
 | Embossed Leather Cloak | 2310 | 1s 90c | 2026-11-18 16:01 UTC | 1s 67c | 2s 0c | moving | 13 of 13 | 700 | -16% |
+| Embroidered Hat | 3892 | 4g 66s 0c | 2026-11-18 16:01 UTC | 4g 66s 0c |  | too new | 1 of 13 | 4 |  |
 | Enchanter's Cowl | 4322 | 25s 0c | 2026-11-18 13:03 UTC | 33s 50c | 39s 48c | moving | 10 of 13 | 60 | -47% |
 | Enduring Cape | 14763 | 31s 0c | 2026-11-18 16:01 UTC | 30s 50c | 34s 0c | moving | 11 of 13 | 15 | -39% |
 | Energy Cloak | 9397 | 97s 0c | 2026-11-18 16:01 UTC | 1g 98s 50c | 1g 99s 0c | volatile | 7 of 13 | 7 |  |
 | Engineering Gloves | 1659 | 39s 22c | 2026-11-18 16:01 UTC | 49s 99c | 52s 0c | moving | 9 of 13 | 6 | -17% |
 | Engraved Cape | 10231 | 1g 37s 0c | 2026-11-18 16:01 UTC | 1g 60s 0c | 1g 60s 0c | volatile | 11 of 13 | 4 | -11% |
+| Eternal Bindings | 14330 | 2g 99s 0c | 2026-11-18 16:01 UTC | 2g 83s 0c |  | too new | 2 of 13 | 3 |  |
 | Eternal Cloak | 14331 | 1g 89s 0c | 2026-11-18 13:03 UTC | 2g 75s 0c | 2g 75s 0c | moving | 4 of 13 | 4 |  |
 | Eternal Cord | 14337 | 5g 0s 0c | 2026-11-18 16:01 UTC | 5g 0s 0c | 5g 0s 0c | moving | 3 of 13 | 2 |  |
 | Eye of Flame | 3075 | 22g 97s 99c | 2026-11-18 16:01 UTC | 16g 94s 98c | 17g 88s 0c | volatile | 7 of 13 | 9 |  |
@@ -689,6 +694,7 @@
 | Knitted Tunic | 795 | 2s 0c | 2026-11-06 14:50 UTC | 2s 0c |  | too new | 1 of 13 | 1 |  |
 | Laced Cloak | 1741 | 1s 19c | 2026-11-18 13:03 UTC | 1s 44c | 2s 0c | moving | 12 of 13 | 11 | -28% |
 | Lambent Scale Cloak | 4706 | 6s 87c | 2026-11-18 13:03 UTC | 6s 87c | 7s 0c | steady | 11 of 13 | 21 | -14% |
+| Laminated Scale Cloak | 3995 | 89s 0c | 2026-11-18 13:03 UTC | 89s 0c |  | too new | 1 of 13 | 2 |  |
 | Lesser Belt of the Spire | 1299 | 45s 0c | 2026-11-15 14:40 UTC | 33s 50c |  | too new | 2 of 13 | 1 |  |
 | Lesser Wizard's Robe | 5766 | 14s 0c | 2026-11-18 16:01 UTC | 14s 0c | 15s 0c | steady | 11 of 13 | 122 | -12% |
 | Light Magesmith Robe | 2110 | 1g 0s 0c | 2026-11-13 | 1g 0s 0c |  | too new | 1 of 13 | 1 |  |
@@ -785,6 +791,7 @@
 | Naturopathy Footpads | 287038 | 35g 0s 95c | 2026-11-18 13:03 UTC | 44g 0s 0c | 44g 0s 0c | volatile | 5 of 13 | 1 |  |
 | Necrology Robes | 2292 | 4g 50s 99c | 2026-11-16 17:11 UTC | 4g 88s 88c | 3g 99s 99c | moving | 9 of 13 | 4 | +65% |
 | Necromancer Leggings | 2277 | 2g 0s 0c | 2026-11-18 16:01 UTC | 1g 77s 0c | 2g 10s 0c | volatile | 11 of 13 | 28 | -23% |
+| Neophyte's Boots | 51 | 50g 0s 0c | 2026-11-18 16:01 UTC | 50g 0s 0c |  | too new | 1 of 13 | 2 |  |
 | Neophyte's Pants | 52 | 1s 0c | 2026-11-05 18:58 UTC | 1s 0c |  | too new | 1 of 13 | 1 |  |
 | Nightscape Cloak | 8195 | 76s 80c | 2026-11-18 16:01 UTC | 78s 88c | 82s 47c | volatile | 10 of 13 | 42 | -80% |
 | Nightshade Cloak | 10224 | 1g 66s 0c | 2026-11-18 16:01 UTC | 1g 66s 0c | 1g 66s 0c | volatile | 7 of 13 | 5 |  |
@@ -924,6 +931,7 @@
 | Resplendent Belt | 14327 | 1g 50s 99c | 2026-11-18 16:01 UTC | 1g 75s 49c | 1g 99s 99c | moving | 7 of 13 | 10 |  |
 | Resplendent Boots | 14319 | 3g 38s 99c | 2026-11-18 16:01 UTC | 2g 77s 0c | 3g 7s 99c | volatile | 6 of 13 | 4 |  |
 | Resplendent Bracelets | 14320 | 2g 20s 0c | 2026-11-18 13:03 UTC | 2g 11s 0c | 2g 11s 0c | moving | 5 of 13 | 9 |  |
+| Resplendent Circlet | 14322 | 12g 6s 0c | 2026-11-18 16:01 UTC | 12g 6s 0c |  | too new | 1 of 13 | 1 |  |
 | Resplendent Cloak | 14321 | 1g 15s 0c | 2026-11-18 13:03 UTC | 1g 83s 0c | 2g 0s 0c | moving | 7 of 13 | 4 |  |
 | Resplendent Epaulets | 14325 | 6g 99s 0c | 2026-11-18 13:03 UTC | 5g 49s 0c |  | too new | 2 of 13 | 2 |  |
 | Resplendent Gauntlets | 14323 | 3g 99s 0c | 2026-11-18 16:01 UTC | 2g 99s 0c | 2g 99s 0c | moving | 5 of 13 | 5 |  |
@@ -1054,6 +1062,7 @@
 | Silksand Shoulder Pads | 14423 | 35s 0c | 2026-11-18 13:03 UTC | 39s 88c | 42s 99c | volatile | 10 of 13 | 10 | -71% |
 | Silksand Tunic | 14417 | 59s 0c | 2026-11-18 13:03 UTC | 64s 0c | 66s 50c | moving | 8 of 13 | 12 | -24% |
 | Silksand Wraps | 14425 | 64s 30c | 2026-11-18 16:01 UTC | 69s 84c | 75s 99c | moving | 9 of 13 | 9 | -46% |
+| Silver Dress Robes | 2618 | 2g 99s 0c | 2026-11-18 13:03 UTC | 2g 99s 0c |  | too new | 1 of 13 | 1 |  |
 | Silver-thread Amice | 6395 | 13s 0c | 2026-11-18 13:03 UTC | 12s 93c | 13s 0c | steady | 11 of 13 | 27 | -1% |
 | Silver-thread Armor | 7110 | 20s 75c | 2026-11-18 13:03 UTC | 20s 77c | 21s 0c | moving | 11 of 13 | 14 | -20% |
 | Silver-thread Boots | 6394 | 10s 95c | 2026-11-18 16:01 UTC | 10s 97c | 12s 0c | volatile | 12 of 13 | 24 | -39% |
@@ -1064,10 +1073,12 @@
 | Silver-thread Robe | 4035 | 20s 0c | 2026-11-18 13:03 UTC | 20s 0c | 20s 0c | steady | 10 of 13 | 17 | -5% |
 | Silver-thread Sash | 4714 | 10s 44c | 2026-11-18 16:01 UTC | 9s 74c | 9s 99c | steady | 11 of 13 | 42 | -3% |
 | Simple Bands | 9744 | 2s 50c | 2026-11-18 16:01 UTC | 2s 5c | 2s 0c | volatile | 13 of 13 | 6 | +2% |
+| Simple Black Dress | 10053 | 90s 0c | 2026-11-18 16:01 UTC | 1g 50s 0c | 1g 75s 0c | volatile | 6 of 13 | 5 |  |
 | Simple Blouse | 9749 | 4s 99c | 2026-11-18 16:01 UTC | 3s 0c | 3s 0c | steady | 13 of 13 | 19 | +0% |
 | Simple Britches | 9747 | 5s 0c | 2026-11-18 16:01 UTC | 2s 32c | 3s 0c | moving | 13 of 13 | 137 | -23% |
 | Simple Cape | 9745 | 1s 50c | 2026-11-18 16:01 UTC | 1s 74c | 1s 0c | volatile | 13 of 13 | 7 | +74% |
 | Simple Cord | 9742 | 1s 0c | 2026-11-18 13:03 UTC | 1s 0c | 1s 0c | steady | 13 of 13 | 7 | +0% |
+| Simple Dress | 6786 | 3s 0c | 2026-11-18 13:03 UTC | 1s 59c | 1s 59c | moving | 12 of 13 | 6 | +6% |
 | Simple Gloves | 9746 | 1s 50c | 2026-11-18 13:03 UTC | 1s 98c | 1s 98c | moving | 13 of 13 | 8 | -1% |
 | Simple Kilt | 10047 | 1s 99c | 2026-11-18 16:01 UTC | 1s 88c | 2s 0c | steady | 13 of 13 | 352 | -6% |
 | Simple Linen Boots | 10046 | 11s 95c | 2026-11-18 16:01 UTC | 3s 19c | 3s 9c | volatile | 12 of 13 | 26 | +60% |
@@ -1080,6 +1091,7 @@
 | Skyseer's Slippers | 285264 | 16s 0c | 2026-11-08 20:10 UTC | 12s 50c | 12s 50c | moving | 4 of 13 | 2 |  |
 | Slayer's Cape | 14752 | 11s 40c | 2026-11-18 13:03 UTC | 11s 70c | 12s 0c | moving | 11 of 13 | 25 | -22% |
 | Smoldering Boots | 3076 | 10s 0c | 2026-11-17 10:15 UTC | 10s 0c |  | too new | 2 of 13 | 2 |  |
+| Smoldering Gloves | 3074 | 1g 0s 0c | 2026-11-18 13:03 UTC | 1g 4s 0c |  | too new | 2 of 13 | 2 |  |
 | Smoldering Pants | 3073 | 29s 0c | 2026-11-18 16:01 UTC | 45s 0c | 48s 33c | volatile | 8 of 13 | 3 | -18% |
 | Smoldering Robe | 3072 | 45s 0c | 2026-11-17 10:15 UTC | 26s 16c | 26s 16c | moving | 4 of 13 | 1 |  |
 | Smooth Cloak | 3972 | 59s 0c | 2026-11-12 03:40 UTC | 59s 0c |  | too new | 1 of 13 | 1 |  |
@@ -1184,6 +1196,7 @@
 | Tough Cloak | 1806 | 4s 66c | 2026-11-18 13:03 UTC | 4s 68c | 4s 84c | moving | 9 of 13 | 11 | -33% |
 | Tracker's Cloak | 9919 | 58s 0c | 2026-11-18 16:01 UTC | 59s 19c | 72s 0c | moving | 9 of 13 | 16 | -41% |
 | Trapper's Boots | 6127 | 2g 0s 0c | 2026-11-18 13:03 UTC | 2g 72s 0c | 2g 35s 0c | volatile | 6 of 13 | 1 | +27100% |
+| Trapper's Pants | 6126 | 50g 0s 0c | 2026-11-18 13:03 UTC | 27g 50s 0c |  | too new | 2 of 13 | 2 |  |
 | Traveler's Cloak | 8297 | 1g 30s 0c | 2026-11-18 16:01 UTC | 1g 30s 0c | 1g 30s 0c | steady | 5 of 13 | 6 |  |
 | Tree Bark Jacket | 1486 | 1g 60s 0c | 2026-11-18 16:01 UTC | 97s 0c | 1g 0s 0c | moving | 11 of 13 | 11 | -3% |
 | Tribal Cloak | 4674 | 1s 0c | 2026-11-18 13:03 UTC | 1s 0c | 1s 0c | steady | 13 of 13 | 15 | +0% |
@@ -1203,8 +1216,12 @@
 | Twilight Pants | 7431 | 40s 0c | 2026-11-18 16:01 UTC | 39s 50c | 43s 99c | moving | 11 of 13 | 36 | -33% |
 | Twilight Robe | 7430 | 42s 0c | 2026-11-18 16:01 UTC | 42s 50c | 45s 0c | steady | 10 of 13 | 20 | -14% |
 | Twill Belt | 3944 | 35s 0c | 2026-11-15 14:40 UTC | 35s 0c |  | too new | 1 of 13 | 1 |  |
+| Twill Bracers | 3946 | 37s 0c | 2026-11-18 16:01 UTC | 37s 0c |  | too new | 1 of 13 | 1 |  |
 | Twill Cloak | 3947 | 49s 0c | 2026-11-15 12:38 UTC | 49s 0c |  | too new | 1 of 13 | 1 |  |
 | Twill Cover | 8754 | 14g 60s 0c | 2026-11-18 16:01 UTC | 60s 0c | 60s 0c | volatile | 3 of 13 | 1 |  |
+| Twill Gloves | 3948 | 47s 0c | 2026-11-17 10:15 UTC | 47s 0c |  | too new | 1 of 13 | 1 |  |
+| Twill Shoulderpads | 3950 | 63s 0c | 2026-11-18 16:01 UTC | 63s 0c |  | too new | 1 of 13 | 2 |  |
+| Twill Vest | 3951 | 9g 0s 0c | 2026-11-18 16:01 UTC | 9g 0s 0c |  | too new | 1 of 13 | 9 |  |
 | Venomshroud Armguards | 14439 | 78s 0c | 2026-11-18 13:03 UTC | 77s 50c | 99s 0c | moving | 9 of 13 | 14 | -32% |
 | Venomshroud Belt | 14446 | 80s 0c | 2026-11-18 16:01 UTC | 95s 1c | 1g 15s 13c | moving | 8 of 13 | 10 | -42% |
 | Venomshroud Boots | 14438 | 82s 0c | 2026-11-18 16:01 UTC | 83s 50c | 85s 50c | moving | 8 of 13 | 11 | -66% |
@@ -1251,7 +1268,9 @@
 | Watcher's Mantle | 14182 | 11s 75c | 2026-11-18 16:01 UTC | 11s 77c | 12s 0c | steady | 11 of 13 | 33 | -2% |
 | Watcher's Robes | 14184 | 21s 98c | 2026-11-18 13:03 UTC | 19s 98c | 22s 0c | volatile | 11 of 13 | 18 | -23% |
 | Webbed Cloak | 3261 | 40s 0c | 2026-11-15 12:38 UTC | 40s 0c | 40s 0c | steady | 3 of 13 | 2 |  |
+| Webbed Pants | 3263 | 25s 0c | 2026-11-18 13:03 UTC | 25s 0c |  | too new | 1 of 13 | 1 |  |
 | Webwing Cloak | 5751 | 13s 0c | 2026-11-18 16:01 UTC | 12s 0c | 13s 0c | steady | 11 of 13 | 21 | -8% |
+| Well Oiled Cloak | 12254 | 5g 0s 0c | 2026-11-18 13:03 UTC | 5g 0s 0c |  | too new | 1 of 13 | 1 |  |
 | Whispering Vest | 4781 | 45s 40c | 2026-11-18 16:01 UTC | 21s 0c | 21s 0c | volatile | 12 of 13 | 4 | -11% |
 | White Bandit Mask | 10008 | 52s 20c | 2026-11-18 16:01 UTC | 57s 38c | 59s 34c | volatile | 10 of 13 | 84 | -59% |
 | White Linen Robe | 6241 | 9s 99c | 2026-11-18 16:01 UTC | 3s 35c | 2s 70c | moving | 13 of 13 | 101 | +68% |

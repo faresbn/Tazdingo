@@ -8,6 +8,7 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Arcanite Rod | 16206 | 174g 0s 0c | 2026-11-18 13:03 UTC | 179g 73s 39c | 179g 73s 39c | steady | 4 of 13 | 7 |  |
 | Copper Rod | 6217 | 1s 15c | 2026-11-18 16:01 UTC | 1s 0c | 1s 0c | steady | 12 of 13 | 1301 | +0% |
+| Crude Wax Effigy | 247883 | 1s 50c | 2026-11-18 16:01 UTC | 1s 50c |  | too new | 1 of 13 | 2 |  |
 | Dream Dust | 11176 | 23s 53c | 2026-11-18 16:01 UTC | 26s 14c | 32s 22c | volatile | 11 of 13 | 1356 | -40% |
 | Golden Rod | 11128 | 12s 30c | 2026-11-18 16:01 UTC | 10s 88c | 10s 0c | moving | 12 of 13 | 326 | +21% |
 | Greater Astral Essence | 11082 | 14s 80c | 2026-11-18 16:01 UTC | 14s 63c | 14s 63c | moving | 12 of 13 | 978 | +0% |

@@ -32,6 +32,7 @@
 | Dig Rat | 5051 | 3s 9c | 2026-11-20 06:35 UTC | 3s 13c | 3s 24c | moving | 12 of 12 | 270 | -10% |
 | Draco-Incarcinatrix 900 | 12284 | 22s 0c | 2026-11-20 06:35 UTC | 52s 50c | 64s 35c | volatile | 7 of 12 | 18 |  |
 | Dran's Ripple Delivery | 8685 | 30s 1c | 2026-11-20 06:35 UTC | 58s 49c | 73s 20c | volatile | 9 of 12 | 9 | -71% |
+| Eggscilloscope Prototype | 12286 | 2g 99s 89c | 2026-11-20 06:35 UTC | 4g 99s 97c | 4g 99s 97c | volatile | 3 of 12 | 8 |  |
 | Eight of Beasts | 19236 | 4g 0s 0c | 2026-11-20 06:35 UTC | 5g 70s 0c | 7g 40s 0c | volatile | 7 of 12 | 20 |  |
 | Eight of Elementals | 19275 | 8g 99s 0c | 2026-11-20 06:35 UTC | 12g 38s 98c | 14g 99s 97c | moving | 9 of 12 | 8 | -68% |
 | Eight of Portals | 19284 | 1g 42s 99c | 2026-11-20 06:35 UTC | 1g 60s 0c | 1g 84s 99c | volatile | 8 of 12 | 10 | -94% |
@@ -148,6 +149,7 @@
 | Top Half of Advanced Armorsmithing: Volume III | 18784 | 14s 0c | 2026-11-20 06:35 UTC | 28s 49c | 30s 0c | volatile | 9 of 12 | 17 | -97% |
 | Torn Bear Pelt | 11407 | 1s 78c | 2026-11-20 06:35 UTC | 1s 14c | 1s 48c | volatile | 12 of 12 | 939 | -53% |
 | Twilight Lexicon - Chapter 1 | 20394 | 2g 77s 0c | 2026-11-20 06:35 UTC | 1g 1s 0c | 1g 1s 0c | volatile | 6 of 12 | 4 |  |
+| Twilight Lexicon - Chapter 2 | 20395 | 3g 0s 0c | 2026-11-19 18:23 UTC | 1g 55s 0c |  | too new | 2 of 12 | 3 |  |
 | Twilight Lexicon - Chapter 3 | 20396 | 87s 49c | 2026-11-20 06:35 UTC | 45s 0c | 45s 0c | volatile | 6 of 12 | 16 |  |
 | Two of Beasts | 19230 | 1g 85s 0c | 2026-11-20 06:35 UTC | 1g 92s 50c | 2g 5s 0c | volatile | 9 of 12 | 22 | -88% |
 | Two of Elementals | 19269 | 16g 49s 99c | 2026-11-20 06:35 UTC | 5g 7s 49c | 5g 80s 0c | volatile | 9 of 12 | 22 | -13% |

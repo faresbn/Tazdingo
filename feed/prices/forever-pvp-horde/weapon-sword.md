@@ -69,10 +69,12 @@
 | Feeble Sword | 1413 | 1s 0c | 2026-11-20 06:35 UTC | 1s 0c | 1s 0c | moving | 12 of 12 | 12 | +0% |
 | Feral Blade | 4766 | 59s 0c | 2026-11-20 06:35 UTC | 44s 44c | 39s 55c | volatile | 11 of 12 | 14 | +39% |
 | Fighter Broadsword | 15212 | 34s 89c | 2026-11-20 06:35 UTC | 34s 48c | 34s 69c | moving | 12 of 12 | 68 | -1% |
+| Fine Longsword | 13816 | 1g 22s 0c | 2026-11-20 06:35 UTC | 2g 40s 0c | 2g 40s 0c | volatile | 3 of 12 | 8 |  |
 | Fine Scimitar | 4560 | 67s 0c | 2026-11-20 06:35 UTC | 32s 0c | 6s 0c | volatile | 11 of 12 | 11 | +700% |
 | Frost Tiger Blade | 3854 | 2g 15s 0c | 2026-11-20 06:35 UTC | 1g 10s 49c | 1g 49s 0c | volatile | 11 of 12 | 24 | -29% |
 | Furious Falchion | 15215 | 1g 69s 89c | 2026-11-20 06:35 UTC | 1g 69s 89c | 1g 70s 42c | steady | 10 of 12 | 28 | -5% |
 | Gallant Flamberge | 15255 | 4g 42s 0c | 2026-11-20 06:35 UTC | 4g 64s 0c | 4g 72s 0c | moving | 8 of 12 | 13 | -48% |
+| Ghoulfang | 1387 | 3g 0s 0c | 2026-11-18 16:01 UTC | 3g 0s 0c |  | too new | 1 of 12 | 1 |  |
 | Ginn-su Sword | 9424 | 97g 0s 0c | 2026-11-20 06:35 UTC | 95g 45s 0c | 69g 87s 0c | volatile | 9 of 12 | 4 | +169% |
 | Gizmotron Megachopper | 9490 | 2g 99s 99c | 2026-11-20 06:35 UTC | 3g 34s 50c | 3g 34s 50c | moving | 12 of 12 | 9 | +5% |
 | Gladius | 2488 | 70s 0c | 2026-11-20 06:35 UTC | 70s 0c | 70s 0c | volatile | 5 of 12 | 5 | -86% |
@@ -145,7 +147,9 @@
 | Syndicate Executioner's Slicer | 283255 | 50s 0c | 2026-11-20 06:35 UTC | 44s 50c | 52s 50c | volatile | 12 of 12 | 19 | -38% |
 | Ta'Kierthan Songblade | 16039 | 69g 15s 0c | 2026-11-20 06:35 UTC | 69g 57s 0c | 69g 99s 0c | moving | 7 of 12 | 2 |  |
 | Tainted Pierce | 8225 | 4g 0s 0c | 2026-11-20 06:35 UTC | 4g 5s 0c | 4g 27s 0c | moving | 12 of 12 | 6 | -14% |
+| Tapered Greatsword | 13817 | 2g 70s 0c | 2026-11-20 06:35 UTC | 2g 60s 0c | 2g 60s 0c | moving | 4 of 12 | 2 |  |
 | Tarnished Bastard Sword | 2754 | 90s 10c | 2026-11-20 06:35 UTC | 95s 5c | 32s 50c | volatile | 12 of 12 | 3 | +805% |
+| Teebu's Blazing Longsword | 1728 | 3,000g 0s 0c | 2026-11-19 12:56 UTC | 4,000g 0s 0c |  | too new | 2 of 12 | 1 |  |
 | The Black Knight | 12974 | 5g 0s 0c | 2026-11-20 06:35 UTC | 98s 65c | 99s 50c | moving | 12 of 12 | 20 | -10% |
 | The Butcher | 8226 | 6g 34s 99c | 2026-11-20 06:35 UTC | 4g 72s 99c | 4g 97s 50c | moving | 12 of 12 | 16 | -5% |
 | The Skyblade | 286540 | 13g 0s 0c | 2026-11-20 06:35 UTC | 3g 87s 99c | 3g 45s 0c | moving | 12 of 12 | 8 | +32% |

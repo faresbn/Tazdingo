@@ -155,6 +155,7 @@
 | Wicked Spiked Mace | 920 | 43s 0c | 2026-11-18 13:03 UTC | 43s 0c | 43s 0c | steady | 10 of 13 | 2 | +0% |
 | Wooden Mallet | 2493 | 3s 0c | 2026-11-16 17:11 UTC | 4s 0c | 4s 0c | moving | 7 of 13 | 10 | +0% |
 | Wooden Maul | 1820 | 9s 69c | 2026-11-18 16:01 UTC | 9s 89c | 10s 0c | steady | 10 of 13 | 16 | -1% |
+| Worn Bludgeon | 280400 | 10g 0s 0c | 2026-11-18 16:01 UTC | 10g 0s 0c |  | too new | 1 of 13 | 2 |  |
 | Worn Mace | 36 | 1s 0c | 2026-11-11 15:03 UTC | 1s 0c | 1s 0c | steady | 3 of 13 | 2 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

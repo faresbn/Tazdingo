@@ -8,6 +8,7 @@
 |---|---|---|---|---|---|---|---|---|---|
 | A Little Somethin' | 281282 | 1g 99s 99c | 2026-11-20 06:35 UTC | 2g 0s 48c | 2g 4s 0c | steady | 10 of 12 | 29 | -6% |
 | Alterac Swiss | 8932 | 7s 6c | 2026-11-20 06:35 UTC | 7s 24c | 8s 25c | moving | 12 of 12 | 1420 | -34% |
+| Arcane Wine | 260631 | 29s 97c | 2026-11-20 06:35 UTC | 29s 97c | 29s 97c | steady | 3 of 12 | 36 |  |
 | Baked Salmon | 13935 | 12s 99c | 2026-11-20 06:35 UTC | 12s 74c | 13s 16c | moving | 8 of 12 | 1612 | -71% |
 | Barbecued Buzzard Wing | 4457 | 4s 0c | 2026-11-20 06:35 UTC | 3s 99c | 4s 31c | volatile | 12 of 12 | 790 | -32% |
 | Bat Hachee | 250067 | 10s 0c | 2026-11-20 06:35 UTC | 16s 30c | 16s 30c | volatile | 6 of 12 | 836 |  |
@@ -106,6 +107,7 @@
 | Mithril Head Trout | 8364 | 80c | 2026-11-20 06:35 UTC | 82c | 90c | moving | 12 of 12 | 3783 | -25% |
 | Mixed Berries | 11415 | 48s 99c | 2026-11-20 06:35 UTC | 49s 49c | 49s 99c | volatile | 7 of 12 | 12 |  |
 | Moist Cornbread | 4542 | 25c | 2026-11-20 06:35 UTC | 25c | 25c | volatile | 12 of 12 | 164 | -4% |
+| Molasses Firewater | 18288 | 80s 0c | 2026-11-20 06:35 UTC | 80s 0c |  | too new | 1 of 12 | 9 |  |
 | Monster Omelet | 12218 | 7s 0c | 2026-11-20 06:35 UTC | 10s 95c | 13s 99c | volatile | 9 of 12 | 482 | -73% |
 | Moon Harvest Pumpkin | 4602 | 1s 0c | 2026-11-20 06:35 UTC | 1s 4c | 1s 17c | volatile | 10 of 12 | 208 | -70% |
 | Moonberry Juice | 1645 | 2s 47c | 2026-11-20 06:35 UTC | 3s 54c | 4s 0c | volatile | 12 of 12 | 340 | -30% |
@@ -162,6 +164,7 @@
 | Slimy Smoothie | 249872 | 2s 50c | 2026-11-20 06:35 UTC | 1s 87c | 1s 92c | moving | 11 of 12 | 341 | -6% |
 | Slitherskin Mackerel | 787 | 30c | 2026-11-20 06:35 UTC | 27c | 24c | moving | 12 of 12 | 2227 | +29% |
 | Slushberry Brandy | 260632 | 21s 97c | 2026-11-20 06:35 UTC | 21s 99c | 21s 99c | steady | 4 of 12 | 24 |  |
+| Small Pumpkin | 4656 | 1s 33c | 2026-11-19 18:23 UTC | 1s 33c |  | too new | 1 of 12 | 1 |  |
 | Smoked Bear Meat | 6890 | 80c | 2026-11-20 06:35 UTC | 73c | 52c | volatile | 12 of 12 | 954 | +87% |
 | Smoked Desert Dumplings | 20452 | 29s 33c | 2026-11-20 06:35 UTC | 39s 65c | 39s 65c | volatile | 6 of 12 | 898 |  |
 | Smoked Sagefish | 21072 | 69c | 2026-11-20 06:35 UTC | 63c | 62c | moving | 12 of 12 | 2132 | +2% |
@@ -170,6 +173,7 @@
 | Soothing Turtle Bisque | 3729 | 5s 74c | 2026-11-20 06:35 UTC | 3s 15c | 3s 28c | volatile | 12 of 12 | 533 | -10% |
 | Southshore Stout | 3703 | 9s 0c | 2026-11-20 06:35 UTC | 1s 0c | 1s 0c | volatile | 12 of 12 | 51 | -33% |
 | Special Chicken Feed | 11109 | 2g 25s 0c | 2026-11-20 06:35 UTC | 2g 0s 0c | 2g 0s 0c | volatile | 7 of 12 | 4 |  |
+| Spectral Spirits | 260629 | 8s 99c | 2026-11-20 06:35 UTC | 9s 99c | 9s 99c | moving | 3 of 12 | 97 |  |
 | Spiced Chili Crab | 12216 | 4s 50c | 2026-11-20 06:35 UTC | 4s 97c | 8s 0c | volatile | 11 of 12 | 336 | -75% |
 | Spiced Wolf Meat | 2680 | 1s 0c | 2026-11-20 06:35 UTC | 99c | 99c | moving | 12 of 12 | 915 | +1% |
 | Spicy Smoothie | 249875 | 15s 97c | 2026-11-20 06:35 UTC | 17s 88c | 24s 99c | volatile | 9 of 12 | 180 | -39% |

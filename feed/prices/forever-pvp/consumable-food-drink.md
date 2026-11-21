@@ -8,6 +8,7 @@
 |---|---|---|---|---|---|---|---|---|---|
 | A Little Somethin' | 281282 | 2g 18s 0c | 2026-11-18 16:01 UTC | 2g 2s 49c | 2g 4s 0c | steady | 8 of 13 | 29 | -22% |
 | Alterac Swiss | 8932 | 6s 89c | 2026-11-18 16:01 UTC | 7s 89c | 8s 64c | volatile | 11 of 13 | 945 | -47% |
+| Arcane Wine | 260631 | 30s 0c | 2026-11-18 16:01 UTC | 30s 0c |  | too new | 1 of 13 | 42 |  |
 | Baked Salmon | 13935 | 8s 50c | 2026-11-18 16:01 UTC | 13s 41c | 13s 41c | moving | 6 of 13 | 1182 |  |
 | Barbecued Buzzard Wing | 4457 | 3s 98c | 2026-11-18 16:01 UTC | 4s 11c | 4s 31c | volatile | 10 of 13 | 558 | -54% |
 | Bat Hachee | 250067 | 12s 63c | 2026-11-18 16:01 UTC | 21s 96c | 21s 96c | moving | 4 of 13 | 836 |  |
@@ -170,6 +171,7 @@
 | Soothing Turtle Bisque | 3729 | 15s 0c | 2026-11-18 16:01 UTC | 3s 0c | 3s 26c | moving | 11 of 13 | 516 | -31% |
 | Southshore Stout | 3703 | 50c | 2026-11-18 16:01 UTC | 98c | 1s 0c | volatile | 11 of 13 | 41 | -62% |
 | Special Chicken Feed | 11109 | 1g 50s 0c | 2026-11-18 13:03 UTC | 2g 0s 0c | 2g 0s 0c | volatile | 5 of 13 | 4 |  |
+| Spectral Spirits | 260629 | 15s 0c | 2026-11-18 16:01 UTC | 15s 0c |  | too new | 1 of 13 | 97 |  |
 | Spiced Chili Crab | 12216 | 6s 21c | 2026-11-18 16:01 UTC | 7s 10c | 9s 26c | volatile | 9 of 13 | 328 | -84% |
 | Spiced Wolf Meat | 2680 | 1s 30c | 2026-11-18 16:01 UTC | 1s 1c | 82c | volatile | 12 of 13 | 1208 | +63% |
 | Spicy Smoothie | 249875 | 16s 0c | 2026-11-18 16:01 UTC | 27s 7c | 29s 15c | moving | 7 of 13 | 180 |  |

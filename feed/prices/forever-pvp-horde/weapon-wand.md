@@ -49,6 +49,7 @@
 | Wand of Allistarj | 13065 | 3g 47s 98c | 2026-11-20 06:35 UTC | 3g 41s 49c | 4g 19s 99c | moving | 10 of 12 | 10 | -38% |
 | Wand of Arcane Potency | 18338 | 4g 99s 99c | 2026-11-20 06:35 UTC | 4g 88s 49c | 4g 99s 99c | volatile | 9 of 12 | 8 | -81% |
 | Wand of Eventide | 5214 | 39s 31c | 2026-11-20 06:35 UTC | 39s 35c | 39s 68c | steady | 12 of 12 | 30 | -2% |
+| Whelpfire Wand | 281925 | 1g 0s 0c | 2026-11-20 06:35 UTC | 62s 0c |  | too new | 2 of 12 | 1 |  |
 | Wizard's Hand | 15280 | 2g 14s 0c | 2026-11-20 06:35 UTC | 2g 18s 50c | 2g 19s 97c | moving | 10 of 12 | 14 | -27% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

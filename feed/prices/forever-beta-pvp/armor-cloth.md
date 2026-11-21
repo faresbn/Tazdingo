@@ -100,6 +100,7 @@
 | Shadow Goggles | 4373 | 33s 0c | 2026-10-17 12:36 UTC | 41s 50c | 36s 50c | volatile | 12 of 12 | 25 | +46% |
 | Shadow Hood | 4323 | 6g 0s 0c | 2026-10-17 12:36 UTC | 2g 24s 50c | 2g 54s 0c | volatile | 12 of 12 | 6 | -44% |
 | Silk Headband | 7050 | 1g 80s 0c | 2026-10-17 12:36 UTC | 32s 50c | 33s 50c | volatile | 12 of 12 | 48 | -10% |
+| Simple Dress | 6786 | 2s 0c | 2026-10-17 12:36 UTC | 1s 0c | 1s 0c | volatile | 11 of 12 | 4 | +0% |
 | Simple Kilt | 10047 | 3s 0c | 2026-10-17 12:36 UTC | 2s 50c | 3s 0c | moving | 12 of 12 | 130 | -17% |
 | Simple Linen Boots | 10046 | 1s 0c | 2026-10-17 | 1s 0c |  | too new | 2 of 12 | 6 |  |
 | Simple Linen Pants | 10045 | 10s 0c | 2026-10-17 12:36 UTC | 1s 0c | 1s 0c | steady | 12 of 12 | 32 | +0% |

@@ -9,6 +9,7 @@
 | Blight | 7959 | 7g 90s 0c | 2026-11-18 16:01 UTC | 8g 94s 0c | 8g 94s 0c | moving | 4 of 13 | 9 |  |
 | Bloodpike | 13057 | 68s 40c | 2026-11-18 16:01 UTC | 64s 29c | 67s 69c | steady | 12 of 13 | 12 | -8% |
 | Bonechewer | 13055 | 17g 0s 0c | 2026-11-18 16:01 UTC | 5g 50s 0c | 6g 0s 68c | moving | 9 of 13 | 11 | -72% |
+| Eyegouger | 9480 | 29g 99s 98c | 2026-11-18 16:01 UTC | 29g 99s 98c |  | too new | 1 of 13 | 2 |  |
 | Frenzied Striker | 13056 | 7g 50s 50c | 2026-11-18 16:01 UTC | 9g 25s 25c | 11g 0s 0c | volatile | 7 of 13 | 8 |  |
 | Gargoyle's Bite | 12989 | 38s 99c | 2026-11-18 16:01 UTC | 32s 0c | 32s 50c | volatile | 12 of 13 | 22 | -6% |
 | Grim Reaper | 13054 | 1g 80s 0c | 2026-11-18 16:01 UTC | 2g 4s 50c | 2g 10s 0c | volatile | 9 of 13 | 11 | -55% |

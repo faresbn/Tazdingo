@@ -4,8 +4,8 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 | Character | Level | Item level | Talents | Professions | Recorded |
 |---|---|---|---|---|---|
-| Orc Warlock | 37 | 35.1 | Demonology 28 | Enchanting 180/225, Tailoring 165/225, Cooking 216/225, First Aid 210/225, Fishing 1/75 | 2026-11-18 17:25:44 UTC |
-| Troll Rogue | 12 | 6.9 | Combat 3 | Alchemy 63/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-18 15:03:36 UTC |
+| Orc Warlock | 39 | 36.1 | Demonology 30 | Enchanting 180/225, Tailoring 185/225, Cooking 225/225, First Aid 216/225, Fishing 1/75 | 2026-11-20 08:17:28 UTC |
+| Troll Rogue | 12 | 9 | Combat 3 | Alchemy 63/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-20 06:36:36 UTC |
 | Tauren Druid | 3 | 0.3 | none | Herbalism 13/75, Skinning 68/75, First Aid 1/75 | 2026-11-07 20:40:17 UTC |
 | Troll Mage | 1 | 0 | none | none | 2026-11-05 18:39:27 UTC |
 | Undead Paladin | 1 | 0 | none | none | 2026-11-05 18:57:57 UTC |
@@ -13,7 +13,7 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 ## Orc Warlock
 
-Horde, level 37, item level 35.1; recorded 2026-11-18 17:25:44 UTC on logout, build 70959.
+Horde, level 39, item level 36.1; recorded 2026-11-20 08:17:28 UTC on logout, build 70959.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
@@ -22,43 +22,43 @@ Horde, level 37, item level 35.1; recorded 2026-11-18 17:25:44 UTC on logout, bu
 | Shoulder | Berylline Pads | 4197 | 36 |
 | Chest | Violet Sorcerer's Robes | 273044 | 32 |
 | Waist | Blightleaf Rope | 273039 | 34 |
-| Legs | Crimson Silk Pantaloons | 7062 | 39 |
+| Legs | Red Mageweave Pants | 10009 | 43 |
 | Feet | Black Slippers | 254007 | 35 |
 | Wrist | Graveweave Bindings | 273036 | 31 |
 | Hands | Ephemeral Grips | 273034 | 32 |
 | Finger | Nogg's Gold Ring | 9588 | 37 |
-| Finger | Snake Hoop | 6750 | 32 |
+| Finger | Purified Ring | 270081 | 44 |
 | Trinket | Satchel of Potions | 280766 | 33 |
 | Trinket | Transformative Cocoon | 276895 | 30 |
 | Back | Brilliant Cloak | 277206 | 41 |
 | Main hand | Hypnotic Blade | 7714 | 39 |
 | Off hand | Orb of the Forgotten Seer | 7685 | 37 |
-| Ranged | Gravestone Scepter | 7001 | 29 |
+| Ranged | Greater Mystic Wand | 217287 | 35 |
 
-Talents: Affliction 0, Demonology 28, Destruction 0. Loadout code: `CIdBa0K/6fjlwoPQnhZ43PxtUAAA+gZMzDMzMGGAAA`.
+Talents: Affliction 0, Demonology 30, Destruction 0. Loadout code: `CIdBa0K/6fjlwoPQnhZ43PxtUAAAmZMzDMzMGGAAA`.
 
 | Skill | Kind | Skill level | Max |
 |---|---|---|---|
 | Enchanting | Profession | 180 | 225 |
-| Tailoring | Profession | 165 | 225 |
-| Cooking | Profession | 216 | 225 |
-| First Aid | Profession | 210 | 225 |
+| Tailoring | Profession | 185 | 225 |
+| Cooking | Profession | 225 | 225 |
+| First Aid | Profession | 216 | 225 |
 | Fishing | Profession | 1 | 75 |
-| Daggers | Weapon Skills | 23 | 185 |
-| Defense | Weapon Skills | 178 | 185 |
-| Staves | Weapon Skills | 4 | 185 |
-| Swords | Weapon Skills | 1 | 185 |
-| Unarmed | Weapon Skills | 13 | 185 |
-| Wands | Weapon Skills | 175 | 185 |
+| Daggers | Weapon Skills | 23 | 195 |
+| Defense | Weapon Skills | 188 | 195 |
+| Staves | Weapon Skills | 4 | 195 |
+| Swords | Weapon Skills | 1 | 195 |
+| Unarmed | Weapon Skills | 13 | 195 |
+| Wands | Weapon Skills | 184 | 195 |
 | Cloth | Armor Proficiencies | 1 | 1 |
 | Language: Orcish | Languages | 300 | 300 |
 
 | Reputation | Standing | Progress |
 |---|---|---|
-| Darkspear Trolls | Honored | 1425/12000 |
-| Orgrimmar | Honored | 3526/12000 |
-| Thunder Bluff | Friendly | 5485/6000 |
-| Undercity | Honored | 157/12000 |
+| Darkspear Trolls | Honored | 1620/12000 |
+| Orgrimmar | Honored | 3803/12000 |
+| Thunder Bluff | Friendly | 5942/6000 |
+| Undercity | Honored | 742/12000 |
 | Booty Bay | Neutral | 1721/3000 |
 | Everlook | Neutral | 1349/3000 |
 | Gadgetzan | Neutral | 1349/3000 |
@@ -67,24 +67,24 @@ Talents: Affliction 0, Demonology 28, Destruction 0. Loadout code: `CIdBa0K/6fjl
 | Argent Dawn | Neutral | 1250/3000 |
 | Bloodsail Buccaneers | Hated | 32250/36000 |
 | Durotar Supply and Logistics | Neutral | 2000/3000 |
-| Earthen Ring | Neutral | 900/3000 |
+| Earthen Ring | Neutral | 1200/3000 |
 
-Stats: Health 1683, Mana or energy 3513, Strength 50, Agility 41, Stamina 132, Intellect 167, Spirit 100, Armour 683. PvP: Honourable kills 0, Dishonourable kills -15, Honour points 50, Renown 0. Collected: mounts 2, pets 5, titles 0.
+Stats: Health 1336, Mana or energy 3596, Strength 43, Agility 34, Stamina 91, Intellect 168, Spirit 93, Armour 446. PvP: Honourable kills 0, Dishonourable kills -120, Honour points 54, Renown 0. Collected: mounts 2, pets 5, titles 0.
 
 ## Troll Rogue
 
-Horde, level 12, item level 6.9; recorded 2026-11-18 15:03:36 UTC on logout, build 70959.
+Horde, level 12, item level 9; recorded 2026-11-20 06:36:36 UTC on logout, build 70959.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
-| Chest | Embossed Leather Vest | 2300 | 12 |
-| Waist | Lupine Cord of the Wolf | 15011 | 15 |
+| Chest | Fine Leather Tunic | 4243 | 17 |
+| Waist | Fine Leather Belt | 4246 | 16 |
 | Legs | Hunting Pants | 2974 | 16 |
-| Feet | Dirt-trodden Boots | 4936 | 8 |
+| Feet | Bard's Boots of Stamina | 6557 | 16 |
 | Wrist | Puk's Friendship Bracelet | 281271 | 10 |
-| Hands | Embossed Leather Gloves | 4239 | 13 |
+| Hands | Lupine Handwraps of Stamina | 15016 | 16 |
 | Finger | Depleted Ritual Band | 281268 | 9 |
-| Back | Worn Hide Cloak | 1421 | 10 |
+| Back | Buckskin Cape | 1355 | 17 |
 | Main hand | Blade of Cunning | 7298 | 13 |
 | Off hand | Curved Dagger of the Monkey | 2632 | 14 |
 | Ranged | Crude Throwing Axe | 3111 | 3 |
@@ -119,7 +119,7 @@ Talents: Assassination 0, Combat 3, Subtlety 0. Loadout code: `CAdBfBw6kaEYM3VLT
 | Powderfuse | Neutral | 525/3000 |
 | Ratchet | Neutral | 650/3000 |
 
-Stats: Health 632, Mana or energy 100, Strength 30, Agility 49, Stamina 37, Intellect 18, Spirit 29, Armour 346. PvP: Honourable kills 0, Dishonourable kills -41, Honour points 0, Renown 0. Collected: mounts 2, pets 5, titles 0.
+Stats: Health 692, Mana or energy 100, Strength 30, Agility 55, Stamina 43, Intellect 18, Spirit 27, Armour 418. PvP: Honourable kills 0, Dishonourable kills -123, Honour points 0, Renown 0. Collected: mounts 2, pets 5, titles 0.
 
 ## Tauren Druid
 
