@@ -10,11 +10,11 @@
    "class": "Warlock",
    "race": "Orc",
    "faction": "Horde",
-   "level": 39,
-   "item_level": 37.4,
-   "recorded_at": "2026-11-21T10:49:09Z",
+   "level": 40,
+   "item_level": 38.8,
+   "recorded_at": "2026-11-21T18:43:17Z",
    "recorded_on": "logout",
-   "build": "70959",
+   "build": "71037",
    "gear": [
     {
      "slot": "Head",
@@ -54,15 +54,15 @@
     },
     {
      "slot": "Feet",
-     "item": 254007,
-     "name": "Black Slippers",
-     "item_level": 35
+     "item": 10026,
+     "name": "Black Mageweave Boots",
+     "item_level": 46
     },
     {
      "slot": "Wrist",
-     "item": 273036,
-     "name": "Graveweave Bindings",
-     "item_level": 31
+     "item": 279883,
+     "name": "Mutinous Cuffs",
+     "item_level": 42
     },
     {
      "slot": "Hands",
@@ -123,29 +123,29 @@
     "points": {
      "Affliction": 0,
      "Demonology": 31,
-     "Destruction": 0
+     "Destruction": 1
     },
-    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAzMjZegZmxwAAAA"
+    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAwDYmZMzDMzMGGAAA"
    },
    "professions": [
     {
      "name": "Enchanting",
-     "skill": 180,
+     "skill": 183,
      "max": 225
     },
     {
      "name": "Tailoring",
-     "skill": 185,
+     "skill": 190,
      "max": 225
     },
     {
      "name": "Cooking",
      "skill": 225,
-     "max": 225
+     "max": 300
     },
     {
      "name": "First Aid",
-     "skill": 216,
+     "skill": 220,
      "max": 225
     },
     {
@@ -164,37 +164,37 @@
      "name": "Daggers",
      "category": "Weapon Skills",
      "skill": 23,
-     "max": 200
+     "max": 205
     },
     {
      "name": "Defense",
      "category": "Weapon Skills",
-     "skill": 193,
-     "max": 200
+     "skill": 195,
+     "max": 205
     },
     {
      "name": "Staves",
      "category": "Weapon Skills",
      "skill": 4,
-     "max": 200
+     "max": 205
     },
     {
      "name": "Swords",
      "category": "Weapon Skills",
      "skill": 1,
-     "max": 200
+     "max": 205
     },
     {
      "name": "Unarmed",
      "category": "Weapon Skills",
      "skill": 13,
-     "max": 200
+     "max": 205
     },
     {
      "name": "Wands",
      "category": "Weapon Skills",
-     "skill": 188,
-     "max": 200
+     "skill": 189,
+     "max": 205
     },
     {
      "name": "Cloth",
@@ -213,55 +213,55 @@
     {
      "name": "Darkspear Trolls",
      "standing": "Honored",
-     "progress": 1638,
+     "progress": 2051,
      "needed": 12000
     },
     {
      "name": "Orgrimmar",
      "standing": "Honored",
-     "progress": 3878,
+     "progress": 4216,
      "needed": 12000
     },
     {
      "name": "Thunder Bluff",
-     "standing": "Friendly",
-     "progress": 5961,
-     "needed": 6000
+     "standing": "Honored",
+     "progress": 111,
+     "needed": 12000
     },
     {
      "name": "Undercity",
      "standing": "Honored",
-     "progress": 761,
+     "progress": 911,
      "needed": 12000
     },
     {
      "name": "Booty Bay",
      "standing": "Neutral",
-     "progress": 1976,
+     "progress": 2389,
      "needed": 3000
     },
     {
      "name": "Everlook",
      "standing": "Neutral",
-     "progress": 1604,
+     "progress": 1966,
      "needed": 3000
     },
     {
      "name": "Gadgetzan",
      "standing": "Neutral",
-     "progress": 1604,
+     "progress": 1979,
      "needed": 3000
     },
     {
      "name": "Powderfuse",
      "standing": "Neutral",
-     "progress": 1859,
+     "progress": 2221,
      "needed": 3000
     },
     {
      "name": "Ratchet",
      "standing": "Neutral",
-     "progress": 2180,
+     "progress": 2543,
      "needed": 3000
     },
     {
@@ -290,19 +290,19 @@
     }
    ],
    "stats": {
-    "Health": 1594,
-    "Mana or energy": 3741,
-    "Strength": 52,
-    "Agility": 43,
-    "Stamina": 114,
-    "Intellect": 174,
-    "Spirit": 124,
-    "Armour": 1059
+    "Health": 1703,
+    "Mana or energy": 3644,
+    "Strength": 38,
+    "Agility": 35,
+    "Stamina": 92,
+    "Intellect": 167,
+    "Spirit": 113,
+    "Armour": 881
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": 112,
-    "Honour points": 54,
+    "Dishonourable kills": -11,
+    "Honour points": 64,
     "Renown": 0
    },
    "collected": {

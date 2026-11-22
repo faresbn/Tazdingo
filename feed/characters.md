@@ -4,7 +4,7 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 | Character | Level | Item level | Talents | Professions | Recorded |
 |---|---|---|---|---|---|
-| Orc Warlock | 39 | 37.4 | Demonology 31 | Enchanting 180/225, Tailoring 185/225, Cooking 225/225, First Aid 216/225, Fishing 1/75, Riding 75/75 | 2026-11-21 10:49:09 UTC |
+| Orc Warlock | 40 | 38.8 | Demonology 31, Destruction 1 | Enchanting 183/225, Tailoring 190/225, Cooking 225/300, First Aid 220/225, Fishing 1/75, Riding 75/75 | 2026-11-21 18:43:17 UTC |
 | Troll Rogue | 12 | 9 | Combat 3 | Alchemy 63/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-20 06:36:36 UTC |
 | Tauren Druid | 3 | 0.3 | none | Herbalism 13/75, Skinning 68/75, First Aid 1/75 | 2026-11-07 20:40:17 UTC |
 | Troll Mage | 1 | 0 | none | none | 2026-11-05 18:39:27 UTC |
@@ -13,7 +13,7 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 ## Orc Warlock
 
-Horde, level 39, item level 37.4; recorded 2026-11-21 10:49:09 UTC on logout, build 70959.
+Horde, level 40, item level 38.8; recorded 2026-11-21 18:43:17 UTC on logout, build 71037.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
@@ -23,8 +23,8 @@ Horde, level 39, item level 37.4; recorded 2026-11-21 10:49:09 UTC on logout, bu
 | Chest | Dreamweave Vest | 10021 | 45 |
 | Waist | Blightleaf Rope | 273039 | 34 |
 | Legs | Red Mageweave Pants | 10009 | 43 |
-| Feet | Black Slippers | 254007 | 35 |
-| Wrist | Graveweave Bindings | 273036 | 31 |
+| Feet | Black Mageweave Boots | 10026 | 46 |
+| Wrist | Mutinous Cuffs | 279883 | 42 |
 | Hands | Dreamweave Gloves | 10019 | 45 |
 | Finger | Snake Hoop | 6750 | 32 |
 | Finger | Purified Ring | 270081 | 44 |
@@ -35,42 +35,42 @@ Horde, level 39, item level 37.4; recorded 2026-11-21 10:49:09 UTC on logout, bu
 | Off hand | Orb of the Forgotten Seer | 7685 | 37 |
 | Ranged | Greater Mystic Wand | 217287 | 35 |
 
-Talents: Affliction 0, Demonology 31, Destruction 0. Loadout code: `CIdBa0K/6fjlwoPQnhZ43PxtUAAAzMjZegZmxwAAAA`.
+Talents: Affliction 0, Demonology 31, Destruction 1. Loadout code: `CIdBa0K/6fjlwoPQnhZ43PxtUAAwDYmZMzDMzMGGAAA`.
 
 | Skill | Kind | Skill level | Max |
 |---|---|---|---|
-| Enchanting | Profession | 180 | 225 |
-| Tailoring | Profession | 185 | 225 |
-| Cooking | Profession | 225 | 225 |
-| First Aid | Profession | 216 | 225 |
+| Enchanting | Profession | 183 | 225 |
+| Tailoring | Profession | 190 | 225 |
+| Cooking | Profession | 225 | 300 |
+| First Aid | Profession | 220 | 225 |
 | Fishing | Profession | 1 | 75 |
 | Riding | Profession | 75 | 75 |
-| Daggers | Weapon Skills | 23 | 200 |
-| Defense | Weapon Skills | 193 | 200 |
-| Staves | Weapon Skills | 4 | 200 |
-| Swords | Weapon Skills | 1 | 200 |
-| Unarmed | Weapon Skills | 13 | 200 |
-| Wands | Weapon Skills | 188 | 200 |
+| Daggers | Weapon Skills | 23 | 205 |
+| Defense | Weapon Skills | 195 | 205 |
+| Staves | Weapon Skills | 4 | 205 |
+| Swords | Weapon Skills | 1 | 205 |
+| Unarmed | Weapon Skills | 13 | 205 |
+| Wands | Weapon Skills | 189 | 205 |
 | Cloth | Armor Proficiencies | 1 | 1 |
 | Language: Orcish | Languages | 300 | 300 |
 
 | Reputation | Standing | Progress |
 |---|---|---|
-| Darkspear Trolls | Honored | 1638/12000 |
-| Orgrimmar | Honored | 3878/12000 |
-| Thunder Bluff | Friendly | 5961/6000 |
-| Undercity | Honored | 761/12000 |
-| Booty Bay | Neutral | 1976/3000 |
-| Everlook | Neutral | 1604/3000 |
-| Gadgetzan | Neutral | 1604/3000 |
-| Powderfuse | Neutral | 1859/3000 |
-| Ratchet | Neutral | 2180/3000 |
+| Darkspear Trolls | Honored | 2051/12000 |
+| Orgrimmar | Honored | 4216/12000 |
+| Thunder Bluff | Honored | 111/12000 |
+| Undercity | Honored | 911/12000 |
+| Booty Bay | Neutral | 2389/3000 |
+| Everlook | Neutral | 1966/3000 |
+| Gadgetzan | Neutral | 1979/3000 |
+| Powderfuse | Neutral | 2221/3000 |
+| Ratchet | Neutral | 2543/3000 |
 | Argent Dawn | Neutral | 1250/3000 |
 | Bloodsail Buccaneers | Hated | 32250/36000 |
 | Durotar Supply and Logistics | Neutral | 2000/3000 |
 | Earthen Ring | Neutral | 1200/3000 |
 
-Stats: Health 1594, Mana or energy 3741, Strength 52, Agility 43, Stamina 114, Intellect 174, Spirit 124, Armour 1059. PvP: Honourable kills 0, Dishonourable kills 112, Honour points 54, Renown 0. Collected: mounts 3, pets 5, titles 0.
+Stats: Health 1703, Mana or energy 3644, Strength 38, Agility 35, Stamina 92, Intellect 167, Spirit 113, Armour 881. PvP: Honourable kills 0, Dishonourable kills -11, Honour points 64, Renown 0. Collected: mounts 3, pets 5, titles 0.
 
 ## Troll Rogue
 
