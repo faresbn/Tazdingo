@@ -4,10 +4,10 @@ Estimated listing margins: what the item lists for against what its reagents cos
 
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
-| Molten Foundry | 300 | 279952 | 1 | 4g 29s 0c | 1g 22s 72c | 3g 6s 28c | ForeverDB |
-| Smelt Dark Iron | 0 | 11371 | 1 | 2g 15s 94c | 1g 33s 92c | 82s 2c | ForeverDB |
-| Rock Garden | 140 | 279948 | 1 | 29s 34c | 12s 63c | 16s 71c | ForeverDB |
-| Smelt Heavy Thorium | 0 | 251291 | 1 | 39s 66c | 28s 58c | 11s 8c | ForeverDB |
+| Molten Foundry | 300 | 279952 | 1 | 4g 31s 75c | 1g 22s 18c | 3g 9s 57c | ForeverDB |
+| Smelt Dark Iron | 0 | 11371 | 1 | 2g 14s 29c | 1g 33s 60c | 80s 69c | ForeverDB |
+| Rock Garden | 140 | 279948 | 1 | 27s 49c | 12s 63c | 14s 86c | ForeverDB |
+| Smelt Heavy Thorium | 0 | 251291 | 1 | 39s 20c | 27s 89c | 11s 31c | ForeverDB |
 | Smelt Thorium | 250 | 12359 | 1 | 19s 99c | 18s 0c | 1s 99c | our scan |
 | Smelt Truesilver | 230 | 6037 | 1 | 13s 93c | 12s 3c | 1s 90c | our scan |
 | Smelt Bronze | 65 | 2841 | 2 | 4s 26c | 3s 48c | 78c | our scan |
