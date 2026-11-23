@@ -8,24 +8,24 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Felcloth Bag | 0 | 21341 | 1 | 37g 80s 60c | 17g 91s 8c | 19g 89s 52c | our scan |
 | Inferno Gloves | 280 | 18408 | 1 | 39g 0s 0c | 19g 93s 68c | 19g 6s 32c | our scan |
 | Robe of Winter Night | 245 | 14136 | 1 | 46g 90s 0c | 32g 79s 6c | 14g 10s 94c | our scan |
-| Earthenweave Vest | 250 | 254121 | 1 | 12g 70s 0c | 7g 4s 90c | 5g 65s 10c | ForeverDB |
-| Earthenweave Leggings | 245 | 254125 | 1 | 15g 34s 50c | 10g 39s 90c | 4g 94s 60c | ForeverDB |
+| Earthenweave Vest | 250 | 254121 | 1 | 12g 70s 0c | 7g 2s 89c | 5g 67s 11c | ForeverDB |
+| Earthenweave Leggings | 245 | 254125 | 1 | 15g 34s 50c | 10g 35s 88c | 4g 98s 62c | ForeverDB |
 | Loom | 300 | 279959 | 1 | 8g 34s 83c | 3g 87s 80c | 4g 47s 3c | ForeverDB |
-| Earthenweave Cord | 215 | 254077 | 1 | 14g 0s 0c | 9g 75s 92c | 4g 24s 8c | ForeverDB |
+| Earthenweave Cord | 215 | 254077 | 1 | 14g 0s 0c | 9g 71s 90c | 4g 28s 10c | ForeverDB |
 | Mooncloth Reagent Bag | 255 | 254133 | 1 | 65g 99s 99c | 62g 39s 56c | 3g 60s 43c | ForeverDB |
+| Wisdom of the Timbermaw | 255 | 19047 | 1 | 19g 99s 0c | 16g 81s 35c | 3g 17s 65c | our scan |
 | Wizardweave Turban | 260 | 14130 | 1 | 6g 94s 48c | 3g 78s 62c | 3g 15s 86c | ForeverDB |
-| Wisdom of the Timbermaw | 255 | 19047 | 1 | 19g 99s 0c | 16g 87s 38c | 3g 11s 62c | our scan |
 | Cindercloth Cloak | 230 | 14044 | 1 | 6g 50s 0c | 3g 49s 93c | 3g 0s 7c | ForeverDB |
 | Cloudy Stormsewn Epaulets | 175 | 277047 | 1 | 3g 66s 0c | 72s 67c | 2g 93s 33c | our scan |
-| Earthenweave Mantle | 240 | 254119 | 1 | 9g 0s 0c | 6g 40s 92c | 2g 59s 8c | ForeverDB |
-| Cloak of Fire | 235 | 14134 | 1 | 15g 0s 0c | 12g 46s 54c | 2g 53s 46c | ForeverDB |
-| Cloudy Stormsewn Cowl | 175 | 277046 | 1 | 3g 31s 99c | 98s 99c | 2g 33s 0c | our scan |
+| Earthenweave Mantle | 240 | 254119 | 1 | 9g 0s 0c | 6g 38s 91c | 2g 61s 9c | ForeverDB |
+| Cloak of Fire | 235 | 14134 | 1 | 15g 0s 0c | 12g 46s 10c | 2g 53s 90c | ForeverDB |
+| Cloudy Stormsewn Cowl | 175 | 277046 | 1 | 3g 30s 0c | 98s 99c | 2g 31s 1c | our scan |
 | Azure Stormsewn Cowl | 175 | 277054 | 1 | 3g 0s 0c | 98s 99c | 2g 1s 1c | ForeverDB |
 | Wizardweave Leggings | 230 | 14132 | 1 | 4g 57s 50c | 2g 62s 36c | 1g 95s 14c | ForeverDB |
-| Earthenweave Boots | 225 | 254093 | 1 | 12g 0s 0c | 10g 15s 92c | 1g 84s 8c | our scan |
+| Earthenweave Boots | 225 | 254093 | 1 | 12g 0s 0c | 10g 11s 90c | 1g 88s 10c | our scan |
 | Ghostweave Pants | 245 | 14144 | 1 | 6g 79s 99c | 5g 10s 34c | 1g 69s 65c | our scan |
-| Earthenweave Cuffs | 255 | 254131 | 1 | 7g 68s 0c | 6g 8s 93c | 1g 59s 7c | ForeverDB |
-| Earthenweave Gloves | 215 | 254075 | 1 | 7g 98s 0c | 6g 40s 92c | 1g 57s 8c | our scan |
+| Earthenweave Cuffs | 255 | 254131 | 1 | 7g 68s 0c | 6g 6s 92c | 1g 61s 8c | ForeverDB |
+| Earthenweave Gloves | 215 | 254075 | 1 | 7g 98s 0c | 6g 38s 91c | 1g 59s 9c | our scan |
 | Ghostweave Mantle | 250 | 254127 | 1 | 6g 15s 27c | 4g 68s 21c | 1g 47s 6c | our scan |
 | Azure Stormsewn Epaulets | 175 | 277055 | 1 | 2g 16s 50c | 72s 67c | 1g 43s 83c | ForeverDB |
 | Ghostweave Hood | 260 | 254135 | 1 | 6g 90s 0c | 5g 57s 16c | 1g 32s 84c | ForeverDB |
@@ -42,13 +42,13 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Tuxedo Shirt | 200 | 10034 | 1 | 1g 84s 48c | 1g 27s 48c | 57s 0c | ForeverDB |
 | Azure Stormsewn Cord | 50 | 277037 | 1 | 59s 0c | 2s 7c | 56s 93c | our scan |
 | Black Mageweave Boots | 205 | 10026 | 1 | 1g 86s 0c | 1g 29s 61c | 56s 39c | ForeverDB |
-| Crimson Silk Robe | 170 | 7063 | 1 | 3g 0s 0c | 2g 45s 80c | 54s 20c | our scan |
+| Crimson Silk Robe | 170 | 7063 | 1 | 3g 0s 0c | 2g 45s 36c | 54s 64c | our scan |
 | Invoker's Mantle | 150 | 215365 | 1 | 1g 0s 0c | 50s 80c | 49s 20c | our scan |
 | Stormcloth Pants | 185 | 10010 | 1 | 2g 18s 19c | 1g 69s 44c | 48s 75c | ForeverDB |
 | Simple Black Dress | 200 | 10053 | 1 | 1g 44s 46c | 95s 86c | 48s 60c | ForeverDB |
+| Star Belt | 165 | 4329 | 1 | 1g 74s 84c | 1g 27s 87c | 46s 97c | our scan |
 | Mageweave Reagent Bag | 190 | 254035 | 1 | 2g 99s 89c | 2g 53s 39c | 46s 50c | our scan |
 | Shadoweave Robe | 195 | 10004 | 1 | 1g 52s 0c | 1g 5s 61c | 46s 39c | our scan |
-| Star Belt | 165 | 4329 | 1 | 1g 74s 84c | 1g 28s 57c | 46s 27c | our scan |
 | Phoenix Bindings | 125 | 210781 | 1 | 78s 95c | 42s 58c | 36s 37c | our scan |
 | Pink Mageweave Shirt | 195 | 10055 | 1 | 1g 44s 0c | 1g 10s 61c | 33s 39c | ForeverDB |
 | Black Swashbuckler's Shirt | 165 | 4336 | 1 | 89s 98c | 57s 25c | 32s 73c | ForeverDB |
@@ -72,9 +72,8 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Cloudy Stormsewn Vest | 60 | 277010 | 1 | 22s 0c | 3s 15c | 18s 85c | ForeverDB |
 | Cloudy Stormsewn Handwraps | 55 | 277012 | 1 | 20s 0c | 2s 76c | 17s 24c | ForeverDB |
 | Dreamweave Circlet | 220 | 10041 | 1 | 2g 86s 96c | 2g 70s 11c | 16s 85c | our scan |
-| Felcloth Boots | 240 | 14108 | 1 | 6g 58s 3c | 6g 41s 94c | 16s 9c | ForeverDB |
 | Azure Stormsewn Handwraps | 55 | 277036 | 1 | 18s 64c | 2s 76c | 15s 88c | ForeverDB |
-| Icy Cloak | 165 | 4327 | 1 | 1g 29s 99c | 1g 15s 28c | 14s 71c | our scan |
+| Icy Cloak | 165 | 4327 | 1 | 1g 29s 99c | 1g 15s 26c | 14s 73c | our scan |
 | Stormcloth Gloves | 185 | 10011 | 1 | 1g 59s 99c | 1g 47s 57c | 12s 42c | ForeverDB |
 | Red Mageweave Pants | 180 | 10009 | 1 | 98s 0c | 86s 61c | 11s 39c | our scan |
 | Dreamweave Vest | 205 | 10021 | 1 | 1g 97s 0c | 1g 85s 70c | 11s 30c | our scan |
@@ -118,7 +117,6 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Red Linen Shirt | 40 | 2575 | 1 | 1s 99c | 1s 78c | 21c | our scan |
 | Invoker's Cord | 150 | 215366 | 1 | 32s 61c | 32s 45c | 16c | ForeverDB |
 | Blue Linen Shirt | 40 | 2577 | 1 | 1s 93c | 1s 78c | 15c | our scan |
-| Soft-soled Linen Boots | 80 | 4312 | 1 | 4s 99c | 4s 87c | 12c | our scan |
 | Bolt of Linen Cloth | 1 | 2996 | 1 | 59c | 50c | 9c | our scan |
 | Blue Overalls | 75 | 6263 | 1 | 29s 80c | 29s 72c | 8c | our scan |
 
