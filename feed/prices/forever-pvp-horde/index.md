@@ -1,7 +1,7 @@
 # PvP Horde: map
 
 - **Market:** PvP Horde (Forever), every item recorded.
-- **Latest scan:** 2026-11-21 18:23 UTC. Uploads in the 30-day window: 6.
+- **Latest scan:** 2026-11-23 15:16 UTC. Uploads in the 30-day window: 7.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 Open only the file for the item's category. Each lists every item recorded in it with its latest, typical and usual price.
@@ -9,14 +9,14 @@ Open only the file for the item's category. Each lists every item recorded in it
 Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/main/<path>
 
 - `feed/prices/forever-pvp-horde/alerts.md`: deals under the usual price, below vendor price, investment watch, short supply and movers.
-- `feed/prices/forever-pvp-horde/armor-cloth.md`: Armor: Cloth, 1335 items.
+- `feed/prices/forever-pvp-horde/armor-cloth.md`: Armor: Cloth, 9041 items.
 - `feed/prices/forever-pvp-horde/armor-idol.md`: Armor: Idol, 1 items.
-- `feed/prices/forever-pvp-horde/armor-leather.md`: Armor: Leather, 909 items.
+- `feed/prices/forever-pvp-horde/armor-leather.md`: Armor: Leather, 6940 items.
 - `feed/prices/forever-pvp-horde/armor-libram.md`: Armor: Libram, 1 items.
-- `feed/prices/forever-pvp-horde/armor-mail.md`: Armor: Mail, 832 items.
-- `feed/prices/forever-pvp-horde/armor-miscellaneous.md`: Armor: Miscellaneous, 312 items.
-- `feed/prices/forever-pvp-horde/armor-plate.md`: Armor: Plate, 335 items.
-- `feed/prices/forever-pvp-horde/armor-shield.md`: Armor: Shield, 175 items.
+- `feed/prices/forever-pvp-horde/armor-mail.md`: Armor: Mail, 5971 items.
+- `feed/prices/forever-pvp-horde/armor-miscellaneous.md`: Armor: Miscellaneous, 2843 items.
+- `feed/prices/forever-pvp-horde/armor-plate.md`: Armor: Plate, 2851 items.
+- `feed/prices/forever-pvp-horde/armor-shield.md`: Armor: Shield, 1392 items.
 - `feed/prices/forever-pvp-horde/armor-totem.md`: Armor: Totem, 1 items.
 - `feed/prices/forever-pvp-horde/consumable-bandages.md`: Consumable: Bandages, 10 items.
 - `feed/prices/forever-pvp-horde/consumable-device.md`: Consumable: Device, 23 items.
@@ -35,7 +35,7 @@ Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/
 - `feed/prices/forever-pvp-horde/miscellaneous-other.md`: Miscellaneous: Other, 10 items.
 - `feed/prices/forever-pvp-horde/miscellaneous-pet.md`: Miscellaneous: Pet, 42 items.
 - `feed/prices/forever-pvp-horde/miscellaneous-reagent.md`: Miscellaneous: Reagent, 31 items.
-- `feed/prices/forever-pvp-horde/other.md`: Other, 55 items.
+- `feed/prices/forever-pvp-horde/other.md`: Other, 118 items.
 - `feed/prices/forever-pvp-horde/projectile.md`: Projectile, 21 items.
 - `feed/prices/forever-pvp-horde/quest-quest.md`: Quest: Quest, 161 items.
 - `feed/prices/forever-pvp-horde/quiver.md`: Quiver, 11 items.
@@ -59,20 +59,20 @@ Paths are in the repository: https://raw.githubusercontent.com/faresbn/Tazdingo/
 - `feed/prices/forever-pvp-horde/trade-goods-metal-stone.md`: Trade Goods: Metal & Stone, 42 items.
 - `feed/prices/forever-pvp-horde/trade-goods-other.md`: Trade Goods: Other, 86 items.
 - `feed/prices/forever-pvp-horde/trade-goods-parts.md`: Trade Goods: Parts, 42 items.
-- `feed/prices/forever-pvp-horde/weapon-axe.md`: Weapon: Axe, 133 items.
-- `feed/prices/forever-pvp-horde/weapon-bow.md`: Weapon: Bow, 49 items.
+- `feed/prices/forever-pvp-horde/weapon-axe.md`: Weapon: Axe, 914 items.
+- `feed/prices/forever-pvp-horde/weapon-bow.md`: Weapon: Bow, 175 items.
 - `feed/prices/forever-pvp-horde/weapon-crossbow.md`: Weapon: Crossbow, 8 items.
-- `feed/prices/forever-pvp-horde/weapon-dagger.md`: Weapon: Dagger, 83 items.
+- `feed/prices/forever-pvp-horde/weapon-dagger.md`: Weapon: Dagger, 407 items.
 - `feed/prices/forever-pvp-horde/weapon-fishing-pole.md`: Weapon: Fishing Pole, 4 items.
 - `feed/prices/forever-pvp-horde/weapon-fist-weapon.md`: Weapon: Fist Weapon, 7 items.
-- `feed/prices/forever-pvp-horde/weapon-gun.md`: Weapon: Gun, 47 items.
-- `feed/prices/forever-pvp-horde/weapon-mace.md`: Weapon: Mace, 156 items.
+- `feed/prices/forever-pvp-horde/weapon-gun.md`: Weapon: Gun, 151 items.
+- `feed/prices/forever-pvp-horde/weapon-mace.md`: Weapon: Mace, 930 items.
 - `feed/prices/forever-pvp-horde/weapon-miscellaneous.md`: Weapon: Miscellaneous, 4 items.
 - `feed/prices/forever-pvp-horde/weapon-polearm.md`: Weapon: Polearm, 17 items.
-- `feed/prices/forever-pvp-horde/weapon-staff.md`: Weapon: Staff, 69 items.
-- `feed/prices/forever-pvp-horde/weapon-sword.md`: Weapon: Sword, 162 items.
-- `feed/prices/forever-pvp-horde/weapon-thrown.md`: Weapon: Thrown, 19 items.
-- `feed/prices/forever-pvp-horde/weapon-wand.md`: Weapon: Wand, 45 items.
+- `feed/prices/forever-pvp-horde/weapon-staff.md`: Weapon: Staff, 356 items.
+- `feed/prices/forever-pvp-horde/weapon-sword.md`: Weapon: Sword, 997 items.
+- `feed/prices/forever-pvp-horde/weapon-thrown.md`: Weapon: Thrown, 37 items.
+- `feed/prices/forever-pvp-horde/weapon-wand.md`: Weapon: Wand, 173 items.
 
 For people, the same market on the website: https://faresbn.github.io/Tazdingo/prices/forever-pvp-horde/
 
