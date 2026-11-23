@@ -4,8 +4,9 @@ iCloud resolves a sync conflict by keeping both versions and renaming one. A cop
 when it is identical to its original, or when its exact content is already stored in git: the build
 rewrites every feed file, so a copy is usually of the version before, and git keeps every version it
 committed. Anything else (a copy that differs and isn't in git, or has no original) is only listed:
-a person decides which to keep. Copies inside .git are listed and never touched (a copied ref can
-break `git fetch`).
+a person decides which to keep. Copies inside .git (a copied ref can break `git fetch` and `git push`)
+are moved, with --delete, to tmp/icloud-git-copies/ (not synced, not committed): git never names a
+file like that, so it never reads one, and the copy is kept in case a person wants to look.
 
 Python, not shell, because the Mac's update watcher runs under launchd, where macOS lets python3 and
 git read ~/Documents but not bash, find or cmp. scripts/icloud-janitor.sh runs this.
@@ -19,6 +20,7 @@ import filecmp
 import re
 import shutil
 import subprocess
+from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -61,15 +63,29 @@ def find(root: Path) -> tuple[list[Path], list[Path]]:
                 (deletable if safe(root, entry, original) else review).append(entry)
             elif entry.is_dir():
                 stack.append(entry)
-    git_dir = root / ".git"
-    if git_dir.is_dir():
-        review += [p for p in sorted(git_dir.rglob("*")) if original_of(p) is not None]
     return deletable, review
+
+
+def git_copies(root: Path) -> list[Path]:
+    git_dir = root / ".git"
+    return [p for p in sorted(git_dir.rglob("*")) if p.is_file() and original_of(p) is not None] if git_dir.is_dir() else []
 
 
 def main(root: Path = ROOT, delete: bool = False) -> int:
     deletable, review = find(root)
+    in_git = git_copies(root)
+    if in_git:
+        print(f"[icloud-janitor] {len(in_git)} copy/copies inside .git" + (", moved to tmp/icloud-git-copies/:" if delete else " (dry-run):"))
+        print("\n".join(f"  {p.relative_to(root)}" for p in in_git))
+        if delete:
+            hold = root / "tmp/icloud-git-copies" / datetime.now().strftime("%Y-%m-%dT%H%M%S")
+            for p in in_git:
+                target = hold / p.relative_to(root)
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.move(str(p), target)
     if not deletable and not review:
+        if in_git:
+            return 0
         print("[icloud-janitor] clean — no bounced copies found")
         return 0
     if review:

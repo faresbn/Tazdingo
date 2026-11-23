@@ -60,11 +60,17 @@ class Janitor(unittest.TestCase):
         self.assertIn("dry-run", self.run_janitor(delete=False))
         self.assertTrue(copy.exists())
 
-    def test_copies_inside_git_are_only_listed(self):
+    def test_copies_inside_git_are_moved_aside(self):
+        # A copied ref breaks git (seen in another repository); git never reads a file named like this.
         ref = self.root / ".git/index 2"
         ref.write_bytes((self.root / ".git/index").read_bytes())
-        self.assertIn(".git/index 2", self.run_janitor(delete=True))
-        self.assertTrue(ref.exists())
+        self.assertIn(".git/index 2", self.run_janitor(delete=False))
+        self.assertTrue(ref.exists(), "a dry run touches nothing")
+        self.run_janitor(delete=True)
+        self.assertFalse(ref.exists())
+        held = list((self.root / "tmp/icloud-git-copies").rglob("index 2"))
+        self.assertEqual(len(held), 1)
+        subprocess.run(["git", "-C", str(self.root), "status"], check=True, capture_output=True)
 
     def test_clean(self):
         self.assertIn("clean", self.run_janitor(delete=True))

@@ -177,8 +177,6 @@ def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list
     """Write feed/ from the build's markets and context; returns the files written."""
     if feed.name != "feed":
         raise ValueError("The feed is written only to a folder named feed/ (the repository's, or a test's)")
-    if feed.exists():
-        shutil.rmtree(feed)
     files: dict[str, str] = {}
     market_lines = []
     for market in markets:
@@ -280,8 +278,18 @@ def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list
         "from the guide map (instructions: TAZDINGO_INBOX.md in the project). If the page changed since, the inbox holds the edit; read it again.",
         f"- **People** use the website, not these files: {SITE}", "",
         CREDIT]) + "\n"
+    # Write only what changed, and remove what's no longer produced (an iCloud "name 2.md" copy included): rewriting
+    # every file on each build made iCloud copy the ones it was still syncing (23 November).
     for path, text in files.items():
         target = feed.parent / path
         target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(text, encoding="utf-8")
+        if not target.is_file() or target.read_text(encoding="utf-8") != text:
+            target.write_text(text, encoding="utf-8")
+    wanted = {(feed.parent / path).resolve() for path in files}
+    if feed.is_dir():
+        for stale in [p for p in feed.rglob("*") if p.is_file() and p.resolve() not in wanted]:
+            stale.unlink()
+        for folder in sorted((p for p in feed.rglob("*") if p.is_dir()), key=lambda p: -len(p.parts)):
+            if not any(folder.iterdir()):
+                folder.rmdir()
     return sorted(files)

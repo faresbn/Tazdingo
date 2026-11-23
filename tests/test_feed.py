@@ -30,6 +30,16 @@ class Feed(unittest.TestCase):
     def paths_in(self, text):
         return re.findall(r"`((?:feed|content)/[^`]+\.md)`", text)
 
+    def test_a_rebuild_rewrites_nothing_unchanged_and_drops_copies(self):
+        # iCloud copies a file it's still syncing when it changes again; an unchanged rebuild touches nothing.
+        index = self.out / "feed/index.md"
+        before = index.stat().st_mtime_ns
+        copy = self.out / "feed/index 2.md"
+        copy.write_text("an iCloud copy")
+        build.build(ROOT, out=ROOT / "tmp/test-feed-dist", feed=self.out / "feed")
+        self.assertEqual(index.stat().st_mtime_ns, before)
+        self.assertFalse(copy.exists())
+
     def test_index_is_only_a_map(self):
         index = self.files["feed/index.md"]
         self.assertLess(len(index), 4000)
