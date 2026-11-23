@@ -4,8 +4,8 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 | Character | Level | Item level | Talents | Professions | Recorded |
 |---|---|---|---|---|---|
-| Orc Warlock | 42 | 38.8 | Demonology 31, Destruction 3 | Enchanting 205/225, Tailoring 190/225, Cooking 230/300, First Aid 220/225, Fishing 1/75, Riding 75/75 | 2026-11-22 22:03:19 UTC |
-| Troll Rogue | 12 | 9 | Combat 3 | Alchemy 63/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-22 19:40:32 UTC |
+| Orc Warlock | 43 | 40.1 | Affliction 31, Demonology 3 | Enchanting 215/225, Tailoring 200/300, Cooking 230/300, First Aid 220/225, Fishing 1/75, Riding 75/75 | 2026-11-23 16:51:14 UTC |
+| Troll Rogue | 12 | 9 | Combat 3 | Alchemy 63/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-23 16:30:54 UTC |
 | Tauren Druid | 3 | 0.3 | none | Herbalism 13/75, Skinning 68/75, First Aid 1/75 | 2026-11-07 20:40:17 UTC |
 | Troll Mage | 1 | 0 | none | none | 2026-11-05 18:39:27 UTC |
 | Undead Paladin | 1 | 0 | none | none | 2026-11-05 18:57:57 UTC |
@@ -13,7 +13,7 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 ## Orc Warlock
 
-Horde, level 42, item level 38.8; recorded 2026-11-22 22:03:19 UTC on logout, build 71037.
+Horde, level 43, item level 40.1; recorded 2026-11-23 16:51:14 UTC on logout, build 71037.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
@@ -26,31 +26,31 @@ Horde, level 42, item level 38.8; recorded 2026-11-22 22:03:19 UTC on logout, bu
 | Feet | Black Mageweave Boots | 10026 | 46 |
 | Wrist | Mutinous Cuffs | 279883 | 42 |
 | Hands | Dreamweave Gloves | 10019 | 45 |
-| Finger | Snake Hoop | 6750 | 32 |
+| Finger | Bloodmaster's Ring | 275043 | 45 |
 | Finger | Purified Ring | 270081 | 44 |
 | Trinket | Satchel of Potions | 280766 | 33 |
 | Trinket | Transformative Cocoon | 276895 | 30 |
 | Back | Brilliant Cloak | 277206 | 41 |
 | Main hand | Hypnotic Blade | 7714 | 39 |
-| Off hand | Orb of the Forgotten Seer | 7685 | 37 |
+| Off hand | Shadow-Seer Orb | 287016 | 45 |
 | Ranged | Greater Mystic Wand | 217287 | 35 |
 
-Talents: Affliction 0, Demonology 31, Destruction 3. Loadout code: `CIdBa0K/6fjlwoPQnhZ43PxtUAAwHYmZMzDMzMGGAAA`.
+Talents: Affliction 31, Demonology 3, Destruction 0. Loadout code: `CIdBa0K/6fjlwoPQnhZ43PxtUAAAAAgPwMzYMmBzFcC`.
 
 | Skill | Kind | Skill level | Max |
 |---|---|---|---|
-| Enchanting | Profession | 205 | 225 |
-| Tailoring | Profession | 190 | 225 |
+| Enchanting | Profession | 215 | 225 |
+| Tailoring | Profession | 200 | 300 |
 | Cooking | Profession | 230 | 300 |
 | First Aid | Profession | 220 | 225 |
 | Fishing | Profession | 1 | 75 |
 | Riding | Profession | 75 | 75 |
 | Daggers | Weapon Skills | 23 | 215 |
-| Defense | Weapon Skills | 205 | 215 |
+| Defense | Weapon Skills | 208 | 215 |
 | Staves | Weapon Skills | 4 | 215 |
 | Swords | Weapon Skills | 1 | 215 |
 | Unarmed | Weapon Skills | 13 | 215 |
-| Wands | Weapon Skills | 193 | 215 |
+| Wands | Weapon Skills | 195 | 215 |
 | Cloth | Armor Proficiencies | 1 | 1 |
 | Language: Orcish | Languages | 300 | 300 |
 
@@ -60,22 +60,22 @@ Talents: Affliction 0, Demonology 31, Destruction 3. Loadout code: `CIdBa0K/6fjl
 | Orgrimmar | Honored | 4253/12000 |
 | Thunder Bluff | Honored | 148/12000 |
 | Undercity | Honored | 948/12000 |
-| Booty Bay | Neutral | 2916/3000 |
-| Everlook | Neutral | 2494/3000 |
-| Gadgetzan | Neutral | 2506/3000 |
-| Powderfuse | Friendly | 276/6000 |
-| Ratchet | Friendly | 70/6000 |
+| Booty Bay | Neutral | 2919/3000 |
+| Everlook | Neutral | 2496/3000 |
+| Gadgetzan | Neutral | 2509/3000 |
+| Powderfuse | Friendly | 281/6000 |
+| Ratchet | Friendly | 73/6000 |
 | Argent Dawn | Neutral | 1250/3000 |
 | Bloodsail Buccaneers | Hated | 32250/36000 |
-| Bolder'ok Clan | Neutral | 1241/3000 |
-| Durotar Supply and Logistics | Neutral | 2000/3000 |
+| Bolder'ok Clan | Friendly | 111/6000 |
+| Durotar Supply and Logistics | Neutral | 2125/3000 |
 | Earthen Ring | Neutral | 1500/3000 |
 
-Stats: Health 1674, Mana or energy 3865, Strength 39, Agility 36, Stamina 83, Intellect 176, Spirit 122, Armour 493. PvP: Honourable kills 0, Dishonourable kills -95, Honour points 64, Renown 0. Collected: mounts 3, pets 5, titles 0.
+Stats: Health 1614, Mana or energy 3376, Strength 39, Agility 36, Stamina 107, Intellect 177, Spirit 122, Armour 943. PvP: Honourable kills 0, Dishonourable kills 18, Honour points 64, Renown 0. Collected: mounts 3, pets 5, titles 0.
 
 ## Troll Rogue
 
-Horde, level 12, item level 9; recorded 2026-11-22 19:40:32 UTC on logout, build 71037.
+Horde, level 12, item level 9; recorded 2026-11-23 16:30:54 UTC on logout, build 71037.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
@@ -121,7 +121,7 @@ Talents: Assassination 0, Combat 3, Subtlety 0. Loadout code: `CAdBfBw6kaEYM3VLT
 | Powderfuse | Neutral | 525/3000 |
 | Ratchet | Neutral | 650/3000 |
 
-Stats: Health 692, Mana or energy 100, Strength 30, Agility 55, Stamina 43, Intellect 18, Spirit 27, Armour 418. PvP: Honourable kills 0, Dishonourable kills -77, Honour points 0, Renown 0. Collected: mounts 3, pets 5, titles 0.
+Stats: Health 692, Mana or energy 100, Strength 30, Agility 55, Stamina 43, Intellect 18, Spirit 27, Armour 418. PvP: Honourable kills 0, Dishonourable kills 6, Honour points 0, Renown 0. Collected: mounts 3, pets 5, titles 0.
 
 ## Tauren Druid
 

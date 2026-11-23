@@ -10,9 +10,9 @@
    "class": "Warlock",
    "race": "Orc",
    "faction": "Horde",
-   "level": 42,
-   "item_level": 38.8,
-   "recorded_at": "2026-11-22T22:03:19Z",
+   "level": 43,
+   "item_level": 40.1,
+   "recorded_at": "2026-11-23T16:51:14Z",
    "recorded_on": "logout",
    "build": "71037",
    "gear": [
@@ -72,9 +72,9 @@
     },
     {
      "slot": "Finger",
-     "item": 6750,
-     "name": "Snake Hoop",
-     "item_level": 32
+     "item": 275043,
+     "name": "Bloodmaster's Ring",
+     "item_level": 45
     },
     {
      "slot": "Finger",
@@ -108,9 +108,9 @@
     },
     {
      "slot": "Off hand",
-     "item": 7685,
-     "name": "Orb of the Forgotten Seer",
-     "item_level": 37
+     "item": 287016,
+     "name": "Shadow-Seer Orb",
+     "item_level": 45
     },
     {
      "slot": "Ranged",
@@ -121,22 +121,22 @@
    ],
    "talents": {
     "points": {
-     "Affliction": 0,
-     "Demonology": 31,
-     "Destruction": 3
+     "Affliction": 31,
+     "Demonology": 3,
+     "Destruction": 0
     },
-    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAwHYmZMzDMzMGGAAA"
+    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAAAgPwMzYMmBzFcC"
    },
    "professions": [
     {
      "name": "Enchanting",
-     "skill": 205,
+     "skill": 215,
      "max": 225
     },
     {
      "name": "Tailoring",
-     "skill": 190,
-     "max": 225
+     "skill": 200,
+     "max": 300
     },
     {
      "name": "Cooking",
@@ -169,7 +169,7 @@
     {
      "name": "Defense",
      "category": "Weapon Skills",
-     "skill": 205,
+     "skill": 208,
      "max": 215
     },
     {
@@ -193,7 +193,7 @@
     {
      "name": "Wands",
      "category": "Weapon Skills",
-     "skill": 193,
+     "skill": 195,
      "max": 215
     },
     {
@@ -237,31 +237,31 @@
     {
      "name": "Booty Bay",
      "standing": "Neutral",
-     "progress": 2916,
+     "progress": 2919,
      "needed": 3000
     },
     {
      "name": "Everlook",
      "standing": "Neutral",
-     "progress": 2494,
+     "progress": 2496,
      "needed": 3000
     },
     {
      "name": "Gadgetzan",
      "standing": "Neutral",
-     "progress": 2506,
+     "progress": 2509,
      "needed": 3000
     },
     {
      "name": "Powderfuse",
      "standing": "Friendly",
-     "progress": 276,
+     "progress": 281,
      "needed": 6000
     },
     {
      "name": "Ratchet",
      "standing": "Friendly",
-     "progress": 70,
+     "progress": 73,
      "needed": 6000
     },
     {
@@ -278,14 +278,14 @@
     },
     {
      "name": "Bolder'ok Clan",
-     "standing": "Neutral",
-     "progress": 1241,
-     "needed": 3000
+     "standing": "Friendly",
+     "progress": 111,
+     "needed": 6000
     },
     {
      "name": "Durotar Supply and Logistics",
      "standing": "Neutral",
-     "progress": 2000,
+     "progress": 2125,
      "needed": 3000
     },
     {
@@ -296,18 +296,18 @@
     }
    ],
    "stats": {
-    "Health": 1674,
-    "Mana or energy": 3865,
+    "Health": 1614,
+    "Mana or energy": 3376,
     "Strength": 39,
     "Agility": 36,
-    "Stamina": 83,
-    "Intellect": 176,
+    "Stamina": 107,
+    "Intellect": 177,
     "Spirit": 122,
-    "Armour": 493
+    "Armour": 943
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": -95,
+    "Dishonourable kills": 18,
     "Honour points": 64,
     "Renown": 0
    },
@@ -324,7 +324,7 @@
    "faction": "Horde",
    "level": 12,
    "item_level": 9,
-   "recorded_at": "2026-11-22T19:40:32Z",
+   "recorded_at": "2026-11-23T16:30:54Z",
    "recorded_on": "logout",
    "build": "71037",
    "gear": [
@@ -549,7 +549,7 @@
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": -77,
+    "Dishonourable kills": 6,
     "Honour points": 0,
     "Renown": 0
    },
