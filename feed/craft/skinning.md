@@ -5,6 +5,6 @@ Estimated listing margins: what the item lists for against what its reagents cos
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
 | Trapper's Workbench | 300 | 279938 | 1 | 61s 89c | 27s 56c | 34s 33c | ForeverDB |
-| Camp Chair | 0 | 279979 | 1 | 4s 80c | 2s 14c | 2s 66c | our scan |
+| Camp Chair | 0 | 279979 | 1 | 4s 74c | 2s 14c | 2s 60c | our scan |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

@@ -1,12 +1,12 @@
 # PvP Horde: Weapon: Fist Weapon
 
 - **Market:** PvP Horde (Forever), every item recorded.
-- **Latest scan:** 2026-11-23 15:16 UTC. Uploads in the 30-day window: 7.
+- **Latest scan:** 2026-11-23 15:51 UTC. Uploads in the 30-day window: 8.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Brass Knuckles | 250602 | 68s 0c | 2026-11-23 15:16 UTC | 50s 0c | 50s 0c | moving | 9 of 12 | 9 | +53% |
+| Brass Knuckles | 250602 | 68s 0c | 2026-11-23 15:51 UTC | 50s 0c | 50s 0c | moving | 9 of 12 | 9 | +53% |
 | Golem Fist | 282551 | 1g 47s 0c | 2026-11-20 06:35 UTC | 1g 47s 0c |  | too new | 1 of 12 | 2 |  |
 | Iron Fists | 250604 | 89s 69c | 2026-11-23 15:16 UTC | 89s 69c | 80s 0c | moving | 11 of 12 | 6 | +12% |
 | Left-Handed Claw | 15907 | 1g 0s 0c | 2026-11-20 06:35 UTC | 1g 0s 0c |  | too new | 1 of 12 | 1 |  |
