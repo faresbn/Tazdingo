@@ -64,10 +64,10 @@
 | Formula: Enchant Weapon - Superior Striking | 16250 | 8g 10s 0c | 2026-11-23 15:51 UTC | 10g 0s 0c | 11g 0s 0c | volatile | 11 of 12 | 10 | -83% |
 | Formula: Enchant Weapon - Unholy Weapon | 16248 | 8g 55s 1c | 2026-11-23 15:16 UTC | 10g 0s 0c | 14g 99s 89c | volatile | 9 of 12 | 7 | -80% |
 | Formula: Lesser Mana Oil | 20754 | 1g 75s 97c | 2026-11-23 15:16 UTC | 1g 80s 6c | 1g 94s 97c | moving | 12 of 12 | 56 | -27% |
-| Formula: Lesser Wizard Oil | 20753 | 44s 99c | 2026-11-23 15:51 UTC | 57s 33c | 50s 49c | volatile | 12 of 12 | 32 | +15% |
+| Formula: Lesser Wizard Oil | 20753 | 89s 12c | 2026-11-23 15:51 UTC | 57s 33c | 50s 49c | volatile | 12 of 12 | 32 | +15% |
 | Formula: Minor Mana Oil | 20752 | 38s 50c | 2026-11-23 15:51 UTC | 36s 88c | 34s 76c | moving | 12 of 12 | 22 | +8% |
-| Formula: Minor Wizard Oil | 20758 | 5s 87c | 2026-11-23 15:51 UTC | 6s 3c | 5s 95c | volatile | 12 of 12 | 46 | +21% |
+| Formula: Minor Wizard Oil | 20758 | 5s 87c | 2026-11-23 15:51 UTC | 5s 87c | 5s 95c | volatile | 12 of 12 | 46 | -19% |
 | Formula: Smoking Heart of the Mountain | 11813 | 60s 0c | 2026-11-23 15:51 UTC | 60s 0c | 81s 97c | volatile | 12 of 12 | 22 | -84% |
-| Formula: Wizard Oil | 20755 | 2g 45s 9c | 2026-11-23 15:16 UTC | 2g 60s 99c | 3g 43s 50c | moving | 12 of 12 | 38 | -33% |
+| Formula: Wizard Oil | 20755 | 2g 93s 36c | 2026-11-23 15:51 UTC | 2g 60s 99c | 3g 43s 50c | moving | 12 of 12 | 38 | -31% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

@@ -28,7 +28,7 @@
 | Lesser Mana Oil | 20747 | 10s 56c | 2026-11-23 15:16 UTC | 10s 56c | 10s 87c | moving | 12 of 12 | 366 | -25% |
 | Lesser Mystic Essence | 11134 | 7s 98c | 2026-11-23 15:51 UTC | 8s 92c | 8s 61c | moving | 12 of 12 | 1361 | +7% |
 | Lesser Nether Essence | 11174 | 44s 97c | 2026-11-23 15:51 UTC | 40s 87c | 36s 69c | moving | 12 of 12 | 838 | +38% |
-| Lesser Wizard Oil | 20746 | 10s 53c | 2026-11-23 15:51 UTC | 10s 79c | 11s 57c | steady | 12 of 12 | 512 | -10% |
+| Lesser Wizard Oil | 20746 | 10s 98c | 2026-11-23 15:51 UTC | 10s 79c | 11s 57c | steady | 12 of 12 | 512 | -10% |
 | Luminous Residue | 247884 | 1s 47c | 2026-11-23 15:51 UTC | 94c | 1s 62c | volatile | 12 of 12 | 230 | -74% |
 | Mote of Magic | 247786 | 13c | 2026-11-23 15:51 UTC | 13c | 10c | volatile | 12 of 12 | 4581 | +160% |
 | Nexus Crystal | 20725 | 44g 48s 95c | 2026-11-23 15:16 UTC | 44g 98s 99c | 44g 98s 99c | moving | 10 of 12 | 20 | +0% |

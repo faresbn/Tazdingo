@@ -18,7 +18,7 @@
 | Manual: Potent Anti-Venom | 255728 | 22s 0c | 2026-11-23 15:51 UTC | 17s 99c | 17s 49c | steady | 12 of 12 | 54 | +6% |
 | Manual: Powerful Poultice | 255731 | 8g 82s 5c | 2026-11-23 15:51 UTC | 3g 39s 0c | 3g 39s 0c | moving | 11 of 12 | 18 | -14% |
 | Manual: Strong Anti-Venom | 6454 | 80s 0c | 2026-11-23 15:51 UTC | 63s 0c | 39s 75c | volatile | 12 of 12 | 47 | +425% |
-| Manual: Superior Healing Potion | 255725 | 13s 66c | 2026-11-23 15:51 UTC | 15s 89c | 19s 49c | moving | 12 of 12 | 88 | -28% |
+| Manual: Superior Healing Potion | 255725 | 14s 69c | 2026-11-23 15:51 UTC | 14s 69c | 19s 49c | moving | 12 of 12 | 88 | -30% |
 | Manual: Superior Poultice | 255727 | 17s 0c | 2026-11-23 15:51 UTC | 16s 0c | 16s 64c | steady | 12 of 12 | 63 | -15% |
 | Manual: Surgical Tourniquet | 255730 | 5g 1s 98c | 2026-11-23 15:51 UTC | 2g 28s 0c | 2g 25s 0c | steady | 12 of 12 | 38 | +1% |
 

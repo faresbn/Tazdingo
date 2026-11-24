@@ -227,7 +227,7 @@
 | Mind-numbing Poison II | 6951 | 3s 0c | 2026-11-23 15:16 UTC | 3s 70c | 3s 76c | volatile | 10 of 12 | 140 | -26% |
 | Mind-numbing Poison III | 9186 | 4s 44c | 2026-11-23 15:16 UTC | 6s 99c | 5s 99c | volatile | 8 of 12 | 40 |  |
 | Minor Mana Oil | 20745 | 5s 65c | 2026-11-23 15:51 UTC | 4s 99c | 5s 0c | steady | 12 of 12 | 352 | +0% |
-| Minor Wizard Oil | 20744 | 3s 44c | 2026-11-23 15:51 UTC | 3s 43c | 3s 26c | steady | 12 of 12 | 555 | +14% |
+| Minor Wizard Oil | 20744 | 3s 49c | 2026-11-23 15:51 UTC | 3s 43c | 3s 26c | steady | 12 of 12 | 555 | +14% |
 | Molten Foundry | 279952 | 1g 74s 99c | 2026-11-23 15:51 UTC | 1g 79s 52c | 1g 79s 66c | volatile | 11 of 12 | 81 | -87% |
 | Nightcrawlers | 6530 | 89c | 2026-11-23 15:51 UTC | 89c | 92c | volatile | 12 of 12 | 824 | -6% |
 | Oil Covered Fish | 6458 | 48s 0c | 2026-11-23 15:51 UTC | 13c | 11c | volatile | 12 of 12 | 312 | +44% |
@@ -296,7 +296,7 @@
 | Waylaid Crate: Journeyman Textiles | 248688 | 9s 0c | 2026-11-23 15:51 UTC | 9s 90c | 9s 69c | volatile | 12 of 12 | 1108 | +106% |
 | Windstone | 255663 | 3s 78c | 2026-11-23 15:51 UTC | 8c | 8c | volatile | 12 of 12 | 330 | -20% |
 | Witherbark Mallet | 216483 | 1s 0c | 2026-11-23 15:51 UTC | 90c | 1s 0c | volatile | 12 of 12 | 81 | -10% |
-| Wizard Oil | 20750 | 20s 0c | 2026-11-23 15:51 UTC | 37s 0c | 53s 29c | volatile | 12 of 12 | 328 | -88% |
+| Wizard Oil | 20750 | 37s 99c | 2026-11-23 15:51 UTC | 37s 0c | 53s 29c | volatile | 12 of 12 | 328 | -85% |
 | Wound Poison | 10918 | 2s 49c | 2026-11-23 15:51 UTC | 2s 90c | 2s 69c | volatile | 12 of 12 | 122 | +17% |
 | Wound Poison II | 10920 | 2s 44c | 2026-11-23 15:51 UTC | 8s 35c | 7s 10c | volatile | 7 of 12 | 145 |  |
 | Wound Poison III | 10921 | 4s 90c | 2026-11-23 15:16 UTC | 15s 49c | 13s 98c | volatile | 7 of 12 | 72 |  |

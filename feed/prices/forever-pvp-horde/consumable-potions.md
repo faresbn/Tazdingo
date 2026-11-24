@@ -66,9 +66,9 @@
 | Rage Potion | 5631 | 40c | 2026-11-23 15:51 UTC | 41c | 48c | volatile | 12 of 12 | 1360 | -16% |
 | Shadow Protection Potion | 6048 | 6s 87c | 2026-11-23 15:16 UTC | 4s 98c | 5s 18c | moving | 12 of 12 | 523 | -16% |
 | Spellblasting Potion | 250934 | 4s 96c | 2026-11-23 15:51 UTC | 5s 99c | 5s 0c | volatile | 11 of 12 | 205 | +36% |
-| Superior Discolored Healing Potion | 247242 | 24s 39c | 2026-11-23 15:51 UTC | 24s 39c | 24s 41c | moving | 12 of 12 | 166 | -10% |
+| Superior Discolored Healing Potion | 247242 | 24s 39c | 2026-11-23 15:51 UTC | 24s 39c | 24s 41c | moving | 12 of 12 | 166 | +0% |
 | Superior Frenzy Potion | 250942 | 40s 87c | 2026-11-23 15:16 UTC | 60s 0c | 59s 99c | volatile | 11 of 12 | 118 | +9% |
-| Superior Healing Potion | 3928 | 4s 51c | 2026-11-23 15:51 UTC | 5s 89c | 7s 71c | moving | 12 of 12 | 2174 | -40% |
+| Superior Healing Potion | 3928 | 4s 51c | 2026-11-23 15:51 UTC | 5s 6c | 7s 71c | volatile | 12 of 12 | 2174 | -45% |
 | Superior Mana Potion | 13443 | 34s 93c | 2026-11-23 15:51 UTC | 36s 51c | 36s 22c | moving | 12 of 12 | 623 | +2% |
 | Superior Mender's Potion | 250948 | 45s 67c | 2026-11-23 15:16 UTC | 45s 67c | 52s 11c | volatile | 12 of 12 | 92 | -74% |
 | Superior Spellblasting Potion | 250936 | 48s 0c | 2026-11-23 15:51 UTC | 55s 92c | 48s 0c | volatile | 11 of 12 | 223 | +60% |

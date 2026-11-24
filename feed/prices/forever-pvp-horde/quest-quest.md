@@ -163,7 +163,7 @@
 | Vibrant Plume | 5117 | 8s 60c | 2026-11-23 15:51 UTC | 8s 28c | 8s 47c | steady | 12 of 12 | 1180 | -5% |
 | Vulture Gizzard | 8396 | 3g 50s 0c | 2026-11-23 15:51 UTC | 2g 69s 99c | 2g 71s 38c | moving | 12 of 12 | 290 | -1% |
 | Warlords Deck | 19257 | 29g 98s 0c | 2026-11-23 15:16 UTC | 29g 99s 69c | 29g 99s 69c | moving | 9 of 12 | 2 | -54% |
-| Wastewander Water Pouch | 8483 | 2s 95c | 2026-11-23 15:51 UTC | 3s 76c | 4s 29c | volatile | 12 of 12 | 1466 | -43% |
+| Wastewander Water Pouch | 8483 | 3s 16c | 2026-11-23 15:51 UTC | 3s 16c | 4s 29c | volatile | 12 of 12 | 1466 | -52% |
 | Wildkin E'ko | 12433 | 13s 62c | 2026-11-23 15:51 UTC | 13s 80c | 14s 89c | volatile | 12 of 12 | 176 | -86% |
 | Winterfall E'ko | 12431 | 40s 0c | 2026-11-23 15:51 UTC | 35s 0c | 41s 0c | volatile | 12 of 12 | 192 | -65% |
 | Yellow Power Crystal | 11188 | 3s 91c | 2026-11-23 15:51 UTC | 2s 50c | 2s 94c | volatile | 12 of 12 | 1262 | -51% |
