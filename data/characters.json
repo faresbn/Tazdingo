@@ -12,7 +12,7 @@
    "faction": "Horde",
    "level": 43,
    "item_level": 40.1,
-   "recorded_at": "2026-11-23T16:51:14Z",
+   "recorded_at": "2026-11-23T20:28:19Z",
    "recorded_on": "logout",
    "build": "71037",
    "gear": [
@@ -169,7 +169,7 @@
     {
      "name": "Defense",
      "category": "Weapon Skills",
-     "skill": 208,
+     "skill": 210,
      "max": 215
     },
     {
@@ -193,7 +193,7 @@
     {
      "name": "Wands",
      "category": "Weapon Skills",
-     "skill": 195,
+     "skill": 196,
      "max": 215
     },
     {
@@ -236,32 +236,32 @@
     },
     {
      "name": "Booty Bay",
-     "standing": "Neutral",
-     "progress": 2919,
-     "needed": 3000
+     "standing": "Friendly",
+     "progress": 234,
+     "needed": 6000
     },
     {
      "name": "Everlook",
      "standing": "Neutral",
-     "progress": 2496,
+     "progress": 2811,
      "needed": 3000
     },
     {
      "name": "Gadgetzan",
      "standing": "Neutral",
-     "progress": 2509,
+     "progress": 2914,
      "needed": 3000
     },
     {
      "name": "Powderfuse",
      "standing": "Friendly",
-     "progress": 281,
+     "progress": 821,
      "needed": 6000
     },
     {
      "name": "Ratchet",
      "standing": "Friendly",
-     "progress": 73,
+     "progress": 388,
      "needed": 6000
     },
     {
@@ -297,17 +297,17 @@
    ],
    "stats": {
     "Health": 1614,
-    "Mana or energy": 3376,
+    "Mana or energy": 3451,
     "Strength": 39,
     "Agility": 36,
     "Stamina": 107,
-    "Intellect": 177,
+    "Intellect": 182,
     "Spirit": 122,
     "Armour": 943
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": 18,
+    "Dishonourable kills": 102,
     "Honour points": 64,
     "Renown": 0
    },
