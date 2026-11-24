@@ -1,73 +1,73 @@
 # PvP Horde: Recipe: Enchanting
 
 - **Market:** PvP Horde (Forever), every item recorded.
-- **Latest scan:** 2026-11-23 15:51 UTC. Uploads in the 30-day window: 8.
+- **Latest scan:** 2026-11-24 16:00 UTC. Uploads in the 30-day window: 9.
 - **These are asking prices recorded by Auctionator, not sales.** "Latest" is the cheapest listing at the scan named; "typical" is the median daily low over the item's last seven days of records; "usual" is the median daily low over the last 14 full days, needing at least three. Steadiness: steady, moving or volatile; volatile prices are unreliable.
 
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
-| Blueprint: Arcane Forge | 273116 | 48g 0s 0c | 2026-11-23 15:51 UTC | 35g 0s 0c | 44g 99s 0c | volatile | 11 of 12 | 6 | -67% |
-| Blueprint: Arcane Salvager | 273103 | 4g 0s 0c | 2026-11-23 15:51 UTC | 2g 98s 0c | 2g 17s 50c | volatile | 12 of 12 | 74 | +114% |
-| Formula: Enchant 2H Weapon - Lesser Intellect | 6349 | 11s 0c | 2026-11-23 15:51 UTC | 11s 0c | 9s 97c | moving | 12 of 12 | 41 | +17% |
-| Formula: Enchant 2H Weapon - Lesser Spirit | 11038 | 34s 40c | 2026-11-23 15:51 UTC | 4s 89c | 4s 19c | volatile | 12 of 12 | 54 | +23% |
-| Formula: Enchant 2H Weapon - Major Intellect | 16249 | 9g 99s 0c | 2026-11-23 15:51 UTC | 18g 0s 0c | 22g 43s 99c | volatile | 12 of 12 | 12 | -40% |
-| Formula: Enchant 2H Weapon - Major Spirit | 16255 | 3g 55s 0c | 2026-11-23 15:51 UTC | 2g 41s 55c | 3g 55s 0c | volatile | 11 of 12 | 24 | -91% |
-| Formula: Enchant 2H Weapon - Superior Impact | 16247 | 12g 86s 1c | 2026-11-23 15:51 UTC | 20g 99s 99c | 21g 95s 13c | volatile | 10 of 12 | 10 | -8% |
-| Formula: Enchant Boots - Greater Agility | 16245 | 3g 47s 98c | 2026-11-23 15:51 UTC | 1g 66s 0c | 2g 24s 98c | volatile | 12 of 12 | 37 | -58% |
-| Formula: Enchant Boots - Greater Stamina | 16215 | 99s 97c | 2026-11-23 15:51 UTC | 94s 0c | 95s 0c | moving | 12 of 12 | 30 | -2% |
-| Formula: Enchant Boots - Lesser Spirit | 11167 | 15s 0c | 2026-11-23 15:51 UTC | 13s 0c | 12s 50c | moving | 12 of 12 | 34 | +8% |
-| Formula: Enchant Boots - Minor Agility | 6377 | 5s 98c | 2026-11-23 15:16 UTC | 5s 75c | 4s 85c | volatile | 12 of 12 | 70 | +45% |
-| Formula: Enchant Boots - Speed | 289560 | 16g 99s 99c | 2026-11-16 | 10g 85s 49c |  | too new | 2 of 12 | 18 |  |
-| Formula: Enchant Boots - Spirit | 16220 | 1g 30s 66c | 2026-11-23 15:51 UTC | 65s 99c | 68s 50c | moving | 12 of 12 | 31 | -4% |
-| Formula: Enchant Bracer - Deflection | 11223 | 96s 99c | 2026-11-23 15:16 UTC | 97s 50c | 1g 10s 99c | volatile | 12 of 12 | 28 | -34% |
-| Formula: Enchant Bracer - Greater Intellect | 16214 | 13g 80s 0c | 2026-11-23 15:16 UTC | 13g 0s 0c | 10g 66s 25c | volatile | 12 of 12 | 12 | +44% |
-| Formula: Enchant Bracer - Greater Spirit | 11204 | 52s 0c | 2026-11-23 15:51 UTC | 11s 96c | 12s 0c | moving | 12 of 12 | 51 | +0% |
-| Formula: Enchant Bracer - Greater Stamina | 11225 | 55s 15c | 2026-11-23 15:51 UTC | 31s 98c | 18s 41c | volatile | 12 of 12 | 54 | +88% |
-| Formula: Enchant Bracer - Lesser Spirit | 6375 | 8s 50c | 2026-11-23 15:16 UTC | 7s 0c | 4s 99c | volatile | 12 of 12 | 51 | +90% |
-| Formula: Enchant Bracer - Lesser Strength | 11101 | 40s 0c | 2026-11-23 15:51 UTC | 35s 0c | 36s 17c | moving | 12 of 12 | 64 | -12% |
-| Formula: Enchant Bracer - Minor Spirit | 6344 | 5s 0c | 2026-11-23 15:16 UTC | 4s 0c | 2s 60c | volatile | 12 of 12 | 38 | +100% |
-| Formula: Enchant Bracer - Minor Strength | 6347 | 1s 99c | 2026-11-23 15:51 UTC | 1s 99c | 1s 82c | moving | 12 of 12 | 34 | +33% |
-| Formula: Enchant Bracer - Superior Spirit | 16218 | 69s 54c | 2026-11-23 15:51 UTC | 69s 54c | 73s 65c | volatile | 12 of 12 | 26 | -30% |
-| Formula: Enchant Bracer - Superior Stamina | 16251 | 75s 0c | 2026-11-23 15:51 UTC | 75s 0c | 82s 50c | volatile | 12 of 12 | 48 | -57% |
-| Formula: Enchant Bracer - Superior Strength | 16246 | 77g 0s 0c | 2026-11-23 15:16 UTC | 94g 99s 99c | 139g 99s 98c | volatile | 11 of 12 | 4 | -74% |
-| Formula: Enchant Chest - Greater Stats | 16253 | 599g 0s 0c | 2026-11-23 15:51 UTC | 346g 99s 99c | 374g 13s 82c | volatile | 12 of 12 | 2 | -85% |
-| Formula: Enchant Chest - Lesser Intellect | 6346 | 1g 3s 99c | 2026-11-23 15:51 UTC | 97s 0c | 92s 37c | volatile | 12 of 12 | 18 | +39% |
-| Formula: Enchant Chest - Major Intellect | 16242 | 115g 0s 0c | 2026-11-23 15:16 UTC | 85g 97s 0c | 100g 0s 0c | moving | 9 of 12 | 4 | -70% |
-| Formula: Enchant Chest - Major Stamina | 16221 | 39g 2s 1c | 2026-11-23 15:51 UTC | 20g 0s 0c | 22g 72s 50c | volatile | 12 of 12 | 10 | -15% |
-| Formula: Enchant Chest - Minor Intellect | 6342 | 2s 68c | 2026-11-23 15:51 UTC | 2s 89c | 2s 96c | moving | 12 of 12 | 40 | -4% |
-| Formula: Enchant Cloak - Greater Resistance | 16216 | 6g 0s 0c | 2026-11-23 15:51 UTC | 5g 95s 0c | 3g 44s 99c | volatile | 12 of 12 | 17 | +98% |
-| Formula: Enchant Cloak - Lesser Agility | 11206 | 19s 9c | 2026-11-23 15:51 UTC | 19s 75c | 19s 87c | volatile | 12 of 12 | 59 | -1% |
-| Formula: Enchant Cloak - Lesser Shadow Resistance | 11098 | 44s 90c | 2026-11-23 15:51 UTC | 6s 99c | 6s 59c | moving | 12 of 12 | 32 | +29% |
-| Formula: Enchant Cloak - Superior Defense | 16224 | 28g 99s 99c | 2026-11-23 15:51 UTC | 15g 0s 95c | 19g 99s 99c | volatile | 11 of 12 | 5 | -26% |
-| Formula: Enchant Gloves - Advanced Herbalism | 11205 | 2g 99s 97c | 2026-11-23 15:16 UTC | 3g 33s 99c | 3g 28s 50c | moving | 12 of 12 | 19 | +2% |
-| Formula: Enchant Gloves - Advanced Mining | 11203 | 27s 89c | 2026-11-23 15:51 UTC | 10s 99c | 11s 50c | steady | 12 of 12 | 108 | -8% |
-| Formula: Enchant Gloves - Fishing | 11152 | 20s 97c | 2026-11-23 15:51 UTC | 7s 98c | 7s 99c | steady | 12 of 12 | 61 | +0% |
-| Formula: Enchant Gloves - Greater Agility | 16219 | 4g 48s 99c | 2026-11-23 15:51 UTC | 4g 48s 99c | 4g 94s 49c | volatile | 12 of 12 | 20 | -28% |
-| Formula: Enchant Gloves - Greater Strength | 16244 | 25g 64s 99c | 2026-11-23 15:16 UTC | 15g 90s 0c | 19g 0s 0c | volatile | 12 of 12 | 10 | -67% |
-| Formula: Enchant Gloves - Herbalism | 11151 | 2g 39s 73c | 2026-11-23 15:51 UTC | 1g 40s 0c | 68s 80c | volatile | 12 of 12 | 20 | +597% |
-| Formula: Enchant Gloves - Mining | 11150 | 5g 44s 0c | 2026-11-23 15:16 UTC | 2g 50s 0c | 2g 39s 44c | volatile | 12 of 12 | 13 | +138% |
-| Formula: Enchant Gloves - Riding Skill | 11226 | 18g 29s 87c | 2026-11-23 15:51 UTC | 8g 59s 78c | 9g 47s 40c | volatile | 12 of 12 | 18 | -14% |
-| Formula: Enchant Gloves - Skinning | 11166 | 12s 0c | 2026-11-23 15:51 UTC | 11s 0c | 10s 94c | steady | 12 of 12 | 46 | +10% |
-| Formula: Enchant Shield - Frost Resistance | 11224 | 8g 89s 90c | 2026-11-23 15:51 UTC | 1g 0s 0c | 1g 0s 0c | steady | 12 of 12 | 14 | +0% |
-| Formula: Enchant Shield - Lesser Block | 11168 | 14g 55s 99c | 2026-11-23 15:51 UTC | 9g 90s 0c | 5g 12s 49c | volatile | 12 of 12 | 8 | +148% |
-| Formula: Enchant Shield - Lesser Protection | 11081 | 7s 20c | 2026-11-23 15:51 UTC | 4s 0c | 3s 73c | volatile | 12 of 12 | 44 | +57% |
-| Formula: Enchant Shield - Stamina | 11202 | 34s 0c | 2026-11-23 15:51 UTC | 11s 98c | 12s 0c | volatile | 12 of 12 | 56 | +0% |
-| Formula: Enchant Shield - Superior Spirit | 16222 | 15g 0s 0c | 2026-11-23 15:16 UTC | 50g 0s 0c | 54g 99s 48c | volatile | 8 of 12 | 4 |  |
-| Formula: Enchant Weapon - Crusader | 16252 | 275g 99s 97c | 2026-11-23 15:51 UTC | 290g 0s 0c | 299g 99s 99c | moving | 12 of 12 | 6 | -17% |
-| Formula: Enchant Weapon - Demonslaying | 11208 | 13s 49c | 2026-11-23 15:51 UTC | 13s 86c | 13s 99c | steady | 12 of 12 | 58 | -8% |
-| Formula: Enchant Weapon - Fiery Weapon | 11207 | 7g 0s 0c | 2026-11-23 15:51 UTC | 12g 60s 89c | 19g 50s 35c | volatile | 12 of 12 | 26 | -50% |
-| Formula: Enchant Weapon - Icy Chill | 16223 | 9g 11s 9c | 2026-11-23 15:51 UTC | 11g 32s 0c | 13g 4s 99c | volatile | 10 of 12 | 10 | -62% |
-| Formula: Enchant Weapon - Lesser Beastslayer | 11164 | 40s 0c | 2026-11-23 15:51 UTC | 9s 87c | 8s 0c | moving | 12 of 12 | 34 | +23% |
-| Formula: Enchant Weapon - Lesser Elemental Slayer | 11165 | 19s 60c | 2026-11-23 15:51 UTC | 8s 90c | 8s 0c | steady | 12 of 12 | 42 | +11% |
-| Formula: Enchant Weapon - Lifestealing | 16254 | 24g 89s 11c | 2026-11-23 15:16 UTC | 25g 99s 92c | 54g 99s 50c | volatile | 10 of 12 | 7 | -83% |
-| Formula: Enchant Weapon - Minor Beastslayer | 6348 | 3s 0c | 2026-11-23 15:51 UTC | 2s 0c | 1s 99c | moving | 12 of 12 | 41 | +14% |
-| Formula: Enchant Weapon - Superior Striking | 16250 | 8g 10s 0c | 2026-11-23 15:51 UTC | 10g 0s 0c | 11g 0s 0c | volatile | 11 of 12 | 10 | -83% |
-| Formula: Enchant Weapon - Unholy Weapon | 16248 | 8g 55s 1c | 2026-11-23 15:16 UTC | 10g 0s 0c | 14g 99s 89c | volatile | 9 of 12 | 7 | -80% |
-| Formula: Lesser Mana Oil | 20754 | 1g 75s 97c | 2026-11-23 15:16 UTC | 1g 80s 6c | 1g 94s 97c | moving | 12 of 12 | 56 | -27% |
-| Formula: Lesser Wizard Oil | 20753 | 89s 12c | 2026-11-23 15:51 UTC | 57s 33c | 50s 49c | volatile | 12 of 12 | 32 | +15% |
-| Formula: Minor Mana Oil | 20752 | 38s 50c | 2026-11-23 15:51 UTC | 36s 88c | 34s 76c | moving | 12 of 12 | 22 | +8% |
-| Formula: Minor Wizard Oil | 20758 | 5s 87c | 2026-11-23 15:51 UTC | 5s 87c | 5s 95c | volatile | 12 of 12 | 46 | -19% |
-| Formula: Smoking Heart of the Mountain | 11813 | 60s 0c | 2026-11-23 15:51 UTC | 60s 0c | 81s 97c | volatile | 12 of 12 | 22 | -84% |
-| Formula: Wizard Oil | 20755 | 2g 93s 36c | 2026-11-23 15:51 UTC | 2g 60s 99c | 3g 43s 50c | moving | 12 of 12 | 38 | -31% |
+| Blueprint: Arcane Forge | 273116 | 45g 1s 0c | 2026-11-24 16:00 UTC | 44g 99s 0c | 45g 1s 0c | volatile | 3 of 3 | 5 | -31% |
+| Blueprint: Arcane Salvager | 273103 | 8g 39s 49c | 2026-11-24 16:00 UTC | 2g 98s 0c | 5g 80s 20c | volatile | 3 of 3 | 84 | +106% |
+| Formula: Enchant 2H Weapon - Lesser Intellect | 6349 | 9s 99c | 2026-11-24 16:00 UTC | 11s 0c | 11s 0c | moving | 3 of 3 | 30 | +17% |
+| Formula: Enchant 2H Weapon - Lesser Spirit | 11038 | 9s 99c | 2026-11-24 16:00 UTC | 9s 0c | 9s 99c | volatile | 3 of 3 | 28 | +137% |
+| Formula: Enchant 2H Weapon - Major Intellect | 16249 | 15g 80s 0c | 2026-11-24 16:00 UTC | 15g 80s 0c | 15g 77s 22c | volatile | 3 of 3 | 12 | -44% |
+| Formula: Enchant 2H Weapon - Major Spirit | 16255 | 1g 55s 69c | 2026-11-24 16:00 UTC | 1g 75s 0c | 1g 55s 69c | volatile | 3 of 3 | 26 | -87% |
+| Formula: Enchant 2H Weapon - Superior Impact | 16247 | 10g 0s 0c | 2026-11-24 16:00 UTC | 13g 0s 95c | 11g 86s 1c | volatile | 3 of 3 | 14 | -56% |
+| Formula: Enchant Boots - Greater Agility | 16245 | 1g 6s 0c | 2026-11-24 16:00 UTC | 1g 66s 0c | 1g 6s 0c | volatile | 3 of 3 | 55 | -58% |
+| Formula: Enchant Boots - Greater Stamina | 16215 | 98s 99c | 2026-11-24 16:00 UTC | 98s 99c | 98s 99c | moving | 3 of 3 | 17 | +6% |
+| Formula: Enchant Boots - Lesser Spirit | 11167 | 14s 50c | 2026-11-24 16:00 UTC | 13s 0c | 14s 50c | moving | 3 of 3 | 30 | -13% |
+| Formula: Enchant Boots - Minor Agility | 6377 | 3s 97c | 2026-11-24 16:00 UTC | 5s 75c | 5s 98c | volatile | 3 of 3 | 72 | +45% |
+| Formula: Enchant Boots - Speed | 289560 | 16g 99s 99c | 2026-11-16 | 10g 85s 49c |  | too new | 0 of 3 |  |  |
+| Formula: Enchant Boots - Spirit | 16220 | 75s 75c | 2026-11-24 16:00 UTC | 75s 75c | 75s 75c | moving | 3 of 3 | 43 | +11% |
+| Formula: Enchant Bracer - Deflection | 11223 | 94s 94c | 2026-11-24 16:00 UTC | 97s 50c | 96s 99c | volatile | 3 of 3 | 24 | -28% |
+| Formula: Enchant Bracer - Greater Intellect | 16214 | 14g 97s 0c | 2026-11-24 16:00 UTC | 13g 80s 0c | 13g 80s 0c | volatile | 3 of 3 | 10 | +45% |
+| Formula: Enchant Bracer - Greater Spirit | 11204 | 14s 49c | 2026-11-24 16:00 UTC | 11s 96c | 14s 49c | moving | 3 of 3 | 83 | +0% |
+| Formula: Enchant Bracer - Greater Stamina | 11225 | 18s 99c | 2026-11-24 16:00 UTC | 18s 99c | 18s 99c | volatile | 3 of 3 | 41 | +9% |
+| Formula: Enchant Bracer - Lesser Spirit | 6375 | 15s 0c | 2026-11-24 16:00 UTC | 7s 42c | 8s 50c | volatile | 3 of 3 | 32 | +101% |
+| Formula: Enchant Bracer - Lesser Strength | 11101 | 34s 98c | 2026-11-24 16:00 UTC | 35s 0c | 34s 98c | moving | 3 of 3 | 98 | -7% |
+| Formula: Enchant Bracer - Minor Spirit | 6344 | 48s 50c | 2026-11-24 16:00 UTC | 5s 0c | 7s 99c | volatile | 3 of 3 | 25 | +142% |
+| Formula: Enchant Bracer - Minor Strength | 6347 | 4s 25c | 2026-11-24 16:00 UTC | 2s 0c | 1s 99c | moving | 3 of 3 | 31 | +32% |
+| Formula: Enchant Bracer - Superior Spirit | 16218 | 65s 0c | 2026-11-24 16:00 UTC | 66s 50c | 69s 54c | volatile | 3 of 3 | 21 | -36% |
+| Formula: Enchant Bracer - Superior Stamina | 16251 | 81s 99c | 2026-11-24 16:00 UTC | 75s 0c | 75s 0c | volatile | 3 of 3 | 102 | -45% |
+| Formula: Enchant Bracer - Superior Strength | 16246 | 148g 99s 0c | 2026-11-24 16:00 UTC | 94g 99s 99c | 77g 0s 0c | volatile | 3 of 3 | 8 | -57% |
+| Formula: Enchant Chest - Greater Stats | 16253 | 430g 0s 0c | 2026-11-24 16:00 UTC | 398g 27s 65c | 430g 0s 0c | volatile | 3 of 3 | 2 | -70% |
+| Formula: Enchant Chest - Lesser Intellect | 6346 | 1g 2s 99c | 2026-11-24 16:00 UTC | 99s 99c | 1g 2s 99c | volatile | 3 of 3 | 17 | +24% |
+| Formula: Enchant Chest - Major Intellect | 16242 | 108g 19s 0c | 2026-11-24 16:00 UTC | 100g 0s 0c | 108g 19s 0c | moving | 3 of 3 | 4 | -43% |
+| Formula: Enchant Chest - Major Stamina | 16221 | 19g 99s 0c | 2026-11-24 16:00 UTC | 19g 99s 0c | 23g 45s 0c | volatile | 3 of 3 | 19 | -26% |
+| Formula: Enchant Chest - Minor Intellect | 6342 | 2s 66c | 2026-11-24 16:00 UTC | 2s 72c | 2s 68c | moving | 3 of 3 | 35 | -9% |
+| Formula: Enchant Cloak - Greater Resistance | 16216 | 10g 99s 98c | 2026-11-24 16:00 UTC | 6g 0s 0c | 6g 0s 0c | volatile | 3 of 3 | 32 | +88% |
+| Formula: Enchant Cloak - Lesser Agility | 11206 | 44s 0c | 2026-11-24 16:00 UTC | 19s 75c | 19s 75c | volatile | 3 of 3 | 42 | -4% |
+| Formula: Enchant Cloak - Lesser Shadow Resistance | 11098 | 19s 0c | 2026-11-24 16:00 UTC | 6s 99c | 19s 0c | volatile | 3 of 3 | 31 | +22% |
+| Formula: Enchant Cloak - Superior Defense | 16224 | 36g 95s 99c | 2026-11-24 16:00 UTC | 19g 99s 99c | 28g 0s 0c | volatile | 3 of 3 | 9 | +0% |
+| Formula: Enchant Gloves - Advanced Herbalism | 11205 | 2g 50s 0c | 2026-11-24 16:00 UTC | 2g 99s 97c | 2g 99s 97c | moving | 3 of 3 | 18 | -9% |
+| Formula: Enchant Gloves - Advanced Mining | 11203 | 10s 97c | 2026-11-24 16:00 UTC | 10s 98c | 10s 97c | steady | 3 of 3 | 82 | -5% |
+| Formula: Enchant Gloves - Fishing | 11152 | 11s 79c | 2026-11-24 16:00 UTC | 8s 0c | 11s 79c | steady | 3 of 3 | 66 | +0% |
+| Formula: Enchant Gloves - Greater Agility | 16219 | 3g 90s 0c | 2026-11-24 16:00 UTC | 4g 48s 0c | 4g 48s 99c | volatile | 3 of 3 | 47 | -32% |
+| Formula: Enchant Gloves - Greater Strength | 16244 | 16g 11s 0c | 2026-11-24 16:00 UTC | 15g 90s 0c | 16g 11s 0c | volatile | 3 of 3 | 11 | -53% |
+| Formula: Enchant Gloves - Herbalism | 11151 | 1g 0s 0c | 2026-11-24 16:00 UTC | 1g 40s 0c | 1g 0s 0c | volatile | 3 of 3 | 24 | +565% |
+| Formula: Enchant Gloves - Mining | 11150 | 3g 0s 0c | 2026-11-24 16:00 UTC | 2g 99s 0c | 3g 0s 0c | volatile | 3 of 3 | 13 | +74% |
+| Formula: Enchant Gloves - Riding Skill | 11226 | 9g 98s 0c | 2026-11-24 16:00 UTC | 8g 95s 80c | 9g 98s 0c | volatile | 3 of 3 | 28 | -10% |
+| Formula: Enchant Gloves - Skinning | 11166 | 12s 0c | 2026-11-24 16:00 UTC | 11s 0c | 11s 0c | steady | 3 of 3 | 36 | +8% |
+| Formula: Enchant Shield - Frost Resistance | 11224 | 5g 0s 0c | 2026-11-24 16:00 UTC | 1g 0s 97c | 5g 0s 0c | volatile | 3 of 3 | 17 | +3% |
+| Formula: Enchant Shield - Lesser Block | 11168 | 22g 22s 22c | 2026-11-24 16:00 UTC | 12g 0s 0c | 14g 55s 99c | volatile | 3 of 3 | 8 | +174% |
+| Formula: Enchant Shield - Lesser Protection | 11081 | 20s 0c | 2026-11-24 16:00 UTC | 6s 73c | 7s 50c | volatile | 3 of 3 | 58 | +153% |
+| Formula: Enchant Shield - Stamina | 11202 | 14s 0c | 2026-11-24 16:00 UTC | 11s 98c | 14s 0c | volatile | 3 of 3 | 68 | +0% |
+| Formula: Enchant Shield - Superior Spirit | 16222 | 40g 0s 0c | 2026-11-24 16:00 UTC | 40g 0s 0c | 30g 0s 0c | volatile | 3 of 3 | 7 | -73% |
+| Formula: Enchant Weapon - Crusader | 16252 | 269g 98s 98c | 2026-11-24 16:00 UTC | 290g 0s 0c | 275g 99s 97c | moving | 3 of 3 | 13 | -17% |
+| Formula: Enchant Weapon - Demonslaying | 11208 | 16s 79c | 2026-11-24 16:00 UTC | 13s 86c | 13s 65c | steady | 3 of 3 | 75 | -8% |
+| Formula: Enchant Weapon - Fiery Weapon | 11207 | 6g 0s 0c | 2026-11-24 16:00 UTC | 8g 98s 90c | 7g 0s 0c | volatile | 3 of 3 | 64 | -61% |
+| Formula: Enchant Weapon - Icy Chill | 16223 | 6g 95s 99c | 2026-11-24 16:00 UTC | 10g 75s 0c | 9g 11s 9c | volatile | 3 of 3 | 28 | -56% |
+| Formula: Enchant Weapon - Lesser Beastslayer | 11164 | 21s 98c | 2026-11-24 16:00 UTC | 9s 87c | 21s 98c | volatile | 3 of 3 | 58 | +23% |
+| Formula: Enchant Weapon - Lesser Elemental Slayer | 11165 | 10s 49c | 2026-11-24 16:00 UTC | 8s 98c | 10s 49c | steady | 3 of 3 | 43 | +13% |
+| Formula: Enchant Weapon - Lifestealing | 16254 | 39g 99s 0c | 2026-11-24 16:00 UTC | 25g 99s 92c | 24g 89s 93c | volatile | 3 of 3 | 10 | -76% |
+| Formula: Enchant Weapon - Minor Beastslayer | 6348 | 2s 59c | 2026-11-24 16:00 UTC | 2s 0c | 2s 59c | moving | 3 of 3 | 41 | +7% |
+| Formula: Enchant Weapon - Superior Striking | 16250 | 12g 19s 99c | 2026-11-24 16:00 UTC | 10g 0s 0c | 9g 50s 0c | volatile | 3 of 3 | 16 | -62% |
+| Formula: Enchant Weapon - Unholy Weapon | 16248 | 8g 44s 1c | 2026-11-24 16:00 UTC | 9g 99s 99c | 8g 55s 1c | volatile | 3 of 3 | 12 | -80% |
+| Formula: Lesser Mana Oil | 20754 | 1g 28s 1c | 2026-11-24 16:00 UTC | 1g 78s 99c | 1g 75s 97c | moving | 3 of 3 | 67 | -22% |
+| Formula: Lesser Wizard Oil | 20753 | 54s 34c | 2026-11-24 16:00 UTC | 54s 34c | 54s 34c | volatile | 3 of 3 | 78 | +9% |
+| Formula: Minor Mana Oil | 20752 | 36s 66c | 2026-11-24 16:00 UTC | 36s 66c | 36s 66c | moving | 3 of 3 | 19 | +5% |
+| Formula: Minor Wizard Oil | 20758 | 4s 86c | 2026-11-24 16:00 UTC | 5s 87c | 5s 87c | volatile | 3 of 3 | 40 | -19% |
+| Formula: Smoking Heart of the Mountain | 11813 | 54s 2c | 2026-11-24 16:00 UTC | 59s 99c | 59s 99c | volatile | 3 of 3 | 18 | -82% |
+| Formula: Wizard Oil | 20755 | 2g 91s 60c | 2026-11-24 16:00 UTC | 2g 60s 99c | 2g 50s 10c | moving | 3 of 3 | 28 | -31% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
