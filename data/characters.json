@@ -12,7 +12,7 @@
    "faction": "Horde",
    "level": 43,
    "item_level": 40.1,
-   "recorded_at": "2026-11-23T20:28:19Z",
+   "recorded_at": "2026-11-24T14:07:55Z",
    "recorded_on": "logout",
    "build": "71037",
    "gear": [
@@ -122,10 +122,10 @@
    "talents": {
     "points": {
      "Affliction": 31,
-     "Demonology": 3,
+     "Demonology": 4,
      "Destruction": 0
     },
-    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAAAgPwMzYMmBzFcC"
+    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAAAgTwMzYMmBzFcC"
    },
    "professions": [
     {
@@ -164,37 +164,37 @@
      "name": "Daggers",
      "category": "Weapon Skills",
      "skill": 23,
-     "max": 215
+     "max": 220
     },
     {
      "name": "Defense",
      "category": "Weapon Skills",
-     "skill": 210,
-     "max": 215
+     "skill": 213,
+     "max": 220
     },
     {
      "name": "Staves",
      "category": "Weapon Skills",
      "skill": 4,
-     "max": 215
+     "max": 220
     },
     {
      "name": "Swords",
      "category": "Weapon Skills",
      "skill": 1,
-     "max": 215
+     "max": 220
     },
     {
      "name": "Unarmed",
      "category": "Weapon Skills",
      "skill": 13,
-     "max": 215
+     "max": 220
     },
     {
      "name": "Wands",
      "category": "Weapon Skills",
      "skill": 196,
-     "max": 215
+     "max": 220
     },
     {
      "name": "Cloth",
@@ -213,55 +213,55 @@
     {
      "name": "Darkspear Trolls",
      "standing": "Honored",
-     "progress": 2201,
+     "progress": 2220,
      "needed": 12000
     },
     {
      "name": "Orgrimmar",
      "standing": "Honored",
-     "progress": 4253,
+     "progress": 4272,
      "needed": 12000
     },
     {
      "name": "Thunder Bluff",
      "standing": "Honored",
-     "progress": 148,
+     "progress": 167,
      "needed": 12000
     },
     {
      "name": "Undercity",
      "standing": "Honored",
-     "progress": 948,
+     "progress": 1023,
      "needed": 12000
     },
     {
      "name": "Booty Bay",
      "standing": "Friendly",
-     "progress": 234,
+     "progress": 426,
      "needed": 6000
     },
     {
      "name": "Everlook",
-     "standing": "Neutral",
-     "progress": 2811,
-     "needed": 3000
+     "standing": "Friendly",
+     "progress": 4,
+     "needed": 6000
     },
     {
      "name": "Gadgetzan",
-     "standing": "Neutral",
-     "progress": 2914,
-     "needed": 3000
+     "standing": "Friendly",
+     "progress": 299,
+     "needed": 6000
     },
     {
      "name": "Powderfuse",
      "standing": "Friendly",
-     "progress": 821,
+     "progress": 1014,
      "needed": 6000
     },
     {
      "name": "Ratchet",
      "standing": "Friendly",
-     "progress": 388,
+     "progress": 580,
      "needed": 6000
     },
     {
@@ -296,19 +296,19 @@
     }
    ],
    "stats": {
-    "Health": 1614,
-    "Mana or energy": 3451,
+    "Health": 1696,
+    "Mana or energy": 3427,
     "Strength": 39,
     "Agility": 36,
-    "Stamina": 107,
-    "Intellect": 182,
-    "Spirit": 122,
+    "Stamina": 112,
+    "Intellect": 179,
+    "Spirit": 123,
     "Armour": 943
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": 102,
-    "Honour points": 64,
+    "Dishonourable kills": 117,
+    "Honour points": 81,
     "Renown": 0
    },
    "collected": {
@@ -324,7 +324,7 @@
    "faction": "Horde",
    "level": 12,
    "item_level": 9,
-   "recorded_at": "2026-11-23T16:30:54Z",
+   "recorded_at": "2026-11-24T13:18:00Z",
    "recorded_on": "logout",
    "build": "71037",
    "gear": [
@@ -549,7 +549,7 @@
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": 6,
+    "Dishonourable kills": 120,
     "Honour points": 0,
     "Renown": 0
    },
