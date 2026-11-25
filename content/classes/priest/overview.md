@@ -1,84 +1,44 @@
 ---
 updated: 2026-11-25
-summary: What the Priest is in WoW Forever, what Forever changed, and how the guides suggest picking a spec and levelling one.
-sources: Blizzard class deep dive, ForeverDB, Wowhead, Icy Veins, WoWSims presets
+status: source-reviewed
+summary: Live Forever Priest recommendations for levels 40–60, dungeon roles and Horde PvP.
+sources: Live levelling guides, WoW Forever Outpost talent comparisons and Blizzard hotfixes
 ---
 
 ## Cheatsheet
 
-- **Pick a spec:** Shadow is the simplest solo leveller ([ForeverDB](https://foreverdb.net/guide/leveling-priest)), finishing kills with a wand to save mana; Holy for a broad healing kit in a regular party; Discipline for shields and Penance from 30, also acceptable for levelling then (Wowhead). Favour healing in dungeons as you near 30.
-- **Key levels:** 10 first race spell and talent points · 20 [Fear Ward](https://foreverdb.net/spell/6346), Devouring Plague, second race spell, Mind Flay · 25 Binding Heal · 30 Penance, Divine Spirit · 32 [Shadow Word: Death](https://foreverdb.net/spell/1309595) · 40 Prayer of Mending, Shadowform.
-- **New in Forever:** Penance, Binding Heal and Prayer of Mending are talents; every Priest gets Fear Ward and Devouring Plague at 20, Divine Spirit at 30 and Shadow Word: Death at 32 ([Blizzard](https://worldofwarcraft.blizzard.com/en-us/news/24301514)). Spells start weaker but scale more with spell power; wands no longer gain from it.
-- **Professions:** Tailoring and Enchanting in every source, WoWSims' default included; Enchanting's Lesser Magic Wand (5) and [Greater Magic Wand](https://foreverdb.net/item/11288) (13) carry early levelling (Wowhead, Icy Veins).
-- **Race:** each race learns its own Priest spells at 10 and 20. Wowhead and Icy Veins' Discipline guide favour Gnome (Alliance) and Undead (Horde); Icy Veins' Shadow guide picks Night Elf; WoWSims defaults to Undead. A preference, not a requirement.
-- **Watch out:** guides mentioning Shadow Affinity or a one-minute Devouring Plague predate the final client: it's now Improved Mind Blast and 24 sec ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)). The five-second rule is server behaviour ForeverDB can't check, and nothing above 30 has been played.
+- **Pick a spec:** Shadow for solo questing and ranged damage, Discipline for shields and Penance or Holy for sustained party healing.
+- **Levels 40–59:** At 36, the main choice is whether to finish a deep Shadow route for Shadowform at 40 or keep a healing build for regular dungeons. Shadow Word: Death is already available. From 40, Shadow plus one healer allocation can cover both jobs. [Current levelling guide](https://mobalytics.gg/wow-forever/classes/priest-leveling-guide-1-60)
+- **Horde PvP ruleset:** A Horde Priest questing with a partner can keep Fear Ward and dispels accessible and reserve Psychic Scream for a player joining the pull. On Undead, plan when to trade health for mana with Dark Sacrifice. On Troll, use Shadowguard when pressure is likely. [Ruleset details](https://news.blizzard.com/en-us/article/24302070/choose-your-ruleset-in-world-of-warcraft-forever)
+- **Level-60 dungeons:** Check the build and rotation for your role below, then adjust to the pulls you actually run.
 
 ## What the guides say
 
 ### Tazdingo recommendation
 
-For mostly solo questing, **start with a current wand and a mana-efficient damage build**; Shadow is a straightforward route. For a regular healing party, choose Holy's direct-healing toolkit or Discipline's shields and Penance. A hybrid works when it solves your actual mix of questing and healing, but can delay those defining talents. Early similarity between specs does not establish their level-60 strength ([Shadow](https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview), [Holy](https://www.wowhead.com/forever/guide/classes/priest/holy/level-30-healer-overview), [Discipline](https://www.wowhead.com/forever/guide/classes/priest/discipline/level-30-healer-overview)). Race-spell utility can justify a preference such as Troll; a guide's preferred race is not a requirement to heal successfully.
+Shadow for solo questing and ranged damage, Discipline for shields and Penance or Holy for sustained party healing. At 36, the main choice is whether to finish a deep Shadow route for Shadowform at 40 or keep a healing build for regular dungeons. Shadow Word: Death is already available. From 40, Shadow plus one healer allocation can cover both jobs. [Current levelling guide](https://mobalytics.gg/wow-forever/classes/priest-leveling-guide-1-60)
 
-A useful levelling decision is whether to go deep Shadow immediately or take Meditation first and respec when Shadowform is reachable. [Icy Veins’ 1–60 guide](https://www.icy-veins.com/wow-forever/shadow-priest-leveling) compares both routes.
+### Current class changes
 
-### How Forever changed the class
+The November updates reduced party healing from Vampiric Embrace and fixed Dark Inspiration stacking and Mind Flay activation. A current healer guide should use Prayer of Mending and Binding Heal rather than Lightwell. [Blizzard’s live hotfixes](https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-23-2026) · [Final class tuning notes](https://www.bluetracker.gg/wow/topic/us-en/2360696-wow-forever-beta-development-notes-updated-november-2/)
 
-Blizzard's [Priest and Warrior deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24301514) set out the baseline changes:
+### Level-60 starting points
 
-- [Fear Ward](https://foreverdb.net/spell/6346) and [Devouring Plague](https://foreverdb.net/spell/2944) are taught to every Priest at level 20. In Classic they were Dwarf and Undead spells.
-- [Divine Spirit](https://foreverdb.net/spell/14752) is a trainer spell at 30 instead of a Discipline talent.
-- Shadow Word: Death arrives at 32 for everyone. It hits instantly, but costs you 10% of your maximum health if the target survives.
-- [Fade](https://foreverdb.net/spell/586) drops twice as much threat.
-- [Prayer of Healing](https://foreverdb.net/spell/596) heals the target's party, not yours, which lets a raid healer cover another group.
-- Several Priests can keep [Renew](https://foreverdb.net/spell/139) on the same target.
-
-The talent trees are new. Blizzard keeps one-point milestone talents at 11, 21 and 31 points and adds one at 16. In practice that puts Binding Heal at 25, Penance at 30 and Prayer of Mending at 40. Shadow's redesigned [Shadowform](https://foreverdb.net/spell/15473) needs level 40. Forever gives one talent point per level from 10, so you have 21 at level 30 and 51 at 60 ([ForeverDB talents](https://foreverdb.net/class/Priest/talents)).
-
-Spells start weaker but gain more from spell power. [Smite](https://foreverdb.net/spell/585) rank 1 went from 0.123 to 0.429 of your spell damage, according to [ForeverDB's levelling guide](https://foreverdb.net/guide/leveling-priest). Spell power on gear therefore matters early. The same guide notes, from Blizzard's 24 September notes, that wands no longer gain damage from spell power.
-
-### Race spells
-
-These come from the trainer or a race quest. Wowhead's guides call them the main thing that sets Priests apart in Forever.
-
-| Race | Level 10 | Level 20 |
+| Spec | Example PvE split | Use it for |
 |---|---|---|
-| Human | [Divine Grace](https://foreverdb.net/spell/1277370): instant heal on an ally below 50% health that clears Weakened Soul | [Feedback](https://foreverdb.net/spell/13896) |
-| Dwarf | [Desperate Prayer](https://foreverdb.net/spell/13908): instant self-heal | [Chastise](https://foreverdb.net/spell/1277331): Holy damage and a short root on a Humanoid |
-| Night Elf | [Starshards](https://foreverdb.net/spell/10797): Arcane damage over time, now on a 30 sec cooldown | [Elune's Grace](https://foreverdb.net/spell/2651) |
-| Gnome | [Confounding Flash](https://foreverdb.net/spell/1277455): confuses up to 5 nearby enemies | [Contingency Plan](https://foreverdb.net/spell/1277462): a ward that shields and heals an ally who drops below 35% |
-| Undead | [Touch of Weakness](https://foreverdb.net/spell/2652) | [Dark Sacrifice](https://foreverdb.net/spell/1277324): turns your health into mana, scaling with Spirit |
-| Troll | [Hex of Weakness](https://foreverdb.net/spell/9035) | [Shadowguard](https://foreverdb.net/spell/18137) |
+| [Discipline](ledger:classes/priest/discipline/) | 31/20/0 | Tank support, pre-emptive shields and fast recovery with Penance. |
+| [Holy](ledger:classes/priest/holy/) | 18/33/0 | Healing several allies with different direct, instant and group heals. |
+| [Shadow](ledger:classes/priest/shadow/) | 15/3/33 | Solo questing, ranged pressure and party support through Shadow damage. |
 
-For race choice, Wowhead's three Priest guides and Icy Veins' Discipline guide favour Gnome for the Alliance and Undead for the Horde. Icy Veins' Shadow guide picks Night Elf for Elune's Light instead. WoWSims' Shadow preset defaults to Undead.
+Choose a full allocation from the [level-60 guide comparison](https://www.wofwforever.com/en/guides/wow-forever-priest-level-60-talents/) or the spec page. The [first three raids](https://news.blizzard.com/en-us/article/24315820/world-of-warcraft-forever-now-live) are scheduled for 9 December. Dungeon play can tell you about damage, mana and utility in the meantime.
 
-### Late changes to watch for
+### Group practice in the late 30s
 
-Two builds changed the class after most guides were written. ForeverDB's comparison of the files lists them:
+Check parties for Scarlet Monastery or the Drowned City. A healing Priest can practise planning spells around predictable tank damage and keeping friends alive through movement. A Shadow Priest can test which targets survive long enough for a second effect. [Dungeon list](https://tierhall.app/wow/dungeons)
 
-- **16 October (1.60.1.70425):** Devouring Plague's cooldown dropped to 24 sec and Vampiric Embrace's to 30 sec. Shadow Word: Death went to an 18 sec cooldown. Shadow Affinity became Improved Mind Blast, and Improved Fade became Dark Inspiration. Mental Strength moved up to tier 2 ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)).
-- **24 October (first live client):** Holy Fire rank 1 hits a little less, and pushback talents were reworded ([ForeverDB](https://foreverdb.net/article/live-client-1-60-1-70532-what-changed)).
+### Horde PvP and secondary talents
 
-So a guide that still mentions Shadow Affinity, or a one-minute Devouring Plague, predates the final client.
-
-### Choosing a spec
-
-- **Discipline** prevents damage with shields. Wowhead calls its absorbs the best in the game and its solo play very safe, but notes weaker group healing and close competition from Holy. Icy Veins calls it harder than Holy but rewarding.
-- **Holy** has the broadest healing kit. Icy Veins calls it beginner-friendly but a little weaker than specialist healers. Wowhead points to Binding Heal and Prayer of Mending for split damage, and to its mana hunger.
-- **Shadow** is the damage spec. Wowhead says its identity arrives late, with Mind Flay at 20 and Shadowform at 40, and its raid standing is unclear. Blizzard's own summary says Shadow does strong damage over time but lacks a Warlock's utility.
-
-### Levelling
-
-All three guides agree the first levels feel the same whatever you plan to become. Shield yourself, open with spells, then finish with a wand to save mana. Wowhead and Icy Veins both lean on Enchanting for early wands: [Lesser Magic Wand](https://foreverdb.net/item/11287) at 5 and [Greater Magic Wand](https://foreverdb.net/item/11288) at 13.
-
-- [ForeverDB](https://foreverdb.net/guide/leveling-priest) calls Shadow the simplest first Priest: [Mind Flay](https://foreverdb.net/spell/15407) slows melee enemies and [Spirit Tap](https://foreverdb.net/spell/15270) refills mana after kills. It suggests Discipline for players who hate drinking or want to heal dungeons, and Holy Smite for Smite fans.
-- [Wowhead](https://www.wowhead.com/forever/guide/classes/priest/discipline/level-30-healer-overview) calls Discipline an acceptable levelling spec once Penance arrives at 30.
-- Both Wowhead and Icy Veins say you can heal or deal damage in early dungeons, but should favour healing as you near 30.
-
-Tailoring and Enchanting is the profession pair every source suggests, including WoWSims' default.
-
-### Where the guides are unsure
-
-Wowhead and Icy Veins describe a "five-second rule": spirit-based mana regeneration is reduced for five seconds after spending mana; talents such as Meditation allow part of it to continue. That is server behaviour, which [ForeverDB](https://foreverdb.net/article/yumytv-healer-beginners-guide) says it can't check in the client. Nothing above level 30 has been played yet.
+A Horde Priest questing with a partner can keep Fear Ward and dispels accessible and reserve Psychic Scream for a player joining the pull. On Undead, plan when to trade health for mana with Dark Sacrifice. On Troll, use Shadowguard when pressure is likely. The secondary talent allocation unlocks at level 40. Pair your regular dungeon role with a questing or PvP setup if the two jobs want different tools. [Secondary talents](https://www.wofwforever.com/en/guides/wow-forever-talents-explained/) · [Horde PvP rules](https://news.blizzard.com/en-us/article/24302070/choose-your-ruleset-in-world-of-warcraft-forever)
 
 ## Field findings
 
@@ -86,12 +46,8 @@ Nothing recorded yet.
 
 ## Read more
 
-- [Blizzard: Class Deep Dives, Priest and Warrior](https://worldofwarcraft.blizzard.com/en-us/news/24301514): Blizzard's own list of Priest changes and the design intent
-- [ForeverDB: Levelling a Priest to 30](https://foreverdb.net/guide/leveling-priest): every ability by level, race spells and levelling builds
-- [ForeverDB: Build 1.60.1.70425 changes](https://foreverdb.net/article/build-1-60-1-70425-game-files): the 16 October Shadow and Discipline rework
-- [ForeverDB: First live client changes](https://foreverdb.net/article/live-client-1-60-1-70532-what-changed): what changed between the last beta build and launch
-- [ForeverDB: Priest outlook](https://foreverdb.net/article/outlook-priest): what levels 31 to 40 hold in the files
-- [ForeverDB: yumytv's healing guide, checked](https://foreverdb.net/article/yumytv-healer-beginners-guide): which healing mechanics the client can and can't confirm
-- [Wowhead: Level 30 Discipline Priest](https://www.wowhead.com/forever/guide/classes/priest/discipline/level-30-healer-overview): levelling tips and the five-second rule
-- [Wowhead: Level 30 Shadow Priest](https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview): what Shadow levelling feels like at 20 to 30
-- [WoWSims Forever: Priest DPS presets](https://github.com/wowsims/forever/blob/master/ui/specs/priest/dps/presets.ts): the simulator's default race and professions
+- [Current Priest levelling guide](https://mobalytics.gg/wow-forever/classes/priest-leveling-guide-1-60)
+- [Level-60 Priest build comparison](https://www.wofwforever.com/en/guides/wow-forever-priest-level-60-talents/)
+- [Additional Priest guide](https://www.wowhead.com/forever/guide/classes/priest/holy/overview-pve-healer)
+- [Blizzard: live Forever hotfixes](https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-23-2026)
+- [Blizzard: Forever launch and raid schedule](https://news.blizzard.com/en-us/article/24315820/world-of-warcraft-forever-now-live)

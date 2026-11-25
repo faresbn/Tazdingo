@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-27
+updated: 2026-11-25
 summary: Useful Shaman macros for WoW Forever collected from community guides, each with a one-line explanation.
 sources: ForeverDB, Kami Labs, Wowhead
 ---
@@ -195,7 +195,7 @@ Both trinkets on one key (Kami Labs):
 
 Some Kami Labs descriptions don't match Forever's versions of these spells:
 
-- Its Flame Shock card says Flame Shock guarantees a Lava Burst critical hit. In Forever, Lava Burst deals 20% more damage with your Flame Shock up instead ([ForeverDB](https://foreverdb.net/class/Shaman/talents)).
+- Ignore the old Lava Burst proc note in the Flame Shock card. The live Elemental tree uses Call of Thunder ([final class tuning notes](https://www.bluetracker.gg/wow/topic/us-en/2360696-wow-forever-beta-development-notes-updated-november-2/)).
 - Its Fire Nova card describes a burst around the Shaman. Forever's Fire Nova erupts from your active Fire totem.
 - It calls Lesser Healing Wave mana-efficient. ForeverDB says it heals less per point of mana than Healing Wave.
 - Its four-totem sequence includes both Windfury and Flametongue Totems. Blizzard says a party can't benefit from both at once ([deep dive](https://worldofwarcraft.blizzard.com/en-us/news/24302097)), so it isn't listed here.

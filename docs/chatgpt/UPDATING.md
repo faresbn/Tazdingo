@@ -127,7 +127,7 @@ Read on Wowhead's Frost guide; not tested yet.
 - `updated` (required): today's date, YYYY-MM-DD. Change it on every edit.
 - `summary` (required): one sentence.
 - `sources`: where the page's content came from, in plain words.
-- `status`: `pre-launch` or `live`. A page is **pre-launch** unless this says `live`. Set `live` only after the page's main advice has been checked in the live game, not because it was edited after launch.
+- `status`: `pre-launch` (default), `source-reviewed` (guide checked against current published live sources) or `live` (main advice checked in the game).
 - `confidence`: optional, for the page as a whole: `idea`, `testing`, `tested` or `outdated`.
 - `verified`: optional, YYYY-MM-DD: when the main advice was last checked in game.
 

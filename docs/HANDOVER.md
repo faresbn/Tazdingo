@@ -101,6 +101,12 @@ The latest plan, research and review log are in `docs/sessions/2026-10-30-public
 - Farm route data is in `data/farm-routes.json`, with a player level range, enemies, source links and same-house price context. The farming page accepts `?level=35`; the craft page accepts `?skill=150` and `?traded=1`.
 - To switch to a first-party feed, create a Battle.net API client and store its client ID and secret server-side. Resolve and check the official EU PvP Horde house through the dynamic Forever namespace. Keep externally sourced data out of the Auctionator files and git history.
 
+## Horde PvP class guides (25 November)
+
+- Replaced the pre-launch overviews, spec recommendations and hybrid notes for nine classes and 27 specs with current levelling, dungeon and contested-zone guidance. Full talent allocations use individual 23 November class comparisons, supplemented by current spec guides and Blizzard’s live hotfixes.
+- The level selector covers the opening decisions for all specs and includes level 44 Warlock and level 36 Priest routes. Raid preparation describes builds that can be played now. The first three raids are scheduled for 9 December.
+- `status: source-reviewed` distinguishes current source reviews from in-game verification. Preserve the dated field findings and archive when editing guides.
+
 ## Session record
 
 - 26 Oct: repository connected; parser fixed; site v1 → v2; prices with typical price and steadiness; ChatGPT instructions. (`2026-10-26-*`)

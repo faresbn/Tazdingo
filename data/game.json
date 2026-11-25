@@ -15,79 +15,285 @@
    "action":"classes/","label":"Compare class builds","source":"https://news.blizzard.com/en-gb/article/24315281/wow-forever-hotfixes-november-23-2026"}
  ],
  "milestones": {
-  "warlock/affliction": [
-    {
-      "at": 27,
-      "title": "Compare your pet-led alternative",
-      "detail": "Wowhead suggests considering Demonology from 27. Keep Affliction if damage-over-time and self-sustain suit your pulls. Consider a switch if you want to build around an active demon.",
-      "source": "https://www.wowhead.com/forever/guide/classes/warlock/leveling-guide"
-    },
-    {
-      "at": 30,
-      "title": "Add Siphon Life on the sustain route",
-      "detail": "Use it on targets that live long enough for the healing and damage to matter. Check the Felhunter quest while planning trainer visits.",
-      "source": "https://www.icy-veins.com/wow-forever/affliction-warlock-leveling"
-    },
-    {
-      "at": 41,
-      "title": "Choose a demon or a sacrifice buff",
-      "detail": "The Icy Veins hybrid route can take Demonic Sacrifice here. Its solo recommendation is to sacrifice a Felhunter for sustain. Keeping a pet serves a different role.",
-      "source": "https://www.icy-veins.com/wow-forever/affliction-warlock-leveling"
-    },
-    {
-      "at": 51,
-      "title": "Add Wrack on the hybrid route",
-      "detail": "Icy Veins takes Wrack at 51 after the Demonology detour. Channel it when your other Shadow effects have time to tick. A different allocation changes when you reach it.",
-      "source": "https://www.icy-veins.com/wow-forever/affliction-warlock-leveling"
-    },
-    {
-      "at": 60,
-      "title": "Choose a build for the encounter",
-      "detail": "Compare your levelling allocation with an endgame build and retest against the intended fight length, movement and buffs.",
-      "source": "https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-spec-builds-talents"
-    }
-  ],
-  "tailoring": [
-    {
-      "at": 120,
-      "title": "Price silk and the glove route",
-      "detail": "Check whether your silk stock and the cost of elixirs favour the next gloves before buying Mageweave in bulk.",
-      "source": "https://www.wow-professions.com/forever/tailoring-leveling-guide"
-    },
-    {
-      "at": 140,
-      "title": "Compare Mageweave cloth with bolts",
-      "detail": "Price the material per bolt and keep cloth for recipes that call for it directly. Check the next skill band before converting your entire stock.",
-      "source": "https://www.wow-professions.com/forever/tailoring-leveling-guide"
-    },
-    {
-      "at": 200,
-      "title": "Plan Artisan training",
-      "detail": "Check the rank’s character-level requirement and trainer before spending on the next cloth tier.",
-      "source": "https://www.wow-professions.com/forever/tailoring-leveling-guide"
-    },
-    {
-      "at": 225,
-      "title": "Check Runecloth and recipe access",
-      "detail": "Buy the next band only after checking your training, pattern access and the route’s skill-up uncertainty.",
-      "source": "https://www.wow-professions.com/forever/tailoring-leveling-guide"
-    }
-  ],
-  "priest/shadow": [
-    {
-      "at": 20,
-      "title": "Choose an early damage or sustain route",
-      "detail": "Icy Veins places the earliest Mind Flay at 20. Its alternative is Discipline for Meditation before deep Shadow.",
-      "source": "https://www.icy-veins.com/wow-forever/shadow-priest-leveling"
-    },
-    {
-      "at": 40,
-      "title": "Review the Shadowform respec",
-      "detail": "If you levelled through Meditation, this is the guide’s respec decision. Compare mana use and your role in dungeon groups before changing.",
-      "source": "https://www.icy-veins.com/wow-forever/shadow-priest-leveling"
-    }
-  ]
-} ,
+    "warrior/arms": [
+      {
+        "at": 40,
+        "title": "Check your two-hander",
+        "detail": "Practise Sweeping Strikes on pairs and set Mortal Strike on the bar if you have reached it. Keep your shield set for contested travel.",
+        "source": "https://mobalytics.gg/wow-forever/classes/warrior-leveling-guide"
+      }
+    ],
+    "warrior/fury": [
+      {
+        "at": 40,
+        "title": "Make Bloodthirst sustainable",
+        "detail": "On repeated pulls, compare Rage and downtime with your current two weapons before making talent changes.",
+        "source": "https://mobalytics.gg/wow-forever/classes/warrior-leveling-guide"
+      }
+    ],
+    "warrior/protection": [
+      {
+        "at": 40,
+        "title": "Test Shield Slam on a mixed pack",
+        "detail": "Bring a current shield. Mark a caster and see which target you need to interrupt or taunt after the opening.",
+        "source": "https://mobalytics.gg/wow-forever/classes/warrior-leveling-guide"
+      }
+    ],
+    "paladin/holy": [
+      {
+        "at": 40,
+        "title": "Plan Light’s Vigil",
+        "detail": "Try the capstone on a dungeon pull with real group damage. Pack a damage set if the next route will be solo.",
+        "source": "https://mobalytics.gg/wow-forever/classes/paladin-leveling-guide"
+      }
+    ],
+    "paladin/protection": [
+      {
+        "at": 40,
+        "title": "Start with a shield pull",
+        "detail": "Use a corner for casters and check whether threat or incoming damage is the thing limiting the next pull.",
+        "source": "https://mobalytics.gg/wow-forever/classes/paladin-leveling-guide"
+      }
+    ],
+    "paladin/retribution": [
+      {
+        "at": 40,
+        "title": "Try the Seal-switching capstone",
+        "detail": "Compare an ordinary two-handed pull with a longer fight where Unsealed Wrath has time to work.",
+        "source": "https://mobalytics.gg/wow-forever/classes/paladin-leveling-guide"
+      }
+    ],
+    "hunter/beast-mastery": [
+      {
+        "at": 40,
+        "title": "Have the pet ready for Bestial Wrath",
+        "detail": "Check its relevant attack, defensive and control skills before changing the build for tougher targets.",
+        "source": "https://mobalytics.gg/wow-forever/classes/hunter-leveling-guide"
+      }
+    ],
+    "hunter/marksmanship": [
+      {
+        "at": 40,
+        "title": "Test Sniper Shot from cover",
+        "detail": "Compare pet and Lone Wolf pulls. Count how often your pet holds a mob long enough to get another shot away.",
+        "source": "https://mobalytics.gg/wow-forever/classes/hunter-leveling-guide"
+      }
+    ],
+    "hunter/survival": [
+      {
+        "at": 40,
+        "title": "Plan where to drop a trap",
+        "detail": "Practise on one durable mob and a short pack before trying the same melee weaving in a dungeon.",
+        "source": "https://mobalytics.gg/wow-forever/classes/hunter-leveling-guide"
+      }
+    ],
+    "rogue/assassination": [
+      {
+        "at": 40,
+        "title": "Check daggers and poison supply",
+        "detail": "Try the Mutilate and Venom setup on a quest elite and decide which parts are worth using on ordinary mobs.",
+        "source": "https://mobalytics.gg/wow-forever/classes/rogue-leveling-guide"
+      }
+    ],
+    "rogue/combat": [
+      {
+        "at": 40,
+        "title": "Fit Adrenaline Rush to a long pull",
+        "detail": "Save it for a pull where you can stay in melee, with Blade Flurry ready if two targets can be hit safely.",
+        "source": "https://mobalytics.gg/wow-forever/classes/rogue-leveling-guide"
+      }
+    ],
+    "rogue/subtlety": [
+      {
+        "at": 40,
+        "title": "Try Death Mark on a durable target",
+        "detail": "Leave time for the damage window. Keep a control or reset tool available for players joining the fight.",
+        "source": "https://mobalytics.gg/wow-forever/classes/rogue-leveling-guide"
+      }
+    ],
+    "priest/discipline": [
+      {
+        "at": 36,
+        "title": "Take stock of your healing role",
+        "detail": "At 36, keep Penance if you heal regularly. Decide whether the next allocation will cover solo damage or a second group-healing style.",
+        "source": "https://mobalytics.gg/wow-forever/classes/priest-leveling-guide-1-60"
+      },
+      {
+        "at": 60,
+        "title": "Compare the endgame allocations",
+        "detail": "Open the full talent comparison before spending points. Check the rotation in a dungeon and keep the outdoor allocation if it has been useful on contested routes.",
+        "source": "https://www.wofwforever.com/en/guides/wow-forever-priest-level-60-talents/"
+      }
+    ],
+    "priest/holy": [
+      {
+        "at": 36,
+        "title": "Plan your next healing tool",
+        "detail": "At 36, practise Binding Heal and Prayer of Healing. Aim for Prayer of Mending at 40 if you stay deep Holy.",
+        "source": "https://mobalytics.gg/wow-forever/classes/priest-leveling-guide-1-60"
+      },
+      {
+        "at": 60,
+        "title": "Compare the endgame allocations",
+        "detail": "Open the full talent comparison before spending points. Check the rotation in a dungeon and keep the outdoor allocation if it has been useful on contested routes.",
+        "source": "https://www.wofwforever.com/en/guides/wow-forever-priest-level-60-talents/"
+      }
+    ],
+    "priest/shadow": [
+      {
+        "at": 36,
+        "title": "Count the points to Shadowform",
+        "detail": "At 36, normal progression gives 27 points. Four more get you to 31 at 40 if they are all in Shadow. Plan a respec only if a dip would delay it.",
+        "source": "https://mobalytics.gg/wow-forever/classes/priest-leveling-guide-1-60"
+      },
+      {
+        "at": 60,
+        "title": "Compare the endgame allocations",
+        "detail": "Open the full talent comparison before spending points. Check the rotation in a dungeon and keep the outdoor allocation if it has been useful on contested routes.",
+        "source": "https://www.wofwforever.com/en/guides/wow-forever-priest-level-60-talents/"
+      }
+    ],
+    "shaman/elemental": [
+      {
+        "at": 40,
+        "title": "Build around lightning",
+        "detail": "Set up Lightning Bolt, Chain Lightning and shocks on the bar and check the current name and effect of Lightning Mastery.",
+        "source": "https://mobalytics.gg/wow-forever/classes/shaman-leveling-guide"
+      }
+    ],
+    "shaman/enhancement": [
+      {
+        "at": 40,
+        "title": "Match Stormstrike to your gear",
+        "detail": "Look at the actual weapon you have and practise keeping Windfury and your useful totems in play on successive pulls.",
+        "source": "https://mobalytics.gg/wow-forever/classes/shaman-leveling-guide"
+      }
+    ],
+    "shaman/restoration": [
+      {
+        "at": 40,
+        "title": "Try Chain Heal in a real group",
+        "detail": "Check where allies stand in your usual groups and use Riptide when you have to move.",
+        "source": "https://mobalytics.gg/wow-forever/classes/shaman-leveling-guide"
+      }
+    ],
+    "mage/arcane": [
+      {
+        "at": 40,
+        "title": "Plan one burn window",
+        "detail": "Try Arcane Power on a durable target and check the mana left when you start the next pull.",
+        "source": "https://mobalytics.gg/wow-forever/classes/mage-leveling-guide"
+      }
+    ],
+    "mage/fire": [
+      {
+        "at": 40,
+        "title": "Prepare a Fire cooldown pull",
+        "detail": "Use Combustion on a target with enough health to use it. Check how much time you spend drinking between fights.",
+        "source": "https://mobalytics.gg/wow-forever/classes/mage-leveling-guide"
+      }
+    ],
+    "mage/frost": [
+      {
+        "at": 40,
+        "title": "Plan control before the pull",
+        "detail": "Use a small pack to practise Ice Barrier, freezes and a route to cover. Save an escape if you are outdoors.",
+        "source": "https://mobalytics.gg/wow-forever/classes/mage-leveling-guide"
+      }
+    ],
+    "druid/balance": [
+      {
+        "at": 40,
+        "title": "Learn the Moonkin cast rhythm",
+        "detail": "Use a durable target to practise Wrath into Eclipse-accelerated Starfire and see when rolling DoTs are worth it.",
+        "source": "https://mobalytics.gg/wow-forever/classes/druid-leveling-guide-1-60"
+      }
+    ],
+    "druid/feral": [
+      {
+        "at": 40,
+        "title": "Choose the Cat or Bear capstone",
+        "detail": "Train Dire Bear. Choose Shifting Power for Cat or Primal Bite for Bear, then pick the gear and pulls for that job.",
+        "source": "https://mobalytics.gg/wow-forever/classes/druid-leveling-guide-1-60"
+      }
+    ],
+    "druid/restoration": [
+      {
+        "at": 40,
+        "title": "Learn where Wild Growth fits",
+        "detail": "Try it in a dungeon when several allies will benefit and the incoming damage allows a stationary cast.",
+        "source": "https://mobalytics.gg/wow-forever/classes/druid-leveling-guide-1-60"
+      }
+    ],
+    "warlock/affliction": [
+      {
+        "at": 44,
+        "title": "Decide whether to rush Wrack",
+        "detail": "At 44 you can have Wrack on a deep path. If you already have a sustain dip, compare how many pulls actually let you finish the channel before paying for a respec.",
+        "source": "https://mobalytics.gg/wow-forever/classes/warlock-leveling-guide"
+      },
+      {
+        "at": 60,
+        "title": "Compare the endgame allocations",
+        "detail": "Open the full talent comparison before spending points. Check the rotation in a dungeon and keep the outdoor allocation if it has been useful on contested routes.",
+        "source": "https://www.wofwforever.com/en/guides/wow-forever-warlock-level-60-talents/"
+      }
+    ],
+    "warlock/demonology": [
+      {
+        "at": 44,
+        "title": "Make your demon swap deliberate",
+        "detail": "At 44 you can have Demonic Pact. Try a sustain sacrifice and summon a different demon before a long quest route.",
+        "source": "https://mobalytics.gg/wow-forever/classes/warlock-leveling-guide"
+      },
+      {
+        "at": 60,
+        "title": "Compare the endgame allocations",
+        "detail": "Open the full talent comparison before spending points. Check the rotation in a dungeon and keep the outdoor allocation if it has been useful on contested routes.",
+        "source": "https://www.wofwforever.com/en/guides/wow-forever-warlock-level-60-talents/"
+      }
+    ],
+    "warlock/destruction": [
+      {
+        "at": 44,
+        "title": "Try a short Incinerate pull",
+        "detail": "At 44, check which mobs live long enough for Immolate into Incinerate. Save Havoc for a second target worth the global.",
+        "source": "https://mobalytics.gg/wow-forever/classes/warlock-leveling-guide"
+      },
+      {
+        "at": 60,
+        "title": "Compare the endgame allocations",
+        "detail": "Open the full talent comparison before spending points. Check the rotation in a dungeon and keep the outdoor allocation if it has been useful on contested routes.",
+        "source": "https://www.wofwforever.com/en/guides/wow-forever-warlock-level-60-talents/"
+      }
+    ],
+    "tailoring": [
+      {
+        "at": 120,
+        "title": "Price silk and the glove route",
+        "detail": "Check whether your silk stock and the cost of elixirs favour the next gloves before buying Mageweave in bulk.",
+        "source": "https://www.wow-professions.com/forever/tailoring-leveling-guide"
+      },
+      {
+        "at": 140,
+        "title": "Compare Mageweave cloth with bolts",
+        "detail": "Price the material per bolt and keep cloth for recipes that call for it directly. Check the next skill band before converting your entire stock.",
+        "source": "https://www.wow-professions.com/forever/tailoring-leveling-guide"
+      },
+      {
+        "at": 200,
+        "title": "Plan Artisan training",
+        "detail": "Check the rank’s character-level requirement and trainer before spending on the next cloth tier.",
+        "source": "https://www.wow-professions.com/forever/tailoring-leveling-guide"
+      },
+      {
+        "at": 225,
+        "title": "Check Runecloth and recipe access",
+        "detail": "Buy the next band only after checking your training, pattern access and the route’s skill-up uncertainty.",
+        "source": "https://www.wow-professions.com/forever/tailoring-leveling-guide"
+      }
+    ]
+  } ,
  "log_after": "32e8704cb420b6838e20b2f12e9fed5916bae166",
  "classes": [
   {

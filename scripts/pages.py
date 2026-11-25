@@ -859,7 +859,7 @@ def llms_full(site: Site, ctx: dict) -> str:
            "game data from ForeverDB. Live crafting and item pages may also use named same-house observations to fill gaps. Guide summaries cite their sources. This is an unofficial site.",
            f"Site: {site.url}  Built: {site.built}  Revision: {site.revision}", "",
            "## How to read this file", "",
-           "- Every page says its status. \"Pre-launch\" means written before launch (4 November 2026) or not yet confirmed in the live game: treat it as tentative. \"Live\" means checked in the live game. \"Beta\" marks prices from Forever Beta scans.",
+           "- Every page says its status. \"Pre-launch\" means written before launch (4 November 2026) or not yet confirmed in the live game: treat it as tentative. \"Live sources reviewed\" means checked against current published sources. \"Live\" means checked in the live game. \"Beta\" marks prices from Forever Beta scans.",
            "- \"What the guides say\" sections summarise other sites' guides (linked under \"Read more\"). \"Field findings\" are our own discoveries, with a confidence: idea, testing, tested or outdated.",
            "- Tazdingo recommendations are editorial conclusions with conditions and alternatives, not in-game tests. Later official mechanic changes supersede older guide text. Simulator presets and weights are model snapshots, not measured launch rankings.",
            "- Prices are per item in gold (g), silver (s) and copper (c): 1g = 100s = 10,000c. All prices are asking prices, not sales.",

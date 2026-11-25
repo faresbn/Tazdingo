@@ -317,7 +317,7 @@ def tsv(header: list[str], rows) -> str:
 # --- Content ------------------------------------------------------------------
 
 CONFIDENCE = {"idea": "Idea", "testing": "Testing", "tested": "Tested", "outdated": "Outdated"}
-STATUS = {"pre-launch": "Pre-launch", "live": "Live"}
+STATUS = {"pre-launch": "Pre-launch", "source-reviewed": "Live sources reviewed", "live": "Live"}
 CLASS_EXTRAS = {"overview": "Overview", "hybrid": "Hybrid builds", "macros": "Macros"}
 SECTION_NAMES = {"cheatsheet": "glance", "at a glance": "glance", "what the guides say": "guides", "ledger findings": "findings",
                  "field findings": "findings", "read more": "more"}
@@ -446,8 +446,8 @@ def load_content(root: Path, game: dict, launch: date, base: str = "/") -> dict:
         if meta.get("status") and meta["status"] not in STATUS:
             raise ValueError(f"{name}: status must be one of {', '.join(STATUS)}")
         check_sections(name, key, body)
-        # A page is Pre-launch until someone marks it Live after checking it in the live game:
-        # an edit after launch doesn't make old Beta advice current.
+        # Keep source reviews distinct from in-game verification. A recent edit alone
+        # does not establish either kind of review.
         status = meta.get("status") or "pre-launch"
         pages_[key] = {**meta, **places[key], "key": key, "file": name, "body": body, "html": ledger_links(render(body), base),
                        "sections": split_sections(body, base, embedded_prefix(key)), "status": status, "status_label": STATUS[status],

@@ -122,7 +122,12 @@ def finding_count(page: dict | None) -> int:
 def head_facts(page: dict | None, *extra: str) -> str:
     facts = list(extra)
     if page:
-        facts.append(badge("unknown", "Guide synthesis") if page["status"] == "pre-launch" else badge("live", "Checked in game"))
+        if page["status"] == "live":
+            facts.append(badge("live", "Checked in game"))
+        elif page["status"] == "source-reviewed":
+            facts.append(badge("unknown", page["status_label"]))
+        else:
+            facts.append(badge("unknown", "Guide synthesis"))
         if page.get("confidence_label"):
             facts.append(badge(page["confidence"], page["confidence_label"]))
         facts.append(f'<span class="updated">Edited {when(page["updated"])}</span>')
@@ -174,7 +179,7 @@ def classes_index(site: Site, ctx: dict) -> str:
         cards.append(f'<li class="class-card" style="--class:{esc(c["colour"])}">'
                      f'<a class="class-card-head" href="{b}classes/{c["slug"]}/">{emblem(site, "class", c["slug"], 40, c["colour"])}<span>{esc(c["name"])}</span></a>'
                      f'<ul class="spec-list">{specs}</ul></li>')
-    return layout(site, "Classes", page_head("Character", "Choose a class and spec to plan your next talent, spell or gear upgrade.")
+    return layout(site, "Classes", page_head("Character", "Plan your Horde character for contested questing, dungeons and level-60 builds on the PvP ruleset.")
                   + f'''<section class="page-body">
   <ul class="class-cards">{"".join(cards)}</ul>
   <details class="reading">
@@ -574,7 +579,7 @@ def about_page(site: Site, ctx: dict) -> str:
   <h2>What this is</h2>
   <p>Tazdingo is a small, unofficial record of World of Warcraft: Forever: what things cost on the Auction House, what cited guides say about each class, spec and profession, how the new systems work, and the addons, macros and known issues worth knowing. The field notes and personally collected market data mainly follow Horde characters; Alliance information remains welcome. Loktar Ogar. It isn't affiliated with or endorsed by Blizzard Entertainment.</p>
   <h2>Labels</h2>
-  <p>{badge("prelaunch")} marks anything written before launch on 4 November 2026, or not yet confirmed in the live game: treat it as tentative. A page becomes {badge("live")} only once it has been checked in the live game. {badge("beta")} marks prices from Forever Beta scans. Our own findings say how well they're tested: idea, testing, tested or outdated.</p>
+  <p>{badge("prelaunch")} marks anything written before launch on 4 November 2026, or not yet confirmed in the live game: treat it as tentative. {badge("unknown", "Live sources reviewed")} marks a guide checked against current sources. {badge("live")} marks advice checked in the live game. {badge("beta")} marks prices from Forever Beta scans. Our own findings say how well they're tested: idea, testing, tested or outdated.</p>
   <h2>Guide summaries</h2>
   <p>Each class, spec, profession and world page summarises what other sites' guides say, in our own words, and links to sources inline and under "Read more". The guides belong to their authors: read them for the full detail, the reasoning and their updates. Summaries were written from guides published before launch, most of which only covered levels 1 to 30.</p>
   <h2 id="recommendations">How recommendations are weighed</h2>

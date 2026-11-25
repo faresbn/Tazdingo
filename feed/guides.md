@@ -6,60 +6,60 @@ Pre-launch means the page's advice isn't checked in the live game yet. To edit a
 
 ### Classes and specs
 
-- `content/classes/druid/balance.md`: Balance Druid, updated 2026-10-30, Pre-launch, version `5c3bfe44de9e`
-- `content/classes/druid/feral.md`: Feral Druid, updated 2026-10-30, Pre-launch, version `3c17acd01780`
-- `content/classes/druid/hybrid.md`: Druid: hybrid builds, updated 2026-11-25, Pre-launch, version `5cd3c7d32e54`
+- `content/classes/druid/balance.md`: Balance Druid, updated 2026-11-25, Live sources reviewed, version `4dc74fc4f5ad`
+- `content/classes/druid/feral.md`: Feral Druid, updated 2026-11-25, Live sources reviewed, version `056c52e33549`
+- `content/classes/druid/hybrid.md`: Druid: hybrid builds, updated 2026-11-25, Live sources reviewed, version `006900a496c4`
 - `content/classes/druid/macros.md`: Druid: macros, updated 2026-11-25, Pre-launch, version `6c4ce03abc7c`
-- `content/classes/druid/overview.md`: Druid: overview, updated 2026-11-25, Pre-launch, version `ffb1a8a56278`
-- `content/classes/druid/restoration.md`: Restoration Druid, updated 2026-11-25, Pre-launch, version `29bad0ec1515`
-- `content/classes/hunter/beast-mastery.md`: Beast Mastery Hunter, updated 2026-11-25, Pre-launch, version `70731c400945`
-- `content/classes/hunter/hybrid.md`: Hunter: hybrid builds, updated 2026-11-25, Pre-launch, version `7f289362b939`
+- `content/classes/druid/overview.md`: Druid: overview, updated 2026-11-25, Live sources reviewed, version `1cf65ed64106`
+- `content/classes/druid/restoration.md`: Restoration Druid, updated 2026-11-25, Live sources reviewed, version `401c6339b6fb`
+- `content/classes/hunter/beast-mastery.md`: Beast Mastery Hunter, updated 2026-11-25, Live sources reviewed, version `8c5344e65046`
+- `content/classes/hunter/hybrid.md`: Hunter: hybrid builds, updated 2026-11-25, Live sources reviewed, version `0dadffb1e0a0`
 - `content/classes/hunter/macros.md`: Hunter: macros, updated 2026-11-25, Pre-launch, version `5afc0786c577`
-- `content/classes/hunter/marksmanship.md`: Marksmanship Hunter, updated 2026-11-25, Pre-launch, version `3eec04e8389f`
-- `content/classes/hunter/overview.md`: Hunter: overview, updated 2026-10-30, Pre-launch, version `ac165f3fadba`
-- `content/classes/hunter/survival.md`: Survival Hunter, updated 2026-10-30, Pre-launch, version `48017ff06adb`
-- `content/classes/mage/arcane.md`: Arcane Mage, updated 2026-10-30, Pre-launch, version `9e24f12e805b`
-- `content/classes/mage/fire.md`: Fire Mage, updated 2026-10-30, Pre-launch, version `c8c8fa869bcd`
-- `content/classes/mage/frost.md`: Frost Mage, updated 2026-10-30, Pre-launch, version `f68d7b4cd5c8`
-- `content/classes/mage/hybrid.md`: Mage: hybrid builds, updated 2026-10-27, Pre-launch, version `9ebc5789ef91`
+- `content/classes/hunter/marksmanship.md`: Marksmanship Hunter, updated 2026-11-25, Live sources reviewed, version `7396716e6db7`
+- `content/classes/hunter/overview.md`: Hunter: overview, updated 2026-11-25, Live sources reviewed, version `9a64f8ec45ff`
+- `content/classes/hunter/survival.md`: Survival Hunter, updated 2026-11-25, Live sources reviewed, version `ae16afa34da9`
+- `content/classes/mage/arcane.md`: Arcane Mage, updated 2026-11-25, Live sources reviewed, version `854906cdf70f`
+- `content/classes/mage/fire.md`: Fire Mage, updated 2026-11-25, Live sources reviewed, version `f3aa0c489111`
+- `content/classes/mage/frost.md`: Frost Mage, updated 2026-11-25, Live sources reviewed, version `8af3204104ff`
+- `content/classes/mage/hybrid.md`: Mage: hybrid builds, updated 2026-11-25, Live sources reviewed, version `624a112effc1`
 - `content/classes/mage/macros.md`: Mage: macros, updated 2026-10-27, Pre-launch, version `8ab0d5d5e726`
-- `content/classes/mage/overview.md`: Mage: overview, updated 2026-10-30, Pre-launch, version `555d249c8c9d`
-- `content/classes/paladin/holy.md`: Holy Paladin, updated 2026-11-25, Pre-launch, version `e28d38e038a8`
-- `content/classes/paladin/hybrid.md`: Paladin: hybrid builds, updated 2026-10-27, Pre-launch, version `f38101a97efd`
+- `content/classes/mage/overview.md`: Mage: overview, updated 2026-11-25, Live sources reviewed, version `ad0184a2903a`
+- `content/classes/paladin/holy.md`: Holy Paladin, updated 2026-11-25, Live sources reviewed, version `390b985b1115`
+- `content/classes/paladin/hybrid.md`: Paladin: hybrid builds, updated 2026-11-25, Live sources reviewed, version `c207a121387c`
 - `content/classes/paladin/macros.md`: Paladin: macros, updated 2026-10-27, Pre-launch, version `0b6b4b1adb1f`
-- `content/classes/paladin/overview.md`: Paladin: overview, updated 2026-10-30, Pre-launch, version `0e240a48b1d5`
-- `content/classes/paladin/protection.md`: Protection Paladin, updated 2026-11-25, Pre-launch, version `21103c4a4f3e`
-- `content/classes/paladin/retribution.md`: Retribution Paladin, updated 2026-11-25, Pre-launch, version `5eb07fdffe22`
-- `content/classes/priest/discipline.md`: Discipline Priest, updated 2026-10-30, Pre-launch, version `5b5c63613d32`
-- `content/classes/priest/holy.md`: Holy Priest, updated 2026-10-30, Pre-launch, version `00cab893097f`
-- `content/classes/priest/hybrid.md`: Priest: hybrid builds, updated 2026-11-25, Pre-launch, version `299249e48e81`
+- `content/classes/paladin/overview.md`: Paladin: overview, updated 2026-11-25, Live sources reviewed, version `478392d6805e`
+- `content/classes/paladin/protection.md`: Protection Paladin, updated 2026-11-25, Live sources reviewed, version `2980c3d1d296`
+- `content/classes/paladin/retribution.md`: Retribution Paladin, updated 2026-11-25, Live sources reviewed, version `ef70414f3b89`
+- `content/classes/priest/discipline.md`: Discipline Priest, updated 2026-11-25, Live sources reviewed, version `1bd05047ff1a`
+- `content/classes/priest/holy.md`: Holy Priest, updated 2026-11-25, Live sources reviewed, version `7c13099b3521`
+- `content/classes/priest/hybrid.md`: Priest: hybrid builds, updated 2026-11-25, Live sources reviewed, version `54bf12c75703`
 - `content/classes/priest/macros.md`: Priest: macros, updated 2026-10-27, Pre-launch, version `052a41066af9`
-- `content/classes/priest/overview.md`: Priest: overview, updated 2026-11-25, Pre-launch, version `ff31f3323266`
-- `content/classes/priest/shadow.md`: Shadow Priest, updated 2026-11-25, Pre-launch, version `5748f0e7fb17`
-- `content/classes/rogue/assassination.md`: Assassination Rogue, updated 2026-11-25, Pre-launch, version `d753b5d7c6ea`
-- `content/classes/rogue/combat.md`: Combat Rogue, updated 2026-11-25, Pre-launch, version `272c787c2403`
-- `content/classes/rogue/hybrid.md`: Rogue: hybrid builds, updated 2026-11-25, Pre-launch, version `ef23c3243dcf`
+- `content/classes/priest/overview.md`: Priest: overview, updated 2026-11-25, Live sources reviewed, version `cae27475f431`
+- `content/classes/priest/shadow.md`: Shadow Priest, updated 2026-11-25, Live sources reviewed, version `c20473b4790e`
+- `content/classes/rogue/assassination.md`: Assassination Rogue, updated 2026-11-25, Live sources reviewed, version `8aec6875be25`
+- `content/classes/rogue/combat.md`: Combat Rogue, updated 2026-11-25, Live sources reviewed, version `34d99e72efde`
+- `content/classes/rogue/hybrid.md`: Rogue: hybrid builds, updated 2026-11-25, Live sources reviewed, version `4c46d1cffc74`
 - `content/classes/rogue/macros.md`: Rogue: macros, updated 2026-11-25, Pre-launch, version `e89b0622aa58`
-- `content/classes/rogue/overview.md`: Rogue: overview, updated 2026-11-05, Pre-launch, version `351f76be914b`
-- `content/classes/rogue/subtlety.md`: Subtlety Rogue, updated 2026-11-25, Pre-launch, version `775d76e41560`
-- `content/classes/shaman/elemental.md`: Elemental Shaman, updated 2026-10-30, Pre-launch, version `e4c0322c1f6e`
-- `content/classes/shaman/enhancement.md`: Enhancement Shaman, updated 2026-10-30, Pre-launch, version `0397f4c06372`
-- `content/classes/shaman/hybrid.md`: Shaman: hybrid builds, updated 2026-10-27, Pre-launch, version `2eecbbdbdc8c`
-- `content/classes/shaman/macros.md`: Shaman: macros, updated 2026-10-27, Pre-launch, version `f9977510ed7f`
-- `content/classes/shaman/overview.md`: Shaman: overview, updated 2026-11-25, Pre-launch, version `4b20758339b1`
-- `content/classes/shaman/restoration.md`: Restoration Shaman, updated 2026-10-30, Pre-launch, version `42e452c9c960`
-- `content/classes/warlock/affliction.md`: Affliction Warlock, updated 2026-11-25, Pre-launch, version `761550c643be`
-- `content/classes/warlock/demonology.md`: Demonology Warlock, updated 2026-10-30, Pre-launch, version `58949d8c1e64`
-- `content/classes/warlock/destruction.md`: Destruction Warlock, updated 2026-10-30, Pre-launch, version `b26efe4cb8d9`
-- `content/classes/warlock/hybrid.md`: Warlock: hybrid builds, updated 2026-10-27, Pre-launch, version `41b7732fa61b`
+- `content/classes/rogue/overview.md`: Rogue: overview, updated 2026-11-25, Live sources reviewed, version `5b001b8b9e9b`
+- `content/classes/rogue/subtlety.md`: Subtlety Rogue, updated 2026-11-25, Live sources reviewed, version `d7493a5dbc22`
+- `content/classes/shaman/elemental.md`: Elemental Shaman, updated 2026-11-25, Live sources reviewed, version `2f2cd6990008`
+- `content/classes/shaman/enhancement.md`: Enhancement Shaman, updated 2026-11-25, Live sources reviewed, version `08b897a04766`
+- `content/classes/shaman/hybrid.md`: Shaman: hybrid builds, updated 2026-11-25, Live sources reviewed, version `d938a3919dff`
+- `content/classes/shaman/macros.md`: Shaman: macros, updated 2026-11-25, Pre-launch, version `d1f8a4235a2a`
+- `content/classes/shaman/overview.md`: Shaman: overview, updated 2026-11-25, Live sources reviewed, version `7c091a4701f0`
+- `content/classes/shaman/restoration.md`: Restoration Shaman, updated 2026-11-25, Live sources reviewed, version `b851cb392f37`
+- `content/classes/warlock/affliction.md`: Affliction Warlock, updated 2026-11-25, Live sources reviewed, version `d19d252e16d6`
+- `content/classes/warlock/demonology.md`: Demonology Warlock, updated 2026-11-25, Live sources reviewed, version `8c6ed57b0d34`
+- `content/classes/warlock/destruction.md`: Destruction Warlock, updated 2026-11-25, Live sources reviewed, version `6ab2d7a5c02a`
+- `content/classes/warlock/hybrid.md`: Warlock: hybrid builds, updated 2026-11-25, Live sources reviewed, version `eb9f4fe47ad1`
 - `content/classes/warlock/macros.md`: Warlock: macros, updated 2026-10-27, Pre-launch, version `162a57b1a618`
-- `content/classes/warlock/overview.md`: Warlock: overview, updated 2026-10-30, Pre-launch, version `d0954b114f3d`
-- `content/classes/warrior/arms.md`: Arms Warrior, updated 2026-11-25, Pre-launch, version `af1eb88f8415`
-- `content/classes/warrior/fury.md`: Fury Warrior, updated 2026-10-30, Pre-launch, version `5b3ee4e98d80`
-- `content/classes/warrior/hybrid.md`: Warrior: hybrid builds, updated 2026-10-27, Pre-launch, version `0ea3b31ba162`
+- `content/classes/warlock/overview.md`: Warlock: overview, updated 2026-11-25, Live sources reviewed, version `6a281daa270d`
+- `content/classes/warrior/arms.md`: Arms Warrior, updated 2026-11-25, Live sources reviewed, version `ba4c8c9cfdb3`
+- `content/classes/warrior/fury.md`: Fury Warrior, updated 2026-11-25, Live sources reviewed, version `f3635147d8fd`
+- `content/classes/warrior/hybrid.md`: Warrior: hybrid builds, updated 2026-11-25, Live sources reviewed, version `01aadef2e20f`
 - `content/classes/warrior/macros.md`: Warrior: macros, updated 2026-10-27, Pre-launch, version `9e93f83f7f25`
-- `content/classes/warrior/overview.md`: Warrior: overview, updated 2026-10-30, Pre-launch, version `4d154cfee114`
-- `content/classes/warrior/protection.md`: Protection Warrior, updated 2026-11-25, Pre-launch, version `b1b19238becb`
+- `content/classes/warrior/overview.md`: Warrior: overview, updated 2026-11-25, Live sources reviewed, version `217d617d7fec`
+- `content/classes/warrior/protection.md`: Protection Warrior, updated 2026-11-25, Live sources reviewed, version `bc80f2037670`
 
 ### Professions
 

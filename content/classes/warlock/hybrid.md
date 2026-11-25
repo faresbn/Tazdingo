@@ -1,58 +1,31 @@
 ---
-updated: 2026-10-27
-summary: Warlock builds that mix Affliction, Demonology and Destruction in WoW Forever: the guides' levelling hybrids, the level 60 builds from Wowhead and WoWSims, PvP builds, and why the hybrid tax doesn't apply.
-sources: Icy Veins, Wowhead, WoWSims builds, Blizzard class deep dive, ForeverDB
+updated: 2026-11-25
+status: source-reviewed
+summary: Live level-60 Warlock talent splits and when to keep a separate Horde PvP allocation.
+sources: WoW Forever Outpost talent comparisons and the Forever launch guide
 ---
 
 ## Cheatsheet
 
-- **Why mixing is easy:** One talent point per level from 10, and each row needs only 5 points in the rows above it in the same section ([ForeverDB](https://foreverdb.net/class/Warlock/talents)).
-- **Designed for it:** Blizzard moved [Ruin](https://foreverdb.net/spell/17959) to row 3 as a 5-point talent so that Demonology and hybrid builds can reach it ([Blizzard](https://worldofwarcraft.com/en-us/news/24310968)).
-- **Levelling:** All three Icy Veins levelling builds finish in two or three sections, usually with an 11-point Demonology dip for [Demonic Sacrifice](https://foreverdb.net/spell/18788).
-- **Level 60:** Every Wowhead raid build and every WoWSims preset crosses trees: SM Ruin, Wrack, 2/31/18 Demonology and an Affliction-flavoured Destruction.
-- **PvP:** Wowhead lists Soul Link hybrids such as SM/SL and SL/Conflagrate.
-- **Hybrid tax:** It doesn't apply. Warlocks are a pure class, and the tax concerns classes that can fill more than one role.
+- **Levelling:** Pick the defining talent for your main role. [Levelling route](https://mobalytics.gg/wow-forever/classes/warlock-leveling-guide)
+- **Level 60:** Use the build comparison below to choose your cross-tree points. [Full point allocations](https://www.wofwforever.com/en/guides/wow-forever-warlock-level-60-talents/)
+- **Horde PvP ruleset:** Keep a demon and a few shards when questing in contested zones. Choose Spell Lock, a Sacrifice shield or Seduction according to the likely threat. An imp-sacrifice raid setup is a different job from surviving a player who joins your pull.
 
 ## What the guides say
 
 ### Tazdingo recommendation
 
-**Borrow for a specific problem, and count the milestone you delay.** Early instant Corruption improves mobile tagging; pet talents improve a pet-centred route; Bane/Ruin supports direct casts. The [level-30 Affliction guide](https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-30-dps-overview) and [current Demonology overview](https://www.wowhead.com/forever/guide/classes/warlock/demonology/overview-pve-dps) support different mixes because one prioritises drains and the other the demon.
+Reach the talent you want for your main role, then add points from another tree for a job you actually do. Secondary talents at 40 let you keep a dedicated dungeon or outdoor build. [Level 40 secondary talents](https://www.wofwforever.com/en/guides/wow-forever-talents-explained/)
 
-An 11-point detour is not free: it postpones deeper talents unless you respec. State character level and unlocked Legacy points before copying a split. For level 60, use the linked simulator presets as reproducible starting configurations, not proof of the best launch build. Damage-dealing Warlocks remain a pure class; mixing their talent trees does not create a separate hybrid penalty.
+### Level-60 builds that cross trees
 
-### Levelling hybrids
+| Spec | Example PvE split | Trade-off |
+|---|---|---|
+| [Affliction](ledger:classes/warlock/affliction/) | 35/11/5 | Use 35/11/5 for sustained damage and raid preparation. The 30/0/21 dungeon build skips Wrack for Shadow Bolt, Ruin and direct-cast support. Choose by channel uptime, target lifespan and whether you need a demon. |
+| [Demonology](ledger:classes/warlock/demonology/) | 2/31/18 | 2/31/18 is a framework with different pet and Destruction talents for Fire and Shadow. Sacrifice a Sayaad and summon an Imp for Fire, or sacrifice an Imp and summon a Sayaad for Shadow. Pact preserves the buff only with a different demon. |
+| [Destruction](ledger:classes/warlock/destruction/) | 5/11/35 | 5/11/35 is the Fire sacrifice build with Suppression. 7/11/33 keeps a sacrifice and adds faster Corruption and Life Tap talents. Warcraft Tavern and Method also describe pet-based approaches when you want utility or independent damage. |
 
-- **Affliction with a Demonology dip (40/11/0).** [Icy Veins](https://www.icy-veins.com/wow-forever/affliction-warlock-leveling) spends levels 31–41 in Demonology to reach Demonic Sacrifice and recommends sacrificing a Felhunter for 3% health every 4 seconds, which it says almost removes eating. It then returns to Affliction for Wrack at 51.
-- **Demonology into Affliction (20/31/0).** Icy Veins and Wowhead both take [Demonic Pact](https://foreverdb.net/spell/425464) at 40, then spend the last 20 points in Affliction for Suppression, instant Corruption, Improved Life Tap and stronger drains ([Wowhead](https://www.wowhead.com/forever/guide/classes/warlock/demonology/dps-leveling-tips)).
-- **Destruction with a little of both (6/11/34).** Icy Veins reaches Incinerate at 40, adds Suppression at 41–44 and Demonic Sacrifice at 55, sacrificing a Succubus for Fire damage in dungeons or a Felhunter for healing solo.
-- **Borrowed pet talents.** Wowhead's Affliction levelling build takes Unholy Power and Demonic Energies from Demonology before 20 ([Wowhead](https://www.wowhead.com/forever/guide/classes/warlock/affliction/dps-leveling-tips)). Its solo Destruction build spends 16 points in Destruction, then picks up Demonology's pet talents and Affliction's drain talents for sustain.
-- **Single-section builds to 30.** ForeverDB's published levelling builds stay in one section. It points out that Improved Corruption only makes Corruption instant at 5/5, so only its Affliction build takes it ([ForeverDB](https://foreverdb.net/guide/leveling-warlock)).
-
-### Level 60 hybrids (projections)
-
-The beta stopped at 30, so these are theory. Splits read Affliction / Demonology / Destruction.
-
-| Build | Split | Where from | The idea |
-|---|---|---|---|
-| SM/Ruin | 31 / 0 / 20 | WoWSims; earlier Wowhead recommendation | Shadow Mastery and DoTs, plus Bane, Improved Shadow Bolt, Ruin and Agonizing Flames to strengthen a Shadow Bolt filler |
-| Affliction Wrack | 33 / 0 / 18 | WoWSims; Wowhead rates it behind SM Ruin | Wrack as the channelled filler, with Destruction's crit talents |
-| Demonology Fire or Shadow | 2 / 31 / 18 | WoWSims; Wowhead | Demonic Pact with Ruin and Agonizing Flames; sacrifice the Sayaad and keep the Imp for Fire, or the reverse for Shadow |
-| Destruction (Sayaad) | 18 / 0 / 33 | WoWSims; earlier Wowhead recommendation | Incinerate and Shadow and Flame, with Affliction points for hit, Corruption, Pandemic and Improved Life Tap |
-
-Wowhead explains the logic on its [Affliction builds page](https://www.wowhead.com/forever/guide/classes/warlock/affliction/talent-builds-pve-dps): Shadow Bolt beats Wrack and Drain Life as a filler, so many of Affliction's best points are in Destruction. WoWSims' builds are in its [builds folder](https://github.com/wowsims/forever/tree/master/ui/specs/warlock/dps/builds).
-
-### PvP hybrids
-
-From Wowhead's talent builds pages, which assume you are near the 4% PvP hit cap:
-- **SM/SL (Affliction):** Shadow Mastery with Soul Link, Demonic Embrace and Fel Vitality to survive focus without much pet management.
-- **Demonic Pact with Affliction:** deep Demonology plus drain talents for duels and world PvP, picking the demon that counters each class.
-- **SL/Conflagrate (Destruction):** the old Soul Link and Conflagrate pairing, down Demonology to Soul Link and Destruction to Fire and Brimstone.
-- Wowhead's overviews also name SL/SL (Siphon Life with Soul Link) as a strong pick for Affliction and Demonology.
-
-### The hybrid tax
-
-Blizzard's developers said on the WoW: Forever Podcast that they aim for hybrid damage specs to deal about 5% less damage than the pure classes, and named Hunters, Mages, Rogues and Warlocks as pure ([ForeverDB](https://foreverdb.net/article/blizzard-hybrid-tax-5-percent-warriors-count-as-hybrids)). It is a design target, not a number in the client. It is about classes with more than one role, so Warlocks set the bar rather than pay it. None of the sources mention a penalty for spreading a Warlock's points across sections.
+See the [complete point allocations](https://www.wofwforever.com/en/guides/wow-forever-warlock-level-60-talents/) before buying a respec. Point totals can hide differences between allocations with the same split. Use the current spec page for contested-zone priorities and [Blizzard’s raid calendar](https://news.blizzard.com/en-us/article/24315820/world-of-warcraft-forever-now-live) for the content these builds are preparing for.
 
 ## Field findings
 
@@ -60,12 +33,8 @@ Nothing recorded yet.
 
 ## Read more
 
-- [Icy Veins: Affliction Warlock levelling](https://www.icy-veins.com/wow-forever/affliction-warlock-leveling): the Demonic Sacrifice dip
-- [Icy Veins: Demonology Warlock levelling](https://www.icy-veins.com/wow-forever/demonology-warlock-leveling): Demonology into Affliction
-- [Icy Veins: Destruction Warlock levelling](https://www.icy-veins.com/wow-forever/destruction-warlock-leveling): the three-section Destruction path
-- [Wowhead: Affliction talent builds](https://www.wowhead.com/forever/guide/classes/warlock/affliction/talent-builds-pve-dps): SM Ruin, Wrack and PvP hybrids
-- [Wowhead: Demonology talent builds](https://www.wowhead.com/forever/guide/classes/warlock/demonology/talent-builds-pve-dps): the 2/31/18 builds and Demonic Pact PvP
-- [Wowhead: Destruction talent builds](https://www.wowhead.com/forever/guide/classes/warlock/destruction/talent-builds-pve-dps): the Sayaad build and SL/Conflagrate
-- [WoWSims Forever: Warlock builds](https://github.com/wowsims/forever/tree/master/ui/specs/warlock/dps/builds): the five level 60 hybrids
-- [Blizzard: Class Deep Dives, Rogue and Warlock](https://worldofwarcraft.com/en-us/news/24310968): why Ruin moved up the tree
-- [ForeverDB: The hybrid tax in WoW Forever](https://foreverdb.net/article/blizzard-hybrid-tax-5-percent-warriors-count-as-hybrids): pure and hybrid classes explained
+- [Current Warlock levelling guide](https://mobalytics.gg/wow-forever/classes/warlock-leveling-guide)
+- [Level-60 Warlock build comparison](https://www.wofwforever.com/en/guides/wow-forever-warlock-level-60-talents/)
+- [Additional Warlock guide](https://www.warcrafttavern.com/forever/guides/warlock)
+- [Blizzard: live Forever hotfixes](https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-23-2026)
+- [Blizzard: Forever launch and raid schedule](https://news.blizzard.com/en-us/article/24315820/world-of-warcraft-forever-now-live)
