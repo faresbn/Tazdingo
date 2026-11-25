@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-27
+updated: 2026-11-25
 summary: Hunter macros for WoW Forever collected from community guides, covering the pet, shots, Survival melee, aspects and traps, with notes on which ones need later levels.
 sources: ForeverDB macros, Kami Labs macros, Wowhead macro guide
 ---
@@ -11,7 +11,7 @@ sources: ForeverDB macros, Kami Labs macros, Wowhead macro guide
 - **No ranks needed:** Writing `/cast Spell Name` without a rank always casts your highest rank, so the button keeps up as you train (Wowhead, Kami Labs).
 - **The `!` prefix:** `/cast !Auto Shot` or `/cast !Aspect of the Hawk` only ever turns the effect on, so a second press can't switch it off.
 - **Pet commands are free:** In the client, pet commands and Auto Shot don't trigger the global cooldown, so they can share a key with a shot (ForeverDB).
-- **Level checks:** Feign Death needs level 30 and Frost Trap 28. Bestial Wrath (40), Explosive Trap (34) and Flare (32) are above the beta cap.
+- **Level checks:** Feign Death needs level 30 and Frost Trap 28. Bestial Wrath (40), Explosive Trap (34) and Flare (32) unlock later in levelling.
 
 ## What the guides say
 

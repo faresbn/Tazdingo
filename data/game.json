@@ -3,6 +3,91 @@
  "opens": "2026-11-04T23:00:00Z",
  "market_names": {"forever-pvp": "CAMWOW EU5 Realm 2 PvP (Horde)", "forever-beta-pvp": "Beta PvP realm", "forever-beta-classicbetapvp": "Beta Classic PvP realm"},
  "market_events": [{"at": "2026-11-04T23:00:00Z", "label": "Launch"}, {"at": "2026-12-09T00:00:00Z", "label": "Raids open"}],
+ "briefing": [
+  {"topic":"Progression","date":"2026-11-04","until":"2026-12-09","title":"Prepare for the 9 December raid unlock",
+   "summary":"Blizzard has announced three level-60 raids: Barrow Deeps, Hyjal Summit and Onyxia’s Lair. Check entry requirements before choosing what to prepare.",
+   "action":"world/dungeons-and-raids/","label":"Plan dungeons and raids","source":"https://news.blizzard.com/en-us/article/24315820/world-of-warcraft-forever-now-live"},
+  {"topic":"Rules","date":"2026-11-20","until":"2026-12-04","title":"Dungeon resets capped at five per hour",
+   "summary":"Factor the per-dungeon limit into repeat runs for gear, cloth or reputation. Have a second activity in mind if you are clearing quickly.",
+   "action":"world/dungeons-and-raids/","label":"Explore dungeon options","source":"https://news.blizzard.com/en-gb/article/24315281/wow-forever-hotfixes-november-20-2026"},
+  {"topic":"Class updates","date":"2026-11-23","until":"2026-12-07","title":"Recheck Destruction and Shadow before testing a build",
+   "summary":"Blizzard fixed Intensity with Incinerate and corrected two Shadow Priest interactions involving Dark Inspiration and Chastise.",
+   "action":"classes/","label":"Compare class builds","source":"https://news.blizzard.com/en-gb/article/24315281/wow-forever-hotfixes-november-23-2026"}
+ ],
+ "milestones": {
+  "warlock/affliction": [
+    {
+      "at": 27,
+      "title": "Compare your pet-led alternative",
+      "detail": "Wowhead suggests considering Demonology from 27. Keep Affliction if damage-over-time and self-sustain suit your pulls. Consider a switch if you want to build around an active demon.",
+      "source": "https://www.wowhead.com/forever/guide/classes/warlock/leveling-guide"
+    },
+    {
+      "at": 30,
+      "title": "Add Siphon Life on the sustain route",
+      "detail": "Use it on targets that live long enough for the healing and damage to matter. Check the Felhunter quest while planning trainer visits.",
+      "source": "https://www.icy-veins.com/wow-forever/affliction-warlock-leveling"
+    },
+    {
+      "at": 41,
+      "title": "Choose a demon or a sacrifice buff",
+      "detail": "The Icy Veins hybrid route can take Demonic Sacrifice here. Its solo recommendation is to sacrifice a Felhunter for sustain. Keeping a pet serves a different role.",
+      "source": "https://www.icy-veins.com/wow-forever/affliction-warlock-leveling"
+    },
+    {
+      "at": 51,
+      "title": "Add Wrack on the hybrid route",
+      "detail": "Icy Veins takes Wrack at 51 after the Demonology detour. Channel it when your other Shadow effects have time to tick. A different allocation changes when you reach it.",
+      "source": "https://www.icy-veins.com/wow-forever/affliction-warlock-leveling"
+    },
+    {
+      "at": 60,
+      "title": "Choose a build for the encounter",
+      "detail": "Compare your levelling allocation with an endgame build and retest against the intended fight length, movement and buffs.",
+      "source": "https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-spec-builds-talents"
+    }
+  ],
+  "tailoring": [
+    {
+      "at": 120,
+      "title": "Price silk and the glove route",
+      "detail": "Check whether your silk stock and the cost of elixirs favour the next gloves before buying Mageweave in bulk.",
+      "source": "https://www.wow-professions.com/forever/tailoring-leveling-guide"
+    },
+    {
+      "at": 140,
+      "title": "Compare Mageweave cloth with bolts",
+      "detail": "Price the material per bolt and keep cloth for recipes that call for it directly. Check the next skill band before converting your entire stock.",
+      "source": "https://www.wow-professions.com/forever/tailoring-leveling-guide"
+    },
+    {
+      "at": 200,
+      "title": "Plan Artisan training",
+      "detail": "Check the rank’s character-level requirement and trainer before spending on the next cloth tier.",
+      "source": "https://www.wow-professions.com/forever/tailoring-leveling-guide"
+    },
+    {
+      "at": 225,
+      "title": "Check Runecloth and recipe access",
+      "detail": "Buy the next band only after checking your training, pattern access and the route’s skill-up uncertainty.",
+      "source": "https://www.wow-professions.com/forever/tailoring-leveling-guide"
+    }
+  ],
+  "priest/shadow": [
+    {
+      "at": 20,
+      "title": "Choose an early damage or sustain route",
+      "detail": "Icy Veins places the earliest Mind Flay at 20. Its alternative is Discipline for Meditation before deep Shadow.",
+      "source": "https://www.icy-veins.com/wow-forever/shadow-priest-leveling"
+    },
+    {
+      "at": 40,
+      "title": "Review the Shadowform respec",
+      "detail": "If you levelled through Meditation, this is the guide’s respec decision. Compare mana use and your role in dungeon groups before changing.",
+      "source": "https://www.icy-veins.com/wow-forever/shadow-priest-leveling"
+    }
+  ]
+} ,
  "log_after": "32e8704cb420b6838e20b2f12e9fed5916bae166",
  "classes": [
   {
@@ -577,12 +662,12 @@
  "more": [
   {
    "slug": "launch",
-   "name": "Launch checklist",
+   "name": "Launch archive",
    "summary": "What to do before and on launch day."
   },
   {
    "slug": "blizzard",
-   "name": "Blizzard's posts",
+   "name": "Official updates",
    "summary": "The latest staff posts about WoW Forever from Blizzard's forums."
   },
   {

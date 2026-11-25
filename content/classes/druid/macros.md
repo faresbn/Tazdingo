@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-27
+updated: 2026-11-25
 summary: Druid macros for WoW Forever gathered from community guides, from form-shifting and Prowl openers to mouseover heals, each with a line on what it does.
 sources: ForeverDB macros page, Kami Labs macro tool and guide, Wowhead's macro guide
 ---
@@ -13,7 +13,7 @@ sources: ForeverDB macros page, Kami Labs macro tool and guide, Wowhead's macro 
 - **`/cancelform`:** drops your form on the same press, so a caster spell can follow.
 - **Cost:** shifting into Bear or Cat Form costs 55% of your base mana and triggers the global cooldown, so form macros aren't free.
 - **Powershifting:** Forever's Furor only gives back the Energy you'd have had anyway, so old powershift macros no longer gain Energy.
-- **Above the beta cap:** anything using Ravage (32), Pounce (36), Dire Bear Form or Innervate (40), or Gift of the Wild (50) couldn't be tried before launch.
+- **Training milestones:** check whether Ravage, Pounce, Dire Bear Form, Innervate or Gift of the Wild is learned before binding a macro that casts it.
 
 ## What the guides say
 
@@ -177,7 +177,7 @@ Prefer named-form casts for simple form changes. Numeric stance checks depend on
 
 ### Notes from the sources
 
-- ForeverDB writes each macro to fit the 255-character limit and marks the ones above the level 30 cap as speculation.
+- ForeverDB writes each macro to fit the 255-character limit.
 - Kami Labs' tool can switch between English and French spell names; a macro only works in your game client's language.
 - Wowhead's guide is mainly a lesson in writing macros. It explains `#showtooltip`, conditions in square brackets and `/castsequence`, so you can adapt any of these.
 

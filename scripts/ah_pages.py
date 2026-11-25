@@ -259,20 +259,71 @@ def board(site: Site, market: dict, ah: dict, events: list | None = None) -> str
     return figures(market, ah) + tabs(panels, {"deals": len(ah["deals"]) or None, "invest": len(ah["invest"]) or None})
 
 
-def home_block(site: Site, market: dict, ah: dict) -> str:
-    """The homepage's Auction House card: deals first, then investments and movers."""
-    def mini(title, href, items, value, limit=5, counted=True):
-        if not items:
-            return ""
-        rows = "".join(f'<li>{item_anchor(site, market, i)} <span class="value">{value(i)}</span></li>' for i in items[:limit])
-        more = f' <a class="aside" href="{href}">{f"all {len(items)}" if counted else "more"}</a>' if len(items) > limit else ""
-        return f'<h3 class="mini-title">{title}{more}</h3><ul class="mini-list">{rows}</ul>'
-    b = site.base
-    deals = mini("Under the usual price", f"{b}prices/#deals", ah["deals"],
-                 lambda i: money(i["latest"]) + f' <span class="change down">−{pct(i["deal"]["discount"])}</span>')
-    invest = mini("Investment picks", f"{b}prices/#invest", ah["invest"], lambda i: f'+{plain_money(i["invest"]["margin"])} a unit', 3)
-    moving = mini("Moved since the last full day", f"{b}prices/#movers", ah["rising"] + ah["falling"], lambda i: change(i["move"]["change"]), 3, counted=False)
-    return (deals or f'<p class="empty">No deals at least {round(m.DEAL_DISCOUNT * 100)}% under the usual price in the newest scan.</p>') + invest + moving + scan_note(market, ah)
+ACTIONABLE_HOURS = 24
+
+
+def actionable(site: Site, market: dict) -> str:
+    """Only put an immediate action beside a recent observation from the newest upload."""
+    ah = market["ah"]
+    stamp = ah["newest"]
+    built = datetime.strptime(site.built, "%Y-%m-%d %H:%M UTC").replace(tzinfo=timezone.utc)
+    expires = stamp + ACTIONABLE_HOURS * 3600 if stamp is not None else 0
+    if built.timestamp() >= expires:
+        return '<p class="note">Check current listings before acting on an older scan.</p>' + scan_note(market, ah)
+
+    rows, seen = [], set()
+
+    def add(items, intent, detail):
+        for item in items:
+            if item["latest_time"] != stamp or item["id"] in seen:
+                continue
+            rows.append(f'<li><span class="brief-topic">{intent}</span><strong>{item_anchor(site, market, item)}</strong>'
+                        f'<p>{detail(item)}</p></li>')
+            seen.add(item["id"])
+            break
+
+    add(ah["deals"], "Buy for use",
+        lambda i: f'{money(i["latest"])} per unit recorded, {pct(i["deal"]["discount"])} below usual. Recheck the listing and available quantity.')
+    add(ah["invest"], "Price a resale",
+        lambda i: f'{money(i["latest"])} per unit recorded. About {money(i["invest"]["margin"])} margin if it sells at the usual price, after the modelled cut and before lost deposits.')
+    add(ah["rising"], "Check before listing",
+        lambda i: f'{money(i["latest"])} per unit recorded, {pct(i["move"]["change"] / 100)} above the last well-covered day. Compare current competition before pricing yours.')
+    add(ah["falling"], "Reprice supplies",
+        lambda i: f'{money(i["latest"])} per unit recorded, {pct(abs(i["move"]["change"]) / 100)} below the last well-covered day. If you need it, check the cost for your full quantity.')
+    note = scan_note(market, ah)
+    if not rows:
+        return '<p class="empty">The newest upload has no leads with enough comparable price history.</p>' + note
+    return (f'<div data-market-leads data-expires="{int(expires)}"><ul class="brief-notes">{"".join(rows)}</ul></div>'
+            '<p class="note" data-market-expired hidden>These leads have aged. Open the item history or check current listings before buying.</p>'
+            + note)
+
+
+def reagent_watch(site: Site, market: dict, recipes: dict) -> str:
+    """Show comparable weekly prices for commonly usable materials, even on quiet scan days."""
+    candidates = [
+        item for item in market["current"]
+        if item["key"].isdigit() and item["id"] in recipes["uses"]
+        and len(recipes["uses"][item["id"]]) >= 3 and item["seen_day"] == market["last_day"]
+        and item["recent_days"] >= 3 and item["before_days"] >= 3
+        and (item["listed"] or 0) >= 20 and item["typical"] >= 100
+        and abs(item["change"] or 0) >= 20
+    ]
+    rows = []
+    for direction in (-1, 1):
+        movers = [item for item in candidates if direction * item["change"] > 0]
+        if not movers:
+            continue
+        item = max(movers, key=lambda i: (len(recipes["uses"][i["id"]]), abs(i["change"])))
+        action = "Reprice materials you need" if direction == -1 else "Check the value of stock you hold"
+        rows.append(f'<li><span class="brief-topic">{action}</span><strong>{item_anchor(site, market, item)} '
+                    f'{change(item["change"])}</strong><p>{money(item["typical"])} typical per unit. '
+                    f'{len(recipes["uses"][item["id"]])} recipes use it.</p></li>')
+    if not rows:
+        return ""
+    return ('<div class="reagent-watch"><h3 class="mini-title">Materials to watch</h3>'
+            f'<ul class="brief-notes">{"".join(rows)}</ul>'
+            f'<p class="aside">Through {nice_date(market["last_date"])}. Median daily lows over two 7-day windows, '
+            'with at least three recorded days per window. Check the item page for the latest quote.</p></div>')
 
 
 # --- Item pages ----------------------------------------------------------------------------
@@ -391,7 +442,6 @@ def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
         stat("Usually listed", num(item["listed_median"]) + " at once" if item["listed_median"] is not None else "unknown", "the most seen on sale in a day, middle value"),
         stat("Daily low changed", pct(item["churn"]) or "too few days", "how often its lowest price differed from one day to the next"),
         stat("Vendor pays", money(item["vendor_sell"]) if item["vendor_sell"] else "unknown", "from ForeverDB" if item["vendor_sell"] else ""),
-        stat("Other players' scans", money(fdb_price["median"]) if fdb_price else "none", f"ForeverDB players' median, {esc(fdb_price['latest'])}" if fdb_price else ""),
     ])
     invest = ""
     if item["invest"] and item["confidence"] != "low":
@@ -400,6 +450,15 @@ def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
                   f'{money(item["ref"])}, the Auction House keeps {round(m.AH_CUT * 100)}% and you keep about {money(int(item["ref"] * (1 - m.AH_CUT)))}: '
                   f'a margin of {money(i["margin"])} a unit ({pct(i["roi"])} on what you paid). It\'s listed on {pct(item["presence"])} of recent days. '
                   'An estimate from prices and listings; the data holds no sales.</p></section>')
+    comparison = ""
+    if market["environment"] == "forever":
+        comparison = (
+            f'<section class="ah-block" id="comparison"><h2>Compare outside prices</h2>'
+            f'<p><a href="{FOREVERDB}/item/{esc(item["id"])}">Check current listings on ForeverDB</a>. '
+            'Choose the equivalent region, ruleset and faction there. Check variant and quantity before comparing.</p>'
+            + (f'<p class="aside">Other players’ scans: {money(fdb_price["median"])} median, '
+               f'{esc(fdb_price["latest"])}. Cross-realm reference. <a href="{FOREVERDB}">Data from ForeverDB.net</a>.</p>'
+               if fdb_price else "") + '</section>')
     last = market["last_day"]
     daily = "".join(f'<tr><th scope="row">{nice_date(day_date(d))}</th><td class="num">{money(v["low"])}</td><td class="num">{money(v["high"])}</td>'
                     f'<td class="num">{num(v["listed"])}</td></tr>'
@@ -413,7 +472,7 @@ def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
             + (f'<p class="alerts">{"".join(alerts)}</p>' if alerts else "")
             + f'<dl class="stats">{stats}</dl>'
             + f'<section class="ah-block" id="chart"><h2>Price over the last {CHART_DAYS} days</h2>{chart(item, market, ctx["events"])}</section>'
-            + invest
+            + comparison + invest
             + f'<section class="ah-block" id="pattern"><h2>By weekday</h2>{item_pattern_block(item)}</section>'
             + (f'<section class="ah-block" id="recipes"><h2>Recipes</h2>'
                + (f'<h3>Made by</h3><ul>{made}</ul>' if made else "") + (f'<h3>Used in</h3><ul>{used}</ul>' if used else "")

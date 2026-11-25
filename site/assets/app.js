@@ -1,7 +1,6 @@
 "use strict";
-// Every page: the theme toggle and the launch countdown. Front page: search across the
-// ledger. Market pages: search, order, pages and a daily chart per item. The pages work
-// without JavaScript; this adds speed and detail.
+// Add guide search, local market browsing, planning filters and news refresh.
+// The static pages keep their content and navigation without JavaScript.
 
 const PAGE_SIZE = 50;
 const SVG = "http://www.w3.org/2000/svg";
@@ -347,23 +346,6 @@ function themeToggle(button) {
   apply();
 }
 
-function countdown(node) {
-  // The build writes the count as of its own run; this counts to the moment servers open from
-  // the visitor's clock, with the same rule as countdown_text in scripts/pages.py.
-  const opens = Date.parse(document.body.dataset.launch);
-  if (Number.isNaN(opens)) return;
-  const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
-  function tick() {
-    const seconds = (opens - Date.now()) / 1000;
-    const days = Math.floor(seconds / 86400), hours = Math.floor(seconds / 3600);
-    node.textContent = seconds <= 0 ? `Day ${Math.floor(-seconds / 86400) + 1} of Forever`
-      : days ? `Forever opens in ${plural(days, "day")}`
-      : hours ? `Forever opens in ${plural(hours, "hour")}` : "Forever opens within the hour";
-  }
-  tick();
-  setInterval(tick, 60000);
-}
-
 function localTimes() {
   // Scan times are written in UTC; show them in the visitor's own time as well.
   const format = new Intl.DateTimeFormat(undefined, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
@@ -382,7 +364,7 @@ function siteSearch(form) {
   let entries = null, pending = null, matches = [], request = 0;
   async function load() {
     if (entries) return entries;
-    if (!pending) pending = fetch(`${document.body.dataset.base}search.json`).then(response => {
+    if (!pending) pending = fetch(`${document.body.dataset.base}search-guides.json`).then(response => {
       if (!response.ok) throw new Error();
       return response.json();
     }).then(data => { entries = data; return data; }).catch(() => null).finally(() => { pending = null; });
@@ -397,24 +379,24 @@ function siteSearch(form) {
     if (turn !== request || query !== input.value.trim().toLowerCase() || !form.contains(document.activeElement)) return false;
     if (!all) { close(); return null; }
     list.replaceChildren();
-    const rank = ([title, , kind]) => {
+    const rank = ([title]) => {
       const t = title.toLowerCase();
       const base = t === query ? 0 : t.startsWith(query) ? 1 : (` ${t}`).includes(` ${query}`) ? 2 : t.includes(query) ? 3 : 9;
-      return base * 2 + (kind === "Item" ? 1 : 0);  // pages before items at the same closeness
+      return base;
     };
-    matches = all.map(e => [rank(e), e]).filter(([r]) => r < 18).sort((a, b) => a[0] - b[0] || a[1][0].localeCompare(b[1][0])).slice(0, 8).map(([, e]) => e);
+    matches = all.map(e => [rank(e), e]).filter(([r]) => r < 9).sort((a, b) => a[0] - b[0] || a[1][0].localeCompare(b[1][0])).slice(0, 8).map(([, e]) => e);
     for (const [title, url, kind] of matches) {
       const li = el("li"), a = el("a", title);
       a.href = url;
       li.append(a, el("span", kind, "kind"));
       list.append(li);
     }
-    if (!matches.length) list.append(el("li", "No matches. Try part of a class, profession or item name.", "search-empty"));
+    if (!matches.length) list.append(el("li", "No guide matches. Try a class, profession or activity.", "search-empty"));
     list.hidden = false;
     status.textContent = matches.length ? `${matches.length} suggestions. Use the down arrow to browse.` : "No matching suggestions.";
     return true;
   }
-  input.addEventListener("focus", () => { if (input.value.trim().length >= 2) show(); else load(); });
+  input.addEventListener("focus", () => { if (input.value.trim().length >= 2) show(); });
   input.addEventListener("input", show);
   input.addEventListener("keydown", async event => {
     if (event.key === "ArrowDown") {
@@ -440,7 +422,7 @@ function siteSearch(form) {
     if (input.value.trim().length < 2) return;
     event.preventDefault();
     const shown = await show();
-    if (shown === null) { form.submit(); return; }  // preserve item-price search if the index is unavailable
+    if (shown === null) { form.submit(); return; }  // keep the guide index accessible if search is unavailable
     if (!shown) return;
     if (matches.length && matches[0][0].toLowerCase() === input.value.trim().toLowerCase()) {
       location.href = matches[0][1];
@@ -524,72 +506,118 @@ function foldables() {
 }
 
 function menus() {
-  // One state for every way in: each menu opens by its button (click, tap, Enter or Space) and, with
-  // a mouse on a wide screen, by hovering. Leaving closes it after a short delay, so the pointer can
-  // cross the gap to the panel. Escape or a click elsewhere closes it, and the phone menu too.
   const header = document.querySelector(".masthead");
-  const items = [...document.querySelectorAll("[data-menu]")];
-  const hover = window.matchMedia("(min-width: 861px) and (hover: hover)");
-  const toggleOf = item => item.querySelector(".menu-toggle");
-  const set = (item, open) => {
-    item.classList.toggle("open", open);
-    toggleOf(item).setAttribute("aria-expanded", String(open));
-    const panel = item.querySelector(".panel");
-    panel.style.removeProperty("--shift");
-    if (open && window.matchMedia("(min-width: 861px)").matches) {  // keep a panel that opens under its word inside the window
-      const box = panel.getBoundingClientRect(), gap = 16;
-      const shift = Math.max(Math.min(0, window.innerWidth - gap - box.right), gap - box.left);
-      if (shift) panel.style.setProperty("--shift", `${Math.round(shift)}px`);
-    }
-  };
-  const closeAll = except => items.forEach(item => { if (item !== except) set(item, false); });
-  const opener = document.querySelector(".nav-open");
+  const opener = header.querySelector(".nav-open");
   const showNav = shown => {
-    if (!opener) return;
     header.classList.toggle("nav-shown", shown);
     opener.setAttribute("aria-expanded", String(shown));
     opener.textContent = shown ? "Close" : "Menu";
   };
-  let timer;
-  const hoverOpened = new WeakSet();
-  items.forEach(item => {
-    toggleOf(item).addEventListener("click", event => {
-      clearTimeout(timer);
-      const keepHovered = event.detail > 0 && hoverOpened.has(item);
-      const open = keepHovered || !item.classList.contains("open");
-      hoverOpened.delete(item);
-      closeAll(item); set(item, open);
-    });
-    item.addEventListener("mouseenter", () => { if (!hover.matches) return; clearTimeout(timer); if (!item.classList.contains("open")) hoverOpened.add(item); closeAll(item); set(item, true); });
-    item.addEventListener("mouseleave", () => {
-      hoverOpened.delete(item);
-      if (!hover.matches || item.contains(document.activeElement)) return;  // keep a keyboard user's menu open
-      clearTimeout(timer);
-      timer = setTimeout(() => set(item, false), 250);
-    });
-    item.addEventListener("focusout", () => window.setTimeout(() => {
-      if (!item.contains(document.activeElement) && (!hover.matches || !item.matches(":hover"))) set(item, false);
-    }, 0));
-  });
   document.addEventListener("keydown", event => {
-    if (event.key !== "Escape") return;
-    const active = items.find(item => item.classList.contains("open"));
-    if (active) { set(active, false); toggleOf(active).focus(); return; }
-    if (header.classList.contains("nav-shown")) { showNav(false); opener.focus(); }
+    if (event.key === "Escape" && header.classList.contains("nav-shown")) {
+      showNav(false);
+      opener.focus();
+    }
   });
   document.addEventListener("click", event => {
-    if (event.target.closest(".masthead")) return;
-    closeAll();
-    showNav(false);
+    if (!event.target.closest(".masthead")) showNav(false);
   });
-  if (opener) opener.addEventListener("click", () => showNav(!header.classList.contains("nav-shown")));
+  opener.addEventListener("click", () => showNav(!header.classList.contains("nav-shown")));
+  header.classList.add("nav-enhanced");
+}
+
+function craftFilters(form) {
+  const groups = [...document.querySelectorAll("[data-craft-profession]")].map(section => ({
+    section, recipes: [...section.querySelectorAll("[data-craft-cost]")]
+  }));
+  const top = document.querySelector("[data-craft-top]");
+  const status = form.querySelector("[role=status]");
+  const { profession, skill, budget } = form.elements;
+  const url = new URL(location.href);
+  for (const field of [profession, skill, budget]) field.value = url.searchParams.get(field.name) || "";
+  function update(writeUrl = true) {
+    const active = Boolean(profession.value || skill.value || budget.value);
+    top.hidden = active;
+    const maxSkill = skill.valueAsNumber, maxCost = Math.floor(budget.valueAsNumber * 10000 + 0.00001);
+    let matches = 0;
+    for (const { section, recipes } of groups) {
+      let shown = 0;
+      for (const recipe of recipes) {
+        const own = !profession.value || section.dataset.craftProfession === profession.value;
+        const able = !Number.isFinite(maxSkill) || (recipe.dataset.craftSkill && Number(recipe.dataset.craftSkill) <= maxSkill);
+        const affordable = !Number.isFinite(maxCost) || Number(recipe.dataset.craftCost) <= maxCost;
+        recipe.hidden = !(own && able && affordable);
+        shown += Number(!recipe.hidden);
+      }
+      section.hidden = !shown;
+      matches += shown;
+    }
+    status.textContent = matches ? matches.toLocaleString("en-GB") + " recipes" : "No recipes match these limits.";
+    if (writeUrl) {
+      for (const field of [profession, skill, budget]) {
+        if (field.value) url.searchParams.set(field.name, field.value);
+        else url.searchParams.delete(field.name);
+      }
+      history.replaceState(null, "", url.pathname + url.search + location.hash);
+    }
+  }
+  form.hidden = false;
+  form.addEventListener("submit", event => event.preventDefault());
+  form.addEventListener("input", () => update());
+  form.addEventListener("reset", () => setTimeout(update, 0));
+  update(false);
+}
+
+function milestoneFilter(form) {
+  const field = form.elements.namedItem("progress");
+  const url = new URL(location.href);
+  const key = form.dataset.progressKey;
+  const cards = [...form.parentElement.querySelectorAll("[data-milestone]")];
+  const message = form.querySelector("[role=status]");
+  const saved = url.searchParams.get(key);
+  if (saved !== null) field.value = saved;
+
+  function show(writeUrl = true) {
+    const value = field.valueAsNumber;
+    const set = field.value && field.validity.valid;
+    const upcoming = set ? cards.find(card => Number(card.dataset.milestone) >= value) : null;
+    for (const card of cards) {
+      card.hidden = Boolean(upcoming && card !== upcoming);
+    }
+    message.textContent = upcoming ? "Showing your next milestone." :
+      set ? "You’re past these milestones. All entries are shown." : "All milestones are shown.";
+    if (writeUrl) {
+      if (set) url.searchParams.set(key, field.value);
+      else url.searchParams.delete(key);
+      history.replaceState(null, "", url.pathname + url.search + location.hash);
+    }
+  }
+
+  form.hidden = false;
+  form.addEventListener("submit", event => event.preventDefault());
+  form.addEventListener("input", () => show());
+  form.addEventListener("reset", () => setTimeout(show, 0));
+  show(false);
+}
+
+function expireMarketLeads() {
+  document.querySelectorAll("[data-market-leads]").forEach(node => {
+    if (Date.now() < Number(node.dataset.expires) * 1000) return;
+    node.hidden = true;
+    node.nextElementSibling.hidden = false;
+  });
 }
 
 menus();
 document.querySelectorAll("[data-tabs]").forEach(tabs);
 foldables();
 document.querySelectorAll("[data-theme-toggle]").forEach(themeToggle);
-document.querySelectorAll("[data-countdown]").forEach(countdown);
+document.querySelectorAll("[data-craft-filters]").forEach(craftFilters);
+document.querySelectorAll("[data-progress-key]").forEach(milestoneFilter);
+if (document.querySelector("[data-market-leads]")) {
+  expireMarketLeads();
+  setInterval(expireMarketLeads, 60000);
+}
 localTimes();
 document.querySelectorAll("form.lookup").forEach(siteSearch);
 const browserSection = document.getElementById("prices");
@@ -630,7 +658,16 @@ function newsReader(widget) {
       const verified = Date.parse(data.last_successful_refresh || data.fetched);
       if (!Number.isFinite(verified) || verified < newest) throw new Error('Keeping the more recent verified news already shown.');
       newest = verified;
-      const records = data.posts.filter(valid).filter(p=>widget.dataset.newsScope !== 'forever' || p.kind === 'forever').slice(0,limit);
+      let records = data.posts.filter(valid).filter(p => widget.dataset.newsScope === 'all' || p.kind === 'forever');
+      if (widget.dataset.newsScope === 'brief') {
+        const topics = new Map();
+        for (const post of records) {
+          const id = new URL(post.url).pathname.split('/').slice(0, 5).join('/');
+          if (!topics.has(id)) topics.set(id, post);
+        }
+        records = [...topics.values()];
+      }
+      records = records.slice(0, limit);
       const list = el('ol',null,'blue-list');
       for (const post of records) {
         const row=el('li'); const link=el('a',post.title,'blue-title');

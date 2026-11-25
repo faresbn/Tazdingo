@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-27
+updated: 2026-11-25
 summary: Druid builds that mix talent trees in WoW Forever, from Spellbear and caster-healers while levelling to the level 60 simulator presets, plus Blizzard's 5% hybrid tax.
 sources: ForeverDB (builds, hybrid tax article, levelling guide), Wowhead (Balance and Restoration level 20 and 30 guides, healer overview), Icy Veins, WoWSims presets, Blizzard class deep dive
 ---
@@ -66,7 +66,7 @@ ForeverDB's [write-up](https://foreverdb.net/article/blizzard-hybrid-tax-5-perce
 - **The budget:** Blizzard says it raised hybrid budgets so they aren't weak, but each buff costs something. The Wrath buff should add about 2% Druid damage at 60 and may be balanced by a cut elsewhere.
 - **Player reaction:** Druid players worry their mana already has to cover both damage and healing. One forum thread argues Druids, as the most flexible class, should do the least damage. Others call a 5% gap too small to matter.
 
-Blizzard's deep dive frames the same trade in utility terms: Druids can fill any role, but lack snares, silences, interrupts and reliable crowd control. Above the level 30 beta cap, nobody has measured the gap.
+Blizzard's deep dive frames the same trade in utility terms: Druids can fill any role, but lack snares, silences, interrupts and reliable crowd control. Compare personal output and group utility in the intended live encounter before assigning a gap.
 
 ## Field findings
 

@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-05
+updated: 2026-11-25
 summary: What the Shaman is in WoW Forever, now open to both factions, what Forever changed, and how the guides suggest picking a spec and levelling one.
 sources: Blizzard class deep dive and race article, ForeverDB, Wowhead, Icy Veins, WoWSims presets
 ---
@@ -11,7 +11,7 @@ sources: Blizzard class deep dive and race article, ForeverDB, Wowhead, Icy Vein
 - **New in Forever:** Alliance Dwarves can play it; no dual wielding; two-handed axes and maces are baseline. [Call of the Elements](https://foreverdb.net/spell/66842) drops four totems, Totemic Recall refunds 25% of their mana, buff totems last 5 min and Fire Nova is a spell ([Blizzard](https://worldofwarcraft.blizzard.com/en-us/news/24302097)).
 - **Professions:** ForeverDB: Leatherworking and Skinning. Wowhead's Elemental and Restoration guides and WoWSims: Leatherworking and Enchanting, which makes the [Polished Driftwood Icon](https://foreverdb.net/item/249398) relic.
 - **Race:** the Alliance has only Dwarf; the Horde has Orc, Tauren, Troll and Windshaper Skyborne. After 26 October, Skyborne Wind-Blessed is 2% haste, Orc Savage is gone (Command only helps pets) and Tauren Endurance is 5% health ([Blizzard](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7)). Older Orc-first rankings are stale; no launch-tested winner.
-- **Watch out:** Blizzard's deep dive said Elemental Mastery was removed and Call of the Spirits came at 30; the client has a redesigned Elemental Mastery and teaches Call of the Ancestors at 30, Call of the Spirits at 40 ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)). Everything above 30 is untested.
+- **Watch out:** Blizzard's deep dive said Elemental Mastery was removed and Call of the Spirits came at 30; the client has a redesigned Elemental Mastery and teaches Call of the Ancestors at 30, Call of the Spirits at 40 ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)). Check the current tooltips before spending points.
 
 ## What the guides say
 

@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-27
+updated: 2026-11-25
 summary: Forever's new zones (Zephras Isle, the Riverglades, Shen'dralas, Mount Hyjal and the Darkspear Islands) and what changed in the old ones, with level ranges where the sources give them.
 sources: Blizzard, ForeverDB, Icy Veins, Wowhead, Method
 ---
@@ -18,7 +18,7 @@ sources: Blizzard, ForeverDB, Icy Veins, Wowhead, Method
 
 ### Tazdingo recommendation
 
-**Build a quest route around character level, faction access and connected travel**, with a fallback if the next area is crowded. Blizzard's [zone overview](https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap) gives the intended brackets; it does not prove an optimal quest sequence. The new mid-level zones were above the Beta cap, so do not plan an exact levelling pace or mandatory detour from their datamined quest counts. Check the actual entry route before travelling. Unannounced portals, scenery and client map entries are not evidence of accessible content.
+**Build a quest route around character level, faction access and connected travel**, with a fallback if the next area is crowded. Blizzard's [zone overview](https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap) gives the intended brackets; it does not prove an optimal quest sequence. Plan detours from quests you can pick up at your level and faction, with enough time for the onward trip. Check the actual entry route before travelling. Unannounced portals, scenery and client map entries are not evidence of accessible content.
 
 ### The new zones
 
@@ -40,7 +40,7 @@ A frontier of rivers, grasslands and trade routes about the size of Stranglethor
 
 #### Shen'dralas
 
-Blizzard describes a long-hidden valley tied to the Shen'dralar of Dire Maul, the old elven city of Eldre'Thalas and the centaur tribes of the region. [Wowhead](https://www.wowhead.com/forever/guide/zones-maps-locations-rewards) says its quests send you to Razorfen Downs and Maraudon. Its exact position varies by source: between Mulgore and Desolace (Blizzard, Wowhead), between Desolace and Feralas (Icy Veins' zones page), or between all three (ForeverDB). It was above the beta cap, so nobody has played it yet.
+Blizzard describes a long-hidden valley tied to the Shen'dralar of Dire Maul, the old elven city of Eldre'Thalas and the centaur tribes of the region. [Wowhead](https://www.wowhead.com/forever/guide/zones-maps-locations-rewards) says its quests send you to Razorfen Downs and Maraudon. Its exact position varies by source: between Mulgore and Desolace (Blizzard, Wowhead), between Desolace and Feralas (Icy Veins' zones page), or between all three (ForeverDB).
 
 #### Mount Hyjal
 

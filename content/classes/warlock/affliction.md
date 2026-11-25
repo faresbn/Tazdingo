@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-30
+updated: 2026-11-25
 summary: How Affliction Warlock plays in WoW Forever: levelling talents by level, the DoT rotation from the guides and simulators, the Shadow Bolt or Wrack question at 60, gear and open questions.
 sources: Icy Veins, Wowhead, ForeverDB, WoWSims builds, Blizzard class deep dive
 ---
@@ -8,7 +8,7 @@ sources: Icy Veins, Wowhead, ForeverDB, WoWSims builds, Blizzard class deep dive
 
 - **Pick it for:** low-downtime solo questing with DoTs, drains and Life Tap, and cleave on several targets; slow on short fights.
 - **Levelling build:** at 30, Icy Veins' calculator takes Suppression 4, Improved Corruption 5, Grim Reach 2, Improved Bane of Agony 2, Improved Life Tap 2, Nightfall 2, Pandemic 3 and Siphon Life ([Icy Veins](https://www.icy-veins.com/wow-forever/affliction-warlock-leveling)). Wowhead takes Improved Corruption first and drain talents late for drain-tanking.
-- **Build at 60:** projection only: "SM/Ruin" (31 Affliction, 20 Destruction, Shadow Bolt filler) or "Wrack" (33/18, channelled), in both Wowhead and WoWSims ([WoWSims](https://github.com/wowsims/forever/tree/master/ui/specs/warlock/dps/builds)). Wowhead previously rated SM/Ruin strongest; a current gap isn't established.
+- **Build at 60:** [Icy Veins’ live PvE guide](https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-spec-builds-talents) favours a Wrack route for dungeon and raid damage. Compare it against Shadow Bolt filler when movement or short fights reduce channel time.
 - **Priority:** at 30 ([Icy Veins](https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-guide)): demon in, Curse, Bane of Agony and Siphon Life only on mobs that will live, instant Corruption, then Drain Life for health or Shadow Bolt on Shadow Trance; stop once DoTs will finish the job. Wowhead keeps three Affliction effects up before draining.
 - **Stats:** spell power and Shadow damage, hit ([Suppression](https://foreverdb.net/spell/18174) ranks to suit target level and gear), crit (DoTs can crit), Spirit for Life Tap, then Intellect and Stamina. Wowhead and Icy Veins: haste doesn't speed DoTs or drains.
 - **Key levels:** 14–18 instant Corruption (Icy Veins order) · 28 Firestone · 30 Siphon Life · 36 Spellstone (Icy Veins) · 41 Demonic Sacrifice of the Felhunter (Icy Veins) · 51 [Wrack](https://foreverdb.net/spell/1316697).

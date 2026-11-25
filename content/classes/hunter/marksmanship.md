@@ -1,6 +1,6 @@
 ---
-updated: 2026-10-30
-summary: How Marksmanship plays in WoW Forever up to the level 30 beta cap, with talents by level, the shot priority, the pet versus Lone Wolf question, gear and the guides' disagreements.
+updated: 2026-11-25
+summary: How Marksmanship plays in WoW Forever around its early levelling milestones, with talents by level, the shot priority, the pet versus Lone Wolf question, gear and the guides' disagreements.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APLs, Blizzard class deep dive
 ---
 
@@ -16,6 +16,8 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APLs, Blizzard class
 - **Watch out:** keep the pet while levelling: ForeverDB's sim shows about 20% less damage without one at 30; [Lone Wolf](https://foreverdb.net/spell/415370) is for dungeon packs or 60. Multi-Shot breaks Freezing Trap. Per the client, Wowhead's Trueshot Aura (50) and Icy Veins' 4 sec Sniper Shot cooldown are wrong.
 
 ## What the guides say
+
+For the full live levelling path, see the [level 1–60 Hunter guide](https://www.wowhead.com/forever/guide/classes/hunter/leveling-guide). Examples at 30 illustrate that stage of progression.
 
 ### Tazdingo recommendation
 

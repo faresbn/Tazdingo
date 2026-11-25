@@ -750,8 +750,7 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/", 
     ctx["events"] = game.get("market_events", [])
     ctx["api"] = api
     ctx["recipes_by_item"] = recipes_by_item(fdb)
-    site.search_action = f'{primary["url"]}#prices' if primary else f"{base}prices/"
-    site.nav = pages.nav_html(site, ctx)
+    site.nav = pages.nav_html(site)
     for market in markets:
         page(f"prices/{market['slug']}/", pages.market_page(site, market, ctx))
         for item in market["items"]:
@@ -781,7 +780,10 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/", 
     page("more/about/", sections.about_page(site, ctx))
     page("inbox/", sections.inbox_page(site, ctx))  # hidden: not in the menu, sitemap or search
     write("404.html", pages.not_found(site))
-    write("search.json", json.dumps(search_index(ctx), separators=(",", ":"), ensure_ascii=False) + "\n")
+    index = search_index(ctx)
+    write("search.json", json.dumps(index, separators=(",", ":"), ensure_ascii=False) + "\n")
+    write("search-guides.json", json.dumps([row for row in index if row[2] != "Item"],
+                                           separators=(",", ":"), ensure_ascii=False) + "\n")
 
     write("llms-full.txt", pages.llms_full(site, ctx))
     write("llms.txt", pages.llms_index(site, ctx))

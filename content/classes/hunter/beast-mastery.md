@@ -1,6 +1,6 @@
 ---
-updated: 2026-10-30
-summary: How Beast Mastery plays in WoW Forever up to the level 30 beta cap, with talents by level, the hawk rotation, pets, gear and where the guides disagree.
+updated: 2026-11-25
+summary: How Beast Mastery plays in WoW Forever around its early levelling milestones, with talents by level, the hawk rotation, pets, gear and where the guides disagree.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APLs, Blizzard class deep dive
 ---
 
@@ -16,6 +16,8 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APLs, Blizzard class
 - **Watch out:** Wowhead's fast-cat pick rests on beta bugs; Icy Veins prefers a bear for levelling. In groups, turn off Growl and keep a bear's Swipe off Freezing Trap targets. ForeverDB's sim spends the shared cooldown on Multi-Shot even on one target; both guides use Aimed Shot.
 
 ## What the guides say
+
+For the full live levelling path, see the [level 1–60 Hunter guide](https://www.wowhead.com/forever/guide/classes/hunter/leveling-guide). Examples at 30 illustrate that stage of progression.
 
 ### Tazdingo recommendation
 

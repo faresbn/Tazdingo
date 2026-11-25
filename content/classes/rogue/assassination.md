@@ -1,6 +1,6 @@
 ---
-updated: 2026-10-30
-summary: How Assassination plays in WoW Forever up to the level 30 beta cap, with talents by level, the Mutilate rotation, poisons, gear and where the guides disagree.
+updated: 2026-11-25
+summary: How Assassination plays in WoW Forever around its early levelling milestones, with talents by level, the Mutilate rotation, poisons, gear and where the guides disagree.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APL, Blizzard class deep dive
 ---
 
@@ -16,6 +16,8 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APL, Blizzard class 
 - **Watch out:** ForeverDB's level-30 simulator card builds with Backstab, not Mutilate, and that pick flipped between rebuilds; WoWSims doesn't yet use Mutilate automatically, so treat its Mutilate results with care ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/rogue/dps/apls/default.apl.json)). Poison- or Nature-immune enemies blunt the spec.
 
 ## What the guides say
+
+For the full live levelling path, see the [level 1–60 Rogue guide](https://mobalytics.gg/wow-forever/classes/rogue-leveling-guide). Examples at 30 illustrate that stage of progression.
 
 ### Tazdingo recommendation
 

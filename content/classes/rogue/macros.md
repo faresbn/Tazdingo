@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-27
+updated: 2026-11-25
 summary: Rogue macros for WoW Forever collected from community guides, covering openers, crowd control, escapes, finishers, poisons and weapon swaps, with notes on levels and known mistakes.
 sources: ForeverDB macros, Kami Labs macros, Wowhead macro guide, Icy Veins Subtlety guide
 ---
@@ -11,7 +11,7 @@ sources: ForeverDB macros, Kami Labs macros, Wowhead macro guide, Icy Veins Subt
 - **No ranks needed:** `/cast Eviscerate` without a rank always uses your highest rank, so the button keeps up as you train (Wowhead, Kami Labs).
 - **Stealth conditions:** `[stealth]` and `[nostealth]` let one key open from Stealth and attack normally out of it. The `!` in `/cast !Stealth` stops a second press from dropping you out of Stealth.
 - **Free presses:** In the client's data, Premeditation, Pick Pocket, Cold Blood, Vanish, Evasion and Sprint don't trigger the global cooldown, so they can share a press with another ability (ForeverDB).
-- **Level checks:** Cheap Shot needs 26, Kidney Shot 30, Blade Flurry 30 (Combat talent) and Cold Blood 25 (Assassination talent). Blind (34) and Adrenaline Rush (40) are above the beta cap.
+- **Level checks:** Cheap Shot needs 26, Kidney Shot 30, Blade Flurry 30 (Combat talent) and Cold Blood 25 (Assassination talent). Blind (34) and Adrenaline Rush (40) require additional levels.
 
 ## What the guides say
 
@@ -90,7 +90,7 @@ Throws Distract where your mouse points, with no targeting circle (ForeverDB and
 /cast [@cursor] Distract
 ```
 
-Blinds your target after stopping your attack, or your focus with Shift. It needs level 34, above the beta cap (ForeverDB):
+Blinds your target after stopping your attack, or your focus with Shift. It needs level 34 (ForeverDB):
 
 ```
 #showtooltip Blind

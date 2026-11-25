@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-30
+updated: 2026-11-25
 summary: How Cooking changed in Forever (experience-boosting food, new recipes, the campfire that anchors camping), how guides level it and why food should sell.
 sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg
 ---
@@ -8,7 +8,7 @@ sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg
 
 - **Pick it for:** every character: it's secondary, costs no slot, most of its food adds 5% kill experience, and cooks build the campfire camping hangs on.
 - **Pairs with:** Fishing, since many recipes use fish, if the fishing time is worthwhile; meat from questing covers much of the rest.
-- **Levelling route:** fish ([Wowhead](https://www.wowhead.com/forever/guide/professions/cooking/overview-leveling)) or meat ([wow-professions.com](https://www.wow-professions.com/forever/cooking-leveling-guide)): 1–50 Brilliant Smallfish or Roasted Boar Meat · 50–150 Longjaw Mud Snapper, Catfish or Coyote Steak · 150–225 Mithril Headed Trout or Roast Raptor · 225–300 untested: Spotted Yellowtail, then Nightfin Soup.
+- **Levelling route:** fish ([Wowhead](https://www.wowhead.com/forever/guide/professions/cooking/overview-leveling)) or meat ([wow-professions.com](https://www.wow-professions.com/forever/cooking-leveling-guide)): 1–50 Brilliant Smallfish or Roasted Boar Meat · 50–150 Longjaw Mud Snapper, Catfish or Coyote Steak · 150–225 Mithril Headed Trout or Roast Raptor · 225–300 see the linked live route and compare material prices: Spotted Yellowtail, then Nightfin Soup.
 - **Money makers:** Wowhead expects big demand at every level because Well Fed lasts only 15 minutes; [Icy Veins](https://www.icy-veins.com/wow-forever/cooking) suggests cooking for yourself, friends or the Auction House. Expected demand isn't proof a dish sells at a profit; compare cost per serving.
 - **Camp items:** [Basic Campfire Kit](https://foreverdb.net/item/279981) (1; three features) · Journeyman (five) and Expert (ten) kits, at 90 and 200 (Wowhead) or 140 and 220 (ForeverDB, Icy Veins) · [Cookie's Feast](https://foreverdb.net/item/279957) (140; Stamina) · [Iron Oven](https://foreverdb.net/item/279982) (300; top recipes).
 - **Trainers and ranks:** Apprentice and Journeyman from trainers · Expert from the tradeable Expert Cookbook (Shandrina in Ashenvale for Alliance, Wulan in Desolace for Horde) · Artisan from the quest Clamlette Surprise (Dirge Quikcleave, Gadgetzan; level 35, Cooking 225).

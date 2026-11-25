@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-30
+updated: 2026-11-25
 summary: What the Priest is in WoW Forever, what Forever changed, and how the guides suggest picking a spec and levelling one.
 sources: Blizzard class deep dive, ForeverDB, Wowhead, Icy Veins, WoWSims presets
 ---
@@ -19,7 +19,7 @@ sources: Blizzard class deep dive, ForeverDB, Wowhead, Icy Veins, WoWSims preset
 
 For mostly solo questing, **start with a current wand and a mana-efficient damage build**; Shadow is a straightforward route. For a regular healing party, choose Holy's direct-healing toolkit or Discipline's shields and Penance. A hybrid works when it solves your actual mix of questing and healing, but can delay those defining talents. Early similarity between specs does not establish their level-60 strength ([Shadow](https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview), [Holy](https://www.wowhead.com/forever/guide/classes/priest/holy/level-30-healer-overview), [Discipline](https://www.wowhead.com/forever/guide/classes/priest/discipline/level-30-healer-overview)). Race-spell utility can justify a preference such as Troll; a guide's preferred race is not a requirement to heal successfully.
 
-The Beta cap was level 30. Guides report play within that bracket, but that does not mean every talent combination or claim was tested. Above-30 advice is a projection from game files and design notes.
+A useful levelling decision is whether to go deep Shadow immediately or take Meditation first and respec when Shadowform is reachable. [Icy Veins’ 1–60 guide](https://www.icy-veins.com/wow-forever/shadow-priest-leveling) compares both routes.
 
 ### How Forever changed the class
 

@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-30
+updated: 2026-11-25
 summary: How Leatherworking changed in Forever (role-themed leather and mail sets, reagent bags, camp tanning racks, shifted skill ranges), how guides level it and what it's worth.
 sources: Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Wowhead
 ---
@@ -8,7 +8,7 @@ sources: Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Wowhead
 
 - **Pick it for:** self-crafted upgrades while levelling for Druids, Hunters, Rogues and Shamans, when the specific pieces justify the cost ([Icy Veins](https://www.icy-veins.com/wow-forever/leatherworking)).
 - **Pairs with:** Skinning, for leather, hides, scales and the new Pristine and Fel materials; buying leather can still be the better use of time.
-- **Levelling route:** wow-professions.com, tested to 225: 1–55 Light Leather, Cured Light Hide · 55–130 Embossed Leather Gloves, Fine and Dark Leather Belts, Heavy Leather · 130–210 Cured Heavy Hide, Hillman's and Guardian Gloves, Nightscape Headbands · 210–225 Nightscape Pants (Artisan trainers only) · 225–300 untested ([wow-professions.com](https://www.wow-professions.com/forever/leatherworking-leveling-guide)).
+- **Levelling route:** one route from WoW-Professions: 1–55 Light Leather, Cured Light Hide · 55–130 Embossed Leather Gloves, Fine and Dark Leather Belts, Heavy Leather · 130–210 Cured Heavy Hide, Hillman's and Guardian Gloves, Nightscape Headbands · 210–225 Nightscape Pants (Artisan trainers only) · 225–300 see the linked live route and compare material prices ([wow-professions.com](https://www.wow-professions.com/forever/leatherworking-leveling-guide)).
 - **Money makers:** guides value it mostly for your own gear. Icy Veins rates armour kits for levelling and mentions rare creations without naming any; every Hunter wants a quiver or pouch ([ForeverDB](https://foreverdb.net/guide/professions)). Bind-on-pickup pieces can't be sold.
 - **Camp items:** [Camp Tent](https://foreverdb.net/item/279978) (20), tops rested experience up to 5% of a level · [Tanning Rack](https://foreverdb.net/item/279941) (140), blueprint from Razorclaw the Butcher in Shadowfang Keep · [Sewing Machine](https://foreverdb.net/item/279945) (300), source unknown. Many recipes need the two stations.
 - **Trainers and ranks:** Expert from Una (Thunder Bluff) or Telonis (Darnassus) · Artisan at skill 200 and level 35 from Hahrana Ironhide in Feralas (Horde) or Drakk Stonehand in Aerie Peak (Alliance) (wow-professions.com). Role-themed patterns sell for Merchant's Favor at your trade camp.
@@ -50,7 +50,7 @@ The early quiver and ammo pouch raise ranged attack speed by 10% (ForeverDB). En
 
 ### Levelling, in brief
 
-From [wow-professions.com](https://www.wow-professions.com/forever/leatherworking-leveling-guide), tested to 225:
+From [wow-professions.com](https://www.wow-professions.com/forever/leatherworking-leveling-guide), covering the early skill bands:
 
 | Skill | What the guide makes |
 |---|---|

@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-30
+updated: 2026-11-25
 summary: How Shadow Priest plays in WoW Forever, the guides' talent builds at 20, 30 and 60, and how their rotations compare with the simulators.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and rotation, Blizzard class deep dive
 ---
@@ -79,7 +79,7 @@ Wowhead finds Mind Flay rarely worth its mana over the wand before about level 2
 
 - Wowhead's level 30 guide offers Shadow Affinity as an option. That talent became Improved Mind Blast on 16 October ([ForeverDB](https://foreverdb.net/article/build-1-60-1-70425-game-files)).
 - Wowhead's overview gives one-minute cooldowns for Devouring Plague and Vampiric Embrace and 15 sec for Shadow Word: Death. The final client shows 24, 30 and 18 sec.
-- Shadow Word: Death (32), Early Demise (35) and Shadowform (40) are above the beta cap and untested.
+- [Icy Veins’ live levelling routes](https://www.icy-veins.com/wow-forever/shadow-priest-leveling) compare deep Shadow with taking Meditation first and revisiting the build around Shadowform at level 40.
 
 ## Field findings
 

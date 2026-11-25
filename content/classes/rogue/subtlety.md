@@ -1,6 +1,6 @@
 ---
-updated: 2026-10-30
-summary: How Subtlety plays in WoW Forever up to the level 30 beta cap, with talents by level, openers, the Hemorrhage and Rupture rotation, gear and where the guides disagree.
+updated: 2026-11-25
+summary: How Subtlety plays in WoW Forever around its early levelling milestones, with talents by level, openers, the Hemorrhage and Rupture rotation, gear and where the guides disagree.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APL, Blizzard class deep dive
 ---
 
@@ -16,6 +16,8 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APL, Blizzard class 
 - **Watch out:** Icy Veins' Subtlety pages date from 8 October and still mention a level 20 cap in places; it says poisons last an hour, where ForeverDB reads 30 minutes from the client ([Icy Veins](https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling)). Backstab is hard to land solo before Hemorrhage; bleed-immune enemies blunt the spec.
 
 ## What the guides say
+
+For the full live levelling path, see the [level 1–60 Rogue guide](https://mobalytics.gg/wow-forever/classes/rogue-leveling-guide). Examples at 30 illustrate that stage of progression.
 
 ### Tazdingo recommendation
 

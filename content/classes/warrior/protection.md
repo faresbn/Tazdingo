@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-30
+updated: 2026-11-25
 summary: Protection Warrior in WoW Forever: the shield tank's talents by level, threat priorities compared across guides and the WoWSims list, why guides rate it for levelling, gear and where guides disagree.
 sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets and APL, Blizzard deep dive and beta notes
 ---
@@ -11,7 +11,7 @@ sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets a
 - **Build at 60:** projection only: WoWSims' default is 31 Protection (Shield Slam, Bastion, Focused Rage, Defiance, Vanguard, Concussion Blow, Anticipation), 17 Arms (Improved Heroic Strike, Deflection, Improved Rend, Deep Wounds, Impale) and 3 Cruelty ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/warrior/protection/presets.ts)).
 - **Priority:** survival and threat on each enemy before damage. At 30 (Wowhead): [Shield Block](https://foreverdb.net/spell/2565), Revenge, Thunder Clap, Demoralizing Shout, Sunders, Rend if threat is safe, Heroic Strike with spare Rage; Thunder Clap first on packs. At 60 WoWSims adds Shield Slam before Revenge.
 - **Stats:** ForeverDB puts survival first (Stamina, armour, Defense, block); Icy Veins puts threat first (weapon damage, hit, Strength). WoWSims' level-60 weights blend both, with Stamina and hit highest. Fix deaths with survival, lost enemies with threat.
-- **Key levels:** 14 Revenge (switch to sword and board) · 25 Vanguard · 30 Focused Rage · 35 [Bastion](https://foreverdb.net/spell/16538) · 40 Shield Slam (above 30 is projection).
+- **Key levels:** 14 Revenge (switch to sword and board) · 25 Vanguard · 30 Focused Rage · 35 [Bastion](https://foreverdb.net/spell/16538) · 40 Shield Slam.
 - **Gear and consumables:** at 30 Wowhead picks Pronged Reaver (Razorfen Kraul), Thermaplugg Medal of Honor (Gnomeregan) and Blacksmithing's Officer's Belt; Bandsaw Wristbands at 20. Pull with a trained ranged weapon; Wowhead notes Engineering's grenades also solve ranged pulling.
 - **Watch out:** older threat advice built on the Sunder Armor and Demoralizing Shout bugs is superseded. [Defiance](https://foreverdb.net/spell/12792) now needs a shield. Shield Block funds Revenge only when attacks use its blocks, not against casters or idle targets. Thorns from a Paladin or Druid helps.
 

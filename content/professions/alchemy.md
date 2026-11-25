@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-30
+updated: 2026-11-25
 summary: How Alchemy changed in Forever (healing potions gone, new elixirs, boost potions, dyes and flasks), how guides level it and what they say sells.
 sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg
 ---
@@ -8,7 +8,7 @@ sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg
 
 - **Pick it for:** consumables you will use or sell repeatedly, for any class; dozens of new low-level recipes make it worth taking while levelling ([Wowhead](https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes)).
 - **Pairs with:** Herbalism, since nearly every recipe uses herbs. Buying herbs can be faster when you have the gold; gathered herbs still have a sale value.
-- **Levelling route:** wow-professions.com, a Beta estimate: 1–55 Elixir of Minor Defense · 55–150 Minor Mana Potions, Elixir of Wisdom, Fire Oil · 150–225 Elixir of Fire Power, Mana Potions, Nature Protection Potions · 225–300 untested ([wow-professions.com](https://www.wow-professions.com/forever/alchemy-leveling-guide)). wowtbc.gg uses oils and Free Action Potions instead.
+- **Levelling route:** one route from WoW-Professions: 1–55 Elixir of Minor Defense · 55–150 Minor Mana Potions, Elixir of Wisdom, Fire Oil · 150–225 Elixir of Fire Power, Mana Potions, Nature Protection Potions · 225–300 see the linked live route and compare material prices ([wow-professions.com](https://www.wow-professions.com/forever/alchemy-leveling-guide)). wowtbc.gg uses oils and Free Action Potions instead.
 - **Money makers:** Wowhead expects steady consumable demand; Icy Veins rates elixirs (they stack) and reagents such as oils and dyes ([Icy Veins](https://www.icy-veins.com/wow-forever/alchemy)). Transmutes such as Arcanite pay only when output beats every input and selling cost. Scan margins are estimates from asking prices.
 - **Camp items:** [Mana Well](https://foreverdb.net/item/279956) (20), mana for everyone sitting nearby, doesn't stack with Blessing of Wisdom · [Fermenter](https://foreverdb.net/item/279970) (140), makes certain reagents · [Alchemy Laboratory](https://foreverdb.net/item/279990) (300), a station some recipes need.
 - **Trainers and ranks:** Journeyman 50 and level 10 · Expert 125 and level 20 · Artisan 200 and level 35, from Rogvar in Stonard (Horde) or Kylanna Windwhisper in Feathermoon Stronghold (Alliance) ([wow-professions.com](https://www.wow-professions.com/forever/alchemy-leveling-guide)). New recipes: Nina Surefire (Redridge) or Apothecary Durelle (Crossroads), for Merchant's Favor.
@@ -44,7 +44,7 @@ Many of the new recipes are sold by Nina Surefire (Alliance, Three Corners in Re
 | 1–55 | Minor Arcane Elixir or Elixir of Minor Force (both new), then Elixir of Minor Defense |
 | 55–150 | Minor Mana Potions, Elixir of Minor Fortitude, Elixir of Wisdom, Lesser Mana Potions, then Fire Oil (or more mana potions if Firefin Snapper is dear) |
 | 150–225 | Elixir of Fire Power, Mana Potions, then Nature Protection Potions from a vendor recipe that binds on pickup |
-| 225–300 | Untested at the beta cap: Classic's route without the healing potions. For the last points it suggests the Major Frenzy Potion, sold for Merchant's Favor |
+| 225–300 | Compare the current [Forever route](https://www.wow-professions.com/forever/alchemy-leveling-guide) with the material cost and access to recipes that require Merchant’s Favor. |
 
 [wowtbc.gg](https://wowtbc.gg/warcraftforever/professions/alchemy/), which prices its route from Auction House scans, takes a different path: Elixir of Minor Defense to 75, then Blackmouth Oil, Fire Oil and Free Action Potions, with Mana Potions to about 200. Both stop near the beta's 225 ceiling.
 

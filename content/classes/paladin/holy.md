@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-30
+updated: 2026-11-25
 summary: Holy Paladin in WoW Forever: the healer's talents by level, how the guides use Holy Light, Flash of Light and Holy Shock, levelling, gear and where guides disagree.
 sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets, Blizzard Paladin deep dive
 ---
@@ -11,7 +11,7 @@ sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets, 
 - **Build at 60:** not established yet: WoWSims has no Holy talents because it doesn't simulate healing. Icy Veins projects 32 Holy and 19 Retribution, with Light's Vigil ([Icy Veins](https://www.icy-veins.com/wow-forever/holy-paladin-leveling)).
 - **Priority:** at 30, heal by urgency: Flash of Light when it must land fast, Holy Light when the bigger heal is needed and Mana allows, [Holy Shock](https://foreverdb.net/spell/1311606) for emergencies or moving ([Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/holy/level-30-healer-overview)). If talented (ForeverDB's dungeon build), Divine Favor before a big Holy Light. Between heals, Seal, Judgement and Holy Strike.
 - **Stats:** ForeverDB and Icy Veins agree on healing power, then Intellect, then Mana per 5; they split on Spirit and crit after that ([ForeverDB](https://foreverdb.net/class/Paladin/pve)). Intellect adds Mana and crit, not healing (Wowhead).
-- **Key levels:** 25 Divine Favor · 30 Holy Shock (10 sec cooldown) · 35–40 Holy Power · 40 [Light's Vigil](https://foreverdb.net/spell/1310911), Icy Veins' only group heal (above 30 is projection).
+- **Key levels:** 25 Divine Favor · 30 Holy Shock (10 sec cooldown) · 35–40 Holy Power · 40 [Light's Vigil](https://foreverdb.net/spell/1310911), Icy Veins' only group heal.
 - **Gear and consumables:** at 30 Wowhead picks Haunting Blade and Worgenbane Talisman (Shadowfang Keep) and Death Speaker Robes (Razorfen Kraul); ForeverDB's top weapon is Death Speaker Scepter. Icy Veins: Lesser Arcane Elixir, mana potions and water; health and mana potions share a cooldown.
 - **Watch out:** the guides split on efficiency: ForeverDB's numbers favour Holy Light, while Wowhead and Icy Veins make Flash of Light the everyday heal. Holy Shock reaches only 20 yards. Judgement of Light gives incidental group healing, not a reliable group heal.
 

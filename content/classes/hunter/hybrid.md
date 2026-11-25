@@ -1,12 +1,12 @@
 ---
-updated: 2026-10-27
+updated: 2026-11-25
 summary: The Hunter talent builds that mix trees in WoW Forever, from Wowhead's level 20 splits to the level 60 projections, and why Blizzard's hybrid tax doesn't touch them.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets, Blizzard class deep dive
 ---
 
 ## Cheatsheet
 
-- **Why mixing is common:** One talent point per level from 10 to 60 (51 in all), and each row of a tree needs 5 more points spent in that tree. With 21 points at the level 30 beta cap, the cheap top-row talents of a second tree are tempting.
+- **Why mixing is common:** One talent point per level from 10 to 60 (51 in all), and each row of a tree needs 5 more points spent in that tree. With 21 base points at level 30, the cheap top-row talents of a second tree are tempting.
 - **Milestones:** Blizzard's trees have one-point milestone talents at 11, 16 (new in Forever), 21 and 31 points.
 - **Legacy points:** The account-wide Legacy perk Talented gives up to five extra points early ([ForeverDB](https://foreverdb.net/class/Hunter/talents)), which most guides spend deeper in the main tree.
 - **The usual borrowed talents:** Deadly Aspects (Beast Mastery tier 1), Lethal Attacks (Marksmanship tier 1, 5% crit on all attacks), Careful Aim (Marksmanship tier 2) and Improved Tracking (Survival tier 1).

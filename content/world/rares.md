@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-27
+updated: 2026-11-25
 summary: What's known about rare spawns in Forever: which rares players have confirmed, what's still Classic data, the new rares and drops, and how to track respawns.
 sources: ForeverDB, foreverchanges.pro, Wowhead, Icy Veins, Blizzard, CurseForge
 ---
@@ -57,7 +57,7 @@ Some rares now drop companion pets ([Wowhead](https://www.wowhead.com/forever/gu
 
 ### Rares in the new zones
 
-foreverchanges.pro lists eight rares on Zephras Isle: Den'dralass, Fernfeather, Galemender Delanea, Mystmane, Slydris, Snapbeak the Quick (Thendal Watcher's Boots), Tel'daeor the Stormspeaker (Scout Ranger's Leggings) and The Lost One. It has one on Mount Hyjal, Pexmit. Nothing is reported yet for the Riverglades or Shen'dralas, which were above the beta cap. [Icy Veins](https://www.icy-veins.com/wow-forever/news/wow-forever-is-hiding-instance-portals-nobody-can-enter-yet/) also notes a level 60 Mistmantle Prowler that troubled low-level players in Duskwood during the beta.
+foreverchanges.pro lists eight rares on Zephras Isle: Den'dralass, Fernfeather, Galemender Delanea, Mystmane, Slydris, Snapbeak the Quick (Thendal Watcher's Boots), Tel'daeor the Stormspeaker (Scout Ranger's Leggings) and The Lost One. It has one on Mount Hyjal, Pexmit. Check current sightings before travelling to the Riverglades or Shen’dralas. [Icy Veins](https://www.icy-veins.com/wow-forever/news/wow-forever-is-hiding-instance-portals-nobody-can-enter-yet/) also notes a level 60 Mistmantle Prowler that troubled low-level players in Duskwood during the beta.
 
 ### Dungeon rares
 

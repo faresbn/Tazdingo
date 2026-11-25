@@ -7,7 +7,8 @@ sys.path.insert(0,str(ROOT/"scripts"))
 from auctionator import CBOR, InvalidCapture, LuaData, day_date, item_id, parse_capture, string_keys, suffix
 from build import build_markets, collect, crate_table, craft_table, load_content, summarise, volatility
 from markup import render
-from pages import countdown_text
+from pages import Site, countdown_text
+from ah_pages import actionable
 
 
 class SafeFormats(unittest.TestCase):
@@ -205,6 +206,24 @@ class Countdown(unittest.TestCase):
         self.assertEqual(countdown_text(opens,at(2026,11,4,12)),"Forever opens in 11 hours")
         self.assertEqual(countdown_text(opens,at(2026,11,4,23)),"Day 1 of Forever")
         self.assertEqual(countdown_text(opens,at(2026,11,5,23)),"Day 2 of Forever")
+
+
+class BriefingMarketLeads(unittest.TestCase):
+    def test_requires_newest_observation_and_stops_after_one_day(self):
+        stamp = 1795536016  # 24 Nov 2026 16:00:16 UTC
+        stale = {"id": 1, "key": "1", "name": "Old quote", "latest_time": stamp - 1}
+        recent = {"id": 2, "key": "2", "name": "New quote", "latest_time": stamp,
+                  "latest": 10000, "deal": {"discount": 0.25}}
+        market = {"slug": "forever-pvp", "environment": "forever", "ah": {"newest": stamp, "scans_in_window": 2,
+                  "deals": [stale, recent], "invest": [], "rising": [], "falling": []}}
+        site = Site("/Tazdingo/", "https://example.com/Tazdingo/", "test", "2026-11-25 15:00 UTC", False)
+        text = actionable(site, market)
+        self.assertNotIn("Old quote", text)
+        self.assertIn("New quote", text)
+        self.assertIn("Newest upload:", text)
+        self.assertIn(str(stamp + 24 * 3600), text)
+        site.built = "2026-11-25 16:01 UTC"
+        self.assertNotIn("New quote", actionable(site, market))
 
 
 class MergingScans(unittest.TestCase):

@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-30
+updated: 2026-11-25
 summary: Protection Paladin in WoW Forever: the Mana tank's talents by level, threat priorities compared across guides and the WoWSims list, levelling, gear and where guides disagree.
 sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets and APL, Blizzard Paladin deep dive and beta notes
 ---
@@ -11,7 +11,7 @@ sources: ForeverDB, Wowhead Level 20 and 30 guides, Icy Veins, WoWSims presets a
 - **Build at 60:** projection only: WoWSims' default is 34 Protection (Swift Judgement, Templar's Bulwark, Reckoning, Iron Creed, Holy Shield), 8 Holy (Divine Strength, Improved Seals) and 9 Retribution (Deflection, Improved Judgement, Holy Conduit) ([WoWSims](https://github.com/wowsims/forever/blob/master/ui/specs/paladin/protection/presets.ts)).
 - **Priority:** at 30: Righteous Fury, then Seal of Fury, Judgement, Holy Strike, Exorcism on Undead and Demons, and Consecration when Mana allows (first on packs) ([Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/protection/level-30-tank-overview)). Icy Veins saves Judgement to taunt loose enemies at first. At 60 WoWSims adds Swift Judgement and Holy Shield.
 - **Stats:** ForeverDB: Defense, Stamina, armour, block value, then hit, Strength and spell power; Icy Veins puts spell power second, after Stamina ([Icy Veins](https://www.icy-veins.com/wow-forever/protection-paladin-leveling)). Take survival when pulls are dangerous, threat when enemies escape.
-- **Key levels:** 16 Righteous Fury and Retribution Aura (two-hander until then) · 20 Consecration · 25 [Swift Judgement](https://foreverdb.net/spell/1310994) (16 points) · 30 [Templar's Bulwark](https://foreverdb.net/spell/1311015) · 35 Iron Creed · 40 Holy Shield and Hammer of the Righteous (above 30 is projection).
+- **Key levels:** 16 Righteous Fury and Retribution Aura (two-hander until then) · 20 Consecration · 25 [Swift Judgement](https://foreverdb.net/spell/1310994) (16 points) · 30 [Templar's Bulwark](https://foreverdb.net/spell/1311015) · 35 Iron Creed · 40 Holy Shield and Hammer of the Righteous.
 - **Gear and consumables:** at 30 Wowhead picks Painwalker Buckler and Scorn's Icy Choker (Scarlet Monastery), Worgenbane Talisman and Blacksmithing's Crusader's chain set. No spell power weapons before 20 (about 25% less melee damage). Engineering for ranged pulls; Icy Veins adds Lesser Arcane Elixir.
 - **Watch out:** ForeverDB's PvE, builds and levelling pages still give Righteous Fury 60% threat; it is 90%. Shield Specialization is 4% Mana per block, not 6% ([Blizzard](https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/6)). Templar's Bulwark is an absorb, not immunity. Check Iron Creed's tooltip at launch.
 

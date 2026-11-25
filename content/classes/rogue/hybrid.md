@@ -1,12 +1,12 @@
 ---
-updated: 2026-10-27
+updated: 2026-11-25
 summary: The Rogue talent builds that mix trees in WoW Forever, from Wowhead's dagger split at level 20 to the level 60 projections, and why Blizzard's hybrid tax doesn't touch them.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets, Blizzard class deep dive
 ---
 
 ## Cheatsheet
 
-- **Why mixing is common:** One talent point per level from 10 to 60 (51 in all), and each row needs 5 more points in that tree. At the level 30 cap you have 21 points, and every Rogue tree has cheap, strong talents near the top.
+- **Why mixing is common:** One talent point per level from 10 to 60 (51 in all), and each row needs 5 more points in that tree. At level 30 you have 21 base points, and every Rogue tree has cheap, strong talents near the top.
 - **The usual borrowed talents:** Combat's Improved Eviscerate, Improved Sinister Strike, Puncturing Wounds and Precision; Assassination's Malice, Ruthlessness, Relentless Strikes and Improved Slice and Dice; Subtlety's Opportunity.
 - **The dagger split:** Puncturing Wounds sits in Combat's second tier and Opportunity in Subtlety's first, so a dagger Backstab build crosses trees in any spec.
 - **Legacy points:** The account-wide Legacy perk Talented gives up to five extra points early. Wowhead often spends them in a second tree.

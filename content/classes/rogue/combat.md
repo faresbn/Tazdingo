@@ -1,6 +1,6 @@
 ---
-updated: 2026-10-30
-summary: How Combat plays in WoW Forever up to the level 30 beta cap, with talents by level, the Sinister Strike and Backstab rotations, Blade Flurry, weapons and where the guides disagree.
+updated: 2026-11-25
+summary: How Combat plays in WoW Forever around its early levelling milestones, with talents by level, the Sinister Strike and Backstab rotations, Blade Flurry, weapons and where the guides disagree.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APL
 ---
 
@@ -16,6 +16,8 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and APL
 - **Watch out:** never press Blade Flurry next to a Sapped or Gouged mob ([ForeverDB](https://foreverdb.net/class/Rogue/pve)). ForeverDB's sim did 2.7% more on one target without Slice and Dice at 30, but flags it for testing and every written guide keeps it. Puncturing Wounds needs a main-hand dagger.
 
 ## What the guides say
+
+For the full live levelling path, see the [level 1–60 Rogue guide](https://mobalytics.gg/wow-forever/classes/rogue-leveling-guide). Examples at 30 illustrate that stage of progression.
 
 ### Tazdingo recommendation
 

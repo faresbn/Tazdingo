@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-27
+updated: 2026-11-25
 summary: Priest builds that mix talent trees in WoW Forever, the Smite damage build, Blizzard's "hybrid tax" on damage specs, and playing both healer and damage.
 sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and rotation, Blizzard class deep dive and podcast
 ---
@@ -17,7 +17,7 @@ sources: Wowhead, Icy Veins, ForeverDB, WoWSims presets and rotation, Blizzard c
 
 ### Tazdingo recommendation
 
-Choose a split for its immediate job: wanding and Spirit Tap for solo recovery, Meditation for casting sustain, or a deeper healing tree for its defining spell. A dip that looks efficient at 20 may delay Penance or a Holy milestone at 30. Compare equal level and Legacy-point budgets and state whether the character is mainly questing or healing. The hybrid damage target is a class-design aim, not a tax for mixing trees, and simulator presets above the Beta cap remain projections.
+Choose a split for its immediate job: wanding and Spirit Tap for solo recovery, Meditation for casting sustain, or a deeper healing tree for its defining spell. A dip that looks efficient at 20 may delay Penance or a Holy milestone at 30. Compare equal level and Legacy-point budgets and state whether the character is mainly questing or healing. The hybrid damage target is a class-design aim, not a tax for mixing trees, and simulator presets should be checked against the current live build and actual encounter.
 
 ### How the trees allow it
 

@@ -7,7 +7,7 @@ import re
 from datetime import datetime, timezone
 
 from pages import (FOREVERDB, ROLES, Site, artwork, badge, banner, changelog, emblem, esc, ext, item_link, layout, object_icon,
-                   alias, gold_cards, links, money, news_widget, nice_date, page_head, plain_text, render_sections, source_tag, tabs, when)
+                   alias, briefing_notes, gold_cards, links, money, news_widget, nice_date, page_head, plain_text, render_sections, source_tag, tabs, when)
 
 WOWHEAD = "https://www.wowhead.com/forever"
 
@@ -122,10 +122,12 @@ def finding_count(page: dict | None) -> int:
 def head_facts(page: dict | None, *extra: str) -> str:
     facts = list(extra)
     if page:
-        facts.append(badge("prelaunch") if page["status"] == "pre-launch" else badge("live"))
+        facts.append(badge("unknown", "Guide synthesis") if page["status"] == "pre-launch" else badge("live", "Checked in game"))
         if page.get("confidence_label"):
             facts.append(badge(page["confidence"], page["confidence_label"]))
-        facts.append(f'<span class="updated">Updated {when(page["updated"])}</span>')
+        facts.append(f'<span class="updated">Edited {when(page["updated"])}</span>')
+        if page.get("verified"):
+            facts.append(f'<span class="updated">Verified {when(page["verified"])}</span>')
     return f'<p class="status-line">{" ".join(facts)}</p>' if facts else ""
 
 
@@ -172,7 +174,7 @@ def classes_index(site: Site, ctx: dict) -> str:
         cards.append(f'<li class="class-card" style="--class:{esc(c["colour"])}">'
                      f'<a class="class-card-head" href="{b}classes/{c["slug"]}/">{emblem(site, "class", c["slug"], 40, c["colour"])}<span>{esc(c["name"])}</span></a>'
                      f'<ul class="spec-list">{specs}</ul></li>')
-    return layout(site, "Classes", page_head("Classes", "Nine classes, three specs each. Every spec page opens on a cheatsheet: build, priority, stats and the levels that matter.")
+    return layout(site, "Classes", page_head("Character", "Choose a class and spec to plan your next talent, spell or gear upgrade.")
                   + f'''<section class="page-body">
   <ul class="class-cards">{"".join(cards)}</ul>
   <details class="reading">
@@ -205,6 +207,7 @@ def class_page(site: Site, ctx: dict, c: dict) -> str:
     hybrid = content.get(f"classes/{c['slug']}/hybrid")
     macros = content.get(f"classes/{c['slug']}/macros")
     first = (f'<ul class="spec-cards">{"".join(spec_cards)}</ul>'
+             + f'<p class="brief-links"><a href="#abilities">Check abilities by level</a><a href="#hybrid">Compare hybrid builds</a><a href="#macros">Find a macro</a></p>'
              + cheatsheet(overview, f"No overview of the {c['name']} yet.") + take(overview))
     panels = [("overview", "Overview", alias("glance", "specs") + first), ("in-depth", "In depth", alias("guides") + in_depth(overview)),
               ("hybrid", "Hybrid builds", alias("hybrid-glance", "hybrid-guides", "hybrid-findings", "hybrid-more") + note_tab(site, hybrid, "No hybrid builds recorded yet.")),
@@ -224,7 +227,10 @@ def spec_page(site: Site, ctx: dict, c: dict, spec: dict) -> str:
     b = site.base
     page = ctx["content"].get(f"classes/{c['slug']}/{spec['slug']}")
     empty = (f"No summary of the {spec['name']} {c['name']} guides yet. The guides and tools under Sources are the best place to start.")
-    panels = [("cheatsheet", "Cheatsheet", alias("glance") + cheatsheet(page, empty) + take(page)), ("in-depth", "In depth", alias("guides") + in_depth(page)),
+    stages = ctx["game"].get("milestones", {}).get(f'{c["slug"]}/{spec["slug"]}', [])
+    plan = milestone_plan(stages, "level", 60)
+    trainer = f'<p><a href="{b}classes/{c["slug"]}/#abilities">Check spell training and rank levels</a></p>'
+    panels = [("cheatsheet", "Cheatsheet", alias("glance") + take(page) + plan + cheatsheet(page, empty) + trainer), ("in-depth", "In depth", alias("guides") + in_depth(page)),
               ("findings", "Field findings", findings(page)),
               ("sources", "Sources", alias("more", *old_findings(page)) + sources_tab(site, page, spec_tools(c, spec), entries_for(ctx, f"content/classes/{c['slug']}/{spec['slug']}.md")))]
     return layout(site, f"{spec['name']} {c['name']}",
@@ -234,6 +240,22 @@ def spec_page(site: Site, ctx: dict, c: dict, spec: dict) -> str:
                   + f'<section class="page-body" style="--class:{esc(c["colour"])}">{tabs(panels, {"findings": finding_count(page)})}</section>',
                   active="classes", path=f"classes/{c['slug']}/{spec['slug']}/",
                   description=(page or {}).get("summary") or f"{spec['name']} {c['name']} in World of Warcraft: Forever: guide summary and links.")
+
+
+def milestone_plan(stages: list, key: str, maximum: int) -> str:
+    if not stages:
+        return ""
+    label = "Level" if key == "level" else "Skill"
+    rows = "".join(
+        f'<li data-milestone="{esc(stage["at"])}"><span class="brief-topic">{label} {esc(stage["at"])}</span>'
+        f'<div><strong>{esc(stage["title"])}</strong><p>{esc(stage["detail"])} '
+        f'<a href="{esc(stage["source"])}">Source</a></p></div></li>'
+        for stage in sorted(stages, key=lambda s: s["at"]))
+    return (f'<section class="milestones" id="milestones"><h3>Progression milestones</h3>'
+            f'<form class="planning-filters" data-progress-key="{key}" hidden>'
+            f'<label>Current {label.lower()}<input name="progress" type="number" min="1" max="{maximum}" step="1"></label>'
+            '<button type="reset">Show all</button><span role="status"></span></form>'
+            f'<ul class="brief-notes">{rows}</ul></section>')
 
 
 # --- ForeverDB API tables ----------------------------------------------------------
@@ -257,7 +279,7 @@ def where(entry: dict) -> str:
 def cost(v: dict) -> str:
     parts = [money(v["price"])] if v.get("price") else []
     parts += [f'{esc(amount)} {esc(name)}' for name, amount in v.get("costs", [])]
-    return " + ".join(parts) or "free"
+    return " + ".join(parts) or "Price unavailable"
 
 
 def profession_api(ctx: dict, slug: str) -> str:
@@ -275,12 +297,15 @@ def profession_api(ctx: dict, slug: str) -> str:
         bought_rows.append(f'<tr><th scope="row">{esc(b["recipe"])}{" " + badge("new", "New in Forever") if b.get("new") else ""}</th>'
                            f'<td class="num">{esc(b["skill"] or "")}</td><td>{vendors}</td></tr>')
     more = len(data["bought"]) - 40
+    reference = f'{FOREVERDB}/profession/{esc(slug)}'
+    all_trainers = (f'<p class="aside"><a href="{reference}">All {len(trainers)} trainers on ForeverDB</a></p>'
+                    if len(trainers) > 14 else "")
     return (f'<p>Ranks: {ranks}.</p>'
             f'<h3 class="part-title">Trainers</h3><div class="table-wrap"><table><thead><tr><th scope="col">Trainer</th><th scope="col">Faction</th><th scope="col">Where</th>'
-            f'<th scope="col" class="num">Trains to</th></tr></thead><tbody>{trainer_rows}</tbody></table></div>'
+            f'<th scope="col" class="num">Trains to</th></tr></thead><tbody>{trainer_rows}</tbody></table></div>{all_trainers}'
             + (f'<h3 class="part-title">Recipes you buy</h3><div class="table-wrap"><table><thead><tr><th scope="col">Recipe</th><th scope="col" class="num">Skill</th>'
                f'<th scope="col">Sold by</th></tr></thead><tbody>{"".join(bought_rows)}</tbody></table></div>'
-               + (f'<p class="aside">And {more} more on ForeverDB.</p>' if more > 0 else "") if bought_rows else "")
+               + (f'<p class="aside"><a href="{reference}">See all {len(data["bought"])} recipes on ForeverDB</a>.</p>' if more > 0 else "") if bought_rows else "")
             + api_credit(ctx))
 
 
@@ -380,7 +405,9 @@ def profession_page(site: Site, ctx: dict, p: dict) -> str:
                f'All {esc(p["name"])} margins</a>.</p></section>') if crafts else ""
     camp_html = (f'<section class="side-table"><h3 class="part-title">Camp items {label}</h3><div class="table-wrap"><table class="compact"><thead><tr><th scope="col">Item</th><th scope="col" class="num">Skill</th>'
                  f'<th scope="col">Effect</th></tr></thead><tbody>{camp_rows}</tbody></table></div></section>') if camp else ""
-    first = cheatsheet(page, f"No summary of {p['name']} guides yet.") + take(page) + (f'<div class="pair">{margins}{camp_html}</div>' if margins or camp_html else "")
+    stages = ctx["game"].get("milestones", {}).get(p["slug"], [])
+    plan = milestone_plan(stages, "skill", 300)
+    first = take(page) + plan + cheatsheet(page, f"No summary of {p['name']} guides yet.") + (f'<div class="pair">{margins}{camp_html}</div>' if margins or camp_html else "")
     learn = profession_api(ctx, p["slug"])
     zones = gathering_api(ctx, p["slug"]) if p["slug"] in ("herbalism", "mining", "skinning", "fishing") else ""
     tools = [(f"ForeverDB: {p['name']}", f"{FOREVERDB}/profession/{p['slug']}", "Every recipe, trainers, where to learn")]
@@ -448,7 +475,7 @@ def world_page(site: Site, ctx: dict, t: dict) -> str:
     data = world_data(site, ctx, t["slug"])
     pairs = [(label, url if url.startswith("http") else f"{b}world/{t['slug']}/{url}", "") for label, url in t["links"]]
     art = (f'<div class="head-art camp" aria-hidden="true">{artwork(site, "camping", "camp-art")}</div>' if t["slug"] == "camping" and site.art.get("camping") else "")
-    panels = [("overview", "Overview", alias("glance") + cheatsheet(page, f"No notes on {t['name'].lower()} yet.") + take(page)),
+    panels = [("overview", "Overview", alias("glance") + take(page) + cheatsheet(page, f"No notes on {t['name'].lower()} yet.")),
               ("in-depth", "In depth", alias("guides") + in_depth(page)), ("data", "Game data", alias("from-the-data") + data if data else ""),
               ("findings", "Field findings", findings(page)),
               ("sources", "Sources", alias("more", *old_findings(page)) + sources_tab(site, page, pairs, entries_for(ctx, f"content/world/{t['slug']}.md")))]
@@ -481,8 +508,9 @@ def blizzard_page(site: Site, ctx: dict, m: dict) -> str:
 def more_index(site: Site, ctx: dict) -> str:
     items = "".join(f'<li><a href="{site.base}more/{x["slug"]}/"><span class="tool-name">{esc(x["name"])}</span><span class="aside">{esc(x["summary"])}</span></a></li>'
                     for x in ctx["game"]["more"])
-    return layout(site, "More", page_head("More", "Getting ready to play, Blizzard's latest posts, addons, macros and known issues.")
-                  + banner(site, "more") + f'<section class="page-body"><ul class="tool-cards plain">{items}</ul></section>',
+    notes = briefing_notes(site, ctx["game"])
+    return layout(site, "What’s New", page_head("What’s New", "Official updates, progression announcements and changes worth planning around.")
+                  + f'<section class="page-body">{notes}<h2 class="group-title">Updates and reference</h2><ul class="tool-cards plain">{items}</ul></section>',
                   active="more", path="more/", description="World of Warcraft: Forever launch checklist, Blizzard's posts, addons, macros and known issues.")
 
 
@@ -498,8 +526,8 @@ def more_page(site: Site, ctx: dict, m: dict) -> str:
     main = ((f'<nav class="jump" aria-label="On this page"><ul>{"".join(jump)}</ul></nav>' if len(jump) > 2 else "")
             + (f'<section class="sec sec-glance" id="glance"><h2>Cheatsheet</h2>{cheatsheet(page)}</section>' if section(page, "glance") else "")
             + render_sections(page, "Nothing recorded yet.", skip=("glance",)) + changelog(site, entries_for(ctx, f"content/more/{m['slug']}.md"))
-            + f'<nav class="siblings" aria-label="More"><h2 class="group-title">Also in More</h2><ul>{others}</ul></nav>')
-    return layout(site, m["name"], page_head(m["name"], esc(page["summary"] if page else m["summary"]), (("More", f"{site.base}more/"),), head_facts(page))
+            + f'<nav class="siblings" aria-label="More"><h2 class="group-title">Updates and reference</h2><ul>{others}</ul></nav>')
+    return layout(site, m["name"], page_head(m["name"], esc(page["summary"] if page else m["summary"]), (("What’s New", f"{site.base}more/"),), head_facts(page))
                   + (banner(site, "more") if m["slug"] == "launch" else "")
                   + f'<section class="page-body single">{main}</section>',
                   active="more", path=f"more/{m['slug']}/", description=f"World of Warcraft: Forever {m['name'].lower()}: {m['summary']}")

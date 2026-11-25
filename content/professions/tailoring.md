@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-30
+updated: 2026-11-25
 summary: How Tailoring changed in Forever (spell-school cloth sets, reagent bags, camp spinning wheels and looms, shifted skill ranges), how guides level it and what sells.
 sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Warcraft Tavern
 ---
@@ -8,8 +8,8 @@ sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Warcraft
 
 - **Pick it for:** cloth casters (Mages, Priests, Warlocks) filling weak slots with their own crafts while levelling, plus bags; start with a few useful pieces.
 - **Pairs with:** Enchanting, to disenchant your greens; cloth drops from humanoids, so neither needs a gatherer. A convenient partner, not a requirement, and both compete for the same budget.
-- **Levelling route:** wow-professions.com, tested to 225: 1–55 Linen bolts, Linen Belts · 55–120 Woolen bolts, Woolen Capes, Double-stitched Woolen Shoulders, Silk bolts · 120–150 Gloves of Meditation, then Mageweave bolts or Red Swashbuckler's Shirts · 150–225 Crimson Silk, Black Mageweave Gloves, Mageweave Bags · 225–300 untested ([wow-professions.com](https://www.wow-professions.com/forever/tailoring-leveling-guide)).
-- **Money makers:** bags have broad potential demand, but profit depends on cloth cost, competition and how fast stock sells. Bolts also fill Fabrics Waylaid Crates for Merchant's Favor ([wow-professions.com](https://www.wow-professions.com/forever/merchants-favor-durotar-supply-azeroth-commerce)). Beta Mageweave scarcity doesn't predict launch prices.
+- **Levelling route:** one route from [WoW-Professions](https://www.wow-professions.com/forever/tailoring-leveling-guide): 1–55 Linen bolts, Linen Belts · 55–120 Woolen bolts, Woolen Capes, Double-stitched Woolen Shoulders, Silk bolts · 120–150 Gloves of Meditation, then Mageweave bolts or Red Swashbuckler's Shirts · 150–225 Crimson Silk, Black Mageweave Gloves, Mageweave Bags · 225–300 check Artisan training and choose the next cloth and pattern band from the live route ([wow-professions.com](https://www.wow-professions.com/forever/tailoring-leveling-guide)).
+- **Money makers:** bags have broad potential demand, but profit depends on cloth cost, competition and how fast stock sells. Bolts also fill Fabrics Waylaid Crates for Merchant's Favor ([wow-professions.com](https://www.wow-professions.com/forever/merchants-favor-durotar-supply-azeroth-commerce)). Check whether loose cloth or finished bolts cost less for the next step.
 - **Camp items:** [Faction Banner](https://foreverdb.net/item/279973) (20), Spirit to your faction nearby, doesn't stack with Divine Spirit · [Spinning Wheel](https://foreverdb.net/item/279943) (140), needed for the skill 140–235 sets, blueprint from the Unstable Sentinel in the City of Dalaran · [Loom](https://foreverdb.net/item/279959) (300), source unknown.
 - **Trainers and ranks:** Expert from Josef Gregorian (Undercity) or Georgio Bolero (Stormwind) · Artisan at skill 200 and level 35: wow-professions.com says Daryl Stack (Tarren Mill) or Timothy Worthington (Theramore); Wowhead (12 October) lists Gregorian and Bolero ([Wowhead](https://www.wowhead.com/forever/guide/professions/tailoring-overview-trainer-locations-recipes)). Check in game.
 - **Watch out:** past 225 many recipes turn grey 25 to 45 points earlier than in Classic. The self-crafted sets bind on pickup, and school-specific gear suits a fixed build. The level-10 sashes need skill 35 or 50; sources differ.
@@ -18,7 +18,7 @@ sources: Wowhead, Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Warcraft
 
 ### Tazdingo recommendation
 
-For a cloth caster, **prioritise a few useful self-crafted pieces and bags**, then expand when the gold supports it. Enchanting is a convenient partner, not a requirement to obtain cloth; levelling both can compete for the same budget. School-specific damage is less flexible for a character changing builds, and bind-on-pickup gear cannot be sold. Compare bag proceeds and expected disenchant value against the cloth's sale value. The [levelling route](https://www.wow-professions.com/forever/tailoring-leveling-guide) is price-sensitive: yellow crafts need a buffer, alternatives replace a step rather than adding to it, and Beta Mageweave scarcity does not predict launch prices.
+For a cloth caster, **prioritise a few useful self-crafted pieces and bags**, then expand when the gold supports it. Enchanting is a convenient partner, not a requirement to obtain cloth; levelling both can compete for the same budget. School-specific damage is less flexible for a character changing builds, and bind-on-pickup gear cannot be sold. Compare bag proceeds and expected disenchant value against the cloth's sale value. The [levelling route](https://www.wow-professions.com/forever/tailoring-leveling-guide) is price-sensitive: yellow crafts need a buffer, alternatives replace a step rather than adding to it, and recent quotes matter more than launch-era scarcity.
 
 ### What changed in Forever
 
@@ -50,7 +50,7 @@ ForeverDB's list of candidate crafts within the level-30 bracket is full of thes
 
 ### Levelling, in brief
 
-From [wow-professions.com](https://www.wow-professions.com/forever/tailoring-leveling-guide), tested to 225:
+From [wow-professions.com](https://www.wow-professions.com/forever/tailoring-leveling-guide), covering the early skill bands:
 
 | Skill | What the guide makes |
 |---|---|
@@ -60,7 +60,7 @@ From [wow-professions.com](https://www.wow-professions.com/forever/tailoring-lev
 | 150–225 | Crimson Silk Vests and Pantaloons, Black Mageweave Gloves, then Mageweave Bags |
 | 225–300 | Not yet tested |
 
-[wowtbc.gg](https://wowtbc.gg/warcraftforever/professions/tailoring/) prices a close variant from Auction House scans, ending with Crimson Silk Pantaloons and Gloves at about 200. wow-professions.com notes that Mageweave Cloth only drops from level-40 mobs, so it was scarce and dear in the beta. The guide will revisit this step once it sees how fast players reach 40.
+[wowtbc.gg](https://wowtbc.gg/warcraftforever/professions/tailoring/) prices a close variant from Auction House scans, ending with Crimson Silk Pantaloons and Gloves at about 200. wow-professions.com notes that Mageweave Cloth only drops from level-40 mobs, so it was scarce and dear in the beta. Compare that historical route with the current material prices and trainer access.
 
 Trainers:
 

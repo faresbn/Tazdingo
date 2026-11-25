@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-30
+updated: 2026-11-25
 summary: How Enchanting changed in Forever (cheaper early levels, staves, orbs, relics and necklace enchants), how guides level it and where the gold is.
 sources: Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Wowhead
 ---
@@ -8,7 +8,7 @@ sources: Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Wowhead
 
 - **Pick it for:** access to enchants and early crafts, especially wands for Mages, Priests and Warlocks; don't count on Tailoring to finance it.
 - **Pairs with:** Tailoring, whose greens you disenchant; neither needs a gatherer. Icy Veins calls Enchanting expensive if you buy everything and Tailoring cheap to level ([Icy Veins](https://www.icy-veins.com/wow-forever/enchanting)). A crafted green isn't free material.
-- **Levelling route:** wow-professions.com, tested to 225: 1–70 Runed Copper Rod, bracer enchants with Motes of Magic · 70–150 minor chest, bracer, cloak and boot enchants, Silver Rod at 110 · 150–225 Golden Rod, Minor Mana Oil, Lesser Agility boots, Truesilver Rod at 200 · 225–300 untested ([wow-professions.com](https://www.wow-professions.com/forever/enchanting-leveling-guide)).
+- **Levelling route:** one route from WoW-Professions: 1–70 Runed Copper Rod, bracer enchants with Motes of Magic · 70–150 minor chest, bracer, cloak and boot enchants, Silver Rod at 110 · 150–225 Golden Rod, Minor Mana Oil, Lesser Agility boots, Truesilver Rod at 200 · 225–300 see the linked live route and compare material prices ([wow-professions.com](https://www.wow-professions.com/forever/enchanting-leveling-guide)).
 - **Money makers:** Icy Veins says rarer enchants fetch the higher prices, but selling one needs customers and the formula. Since 1 October crafted common and uncommon wands vendor for 1 copper, so make them to use ([ForeverDB](https://foreverdb.net/guide/professions)).
 - **Camp items:** [Enchanted Lute](https://foreverdb.net/item/279976) (20), armour, stats and resistances, doesn't stack with Mark of the Wild · [Arcane Salvager](https://foreverdb.net/item/279985) (140), more efficient disenchanting by an unstated amount · [Arcane Forge](https://foreverdb.net/item/279987) (300), a station, blueprint source unknown.
 - **Trainers and ranks:** Expert from Hgarth at Sun Rock Retreat (Horde) or Kitta Firewind at the Tower of Azora (Alliance) · Artisan at skill 200 and level 35 only from Annora inside Uldaman, who alone teaches several recipes from 230 ([wow-professions.com](https://www.wow-professions.com/forever/enchanting-leveling-guide)).
@@ -42,14 +42,14 @@ Gatherers will want the gathering-glove enchants. Icy Veins lists +2 and +5 vers
 
 ### Levelling, in brief
 
-From wow-professions.com's route, which is tested to 225:
+The early skill bands in the [WoW-Professions route](https://www.wow-professions.com/forever/enchanting-leveling-guide):
 
 | Skill | What guides make |
 |---|---|
 | 1–70 | Runed Copper Rod, then bracer enchants with Motes of Magic, then cheap chest or bracer enchants with Strange Dust or Lesser Magic Essence |
 | 70–150 | Minor chest, bracer, cloak and boot enchants. Runed Silver Rod at 110. Enchant 2H Weapon – Lesser Intellect if you buy the formula |
 | 150–225 | Runed Golden Rod, Minor Mana Oil, boots with Lesser Agility (Soul Dust), Vision Dust enchants, Runed Truesilver Rod at 200, then Lesser Wizard Oil |
-| 225–300 | Untested: Artisan, then Dream Dust and Illusion Dust enchants, with a Runed Arcanite Rod near 295 |
+| 225–300 | Check Artisan and the [live dust and rod route](https://www.wow-professions.com/forever/enchanting-leveling-guide) for the current recipe sequence. |
 
 [wowtbc.gg](https://wowtbc.gg/warcraftforever/professions/enchanting/) prices a simpler route from Auction House scans. It makes stamina and protection enchants on bracers, chest, cloak and boots, then boots with Lesser Agility to about 200.
 

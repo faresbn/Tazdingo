@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-27
+updated: 2026-11-25
 summary: Every dungeon in Forever with its level range, a line on what's notable and a link to its guide, plus the three raids opening on 9 December and how to get attuned.
 sources: Blizzard, Icy Veins, ForeverDB, Wowhead, Warcraft Tavern, wow-professions.com
 ---
@@ -8,17 +8,17 @@ sources: Blizzard, Icy Veins, ForeverDB, Wowhead, Warcraft Tavern, wow-professio
 
 - **35 dungeons in 28 instances,** from level 13 to 60 (Icy Veins).
 - **Nine are new:** Hall of Thanes, Ruins of Lordaeron, Excavation Site, City of Dalaran, the Drowned City, Krol'dok Stronghold, Alcaz Prison, Blackmaw Hold and the Shaper's Terrace.
-- **Only four of the new ones were playable** in the level 30 beta, so guides for the rest are still to come.
+- **Nine new five-player dungeons** span levels 13–60. Check each dungeon’s entrance, quests and recommended level in [Blizzard’s live overview](https://news.blizzard.com/en-us/article/24315820/world-of-warcraft-forever-now-live).
 - **Raids open on 9 December:** Barrow Deeps (10 players), Hyjal Summit (20) and Onyxia's Lair (40, needs the Drakefire Amulet).
 - **Raid rules:** weekly resets planned; no heroic modes or flexible sizes; world buffs removed on entry (Icy Veins).
-- **Dungeon quests** give half the bonus experience they did early in the beta.
+- **Repeat runs:** [Blizzard’s 20 November hotfix](https://news.blizzard.com/en-gb/article/24315281/wow-forever-hotfixes-november-20-2026) caps resets and entry to each dungeon at five per hour.
 - **Camping Blueprints** drop from many dungeon bosses ([Camping](ledger:world/camping/)).
 
 ## What the guides say
 
 ### Tazdingo recommendation
 
-**Choose a dungeon for the group's level, quests, useful loot and travel cost**, not a group-finder range alone. A listed minimum is not a promise that a fresh group at that level can finish every boss. For Horde, nearby early dungeons and their quests may beat a long trip for one uncertain drop. Repeated farming is worthwhile only when the expected upgrade justifies the time; Beta best-in-slot lists do not guarantee launch loot. Blizzard's [new-dungeon overview](https://news.blizzard.com/en-us/article/24301455/explore-the-new-dungeons-of-world-of-warcraft-forever) supplies intended ranges and access quests. Higher dungeons, attunements and raid tactics remain plans to verify in game, not tested walkthroughs.
+**Choose a dungeon for the group's level, quests, useful loot and travel cost**, not a group-finder range alone. A listed minimum is not a promise that a fresh group at that level can finish every boss. For Horde, nearby early dungeons and their quests may beat a long trip for one uncertain drop. For repeated runs, compare travel, clear time and the current availability of the desired drop. Blizzard's [new-dungeon overview](https://news.blizzard.com/en-us/article/24301455/explore-the-new-dungeons-of-world-of-warcraft-forever) supplies intended ranges and access quests. Check live attunements and the announced opening date before setting a raid objective.
 
 ### Every dungeon
 

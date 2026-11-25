@@ -547,13 +547,14 @@ tr.detail td { padding: 0.8rem 0 1.2rem; cursor: default; }
 @media (max-width: 860px) {
   :root { --gutter: 1rem; }
   .masthead-inner { flex-wrap: wrap; padding: 0.6rem 1rem; }
-  .nav-open { display: inline-block; order: 2; background: transparent; color: var(--ink); border: 1px solid var(--rule-strong); padding: 0.35rem 0.8rem; font-size: 0.95rem; }
+  .nav-open { order: 2; background: transparent; color: var(--ink); border: 1px solid var(--rule-strong); padding: 0.35rem 0.8rem; font-size: 0.95rem; }
+  .nav-enhanced .nav-open { display: inline-block; }
   .nav-open:hover { background: var(--surface); color: var(--ink); }
   .nav-open, .theme-toggle, .menu-toggle { min-height: 44px; min-width: 44px; }
   .theme-toggle { order: 1; justify-content: center; }
   .theme-toggle .theme-label { display: none; }
-  .mainnav { display: none; order: 3; width: 100%; }
-  .masthead.nav-shown .mainnav { display: block; }
+  .mainnav { order: 3; width: 100%; }
+  .masthead.nav-enhanced:not(.nav-shown) .mainnav { display: none; }
   .menu { flex-direction: column; gap: 0; border-top: 1px solid var(--rule); margin-top: var(--s2); }
   .menu-item { flex-wrap: wrap; border-bottom: 1px solid var(--rule); }
   .menu-link { flex: 1; padding: 0.75rem 0.2rem; font-size: 1.05rem; }
@@ -601,3 +602,54 @@ tr.detail td { padding: 0.8rem 0 1.2rem; cursor: default; }
   .class-cards, .prof-rows, .tool-cards { grid-template-columns: minmax(0, 1fr); }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* The briefing and decision pages share the ledger's existing typography and colours. */
+.brief-hero { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: stretch; border-bottom: 1px solid var(--rule-strong); }
+.brief-heading { padding: clamp(1.6rem, 4vw, 4rem) var(--gutter); align-self: center; }
+.brief-heading h1 { font-size: clamp(2.35rem, 6vw, 4.2rem); margin: 0.2em 0; }
+.brief-heading .lede { margin-bottom: 0; max-width: 35ch; }
+.brief-topic { color: var(--ink-soft); font-weight: 700; font-size: 0.83rem; letter-spacing: 0.035em; }
+.brief-scene { position: relative; min-height: 15rem; margin: 0; }
+.brief-scene img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 57%; }
+.brief-scene figcaption { position: absolute; right: 0.7rem; bottom: 0.45rem; padding: 0.15rem 0.4rem; background: var(--surface); font-size: 0.75rem; }
+.brief-status { display: grid; grid-column: 1 / -1; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; border-top: 1px solid var(--rule); background: var(--surface-2); }
+.brief-status div { padding: var(--s3) var(--gutter); min-width: 0; }
+.brief-status div + div { border-left: 1px solid var(--rule); }
+.brief-status dt { font-size: 0.8rem; font-weight: 700; color: var(--ink-soft); }
+.brief-status dd { margin: 0; overflow-wrap: anywhere; font-size: 0.95rem; }
+.brief-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+.brief-grid h2, .brief-section h2 { font-size: 1.55rem; }
+.brief-notes, .brief-paths { margin: 0; padding: 0; list-style: none; }
+.brief-notes li { border-bottom: 1px solid var(--rule); padding: var(--s3) 0; }
+.brief-notes p, .brief-notes h3 { margin: var(--s1) 0; }
+.brief-notes strong { display: block; }
+.brief-notes + .aside, [data-market-leads] + p + .aside { margin-top: var(--s3); }
+.brief-links { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s4); font-size: 0.94rem; margin: var(--s3) 0 0; }
+.brief-section { border-top: 1px solid var(--rule); }
+.brief-paths { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s3); }
+.brief-paths li { padding: var(--s3) 0; }
+.brief-paths a { font-weight: 700; }
+.brief-paths span { display: block; font-size: 0.92rem; color: var(--ink-soft); }
+.brief-price { margin: var(--s3) 0; max-width: 36rem; }
+.brief-price > div { display: flex; gap: var(--s2); }
+.brief-price input { min-width: 0; flex: 1; }
+.planning-filters { display: flex; flex-wrap: wrap; align-items: end; gap: var(--s3); margin: var(--s4) 0; }
+.planning-filters label { display: grid; max-width: 100%; }
+.planning-filters input { width: 10rem; max-width: 100%; }
+.planning-filters [role=status] { font-size: 0.88rem; color: var(--ink-soft); }
+.brief-price button, .planning-filters button { min-height: 2.75rem; }
+.brief-price input, .planning-filters input, .planning-filters select { min-height: 2.75rem; }
+.milestones { margin: var(--s4) 0; }
+.milestones li { display: grid; grid-template-columns: minmax(5rem, auto) 1fr; gap: var(--s3); }
+.milestones li > .brief-topic { padding-top: 0.22rem; }
+@media (max-width: 860px) {
+  .brief-grid { grid-template-columns: 1fr; }
+  .brief-status div { padding: var(--s2) var(--gutter); }
+}
+@media (max-width: 600px) {
+  .brief-hero, .brief-status, .brief-paths { grid-template-columns: 1fr; }
+  .brief-scene { display: none; }
+  .brief-status div + div { border-left: 0; border-top: 1px solid var(--rule); }
+  .brief-paths { gap: 0; }
+  .brief-paths li + li { border-top: 1px solid var(--rule); }
+}

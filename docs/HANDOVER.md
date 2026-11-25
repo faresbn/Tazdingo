@@ -4,6 +4,12 @@ Where Tazdingo stands, kept current at every checkpoint so another thread, model
 
 **Last updated:** 5 November 2026, launch day (session `docs/sessions/2026-11-05-launch-data/`). The inbox went live on 31 October (`docs/sessions/2026-10-31-inbox-live/`); the ChatGPT projects now enter through `docs/chatgpt/START_HERE.md`. `main` is the whole state.
 
+## Website briefing (25 November)
+
+The homepage now opens on dated progression and hotfix notes, a deduplicated feed of Blizzard topics, and the most recent Auctionator upload. The market brief recommends an action only for a qualifying item recorded by the newest upload, within 24 hours. Weekly reagent comparisons use at least three recorded days in each seven-day window. Older observations remain available in the market history. ForeverDB item links and labelled player-scan estimates supplement local prices. The hourly Battle.net feed is a separate possible integration.
+
+The Character and Professions hubs link into planning. Affliction Warlock, Shadow Priest and Tailoring have shareable milestone filters. The craft browser filters by profession, skill and budget, and links reagents to local price history when available. The live-facing guides replace obsolete level-30 cap wording with progression context and current guide links. The older publications remain in the archive. Guide provenance, live verification and inbox review still use the existing contracts.
+
 ## In flight (7 November)
 
 **Live data has started.** The first Live Auctionator scan is published: 78 items on CAMWOW EU5 Realm 2 PvP (Horde), market slug `forever-pvp`, scanned 01:09 UTC, two hours after launch. ForeverDB data is refreshed at the release build 1.60.1.70790 (level cap 60): recipes, trainers, abilities, 2,778 items with categories and vendor prices. Notes, including what ForeverDB.lua and OneForAll.lua hold: `docs/sessions/2026-11-05-launch-data/notes.md`.

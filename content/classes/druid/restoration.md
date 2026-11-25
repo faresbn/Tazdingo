@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-30
+updated: 2026-11-25
 summary: How Restoration Druid heals in WoW Forever: the new heal-over-time toolkit, talent builds at 20 and 30, healing priorities, levelling, gear and open questions.
 sources: ForeverDB (PvE guide, builds, levelling guide), Wowhead (healer overview, level 20 and 30 guides), Icy Veins (spec guide and FAQ), Blizzard class deep dive, WoWSims presets
 ---
@@ -8,7 +8,7 @@ sources: ForeverDB (PvE guide, builds, levelling guide), Wowhead (healer overvie
 
 - **Pick it for:** healing dungeons for a regular group, with heals over time and the strongest emergency toolkit; slow to level alone.
 - **Levelling build:** at 30, Wowhead's Deep Resto takes Nature's Focus 5, Naturalist 5, Reflection 3, Gift of Nature 5, Gift of the Earthmother, Swiftmend and Nature's Swiftness ([Wowhead](https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview)); ForeverDB splits Gift of Nature and Improved Rejuvenation 3 and 3. To quest faster, ForeverDB suggests levelling Feral or Balance, then respeccing.
-- **Build at 60:** not established yet: WoWSims is a gear planner only, and Wild Growth, Improved Regrowth and Innervate sit above the beta cap, untested.
+- **Build at 60:** [Icy Veins’ level-60 PvE build](https://www.icy-veins.com/wow-forever/restoration-druid-healer-pve-spec-builds-talents) features Gift of the Earthmother, Swiftmend, Reflection and Wild Growth. Check encounter damage patterns and current hotfixes before comparing alternative builds.
 - **Priority:** at 20–30 ([Wowhead](https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview); no simulator): Thorns and Rejuvenation on the tank, Regrowth for big hits, Healing Touch downranked for steady damage. Emergencies: [Swiftmend](https://foreverdb.net/spell/18562) a target that already has your heal over time, then Nature's Swiftness into max-rank Healing Touch; Tranquility when the party is in trouble.
 - **Stats:** ForeverDB: healing power, then Spirit, Intellect and mana per 5 seconds, then crit ([ForeverDB](https://foreverdb.net/class/Druid/pve)). Icy Veins notes haste doesn't speed up heals over time.
 - **Key levels:** 20 Reflection or Gift of the Earthmother · 25 Swiftmend · 30 Tranquility · 35–40 Improved Regrowth and Innervate · 40 [Wild Growth](https://foreverdb.net/spell/408120).
@@ -77,8 +77,7 @@ ForeverDB and Icy Veins both treat Restoration as slow alone. ForeverDB's [build
 
 - **Party-only group heals:** Wild Growth heals only the target's party (Blizzard, Wowhead). Icy Veins flags Tranquility's party-only reach as something Blizzard may revisit, and ForeverDB's client data on the latest build still describes it that way.
 - **Improved Mark of the Wild:** Blizzard says it's now baseline. ForeverDB found nothing in the client showing Mark of the Wild got stronger.
-- **Endgame:** Improved Regrowth, Wild Growth and Innervate sit at 35 to 40, above the beta cap. Their value in raids, and the Nature's Grace or Wild Growth choice, are untested.
-- **Icy Veins' gear section** was still marked as waiting on more data at the level 30 cap.
+- **Endgame:** Compare Wild Growth for raid healing with the greater emphasis on direct casts in alternatives. Use current tuning and the expected damage pattern.
 
 ## Field findings
 

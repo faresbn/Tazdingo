@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-30
+updated: 2026-11-25
 summary: How Blacksmithing changed in Forever (role-themed armour sets, camp anvils and forges, shifted skill ranges), how guides level it and what it's worth.
 sources: Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Wowhead
 ---
@@ -8,7 +8,7 @@ sources: Icy Veins, ForeverDB, wow-professions.com, wowtbc.gg, Wowhead
 
 - **Pick it for:** specific self-crafted mail and plate, mainly for Warriors and Paladins, rather than a promised gold income ([ForeverDB](https://foreverdb.net/professions/best)).
 - **Pairs with:** Mining, for ore, bars and stone. wow-professions.com warns that buying every bar costs a lot; mining still costs time and gives up ore sales.
-- **Levelling route:** the routes differ; compare before buying. wow-professions.com: 1–75 stones, Runed Copper Gauntlets · 75–150 Rough Bronze Leggings, Patterned Bronze Bracers · 150–225 Green Iron Bracers, Golden Scale Bracers, Mithril Plate Pants · 225–300 untested ([wow-professions.com](https://www.wow-professions.com/forever/blacksmithing-leveling-guide)). wowtbc.gg runs Copper Chain Belts and Runed Copper pieces.
+- **Levelling route:** the routes differ; compare before buying. wow-professions.com: 1–75 stones, Runed Copper Gauntlets · 75–150 Rough Bronze Leggings, Patterned Bronze Bracers · 150–225 Green Iron Bracers, Golden Scale Bracers, Mithril Plate Pants · 225–300 see the linked live route and compare material prices ([wow-professions.com](https://www.wow-professions.com/forever/blacksmithing-leveling-guide)). wowtbc.gg runs Copper Chain Belts and Runed Copper pieces.
 - **Money makers:** guides say little. Icy Veins mentions Auction House sales and the rods every Enchanter needs ([Icy Veins](https://www.icy-veins.com/wow-forever/blacksmithing)); ForeverDB notes weapon stones help any melee class. The role-themed gear is mainly for yourself.
 - **Camp items:** [Sharpening Wheel](https://foreverdb.net/item/279944) (20), a Strength buff that doesn't stack with Strength of Earth Totem · [Anvil](https://foreverdb.net/item/279988) (140), blueprint from Gilnid in the Deadmines · [Master Forge](https://foreverdb.net/item/279955) (300), needed for many recipes, blueprint source unknown.
 - **Trainers and ranks:** Expert from Saru Steelfury (Orgrimmar) or Bengus Deepforge (Ironforge) · Artisan at skill 200 and level 35 from Brikk Keencraft in Booty Bay, both factions ([wow-professions.com](https://www.wow-professions.com/forever/blacksmithing-leveling-guide)). Role-themed plans sell for Merchant's Favor at your trade camp.

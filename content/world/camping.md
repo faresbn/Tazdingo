@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-27
+updated: 2026-11-25
 summary: How Forever's campfires work, what each profession adds to a camp, and how to unlock the bigger fires and better camp features.
 sources: Blizzard, ForeverDB, Icy Veins, Wowhead, wow-professions.com, Warcraft Tavern
 ---
@@ -83,7 +83,7 @@ Around level 5, the quest *The Great Outdoors* asks you to `/sit` at a campfire,
 | Toxin Study | Commander Springvale, Shadowfang Keep |
 | Fishing Rack | Gelihast, Blackfathom Deeps |
 
-Where the tier 3 Blueprints and the Expert Campfire drop is unknown: they sit above the beta's level 30 cap. Camp items can be traded and sold on the Auction House, but placing one needs the skill (Icy Veins).
+Check recent acquisition reports for tier-three blueprints and the Expert Campfire before planning around them. Camp items can be traded and sold on the Auction House, but placing one needs the skill (Icy Veins).
 
 ### Legacy perks and other extras
 
