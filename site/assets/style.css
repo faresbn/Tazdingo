@@ -653,3 +653,15 @@ tr.detail td { padding: 0.8rem 0 1.2rem; cursor: default; }
   .brief-paths { gap: 0; }
   .brief-paths li + li { border-top: 1px solid var(--rule); }
 }
+
+.farm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  gap: var(--gutter, 1rem);
+}
+.farm-route h2 { margin-block: .2rem .7rem; }
+.farm-level { margin: 0; color: var(--ink-soft); font-weight: 600; }
+.planning-filters .check-filter { align-self: center; display: flex; align-items: center; }
+
+.planning-filters .check-filter input { width: auto; }
+[data-craft-traded] .aside { display: block; }

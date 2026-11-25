@@ -532,11 +532,13 @@ function craftFilters(form) {
   }));
   const top = document.querySelector("[data-craft-top]");
   const status = form.querySelector("[role=status]");
-  const { profession, skill, budget } = form.elements;
+  const { profession, skill, budget, traded } = form.elements;
+  const fields = [profession, skill, budget];
   const url = new URL(location.href);
-  for (const field of [profession, skill, budget]) field.value = url.searchParams.get(field.name) || "";
+  for (const field of fields) field.value = url.searchParams.get(field.name) || "";
+  traded.checked = url.searchParams.get(traded.name) === "1";
   function update(writeUrl = true) {
-    const active = Boolean(profession.value || skill.value || budget.value);
+    const active = Boolean(profession.value || skill.value || budget.value || traded.checked);
     top.hidden = active;
     const maxSkill = skill.valueAsNumber, maxCost = Math.floor(budget.valueAsNumber * 10000 + 0.00001);
     let matches = 0;
@@ -546,7 +548,9 @@ function craftFilters(form) {
         const own = !profession.value || section.dataset.craftProfession === profession.value;
         const able = !Number.isFinite(maxSkill) || (recipe.dataset.craftSkill && Number(recipe.dataset.craftSkill) <= maxSkill);
         const affordable = !Number.isFinite(maxCost) || Number(recipe.dataset.craftCost) <= maxCost;
-        recipe.hidden = !(own && able && affordable);
+        const tradeNote = recipe.querySelector("[data-expiring]");
+        const hasTrades = Number(recipe.dataset.craftTraded) > 0 && tradeNote && Date.now() < Number(tradeNote.dataset.expiring) * 1000;
+        recipe.hidden = !(own && able && affordable && (!traded.checked || hasTrades));
         shown += Number(!recipe.hidden);
       }
       section.hidden = !shown;
@@ -554,10 +558,12 @@ function craftFilters(form) {
     }
     status.textContent = matches ? matches.toLocaleString("en-GB") + " recipes" : "No recipes match these limits.";
     if (writeUrl) {
-      for (const field of [profession, skill, budget]) {
+      for (const field of fields) {
         if (field.value) url.searchParams.set(field.name, field.value);
         else url.searchParams.delete(field.name);
       }
+      if (traded.checked) url.searchParams.set(traded.name, "1");
+      else url.searchParams.delete(traded.name);
       history.replaceState(null, "", url.pathname + url.search + location.hash);
     }
   }
@@ -566,6 +572,39 @@ function craftFilters(form) {
   form.addEventListener("input", () => update());
   form.addEventListener("reset", () => setTimeout(update, 0));
   update(false);
+  setInterval(() => { if (traded.checked) update(false); }, 60000);
+}
+
+function farmFilter(form) {
+  const field = form.elements.namedItem("level");
+  const routes = [...form.parentElement.querySelectorAll("[data-farm-levels]")].map(card => {
+    const [min, max] = card.dataset.farmLevels.split(" ").map(Number);
+    return { card, min, max };
+  });
+  const message = form.querySelector("[role=status]");
+  const url = new URL(location.href);
+  field.value = url.searchParams.get(field.name) || "";
+
+  function show(writeUrl = true) {
+    const level = field.value && field.validity.valid ? field.valueAsNumber : null;
+    let shown = 0;
+    for (const { card, min, max } of routes) {
+      card.hidden = level !== null && (level < min || level > max);
+      shown += Number(!card.hidden);
+    }
+    message.textContent = shown ? `${shown} ${shown === 1 ? "route" : "routes"}` : "No route for this level yet.";
+    if (writeUrl) {
+      if (level !== null) url.searchParams.set(field.name, level);
+      else url.searchParams.delete(field.name);
+      history.replaceState(null, "", url.pathname + url.search + location.hash);
+    }
+  }
+
+  form.hidden = false;
+  form.addEventListener("submit", event => event.preventDefault());
+  form.addEventListener("input", () => show());
+  form.addEventListener("reset", () => setTimeout(show, 0));
+  show(false);
 }
 
 function milestoneFilter(form) {
@@ -600,6 +639,12 @@ function milestoneFilter(form) {
   show(false);
 }
 
+function expireTradeNotes() {
+  document.querySelectorAll("[data-expiring]:not([hidden])").forEach(node => {
+    node.hidden = Date.now() >= Number(node.dataset.expiring) * 1000;
+  });
+}
+
 function expireMarketLeads() {
   document.querySelectorAll("[data-market-leads]").forEach(node => {
     if (Date.now() < Number(node.dataset.expires) * 1000) return;
@@ -613,6 +658,11 @@ document.querySelectorAll("[data-tabs]").forEach(tabs);
 foldables();
 document.querySelectorAll("[data-theme-toggle]").forEach(themeToggle);
 document.querySelectorAll("[data-craft-filters]").forEach(craftFilters);
+document.querySelectorAll("[data-farm-filter]").forEach(farmFilter);
+if (document.querySelector("[data-expiring]")) {
+  expireTradeNotes();
+  setInterval(expireTradeNotes, 60000);
+}
 document.querySelectorAll("[data-progress-key]").forEach(milestoneFilter);
 if (document.querySelector("[data-market-leads]")) {
   expireMarketLeads();

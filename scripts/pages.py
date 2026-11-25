@@ -440,7 +440,7 @@ def home(site: Site, ctx: dict) -> str:
     art = artwork(site, "darkspear", "brief-art", eager=True)
     updates = briefing_notes(site, game)
     news = news_widget(site, ctx["blue"], "brief", 3)
-    gold = gold_cards(site, ("prices/craft/", "prices/materials/", "prices/crates/"))
+    gold = gold_cards(site, ("prices/craft/", "prices/materials/", "prices/farm/", "prices/crates/"))
     return layout(site, SITE_NAME, f'''<section class="brief-hero">
     <div class="brief-heading">
       <p class="brief-topic">World of Warcraft: Forever</p>
@@ -527,11 +527,12 @@ def summary_volatility(market: dict | None) -> str:
 
 GOLD_TOOLS = (("prices/craft/", "What to craft", "Recipes ranked by estimated listing margin, for every profession", "inv_misc_coin_02"),
               ("prices/materials/", "Materials worth gathering", "Herbs, ores, leather and cloth by what they're listed for", "inv_ore_mithril_02"),
+              ("prices/farm/", "Farm drops by level", "Find mobs to loot for cloth, silk and other materials, with no gathering skill", "inv_misc_bag_10"),
               ("world/camping/", "Camping", "Every camp item, what it does and the skill it needs", "spell_fire_fire"),
               ("prices/crates/", "Waylaid Crates", "The cheapest bundle to fill each crate for Merchant's Favor", "inv_crate_01"))
 
 
-def gold_cards(site: Site, keys: tuple = ("prices/craft/", "prices/materials/", "world/camping/", "prices/crates/")) -> str:
+def gold_cards(site: Site, keys: tuple = ("prices/craft/", "prices/materials/", "prices/farm/", "world/camping/", "prices/crates/")) -> str:
     return ('<ul class="tool-cards lead">' + "".join(f'<li><a href="{site.base}{url}">{object_icon(icon, 40)}<span class="tool-name">{esc(name)}</span>'
                                                 f'<span class="aside">{esc(hint)}</span></a></li>' for url, name, hint, icon in GOLD_TOOLS if url in keys) + '</ul>')
 
@@ -551,14 +552,15 @@ def prices_index(site: Site, ctx: dict) -> str:
   {f'<section class="reading" aria-label="Market watch"><h2>Market watch</h2>{signals}</section>' if signals else ""}
   {board}
   <h2 class="group-title">Making gold</h2>
-  {gold_cards(site, ("prices/craft/", "prices/materials/", "prices/crates/"))}
+  {gold_cards(site, ("prices/craft/", "prices/materials/", "prices/farm/", "prices/crates/"))}
   <details class="reading">
     <summary>Markets, and what these measures can and can't tell you</summary>
     <div class="table-wrap"><table><thead><tr><th scope="col">Market</th><th scope="col">Game</th><th scope="col" class="num">Items</th><th scope="col">Newest data</th><th scope="col" class="num">Scans</th></tr></thead>
     <tbody>{rows}</tbody></table></div>
     {summary_volatility(primary)}
     <p>Live and historical markets have independent scan records.</p>
-    <p>Everything here comes from Auctionator scans: at each scan, the cheapest listing of every item on sale, and for each day the lowest and highest of those and the most units seen listed at once. It never records sales. So deals and investments compare a price with the item's own history; "always listed" measures how reliably an item is listed and relisted, a measure of listing frequency.</p>
+    <p>The market charts and alerts use Auctionator scans: at each scan, the cheapest listing of every item on sale, and for each day the lowest and highest of those and the most units seen listed at once. It never records sales. So deals and investments compare a price with the item's own history; "always listed" measures how reliably an item is listed and relisted, a measure of listing frequency.</p>
+    <p>Item and crafting pages also use same-house asking prices to fill missing days. Trade estimates on those pages come from comparing successive Blizzard snapshots, with the source and time shown alongside them.</p>
     <p>Each scan is kept for the last {ah_window()} and folded into a daily record after that, so long-run history stays.</p>
   </details>
 </section>''', active="prices", path="prices/", description="World of Warcraft: Forever Auction House: deals, investments, movers and patterns from our own scans.")
@@ -617,8 +619,8 @@ def data_note(ctx: dict, what: str) -> str:
     label = badge("prelaunch") if ctx["data_prelaunch"] else badge("live")
     beta = f' {badge("beta")}' if ctx["primary"] and ctx["primary"]["environment"] == "forever-beta" else ""
     return (f'<p class="note">{label} {what} from ForeverDB\'s data for game build {esc(src.get("client_build"))} '
-            f'(fetched {nice_date(src.get("fetched_on"))}), priced with our scans{beta} where they hold the item and ForeverDB '
-            'players\' scans across realms as a labelled estimate where needed.</p>')
+            f'(fetched {nice_date(src.get("fetched_on"))}). Asking prices use the selected market{beta}, with same-house '
+            'observations for gaps on live EU PvP Horde.</p>')
 
 
 def source_tag(source: str) -> str:
@@ -629,9 +631,49 @@ def slug_of(text: str) -> str:
     return text.lower().replace(" ", "-")
 
 
+def trading_note(plan: dict | None, compact: bool = False) -> str:
+    """Show actual units observed through partial fills and the wider trade estimate."""
+    trade = (plan or {}).get("trade")
+    if not trade:
+        return ""
+    from ah_pages import scan_time
+    estimated, filled, hours = trade
+    filled_text = f' · {count(filled)} evidenced by fills' if filled else ""
+    label = f'~{count(estimated)} units traded' if estimated else "No trades detected"
+    timestamp = plan["trade_timestamp"]
+    if compact:
+        return f'<span class="aside" data-expiring="{timestamp + 10800}">{label} in {hours}h</span>'
+    return (f'<span data-expiring="{timestamp + 10800}">{label} in {hours} compared hours{filled_text} · '
+            f'{scan_time(timestamp)} · <a href="https://auctionhouse.tk.gg/data/#where-the-data-comes-from">Auction House methodology</a></span>')
+
+
+def use_note(needs: dict, item: int, compact: bool = False, category: dict | None = None) -> str:
+    from market_prices import item_uses
+    use = item_uses(needs, item)
+    parts = []
+    klass = (category or {}).get("class")
+    if klass in ("Consumable", "Projectile"):
+        subclass = (category or {}).get("subclass")
+        parts.append(esc(subclass) if subclass and subclass != "Other" else "Consumable")
+    if use["recipes"]:
+        n = use["recipes"]
+        professions = ", ".join(use["professions"])
+        label = f'{n} {"recipe" if n == 1 else "recipes"}'
+        parts.append(label if compact else f'{label} in {esc(professions)}')
+    if use["crates"]:
+        n = use["crates"]
+        parts.append(f'option for {n} {"crate" if n == 1 else "crates"}')
+    if not compact and use["stack"]:
+        low, high = use["stack"][0], use["stack"][-1]
+        qty = str(low) if low == high else f"{low}–{high}"
+        parts.append(f'{qty} per craft')
+    return " · ".join(parts)
+
+
 def craft_page(site: Site, ctx: dict) -> str:
     rows = ctx["craft"]
     market = ctx["primary"]
+    from ah_pages import scan_time
     quotes = {i["id"]: i["url"] for i in market["items"] if i["key"].isdigit()} if market else {}
 
     def quote(item, name):
@@ -644,13 +686,31 @@ def craft_page(site: Site, ctx: dict) -> str:
         return f'<details><summary>Reagents and prices</summary><ul>{bits}</ul></details>'
 
     def table(items):
-        body = "".join(
-            f'<tr data-craft-cost="{r["cost"]}" data-craft-skill="{r["skill"] if r["skill"] is not None else ""}"><th scope="row">{quote(r["item"], r["name"])}{" ×" + esc(r["count"]) if r["count"] > 1 else ""} {badge("new", "New in Forever") if r["new"] else ""}{input_costs(r)}</th>'
-            f'<td>{esc(r["profession"])}</td><td class="num">{esc(r["skill"])}</td>'
-            f'<td class="num">{money(r["sells"])} {source_tag(r["value_source"])}</td><td class="num">{money(r["cost"])}</td>'
-            f'<td class="num margin">{money(r["margin"])}</td></tr>' for r in items)
+        body = []
+        for r in items:
+            item = r["item"]
+            plan = ctx["plans"].get(item, {})
+            category = ctx["api"].get("items", {}).get(str(item))
+            signals = use_note(ctx["needs"], item, compact=True, category=category) + trading_note(plan, compact=True)
+            traded = (plan.get("trade") or [0])[0]
+            latest = plan.get("latest")
+            latest_note = ""
+            if latest and latest[0] * r["count"] != r["sells"]:
+                latest_note = f'<span class="aside">Latest {money(latest[0])} each</span>'
+            skill = r["skill"] if r["skill"] is not None else ""
+            quantity = f' ×{r["count"]}' if r["count"] > 1 else ""
+            new = badge("new", "New in Forever") if r["new"] else ""
+            limited = '<span class="aside">Snapshot</span>' if r["snapshot"] else ""
+            body.append(
+                f'<tr data-craft-cost="{r["cost"]}" data-craft-traded="{traded}" data-craft-skill="{skill}">'
+                f'<th scope="row">{quote(item, r["name"])}{quantity} {new}{input_costs(r)}</th>'
+                f'<td>{esc(r["profession"])}</td><td class="num">{esc(skill)}</td>'
+                f'<td class="num">{money(r["sells"])} {source_tag(r["value_source"])}{latest_note}</td>'
+                f'<td class="num">{money(r["cost"])}</td><td class="num margin">{money(r["margin"])}{limited}</td>'
+                f'<td>{signals or "—"}</td></tr>')
         return (f'<div class="table-wrap"><table><thead><tr><th scope="col">Recipe</th><th scope="col">Profession</th><th scope="col" class="num">Skill</th>'
-                f'<th scope="col" class="num">Output asking value</th><th scope="col" class="num">Reagents cost</th><th scope="col" class="num">Estimated margin</th></tr></thead><tbody>{body}</tbody></table></div>')
+                f'<th scope="col" class="num">Output asking value</th><th scope="col" class="num">Reagents cost</th><th scope="col" class="num">Estimated margin</th>'
+                f'<th scope="col">Player use / recent trades</th></tr></thead><tbody>{"".join(body)}</tbody></table></div>')
     by_prof = {}
     for r in rows:
         by_prof.setdefault(r["profession"], []).append(r)
@@ -659,8 +719,12 @@ def craft_page(site: Site, ctx: dict) -> str:
     options = "".join(f'<option>{esc(p)}</option>' for p in sorted(by_prof))
     scan = ""
     if market:
-        from ah_pages import scan_time
-        scan = f'<p class="aside">Latest Auctionator upload: {scan_time(market["ah"]["newest"])}. Check the item’s own observation before spending.</p>'
+        scan = f'<p class="aside">Latest Auctionator upload · {scan_time(market["ah"]["newest"])}. Check the item’s own observation before spending.</p>'
+    stable = [r for r in rows if not r["snapshot"]]
+    if ctx["market_prices_timestamp"]:
+        scan += (f'<p class="aside">Same-house snapshot · {scan_time(ctx["market_prices_timestamp"])} · '
+                 '<a href="https://auctionhouse.tk.gg/m/eu-2-113">Auction House</a> (Battle.net data). '
+                 'Trades estimate units, including partial fills, over the most recent compared hours.</p>')
     return layout(site, "What to craft", page_head("What to craft", "Find a recipe you can make within your budget. Compare its reagent cost with the recorded asking value.",
                                                     (("Auction House", f"{site.base}prices/"),), data_note(ctx, "Recipes")) + f'''
 <section class="page-body">
@@ -670,15 +734,17 @@ def craft_page(site: Site, ctx: dict) -> str:
     <label>Profession<select name="profession"><option value="">All professions</option>{options}</select></label>
     <label>Maximum skill<input name="skill" type="number" min="0" max="300" step="1" inputmode="numeric"></label>
     <label>Reagent budget (gold)<input name="budget" type="number" min="0" step="0.01" inputmode="decimal"></label>
+    <label class="check-filter"><input name="traded" type="checkbox" value="1"> Recent estimated trades</label>
     <button type="reset">Reset</button><span role="status"></span>
   </form>
   <div data-craft-top>
     <h2>Largest estimated listing margins</h2>
-    {table(rows[:8]) if rows else '<p class="empty">No recipe can be priced yet.</p>'}
+    {table(stable[:8]) if stable else '<p class="empty">Broader asking-price history is still building. Check individual recipe estimates below.</p>'}
   </div>
   {groups}
   <section class="reading"><h2>How this is worked out</h2>
-  <p>A recipe is listed only when the product and every reagent have a price. Reagents a vendor sells are costed at the vendor's price; everything else at its typical Auction House price. Products qualify through repeated, sufficiently stocked listings in our scans, or listings across several realms in ForeverDB. This is evidence of listings, not sales or demand. Margins exclude the Auction House cut, lost deposits, training, recipe access and time. Check binding, vendor availability, current stock and your own market before crafting. Skill is the level at which the recipe becomes available.</p>
+  <p>The margin uses the median of the last seven finished days with at least three daily prices. When history is thin, rows marked Snapshot use a recent lowest ask for at least one item. Vendor prices are used for reagents where available. Margins exclude the Auction House cut, deposits, recipe access and time.</p>
+  <p>Recipes and optional crate turn-ins show why players might buy an item. The trade estimate counts units inferred from listing changes, including partial fills. Stock counts measure supply. Check the latest listing and start with a small batch if trading activity is unclear.</p>
   <p><a href="{site.base}prices/craft.tsv">Every priced recipe (TSV)</a></p></section>
 </section>''', active="prices", path="prices/craft/", description="World of Warcraft: Forever recipes ranked by crafting margin.")
 
@@ -703,14 +769,60 @@ def crates_page(site: Site, ctx: dict) -> str:
 
 def materials_page(site: Site, ctx: dict) -> str:
     rows = "".join(f'<tr><th scope="row">{item_link(r["item"], r["name"])}</th><td class="num">{money(r["value"])} {source_tag(r["source"])}</td>'
-                   f'<td>{steadiness(r["volatility"]) if r["source"] == "our scan" else ""}</td><td class="num">{count(r["listed"])}</td><td class="num">{esc(r["used_in"])}</td></tr>'
+                   f'<td>{steadiness(r["volatility"])}</td><td class="num">{count(r["listed"])}</td><td class="num">{esc(r["used_in"])}</td></tr>'
                    for r in ctx["materials"][:80])
     return layout(site, "Materials worth gathering", page_head("Materials worth gathering", "Herbs, ores, leather, cloth and drops that no recipe makes and no vendor sells, ranked by what they're listed for.",
                                                                 (("Auction House", f"{site.base}prices/"),), data_note(ctx, "Reagents")) + f'''
 <section class="page-body">
-  <div class="table-wrap"><table><thead><tr><th scope="col">Material</th><th scope="col" class="num">Worth</th><th scope="col">Steadiness</th><th scope="col" class="num">Listed</th><th scope="col" class="num">Used in recipes</th></tr></thead>
+  <div class="table-wrap"><table><thead><tr><th scope="col">Material</th><th scope="col" class="num">Worth</th><th scope="col">Steadiness</th><th scope="col" class="num">Listed at last observation</th><th scope="col" class="num">Used in recipes</th></tr></thead>
   <tbody>{rows}</tbody></table></div>
+  <p><a href="{site.base}prices/farm/">Farm mob drops by character level</a></p>
 </section>''', active="prices", path="prices/materials/", description="World of Warcraft: Forever crafting materials by value.")
+
+
+def farm_page(site: Site, ctx: dict) -> str:
+    from ah_pages import scan_time
+    from auctionator import day_date
+    primary = ctx["primary"]
+    quotes = {i["id"]: i["url"] for i in primary["items"] if i["key"].isdigit()} if primary else {}
+    cards = []
+    for r in ctx["farm_routes"]:
+        item = r["item"]
+        low, high = r["levels"]
+        plan = ctx["plans"].get(item, {})
+        latest = plan.get("latest")
+        href = quotes.get(item)
+        name = f'<a href="{esc(href)}">{esc(r["name"])}</a>' if href else item_link(item, r["name"])
+        if latest:
+            ask, day, stamp, source, _listed = latest
+            when_quoted = scan_time(stamp) if stamp else nice_date(day_date(day))
+            label = "Latest ask" if plan["recent"] and not plan["no_recent_ask"] else "Last known ask"
+            value = f'{label} {money(ask)} · {esc(source)} · {when_quoted}'
+        else:
+            value = "Awaiting a same-house ask"
+        use = use_note(ctx["needs"], item)
+        cards.append(f"""<article class="dash-card farm-route" data-farm-levels="{low} {high}">
+  <p class="farm-level">Player levels {low}–{high}</p>
+  <h2>{name}</h2>
+  <p><strong>{esc(r["zone"])} · {esc(r["spot"])}</strong><br>{esc(r["mobs"])} · enemy levels {esc(r["mob_levels"])}</p>
+  <p>{esc(r["tip"])}</p>
+  <p class="aside">{value}{f'<br>Typical {money(plan["typical"])} per unit' if plan.get("typical") else ""}</p>
+  {f'<p class="aside">{use}</p>' if use else ""}
+  {f'<p class="aside">{trading_note(plan)}</p>' if plan.get("trade") else ""}
+  <details><summary>Route sources</summary>{links(r["sources"])}</details>
+</article>""")
+    return layout(site, "Farm drops by level", page_head(
+        "Farm drops by level", "Short gold runs you can do while levelling. These drops come from looting mobs and require no gathering profession.",
+        (("Auction House", f"{site.base}prices/"),)) + f"""
+<section class="page-body">
+  <form class="planning-filters" data-farm-filter hidden>
+    <label>Character level<input name="level" type="number" min="1" max="60" step="1" inputmode="numeric" placeholder="1–60"></label>
+    <button type="reset">Show all levels</button><span role="status"></span>
+  </form>
+  <p class="aside">Routes lean Horde. Compare prices per unit on EU PvP Horde. Allow for travelling, competition and what your character can comfortably pull.</p>
+  <div class="farm-grid">{"".join(cards)}</div>
+  <p><a href="{site.base}prices/materials/">Compare gathering and crafting materials</a></p>
+</section>""", active="prices", path="prices/farm/", description="Horde-friendly farmable mob drops by player level in World of Warcraft: Forever.")
 
 
 # --- Plain text for assistants and scripts --------------------------------------
@@ -727,7 +839,7 @@ def llms_index(site: Site, ctx: dict) -> str:
         lines.append(f"- {md(m['name'])} ({m['environment_label']}): {len(m['items']):,} items, newest data {m['last_date']}. "
                      f"Full list: {site.url}{m['files']['prices_tsv'][len(site.base):]}")
     lines += [f"- What to craft: {site.url}prices/craft/ (all rows: {site.url}prices/craft.tsv)",
-              f"- Waylaid Crates: {site.url}prices/crates/", f"- Materials: {site.url}prices/materials/", "",
+              f"- Waylaid Crates: {site.url}prices/crates/", f"- Materials: {site.url}prices/materials/", f"- Farm drops by level: {site.url}prices/farm/", "",
               "## Sections", f"- Classes: {site.url}classes/", f"- Professions: {site.url}professions/", f"- World: {site.url}world/",
               f"- Addons: {site.url}more/addons/", f"- Macros: {site.url}more/macros/", f"- Known issues: {site.url}more/known-issues/"]
     return "\n".join(lines) + "\n"
@@ -744,7 +856,7 @@ def llms_full(site: Site, ctx: dict) -> str:
                 f"Summary: {md(page.get('summary', ''))}", "", page["body"], ""]
 
     out = [f"# {SITE_NAME}", "", f"{SUBTITLE} (launch: {nice_date(site.launch.isoformat())}). Prices come from our own Auctionator scans; "
-           "game data from ForeverDB; guide summaries are written in our own words and cite their sources. Not affiliated with Blizzard Entertainment.",
+           "game data from ForeverDB. Live crafting and item pages may also use named same-house observations to fill gaps. Guide summaries cite their sources. This is an unofficial site.",
            f"Site: {site.url}  Built: {site.built}  Revision: {site.revision}", "",
            "## How to read this file", "",
            "- Every page says its status. \"Pre-launch\" means written before launch (4 November 2026) or not yet confirmed in the live game: treat it as tentative. \"Live\" means checked in the live game. \"Beta\" marks prices from Forever Beta scans.",
@@ -770,6 +882,11 @@ def llms_full(site: Site, ctx: dict) -> str:
         out += ["## Waylaid Crates (cheapest priced fill bundle; empty crate cost excluded)", ""]
         out += [f"- {md(c['name'])} (level {c['level']}): " + (f"{c['cheapest']['count']} {md(c['cheapest']['name'])}, {plain_money(c['cheapest']['cost'])}" if c["cheapest"] else "no bundle priced") for c in ctx["crates"]]
         out.append("")
+    out += ["## Farm drops by level", "", f"Filter by character level at {site.url}prices/farm/", ""]
+    for route in ctx["farm_routes"]:
+        low, high = route["levels"]
+        out.append(f"- Levels {low}–{high}: {route['name']} from {route['mobs']} at {route['spot']}, {route['zone']}. {route['sources'][0][1]}")
+    out.append("")
     posts = [p for p in ctx["blue"].get("posts", []) if str(p.get("url", "")).startswith("https://us.forums.blizzard.com/")]
     if posts:
         out += [f"## Blizzard's latest posts about Forever (checked {ctx['blue'].get('fetched', '')[:16].replace('T', ' ')} UTC)", ""]

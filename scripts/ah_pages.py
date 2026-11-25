@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 
 import market as m
 from auctionator import DAY_ZERO, day_date
-from pages import (FOREVERDB, Site, badge, change, esc, layout, money, nice_date, page_head, plain_money, steadiness, tabs, alias)
+from pages import (trading_note, use_note, FOREVERDB, Site, badge, change, esc, layout, money, nice_date, page_head, plain_money, steadiness, tabs, alias)
 
 DAY_ZERO_EPOCH = datetime(DAY_ZERO.year, DAY_ZERO.month, DAY_ZERO.day, tzinfo=timezone.utc).timestamp()
 CHART_DAYS = 30
@@ -411,9 +411,40 @@ def item_pattern_block(item: dict) -> str:
             f'<p class="aside">Each day\'s lowest price against its middle, over {p["days"]} days; a weekday shows once it has two dates.</p>')
 
 
+def planning_stats(plan: dict) -> str:
+    def sample(sources):
+        n = sum(sources.values())
+        labels = ", ".join(f"{count} {esc(source)}" for source, count in sources.items())
+        return f'{n} {"day" if n == 1 else "days"} · {labels}' if n else "No days in this window"
+
+    quote = plan["latest"]
+    value, note = "No ask recorded", ""
+    if quote:
+        price, day, stamp, source, _ = quote
+        observed = scan_time(stamp) if stamp else nice_date(day_date(day))
+        value = money(price)
+        note = f'{esc(source)} · {observed}' + ("" if plan["recent"] else " · outside the recent window")
+    if plan["no_recent_ask"]:
+        note += " · no buyout in the latest same-house snapshot"
+    usual = sample(plan["usual_sources"])
+    typical = sample(plan["typical_sources"])
+    return "".join([
+        stat("Latest recorded", value, note),
+        stat("Usual price · 14 days", money(plan["usual"]) if plan["usual"] else "Need 3 days", usual),
+        stat("Typical price · 7 days", money(plan["typical"]) if plan["typical"] else "Need 3 days", typical),
+        stat("Good price to buy", money(plan["good_buy"]) if plan["good_buy"] else "Need 8 days",
+             "Usual price adjusted for observed swings"),
+        stat("Steadiness", steadiness(plan["steadiness"]) if plan["steadiness"] else "Need 3 days",
+             f'{pct(plan["spread"])} of usual price · {usual}' if plan["spread"] is not None else usual),
+        stat("Days with a price move", pct(plan["churn"]) if plan["churn"] is not None else "Need 2 daily comparisons",
+             f'Changes of at least 5% across {plan["pairs"]} consecutive-day comparisons'),
+    ])
+
+
 def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
     fdb_price = ctx["fdb"].get("prices", {}).get(str(item["id"]))
     recipes = ctx["recipes_by_item"]
+    plan = ctx["plans"].get(item["id"]) if market is ctx["primary"] and item["key"].isdigit() else None
     alerts = []
     if item["deal"] and "saving" in item["deal"]:
         if item["deal"]["confidence"] == "low":
@@ -431,7 +462,7 @@ def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
     if item["move"] and item["confidence"] != "low":
         alerts.append(f'<span class="alert move">{"Up" if item["move"]["change"] > 0 else "Down"} {abs(item["move"]["change"])}% '
                       f'on its lowest of {nice_date(day_date(item["move"]["day"]))}, the last full day of scans</span>')
-    stats = "".join([
+    scan_stats = "".join([
         stat("Latest recorded", money(item["latest"]), f'by the upload of {scan_time(item["latest_time"])}{"" if item["fresh"] else ", before the newest day of scans"}' if item["latest_time"] else ""),
         stat("Usual price", money(item["ref"]) if item["ref"] else "Too new", f"middle of its daily lowest prices over the last {m.RECENT_DAYS} days" if item["ref"] else "needs three days of prices"),
         stat("Typical price", money(item["typical"]), "middle of the last seven days' lowest prices"),
@@ -440,9 +471,19 @@ def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
         stat("Steadiness", steadiness(item["volatility"]), "how far the daily price swings over two weeks"),
         stat("Days listed", f'{item["presence_days"]} of {item["presence_of"]}' if item["presence_of"] else "unknown", f"full days of scans in the last {m.RECENT_DAYS}"),
         stat("Usually listed", num(item["listed_median"]) + " at once" if item["listed_median"] is not None else "unknown", "the most seen on sale in a day, middle value"),
-        stat("Daily low changed", pct(item["churn"]) or "too few days", "how often its lowest price differed from one day to the next"),
+        stat("Days with a price move", pct(item["churn"]) or "too few days", "changes of at least 5% between consecutive covered days"),
         stat("Vendor pays", money(item["vendor_sell"]) if item["vendor_sell"] else "unknown", "from ForeverDB" if item["vendor_sell"] else ""),
     ])
+    if plan:
+        scan_stats = "".join([
+            stat("Latest Auctionator quote", money(item["latest"]), f'Uploaded {scan_time(item["latest_time"])}' if item["latest_time"]
+                 else f'Archived daily low · {nice_date(item["last_seen"])}'),
+            stat("Days listed in full scans", f'{item["presence_days"]} of {item["presence_of"]}' if item["presence_of"] else "Unknown",
+                 f'Covered days in the last {m.RECENT_DAYS}'),
+            stat("Usually listed in full scans", num(item["listed_median"]) + " at once" if item["listed_median"] is not None else "Unknown",
+                 "Median of the most units seen in a day"),
+            stat("Vendor pays", money(item["vendor_sell"]) if item["vendor_sell"] else "Unknown"),
+        ])
     invest = ""
     if item["invest"] and item["confidence"] != "low":
         i = item["invest"]
@@ -452,10 +493,13 @@ def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
                   'An estimate from prices and listings; the data holds no sales.</p></section>')
     comparison = ""
     if market["environment"] == "forever":
+        live_link = ('<a href="https://foreverdb.net/auction-house/eu-pvp-horde">EU PvP Horde on ForeverDB</a>. '
+                     '<a href="https://auctionhouse.tk.gg/m/eu-2-113">Auction House</a> supplies supplementary Battle.net snapshots.'
+                     if plan else "Use the region, ruleset and faction shown above.")
         comparison = (
             f'<section class="ah-block" id="comparison"><h2>Compare outside prices</h2>'
             f'<p><a href="{FOREVERDB}/item/{esc(item["id"])}">Check current listings on ForeverDB</a>. '
-            'Choose the equivalent region, ruleset and faction there. Check variant and quantity before comparing.</p>'
+            + live_link + ' Check variant and quantity before comparing.</p>'
             + (f'<p class="aside">Other players’ scans: {money(fdb_price["median"])} median, '
                f'{esc(fdb_price["latest"])}. Cross-realm reference. <a href="{FOREVERDB}">Data from ForeverDB.net</a>.</p>'
                if fdb_price else "") + '</section>')
@@ -466,12 +510,21 @@ def item_page(site: Site, market: dict, item: dict, ctx: dict) -> str:
     scans = "".join(f'<tr><th scope="row">{scan_time(t)}</th><td class="num">{money(p)}</td></tr>' for t, p, _ in reversed(item["obs"][-m.WINDOW_SCANS:]))
     made = "".join(f'<li>{esc(r["name"])} <span class="aside">{esc(prof)}, skill {esc(r["skill"])}</span></li>' for prof, r in recipes["makes"].get(item["id"], []))
     used = "".join(f'<li>{esc(r["name"])} <span class="aside">{esc(prof)}</span></li>' for prof, r in recipes["uses"].get(item["id"], [])[:12])
+    player_use = use_note(ctx["needs"], item["id"], category=item.get("category")) if plan else ""
+    trade = trading_note(plan) if plan else ""
+    demand = (f'<section class="ah-block"><h2>Player use and recent trades</h2>'
+              + (f'<p>{player_use} · <a href="{FOREVERDB}">Data from ForeverDB.net</a></p>' if player_use else "")
+              + (f'<p>{trade}</p><p class="aside">Estimates use changes between snapshots, including partial fills. They count units and cannot identify individual buyers.</p>' if trade else "")
+              + '</section>') if player_use or trade else ""
     category = f'{esc(item["category"]["class"])}' + (f' · {esc(item["category"]["subclass"])}' if item["category"].get("subclass") else "") if item.get("category") else ""
     lede = f'{category + " · " if category else ""}{esc(market["name"])}, {esc(market["environment_label"])} Auction House.'
     body = (f'<section class="page-body item-page">'
             + (f'<p class="alerts">{"".join(alerts)}</p>' if alerts else "")
-            + f'<dl class="stats">{stats}</dl>'
-            + f'<section class="ah-block" id="chart"><h2>Price over the last {CHART_DAYS} days</h2>{chart(item, market, ctx["events"])}</section>'
+            + (f'<dl class="stats">{planning_stats(plan)}</dl><p class="aside">Usual and typical use the median of one ask per finished day. '
+               'Auctionator’s daily low takes precedence and a same-house snapshot fills gaps. Steadiness measures the spread relative to the usual price.</p>'
+               f'{demand}<h2>From Auctionator scans</h2>' if plan else "")
+            + f'<dl class="stats">{scan_stats}</dl>'
+            + f'<section class="ah-block" id="chart"><h2>Auctionator price over the last {CHART_DAYS} days</h2>{chart(item, market, ctx["events"])}</section>'
             + comparison + invest
             + f'<section class="ah-block" id="pattern"><h2>By weekday</h2>{item_pattern_block(item)}</section>'
             + (f'<section class="ah-block" id="recipes"><h2>Recipes</h2>'

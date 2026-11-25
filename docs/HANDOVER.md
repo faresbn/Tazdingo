@@ -93,6 +93,14 @@ The latest plan, research and review log are in `docs/sessions/2026-10-30-public
 - **Beta originals** are committed in `data/captures/forever-beta/*.lua`, so the comparison test always runs. The Beta stays a 975-item sample (settled): don't put the full Beta files through the new store.
 - **Phone checks:** use a browser's device emulation (the built-in browser's mobile preset works).
 
+## Live crafting prices and drop routes (25 November)
+
+- EU PvP Horde planning uses the live `PvP Horde` key and the earlier `CAMWOW EU5 Realm 2 PvP (Horde)` captures. The 18 November 16:01 UTC transition contains identical item rows under both capture paths. Raw Auctionator history and the scan ingestion remain independent.
+- `foreverdb_data.py` keeps matching named-realm Horde observation dates on regular refresh. The ForeverDB developer API does not carry Blizzard's auction feed. Pages also reads Auction House's published EU PvP Horde feed (`eu-2-113`, Blizzard house 113) and caches daily observations for two weeks. It backfills up to four thinly covered craft items per new snapshot and survives provider failures using saved observations and uploads. The committed feed uses repository data and excludes the scheduled Battle.net price feed.
+- `python3 scripts/build.py --external-market --no-feed` exercises the external supplement. The ordinary build uses only repository data. Price estimates use one ask per finished day with Auctionator first, three days minimum for the seven- and 14-day medians, and the 20th–80th percentile range divided by the median when five days are available. A 5% threshold is used for meaningful moves between consecutive dates. Trade estimates and reusable recipe and crate counts answer different questions.
+- Farm route data is in `data/farm-routes.json`, with a player level range, enemies, source links and same-house price context. The farming page accepts `?level=35`; the craft page accepts `?skill=150` and `?traded=1`.
+- To switch to a first-party feed, create a Battle.net API client and store its client ID and secret server-side. Resolve and check the official EU PvP Horde house through the dynamic Forever namespace. Keep externally sourced data out of the Auctionator files and git history.
+
 ## Session record
 
 - 26 Oct: repository connected; parser fixed; site v1 → v2; prices with typical price and steadiness; ChatGPT instructions. (`2026-10-26-*`)

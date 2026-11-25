@@ -122,11 +122,12 @@ def confidence(item: dict, values: list) -> str:
 
 
 def daily_change(item: dict, recent: list[int]) -> float | None:
-    """How often the item's lowest price differed from one full day to the next it was listed."""
-    lows = [item["days"][d]["low"] for d in recent if d in item["days"]]
-    if len(lows) < 3:
+    """Share of consecutive covered days with a move of 5% or more."""
+    daily = {d: item["days"][d]["low"] for d in recent if d in item["days"]}
+    pairs = [(daily[d - 1], current) for d, current in daily.items() if daily.get(d - 1)]
+    if len(pairs) < 2:
         return None
-    return sum(1 for a, b in zip(lows, lows[1:]) if a != b) / (len(lows) - 1)
+    return sum(abs(current - previous) * 20 >= previous for previous, current in pairs) / len(pairs)
 
 
 def analyse_item(item: dict, frame: dict, vendor: dict) -> None:

@@ -41,7 +41,7 @@ def check(out=None, base="/Tazdingo/"):
     manifest = json.loads((out / "data/manifest.json").read_text())
     assert not list(out.rglob("*.lua")), "Raw Lua in public output"
     for required in ("index.html", "llms.txt", "llms-full.txt", "sitemap.xml", "search.json", "prices/index.html", "prices/craft/index.html",
-                     "prices/crates/index.html", "prices/materials/index.html", "classes/index.html", "professions/index.html",
+                     "prices/crates/index.html", "prices/materials/index.html", "prices/farm/index.html", "classes/index.html", "professions/index.html",
                      "world/index.html", "more/addons/index.html", "more/macros/index.html", "more/known-issues/index.html", "more/about/index.html"):
         assert (out / required).is_file(), f"Missing {required}"
 

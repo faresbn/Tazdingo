@@ -21,6 +21,7 @@ from pathlib import Path
 
 from auctionator import InvalidCapture, LuaData, item_id
 from item_names import CREDIT, MANIFEST, SITE, fetch
+from market_prices import HOUSE
 
 ROOT = Path(__file__).resolve().parents[1]
 SHARDS = 64  # ForeverDB splits item data by item ID modulo 64
@@ -115,6 +116,19 @@ def summarise_prices(entry: dict) -> dict:
             "confirmed": any(r.get("c") for r in realms)} if realms else {}
 
 
+def same_house_prices(entries: dict) -> dict:
+    """Keep only this ledger's named Horde realm, never the cross-realm summary."""
+    result = {}
+    for item, entry in entries.items():
+        realm = entry.get("h", {}).get("CAMWOW EU5 Realm 2 PvP|H", {})
+        days = {day: low for day, low, _median, _listed in realm.get("hist", []) if low > 0}
+        if realm.get("d") and realm.get("p", 0) > 0:
+            days[realm["d"]] = realm["p"]
+        if days:
+            result[str(item)] = sorted(days.items())
+    return {HOUSE: result}
+
+
 def wanted_items(recipes: dict, crates: list, kits: list, root: Path) -> set[int]:
     ids = set()
     for rows in recipes.values():
@@ -149,7 +163,9 @@ def refresh(root: Path = ROOT, with_prices: bool = True) -> dict:
         "prices": {}, "vendor": {}}
     if with_prices:
         wanted = wanted_items(recipes, crates, kits, root)
-        record["prices"] = {str(k): v for k, v in sorted((k, summarise_prices(e)) for k, e in site_shards("prices", wanted).items()) if v}
+        entries = site_shards("prices", wanted)
+        record["prices"] = {str(k): v for k, v in sorted((k, summarise_prices(e)) for k, e in entries.items()) if v}
+        record["same_house_prices"] = same_house_prices(entries)
         record["vendor"] = {str(k): {"price": min(v["p"] for v in e["v"] if v.get("p")), "vendors": len(e["v"])}
                             for k, e in sorted(site_shards("sold", wanted).items()) if any(v.get("p") for v in e.get("v", []))}
     (root / "data/foreverdb.json").write_text(json.dumps(record, separators=(",", ":"), ensure_ascii=False) + "\n")

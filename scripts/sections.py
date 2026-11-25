@@ -444,7 +444,7 @@ def world_index(site: Site, ctx: dict) -> str:
         rows.append(f'<li><a href="{b}world/{t["slug"]}/">{object_icon(WORLD_ICONS.get(t["slug"], "inv_misc_bag_10"), 40)}'
                     f'<span class="tool-name">{esc(t["name"])}</span><span class="aside">{esc(t["summary"])}</span></a></li>')
     return layout(site, "World", page_head("World", "How Forever's own systems work, and what's out there.") + banner(site, "world", "65% 60%")
-                  + f'<section class="page-body"><ul class="tool-cards">{"".join(rows)}</ul></section>',
+                  + f'<section class="page-body"><ul class="tool-cards">{"".join(rows)}</ul>{gold_cards(site, ("prices/farm/",))}</section>',
                   active="world", path="world/", description="World of Warcraft: Forever systems: camping, Legacy, Merchant's Favor, rares, zones, dungeons, raids and collections.")
 
 

@@ -11,6 +11,7 @@ Every path below is in the public repository: https://raw.githubusercontent.com/
 - `feed/prices/forever-beta-pvp/index.md`: Beta PvP realm (Forever Beta), 975 items, latest scan 2026-10-17 12:36 UTC, a Beta sample.
 - `feed/prices/forever-beta-classicbetapvp/index.md`: Beta Classic PvP realm (Forever Beta), 6 items, latest scan 2026-10-17 12:36 UTC, a Beta sample.
 - `feed/craft/index.md`: what to craft, by profession, with estimated margins.
+- [Farm drops by level](https://faresbn.github.io/Tazdingo/prices/farm/): mob loot for levelling characters, with no gathering skill required.
 - `feed/guides.md`: every class, spec, profession, world and More page, with its path and version.
 - `feed/characters.md`: the account's own characters (level, gear, talents, professions, reputations), as last saved in the game.
 - Combat logs, on the repository's `logs` branch: https://raw.githubusercontent.com/faresbn/Tazdingo/logs/README.md is the guide and the list. Instance runs complete (every player, as the game wrote them) and open-world summaries of our own characters; read the guide first, the instance files are large.

@@ -198,9 +198,10 @@ def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list
         market_lines.append(f"- {link(folder + 'index.md')}: {market['name']} ({market['environment_label']}), "
                             f"{len(market['items'])} items, latest scan {when(ah.get('newest'))}"
                             + (", a Beta sample" if market["sample"] else "") + ".")
-    craft_note = ("Estimated listing margins: what the item lists for against what its reagents cost. Our typical price counts when "
-                  "it's current, listed at least five times and not volatile; otherwise other players' median on ForeverDB. Estimates, not sales.")
-    by_profession: dict[str, list[dict]] = {}
+    craft_note = ("Estimated listing margins compare the product’s asking value with its reagent costs. Typical values need three daily asks "
+                  "from the selected market. A source marked snapshot uses a recent ask with sparse history. For same-house live prices and "
+                  f"estimated trading activity, see {SITE}prices/craft/.")
+    by_profession: dict[str, list[dict]] = {name: [] for name in ctx["fdb"].get("recipes", {})}
     for row in ctx["craft"]:
         by_profession.setdefault(row["profession"], []).append(row)
     for profession, rows in sorted(by_profession.items()):
@@ -208,7 +209,7 @@ def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list
             f"# What to craft: {profession}", "", craft_note, "",
             table(["Recipe", "Skill", "Item ID", "Makes", "Sells for", "Costs", "Margin", "Price from"],
                   [[r["name"], r["skill"], r["item"], r["count"], money(r["sells"]), money(r["cost"]), money(r["margin"]), r["value_source"]]
-                   for r in rows]), "", CREDIT]) + "\n"
+                   for r in rows]) if rows else "No recipe has enough same-house price data to estimate a positive margin.", "", CREDIT]) + "\n"
     files["feed/craft/index.md"] = "\n".join([
         "# What to craft: map", "", craft_note, "", f"Paths are in the repository: {RAW}<path>", "",
         *[f"- {link(f'feed/craft/{slug(p)}.md')}: {p}, {len(rows)} recipes with a margin." for p, rows in sorted(by_profession.items())],
@@ -248,6 +249,7 @@ def write(feed: Path, root: Path, markets: list[dict], ctx: dict, money) -> list
         "## Where to go", "",
         *market_lines,
         f"- {link('feed/craft/index.md')}: what to craft, by profession, with estimated margins.",
+        f"- [Farm drops by level]({SITE}prices/farm/): mob loot for levelling characters, with no gathering skill required.",
         f"- {link('feed/guides.md')}: every class, spec, profession, world and More page, with its path and version.",
         *([f"- {link('feed/characters.md')}: the account's own characters (level, gear, talents, professions, reputations), "
            f"as last saved in the game."] if chars else []),

@@ -1,0 +1,123 @@
+[
+  {
+    "levels": [5, 11],
+    "item": 2589,
+    "name": "Linen Cloth",
+    "zone": "Tirisfal Glades",
+    "spot": "Garren’s Haunt",
+    "mobs": "Rot Hide gnolls",
+    "mob_levels": "Around 7",
+    "tip": "Pick up linen while questing near Brill. Keep some for First Aid if you’re levelling it.",
+    "sources": [["Data from ForeverDB.net", "https://foreverdb.net/item/2589"], ["ForeverDB farming locations", "https://www.foreverdb.app/en/forever/professions/tailoring/farming"]]
+  },
+  {
+    "levels": [12, 22],
+    "item": 2589,
+    "name": "Linen Cloth",
+    "zone": "The Barrens",
+    "spot": "Lushwater Oasis",
+    "mobs": "Kolkar Wranglers",
+    "mob_levels": "12–13",
+    "tip": "Clear the camps at the oasis while you quest. Mail a stack from the Crossroads when you turn in.",
+    "sources": [["Forever Drop Rate", "https://www.foreverdroprate.com/mobs/3272"]]
+  },
+  {
+    "levels": [20, 30],
+    "item": 3182,
+    "name": "Spider’s Silk",
+    "zone": "Hillsbrad Foothills",
+    "spot": "Southpoint Tower",
+    "mobs": "Forest Moss Creepers",
+    "mob_levels": "20–21",
+    "tip": "Check the silk price before heading out. Loot each spider directly and begin near the tower.",
+    "sources": [["Data from ForeverDB.net", "https://foreverdb.net/item/3182"], ["Bind on Forever spawn map", "https://bindonforever.com/npc/2350"]]
+  },
+  {
+    "levels": [23, 32],
+    "item": 2592,
+    "name": "Wool Cloth",
+    "zone": "Hillsbrad Foothills",
+    "spot": "Hillsbrad Fields",
+    "mobs": "Hillsbrad Farmers and Farmhands",
+    "mob_levels": "22–26",
+    "tip": "Start with the lower-level farmers. Use Tarren Mill for mail and vendors between loops.",
+    "sources": [["Method’s Forever cloth guide", "https://www.method.gg/wow-forever/best-cloth-farming-routes-in-wow-forever-best-silk-mageweave-and-runecloth-farming-spots"]]
+  },
+  {
+    "levels": [30, 36],
+    "item": 4306,
+    "name": "Silk Cloth",
+    "zone": "Arathi Highlands",
+    "spot": "Northfold Manor",
+    "mobs": "Syndicate humanoids",
+    "mob_levels": "30–33",
+    "tip": "Start around the edges of the manor and move on to Drywhisker when its kobolds are comfortable.",
+    "sources": [["Method’s Forever cloth guide", "https://www.method.gg/wow-forever/best-cloth-farming-routes-in-wow-forever-best-silk-mageweave-and-runecloth-farming-spots"]]
+  },
+  {
+    "levels": [35, 43],
+    "item": 4306,
+    "name": "Silk Cloth",
+    "zone": "Arathi Highlands",
+    "spot": "Drywhisker Gorge",
+    "mobs": "Drywhisker Kobolds",
+    "mob_levels": "35–38",
+    "tip": "Start outside the cave east of Hammerfall. Work inside if you’re clearing the outside loop quickly.",
+    "sources": [["Method’s Forever cloth guide", "https://www.method.gg/wow-forever/best-cloth-farming-routes-in-wow-forever-best-silk-mageweave-and-runecloth-farming-spots"]]
+  },
+  {
+    "levels": [39, 49],
+    "item": 7068,
+    "name": "Elemental Fire",
+    "zone": "Arathi Highlands",
+    "spot": "Circle of West Binding",
+    "mobs": "Burning Exiles",
+    "mob_levels": "38–39",
+    "tip": "Try the circle around 26, 30 when the silk caves are busy. The drop is also needed for the shaman class quest Elemental Mastery.",
+    "sources": [["Data from ForeverDB.net", "https://foreverdb.net/item/7068"], ["Forever Tavern spawn map", "https://forever-tavern.com/npcs/classic/2760-burning-exile/"], ["Wowhead’s Forever class quest guide", "https://www.wowhead.com/forever/guide/sunken-temple-level-50-class-quest-walkthrough"]]
+  },
+  {
+    "levels": [42, 52],
+    "item": 4402,
+    "name": "Small Flame Sac",
+    "zone": "Badlands",
+    "spot": "Lethlor Ravine",
+    "mobs": "Scalding Whelps",
+    "mob_levels": "41–43",
+    "tip": "Loot the whelps around 81, 37. Compare the sac’s price before detouring for potion and cooking reagents.",
+    "sources": [["Data from ForeverDB.net", "https://foreverdb.net/item/4402"], ["TheWoWDB spawn map", "https://thewowdb.com/wow-forever/npc/scalding-whelp-2725/"]]
+  },
+  {
+    "levels": [45, 55],
+    "item": 4338,
+    "name": "Mageweave Cloth",
+    "zone": "Tanaris",
+    "spot": "Dunemaul Compound",
+    "mobs": "Dunemaul Ogres",
+    "mob_levels": "45–48",
+    "tip": "Use the outside camps and sell at Gadgetzan. If the compound is busy, try the Gordunni camps in southern Feralas.",
+    "sources": [["Method’s Forever cloth guide", "https://www.method.gg/wow-forever/best-cloth-farming-routes-in-wow-forever-best-silk-mageweave-and-runecloth-farming-spots"]]
+  },
+  {
+    "levels": [52, 60],
+    "item": 14256,
+    "name": "Felcloth",
+    "zone": "Felwood",
+    "spot": "Jadefire Run",
+    "mobs": "Jadefire Tricksters",
+    "mob_levels": "52–53",
+    "tip": "Start around 43, 19 if you’re already in northern Felwood. Expect less consistent drops than on the nearby humanoid cloth routes.",
+    "sources": [["Azeroth Wiki map and loot", "https://azeroth.wiki/forever/map/felwood/jadefire-trickster"], ["Forever Guide sightings", "https://guide.wow4ever.se/en/npc/7107"]]
+  },
+  {
+    "levels": [55, 60],
+    "item": 14047,
+    "name": "Runecloth",
+    "zone": "Eastern Plaguelands",
+    "spot": "Corin’s Crossing",
+    "mobs": "Undead around the town",
+    "mob_levels": "54–57",
+    "tip": "Prioritise melee targets if casters slow your pulls. Light’s Hope Chapel has mail, repairs and vendors.",
+    "sources": [["Method’s Forever cloth guide", "https://www.method.gg/wow-forever/best-cloth-farming-routes-in-wow-forever-best-silk-mageweave-and-runecloth-farming-spots"]]
+  }
+]

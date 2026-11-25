@@ -1,10 +1,7 @@
 # What to craft: Skinning
 
-Estimated listing margins: what the item lists for against what its reagents cost. Our typical price counts when it's current, listed at least five times and not volatile; otherwise other players' median on ForeverDB. Estimates, not sales.
+Estimated listing margins compare the product’s asking value with its reagent costs. Typical values need three daily asks from the selected market. A source marked snapshot uses a recent ask with sparse history. For same-house live prices and estimated trading activity, see https://faresbn.github.io/Tazdingo/prices/craft/.
 
-| Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
-|---|---|---|---|---|---|---|---|
-| Trapper's Workbench | 300 | 279938 | 1 | 61s 89c | 27s 56c | 34s 33c | ForeverDB |
-| Camp Chair | 0 | 279979 | 1 | 4s 74c | 2s 14c | 2s 60c | our scan |
+No recipe has enough same-house price data to estimate a positive margin.
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

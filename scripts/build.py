@@ -22,6 +22,7 @@ import ah_pages
 import feed as feed_md
 import market
 import market_store
+import market_prices
 import pages
 import sections
 from auctionator import (InvalidCapture, PARSER_VERSION, day_date, item_id,
@@ -484,31 +485,40 @@ def change_url(path: str, places: dict) -> str:
 
 # --- Price tools ----------------------------------------------------------------
 
-def price_book(market: dict | None, fdb: dict) -> dict:
+def price_book(market: dict | None, fdb: dict, planning: dict | None = None) -> dict:
     """Per item: our scan, ForeverDB's players' prices, and the cheapest vendor price."""
     book = {}
     for item in (market or {}).get("items", []):
         if not suffix(item["key"]) and item["key"].isdigit():
             book.setdefault(item["id"], {})["ours"] = item
-    for key, value in fdb.get("prices", {}).items():
-        book.setdefault(int(key), {})["fdb"] = value
+    if planning is not None:
+        for item in book.keys() | planning.keys():
+            book.setdefault(item, {})["plan"] = planning.get(item)
     for key, value in fdb.get("vendor", {}).items():
         book.setdefault(int(key), {})["vendor"] = value["price"]
     return book
 
 
 def market_value(entry: dict | None) -> tuple[int, str] | None:
-    """Estimated asking value: our typical price when current, sufficiently listed, and steady or
-    moving over at least three days; otherwise ForeverDB's median across realms when enough
-    players saw it. A price seen on one or two days doesn't feed a gold-making table."""
+    """Recent, sufficiently stocked same-house asking value for a planning estimate."""
     if not entry:
         return None
-    ours = entry.get("ours")
-    if ours and ours["current"] and (ours["listed"] or 0) >= 5 and ours["volatility"] in ("steady", "moving"):
-        return ours["typical"], "our scan"
-    theirs = entry.get("fdb")
-    if theirs and theirs.get("listed", 0) >= 20 and theirs.get("realms", 0) >= 2:
-        return theirs["median"], "ForeverDB"
+    if "plan" not in entry:
+        ours = entry.get("ours")
+        if ours and ours["current"] and (ours["listed"] or 0) >= 5 and ours["volatility"] in ("steady", "moving"):
+            return ours["typical"], "our scan"
+        return None
+    plan = entry["plan"]
+    if not plan or not plan["recent"] or plan.get("no_recent_ask"):
+        return None
+    ask, _day, _stamp, source, listed = plan["latest"]
+    if listed is not None and listed < 5:
+        return None
+    if plan["typical"] and plan["steadiness"] in ("steady", "moving"):
+        sources = plan["typical_sources"]
+        return plan["typical"], " + ".join(sources)
+    if plan["typical"] is None and listed is not None:
+        return ask, f"{source} snapshot"
     return None
 
 
@@ -532,8 +542,9 @@ def craft_table(fdb: dict, book: dict, names: dict) -> list[dict]:
                 continue
             rows.append({"profession": profession, "name": r["name"], "skill": r["skill"], "item": r["item"], "count": r["count"],
                          "new": r["new"], "sells": sells, "cost": cost, "margin": sells - cost,
-                         "value_source": value[1], "reagents": [[i, n, names.get(str(i), f"Item {i}"), c[0], c[1]] for c, n, i in costs]})
-    return sorted(rows, key=lambda r: -r["margin"])
+                         "value_source": value[1], "snapshot": any(source.endswith(" snapshot") for _, source in [value] + [c for c, _, _ in costs]),
+                         "reagents": [[i, n, names.get(str(i), f"Item {i}"), c[0], c[1]] for c, n, i in costs]})
+    return sorted(rows, key=lambda r: (r["snapshot"], -r["margin"]))
 
 
 def crate_table(fdb: dict, book: dict, names: dict) -> list[dict]:
@@ -567,10 +578,11 @@ def materials_table(fdb: dict, book: dict, names: dict) -> list[dict]:
         value = market_value(entry)
         if not value:
             continue
-        ours = entry.get("ours")
+        ours, plan = entry.get("ours", {}), entry.get("plan")
+        listed = plan["latest"][4] if plan else ours.get("listed")
+        steadiness = plan["steadiness"] if plan else ours.get("volatility")
         rows.append({"item": item, "name": names.get(str(item), f"Item {item}"), "value": value[0], "source": value[1],
-                     "volatility": ours["volatility"] if ours else None, "listed": ours["listed"] if ours else None,
-                     "used_in": len(recipes)})
+                     "volatility": steadiness, "listed": listed, "used_in": len(recipes)})
     return sorted(rows, key=lambda r: -r["value"])
 
 
@@ -588,7 +600,7 @@ def search_index(ctx: dict) -> list[list[str]]:
     for m in game["more"]:
         entries.append([m["name"], f"{base}more/{m['slug']}/", "More"])
     entries.append(["Auction House: deals, investments and movers", f"{base}prices/", "Auction House"])
-    for slug, name in (("craft", "What to craft"), ("crates", "Waylaid Crates: cheapest fill"), ("materials", "Materials worth gathering")):
+    for slug, name in (("craft", "What to craft"), ("crates", "Waylaid Crates: cheapest fill"), ("materials", "Materials worth gathering"), ("farm", "Farm drops by level")):
         entries.append([name, f"{base}prices/{slug}/", "Auction House"])
     market = ctx["primary"]
     if market:
@@ -620,7 +632,7 @@ def recipes_by_item(fdb: dict) -> dict:
 
 # --- Output -------------------------------------------------------------------
 
-def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/", feed: Path | None = None) -> dict:
+def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/", feed: Path | None = None, use_external_market: bool = False) -> dict:
     """Build the site into `out` (dist/), and the markdown feed into `feed` (the repository's feed/) when given."""
     out = Path(out or root / "dist").resolve()  # follows the iCloud shield's dist -> dist.nosync link
     if out.resolve() in (root.resolve(), (root / "data").resolve()) or not out.resolve().is_relative_to(root.resolve()):
@@ -639,13 +651,22 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/", 
     blue["posts"] = [p for p in blue.get("posts", []) if p.get("classifier_version") == 1 and p.get("kind") in ("forever", "mixed")]
     news_config = json.loads((root / "data/news-config.json").read_text())
     log = history(root, game.get("log_after"))
-    built = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    now = datetime.now(timezone.utc)
+    built = now.strftime("%Y-%m-%d %H:%M UTC")
+    if use_external_market:
+        try:
+            market_prices.refresh(root, markets, fdb)
+        except (OSError, ValueError, TypeError, KeyError, IndexError) as error:
+            print(f"Supplementary Auction House refresh unavailable ({type(error).__name__}). Using saved observations.")
+    price_cache = market_prices.read_cache(root) if use_external_market else {}
+    plans = market_prices.plan_prices(markets, fdb, price_cache, now)
     commit = os.environ.get("GITHUB_SHA", "local")
     revision = hashlib.sha256(json.dumps({
         "schema": SCHEMA, "parser": PARSER_VERSION,
         "scans": [[c["source_sha256"], c.get("extraction_sha256")] for c in captures],
         "names": names.get("source", {}) and names["source"].get("sha256"),
         "foreverdb": (fdb.get("source") or {}).get("data_version"),
+        "supplement": hashlib.sha256(json.dumps(price_cache, sort_keys=True).encode()).hexdigest() if price_cache else None,
         "content": {k: [v["body"], {f: v.get(f) for f in sorted(FIELDS)}] for k, v in content.items()},
         "log": [e["subject"] for e in log],
         "blue": hashlib.sha256(json.dumps(blue.get("posts", []), sort_keys=True).encode()).hexdigest()},
@@ -736,14 +757,17 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/", 
                           "scans": [{k: s[k] for k in ("date", "items", "source_sha256", "unchanged")} for s in market["scans"]],
                           **market["files"]})
     primary = markets[0] if markets else None
-    book = price_book(primary, fdb)
+    live_plans = plans if primary and primary["slug"] in market_prices.MARKET_SLUGS else None
+    book = price_book(primary, fdb, live_plans)
     places = content_places(game)
     for entry in log:
         entry["urls"] = sorted({u for u in (change_url(f, places) for f in entry["files"]) if u})
     fdb_source = fdb.get("source") or {}
     ctx = {"game": game, "launch": launch, "base": base, "markets": markets, "primary": primary, "content": content, "blue": blue,
            "log": log, "fdb": fdb, "fdb_source": fdb_source, "names": names["names"], "captures": captures,
-           "names_source": names.get("source"),
+           "names_source": names.get("source"), "plans": plans, "needs": market_prices.usage(fdb),
+           "market_prices_timestamp": price_cache.get("timestamp"),
+           "farm_routes": json.loads((root / "data/farm-routes.json").read_text()),
            "data_prelaunch": not fdb_source.get("fetched_on") or date.fromisoformat(fdb_source["fetched_on"]) < launch,
            "craft": craft_table(fdb, book, names["names"]), "crates": crate_table(fdb, book, names["names"]),
            "materials": materials_table(fdb, book, names["names"])}
@@ -761,6 +785,7 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/", 
     page("prices/craft/", pages.craft_page(site, ctx))
     page("prices/crates/", pages.crates_page(site, ctx))
     page("prices/materials/", pages.materials_page(site, ctx))
+    page("prices/farm/", pages.farm_page(site, ctx))
     write("prices/craft.tsv", tsv(["profession", "recipe", "skill", "item_id", "makes", "sells_copper", "cost_copper", "margin_copper", "price_from"],
                                   [[r["profession"], sheet_text(r["name"]), r["skill"], r["item"], r["count"], r["sells"], r["cost"], r["margin"], r["value_source"]]
                                    for r in ctx["craft"]]))
@@ -787,7 +812,7 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/", 
 
     write("llms-full.txt", pages.llms_full(site, ctx))
     write("llms.txt", pages.llms_index(site, ctx))
-    urls = ["", "prices/", "prices/craft/", "prices/crates/", "prices/materials/", "classes/", "professions/", "world/",
+    urls = ["", "prices/", "prices/craft/", "prices/crates/", "prices/materials/", "prices/farm/", "classes/", "professions/", "world/",
             "more/about/"] + [f"more/{m['slug']}/" for m in game["more"]] + [f"prices/{m['slug']}/" for m in markets] \
         + [f"classes/{c['slug']}/" for c in game["classes"]] \
         + [f"classes/{c['slug']}/{spec['slug']}/" for c in game["classes"] for spec in c["specs"]] + [f"professions/{p['slug']}/" for p in game["professions"]] \
@@ -802,6 +827,8 @@ def build(root: Path = ROOT, out: Path | None = None, base: str = "/Tazdingo/", 
         "blizzard_posts": {"fetched": blue.get("fetched"), "posts": len(blue.get("posts", [])),
                            "snapshot_sha256": hashlib.sha256(json.dumps(blue.get("posts", []), sort_keys=True).encode()).hexdigest()},
         "markets": catalogue, "pages_with_notes": sorted(content),
+        "supplemental_auction_house": {"market": market_prices.HOUSE, "source": price_cache["source"],
+                                       "timestamp": price_cache["timestamp"]} if price_cache else None,
         "item_names": names.get("source"), "foreverdb": fdb_source}, indent=1) + "\n")
 
     feed_files = feed_md.write(feed, root, markets, ctx, money) if feed else []
@@ -820,5 +847,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Build the site into dist/.")
     parser.add_argument("--base-path", default="/Tazdingo/")
     parser.add_argument("--no-feed", action="store_true", help="leave the repository's feed/ folder alone")
+    parser.add_argument("--external-market", action="store_true", help="refresh and use same-house asking prices")
     args = parser.parse_args()
-    print(json.dumps(build(base=args.base_path, feed=None if args.no_feed else ROOT / "feed"), indent=2))
+    print(json.dumps(build(base=args.base_path, feed=None if args.no_feed else ROOT / "feed",
+                           use_external_market=args.external_market), indent=2))

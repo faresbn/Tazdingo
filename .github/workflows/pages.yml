@@ -7,7 +7,7 @@ on:
   pull_request:
   workflow_dispatch:
   schedule:
-    - cron: "23 */2 * * *"  # about every two hours: refresh Blizzard's posts and the launch countdown
+    - cron: "23 */2 * * *"  # refresh news and the EU PvP Horde planning prices
 
 permissions:
   contents: read
@@ -46,8 +46,22 @@ jobs:
         run: |
           python3 scripts/blue_posts.py --merge .cache/blue.json
           mkdir -p .cache && cp data/blue.json .cache/blue.json
+      - name: Restore recent same-house price observations
+        if: github.event_name != 'pull_request'
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .cache/market-prices.json
+          key: market-prices-v1-${{ github.run_id }}
+          restore-keys: market-prices-v1-
       - name: Generate public site and records
-        run: python3 scripts/build.py --base-path /Tazdingo/
+        env:
+          TAZDINGO_EVENT: ${{ github.event_name }}
+        run: |
+          if [ "$TAZDINGO_EVENT" = pull_request ]; then
+            python3 scripts/build.py --base-path /Tazdingo/ --no-feed
+          else
+            python3 scripts/build.py --base-path /Tazdingo/ --no-feed --external-market
+          fi
       - name: Verify public output
         run: python3 scripts/check_site.py
       - name: Upload public artefact only

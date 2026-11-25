@@ -1,16 +1,16 @@
 # What to craft: First Aid
 
-Estimated listing margins: what the item lists for against what its reagents cost. Our typical price counts when it's current, listed at least five times and not volatile; otherwise other players' median on ForeverDB. Estimates, not sales.
+Estimated listing margins compare the product’s asking value with its reagent costs. Typical values need three daily asks from the selected market. A source marked snapshot uses a recent ask with sparse history. For same-house live prices and estimated trading activity, see https://faresbn.github.io/Tazdingo/prices/craft/.
 
 | Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
 |---|---|---|---|---|---|---|---|
-| Plague Doctor's Laboratory | 300 | 279951 | 1 | 2g 88s 92c | 61s 51c | 2g 27s 41c | ForeverDB |
-| Powerful Poultice | 280 | 255719 | 3 | 5g 97s 0c | 4g 66s 30c | 1g 30s 70c | our scan |
-| Powerful Anti-Venom | 300 | 19440 | 3 | 1g 27s 47c | 15s 0c | 1g 12s 47c | ForeverDB |
-| Clever Poultice | 140 | 255717 | 3 | 7s 20c | 2s 49c | 4s 71c | ForeverDB |
-| Toxin Study | 140 | 279940 | 1 | 10s 38c | 9s 4c | 1s 34c | our scan |
-| Superior Poultice | 210 | 255718 | 3 | 10s 50c | 9s 60c | 90c | ForeverDB |
-| First Aid Kit | 0 | 279968 | 1 | 72c | 55c | 17c | ForeverDB |
-| Mageweave Bandage | 210 | 8544 | 1 | 4s 0c | 3s 84c | 16c | our scan |
+| Powerful Poultice | 280 | 255719 | 3 | 5g 97s 0c | 4g 24s 40c | 1g 72s 60c | Auctionator |
+| Heavy Runecloth Bandage | 290 | 14530 | 1 | 11s 87c | 10s 0c | 1s 87c | Auctionator |
+| Toxin Study | 140 | 279940 | 1 | 10s 38c | 9s 4c | 1s 34c | Auctionator |
+| Heavy Silk Bandage | 180 | 6451 | 1 | 4s 0c | 3s 70c | 30c | Auctionator |
+| Runecloth Bandage | 260 | 14529 | 1 | 5s 20c | 5s 0c | 20c | Auctionator |
+| Mageweave Bandage | 210 | 8544 | 1 | 4s 0c | 3s 84c | 16c | Auctionator |
+| Silk Bandage | 150 | 6450 | 1 | 2s 0c | 1s 85c | 15c | Auctionator |
+| Strong Anti-Venom | 130 | 6453 | 3 | 2s 10c | 2s 6c | 4c | Auctionator |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.
