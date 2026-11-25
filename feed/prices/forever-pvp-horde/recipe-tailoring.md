@@ -135,6 +135,8 @@
 | Pattern: Runecloth Pants | 14491 | 80s 97c | 2026-11-24 16:00 UTC | 80s 97c | 80s 97c | volatile | 3 of 3 | 15 | -18% |
 | Pattern: Runecloth Shoulders | 14504 | 1g 20s 0c | 2026-11-24 16:00 UTC | 1g 20s 0c | 1g 29s 69c | volatile | 3 of 3 | 101 | -60% |
 | Pattern: Runecloth Tunic | 14470 | 35s 0c | 2026-11-24 16:00 UTC | 35s 22c | 35s 0c | volatile | 3 of 3 | 26 | -25% |
+| Pattern: Runed Stygian Boots | 20547 | 95g 99s 0c | 2026-11-24 16:00 UTC | 95g 99s 0c |  | too new | 1 of 3 | 1 |  |
+| Pattern: Runed Stygian Leggings | 20546 | 94g 55s 0c | 2026-11-24 16:00 UTC | 125g 49s 98c | 100g 99s 98c | moving | 3 of 3 | 2 |  |
 | Pattern: Shadow Hood | 4351 | 1g 19s 98c | 2026-11-24 16:00 UTC | 55s 89c | 65s 96c | volatile | 3 of 3 | 12 | -17% |
 | Pattern: Shadoweave Mask | 10463 | 14g 65s 73c | 2026-11-24 16:00 UTC | 8g 33s 99c | 5g 80s 0c | moving | 3 of 3 | 5 |  |
 | Pattern: Soul Pouch | 21358 | 1g 60s 49c | 2026-11-24 16:00 UTC | 1g 62s 0c | 1g 60s 49c | moving | 3 of 3 | 11 | -14% |

@@ -51,6 +51,7 @@
 | A Wooden Leg | 9356 | 5s 59c | 2026-11-24 16:00 UTC | 5s 59c | 5s 93c | moving | 3 of 3 | 13 | +40% |
 | Acidic Slime | 6456 | 30c | 2026-11-24 16:00 UTC | 30c | 92c | volatile | 3 of 3 | 112 | -55% |
 | Aegwynn's Silver Coin | 286264 | 1g 1s 0c | 2026-11-12 | 1g 1s 0c |  | too new | 0 of 3 |  |  |
+| An Antique Gun | 24283 | 1,500g 72s 0c | 2026-11-23 15:16 UTC | 1,500g 72s 0c |  | too new | 1 of 3 | 1 |  |
 | An Exotic Cookbook | 5428 | 7s 0c | 2026-11-24 16:00 UTC | 7s 0c | 3s 99c | volatile | 3 of 3 | 9 | -94% |
 | Ancient Tablet | 9242 | 25s 50c | 2026-11-24 16:00 UTC | 30s 0c | 25s 79c | moving | 3 of 3 | 4 | -15% |
 | Azuredeep Shards | 1706 | 2s 0c | 2026-11-24 16:00 UTC | 1s 50c | 1s 99c | volatile | 3 of 3 | 5 | -87% |
@@ -82,9 +83,11 @@
 | Broken Binding Bracer | 6439 | 2s 37c | 2026-11-24 16:00 UTC | 2s 38c | 2s 37c | steady | 3 of 3 | 9 | -14% |
 | Broken Bloodstained Bow | 4878 | 70c | 2026-11-24 16:00 UTC | 94c | 78c | moving | 3 of 3 | 6 | -6% |
 | Broken Boar Tusk | 3171 | 30c | 2026-11-24 16:00 UTC | 30c | 35c | volatile | 3 of 3 | 219 | +275% |
+| Broken Cog | 813 | 500g 0s 0c | 2026-11-21 09:03 UTC | 500g 0s 0c |  | too new | 0 of 3 |  |  |
 | Broken Electro-lantern | 1630 | 66c | 2026-11-24 16:00 UTC | 67c | 66c | steady | 3 of 3 | 28 | -7% |
 | Broken Elemental Bracer | 5446 | 80c | 2026-11-24 16:00 UTC | 99c | 80c | steady | 3 of 3 | 15 | -1% |
 | Broken Fang | 7073 | 6c | 2026-11-24 16:00 UTC | 12c | 7c | volatile | 3 of 3 | 48 | -83% |
+| Broken I.W.I.N. Button | 18230 | 1g 8s 0c | 2026-11-23 15:16 UTC | 1g 8s 0c |  | too new | 2 of 3 | 2 |  |
 | Broken Lock | 16747 | 10s 0c | 2026-11-24 16:00 UTC | 70c | 99c | volatile | 3 of 3 | 14 | +8% |
 | Broken Mirror | 5376 | 1s 0c | 2026-11-24 16:00 UTC | 39s 75c |  | volatile | 2 of 3 | 3 |  |
 | Broken Obsidian Club | 9335 | 1s 0c | 2026-11-24 16:00 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 3 | +0% |
@@ -138,6 +141,7 @@
 | Damp Diary Page (Day 87) | 6305 | 5s 0c | 2026-11-24 16:00 UTC | 1s 0c |  | volatile | 1 of 3 | 2 | -87% |
 | Dark Purple Berries | 278029 | 95c | 2026-11-24 16:00 UTC | 2s 10c | 2s 0c | volatile | 3 of 3 | 30 | -75% |
 | Decomposed Boot | 3674 | 95c | 2026-11-24 16:00 UTC | 95c | 95c | steady | 3 of 3 | 21 | -1% |
+| Deed to Thandol Span | 11943 | 3g 30s 0c | 2026-11-22 | 3g 30s 0c |  | too new | 1 of 3 | 1 |  |
 | Delicate Feather | 5636 | 75c | 2026-11-24 16:00 UTC | 75c | 80c | volatile | 3 of 3 | 30 | -40% |
 | Delicate Insect Wing | 6302 | 6s 28c | 2026-11-24 16:00 UTC | 6s 28c | 6s 22c | steady | 3 of 3 | 162 | -1% |
 | Delicate Ribcage | 11416 | 3s 28c | 2026-11-24 16:00 UTC | 3s 28c | 3s 28c | steady | 3 of 3 | 63 | +0% |
@@ -183,6 +187,7 @@
 | Glowing Scorpid Blood | 19933 | 12s 65c | 2026-11-24 16:00 UTC | 12s 47c | 12s 47c | moving | 3 of 3 | 974 | -26% |
 | Gnawed Bone | 5369 | 20s 0c | 2026-11-24 16:00 UTC | 2s 50c | 5s 0c | volatile | 3 of 3 | 1 | +150% |
 | Gold Nugget | 272016 | 10g 22s 94c | 2026-11-24 16:00 UTC | 10g 77s 0c | 10g 50s 0c | moving | 3 of 3 | 5 | -23% |
+| Gold Ring | 272001 | 200g 1s 0c | 2026-11-24 16:00 UTC | 200g 1s 0c | 200g 1s 0c | moving | 3 of 3 | 2 |  |
 | Gold-capped Troll Tusk | 9336 | 20s 0c | 2026-11-24 16:00 UTC | 20s 0c | 20s 0c | steady | 3 of 3 | 4 |  |
 | Gordok Chew Toy | 18236 | 41s 0c | 2026-11-24 16:00 UTC | 41s 0c |  | steady | 2 of 3 | 4 |  |
 | Grass Clippings | 256037 | 1s 17c | 2026-11-24 16:00 UTC | 1s 17c | 1s 17c | steady | 3 of 3 | 53 | -3% |
@@ -193,6 +198,7 @@
 | Hatched Egg Sac | 5601 | 26c | 2026-11-24 16:00 UTC | 26c | 26c | steady | 3 of 3 | 13 | -7% |
 | Heavy Scorpid Leg | 19938 | 5s 80c | 2026-11-24 16:00 UTC | 5s 80c | 5s 80c | steady | 3 of 3 | 65 | -3% |
 | Hickory Pipe | 5432 | 3s 30c | 2026-11-24 16:00 UTC | 3s 30c | 3s 30c | moving | 3 of 3 | 31 | +0% |
+| Hippogryph Hatchling | 23713 | 589g 99s 95c | 2026-11-24 16:00 UTC | 659g 99s 95c |  | too new | 2 of 3 | 1 |  |
 | Hoarder's Foot | 252671 | 22c | 2026-11-24 16:00 UTC | 77c | 65c | volatile | 3 of 3 | 38 | -49% |
 | Hollow Wing Bone | 11418 | 6s 4c | 2026-11-24 16:00 UTC | 6s 5c | 6s 30c | steady | 3 of 3 | 106 | -8% |
 | Hoop Earring | 9355 | 3s 83c | 2026-11-24 16:00 UTC | 3s 90c | 3s 83c | moving | 3 of 3 | 15 | -40% |
@@ -232,6 +238,8 @@
 | Minor Essence of the Four Winds | 251930 | 1s 0c | 2026-11-06 | 1s 0c |  | too new | 0 of 3 |  |  |
 | Municipal Proclamation | 13363 | 44s 0c | 2026-11-21 18:23 UTC | 21s 0c |  | volatile | 0 of 3 |  |  |
 | Mysterious Unhatched Egg | 11419 | 23s 99c | 2026-11-24 16:00 UTC | 20s 1c | 55s 98c | volatile | 3 of 3 | 107 | -20% |
+| Nat Pagle's Guide to Extreme Anglin' | 18229 | 9g 99s 0c | 2026-11-24 16:00 UTC | 6g 21s 50c |  | too new | 2 of 3 | 2 |  |
+| Nubless Pacifier | 18227 | 1g 95s 55c | 2026-11-24 16:00 UTC | 2g 7s 67c | 2g 7s 67c | volatile | 3 of 3 | 6 |  |
 | Ogre Tooth Cleaner | 271648 | 87c | 2026-11-24 16:00 UTC | 1s 1c | 95c | volatile | 3 of 3 | 5 | -94% |
 | Once Used Shoe | 271647 | 1s 85c | 2026-11-24 16:00 UTC | 3s 3c | 2s 2c | volatile | 3 of 3 | 6 | -84% |
 | Padded Lining | 16748 | 15c | 2026-11-24 16:00 UTC | 17c | 15c | volatile | 3 of 3 | 10 | -95% |
@@ -246,6 +254,7 @@
 | Poisoned Spider Fang | 3931 | 1s 85c | 2026-11-24 16:00 UTC | 1s 86c | 1s 85c | steady | 3 of 3 | 95 | +1% |
 | Pound of Flesh | 887 | 2s 0c | 2026-11-21 18:23 UTC | 16s 99c |  | volatile | 0 of 3 |  |  |
 | Practice Lock | 6712 | 97c | 2026-11-24 16:00 UTC | 97c | 34c | moving | 3 of 3 | 138 | -3% |
+| Prince Magni Bronzebeard's Silver Coin | 286275 | 1g 1s 0c | 2026-11-21 18:23 UTC | 1g 1s 0c |  | too new | 0 of 3 |  |  |
 | Prismatic Basilisk Scale | 4092 | 12s 97c | 2026-11-24 16:00 UTC | 12s 98c | 12s 98c | steady | 3 of 3 | 25 | -7% |
 | Pristine Raptor Skull | 4588 | 9s 88c | 2026-11-24 16:00 UTC | 10s 0c | 11s 57c | moving | 3 of 3 | 49 | -29% |
 | Punctured Dew Gland | 8429 | 1s 0c | 2026-11-24 16:00 UTC | 1s 0c |  | steady | 2 of 3 | 3 |  |
@@ -325,9 +334,12 @@
 | Thorny Vine | 18222 | 44s 0c | 2026-11-24 16:00 UTC | 44s 0c | 44s 0c | steady | 3 of 3 | 17 | -6% |
 | Threshadon Ambergris | 2608 | 66c | 2026-11-24 16:00 UTC | 69c | 67c | steady | 3 of 3 | 10 | -10% |
 | Tiny Fang | 3177 | 99c | 2026-11-21 09:03 UTC | 99c |  | steady | 0 of 3 |  |  |
+| Tirion Fordring's Gold Coin | 286292 | 100g 1s 0c | 2026-11-23 15:16 UTC | 100g 1s 0c |  | too new | 1 of 3 | 1 |  |
+| Tomb Dust | 5529 | 90s 0c | 2026-11-23 15:16 UTC | 90s 0c |  | too new | 1 of 3 | 2 |  |
 | Torn Furry Ear | 5136 | 1s 77c | 2026-11-24 16:00 UTC | 1s 77c | 1s 77c | steady | 3 of 3 | 151 | +0% |
 | Torn Note | 4102 | 4s 94c | 2026-11-24 16:00 UTC | 6s 0c | 6s 0c | volatile | 3 of 3 | 13 | -54% |
 | Translated Tale of I'lalai | 270312 | 1c | 2026-11-24 16:00 UTC | 6c | 1c | volatile | 3 of 3 | 56 | -94% |
+| Translated Tale of I'lalai | 272124 | 1s 22c | 2026-11-22 | 1s 22c |  | too new | 1 of 3 | 5 |  |
 | Tribal Raptor Feathers | 4587 | 8s 11c | 2026-11-24 16:00 UTC | 8s 11c | 8s 11c | moving | 3 of 3 | 106 | -11% |
 | Troll Sweat | 1520 | 73c | 2026-11-24 16:00 UTC | 73c | 73c | moving | 3 of 3 | 471 | +0% |
 | Troll Tribal Necklace | 9259 | 64c | 2026-11-24 16:00 UTC | 64c | 64c | moving | 3 of 3 | 3271 | -11% |

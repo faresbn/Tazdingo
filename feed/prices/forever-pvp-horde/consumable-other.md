@@ -191,6 +191,7 @@
 | Enchanted Lute | 279976 | 2s 72c | 2026-11-24 16:00 UTC | 2s 0c | 2s 72c | volatile | 3 of 3 | 482 | +6% |
 | Executioner's Key | 8444 | 99s 99c | 2026-11-24 16:00 UTC | 99s 99c | 99s 99c | moving | 3 of 3 | 3 | -60% |
 | Expert Campfire Kit | 279974 | 15g 0s 0c | 2026-11-24 16:00 UTC | 10g 0s 0c | 10g 0s 0c | volatile | 3 of 3 | 10 | -55% |
+| Explosive Rocket | 1178 | 39s 0c | 2026-11-24 16:00 UTC | 39s 0c | 39s 0c | steady | 3 of 3 | 68 |  |
 | Faction Banner | 279972 | 80c | 2026-11-24 16:00 UTC | 65c | 80c | volatile | 3 of 3 | 1092 | -16% |
 | Fermenter | 279970 | 13s 35c | 2026-11-24 16:00 UTC | 12s 20c | 13s 35c | volatile | 3 of 3 | 639 | +6% |
 | Field Guide | 279969 | 7s 50c | 2026-11-24 16:00 UTC | 7s 50c | 9s 99c | moving | 3 of 3 | 252 | -5% |
@@ -264,6 +265,7 @@
 | Toxin Study | 279940 | 15s 75c | 2026-11-24 16:00 UTC | 10s 38c | 10s 77c | moving | 3 of 3 | 47 | -30% |
 | Trapper's Workbench | 279938 | 50s 0c | 2026-11-24 16:00 UTC | 30s 93c | 50s 0c | volatile | 3 of 3 | 141 | -67% |
 | Truesilver Skeleton Key | 15871 | 7s 66c | 2026-11-24 16:00 UTC | 7s 99c | 7s 99c | moving | 3 of 3 | 588 | -15% |
+| Vile Concoction | 217716 | 1s 0c | 2026-11-24 16:00 UTC | 50s 0c | 50s 0c | volatile | 3 of 3 | 3 |  |
 | Waylaid Crate: Apprentice Curiosities | 248685 | 1s 0c | 2026-11-24 16:00 UTC | 1s 29c | 1s 32c | volatile | 3 of 3 | 263 | -21% |
 | Waylaid Crate: Apprentice Fabrics | 248702 | 41s 47c | 2026-11-24 16:00 UTC | 40s 90c | 41s 47c | moving | 3 of 3 | 240 | +47% |
 | Waylaid Crate: Apprentice Herbs | 248682 | 9s 90c | 2026-11-24 16:00 UTC | 8s 99c | 8s 99c | volatile | 3 of 3 | 1228 | +22% |

@@ -10,11 +10,11 @@
    "class": "Warlock",
    "race": "Orc",
    "faction": "Horde",
-   "level": 43,
-   "item_level": 40.1,
-   "recorded_at": "2026-11-24T14:07:55Z",
+   "level": 44,
+   "item_level": 40.3,
+   "recorded_at": "2026-11-25T13:58:19Z",
    "recorded_on": "logout",
-   "build": "71037",
+   "build": "71091",
    "gear": [
     {
      "slot": "Head",
@@ -35,6 +35,12 @@
      "item_level": 36
     },
     {
+     "slot": "Shirt",
+     "item": 270334,
+     "name": "Sweat-Stained Shirt",
+     "item_level": 1
+    },
+    {
      "slot": "Chest",
      "item": 10021,
      "name": "Dreamweave Vest",
@@ -48,9 +54,9 @@
     },
     {
      "slot": "Legs",
-     "item": 10009,
-     "name": "Red Mageweave Pants",
-     "item_level": 43
+     "item": 274999,
+     "name": "Shadecaster's Leggings",
+     "item_level": 45
     },
     {
      "slot": "Feet",
@@ -130,12 +136,12 @@
    "professions": [
     {
      "name": "Enchanting",
-     "skill": 215,
+     "skill": 220,
      "max": 225
     },
     {
      "name": "Tailoring",
-     "skill": 200,
+     "skill": 205,
      "max": 300
     },
     {
@@ -145,8 +151,8 @@
     },
     {
      "name": "First Aid",
-     "skill": 220,
-     "max": 225
+     "skill": 260,
+     "max": 300
     },
     {
      "name": "Fishing",
@@ -169,7 +175,7 @@
     {
      "name": "Defense",
      "category": "Weapon Skills",
-     "skill": 213,
+     "skill": 215,
      "max": 220
     },
     {
@@ -193,7 +199,7 @@
     {
      "name": "Wands",
      "category": "Weapon Skills",
-     "skill": 196,
+     "skill": 198,
      "max": 220
     },
     {
@@ -237,31 +243,31 @@
     {
      "name": "Booty Bay",
      "standing": "Friendly",
-     "progress": 426,
+     "progress": 519,
      "needed": 6000
     },
     {
      "name": "Everlook",
      "standing": "Friendly",
-     "progress": 4,
+     "progress": 96,
      "needed": 6000
     },
     {
      "name": "Gadgetzan",
      "standing": "Friendly",
-     "progress": 299,
+     "progress": 391,
      "needed": 6000
     },
     {
      "name": "Powderfuse",
      "standing": "Friendly",
-     "progress": 1014,
+     "progress": 1199,
      "needed": 6000
     },
     {
      "name": "Ratchet",
      "standing": "Friendly",
-     "progress": 580,
+     "progress": 673,
      "needed": 6000
     },
     {
@@ -279,13 +285,13 @@
     {
      "name": "Bolder'ok Clan",
      "standing": "Friendly",
-     "progress": 111,
+     "progress": 261,
      "needed": 6000
     },
     {
      "name": "Durotar Supply and Logistics",
      "standing": "Neutral",
-     "progress": 2125,
+     "progress": 2250,
      "needed": 3000
     },
     {
@@ -296,18 +302,18 @@
     }
    ],
    "stats": {
-    "Health": 1696,
-    "Mana or energy": 3427,
-    "Strength": 39,
-    "Agility": 36,
-    "Stamina": 112,
-    "Intellect": 179,
-    "Spirit": 123,
-    "Armour": 943
+    "Health": 2196,
+    "Mana or energy": 3832,
+    "Strength": 55,
+    "Agility": 51,
+    "Stamina": 162,
+    "Intellect": 206,
+    "Spirit": 147,
+    "Armour": 854
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": 117,
+    "Dishonourable kills": -51,
     "Honour points": 81,
     "Renown": 0
    },
@@ -324,7 +330,7 @@
    "faction": "Horde",
    "level": 12,
    "item_level": 9,
-   "recorded_at": "2026-11-24T13:18:00Z",
+   "recorded_at": "2026-11-24T20:18:48Z",
    "recorded_on": "logout",
    "build": "71037",
    "gear": [
@@ -549,7 +555,7 @@
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": 120,
+    "Dishonourable kills": 76,
     "Honour points": 0,
     "Renown": 0
    },

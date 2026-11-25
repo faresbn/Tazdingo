@@ -22,7 +22,10 @@
 | Plans: Dark Iron Plate | 11612 | 30s 17c | 2026-11-24 16:00 UTC | 39s 0c | 38s 57c | volatile | 3 of 3 | 44 | -79% |
 | Plans: Dark Iron Pulverizer | 11610 | 78s 0c | 2026-11-24 16:00 UTC | 33s 0c | 31s 98c | volatile | 3 of 3 | 40 | -60% |
 | Plans: Dark Iron Sunderer | 11611 | 39s 99c | 2026-11-24 16:00 UTC | 49s 75c | 40s 51c | volatile | 3 of 3 | 25 | -86% |
+| Plans: Darkrune Breastplate | 20554 | 29g 97s 99c | 2026-11-24 16:00 UTC | 29g 99s 98c | 29g 99s 97c | steady | 3 of 3 | 3 |  |
+| Plans: Darkrune Gauntlets | 20553 | 40g 99s 99c | 2026-11-24 16:00 UTC | 43g 49s 99c |  | too new | 2 of 3 | 2 |  |
 | Plans: Darkrune Helm | 20555 | 90g 26s 0c | 2026-11-24 16:00 UTC | 16g 38s 0c | 20g 26s 0c | moving | 3 of 3 | 1 |  |
+| Plans: Dawn's Edge | 12821 | 19g 99s 0c | 2026-11-24 16:00 UTC | 19g 99s 0c |  | too new | 1 of 3 | 1 |  |
 | Plans: Dazzling Mithril Rapier | 7993 | 1g 10s 99c | 2026-11-24 16:00 UTC | 26s 0c | 26s 0c | steady | 3 of 3 | 47 | +4% |
 | Plans: Deadly Bronze Poniard | 2883 | 3s 96c | 2026-11-24 16:00 UTC | 3s 96c | 3s 96c | steady | 3 of 3 | 25 | +5% |
 | Plans: Frost Tiger Blade | 3868 | 12s 47c | 2026-11-24 16:00 UTC | 12s 48c | 12s 47c | steady | 3 of 3 | 31 | -2% |

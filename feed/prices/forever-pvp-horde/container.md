@@ -20,6 +20,7 @@
 | Green Woolen Bag | 4241 | 20s 96c | 2026-11-24 16:00 UTC | 20s 98c | 20s 96c | moving | 3 of 3 | 114 | +0% |
 | Heavy Brown Bag | 4497 | 99s 99c | 2026-11-24 16:00 UTC | 99s 99c | 99s 99c | steady | 3 of 3 | 14 | +1% |
 | Herb Pouch | 22250 | 15s 25c | 2026-11-24 16:00 UTC | 11s 90c | 12s 97c | steady | 3 of 3 | 166 | -1% |
+| Huge Brown Sack | 4499 | 3g 76s 0c | 2026-11-22 | 3g 76s 0c |  | too new | 1 of 3 | 1 |  |
 | Journeyman's Backpack | 3914 | 1g 88s 0c | 2026-11-24 16:00 UTC | 2g 4s 95c | 1g 94s 80c | volatile | 3 of 3 | 98 | -49% |
 | Kodo Hide Bag | 5081 | 5s 0c | 2026-11-24 16:00 UTC | 2s 55c | 2s 59c | steady | 3 of 3 | 35 | +2% |
 | Large Blue Sack | 804 | 27s 99c | 2026-11-24 16:00 UTC | 24s 98c | 24s 98c | steady | 3 of 3 | 46 | -3% |

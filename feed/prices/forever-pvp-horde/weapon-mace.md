@@ -455,6 +455,7 @@
 | Greater Maul of the Tiger | 15262 | 7g 0s 0c | 2026-11-23 15:16 UTC | 6g 12s 0c |  | too new | 2 of 3 | 1 |  |
 | Greater Maul of the Whale | 15262 | 2g 21s 99c | 2026-11-22 | 2g 21s 99c |  | too new | 1 of 3 | 1 |  |
 | Gruklash's Basher | 282070 | 8g 49s 0c | 2026-11-24 16:00 UTC | 9g 49s 0c |  | moving | 2 of 3 | 2 | -5% |
+| Hammer | 2028 | 99s 99c | 2026-11-24 16:00 UTC | 16s 0c |  | volatile | 2 of 3 | 1 |  |
 | Hammer of the Northern Wind | 810 | 12g 40s 10c | 2026-11-24 16:00 UTC | 14g 46s 0c | 12g 40s 10c | volatile | 3 of 3 | 9 | -49% |
 | Hand of Edward the Odd | 2243 | 598g 0s 0c | 2026-11-24 16:00 UTC | 650g 99s 99c | 615g 0s 0c | moving | 3 of 3 | 7 | -32% |
 | Heaven's Light | 13026 | 2g 89s 0c | 2026-11-24 16:00 UTC | 2g 39s 73c | 2g 80s 0c | moving | 3 of 3 | 25 | -19% |

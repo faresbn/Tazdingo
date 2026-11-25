@@ -12,6 +12,7 @@
 | Baked Salmon | 13935 | 6s 95c | 2026-11-24 16:00 UTC | 8s 50c | 6s 95c | moving | 3 of 3 | 7345 | -37% |
 | Barbecued Buzzard Wing | 4457 | 3s 99c | 2026-11-24 16:00 UTC | 3s 99c | 3s 99c | steady | 3 of 3 | 468 | -6% |
 | Bat Hachee | 250067 | 8s 99c | 2026-11-24 16:00 UTC | 10s 80c | 10s 80c | volatile | 3 of 3 | 2668 | -55% |
+| Bean Soup | 16166 | 1s 0c | 2026-11-22 | 1s 0c |  | too new | 1 of 3 | 3 |  |
 | Bear Brisket | 250074 | 5s 18c | 2026-11-24 16:00 UTC | 5s 30c | 6s 74c | moving | 3 of 3 | 1569 | +21% |
 | Bear Bruscitti | 250070 | 11s 52c | 2026-11-24 16:00 UTC | 14s 37c | 12s 19c | moving | 3 of 3 | 3749 | -53% |
 | Big Bear Steak | 3726 | 1s 99c | 2026-11-24 16:00 UTC | 1s 29c | 1s 29c | steady | 3 of 3 | 357 | +4% |
@@ -58,6 +59,7 @@
 | Dwarven Mild | 422 | 25c | 2026-11-24 16:00 UTC | 25c | 25c | steady | 3 of 3 | 492 | +0% |
 | Enchanted Water | 4791 | 1s 33c | 2026-11-24 16:00 UTC | 1s 37c | 1s 37c | steady | 3 of 3 | 1412 | -13% |
 | Enriched Manna Biscuit | 13724 | 10s 95c | 2026-11-24 16:00 UTC | 14s 0c | 12s 96c | volatile | 3 of 3 | 772 | -54% |
+| Evermurky | 18287 | 20s 0c | 2026-11-24 16:00 UTC | 20s 0c |  | volatile | 2 of 3 | 4 |  |
 | Filet of Redgill | 13930 | 58c | 2026-11-24 16:00 UTC | 25c | 58c | volatile | 3 of 3 | 5405 | -68% |
 | Fillet of Frenzy | 5476 | 3s 40c | 2026-11-24 16:00 UTC | 3s 45c | 3s 50c | volatile | 3 of 3 | 273 | -30% |
 | Fine Aged Cheddar | 3927 | 1s 49c | 2026-11-24 16:00 UTC | 1s 50c | 1s 50c | moving | 3 of 3 | 676 | -7% |

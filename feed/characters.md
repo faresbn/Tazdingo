@@ -4,8 +4,8 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 | Character | Level | Item level | Talents | Professions | Recorded |
 |---|---|---|---|---|---|
-| Orc Warlock | 43 | 40.1 | Affliction 31, Demonology 4 | Enchanting 215/225, Tailoring 200/300, Cooking 230/300, First Aid 220/225, Fishing 1/75, Riding 75/75 | 2026-11-24 14:07:55 UTC |
-| Troll Rogue | 12 | 9 | Combat 3 | Alchemy 63/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-24 13:18:00 UTC |
+| Orc Warlock | 44 | 40.3 | Affliction 31, Demonology 4 | Enchanting 220/225, Tailoring 205/300, Cooking 230/300, First Aid 260/300, Fishing 1/75, Riding 75/75 | 2026-11-25 13:58:19 UTC |
+| Troll Rogue | 12 | 9 | Combat 3 | Alchemy 63/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-24 20:18:48 UTC |
 | Tauren Druid | 3 | 0.3 | none | Herbalism 13/75, Skinning 68/75, First Aid 1/75 | 2026-11-07 20:40:17 UTC |
 | Troll Mage | 1 | 0 | none | none | 2026-11-05 18:39:27 UTC |
 | Undead Paladin | 1 | 0 | none | none | 2026-11-05 18:57:57 UTC |
@@ -13,16 +13,17 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 ## Orc Warlock
 
-Horde, level 43, item level 40.1; recorded 2026-11-24 14:07:55 UTC on logout, build 71037.
+Horde, level 44, item level 40.3; recorded 2026-11-25 13:58:19 UTC on logout, build 71091.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
 | Head | Electromagnetic Gigaflux Reactivator | 9492 | 36 |
 | Neck | Forest Pendant of the Sorcerer | 12040 | 38 |
 | Shoulder | Berylline Pads | 4197 | 36 |
+| Shirt | Sweat-Stained Shirt | 270334 | 1 |
 | Chest | Dreamweave Vest | 10021 | 45 |
 | Waist | Blightleaf Rope | 273039 | 34 |
-| Legs | Red Mageweave Pants | 10009 | 43 |
+| Legs | Shadecaster's Leggings | 274999 | 45 |
 | Feet | Black Mageweave Boots | 10026 | 46 |
 | Wrist | Mutinous Cuffs | 279883 | 42 |
 | Hands | Dreamweave Gloves | 10019 | 45 |
@@ -39,18 +40,18 @@ Talents: Affliction 31, Demonology 4, Destruction 0. Loadout code: `CIdBa0K/6fjl
 
 | Skill | Kind | Skill level | Max |
 |---|---|---|---|
-| Enchanting | Profession | 215 | 225 |
-| Tailoring | Profession | 200 | 300 |
+| Enchanting | Profession | 220 | 225 |
+| Tailoring | Profession | 205 | 300 |
 | Cooking | Profession | 230 | 300 |
-| First Aid | Profession | 220 | 225 |
+| First Aid | Profession | 260 | 300 |
 | Fishing | Profession | 1 | 75 |
 | Riding | Profession | 75 | 75 |
 | Daggers | Weapon Skills | 23 | 220 |
-| Defense | Weapon Skills | 213 | 220 |
+| Defense | Weapon Skills | 215 | 220 |
 | Staves | Weapon Skills | 4 | 220 |
 | Swords | Weapon Skills | 1 | 220 |
 | Unarmed | Weapon Skills | 13 | 220 |
-| Wands | Weapon Skills | 196 | 220 |
+| Wands | Weapon Skills | 198 | 220 |
 | Cloth | Armor Proficiencies | 1 | 1 |
 | Language: Orcish | Languages | 300 | 300 |
 
@@ -60,22 +61,22 @@ Talents: Affliction 31, Demonology 4, Destruction 0. Loadout code: `CIdBa0K/6fjl
 | Orgrimmar | Honored | 4272/12000 |
 | Thunder Bluff | Honored | 167/12000 |
 | Undercity | Honored | 1023/12000 |
-| Booty Bay | Friendly | 426/6000 |
-| Everlook | Friendly | 4/6000 |
-| Gadgetzan | Friendly | 299/6000 |
-| Powderfuse | Friendly | 1014/6000 |
-| Ratchet | Friendly | 580/6000 |
+| Booty Bay | Friendly | 519/6000 |
+| Everlook | Friendly | 96/6000 |
+| Gadgetzan | Friendly | 391/6000 |
+| Powderfuse | Friendly | 1199/6000 |
+| Ratchet | Friendly | 673/6000 |
 | Argent Dawn | Neutral | 1250/3000 |
 | Bloodsail Buccaneers | Hated | 32250/36000 |
-| Bolder'ok Clan | Friendly | 111/6000 |
-| Durotar Supply and Logistics | Neutral | 2125/3000 |
+| Bolder'ok Clan | Friendly | 261/6000 |
+| Durotar Supply and Logistics | Neutral | 2250/3000 |
 | Earthen Ring | Neutral | 1500/3000 |
 
-Stats: Health 1696, Mana or energy 3427, Strength 39, Agility 36, Stamina 112, Intellect 179, Spirit 123, Armour 943. PvP: Honourable kills 0, Dishonourable kills 117, Honour points 81, Renown 0. Collected: mounts 3, pets 5, titles 0.
+Stats: Health 2196, Mana or energy 3832, Strength 55, Agility 51, Stamina 162, Intellect 206, Spirit 147, Armour 854. PvP: Honourable kills 0, Dishonourable kills -51, Honour points 81, Renown 0. Collected: mounts 3, pets 5, titles 0.
 
 ## Troll Rogue
 
-Horde, level 12, item level 9; recorded 2026-11-24 13:18:00 UTC on logout, build 71037.
+Horde, level 12, item level 9; recorded 2026-11-24 20:18:48 UTC on logout, build 71037.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
@@ -121,7 +122,7 @@ Talents: Assassination 0, Combat 3, Subtlety 0. Loadout code: `CAdBfBw6kaEYM3VLT
 | Powderfuse | Neutral | 525/3000 |
 | Ratchet | Neutral | 650/3000 |
 
-Stats: Health 692, Mana or energy 100, Strength 30, Agility 55, Stamina 43, Intellect 18, Spirit 27, Armour 418. PvP: Honourable kills 0, Dishonourable kills 120, Honour points 0, Renown 0. Collected: mounts 3, pets 5, titles 0.
+Stats: Health 692, Mana or energy 100, Strength 30, Agility 55, Stamina 43, Intellect 18, Spirit 27, Armour 418. PvP: Honourable kills 0, Dishonourable kills 76, Honour points 0, Renown 0. Collected: mounts 3, pets 5, titles 0.
 
 ## Tauren Druid
 

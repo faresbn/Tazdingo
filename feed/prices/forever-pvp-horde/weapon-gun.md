@@ -82,6 +82,7 @@
 | Percussion Shotgun of the Wolf | 15323 | 7g 11s 0c | 2026-11-24 16:00 UTC | 4g 50s 0c |  | too new | 2 of 3 | 2 |  |
 | Precisely Calibrated Boomstick | 2100 | 49g 70s 0c | 2026-11-24 16:00 UTC | 35g 98s 0c | 49g 70s 0c | moving | 3 of 3 | 26 | -20% |
 | Primed Musket | 13825 | 1g 53s 0c | 2026-11-24 16:00 UTC | 1g 11s 49c | 1g 2s 0c | moving | 3 of 3 | 4 |  |
+| Reaver's Repeater | 282029 | 4g 54s 0c | 2026-11-21 18:23 UTC | 4g 54s 0c |  | too new | 0 of 3 |  |  |
 | Ricochet Blunderbuss | 4089 | 2g 20s 99c | 2026-11-24 16:00 UTC | 1g 84s 0c | 1g 91s 99c | moving | 3 of 3 | 42 | +6% |
 | Ricochet Blunderbuss of Arcane Protection | 4089 | 2g 22s 99c | 2026-11-24 16:00 UTC | 2g 7s 49c |  | too new | 2 of 3 | 2 |  |
 | Ricochet Blunderbuss of Defense | 4089 | 2g 20s 99c | 2026-11-24 16:00 UTC | 1g 91s 99c | 1g 91s 99c | steady | 3 of 3 | 3 |  |

@@ -37,6 +37,7 @@
 | Dragon Finger of the Whale | 15282 | 5g 37s 0c | 2026-11-24 16:00 UTC | 5g 37s 0c | 5g 37s 0c | volatile | 3 of 3 | 5 |  |
 | Dreadwhisper's Touch | 284070 | 15g 0s 0c | 2026-11-23 15:16 UTC | 8g 7s 0c |  | moving | 2 of 3 | 2 |  |
 | Dreambough Wand | 249234 | 2g 35s 98c | 2026-11-24 16:00 UTC | 2g 42s 0c | 2g 42s 0c | steady | 3 of 3 | 19 | -3% |
+| Dusk Wand | 5211 | 18s 0c | 2026-11-21 18:23 UTC | 18s 0c |  | too new | 0 of 3 |  |  |
 | Earthen Rod | 9381 | 9g 33s 80c | 2026-11-24 16:00 UTC | 6g 89s 0c | 5g 0s 0c | moving | 3 of 3 | 7 | +7% |
 | Ember Wand | 5215 | 86s 49c | 2026-11-24 16:00 UTC | 86s 50c | 86s 50c | steady | 3 of 3 | 72 | -2% |
 | Ember Wand of Arcane Protection | 5215 | 1g 19s 60c | 2026-11-24 16:00 UTC | 1g 19s 60c | 1g 19s 60c | steady | 3 of 3 | 2 |  |

@@ -25,6 +25,7 @@
 | Pattern: Blue Dragonscale Breastplate | 15751 | 5g 66s 98c | 2026-11-24 16:00 UTC | 2g 0s 44c | 5g 66s 98c | volatile | 3 of 3 | 12 | -93% |
 | Pattern: Blue Dragonscale Helm | 252938 | 17g 80s 0c | 2026-11-24 16:00 UTC | 25g 50s 0c | 17g 80s 0c | volatile | 3 of 3 | 8 | -36% |
 | Pattern: Blue Dragonscale Shoulders | 15763 | 10g 0s 0c | 2026-11-24 16:00 UTC | 90s 0c | 79s 1c | volatile | 3 of 3 | 38 | -37% |
+| Pattern: Blue Suede Belt | 252886 | 45g 0s 0c | 2026-11-24 16:00 UTC | 34g 0s 0c |  | too new | 2 of 3 | 2 |  |
 | Pattern: Blue Suede Bracers | 252888 | 65g 9s 0c | 2026-11-24 16:00 UTC | 59g 11s 11c | 53g 13s 0c | moving | 3 of 3 | 2 |  |
 | Pattern: Blue Suede Gloves | 252866 | 86s 0c | 2026-11-24 16:00 UTC | 47s 95c | 40s 0c | volatile | 3 of 3 | 27 | -19% |
 | Pattern: Blue Suede Hat | 252890 | 1g 18s 0c | 2026-11-24 16:00 UTC | 1g 44s 0c | 1g 44s 0c | volatile | 3 of 3 | 43 | -70% |
@@ -101,6 +102,7 @@
 | Pattern: Living Breastplate | 15771 | 4g 98s 99c | 2026-11-24 16:00 UTC | 7g 0s 0c | 4g 98s 99c | volatile | 3 of 3 | 10 | -37% |
 | Pattern: Living Crown | 252891 | 32g 11s 99c | 2026-11-24 16:00 UTC | 14g 99s 99c | 23g 55s 0c | volatile | 3 of 3 | 26 | -79% |
 | Pattern: Living Leggings | 15752 | 79s 0c | 2026-11-24 16:00 UTC | 51s 0c | 79s 0c | moving | 3 of 3 | 132 | -23% |
+| Pattern: Living Shoulders | 15734 | 90g 0s 0c | 2026-11-24 16:00 UTC | 100g 0s 0c |  | too new | 2 of 3 | 2 |  |
 | Pattern: Mender's Leather Belt | 252832 | 30g 65s 0c | 2026-11-24 16:00 UTC | 3g 65s 0c | 4g 8s 0c | volatile | 3 of 3 | 2 |  |
 | Pattern: Mender's Leather Gauntlets | 252871 | 67s 0c | 2026-11-24 16:00 UTC | 45s 8c | 67s 0c | volatile | 3 of 3 | 28 | -21% |
 | Pattern: Mender's Leather Shoes | 252847 | 5g 20s 0c | 2026-11-24 16:00 UTC | 23s 25c | 23s 25c | volatile | 3 of 3 | 41 | +12% |
@@ -114,6 +116,7 @@
 | Pattern: Nightscape Cloak | 8388 | 5g 0s 0c | 2026-11-24 16:00 UTC | 1g 99s 98c | 2g 34s 0c | volatile | 3 of 3 | 25 | +18% |
 | Pattern: Pilferer's Gloves | 7363 | 10s 27c | 2026-11-24 16:00 UTC | 8s 50c | 10s 27c | volatile | 3 of 3 | 18 | +0% |
 | Pattern: Pristine Scorpid Leggings | 252940 | 137g 90s 99c | 2026-11-24 16:00 UTC | 34g 22s 0c | 34g 22s 0c | volatile | 3 of 3 | 5 | -65% |
+| Pattern: Prowler's Leather Belt | 252826 | 250g 8s 0c | 2026-11-24 16:00 UTC | 3g 0s 0c |  | volatile | 2 of 3 | 2 |  |
 | Pattern: Prowler's Leather Gauntlets | 252867 | 74s 99c | 2026-11-24 16:00 UTC | 53s 0c | 95s 98c | volatile | 3 of 3 | 45 | -41% |
 | Pattern: Prowler's Leather Shoes | 252843 | 40s 0c | 2026-11-24 16:00 UTC | 48s 80c | 60s 50c | moving | 3 of 3 | 20 | -22% |
 | Pattern: Raptor Hide Belt | 13288 | 4g 49s 0c | 2026-11-23 15:51 UTC | 1g 90s 0c |  | volatile | 2 of 3 | 18 | +111% |
@@ -132,6 +135,7 @@
 | Pattern: Skirmisher's Leather Belt | 252830 | 4g 70s 0c | 2026-11-24 16:00 UTC | 2g 70s 0c | 4g 70s 0c | volatile | 3 of 3 | 3 |  |
 | Pattern: Skirmisher's Mail Boots | 252898 | 57s 0c | 2026-11-24 16:00 UTC | 57s 0c | 89s 99c | volatile | 3 of 3 | 23 | -17% |
 | Pattern: Skirmisher's Mail Gauntlets | 252920 | 2g 99s 0c | 2026-11-24 16:00 UTC | 51s 99c | 45s 93c | volatile | 3 of 3 | 23 | -19% |
+| Pattern: Skulker's Leather Belt | 252827 | 3g 99s 99c | 2026-11-24 16:00 UTC | 3g 8s 0c | 3g 8s 0c | moving | 3 of 3 | 1 |  |
 | Pattern: Skulker's Leather Gauntlets | 252868 | 55s 0c | 2026-11-24 16:00 UTC | 55s 0c | 55s 0c | volatile | 3 of 3 | 30 | -57% |
 | Pattern: Skulker's Leather Shoes | 252844 | 53s 0c | 2026-11-24 16:00 UTC | 62s 18c | 59s 99c | volatile | 3 of 3 | 26 | -48% |
 | Pattern: Skycaller's Leather Belt | 252831 | 1g 80s 0c | 2026-11-24 16:00 UTC | 2g 70s 0c | 2g 87s 0c | moving | 3 of 3 | 4 |  |

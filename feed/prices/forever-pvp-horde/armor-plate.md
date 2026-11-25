@@ -2380,11 +2380,14 @@
 | Krol'dok Warplate Gauntlets | 287012 | 2g 29s 0c | 2026-11-24 16:00 UTC | 2g 50s 0c | 2g 29s 0c | moving | 3 of 3 | 28 | +12% |
 | Krol'dok Warplate Legplates | 287013 | 8g 10s 87c | 2026-11-24 16:00 UTC | 8g 96s 99c | 8g 96s 99c | moving | 3 of 3 | 26 | +6% |
 | Krol'dok Warplate Pauldrons | 287014 | 12g 49s 0c | 2026-11-24 16:00 UTC | 10g 0s 0c | 10g 60s 0c | moving | 3 of 3 | 15 | +11% |
+| Light Plate Belt | 8081 | 80s 0c | 2026-11-24 16:00 UTC | 80s 0c |  | moving | 2 of 3 | 2 |  |
 | Light Plate Boots | 8082 | 48s 0c | 2026-11-24 16:00 UTC | 69s 0c | 48s 0c | moving | 3 of 3 | 1 |  |
 | Light Plate Bracers | 8083 | 3g 5s 0c | 2026-11-24 16:00 UTC | 4g 99s 0c | 4g 99s 0c | volatile | 3 of 3 | 6 |  |
 | Light Plate Chestpiece | 8080 | 1g 46s 98c | 2026-11-24 16:00 UTC | 1g 87s 98c | 1g 50s 98c | volatile | 3 of 3 | 5 |  |
+| Light Plate Gloves | 8084 | 99s 99c | 2026-11-24 16:00 UTC | 1g 55s 0c | 1g 20s 0c | moving | 3 of 3 | 8 |  |
 | Light Plate Helmet | 8755 | 79s 0c | 2026-11-24 16:00 UTC | 99s 0c | 80s 0c | volatile | 3 of 3 | 4 |  |
 | Light Plate Pants | 8085 | 80s 1c | 2026-11-24 16:00 UTC | 1g 94s 0c | 1g 9s 1c | volatile | 3 of 3 | 7 | +168% |
+| Light Plate Shoulderpads | 8086 | 2g 99s 98c | 2026-11-24 16:00 UTC | 56s 0c |  | volatile | 2 of 3 | 3 |  |
 | Lightforge Belt | 16723 | 3g 59s 0c | 2026-11-24 16:00 UTC | 3g 59s 0c | 3g 59s 0c | volatile | 3 of 3 | 125 | -72% |
 | Lightforge Bracers | 16722 | 85g 98s 0c | 2026-11-24 16:00 UTC | 75g 99s 99c | 75g 99s 99c | moving | 3 of 3 | 21 | +52% |
 | Lightforge Gauntlets | 16724 | 46g 35s 0c | 2026-11-24 16:00 UTC | 39g 88s 93c | 45g 77s 99c | moving | 3 of 3 | 56 | +2% |

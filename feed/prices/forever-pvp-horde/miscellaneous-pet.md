@@ -35,6 +35,8 @@
 | Parrot Cage (Green Wing Macaw) | 8492 | 69s 99c | 2026-11-24 16:00 UTC | 15s 0c | 14s 64c | volatile | 3 of 3 | 41 | -36% |
 | Parrot Cage (Hyacinth Macaw) | 8494 | 22g 85s 99c | 2026-11-24 16:00 UTC | 22g 85s 99c | 29g 0s 0c | volatile | 3 of 3 | 11 | -11% |
 | Parrot Cage (Senegal) | 8495 | 45s 97c | 2026-11-24 16:00 UTC | 49s 98c | 49s 98c | moving | 3 of 3 | 11 | -8% |
+| Pet Fish | 13342 | 333g 33s 33c | 2026-11-24 16:00 UTC | 333g 33s 33c |  | too new | 1 of 3 | 1 |  |
+| Pet Stone | 13343 | 800g 0s 0c | 2026-11-24 16:00 UTC | 800g 0s 0c | 800g 0s 0c | steady | 3 of 3 | 1 |  |
 | Plagued Cockroach | 280697 | 65s 0c | 2026-11-24 16:00 UTC | 69s 0c | 65s 0c | moving | 3 of 3 | 9 | +16% |
 | Prairie Dog Whistle | 10394 | 80s 0c | 2026-11-24 16:00 UTC | 90s 0c | 85s 0c | steady | 3 of 3 | 9 | -6% |
 | Prairie Wolf Pup Carrier | 277508 | 80s 99c | 2026-11-24 16:00 UTC | 99s 11c | 89s 0c | moving | 3 of 3 | 32 | +17% |

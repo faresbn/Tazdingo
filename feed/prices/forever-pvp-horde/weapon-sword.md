@@ -170,6 +170,7 @@
 | Crystal Sword of the Whale | 15218 | 4g 98s 97c | 2026-11-24 16:00 UTC | 4g 71s 70c |  | too new | 2 of 3 | 1 |  |
 | Cutlass | 851 | 90s 99c | 2026-11-24 16:00 UTC | 75s 0c | 90s 99c | volatile | 3 of 3 | 4 | +300% |
 | Dacian Falx | 922 | 65s 0c | 2026-11-24 16:00 UTC | 1g 20s 0c | 95s 0c | volatile | 3 of 3 | 9 | +26% |
+| Damaged Scimitar | 280399 | 1g 99s 95c | 2026-11-24 16:00 UTC | 1g 49s 95c |  | too new | 1 of 3 | 1 |  |
 | Dark Espadon | 15254 | 3g 80s 0c | 2026-11-24 16:00 UTC | 3g 66s 99c | 3g 89s 97c | steady | 3 of 3 | 22 | -8% |
 | Dark Espadon of Agility | 15254 | 4g 99s 0c | 2026-11-22 | 4g 99s 0c |  | too new | 1 of 3 | 1 |  |
 | Dark Espadon of Arcane Protection | 15254 | 3g 80s 96c | 2026-11-24 16:00 UTC | 3g 85s 46c |  | too new | 2 of 3 | 1 |  |
@@ -836,6 +837,7 @@
 | Raider Shortsword of the Whale | 15210 | 74s 0c | 2026-11-24 16:00 UTC | 11s 87c | 11s 87c | volatile | 3 of 3 | 6 |  |
 | Raider Shortsword of the Wolf | 15210 | 1g 23s 0c | 2026-11-24 16:00 UTC | 99s 0c | 99s 0c | volatile | 3 of 3 | 2 |  |
 | Ranger Lord's Longsword | 284157 | 11g 0s 0c | 2026-11-24 16:00 UTC | 11g 25s 0c | 11g 50s 0c | moving | 3 of 3 | 4 | +41% |
+| Redridge Machete | 1219 | 1g 18s 55c | 2026-11-22 | 1g 18s 55c |  | too new | 1 of 3 | 2 |  |
 | Reforged Blade of Heroes | 9718 | 8g 0s 0c | 2026-11-24 16:00 UTC | 7g 25s 0c | 7g 50s 0c | moving | 3 of 3 | 2 | -7% |
 | Rune Sword | 15216 | 2g 76s 99c | 2026-11-24 16:00 UTC | 2g 79s 50c | 2g 79s 0c | moving | 3 of 3 | 30 | -25% |
 | Rune Sword of Agility | 15216 | 2g 76s 99c | 2026-11-24 16:00 UTC | 3g 81s 99c |  | too new | 2 of 3 | 1 |  |
@@ -871,6 +873,7 @@
 | Searing Blade | 12992 | 40s 0c | 2026-11-24 16:00 UTC | 40s 0c | 42s 70c | volatile | 3 of 3 | 40 | +3% |
 | Serpent Slicer | 13035 | 3g 94s 0c | 2026-11-24 16:00 UTC | 3g 75s 0c | 3g 94s 0c | moving | 3 of 3 | 16 | -23% |
 | Shadowfang | 1482 | 34g 50s 50c | 2026-11-24 16:00 UTC | 31g 0s 97c | 31g 0s 97c | volatile | 3 of 3 | 16 | +13% |
+| Shadowhide Two-handed Sword | 1460 | 8g 27s 0c | 2026-11-24 16:00 UTC | 7g 27s 0c |  | too new | 2 of 3 | 2 |  |
 | Sharp Shortsword | 4017 | 70s 0c | 2026-11-24 16:00 UTC | 70s 0c | 70s 0c | moving | 3 of 3 | 7 | -27% |
 | Shin Blade | 15257 | 7g 98s 99c | 2026-11-24 16:00 UTC | 7g 29s 0c | 7g 99s 99c | moving | 3 of 3 | 7 | -24% |
 | Shin Blade of Agility | 15257 | 8g 0s 0c | 2026-11-24 16:00 UTC | 7g 99s 99c |  | too new | 2 of 3 | 2 |  |
@@ -918,6 +921,7 @@
 | Shortsword | 2131 | 30s 0c | 2026-11-24 16:00 UTC | 30s 0c | 40s 0c | volatile | 3 of 3 | 8 | -47% |
 | Shortsword of Vengeance | 754 | 3g 0s 0c | 2026-11-24 16:00 UTC | 3g 0s 0c | 3g 0s 0c | moving | 3 of 3 | 10 | -17% |
 | Silithid Ripper | 8224 | 80s 99c | 2026-11-24 16:00 UTC | 80s 99c | 80s 99c | steady | 3 of 3 | 2 | -1% |
+| Skeletal Longsword | 2018 | 2g 50s 0c | 2026-11-24 16:00 UTC | 2g 0s 0c |  | too new | 2 of 3 | 1 |  |
 | Speedsteel Rapier | 13034 | 4g 20s 0c | 2026-11-24 16:00 UTC | 4g 20s 0c | 3g 88s 67c | moving | 3 of 3 | 15 | -6% |
 | Standard Claymore | 1818 | 12s 19c | 2026-11-24 16:00 UTC | 12s 20c | 12s 20c | steady | 3 of 3 | 15 | -2% |
 | Stock Shortsword | 1817 | 5s 0c | 2026-11-24 16:00 UTC | 5s 15c | 5s 49c | steady | 3 of 3 | 13 | +1% |
@@ -1092,6 +1096,7 @@
 | Widow Blade of the Wolf | 15217 | 7g 0s 0c | 2026-11-24 16:00 UTC | 7g 0s 0c |  | too new | 1 of 3 | 1 |  |
 | Witchfury | 13051 | 7g 0s 0c | 2026-11-24 16:00 UTC | 3g 20s 0c | 4g 48s 79c | moving | 3 of 3 | 37 | +4% |
 | Worn Greatsword | 258882 | 86s 99c | 2026-11-24 16:00 UTC | 86s 99c | 90s 99c | volatile | 3 of 3 | 10 | -56% |
+| Worn Shortsword | 25 | 1g 22s 0c | 2026-11-24 16:00 UTC | 1g 22s 0c | 1g 22s 0c | steady | 3 of 3 | 2 |  |
 | Zealot Blade | 13033 | 2g 62s 97c | 2026-11-24 16:00 UTC | 2g 62s 97c | 2g 62s 97c | volatile | 3 of 3 | 22 | +72% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

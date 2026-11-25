@@ -804,6 +804,7 @@
 | Beaded Wraps of the Eagle | 14094 | 68s 88c | 2026-11-24 16:00 UTC | 99s 0c | 99s 0c | moving | 3 of 3 | 3 |  |
 | Beaded Wraps of the Owl | 14094 | 19s 99c | 2026-11-22 | 19s 99c |  | too new | 1 of 3 | 1 |  |
 | Beaded Wraps of the Sorcerer | 14094 | 2g 65s 50c | 2026-11-23 15:51 UTC | 2g 65s 50c |  | too new | 1 of 3 | 2 |  |
+| Beastwalker Robe | 4476 | 42s 0c | 2026-11-22 | 42s 0c |  | too new | 1 of 3 | 1 |  |
 | Beguiler Robes | 7728 | 4g 66s 0c | 2026-11-24 16:00 UTC | 3g 99s 99c | 4g 66s 0c | moving | 3 of 3 | 6 | +23% |
 | Belt of the Archmage | 18405 | 849g 96s 47c | 2026-11-24 16:00 UTC | 849g 87s 97c | 849g 96s 47c | steady | 3 of 3 | 2 |  |
 | Big Voodoo Cloak | 8216 | 85s 0c | 2026-11-24 16:00 UTC | 82s 14c | 85s 0c | volatile | 3 of 3 | 45 | -16% |
@@ -1013,6 +1014,8 @@
 | Blue Linen Robe | 6242 | 5s 0c | 2026-11-24 16:00 UTC | 4s 99c | 6s 51c | moving | 3 of 3 | 56 | +32% |
 | Blue Linen Vest | 6240 | 2s 99c | 2026-11-24 16:00 UTC | 2s 94c |  | moving | 2 of 3 | 58 | +1% |
 | Blue Overalls | 6263 | 29s 99c | 2026-11-24 16:00 UTC | 29s 99c | 29s 80c | moving | 3 of 3 | 116 | +14% |
+| Bluegill Sandals | 1560 | 49g 99s 0c | 2026-11-23 15:16 UTC | 49g 99s 0c |  | volatile | 2 of 3 | 1 |  |
+| Bog Pickers | 282655 | 5g 0s 0c | 2026-11-23 15:16 UTC | 5g 0s 0c |  | too new | 1 of 3 | 1 |  |
 | Bonecaster's Belt | 14304 | 98s 0c | 2026-11-24 16:00 UTC | 1g 0s 0c | 98s 0c | moving | 3 of 3 | 14 | -31% |
 | Bonecaster's Belt of Arcane Wrath | 14304 | 25g 69s 0c | 2026-11-23 15:16 UTC | 25g 69s 0c |  | too new | 1 of 3 | 1 |  |
 | Bonecaster's Belt of Frost Protection | 14304 | 98s 0c | 2026-11-22 | 98s 0c |  | too new | 1 of 3 | 1 |  |
@@ -2547,6 +2550,7 @@
 | Double-Stitched Cloak | 3811 | 10s 75c | 2026-11-24 16:00 UTC | 10s 75c | 10s 75c | steady | 3 of 3 | 10 | -6% |
 | Double-Stitched Robes | 2613 | 70s 0c | 2026-11-24 16:00 UTC | 74s 99c | 79s 99c | volatile | 3 of 3 | 3 |  |
 | Double-Stitched Woolen Shoulders | 4314 | 6s 29c | 2026-11-24 16:00 UTC | 5s 80c | 6s 0c | moving | 3 of 3 | 137 | +24% |
+| Dragonmaw Battle Shroud | 282658 | 90s 0c | 2026-11-24 16:00 UTC | 90s 0c |  | too new | 1 of 3 | 1 |  |
 | Dreadmist Belt | 16702 | 17g 66s 99c | 2026-11-24 16:00 UTC | 5g 0s 0c | 5g 0s 0c | volatile | 3 of 3 | 63 | -64% |
 | Dreadmist Bracers | 16703 | 5g 47s 98c | 2026-11-24 16:00 UTC | 4g 74s 99c | 5g 47s 98c | volatile | 3 of 3 | 90 | -48% |
 | Dreadmist Wraps | 16705 | 3g 55s 0c | 2026-11-24 16:00 UTC | 8g 0s 0c | 3g 55s 0c | volatile | 3 of 3 | 46 | -57% |
@@ -3614,6 +3618,7 @@
 | Embersilk Tunic of the Whale | 14230 | 77s 46c | 2026-11-23 15:16 UTC | 77s 46c |  | too new | 1 of 3 | 2 |  |
 | Emblazoned Cloak | 4715 | 14s 99c | 2026-11-24 16:00 UTC | 12s 0c | 12s 0c | steady | 3 of 3 | 16 | +13% |
 | Embossed Leather Cloak | 2310 | 2s 50c | 2026-11-24 16:00 UTC | 2s 0c | 2s 0c | moving | 3 of 3 | 122 | +14% |
+| Embroidered Armor | 2435 | 1g 39s 0c | 2026-11-24 16:00 UTC | 1g 39s 0c |  | too new | 1 of 3 | 2 |  |
 | Embroidered Hat | 3892 | 4g 0s 0c | 2026-11-19 12:56 UTC | 4g 50s 0c |  | steady | 1 of 3 | 1 |  |
 | Enchanter's Cowl | 4322 | 23s 59c | 2026-11-24 16:00 UTC | 30s 96c | 34s 98c | moving | 3 of 3 | 44 | -19% |
 | Enduring Cape | 14763 | 39s 49c | 2026-11-24 16:00 UTC | 30s 0c | 39s 49c | moving | 3 of 3 | 19 | +0% |
@@ -3658,6 +3663,13 @@
 | Eternal Bindings of the Channeler | 14330 | 5g 35s 0c | 2026-11-24 16:00 UTC | 4g 2s 0c |  | too new | 2 of 3 | 1 |  |
 | Eternal Bindings of the Elder | 14330 | 2g 69s 0c | 2026-11-23 15:16 UTC | 2g 69s 0c |  | too new | 1 of 3 | 1 |  |
 | Eternal Bindings of the Owl | 14330 | 2g 80s 0c | 2026-11-22 | 2g 80s 0c |  | too new | 1 of 3 | 1 |  |
+| Eternal Boots | 14329 | 4g 75s 99c | 2026-11-24 16:00 UTC | 9g 99s 99c | 9g 99s 99c | moving | 3 of 3 | 3 |  |
+| Eternal Boots of Fire Protection | 14329 | 4g 75s 99c | 2026-11-24 16:00 UTC | 4g 75s 99c |  | too new | 1 of 3 | 1 |  |
+| Eternal Boots of Healing | 14329 | 99g 99s 99c | 2026-11-22 | 99g 99s 99c |  | too new | 1 of 3 | 1 |  |
+| Eternal Boots of Intellect | 14329 | 9g 99s 99c | 2026-11-23 15:16 UTC | 9g 99s 99c |  | too new | 2 of 3 | 1 |  |
+| Eternal Boots of Shadow Wrath | 14329 | 300g 0s 0c | 2026-11-24 16:00 UTC | 300g 0s 0c |  | too new | 1 of 3 | 1 |  |
+| Eternal Boots of the Channeler | 14329 | 9g 75s 99c | 2026-11-24 16:00 UTC | 9g 87s 99c |  | too new | 2 of 3 | 1 |  |
+| Eternal Boots of the Sorcerer | 14329 | 9g 99s 99c | 2026-11-23 15:16 UTC | 9g 99s 99c |  | too new | 1 of 3 | 1 |  |
 | Eternal Cloak | 14331 | 1g 60s 98c | 2026-11-24 16:00 UTC | 1g 80s 0c | 1g 67s 99c | moving | 3 of 3 | 9 | -52% |
 | Eternal Cloak of Arcane Protection | 14331 | 1g 79s 99c | 2026-11-23 15:16 UTC | 1g 79s 99c |  | too new | 2 of 3 | 1 |  |
 | Eternal Cloak of Fiery Wrath | 14331 | 1g 67s 99c | 2026-11-23 15:51 UTC | 2g 56s 49c |  | too new | 2 of 3 | 2 |  |
@@ -3689,9 +3701,17 @@
 | Eternal Cord of the Hierophant | 14337 | 3g 95s 95c | 2026-11-23 15:16 UTC | 3g 95s 95c |  | too new | 1 of 3 | 1 |  |
 | Eternal Cord of the Owl | 14337 | 8g 22s 10c | 2026-11-22 | 8g 22s 10c |  | too new | 1 of 3 | 1 |  |
 | Eternal Cord of the Sorcerer | 14337 | 12g 49s 0c | 2026-11-24 16:00 UTC | 12g 49s 0c |  | too new | 1 of 3 | 1 |  |
+| Eternal Crown | 14332 | 25g 36s 0c | 2026-11-24 16:00 UTC | 25g 36s 0c |  | too new | 1 of 3 | 1 |  |
+| Eternal Crown of Arcane Wrath | 14332 | 25g 36s 0c | 2026-11-24 16:00 UTC | 25g 36s 0c |  | too new | 1 of 3 | 1 |  |
 | Eternal Gloves | 14333 | 3g 0s 0c | 2026-11-23 15:16 UTC | 3g 0s 0c |  | steady | 2 of 3 | 2 |  |
 | Eternal Gloves of Spirit | 14333 | 3g 0s 0c | 2026-11-23 15:16 UTC | 3g 0s 0c |  | too new | 2 of 3 | 1 |  |
 | Eternal Gloves of Stamina | 14333 | 3g 99s 99c | 2026-11-22 | 3g 99s 99c |  | too new | 1 of 3 | 2 |  |
+| Eternal Sarong | 14334 | 12g 1s 0c | 2026-11-24 16:00 UTC | 18g 99s 0c | 18g 99s 0c | moving | 3 of 3 | 1 |  |
+| Eternal Sarong of Frozen Wrath | 14334 | 19g 33s 0c | 2026-11-22 | 19g 33s 0c |  | too new | 1 of 3 | 1 |  |
+| Eternal Sarong of the Channeler | 14334 | 12g 1s 0c | 2026-11-24 16:00 UTC | 12g 1s 0c |  | too new | 1 of 3 | 1 |  |
+| Eternal Sarong of the Eagle | 14334 | 18g 99s 0c | 2026-11-23 15:16 UTC | 18g 99s 0c |  | too new | 1 of 3 | 1 |  |
+| Eternal Spaulders | 14335 | 30g 99s 99c | 2026-11-22 | 30g 99s 99c |  | too new | 1 of 3 | 1 |  |
+| Eternal Spaulders of Magic | 14335 | 30g 99s 99c | 2026-11-22 | 30g 99s 99c |  | too new | 1 of 3 | 1 |  |
 | Eye of Flame | 3075 | 13g 0s 0c | 2026-11-24 16:00 UTC | 12g 99s 0c | 13g 0s 0c | volatile | 3 of 3 | 20 | -23% |
 | Feathered Cape | 5971 | 1g 0s 0c | 2026-11-24 16:00 UTC | 90s 51c |  | moving | 1 of 3 | 1 | -9% |
 | Felcloth Boots | 14108 | 6g 0s 0c | 2026-11-24 16:00 UTC | 5g 99s 99c | 6g 0s 0c | moving | 3 of 3 | 28 | -21% |
@@ -3730,6 +3750,7 @@
 | First Mate Hat | 2955 | 20g 0s 0c | 2026-11-24 16:00 UTC | 15g 56s 0c | 25g 0s 0c | volatile | 3 of 3 | 8 | -16% |
 | Flimsy Chain Cloak | 2652 | 50c | 2026-11-24 16:00 UTC | 2s 0c | 2s 0c | volatile | 3 of 3 | 11 | +100% |
 | Flying Tiger Goggles | 4368 | 7s 98c | 2026-11-24 16:00 UTC | 5s 20c | 5s 20c | moving | 3 of 3 | 228 | +4% |
+| Footpad's Pants | 48 | 99s 0c | 2026-11-24 16:00 UTC | 99s 0c | 99s 0c | steady | 3 of 3 | 2 |  |
 | Footpad's Shoes | 47 | 99s 0c | 2026-11-21 09:03 UTC | 99s 0c |  | steady | 0 of 3 |  |  |
 | Forest Cloak | 4710 | 6s 50c | 2026-11-24 16:00 UTC | 6s 0c | 6s 0c | steady | 3 of 3 | 19 | +1% |
 | Forgotten Wraps | 9433 | 2g 0s 0c | 2026-11-24 16:00 UTC | 1g 89s 99c | 2g 0s 0c | moving | 3 of 3 | 34 | -5% |
@@ -6496,7 +6517,11 @@
 | Outrunner's Cloak of the Wolf | 15501 | 35s 0c | 2026-11-24 16:00 UTC | 15s 0c | 15s 0c | volatile | 3 of 3 | 1 |  |
 | Overlinked Chain Cloak | 4003 | 44s 0c | 2026-11-24 16:00 UTC | 44s 0c | 42s 0c | moving | 3 of 3 | 4 | -29% |
 | Padded Armor | 2160 | 1g 49s 99c | 2026-11-24 16:00 UTC | 1g 24s 91c |  | volatile | 1 of 3 | 1 |  |
+| Padded Belt | 3591 | 44s 44c | 2026-11-24 16:00 UTC | 44s 44c |  | too new | 1 of 3 | 1 |  |
+| Padded Boots | 2156 | 81s 74c | 2026-11-21 09:03 UTC | 85s 87c |  | too new | 1 of 3 | 3 |  |
 | Padded Bracers | 3592 | 1g 72s 44c | 2026-11-21 18:23 UTC | 47s 0c |  | volatile | 1 of 3 | 3 |  |
+| Padded Gloves | 2158 | 45s 56c | 2026-11-21 18:23 UTC | 45s 28c |  | too new | 1 of 3 | 2 |  |
+| Padded Pants | 2159 | 13s 0c | 2026-11-23 15:16 UTC | 94s 0c |  | volatile | 2 of 3 | 5 |  |
 | Pads of the Venom Spider | 13103 | 35s 0c | 2026-11-24 16:00 UTC | 36s 0c | 35s 0c | volatile | 3 of 3 | 36 | -22% |
 | Pagan Bands | 14160 | 4s 65c | 2026-11-24 16:00 UTC | 3s 60c | 4s 65c | moving | 3 of 3 | 62 | +22% |
 | Pagan Bands of Arcane Protection | 14160 | 4s 65c | 2026-11-24 16:00 UTC | 4s 65c | 4s 65c | volatile | 3 of 3 | 3 |  |
@@ -9044,6 +9069,8 @@
 | Tattered Cloth Pants | 194 | 35s 0c | 2026-11-24 16:00 UTC | 30s 0c | 48s 0c | volatile | 3 of 3 | 23 | -5% |
 | Tattered Cloth Vest | 193 | 15s 0c | 2026-11-24 16:00 UTC | 49s 0c | 20s 0c | volatile | 3 of 3 | 44 | -11% |
 | Tattered Kirin Tor Cloak | 286994 | 5g 99s 99c | 2026-11-24 16:00 UTC | 7g 80s 0c | 7g 95s 0c | moving | 3 of 3 | 4 | +95% |
+| Thendal Apprentice's Boots | 271659 | 15g 0s 0c | 2026-11-24 16:00 UTC | 15g 0s 0c |  | too new | 2 of 3 | 1 |  |
+| Thendal Apprentice's Pants | 271658 | 15g 0s 0c | 2026-11-24 16:00 UTC | 15g 0s 0c |  | too new | 2 of 3 | 1 |  |
 | Thendal Novice's Boots | 271661 | 1g 28s 97c | 2026-11-24 16:00 UTC | 1g 28s 97c | 1g 35s 0c | volatile | 3 of 3 | 5 | -26% |
 | Thendal Novice's Pants | 271662 | 1g 39s 0c | 2026-11-24 16:00 UTC | 2g 5s 0c | 1g 40s 0c | volatile | 3 of 3 | 3 |  |
 | Thendal Survivalist's Boots | 271665 | 1g 9s 0c | 2026-11-24 16:00 UTC | 3g 80s 0c | 1g 10s 0c | volatile | 3 of 3 | 6 |  |
@@ -9051,8 +9078,10 @@
 | Thendal Warrior's Boots | 271671 | 4g 20s 0c | 2026-11-24 16:00 UTC | 4g 20s 0c |  | volatile | 2 of 3 | 2 |  |
 | Thendal Warrior's Pants | 271672 | 24s 99c | 2026-11-24 16:00 UTC | 3g 98s 0c | 1g 0s 0c | volatile | 3 of 3 | 2 | -84% |
 | Thick Cloak | 3964 | 24s 0c | 2026-11-24 16:00 UTC | 30s 0c | 24s 0c | moving | 3 of 3 | 4 | -6% |
+| Thick Cloth Belt | 3597 | 20s 0c | 2026-11-24 16:00 UTC | 20s 0c |  | too new | 2 of 3 | 2 |  |
 | Thick Cloth Bracers | 3598 | 44s 44c | 2026-11-24 16:00 UTC | 44s 44c |  | too new | 1 of 3 | 1 |  |
 | Thick Cloth Gloves | 203 | 44s 44c | 2026-11-24 16:00 UTC | 44s 44c |  | volatile | 2 of 3 | 2 |  |
+| Thick Cloth Pants | 201 | 49s 0c | 2026-11-24 16:00 UTC | 49s 0c |  | too new | 1 of 3 | 1 |  |
 | Thick Cloth Shoes | 202 | 44s 0c | 2026-11-24 16:00 UTC | 44s 0c |  | volatile | 1 of 3 | 1 |  |
 | Thick Cloth Vest | 200 | 50s 0c | 2026-11-24 16:00 UTC | 50s 0c | 50s 0c | steady | 3 of 3 | 1 |  |
 | Thick Scale Cloak | 15547 | 24s 0c | 2026-11-24 16:00 UTC | 13s 99c | 13s 99c | moving | 3 of 3 | 29 | +8% |
@@ -9308,6 +9337,7 @@
 | Trapper's Boots | 6127 | 95s 0c | 2026-11-24 16:00 UTC | 1g 49s 0c |  | volatile | 1 of 3 | 3 | -46% |
 | Trapper's Pants | 6126 | 89s 0c | 2026-11-24 16:00 UTC | 1g 0s 0c |  | volatile | 2 of 3 | 2 |  |
 | Traveler's Cloak | 8297 | 99s 94c | 2026-11-24 16:00 UTC | 1g 7s 0c | 99s 94c | moving | 3 of 3 | 14 | -14% |
+| Treads of Rotting Flesh | 284161 | 1g 75s 0c | 2026-11-24 16:00 UTC | 1g 76s 0c | 1g 76s 0c | steady | 3 of 3 | 1 |  |
 | Tree Bark Jacket | 1486 | 2g 0s 98c | 2026-11-24 16:00 UTC | 1g 55s 47c |  | moving | 2 of 3 | 8 | +55% |
 | Tribal Cloak | 4674 | 99c | 2026-11-24 16:00 UTC | 1s 0c | 99c | moving | 3 of 3 | 9 | +0% |
 | Trickster's Cloak | 15364 | 26s 0c | 2026-11-24 16:00 UTC | 29s 98c | 26s 0c | moving | 3 of 3 | 15 | -19% |
@@ -10054,6 +10084,7 @@
 | Watcher's Robes of the Prophet | 14184 | 38s 0c | 2026-11-24 16:00 UTC | 38s 0c |  | too new | 1 of 3 | 1 |  |
 | Watcher's Robes of the Sorcerer | 14184 | 68s 0c | 2026-11-24 16:00 UTC | 1g 0s 50c |  | too new | 2 of 3 | 2 |  |
 | Watcher's Robes of the Whale | 14184 | 21s 0c | 2026-11-23 15:16 UTC | 21s 50c |  | too new | 2 of 3 | 2 |  |
+| Web-covered Boots | 6148 | 1g 0s 0c | 2026-11-24 16:00 UTC | 3g 99s 99c | 3g 99s 99c | moving | 3 of 3 | 1 |  |
 | Webbed Cloak | 3261 | 40s 0c | 2026-11-24 16:00 UTC | 40s 0c |  | moving | 1 of 3 | 1 | +0% |
 | Webbed Pants | 3263 | 1g 99s 99c | 2026-11-24 16:00 UTC | 25s 0c |  | volatile | 2 of 3 | 2 |  |
 | Webwing Cloak | 5751 | 15s 90c | 2026-11-24 16:00 UTC | 14s 0c | 15s 90c | moving | 3 of 3 | 27 | +10% |
@@ -10350,5 +10381,6 @@
 | Wrangler's Cloak of the Whale | 15333 | 6s 0c | 2026-11-22 | 6s 0c |  | too new | 1 of 3 | 1 |  |
 | Wrangler's Cloak of the Wolf | 15333 | 53s 90c | 2026-11-24 16:00 UTC | 76s 90c |  | too new | 2 of 3 | 1 |  |
 | Xorothian Footwraps | 282631 | 3g 0s 0c | 2026-11-24 16:00 UTC | 10g 0s 0c | 8g 0s 0c | volatile | 3 of 3 | 9 | -87% |
+| Zephyr Cloak | 18677 | 15g 0s 0c | 2026-11-23 15:16 UTC | 15g 0s 0c |  | too new | 1 of 3 | 1 |  |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

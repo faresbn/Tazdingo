@@ -759,6 +759,7 @@
 | Heavy Lamellar Shield of the Sorcerer | 10204 | 3g 20s 99c | 2026-11-23 15:16 UTC | 3g 20s 99c |  | too new | 1 of 3 | 1 |  |
 | Heavy Lamellar Shield of the Wolf | 10204 | 7g 96s 64c | 2026-11-24 16:00 UTC | 7g 96s 64c |  | too new | 1 of 3 | 1 |  |
 | Hero's Buckler | 8313 | 4g 60s 0c | 2026-11-24 16:00 UTC | 4g 60s 0c | 4g 60s 0c | steady | 3 of 3 | 6 |  |
+| Heroic Guard | 15887 | 4g 44s 0c | 2026-11-21 18:23 UTC | 4g 44s 0c |  | too new | 0 of 3 |  |  |
 | High Chief's Shield | 14964 | 3g 0s 0c | 2026-11-24 16:00 UTC | 3g 12s 0c | 3g 27s 0c | moving | 3 of 3 | 6 | -38% |
 | High Chief's Shield of Fire Protection | 14964 | 4g 20s 0c | 2026-11-22 | 4g 20s 0c |  | too new | 1 of 3 | 1 |  |
 | High Chief's Shield of Frost Protection | 14964 | 4g 77s 0c | 2026-11-22 | 4g 77s 0c |  | too new | 1 of 3 | 1 |  |
@@ -775,6 +776,8 @@
 | Hulking Shield | 15891 | 67s 0c | 2026-11-24 16:00 UTC | 26s 0c | 26s 0c | volatile | 3 of 3 | 8 | +8% |
 | Hunting Buckler | 3652 | 8s 0c | 2026-11-24 16:00 UTC | 5s 80c | 8s 0c | moving | 3 of 3 | 26 | +45% |
 | Husk of the Husk | 284066 | 10g 20s 0c | 2026-11-24 16:00 UTC | 5g 99s 0c | 5g 20s 0c | volatile | 3 of 3 | 4 |  |
+| Hyperion Shield | 10367 | 4g 95s 0c | 2026-11-23 15:51 UTC | 4g 95s 0c |  | too new | 1 of 3 | 1 |  |
+| Hyperion Shield of Power | 10367 | 4g 95s 0c | 2026-11-23 15:51 UTC | 4g 95s 0c |  | too new | 1 of 3 | 1 |  |
 | Imbued Shield | 15943 | 4g 0s 0c | 2026-11-24 16:00 UTC | 4g 8s 99c | 4g 8s 98c | moving | 3 of 3 | 4 |  |
 | Impenetrable Wall | 15667 | 4g 32s 0c | 2026-11-21 09:03 UTC | 4g 32s 0c |  | too new | 0 of 3 |  |  |
 | Infantry Shield | 7108 | 75s 0c | 2026-11-24 16:00 UTC | 19s 90c | 22s 90c | volatile | 3 of 3 | 3 | +128% |
@@ -876,6 +879,7 @@
 | Jazeraint Shield of the Wolf | 9899 | 79s 66c | 2026-11-24 16:00 UTC | 79s 66c |  | too new | 1 of 3 | 1 |  |
 | Jouster's Crest | 4070 | 75s 20c | 2026-11-24 16:00 UTC | 75s 49c | 75s 25c | steady | 3 of 3 | 13 | -5% |
 | Khan's Buckler | 14780 | 1g 99s 90c | 2026-11-24 16:00 UTC | 1g 74s 0c | 1g 64s 0c | moving | 3 of 3 | 5 | -12% |
+| Kite Shield | 2446 | 1g 99s 99c | 2026-11-24 16:00 UTC | 1g 99s 99c |  | too new | 1 of 3 | 1 |  |
 | Knight's Crest | 7465 | 69s 38c | 2026-11-24 16:00 UTC | 67s 47c | 67s 40c | steady | 3 of 3 | 33 | +0% |
 | Knight's Crest of Agility | 7465 | 98s 98c | 2026-11-24 16:00 UTC | 83s 19c |  | too new | 2 of 3 | 2 |  |
 | Knight's Crest of Arcane Protection | 7465 | 1g 20s 0c | 2026-11-24 16:00 UTC | 1g 20s 0c |  | too new | 2 of 3 | 1 |  |
@@ -904,8 +908,10 @@
 | Knight's Crest of the Prophet | 7465 | 4g 0s 0c | 2026-11-24 16:00 UTC | 1g 67s 40c | 1g 67s 40c | volatile | 3 of 3 | 3 |  |
 | Knight's Crest of the Tiger | 7465 | 67s 40c | 2026-11-22 | 67s 40c |  | too new | 1 of 3 | 1 |  |
 | Knight's Crest of the Wolf | 7465 | 1g 0s 40c | 2026-11-24 16:00 UTC | 67s 40c | 67s 40c | moving | 3 of 3 | 1 |  |
+| Krellack's Carapace | 286609 | 3g 69s 0c | 2026-11-23 15:16 UTC | 3g 69s 0c |  | too new | 1 of 3 | 1 |  |
 | Lambent Scale Shield | 3656 | 26s 98c | 2026-11-24 16:00 UTC | 22s 21c | 26s 98c | steady | 3 of 3 | 16 | -5% |
 | Large Metal Shield | 2445 | 90s 0c | 2026-11-18 16:01 UTC | 50s 50c |  | too new | 0 of 3 |  |  |
+| Large Round Shield | 2129 | 50s 0c | 2026-11-21 09:03 UTC | 50s 0c |  | too new | 0 of 3 |  |  |
 | Large Wooden Shield | 1200 | 1g 0s 0c | 2026-11-24 16:00 UTC | 56s 50c |  | volatile | 2 of 3 | 2 |  |
 | Lofty Shield | 14930 | 3g 55s 54c | 2026-11-24 16:00 UTC | 3g 45s 0c | 3g 25s 54c | moving | 3 of 3 | 4 | -23% |
 | Lofty Shield of Healing | 14930 | 18g 90s 54c | 2026-11-24 16:00 UTC | 18g 90s 54c |  | too new | 1 of 3 | 1 |  |
@@ -1007,6 +1013,7 @@
 | Merciless Shield of the Physician | 15657 | 2g 88s 0c | 2026-11-24 16:00 UTC | 2g 88s 0c |  | too new | 1 of 3 | 1 |  |
 | Merciless Shield of the Whale | 15657 | 3g 40s 0c | 2026-11-23 15:16 UTC | 3g 40s 0c |  | too new | 2 of 3 | 1 |  |
 | Merciless Shield of the Wolf | 15657 | 6g 78s 75c | 2026-11-23 15:16 UTC | 6g 78s 75c |  | too new | 1 of 3 | 1 |  |
+| Metal Buckler | 17189 | 37s 0c | 2026-11-22 | 37s 0c |  | too new | 1 of 3 | 1 |  |
 | Mountainside Buckler | 13082 | 1g 99s 0c | 2026-11-24 16:00 UTC | 1g 89s 0c | 1g 99s 0c | volatile | 3 of 3 | 36 | -24% |
 | Myrmidon's Defender | 8134 | 1g 70s 0c | 2026-11-24 16:00 UTC | 1g 79s 0c | 1g 70s 0c | steady | 3 of 3 | 10 | -10% |
 | Nefarious Buckler | 4477 | 66s 0c | 2026-11-11 | 66s 0c |  | too new | 0 of 3 |  |  |
@@ -1190,6 +1197,7 @@
 | Redbeard Crest | 12997 | 1g 44s 0c | 2026-11-24 16:00 UTC | 95s 0c | 1g 0s 99c | volatile | 3 of 3 | 19 | +96% |
 | Reflective Heater | 3816 | 20s 99c | 2026-11-24 16:00 UTC | 21s 0c | 21s 0c | steady | 3 of 3 | 12 | -7% |
 | Reinforced Buckler | 3817 | 15s 90c | 2026-11-24 16:00 UTC | 15s 91c | 15s 90c | steady | 3 of 3 | 6 | -4% |
+| Reinforced Targe | 17192 | 1g 0s 0c | 2026-11-24 16:00 UTC | 1g 50s 0c |  | too new | 2 of 3 | 1 |  |
 | Renegade Shield | 9873 | 58s 24c | 2026-11-24 16:00 UTC | 58s 26c | 58s 20c | steady | 3 of 3 | 27 | -1% |
 | Renegade Shield of Agility | 9873 | 1g 0s 19c | 2026-11-24 16:00 UTC | 1g 0s 19c |  | too new | 1 of 3 | 1 |  |
 | Renegade Shield of Arcane Protection | 9873 | 58s 24c | 2026-11-23 15:16 UTC | 58s 24c |  | too new | 1 of 3 | 1 |  |
@@ -1636,6 +1644,7 @@
 | Warbringer's Shield of the Tiger | 14947 | 4g 0s 0c | 2026-11-24 16:00 UTC | 4g 0s 0c |  | too new | 1 of 3 | 2 |  |
 | Warbringer's Shield of the Whale | 14947 | 4g 23s 0c | 2026-11-24 16:00 UTC | 3g 11s 50c |  | too new | 2 of 3 | 2 |  |
 | Warbringer's Shield of the Wolf | 14947 | 2g 55s 0c | 2026-11-24 16:00 UTC | 2g 55s 0c | 2g 55s 0c | moving | 3 of 3 | 2 |  |
+| Warleader's Shield | 15991 | 4g 39s 0c | 2026-11-24 16:00 UTC | 4g 39s 0c |  | too new | 2 of 3 | 1 |  |
 | Warmonger's Buckler | 9958 | 1g 94s 0c | 2026-11-24 16:00 UTC | 1g 89s 0c | 1g 94s 0c | steady | 3 of 3 | 12 | -5% |
 | Warmonger's Buckler of Agility | 9958 | 1g 97s 0c | 2026-11-24 16:00 UTC | 1g 97s 0c | 1g 97s 0c | moving | 3 of 3 | 1 |  |
 | Warmonger's Buckler of Defense | 9958 | 2g 1s 99c | 2026-11-22 | 2g 1s 99c |  | too new | 1 of 3 | 1 |  |
@@ -1678,6 +1687,7 @@
 | Worn Heater Shield | 2376 | 96s 0c | 2026-11-24 16:00 UTC | 96s 0c |  | volatile | 1 of 3 | 6 | +174% |
 | Worn Large Shield | 2213 | 8s 90c | 2026-11-24 16:00 UTC | 5s 0c | 7s 0c | volatile | 3 of 3 | 15 | +67% |
 | Worn Wooden Buckler | 876 | 4g 20s 0c | 2026-11-21 09:03 UTC | 4g 20s 0c |  | volatile | 0 of 3 |  |  |
+| Worn Wooden Shield | 2362 | 22s 0c | 2026-11-21 09:03 UTC | 22s 0c |  | too new | 0 of 3 |  |  |
 | Wrangler's Buckler | 15332 | 22s 80c | 2026-11-24 16:00 UTC | 22s 80c | 22s 95c | steady | 3 of 3 | 27 | -1% |
 | Wrangler's Buckler of Agility | 15332 | 22s 80c | 2026-11-24 16:00 UTC | 23s 85c |  | too new | 2 of 3 | 2 |  |
 | Wrangler's Buckler of Arcane Protection | 15332 | 89s 0c | 2026-11-23 15:16 UTC | 89s 0c |  | too new | 1 of 3 | 1 |  |

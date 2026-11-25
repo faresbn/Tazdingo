@@ -366,6 +366,7 @@
 | Bloodwoven Rod of the Wolf | 15982 | 1g 16s 98c | 2026-11-22 | 1g 16s 98c |  | too new | 1 of 3 | 1 |  |
 | Blue Linen Shirt | 2577 | 2s 0c | 2026-11-23 15:51 UTC | 1s 93c |  | moving | 2 of 3 | 55 | +2% |
 | Blush Ember Ring | 13093 | 1g 20s 86c | 2026-11-24 16:00 UTC | 1g 20s 86c | 1g 25s 0c | moving | 3 of 3 | 20 | +0% |
+| Bold Yellow Shirt | 3426 | 4g 99s 99c | 2026-11-24 16:00 UTC | 4g 99s 99c | 4g 99s 99c | steady | 3 of 3 | 1 |  |
 | Bonecaster's Star | 15986 | 1g 69s 90c | 2026-11-24 16:00 UTC | 2g 99s 95c | 2g 55s 90c | volatile | 3 of 3 | 10 | -63% |
 | Bonecaster's Star of Arcane Protection | 15986 | 4g 15s 98c | 2026-11-24 16:00 UTC | 3g 83s 44c |  | too new | 2 of 3 | 1 |  |
 | Bonecaster's Star of Arcane Wrath | 15986 | 20g 69s 90c | 2026-11-24 16:00 UTC | 20g 69s 90c | 20g 69s 90c | volatile | 3 of 3 | 1 |  |
@@ -865,6 +866,7 @@
 | Elegant Scepter of the Owl | 15940 | 15g 35s 75c | 2026-11-24 16:00 UTC | 15g 35s 75c |  | too new | 1 of 3 | 1 |  |
 | Elegant Scepter of the Sorcerer | 15940 | 3g 99s 99c | 2026-11-22 | 3g 99s 99c |  | too new | 1 of 3 | 1 |  |
 | Elegant Scepter of the Whale | 15940 | 14g 99s 0c | 2026-11-24 16:00 UTC | 14g 99s 0c |  | too new | 1 of 3 | 2 |  |
+| Elemental Ember | 18672 | 20g 0s 0c | 2026-11-23 15:16 UTC | 20g 0s 0c |  | too new | 1 of 3 | 1 |  |
 | Embersilk Stave | 15979 | 89s 0c | 2026-11-24 16:00 UTC | 78s 0c | 89s 0c | moving | 3 of 3 | 7 | -26% |
 | Embersilk Stave of Agility | 15979 | 1g 95s 0c | 2026-11-23 15:16 UTC | 1g 87s 50c |  | too new | 2 of 3 | 1 |  |
 | Embersilk Stave of Fire Protection | 15979 | 89s 0c | 2026-11-24 16:00 UTC | 89s 0c |  | too new | 1 of 3 | 1 |  |
@@ -923,6 +925,7 @@
 | Fen Ring of the Wolf | 12010 | 70s 97c | 2026-11-23 15:16 UTC | 71s 47c |  | too new | 2 of 3 | 2 |  |
 | Fireproof Orb | 4836 | 40s 0c | 2026-11-24 16:00 UTC | 40s 0c | 47s 0c | volatile | 3 of 3 | 9 | +67% |
 | Flame Seared Signet | 282080 | 2g 0s 0c | 2026-11-23 15:16 UTC | 3g 66s 99c |  | volatile | 2 of 3 | 8 | -59% |
+| Footpad's Shirt | 49 | 1g 99s 0c | 2026-11-23 15:16 UTC | 1g 59s 50c |  | too new | 2 of 3 | 2 |  |
 | Forest Hoop | 12011 | 48s 20c | 2026-11-24 16:00 UTC | 48s 90c | 48s 90c | steady | 3 of 3 | 59 | -2% |
 | Forest Hoop of Agility | 12011 | 1g 99s 99c | 2026-11-24 16:00 UTC | 2g 99s 99c | 2g 99s 99c | moving | 3 of 3 | 2 |  |
 | Forest Hoop of Arcane Protection | 12011 | 48s 90c | 2026-11-23 15:16 UTC | 48s 90c |  | too new | 1 of 3 | 1 |  |
@@ -996,6 +999,7 @@
 | Forest Pendant of the Wolf | 12040 | 70s 0c | 2026-11-24 16:00 UTC | 1g 12s 0c |  | too new | 2 of 3 | 3 |  |
 | Formal White Shirt | 4334 | 7s 49c | 2026-11-24 16:00 UTC | 5s 55c | 5s 55c | steady | 3 of 3 | 95 | +1% |
 | Freezing Band | 942 | 25g 97s 1c | 2026-11-24 16:00 UTC | 33g 0s 0c | 27g 55s 0c | volatile | 3 of 3 | 14 | -59% |
+| Frigid Ring | 18679 | 25g 78s 0c | 2026-11-24 16:00 UTC | 25g 78s 0c |  | too new | 1 of 3 | 1 |  |
 | Furlfeather Ring | 286745 | 2g 44s 18c | 2026-11-24 16:00 UTC | 2g 0s 0c | 2g 44s 18c | volatile | 3 of 3 | 7 | -33% |
 | Gaea's Scepter | 15983 | 1g 30s 0c | 2026-11-24 16:00 UTC | 1g 44s 95c | 1g 30s 0c | moving | 3 of 3 | 7 | -28% |
 | Gaea's Scepter of Arcane Wrath | 15983 | 2g 99s 0c | 2026-11-22 | 2g 99s 0c |  | too new | 1 of 3 | 1 |  |
@@ -1225,6 +1229,9 @@
 | Hematite Link of the Whale | 11973 | 1g 0s 0c | 2026-11-24 16:00 UTC | 1g 0s 0c |  | too new | 1 of 3 | 1 |  |
 | Hematite Link of the Wolf | 11973 | 1g 50s 0c | 2026-11-24 16:00 UTC | 1g 75s 0c |  | too new | 2 of 3 | 2 |  |
 | Hibernal Sphere | 15937 | 97s 8c | 2026-11-24 16:00 UTC | 98s 0c | 97s 99c | steady | 3 of 3 | 11 | -8% |
+| High Councillor's Scepter | 15941 | 10g 0s 0c | 2026-11-24 16:00 UTC | 80g 0s 0c |  | too new | 2 of 3 | 1 |  |
+| High Councillor's Scepter of Nature's Wrath | 15941 | 10g 0s 0c | 2026-11-24 16:00 UTC | 10g 0s 0c |  | too new | 1 of 3 | 1 |  |
+| High Councillor's Scepter of Shadow Wrath | 15941 | 150g 0s 0c | 2026-11-23 15:16 UTC | 150g 0s 0c |  | too new | 1 of 3 | 1 |  |
 | Highborne Star | 15967 | 1g 85s 98c | 2026-11-24 16:00 UTC | 2g 0s 0c | 1g 86s 0c | volatile | 3 of 3 | 6 | -65% |
 | Horizon Choker | 13085 | 4g 50s 0c | 2026-11-23 15:51 UTC | 4g 14s 0c |  | volatile | 2 of 3 | 20 | -31% |
 | Hyper-Radiant Flame Reflector | 18638 | 45g 55s 55c | 2026-11-24 16:00 UTC | 78g 5s 99c | 64g 1s 99c | moving | 3 of 3 | 4 |  |
@@ -1804,6 +1811,9 @@
 | Marsh Ring of the Tiger | 12012 | 2g 49s 99c | 2026-11-22 | 2g 49s 99c |  | too new | 1 of 3 | 1 |  |
 | Marsh Ring of the Whale | 12012 | 46s 89c | 2026-11-24 16:00 UTC | 1g 0s 99c | 1g 0s 99c | moving | 3 of 3 | 1 |  |
 | Marsh Ring of the Wolf | 12012 | 46s 89c | 2026-11-24 16:00 UTC | 46s 89c |  | too new | 1 of 3 | 1 |  |
+| Master's Rod | 15942 | 29g 98s 98c | 2026-11-24 16:00 UTC | 29g 98s 98c |  | volatile | 2 of 3 | 1 |  |
+| Master's Rod of Power | 15942 | 29g 98s 98c | 2026-11-24 16:00 UTC | 29g 98s 98c |  | too new | 1 of 3 | 1 |  |
+| Master's Rod of the Gorilla | 15942 | 10g 92s 0c | 2026-11-23 15:16 UTC | 10g 92s 0c |  | too new | 1 of 3 | 1 |  |
 | Meadow Ring | 12006 | 30s 0c | 2026-11-24 16:00 UTC | 30s 0c | 35s 0c | moving | 3 of 3 | 32 | +40% |
 | Meadow Ring of Agility | 12006 | 1g 50s 0c | 2026-11-24 16:00 UTC | 1g 15s 0c | 1g 15s 0c | volatile | 3 of 3 | 1 |  |
 | Meadow Ring of Arcane Protection | 12006 | 35s 0c | 2026-11-23 15:16 UTC | 42s 49c |  | too new | 2 of 3 | 1 |  |
@@ -2839,6 +2849,7 @@
 | The 1 Ring | 8350 | 4g 98s 0c | 2026-11-24 16:00 UTC | 4g 0s 0c | 6g 50s 0c | volatile | 3 of 3 | 35 | +52% |
 | The Lion Horn of Stormwind | 14557 | 550g 54s 0c | 2026-11-24 16:00 UTC | 675g 30s 50c |  | moving | 2 of 3 | 2 |  |
 | The Queen's Jewel | 13094 | 94s 0c | 2026-11-24 16:00 UTC | 80s 0c | 94s 0c | moving | 3 of 3 | 21 | +10% |
+| Thendal Apprentice's Shirt | 271655 | 15g 0s 0c | 2026-11-24 16:00 UTC | 15g 0s 0c | 15g 0s 0c | volatile | 3 of 3 | 2 |  |
 | Thendal Novice's Shirt | 271663 | 55s 94c | 2026-11-24 16:00 UTC | 55s 94c | 69s 95c | volatile | 3 of 3 | 4 | -20% |
 | Thendal Survivalist's Shirt | 271668 | 25s 99c | 2026-11-24 16:00 UTC | 25s 99c | 1g 0s 0c | volatile | 3 of 3 | 21 | +115% |
 | Thendal Warrior's Shirt | 271669 | 2g 0s 0c | 2026-11-24 16:00 UTC | 79s 99c | 2g 0s 0c | volatile | 3 of 3 | 4 | +98% |

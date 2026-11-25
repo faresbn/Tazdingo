@@ -252,6 +252,7 @@
 | Monk's Staff of the Sorcerer | 866 | 3g 0s 0c | 2026-11-24 16:00 UTC | 3g 88s 88c | 3g 88s 88c | moving | 3 of 3 | 3 |  |
 | Monk's Staff of the Tiger | 866 | 1g 67s 0c | 2026-11-24 16:00 UTC | 1g 67s 0c |  | too new | 2 of 3 | 2 |  |
 | Monk's Staff of the Whale | 866 | 1g 67s 0c | 2026-11-24 16:00 UTC | 2g 0s 0c | 2g 0s 0c | steady | 3 of 3 | 1 |  |
+| Naga Caster's Staff | 284850 | 25g 65s 0c | 2026-11-24 16:00 UTC | 25g 65s 0c |  | volatile | 2 of 3 | 2 |  |
 | Nightbane Staff | 3227 | 40s 0c | 2026-11-11 | 40s 0c |  | too new | 0 of 3 |  |  |
 | Oaken War Staff | 1831 | 20s 0c | 2026-11-24 16:00 UTC | 17s 89c | 17s 89c | steady | 3 of 3 | 14 | +0% |
 | Pylon Poker | 287046 | 55g 0s 0c | 2026-11-24 16:00 UTC | 89g 99s 0c | 70g 17s 0c | moving | 3 of 3 | 3 |  |
@@ -326,6 +327,7 @@
 | Staff of Hale Magefire | 13000 | 25g 39s 99c | 2026-11-24 16:00 UTC | 18g 99s 0c | 18g 99s 0c | volatile | 3 of 3 | 10 | +0% |
 | Staff of Jordan | 873 | 84g 0s 0c | 2026-11-24 16:00 UTC | 75g 0s 0c | 84g 0s 0c | moving | 3 of 3 | 15 | +13% |
 | Staff of Nobles | 3902 | 3g 50s 0c | 2026-11-24 16:00 UTC | 3g 35s 0c |  | volatile | 2 of 3 | 2 | +109% |
+| Staff of Protection | 12252 | 6g 90s 0c | 2026-11-21 18:23 UTC | 6g 90s 0c |  | too new | 0 of 3 |  |  |
 | Staff of the Blessed Seer | 2271 | 6g 50s 90c | 2026-11-24 16:00 UTC | 3g 15s 0c | 3g 20s 48c | volatile | 3 of 3 | 14 | +105% |
 | Staff of the Friar | 3415 | 5g 0s 66c | 2026-11-24 16:00 UTC | 2g 30s 0c | 5g 0s 66c | volatile | 3 of 3 | 7 | +99% |
 | Staff of the Shade | 2549 | 3g 30s 0c | 2026-11-24 16:00 UTC | 3g 15s 99c | 3g 30s 0c | volatile | 3 of 3 | 4 | +144% |

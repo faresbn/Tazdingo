@@ -225,11 +225,13 @@
 | Fine Pointed Dagger | 4023 | 87s 0c | 2026-11-24 16:00 UTC | 69s 0c | 87s 0c | moving | 3 of 3 | 7 | -18% |
 | Fisherman Knife | 2763 | 4s 0c | 2026-11-24 16:00 UTC | 2s 95c | 4s 0c | steady | 3 of 3 | 4 | +20% |
 | Flesh Piercer | 3336 | 42s 0c | 2026-11-23 15:51 UTC | 42s 0c |  | steady | 2 of 3 | 13 | -7% |
+| Giant Tarantula Fang | 1287 | 1g 54s 32c | 2026-11-24 16:00 UTC | 1g 53s 66c | 1g 54s 32c | moving | 3 of 3 | 2 |  |
 | Glinting Steel Dagger | 12259 | 1g 20s 0c | 2026-11-24 16:00 UTC | 1g 25s 98c | 1g 25s 98c | moving | 3 of 3 | 6 | +1% |
 | Goblin Screwdriver | 1936 | 6g 94s 90c | 2026-11-24 16:00 UTC | 3g 90s 0c | 6g 94s 90c | volatile | 3 of 3 | 16 | +141% |
 | Grove Subjugator's Blade | 287034 | 19g 0s 0c | 2026-11-24 16:00 UTC | 23g 0s 0c | 23g 0s 0c | volatile | 3 of 3 | 25 | +65% |
 | Gut Ripper | 2164 | 40g 49s 99c | 2026-11-24 16:00 UTC | 37g 90s 0c | 40g 49s 99c | moving | 3 of 3 | 10 | +28% |
 | Gutwrencher | 5616 | 19g 99s 99c | 2026-11-24 16:00 UTC | 19g 99s 99c | 20g 0s 0c | moving | 3 of 3 | 4 | +7% |
+| Hollowfang Blade | 2020 | 1g 49s 99c | 2026-11-24 16:00 UTC | 1g 49s 99c |  | too new | 1 of 3 | 2 |  |
 | Honed Stiletto | 15242 | 44s 18c | 2026-11-24 16:00 UTC | 44s 18c | 44s 19c | steady | 3 of 3 | 64 | -1% |
 | Honed Stiletto of Agility | 15242 | 3g 0s 0c | 2026-11-24 16:00 UTC | 3g 0s 0c | 3g 0s 0c | steady | 3 of 3 | 3 |  |
 | Honed Stiletto of Arcane Protection | 15242 | 44s 20c | 2026-11-23 15:16 UTC | 44s 20c |  | too new | 2 of 3 | 2 |  |
@@ -389,7 +391,9 @@
 | Spiked Dagger | 13822 | 1g 29s 99c | 2026-11-24 16:00 UTC | 1g 34s 99c | 1g 29s 99c | moving | 3 of 3 | 5 |  |
 | Stealthblade | 10625 | 67g 91s 0c | 2026-11-24 16:00 UTC | 36g 0s 0c | 42g 99s 97c | volatile | 3 of 3 | 7 | -58% |
 | Stiletto | 2494 | 87s 0c | 2026-11-24 16:00 UTC | 90s 68c | 89s 89c | volatile | 3 of 3 | 29 | +811% |
+| Stonesplinter Dagger | 2266 | 1g 99s 22c | 2026-11-24 16:00 UTC | 1g 99s 22c |  | too new | 1 of 3 | 1 |  |
 | Stonevault Shiv | 9384 | 7g 50s 0c | 2026-11-24 16:00 UTC | 7g 50s 0c | 7g 99s 0c | moving | 3 of 3 | 6 | +12% |
+| Talon of Vultros | 4454 | 33g 70s 78c | 2026-11-24 16:00 UTC | 33g 70s 78c |  | too new | 1 of 3 | 1 |  |
 | The Shadowfoot Stabber | 24222 | 9g 90s 0c | 2026-11-24 16:00 UTC | 13g 89s 0c | 11g 89s 99c | moving | 3 of 3 | 28 | -10% |
 | The Ziggler | 8006 | 3g 49s 89c | 2026-11-24 16:00 UTC | 3g 0s 98c | 2g 98s 98c | moving | 3 of 3 | 15 | +3% |
 | Threshadon Fang | 5516 | 8s 89c | 2026-11-24 16:00 UTC | 3s 80c | 8s 89c | volatile | 3 of 3 | 21 | +6% |
@@ -449,6 +453,7 @@
 | War Knife of the Wolf | 4571 | 50s 0c | 2026-11-23 15:16 UTC | 54s 99c |  | too new | 2 of 3 | 3 |  |
 | Widowmaker | 4091 | 14g 99s 0c | 2026-11-24 16:00 UTC | 8g 44s 99c | 9g 99s 95c | moving | 3 of 3 | 11 | -6% |
 | Windforged Shortblade | 263936 | 5g 50s 0c | 2026-11-24 16:00 UTC | 20g 99s 99c | 15g 0s 0c | volatile | 3 of 3 | 2 |  |
+| Witherheart's Stabber | 284046 | 3g 78s 0c | 2026-11-24 16:00 UTC | 4g 28s 0c |  | too new | 2 of 3 | 2 |  |
 | Worn Dagger | 2092 | 22s 40c | 2026-11-24 16:00 UTC | 15s 62c | 10s 0c | volatile | 3 of 3 | 8 | -67% |
 | Wyvern Tailspike | 5752 | 33s 10c | 2026-11-24 16:00 UTC | 33s 10c | 33s 15c | steady | 3 of 3 | 15 | -4% |
 

@@ -29,6 +29,13 @@
 | Cortello's Riddle | 4056 | 49s 0c | 2026-11-24 16:00 UTC | 90s 98c | 60s 0c | volatile | 3 of 3 | 6 | -55% |
 | Cuergo's Treasure Map | 9254 | 1g 25s 0c | 2026-11-24 16:00 UTC | 1g 31s 99c | 1g 38s 99c | volatile | 3 of 3 | 15 | +144% |
 | Dark Iron Residue | 18945 | 1s 0c | 2026-11-24 16:00 UTC | 1s 0c | 1s 0c | steady | 3 of 3 | 27561 | +0% |
+| Decoded Tablet Transcription | 20405 | 1s 0c | 2026-11-24 16:00 UTC | 1s 0c |  | too new | 1 of 3 | 1 |  |
+| Decoded Twilight Text | 20541 | 1g 8s 0c | 2026-11-24 16:00 UTC | 1g 8s 0c |  | too new | 1 of 3 | 1 |  |
+| Decoded Twilight Text | 20545 | 99s 0c | 2026-11-21 18:23 UTC | 99s 0c |  | too new | 0 of 3 |  |  |
+| Decoded Twilight Text | 20552 | 1g 0s 0c | 2026-11-24 16:00 UTC | 1g 0s 0c |  | too new | 2 of 3 | 2 |  |
+| Decoded Twilight Text | 20676 | 50g 0s 0c | 2026-11-24 16:00 UTC | 25g 50s 0c |  | too new | 2 of 3 | 1 |  |
+| Decoded Twilight Text | 20677 | 8s 0c | 2026-11-23 15:16 UTC | 8s 0c |  | too new | 1 of 3 | 2 |  |
+| Decoded Twilight Text | 20678 | 25g 0s 0c | 2026-11-23 15:16 UTC | 25g 0s 0c |  | too new | 1 of 3 | 1 |  |
 | Dig Rat | 5051 | 2s 70c | 2026-11-24 16:00 UTC | 3s 38c | 3s 38c | moving | 3 of 3 | 116 | +10% |
 | Draco-Incarcinatrix 900 | 12284 | 4g 98s 99c | 2026-11-24 16:00 UTC | 22s 0c | 2s 90c | volatile | 3 of 3 | 26 | -77% |
 | Dran's Ripple Delivery | 8685 | 1g 20s 98c | 2026-11-24 16:00 UTC | 48s 0c | 3g 80s 0c | volatile | 3 of 3 | 24 | -68% |
@@ -106,6 +113,8 @@
 | Ruined Tome | 15696 | 1c | 2026-11-24 16:00 UTC | 99c | 90c | volatile | 3 of 3 | 44 | -93% |
 | Rune of Opening | 3745 | 1c | 2026-11-24 16:00 UTC | 1c | 1c | volatile | 3 of 3 | 2026 | -50% |
 | Scorpok Pincer | 8393 | 80s 95c | 2026-11-24 16:00 UTC | 90s 80c | 90s 80c | moving | 3 of 3 | 653 | -29% |
+| Scroll: Create Crest of Beckoning | 20528 | 10g 0s 0c | 2026-11-24 16:00 UTC | 10g 0s 0c |  | too new | 1 of 3 | 1 |  |
+| Scroll: Create Signet of Beckoning | 20532 | 200g 12s 0c | 2026-11-24 16:00 UTC | 200g 12s 0c |  | too new | 1 of 3 | 1 |  |
 | Security DELTA Data Access Card | 9327 | 6s 21c | 2026-11-24 16:00 UTC | 6s 22c | 6s 21c | steady | 3 of 3 | 22 | -4% |
 | Seven of Beasts | 19235 | 1g 95s 98c | 2026-11-24 16:00 UTC | 2g 50s 90c | 3g 69s 1c | volatile | 3 of 3 | 18 | -50% |
 | Seven of Elementals | 19274 | 5g 49s 99c | 2026-11-24 16:00 UTC | 6g 99s 99c | 6g 99s 99c | volatile | 3 of 3 | 26 | -83% |

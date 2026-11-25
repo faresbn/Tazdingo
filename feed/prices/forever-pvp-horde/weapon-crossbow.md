@@ -13,6 +13,7 @@
 | Light Crossbow | 15807 | 75s 0c | 2026-11-23 15:16 UTC | 1g 0s 0c |  | volatile | 2 of 3 | 8 | +2% |
 | Silithid Sinew Crossbow | 284859 | 2g 50s 0c | 2026-11-24 16:00 UTC | 2g 0s 0c | 2g 50s 0c | moving | 3 of 3 | 10 | -29% |
 | Skull Splitting Crossbow | 13039 | 6g 98s 90c | 2026-11-24 16:00 UTC | 3g 40s 0c | 4g 37s 0c | volatile | 3 of 3 | 22 | -33% |
+| Steelarrow Crossbow | 6315 | 19g 0s 0c | 2026-11-22 | 19g 0s 0c |  | too new | 1 of 3 | 4 |  |
 | Swiftwind | 13038 | 1g 69s 0c | 2026-11-24 16:00 UTC | 1g 39s 0c | 1g 50s 0c | moving | 3 of 3 | 7 | -14% |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

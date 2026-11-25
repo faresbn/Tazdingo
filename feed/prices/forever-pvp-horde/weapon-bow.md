@@ -7,6 +7,8 @@
 | Item | ID | Latest | Recorded at | Typical | Usual | Steadiness | Days listed | Units usually listed | Weekly change |
 |---|---|---|---|---|---|---|---|---|---|
 | Archer's Longbow | 15285 | 40s 58c | 2026-11-24 16:00 UTC | 40s 59c | 40s 58c | steady | 3 of 3 | 28 | -1% |
+| Archstrike Bow | 15289 | 18g 0s 0c | 2026-11-22 | 18g 0s 0c |  | too new | 1 of 3 | 1 |  |
+| Archstrike Bow of the Bandit | 15289 | 18g 0s 0c | 2026-11-22 | 18g 0s 0c |  | too new | 1 of 3 | 1 |  |
 | Balanced Long Bow | 4025 | 60s 0c | 2026-11-24 16:00 UTC | 55s 0c | 60s 0c | moving | 3 of 3 | 7 | -29% |
 | Blasthorn Bow | 15288 | 6g 67s 0c | 2026-11-24 16:00 UTC | 6g 67s 0c | 6g 85s 22c | moving | 3 of 3 | 22 | -8% |
 | Blasthorn Bow of Agility | 15288 | 7g 0s 0c | 2026-11-24 16:00 UTC | 8g 94s 50c |  | too new | 2 of 3 | 1 |  |
