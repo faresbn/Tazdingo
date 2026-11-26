@@ -4,8 +4,8 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 | Character | Level | Item level | Talents | Professions | Recorded |
 |---|---|---|---|---|---|
-| Orc Warlock | 44 | 40.3 | Affliction 31, Demonology 4 | Enchanting 220/225, Tailoring 205/300, Cooking 230/300, First Aid 260/300, Fishing 1/75, Riding 75/75 | 2026-11-25 13:58:19 UTC |
-| Troll Rogue | 12 | 9 | Combat 3 | Alchemy 63/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-24 20:18:48 UTC |
+| Orc Warlock | 44 | 41.4 | Affliction 31, Demonology 5 | Enchanting 220/225, Tailoring 205/300, Cooking 230/300, First Aid 261/300, Fishing 1/75, Riding 75/75 | 2026-11-25 19:35:54 UTC |
+| Troll Rogue | 12 | 9 | Combat 3 | Alchemy 63/150, Herbalism 75/75, Cooking 10/75, First Aid 64/150 | 2026-11-25 19:38:19 UTC |
 | Tauren Druid | 3 | 0.3 | none | Herbalism 13/75, Skinning 68/75, First Aid 1/75 | 2026-11-07 20:40:17 UTC |
 | Troll Mage | 1 | 0 | none | none | 2026-11-05 18:39:27 UTC |
 | Undead Paladin | 1 | 0 | none | none | 2026-11-05 18:57:57 UTC |
@@ -13,11 +13,11 @@ The account's own characters, each as ForeverDB's addon saved it when the charac
 
 ## Orc Warlock
 
-Horde, level 44, item level 40.3; recorded 2026-11-25 13:58:19 UTC on logout, build 71091.
+Horde, level 44, item level 41.4; recorded 2026-11-25 19:35:54 UTC on logout, build 71091.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
-| Head | Electromagnetic Gigaflux Reactivator | 9492 | 36 |
+| Head | Red Mageweave Headband | 10033 | 48 |
 | Neck | Forest Pendant of the Sorcerer | 12040 | 38 |
 | Shoulder | Berylline Pads | 4197 | 36 |
 | Shirt | Sweat-Stained Shirt | 270334 | 1 |
@@ -32,26 +32,26 @@ Horde, level 44, item level 40.3; recorded 2026-11-25 13:58:19 UTC on logout, bu
 | Trinket | Satchel of Potions | 280766 | 33 |
 | Trinket | Transformative Cocoon | 276895 | 30 |
 | Back | Brilliant Cloak | 277206 | 41 |
-| Main hand | Hypnotic Blade | 7714 | 39 |
+| Main hand | Shadowlight Athame | 274998 | 45 |
 | Off hand | Shadow-Seer Orb | 287016 | 45 |
 | Ranged | Greater Mystic Wand | 217287 | 35 |
 
-Talents: Affliction 31, Demonology 4, Destruction 0. Loadout code: `CIdBa0K/6fjlwoPQnhZ43PxtUAAAAAgTwMzYMmBzFcC`.
+Talents: Affliction 31, Demonology 5, Destruction 0. Loadout code: `CIdBa0K/6fjlwoPQnhZ43PxtUAAAAAgxMzYMmBzFcC`.
 
 | Skill | Kind | Skill level | Max |
 |---|---|---|---|
 | Enchanting | Profession | 220 | 225 |
 | Tailoring | Profession | 205 | 300 |
 | Cooking | Profession | 230 | 300 |
-| First Aid | Profession | 260 | 300 |
+| First Aid | Profession | 261 | 300 |
 | Fishing | Profession | 1 | 75 |
 | Riding | Profession | 75 | 75 |
-| Daggers | Weapon Skills | 23 | 220 |
-| Defense | Weapon Skills | 215 | 220 |
-| Staves | Weapon Skills | 4 | 220 |
-| Swords | Weapon Skills | 1 | 220 |
-| Unarmed | Weapon Skills | 13 | 220 |
-| Wands | Weapon Skills | 198 | 220 |
+| Daggers | Weapon Skills | 23 | 225 |
+| Defense | Weapon Skills | 218 | 225 |
+| Staves | Weapon Skills | 4 | 225 |
+| Swords | Weapon Skills | 1 | 225 |
+| Unarmed | Weapon Skills | 13 | 225 |
+| Wands | Weapon Skills | 203 | 225 |
 | Cloth | Armor Proficiencies | 1 | 1 |
 | Language: Orcish | Languages | 300 | 300 |
 
@@ -72,11 +72,11 @@ Talents: Affliction 31, Demonology 4, Destruction 0. Loadout code: `CIdBa0K/6fjl
 | Durotar Supply and Logistics | Neutral | 2250/3000 |
 | Earthen Ring | Neutral | 1500/3000 |
 
-Stats: Health 2196, Mana or energy 3832, Strength 55, Agility 51, Stamina 162, Intellect 206, Spirit 147, Armour 854. PvP: Honourable kills 0, Dishonourable kills -51, Honour points 81, Renown 0. Collected: mounts 3, pets 5, titles 0.
+Stats: Health 2259, Mana or energy 3853, Strength 44, Agility 40, Stamina 164, Intellect 206, Spirit 124, Armour 967. PvP: Honourable kills 0, Dishonourable kills 56, Honour points 81, Renown 0. Collected: mounts 3, pets 5, titles 0.
 
 ## Troll Rogue
 
-Horde, level 12, item level 9; recorded 2026-11-24 20:18:48 UTC on logout, build 71037.
+Horde, level 12, item level 9; recorded 2026-11-25 19:38:19 UTC on logout, build 71091.
 
 | Slot | Item | Item ID | Item level |
 |---|---|---|---|
@@ -122,7 +122,7 @@ Talents: Assassination 0, Combat 3, Subtlety 0. Loadout code: `CAdBfBw6kaEYM3VLT
 | Powderfuse | Neutral | 525/3000 |
 | Ratchet | Neutral | 650/3000 |
 
-Stats: Health 692, Mana or energy 100, Strength 30, Agility 55, Stamina 43, Intellect 18, Spirit 27, Armour 418. PvP: Honourable kills 0, Dishonourable kills 76, Honour points 0, Renown 0. Collected: mounts 3, pets 5, titles 0.
+Stats: Health 692, Mana or energy 100, Strength 30, Agility 55, Stamina 43, Intellect 18, Spirit 27, Armour 418. PvP: Honourable kills 0, Dishonourable kills 71, Honour points 0, Renown 0. Collected: mounts 3, pets 5, titles 0.
 
 ## Tauren Druid
 

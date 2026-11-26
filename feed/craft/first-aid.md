@@ -2,15 +2,6 @@
 
 Estimated listing margins compare the product’s asking value with its reagent costs. Typical values need three daily asks from the selected market. A source marked snapshot uses a recent ask with sparse history. For same-house live prices and estimated trading activity, see https://faresbn.github.io/Tazdingo/prices/craft/.
 
-| Recipe | Skill | Item ID | Makes | Sells for | Costs | Margin | Price from |
-|---|---|---|---|---|---|---|---|
-| Powerful Poultice | 280 | 255719 | 3 | 5g 97s 0c | 4g 24s 40c | 1g 72s 60c | Auctionator |
-| Heavy Runecloth Bandage | 290 | 14530 | 1 | 11s 87c | 10s 0c | 1s 87c | Auctionator |
-| Toxin Study | 140 | 279940 | 1 | 10s 38c | 9s 4c | 1s 34c | Auctionator |
-| Heavy Silk Bandage | 180 | 6451 | 1 | 4s 0c | 3s 70c | 30c | Auctionator |
-| Runecloth Bandage | 260 | 14529 | 1 | 5s 20c | 5s 0c | 20c | Auctionator |
-| Mageweave Bandage | 210 | 8544 | 1 | 4s 0c | 3s 84c | 16c | Auctionator |
-| Silk Bandage | 150 | 6450 | 1 | 2s 0c | 1s 85c | 15c | Auctionator |
-| Strong Anti-Venom | 130 | 6453 | 3 | 2s 10c | 2s 6c | 4c | Auctionator |
+No recipe has enough same-house price data to estimate a positive margin.
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

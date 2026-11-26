@@ -11,16 +11,16 @@
    "race": "Orc",
    "faction": "Horde",
    "level": 44,
-   "item_level": 40.3,
-   "recorded_at": "2026-11-25T13:58:19Z",
+   "item_level": 41.4,
+   "recorded_at": "2026-11-25T19:35:54Z",
    "recorded_on": "logout",
    "build": "71091",
    "gear": [
     {
      "slot": "Head",
-     "item": 9492,
-     "name": "Electromagnetic Gigaflux Reactivator",
-     "item_level": 36
+     "item": 10033,
+     "name": "Red Mageweave Headband",
+     "item_level": 48
     },
     {
      "slot": "Neck",
@@ -108,9 +108,9 @@
     },
     {
      "slot": "Main hand",
-     "item": 7714,
-     "name": "Hypnotic Blade",
-     "item_level": 39
+     "item": 274998,
+     "name": "Shadowlight Athame",
+     "item_level": 45
     },
     {
      "slot": "Off hand",
@@ -128,10 +128,10 @@
    "talents": {
     "points": {
      "Affliction": 31,
-     "Demonology": 4,
+     "Demonology": 5,
      "Destruction": 0
     },
-    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAAAgTwMzYMmBzFcC"
+    "loadout": "CIdBa0K/6fjlwoPQnhZ43PxtUAAAAAgxMzYMmBzFcC"
    },
    "professions": [
     {
@@ -151,7 +151,7 @@
     },
     {
      "name": "First Aid",
-     "skill": 260,
+     "skill": 261,
      "max": 300
     },
     {
@@ -170,37 +170,37 @@
      "name": "Daggers",
      "category": "Weapon Skills",
      "skill": 23,
-     "max": 220
+     "max": 225
     },
     {
      "name": "Defense",
      "category": "Weapon Skills",
-     "skill": 215,
-     "max": 220
+     "skill": 218,
+     "max": 225
     },
     {
      "name": "Staves",
      "category": "Weapon Skills",
      "skill": 4,
-     "max": 220
+     "max": 225
     },
     {
      "name": "Swords",
      "category": "Weapon Skills",
      "skill": 1,
-     "max": 220
+     "max": 225
     },
     {
      "name": "Unarmed",
      "category": "Weapon Skills",
      "skill": 13,
-     "max": 220
+     "max": 225
     },
     {
      "name": "Wands",
      "category": "Weapon Skills",
-     "skill": 198,
-     "max": 220
+     "skill": 203,
+     "max": 225
     },
     {
      "name": "Cloth",
@@ -302,18 +302,18 @@
     }
    ],
    "stats": {
-    "Health": 2196,
-    "Mana or energy": 3832,
-    "Strength": 55,
-    "Agility": 51,
-    "Stamina": 162,
+    "Health": 2259,
+    "Mana or energy": 3853,
+    "Strength": 44,
+    "Agility": 40,
+    "Stamina": 164,
     "Intellect": 206,
-    "Spirit": 147,
-    "Armour": 854
+    "Spirit": 124,
+    "Armour": 967
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": -51,
+    "Dishonourable kills": 56,
     "Honour points": 81,
     "Renown": 0
    },
@@ -330,9 +330,9 @@
    "faction": "Horde",
    "level": 12,
    "item_level": 9,
-   "recorded_at": "2026-11-24T20:18:48Z",
+   "recorded_at": "2026-11-25T19:38:19Z",
    "recorded_on": "logout",
-   "build": "71037",
+   "build": "71091",
    "gear": [
     {
      "slot": "Chest",
@@ -555,7 +555,7 @@
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": 76,
+    "Dishonourable kills": 71,
     "Honour points": 0,
     "Renown": 0
    },
