@@ -2,10 +2,10 @@
  "source": {
   "credit": "Data from ForeverDB.net (https://foreverdb.net)",
   "file": "Data/SearchNames.lua",
-  "data_version": "2026-11-26.a504fddc",
+  "data_version": "2026-11-27.23b75eae",
   "client_build": "1.60.1.71139",
   "sha256": "890962a6c69fa404927e58161272a52dc45be82569439c1d9aa144b6cd2a2429",
-  "fetched_on": "2026-11-26"
+  "fetched_on": "2026-11-27"
  },
  "names": {
   "25": "Worn Shortsword",
