@@ -10,11 +10,11 @@
    "class": "Warlock",
    "race": "Orc",
    "faction": "Horde",
-   "level": 44,
+   "level": 45,
    "item_level": 41.4,
-   "recorded_at": "2026-11-25T19:35:54Z",
+   "recorded_at": "2026-11-27T13:22:43Z",
    "recorded_on": "logout",
-   "build": "71091",
+   "build": "71139",
    "gear": [
     {
      "slot": "Head",
@@ -302,18 +302,18 @@
     }
    ],
    "stats": {
-    "Health": 2259,
-    "Mana or energy": 3853,
-    "Strength": 44,
-    "Agility": 40,
-    "Stamina": 164,
-    "Intellect": 206,
-    "Spirit": 124,
-    "Armour": 967
+    "Health": 2799,
+    "Mana or energy": 4003,
+    "Strength": 53,
+    "Agility": 50,
+    "Stamina": 218,
+    "Intellect": 216,
+    "Spirit": 134,
+    "Armour": 1198
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": 56,
+    "Dishonourable kills": 107,
     "Honour points": 81,
     "Renown": 0
    },
@@ -330,9 +330,9 @@
    "faction": "Horde",
    "level": 12,
    "item_level": 9,
-   "recorded_at": "2026-11-25T19:38:19Z",
+   "recorded_at": "2026-11-27T13:15:44Z",
    "recorded_on": "logout",
-   "build": "71091",
+   "build": "71139",
    "gear": [
     {
      "slot": "Chest",
@@ -555,7 +555,7 @@
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": 71,
+    "Dishonourable kills": 123,
     "Honour points": 0,
     "Renown": 0
    },
