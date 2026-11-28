@@ -12,7 +12,7 @@
    "faction": "Horde",
    "level": 45,
    "item_level": 41.4,
-   "recorded_at": "2026-11-27T13:22:43Z",
+   "recorded_at": "2026-11-28T10:45:58Z",
    "recorded_on": "logout",
    "build": "71139",
    "gear": [
@@ -313,7 +313,7 @@
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": 107,
+    "Dishonourable kills": -123,
     "Honour points": 81,
     "Renown": 0
    },
@@ -330,7 +330,7 @@
    "faction": "Horde",
    "level": 12,
    "item_level": 9,
-   "recorded_at": "2026-11-27T13:15:44Z",
+   "recorded_at": "2026-11-28T10:49:07Z",
    "recorded_on": "logout",
    "build": "71139",
    "gear": [
@@ -555,7 +555,7 @@
    },
    "pvp": {
     "Honourable kills": 0,
-    "Dishonourable kills": 123,
+    "Dishonourable kills": -123,
     "Honour points": 0,
     "Renown": 0
    },
