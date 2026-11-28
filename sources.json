@@ -1,0 +1,1844 @@
+{
+ "sources": {
+  "WoWCombatLog-110526_101015.txt": {
+   "bytes": 10055114,
+   "modified": 1793874085,
+   "written": [
+    {
+     "bytes": 10055114,
+     "character": "Orc Warlock",
+     "date": "2026-11-05",
+     "encounters": [
+      {
+       "end_line": 7335,
+       "name": "Oggleflint",
+       "result": "kill",
+       "seconds": 23,
+       "start_line": 7058,
+       "time": "10:26"
+      },
+      {
+       "end_line": 12572,
+       "name": "Taragaman the Hungerer",
+       "result": "kill",
+       "seconds": 27,
+       "start_line": 12187,
+       "time": "10:37"
+      },
+      {
+       "end_line": 16423,
+       "name": "Jergosh the Invoker",
+       "result": "kill",
+       "seconds": 49,
+       "start_line": 15891,
+       "time": "10:43"
+      },
+      {
+       "end_line": 17811,
+       "name": "Bazzalan",
+       "result": "kill",
+       "seconds": 32,
+       "start_line": 17279,
+       "time": "10:46"
+      },
+      {
+       "end_line": 23747,
+       "name": "Oggleflint",
+       "result": "kill",
+       "seconds": 39,
+       "start_line": 23121,
+       "time": "12:49"
+      },
+      {
+       "end_line": 28651,
+       "name": "Taragaman the Hungerer",
+       "result": "kill",
+       "seconds": 24,
+       "start_line": 28353,
+       "time": "13:00"
+      },
+      {
+       "end_line": 32723,
+       "name": "Bazzalan",
+       "result": "kill",
+       "seconds": 33,
+       "start_line": 32116,
+       "time": "13:07"
+      },
+      {
+       "end_line": 33383,
+       "name": "Jergosh the Invoker",
+       "result": "wipe",
+       "seconds": 35,
+       "start_line": 32783,
+       "time": "13:08"
+      },
+      {
+       "end_line": 34124,
+       "name": "Jergosh the Invoker",
+       "result": "kill",
+       "seconds": 39,
+       "start_line": 33522,
+       "time": "13:15"
+      }
+     ],
+     "end": "13:21",
+     "expired": "2026-11-20",
+     "file": "orc-warlock/2026-11-05/1010-ragefire-chasm.txt",
+     "kind": "instance",
+     "lines": 35171,
+     "place": "Ragefire Chasm",
+     "players": [
+      "Eldariel-Hunting-PvP-EU",
+      "Eles-Viharszem-PvP-EU",
+      "Fix-Marksman-PvP-EU",
+      "Gnetto-Mumuu-PvP-EU",
+      "Haca-Cáré-PvP-EU",
+      "Unbeata-Bull-PvP-EU",
+      "Zherion-Deathbringer-PvP-EU",
+      "Zug-Chug-PvP-EU"
+     ],
+     "source": "WoWCombatLog-110526_101015.txt",
+     "start": "10:10"
+    }
+   ]
+  },
+  "WoWCombatLog-110626_162706.txt": {
+   "bytes": 18202960,
+   "modified": 1793983143,
+   "written": [
+    {
+     "bytes": 7971809,
+     "character": "Orc Warlock",
+     "date": "2026-11-06",
+     "encounters": [
+      {
+       "end_line": 3124,
+       "name": "Witherfang",
+       "result": "kill",
+       "seconds": 21,
+       "start_line": 2606,
+       "time": "16:32"
+      },
+      {
+       "end_line": 5916,
+       "name": "The Butcher",
+       "result": "kill",
+       "seconds": 23,
+       "start_line": 5524,
+       "time": "16:38"
+      },
+      {
+       "end_line": 11033,
+       "name": "Viktor the Vile",
+       "result": "kill",
+       "seconds": 32,
+       "start_line": 10576,
+       "time": "16:46"
+      },
+      {
+       "end_line": 14693,
+       "name": "Bjork",
+       "result": "kill",
+       "seconds": 27,
+       "start_line": 14241,
+       "time": "16:53"
+      },
+      {
+       "end_line": 16775,
+       "name": "The Abandoned",
+       "result": "kill",
+       "seconds": 19,
+       "start_line": 16425,
+       "time": "16:57"
+      },
+      {
+       "end_line": 21658,
+       "name": "Rath'mael",
+       "result": "kill",
+       "seconds": 25,
+       "start_line": 21222,
+       "time": "17:05"
+      }
+     ],
+     "end": "18:28",
+     "expired": "2026-11-21",
+     "file": "orc-warlock/2026-11-06/1627-ruins-of-lordaeron.txt",
+     "kind": "instance",
+     "lines": 27200,
+     "place": "Ruins of Lordaeron",
+     "players": [
+      "Dr-Greenfinger-PvP-EU",
+      "Linkan-Swagsum-PvP-EU",
+      "Nyrax-Lightbane-PvP-EU",
+      "Sainthilda-Bacchari-PvP-EU"
+     ],
+     "source": "WoWCombatLog-110626_162706.txt",
+     "start": "16:27"
+    },
+    {
+     "bytes": 10231257,
+     "character": "Orc Warlock",
+     "date": "2026-11-06",
+     "encounters": [
+      {
+       "end_line": 2904,
+       "name": "Rethilgore",
+       "result": "kill",
+       "seconds": 28,
+       "start_line": 2267,
+       "time": "18:32"
+      },
+      {
+       "end_line": 8792,
+       "name": "Razorclaw the Butcher",
+       "result": "kill",
+       "seconds": 32,
+       "start_line": 8096,
+       "time": "18:40"
+      },
+      {
+       "end_line": 11735,
+       "name": "Baron Silverlaine",
+       "result": "kill",
+       "seconds": 33,
+       "start_line": 11303,
+       "time": "18:44"
+      },
+      {
+       "end_line": 17400,
+       "name": "Commander Springvale",
+       "result": "kill",
+       "seconds": 76,
+       "start_line": 16170,
+       "time": "18:51"
+      },
+      {
+       "end_line": 19591,
+       "name": "Odo the Blindwatcher",
+       "result": "kill",
+       "seconds": 42,
+       "start_line": 18800,
+       "time": "18:55"
+      },
+      {
+       "end_line": 30115,
+       "name": "Fenrus the Devourer",
+       "result": "kill",
+       "seconds": 31,
+       "start_line": 29680,
+       "time": "19:26"
+      },
+      {
+       "end_line": 32930,
+       "name": "Wolf Master Nandos",
+       "result": "kill",
+       "seconds": 51,
+       "start_line": 32171,
+       "time": "19:30"
+      },
+      {
+       "end_line": 35225,
+       "name": "Archmage Arugal",
+       "result": "kill",
+       "seconds": 94,
+       "start_line": 34223,
+       "time": "19:34"
+      }
+     ],
+     "end": "19:38",
+     "expired": "2026-11-21",
+     "file": "orc-warlock/2026-11-06/1828-shadowfang-keep.txt",
+     "kind": "instance",
+     "lines": 35391,
+     "place": "Shadowfang Keep",
+     "players": [
+      "Astral-Spirit-PvP-EU",
+      "Divine-Rizz-PvP-EU",
+      "Sainthilda-Bacchari-PvP-EU",
+      "Tequila-Limesalt-PvP-EU"
+     ],
+     "source": "WoWCombatLog-110626_162706.txt",
+     "start": "18:28"
+    }
+   ]
+  },
+  "WoWCombatLog-110726_101331.txt": {
+   "bytes": 7006315,
+   "modified": 1794040079,
+   "written": [
+    {
+     "bytes": 7006315,
+     "character": "Orc Warlock",
+     "date": "2026-11-07",
+     "encounters": [
+      {
+       "end_line": 2684,
+       "name": "Lady Anacondra",
+       "result": "kill",
+       "seconds": 40,
+       "start_line": 1967,
+       "time": "10:17"
+      },
+      {
+       "end_line": 5516,
+       "name": "Kresh",
+       "result": "kill",
+       "seconds": 15,
+       "start_line": 5286,
+       "time": "10:23"
+      },
+      {
+       "end_line": 10535,
+       "name": "Lord Cobrahn",
+       "result": "kill",
+       "seconds": 15,
+       "start_line": 10279,
+       "time": "10:31"
+      },
+      {
+       "end_line": 14553,
+       "name": "Lord Pythas",
+       "result": "kill",
+       "seconds": 38,
+       "start_line": 13857,
+       "time": "10:39"
+      },
+      {
+       "end_line": 17411,
+       "name": "Skum",
+       "result": "kill",
+       "seconds": 30,
+       "start_line": 17025,
+       "time": "10:45"
+      },
+      {
+       "end_line": 20334,
+       "name": "Lord Serpentis",
+       "result": "kill",
+       "seconds": 26,
+       "start_line": 19950,
+       "time": "10:51"
+      },
+      {
+       "end_line": 21053,
+       "name": "Verdan the Everliving",
+       "result": "kill",
+       "seconds": 34,
+       "start_line": 20617,
+       "time": "10:52"
+      },
+      {
+       "end_line": 24473,
+       "name": "Mutanus the Devourer",
+       "result": "kill",
+       "seconds": 46,
+       "start_line": 23910,
+       "time": "11:03"
+      }
+     ],
+     "end": "11:27",
+     "expired": "2026-11-22",
+     "file": "orc-warlock/2026-11-07/1013-wailing-caverns.txt",
+     "kind": "instance",
+     "lines": 24540,
+     "place": "Wailing Caverns",
+     "players": [
+      "Kajsa-Bajsa-PvP-EU",
+      "Sainthilda-Bacchari-PvP-EU",
+      "Scavy-Doo-PvP-EU",
+      "Srj-Rogue-PvP-EU"
+     ],
+     "source": "WoWCombatLog-110726_101331.txt",
+     "start": "10:13"
+    }
+   ]
+  },
+  "WoWCombatLog-110726_192213.txt": {
+   "bytes": 8831871,
+   "modified": 1794076077,
+   "written": [
+    {
+     "bytes": 8831004,
+     "character": "Orc Warlock",
+     "date": "2026-11-07",
+     "encounters": [
+      {
+       "end_line": 2864,
+       "name": "Rethilgore",
+       "result": "kill",
+       "seconds": 27,
+       "start_line": 1801,
+       "time": "19:24"
+      },
+      {
+       "end_line": 10403,
+       "name": "Razorclaw the Butcher",
+       "result": "kill",
+       "seconds": 32,
+       "start_line": 9560,
+       "time": "19:31"
+      },
+      {
+       "end_line": 12584,
+       "name": "Baron Silverlaine",
+       "result": "kill",
+       "seconds": 22,
+       "start_line": 12256,
+       "time": "19:33"
+      },
+      {
+       "end_line": 16119,
+       "name": "Commander Springvale",
+       "result": "kill",
+       "seconds": 56,
+       "start_line": 14909,
+       "time": "19:36"
+      },
+      {
+       "end_line": 18054,
+       "name": "Odo the Blindwatcher",
+       "result": "kill",
+       "seconds": 30,
+       "start_line": 17350,
+       "time": "19:39"
+      },
+      {
+       "end_line": 24689,
+       "name": "Fenrus the Devourer",
+       "result": "kill",
+       "seconds": 22,
+       "start_line": 24360,
+       "time": "19:46"
+      },
+      {
+       "end_line": 27048,
+       "name": "Wolf Master Nandos",
+       "result": "kill",
+       "seconds": 46,
+       "start_line": 25714,
+       "time": "19:49"
+      },
+      {
+       "end_line": 28775,
+       "name": "Archmage Arugal",
+       "result": "kill",
+       "seconds": 59,
+       "start_line": 28117,
+       "time": "19:51"
+      }
+     ],
+     "end": "21:27",
+     "expired": "2026-11-22",
+     "file": "orc-warlock/2026-11-07/1922-shadowfang-keep.txt",
+     "kind": "instance",
+     "lines": 29140,
+     "place": "Shadowfang Keep",
+     "players": [
+      "Destractox-Forever-PvP-EU",
+      "Dribble-Please-PvP-EU",
+      "Ljubljanske-Mlekarne-PvP-EU",
+      "Mojo-Bluespace-PvP-EU"
+     ],
+     "source": "WoWCombatLog-110726_192213.txt",
+     "start": "19:22"
+    }
+   ]
+  },
+  "WoWCombatLog-110826_175444.txt": {
+   "bytes": 27964982,
+   "modified": 1794172948,
+   "written": [
+    {
+     "bytes": 11326920,
+     "character": "Orc Warlock",
+     "date": "2026-11-08",
+     "encounters": [
+      {
+       "end_line": 1953,
+       "name": "Ghamoo-ra",
+       "result": "kill",
+       "seconds": 34,
+       "start_line": 1364,
+       "time": "18:06"
+      },
+      {
+       "end_line": 4638,
+       "name": "Lady Sarevess",
+       "result": "kill",
+       "seconds": 30,
+       "start_line": 4099,
+       "time": "18:09"
+      },
+      {
+       "end_line": 16191,
+       "name": "Geilhast",
+       "result": "kill",
+       "seconds": 34,
+       "start_line": 15436,
+       "time": "18:27"
+      },
+      {
+       "end_line": 29641,
+       "name": "Old Serra'kis",
+       "result": "kill",
+       "seconds": 31,
+       "start_line": 29183,
+       "time": "18:45"
+      },
+      {
+       "end_line": 32541,
+       "name": "Twilight Lord Kelris",
+       "result": "kill",
+       "seconds": 31,
+       "start_line": 32047,
+       "time": "18:50"
+      },
+      {
+       "end_line": 37616,
+       "name": "Aku'mai",
+       "result": "kill",
+       "seconds": 69,
+       "start_line": 36178,
+       "time": "18:55"
+      }
+     ],
+     "end": "21:18",
+     "expired": "2026-11-23",
+     "file": "orc-warlock/2026-11-08/1754-blackfathom-deeps.txt",
+     "kind": "instance",
+     "lines": 37854,
+     "place": "Blackfathom Deeps",
+     "players": [
+      "Sainthilda-Bacchari-PvP-EU",
+      "Shugger-Bomb-PvP-EU",
+      "Winston-Picklepants-PvP-EU",
+      "Zephyr-Marshmallow-PvP-EU"
+     ],
+     "source": "WoWCombatLog-110826_175444.txt",
+     "start": "17:54"
+    },
+    {
+     "bytes": 9410900,
+     "character": "Orc Warlock",
+     "date": "2026-11-08",
+     "encounters": [
+      {
+       "end_line": 2703,
+       "name": "Rethilgore",
+       "result": "kill",
+       "seconds": 22,
+       "start_line": 2288,
+       "time": "21:22"
+      },
+      {
+       "end_line": 8615,
+       "name": "Razorclaw the Butcher",
+       "result": "kill",
+       "seconds": 20,
+       "start_line": 8366,
+       "time": "21:31"
+      },
+      {
+       "end_line": 11162,
+       "name": "Baron Silverlaine",
+       "result": "kill",
+       "seconds": 30,
+       "start_line": 10652,
+       "time": "21:35"
+      },
+      {
+       "end_line": 15114,
+       "name": "Commander Springvale",
+       "result": "kill",
+       "seconds": 49,
+       "start_line": 14135,
+       "time": "21:39"
+      },
+      {
+       "end_line": 17261,
+       "name": "Odo the Blindwatcher",
+       "result": "kill",
+       "seconds": 48,
+       "start_line": 16333,
+       "time": "21:43"
+      },
+      {
+       "end_line": 28303,
+       "name": "Fenrus the Devourer",
+       "result": "kill",
+       "seconds": 27,
+       "start_line": 27901,
+       "time": "22:01"
+      },
+      {
+       "end_line": 30484,
+       "name": "Wolf Master Nandos",
+       "result": "kill",
+       "seconds": 37,
+       "start_line": 29939,
+       "time": "22:05"
+      },
+      {
+       "end_line": 32309,
+       "name": "Archmage Arugal",
+       "result": "kill",
+       "seconds": 57,
+       "start_line": 31645,
+       "time": "22:08"
+      }
+     ],
+     "end": "23:57",
+     "expired": "2026-11-23",
+     "file": "orc-warlock/2026-11-08/2118-shadowfang-keep.txt",
+     "kind": "instance",
+     "lines": 32418,
+     "place": "Shadowfang Keep",
+     "players": [
+      "Ciapek-Hau-PvP-EU",
+      "Monky-Clown-PvP-EU",
+      "Quescro-Tolamo-PvP-EU",
+      "Sulia-Marcpa-PvP-EU"
+     ],
+     "source": "WoWCombatLog-110826_175444.txt",
+     "start": "21:18"
+    },
+    {
+     "bytes": 7227374,
+     "character": "Orc Warlock",
+     "date": "2026-11-08",
+     "encounters": [
+      {
+       "end_line": 4129,
+       "name": "Saltspine",
+       "result": "kill",
+       "seconds": 43,
+       "start_line": 2804,
+       "time": "00:00"
+      },
+      {
+       "end_line": 10574,
+       "name": "Shadetooth",
+       "result": "kill",
+       "seconds": 68,
+       "start_line": 9105,
+       "time": "00:05"
+      },
+      {
+       "end_line": 23169,
+       "name": "Relic Guardian",
+       "result": "kill",
+       "seconds": 39,
+       "start_line": 22375,
+       "time": "00:19"
+      }
+     ],
+     "end": "00:21",
+     "expired": "2026-11-23",
+     "file": "orc-warlock/2026-11-08/2357-excavation-site-wetlands.txt",
+     "kind": "instance",
+     "lines": 23338,
+     "place": "Excavation Site: Wetlands",
+     "players": [
+      "Cpt-Cool-PvP-EU",
+      "Thaio-Snooze-PvP-EU",
+      "Zottel-Pa-PvP-EU",
+      "Zulja-Zenjin-PvP-EU"
+     ],
+     "source": "WoWCombatLog-110826_175444.txt",
+     "start": "23:57"
+    }
+   ]
+  },
+  "WoWCombatLog-110926_230427.txt": {
+   "bytes": 7394774,
+   "modified": 1794257106,
+   "written": [
+    {
+     "bytes": 7394774,
+     "character": "Orc Warlock",
+     "date": "2026-11-09",
+     "encounters": [
+      {
+       "end_line": 3456,
+       "name": "Saltspine",
+       "result": "kill",
+       "seconds": 53,
+       "start_line": 2308,
+       "time": "23:08"
+      },
+      {
+       "end_line": 7150,
+       "name": "Shadetooth",
+       "result": "wipe",
+       "seconds": 14,
+       "start_line": 6988,
+       "time": "23:13"
+      },
+      {
+       "end_line": 9410,
+       "name": "Shadetooth",
+       "result": "kill",
+       "seconds": 35,
+       "start_line": 8406,
+       "time": "23:18"
+      },
+      {
+       "end_line": 23468,
+       "name": "Relic Guardian",
+       "result": "kill",
+       "seconds": 62,
+       "start_line": 22239,
+       "time": "23:38"
+      }
+     ],
+     "end": "23:40",
+     "expired": "2026-11-24",
+     "file": "orc-warlock/2026-11-09/2304-excavation-site-wetlands.txt",
+     "kind": "instance",
+     "lines": 23736,
+     "place": "Excavation Site: Wetlands",
+     "players": [
+      "Gibbo-Divebarr-PvP-EU",
+      "Knogvals-Påbyn-PvP-EU",
+      "Lose-Thos-PvP-EU",
+      "Snaj-Per-PvP-EU"
+     ],
+     "source": "WoWCombatLog-110926_230427.txt",
+     "start": "23:04"
+    }
+   ]
+  },
+  "WoWCombatLog-111126_183815.txt": {
+   "bytes": 31512281,
+   "modified": 1794427238,
+   "written": [
+    {
+     "bytes": 12095532,
+     "character": "Orc Warlock",
+     "date": "2026-11-11",
+     "encounters": [
+      {
+       "end_line": 8570,
+       "name": "Aggem Thorncurse",
+       "result": "kill",
+       "seconds": 21,
+       "start_line": 8273,
+       "time": "21:44"
+      },
+      {
+       "end_line": 11056,
+       "name": "Death Speaker Jargba",
+       "result": "kill",
+       "seconds": 47,
+       "start_line": 10187,
+       "time": "21:48"
+      },
+      {
+       "end_line": 13828,
+       "name": "Overlord Ramtusk",
+       "result": "kill",
+       "seconds": 38,
+       "start_line": 12815,
+       "time": "21:52"
+      },
+      {
+       "end_line": 19460,
+       "name": "Roogug",
+       "result": "kill",
+       "seconds": 25,
+       "start_line": 19046,
+       "time": "22:02"
+      },
+      {
+       "end_line": 25617,
+       "name": "Agathelos the Raging",
+       "result": "kill",
+       "seconds": 52,
+       "start_line": 24736,
+       "time": "22:10"
+      },
+      {
+       "end_line": 32986,
+       "name": "Charlga Razorflank",
+       "result": "kill",
+       "seconds": 62,
+       "start_line": 31923,
+       "time": "22:20"
+      }
+     ],
+     "end": "22:36",
+     "expired": "2026-11-26",
+     "file": "orc-warlock/2026-11-11/2133-razorfen-kraul.txt",
+     "kind": "instance",
+     "lines": 40595,
+     "place": "Razorfen Kraul",
+     "players": [
+      "Enthralled-Savage-PvP-EU",
+      "Jhb-Yellowriver-PvP-EU",
+      "Nodby-Druid-PvP-EU",
+      "Unholy-Flésh-PvP-EU"
+     ],
+     "source": "WoWCombatLog-111126_183815.txt",
+     "start": "21:33"
+    },
+    {
+     "character": "Orc Warlock",
+     "date": "2026-11-11",
+     "deaths": 2,
+     "end": "22:57",
+     "expired": "2026-11-26",
+     "fights": 97,
+     "file": "orc-warlock/2026-11-11/1838-open-world.md",
+     "kind": "open world",
+     "place": "Hillsbrad Foothills, Hillsbrad, Azurelode Mine, Silverpine Forest, Alterac Mountains, Undercity, Tirisfal Glades, Durotar, The Barrens, Thousand Needles, Thunder Bluff",
+     "source": "WoWCombatLog-111126_183815.txt",
+     "start": "18:38"
+    }
+   ]
+  },
+  "WoWCombatLog-111326_104224.txt": {
+   "bytes": 36947893,
+   "modified": 1794568897,
+   "written": [
+    {
+     "bytes": 30723786,
+     "character": "Orc Warlock",
+     "date": "2026-11-13",
+     "encounters": [
+      {
+       "end_line": 6745,
+       "name": "Atrexis the Grave Knight",
+       "result": "kill",
+       "seconds": 49,
+       "start_line": 4974,
+       "time": "10:48"
+      },
+      {
+       "end_line": 15006,
+       "name": "Lyn the Ignored",
+       "result": "kill",
+       "seconds": 53,
+       "start_line": 13631,
+       "time": "10:59"
+      },
+      {
+       "end_line": 20335,
+       "name": "Arcane Anomaly",
+       "result": "kill",
+       "seconds": 36,
+       "start_line": 19726,
+       "time": "11:06"
+      },
+      {
+       "end_line": 24737,
+       "name": "Fel Ancient",
+       "result": "kill",
+       "seconds": 52,
+       "start_line": 23661,
+       "time": "11:11"
+      },
+      {
+       "end_line": 37308,
+       "name": "Atrexis the Grave Knight",
+       "result": "kill",
+       "seconds": 56,
+       "start_line": 34541,
+       "time": "12:43"
+      },
+      {
+       "end_line": 62977,
+       "name": "Mana Devourer",
+       "result": "kill",
+       "seconds": 44,
+       "start_line": 61740,
+       "time": "13:03"
+      },
+      {
+       "end_line": 87974,
+       "name": "Unstable Sentinel",
+       "result": "kill",
+       "seconds": 56,
+       "start_line": 86444,
+       "time": "13:22"
+      },
+      {
+       "end_line": 92508,
+       "name": "Mana Elemental",
+       "result": "kill",
+       "seconds": 77,
+       "start_line": 89934,
+       "time": "13:25"
+      },
+      {
+       "end_line": 101139,
+       "name": "Fel Ancient",
+       "result": "kill",
+       "seconds": 48,
+       "start_line": 99760,
+       "time": "13:32"
+      },
+      {
+       "end_line": 107773,
+       "name": "Arcane Anomaly",
+       "result": "kill",
+       "seconds": 33,
+       "start_line": 106827,
+       "time": "13:38"
+      }
+     ],
+     "end": "13:45",
+     "expired": "2026-11-28",
+     "file": "orc-warlock/2026-11-13/1042-dalaran.txt",
+     "kind": "instance",
+     "lines": 112650,
+     "place": "Dalaran",
+     "players": [
+      "Dakota-Milk-PvP-EU",
+      "Druded-Wildmane-PvP-EU",
+      "Gromrok-Bloodbringer-PvP-EU",
+      "Invi-Pwnz-PvP-EU",
+      "Kitron-Sec-PvP-EU",
+      "Kuki-Bezsmyczy-PvP-EU",
+      "Pi-Wo-PvP-EU",
+      "Ra-Dza-PvP-EU"
+     ],
+     "source": "WoWCombatLog-111326_104224.txt",
+     "start": "10:42"
+    },
+    {
+     "bytes": 5928335,
+     "character": "Orc Warlock",
+     "date": "2026-11-13",
+     "encounters": [
+      {
+       "end_line": 12639,
+       "name": "Lyn the Ignored",
+       "result": "kill",
+       "seconds": 45,
+       "start_line": 11010,
+       "time": "14:02"
+      }
+     ],
+     "end": "14:16",
+     "expired": "2026-11-28",
+     "file": "orc-warlock/2026-11-13/1353-city-of-dalaran.txt",
+     "kind": "instance",
+     "lines": 24380,
+     "place": "City of Dalaran",
+     "players": [
+      "Druded-Wildmane-PvP-EU",
+      "Gromrok-Bloodbringer-PvP-EU",
+      "Ra-Dza-PvP-EU",
+      "Sainthilda-Bacchari-PvP-EU"
+     ],
+     "source": "WoWCombatLog-111326_104224.txt",
+     "start": "13:53"
+    }
+   ]
+  },
+  "WoWCombatLog-111526_210652.txt": {
+   "bytes": 8847899,
+   "modified": 1794767384,
+   "written": [
+    {
+     "bytes": 8847899,
+     "character": "Orc Warlock",
+     "date": "2026-11-15",
+     "encounters": [
+      {
+       "end_line": 2859,
+       "name": "Interrogator Vishas",
+       "result": "kill",
+       "seconds": 29,
+       "start_line": 1717,
+       "time": "21:08"
+      },
+      {
+       "end_line": 13935,
+       "name": "Bloodmage Thalnos",
+       "result": "kill",
+       "seconds": 27,
+       "start_line": 13189,
+       "time": "21:15"
+      },
+      {
+       "end_line": 27097,
+       "name": "Houndmaster Loksey",
+       "result": "kill",
+       "seconds": 39,
+       "start_line": 25536,
+       "time": "21:25"
+      }
+     ],
+     "end": "21:29",
+     "file": "orc-warlock/2026-11-15/2106-scarlet-monastery.txt",
+     "kind": "instance",
+     "lines": 32752,
+     "place": "Scarlet Monastery",
+     "players": [
+      "Moomina-Otylá-PvP-EU",
+      "Артас-Непобедимый-PvP-EU",
+      "Вульпяшкин-Энх-PvP-EU",
+      "Куля-Хотана-PvP-EU"
+     ],
+     "source": "WoWCombatLog-111526_210652.txt",
+     "start": "21:06"
+    }
+   ]
+  },
+  "WoWCombatLog-111526_213134.txt": {
+   "bytes": 6427543,
+   "modified": 1794768495,
+   "written": [
+    {
+     "bytes": 6427543,
+     "character": "Orc Warlock",
+     "date": "2026-11-15",
+     "encounters": [
+      {
+       "end_line": 22858,
+       "name": "Arcanist Doan",
+       "result": "kill",
+       "seconds": 70,
+       "start_line": 21065,
+       "time": "21:45"
+      }
+     ],
+     "end": "21:48",
+     "file": "orc-warlock/2026-11-15/2131-scarlet-monastery.txt",
+     "kind": "instance",
+     "lines": 23937,
+     "place": "Scarlet Monastery",
+     "players": [
+      "Moomina-Otylá-PvP-EU",
+      "Артас-Непобедимый-PvP-EU",
+      "Вульпяшкин-Энх-PvP-EU",
+      "Куля-Хотана-PvP-EU"
+     ],
+     "source": "WoWCombatLog-111526_213134.txt",
+     "start": "21:31"
+    }
+   ]
+  },
+  "WoWCombatLog-111626_163414.txt": {
+   "bytes": 37825750,
+   "modified": 1794859281,
+   "written": [
+    {
+     "bytes": 17208251,
+     "character": "Orc Warlock",
+     "date": "2026-11-16",
+     "encounters": [
+      {
+       "end_line": 7594,
+       "name": "Atrexis the Grave Knight",
+       "result": "kill",
+       "seconds": 40,
+       "start_line": 5476,
+       "time": "16:38"
+      },
+      {
+       "end_line": 19604,
+       "name": "Lyn the Ignored",
+       "result": "kill",
+       "seconds": 39,
+       "start_line": 18144,
+       "time": "16:47"
+      },
+      {
+       "end_line": 27978,
+       "name": "Mana Devourer",
+       "result": "kill",
+       "seconds": 38,
+       "start_line": 26781,
+       "time": "16:53"
+      },
+      {
+       "end_line": 36452,
+       "name": "Arcane Anomaly",
+       "result": "kill",
+       "seconds": 28,
+       "start_line": 35590,
+       "time": "17:00"
+      },
+      {
+       "end_line": 40520,
+       "name": "Fel Ancient",
+       "result": "kill",
+       "seconds": 38,
+       "start_line": 39254,
+       "time": "17:02"
+      },
+      {
+       "end_line": 46957,
+       "name": "Shade of the Archmage",
+       "result": "kill",
+       "seconds": 51,
+       "start_line": 45368,
+       "time": "17:07"
+      },
+      {
+       "end_line": 58479,
+       "name": "Unstable Sentinel",
+       "result": "kill",
+       "seconds": 50,
+       "start_line": 56659,
+       "time": "17:15"
+      },
+      {
+       "end_line": 66575,
+       "name": "Mana Elemental",
+       "result": "kill",
+       "seconds": 42,
+       "start_line": 64821,
+       "time": "17:21"
+      }
+     ],
+     "end": "17:23",
+     "file": "orc-warlock/2026-11-16/1634-dalaran.txt",
+     "kind": "instance",
+     "lines": 67627,
+     "place": "Dalaran",
+     "players": [
+      "Brandon-James-PvP-EU",
+      "Nila-Gabson-PvP-EU",
+      "Palladin-Mal-PvP-EU",
+      "Sainthilda-Bacchari-PvP-EU"
+     ],
+     "source": "WoWCombatLog-111626_163414.txt",
+     "start": "16:34"
+    },
+    {
+     "bytes": 10022556,
+     "character": "Orc Warlock",
+     "date": "2026-11-16",
+     "encounters": [
+      {
+       "end_line": 9381,
+       "name": "Houndmaster Loksey",
+       "result": "kill",
+       "seconds": 41,
+       "start_line": 7774,
+       "time": "18:29"
+      },
+      {
+       "end_line": 30314,
+       "name": "Arcanist Doan",
+       "result": "kill",
+       "seconds": 63,
+       "start_line": 29570,
+       "time": "18:46"
+      },
+      {
+       "end_line": 32293,
+       "name": "Interrogator Vishas",
+       "result": "kill",
+       "seconds": 34,
+       "start_line": 31654,
+       "time": "18:51"
+      },
+      {
+       "end_line": 37104,
+       "name": "Bloodmage Thalnos",
+       "result": "kill",
+       "seconds": 38,
+       "start_line": 36659,
+       "time": "18:57"
+      }
+     ],
+     "end": "22:03",
+     "file": "orc-warlock/2026-11-16/1823-scarlet-monastery.txt",
+     "kind": "instance",
+     "lines": 37168,
+     "place": "Scarlet Monastery",
+     "players": [
+      "Bee-Chills-PvP-EU",
+      "Jack-Dead-PvP-EU",
+      "Konduktööri-Rautakylki-PvP-EU",
+      "Mulric-Gravewraith-PvP-EU"
+     ],
+     "source": "WoWCombatLog-111626_163414.txt",
+     "start": "18:23"
+    },
+    {
+     "bytes": 10592426,
+     "character": "Orc Warlock",
+     "date": "2026-11-16",
+     "encounters": [
+      {
+       "end_line": 11617,
+       "name": "Viscous Fallout",
+       "result": "kill",
+       "seconds": 15,
+       "start_line": 11262,
+       "time": "22:22"
+      },
+      {
+       "end_line": 19928,
+       "name": "Electrocutioner 6000",
+       "result": "kill",
+       "seconds": 39,
+       "start_line": 19007,
+       "time": "22:31"
+      },
+      {
+       "end_line": 32982,
+       "name": "Mekgineer Thermaplugg",
+       "result": "kill",
+       "seconds": 43,
+       "start_line": 32116,
+       "time": "22:47"
+      }
+     ],
+     "end": "22:58",
+     "file": "orc-warlock/2026-11-16/2203-gnomeregan.txt",
+     "kind": "instance",
+     "lines": 36295,
+     "place": "Gnomeregan",
+     "players": [
+      "Dai-Shan-PvP-EU",
+      "Jaca-Djt-PvP-EU",
+      "Mi-Cho-PvP-EU",
+      "Twujstary-Mysliwy-PvP-EU"
+     ],
+     "source": "WoWCombatLog-111626_163414.txt",
+     "start": "22:03"
+    }
+   ]
+  },
+  "WoWCombatLog-111726_203038.txt": {
+   "bytes": 10423348,
+   "modified": 1794941349,
+   "written": [
+    {
+     "bytes": 7178208,
+     "character": "Orc Warlock",
+     "date": "2026-11-17",
+     "encounters": [
+      {
+       "end_line": 4098,
+       "name": "Zul'Alai",
+       "result": "kill",
+       "seconds": 50,
+       "start_line": 3140,
+       "time": "20:35"
+      },
+      {
+       "end_line": 21506,
+       "name": "Var'Taka",
+       "result": "kill",
+       "seconds": 75,
+       "start_line": 19826,
+       "time": "21:05"
+      }
+     ],
+     "end": "21:19",
+     "file": "orc-warlock/2026-11-17/2030-the-drowned-city.txt",
+     "kind": "instance",
+     "lines": 24140,
+     "place": "The Drowned City",
+     "players": [
+      "Charge-Respawn-PvP-EU",
+      "Mokra-Wydra-PvP-EU",
+      "Pollo-Fritoo-PvP-EU",
+      "Vargos-De-PvP-EU"
+     ],
+     "source": "WoWCombatLog-111726_203038.txt",
+     "start": "20:30"
+    },
+    {
+     "bytes": 3245247,
+     "character": "Orc Warlock",
+     "date": "2026-11-17",
+     "encounters": [],
+     "end": "21:49",
+     "file": "orc-warlock/2026-11-17/2119-stranglethorn-vale.txt",
+     "kind": "instance",
+     "lines": 11186,
+     "place": "Stranglethorn Vale",
+     "players": [],
+     "source": "WoWCombatLog-111726_203038.txt",
+     "start": "21:19"
+    }
+   ]
+  },
+  "WoWCombatLog-111826_192007.txt": {
+   "bytes": 13982062,
+   "modified": 1795022743,
+   "written": [
+    {
+     "bytes": 13316456,
+     "character": "Orc Warlock",
+     "date": "2026-11-18",
+     "encounters": [
+      {
+       "end_line": 14591,
+       "name": "Herod",
+       "result": "kill",
+       "seconds": 52,
+       "start_line": 13742,
+       "time": "19:36"
+      },
+      {
+       "end_line": 29389,
+       "name": "Houndmaster Loksey",
+       "result": "kill",
+       "seconds": 38,
+       "start_line": 28136,
+       "time": "19:53"
+      },
+      {
+       "end_line": 45391,
+       "name": "Arcanist Doan",
+       "result": "kill",
+       "seconds": 51,
+       "start_line": 44389,
+       "time": "20:04"
+      }
+     ],
+     "end": "20:07",
+     "file": "orc-warlock/2026-11-18/1920-scarlet-monastery.txt",
+     "kind": "instance",
+     "lines": 46011,
+     "place": "Scarlet Monastery",
+     "players": [
+      "Bal-Cas-PvP-EU",
+      "Chamrad-Spinava-PvP-EU",
+      "Frost-Bakstab-PvP-EU",
+      "Lester-Grreen-PvP-EU",
+      "Paladed-Sheeran-PvP-EU",
+      "Samaritan-Hurricane-PvP-EU",
+      "Tosuro-Sunstrider-PvP-EU",
+      "Unholy-Sunday-PvP-EU"
+     ],
+     "source": "WoWCombatLog-111826_192007.txt",
+     "start": "19:20"
+    }
+   ]
+  },
+  "WoWCombatLog-111926_205121.txt": {
+   "bytes": 19774988,
+   "modified": 1795122975,
+   "written": [
+    {
+     "bytes": 5525516,
+     "character": "Orc Warlock",
+     "date": "2026-11-19",
+     "encounters": [
+      {
+       "end_line": 16585,
+       "name": "High Inquisitor Fairbanks",
+       "result": "kill",
+       "seconds": 21,
+       "start_line": 16135,
+       "time": "21:05"
+      },
+      {
+       "end_line": 18318,
+       "name": "High Inquisitor Whitemane",
+       "result": "kill",
+       "seconds": 95,
+       "start_line": 16680,
+       "time": "21:06"
+      }
+     ],
+     "end": "23:32",
+     "file": "orc-warlock/2026-11-19/2051-scarlet-monastery.txt",
+     "kind": "instance",
+     "lines": 18599,
+     "place": "Scarlet Monastery",
+     "players": [
+      "Chubi-Pickle-PvP-EU",
+      "Drtva-Zandalari-PvP-EU",
+      "Imbalar-Plaguewind-PvP-EU",
+      "Pansar-Tank-PvP-EU"
+     ],
+     "source": "WoWCombatLog-111926_205121.txt",
+     "start": "20:51"
+    },
+    {
+     "bytes": 14248186,
+     "character": "Orc Warlock",
+     "date": "2026-11-19",
+     "encounters": [
+      {
+       "end_line": 15410,
+       "name": "Tuten'kash",
+       "result": "kill",
+       "seconds": 25,
+       "start_line": 14843,
+       "time": "23:43"
+      },
+      {
+       "end_line": 19976,
+       "name": "Mordresh Fire Eye",
+       "result": "kill",
+       "seconds": 39,
+       "start_line": 18337,
+       "time": "23:47"
+      },
+      {
+       "end_line": 25533,
+       "name": "Plaguemaw the Rotting",
+       "result": "kill",
+       "seconds": 43,
+       "start_line": 24431,
+       "time": "23:54"
+      },
+      {
+       "end_line": 31638,
+       "name": "Glutton",
+       "result": "kill",
+       "seconds": 25,
+       "start_line": 30894,
+       "time": "00:01"
+      },
+      {
+       "end_line": 46549,
+       "name": "Amnennar the Coldbringer",
+       "result": "kill",
+       "seconds": 24,
+       "start_line": 45638,
+       "time": "00:12"
+      }
+     ],
+     "end": "00:14",
+     "file": "orc-warlock/2026-11-19/2332-razorfen-downs.txt",
+     "kind": "instance",
+     "lines": 46719,
+     "place": "Razorfen Downs",
+     "players": [
+      "Dominion-Barksdale-PvP-EU",
+      "Elyndra-Dawnfeather-PvP-EU",
+      "Father-Khatrii-PvP-EU",
+      "Xoxox-Xoxox-PvP-EU"
+     ],
+     "source": "WoWCombatLog-111926_205121.txt",
+     "start": "23:32"
+    }
+   ]
+  },
+  "WoWCombatLog-112126_104726.txt": {
+   "bytes": 27675224,
+   "modified": 1795258149,
+   "written": [
+    {
+     "bytes": 14912207,
+     "character": "Orc Warlock",
+     "date": "2026-11-21",
+     "encounters": [
+      {
+       "end_line": 15683,
+       "name": "Tuten'kash",
+       "result": "kill",
+       "seconds": 36,
+       "start_line": 14940,
+       "time": "11:01"
+      },
+      {
+       "end_line": 18980,
+       "name": "Mordresh Fire Eye",
+       "result": "kill",
+       "seconds": 46,
+       "start_line": 17603,
+       "time": "11:05"
+      },
+      {
+       "end_line": 25478,
+       "name": "Glutton",
+       "result": "kill",
+       "seconds": 35,
+       "start_line": 24711,
+       "time": "11:12"
+      },
+      {
+       "end_line": 41037,
+       "name": "Amnennar the Coldbringer",
+       "result": "kill",
+       "seconds": 39,
+       "start_line": 39857,
+       "time": "11:26"
+      },
+      {
+       "end_line": 47017,
+       "name": "Plaguemaw the Rotting",
+       "result": "kill",
+       "seconds": 77,
+       "start_line": 45602,
+       "time": "11:34"
+      }
+     ],
+     "end": "11:39",
+     "file": "orc-warlock/2026-11-21/1047-razorfen-downs.txt",
+     "kind": "instance",
+     "lines": 48381,
+     "place": "Razorfen Downs",
+     "players": [
+      "Gigalord-Pamperofhell-PvP-EU",
+      "Kayllon-Mograine-PvP-EU",
+      "Sapicote-Pastaga-PvP-EU",
+      "Ночь-Бессонная-PvP-EU"
+     ],
+     "source": "WoWCombatLog-112126_104726.txt",
+     "start": "10:47"
+    },
+    {
+     "character": "Orc Warlock",
+     "date": "2026-11-21",
+     "deaths": 1,
+     "end": "13:49",
+     "fights": 68,
+     "file": "orc-warlock/2026-11-21/1139-open-world.md",
+     "kind": "open world",
+     "place": "The Barrens, Undercity, Durotar, Riverglades",
+     "source": "WoWCombatLog-112126_104726.txt",
+     "start": "11:39"
+    }
+   ]
+  },
+  "WoWCombatLog-112126_174919.txt": {
+   "bytes": 23102737,
+   "modified": 1795283783,
+   "written": [
+    {
+     "bytes": 18432356,
+     "character": "Orc Warlock",
+     "date": "2026-11-21",
+     "encounters": [
+      {
+       "end_line": 5220,
+       "name": "Zul'Alai",
+       "result": "kill",
+       "seconds": 36,
+       "start_line": 4523,
+       "time": "17:54"
+      },
+      {
+       "end_line": 21558,
+       "name": "Var'Taka",
+       "result": "kill",
+       "seconds": 42,
+       "start_line": 20289,
+       "time": "18:12"
+      },
+      {
+       "end_line": 28452,
+       "name": "Primeval Elemental",
+       "result": "kill",
+       "seconds": 28,
+       "start_line": 27849,
+       "time": "18:20"
+      },
+      {
+       "end_line": 40329,
+       "name": "Captain Dreadrise",
+       "result": "kill",
+       "seconds": 32,
+       "start_line": 39644,
+       "time": "18:31"
+      },
+      {
+       "end_line": 58138,
+       "name": "Deathless Guardians",
+       "result": "kill",
+       "seconds": 97,
+       "start_line": 55559,
+       "time": "18:46"
+      },
+      {
+       "end_line": 59700,
+       "name": "Min'loth the Serpent",
+       "result": "kill",
+       "seconds": 53,
+       "start_line": 58365,
+       "time": "18:49"
+      }
+     ],
+     "end": "19:55",
+     "file": "orc-warlock/2026-11-21/1749-the-drowned-city.txt",
+     "kind": "instance",
+     "lines": 59949,
+     "place": "The Drowned City",
+     "players": [
+      "Angmar-Lightscar-PvP-EU",
+      "Tazingo-Zak-PvP-EU",
+      "Urguth-Zak-PvP-EU",
+      "Wuji-Bubble-PvP-EU"
+     ],
+     "source": "WoWCombatLog-112126_174919.txt",
+     "start": "17:49"
+    },
+    {
+     "bytes": 4670488,
+     "character": "Orc Warlock",
+     "date": "2026-11-21",
+     "encounters": [
+      {
+       "end_line": 1348,
+       "name": "Lady Anacondra",
+       "result": "kill",
+       "seconds": 15,
+       "start_line": 1205,
+       "time": "19:58"
+      },
+      {
+       "end_line": 1477,
+       "name": "Kresh",
+       "result": "kill",
+       "seconds": 14,
+       "start_line": 1368,
+       "time": "20:00"
+      },
+      {
+       "end_line": 2701,
+       "name": "Lady Anacondra",
+       "result": "kill",
+       "seconds": 31,
+       "start_line": 2399,
+       "time": "20:04"
+      },
+      {
+       "end_line": 4437,
+       "name": "Lady Anacondra",
+       "result": "kill",
+       "seconds": 15,
+       "start_line": 4297,
+       "time": "20:11"
+      },
+      {
+       "end_line": 8954,
+       "name": "Lord Cobrahn",
+       "result": "kill",
+       "seconds": 18,
+       "start_line": 8722,
+       "time": "20:26"
+      },
+      {
+       "end_line": 9192,
+       "name": "Kresh",
+       "result": "wipe",
+       "seconds": 0,
+       "start_line": 9189,
+       "time": "20:29"
+      },
+      {
+       "end_line": 12850,
+       "name": "Lord Pythas",
+       "result": "kill",
+       "seconds": 48,
+       "start_line": 12375,
+       "time": "20:42"
+      },
+      {
+       "end_line": 15509,
+       "name": "Lord Serpentis",
+       "result": "kill",
+       "seconds": 27,
+       "start_line": 15282,
+       "time": "20:53"
+      },
+      {
+       "end_line": 15776,
+       "name": "Verdan the Everliving",
+       "result": "kill",
+       "seconds": 24,
+       "start_line": 15606,
+       "time": "20:55"
+      }
+     ],
+     "end": "20:56",
+     "file": "orc-warlock/2026-11-21/1955-wailing-caverns.txt",
+     "kind": "instance",
+     "lines": 15795,
+     "place": "Wailing Caverns",
+     "players": [
+      "Skinwalker-Bacchari-PvP-EU"
+     ],
+     "source": "WoWCombatLog-112126_174919.txt",
+     "start": "19:55"
+    }
+   ]
+  },
+  "WoWCombatLog-112426_204313.txt": {
+   "bytes": 17604388,
+   "modified": 1795550351,
+   "written": [
+    {
+     "bytes": 17604388,
+     "character": "Orc Warlock",
+     "date": "2026-11-24",
+     "encounters": [
+      {
+       "end_line": 5880,
+       "name": "Slavecrusher Grox",
+       "result": "kill",
+       "seconds": 44,
+       "start_line": 4830,
+       "time": "20:49"
+      },
+      {
+       "end_line": 16820,
+       "name": "Twilight Commander Zarmok",
+       "result": "wipe",
+       "seconds": 49,
+       "start_line": 15591,
+       "time": "21:09"
+      },
+      {
+       "end_line": 16981,
+       "name": "Twilight Commander Zarmok",
+       "result": "wipe",
+       "seconds": 2,
+       "start_line": 16968,
+       "time": "21:17"
+      },
+      {
+       "end_line": 18406,
+       "name": "Twilight Commander Zarmok",
+       "result": "kill",
+       "seconds": 50,
+       "start_line": 17243,
+       "time": "21:18"
+      },
+      {
+       "end_line": 30778,
+       "name": "Handler Ashka",
+       "result": "kill",
+       "seconds": 37,
+       "start_line": 29918,
+       "time": "21:43"
+      },
+      {
+       "end_line": 39974,
+       "name": "Nar'gurk",
+       "result": "kill",
+       "seconds": 73,
+       "start_line": 38383,
+       "time": "22:08"
+      },
+      {
+       "end_line": 54958,
+       "name": "Overseer Mugg",
+       "result": "wipe",
+       "seconds": 68,
+       "start_line": 53414,
+       "time": "22:29"
+      },
+      {
+       "end_line": 55718,
+       "name": "Overseer Mugg",
+       "result": "wipe",
+       "seconds": 41,
+       "start_line": 55096,
+       "time": "22:33"
+      },
+      {
+       "end_line": 57597,
+       "name": "Overseer Mugg",
+       "result": "kill",
+       "seconds": 70,
+       "start_line": 55986,
+       "time": "22:51"
+      }
+     ],
+     "end": "22:54",
+     "file": "orc-warlock/2026-11-24/2043-krol-dok-stronghold.txt",
+     "kind": "instance",
+     "lines": 57640,
+     "place": "Krol'dok Stronghold",
+     "players": [
+      "Bangaranga-Forever-PvP-EU",
+      "Brzytew-Thecursed-PvP-EU",
+      "Kura-Koopa-PvP-EU",
+      "Nopulse-Bro-PvP-EU"
+     ],
+     "source": "WoWCombatLog-112426_204313.txt",
+     "start": "20:43"
+    }
+   ]
+  },
+  "WoWCombatLog-112526_200204.txt": {
+   "bytes": 12947118,
+   "modified": 1795629980,
+   "written": [
+    {
+     "bytes": 12947118,
+     "character": "Orc Warlock",
+     "date": "2026-11-25",
+     "encounters": [
+      {
+       "end_line": 3115,
+       "name": "Slavecrusher Grox",
+       "result": "kill",
+       "seconds": 18,
+       "start_line": 2663,
+       "time": "20:05"
+      },
+      {
+       "end_line": 16636,
+       "name": "Twilight Commander Zarmok",
+       "result": "kill",
+       "seconds": 26,
+       "start_line": 16064,
+       "time": "20:22"
+      },
+      {
+       "end_line": 23197,
+       "name": "Handler Ashka",
+       "result": "kill",
+       "seconds": 24,
+       "start_line": 22583,
+       "time": "20:32"
+      },
+      {
+       "end_line": 30412,
+       "name": "Nar'gurk",
+       "result": "kill",
+       "seconds": 43,
+       "start_line": 29517,
+       "time": "20:43"
+      },
+      {
+       "end_line": 40255,
+       "name": "Overseer Mugg",
+       "result": "wipe",
+       "seconds": 61,
+       "start_line": 39307,
+       "time": "20:56"
+      },
+      {
+       "end_line": 40322,
+       "name": "Overseer Mugg",
+       "result": "wipe",
+       "seconds": 6,
+       "start_line": 40299,
+       "time": "20:58"
+      },
+      {
+       "end_line": 42156,
+       "name": "Overseer Mugg",
+       "result": "kill",
+       "seconds": 77,
+       "start_line": 40467,
+       "time": "21:03"
+      }
+     ],
+     "end": "21:06",
+     "file": "orc-warlock/2026-11-25/2002-krol-dok-stronghold.txt",
+     "kind": "instance",
+     "lines": 42228,
+     "place": "Krol'dok Stronghold",
+     "players": [
+      "Peopledie-Peopledie-PvP-EU",
+      "Ponne-Dengröne-PvP-EU",
+      "Riviera-Mortis-PvP-EU",
+      "Youngthuggar-Bloodslime-PvP-EU"
+     ],
+     "source": "WoWCombatLog-112526_200204.txt",
+     "start": "20:02"
+    }
+   ]
+  }
+ }
+}
