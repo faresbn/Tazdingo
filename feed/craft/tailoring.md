@@ -15,6 +15,8 @@ Estimated listing margins compare the product’s asking value with its reagent 
 | Gilded Handwraps | 165 | 254021 | 1 | 6g 78s 48c | 5g 69s 52c | 1g 8s 96c | Auctionator |
 | Big Bag of Enchantment | 255 | 22249 | 1 | 18g 7s 19c | 17g 3s 2c | 1g 4s 17c | Auctionator |
 | Azure Stormsewn Cuffs | 50 | 277035 | 1 | 97s 65c | 2s 34c | 95s 31c | Auctionator |
+| Cloudy Stormsewn Leggings | 60 | 277014 | 1 | 86s 50c | 3s 60c | 82s 90c | Auctionator |
+| Azure Stormsewn Leggings | 60 | 277038 | 1 | 79s 17c | 3s 60c | 75s 57c | Auctionator |
 | Ghostweave Pants | 245 | 14144 | 1 | 5g 62s 47c | 4g 90s 54c | 71s 93c | Auctionator |
 | Shadoweave Robe | 195 | 10004 | 1 | 1g 67s 13c | 1g 5s 37c | 61s 76c | Auctionator |
 | Earthenweave Gloves | 215 | 254075 | 1 | 6g 75s 0c | 6g 16s 36c | 58s 64c | Auctionator |
@@ -48,8 +50,10 @@ Estimated listing margins compare the product’s asking value with its reagent 
 | Robes of Arcana | 125 | 5770 | 1 | 79s 52c | 65s 28c | 14s 24c | Auctionator |
 | Spinning Wheel | 140 | 279943 | 1 | 56s 49c | 47s 71c | 8s 78c | Auctionator |
 | White Bandit Mask | 180 | 10008 | 1 | 48s 48c | 42s 4c | 6s 44c | Auctionator |
+| Black Mageweave Boots | 205 | 10026 | 1 | 1g 35s 27c | 1g 29s 37c | 5s 90c | Auctionator |
 | Red Mageweave Pants | 180 | 10009 | 1 | 92s 26c | 86s 37c | 5s 89c | Auctionator |
 | Red Woolen Boots | 75 | 4313 | 1 | 38s 67c | 33s 26c | 5s 41c | Auctionator |
+| Colorful Kilt | 70 | 10048 | 1 | 43s 25c | 38s 75c | 4s 50c | Auctionator |
 | Bolt of Runecloth | 210 | 14048 | 1 | 30s 23c | 25s 80c | 4s 43c | Auctionator |
 | Red Mageweave Bag | 210 | 10051 | 1 | 1g 54s 37c | 1g 49s 95c | 4s 42c | Auctionator |
 | Phoenix Pants | 100 | 4317 | 1 | 58s 17c | 54s 64c | 3s 53c | Auctionator |
@@ -71,5 +75,6 @@ Estimated listing margins compare the product’s asking value with its reagent 
 | Blue Linen Shirt | 40 | 2577 | 1 | 2s 7c | 1s 96c | 11c | Auctionator |
 | White Linen Shirt | 1 | 2576 | 1 | 1s 11c | 1s 3c | 8c | Auctionator |
 | Brown Linen Vest | 10 | 2568 | 1 | 80c | 78c | 2c | Auctionator |
+| Runed Stygian Belt | 285 | 20539 | 1 | 20g 0s 0c | 14g 85s 22c | 5g 14s 78c | Auctionator snapshot |
 
 Item names, categories, vendor prices and recipes: Data from ForeverDB.net.

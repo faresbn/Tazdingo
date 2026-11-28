@@ -8,6 +8,7 @@ Estimated listing margins compare the product’s asking value with its reagent 
 | Dawn Treaders | 265 | 19052 | 1 | 117g 99s 97c | 99g 48s 92c | 18g 51s 5c | Auctionator |
 | Stormshroud Armor | 260 | 15056 | 1 | 70g 98s 50c | 60g 68s 9c | 10g 30s 41c | Auctionator |
 | Devilsaur Leggings | 290 | 15062 | 1 | 59g 89s 44c | 51g 23s 84c | 8g 65s 60c | Auctionator |
+| Stormshroud Shoulders | 270 | 15058 | 1 | 33g 37s 99c | 26g 3s 13c | 7g 34s 86c | Auctionator |
 | Volcanic Breastplate | 260 | 15053 | 1 | 13g 6s 28c | 7g 43s 91c | 5g 62s 37c | Auctionator |
 | Ironfeather Breastplate | 265 | 15066 | 1 | 49g 49s 41c | 44g 10s 55c | 5g 38s 86c | Auctionator |
 | Cured Rugged Hide | 225 | 15407 | 2 | 68g 49s 92c | 64g 3s 1c | 4g 46s 91c | Auctionator |
@@ -15,6 +16,7 @@ Estimated listing margins compare the product’s asking value with its reagent 
 | Devilsaur Gauntlets | 265 | 15063 | 1 | 15g 17s 99c | 12g 49s 36c | 2g 68s 63c | Auctionator |
 | Helm of the Great Chief | 290 | 12636 | 1 | 19g 29s 99c | 17g 32s 24c | 1g 97s 75c | Auctionator |
 | Warbear Woolies | 260 | 15065 | 1 | 16g 60s 0c | 14g 70s 38c | 1g 89s 62c | Auctionator |
+| Cloudy Gustwoven Spaulders | 175 | 277043 | 1 | 3g 20s 6c | 1g 31s 72c | 1g 88s 34c | Auctionator |
 | Warbear Harness | 250 | 15064 | 1 | 15g 89s 45c | 14g 16s 4c | 1g 73s 41c | Auctionator |
 | Cloudy Windraveled Drapes | 175 | 277045 | 1 | 3g 0s 0c | 1g 31s 72c | 1g 68s 28c | Auctionator |
 | Cloudy Gustwoven Hood | 175 | 277042 | 1 | 3g 20s 50c | 1g 69s 33c | 1g 51s 17c | Auctionator |
@@ -41,7 +43,6 @@ Estimated listing margins compare the product’s asking value with its reagent 
 | Cloudy Windraveled Mitts | 55 | 277006 | 1 | 22s 48c | 7s 18c | 15s 30c | Auctionator |
 | Turtle Scale Gloves | 180 | 8187 | 1 | 1g 44s 30c | 1g 31s 28c | 13s 2c | Auctionator |
 | Forceful Thick Armor Kit | 185 | 252463 | 1 | 56s 72c | 44s 3c | 12s 69c | Auctionator |
-| Murloc Scale Breastplate | 70 | 5781 | 1 | 34s 24c | 22s 49c | 11s 75c | Auctionator |
 | Azure Gustwoven Trousers | 60 | 277026 | 1 | 18s 84c | 8s 11c | 10s 73c | Auctionator |
 | Murloc Scale Belt | 65 | 5780 | 1 | 21s 50c | 15s 22c | 6s 28c | Auctionator |
 | Pilferer's Gloves | 115 | 7358 | 1 | 64s 45c | 59s 60c | 4s 85c | Auctionator |
@@ -49,7 +50,6 @@ Estimated listing margins compare the product’s asking value with its reagent 
 | Cured Thick Hide | 175 | 8172 | 1 | 10s 91c | 8s 34c | 2s 57c | Auctionator |
 | Mystic Thick Armor Kit | 185 | 252462 | 1 | 41s 70c | 39s 29c | 2s 41c | Auctionator |
 | Cured Heavy Hide | 135 | 4236 | 1 | 19s 11c | 16s 80c | 2s 31c | Auctionator |
-| Raptor Hide Harness | 140 | 4455 | 1 | 41s 25c | 39s 32c | 1s 93c | Auctionator |
 | Fine Leather Gloves | 50 | 2312 | 1 | 7s 0c | 6s 1c | 99c | Auctionator |
 | Tanning Rack | 125 | 279941 | 1 | 14s 50c | 13s 76c | 74c | Auctionator |
 | Camp Tent | 0 | 279978 | 1 | 6s 34c | 5s 65c | 69c | Auctionator |

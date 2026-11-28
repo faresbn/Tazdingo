@@ -8,7 +8,9 @@ Estimated listing margins compare the product’s asking value with its reagent 
 | Delicate Arcanite Converter | 285 | 16006 | 1 | 51g 25s 25c | 45g 95s 47c | 5g 29s 78c | Auctionator |
 | SAF-T Disposable Parachute | 250 | 260810 | 1 | 6g 50s 49c | 1g 56s 51c | 4g 93s 98c | Auctionator |
 | Compact Critter Carrier | 225 | 260807 | 1 | 8g 49s 98c | 5g 76s 8c | 2g 73s 90c | Auctionator |
+| World Enlarger | 260 | 18660 | 1 | 3g 0s 0c | 1g 23s 47c | 1g 76s 53c | Auctionator |
 | Master Engineer's Goggles | 290 | 16008 | 1 | 6g 0s 0c | 4g 88s 73c | 1g 11s 27c | Auctionator |
+| Goblin Rocket Boots | 130 | 7189 | 1 | 3g 15s 72c | 2g 54s 92c | 60s 80c | Auctionator |
 | Masterwork Target Dummy | 275 | 16023 | 1 | 2g 94s 89c | 2g 48s 28c | 46s 61c | Auctionator |
 | Salt Shaker | 250 | 15846 | 1 | 2g 77s 50c | 2g 31s 52c | 45s 98c | Auctionator |
 | Gnomish Net-o-Matic Projector | 210 | 10720 | 1 | 1g 69s 45c | 1g 27s 68c | 41s 77c | Auctionator |
@@ -26,6 +28,7 @@ Estimated listing margins compare the product’s asking value with its reagent 
 | Flash Bomb | 185 | 4852 | 1 | 30s 71c | 20s 94c | 9s 77c | Auctionator |
 | Goblin Sapper Charge | 205 | 10646 | 1 | 47s 92c | 39s 16c | 8s 76c | Auctionator |
 | Thorium Shells | 285 | 15997 | 200 | 54s 0c | 45s 48c | 8s 52c | Auctionator |
+| Accurate Scope | 180 | 4407 | 1 | 33s 88c | 26s 99c | 6s 89c | Auctionator |
 | EZ-Thro Grenade | 200 | 260803 | 1 | 24s 95c | 18s 51c | 6s 44c | Auctionator |
 | Goblin Rocket Fuel Recipe | 205 | 10644 | 1 | 30s 94c | 25s 0c | 5s 94c | Auctionator |
 | Green Lens | 245 | 10504 | 1 | 1g 87s 99c | 1g 82s 60c | 5s 39c | Auctionator |

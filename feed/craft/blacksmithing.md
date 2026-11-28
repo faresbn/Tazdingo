@@ -8,6 +8,7 @@ Estimated listing margins compare the product’s asking value with its reagent 
 | Lionheart Helm | 300 | 12640 | 1 | 709g 0s 0c | 595g 72s 56c | 113g 27s 44c | Auctionator |
 | Stalwart Helm | 300 | 250599 | 1 | 640g 72s 0c | 537g 41s 28c | 103g 30s 72c | Auctionator |
 | Masterwork Stormhammer | 300 | 12794 | 1 | 95g 22s 0c | 54g 88s 24c | 40g 33s 76c | Auctionator |
+| Darkrune Gauntlets | 300 | 20549 | 1 | 29g 76s 86c | 14g 47s 12c | 15g 29s 74c | Auctionator |
 | Arcanite Rod | 250 | 16206 | 1 | 149g 74s 96c | 135g 90s 73c | 13g 84s 23c | Auctionator |
 | Blessed Plate Helm | 275 | 250593 | 1 | 19g 65s 0c | 11g 81s 70c | 7g 83s 30c | Auctionator |
 | Arcanite Skeleton Key | 250 | 15872 | 2 | 49g 10s 76c | 45g 41s 73c | 3g 69s 3c | Auctionator |
@@ -29,6 +30,7 @@ Estimated listing margins compare the product’s asking value with its reagent 
 | Blessed Plate Boots | 240 | 250587 | 1 | 9g 17s 48c | 8g 84s 64c | 32s 84c | Auctionator |
 | Cloudy Skyforged Gauntlets | 55 | 276994 | 1 | 48s 91c | 18s 62c | 30s 29c | Auctionator |
 | Hard Gold Boots | 150 | 250534 | 1 | 1g 48s 55c | 1g 19s 92c | 28s 63c | Auctionator |
+| Brass Knuckles | 80 | 250602 | 1 | 54s 89c | 26s 28c | 28s 61c | Auctionator |
 | Azure Skyforged Gauntlets | 55 | 277018 | 1 | 45s 92c | 18s 62c | 27s 30c | Auctionator |
 | Moonsteel Broadsword | 155 | 3853 | 1 | 1g 89s 98c | 1g 63s 46c | 26s 52c | Auctionator |
 | Blue Glittering Axe | 195 | 7942 | 1 | 2g 91s 94c | 2g 65s 47c | 26s 47c | Auctionator |
@@ -38,6 +40,7 @@ Estimated listing margins compare the product’s asking value with its reagent 
 | Ornate Mithril Helm | 0 | 7937 | 1 | 2g 49s 14c | 2g 29s 31c | 19s 83c | Auctionator |
 | Solid Iron Maul | 130 | 3851 | 1 | 1g 22s 99c | 1g 3s 97c | 19s 2c | Auctionator |
 | Golden Scale Coif | 165 | 3837 | 1 | 1g 28s 74c | 1g 11s 30c | 17s 44c | Auctionator |
+| Orcish War Leggings | 205 | 7929 | 1 | 1g 76s 96c | 1g 63s 52c | 13s 44c | Auctionator |
 | Iridescent Hammer | 115 | 5541 | 1 | 73s 98c | 61s 18c | 12s 80c | Auctionator |
 | Rough Copper Chain Boots | 50 | 277672 | 1 | 33s 74c | 23s 94c | 9s 80c | Auctionator |
 | Steel Weapon Chain | 165 | 6041 | 1 | 1g 20s 21c | 1g 11s 46c | 8s 75c | Auctionator |
