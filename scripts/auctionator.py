@@ -11,13 +11,42 @@ import re
 from datetime import date, timedelta
 from pathlib import Path
 
-PARSER_VERSION = "1.1.0"
+PARSER_VERSION = "1.2.0"
 MAX_FILE = 32 * 1024 * 1024
 
 # Item keys Auctionator writes (Source/Utilities/DBKeyFromLink.lua): a plain item ID,
 # "gr:<id>:<suffix>" for random-suffix gear on the legacy AH, "g:<id>:<item level>" and
 # "p:<species>" on the modern AH. "<id>:<n>..." covers older variant keys.
 ITEM_KEY = re.compile(r"\d+(?::[0-9:-]+)?|gr:\d+:[^\x00-\x1f:]{1,80}|g:\d+:\d+|p:\d+")
+
+# Auctionator 354 and later, on Forever only, key random-suffix gear by a number instead of the
+# suffix's name ("gr:<id>:7", not "gr:<id>:of the Bear") and mark each market {"suffixes": true}
+# (Source/Variables/Main.lua). The number is a 1-based position in Auctionator.Utilities.SuffixLabels
+# (Data_Forever/Suffixes.lua); Auctionator's own migration mapped each old name to its first
+# position, so we turn numbers back into names and the price history carries on. Three names
+# appear twice in that list (two suffix families show the same name in game): the second of each
+# is labelled "(2)" so the two variants stay apart. A number past the list is kept as it is.
+SUFFIX_LABELS = (
+    "of Intellect", "of Spirit", "of Stamina", "of the Owl", "of the Eagle", "of the Whale",
+    "of the Bear", "of the Gorilla", "of the Falcon", "of the Boar", "of the Wolf", "of the Tiger",
+    "of Agility", "of Intellect (2)", "of Spirit (2)", "of Stamina (2)", "of Strength", "of Power",
+    "of Magic", "of Healing", "of Defense", "of Regeneration", "of Concentration", "of Eluding",
+    "of Arcane Protection", "of Fire Protection", "of Frost Protection", "of Nature Protection",
+    "of Shadow Protection", "of the Sorcerer", "of the Elder", "of the Channeler",
+    "of the Physician", "of the Hierophant", "of the Bandit", "of the Beast", "of the Champion",
+    "of the Defender", "of the Knight", "of Arcane Wrath", "of Fiery Wrath", "of Frozen Wrath",
+    "of Holy Wrath", "of Nature's Wrath", "of Shadow Wrath", "of Arcane Resistance",
+    "of Fire Resistance", "of Frost Resistance", "of Nature Resistance", "of Shadow Resistance",
+    "of the Monkey", "of the Prophet",
+)
+
+
+def named_suffix_key(key: str) -> str:
+    """"gr:<id>:<n>" from a {"suffixes": true} market, as "gr:<id>:<suffix name>"."""
+    parts = key.split(":")
+    if len(parts) == 3 and parts[0] == "gr" and parts[2].isdigit() and 1 <= int(parts[2]) <= len(SUFFIX_LABELS):
+        return f"gr:{parts[1]}:{SUFFIX_LABELS[int(parts[2]) - 1]}"
+    return key
 
 # Auctionator's day codes count days since local midnight, 1 January 2020
 # (Source/Constants/Main.lua: SCAN_DAY_0; Source/Database/Mixin.lua: GetScanDay).
@@ -319,8 +348,15 @@ def decode_market(payload: bytes) -> dict:
     market = string_keys(market)
     if market.pop("version", None) != 2:
         raise InvalidCapture("Only market version 2 is supported")
+    numbered = market.pop("suffixes", None)
+    if numbered not in (None, True):
+        raise InvalidCapture("Unsupported suffixes marker")
     items = {}
     for item_key, fields in market.items():
+        if numbered:
+            item_key = named_suffix_key(item_key)
+            if item_key in items:
+                raise InvalidCapture(f"Two records for {item_key!r}")
         if not ITEM_KEY.fullmatch(item_key):
             raise InvalidCapture(f"Unsupported item key {item_key!r}")
         if not isinstance(fields, dict):

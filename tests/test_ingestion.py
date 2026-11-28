@@ -58,6 +58,7 @@ def cbor(value):
         if n < 24: return bytes([major<<5|n])
         for extra, size in ((24,1),(25,2),(26,4),(27,8)):
             if n < 1 << (8*size): return bytes([major<<5|extra]) + n.to_bytes(size,"big")
+    if value is True: return b"\xf5"
     if isinstance(value, int): return head(0, value)
     if isinstance(value, str): raw=value.encode(); return head(3, len(raw)) + raw
     if isinstance(value, dict): return head(5, len(value)) + b"".join(cbor(k)+cbor(v) for k,v in value.items())
@@ -254,6 +255,24 @@ class CurrentAuctionatorFormat(unittest.TestCase):
         items = parse_capture(path)["markets"]["Realm Horde"]["items"]
         self.assertEqual(sorted(items), ["9807", "gr:9807:of the Boar"])
         self.assertEqual((item_id("gr:9807:of the Boar"), suffix("gr:9807:of the Boar")), (9807, "of the Boar"))
+
+    def test_numbered_suffixes_read_as_names(self):
+        # Auctionator 354 on Forever: {"suffixes": true}, and "gr:<id>:<n>" for a 1-based label position
+        path = self.write({"Realm Horde": cbor({"version": 2, "suffixes": True, "9807": self.record,
+                                                "gr:9807:7": self.record, "gr:9807:1": self.record,
+                                                "gr:9807:14": self.record, "gr:9807:99": self.record})})
+        items = parse_capture(path)["markets"]["Realm Horde"]["items"]
+        self.assertEqual(sorted(items), ["9807", "gr:9807:99", "gr:9807:of Intellect", "gr:9807:of Intellect (2)",
+                                         "gr:9807:of the Bear"])
+
+    def test_numbers_are_names_only_in_a_marked_market(self):
+        path = self.write({"Realm Horde": cbor({"version": 2, "gr:9807:7": self.record})})
+        self.assertEqual(list(parse_capture(path)["markets"]["Realm Horde"]["items"]), ["gr:9807:7"])
+
+    def test_unknown_suffixes_marker_rejected(self):
+        path = self.write({"Realm Horde": cbor({"version": 2, "suffixes": 2, "9807": self.record})})
+        with self.assertRaisesRegex(InvalidCapture, "suffixes marker"):
+            parse_capture(path)
 
     def test_non_ascii_realm_names(self):
         path = self.write({"Пламегор Horde": cbor({"version": 2, "gr:9807:of the Boar": self.record})})
